@@ -1,0 +1,293 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "NIST CMVP Data API",
+    "description": "Static JSON API for NIST Cryptographic Module Validation Program data. Auto-updated weekly via GitHub Actions. Unofficial project - see https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative data.",
+    "version": "2.0",
+    "contact": {
+      "url": "https://github.com/ethanolivertroy/NIST-CMVP-API"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://ethanolivertroy.github.io/NIST-CMVP-API",
+      "description": "GitHub Pages (production)"
+    }
+  ],
+  "paths": {
+    "/api/index.json": {
+      "get": {
+        "summary": "API index and endpoint listing",
+        "operationId": "getIndex",
+        "responses": {
+          "200": {
+            "description": "API discovery endpoint with available endpoints and feature flags",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Index"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/metadata.json": {
+      "get": {
+        "summary": "Dataset metadata",
+        "operationId": "getMetadata",
+        "responses": {
+          "200": {
+            "description": "Generation timestamp, module counts, and data source information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Metadata"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/modules.json": {
+      "get": {
+        "summary": "Active validated cryptographic modules",
+        "operationId": "getModules",
+        "responses": {
+          "200": {
+            "description": "Currently 1071 active validated modules with enriched details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModulesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/historical-modules.json": {
+      "get": {
+        "summary": "Historical (expired/revoked) cryptographic modules",
+        "operationId": "getHistoricalModules",
+        "responses": {
+          "200": {
+            "description": "Currently 4115 historical modules",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModulesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/modules-in-process.json": {
+      "get": {
+        "summary": "Modules currently in the validation process",
+        "operationId": "getModulesInProcess",
+        "responses": {
+          "200": {
+            "description": "Currently 337 modules in process",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModulesInProcessResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/algorithms.json": {
+      "get": {
+        "summary": "Algorithm usage statistics across all certificates",
+        "operationId": "getAlgorithms",
+        "responses": {
+          "200": {
+            "description": "Algorithm counts and certificate mappings",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlgorithmsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Metadata": {
+        "type": "object",
+        "properties": {
+          "generated_at": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2026-03-18T00:24:39.091440Z"
+          },
+          "total_modules": {
+            "type": "integer",
+            "example": 1071
+          },
+          "total_historical_modules": {
+            "type": "integer",
+            "example": 4115
+          },
+          "total_modules_in_process": {
+            "type": "integer",
+            "example": 337
+          },
+          "total_certificates_with_algorithms": {
+            "type": "integer",
+            "example": 0
+          },
+          "source": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search"
+          },
+          "algorithm_source": {
+            "type": "string",
+            "example": "none"
+          },
+          "version": {
+            "type": "string",
+            "example": "2.0"
+          }
+        }
+      },
+      "Module": {
+        "type": "object",
+        "description": "A FIPS 140-2/140-3 validated cryptographic module",
+        "properties": {
+          "Certificate Number_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5198"
+          },
+          "Certificate Number": {
+            "type": "string",
+            "example": "5198"
+          },
+          "Vendor Name": {
+            "type": "string",
+            "example": "HP Inc."
+          },
+          "Module Name": {
+            "type": "string",
+            "example": "HP Endpoint Security Controller Cryptographic Library"
+          },
+          "Module Type": {
+            "type": "string",
+            "example": "Hardware"
+          },
+          "Validation Date": {
+            "type": "string",
+            "example": "03/13/2026"
+          },
+          "security_policy_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5198.pdf"
+          },
+          "certificate_detail_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5198"
+          }
+        }
+      },
+      "ModulesResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "modules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Module"
+            }
+          }
+        }
+      },
+      "ModulesInProcessResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "modules_in_process": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Module"
+            }
+          }
+        }
+      },
+      "AlgorithmsResponse": {
+        "type": "object",
+        "properties": {
+          "total_unique_algorithms": {
+            "type": "integer"
+          },
+          "total_certificate_algorithm_pairs": {
+            "type": "integer"
+          },
+          "algorithms": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "certificates": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Index": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "endpoints": {
+            "type": "object"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "total_modules": {
+            "type": "integer"
+          },
+          "total_historical_modules": {
+            "type": "integer"
+          },
+          "total_modules_in_process": {
+            "type": "integer"
+          },
+          "features": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

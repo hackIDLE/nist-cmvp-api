@@ -60,14 +60,14 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code api/ || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code api/ openapi.json || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add api/
+          git add api/ openapi.json
           git commit -m "Update NIST CMVP data - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push
 

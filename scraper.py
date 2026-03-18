@@ -25,7 +25,8 @@ import os
 import re
 import sqlite3
 import sys
-from datetime import datetime
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
@@ -70,25 +71,39 @@ SKIP_PATTERNS = [
 ]
 
 
-def fetch_page(url: str, timeout: int = 30) -> Optional[str]:
+def fetch_page(url: str, timeout: int = 30, retries: int = 3) -> Optional[str]:
     """
     Fetch a web page and return its HTML content.
+
+    Retries with exponential backoff on transient failures (5xx, 429, timeouts).
 
     Args:
         url: The URL to fetch
         timeout: Request timeout in seconds
+        retries: Number of retry attempts
 
     Returns:
-        HTML content as string, or None if request fails
+        HTML content as string, or None if all attempts fail
     """
-    try:
-        headers = {"User-Agent": USER_AGENT}
-        response = requests.get(url, headers=headers, timeout=timeout)
-        response.raise_for_status()
-        return response.text
-    except requests.RequestException as e:
-        print(f"Error fetching {url}: {e}", file=sys.stderr)
-        return None
+    headers = {"User-Agent": USER_AGENT}
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, headers=headers, timeout=timeout)
+            if response.status_code == 429:
+                retry_after = int(response.headers.get("Retry-After", 30))
+                print(f"Rate limited on {url}, waiting {retry_after}s...", file=sys.stderr)
+                time.sleep(retry_after)
+                continue
+            response.raise_for_status()
+            return response.text
+        except requests.RequestException as e:
+            if attempt < retries - 1:
+                wait = 2 ** (attempt + 1)
+                print(f"Attempt {attempt + 1}/{retries} failed for {url}: {e}. Retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+            else:
+                print(f"Error fetching {url} after {retries} attempts: {e}", file=sys.stderr)
+    return None
 
 
 def get_security_policy_url(cert_number: int) -> str:
@@ -640,6 +655,258 @@ def create_algorithms_summary(algorithms_map: Dict[int, List[str]]) -> Dict:
     }
 
 
+def validate_module_count(modules: List[Dict], label: str, min_expected: int = 100) -> None:
+    """
+    Validate that the scraped module count is reasonable.
+
+    Prevents silent data loss if NIST changes their HTML structure
+    and the scraper returns 0 or very few modules.
+
+    Args:
+        modules: List of scraped modules
+        label: Description of the module type (for error messages)
+        min_expected: Minimum expected count (abort if below this)
+    """
+    count = len(modules)
+    if count < min_expected:
+        print(f"FATAL: Only {count} {label} found (expected at least {min_expected}).", file=sys.stderr)
+        print("This likely means NIST changed their page structure. Aborting to prevent data loss.", file=sys.stderr)
+        sys.exit(1)
+
+
+def generate_openapi_spec(modules: List[Dict], metadata: Dict) -> Dict:
+    """
+    Generate an OpenAPI 3.0.3 spec from the actual scraped data schema.
+
+    Uses the first module as an example and derives field types from real data,
+    ensuring the spec always matches the actual API output.
+
+    Args:
+        modules: List of scraped module dictionaries
+        metadata: The metadata dictionary
+
+    Returns:
+        OpenAPI spec as a dictionary
+    """
+    # Build module schema properties from actual field names
+    sample = modules[0] if modules else {}
+    module_properties = {}
+    for key, value in sample.items():
+        if isinstance(value, list):
+            module_properties[key] = {
+                "type": "array",
+                "items": {"type": "string"},
+                "example": value[:3] if value else []
+            }
+        elif isinstance(value, int):
+            module_properties[key] = {
+                "type": "integer",
+                "example": value
+            }
+        else:
+            module_properties[key] = {
+                "type": "string",
+                "example": str(value)
+            }
+
+    spec = {
+        "openapi": "3.0.3",
+        "info": {
+            "title": "NIST CMVP Data API",
+            "description": (
+                "Static JSON API for NIST Cryptographic Module Validation Program data. "
+                "Auto-updated weekly via GitHub Actions. "
+                "Unofficial project - see https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative data."
+            ),
+            "version": metadata.get("version", "2.0"),
+            "contact": {
+                "url": "https://github.com/ethanolivertroy/NIST-CMVP-API"
+            }
+        },
+        "servers": [
+            {
+                "url": "https://ethanolivertroy.github.io/NIST-CMVP-API",
+                "description": "GitHub Pages (production)"
+            }
+        ],
+        "paths": {
+            "/api/index.json": {
+                "get": {
+                    "summary": "API index and endpoint listing",
+                    "operationId": "getIndex",
+                    "responses": {
+                        "200": {
+                            "description": "API discovery endpoint with available endpoints and feature flags",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/Index"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/metadata.json": {
+                "get": {
+                    "summary": "Dataset metadata",
+                    "operationId": "getMetadata",
+                    "responses": {
+                        "200": {
+                            "description": "Generation timestamp, module counts, and data source information",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/Metadata"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/modules.json": {
+                "get": {
+                    "summary": "Active validated cryptographic modules",
+                    "operationId": "getModules",
+                    "responses": {
+                        "200": {
+                            "description": f"Currently {metadata.get('total_modules', 0)} active validated modules with enriched details",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/ModulesResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/historical-modules.json": {
+                "get": {
+                    "summary": "Historical (expired/revoked) cryptographic modules",
+                    "operationId": "getHistoricalModules",
+                    "responses": {
+                        "200": {
+                            "description": f"Currently {metadata.get('total_historical_modules', 0)} historical modules",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/ModulesResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/modules-in-process.json": {
+                "get": {
+                    "summary": "Modules currently in the validation process",
+                    "operationId": "getModulesInProcess",
+                    "responses": {
+                        "200": {
+                            "description": f"Currently {metadata.get('total_modules_in_process', 0)} modules in process",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/ModulesInProcessResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/algorithms.json": {
+                "get": {
+                    "summary": "Algorithm usage statistics across all certificates",
+                    "operationId": "getAlgorithms",
+                    "responses": {
+                        "200": {
+                            "description": "Algorithm counts and certificate mappings",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/AlgorithmsResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "components": {
+            "schemas": {
+                "Metadata": {
+                    "type": "object",
+                    "properties": {
+                        "generated_at": {"type": "string", "format": "date-time", "example": metadata.get("generated_at", "")},
+                        "total_modules": {"type": "integer", "example": metadata.get("total_modules", 0)},
+                        "total_historical_modules": {"type": "integer", "example": metadata.get("total_historical_modules", 0)},
+                        "total_modules_in_process": {"type": "integer", "example": metadata.get("total_modules_in_process", 0)},
+                        "total_certificates_with_algorithms": {"type": "integer", "example": metadata.get("total_certificates_with_algorithms", 0)},
+                        "source": {"type": "string", "example": metadata.get("source", "")},
+                        "algorithm_source": {"type": "string", "example": metadata.get("algorithm_source", "")},
+                        "version": {"type": "string", "example": metadata.get("version", "")}
+                    }
+                },
+                "Module": {
+                    "type": "object",
+                    "description": "A FIPS 140-2/140-3 validated cryptographic module",
+                    "properties": module_properties
+                },
+                "ModulesResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "modules": {
+                            "type": "array",
+                            "items": {"$ref": "#/components/schemas/Module"}
+                        }
+                    }
+                },
+                "ModulesInProcessResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "modules_in_process": {
+                            "type": "array",
+                            "items": {"$ref": "#/components/schemas/Module"}
+                        }
+                    }
+                },
+                "AlgorithmsResponse": {
+                    "type": "object",
+                    "properties": {
+                        "total_unique_algorithms": {"type": "integer"},
+                        "total_certificate_algorithm_pairs": {"type": "integer"},
+                        "algorithms": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "object",
+                                "properties": {
+                                    "count": {"type": "integer"},
+                                    "certificates": {
+                                        "type": "array",
+                                        "items": {"type": "integer"}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Index": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "description": {"type": "string"},
+                        "endpoints": {"type": "object"},
+                        "last_updated": {"type": "string", "format": "date-time"},
+                        "total_modules": {"type": "integer"},
+                        "total_historical_modules": {"type": "integer"},
+                        "total_modules_in_process": {"type": "integer"},
+                        "features": {"type": "object"}
+                    }
+                }
+            }
+        }
+    }
+
+    return spec
+
+
 def main():
     """Main entry point for the scraper."""
     print("=" * 60)
@@ -671,18 +938,23 @@ def main():
         print("No validated modules found!", file=sys.stderr)
         sys.exit(1)
 
+    # Validate module counts to prevent silent data loss
+    validate_module_count(modules, "validated modules", min_expected=100)
     print(f"\nTotal validated modules scraped: {len(modules)}")
 
     # Scrape historical modules
     print("\nScraping historical modules...")
     historical_modules = scrape_historical_modules()
 
+    validate_module_count(historical_modules, "historical modules", min_expected=500)
     print(f"Total historical modules scraped: {len(historical_modules)}")
 
     # Scrape modules in process
     print("\nScraping modules in process...")
     modules_in_process = scrape_modules_in_process()
 
+    # Lower threshold for in-process — this list is naturally smaller and more variable
+    validate_module_count(modules_in_process, "modules in process", min_expected=20)
     print(f"Total modules in process scraped: {len(modules_in_process)}")
 
     # Add security policy and detail URLs to all modules
@@ -727,7 +999,7 @@ def main():
 
     # Create metadata
     metadata = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
         "total_modules": len(modules),
         "total_historical_modules": len(historical_modules),
         "total_modules_in_process": len(modules_in_process),
@@ -799,6 +1071,13 @@ def main():
     }
     save_json(index_data, f"{output_dir}/index.json")
 
+    # Generate OpenAPI spec from actual data schema
+    print("\nGenerating OpenAPI spec...")
+    openapi_spec = generate_openapi_spec(modules, metadata)
+    # Save as YAML-formatted JSON (valid YAML is a superset of JSON)
+    # Using JSON since we already have the json module and it's valid YAML
+    save_json(openapi_spec, "openapi.json")
+
     print("\n" + "=" * 60)
     print("Scraping completed successfully!")
     print("=" * 60)
@@ -809,6 +1088,7 @@ def main():
     if algorithms_map:
         print(f"  - Certificates with algorithms: {len(algorithms_map)}")
     print(f"  - Algorithm source: {algorithm_source}")
+    print(f"  - OpenAPI spec: openapi.json")
     print(f"\nOutput files saved to: {output_dir}/")
 
 
