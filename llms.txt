@@ -1,0 +1,62 @@
+# NIST CMVP Data API
+
+> Static JSON API for NIST Cryptographic Module Validation Program (CMVP) data. Auto-updated weekly.
+
+## What this is
+
+This API provides programmatic access to FIPS 140-2/140-3 validated cryptographic modules from the NIST CMVP program. It tracks active modules, historical (expired/revoked) modules, and modules currently in the validation process.
+
+This is an unofficial project. For authoritative data, see: https://csrc.nist.gov/projects/cryptographic-module-validation-program
+
+## Base URL
+
+https://ethanolivertroy.github.io/NIST-CMVP-API/
+
+## OpenAPI Spec
+
+https://ethanolivertroy.github.io/NIST-CMVP-API/openapi.json
+
+## Endpoints
+
+- GET /api/modules.json - Active validated cryptographic modules (~1,070 modules)
+- GET /api/historical-modules.json - Historical (expired/revoked) modules (~4,100 modules)
+- GET /api/modules-in-process.json - Modules currently in validation (~330 modules)
+- GET /api/algorithms.json - Algorithm usage statistics across all certificates
+- GET /api/metadata.json - Dataset metadata (last updated, counts, data source)
+- GET /api/index.json - API discovery endpoint with feature flags
+
+## Authentication
+
+None required. All endpoints are publicly accessible static JSON files.
+
+## Key fields in module objects
+
+- "Certificate Number" - Unique CMVP certificate identifier (string)
+- "Vendor Name" - Module vendor/manufacturer
+- "Module Name" - Official module name
+- "Module Type" - Software, Hardware, Firmware, or Hybrid
+- "Validation Date" - Date of validation (MM/DD/YYYY)
+- "standard" - FIPS 140-2 or FIPS 140-3
+- "status" - Active, Historical, or Revoked
+- "overall_level" - Security level 1-4 (integer)
+- "sunset_date" - Certificate expiration date
+- "algorithms" - List of approved algorithm categories (e.g., ["AES", "SHA", "RSA"])
+- "algorithms_detailed" - Full algorithm names with parameters
+- "security_policy_url" - Direct link to Security Policy PDF
+- "certificate_detail_url" - Link to NIST certificate detail page
+- "caveat" - Operational caveats/limitations
+- "embodiment" - Module embodiment type (e.g., SingleChip, MultiChip)
+- "lab" - Testing laboratory name
+- "description" - Module description
+
+## Common queries
+
+To find modules by vendor: fetch /api/modules.json, filter where "Vendor Name" contains your search term.
+To find modules by algorithm: fetch /api/modules.json, filter where "algorithms" array includes your algorithm.
+To find modules by standard: fetch /api/modules.json, filter where "standard" equals "FIPS 140-3" or "FIPS 140-2".
+To check if a specific certificate exists: fetch /api/modules.json, find where "Certificate Number" equals your cert number.
+To get algorithm statistics: fetch /api/algorithms.json for counts and certificate lists per algorithm.
+
+## Source
+
+GitHub: https://github.com/ethanolivertroy/NIST-CMVP-API
