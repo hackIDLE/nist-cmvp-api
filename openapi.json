@@ -57,7 +57,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1071 active validated modules with enriched details",
+            "description": "Currently 1077 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -93,7 +93,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 337 modules in process",
+            "description": "Currently 331 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -132,11 +132,11 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-03-18T00:24:39.091440Z"
+            "example": "2026-03-22T04:00:30.734476Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1071
+            "example": 1077
           },
           "total_historical_modules": {
             "type": "integer",
@@ -144,11 +144,11 @@
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 337
+            "example": 331
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 0
+            "example": 378
           },
           "source": {
             "type": "string",
@@ -156,7 +156,7 @@
           },
           "algorithm_source": {
             "type": "string",
-            "example": "none"
+            "example": "crawl4ai"
           },
           "version": {
             "type": "string",
@@ -170,35 +170,71 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5198"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5203"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5198"
+            "example": "5203"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "HP Inc."
+            "example": "OVH SAS"
           },
           "Module Name": {
             "type": "string",
-            "example": "HP Endpoint Security Controller Cryptographic Library"
+            "example": "OVHCloud OKMS Provider based on the OpenSSL FIPS Provider"
           },
           "Module Type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "03/13/2026"
+            "example": "03/21/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5198.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5203.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5198"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5203"
+          },
+          "module_name": {
+            "type": "string",
+            "example": "OVHCloud OKMS Provider based on the OpenSSL FIPS Provider"
+          },
+          "standard": {
+            "type": "string",
+            "example": "FIPS 140-3"
+          },
+          "status": {
+            "type": "string",
+            "example": "Active"
+          },
+          "sunset_date": {
+            "type": "string",
+            "example": "3/10/2030"
+          },
+          "overall_level": {
+            "type": "integer",
+            "example": 1
+          },
+          "caveat": {
+            "type": "string",
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
+          },
+          "module_type": {
+            "type": "string",
+            "example": "Software"
+          },
+          "embodiment": {
+            "type": "string",
+            "example": "MultiChipStand"
+          },
+          "description": {
+            "type": "string",
+            "example": "The OVHCloud OKMS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           }
         }
       },
