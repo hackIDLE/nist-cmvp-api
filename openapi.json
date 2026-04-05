@@ -57,7 +57,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1073 active validated modules with enriched details",
+            "description": "Currently 1079 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -75,7 +75,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4131 historical modules",
+            "description": "Currently 4134 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -93,7 +93,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 333 modules in process",
+            "description": "Currently 331 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -164,27 +164,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-03-29T03:09:34.326514Z"
+            "example": "2026-04-05T03:09:20.803582Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1073
+            "example": 1079
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4131
+            "example": 4134
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 333
+            "example": 331
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 375
+            "example": 377
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5204
+            "example": 5213
           },
           "source": {
             "type": "string",
@@ -206,19 +206,19 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5215"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5215"
+            "example": "5224"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Canonical Ltd."
+            "example": "Koninklijke Philips N.V."
           },
           "Module Name": {
             "type": "string",
-            "example": "Canonical Ltd. Ubuntu 24.04 Kernel Crypto API Cryptographic Module"
+            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
           },
           "Module Type": {
             "type": "string",
@@ -226,19 +226,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "03/27/2026"
+            "example": "04/04/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5215.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5224.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5215"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
           },
           "module_name": {
             "type": "string",
-            "example": "Canonical Ltd. Ubuntu 24.04 Kernel Crypto API Cryptographic Module"
+            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
           },
           "standard": {
             "type": "string",
@@ -250,7 +250,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "3/26/2031"
+            "example": "3/10/2030"
           },
           "overall_level": {
             "type": "integer",
@@ -258,7 +258,7 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
           },
           "module_type": {
             "type": "string",
@@ -270,7 +270,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface."
+            "example": "The Philips FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           },
           "detail_available": {
             "type": "integer",
@@ -341,7 +341,7 @@
           "certificate_number": {
             "type": "string",
             "nullable": false,
-            "example": "5215"
+            "example": "5224"
           },
           "dataset": {
             "type": "string",
@@ -351,32 +351,32 @@
           "generated_at": {
             "type": "string",
             "nullable": false,
-            "example": "2026-03-29T03:09:34.326514Z"
+            "example": "2026-04-05T03:09:20.803582Z"
           },
           "nist_page_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5215"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
           },
           "certificate_detail_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5215"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
           },
           "security_policy_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5215.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5224.pdf"
           },
           "vendor_name": {
             "type": "string",
             "nullable": false,
-            "example": "Canonical Ltd."
+            "example": "Koninklijke Philips N.V."
           },
           "module_name": {
             "type": "string",
             "nullable": false,
-            "example": "Canonical Ltd. Ubuntu 24.04 Kernel Crypto API Cryptographic Module"
+            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
           },
           "standard": {
             "type": "string",
@@ -405,7 +405,7 @@
           "validation_date": {
             "type": "string",
             "nullable": false,
-            "example": "3/27/2026"
+            "example": "4/4/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -413,23 +413,23 @@
               "type": "string"
             },
             "example": [
-              "3/27/2026"
+              "4/4/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
             "nullable": false,
-            "example": "3/26/2031"
+            "example": "3/10/2030"
           },
           "caveat": {
             "type": "string",
             "nullable": false,
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
           },
           "description": {
             "type": "string",
             "nullable": false,
-            "example": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface."
+            "example": "The Philips FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -439,7 +439,7 @@
             "example": [
               "Physical security: N/A",
               "Non-invasive security: N/A",
-              "Mitigation of other attacks: N/A"
+              "Life-cycle assurance: Level 3"
             ]
           },
           "related_files": {
