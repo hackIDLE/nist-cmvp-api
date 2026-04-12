@@ -57,7 +57,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1079 active validated modules with enriched details",
+            "description": "Currently 1086 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -75,7 +75,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4134 historical modules",
+            "description": "Currently 4141 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -164,15 +164,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-05T03:09:20.803582Z"
+            "example": "2026-04-12T03:10:00.961597Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1079
+            "example": 1086
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4134
+            "example": 4141
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -180,11 +180,11 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 377
+            "example": 374
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5213
+            "example": 5227
           },
           "source": {
             "type": "string",
@@ -206,19 +206,19 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5224"
+            "example": "5238"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Koninklijke Philips N.V."
+            "example": "SUSE LLC"
           },
           "Module Name": {
             "type": "string",
-            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
+            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
           },
           "Module Type": {
             "type": "string",
@@ -226,19 +226,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "04/04/2026"
+            "example": "04/10/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5224.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
           },
           "module_name": {
             "type": "string",
-            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
+            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -250,7 +250,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "3/10/2030"
+            "example": "4/9/2031"
           },
           "overall_level": {
             "type": "integer",
@@ -258,7 +258,7 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
+            "example": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "module_type": {
             "type": "string",
@@ -270,7 +270,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The Philips FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
+            "example": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C."
           },
           "detail_available": {
             "type": "integer",
@@ -341,7 +341,7 @@
           "certificate_number": {
             "type": "string",
             "nullable": false,
-            "example": "5224"
+            "example": "5238"
           },
           "dataset": {
             "type": "string",
@@ -351,32 +351,32 @@
           "generated_at": {
             "type": "string",
             "nullable": false,
-            "example": "2026-04-05T03:09:20.803582Z"
+            "example": "2026-04-12T03:10:00.961597Z"
           },
           "nist_page_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
           },
           "certificate_detail_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5224"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
           },
           "security_policy_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5224.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf"
           },
           "vendor_name": {
             "type": "string",
             "nullable": false,
-            "example": "Koninklijke Philips N.V."
+            "example": "SUSE LLC"
           },
           "module_name": {
             "type": "string",
             "nullable": false,
-            "example": "Philips FIPS Provider based on the OpenSSL FIPS Provider"
+            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -405,7 +405,7 @@
           "validation_date": {
             "type": "string",
             "nullable": false,
-            "example": "4/4/2026"
+            "example": "4/10/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -413,23 +413,23 @@
               "type": "string"
             },
             "example": [
-              "4/4/2026"
+              "4/10/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
             "nullable": false,
-            "example": "3/10/2030"
+            "example": "4/9/2031"
           },
           "caveat": {
             "type": "string",
             "nullable": false,
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
+            "example": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "description": {
             "type": "string",
             "nullable": false,
-            "example": "The Philips FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
+            "example": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -438,8 +438,7 @@
             },
             "example": [
               "Physical security: N/A",
-              "Non-invasive security: N/A",
-              "Life-cycle assurance: Level 3"
+              "Non-invasive security: N/A"
             ]
           },
           "related_files": {
