@@ -168,7 +168,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-14T19:40:37.953211Z"
+            "example": "2026-04-14T22:06:10.557502Z"
           },
           "total_modules": {
             "type": "integer",
@@ -276,6 +276,10 @@
             "type": "string",
             "example": "The AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider) is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
+          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -297,10 +301,6 @@
               "AES-CBC- | CS1 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A",
               "AES-CBC- | CS2 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A"
             ]
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
           }
         }
       },
@@ -374,7 +374,7 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-04-14T19:40:37.953211Z"
+            "example": "2026-04-14T22:06:10.557502Z"
           },
           "nist_page_url": {
             "type": "string",
