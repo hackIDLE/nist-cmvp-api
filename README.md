@@ -177,7 +177,7 @@ SKIP_ALGORITHMS=1 python scraper.py
 | `FIRECRAWL_TIMEOUT_MS` | `60000` | Firecrawl scrape timeout in milliseconds |
 | `CMVP_DB_PATH` | - | Path to cmvp.db for algorithm import (fastest override) |
 | `CERT_FETCH_CONCURRENCY` | `16` | Concurrent certificate detail page fetches |
-| `PDF_FETCH_CONCURRENCY` | `8` | Concurrent Security Policy PDF fetches |
+| `PDF_FETCH_CONCURRENCY` | `32` | Concurrent Security Policy PDF or Firecrawl policy fetches |
 | `FULL_REFRESH` | `0` | Set to `1` to bypass reuse of previously generated outputs |
 
 GitHub Actions should provide `FIRECRAWL_API_KEY` as a repository secret. When that secret is absent, the scraper falls back to local Security Policy PDF parsing.

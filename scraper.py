@@ -20,7 +20,7 @@ Environment Variables:
     CMVP_DB_PATH: Path to existing cmvp.db from NIST-CMVP-ReportGen project
                   If set, algorithm data will be imported from this database
     CERT_FETCH_CONCURRENCY: Concurrent certificate detail page fetches (default: 16)
-    PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF fetches (default: 8)
+    PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF or Firecrawl policy fetches (default: 32)
     FULL_REFRESH: Set to "1" to bypass reuse of previously generated outputs
 """
 
@@ -54,7 +54,7 @@ HISTORICAL_SEARCH_PARAMS = "?SearchMode=Advanced&CertificateStatus=Historical&Va
 USER_AGENT = "NIST-CMVP-Data-Scraper/1.0 (GitHub Project)"
 SKIP_ALGORITHMS = os.getenv("SKIP_ALGORITHMS", "0") == "1"
 CERT_FETCH_CONCURRENCY = max(1, int(os.getenv("CERT_FETCH_CONCURRENCY", "16")))
-PDF_FETCH_CONCURRENCY = max(1, int(os.getenv("PDF_FETCH_CONCURRENCY", "8")))
+PDF_FETCH_CONCURRENCY = max(1, int(os.getenv("PDF_FETCH_CONCURRENCY", "32")))
 FULL_REFRESH = os.getenv("FULL_REFRESH", "0") == "1"
 
 # Path to NIST-CMVP-ReportGen database (if available for importing algorithms)
@@ -72,6 +72,10 @@ SECURITY_POLICY_ALGORITHM_SOURCE = "security_policy_pdf"
 CACHEABLE_ALGORITHM_SOURCES = {
     FIRECRAWL_ALGORITHM_SOURCE,
     SECURITY_POLICY_ALGORITHM_SOURCE,
+    # Reuse the currently published algorithm payloads during the Firecrawl
+    # migration so unchanged certificates preserve existing API quality and we
+    # avoid an expensive full backfill on the first run.
+    "crawl4ai",
 }
 CACHE_FINGERPRINT_FIELDS = [
     "Certificate Number",
