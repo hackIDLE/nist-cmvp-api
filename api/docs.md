@@ -1,0 +1,193 @@
+# NIST CMVP API Reference
+
+Static JSON API for NIST Cryptographic Module Validation Program data.
+
+- **1,083** active validated modules
+- **4,146** historical modules
+- **331** modules in process
+- **5,229** certificate detail records
+- **263** certificates with algorithm summaries
+- No auth required, unofficial project, GitHub Pages hosted.
+
+Base URL: `https://hackidle.github.io/nist-cmvp-api/`
+
+## Endpoints
+
+### Index
+`GET api/index.json` — API discovery endpoint with resource paths, documentation links, feature flags, and current counts.
+
+### Metadata
+`GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, and algorithm extraction status.
+
+### Active Modules
+`GET api/modules.json` — All 1,083 active validated modules.
+
+Example response (truncated):
+
+```json
+{
+  "metadata": {
+    "generated_at": "2026-04-14T12:11:01.385018Z",
+    "total_modules": 1083
+  },
+  "modules": [
+    {
+      "Certificate Number": "5240",
+      "Vendor Name": "WatchGuard Technologies, Inc.",
+      "Module Name": "WatchGuard Firebox M4800 and M5800",
+      "Module Type": "Hardware",
+      "Validation Date": "04/13/2026",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "overall_level": 2,
+      "sunset_date": "4/12/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DES",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA",
+        "SSH",
+        "TLS"
+      ],
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
+      "detail_available": true,
+      "description": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking feat...",
+      "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The..."
+    }
+  ]
+}
+```
+
+Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, and detail availability flags.
+
+### Historical Modules
+`GET api/historical-modules.json` — All 4,146 expired or revoked modules for historical lookups.
+
+### Modules In Process
+`GET api/modules-in-process.json` — All 331 modules currently in the validation pipeline.
+
+### Algorithms
+`GET api/algorithms.json` — Algorithm usage summary across 263 certificates in the current build.
+
+Example response (truncated):
+
+```json
+{
+  "total_unique_algorithms": 17,
+  "total_certificate_algorithm_pairs": 2820,
+  "algorithms": {
+    "SHA": {
+      "count": 255,
+      "certificates": [
+        5240,
+        5238,
+        5237,
+        5236,
+        5235
+      ]
+    }
+  }
+}
+```
+
+### Certificate Details
+`GET api/certificates/{certificate}.json` — Structured detail record for a specific certificate, including vendor/contact data, related files, validation history, and extracted algorithms when available.
+
+Example response (truncated):
+
+```json
+{
+  "metadata": {
+    "generated_at": "2026-04-14T12:11:01.385018Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
+  },
+  "certificate": {
+    "certificate_number": "5240",
+    "dataset": "active",
+    "vendor_name": "WatchGuard Technologies, Inc.",
+    "module_name": "WatchGuard Firebox M4800 and M5800",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "overall_level": 2,
+    "validation_dates": [
+      "4/13/2026"
+    ],
+    "sunset_date": "4/12/2031",
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The...",
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "vendor": {
+      "name": "WatchGuard Technologies, Inc.",
+      "website_url": "http://www.watchguard.com",
+      "contact_email": "Peter.Eng@watchguard.com"
+    },
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "4/13/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA"
+    ]
+  }
+}
+```
+
+Current build contains 5,229 certificate detail records across active and historical datasets.
+
+## Workflows
+
+### Discover the API surface
+```
+GET api/index.json → endpoints, docs links, feature flags, counts
+GET api/metadata.json → freshness and scrape provenance
+```
+
+### Find a module and pull the full certificate record
+```
+GET api/modules.json → locate the certificate number or vendor/module pair
+GET api/certificates/5240.json → full detail record for that certificate
+```
+
+### Check validation status and history for a certificate
+```
+GET api/certificates/5240.json → status, sunset_date, validation_history, related_files
+```
+
+### Explore algorithm coverage
+```
+GET api/algorithms.json → counts and certificate lists per algorithm
+GET api/modules.json → filter module rows by algorithms[] entries
+```
+
+## Caveats
+
+- **Unofficial:** This project mirrors public CMVP data and is not affiliated with NIST. Use `https://csrc.nist.gov/projects/cryptographic-module-validation-program` for authoritative source material.
+- **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
+- **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
+- **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 263 certificates that had algorithm data in this build.

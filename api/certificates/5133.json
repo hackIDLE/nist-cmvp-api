@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133"
   },
   "certificate": {
     "certificate_number": "5133",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf",
@@ -60,8 +60,18 @@
       "AES",
       "DRBG",
       "HMAC",
-      "KDF",
-      "SHA"
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "3749 | AES(NIST SP 800-38E2) | XTS | 256-bits | Encryption of user data within storage application only",
+      "3757 | AES(FIPS 1973NIST SP 800-38A,NIST SP 800-38B4) | ECBCTR | 128-bit,256-bit | Block cipher basis of CTR-DRBG for encryption/decryption of the DEK",
+      "3757 | CMAC | AES | 128-bits | CO/User authentication",
+      "1032 | DRBG(NIST SP 800-90A,NIST SP-800-1335) | AES-CTR | 256-bits | Random bit generator for the generation of encryption keys and salts",
+      "-- | ENT(P)(NIST SP-800-90B) | - | 384-bits | Entropy source used to seed the DRBG",
+      "2459 | HMAC(FIPS 198-16) | SHA-1 | 160-bits | Algorithmic basis of PBKDFv2",
+      "A777 | PBKDFv2(NIST SP 800-1327) | HMAC-SHA-1 | 1 in 10,000,000(~23 bits) | Derivation of the KEK. Conforms to FIPS 140-3 Implementation Guidance (IG)D.N:the module supports option 2a as documented in SP 800-132§5.4",
+      "3127 | SHS(FIPS 180-48) | SHA-1 | N/A | Primitive within HMAC-SHA-1",
+      "CKG | NIST SP-800-1339 | Per Section4 | The unmodified output fromSP800-90A DRBG(256bits) | The unmodified output of theDRBG is used for generating symmetric keys"
     ]
   }
 }

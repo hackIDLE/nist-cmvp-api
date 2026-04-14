@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963"
   },
   "certificate": {
     "certificate_number": "4963",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4963.pdf",
@@ -57,6 +57,51 @@
       "contact_email": "Mike.Murphy@ultra-3eti.com",
       "contact_phone": "301-944-1267"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A3316 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CBC | A3318 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CCM | A3316 | KeyLength-128,192,256 | SP800-38C",
+      "AES-CCM | A3318 | KeyLength-128,192,256 | SP800-38C",
+      "AES-ECB | A3316 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-GCM | A3316 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP800-38D",
+      "AES-GCM | A3318 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP800-38D",
+      "Counter DRBG | A3316 | Prediction Resistance-No,YesMode-AES-128,AES-192,AES-256Derivation Function Enabled-No | SP800-90ARev.1",
+      "ECDSASigGen(FIPS186-4) | A3316 | Component-NoCurve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512,SHA3-256,SHA3-384,SHA3-512 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A3316 | Component - NoCurve - P-256, P-384, P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512,SHA3-256,SHA3-384,SHA3-512 | FIPS 186-4",
+      "HMAC-SHA-1 | A3316 | Key Length - Key Length:128 | FIPS 198-1",
+      "HMAC-SHA2-256 | A3316 | Key Length - Key Length:128 | FIPS 198-1",
+      "HMAC-SHA2-256 | A3318 | Key Length - Key Length:128 | FIPS 198-1",
+      "HMAC-SHA2-384 | A3316 | Key Length - Key Length:192 | FIPS 198-1",
+      "HMAC-SHA2-384 | A3318 | Key Length - Key Length:192 | FIPS 198-1",
+      "HMAC-SHA2-512 | A3316 | Key Length - Key Length:256 | FIPS 198-1",
+      "HMAC-SHA2-512 | A3318 | Key Length - Key Length:256 | FIPS 198-1",
+      "KAS-ECC-SSCSp800-56Ar3 | A3316 | Domain Parameter Generation Methods-P-256Scheme ephemeralUnified-KAS Role initiator, responder | SP 800-56ARev.3",
+      "KAS-FFC-SSCSp800-56Ar3 | A3316 | Domain Parameter Generation Methods-FB,FC,ffdhe2048,ffdhe3072,ffdhe4096,ffdhe6144,MODP-2048Scheme dhEphem-KAS Role initiator, responder | SP 800-56ARev.3",
+      "KDF IKEv2(CVL) | A3316 | Diffie-Hellman Shared Secret Length-Diffie-Hellman Shared Secret Length:224-8192Increment8Derived Keying Material Length-Derived Keying Material Length:1024-16384 Increment8Derived Keying Material Length:384-16384Increment8Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
+      "KDF SNMP(CVL) | A3316 | Password Length-Password Length:64,8192 | SP 800-135Rev.1",
+      "RSA KeyGen(FIPS186-4) | A3316 | Key Generation Mode-B.3.3Modulo-2048,3072Primality Tests-Table C.2Private Key Format-Standard | FIPS 186-4",
+      "RSA SigGen(FIPS186-4) | A3316 | Signature Type-PKCS1.5Modulo-2048,3072 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A3316 | Signature Type-PKCS1.5Modulo-1024,2048,3072 | FIPS 186-4",
+      "SHA-1 | A3316 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-256 | A3316 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-256 | A3318 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-384 | A3316 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-384 | A3318 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-512 | A3316 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-512 | A3318 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
+      "TLSv1.2KDFRFC7627(CVL) | A3316 | Hash Algorithm-SHA2-256,SHA2-384 | SP800-135Rev.1",
+      "TLSv1.3KDF(CVL) | A3316 | HMAC Algorithm-SHA2-256,SHA2-384KDFRunning Modes-DHE,PSK,PSK-DHE | SP800-135Rev.1"
+    ]
   }
 }

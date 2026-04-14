@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4882"
   },
   "certificate": {
     "certificate_number": "4882",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4882",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4882",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4882.pdf",
@@ -56,6 +56,16 @@
       "contact_email": "bshelton@juniper.net",
       "contact_phone": "408-745-2000"
     },
-    "algorithms": []
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "HMAC DRBG | A3337 | Prediction Resistance - Yes",
+      "Mode - SHA2-256 | SP 800-90A",
+      "HMAC-SHA2-",
+      "SHA2-256 | A3337 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4"
+    ]
   }
 }

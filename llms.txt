@@ -1,62 +1,28 @@
-# NIST CMVP Data API
+# NIST CMVP API
 
-> Static JSON API for NIST Cryptographic Module Validation Program (CMVP) data. Auto-updated weekly.
+> Static JSON API for NIST Cryptographic Module Validation Program data. 1,083 active modules, 4,146 historical modules, 331 modules in process, and 5,229 certificate detail records. No auth required.
 
-## What this is
+Base URL: https://hackidle.github.io/nist-cmvp-api/
 
-This API provides programmatic access to FIPS 140-2/140-3 validated cryptographic modules from the NIST CMVP program. It tracks active modules, historical (expired/revoked) modules, and modules currently in the validation process.
+All data is static JSON. Append paths to the base URL.
 
-This is an unofficial project. For authoritative data, see: https://csrc.nist.gov/projects/cryptographic-module-validation-program
+- `api/index.json` — API discovery endpoint with endpoint and docs links.
+- `api/modules.json` — 1,083 active validated modules.
+- `api/historical-modules.json` — 4,146 historical modules.
+- `api/modules-in-process.json` — 331 modules currently in process.
+- `api/metadata.json` — generation timestamp, counts, and source URLs.
+- `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.
+- `api/algorithms.json` — algorithm coverage summary across 263 certificates.
 
-## Base URL
+## Documentation
 
-https://hackidle.github.io/nist-cmvp-api/
+- [API Reference](api/docs.md): endpoint reference with examples and workflows.
+- [Complete Documentation](llms-full.txt): fuller single-file agent reference.
+- [OpenAPI](openapi.json): OpenAPI 3.0.3 schema for the JSON endpoints.
 
-## OpenAPI Spec
+## Caveats
 
-https://hackidle.github.io/nist-cmvp-api/openapi.json
-
-## Endpoints
-
-- GET /api/modules.json - Active validated cryptographic modules (~1,070 modules)
-- GET /api/historical-modules.json - Historical (expired/revoked) modules (~4,100 modules)
-- GET /api/modules-in-process.json - Modules currently in validation (~330 modules)
-- GET /api/algorithms.json - Algorithm usage statistics across all certificates
-- GET /api/metadata.json - Dataset metadata (last updated, counts, data source)
-- GET /api/index.json - API discovery endpoint with feature flags
-
-## Authentication
-
-None required. All endpoints are publicly accessible static JSON files.
-
-## Key fields in module objects
-
-- "Certificate Number" - Unique CMVP certificate identifier (string)
-- "Vendor Name" - Module vendor/manufacturer
-- "Module Name" - Official module name
-- "Module Type" - Software, Hardware, Firmware, or Hybrid
-- "Validation Date" - Date of validation (MM/DD/YYYY)
-- "standard" - FIPS 140-2 or FIPS 140-3
-- "status" - Active, Historical, or Revoked
-- "overall_level" - Security level 1-4 (integer)
-- "sunset_date" - Certificate expiration date
-- "algorithms" - List of approved algorithm categories (e.g., ["AES", "SHA", "RSA"])
-- "algorithms_detailed" - Full algorithm names with parameters
-- "security_policy_url" - Direct link to Security Policy PDF
-- "certificate_detail_url" - Link to NIST certificate detail page
-- "caveat" - Operational caveats/limitations
-- "embodiment" - Module embodiment type (e.g., SingleChip, MultiChip)
-- "lab" - Testing laboratory name
-- "description" - Module description
-
-## Common queries
-
-To find modules by vendor: fetch /api/modules.json, filter where "Vendor Name" contains your search term.
-To find modules by algorithm: fetch /api/modules.json, filter where "algorithms" array includes your algorithm.
-To find modules by standard: fetch /api/modules.json, filter where "standard" equals "FIPS 140-3" or "FIPS 140-2".
-To check if a specific certificate exists: fetch /api/modules.json, find where "Certificate Number" equals your cert number.
-To get algorithm statistics: fetch /api/algorithms.json for counts and certificate lists per algorithm.
-
-## Source
-
-GitHub: https://github.com/hackIDLE/nist-cmvp-api
+- Unofficial mirror of public CMVP data. Use https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative source material.
+- Static JSON only. Filter client-side after downloading the relevant resource.
+- Browser JavaScript on another origin may need a proxy because GitHub Pages does not send permissive CORS headers.
+- `api/algorithms.json` covers 263 certificates in the current build.

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4938"
   },
   "certificate": {
     "certificate_number": "4938",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4938",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4938",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4938.pdf",
@@ -57,6 +57,20 @@
       "contact_email": "david_lau@ampex.com",
       "contact_phone": "650-367-3538"
     },
-    "algorithms": []
+    "algorithms": [
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "ECDSA SigVer(FIPS186-4) | A2921 | Curve-P-384Hash Algorithm-SHA2-384 | FIPS 186-4",
+      "Hash DRBG | A2921 | Prediction Resistance - No Mode-SHA2-256 | SP 800-90A Rev.1",
+      "HMAC-SHA2-384 | A2921 | Key Length - Key Length: 256 | FIPS 198-1",
+      "KDF SP800-108 | A2921 | KDF Mode-CounterSupported Lengths-Supported Lengths:256 | SP 800-108 Rev.1",
+      "SHA2-256 | A2921 | Message Length - Message Length: 256-2048 Increment 128 | FIPS 180-4",
+      "SHA2-384 | A2921 | Message Length - Message Length: 256-2048 Increment 128 | FIPS 180-4"
+    ]
   }
 }

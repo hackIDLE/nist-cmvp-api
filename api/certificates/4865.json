@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865"
   },
   "certificate": {
     "certificate_number": "4865",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4865.pdf",
@@ -56,6 +56,58 @@
       "contact_email": "vcf.fips@broadcom.com",
       "contact_phone": "877-486-9273"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4971 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CBC-CS3 | A4971 | Direction-decrypt, encrypt KeyLength-128,192,256 | SP 800-38A",
+      "AES-CCM | A4971 | KeyLength-128,192,256 | SP 800-38C",
+      "AES-CFB128 | A4971 | Direction-Decrypt,Encrypt KeyLength-128,192,256 | SP 800-38A",
+      "AES-CMAC | A4971 | Direction-Generation,Verification KeyLength-128,192,256 | SP 800-38B",
+      "AES-CTR | A4971 | Direction-Decrypt,Encrypt KeyLength-128,192,256 | SP 800-38A",
+      "AES-ECB | A4971 | Direction-Decrypt,Encrypt KeyLength-128,192,256 | SP 800-38A",
+      "AES-GCM | A4971 | Direction-Decrypt,Encrypt IV Generation-External IV Generation Mode-8.2.2 KeyLength-128,192,256 | SP 800-38D",
+      "AES-XTS Testing Revision 2.0 | A4971 | Direction-Decrypt,Encrypt KeyLength-128,256 | SP 800-38E",
+      "Counter DRBG | A4971 | Prediction Resistance-No,Yes Mode-AES-128,AES-192,AES-256 Derivation Function Enabled-Yes | SP 800-90A Rev.1",
+      "ECDSA KeyGen(FIPS186-4) | A4971 | Curve-P-256,P-384 Secret Generation Mode-Extra Bits | FIPS 186-4",
+      "ECDSA KeyVer(FIPS186-4) | A4971 | Curve-P-256,P-384 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A4971 | Curve-P-256,P-384 Hash Algorithm-SHA-1,SHA2-224,SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "Hash DRBG | A4971 | Prediction Resistance - No, Yes Mode - SHA-1,SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "HMAC DRBG | A4971 | Prediction Resistance - No, Yes Mode - SHA-1,SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "HMAC-SHA-1 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-224 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA3-224 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA3-256 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA3-384 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "HMAC-SHA3-512 | A4971 | Key Length - Key Length:128-2048 Increment8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A4971 | Domain Parameter Generation Methods-P-256,P-384 Scheme ephemeralUnified-KAS Role - initiator, responder | SP 800-56A Rev.3",
+      "RSA SigGen(FIPS186-4) | A4971 | Signature Type-PKCS1.5 Modulo-2048,3072,4096 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A4971 | Signature Type-PKCS1.5 Modulo-2048,3072,4096 | FIPS 186-4",
+      "SHA-1 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-224 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-256 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-384 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-512 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA3-224 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 202",
+      "SHA3-256 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 202",
+      "SHA3-384 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 202",
+      "SHA3-512 | A4971 | Message Length - Message Length:0-65536 Increment8 | FIPS 202",
+      "AES-GCM | A4972 | Direction- Decrypt, EncryptIV Generation- External, InternalIV Generation Mode-8.2.1,8.2.2Key Length-128,192,256 | SP 800-38D",
+      "AES CBC-MAC(SP800-38C) | CBC-MAC as an authentication mode outside of theCCM context.",
+      "AES GCM | Encryption(ExternalIV)",
+      "RSA PKCS1v1.5 | Key Transport",
+      "AES using modes usingRFC3686(CTR) | Encryptionand Decryption",
+      "AES using modes usingRFC4543(GCM)和RFC4309(CCM) | Authenticated Encryptionand Decryption"
+    ]
   }
 }

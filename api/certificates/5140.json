@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140"
   },
   "certificate": {
     "certificate_number": "5140",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf",
@@ -64,12 +64,30 @@
     },
     "algorithms": [
       "AES",
+      "DRBG",
       "ECDSA",
       "HMAC",
       "KAS",
       "KDF",
       "RSA",
       "SHA"
+    ],
+    "algorithms_detailed": [
+      "A3268 AES-CBC FIPS 197 NIST SP 800-38A CBC Key Length: 256-bit Strength: 256 bits Prerequisite for KW Data Encryption/Decryption",
+      "A3268 AES-ECB FIPS 197 NIST SP 800-38A ECB Key Length: 256-bit Strength: 256 bits Prerequisite for KW Data Encryption/Decryption",
+      "A3268 AES-KW FIPS 197 NIST SP 800-38F KW Key Length: 256-bit Strength: 256 DEK, CO and DEK, U Encryption/Decryption",
+      "A3268 AES-XTS¹ FIPS 197 NIST SP 800-38E XTS Key Length: 256-bit Strength: 256 Mass-Storage Data Encryption/Decryption",
+      "A3268 ECDSA KeyGen FIPS 186-5 Key Generation Curve: P-256 Strength: 128 bits Key Generation of KAS keys",
+      "A3268 ECDSA KeyVer FIPS 186-4 Key Verification Curve: P-256 Strength: 128 bits Key Verification of KAS keys",
+      "A3268 HMAC-SHA2-256 FIPS 198-1 SHA2-256 Key Length: 256-bit Strength: 256 Prerequisite for KDA Message Authentication",
+      "A3268 HMAC DRBG NIST SP 800-90A HMAC-SHA2-256 Security strength: 256 bits Deterministic Random Bit Generation",
+      "A3268 KAS-ECC-SSC NIST SP 800-56Ar3 ECC CDH C(2e, 0s) Curve: P-256 Strength: 128 bits Key Agreement Shared Secret calculation",
+      "A3268 KDA NIST SP 800-56Cr2 Two-Step KDF (HMAC-SHA2-256) Derived Key Length: 256 bits Shared Secret Length: 256 bits Key derivation as part of KAS",
+      "A3268 PBKDF² NIST SP 800-132 (option 2A) HMAC-SHA2-256 Password length: 8 to 136 bytes (refer to Section 4.1) Salt Length: 256 Reriving KEK,CO, KEK,U, KEK,R",
+      "A3268 RSA SigVer (PKCS1 v1.5) FIPS 186-4 Digital Signature Verification Module: 2048 Strength: 128 bits Digital Signature Verification",
+      "¹ AES XTS was designed for the cryptographic protection of data on storage devices per NIST SP 800-38E. It was not designed for other purposes, such as the encryption of data in transit.",
+      "² The module implements PBKDF in conformance with NIST SP 800132 and FIPS IG D.N. Specifically, the module implements Option 2a from Section 5.4 to generate the Key Encryption Key (KEK) responsible for protecting the Data Encryption Key using AES KW (Cert. #3268). The module implements an iteration counter equal to 1024 bits which is greater than the minimum recommendation documented within NIST SP 800-132 - Section 5.2. This is also justified by the maximum limit enforced on password retry attempts (Max = 10). | Non-Proprietary Security Policy for DataLocker, Inc., Sentry 5 Encrypted USB Flash Drive | This document may be freely reproduced and distributed, but only in its entirety and without modification. | * * *",
+      "A3268 SHA2-256 FIPS 180-4 SHA2-256 Strength: 128 bits Prerequisite for HMAC Message Digest | 2.5.2 VENDOR AFFIRMED ALGORITHMS | The module supports the following vendor affirmed algorithms. | CKG Key Type: Symmetric Crypto Library FW v2.00 NIST SP 800-133r2 Sections 4 | 5.1 and 6.1 | 2.5.3 NON-APPROVED, ALLOWED ALGORITHMS | The module does not support non-approved algorithms. | N/A N/A N/A N/A | 2.5.4 NON-APPROVED, ALLOWED ALGORITHMS WITH NO SECURITY CLAIMED | The module does not support non-approved algorithms. | N/A N/A N/A | 2.5.5 NON-APPROVED, NOT ALLOWED ALGORITHMS | The module does not support non-approved algorithms. | N/A N/A | Non-Proprietary Security Policy for DataLocker, Inc., Sentry 5 Encrypted USB Flash Drive | This document may be freely reproduced and distributed, but only in its entirety and without modification. | * * *"
     ]
   }
 }

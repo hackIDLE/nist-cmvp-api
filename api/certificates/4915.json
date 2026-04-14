@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4915"
   },
   "certificate": {
     "certificate_number": "4915",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4915",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4915",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4915.pdf",
@@ -55,6 +55,22 @@
       "contact_email": "FIPS@amd.com",
       "contact_phone": "1408-749-4000"
     },
-    "algorithms": []
+    "algorithms": [
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "A4649 | RSA \\[FIPS186-4\\] | PSS with SHA2-384 | 4096 | Digital signatureverification",
+      "A4649 | SHA \\[FIPS180-4\\] | SHA2-384 | N/A | Message digest",
+      "DigitalSignatureVerification | Verify a digitalsignature | \"FIPS mode:on\" | Message,public key,signature | Pass/fail | RSA PSSusing SHA2-384 | CO | RSA publickey: W, E",
+      "Self-test | Initiate on-demand self-tests by reset | None | N/A | Pass/fail | SHA2-384RSA PSS | CO | N/A",
+      "RSA publickey | Public key used forRSA signatureverification | 4096 bits | 150 bits | Public key | N/A | N/A",
+      "RSA public key | Digital Signature Verification | API input parameters No output | RAM | While the module is operational | Remove power from the SoC | PSP | None",
+      "SHA2-384 | Default | N/A | Messagedigest | Firmwareintegrity | Modulebecomesoperational | Performed onfips\\_module.bin",
+      "SHA2-384 | Default | 32-bitmessage | KAT | CAST | Module isoperational | Messagedigest | Moduleinitialization",
+      "RSA | Default | PSS using4096-bit keySHA2-384 | KAT | CAST | Signatureverification | Moduleinitialization",
+      "Error State | The moduleimmediatelystops executing | SHA2-384 self-testerror | Reset of themodule | Error code AA0000FB",
+      "RSA self-test error | Error code AA0000FC"
+    ]
   }
 }

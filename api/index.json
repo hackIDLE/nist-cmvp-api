@@ -1,7 +1,9 @@
 {
-  "name": "NIST CMVP Data API",
-  "description": "Static API for NIST Cryptographic Module Validation Program validated modules with algorithm information and security policy links",
+  "name": "NIST CMVP API",
+  "description": "Static JSON API for NIST Cryptographic Module Validation Program data with certificate detail records and generated agent-facing documentation",
+  "base_url": "https://hackidle.github.io/nist-cmvp-api",
   "endpoints": {
+    "index": "/api/index.json",
     "modules": "/api/modules.json",
     "historical_modules": "/api/historical-modules.json",
     "modules_in_process": "/api/modules-in-process.json",
@@ -9,16 +11,27 @@
     "certificate_detail_template": "/api/certificates/{certificate}.json",
     "algorithms": "/api/algorithms.json"
   },
-  "last_updated": "2026-04-14T03:31:23.958455Z",
-  "total_modules": 1087,
-  "total_historical_modules": 4142,
+  "documentation": {
+    "homepage": "/",
+    "llms_txt": "/llms.txt",
+    "llms_full_txt": "/llms-full.txt",
+    "api_docs": "/api/docs.md",
+    "openapi": "/openapi.json"
+  },
+  "last_updated": "2026-04-14T12:11:01.385018Z",
+  "total_modules": 1083,
+  "total_historical_modules": 4146,
   "total_modules_in_process": 331,
-  "total_certificates_with_algorithms": 374,
+  "total_certificates_with_algorithms": 263,
   "total_certificate_details": 5229,
   "features": {
     "security_policy_urls": true,
     "certificate_detail_urls": true,
     "algorithm_extraction": true,
-    "certificate_detail_records": true
+    "certificate_detail_records": true,
+    "llms_txt": true,
+    "llms_full_txt": true,
+    "markdown_api_docs": true,
+    "openapi_spec": true
   }
 }

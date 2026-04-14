@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086"
   },
   "certificate": {
     "certificate_number": "5086",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5086.pdf",
@@ -56,6 +56,38 @@
       "contact_email": "hirotoshi.akaike@hitachivantara.com",
       "contact_phone": "81-45-870-1533"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5827,A5828,A5829,A5830,A5831,A5834 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-CBC-CS3 | A5827,A5828,A5829,A5830,A5831,A5833 | Direction-decrypt,encryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CMAC | A5827,A5828,A5829,A5830,A5831,A5833 | Direction-Generation,VerificationKeyLength-128,192,256 | SP800-38B",
+      "AES-CTR | A5827,A5828,A5829,A5830,A5831,A5834 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-ECB | A5827,A5828,A5829,A5830,A5831,A5834 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-KW | A5827,A5828,A5830,A5831 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38F",
+      "AES-XTS TestingRevision2.0 | A5827,A5828,A5829,A5830,A5831,A5834 | Direction-Decrypt,EncryptKeyLength-128,256 | SP800-38E",
+      "HMAC-SHA-1 | A5830,A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA2-256 | A5828,A5830,A5831,A5833 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA2-384 | A5828,A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA2-512 | A5828,A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA3-256 | A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA3-384 | A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "HMAC-SHA3-512 | A5831 | Key Length-Key Length:112-524288Increment8 | FIPS198-1",
+      "SHA-1 | A5830,A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS180-4",
+      "SHA2-256 | A5828,A5830,A5831,A5832,A5833 | Message Length-MessageLength:0-65536Increment8 | FIPS180-4",
+      "SHA2-384 | A5828,A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS180-4",
+      "SHA2-512 | A5828,A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS180-4",
+      "SHA3-256 | A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS202",
+      "SHA3-384 | A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS202",
+      "SHA3-512 | A5831 | Message Length-MessageLength:0-65536Increment8 | FIPS202",
+      "RSA-sigGen(pkcs1pad(rsa-generic,sha256/sha384/sha512)) | Used for RSA signature generation.",
+      "RSA-sigVer(pkcs1pad(rsa-generic,sha256/sha384/sha512)) | Used for RSA signature verification.",
+      "RSA-signaturePrimitive(rsa-generic) | Used for RSA signature primitive operation.",
+      "RSA-decryptionPrimitive(rsa-generic) | Used for RSA decrypt primitive operation."
+    ]
   }
 }

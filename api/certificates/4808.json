@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808"
   },
   "certificate": {
     "certificate_number": "4808",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf",
@@ -62,12 +62,45 @@
     },
     "algorithms": [
       "AES",
-      "DRBG",
       "ECDSA",
       "HMAC",
       "KAS",
       "RSA",
       "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4551,A4554,A4557,A4558,A4561,A4563,A4566 | Key size:128,192,256 bits | Amazon Linux 2023 on EC2 c7g.metal Amazon Linux 2023 on EC2 c6i.metal SnowOS 1.0 on AWS Snowball SnowOS 1.0 on AWS Snowblade SnowOS 1.0 on AWS Snowcone | FIPS 197SP 800-38A",
+      "AES-CBC-CS3 | A4551,A4554,A4557,A4558,A4561,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38AAddendum",
+      "AES-CCM | A4551,A4554,A4557,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38C",
+      "AES-CFB128 | A4551,A4554,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38A",
+      "AES-CMAC | A4551,A4554,A4557,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38B",
+      "AES-CTR | A4551,A4554,A4557,A4558,A4561,A4563,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38A",
+      "AES-ECB | A4551,A4552,A4553,A4554,A4555,A4556,A4557,A4558,A4559,A4560,A4561,A4563,A4564,A4565,A4566,A4567,A4568 | Key size:128,192,256 bits | FIPS 197SP 800-38A",
+      "AES-GCM | A4551,A4552,A4553,A4554,A4555,A4556,A4558,A4559,A4560,A4563,A4564,A4565,A4566,A4567,A4568 | Key size:128,192,256 bitsIV Generation:Internal(encryption)&External decryption)IV Generation Mode:8.2.2 | FIPS 197SP 800-38D",
+      "AES-GMAC | A4551,A4554,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38D",
+      "AES-KW | A4551,A4554,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38F",
+      "AES-OFB | A4551,A4554,A4558,A4566 | Key size:128,192,256 bits | FIPS 197SP 800-38A",
+      "AES-XTS | A4551,A4554,A4557,A4558,A4561,A4563,A4566 | Key size:128,256 bits | FIPS 197SP 800-38E",
+      "CTR\\_DRBG | A4551,A4552,A4553,A4554,A4555,A4556,A4558,A4559,A4560,A4563,A4564,A4565,A4566,A4567,A4568 | Size:AES-128,AES-192,AES-256Without derivation functionWith/without prediction resistance | SP 800-90Ar1",
+      "ECDSA | A4551 | Key Pair GenerationMode:Testing Candidates(Appendix B.4.2)Curves:P-256,P-384 | FIPS 186-4",
+      "Hash\\_DRBG | A4551,A4569,A4570,A4571 | Hashes:SHA-1,SHA-256,SHA-512With/without prediction resistance | SP 800-90Ar1",
+      "HMAC\\_DRBG | A4551,A4569,A4570,A4571 | Hashes:SHA-1,SHA-256,SHA-512With/without prediction resistance | SP 800-90Ar1",
+      "HMAC | A4551,A4557,A4569,A4570,A4571 | SHA-1Key size:112-524288bits | FIPS 198-1FIPS 180-4",
+      "A4551,A4557,A4561,A4562,A4569,A4570,A4571 | SHA-224,SHA-256Key size:112-524288bits | FIPS 198-1FIPS 180-4",
+      "A4551,A4557,A4562,A4569,A4570,A4571 | SHA-384,SHA-512Key size:112-524288bits | FIPS 198-1FIPS 180-4",
+      "A4551,A4557 | SHA3-224,SHA3-256,SHA3-384,SHA3-512Key size:112-524288bits | FIPS 198-1FIPS 202",
+      "KAS-ECC-SSC | A4551 | Scheme:Ephemeral Unified ModelRoles;initiator,responderCurves:P-256,P-384 | SP 800-56Ar3",
+      "KAS-FFC-SSC | A4551 | Scheme:dhEphemRoles;initiator,responderGroups:ffdhe2048,ffdhe3072,ffdhe4096,ffdhe6144,ffdhe8192 | FIPS 186-4",
+      "RSA | A4551,A4569,A4570,A4571 | Signature VerificationPadding:PKCS#1v1.5Hashes:SHA-1,SHA-224,SHA-256,SHA-384,SHA-512Modulus:4096 bits | FIPS 186-4",
+      "SHA-1 | A4551,A4557,A4569,A4570,A4571 | N/A | FIPS 180-4",
+      "SHA-224 | A4551,A4557,A4561,A4562,A4569,A4570,A4571 | N/A",
+      "SHA-256 | A4551,A4557,A4562,A4569,A4570,A4571 | N/A",
+      "SHA-384 | A4551,A4557,A4562,A4569,A4570,A4571 | N/A",
+      "SHA-512 | FIPS 202",
+      "SHA3-224 | A4551,A4557 | N/A",
+      "SHA3-256",
+      "SHA3-384",
+      "SHA3-512"
     ]
   }
 }

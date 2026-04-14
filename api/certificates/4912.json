@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4912"
   },
   "certificate": {
     "certificate_number": "4912",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4912",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4912",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4912.pdf",
@@ -64,15 +64,40 @@
     },
     "algorithms": [
       "AES",
+      "DES",
       "DRBG",
-      "DSA",
       "ECDSA",
       "HMAC",
       "KAS",
-      "KDF",
       "KTS",
       "RSA",
       "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES | A6047 | Modes:CBC,CFB8,CFB128,CTR,ECB,FF1,OFBKey sizes:128,192,256 bits | AES\\[FIPS197,SP800-38A\\],AESFF1Format PreservingEncryption\\[SP800-38G\\] | Encryption,Decryption",
+      "AES CBCCiphertextStealing(CS) | A6047 | Modes:CBC-CS1,CBC-CS2,CBC-CS3Key sizes:128,192,256bits | \\[Addendum to SP800-38A,Oct2010\\] | Encryption,Decryption",
+      "AES CCM | A6047 | Key sizes:128,192,256 bits | \\[SP 800-38C\\] | Generation,Authentication",
+      "AES CMAC | A6047 | Key sizes:128,192,256 bits | \\[SP 800-38B\\] | Generation,Authentication",
+      "AES GCM/GMAC1 | A6047 | Key sizes:128,192,256 bits | \\[SP 800-38D\\] | Generation,Authentication",
+      "AES KW,KWP(KTS:Key Wrapping UsingAES2) | A6047 | Modes:AES KW,KWPKey sizes:128,192,256 bits(key establishment methodology providing128,192 or256bits of encryption strength) | \\[SP 800-38F\\] | Key Wrapping",
+      "DRBG,Counter DRBG | A6047 | AES128,AES192,AES256 | \\[SP 800-90Ar1\\] | Random Bit Generation",
+      "DRBG,Hash DRBG | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA2-512,SHA-512/224,SHA2-512/256 | \\[SP 800-90Ar1\\] | Random Bit Generation",
+      "DRBG,HMAC DRBG | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA2-512,SHA-512/224,SHA2-512/256 | \\[SP 800-90Ar1\\] | Random Bit Generation",
+      "ECDSA | A6047 | Curves/Key sizes:P-224,P-256,P-384,P-521,K-233,K-283,K-409,K-571,B-233,B-283,B-409,B-571 | \\[FIPS 186-5\\] | Key Generation,Key Verification,SignatureGeneration,SignatureVerification",
+      "ECDSA | A6047 | Curves/Key sizes:P-192,K-163,B-1635 | \\[FIPS 186-4\\] | Key Verification,SignatureVerification",
+      "HMAC | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA-512,SHA-512/224,SHA-512/256,SHA3-224,SHA3-256,SHA3-384,SHA3-512 | \\[FIPS 198-1\\] | Generation,Authentication",
+      "KAS-ECC6 | A6047 | DomainParameterGenerationMethods/Schemes:P-224,P-256,P-384,P-521,K-233,K-283,K-409,K-571,B-233,B-283,B-409,B-571ephemeralUnified,fullMqv,fullUnified,onePassDh,onePassMqv,onePassUnified,staticUnifiedCurves specified above providingbetween112and256bitsofencryptionstrength | \\[SP800-56Ar3\\] | Key Agreement",
+      "HMAC-RIPEMD128 | RIPEMD128 HMAC",
+      "HMAC-RIPEMD160 | RIPEMD160 HMAC",
+      "HMAC-RIPEMD256 | RIPEMD256 HMAC",
+      "HMAC-RIPEMD320 | RIPEMD320 HMAC",
+      "HMAC-TIGER | TIGER HMAC",
+      "HMAC-WHIRLPOOL | WHIRLPOOL HMAC",
+      "KAS14using SHA-512/224orSHA-512/256(non-compliant) | Key Agreement using SHA-512/224and SHA-512/256based KDFs",
+      "KBKDFusing SHA-512/224orSHA-512/256(non-compliant) | KBKDF2using the PRFs SHA-512/224and SHA-512/256",
+      "RSA(non-compliant15) | Non-compliantRSA signature schemes",
+      "SHACAL-2 | SHACAL2 block cipher",
+      "Triple-DES | Triple-DES cipher"
     ]
   }
 }

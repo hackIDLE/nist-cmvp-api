@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134"
   },
   "certificate": {
     "certificate_number": "5134",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5134.pdf",
@@ -57,7 +57,43 @@
       "contact_phone": "408-745-2000"
     },
     "algorithms": [
-      "RSA"
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3693 Direction - Decrypt, Encrypt Key Length - 128, 192, 256 SP 800-38A",
+      "AES-CTR A3693 Direction - Decrypt, Encrypt Key Length - 128, 192, 256 SP 800-38A",
+      "ECDSA KeyGen (FIPS186-4) A3693 Curve - P-256, P-384, P-521 Secret Generation Mode - Testing Candidates FIPS 186-4",
+      "ECDSA KeyVer (FIPS186-4) A3693 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen (FIPS186-4) A3693 Curve - P-256, P-384, P-521 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 FIPS 186-4",
+      "ECDSA SigVer (FIPS186-4) A3693 Curve - P-256, P-384, P-521 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 FIPS 186-4",
+      "HMAC-SHA-1 A3693 Key Length - Key Length: 160 FIPS 198-1",
+      "HMAC-SHA2-256 A3693 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-512 A3693 Key Length - Key Length: 512 FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 A3610 Domain Parameter Generation Methods - P-256, P-384, P-521 Scheme - SP 800-56A Rev. 3 | * * * | ephemeralUnified - | KAS Role - initiator",
+      "RSA KeyGen (FIPS186-4) A3693 Key Generation Mode - B.3.3 | Modulo - 2048, 4096 | Primality Tests - Table C.2 | Private Key Format - Standard",
+      "RSA SigGen (FIPS186-4) A3693 Signature Type - PKCS 1.5 | Modulo - 2048, 4096",
+      "RSA SigVer (FIPS186-4) A3693 Signature Type - PKCS 1.5 | Modulo - 2048, 4096",
+      "SHA-1 A3693 Message Length - Message Length: 0-65536 | Increment 8 FIPS 180-4",
+      "SHA2-256 A3693 Message Length - Message Length: 0-65536 | Increment 8 FIPS 180-4",
+      "SHA2-384 A3693 Message Length - Message Length: 0-65536 | Increment 8 FIPS 180-4",
+      "SHA2-512 A3693 Message Length - Message Length: 0-65536 | Increment 8 FIPS 180-4 | Kernel Approved Cryptographic Functions",
+      "HMAC DRBG A3493 Prediction Resistance - Yes",
+      "Mode - SHA2-256 SP 800-90A Rev. | 1",
+      "HMAC-SHA2-256 A3493 Key Length - Key Length: 160, 256 FIPS 198-1",
+      "SHA2-256 A3493 Message Length - Message Length: 0-51200 | Increment 8 FIPS 180-4",
+      "SHA2-512 A3361 Message Length - Message Length: 0-51200 | Increment 8 FIPS 180-4 | OpenSSH Approved Cryptographic Functions",
+      "KDF SSH (CVL) A4271 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 SP 800-135 Rev. | 1 | * * * | Name Properties Implementation Reference",
+      "CKG Key type:Asymmetric Junos 22.2R1 - OpenSSL SP 800-133 Rev.2 Section 4, example 1 direct output from DRBG. | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
     ]
   }
 }

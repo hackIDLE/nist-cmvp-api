@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145"
   },
   "certificate": {
     "certificate_number": "5145",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5145.pdf",
@@ -57,6 +57,52 @@
       "contact_email": "gregg@preveil.com",
       "contact_phone": "781-640-4835"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "DSA PQGVer (FIPS186-4) | A3548 | Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256 | FIPS 186-4",
+      "L - 1024, 2048, 3072 N - 160, 224, 256 Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256",
+      "L - 2048, 3072 N - 224, 256 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256",
+      "Component - No, Yes Curve - B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+      "Component - No, Yes Curve - B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192, P-224, P-256, P-384, P-521 Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+      "Prediction Resistance - Yes Mode - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-256, SHA3-512",
+      "KDA OneStep SP800-56Cr2 | A3548 | Derived Key Length - 2048",
+      "KDA TwoStep SP800-56Cr2 | A3548 | MAC Salting Methods - default, random",
+      "KDF Mode - feedback",
+      "KDF ANS 9.42 (CVL) | A3548 | KDF Type - DER",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+      "KDF ANS 9.63 (CVL) | A3548 | Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+      "KDF KMAC Sp800-108r1 | A3548 | Derived Key Length - Derived Key Length: 112-4096 Increment 8",
+      "KDF SP800-108 | A3548 | KDF Mode - Counter, Feedback",
+      "KDF SSH (CVL) | A3548 | Cipher - AES-128, AES-192, AES-256",
+      "KTS-IFC | A3548 | Modulo - 2048, 3072, 4096, 6144",
+      "KTS-OAEP-basic -",
+      "AES | AES(Any non-authenticated mode),Cert.#A3548):Symmetric key unwrapping | OpenSSL ProjectOpenSSL 3.x FIPSProvider | Per IG D.GAdditionalComment 5",
+      "Triple-DES | Provides 3-Key ECB and CBC mode, but indicated as fips=no, Encryption, Decryption",
+      "Ed448 | SHAKE256, Ed448 provides 224 bits of security, Digital Signature Generation",
+      "Ed25519 | SHA2-512, Ed25519 provides 128 bits of security, Digital Signature Generation",
+      "ECDSA SigVer Component | Provides between 80 and 256 bits for security, Curves: B-163,B-233,B-283,B-409,B-571,K-163,K-233,K-283,K-409,K-571,P-192,P-224,P-256,P-384,P-521,Digital Signature Verification",
+      "FIPS 186-2 RSA SigGen/SigVer | Provides >=80 bits of security,RSA signature generation/verification per FIPS 186-2",
+      "FIPS 186-2 RSA KeyGen | Provides >=112 bits of security,RSA key generation per FIPS 186-2",
+      "X942KDF-CONCAT | Usage of X942KDF-CONCAT with PRF SHA-1,SHA2-512/224,SHA2-512/256,SHA3-224,SHA3-256,SHA3-384,SHA3-512,SHAKE128,SHAKE256,KECCAK-KMAC128 and KECCAK-KMAC256",
+      "X963KDF | Usage of X963KDF with PRF SHA-1,SHA2-512/224,SHA2-512/256,SHA3-224,SHA3-256,SHA3-384,SHA3-512,SHAKE128,SHAKE256,KECCAK-KMAC128 and KECCAK-KMAC256",
+      "HKDF | Provides<112bits of security,Usage of HKDF with key length less than 112bits",
+      "OneStep KDF | Usage of OneStep KDF with PRF SHAKE128,SHAKE256",
+      "HMAC | Provides<112bits of security,Usage of HMAC with key length less than 112bits for MAC generation",
+      "Hash and HMAC DRBG | Usage of Hash and HMAC DRBGs with PRFs SHA2-224,SHA2-384,SHA2-512/224 and SHA2-512/256",
+      "Symmetric Encryption and Decryption | BC-Auth BC-UnAuth | Symmetric Encryption and Decryption | Key Length:128,192 and 256 bits Key Length(XTS):128 and 256 bits | AES-CBC:(A3548) AES-CBC-CS1:(A3548) AES-CBC-CS2:(A3548) AES-CBC-CS3:(A3548) AES-CCM:(A3548) AES-CFB1:(A3548)"
+    ]
   }
 }

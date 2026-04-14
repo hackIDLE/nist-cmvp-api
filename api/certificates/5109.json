@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109"
   },
   "certificate": {
     "certificate_number": "5109",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5109.pdf",
@@ -57,6 +57,61 @@
       "contact_email": "olivier.collart@st.com",
       "contact_phone": "3227245077"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5356 | - | SP 800-38A",
+      "AES-CFB128 | A5356 | - | SP 800-38A",
+      "AES-CTR | A5356 | - | SP 800-38A",
+      "AES-ECB | A5356 | - | SP 800-38A",
+      "AES-OFB | A5356 | - | SP 800-38A",
+      "ECDSA KeyGen(FIPS186-4) | A5358 | - | FIPS 186-4",
+      "ECDSA KeyVer(FIPS186-4) | A5358 | - | FIPS 186-4",
+      "ECDSA SigGen(FIPS186-4) | A5358 | - | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A5358 | - | FIPS 186-4",
+      "Hash DRBG | A5351 | - | SP 800-90A Rev.1",
+      "HMAC-SHA-1 | A5355 | - | FIPS 198-1",
+      "HMAC-SHA2-256 | A5355 | - | FIPS 198-1",
+      "HMAC-SHA2-384 | A5355 | - | FIPS 198-1",
+      "HMAC-SHA2-512 | A5355 | - | FIPS 198-1",
+      "HMAC-SHA3-256 | A5355 | - | FIPS 198-1",
+      "HMAC-SHA3-384 | A5355 | - | FIPS 198-1",
+      "KAS-ECC Sp800-56Ar3 | A5358 | - | SP 800-56A Rev.3",
+      "KDF SP800-108 | A5354 | - | SP 800-108 Rev.1",
+      "KTS-IFC | A5357 | - | SP 800-56B Rev.2",
+      "RSA Decryption Primitive Sp800-56Br2(CVL) | A5357 | - | SP 800-56B Rev.2",
+      "RSA KeyGen(FIPS186-5) | A5357 | - | FIPS 186-5",
+      "RSA SigGen(FIPS186-5) | A5357 | - | FIPS 186-5",
+      "RSA SigVer(FIPS186-5) | A5357 | - | FIPS 186-5",
+      "SHA-1 | A5352 | - | FIPS 180-4",
+      "SHA-1 | A5353 | - | FIPS 180-4",
+      "SHA2-256 | A5352 | - | FIPS 180-4",
+      "SHA2-256 | A5353 | - | FIPS 180-4",
+      "SHA2-384 | A5352 | - | FIPS 180-4",
+      "SHA2-384 | A5353 | - | FIPS 180-4",
+      "SHA2-512 | A5352 | - | FIPS 180-4",
+      "SHA2-512 | A5353 | - | FIPS 180-4",
+      "SHA3-256 | A5352 | - | FIPS 202",
+      "SHA3-384 | A5352 | - | FIPS 202",
+      "XOR | No security claimed per IG 2.4.A with the example of scenario #1.The algorithm:\\* is not used except for this purpose \\* does not access or share CSPs in a way that counters the requirements of theIG \\* not intended to be used as a security function.\\* can't be confused for a security function | Obfuscation of input or output data",
+      "ECDSA(non-compliant) | Digital signature with an ECC signing key generated with an undetermined scheme (field inPublic.buffer.parameters.scheme.scheme=TPM\\_ALG\\_NULL), derived from a derivation parent key, or a key loaded in the NULL hierarchy",
+      "HMAC(non-compliant) | Key length<112bits for message authentication",
+      "KAS(non-compliant) | Key agreement with an ECC key that has an undetermined scheme (field inPublic.buffer.parameters.scheme.scheme=TPM\\_ALG\\_NULL)",
+      "KBKDF(non-compliant) | Non-Approved key derivation usage",
+      "KTS-IFC(non-compliant) | Key encapsulation with an RSA decryption key that has an undetermined scheme (field inPublic.buffer.parameters.scheme.scheme=TPM\\_ALG\\_NULL)",
+      "RSA(non-compliant) | 1024-bit RSA digital signature generation or with a key loaded in theNull hierarchy",
+      "RSA with no padding mode(null scheme)(non-compliant) | Key transport",
+      "SHA-1(non-compliant) | Digital signature generation"
+    ]
   }
 }

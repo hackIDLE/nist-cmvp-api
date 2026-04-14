@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819"
   },
   "certificate": {
     "certificate_number": "4819",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4819.pdf",
@@ -56,6 +56,23 @@
       "contact_email": "FIPS@amd.com",
       "contact_phone": "408-749-4000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4453 | Direction-DecryptKey Length-128,192,256 | SP 800-38A",
+      "AES-CTR | A4453 | Direction-DecryptKey Length-128,192,256 | SP 800-38A",
+      "AES-ECB | A4453 | Direction-DecryptKey Length-128,192,256 | SP 800-38A",
+      "AES-GCM | A4453 | Direction-DecryptIV Generation-ExternalKey Length-128,192,256 | SP 800-38D",
+      "AES-GMAC | A4453 | Direction-DecryptIV Generation-ExternalKey Length-128,192,256 | SP 800-38D",
+      "ECDSA SigVer(FIPS186-4) | A4453 | Component-NoCurve-P-384Hash Algorithm-SHA2-384 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A4453 | Signature Type-PKCS 1.5,PKCSPSSModulo-2048,4096 | FIPS 186-4",
+      "SHA2-256 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-384 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-512 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4"
+    ]
   }
 }

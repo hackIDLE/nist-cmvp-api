@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5119"
   },
   "certificate": {
     "certificate_number": "5119",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5119",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5119",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5119.pdf",
@@ -56,6 +56,50 @@
       "contact_email": "certs-team@juniper.net",
       "contact_phone": "408-745-2000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4301 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR | A4301 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "ECDSA KeyGen (FIPS186-4) | A4301 | Curve - P-256, P-384, P-521 Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyVer (FIPS186-4) | A4301 | Curve - P-256, P-384, P-521 | FIPS 186-4",
+      "ECDSA SigGen (FIPS186-4) | A4301 | Component - No Curve - P-256, P-384, P-521 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer (FIPS186-4) | A4301 | Component - No Curve - P-256, P-384, P-521 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "HMAC-SHA-1 | A4301 | Key Length - Key Length: 160 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4301 | Key Length - Key Length: 256 | FIPS 198-1",
+      "HMAC-SHA2-512 | A4301 | Key Length - Key Length: 512 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A4301 | Domain Parameter Generation Methods - P-256, P-384, P-521 Scheme - ephemeralUnified - KAS Role - initiator, responder | SP 800-56A Rev. 3",
+      "KDF SSH (CVL) | A4301 | Cipher - AES-128, AES-192, AES-256 Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 | SP 800-135 Rev. 1",
+      "RSA KeyGen (FIPS186-5) | A4301 | Key Generation Mode - probable Modulo - 2048, 3072, 4096 Primality Tests - 2powSecStr Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186-5) | A4301 | Modulo - 2048, 3072, 4096 Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186-5) | A4301 | Modulo - 2048, 3072, 4096 Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 | A4301 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A4301 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 | A4301 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A4301 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "ECDSA SigVer(FIPS186-4) | A4302 | Component-NoCurve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "SHA2-256 | A4302 | Message Length-Message Length:0-65536Increment8 | FIPS180-4",
+      "HMAC DRBG | A4303 | Prediction Resistance - Yes Mode-SHA2-256 | SP 800-90A Rev.1",
+      "HMAC-SHA2-256 | A4303 | Key Length-Key Length:256 | FIPS 198-1",
+      "SHA2-256 | A4303 | Message Length-Message Length:0-51200 Increment8 | FIPS 180-4",
+      "SHA2-512 | A4303 | Message Length-Message Length:0-51200 Increment8 | FIPS 180-4",
+      "HMAC-SHA-1 | A4306 | Key Length - Key Length: 112,160 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4306 | Key Length - Key Length: 160,256 | FIPS 198-1",
+      "SHA-1 | A4306 | Message Length - Message Length: 0-51200 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A4306 | Message Length - Message Length: 0-51200 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A4306 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "Enc/Dec(SSH) | BC-UnAuth | Unauthenticated encryption for SSH | AES-CBC:(A4301)AES-CTR:(A4301)",
+      "KAS-SSC(SSH) | KAS-SSC | Key AgreementScheme Shared Secret Computation for SSH | KAS-ECC-SSCSp800-56Ar3:(A4301)"
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146"
   },
   "certificate": {
     "certificate_number": "5146",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf",
@@ -55,6 +55,31 @@
       "contact_email": "aws-fips-external@amazon.com",
       "contact_phone": "0000000000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5422, A5427, A5429, A5431 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM | A5422, A5427, A5429, A5431 | Key Length - 128 | SP 800-38C",
+      "AES-CMAC | A5422, A5427, A5429, A5431 | Direction - Generation, Verification Key Length - 128, 256 | SP 800-38B",
+      "AES-CTR | A5422, A5427, A5429, A5431 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB | A5422, A5423, A5427, A5428, A5429, A5430, A5431, A5432, A5435 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM | A5423, A5428, A5430, A5432, A5435 | Direction - Decrypt, Encrypt IV Generation - External, Internal Key Length - 128, 256 IV Generation Mode - 8.2.1, 8.2.2",
+      "AES-GMAC | A5423, A5428, A5430, A5432, A5435 | Direction - Decrypt, Encrypt IV Generation - External, Internal Key Length - 128, 256 IV Generation Mode - 8.2.1, 8.2.2",
+      "AES-KW | A5422, A5427, A5429, A5431 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38F",
+      "AES-KWP | A5422, A5427, A5429, A5431 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38F",
+      "AES-XTS Testing Revision 2.0 | A5422, A5427, A5429, A5431 | Direction - Decrypt, Encrypt Key Length - 256 | SP 800-38E",
+      "Counter DRBG | A5422, A5427, A5429, A5431 | Prediction Resistance - No Mode - AES-256 Derivation Function Enabled - No | SP 800-90A Rev. 1",
+      "ECDSA KeyGen (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 | FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 Component - No | FIPS 186-5",
+      "ECDSA SigVer (FIPS186-4) | A5425, A5426, A5433, A5434 | Component - No Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA1 | FIPS 186-4",
+      "ECDSA SigVer (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 | A5425, A5426, A5433, A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1"
+    ]
   }
 }

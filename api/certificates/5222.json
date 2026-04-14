@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5222"
   },
   "certificate": {
     "certificate_number": "5222",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5222",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5222",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5222.pdf",
@@ -56,6 +56,41 @@
       "contact_email": "sjeric.lee@samsung.com",
       "contact_phone": "82-31-8096-2832"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-GCM | A5788 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 256 | SP 800-38D | Samsung TCG Opal SSC Cryptographic Sub-Chip | FIPS 140-3 Non-Proprietary Security Policy | ©2026 Samsung Electronics Co.,Ltd., and atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice.",
+      "Counter DRBG | A5787 | Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen (FIPS186-5) | A5788 | Curve - P-384 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) | A5788 | Curve - P-384",
+      "Hash Algorithm - SHA2-384 | Component - Yes | FIPS 186-5",
+      "ECDSA SigVer (FIPS186-5) | A5788 | Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "HMAC-SHA2-256 | A5788 | Key Length - Key Length: 8-512 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A5788 | Key Length - Key Length: 8-1024 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A5788 | Domain Parameter Generation Methods - | P-384 | Scheme - | staticUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA HKDF SP800-56Cr2 | A5788 | Derived Key Length - 2048 | Shared Secret Length - Shared Secret | Length: 224-8192 Increment 8 | HMAC Algorithm - SHA2-384 | SP 800-56C | Rev. 2",
+      "KDA OneStepNoCounter | SP800-56Cr2 | A5788 | Key Length - Key Length: 384 | SP 800-56C | Rev. 2",
+      "KDF SP800-108 | A5788",
+      "KDF Mode - Counter | Supported Lengths - Supported Lengths: | 256 | SP 800-108 | Rev. 1",
+      "SHA2-256 | A5788 | Message Length - Message Length: 8-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 | A5788 | Message Length - Message Length: 8-65536 | Increment 8 | FIPS 180-4 | Samsung TCG Opal SSC Cryptographic Sub-Chip | FIPS 140-3 Non-Proprietary Security Policy | ©2026 Samsung Electronics Co.,Ltd., and atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Name | Implementation | Asymmetric | CKG | Key | Type:Asymmetric | N/A | Key Generation Compliant with SP 800- | 133Rev2 section 4 example 1 | Symmetric | CKG | Key | Type:Symmetric | N/A | Key Generation Compliant with SP 800- | 133Rev2 section 4 example 1 | Non-Approved, Allowed Algorithms: | N/A for this module. | The module does not implement any non-approved algorithms that could be used in an approved mode of | operation. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | The module does not implement any non-approved algorithms that could be used in an approved mode of | operation. | Non-Approved, Not Allowed Algorithms: | Name | Use and Function",
+      "AES-XTS | Used for Decrypt Firmware to decrypt FW provided by H-Core. Used for Verify",
+      "Decrypt Firmware together with ECDSA signature verification to decrypt and | verify signature of FW provided by H-Core",
+      "RSA Encrypt",
+      "Used for Get Dump Key to encrypt the AES-XTS dump key",
+      "ECDSA verification",
+      "with AES XTS | decryption",
+      "Used for Verify Decrypt Firmware together with AES-XTS decryption to verify a | signature of and encrypted FW provided by H-Core | Samsung TCG Opal SSC Cryptographic Sub-Chip | FIPS 140-3 Non-Proprietary Security Policy | ©2026 Samsung Electronics Co.,Ltd., and atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice."
+    ]
   }
 }

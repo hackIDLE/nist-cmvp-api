@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5036"
   },
   "certificate": {
     "certificate_number": "5036",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5036",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5036",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5036.pdf",
@@ -56,6 +56,57 @@
       "contact_email": "seceval_us@oracle.com",
       "contact_phone": "000-000-0000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5278,A5285,A5288 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-CBC-CS3 | A5282,A5293 | Direction-decrypt,encryptKey Length-128,192,256 | SP 800-38A",
+      "AES-CCM | A5278,A5288 | Key Length-128,192,256 | SP 800-38C",
+      "AES-CFB128 | A5280,A5291 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-CMAC | A5278,A5288 | Direction-Generation,VerificationKey Length-128,192,256 | SP 800-38B",
+      "AES-CTR | A5278,A5285,A5288 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-ECB | A5277,A5278,A5283,A5284,A5285,A5286,A5287,A5288,A5289,A5290 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-GCM | A5278,A5284,A5285,A5287,A5288,A5290 | Direction-Decrypt,EncryptIV Generation-ExternalKey Length-128,192,256 | SP 800-38D",
+      "AES-GCM | A5283,A5286,A5289 | Direction-EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP 800-38D",
+      "AES-GMAC | A5278,A5288 | Direction-Decrypt,EncryptIV Generation-ExternalKey Length-128,192,256 | SP 800-38D",
+      "AES-OFB | A5281,A5292 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-XTS TestingRevision2.0 | A5278,A5285,A5288 | Direction-Decrypt,EncryptKey Length-128,256 | SP 800-38E",
+      "Counter DRBG | A5277,A5278,A5283,A5284,A5285,A5286,A5287,A5288,A5289,A5290 | Prediction Resistance-No,YesMode-AES-128,AES-192,AES-256Derivation Function Enabled-Yes | SP 800-90A Rev.1",
+      "Hash DRBG | A5277,A5278,A5283,A5284,A5285,A5286,A5287,A5288,A5289,A5290,A5295,A5295,A5296 | Prediction Resistance-No,YesMode-SHA-1,SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "HMAC DRBG | A5277,A5278,A5283,A5284,A5285,A5286,A5287,A5288,A5289,A5290,A5294,A5295,A5296 | Prediction Resistance-No,YesMode-SHA-1,SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "HMAC-SHA-1 | A5277,A5278,A5294,A5295,A5296,A5297 | Key Length-Key Length:112-524288 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-224 | A5277,A5278,A5294,A5295,A5296,A5297 | Key Length-Key Length:112-524288 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5277,A5278,A5294,A5295,A5296,A5297 | Key Length-Key Length:112-524288 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A5277,A5278,A5294,A5295,A5296 | Key Length-Key Length:112-524288 Increment8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A5277,A5278,A5294,A5295,A5296 | Key Length-Key Length:112-524288 Increment8 | FIPS 198-1",
+      "HMAC-SHA3-224 | A5279 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-256 | A5279 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-384 | A5279 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-512 | A5279 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "KAS-FFC-SSC Sp800-56Ar3 | A5277 | Domain Parameter Generation Methods - ffdhe2048,ffdhe3072,ffdhe4096,ffdhe6144,ffdhe8192Scheme-dhEphem-KAS Role - initiator, responder | SP 800-56A Rev.3",
+      "RSA SigVer(FIPS186-4) | A5278,A5294,A5295,A5296 | Signature Type-PKCS 1.5Modulo-2048,3072,4096 | FIPS 186-4",
+      "RSA SigVer(FIPS186-5) | A5278,A5294,A5295,A5296 | Modulo-2048,3072,4096Signature Type-pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 | A5277,A5278,A5294,A5295,A5296,A5297 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 180-4",
+      "SHA2-224 | A5277,A5278,A5294,A5295,A5296,A5297 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 180-4",
+      "SHA2-256 | A5277,A5278,A5294,A5295,A5296,A5297 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 180-4",
+      "SHA2-384 | A5277,A5278,A5294,A5295,A5296 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 180-4",
+      "SHA2-512 | A5277,A5278,A5294,A5295,A5296 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 180-4",
+      "SHA3-224 | A5279 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 202",
+      "SHA3-256 | A5279 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 202",
+      "SHA3-384 | A5279 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 202",
+      "SHA3-512 | A5279 | Message Length-Message Length:0-65536Increment8Large Message Sizes-1,2 | FIPS 202",
+      "AES GCM with external IV | Encryption",
+      "KBKDF(libkcapi) | Key derivation",
+      "HKDF(libkcapi) | Key derivation",
+      "RSA | Encryption primitive; Decryption primitive",
+      "RSA with PKCS#1 v1.5 padding | Signature generation (pre-hashed message); Signature verification (pre-hashed message)"
+    ]
   }
 }

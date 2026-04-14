@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120"
   },
   "certificate": {
     "certificate_number": "5120",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5120.pdf",
@@ -64,14 +64,23 @@
     "algorithms": [
       "AES",
       "DRBG",
-      "DSA",
       "ECDSA",
       "HMAC",
-      "KAS",
-      "KDF",
       "KTS",
-      "RSA",
       "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES | A6047 | Modes:CBC,CFB8,CFB128,CTR,ECB,FF1,OFBKey sizes:128,192,256 bits | AES\\[FIPS197,SP800-38A\\],AESFF1FormatPreservingEncryption\\[SP800-38G\\] | Encryption,Decryption",
+      "AES CBC Ciphertext Stealing(CS) | A6047 | Modes:CBC-CS1,CBC-CS2,CBC-CS3Key sizes:128,192,256bits | \\[Addendum toSP800-38A,Oct2010\\] | Encryption,Decryption",
+      "AES CCM | A6047 | Key sizes:128,192,256bits | \\[SP800-38C\\] | Generation,Authentication",
+      "AES CMAC | A6047 | Key sizes:128,192,256bits | \\[SP800-38B\\] | Generation,Authentication",
+      "AES GCM/GMAC¹ | A6047 | Key sizes:128,192,256bits | \\[SP800-38D\\] | Generation,Authentication",
+      "AES KW,KWP(KTS:Key Wrapping UsingAES2) | A6047 | Modes:AES KW,KWPKey sizes:128,192,256 bits(key establishment methodology providing128,192 or256bits of encryption strength) | \\[SP800-38F\\] | Key Wrapping",
+      "DRBG,Counter DRBG | A6047 | AES128,AES192,AES256 | \\[SP800-90Ar1\\] | Random Bit Generation",
+      "DRBG,Hash DRBG | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA2-512,SHA-512/224,SHA2-512/256 | \\[SP800-90Ar1\\] | Random Bit Generation",
+      "DRBG,HMAC DRBG | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA2-512,SHA-512/224,SHA2-512/256 | \\[SP800-90Ar1\\] | Random Bit Generation",
+      "ECDSA | A6047 | Curves/Key sizes:P-224,P-256,P-384,P-521,K-233,K-283,K-409,K-571,B-233,B-283,B-409,B-571 | \\[FIPS186-5\\] | KeyGeneration,KeyVerification,SignatureGeneration,SignatureVerification",
+      "ECDSA | A6047 | Curves/Key sizes:P-192,K-163,B-1635 | \\[FIPS186-4\\] | KeyVerification,SignatureVerification"
     ]
   }
 }

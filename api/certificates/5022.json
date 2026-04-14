@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5022"
   },
   "certificate": {
     "certificate_number": "5022",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5022",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5022",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5022.pdf",
@@ -55,6 +55,38 @@
       "contact_email": "fips140@redhat.com",
       "contact_phone": "000-000-0000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "MD2, MD5, SHA-1 | Message digest",
+      "RC2, RC4, DES, Triple-DES, CDMF, Camellia, SEED, ChaCha20(-Poly1305) | Encryption, Decryption",
+      "AES GCM (external IV) | Encryption",
+      "CBC-MAC,AES XCBC-MAC,AES XCBC-MAC-96 | Message authentication",
+      "HMAC(MD2,MD5,SHA-1;＜112-bit keys) | Message authentication",
+      "HMAC/SSLv3 MAC(constant-time implementation) | Message authentication",
+      "MD2,MD5,SHA-1,SHA-224,SHA-256,SHA-384,SHA-512,DES,TripleDES,AES,Camellia,SEED,ANSX9.63KDF,SSL3PRF,IKEv1PRF,TLS1.0/1.1KDF,TLSKDFwithout extended master secret | Key derivation",
+      "KBKDF,HKDF,TLS1.2KDF,IKEv2PRF(<112-bitkeys) | Key derivation",
+      "KBKDF(MD2,MD5) | Key derivation",
+      "J-PAKE | Shared secret computation",
+      "KAS-FFC-SSC(FIPS186-typegroups) | Shared secret computation",
+      "X25519 | Shared secret computation",
+      "DSA | Signature generation,Signature verification",
+      "RSA(primitive;PKCS#1v1.5orPSSwithMD2,MD5,SHA-1) | Signature generation,Signature verification",
+      "RSA(<2048-bitkeys) | Signature generation",
+      "RSA(<1024-bitkeys) | Signature verification",
+      "ECDSA(component) | Signature generation,Signature verification",
+      "RSA | Asymmetric encryption， Asymmetric decryption",
+      "DSA | Parameter generation， Parameter verification，Key pair generation",
+      "RSA(<2048bits;>4096bits) | Key pair generation"
+    ]
   }
 }

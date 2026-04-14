@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5077"
   },
   "certificate": {
     "certificate_number": "5077",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5077",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5077",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5077.pdf",
@@ -59,6 +59,52 @@
       "contact_email": "fips140officers@qti.qualcomm.com",
       "contact_phone": "000-000-0000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4289 | - | SP 800-38A",
+      "AES-CCM | A4289 | - | SP 800-38C",
+      "AES-CMAC | A4289 | - | SP 800-38B",
+      "AES-CTR | A4289 | - | SP 800-38A",
+      "AES-ECB | A4289 | - | SP 800-38A",
+      "AES-XTS Testing Revision 2.0 | A4289 | - | SP 800-38E",
+      "HMAC-SHA-1 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA2-256 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA2-384 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA2-512 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA3-224 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA3-256 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA3-384 | A4289 | - | FIPS 198-1",
+      "HMAC-SHA3-512 | A4289 | - | FIPS 198-1",
+      "SHA-1 | A4289 | - | FIPS 180-4",
+      "SHA2-256 | A4289 | - | FIPS 180-4",
+      "SHA2-384 | A4289 | - | FIPS 180-4",
+      "SHA2-512 | A4289 | - | FIPS 180-4",
+      "SHA3-224 | A4289 | - | FIPS 202",
+      "SHA3-256 | A4289 | - | FIPS 202",
+      "SHA3-384 | A4289 | - | FIPS 202",
+      "SHA3-512 | A4289 | - | FIPS 202",
+      "AES-GCM | encryption, decryption",
+      "DES-CBC | encryption, decryption",
+      "DES-ECB | encryption, decryption",
+      "TDES(two independent keys) | encryption, decryption",
+      "TDES(three independent keys) | encryption, decryption",
+      "HMAC SHA-1 with key size other than 512 bits | message authentication code",
+      "HMAC SHA2-256 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA2-384 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA2-512 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA3-224 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA3-256 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA3-384 with key sizes other than 512 bits | message authentication code",
+      "HMAC SHA3-512 with key sizes other than 512 bits | message authentication code",
+      "AEAD-SHA-1 AES-CBC | encryption, decryption (with message authentication code)",
+      "AEAD-SHA-1 AES-CTR | encryption, decryption (with message authentication code)",
+      "AEAD-SHA-1 DES-CBC | encryption, decryption (with message authentication code)",
+      "AEAD-SHA-1 TDES-CBC | encryption, decryption (with message authentication code)"
+    ]
   }
 }

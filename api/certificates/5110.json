@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110"
   },
   "certificate": {
     "certificate_number": "5110",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf",
@@ -55,6 +55,31 @@
       "contact_email": "cmercer@rajant.com",
       "contact_phone": "484-595-0233"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-GCM A4095 Direction - Decrypt, Encrypt IV Generation - External Key Length - 256 SP 800-38D",
+      "AES-GCM A4096 Direction - Decrypt, Encrypt IV Generation - External Key Length - 256 SP 800-38D",
+      "AES-KWP A4096 Direction - Decrypt, Encrypt Key Length - 256 SP 800-38F | © 2025 Rajant Corporation | Rajant Public Material - May be reproduced and distributed only in its original entree without revision. | * * *",
+      "ECDSA KeyGen (FIPS186-5) A4096 Curve - P-384, P-521 Secret Generation Mode - extra bits FIPS 186-5",
+      "ECDSA KeyVer (FIPS186-5) A4096 Curve - P-384, P-521 FIPS 186-5",
+      "ECDSA SigVer (FIPS186-5) A4096 Curve - P-384 Hash Algorithm - SHA2-384 FIPS 186-5",
+      "Hash DRBG A4096 Prediction Resistance - Yes Mode SHA2-512 SP 800-90A Rev. 1",
+      "HMAC-SHA2-384 A4096 Key Length - Key Length: 8-65536 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ax3 A4096 Domain Parameter Generation Methods - P-521 Scheme - ephemeralUnified - KAS Role - responder SP 800-56A Rev. 3",
+      "KDA TwoStep Sp800-59Cr1 A4096 Derived Key Length - 256 Shared Secret Length - Shared Secret Length: 256 SP 800-56C Rev. 2 | KDP SP800-108 A4096 IDF Node - Feedback Supported Lenghts - Supported Lenghts: 8-4096 Increment 8",
+      "SHA2-384 A4096 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A4096 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4 | The Module implements the approved cryptographic algorithms listed in the table above. | Name Properties Implementation Reference",
+      "CKG symmetric;KDF SP800-108 asymmetric;KAS-ECC-SSC SP800-56Ax3 Rajant RISM Crypto Library Key Generation per 133R2 Section 4 | The Module implements the vendor affirmed cryptographic algorithms listed in the table above. | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | Name Cavest Use and Function | AE5-CTR Cavest 1 FW per IG 2.4a Scenario 1 Description of stage 1 FW image by boot rom",
+      "SHA2-256 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom",
+      "ECDSA P-384 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom | The Module implements the non-approved but allowed cryptographic algorithms with no security claimed listed in the table above. | Non-Approved, Not Allowed Algorithms: | N/A for this module. | © 2025 Rajant Corporation | Rajant Public Material - May be reproduced and distributed only in its original entirety without revision. | * * *"
+    ]
   }
 }

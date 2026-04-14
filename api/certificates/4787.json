@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787"
   },
   "certificate": {
     "certificate_number": "4787",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4787.pdf",
@@ -60,6 +60,33 @@
       "contact_email": "chulhwan.kim@samsung.com",
       "contact_phone": "0082-10-8997-5025"
     },
-    "algorithms": []
+    "algorithms": [
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "ECDSA KeyGen(FIPS186-4) | A4968 | Curve-P-224,P-256,P-384,P-521 | FIPS 186-4",
+      "ECDSA KeyVer(FIPS186-4) | A4968 | Curve-P-192,P-224,P-256,P-384,P-521 | FIPS 186-4",
+      "ECDSA SigGen(FIPS186-4) | A4968 | Curve-P-224,P-256,P-384,P-521 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A4968 | Curve-P-192,P-224,P-256,P-384,P-521 | FIPS 186-4",
+      "HMAC DRBG | A4968 | Prediction Resistance-No Mode-SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "HMAC-SHA2-224 | A4968 | Key Length-Key Length:112,504,512,520,2048 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4968 | Key Length-Key Length:112,504,512,520,2048 | FIPS 198-1",
+      "HMAC-SHA2-384 | A4968 | Key Length-Key Length:112,504,1024,1032,2048 | FIPS 198-1",
+      "HMAC-SHA2-512 | A4968 | Key Length-Key Length:112,504,1024,1032,2048 | FIPS 198-1",
+      "KAS-ECC CDH-Component SP800-56Ar3(CVL) | A4968 | - | SP 800-56A Rev.3",
+      "RSA SigGen(FIPS186-4) | A4968 | Signature Type-PKCS1.5,PKCSPSS Modulo-2048,3072,4096 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A4968 | Signature Type-PKCS1.5,PKCSPSS Modulo-1024,2048,3072,4096 | FIPS 186-4",
+      "SHA2-224 | A4968 | - | FIPS 180-4",
+      "SHA2-256 | A4968 | - | FIPS 180-4",
+      "SHA2-384 | A4968 | - | FIPS 180-4",
+      "SHA2-512 | A4968 | - | FIPS 180-4",
+      "RSA KeyGen(FIPS186-4) | A4968 | Key Generation Mode-B.3.3 Modulo-2048,3072,4096 Primality Tests-Table C.2 Private Key Format-Standard | FIPS 186-4"
+    ]
   }
 }

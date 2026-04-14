@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5067"
   },
   "certificate": {
     "certificate_number": "5067",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5067",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5067",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5067.pdf",
@@ -57,6 +57,56 @@
       "contact_email": "certteam@cisco.com",
       "contact_phone": "800-553-6387"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4446 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-GCM | A4446 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP800-38D",
+      "Counter DRBG | A4446 | Prediction Resistance-YesMode-AES-128,AES-192,AES-256Derivation Function Enabled-Yes | SP800-90ARev.1",
+      "ECDSA KeyGen(FIPS186-4) | A4446 | Curve-P-256,P-384,P-521Secret Generation Mode-Testing Candidates | FIPS186-4",
+      "ECDSA SigGen(FIPS186-4) | A4446 | Curve-P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A4446 | Curve-P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "HMAC-SHA-1 | A4446 | Key Length-Key Length:256-448 Increment 8 | FIPS198-1",
+      "HMAC-SHA2-224 | A4446 | Key Length-Key Length:256-448 Increment 8 | FIPS198-1",
+      "HMAC-SHA2-256 | A4446 | Key Length - Key Length: 256-448 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A4446 | Key Length - Key Length: 256-448 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A4446 | Key Length - Key Length: 256-448 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A4446 | Domain Parameter Generation Methods - P-256, P-384, P-521 Scheme ephemeralUnified KAS Role - initiator, responder | SP 800-56A Rev.3",
+      "KAS-FFC-SSC Sp800-56Ar3 | A4446 | Domain Parameter Generation Methods - ffdhe2048, ffdhe3072, ffdhe4096, modp-2048, modp-3072, modp-4096 Scheme dhEphem KAS Role - initiator, responder | SP 800-56A Rev.3",
+      "KDF IKEv2 (CVL) | A4446 | Diffie-Hellman Shared Secret Length - Diffie-Hellman Shared Secret Length: 2048 Derived Keying Material Length - Derived Keying Material Length: 3072 Hash Algorithm - SHA-1 | SP 800-135 Rev.1",
+      "KDF SNMP (CVL) | A4446 | Password Length - Password Length: 256, 64 | SP 800-135 Rev.1",
+      "KDF SSH (CVL) | A4446 | Cipher - AES-128, AES-192, AES-256 Hash Algorithm - SHA-1, SHA2-256 | SP 800-135 Rev.1",
+      "RSA KeyGen(FIPS186-4) | A4446 | Key Generation Mode - B.3.4 Modulo - 2048, 3072 Hash Algorithm - SHA2-256 Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen(FIPS186-4) | A4446 | Signature Type - PKCS 1.5, PKCSPSS Modulo - 2048, 3072 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A4446 | Signature Type - PKCS 1.5, PKCSPSS Modulo - 2048, 3072 | FIPS 186-4",
+      "SHA-1 | A4446 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-224 | A4446 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A4446 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 | A4446 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A4446 | Message Length - Message Length: 0-65536 Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF RFC7627(CVL) | A4446 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135 Rev.1",
+      "AES-CBC | C1026 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-GCM | C1026 | Direction-Decrypt,EncryptIV Generation-ExternalKeyLength-128,192,256 | SP800-38D",
+      "Hash DRBG | C1026 | Prediction Resistance-NoMode-SHA2-512 | SP800-90ARev.1",
+      "HMAC-SHA-1 | C1026 | - | FIPS198-1",
+      "HMAC-SHA2-256 | C1026 | - | FIPS198-1",
+      "HMAC-SHA2-384 | C1026 | - | FIPS198-1",
+      "HMAC-SHA2-512 | C1026 | - | FIPS198-1",
+      "SHA-1 | C1026 | Message Length-Message Length:0-51200Increment8 | FIPS180-4",
+      "SHA2-256 | C1026 | Message Length-Message Length:0-51200Increment8 | FIPS180-4",
+      "SHA2-384 | C1026 | Message Length-Message Length:0-102400Increment8 | FIPS180-4",
+      "SHA2-512 | C1026 | Message Length-Message Length:0-102400Increment8 | FIPS180-4"
+    ]
   }
 }

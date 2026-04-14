@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4991"
   },
   "certificate": {
     "certificate_number": "4991",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4991",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4991",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4991.pdf",
@@ -57,8 +57,11 @@
     },
     "algorithms": [
       "AES",
-      "HMAC",
-      "SHA"
+      "HMAC"
+    ],
+    "algorithms_detailed": [
+      "A1399 | AES-OFB(SP800-38A) | AES-OFB | 256 bits | Voice Encryption/Decryption",
+      "A1399 | HMAC-SHA-1(FIPS198-1) | HMAC-SHA-1 | MAC:160bitsKeyLength:512bits | FirmwareIntegrity,FirmwareLoadTest"
     ]
   }
 }

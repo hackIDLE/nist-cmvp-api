@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5167"
   },
   "certificate": {
     "certificate_number": "5167",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5167",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5167",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5167.pdf",
@@ -55,6 +55,15 @@
       "contact_email": "t-hatanaka-bp@nec.com",
       "contact_phone": "81-3-3454-1111"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB | A5023, A5025, A5026, A5027, A5028, A5029, A5030, | A5031, A5032, A5033, A5034, A5035, A5036, A5037, | A5038, A5039, A5040, A5041, A5042, A5043, A5044 | Direction - Decrypt, | Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW | A5023 | Direction - Decrypt, | Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-XTS | Testing Revision | 2.0 | A5046, A5047, A5048, A5049, A5050, A5051, A5052, | A5053 | Direction - Decrypt, | Encrypt | Key Length - 256 | SP 800-38E",
+      "SHA2-256 | A5024 | Message Length - | Message Length: 8- | 65536 Increment 8 | FIPS 180-4 | © NEC Corporation 2024 | This document may be reproduced and distributed only in its original entirety (without revision). | N/A for this module. | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
+    ]
   }
 }

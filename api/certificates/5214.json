@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5214"
   },
   "certificate": {
     "certificate_number": "5214",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5214",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5214",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5214.pdf",
@@ -56,6 +56,24 @@
       "contact_email": "alexm@winmagic.com",
       "contact_phone": "905-502-7000 ext. 3225"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A6383 | Direction-Decrypt,EncryptKeyLength-256 | SP800-38A",
+      "AES-ECB | A6383 | Direction-Decrypt,EncryptKeyLength-256 | SP800-38A",
+      "HMAC DRBG | A6383 | Prediction Resistance-NoMode-SHA2-256 | SP800-90ARev.1",
+      "HMAC-SHA2-256 | A6383 | Key Length-KeyLength:256 | FIPS198-1",
+      "HMAC-SHA2-384 | A6383 | Key Length-KeyLength:256 | FIPS198-1",
+      "HMAC-SHA2-512 | A6383 | Key Length-KeyLength:256 | FIPS198-1",
+      "PBKDF | A6383 | Iteration Count-IterationCount:8192-12288Increment1PasswordLength-PasswordLength:8-128Increment8 | SP800-132",
+      "SHA2-256 | A6383 | MessageLength-MessageLength:0-51200Increment8 | FIPS180-4",
+      "SHA2-384 | A6383 | MessageLength-MessageLength:0-65536Increment8 | FIPS180-4",
+      "SHA2-512 | A6383 | MessageLength-MessageLength:0-65536Increment8 | FIPS180-4"
+    ]
   }
 }

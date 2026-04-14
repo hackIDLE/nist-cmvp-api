@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4944"
   },
   "certificate": {
     "certificate_number": "4944",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4944",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4944",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4944.pdf",
@@ -57,7 +57,41 @@
       "contact_phone": "978-264-6600"
     },
     "algorithms": [
-      "SHA"
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "ECDSA KeyVer(FIPS186-4) | A3332 | Curve-P-192,P-224,P-256,P-384,P-521 | FIPS 186-4",
+      "ECDSA SigGen(FIPS186-4) | A3332 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "RSA SigGen(FIPS186-4) | A3332 | Signature Type-ANSI X9.31,PKCSPSSModulo-2048,3072,4096 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A3332 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A3332 | Signature Type-ANSI X9.31,PKCSPSSModulo-2048,3072,4096 | FIPS 186-4",
+      "Hash DRBG | A3332 | Mode-SHA2-256,SHA2-512 | SP 800-90A Rev.1",
+      "KDA HKDF Sp800-56Cr1 | A3332 | Derived Key Length - 2048Shared Secret Length - Shared Secret Length: 224-2048Increment 8HMAC Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA3-224,SHA3-256,SHA3-384,SHA3-512 | SP 800-56CRev.2",
+      "KDF SSH(CVL) | A3332 | Cipher-AES-128,AES-192,AES-256Hash Algorithm-SHA-1,SHA2-224,SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
+      "PBKDF | A3332 | Iteration Count-Iteration Count:1000-100000 Increment1Password Length-Password Length:8-128 Increment1 | SP 800-132",
+      "TLS v1.2 KDF RFC7627(CVL) | A3332 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135 Rev.1",
+      "TLS v1.3 KDF (CVL) | A3332 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-PSK-DHE | SP 800-135Rev.1",
+      "SHA-1 | A3332 | Message Length - Message Length:0-65528 Increment 8 | FIPS 180-4",
+      "SHA2-224 | A3332 | Message Length - Message Length:0-65528 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A3332 | Message Length - Message Length:0-65528 Increment 8 | FIPS 180-4",
+      "SHA2-384 | A3332 | Message Length - Message Length:0-65528 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A3332 | Message Length - Message Length:0-65528 Increment 8 | FIPS 180-4",
+      "SHA3-224 | A3332 | Message Length - Message Length:0-65536 Increment 8 | FIPS 202",
+      "SHA3-256 | A3332 | Message Length - Message Length:0-65536 Increment 8 | FIPS 202",
+      "SHA3-384 | A3332 | Message Length - Message Length:0-65536 Increment 8 | FIPS 202",
+      "SHA3-512 | A3332 | Message Length - Message Length:0-65536 Increment 8 | FIPS 202",
+      "SHAKE-128 | A3332 | Output Length-Output Length:16-65536 Increment 8 | FIPS 202",
+      "SHAKE-256 | A3332 | Output Length-Output Length:16-65536 Increment 8 | FIPS 202",
+      "MD5 | Allowed in the approved mode with no security claimed | Used for TLS 1.2 interoperability"
     ]
   }
 }

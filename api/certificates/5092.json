@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5092"
   },
   "certificate": {
     "certificate_number": "5092",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5092",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5092",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5092.pdf",
@@ -57,6 +57,33 @@
       "contact_email": "legal@datalocker.com",
       "contact_phone": "913-310-9088"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "AES-CTR | AES 3971 | Key Length - 128,192,256 | SP 800-38A",
+      "AES-GCM | AES 3971 | Direction-Decrypt,Encrypt",
+      "AES-XTS | AES 5695 | Direction - Decrypt, EncryptKey Length-256 | SP 800-38E",
+      "ECDSA KeyGen(FIPS186-5) | A5176 | Curve-P-256Secret Generation Mode-testing candidates | FIPS 186-5",
+      "ECDSA KeyVer(FIPS186-5) | A5176 | Curve-P-256 | FIPS 186-5",
+      "ECDSA SigVer(FIPS186-5) | A5176 | Curve-P-256Hash Algorithm-SHA2-256 | FIPS 186-5",
+      "Hash DRBG | A5176 | Prediction Resistance-NoMode-SHA2-256 | SP 800-90ARev.1",
+      "HMAC-SHA2-256 | HMAC 2589 | - | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A5176 | Domain Parameter Generation Methods-P-256Scheme-ephemeralUnified-KAS Role-responder | SP 800-56ARev.3",
+      "KDA OneStep Sp800-56Cr1 | A5176 | Derived Key Length-2048Shared Secret Length-Shared Secret Length:256-2048 Increment8 | SP 800-56CRev.2",
+      "PBKDF | A5176 | Iteration Count-Iteration Count:1000-10000Increment1Password Length-Password Length:8-64 Increment1 | SP 800-132",
+      "SHA2-256 | SHS 3275 | Message Length-Message Length:0-51200Increment8 | FIPS 180-4",
+      "SHA2-256 | SHS 3299 | Message Length-Message Length:0-51200Increment8 | FIPS 180-4",
+      "SHA2-256 | SHS 4565 | Message Length-Message Length:8-51200Increment8 | FIPS 180-4",
+      "SHA3-256 | A4438 | Message Length-Message Length:0-65536Increment8 | FIPS 202",
+      "CKG XTS | Key Type:Symmetric | N/A | SP 800-133r2 and IG D.H per Section 6.3 approved method1 and Section 4 example 1. Applicable to AES-XTS"
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723"
   },
   "certificate": {
     "certificate_number": "4723",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4723.pdf",
@@ -59,6 +59,13 @@
       "contact_email": "FIPS@amd.com",
       "contact_phone": "1408-749-4000"
     },
-    "algorithms": []
+    "algorithms": [
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "RSA SigVer(FIPS186-4) | A4201 | Signature Type - PKCSPSSModulo - 4096 | FIPS 186-4",
+      "SHA2-384 | A4201 | MessageLength - MessageLength:0-65536 Increment 8 | FIPS 180-4"
+    ]
   }
 }

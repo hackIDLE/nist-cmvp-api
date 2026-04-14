@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895"
   },
   "certificate": {
     "certificate_number": "4895",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf",
@@ -58,13 +58,54 @@
     },
     "algorithms": [
       "AES",
-      "DRBG",
+      "CVL",
+      "DES",
+      "DSA",
       "ECDSA",
       "HMAC",
       "KAS",
       "KDF",
+      "KTS",
       "RSA",
-      "SHA"
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "A3947,A3948 | AES\\[FIPS197,SP800-38A,SP800-38D\\] | ECB,CBC,GCM | 128/192/256-bit AESkey/strength from128 to 256-bits | Symmetric encryption and decryption",
+      "A3947 | AES\\[FIPS197,SP800-38A\\] | CTR | 128/192/256-bit AESkey/strength from128 to 256-bits | Symmetric encryption and decryption",
+      "A3947,A3948 | AES\\[FIPS197,SP800-38D\\] | GMAC | 128/192/256-bit AESkey/strength from128 to 256-bits | MAC generation/verification",
+      "A3947,A3948 | KTS(AES)\\[FIPS197,SP800-38F,SP800-38D\\] | GCM | 128/256-bitAESkey/strengthfrom128and256-bits. | Key wrapping",
+      "A3947 | CTR\\_DRBG\\[SP800-90Ar1\\] | AES-256inCTRmode,withwithout derivationfunction,prediction resistanceenabledanddisabled | Entropyinput,seed,Vandkeyvalues/strengthis256-bits | Randomnumber generation",
+      "A3947 | RSASigGen\\[FIPS186-4\\] | PKCS1.5withSHA-256,SHA-384 | 2048/3072/4096-bitmodulus/strengthfrom112to150-bits | RSA signature generation",
+      "A3947 | RSASigVer\\[FIPS186-4\\] | PKCS1.5withSHA2-256,SHA2-384 | 2048/3072/4096-bitmodulus/strengthfrom112to150-bits | RSA signature verification",
+      "A3947 | ECDSAKeyGen\\[FIPS186-4\\] | AppendixB.4.2:Testingcandidates | ECDSA/ECDHkeypairP-256andP-384curves/strength128and192-bits | ECDSA/ECDHkeypair generation",
+      "A3947 | ECDSAKeyVer\\[FIPS186-4\\] | N/A | ECDSA/ECDHkeypairwithP-256andP-384curves/strength128and192-bits | ECDSA/ECDHpublickeyverification",
+      "A3947 | ECDSASigGen\\[FIPS186-4\\] | SHA2-256,SHA2-384 | ECDSA P-256,P-384curves/strength128and192-bits | ECDSA signature generation",
+      "A3947 | ECDSASigVer\\[FIPS186-4\\] | SHA2-256,SHA2-384 | ECDSA P-256,P-384curves/strength128and192-bits | ECDSA signature verification",
+      "A3947,A3948 | SHA\\[FIPS180-4\\] | SHA-1 | N/A | Message digest",
+      "A3947 | SHA\\[FIPS180-4\\] | SHA2-256,SHA2-384 | N/A | Message digest",
+      "A3947,A3948 | HMAC\\[FIPS198\\] | HMAC-SHA-1 | 112 to1024-bitswithkeystrengths112-bits | MAC generation/verification",
+      "A3947 | HMAC\\[FIPS198\\] | HMAC-SHA2-256,HMAC-SHA2-384 | 112 to1024-bitswithkeystrengths112to192-bits | MAC generation/verification",
+      "A3947 | KAS-ECC-SSC\\[SP800-56Ar3\\] | Ephemeral Unified:KAS Role: initiator, responder | P-256,P-384/strength128and192-bits | EC Diffie-Hellman shared secret computation used in Key Agreement Scheme(KAS)IG D.F scenario 2(path1)",
+      "A3947 | KAS-FFC-SSC\\[SP800-56Ar3\\] | dhEphemeral:KAS Role: initiator, responder | ffdhe2048,ffdhe3072,ffdhe4096/strengthfrom112to150-bits | Diffie-Hellman shared secret computation used in KAS IGD.F scenario 2(path1)",
+      "A3947(CVL) | SSH KDF\\[SP800-135r1\\] | AES-128,AES-256withSHA2-256,SHA2-384 | 256-bit keys with256-bitkey strength | Key derivation",
+      "A3947(CVL) | TLS KDF\\[SP800-135r1\\] | TLS version1.0/1.1 | 256-bits | Key derivation",
+      "A3947(CVL) | TLS KDF\\[SP800-135r1\\]RFC7627 | TLS v1.2 | 256-bits | Key derivation",
+      "MD5 | Allowed per IG 2.4.A | Message digest used in TLS 1.0/1.1 KDF only",
+      "AES with OFB,CCM,CFB,XTS,KW modes,Blowfish,Camellia,CAST5,DES,IDEA,RC2,RC4,SEED,SM2,SM4,Triple-DES | Symmetric encryption and decryption",
+      "SHA2-224,SHA2-512,SM3,MD4,MDC2,RIPEMD,Whirlpool | Message digest",
+      "HMAC-SHA2-224,HMAC-SHA2-512,AESCMAC,Triple-DESCMAC | MAC generation/verification",
+      "RSA key generation | RSA with 1024 and greater than 4096 up to 16384 modulus",
+      "RSA signature generation and verification | PKCS #1 v1.5 scheme with 1024 and greater than 4096 up to 16384 modulus,for all SHA sizes",
+      "Signature generation/Signature verification using PKCS #1v1.5 scheme with modulus size 2048,3072,4096-bits withSHA-1,SHA2-224,SHA2-512",
+      "ECDSA | Key pair generation using P-224,P-521 curves",
+      "Signature generation/Signature verification using curvesP-256,P-384 with SHA-1,SHA2-224,SHA2-512;using P-224,P-521 curves with any SHA sizes",
+      "RSA encrypt/decrypt | RSA with modulus sizes up to 16384-bits",
+      "DSA domain parameter generation,domainparameter verification,key pair generation,signature generation and verification | DSA with all key and SHA sizes",
+      "HMAC\\_DRBG and Hash\\_DRBG using all SHA sizes,CTR\\_DRBG with AES-128,AES-192,ANSI X9.31 RNG | Random number generation",
+      "Diffie-Hellman | Shared secret computation with groups other thanffdhe2048,ffdhe3072,ffdhe4096",
+      "EC Diffie-Hellman | Shared secret computation:"
     ]
   }
 }

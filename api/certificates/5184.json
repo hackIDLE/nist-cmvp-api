@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5184"
   },
   "certificate": {
     "certificate_number": "5184",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5184",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5184",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5184.pdf",
@@ -57,6 +57,56 @@
       "contact_email": "security-certifications@apple.com",
       "contact_phone": "907-227-9672"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A6507 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CBC | A6508 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CBC | A6509 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CBC | A6510 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CCM | A6508 | Key Length-128,192,256 | SP 800-38C",
+      "AES-CCM | A6510 | Key Length-128,192,256 | SP 800-38C",
+      "AES-CCM | A6511 | Key Length-128,192,256 | SP 800-38C",
+      "AES-CFB128 | A6507 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CFB128 | A6508 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CFB128 | A6510 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CFB8 | A6508 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CFB8 | A6510 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CMAC | A6510 | Direction- Generation, Verification Key Length-128,192,256 | SP 800-38B",
+      "AES-CTR | A6508 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CTR | A6510 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-CTR | A6511 | Direction- Decrypt, Encrypt Key Length-128,192,256 | SP 800-38A",
+      "AES-ECB | A6507 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-ECB | A6508 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-ECB | A6510 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-ECB | A6511 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-GCM | A6508 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP 800-38D",
+      "AES-GCM | A6510 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP 800-38D",
+      "AES-GCM | A6511 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP 800-38D",
+      "AES-KW | A6508 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38F",
+      "AES-KW | A6510 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38F",
+      "AES-OFB | A6507 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-OFB | A6508 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-OFB | A6510 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP 800-38A",
+      "AES-XTSTestingRevision2.0 | A6507 | Direction-Decrypt,EncryptKeyLength-128,256 | SP 800-38E",
+      "AES-XTSTestingRevision2.0 | A6508 | Direction-Decrypt,EncryptKeyLength-128,256 | SP 800-38E",
+      "AES-XTSTestingRevision2.0 | A6510 | Direction-Decrypt,EncryptKeyLength-128,256 | SP 800-38E",
+      "Counter DRBG | A6508 | Prediction Resistance-NoMode-AES-128,AES-256Derivation Function Enabled-Yes | SP 800-90ARev.1",
+      "Counter DRBG | A6510 | Prediction Resistance-NoMode-AES-128,AES-256Derivation Function Enabled-Yes | SP 800-90ARev.1",
+      "Counter DRBG | A6511 | Prediction Resistance-NoMode-AES-128,AES-256Derivation Function Enabled-Yes | SP 800-90ARev.1",
+      "ECDSA KeyGen(FIPS186-5) | A6510 | Curve-P-224,P-256,P-384,P-521Secret Generation Mode-testing candidates | FIPS 186-5",
+      "ECDSA KeyGen(FIPS186-5) | A6512 | Curve-P-224,P-256,P-384,P-521Secret Generation Mode-testing candidates | FIPS 186-5",
+      "ECDSA KeyVer(FIPS186-5) | A6510 | Curve-P-224,P-256,P-384,P-521 | FIPS 186-5",
+      "ECDSA KeyVer(FIPS186-5) | A6512 | Curve-P-224,P-256,P-384,P-521 | FIPS 186-5",
+      "ECDSA SigGen(FIPS186-5) | A6510 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA3-224,SHA3-256,SHA3-384,SHA3-512Component-No | FIPS 186-5",
+      "ECDSA SigGen(FIPS186-5) | A6512 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA3-224,SHA3-256,SHA3-384,SHA3-512Component-No | FIPS 186-5",
+      "ECDSA SigVer(FIPS186-4) | A6510 | Component-NoCurve-P-224,P-256,P-384,P-521Hash Algorithm-SHA-1,SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA3-224,SHA3-256,SHA3-384,SHA3-512 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A6512 | Component-NoCurve-P-224,P-256,P-384,P-521Hash Algorithm-SHA-1,SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA3-224,SHA3-256,SHA3-384,SHA3-512 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-5) | A6510 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-224,SHA2-256,SHA2-384, | FIPS 186-5"
+    ]
   }
 }

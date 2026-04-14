@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5050"
   },
   "certificate": {
     "certificate_number": "5050",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5050",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5050",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5050.pdf",
@@ -57,6 +57,51 @@
       "contact_email": "security-certifications@apple.com",
       "contact_phone": "907-227-9672"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "SHA2-256 | A3686 | Message Length - Message Length:0-32768Increment 8 | FIPS 180-4",
+      "SHA2-256 | A3687 | Message Length - Message Length:0-32768Increment 8 | FIPS 180-4",
+      "SHA2-384 | A3684 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "SHA2-384 | A3686 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "SHA2-512 | A3684 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "SHA2-512 | A3686 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "SHA2-512/256 | A3684 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "SHA2-512/256 | A3686 | Message Length - Message Length:0-32768Increment8 | FIPS 180-4",
+      "ANSI X9.63 KDF | Hash based Key Derivation Function",
+      "DES | Encryption/Decryption Key Size:56-bits",
+      "ECDSA | Generation/Verification/SigGen/SigVer with curve P-192",
+      "ECDSA KeyGen | Key Pair Generation for compact point representation of points",
+      "EdDSA | Key Generation, Signature Generation, Signature Verification with Ed25519",
+      "HKDF \\[SP800-56Crev2\\] | Key Derivation Function",
+      "RSA SigGen | PKCS#1v1.5andPSS;Signature GenerationKeySize<2048",
+      "RSA SigVer | Signature VerificationKeySize<1024",
+      "RSA Key Wrapping | OAEP,PKCS#1v1.5and-PSS schemes",
+      "Triple-DES\\[SP800-67r2\\] | CBC,CTR,CFB64,ECB,CFB8,OFB",
+      "RFC 6637 Key Derivation | SHA-256,SHA-512,AES-128,AES-256",
+      "Unauthenticated Symmetric Encryption and Decryption | BC-UnAuth | Key Size / Key Strength: 128, 192, 256-bits(for all but XTS,which supports 128 and 256 bit keys) | AES\\[FIPS 197;SP 800-38A\\];ECB,CBC,CFB8,CFB128,OFB,CTRAES\\[FIPS 197;SP 800-38E\\]:XTS | AES-CBC:(A3682,A3683)AES-CFB128:(A3682,A3683)AES-XTS Testing Revision 2.0:(A3682)AES-ECB:(A3682,A3683,A3685)AES-OFB:(A3682,A3683)AES-CFB8:(A3683)AES-CTR:(A3683,A3685)",
+      "Authenticated Symmetric Encryption and Decryption | BC-Auth | Key Size/Key Strength:128,192,256-bits | AES\\[FIPS 197;SP 800-38C\\];CCMAES\\[FIPS 197;SP 800-38D\\];GCM | AES-CCM:(A3685)AES-GCM:(A3685)",
+      "Random Number Generation | DRBG | Key Length/Key Strength:128,256 | CTR\\_DRBG\\[SP800-90ARev1\\];AES-128,AES-256DerivationFunctionEnabledNoPredictionResistance | Counter DRBG:(A3683,A3685)",
+      "ECDSA Asymmetric Key Generation | AsymKeyPair-KeyGenCKG | Curve:P-224,P-256,P-384,P-521.KeyStrength:from112to256 | key generation method:Testing CandidatesSupportedCurves:P-224,P-256,P-384,P-521 | ECDSA KeyGen(FIPS186-4):(A3686)CKG:()Key Type:Asymmetric",
+      "ECDSA Public-Key Validation | AsymKeyPair-PubKeyVal | Curve:P-224,P-256,P-384,P-521.Key | ECDSA\\[FIPS186-5\\]:Public-KeyValidation(PKV) | ECDSA KeyVer(FIPS186-4):(A3686)",
+      "ECDSA Digital Signature Generation | DigSig-SigGen | Curve: P-224, P-256, P-384, P-521. Key Strength: from 112 to 256 | ECDSA \\[FIPS 186-5\\]:Signature Generation | ECDSA SigGen(FIPS186-4):(A3686)",
+      "ECDSA Digital Signature Verification | DigSig-SigVer | Curve: P-224, P-256, P-384, P-521. Key Strength: from 112 to 256 | ECDSA \\[FIPS 186-5\\]:Signature Verification | ECDSA SigVer(FIPS186-4):(A3686)",
+      "HMAC Message Authentication | MAC | Key Length 8 - 262144 bits/Key Strength: 112 to 256 bits | HMAC [FIPS 198](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/vng_ltc):SHA-1,SHA-224,SHA-256,SHA-384,SHA-512,SHA-512/256HMAC [FIPS 198](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/c_ltc):SHA-384,SHA-512,SHA-512/256HMAC [FIPS 198](https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/vng_neon):SHA-256 | HMAC-SHA2-384:(A3684,A3686)HMAC-SHA2-512:(A3684,A3686)HMAC-SHA2-512/256:(A3684,A3686)HMAC-SHA2-256:(A3686,A3687)HMAC-SHA-1:(A3686)HMAC-SHA2-224:(A3686)",
+      "key wrapping / key unwrapping | KTS-Wrap | Key Size/Key Strength: 128,192,256-bits | KTS(AES)\\[SP800-38F\\]:AES-KW | AES-KW:(A3683)",
+      "RSA Digital Signature Generation | DigSig-SigGen | Modulus:2048,3072,4096.Key Strength:from 112 to 150 | RSA\\[FIPS 186-5\\]:Signature Generation(PKCS#1 v1.5)和(PKCS PSS) | RSA SigGen(FIPS186-4):(A3686)",
+      "RSA Digital Signature Verification | DigSig-SigVer | Modulus:1024(legacy use per FIPS 140-3 IG C.K),2048,3072,4096.Key | RSA\\[FIPS 186-5\\]:Signature VerificationPKCS#1 v1.5)和(PKCS PSS) | RSA SigVer(FIPS186-4):(A3686)",
+      "Message Digest | SHA | N/A | SHS \\[FIPS 180-4\\] (vng\\_ltc):SHA-1, SHA-224,SHA-256,SHA-384,SHA-512,SHA-512/256SHS \\[FIPS 180-4\\] (c\\_ltc):SHA-384,SHA-512,SHA-512/256SHS \\[FIPS 180-4\\] (vng\\_neon):SHA-256 | SHA2-384:(A3684,A3686)SHA2-512:(A3684,A3686)SHA2-512/256:(A3684,A3686)SHA2-224:(A3686)SHA2-256:(A3686,A3687)SHA-1:(A3686)"
+    ]
   }
 }

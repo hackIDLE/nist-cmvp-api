@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5136"
   },
   "certificate": {
     "certificate_number": "5136",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5136",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5136",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5136.pdf",
@@ -56,6 +56,55 @@
       "contact_email": "Certs-team@juniper.net",
       "contact_phone": "408-745-2000"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4210 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CTR | A4210 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "ECDSA KeyGen(FIPS186-4) | A4210 | Curve-P-256,P-384,P-521Secret Generation Mode-Testing Candidates | FIPS186-4",
+      "ECDSA KeyGen(FIPS186-4) | A6440 | Curve-P-256,P-384,P-521Secret Generation Mode-Testing Candidates | FIPS186-4",
+      "ECDSA KeyVer(FIPS186-4) | A4210 | Curve-P-256,P-384,P-521 | FIPS186-4",
+      "ECDSA KeyVer(FIPS186-4) | A6440 | Curve-P-256,P-384,P-521 | FIPS186-4",
+      "ECDSA SigGen(FIPS186-4) | A4210 | Curve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "ECDSA SigGen(FIPS186-4) | A6440 | Component-NoCurve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A4210 | Curve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A6440 | Component - NoCurve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "HMAC-SHA-1 | A4210 | Key Length-Key Length:160 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4210 | Key Length-Key Length:256 | FIPS 198-1",
+      "HMAC-SHA2-512 | A4210 | Key Length-Key Length:512 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A4387 | Domain Parameter Generation Methods-P-256,P-384,P-521Scheme ephemeralUnified-KAS Role-initiator,responder | SP 800-56A Rev.3",
+      "KDF SSH(CVL) | A4347 | Cipher-AES-128,AES-192,AES-256Hash Algorithm-SHA-1,SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
+      "RSA KeyGen(FIPS186-4) | A4210 | Key Generation Mode-B.3.3Modulo-2048,3072,4096Primality Tests-Table C.2Private Key Format-Standard | FIPS 186-4",
+      "RSA SigGen(FIPS186-4) | A4210 | Signature Type-PKCS1.5Modulo-2048,3072,4096 | FIPS 186-4",
+      "RSA SigVer(FIPS186-4) | A4210 | Signature Type-PKCS1.5Modulo-2048,3072,4096 | FIPS 186-4",
+      "SHA-1 | A4210 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-256 | A4210 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-384 | A4210 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
+      "SHA2-512 | A4210 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
+      "AES-CBC | A4416 | Direction- Decrypt, Encrypt",
+      "AES-CMAC | A4416 | Direction- Generation, Verification",
+      "AES-KW | A4416 | Direction- Decrypt, Encrypt",
+      "KDF SP800-108 | A4416 | KDF Mode- Counter",
+      "AES-GCM | AES 4550 | Direction- Decrypt, Encrypt Key Length-128,256 | SP 800-38D",
+      "AES-GCM | C1869 | Direction- Decrypt, Encrypt IV Generation-External KeyLength-128,256 | SP 800-38D",
+      "AES-GCM | C996 | Direction- Decrypt, Encrypt IV Generation-External KeyLength-128,256 | SP 800-38D",
+      "ECDSA SigVer(FIPS186-4) | A4211 | Curve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A6401 | Component-NoCurve-P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS 186-4",
+      "SHA2-256 | A4211 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
+      "HMAC-SHA-1 | A4208 | Key Length - Key Length: 112,160 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4208 | Key Length - Key Length: 160,256 | FIPS 198-1",
+      "SHA-1 | A4208 | Message Length - Message Length: 0-51200 Increment8 | FIPS 180-4",
+      "SHA2-256 | A4208 | Message Length - Message Length: 0-51200 Increment8 | FIPS 180-4",
+      "SHA2-512 | A4208 | Message Length - Message Length: 0-65536 Increment8 | FIPS 180-4"
+    ]
   }
 }

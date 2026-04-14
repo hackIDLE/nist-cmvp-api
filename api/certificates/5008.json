@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5008"
   },
   "certificate": {
     "certificate_number": "5008",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5008",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5008",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5008.pdf",
@@ -56,6 +56,42 @@
       "contact_email": "avi.davidowitz@nuvoton.com",
       "contact_phone": "972-9-9702295"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CCM | A2825 | Key Length - 128, 192, 256 | SP 800-38C",
+      "AES-CFB128 | A2825 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC | A2825 | Direction - Generation, Verification Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR | A2825 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB | A2825 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM | A2825 | Direction - Decrypt, Encrypt IV Generation - Internal IV Generation Mode - 8.2.2 Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC | A2825 | Direction - Decrypt, Encrypt IV Generation - Internal IV Generation Mode - 8.2.2 Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB | A2825 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "ECDSA KeyGen(FIPS186-4) | A2825 | Curve - P-256, P-384, P-521 | FIPS 186-4",
+      "ECDSA KeyVer(FIPS186-4) | A2825 | Curve - P-256, P-384, P-521 | FIPS 186-4",
+      "ECDSA SigGen(FIPS186-4) | A2825 | Component - No, Yes Curve - P-256, P-384, P-521 | FIPS 186-4",
+      "ECDSA SigVer(FIPS186-4) | A2825 | Component - No Curve - P-256, P-384, P-521 | FIPS 186-4",
+      "Hash DRBG | A2825 | Prediction Resistance - No, Yes Mode - SHA2-512 | SP 800-90A Rev.1",
+      "HMAC-SHA2-256 | A2825 | Key Length - Key Length: 256-512 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A2825 | Key Length - Key Length: 256-512 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A2825 | Key Length - Key Length: 256-512 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A2825 | Domain Parameter Generation Methods-P-256,P-384,P-521Scheme ephemeralUnifiedKAS Role initiator, responder | SP 800-56A Rev.3",
+      "KTS-IFC | A2825 | Modulo-2048,3072Key Generation Methods-rsakpg2-basicSchemeKTS-OAEP-basicKAS Role initiator, responderKey Length-1024 | SP 800-56B Rev.2",
+      "RSA SigGen(FIPS186-4) | A2825 | Signature Type-PKCS1.5,PKCSPSSModulo-2048,3072 | FIPS186-4",
+      "RSA SigVer(FIPS186-4) | A2825 | Signature Type-PKCS1.5,PKCSPSSModulo-2048,3072 | FIPS186-4",
+      "SHA2-256 | A2825 | - | FIPS180-4",
+      "SHA2-384 | A2825 | - | FIPS180-4",
+      "SHA2-512 | A2825 | - | FIPS180-4",
+      "CKG(ECDSA/ECDH) | Type:AsymmetricCurves:P-256,P-384,P-521 | N/A | CKG for asymmetric keys as per SP 800-133Rev2section 4 example 1 with no post processing on the Uvalue"
+    ]
   }
 }

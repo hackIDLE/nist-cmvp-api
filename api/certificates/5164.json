@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164"
   },
   "certificate": {
     "certificate_number": "5164",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5164.pdf",
@@ -55,6 +55,16 @@
       "contact_email": "mmcnerney@zebra.com",
       "contact_phone": "401-834-9088"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CCM | A6540 | Key Length - 128 | SP 800-38C",
+      "AES-ECB | A6540 | Direction - Decrypt, EncryptKey Length - 128 | SP 800-38A",
+      "HMAC-SHA-1 | A5388 | Key Length - Key Length: 112-512 Increment 8 | FIPS 198-1",
+      "SHA-1 | A5388 | Message Length - Message Length: 8-65536Increment 8 | FIPS 180-4"
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170"
   },
   "certificate": {
     "certificate_number": "5170",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5170.pdf",
@@ -58,6 +58,14 @@
       "contact_email": "khoana@verichains.io",
       "contact_phone": "872 262 3174"
     },
-    "algorithms": []
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "Hash DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1",
+      "HMAC DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1 | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non-Approved, Not Allowed Algorithms: | N/A for this Module."
+    ]
   }
 }

@@ -3,10 +3,14 @@
   "info": {
     "title": "NIST CMVP Data API",
     "description": "Static JSON API for NIST Cryptographic Module Validation Program data. Auto-updated weekly via GitHub Actions. Unofficial project - see https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative data.",
-    "version": "2.0",
+    "version": "3.0",
     "contact": {
       "url": "https://github.com/hackIDLE/nist-cmvp-api"
     }
+  },
+  "externalDocs": {
+    "description": "Markdown API reference",
+    "url": "https://hackidle.github.io/nist-cmvp-api/api/docs.md"
   },
   "servers": [
     {
@@ -57,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1087 active validated modules with enriched details",
+            "description": "Currently 1083 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -75,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4142 historical modules",
+            "description": "Currently 4146 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -164,15 +168,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-14T03:31:23.958455Z"
+            "example": "2026-04-14T12:11:01.385018Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1087
+            "example": 1083
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4142
+            "example": 4146
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -180,7 +184,7 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 374
+            "example": 263
           },
           "total_certificate_details": {
             "type": "integer",
@@ -192,11 +196,11 @@
           },
           "algorithm_source": {
             "type": "string",
-            "example": "crawl4ai"
+            "example": "firecrawl"
           },
           "version": {
             "type": "string",
-            "example": "2.0"
+            "example": "3.0"
           }
         }
       },
@@ -273,8 +277,30 @@
             "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
           },
           "detail_available": {
-            "type": "integer",
+            "type": "boolean",
             "example": true
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES",
+              "CVL",
+              "DES"
+            ]
+          },
+          "algorithms_detailed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES-CBC | A4397 | - | SP 800-38A",
+              "AES-CTR | A4397 | - | SP 800-38A",
+              "AES-GCM | A4397 | - | SP 800-38D"
+            ]
           }
         }
       },
@@ -340,62 +366,50 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "nullable": false,
             "example": "5240"
           },
           "dataset": {
             "type": "string",
-            "nullable": false,
             "example": "active"
           },
           "generated_at": {
             "type": "string",
-            "nullable": false,
-            "example": "2026-04-14T03:31:23.958455Z"
+            "example": "2026-04-14T12:11:01.385018Z"
           },
           "nist_page_url": {
             "type": "string",
-            "nullable": false,
             "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "certificate_detail_url": {
             "type": "string",
-            "nullable": false,
             "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "security_policy_url": {
             "type": "string",
-            "nullable": false,
             "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "nullable": false,
             "example": "WatchGuard Technologies, Inc."
           },
           "module_name": {
             "type": "string",
-            "nullable": false,
             "example": "WatchGuard Firebox M4800 and M5800"
           },
           "standard": {
             "type": "string",
-            "nullable": false,
             "example": "FIPS 140-3"
           },
           "status": {
             "type": "string",
-            "nullable": false,
             "example": "Active"
           },
           "module_type": {
             "type": "string",
-            "nullable": false,
             "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "nullable": false,
             "example": "MultiChipStand"
           },
           "overall_level": {
@@ -404,7 +418,6 @@
           },
           "validation_date": {
             "type": "string",
-            "nullable": false,
             "example": "4/13/2026"
           },
           "validation_dates": {
@@ -418,17 +431,14 @@
           },
           "sunset_date": {
             "type": "string",
-            "nullable": false,
             "example": "4/12/2031"
           },
           "caveat": {
             "type": "string",
-            "nullable": false,
             "example": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy"
           },
           "description": {
             "type": "string",
-            "nullable": false,
             "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
           },
           "security_level_exceptions": {
@@ -463,9 +473,24 @@
           "algorithms": {
             "type": "array",
             "items": {
-              "type": "object",
-              "additionalProperties": true
-            }
+              "type": "string"
+            },
+            "example": [
+              "AES",
+              "CVL",
+              "DES"
+            ]
+          },
+          "algorithms_detailed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES-CBC | A4397 | - | SP 800-38A",
+              "AES-CTR | A4397 | - | SP 800-38A",
+              "AES-GCM | A4397 | - | SP 800-38D"
+            ]
           }
         }
       },
@@ -496,12 +521,21 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "example": "NIST CMVP API"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "example": "Static JSON API for NIST Cryptographic Module Validation Program data with certificate detail records and generated agent-facing documentation"
+          },
+          "base_url": {
+            "type": "string",
+            "example": "https://hackidle.github.io/nist-cmvp-api"
           },
           "endpoints": {
+            "type": "object"
+          },
+          "documentation": {
             "type": "object"
           },
           "last_updated": {
@@ -515,6 +549,12 @@
             "type": "integer"
           },
           "total_modules_in_process": {
+            "type": "integer"
+          },
+          "total_certificates_with_algorithms": {
+            "type": "integer"
+          },
+          "total_certificate_details": {
             "type": "integer"
           },
           "features": {

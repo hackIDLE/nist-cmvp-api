@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007"
   },
   "certificate": {
     "certificate_number": "5007",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5007.pdf",
@@ -56,6 +56,56 @@
       "contact_email": "alfonso-ai.ip@broadcom.com",
       "contact_phone": "1-408-922-5624"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | AES5895 | Direction-Decrypt, EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-CCM | AES5896 | Key Length-128,192,256 | SP 800-38C",
+      "AES-CTR | AES5895 | Key Length-128,192,256 | SP 800-38A",
+      "AES-ECB | AES5895 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "Counter DRBG | A3753 | Prediction Resistance-YesMode-AES-256Derivation Function Enabled-Yes | SP 800-90ARev.1",
+      "DSA SigGen(FIPS186-4) | A4437 | L-2048N-256Hash Algorithm-SHA2-256 | FIPS 186-4",
+      "DSA SigVer(FIPS186-4) | A4437 | L-2048N-256Hash Algorithm-SHA2-256 | FIPS 186-4",
+      "ECDSA KeyGen(FIPS186-4) | A3751 | Curve-P-256Secret Generation Mode-ExtraBits | FIPS 186-4",
+      "ECDSA KeyVer(FIPS186-4) | A3751 | Curve-P-256 | FIPS186-4",
+      "ECDSA SigGen(FIPS186-4) | A3751 | Component-No Curve-P-256,P-384 Hash Algorithm-SHA2-256 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A3751 | Component-No Curve-P-256,P-384 Hash Algorithm-SHA2-256 | FIPS186-4",
+      "HMAC-SHA2-256 | HMAC 3870 | - | FIPS198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A3751 | Domain Parameter Generation Methods-P-256 Scheme ephemeralUnified-KAS Role-responder | SP800-56A Rev.3",
+      "KDA OneStepNoCounter SP800-56Cr2 | A3752 | Key Length-Key Length:256 | SP800-56C Rev.2",
+      "RSA SigGen(FIPS186-4) | A3750 | Signature Type-PKCS1.5 Modulo-2048,4096 | FIPS186-4",
+      "RSA SigVer(FIPS186-4) | A3750 | Signature Type-PKCS1.5 Modulo-2048,4096 | FIPS186-4",
+      "SHA2-256 | SHS 4646 | Message Length-Message Length:0-51200Increment8 | FIPS180-4",
+      "SHA3-224 | SHA-360 | - | FIPS202",
+      "SHA3-256 | SHA-360 | - | FIPS202",
+      "SHA3-384 | SHA-360 | - | FIPS202",
+      "SHA3-512 | SHA-360 | - | FIPS202",
+      "CKG-Sym | Capabilities:Sections 4 and 6.1 Direct symmetric key generation using unmodified DRBG output;Section 6.2.1 Derivation of symmetric keys from a key agreement shared secret | DRBG(A3753) | SP800-133r2,IG\\[D.H\\]",
+      "CKG-Asym | Capabilities:Sections 4 and 5.1 Asymmetric signature key generation using unmodified DRBG output;Sections 4 and 5.2 Asymmetric key establishment key generation using unmodified DRBG output | ECDSA KeyGen(A3751) | SP800-133r2,IG\\[D.H\\]",
+      "AKG | AsymKeyPair-KeyGen | Asymmetric Key-Pair Generation | Publications:FIPS 186-4,SP800-90A,IG C.A,IG C.E | CKG-Asym Curve:P-256 ECDSA KeyGen(FIPS186-4) Counter DRBG",
+      "AKV | AsymKeyPair-KeyVer | Asymmetric Key-Pair Verification | Publications:FIPS 186-4,SP800-90A,IG C.A,IG C.E | ECDSA KeyVer(FIPS186-4) Curve:P-256",
+      "DPG | AsymKeyPair-DomPar | Domain Parameters | Publication:SP800-56Ar3 | KAS-ECC-SSC Sp800-56Ar3 Curve:P-256 Counter DRBG",
+      "DRBG | DRBG | Random Number Generation | Publication:SP800-90A | Counter DRBG Capabilities:AES-256 w/ Derivation Function",
+      "ENC | BC-UnAuth | Block Cipher | Publication:FIPS 197,SP800-38A | AES-CBC Key Size:128,192,256AES-CTR Key Size:128,192,256AES-ECB Key Size:128,192,256",
+      "ENC-AUTH | BC-Auth | Authentication Block Cipher | Publication:FIPS 197,SP800-38C | AES-CCM Key Size:128,192,256",
+      "CKG-Symmetric | CKG | Symmetric Key Generation | Publication:IG D.H,FIPS 197,SP800-133r2 Sections4 and6.1 Direct symmetric key generation using unmodified DRBG output | Counter DRBG Key Size:128,192,256",
+      "SigGen | DigSig-SigGen | Digital Signature Generation | Publication:FIPS 186-4,SP800-90A,FIPS 180-4 | DSA SigGen(FIPS186-4)Key Size:2048ECDSA SigGen(FIPS186-4)Curve:P-256,P-384RSA SigGen(FIPS186-4)Key Size:2048,4096SHA2-256Counter DRBG",
+      "SigVer | DigSig-SigVer | Digital Signature Verification | Publication:FIPS 186-4,SP800-90A,FIPS 180-4 | DSA SigVer(FIPS186-4)Key Size:2048ECDSA SigVer(FIPS186-4)Curve:P-256,P-384RSA SigVer",
+      "KAS | KAS-Full | Key Agreement | Publication:SP800-56Ar3,SP800-56Cr2Caveat:Key establishment method provides128bits of encryption strength | KAS-ECC-SSCSp800-56Ar3Scheme:Ephemeral Unified(Responder)Curve:P-256KDAOneStepNoCounterSP800-56Cr2AuxiliaryFunction:SHA2-256Key Length:128Counter DRBG",
+      "KTS | KTS-Wrap | Key Transport-Wrapping | Publication:FIPS197,SP800-38F,IGD.GCaveat:Key establishment methodologyprovides128bitsof encryptionstrength | AES-CCMKey Size:128",
+      "MAC | MAC | MessageAuthenticationCode | Publication:FIPS198-1,FIPS180-4,IGC.B | HMAC-SHA2-256Capabilities:Key size<Block size",
+      "SHS | SHA | Secure HashStandard | Publication:FIPS180-4,FIPS202,IGC.B,IGC.C | SHA2-256MessageLength:0-51200Increment8SHA3-224MessageLength:0-51200Increment8SHA3-256MessageLength:0-51200Increment"
+    ]
   }
 }

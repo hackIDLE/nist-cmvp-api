@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5157"
   },
   "certificate": {
     "certificate_number": "5157",
     "dataset": "active",
-    "generated_at": "2026-04-14T03:31:23.958455Z",
+    "generated_at": "2026-04-14T12:11:01.385018Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5157",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5157",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5157.pdf",
@@ -63,6 +63,37 @@
       "contact_email": "nate.pleasant@digi.com",
       "contact_phone": "877-912-3444"
     },
-    "algorithms": []
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "TLS v1.3 KDF(CVL) | A3548 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
+      "DSA PQGGen\\[FIPS 186-4\\] | Key Size, Key Strength:L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:PQGGen using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point #3)",
+      "DSA PQGVer\\[FIPS 186-4\\] | Key Size, Key Strength:L=1024/N=160(s<112)L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:PQGVer using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point #3)",
+      "DSA SigGen\\[FIPS 186-4\\] | Key Size, Key Strength:L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:SigGen using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point #3)",
+      "DSA SigVer\\[FIPS186-4\\] | Key Size, Key Strength:L=1024/N=160(s<112)L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:SigVer using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point #3)",
+      "AES | AES(Any non-authenticated mode),Cert.#A3548):Symmetric key unwrapping | OpenSSL ProjectOpenSSL 3.x FIPSProvider | Per IG D.GAdditionalComment 5",
+      "Triple-DES | Provides 3-Key ECB and CBC mode, but indicated as fips=no Encryption, Decryption",
+      "Ed448 | SHAKE256, Ed448 provides 224 bits of security, Digital Signature Generation",
+      "Ed25519 | SHA2-512, Ed25519 provides 128 bits of security, Digital Signature Generation",
+      "ECDSA SigVer Component | Provides between 80 and 256 bits for security, Curves:B-163,B-233,B-283,B-409,B-571,K-163,K-233,K-283,K-409,K-571,P-192,P-224,P-256,P-384,P-521,Digital Signature Verification",
+      "FIPS 186-2 RSA SigGen/SigVer | Provides >=80 bits of security，RSA signature generation/verification per FIPS 186-2",
+      "FIPS 186-2 RSA KeyGen | Provides >=112 bits of security，RSA key generation per FIPS 186-2",
+      "X942KDF-CONCAT | Usage of X942KDF-CONCAT with PRF SHA-1，SHA2-512/224，SHA2-512/256，SHA3-224，SHA3-256，SHA3-384，SHA3-512，SHAKE128，SHAKE256，KECCAK-KMAC128和KECCAK-KMAC256",
+      "X963KDF | Usage of X963KDF with PRF SHA-1，SHA2-512/224，SHA2-512/256，SHA3-224，SHA3-256，SHA3-384，SHA3-512，SHAKE128，SHAKE256，KECCAK-KMAC128和KECCAK-KMAC256",
+      "HKDF | Provides<112bitsofsecurity，Usage of HKDFwithkeylengthlessthan112bits",
+      "OneStep KDF | Usage of OneStep KDF withPRF SHAKE128，SHAKE256",
+      "HMAC | Provides<112bitsofsecurity，Usage of HMACwithkeylengthlessthan112bitsforMACgeneration",
+      "HashandHMACDRBG | Usage of HashandHMACDRBGswithPRFs SHA2-224，SHA2-384，SHA2-512/224andSHA2-512/256"
+    ]
   }
 }
