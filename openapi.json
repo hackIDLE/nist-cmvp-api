@@ -57,7 +57,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1086 active validated modules with enriched details",
+            "description": "Currently 1087 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -75,7 +75,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4141 historical modules",
+            "description": "Currently 4142 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -164,15 +164,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-12T03:10:00.961597Z"
+            "example": "2026-04-14T03:31:23.958455Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1086
+            "example": 1087
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4141
+            "example": 4142
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -184,7 +184,7 @@
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5227
+            "example": 5229
           },
           "source": {
             "type": "string",
@@ -206,39 +206,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5238"
+            "example": "5240"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "SUSE LLC"
+            "example": "WatchGuard Technologies, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
+            "example": "WatchGuard Firebox M4800 and M5800"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "Validation Date": {
             "type": "string",
-            "example": "04/10/2026"
+            "example": "04/13/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "module_name": {
             "type": "string",
-            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
+            "example": "WatchGuard Firebox M4800 and M5800"
           },
           "standard": {
             "type": "string",
@@ -250,19 +250,19 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/9/2031"
+            "example": "4/12/2031"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy"
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
@@ -270,7 +270,7 @@
           },
           "description": {
             "type": "string",
-            "example": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C."
+            "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
           },
           "detail_available": {
             "type": "integer",
@@ -341,7 +341,7 @@
           "certificate_number": {
             "type": "string",
             "nullable": false,
-            "example": "5238"
+            "example": "5240"
           },
           "dataset": {
             "type": "string",
@@ -351,32 +351,32 @@
           "generated_at": {
             "type": "string",
             "nullable": false,
-            "example": "2026-04-12T03:10:00.961597Z"
+            "example": "2026-04-14T03:31:23.958455Z"
           },
           "nist_page_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "certificate_detail_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
           },
           "security_policy_url": {
             "type": "string",
             "nullable": false,
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
           },
           "vendor_name": {
             "type": "string",
             "nullable": false,
-            "example": "SUSE LLC"
+            "example": "WatchGuard Technologies, Inc."
           },
           "module_name": {
             "type": "string",
             "nullable": false,
-            "example": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module"
+            "example": "WatchGuard Firebox M4800 and M5800"
           },
           "standard": {
             "type": "string",
@@ -391,7 +391,7 @@
           "module_type": {
             "type": "string",
             "nullable": false,
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
@@ -400,12 +400,12 @@
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "validation_date": {
             "type": "string",
             "nullable": false,
-            "example": "4/10/2026"
+            "example": "4/13/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -413,23 +413,23 @@
               "type": "string"
             },
             "example": [
-              "4/10/2026"
+              "4/13/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
             "nullable": false,
-            "example": "4/9/2031"
+            "example": "4/12/2031"
           },
           "caveat": {
             "type": "string",
             "nullable": false,
-            "example": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy"
           },
           "description": {
             "type": "string",
             "nullable": false,
-            "example": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C."
+            "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -437,7 +437,8 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
+              "Roles, services, and authentication: Level 3",
+              "Operational environment: N/A",
               "Non-invasive security: N/A"
             ]
           },
