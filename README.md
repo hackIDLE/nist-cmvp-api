@@ -7,9 +7,16 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - **Validated Modules**: Current FIPS 140-2/140-3 validated cryptographic modules
 - **Historical Modules**: Expired/revoked modules for historical reference
 - **Modules In Process**: Modules currently in validation
-- **Algorithm Extraction**: Approved algorithms extracted from certificate detail pages using [crawl4ai](https://github.com/unclecode/crawl4ai)
+- **Algorithm Extraction**: Approved algorithms extracted locally from Security Policy PDFs
 - **Security Policy Links**: Direct URLs to Security Policy PDF documents
 - **Certificate Detail Records**: Per-certificate JSON with vendor, related files, validation history, and security level exceptions
+
+## For Agents
+
+- [`llms.txt`](https://hackidle.github.io/nist-cmvp-api/llms.txt) - discovery index
+- [`llms-full.txt`](https://hackidle.github.io/nist-cmvp-api/llms-full.txt) - complete single-file reference
+- [`api/docs.md`](https://hackidle.github.io/nist-cmvp-api/api/docs.md) - Markdown endpoint reference with examples
+- [`openapi.json`](https://hackidle.github.io/nist-cmvp-api/openapi.json) - OpenAPI 3.0.3 schema
 
 ## Endpoints
 
@@ -150,13 +157,13 @@ curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | jq '.genera
 # Install dependencies
 pip install -r requirements.txt
 
-# For algorithm extraction, also run:
-crawl4ai-setup
-
-# Run full scraper (with algorithm extraction - takes ~10-15 minutes)
+# Run full scraper (Firecrawl preferred when FIRECRAWL_API_KEY is set)
 python scraper.py
 
-# Run quick scraper (skip algorithm extraction)
+# Force the local PDF fallback even when Firecrawl is available
+unset FIRECRAWL_API_KEY && python scraper.py
+
+# Run quick scraper (skip algorithm extraction entirely)
 SKIP_ALGORITHMS=1 python scraper.py
 ```
 
@@ -166,7 +173,18 @@ SKIP_ALGORITHMS=1 python scraper.py
 |----------|---------|-------------|
 | `NIST_SEARCH_PATH` | `/all` | Override the search path for modules |
 | `SKIP_ALGORITHMS` | `0` | Set to `1` to skip algorithm/detail extraction |
-| `CMVP_DB_PATH` | - | Path to cmvp.db for algorithm import (faster than crawl4ai) |
+| `FIRECRAWL_API_KEY` | - | Prefer Firecrawl PDF-to-markdown extraction for algorithm parsing |
+| `FIRECRAWL_TIMEOUT_MS` | `60000` | Firecrawl scrape timeout in milliseconds |
+| `CMVP_DB_PATH` | - | Path to cmvp.db for algorithm import (fastest override) |
+| `CERT_FETCH_CONCURRENCY` | `16` | Concurrent certificate detail page fetches |
+| `PDF_FETCH_CONCURRENCY` | `8` | Concurrent Security Policy PDF fetches |
+| `FULL_REFRESH` | `0` | Set to `1` to bypass reuse of previously generated outputs |
+
+GitHub Actions should provide `FIRECRAWL_API_KEY` as a repository secret. When that secret is absent, the scraper falls back to local Security Policy PDF parsing.
+
+## CORS
+
+GitHub Pages does not send permissive CORS headers. The API works well for CLIs, agents, and server-side consumers. Browser JavaScript on another origin usually needs a proxy.
 
 ## Source
 

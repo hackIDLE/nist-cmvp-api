@@ -6,7 +6,16 @@ Tests the parsing logic with sample HTML.
 
 import json
 import sys
-from scraper import parse_certificate_detail_page, parse_modules_table
+from scraper import (
+    build_certificate_fingerprint,
+    build_index_payload,
+    generate_openapi_spec,
+    generate_text_artifacts,
+    parse_algorithms_from_firecrawl_markdown,
+    parse_algorithms_from_policy_text,
+    parse_certificate_detail_page,
+    parse_modules_table,
+)
 
 
 def test_parse_simple_table():
@@ -332,6 +341,196 @@ def test_parse_certificate_detail_page():
     print("✓ Certificate detail page test passed")
 
 
+def test_parse_algorithms_from_policy_text():
+    """Test extracting algorithms from Security Policy text without leaking contact data."""
+    policy_text = """
+    Prepared for:
+    Akeyless Security ltd.
+    Shai Onn
+    shai@akeyless.io
+
+    Table of Contents
+    2.5 Algorithms ........................................ 8
+    2.6 Security Function Implementations ............... 15
+
+    2.5 Algorithms
+    Approved Algorithms:
+    Cipher
+    Algorithm CAVP Cert Properties Reference
+    AES-CBC A4481 Direction - Decrypt, Encrypt SP 800-38A
+    Key Length - 128, 192, 256
+    AES-GCM A4481 Direction - Decrypt, Encrypt SP 800-38D
+    IV Generation - External, Internal
+    HMAC SHA2-256 A4481 Message Authentication FIPS 198-1
+    Table 6: Approved Algorithms - Cipher
+    2.6 Security Function Implementations
+    """
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert any("AES-CBC" in entry for entry in detailed), "Expected AES-CBC detailed entry"
+    assert any("AES-GCM" in entry for entry in detailed), "Expected AES-GCM detailed entry"
+    assert any("HMAC" in entry for entry in detailed), "Expected HMAC detailed entry"
+    assert all("Shai Onn" not in entry for entry in detailed), "Contact names must not leak into algorithms"
+    assert all("@" not in entry for entry in detailed), "Email addresses must not leak into algorithms"
+    assert categories == ["AES", "HMAC"], "Expected normalized algorithm categories"
+
+    print("✓ Security Policy algorithm parsing test passed")
+
+
+def test_parse_algorithms_from_firecrawl_markdown():
+    """Test parsing algorithm tables from Firecrawl markdown output."""
+    markdown = """
+    2.5 Algorithms
+
+    Approved Algorithms:
+
+    | Algorithm | CAVP Cert | Properties | Reference |
+    | --- | --- | --- | --- |
+    | AES-CBC | A4481 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A |
+    | HMAC SHA2-256 | A4481 | Message Authentication | FIPS 198-1 |
+    | RSA SigGen | A4481 | Modulo - 2048, 3072 | FIPS 186-4 |
+    |  |  | Key Transport Method - KTS-OAEP-basic |  |
+
+    2.6 Security Function Implementations
+    """
+
+    detailed, categories = parse_algorithms_from_firecrawl_markdown(markdown)
+
+    assert any("AES-CBC" in entry for entry in detailed), "Expected AES-CBC row from Firecrawl markdown"
+    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC row from Firecrawl markdown"
+    assert any("RSA SigGen" in entry for entry in detailed), "Expected RSA row from Firecrawl markdown"
+    assert all("Key Transport Method" not in entry for entry in detailed), "Blank algorithm-name rows must be ignored"
+    assert categories == ["AES", "HMAC", "RSA"], "Expected normalized categories from Firecrawl markdown"
+
+    print("✓ Firecrawl markdown algorithm parsing test passed")
+
+
+def test_build_certificate_fingerprint():
+    """Test that certificate fingerprints are stable and change when summary fields change."""
+    base_row = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/10/2026",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+    }
+
+    same_row = dict(base_row)
+    changed_row = dict(base_row)
+    changed_row["Validation Date"] = "04/11/2026"
+
+    fingerprint = build_certificate_fingerprint(base_row, "active")
+    assert fingerprint == build_certificate_fingerprint(same_row, "active"), "Fingerprint should be stable for unchanged rows"
+    assert fingerprint != build_certificate_fingerprint(changed_row, "active"), "Fingerprint should change when summary fields change"
+
+    print("✓ Certificate fingerprint test passed")
+
+
+def test_generate_agent_docs():
+    """Test the generated agent-friendly documentation artifacts."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "total_modules": 1086,
+        "total_historical_modules": 4141,
+        "total_modules_in_process": 331,
+        "total_certificates_with_algorithms": 374,
+        "total_certificate_details": 5227,
+        "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
+        "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
+        "algorithm_source": "firecrawl",
+        "version": "3.0",
+    }
+    sample_module = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/10/2026",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "overall_level": 1,
+        "sunset_date": "4/9/2031",
+        "algorithms": ["AES", "HMAC", "RSA"],
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+        "detail_available": True,
+        "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
+    }
+    sample_detail = {
+        "certificate_number": "5238",
+        "dataset": "active",
+        "generated_at": metadata["generated_at"],
+        "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "module_type": "Software",
+        "overall_level": 1,
+        "validation_dates": ["4/10/2026"],
+        "sunset_date": "4/9/2031",
+        "caveat": "When operated in approved mode and installed as described in the Security Policy.",
+        "security_level_exceptions": ["Physical security: N/A"],
+        "vendor": {
+            "name": "SUSE LLC",
+            "website_url": "https://www.suse.com/",
+            "contact_email": "security@suse.com",
+        },
+        "related_files": [
+            {
+                "label": "Security Policy",
+                "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+            }
+        ],
+        "validation_history": [
+            {"date": "4/10/2026", "type": "Initial", "lab": "Example Lab"}
+        ],
+        "algorithms": ["AES", "HMAC", "RSA"],
+    }
+    algorithms_summary = {
+        "total_unique_algorithms": 45,
+        "total_certificate_algorithm_pairs": 8500,
+        "algorithms": {
+            "AES": {
+                "count": 950,
+                "certificates": [5238, 5237, 5236],
+            }
+        },
+    }
+
+    artifacts = generate_text_artifacts(
+        metadata,
+        sample_module,
+        sample_detail,
+        algorithms_summary,
+    )
+    assert "llms-full.txt" in artifacts, "Missing llms-full.txt artifact"
+    assert "api/docs.md" in artifacts, "Missing Markdown API docs artifact"
+    assert "api/algorithms.json" in artifacts["llms.txt"], "llms.txt should reference algorithms endpoint when available"
+    assert 'href="api/docs.md"' in artifacts["index.html"], "Homepage should link to api/docs.md"
+    assert "GET api/certificates/{certificate}.json" in artifacts["api/docs.md"], "API docs should include certificate detail endpoint"
+
+    index_payload = build_index_payload(metadata, algorithms_summary)
+    assert index_payload["documentation"]["llms_full_txt"] == "/llms-full.txt", "Index payload should advertise llms-full.txt"
+    assert index_payload["features"]["markdown_api_docs"] is True, "Index payload should advertise Markdown docs support"
+
+    openapi = generate_openapi_spec(
+        [sample_module],
+        metadata,
+        sample_detail,
+        algorithms_summary,
+    )
+    assert "/api/algorithms.json" in openapi["paths"], "OpenAPI spec should include algorithms endpoint when available"
+    assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
+
+    print("✓ Agent-friendly docs generation test passed")
+
+
 def main():
     """Run all tests."""
     print("=" * 60)
@@ -346,6 +545,10 @@ def main():
         test_parse_historical_modules_table()
         test_parse_modules_in_process()
         test_parse_certificate_detail_page()
+        test_parse_algorithms_from_policy_text()
+        test_parse_algorithms_from_firecrawl_markdown()
+        test_build_certificate_fingerprint()
+        test_generate_agent_docs()
         
         print()
         print("=" * 60)
