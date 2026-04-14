@@ -61,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1083 active validated modules with enriched details",
+            "description": "Currently 1084 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -79,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4146 historical modules",
+            "description": "Currently 4147 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -168,15 +168,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-14T13:57:15.748080Z"
+            "example": "2026-04-14T19:40:37.953211Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1083
+            "example": 1084
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4146
+            "example": 4147
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -184,11 +184,11 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 263
+            "example": 265
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5229
+            "example": 5231
           },
           "source": {
             "type": "string",
@@ -210,39 +210,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5240"
+            "example": "5242"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "WatchGuard Technologies, Inc."
+            "example": "Amazon Web Services, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "WatchGuard Firebox M4800 and M5800"
+            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
           },
           "Module Type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "04/13/2026"
+            "example": "04/14/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5242.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
           },
           "module_name": {
             "type": "string",
-            "example": "WatchGuard Firebox M4800 and M5800"
+            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
           },
           "standard": {
             "type": "string",
@@ -254,19 +254,19 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/12/2031"
+            "example": "3/10/2030"
           },
           "overall_level": {
             "type": "integer",
-            "example": 2
+            "example": 1
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy"
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -274,11 +274,7 @@
           },
           "description": {
             "type": "string",
-            "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
+            "example": "The AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider) is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           },
           "algorithms": {
             "type": "array",
@@ -297,10 +293,14 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A4397 | - | SP 800-38A",
-              "AES-CTR | A4397 | - | SP 800-38A",
-              "AES-GCM | A4397 | - | SP 800-38D"
+              "AES-CBC | A3548 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+              "AES-CBC- | CS1 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A",
+              "AES-CBC- | CS2 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A"
             ]
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -366,7 +366,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5240"
+            "example": "5242"
           },
           "dataset": {
             "type": "string",
@@ -374,27 +374,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-04-14T13:57:15.748080Z"
+            "example": "2026-04-14T19:40:37.953211Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5242.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "WatchGuard Technologies, Inc."
+            "example": "Amazon Web Services, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "WatchGuard Firebox M4800 and M5800"
+            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
           },
           "standard": {
             "type": "string",
@@ -406,7 +406,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -414,11 +414,11 @@
           },
           "overall_level": {
             "type": "integer",
-            "example": 2
+            "example": 1
           },
           "validation_date": {
             "type": "string",
-            "example": "4/13/2026"
+            "example": "4/14/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -426,20 +426,20 @@
               "type": "string"
             },
             "example": [
-              "4/13/2026"
+              "4/14/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/12/2031"
+            "example": "3/10/2030"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy"
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
           },
           "description": {
             "type": "string",
-            "example": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements."
+            "example": "The AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider) is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -447,9 +447,9 @@
               "type": "string"
             },
             "example": [
-              "Roles, services, and authentication: Level 3",
-              "Operational environment: N/A",
-              "Non-invasive security: N/A"
+              "Physical security: N/A",
+              "Non-invasive security: N/A",
+              "Life-cycle assurance: Level 3"
             ]
           },
           "related_files": {
@@ -487,9 +487,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A4397 | - | SP 800-38A",
-              "AES-CTR | A4397 | - | SP 800-38A",
-              "AES-GCM | A4397 | - | SP 800-38D"
+              "AES-CBC | A3548 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+              "AES-CBC- | CS1 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A",
+              "AES-CBC- | CS2 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A"
             ]
           }
         }

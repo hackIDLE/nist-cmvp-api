@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-14T19:40:37.953211Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5241"
+  },
+  "certificate": {
+    "certificate_number": "5241",
+    "dataset": "active",
+    "generated_at": "2026-04-14T19:40:37.953211Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5241",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5241",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5241.pdf",
+    "vendor_name": "Zebra Technologies Corporation",
+    "module_name": "Zebra 8887 Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "4/14/2026",
+    "validation_dates": [
+      "4/14/2026"
+    ],
+    "sunset_date": "8/18/2032",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Zebra 8887 Cryptographic Module implements cryptographic support for Zebra wireless devices.",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5241.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "4/14/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Zebra Technologies Corporation",
+      "website_url": "http://www.zebra.com",
+      "address_lines": [
+        "3 Overlook Point",
+        "Lincolnshire, IL 60069",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Matthew McNerney",
+      "contact_email": "mmcnerney@zebra.com",
+      "contact_phone": "401-834-9088"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CCM | A1146 | - | SP 800-38C",
+      "AES-ECB | A1146 | - | SP 800-38A",
+      "HMAC-SHA-1 A2718 | - | FIPS 198-1",
+      "SHA-1 | A2718 | - | FIPS 180-4 | N/A for this module. | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
+    ]
+  }
+}
