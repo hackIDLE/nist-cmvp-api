@@ -1144,12 +1144,12 @@ def generate_openapi_spec(modules: List[Dict], metadata: Dict, sample_certificat
             ),
             "version": metadata.get("version", "2.0"),
             "contact": {
-                "url": "https://github.com/hackIDLE/NIST-CMVP-API"
+                "url": "https://github.com/hackIDLE/nist-cmvp-api"
             }
         },
         "servers": [
             {
-                "url": "https://hackidle.github.io/NIST-CMVP-API",
+                "url": "https://hackidle.github.io/nist-cmvp-api",
                 "description": "GitHub Pages (production)"
             }
         ],

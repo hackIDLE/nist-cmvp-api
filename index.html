@@ -363,7 +363,7 @@
         <div style="margin-top: 40px; padding: 0 20px; font-size: 0.8em; color: #6c7086;">
             <p><a href="./openapi.json" style="color: #74c7ec;">OpenAPI Spec (JSON)</a></p>
             <p><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" style="color: #74c7ec;">Official NIST CMVP</a></p>
-            <p><a href="https://github.com/hackIDLE/NIST-CMVP-API" style="color: #74c7ec;">GitHub Repository</a></p>
+            <p><a href="https://github.com/hackIDLE/nist-cmvp-api" style="color: #74c7ec;">GitHub Repository</a></p>
         </div>
     </nav>
     
@@ -394,7 +394,7 @@
             <section id="quick-start">
                 <h2>Quick Start</h2>
                 <div class="code-block">
-                    <pre>https://hackidle.github.io/NIST-CMVP-API/api/</pre>
+                    <pre>https://hackidle.github.io/nist-cmvp-api/api/</pre>
                 </div>
                 
                 <h3>Get API Information</h3>
@@ -405,11 +405,11 @@
                 </div>
                 
                 <div id="curl-index" class="tab-content active">
-                    <pre><code>curl https://hackidle.github.io/NIST-CMVP-API/api/index.json</code></pre>
+                    <pre><code>curl https://hackidle.github.io/nist-cmvp-api/api/index.json</code></pre>
                 </div>
                 
                 <div id="js-index" class="tab-content">
-                    <pre><code>fetch('https://hackidle.github.io/NIST-CMVP-API/api/index.json')
+                    <pre><code>fetch('https://hackidle.github.io/nist-cmvp-api/api/index.json')
   .then(response => response.json())
   .then(data => console.log(data));</code></pre>
                 </div>
@@ -417,7 +417,7 @@
                 <div id="python-index" class="tab-content">
                     <pre><code>import requests
 
-response = requests.get('https://hackidle.github.io/NIST-CMVP-API/api/index.json')
+response = requests.get('https://hackidle.github.io/nist-cmvp-api/api/index.json')
 data = response.json()
 print(data)</code></pre>
                 </div>
@@ -600,7 +600,7 @@ print(data)</code></pre>
                 
                 <div id="curl-search" class="tab-content active">
                     <pre><code># Search for Microsoft modules
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/modules.json | \
+curl -s https://hackidle.github.io/nist-cmvp-api/api/modules.json | \
   jq '.modules[] | select(.Vendor | contains("Microsoft"))'</code></pre>
                 </div>
                 

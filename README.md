@@ -13,7 +13,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 
 ## Endpoints
 
-Base URL: `https://hackidle.github.io/NIST-CMVP-API/api/`
+Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
 
 | Endpoint | Description |
 |----------|-------------|
@@ -123,25 +123,25 @@ Base URL: `https://hackidle.github.io/NIST-CMVP-API/api/`
 
 ```bash
 # Get validated modules
-curl https://hackidle.github.io/NIST-CMVP-API/api/modules.json
+curl https://hackidle.github.io/nist-cmvp-api/api/modules.json
 
 # Filter by vendor (jq)
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/modules.json | \
+curl -s https://hackidle.github.io/nist-cmvp-api/api/modules.json | \
   jq '.modules[] | select(."Vendor Name" | contains("Microsoft"))'
 
 # Find modules with specific algorithm
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/modules.json | \
+curl -s https://hackidle.github.io/nist-cmvp-api/api/modules.json | \
   jq '.modules[] | select(.algorithms != null and (.algorithms | contains(["AES-256"])))'
 
 # Get all certificates using a specific algorithm
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/algorithms.json | \
+curl -s https://hackidle.github.io/nist-cmvp-api/api/algorithms.json | \
   jq '.algorithms["AES"].certificates'
 
 # Get the full detail page payload for one certificate
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/certificates/5203.json | jq '.certificate'
+curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/5203.json | jq '.certificate'
 
 # Check last update
-curl -s https://hackidle.github.io/NIST-CMVP-API/api/metadata.json | jq '.generated_at'
+curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | jq '.generated_at'
 ```
 
 ## Local Development
