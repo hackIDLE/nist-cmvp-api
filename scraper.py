@@ -717,6 +717,28 @@ def cached_algorithm_fields(previous_module: Optional[Dict], previous_detail: Op
     return categories, detailed
 
 
+def prune_orphan_certificate_details(current_cert_numbers: Set[int], detail_dir: Path = DETAIL_DIR) -> int:
+    """
+    Remove stale certificate detail files for certs no longer present upstream.
+
+    Keep files for any cert still present in the active or historical datasets,
+    even if the current run failed to rebuild that cert's detail payload.
+    """
+    if not detail_dir.exists():
+        return 0
+
+    removed = 0
+    for filepath in detail_dir.glob("*.json"):
+        if not filepath.stem.isdigit():
+            continue
+        if int(filepath.stem) in current_cert_numbers:
+            continue
+        filepath.unlink()
+        removed += 1
+
+    return removed
+
+
 def extract_policy_text_from_pdf_bytes(pdf_bytes: bytes) -> str:
     """Extract raw text from a Security Policy PDF using PyMuPDF."""
     document = fitz.open(stream=pdf_bytes, filetype="pdf")
@@ -2610,6 +2632,15 @@ def main():
         }
         save_json(detail_response, f"{output_dir}/certificates/{cert_number}.json")
 
+    current_cert_numbers = {
+        cert_number
+        for cert_number in (
+            parse_certificate_number(module) for module in modules + historical_modules
+        )
+        if cert_number is not None
+    }
+    removed_orphans = prune_orphan_certificate_details(current_cert_numbers)
+
     algorithms_summary = None
 
     # Save algorithms summary (if available)
@@ -2660,6 +2691,8 @@ def main():
     if algorithms_map:
         print(f"  - Certificates with algorithms: {len(algorithms_map)}")
     print(f"  - Certificate detail records: {len(certificate_detail_payloads)}")
+    if removed_orphans:
+        print(f"  - Removed stale certificate detail files: {removed_orphans}")
     print(f"  - Algorithm source: {algorithm_source}")
     print(
         "  - Active detail reuse: "

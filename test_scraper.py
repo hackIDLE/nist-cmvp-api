@@ -6,6 +6,8 @@ Tests the parsing logic with sample HTML.
 
 import json
 import sys
+import tempfile
+from pathlib import Path
 from scraper import (
     build_certificate_fingerprint,
     build_index_payload,
@@ -15,6 +17,7 @@ from scraper import (
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
     parse_modules_table,
+    prune_orphan_certificate_details,
 )
 
 
@@ -425,8 +428,27 @@ def test_build_certificate_fingerprint():
     fingerprint = build_certificate_fingerprint(base_row, "active")
     assert fingerprint == build_certificate_fingerprint(same_row, "active"), "Fingerprint should be stable for unchanged rows"
     assert fingerprint != build_certificate_fingerprint(changed_row, "active"), "Fingerprint should change when summary fields change"
+    assert fingerprint != build_certificate_fingerprint(base_row, "historical"), "Fingerprint should change when dataset changes"
 
     print("✓ Certificate fingerprint test passed")
+
+
+def test_prune_orphan_certificate_details():
+    """Test that stale certificate detail files are removed only for missing certs."""
+    with tempfile.TemporaryDirectory() as temp_dir:
+        detail_dir = Path(temp_dir)
+        (detail_dir / "100.json").write_text("{}", encoding="utf-8")
+        (detail_dir / "200.json").write_text("{}", encoding="utf-8")
+        (detail_dir / "notes.json").write_text("{}", encoding="utf-8")
+
+        removed = prune_orphan_certificate_details({100}, detail_dir)
+
+        assert removed == 1, "Expected one orphaned certificate detail file to be removed"
+        assert (detail_dir / "100.json").exists(), "Current certificate detail file should be preserved"
+        assert not (detail_dir / "200.json").exists(), "Missing certificate detail file should be removed"
+        assert (detail_dir / "notes.json").exists(), "Non-certificate files should be ignored"
+
+    print("✓ Orphan certificate cleanup test passed")
 
 
 def test_generate_agent_docs():
@@ -548,6 +570,7 @@ def main():
         test_parse_algorithms_from_policy_text()
         test_parse_algorithms_from_firecrawl_markdown()
         test_build_certificate_fingerprint()
+        test_prune_orphan_certificate_details()
         test_generate_agent_docs()
         
         print()
