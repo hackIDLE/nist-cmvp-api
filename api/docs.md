@@ -6,7 +6,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data.
 - **4,147** historical modules
 - **331** modules in process
 - **5,231** certificate detail records
-- **265** certificates with algorithm summaries
+- **1,608** certificates with algorithm summaries
 - No auth required, unofficial project, GitHub Pages hosted.
 
 Base URL: `https://hackidle.github.io/nist-cmvp-api/`
@@ -27,7 +27,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-15T02:52:53.715074Z",
+    "generated_at": "2026-04-15T03:31:05.200146Z",
     "total_modules": 1084
   },
   "modules": [
@@ -76,17 +76,17 @@ Each active module includes certificate identifiers, vendor/module names, valida
 `GET api/modules-in-process.json` — All 331 modules currently in the validation pipeline.
 
 ### Algorithms
-`GET api/algorithms.json` — Algorithm usage summary across 265 certificates in the current build.
+`GET api/algorithms.json` — Algorithm usage summary across 1,608 certificates in the current build.
 
 Example response (truncated):
 
 ```json
 {
   "total_unique_algorithms": 17,
-  "total_certificate_algorithm_pairs": 2837,
+  "total_certificate_algorithm_pairs": 14302,
   "algorithms": {
-    "SHA": {
-      "count": 257,
+    "AES": {
+      "count": 1474,
       "certificates": [
         5242,
         5241,
@@ -107,7 +107,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-15T02:52:53.715074Z",
+    "generated_at": "2026-04-15T03:31:05.200146Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
   },
@@ -192,4 +192,4 @@ GET api/modules.json → filter module rows by algorithms[] entries
 - **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
-- **Algorithms coverage:** `api/algorithms.json` summarizes 265 certificates that had algorithm data in this build.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 1,608 certificates that had algorithm data in this build.
