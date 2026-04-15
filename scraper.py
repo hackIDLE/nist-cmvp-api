@@ -130,10 +130,27 @@ PDF_SECTION_LABELS = {
     "vendor-affirmed algorithms",
     "vendor affirmed algorithms",
 }
+LEGACY_SECTION_STOP_PATTERNS = (
+    r"\n\s*Table\s+\d+\s+(?:FIPS\s+)?Non-Approved\s+Cryptographic\s+Functions\b",
+    r"\n\s*Table\s+\d+\s+Non-Approved\s+Cryptographic\s+Algorithms\b",
+    r"\n\s*\d+\.\d+(?:\.\d+)?\s+FIPS\s+Non-Approved\b",
+    r"\n\s*\d+\.\d+(?:\.\d+)?\s+Non-Approved\b",
+    r"\n\s*3\.5(?:\.1)?\s+(?:Allowed|Non-Approved)\s+Algorithms\b",
+    r"\n\s*\d+\.\d+(?:\.\d+)?\s+Critical\s+Security\s+Parameters\b",
+    r"\n\s*\d+\.\d+(?:\.\d+)?\s+General\s+Public\s+Keys\b",
+    r"\n\s*2\.\s+[A-Za-z]",
+    r"\n\s*3\.\s+[A-Za-z]",
+    r"\n\s*4\.\d+\s+[A-Za-z]",
+    r"\n\s*5\.\d+\s+[A-Za-z]",
+    r"\n\s*6\.\d+\s+[A-Za-z]",
+    r"\n\s*\d+\s+Cryptographic Key Management\b",
+)
 PDF_NOISE_PREFIXES = (
     "copyright",
     "this non-proprietary",
     "fips 140-3 security policy",
+    "fips 140-2 non-proprietary security policy",
+    "non-proprietary security policy",
     "page ",
     "table ",
     "algorithm cavp cert",
@@ -177,6 +194,26 @@ PDF_CONTINUATION_PREFIXES = (
     "kas2 -",
     "dhephem -",
 )
+LEGACY_TABLE_HEADER_LINES = {
+    "algorithm",
+    "algorithm / modes",
+    "algorithm type",
+    "label",
+    "standard",
+    "modes / key sizes",
+    "cert",
+    "usage",
+    "notes",
+    "description",
+    "service",
+    "services",
+    "cryptographic services",
+    "security function",
+    "security functions",
+    "reference",
+    "properties",
+    "mode / key sizes",
+}
 ALGORITHM_CATEGORY_PATTERNS = [
     ("ML-KEM", re.compile(r"\bML-KEM\b", re.IGNORECASE)),
     ("ML-DSA", re.compile(r"\bML-DSA\b", re.IGNORECASE)),
@@ -768,6 +805,65 @@ def extract_algorithm_section(policy_text: str) -> str:
     return policy_text[start:end]
 
 
+def extract_legacy_algorithm_section(policy_text: str) -> str:
+    """Extract approved-algorithm sections from older FIPS 140-2 style policies."""
+    if not policy_text:
+        return ""
+
+    start_patterns = [
+        r"\d+\.\d+(?:\.\d+)?\s+FIPS\s+Approved\s+Algorithms\b",
+        r"\d+\.\d+(?:\.\d+)?\s+FIPS-Approved\s+Algorithms\b",
+        r"\d+\.\d+(?:\.\d+)?\s+Approved\s+and\s+Non-Approved\s+Algorithms\b",
+        r"\d+\.\d+(?:\.\d+)?\s+Approved\s+Cryptographic\s+Algorithms\b",
+        r"Table\s+\d+\s+[–-]\s+FIPS-Approved\s+Algorithm\s+Implementations\b",
+        r"Table\s+\d+\s+[–-]\s+FIPS-Approved\s+Algorithm\s+Certificates\b",
+        r"FIPS-Approved\s+Algorithm\s+Implementations\b",
+        r"FIPS-Approved\s+Algorithm\s+Certificates\b",
+        r"Table\s+\d+\s+(?:FIPS\s+)?Approved\s+Cryptographic\s+Functions\b",
+        r"Table\s+\d+\s+Approved\s+Cryptographic\s+Algorithms\b",
+        r"Table\s+\d+\s+Approved\s+Algorithms\b",
+        r"Table\s+\d+\s+below\s+lists\s+the\s+FIPS\s+Approved\s+cryptographic\s+algorithms\b",
+        r"3\.4\s+Algorithms\b",
+        r"Approved\s+Cryptographic\s+Functions\b",
+    ]
+
+    matches = []
+    for pattern in start_patterns:
+        pattern_matches = list(re.finditer(pattern, policy_text, flags=re.IGNORECASE))
+        if pattern_matches:
+            matches.extend(pattern_matches[-2:])
+
+    if not matches:
+        return ""
+
+    stop_pattern = "|".join(LEGACY_SECTION_STOP_PATTERNS)
+    best_section = ""
+    best_score = (-1, -1)
+
+    for match in matches:
+        start = match.start()
+        tail = policy_text[start:]
+        end_match = re.search(stop_pattern, tail, flags=re.IGNORECASE)
+        end = start + end_match.start() if end_match else len(policy_text)
+        section = policy_text[start:end]
+        if not section:
+            continue
+
+        category_hits = sum(1 for _, pattern in ALGORITHM_CATEGORY_PATTERNS if pattern.search(section))
+        dot_leader_lines = section.count("....")
+        score = (
+            category_hits,
+            -dot_leader_lines,
+            start,
+            len(section),
+        )
+        if score > best_score:
+            best_score = score
+            best_section = section
+
+    return best_section
+
+
 def is_policy_noise_line(line: str) -> bool:
     """Return True when a normalized policy line is boilerplate instead of algorithm data."""
     lower = line.lower()
@@ -815,6 +911,30 @@ def categorize_algorithm_entry(entry: str) -> List[str]:
     return normalized
 
 
+def parse_categories_from_legacy_section(section: str) -> List[str]:
+    """Recover coarse algorithm coverage from older approved-algorithm sections."""
+    categories: Set[str] = set()
+
+    for raw_line in section.splitlines():
+        line = normalize_whitespace(raw_line)
+        if not line:
+            continue
+
+        lower = line.lower()
+        if lower in LEGACY_TABLE_HEADER_LINES:
+            continue
+        if lower.startswith("table "):
+            continue
+        if "non-approved" in lower:
+            continue
+        if "approved mode" in lower:
+            continue
+
+        categories.update(categorize_algorithm_entry(line))
+
+    return sorted(categories)
+
+
 def parse_algorithms_from_policy_text(policy_text: str) -> Tuple[List[str], List[str]]:
     """
     Parse detailed algorithm rows and simplified categories from policy text.
@@ -824,7 +944,10 @@ def parse_algorithms_from_policy_text(policy_text: str) -> Tuple[List[str], List
     """
     section = extract_algorithm_section(policy_text)
     if not section:
-        return [], []
+        legacy_section = extract_legacy_algorithm_section(policy_text)
+        if not legacy_section:
+            return [], []
+        return [], parse_categories_from_legacy_section(legacy_section)
 
     entries: List[str] = []
     categories: Set[str] = set()

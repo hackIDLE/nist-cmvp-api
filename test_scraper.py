@@ -11,6 +11,7 @@ from pathlib import Path
 from scraper import (
     build_certificate_fingerprint,
     build_index_payload,
+    extract_legacy_algorithm_section,
     generate_openapi_spec,
     generate_text_artifacts,
     parse_algorithms_from_firecrawl_markdown,
@@ -381,6 +382,63 @@ def test_parse_algorithms_from_policy_text():
     print("✓ Security Policy algorithm parsing test passed")
 
 
+def test_parse_algorithms_from_legacy_policy_text():
+    """Test extracting coarse categories from older FIPS 140-2 approved-function sections."""
+    policy_text = """
+    Table of contents
+    3.4 Algorithms ........................................ 11
+    3.5 Allowed Algorithms ............................... 15
+
+    3.4 Algorithms
+    Table 7 lists the approved algorithms, the CAVP certificates, and other associated information.
+    Algorithm
+    AES
+    DRBG
+    SHA-256, SHA-384, SHA-512
+    HMAC-SHA-256
+    KAS-ECC-SSC
+    KDF TLS
+    TLS v1.2
+    Table 7: Approved Cryptographic Algorithms
+
+    3.5 Allowed Algorithms
+    Table 8 describes the non-approved but allowed algorithms in FIPS mode:
+    Algorithm
+    Triple-DES
+    """
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == [], "Legacy fallback should preserve coarse categories without fabricated detail rows"
+    assert categories == ["AES", "DRBG", "HMAC", "KAS", "KDF", "SHA", "TLS"], "Expected legacy approved-section categories"
+    assert "DES" not in categories, "Non-approved section content must not leak into approved categories"
+
+    print("✓ Legacy Security Policy parsing test passed")
+
+
+def test_extract_legacy_algorithm_section_prefers_body_over_toc():
+    """Legacy extractor should use the real section body instead of the table of contents copy."""
+    policy_text = """
+    Table of contents
+    4.1.1 FIPS Approved Algorithms ........ 12
+    4.1.2 FIPS Non-Approved but Allowed Algorithms ........ 16
+
+    4.1.1 FIPS Approved Algorithms
+    The module supports the following FIPS-approved cryptographic algorithms.
+    Table 9 : FIPS Approved Algorithms
+    AES
+    DRBG
+    KDF TLS
+    """
+
+    section = extract_legacy_algorithm_section(policy_text)
+
+    assert "The module supports the following FIPS-approved cryptographic algorithms." in section, "Expected body content, not just TOC content"
+    assert "........ 12" not in section, "TOC dot leaders should not outrank the real section body"
+
+    print("✓ Legacy algorithm section TOC preference test passed")
+
+
 def test_parse_algorithms_from_firecrawl_markdown():
     """Test parsing algorithm tables from Firecrawl markdown output."""
     markdown = """
@@ -568,6 +626,8 @@ def main():
         test_parse_modules_in_process()
         test_parse_certificate_detail_page()
         test_parse_algorithms_from_policy_text()
+        test_parse_algorithms_from_legacy_policy_text()
+        test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_algorithms_from_firecrawl_markdown()
         test_build_certificate_fingerprint()
         test_prune_orphan_certificate_details()
