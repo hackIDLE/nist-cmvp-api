@@ -27,7 +27,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-14T22:06:10.557502Z",
+    "generated_at": "2026-04-15T02:52:53.715074Z",
     "total_modules": 1084
   },
   "modules": [
@@ -107,7 +107,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-14T22:06:10.557502Z",
+    "generated_at": "2026-04-15T02:52:53.715074Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
   },
