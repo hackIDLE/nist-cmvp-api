@@ -9,6 +9,7 @@ import sys
 import tempfile
 from pathlib import Path
 from scraper import (
+    ALGORITHM_CACHE_VERSION,
     build_certificate_fingerprint,
     build_index_payload,
     extract_legacy_algorithm_section,
@@ -19,6 +20,7 @@ from scraper import (
     parse_certificate_detail_page,
     parse_modules_table,
     prune_orphan_certificate_details,
+    should_reuse_cached_algorithms,
 )
 
 
@@ -491,6 +493,55 @@ def test_build_certificate_fingerprint():
     print("✓ Certificate fingerprint test passed")
 
 
+def test_should_reuse_cached_algorithms():
+    """Empty cached algorithm payloads should be retried after parser-version upgrades."""
+    previous_module_with_algorithms = {"algorithms": ["AES"], "algorithms_detailed": []}
+    previous_module_empty = {"algorithms": [], "algorithms_detailed": []}
+
+    same_version_metadata = {
+        "algorithm_source": "firecrawl",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+    }
+    old_version_metadata = {
+        "algorithm_source": "firecrawl",
+        "algorithm_cache_version": "older-version",
+    }
+
+    assert should_reuse_cached_algorithms(
+        "firecrawl",
+        True,
+        same_version_metadata,
+        previous_module_empty,
+        None,
+    ), "Matching cache versions should reuse even empty payloads"
+
+    assert should_reuse_cached_algorithms(
+        "firecrawl",
+        True,
+        old_version_metadata,
+        previous_module_with_algorithms,
+        None,
+    ), "Non-empty cached payloads should be reused across parser-version bumps"
+
+    assert not should_reuse_cached_algorithms(
+        "firecrawl",
+        True,
+        old_version_metadata,
+        previous_module_empty,
+        None,
+    ), "Empty cached payloads should be retried after parser-version bumps"
+
+    assert not should_reuse_cached_algorithms(
+        "firecrawl",
+        False,
+        same_version_metadata,
+        previous_module_with_algorithms,
+        None,
+    ), "Fingerprint mismatches should never reuse cached algorithms"
+
+    print("✓ Algorithm cache reuse test passed")
+
+
 def test_prune_orphan_certificate_details():
     """Test that stale certificate detail files are removed only for missing certs."""
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -630,6 +681,7 @@ def main():
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_algorithms_from_firecrawl_markdown()
         test_build_certificate_fingerprint()
+        test_should_reuse_cached_algorithms()
         test_prune_orphan_certificate_details()
         test_generate_agent_docs()
         

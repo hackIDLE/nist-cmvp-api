@@ -69,6 +69,7 @@ OFFICIAL_CMVP_URL = "https://csrc.nist.gov/projects/cryptographic-module-validat
 DETAIL_DIR = Path("api/certificates")
 FIRECRAWL_ALGORITHM_SOURCE = "firecrawl"
 SECURITY_POLICY_ALGORITHM_SOURCE = "security_policy_pdf"
+ALGORITHM_CACHE_VERSION = "2026-04-15-legacy-v1"
 CACHEABLE_ALGORITHM_SOURCES = {
     FIRECRAWL_ALGORITHM_SOURCE,
     SECURITY_POLICY_ALGORITHM_SOURCE,
@@ -754,6 +755,35 @@ def cached_algorithm_fields(previous_module: Optional[Dict], previous_detail: Op
     return categories, detailed
 
 
+def should_reuse_cached_algorithms(
+    algorithm_source: str,
+    fingerprint_matches: bool,
+    previous_metadata: Dict,
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+) -> bool:
+    """
+    Decide whether a cached algorithm payload is safe to reuse.
+
+    Parser upgrades should trigger retries for previously empty algorithm
+    payloads, while still allowing non-empty cached results to be reused so we
+    do not force a full backfill on every extraction tweak.
+    """
+    if algorithm_source not in CACHEABLE_ALGORITHM_SOURCES:
+        return False
+    if not fingerprint_matches:
+        return False
+    if previous_metadata.get("algorithm_source") not in CACHEABLE_ALGORITHM_SOURCES:
+        return False
+
+    previous_cache_version = previous_metadata.get("algorithm_cache_version")
+    if previous_cache_version == ALGORITHM_CACHE_VERSION:
+        return True
+
+    categories, detailed = cached_algorithm_fields(previous_module, previous_detail)
+    return bool(categories or detailed)
+
+
 def prune_orphan_certificate_details(current_cert_numbers: Set[int], detail_dir: Path = DETAIL_DIR) -> int:
     """
     Remove stale certificate detail files for certs no longer present upstream.
@@ -1307,10 +1337,12 @@ async def process_certificate_record(
     else:
         strip_algorithm_fields(module_out)
 
-    trusted_algorithm_reuse = (
-        algorithm_source in CACHEABLE_ALGORITHM_SOURCES
-        and fingerprint_matches
-        and previous_metadata.get("algorithm_source") in CACHEABLE_ALGORITHM_SOURCES
+    trusted_algorithm_reuse = should_reuse_cached_algorithms(
+        algorithm_source,
+        fingerprint_matches,
+        previous_metadata,
+        previous_module,
+        previous_detail,
     )
 
     if algorithm_source == "database":
@@ -2512,6 +2544,7 @@ def generate_openapi_spec(
                         "total_certificate_details": {"type": "integer", "example": metadata.get("total_certificate_details", 0)},
                         "source": {"type": "string", "example": metadata.get("source", "")},
                         "algorithm_source": {"type": "string", "example": metadata.get("algorithm_source", "")},
+                        "algorithm_cache_version": {"type": "string", "example": metadata.get("algorithm_cache_version", "")},
                         "version": {"type": "string", "example": metadata.get("version", "")}
                     }
                 },
@@ -2720,6 +2753,7 @@ def main():
         "source": BASE_URL,
         "modules_in_process_source": MODULES_IN_PROCESS_URL,
         "algorithm_source": algorithm_source,
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
         "version": "3.0"
     }
 
