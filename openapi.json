@@ -61,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1084 active validated modules with enriched details",
+            "description": "Currently 1083 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -79,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4147 historical modules",
+            "description": "Currently 4150 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -168,15 +168,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-15T03:31:05.200146Z"
+            "example": "2026-04-19T03:09:17.580873Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1084
+            "example": 1083
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4147
+            "example": 4150
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -184,11 +184,11 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1608
+            "example": 1610
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5231
+            "example": 5233
           },
           "source": {
             "type": "string",
@@ -214,19 +214,19 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5242"
+            "example": "5244"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Amazon Web Services, Inc."
+            "example": "Google, LLC"
           },
           "Module Name": {
             "type": "string",
-            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
+            "example": "BoringCrypto"
           },
           "Module Type": {
             "type": "string",
@@ -234,19 +234,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "04/14/2026"
+            "example": "04/18/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5242.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
           },
           "module_name": {
             "type": "string",
-            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
+            "example": "BoringCrypto"
           },
           "standard": {
             "type": "string",
@@ -258,7 +258,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "3/10/2030"
+            "example": "4/17/2031"
           },
           "overall_level": {
             "type": "integer",
@@ -266,7 +266,7 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "module_type": {
             "type": "string",
@@ -278,11 +278,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider) is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
+            "example": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications."
           },
           "algorithms": {
             "type": "array",
@@ -301,10 +297,14 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A3548 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
-              "AES-CBC- | CS1 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A",
-              "AES-CBC- | CS2 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A"
+              "AES-CBC | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CCM | A6134 | Key Length - 128 | SP 800-38C",
+              "AES-CTR | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -370,7 +370,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5242"
+            "example": "5244"
           },
           "dataset": {
             "type": "string",
@@ -378,27 +378,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-04-15T03:31:05.200146Z"
+            "example": "2026-04-19T03:09:17.580873Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5242"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5242.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Amazon Web Services, Inc."
+            "example": "Google, LLC"
           },
           "module_name": {
             "type": "string",
-            "example": "AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider)"
+            "example": "BoringCrypto"
           },
           "standard": {
             "type": "string",
@@ -422,7 +422,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "4/14/2026"
+            "example": "4/18/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -430,20 +430,20 @@
               "type": "string"
             },
             "example": [
-              "4/14/2026"
+              "4/18/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "3/10/2030"
+            "example": "4/17/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)."
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "description": {
             "type": "string",
-            "example": "The AWS OpenSSL FIPS Module (based on the OpenSSL FIPS Provider) is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality."
+            "example": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -453,7 +453,7 @@
             "example": [
               "Physical security: N/A",
               "Non-invasive security: N/A",
-              "Life-cycle assurance: Level 3"
+              "Mitigation of other attacks: N/A"
             ]
           },
           "related_files": {
@@ -491,9 +491,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A3548 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
-              "AES-CBC- | CS1 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A",
-              "AES-CBC- | CS2 | A3548 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800- | 38A"
+              "AES-CBC | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CCM | A6134 | Key Length - 128 | SP 800-38C",
+              "AES-CTR | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
           }
         }
