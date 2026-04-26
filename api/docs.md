@@ -2,11 +2,11 @@
 
 Static JSON API for NIST Cryptographic Module Validation Program data.
 
-- **1,083** active validated modules
-- **4,150** historical modules
+- **1,080** active validated modules
+- **4,155** historical modules
 - **331** modules in process
-- **5,233** certificate detail records
-- **1,610** certificates with algorithm summaries
+- **5,235** certificate detail records
+- **1,612** certificates with algorithm summaries
 - No auth required, unofficial project, GitHub Pages hosted.
 
 Base URL: `https://hackidle.github.io/nist-cmvp-api/`
@@ -20,31 +20,30 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/`
 `GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, and algorithm extraction status.
 
 ### Active Modules
-`GET api/modules.json` — All 1,083 active validated modules.
+`GET api/modules.json` — All 1,080 active validated modules.
 
 Example response (truncated):
 
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-19T03:09:17.580873Z",
-    "total_modules": 1083
+    "generated_at": "2026-04-26T03:09:48.797053Z",
+    "total_modules": 1080
   },
   "modules": [
     {
-      "Certificate Number": "5244",
-      "Vendor Name": "Google, LLC",
-      "Module Name": "BoringCrypto",
+      "Certificate Number": "5246",
+      "Vendor Name": "Allegro Software Development Corporation",
+      "Module Name": "Allegro Cryptographic Engine",
       "Module Type": "Software",
-      "Validation Date": "04/18/2026",
+      "Validation Date": "04/22/2026",
       "standard": "FIPS 140-3",
       "status": "Active",
       "overall_level": 1,
-      "sunset_date": "4/17/2031",
+      "sunset_date": "1/16/2033",
       "algorithms": [
         "AES",
         "CVL",
-        "DES",
         "DRBG",
         "ECDSA",
         "HMAC",
@@ -52,13 +51,14 @@ Example response (truncated):
         "KDF",
         "RSA",
         "SHA",
+        "SSH",
         "TLS"
       ],
-      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf",
-      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246",
       "detail_available": true,
-      "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
-      "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bi..."
+      "description": "Allegro's suite of Embedded Device Security tool kits makes embedding standards-based security protocols into resource sensitive embedded systems and consume...",
+      "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally l..."
     }
   ]
 }
@@ -67,29 +67,29 @@ Example response (truncated):
 Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, and detail availability flags.
 
 ### Historical Modules
-`GET api/historical-modules.json` — All 4,150 expired or revoked modules for historical lookups.
+`GET api/historical-modules.json` — All 4,155 expired or revoked modules for historical lookups.
 
 ### Modules In Process
 `GET api/modules-in-process.json` — All 331 modules currently in the validation pipeline.
 
 ### Algorithms
-`GET api/algorithms.json` — Algorithm usage summary across 1,610 certificates in the current build.
+`GET api/algorithms.json` — Algorithm usage summary across 1,612 certificates in the current build.
 
 Example response (truncated):
 
 ```json
 {
   "total_unique_algorithms": 17,
-  "total_certificate_algorithm_pairs": 14324,
+  "total_certificate_algorithm_pairs": 14350,
   "algorithms": {
     "AES": {
-      "count": 1476,
+      "count": 1478,
       "certificates": [
+        5246,
+        5245,
         5244,
         5243,
-        5242,
-        5241,
-        5240
+        5242
       ]
     }
   }
@@ -104,59 +104,59 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-04-19T03:09:17.580873Z",
+    "generated_at": "2026-04-26T03:09:48.797053Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
   },
   "certificate": {
-    "certificate_number": "5244",
+    "certificate_number": "5246",
     "dataset": "active",
-    "vendor_name": "Google, LLC",
-    "module_name": "BoringCrypto",
+    "vendor_name": "Allegro Software Development Corporation",
+    "module_name": "Allegro Cryptographic Engine",
     "standard": "FIPS 140-3",
     "status": "Active",
     "module_type": "Software",
     "overall_level": 1,
     "validation_dates": [
-      "4/18/2026"
+      "4/22/2026"
     ],
-    "sunset_date": "4/17/2031",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bi...",
+    "sunset_date": "1/16/2033",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally l...",
     "security_level_exceptions": [
       "Physical security: N/A",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
     "vendor": {
-      "name": "Google, LLC",
-      "website_url": "http://www.google.com",
-      "contact_email": "fips-crypto-officer@google.com"
+      "name": "Allegro Software Development Corporation",
+      "website_url": "http://www.allegrosoft.com",
+      "contact_email": "loren@allegrosoft.com"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "4/18/2026",
+        "date": "4/22/2026",
         "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "Acumen Security"
       }
     ],
     "algorithms": [
       "AES",
       "CVL",
-      "DES",
       "DRBG",
-      "ECDSA"
+      "ECDSA",
+      "HMAC"
     ]
   }
 }
 ```
 
-Current build contains 5,233 certificate detail records across active and historical datasets.
+Current build contains 5,235 certificate detail records across active and historical datasets.
 
 ## Workflows
 
@@ -169,12 +169,12 @@ GET api/metadata.json → freshness and scrape provenance
 ### Find a module and pull the full certificate record
 ```
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/5244.json → full detail record for that certificate
+GET api/certificates/5246.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/5244.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5246.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage
@@ -189,4 +189,4 @@ GET api/modules.json → filter module rows by algorithms[] entries
 - **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
-- **Algorithms coverage:** `api/algorithms.json` summarizes 1,610 certificates that had algorithm data in this build.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 1,612 certificates that had algorithm data in this build.

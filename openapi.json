@@ -61,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1083 active validated modules with enriched details",
+            "description": "Currently 1080 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -79,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4150 historical modules",
+            "description": "Currently 4155 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -168,15 +168,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-04-19T03:09:17.580873Z"
+            "example": "2026-04-26T03:09:48.797053Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1083
+            "example": 1080
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4150
+            "example": 4155
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -184,11 +184,11 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1610
+            "example": 1612
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5233
+            "example": 5235
           },
           "source": {
             "type": "string",
@@ -214,19 +214,19 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5244"
+            "example": "5246"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Google, LLC"
+            "example": "Allegro Software Development Corporation"
           },
           "Module Name": {
             "type": "string",
-            "example": "BoringCrypto"
+            "example": "Allegro Cryptographic Engine"
           },
           "Module Type": {
             "type": "string",
@@ -234,19 +234,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "04/18/2026"
+            "example": "04/22/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
           },
           "module_name": {
             "type": "string",
-            "example": "BoringCrypto"
+            "example": "Allegro Cryptographic Engine"
           },
           "standard": {
             "type": "string",
@@ -258,7 +258,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/17/2031"
+            "example": "1/16/2033"
           },
           "overall_level": {
             "type": "integer",
@@ -266,7 +266,7 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "module_type": {
             "type": "string",
@@ -278,7 +278,7 @@
           },
           "description": {
             "type": "string",
-            "example": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications."
+            "example": "Allegro's suite of Embedded Device Security tool kits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace."
           },
           "algorithms": {
             "type": "array",
@@ -288,7 +288,7 @@
             "example": [
               "AES",
               "CVL",
-              "DES"
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -297,9 +297,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CCM | A6134 | Key Length - 128 | SP 800-38C",
-              "AES-CTR | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES- | CBC | A33 | 32 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+              "AES- | CCM | A33 | 32 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 72, 80, 88, 96, 104 | Payload Length - Payload Length: 0 | AAD Length - AAD Length: 0 | SP 800- | 38C",
+              "AES- | CFB1 | A33 | 32 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A | (Allegro Software Development Corporation. © 2025) Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision). | Algorit | hm | CAV | P | Cert | Referen | ce"
             ]
           },
           "detail_available": {
@@ -370,7 +370,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5244"
+            "example": "5246"
           },
           "dataset": {
             "type": "string",
@@ -378,27 +378,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-04-19T03:09:17.580873Z"
+            "example": "2026-04-26T03:09:48.797053Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5244"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5244.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Google, LLC"
+            "example": "Allegro Software Development Corporation"
           },
           "module_name": {
             "type": "string",
-            "example": "BoringCrypto"
+            "example": "Allegro Cryptographic Engine"
           },
           "standard": {
             "type": "string",
@@ -422,7 +422,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "4/18/2026"
+            "example": "4/22/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -430,20 +430,20 @@
               "type": "string"
             },
             "example": [
-              "4/18/2026"
+              "4/22/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/17/2031"
+            "example": "1/16/2033"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "description": {
             "type": "string",
-            "example": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications."
+            "example": "Allegro's suite of Embedded Device Security tool kits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -482,7 +482,7 @@
             "example": [
               "AES",
               "CVL",
-              "DES"
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -491,9 +491,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CCM | A6134 | Key Length - 128 | SP 800-38C",
-              "AES-CTR | A6134 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES- | CBC | A33 | 32 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+              "AES- | CCM | A33 | 32 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 72, 80, 88, 96, 104 | Payload Length - Payload Length: 0 | AAD Length - AAD Length: 0 | SP 800- | 38C",
+              "AES- | CFB1 | A33 | 32 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A | (Allegro Software Development Corporation. © 2025) Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision). | Algorit | hm | CAV | P | Cert | Referen | ce"
             ]
           }
         }
