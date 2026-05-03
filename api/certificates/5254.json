@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+  },
+  "certificate": {
+    "certificate_number": "5254",
+    "dataset": "active",
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf",
+    "vendor_name": "Google, LLC",
+    "module_name": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/1/2026",
+    "validation_dates": [
+      "5/1/2026"
+    ],
+    "sunset_date": "7/10/2032",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Inline storage encryption engine for UFS as part of the Tensor mobile SoC to protect user data at rest.",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/1/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Google, LLC",
+      "website_url": "http://www.google.com",
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "Mountain View, California 94043",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Konstantin Vyshetsky",
+      "contact_email": "android-security-certifications@google.com",
+      "contact_phone": "973-440-9125"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A2937 | Direction-Decrypt,EncryptKeyLength-128,256 | SP800-38A",
+      "AES-XTS TestingRevision2.0 | A2937 | Direction-Decrypt,EncryptKeyLength-128,256PayloadLength-PayloadLength:128-32768Increment128TweakMode-NumberDataUnitLengthMatchesPayloadLength-Yes | SP800-38E",
+      "HMAC-SHA2-256 | A2938 | MAC-MAC:32-256Increment8KeyLength-KeyLength:8-2048Increment8 | FIPS198-1",
+      "SHA2-256 | A2938 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4"
+    ]
+  }
+}

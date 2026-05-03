@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5253"
+  },
+  "certificate": {
+    "certificate_number": "5253",
+    "dataset": "active",
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5253",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5253",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5253.pdf",
+    "vendor_name": "Samsung Electronics Co., Ltd.",
+    "module_name": "Samsung Kernel Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/1/2026",
+    "validation_dates": [
+      "5/1/2026"
+    ],
+    "sunset_date": "8/15/2032",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Samsung Kernel Cryptographic Module is a software library implementing general-purpose cryptographic algorithms.",
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5253.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/1/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com",
+      "address_lines": [
+        "416 Maetan-3dong, Yeongtong-gu",
+        "Suwon, Gyeonggi 443-742",
+        "South Korea"
+      ],
+      "country": "South Korea",
+      "contact_name": "Dongwhan Lee",
+      "contact_email": "dw0603.lee@samsung.com",
+      "contact_phone": "82-10-32902156"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-ECB | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "HMAC-SHA-1 | A3242 | MAC-MAC:160KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-224 | A3242 | MAC-MAC:224KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-256 | A3242 | MAC-MAC:256KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-384 | A3242 | MAC-MAC:384KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
+      "HMAC-SHA2-512 | A3242 | MAC-MAC:512KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
+      "SHA-1 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-224 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-256 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-384 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-512 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "ESSIV-CBC-AES | Disk encryption/decryption with using AES(CBC)and SHA2-256",
+      "AES-CTR | Symmetric Encryption and Decryption.",
+      "AES-XTS | Disk encryption/decryption"
+    ]
+  }
+}

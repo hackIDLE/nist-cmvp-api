@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5252"
+  },
+  "certificate": {
+    "certificate_number": "5252",
+    "dataset": "active",
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5252",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5252",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5252.pdf",
+    "vendor_name": "SonicWall, Inc.",
+    "module_name": "SonicWALL NSa 6700",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "4/30/2026",
+    "validation_dates": [
+      "4/30/2026"
+    ],
+    "sunset_date": "4/29/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The tamper evident seals installed as indicated in the Security Policy",
+    "description": "The SonicWall family of firewalls tightly integrates intrusion prevention, malware protection, Application Intelligence and Control with real-time Visualization. SonicWALL Reassembly-Free Deep Packet Inspection engine scans 100% of traffic and massively scales to meet needs of the most high-performance networks.",
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5252.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "4/30/2026",
+        "type": "Initial",
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "SonicWall, Inc.",
+      "website_url": "http://www.sonicwall.com",
+      "address_lines": [
+        "1033 McCarthy Blvd",
+        "Milpitas, CA 95035",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Akbal Singh Karlcut",
+      "contact_email": "AKarlcut@SonicWall.com",
+      "contact_phone": "4087998573"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5156 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CFB128 | A5156 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-GCM | A5156 | Direction-Decrypt,EncryptIV Generation-InternalIV Generation Mode-8.2.1Key Length-128,192,256 | SP800-38D",
+      "ECDSA KeyGen(FIPS186-5) | A5156 | Curve-P-224,P-256,P-384,P-521Secret Generation Mode-testing candidates | FIPS186-5",
+      "ECDSA KeyVer(FIPS186-5) | A5156 | Curve-P-192,P-224,P-256,P-384,P-521 | FIPS186-5",
+      "ECDSA SigGen(FIPS186-5) | A5156 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512Component-No | FIPS186-5",
+      "ECDSA SigVer(FIPS186-4) | A5156 | Component-NoCurve-P-192,P-224,P-256,P-384,P-521Hash Algorithm-SHA-1,SHA2-256,SHA2-384,SHA2-512 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-5) | A5156 | Curve-P-224,P-256,P-384,P-521Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | FIPS186-5",
+      "Hash DRBG | A5156 | Prediction Resistance-NoMode-SHA2-256 | SP800-90ARev.1",
+      "HMAC-SHA-1 | A5156 | Key Length-Key Length:8-524288 Increment8 | FIPS198-1",
+      "HMAC-SHA2-256 | A5156 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A5156 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A5156 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A5156 | Domain Parameter Generation Methods - P-256, P-384, P-521 Scheme - ephemeralUnified - KAS Role - initiator, responder | SP 800-56A Rev. 3",
+      "KAS-FFC-SSC Sp800-56Ar3 | A5156 | Domain Parameter Generation Methods - ffdhe2048, MODP-2048 Scheme - dhEphem - KAS Role - initiator, responder | SP 800-56A Rev. 3",
+      "KDF IKEv1 (CVL) | A5156 | Authentication Method - Digital Signature, Preshared Key Preshared Key Length - Preshared Key Length: 176-1024 Increment 8 Diffie-Hellman Shared Secret Length - Diffie-Hellman Shared Secret Length: 224-2048 Increment 8 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | SP 800-135 Rev. 1",
+      "KDF IKEv2 (CVL) | A5156 | Diffie-Hellman Shared Secret Length - Diffie-Hellman Shared Secret Length: 224-2048 Increment 8 Derived Keying Material Length - Derived Keying Material Length: 160-512 Increment 8 Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 | SP 800-135 Rev. 1",
+      "KDF SNMP (CVL) | A5156 | Password Length - Password Length: 64-128 Increment 8 | SP 800-135 Rev. 1",
+      "KDF SSH (CVL) | A5156 | Cipher - AES-128, AES-256 Hash Algorithm - SHA-1 | SP 800-135 Rev. 1",
+      "RSA KeyGen(FIPS186-5) | A5156 | Key Generation Mode - probableWithProbableAux Modulo - 2048, 3072, 4096 Primality Tests - 2pow100, 2powSecStr Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen(FIPS186-5) | A5156 | Modulo - 2048, 3072, 4096 Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer(FIPS186-4) | A5156 | Signature Type - PKCS 1.5 Modulo - 1024, 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer(FIPS186-5) | A5156 | Modulo - 2048, 3072, 4096 Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 | A5156 | Message Length - Message Length:0-65536 Increment8 | FIPS 180-4",
+      "SHA2-256 | A5156 | Message Length - Message Length:8-65536 Increment8 | FIPS 180-4",
+      "SHA2-384 | A5156 | Message Length - Message Length:8-65536 Increment8 | FIPS 180-4",
+      "SHA2-512 | A5156 | Message Length - Message Length:8-65536 Increment8 | FIPS 180-4",
+      "TLS v1.2 KDF RFC7627(CVL) | A5156 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
+      "TLS v1.3 KDF(CVL) | A5156 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE | SP 800-135Rev.1",
+      "PBKDF | No security claimed | Associated with RADIUS (always encapsulated using IPsec)",
+      "RSA PKCS #1 v1.5 key transport | SSH key establishment",
+      "Triple-DES | IPsec or TLS payload encryption",
+      "DSA | Signature Verification",
+      "AES CTR (non-compliant) | SSH payload encryption"
+    ]
+  }
+}

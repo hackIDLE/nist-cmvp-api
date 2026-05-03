@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5250"
+  },
+  "certificate": {
+    "certificate_number": "5250",
+    "dataset": "active",
+    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5250",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5250",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5250.pdf",
+    "vendor_name": "THALES ALENIA SPACE",
+    "module_name": "ESPRIT/COMHUB FPGA",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 1,
+    "validation_date": "4/28/2026",
+    "validation_dates": [
+      "4/28/2026"
+    ],
+    "sunset_date": "4/27/2031",
+    "caveat": "- No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The ESPRIT/COMHUB FPGA is an equipment responsible of the communication between the Lunar Gateway and equipment on the lunar ground. It integrates an FPGA which implements the cryptographic functions and a MRAM that stores the CSP.",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5250.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "4/28/2026",
+        "type": "Initial",
+        "lab": "SERMA SAFETY AND SECURITY"
+      }
+    ],
+    "vendor": {
+      "name": "THALES ALENIA SPACE",
+      "website_url": "https://www.thalesaleniaspace.com/en",
+      "address_lines": [
+        "26 avenue JF Champollion",
+        "Toulouse 31037",
+        "FRANCE"
+      ],
+      "country": "FRANCE",
+      "contact_name": "Marie-Helene SILLY",
+      "contact_email": "marie-helene.silly@thalesaleniaspace.com",
+      "contact_phone": "053-435-5302"
+    },
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-GCM | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D",
+      "AES-GMAC | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D"
+    ]
+  }
+}
