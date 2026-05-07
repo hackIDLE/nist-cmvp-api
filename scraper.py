@@ -97,6 +97,9 @@ MODULE_DETAIL_FIELDS = [
     "module_type",
     "embodiment",
     "description",
+    "software_versions",
+    "hardware_versions",
+    "firmware_versions",
     "security_policy_url",
     "algorithms",
     "algorithms_detailed",
@@ -403,6 +406,9 @@ def parse_detail_rows(panel_body) -> Dict[str, object]:
         "Module Type": "module_type",
         "Embodiment": "embodiment",
         "Description": "description",
+        "Software Versions": "software_versions",
+        "Hardware Versions": "hardware_versions",
+        "Firmware Versions": "firmware_versions",
     }
 
     for row in panel_body.find_all("div", class_="row"):
@@ -657,6 +663,9 @@ def parse_certificate_detail_page(
         "sunset_date": detail_fields.get("sunset_date") or summary_module.get("sunset_date"),
         "caveat": detail_fields.get("caveat") or summary_module.get("caveat"),
         "description": detail_fields.get("description") or summary_module.get("description"),
+        "software_versions": detail_fields.get("software_versions"),
+        "hardware_versions": detail_fields.get("hardware_versions"),
+        "firmware_versions": detail_fields.get("firmware_versions"),
         "security_level_exceptions": detail_fields.get("security_level_exceptions", []),
         "related_files": related_files,
         "validation_history": validation_history,
