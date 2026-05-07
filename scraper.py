@@ -1304,6 +1304,7 @@ async def process_certificate_record(
         and previous_module is not None
         and previous_detail is not None
         and previous_fingerprint == current_fingerprint
+        and "software_versions" in previous_detail
     )
 
     detail_payload: Optional[Dict] = None
