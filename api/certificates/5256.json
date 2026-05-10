@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
+  },
+  "certificate": {
+    "certificate_number": "5256",
+    "dataset": "active",
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf",
+    "vendor_name": "Amazon Web Services, Inc.",
+    "module_name": "AWS Link Encryption Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/5/2026",
+    "validation_dates": [
+      "5/5/2026"
+    ],
+    "sunset_date": "5/4/2031",
+    "caveat": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements.",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/5/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://aws.amazon.com",
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "AWS FIPS Team",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
+      "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
+      "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D",
+      "AES-ECB | A4847 | Direction - EncryptKey Length - 256 | SP 800-38A",
+      "AES-GCM | A4847 | Direction - Decrypt, EncryptIV Generation - InternalIV Generation Mode - 8.2.1Key Length - 256 | SP 800-38D",
+      "AES-ECB | AES 4545 | Direction - Encrypt Key Length - 128,256 | SP 800-38A",
+      "AES-GCM | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
+      "AES-XPN | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
+      "HMAC-SHA2-256 | A5425 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5433 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "SHA2-256 | A5425 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A5433 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A5434 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "Encrypt Data | BC-Auth | Encryption of data in MACsec protocol | Publication:NISTSP 800-38DIG:C.H | AES-GCM:(AES4545,A1359,C681,A4847)AES-ECB:(AES4545,A1359,C373,A4847)AES-XPN:"
+    ]
+  }
+}

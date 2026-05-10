@@ -1,6 +1,6 @@
 # NIST CMVP API
 
-> Static JSON API for NIST Cryptographic Module Validation Program data. Auto-updated weekly from the public CMVP site. 1,078 active modules, 4,165 historical modules, 330 modules in process, and 5,243 certificate detail records.
+> Static JSON API for NIST Cryptographic Module Validation Program data. Auto-updated weekly from the public CMVP site. 1,081 active modules, 4,168 historical modules, 329 modules in process, and 5,249 certificate detail records.
 
 Base URL: https://hackidle.github.io/nist-cmvp-api/
 
@@ -13,37 +13,49 @@ Base URL: https://hackidle.github.io/nist-cmvp-api/
 `GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, and algorithm extraction status.
 
 ### Active Modules
-`GET api/modules.json` — All 1,078 active validated modules.
+`GET api/modules.json` — All 1,081 active validated modules.
 
 Example response (truncated):
 
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-03T03:11:06.352590Z",
-    "total_modules": 1078
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "total_modules": 1081
   },
   "modules": [
     {
-      "Certificate Number": "5254",
-      "Vendor Name": "Google, LLC",
-      "Module Name": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module",
-      "Module Type": "Software-hybrid",
-      "Validation Date": "05/01/2026",
+      "Certificate Number": "5260",
+      "Vendor Name": "Inseego Corp.",
+      "Module Name": "Inseego 5G Advanced Cryptographic Module",
+      "Module Type": "Software",
+      "Validation Date": "05/08/2026",
       "standard": "FIPS 140-3",
       "status": "Active",
       "overall_level": 1,
-      "sunset_date": "7/10/2032",
+      "sunset_date": "8/26/2029",
       "algorithms": [
         "AES",
+        "CVL",
+        "DES",
+        "DRBG",
+        "DSA",
+        "ECDSA",
+        "EDDSA",
         "HMAC",
-        "SHA"
+        "KAS",
+        "KDF",
+        "KTS",
+        "RSA",
+        "SHA",
+        "SSH",
+        "TLS"
       ],
-      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf",
-      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260",
       "detail_available": true,
-      "description": "Inline storage encryption engine for UFS as part of the Tensor mobile SoC to protect user data at rest.",
-      "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+      "description": "Inseego 5G Advanced Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functio...",
+      "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) th..."
     }
   ]
 }
@@ -52,29 +64,29 @@ Example response (truncated):
 Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, and detail availability flags.
 
 ### Historical Modules
-`GET api/historical-modules.json` — All 4,165 expired or revoked modules for historical lookups.
+`GET api/historical-modules.json` — All 4,168 expired or revoked modules for historical lookups.
 
 ### Modules In Process
-`GET api/modules-in-process.json` — All 330 modules currently in the validation pipeline.
+`GET api/modules-in-process.json` — All 329 modules currently in the validation pipeline.
 
 ### Algorithms
-`GET api/algorithms.json` — Algorithm usage summary across 1,619 certificates in the current build.
+`GET api/algorithms.json` — Algorithm usage summary across 1,624 certificates in the current build.
 
 Example response (truncated):
 
 ```json
 {
   "total_unique_algorithms": 18,
-  "total_certificate_algorithm_pairs": 14395,
+  "total_certificate_algorithm_pairs": 14446,
   "algorithms": {
     "AES": {
-      "count": 1484,
+      "count": 1489,
       "certificates": [
-        5254,
-        5253,
-        5252,
-        5250,
-        5248
+        5260,
+        5258,
+        5257,
+        5256,
+        5255
       ]
     }
   }
@@ -89,56 +101,58 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-03T03:11:06.352590Z",
+    "generated_at": "2026-05-10T03:11:20.260239Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
   },
   "certificate": {
-    "certificate_number": "5254",
+    "certificate_number": "5260",
     "dataset": "active",
-    "vendor_name": "Google, LLC",
-    "module_name": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module",
+    "vendor_name": "Inseego Corp.",
+    "module_name": "Inseego 5G Advanced Cryptographic Module",
     "standard": "FIPS 140-3",
     "status": "Active",
-    "module_type": "Software-hybrid",
+    "module_type": "Software",
     "overall_level": 1,
     "validation_dates": [
-      "5/1/2026"
+      "5/8/2026"
     ],
-    "sunset_date": "7/10/2032",
-    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "sunset_date": "8/26/2029",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) th...",
     "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
     ],
     "vendor": {
-      "name": "Google, LLC",
-      "website_url": "http://www.google.com",
-      "contact_email": "android-security-certifications@google.com"
+      "name": "Inseego Corp.",
+      "website_url": "https://inseego.com/",
+      "contact_email": "technicalsupportus@inseego.com"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "5/1/2026",
+        "date": "5/8/2026",
         "type": "Initial",
-        "lab": "Gossamer Security Solutions"
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
       }
     ],
     "algorithms": [
       "AES",
-      "HMAC",
-      "SHA"
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA"
     ]
   }
 }
 ```
 
-Current build contains 5,243 certificate detail records across active and historical datasets.
+Current build contains 5,249 certificate detail records across active and historical datasets.
 
 ## Workflows
 
@@ -151,12 +165,12 @@ GET api/metadata.json → freshness and scrape provenance
 ### Find a module and pull the full certificate record
 ```
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/5254.json → full detail record for that certificate
+GET api/certificates/5260.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/5254.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5260.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage
@@ -171,4 +185,4 @@ GET api/modules.json → filter module rows by algorithms[] entries
 - **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
-- **Algorithms coverage:** `api/algorithms.json` summarizes 1,619 certificates that had algorithm data in this build.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 1,624 certificates that had algorithm data in this build.

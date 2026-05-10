@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257"
+  },
+  "certificate": {
+    "certificate_number": "5257",
+    "dataset": "active",
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf",
+    "vendor_name": "NTT DATA Group Corporation",
+    "module_name": "Cryptographic Library for OpenSSL powered by NTT DATA",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/6/2026",
+    "validation_dates": [
+      "5/6/2026"
+    ],
+    "sunset_date": "5/5/2031",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Cryptographic Library for OpenSSL powered by NTT DATA is a software library designed for Intel SGX (Software Guard Extensions), offering enhanced security features by enabling applications to run within secure enclaves.",
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/6/2026",
+        "type": "Initial",
+        "lab": "ECSEC Laboratory Inc."
+      }
+    ],
+    "vendor": {
+      "name": "NTT DATA Group Corporation",
+      "website_url": "http://www.nttdata.com/global/en/",
+      "address_lines": [
+        "Toyosu Center Bldg. Annex, 3-9, Toyosu 3-chome",
+        "Koto-ku, Tokyo 135-8671",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Cloud & Infrastructure Technology Department",
+      "contact_email": "nedokmsdev@hml.nttdata.co.jp",
+      "contact_phone": "81-50-5546-7774"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM | A6710 | Key Length - 128, 192, 256 | SP 800-38C",
+      "AES-CFB1 | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB8 | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | CAVP | Cert",
+      "AES-CMAC | A6710 | Direction - Generation, Verification | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM | A6710 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC | A6710 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A6710 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG | A6710 | Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "SHA2-512, SHA2-512/256 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521",
+      "SHA2-512, SHA2-512/256 | FIPS 186-5",
+      "EDDSA KeyGen | A6710 | Curve - ED-25519, ED-448 | FIPS 186-5",
+      "EDDSA SigGen | A6710 | Curve - ED-25519, ED-448 | PreHash - No | Pure - Yes | FIPS 186-5",
+      "EDDSA SigVer | A6710 | Curve - ED-25519, ED-448 | PreHash - No | Pure - Yes | FIPS 186-5",
+      "Hash DRBG | A6710 | Prediction Resistance - No, Yes",
+      "Mode - SHA2-256, SHA2-384, SHA2-512,",
+      "SHA2-512/256, SHA3-256, SHA3-384,",
+      "SHA3-512 | SP 800-90A | Rev. 1",
+      "HMAC DRBG | A6710 | Prediction Resistance - No, Yes",
+      "HMAC-SHA2-256 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1 | CAVP | Cert",
+      "HMAC-SHA2- | 512/256 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-256 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-384 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3-512 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "KAS-ECC CDH- | Component SP800-",
+      "56Ar3 (CVL) | A6710 | Function - Full Public Key Validation, Key | Pair Generation, Partial Public Key | Validation | Curve - P-256, P-384, P-521 | SP 800-56A | Rev. 3",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6710 | Domain Parameter Generation Methods - | P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KTS-IFC | A6710 | Modulo - 2048, 3072, 4096 | Key Generation Methods - rsakpg1-crt | Scheme -",
+      "KTS-OAEP-basic - | KAS Role - initiator, responder | Key Transport Method - | Key Length - 1024 | SP 800-56B | Rev. 2",
+      "RSA KeyGen | (FIPS186-5) | A6710 | Key Generation Mode - | probableWithProbableAux | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6710 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6710 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA2-256 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512/256 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA3-256 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
+      "SHA3-384 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
+      "SHA3-512 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
+      "SHAKE-128 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | CAVP | Cert",
+      "SHAKE-256 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | N/A for this module. | The cryptographic module does not implement vendor-affirmed cryptographic algorithms. | Non-Approved, Allowed Algorithms: | N/A for this module. | The cryptographic module does not implement non-approved cryptographic algorithms. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | The module does not implement any non-approved algorithms allowed in the Approved mode | of operation with no security claimed. | Non-Approved, Not Allowed Algorithms: | N/A for this module. | The cryptographic module does not implement non-approved cryptographic algorithms without | security claims."
+    ]
+  }
+}

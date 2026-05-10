@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
+  },
+  "certificate": {
+    "certificate_number": "5255",
+    "dataset": "active",
+    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf",
+    "vendor_name": "Hypersecu Information Systems Inc.",
+    "module_name": "HYPERSECU HyperPKI Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 3,
+    "validation_date": "5/4/2026",
+    "validation_dates": [
+      "5/4/2026"
+    ],
+    "sunset_date": "1/27/2031",
+    "caveat": "The module generates SSPs (e.g., keys) whose strengths are modified by available entropy, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "This Module is a secure portable device with advanced smart card technology, it can provide strong authentication and identification to support network login, online transactions, digital signatures, and sensitive data protection",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/4/2026",
+        "type": "Initial",
+        "lab": "EWA - Canada"
+      }
+    ],
+    "vendor": {
+      "name": "Hypersecu Information Systems Inc.",
+      "website_url": "http://hypersecu.com",
+      "address_lines": [
+        "#200-6191 Westminster Hwy Richmond",
+        "Richmond, B.C V7C 4V4",
+        "CANADA"
+      ],
+      "country": "CANADA",
+      "contact_name": "James Li",
+      "contact_email": "info@hypersecu.com",
+      "contact_phone": "+1 (604) 279 2000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A",
+      "AES-CMAC | A4980 | Direction - Generation, Verification Key | Length - 128, 192, 256 | SP 800-38B | FIPS 140-3 Non-Propriety Security Policy | 10 of 78 | © Hypersecu Information Systems Inc, 2026 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | CAVP | Cert",
+      "AES-ECB | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A",
+      "AES-GCM | A4980 | Direction - Decrypt, Encrypt | IV Generation Mode - 8.2.2 Key Length - | 128, 192, 256 | SP 800-38D",
+      "Counter DRBG | A4980",
+      "Prediction Resistance - Yes Mode - AES- | 128 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521 | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "SHA2-512 | Component - Yes | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 | A4980 | Key Length - Key Length: 8-2048 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A4980 | Key Length - Key Length: 8-2048 | Increment 8 | FIPS 198-1",
+      "KAS-ECC Sp800- | 56Ar3 | A4980 | Domain Parameter Generation Methods | - P-256 | Function - Key Pair Generation Scheme -",
+      "ephemeralUnified - KAS Role - Responder",
+      "KDF Methods - twoStepKdf - | Key Length - 256 | SP 800-56A | Rev. 3",
+      "KDF SP800-108 | A4980",
+      "KDF Mode - Counter Supported Lengths - | Supported Lengths: | 8-256 Increment 8 | SP 800-108 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A4980 | Key Generation Mode - probable Modulo - | 2048, 3072, 4096 | Primality Tests - 2powSecStr Private Key | Format - crt | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A4980 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A4980 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 | A4980 | Message Length - Message Length: 160, | 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A4980 | Message Length - Message Length: 256, | 0-65536 Increment 8 | FIPS 180-4 | FIPS 140-3 Non-Propriety Security Policy | 11 of 78 | © Hypersecu Information Systems Inc, 2026 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | CAVP | Cert",
+      "SHA2-384 | A4980 | Message Length - Message Length: 384, | 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 | A4980 | Message Length - Message Length: 512, | 0-65536 Increment 8 | FIPS 180-4 | The Module implements the FIPS Vendor Affirmed cryptographic algorithms listed below. | Name | Implementation | CKG1 | Key Type: Asymmetric and | Symmetric | N/A | [133r2] section 4, example 1 | and IG D.H | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
+    ]
+  }
+}

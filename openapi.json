@@ -61,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1078 active validated modules with enriched details",
+            "description": "Currently 1081 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -79,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4165 historical modules",
+            "description": "Currently 4168 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -97,7 +97,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 330 modules in process",
+            "description": "Currently 329 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -168,27 +168,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-03T03:11:06.352590Z"
+            "example": "2026-05-10T03:11:20.260239Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1078
+            "example": 1081
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4165
+            "example": 4168
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 330
+            "example": 329
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1619
+            "example": 1624
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5243
+            "example": 5249
           },
           "source": {
             "type": "string",
@@ -214,39 +214,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5254"
+            "example": "5260"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Google, LLC"
+            "example": "Inseego Corp."
           },
           "Module Name": {
             "type": "string",
-            "example": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module"
+            "example": "Inseego 5G Advanced Cryptographic Module"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software-hybrid"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "05/01/2026"
+            "example": "05/08/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
           },
           "module_name": {
             "type": "string",
-            "example": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module"
+            "example": "Inseego 5G Advanced Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -258,7 +258,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/10/2032"
+            "example": "8/26/2029"
           },
           "overall_level": {
             "type": "integer",
@@ -266,11 +266,11 @@
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "module_type": {
             "type": "string",
-            "example": "Software-hybrid"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -278,7 +278,7 @@
           },
           "description": {
             "type": "string",
-            "example": "Inline storage encryption engine for UFS as part of the Tensor mobile SoC to protect user data at rest."
+            "example": "Inseego 5G Advanced Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to fixed and mobile wireless platforms and features robust algorithm support."
           },
           "algorithms": {
             "type": "array",
@@ -287,8 +287,8 @@
             },
             "example": [
               "AES",
-              "HMAC",
-              "SHA"
+              "CVL",
+              "DES"
             ]
           },
           "algorithms_detailed": {
@@ -297,9 +297,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A2937 | Direction-Decrypt,EncryptKeyLength-128,256 | SP800-38A",
-              "AES-XTS TestingRevision2.0 | A2937 | Direction-Decrypt,EncryptKeyLength-128,256PayloadLength-PayloadLength:128-32768Increment128TweakMode-NumberDataUnitLengthMatchesPayloadLength-Yes | SP800-38E",
-              "HMAC-SHA2-256 | A2938 | MAC-MAC:32-256Increment8KeyLength-KeyLength:8-2048Increment8 | FIPS198-1"
+              "fips.a | 3.0.1-FIPS 140-3 | Compiled as a static library, tested on iOS and iPadOS | HMAC-SHA-256",
+              "fips.dll | 3.0.0-FIPS 140-3 | Compiled for Windows | HMAC-SHA-256",
+              "fips.dylib | 3.0.0-FIPS 140-3 | Compiled for MacOS | HMAC-SHA-256"
             ]
           },
           "detail_available": {
@@ -370,7 +370,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5254"
+            "example": "5260"
           },
           "dataset": {
             "type": "string",
@@ -378,27 +378,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-03T03:11:06.352590Z"
+            "example": "2026-05-10T03:11:20.260239Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5254"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5254.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Google, LLC"
+            "example": "Inseego Corp."
           },
           "module_name": {
             "type": "string",
-            "example": "Tensor G2 UFS Inline Storage Encryption Cryptographic Module"
+            "example": "Inseego 5G Advanced Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -410,7 +410,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software-hybrid"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -422,7 +422,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "5/1/2026"
+            "example": "5/8/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -430,20 +430,20 @@
               "type": "string"
             },
             "example": [
-              "5/1/2026"
+              "5/8/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/10/2032"
+            "example": "8/26/2029"
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "description": {
             "type": "string",
-            "example": "Inline storage encryption engine for UFS as part of the Tensor mobile SoC to protect user data at rest."
+            "example": "Inseego 5G Advanced Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to fixed and mobile wireless platforms and features robust algorithm support."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -451,8 +451,8 @@
               "type": "string"
             },
             "example": [
-              "Non-invasive security: N/A",
-              "Mitigation of other attacks: N/A"
+              "Physical security: N/A",
+              "Non-invasive security: N/A"
             ]
           },
           "related_files": {
@@ -480,8 +480,8 @@
             },
             "example": [
               "AES",
-              "HMAC",
-              "SHA"
+              "CVL",
+              "DES"
             ]
           },
           "algorithms_detailed": {
@@ -490,9 +490,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A2937 | Direction-Decrypt,EncryptKeyLength-128,256 | SP800-38A",
-              "AES-XTS TestingRevision2.0 | A2937 | Direction-Decrypt,EncryptKeyLength-128,256PayloadLength-PayloadLength:128-32768Increment128TweakMode-NumberDataUnitLengthMatchesPayloadLength-Yes | SP800-38E",
-              "HMAC-SHA2-256 | A2938 | MAC-MAC:32-256Increment8KeyLength-KeyLength:8-2048Increment8 | FIPS198-1"
+              "fips.a | 3.0.1-FIPS 140-3 | Compiled as a static library, tested on iOS and iPadOS | HMAC-SHA-256",
+              "fips.dll | 3.0.0-FIPS 140-3 | Compiled for Windows | HMAC-SHA-256",
+              "fips.dylib | 3.0.0-FIPS 140-3 | Compiled for MacOS | HMAC-SHA-256"
             ]
           }
         }
