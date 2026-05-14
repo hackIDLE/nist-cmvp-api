@@ -23,6 +23,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-nist-cmvp-data-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
