@@ -15,16 +15,16 @@ Environment Variables:
     NIST_SEARCH_PATH: Override the search path (default: /all)
                       Example: export NIST_SEARCH_PATH="/all"
     SKIP_ALGORITHMS: Set to "1" to skip algorithm extraction (faster scraping)
-    FIRECRAWL_API_KEY: Prefer Firecrawl PDF-to-markdown extraction when set
-    FIRECRAWL_TIMEOUT_MS: Firecrawl scrape timeout in milliseconds (default: 60000)
+    ALGORITHM_SOURCE: Override algorithm extraction source: crawl4ai, security_policy_pdf, database, none
     CMVP_DB_PATH: Path to existing cmvp.db from NIST-CMVP-ReportGen project
                   If set, algorithm data will be imported from this database
     CERT_FETCH_CONCURRENCY: Concurrent certificate detail page fetches (default: 16)
-    PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF or Firecrawl policy fetches (default: 32)
+    PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF fetches/parses (default: 32)
     FULL_REFRESH: Set to "1" to bypass reuse of previously generated outputs
 """
 
 import asyncio
+from contextlib import AsyncExitStack
 import copy
 import hashlib
 import json
@@ -43,6 +43,19 @@ import httpx
 import requests
 from bs4 import BeautifulSoup
 
+try:
+    from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig
+    from crawl4ai.processors.pdf import PDFContentScrapingStrategy, PDFCrawlerStrategy
+
+    CRAWL4AI_AVAILABLE = True
+except ImportError:
+    AsyncWebCrawler = None
+    CacheMode = None
+    CrawlerRunConfig = None
+    PDFContentScrapingStrategy = None
+    PDFCrawlerStrategy = None
+    CRAWL4AI_AVAILABLE = False
+
 
 BASE_URL = "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search"
 CERTIFICATE_DETAIL_URL = "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate"
@@ -59,24 +72,21 @@ FULL_REFRESH = os.getenv("FULL_REFRESH", "0") == "1"
 
 # Path to NIST-CMVP-ReportGen database (if available for importing algorithms)
 CMVP_DB_PATH = os.getenv("CMVP_DB_PATH", "")
-FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY", "")
-FIRECRAWL_SCRAPE_URL = os.getenv("FIRECRAWL_SCRAPE_URL", "https://api.firecrawl.dev/v2/scrape")
-FIRECRAWL_TIMEOUT_MS = max(1000, int(os.getenv("FIRECRAWL_TIMEOUT_MS", "60000")))
+ALGORITHM_SOURCE_OVERRIDE = os.getenv("ALGORITHM_SOURCE", "").strip().lower().replace("-", "_")
 PUBLIC_BASE_URL = "https://hackidle.github.io/nist-cmvp-api"
 PUBLIC_API_BASE_URL = f"{PUBLIC_BASE_URL}/api"
 REPO_URL = "https://github.com/hackIDLE/nist-cmvp-api"
 OFFICIAL_CMVP_URL = "https://csrc.nist.gov/projects/cryptographic-module-validation-program"
 DETAIL_DIR = Path("api/certificates")
-FIRECRAWL_ALGORITHM_SOURCE = "firecrawl"
+CRAWL4AI_ALGORITHM_SOURCE = "crawl4ai"
 SECURITY_POLICY_ALGORITHM_SOURCE = "security_policy_pdf"
 ALGORITHM_CACHE_VERSION = "2026-04-15-legacy-v1"
 CACHEABLE_ALGORITHM_SOURCES = {
-    FIRECRAWL_ALGORITHM_SOURCE,
+    CRAWL4AI_ALGORITHM_SOURCE,
     SECURITY_POLICY_ALGORITHM_SOURCE,
-    # Reuse the currently published algorithm payloads during the Firecrawl
-    # migration so unchanged certificates preserve existing API quality and we
-    # avoid an expensive full backfill on the first run.
-    "crawl4ai",
+    # Reuse the currently published algorithm payloads during extractor
+    # migrations so unchanged certificates preserve existing API quality.
+    "firecrawl",
 }
 CACHE_FINGERPRINT_FIELDS = [
     "Certificate Number",
@@ -1042,8 +1052,8 @@ def is_markdown_table_separator(cells: List[str]) -> bool:
     return bool(cells) and all(cell and set(cell) <= {"-", ":", " "} for cell in cells)
 
 
-def parse_algorithms_from_firecrawl_markdown(markdown: str) -> Tuple[List[str], List[str]]:
-    """Parse algorithm rows from Firecrawl's markdown output for a policy PDF."""
+def parse_algorithms_from_policy_markdown(markdown: str) -> Tuple[List[str], List[str]]:
+    """Parse algorithm rows from markdown output for a Security Policy PDF."""
     section = extract_algorithm_section(markdown)
     if not section:
         return [], []
@@ -1078,10 +1088,27 @@ def parse_algorithms_from_firecrawl_markdown(markdown: str) -> Tuple[List[str], 
     return parse_algorithms_from_policy_text(section)
 
 
+# Backward-compatible name for tests and old callers from the Firecrawl era.
+parse_algorithms_from_firecrawl_markdown = parse_algorithms_from_policy_markdown
+
+
 def parse_algorithms_from_policy_pdf_bytes(pdf_bytes: bytes) -> Tuple[List[str], List[str]]:
     """Extract detailed and simplified algorithm lists from PDF bytes."""
     policy_text = extract_policy_text_from_pdf_bytes(pdf_bytes)
     return parse_algorithms_from_policy_text(policy_text)
+
+
+def extract_markdown_text(markdown_payload) -> str:
+    """Normalize Crawl4AI markdown payload variants to plain text."""
+    if markdown_payload is None:
+        return ""
+    if isinstance(markdown_payload, str):
+        return markdown_payload
+    for attribute in ("raw_markdown", "markdown", "fit_markdown"):
+        value = getattr(markdown_payload, attribute, None)
+        if isinstance(value, str) and value:
+            return value
+    return str(markdown_payload)
 
 
 async def fetch_with_retry(
@@ -1118,79 +1145,49 @@ async def fetch_with_retry(
     return None
 
 
-async def fetch_firecrawl_markdown(
-    client: httpx.AsyncClient,
+async def fetch_crawl4ai_markdown(
+    crawler,
     url: str,
     retries: int = 3,
 ) -> Optional[str]:
-    """Fetch markdown for a Security Policy PDF from Firecrawl."""
-    headers = {
-        "Authorization": f"Bearer {FIRECRAWL_API_KEY}",
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "url": url,
-        "formats": ["markdown"],
-        "onlyMainContent": True,
-        "parsers": ["pdf"],
-        "timeout": FIRECRAWL_TIMEOUT_MS,
-        "storeInCache": True,
-        "removeBase64Images": True,
-    }
+    """Fetch markdown for a Security Policy PDF with Crawl4AI's local PDF strategy."""
+    if not CRAWL4AI_AVAILABLE or crawler is None:
+        return None
 
     for attempt in range(retries):
         try:
-            response = await client.post(FIRECRAWL_SCRAPE_URL, headers=headers, json=payload)
-            if response.status_code == 429:
-                retry_after = int(response.headers.get("Retry-After", "30"))
-                print(f"Rate limited on Firecrawl scrape for {url}, waiting {retry_after}s...", file=sys.stderr)
-                await asyncio.sleep(retry_after)
-                continue
-            if response.status_code == 402:
-                print(f"Error scraping {url} with Firecrawl: credit limit reached", file=sys.stderr)
-                return None
-
-            response.raise_for_status()
-            data = response.json()
-            if isinstance(data, dict) and data.get("success") is False:
-                error_message = data.get("error") or data.get("message") or "unspecified Firecrawl error"
+            config = CrawlerRunConfig(
+                cache_mode=CacheMode.BYPASS,
+                scraping_strategy=PDFContentScrapingStrategy(),
+            )
+            result = await crawler.arun(url=url, config=config)
+            if not getattr(result, "success", False):
+                error_message = getattr(result, "error_message", "unspecified Crawl4AI error")
                 if attempt == retries - 1:
-                    print(f"Error scraping {url} with Firecrawl: {error_message}", file=sys.stderr)
+                    print(f"Error scraping {url} with Crawl4AI: {error_message}", file=sys.stderr)
                     return None
                 wait = 2 ** (attempt + 1)
                 print(
-                    f"Attempt {attempt + 1}/{retries} failed for Firecrawl scrape {url}: {error_message}. "
+                    f"Attempt {attempt + 1}/{retries} failed for Crawl4AI scrape {url}: {error_message}. "
                     f"Retrying in {wait}s...",
                     file=sys.stderr,
                 )
                 await asyncio.sleep(wait)
                 continue
 
-            markdown = ""
-            if isinstance(data, dict):
-                markdown = data.get("markdown") or data.get("data", {}).get("markdown") or ""
+            markdown = extract_markdown_text(getattr(result, "markdown", ""))
             if markdown:
                 return markdown
 
-            print(f"Warning: Firecrawl returned no markdown for {url}", file=sys.stderr)
+            print(f"Warning: Crawl4AI returned no markdown for {url}", file=sys.stderr)
             return None
-        except httpx.HTTPStatusError as exc:
-            if exc.response.status_code < 500 or attempt == retries - 1:
-                print(f"Error scraping {url} with Firecrawl: {exc}", file=sys.stderr)
-                return None
-            wait = 2 ** (attempt + 1)
-            print(
-                f"Attempt {attempt + 1}/{retries} failed for Firecrawl scrape {url}: {exc}. Retrying in {wait}s...",
-                file=sys.stderr,
-            )
-            await asyncio.sleep(wait)
-        except (httpx.RequestError, ValueError) as exc:
+        except Exception as exc:
             if attempt == retries - 1:
-                print(f"Error scraping {url} with Firecrawl: {exc}", file=sys.stderr)
+                print(f"Error scraping {url} with Crawl4AI: {exc}", file=sys.stderr)
                 return None
             wait = 2 ** (attempt + 1)
             print(
-                f"Attempt {attempt + 1}/{retries} failed for Firecrawl scrape {url}: {exc}. Retrying in {wait}s...",
+                f"Attempt {attempt + 1}/{retries} failed for Crawl4AI scrape {url}: {exc}. Retrying in {wait}s...",
                 file=sys.stderr,
             )
             await asyncio.sleep(wait)
@@ -1245,6 +1242,7 @@ def import_algorithms_from_database(db_path: str) -> Dict[int, List[str]]:
 
 async def fetch_certificate_algorithms(
     client: httpx.AsyncClient,
+    crawl4ai_crawler,
     security_policy_url: Optional[str],
     fallback_url: Optional[str],
     pdf_semaphore: asyncio.Semaphore,
@@ -1252,21 +1250,21 @@ async def fetch_certificate_algorithms(
 ) -> Tuple[List[str], List[str], bool]:
     """Fetch and parse a certificate's Security Policy using the configured source."""
     for candidate in normalize_string_list([security_policy_url, fallback_url]):
-        if algorithm_source == FIRECRAWL_ALGORITHM_SOURCE and FIRECRAWL_API_KEY:
+        if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and crawl4ai_crawler is not None:
             async with pdf_semaphore:
-                markdown = await fetch_firecrawl_markdown(client, candidate)
+                markdown = await fetch_crawl4ai_markdown(crawl4ai_crawler, candidate)
             if markdown:
                 try:
-                    detailed, categories = parse_algorithms_from_firecrawl_markdown(markdown)
+                    detailed, categories = parse_algorithms_from_policy_markdown(markdown)
                     if detailed or categories:
                         return detailed, categories, True
                     print(
-                        f"Warning: Firecrawl returned markdown for {candidate} but no algorithm rows were found; "
+                        f"Warning: Crawl4AI returned markdown for {candidate} but no algorithm rows were found; "
                         "falling back to local PDF parsing.",
                         file=sys.stderr,
                     )
                 except Exception as exc:
-                    print(f"Warning: Failed to parse Firecrawl markdown for {candidate}: {exc}", file=sys.stderr)
+                    print(f"Warning: Failed to parse Crawl4AI markdown for {candidate}: {exc}", file=sys.stderr)
 
         async with pdf_semaphore:
             pdf_bytes = await fetch_with_retry(client, candidate, response_type="bytes")
@@ -1292,6 +1290,7 @@ async def process_certificate_record(
     previous_detail: Optional[Dict],
     previous_metadata: Dict,
     client: httpx.AsyncClient,
+    crawl4ai_crawler,
     cert_semaphore: asyncio.Semaphore,
     pdf_semaphore: asyncio.Semaphore,
     database_algorithms_map: Dict[int, List[str]],
@@ -1390,6 +1389,7 @@ async def process_certificate_record(
             strip_algorithm_fields(module_out)
             detailed, categories, parsed = await fetch_certificate_algorithms(
                 client,
+                crawl4ai_crawler,
                 (detail_payload or {}).get("security_policy_url") or module.get("security_policy_url"),
                 get_security_policy_url(cert_number),
                 pdf_semaphore,
@@ -1445,11 +1445,20 @@ async def build_certificate_artifacts(
     cert_semaphore = asyncio.Semaphore(CERT_FETCH_CONCURRENCY)
     pdf_semaphore = asyncio.Semaphore(PDF_FETCH_CONCURRENCY)
 
-    async with httpx.AsyncClient(
-        headers={"User-Agent": USER_AGENT},
-        follow_redirects=True,
-        timeout=timeout,
-    ) as client:
+    async with AsyncExitStack() as stack:
+        crawl4ai_crawler = None
+        if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and CRAWL4AI_AVAILABLE:
+            crawl4ai_crawler = await stack.enter_async_context(
+                AsyncWebCrawler(crawler_strategy=PDFCrawlerStrategy())
+            )
+
+        client = await stack.enter_async_context(
+            httpx.AsyncClient(
+                headers={"User-Agent": USER_AGENT},
+                follow_redirects=True,
+                timeout=timeout,
+            )
+        )
         tasks = []
         for index, module in enumerate(modules):
             cert_number = parse_certificate_number(module)
@@ -1464,6 +1473,7 @@ async def build_certificate_artifacts(
                         previous_details.get(cert_number) if cert_number is not None else None,
                         previous_metadata,
                         client,
+                        crawl4ai_crawler,
                         cert_semaphore,
                         pdf_semaphore,
                         database_algorithms_map,
@@ -2671,6 +2681,32 @@ def generate_openapi_spec(
     return spec
 
 
+def select_algorithm_source(
+    requested_source: str = "",
+    skip_algorithms: bool = False,
+    cmvp_db_path: str = "",
+    crawl4ai_available: bool = CRAWL4AI_AVAILABLE,
+) -> str:
+    """Choose the algorithm extraction source from environment-style inputs."""
+    normalized = (requested_source or "").strip().lower().replace("-", "_")
+
+    if cmvp_db_path:
+        return "database"
+    if skip_algorithms or normalized == "none":
+        return "none"
+    if normalized == "database":
+        raise ValueError("ALGORITHM_SOURCE=database requires CMVP_DB_PATH.")
+    if normalized in {"security_policy_pdf", "local_pdf", "pdf"}:
+        return SECURITY_POLICY_ALGORITHM_SOURCE
+    if normalized in {CRAWL4AI_ALGORITHM_SOURCE, "firecrawl"}:
+        return CRAWL4AI_ALGORITHM_SOURCE if crawl4ai_available else SECURITY_POLICY_ALGORITHM_SOURCE
+    if normalized:
+        raise ValueError(
+            "Unsupported ALGORITHM_SOURCE. Use crawl4ai, security_policy_pdf, database, or none."
+        )
+    return CRAWL4AI_ALGORITHM_SOURCE if crawl4ai_available else SECURITY_POLICY_ALGORITHM_SOURCE
+
+
 def main():
     """Main entry point for the scraper."""
     print("=" * 60)
@@ -2679,19 +2715,31 @@ def main():
     print()
 
     # Check algorithm extraction options
-    algorithm_source = "none"
     if FULL_REFRESH:
         print("Note: FULL_REFRESH=1 set. Cached certificate outputs will be ignored.")
+    try:
+        algorithm_source = select_algorithm_source(
+            ALGORITHM_SOURCE_OVERRIDE,
+            SKIP_ALGORITHMS,
+            CMVP_DB_PATH,
+            CRAWL4AI_AVAILABLE,
+        )
+    except ValueError as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        sys.exit(1)
+
     if CMVP_DB_PATH:
         print(f"Note: Will import algorithms from database: {CMVP_DB_PATH}")
-        algorithm_source = "database"
-    elif not SKIP_ALGORITHMS and FIRECRAWL_API_KEY:
-        print("Note: Will extract algorithms with Firecrawl (local PDF parsing remains a fallback)")
-        algorithm_source = FIRECRAWL_ALGORITHM_SOURCE
-    elif not SKIP_ALGORITHMS:
-        print("Note: FIRECRAWL_API_KEY not set. Will extract algorithms from Security Policy PDFs locally")
-        algorithm_source = SECURITY_POLICY_ALGORITHM_SOURCE
-    else:
+    elif algorithm_source == CRAWL4AI_ALGORITHM_SOURCE:
+        if ALGORITHM_SOURCE_OVERRIDE == "firecrawl":
+            print("Note: ALGORITHM_SOURCE=firecrawl is no longer supported; using Crawl4AI instead.")
+        print("Note: Will extract algorithms with Crawl4AI (local PDF parsing remains a fallback)")
+    elif algorithm_source == SECURITY_POLICY_ALGORITHM_SOURCE:
+        if ALGORITHM_SOURCE_OVERRIDE in {CRAWL4AI_ALGORITHM_SOURCE, "firecrawl"} and not CRAWL4AI_AVAILABLE:
+            print("Note: Crawl4AI is not installed. Will extract algorithms from Security Policy PDFs locally.")
+        else:
+            print("Note: Will extract algorithms from Security Policy PDFs locally")
+    elif algorithm_source == "none":
         print("Note: SKIP_ALGORITHMS=1 set. Algorithm extraction will be skipped.")
     print()
 

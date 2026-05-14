@@ -15,11 +15,12 @@ from scraper import (
     extract_legacy_algorithm_section,
     generate_openapi_spec,
     generate_text_artifacts,
-    parse_algorithms_from_firecrawl_markdown,
+    parse_algorithms_from_policy_markdown,
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
     parse_modules_table,
     prune_orphan_certificate_details,
+    select_algorithm_source,
     should_reuse_certificate_detail,
     should_reuse_cached_algorithms,
 )
@@ -483,8 +484,8 @@ def test_extract_legacy_algorithm_section_prefers_body_over_toc():
     print("✓ Legacy algorithm section TOC preference test passed")
 
 
-def test_parse_algorithms_from_firecrawl_markdown():
-    """Test parsing algorithm tables from Firecrawl markdown output."""
+def test_parse_algorithms_from_policy_markdown():
+    """Test parsing algorithm tables from policy markdown output."""
     markdown = """
     2.5 Algorithms
 
@@ -500,15 +501,35 @@ def test_parse_algorithms_from_firecrawl_markdown():
     2.6 Security Function Implementations
     """
 
-    detailed, categories = parse_algorithms_from_firecrawl_markdown(markdown)
+    detailed, categories = parse_algorithms_from_policy_markdown(markdown)
 
-    assert any("AES-CBC" in entry for entry in detailed), "Expected AES-CBC row from Firecrawl markdown"
-    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC row from Firecrawl markdown"
-    assert any("RSA SigGen" in entry for entry in detailed), "Expected RSA row from Firecrawl markdown"
+    assert any("AES-CBC" in entry for entry in detailed), "Expected AES-CBC row from policy markdown"
+    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC row from policy markdown"
+    assert any("RSA SigGen" in entry for entry in detailed), "Expected RSA row from policy markdown"
     assert all("Key Transport Method" not in entry for entry in detailed), "Blank algorithm-name rows must be ignored"
-    assert categories == ["AES", "HMAC", "RSA"], "Expected normalized categories from Firecrawl markdown"
+    assert categories == ["AES", "HMAC", "RSA"], "Expected normalized categories from policy markdown"
 
-    print("✓ Firecrawl markdown algorithm parsing test passed")
+    print("✓ Policy markdown algorithm parsing test passed")
+
+
+def test_select_algorithm_source():
+    """Test algorithm source selection and fallback behavior."""
+    assert select_algorithm_source("", False, "", True) == "crawl4ai", "Crawl4AI should be the default when available"
+    assert select_algorithm_source("", False, "", False) == "security_policy_pdf", "Local PDF parser should be the fallback"
+    assert select_algorithm_source("security_policy_pdf", False, "", True) == "security_policy_pdf", "Explicit local parser should be honored"
+    assert select_algorithm_source("local-pdf", False, "", True) == "security_policy_pdf", "Hyphenated local PDF alias should work"
+    assert select_algorithm_source("firecrawl", False, "", True) == "crawl4ai", "Deprecated Firecrawl setting should map to Crawl4AI"
+    assert select_algorithm_source("", True, "", True) == "none", "SKIP_ALGORITHMS should disable extraction"
+    assert select_algorithm_source("", False, "/tmp/cmvp.db", True) == "database", "Database import should take precedence"
+
+    try:
+        select_algorithm_source("database", False, "", True)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("ALGORITHM_SOURCE=database should require CMVP_DB_PATH")
+
+    print("✓ Algorithm source selection test passed")
 
 
 def test_build_certificate_fingerprint():
@@ -541,16 +562,16 @@ def test_should_reuse_cached_algorithms():
     previous_module_empty = {"algorithms": [], "algorithms_detailed": []}
 
     same_version_metadata = {
-        "algorithm_source": "firecrawl",
+        "algorithm_source": "crawl4ai",
         "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
     }
     old_version_metadata = {
-        "algorithm_source": "firecrawl",
+        "algorithm_source": "crawl4ai",
         "algorithm_cache_version": "older-version",
     }
 
     assert should_reuse_cached_algorithms(
-        "firecrawl",
+        "crawl4ai",
         True,
         same_version_metadata,
         previous_module_empty,
@@ -558,15 +579,15 @@ def test_should_reuse_cached_algorithms():
     ), "Matching cache versions should reuse even empty payloads"
 
     assert should_reuse_cached_algorithms(
-        "firecrawl",
+        "crawl4ai",
         True,
         old_version_metadata,
         previous_module_with_algorithms,
         None,
-    ), "Non-empty cached payloads should be reused across parser-version bumps"
+    ), "Non-empty cached payloads should be reused across parser-version bumps and source migrations"
 
     assert not should_reuse_cached_algorithms(
-        "firecrawl",
+        "crawl4ai",
         True,
         old_version_metadata,
         previous_module_empty,
@@ -574,7 +595,7 @@ def test_should_reuse_cached_algorithms():
     ), "Empty cached payloads should be retried after parser-version bumps"
 
     assert not should_reuse_cached_algorithms(
-        "firecrawl",
+        "crawl4ai",
         False,
         same_version_metadata,
         previous_module_with_algorithms,
@@ -613,7 +634,7 @@ def test_generate_agent_docs():
         "total_certificate_details": 5227,
         "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
         "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
-        "algorithm_source": "firecrawl",
+        "algorithm_source": "crawl4ai",
         "version": "3.0",
     }
     sample_module = {
@@ -728,7 +749,8 @@ def main():
         test_parse_algorithms_from_policy_text()
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
-        test_parse_algorithms_from_firecrawl_markdown()
+        test_parse_algorithms_from_policy_markdown()
+        test_select_algorithm_source()
         test_build_certificate_fingerprint()
         test_should_reuse_cached_algorithms()
         test_prune_orphan_certificate_details()

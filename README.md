@@ -7,7 +7,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - **Validated Modules**: Current FIPS 140-2/140-3 validated cryptographic modules
 - **Historical Modules**: Expired/revoked modules for historical reference
 - **Modules In Process**: Modules currently in validation
-- **Algorithm Extraction**: Approved algorithms extracted locally from Security Policy PDFs
+- **Algorithm Extraction**: Approved algorithms extracted from Security Policy PDFs with Crawl4AI, with a local PDF parser fallback
 - **Security Policy Links**: Direct URLs to Security Policy PDF documents
 - **Certificate Detail Records**: Per-certificate JSON with vendor, related files, validation history, and security level exceptions
 
@@ -157,11 +157,11 @@ curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | jq '.genera
 # Install dependencies
 pip install -r requirements.txt
 
-# Run full scraper (Firecrawl preferred when FIRECRAWL_API_KEY is set)
+# Run full scraper (Crawl4AI preferred, local PDF parser fallback)
 python scraper.py
 
-# Force the local PDF fallback even when Firecrawl is available
-unset FIRECRAWL_API_KEY && python scraper.py
+# Force the local PDF parser
+ALGORITHM_SOURCE=security_policy_pdf python scraper.py
 
 # Run quick scraper (skip algorithm extraction entirely)
 SKIP_ALGORITHMS=1 python scraper.py
@@ -173,14 +173,13 @@ SKIP_ALGORITHMS=1 python scraper.py
 |----------|---------|-------------|
 | `NIST_SEARCH_PATH` | `/all` | Override the search path for modules |
 | `SKIP_ALGORITHMS` | `0` | Set to `1` to skip algorithm/detail extraction |
-| `FIRECRAWL_API_KEY` | - | Prefer Firecrawl PDF-to-markdown extraction for algorithm parsing |
-| `FIRECRAWL_TIMEOUT_MS` | `60000` | Firecrawl scrape timeout in milliseconds |
+| `ALGORITHM_SOURCE` | `crawl4ai` | Algorithm extraction source: `crawl4ai`, `security_policy_pdf`, `database`, or `none` |
 | `CMVP_DB_PATH` | - | Path to cmvp.db for algorithm import (fastest override) |
 | `CERT_FETCH_CONCURRENCY` | `16` | Concurrent certificate detail page fetches |
-| `PDF_FETCH_CONCURRENCY` | `32` | Concurrent Security Policy PDF or Firecrawl policy fetches |
+| `PDF_FETCH_CONCURRENCY` | `32` | Concurrent Security Policy PDF fetches/parses |
 | `FULL_REFRESH` | `0` | Set to `1` to bypass reuse of previously generated outputs |
 
-GitHub Actions should provide `FIRECRAWL_API_KEY` as a repository secret. When that secret is absent, the scraper falls back to local Security Policy PDF parsing.
+When Crawl4AI is unavailable or cannot parse a policy PDF, the scraper falls back to local Security Policy PDF parsing.
 
 ## CORS
 
