@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/certificate-index.schema.json",
+  "title": "NIST CMVP Certificate Index Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "total_certificates",
+    "certificate_paths",
+    "certificates"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "/api/schemas/metadata.schema.json"
+    },
+    "total_certificates": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "certificate_paths": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^/api/certificates/[0-9]+\\.json$"
+      }
+    },
+    "certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "path",
+          "nist_page_url",
+          "certificate_detail_url",
+          "security_policy_url",
+          "vendor_name",
+          "module_name",
+          "standard",
+          "status",
+          "module_type",
+          "overall_level",
+          "validation_date",
+          "validation_dates",
+          "sunset_date",
+          "algorithms",
+          "algorithm_count",
+          "algorithm_extraction_status",
+          "algorithm_source",
+          "detail_available"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^/api/certificates/[0-9]+\\.json$"
+          },
+          "nist_page_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "certificate_detail_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "security_policy_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "vendor_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standard": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "overall_level": {
+            "type": [
+              "integer",
+              "string",
+              "null"
+            ]
+          },
+          "validation_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "validation_dates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sunset_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "algorithm_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "algorithm_extraction_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "algorithm_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "detail_available": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

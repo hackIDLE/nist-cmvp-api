@@ -2102,6 +2102,149 @@ def create_algorithms_summary(algorithms_map: Dict[int, List[str]]) -> Dict:
     }
 
 
+def normalize_index_list(value) -> List[str]:
+    """Normalize a scalar or list value for compact index payloads."""
+    if isinstance(value, list):
+        return normalize_string_list(value)
+    if value in (None, "", [], {}):
+        return []
+    text = normalize_whitespace(str(value))
+    return [text] if text else []
+
+
+def first_non_empty(*values):
+    """Return the first value that carries meaningful content."""
+    for value in values:
+        if value not in (None, "", [], {}):
+            return value
+    return None
+
+
+def build_certificate_index_entry(
+    module: Dict,
+    dataset: str,
+    detail_payload: Optional[Dict] = None,
+) -> Optional[Dict]:
+    """Build one compact certificate discovery row."""
+    detail_payload = detail_payload or {}
+    cert_number = parse_certificate_number(detail_payload) or parse_certificate_number(module)
+    if cert_number is None:
+        return None
+
+    algorithms = normalize_string_list(
+        detail_payload.get("algorithms") or module.get("algorithms") or []
+    )
+    validation_date = first_non_empty(
+        detail_payload.get("validation_date"),
+        module.get("Validation Date"),
+    )
+    validation_dates = normalize_index_list(detail_payload.get("validation_dates"))
+    if not validation_dates and validation_date:
+        validation_dates = normalize_index_list(validation_date)
+
+    extraction = first_non_empty(
+        detail_payload.get("algorithm_extraction"),
+        module.get("algorithm_extraction"),
+    )
+    if not isinstance(extraction, dict):
+        extraction = {}
+
+    path = f"/api/certificates/{cert_number}.json"
+    certificate_detail_url = first_non_empty(
+        detail_payload.get("certificate_detail_url"),
+        module.get("certificate_detail_url"),
+        get_certificate_detail_url(cert_number),
+    )
+
+    return {
+        "certificate_number": str(cert_number),
+        "dataset": dataset,
+        "path": path,
+        "nist_page_url": first_non_empty(
+            detail_payload.get("nist_page_url"),
+            certificate_detail_url,
+            get_certificate_detail_url(cert_number),
+        ),
+        "certificate_detail_url": certificate_detail_url,
+        "security_policy_url": first_non_empty(
+            detail_payload.get("security_policy_url"),
+            module.get("security_policy_url"),
+        ),
+        "vendor_name": first_non_empty(
+            detail_payload.get("vendor_name"),
+            module.get("Vendor Name"),
+        ),
+        "module_name": first_non_empty(
+            detail_payload.get("module_name"),
+            module.get("Module Name"),
+        ),
+        "standard": first_non_empty(
+            detail_payload.get("standard"),
+            module.get("standard"),
+            module.get("Standard"),
+        ),
+        "status": first_non_empty(
+            detail_payload.get("status"),
+            module.get("status"),
+            module.get("Status"),
+        ),
+        "module_type": first_non_empty(
+            detail_payload.get("module_type"),
+            module.get("module_type"),
+            module.get("Module Type"),
+        ),
+        "overall_level": first_non_empty(
+            detail_payload.get("overall_level"),
+            module.get("overall_level"),
+        ),
+        "validation_date": validation_date,
+        "validation_dates": validation_dates,
+        "sunset_date": first_non_empty(
+            detail_payload.get("sunset_date"),
+            module.get("sunset_date"),
+        ),
+        "algorithms": algorithms,
+        "algorithm_count": len(algorithms),
+        "algorithm_extraction_status": extraction.get("status"),
+        "algorithm_source": extraction.get("source"),
+        "detail_available": bool(detail_payload) or module.get("detail_available") is True,
+    }
+
+
+def build_certificate_index_payload(
+    metadata: Dict,
+    modules: List[Dict],
+    historical_modules: List[Dict],
+    detail_payloads: Optional[Dict[int, Dict]] = None,
+) -> Dict:
+    """Build a compact discovery index for all per-certificate JSON files."""
+    detail_payloads = detail_payloads or {}
+    entries: List[Dict] = []
+
+    for dataset, records in (("active", modules), ("historical", historical_modules)):
+        for module in records:
+            cert_number = parse_certificate_number(module)
+            entry = build_certificate_index_entry(
+                module,
+                dataset,
+                detail_payloads.get(cert_number) if cert_number is not None else None,
+            )
+            if entry:
+                entries.append(entry)
+
+    entries.sort(key=lambda item: int(item["certificate_number"]))
+
+    return {
+        "metadata": metadata,
+        "total_certificates": len(entries),
+        "certificate_paths": {
+            entry["certificate_number"]: entry["path"]
+            for entry in entries
+        },
+        "certificates": entries,
+    }
+
+
 def validate_module_count(modules: List[Dict], label: str, min_expected: int = 100) -> None:
     """
     Validate that the scraped module count is reasonable.
@@ -2158,6 +2301,7 @@ def schema_paths(algorithms_summary: Optional[Dict] = None) -> Dict[str, str]:
         "modules": "/api/schemas/modules.schema.json",
         "historical_modules": "/api/schemas/historical-modules.schema.json",
         "modules_in_process": "/api/schemas/modules-in-process.schema.json",
+        "certificate_index": "/api/schemas/certificate-index.schema.json",
         "certificate_detail": "/api/schemas/certificate-detail.schema.json",
     }
     if algorithms_summary:
@@ -2298,6 +2442,9 @@ def build_api_reference_body(
         "### JSON Schemas",
         "`GET api/schemas/index.schema.json` — JSON Schema discovery document for the static API response files.",
         "",
+        "### Certificate Index",
+        f"`GET api/certificates/index.json` — Compact discovery index for all {format_count(total_details)} per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.",
+        "",
         "### Active Modules",
         f"`GET api/modules.json` — All {format_count(total_modules)} active validated modules.",
         "",
@@ -2371,6 +2518,7 @@ def build_api_reference_body(
             "",
             "### Find a module and pull the full certificate record",
             "```",
+            "GET api/certificates/index.json → discover every certificate detail path and summary row",
             "GET api/modules.json → locate the certificate number or vendor/module pair",
             f"GET api/certificates/{sample_certificate}.json → full detail record for that certificate",
             "```",
@@ -2426,6 +2574,7 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         f"- `api/historical-modules.json` — {format_count(metadata.get('total_historical_modules', 0))} historical modules.",
         f"- `api/modules-in-process.json` — {format_count(metadata.get('total_modules_in_process', 0))} modules currently in process.",
         "- `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.",
+        f"- `api/certificates/index.json` — compact index for {format_count(metadata.get('total_certificate_details', 0))} certificate detail files.",
         f"- `api/certificates/{{certificate}}.json` — full detail record for a single CMVP certificate.",
     ]
     if algorithms_summary:
@@ -2565,7 +2714,8 @@ def build_index_html(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
     endpoint_links = [
         '    <li><a href="api/index.json"><code>index</code></a></li>',
         '    <li><a href="api/metadata.json"><code>metadata</code></a></li>',
-        '    <li><a href="api/modules.json"><code>modules</code></a> &middot; <a href="api/certificates/5238.json"><code>certificates/{certificate}</code></a></li>',
+        '    <li><a href="api/modules.json"><code>modules</code></a></li>',
+        '    <li><a href="api/certificates/index.json"><code>certificates/index</code></a> &middot; <a href="api/certificates/5238.json"><code>certificates/{certificate}</code></a></li>',
         '    <li><a href="api/historical-modules.json"><code>historical-modules</code></a></li>',
         '    <li><a href="api/modules-in-process.json"><code>modules-in-process</code></a></li>',
     ]
@@ -2851,6 +3001,75 @@ def certificate_detail_schema() -> Dict:
     }
 
 
+def certificate_index_schema() -> Dict:
+    """Return the certificate discovery index response schema."""
+    entry_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "certificate_number",
+            "dataset",
+            "path",
+            "nist_page_url",
+            "certificate_detail_url",
+            "security_policy_url",
+            "vendor_name",
+            "module_name",
+            "standard",
+            "status",
+            "module_type",
+            "overall_level",
+            "validation_date",
+            "validation_dates",
+            "sunset_date",
+            "algorithms",
+            "algorithm_count",
+            "algorithm_extraction_status",
+            "algorithm_source",
+            "detail_available",
+        ],
+        "properties": {
+            "certificate_number": {"type": "string", "pattern": "^[0-9]+$"},
+            "dataset": {"type": "string", "enum": ["active", "historical"]},
+            "path": {"type": "string", "pattern": "^/api/certificates/[0-9]+\\.json$"},
+            "nist_page_url": {"type": "string", "format": "uri"},
+            "certificate_detail_url": {"type": "string", "format": "uri"},
+            "security_policy_url": {"type": ["string", "null"], "format": "uri"},
+            "vendor_name": {"type": ["string", "null"]},
+            "module_name": {"type": ["string", "null"]},
+            "standard": {"type": ["string", "null"]},
+            "status": {"type": ["string", "null"]},
+            "module_type": {"type": ["string", "null"]},
+            "overall_level": {"type": ["integer", "string", "null"]},
+            "validation_date": {"type": ["string", "null"]},
+            "validation_dates": {"type": "array", "items": {"type": "string"}},
+            "sunset_date": {"type": ["string", "null"]},
+            "algorithms": {"type": "array", "items": {"type": "string"}},
+            "algorithm_count": {"type": "integer", "minimum": 0},
+            "algorithm_extraction_status": {"type": ["string", "null"]},
+            "algorithm_source": {"type": ["string", "null"]},
+            "detail_available": {"type": "boolean"},
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", "total_certificates", "certificate_paths", "certificates"],
+        "properties": {
+            "metadata": {"$ref": "/api/schemas/metadata.schema.json"},
+            "total_certificates": {"type": "integer", "minimum": 0},
+            "certificate_paths": {
+                "type": "object",
+                "additionalProperties": {
+                    "type": "string",
+                    "pattern": "^/api/certificates/[0-9]+\\.json$",
+                },
+            },
+            "certificates": {"type": "array", "items": entry_schema},
+        },
+    }
+
+
 def algorithms_schema() -> Dict:
     """Return the algorithms summary response schema."""
     return {
@@ -2940,6 +3159,11 @@ def generate_json_schema_artifacts(algorithms_summary: Optional[Dict]) -> Dict[s
             paths["modules_in_process"],
             response_schema(metadata_path, "modules_in_process", module_in_process_path),
         ),
+        "api/schemas/certificate-index.schema.json": json_schema_document(
+            "NIST CMVP Certificate Index Response",
+            paths["certificate_index"],
+            certificate_index_schema(),
+        ),
         "api/schemas/certificate-detail.schema.json": json_schema_document(
             "NIST CMVP Certificate Detail Response",
             paths["certificate_detail"],
@@ -2963,6 +3187,7 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
         "historical_modules": "/api/historical-modules.json",
         "modules_in_process": "/api/modules-in-process.json",
         "metadata": "/api/metadata.json",
+        "certificate_index": "/api/certificates/index.json",
         "certificate_detail_template": "/api/certificates/{certificate}.json",
     }
     if algorithms_summary:
@@ -2987,6 +3212,7 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
             "algorithm_extraction": bool(algorithms_summary),
             "algorithm_extraction_provenance": True,
             "extraction_metrics": True,
+            "certificate_index": True,
             "certificate_detail_records": True,
             "llms_txt": True,
             "llms_full_txt": True,
@@ -3194,6 +3420,22 @@ def generate_openapi_spec(
                 if algorithms_available
                 else {}
             ),
+            "/api/certificates/index.json": {
+                "get": {
+                    "summary": "Certificate detail discovery index",
+                    "operationId": "getCertificateIndex",
+                    "responses": {
+                        "200": {
+                            "description": "Compact index of all per-certificate JSON detail files",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/CertificateIndexResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "/api/certificates/{certificate}.json": {
                 "get": {
                     "summary": "Full certificate detail record",
@@ -3288,6 +3530,50 @@ def generate_openapi_spec(
                         },
                         "metadata": {"type": "object", "additionalProperties": True}
                     }
+                },
+                "CertificateIndexEntry": {
+                    "type": "object",
+                    "description": "Compact discovery row for a per-certificate detail JSON file",
+                    "properties": {
+                        "certificate_number": {"type": "string"},
+                        "dataset": {"type": "string", "enum": ["active", "historical"]},
+                        "path": {"type": "string", "example": "/api/certificates/5238.json"},
+                        "nist_page_url": {"type": "string"},
+                        "certificate_detail_url": {"type": "string"},
+                        "security_policy_url": {"type": "string", "nullable": True},
+                        "vendor_name": {"type": "string", "nullable": True},
+                        "module_name": {"type": "string", "nullable": True},
+                        "standard": {"type": "string", "nullable": True},
+                        "status": {"type": "string", "nullable": True},
+                        "module_type": {"type": "string", "nullable": True},
+                        "overall_level": {
+                            "oneOf": [{"type": "integer"}, {"type": "string"}],
+                            "nullable": True,
+                        },
+                        "validation_date": {"type": "string", "nullable": True},
+                        "validation_dates": {"type": "array", "items": {"type": "string"}},
+                        "sunset_date": {"type": "string", "nullable": True},
+                        "algorithms": {"type": "array", "items": {"type": "string"}},
+                        "algorithm_count": {"type": "integer"},
+                        "algorithm_extraction_status": {"type": "string", "nullable": True},
+                        "algorithm_source": {"type": "string", "nullable": True},
+                        "detail_available": {"type": "boolean"},
+                    },
+                },
+                "CertificateIndexResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "total_certificates": {"type": "integer"},
+                        "certificate_paths": {
+                            "type": "object",
+                            "additionalProperties": {"type": "string"},
+                        },
+                        "certificates": {
+                            "type": "array",
+                            "items": {"$ref": "#/components/schemas/CertificateIndexEntry"},
+                        },
+                    },
                 },
                 "CertificateDetail": {
                     "type": "object",
@@ -3535,6 +3821,14 @@ def main():
         if cert_number is not None
     }
     removed_orphans = prune_orphan_certificate_details(current_cert_numbers)
+
+    certificate_index_data = build_certificate_index_payload(
+        metadata,
+        modules,
+        historical_modules,
+        certificate_detail_payloads,
+    )
+    save_json(certificate_index_data, f"{output_dir}/certificates/index.json")
 
     algorithms_summary = None
 
