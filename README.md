@@ -225,7 +225,7 @@ ALGORITHM_SOURCE=security_policy_pdf python scraper.py
 SKIP_ALGORITHMS=1 python scraper.py
 
 # Validate generated artifacts before publishing
-python validate_api.py --require-current-schema --forbid-firecrawl-run-source
+python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
 ```
 
 ## Environment Variables

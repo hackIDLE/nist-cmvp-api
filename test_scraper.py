@@ -1264,7 +1264,12 @@ def test_prune_orphan_certificate_details():
 
 def test_validate_generated_api_artifacts():
     """Current checked-in generated API artifacts should be internally consistent."""
-    errors = validate_api(Path("."))
+    errors = validate_api(
+        Path("."),
+        require_current_schema=True,
+        forbid_firecrawl_run_source=True,
+        require_data_quality_pass=True,
+    )
 
     assert errors == [], "Generated API artifact validation failed:\n" + "\n".join(errors[:20])
 
@@ -1482,6 +1487,12 @@ def test_data_quality_search_indexes_and_examples():
     assert report["summary"]["fallback_usage"] == 1, "Fallback extraction should be listed"
     assert report["summary"]["misses"] == 1, "Historical algorithm miss should be listed"
     assert report["update_monitor"]["next_scheduled_run"] == "2026-04-19T02:00:00Z", "Next weekly run should be Sunday 02:00 UTC"
+    checks = {
+        check["name"]: check
+        for check in report["update_monitor"]["checks"]
+    }
+    assert checks["algorithm_misses"]["status"] == "warn", "Algorithm misses should trip the run-health monitor"
+    assert report["update_monitor"]["status"] == "warn", "Any warning check should make the monitor warn"
 
     examples = build_examples_payload(metadata)
     assert {"curl", "python", "javascript", "agent"} <= set(examples["examples"]), "Examples should cover every consumer family"

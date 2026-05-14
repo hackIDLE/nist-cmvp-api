@@ -2657,6 +2657,13 @@ def build_update_monitor(metadata: Dict, combined_metrics: Dict[str, int]) -> Di
             0,
         ),
         build_quality_check(
+            "algorithm_misses",
+            metadata.get("algorithm_source") == "none"
+            or combined_metrics.get("algorithm_misses", 0) == 0,
+            combined_metrics.get("algorithm_misses", 0),
+            0,
+        ),
+        build_quality_check(
             "algorithm_success_rate",
             metadata.get("algorithm_source") == "none"
             or algorithm_success_rate is None
