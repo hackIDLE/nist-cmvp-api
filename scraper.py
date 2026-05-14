@@ -20,6 +20,7 @@ Environment Variables:
                   If set, algorithm data will be imported from this database
     CERT_FETCH_CONCURRENCY: Concurrent certificate detail page fetches (default: 16)
     PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF fetches/parses (default: 32)
+    CERT_PROCESS_TIMEOUT: Per-certificate processing timeout in seconds (default: 900)
     FULL_REFRESH: Set to "1" to bypass reuse of previously generated outputs
 """
 
@@ -63,6 +64,7 @@ USER_AGENT = "NIST-CMVP-Data-Scraper/1.0 (GitHub Project)"
 SKIP_ALGORITHMS = os.getenv("SKIP_ALGORITHMS", "0") == "1"
 CERT_FETCH_CONCURRENCY = max(1, int(os.getenv("CERT_FETCH_CONCURRENCY", "16")))
 PDF_FETCH_CONCURRENCY = max(1, int(os.getenv("PDF_FETCH_CONCURRENCY", "32")))
+CERT_PROCESS_TIMEOUT = max(1, int(os.getenv("CERT_PROCESS_TIMEOUT", "900")))
 FULL_REFRESH = os.getenv("FULL_REFRESH", "0") == "1"
 
 # Path to NIST-CMVP-ReportGen database (if available for importing algorithms)
@@ -267,6 +269,7 @@ PROCESSING_STAT_KEYS = (
     "algorithm_source_security_policy_pdf",
     "algorithm_source_database",
     "algorithm_source_none",
+    "certificate_timeouts",
 )
 
 
@@ -393,6 +396,7 @@ def build_extraction_metrics(active_stats: Dict[str, int], historical_stats: Dic
         "concurrency": {
             "certificate_fetch": CERT_FETCH_CONCURRENCY,
             "security_policy_fetch": PDF_FETCH_CONCURRENCY,
+            "certificate_process_timeout_seconds": CERT_PROCESS_TIMEOUT,
         },
     }
 
@@ -1735,6 +1739,153 @@ async def process_certificate_record(
     return module_out, detail_payload, module_categories, stats
 
 
+def build_certificate_timeout_result(
+    module: Dict,
+    dataset: str,
+    generated_at: str,
+    algorithm_source: str,
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+    previous_metadata: Dict,
+) -> Tuple[Dict, Optional[Dict], List[str], Dict[str, int]]:
+    """Build a bounded fallback result when one certificate exceeds the timeout."""
+    stats = new_processing_stats()
+    stats["certificate_timeouts"] += 1
+
+    cert_number = parse_certificate_number(module)
+    module_out = dict(previous_module or {})
+    module_out.update(module)
+
+    source_url = module_out.get("security_policy_url")
+    if cert_number is not None and not source_url:
+        source_url = get_security_policy_url(cert_number)
+
+    categories, detailed = cached_algorithm_fields(previous_module, previous_detail)
+    attempt = {
+        "source": algorithm_source,
+        "url": str(source_url or ""),
+        "status": "timeout",
+    }
+
+    detail_payload: Optional[Dict] = None
+    if cert_number is not None and previous_detail:
+        detail_payload = prepare_reused_detail_payload(
+            previous_detail,
+            module,
+            cert_number,
+            dataset,
+            generated_at,
+        )
+        stats["html_reused"] += 1
+        for key in MODULE_DETAIL_FIELDS:
+            value = detail_payload.get(key)
+            if value not in (None, [], "", {}):
+                module_out[key] = value
+        module_out["security_policy_url"] = detail_payload.get("security_policy_url") or module_out.get("security_policy_url")
+        cached_source, cached_source_url = cached_algorithm_extraction_source(
+            previous_module,
+            previous_detail,
+            previous_metadata,
+        )
+        provenance = build_algorithm_extraction_provenance(
+            algorithm_source,
+            "cached" if categories or detailed else "miss",
+            cached_source if categories or detailed else "timeout",
+            cached_source_url or source_url,
+            categories,
+            detailed,
+            cached=bool(categories or detailed),
+            attempts=[attempt],
+        )
+        if categories or detailed:
+            stats["pdf_reused"] += 1
+            stats["algorithm_cache_hits"] += 1
+            stats["algorithm_successes"] += 1
+        else:
+            stats["algorithm_misses"] += 1
+        apply_algorithm_fields(detail_payload, categories, detailed)
+        apply_algorithm_extraction_provenance(detail_payload, provenance, include_attempts=True)
+        apply_algorithm_fields(module_out, categories, detailed)
+        apply_algorithm_extraction_provenance(module_out, provenance)
+        module_out["detail_available"] = True
+        return module_out, detail_payload, categories, stats
+
+    stats["html_failed"] += 1
+    if algorithm_source in CACHEABLE_ALGORITHM_SOURCES:
+        stats["pdf_failed"] += 1
+    if algorithm_source != "none":
+        stats["algorithm_misses"] += 1
+    strip_algorithm_fields(module_out)
+    provenance = build_algorithm_extraction_provenance(
+        algorithm_source,
+        "miss",
+        "timeout",
+        source_url,
+        [],
+        [],
+        attempts=[attempt],
+    )
+    apply_algorithm_extraction_provenance(module_out, provenance)
+    module_out["detail_available"] = False
+    return module_out, None, [], stats
+
+
+async def process_certificate_record_with_timeout(
+    index: int,
+    module: Dict,
+    dataset: str,
+    generated_at: str,
+    algorithm_source: str,
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+    previous_metadata: Dict,
+    client: httpx.AsyncClient,
+    cert_semaphore: asyncio.Semaphore,
+    pdf_semaphore: asyncio.Semaphore,
+    pdf_cache: Dict[str, asyncio.Task],
+    pdf_cache_lock: asyncio.Lock,
+    database_algorithms_map: Dict[int, List[str]],
+) -> Tuple[int, Dict, Optional[Dict], List[str], Dict[str, int]]:
+    """Process one certificate and return its input index, timing out slow records."""
+    try:
+        module_out, detail_payload, categories, stats = await asyncio.wait_for(
+            process_certificate_record(
+                module,
+                dataset,
+                generated_at,
+                algorithm_source,
+                previous_module,
+                previous_detail,
+                previous_metadata,
+                client,
+                cert_semaphore,
+                pdf_semaphore,
+                pdf_cache,
+                pdf_cache_lock,
+                database_algorithms_map,
+            ),
+            timeout=CERT_PROCESS_TIMEOUT,
+        )
+        return index, module_out, detail_payload, categories, stats
+    except asyncio.TimeoutError:
+        cert_number = parse_certificate_number(module)
+        print(
+            f"Warning: Timed out processing certificate {cert_number or 'unknown'} "
+            f"after {CERT_PROCESS_TIMEOUT}s; preserving cached data when available.",
+            file=sys.stderr,
+        )
+        module_out, detail_payload, categories, stats = build_certificate_timeout_result(
+            module,
+            dataset,
+            generated_at,
+            algorithm_source,
+            previous_module,
+            previous_detail,
+            previous_metadata,
+        )
+        return index, module_out, detail_payload, categories, stats
+
+
 async def build_certificate_artifacts(
     modules: List[Dict],
     dataset: str,
@@ -1770,7 +1921,8 @@ async def build_certificate_artifacts(
             cert_number = parse_certificate_number(module)
             tasks.append(
                 asyncio.create_task(
-                    process_certificate_record(
+                    process_certificate_record_with_timeout(
+                        index,
                         module,
                         dataset,
                         generated_at,
@@ -1790,8 +1942,8 @@ async def build_certificate_artifacts(
 
         total = len(tasks)
         completed = 0
-        for index, task in enumerate(tasks):
-            module_out, detail_payload, categories, task_stats = await task
+        for task in asyncio.as_completed(tasks):
+            index, module_out, detail_payload, categories, task_stats = await task
             completed += 1
             results[index] = module_out
             cert_number = parse_certificate_number(module_out)

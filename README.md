@@ -214,6 +214,7 @@ python validate_api.py --require-current-schema --forbid-firecrawl-run-source
 | `CMVP_DB_PATH` | - | Path to cmvp.db for algorithm import (fastest override) |
 | `CERT_FETCH_CONCURRENCY` | `16` | Concurrent certificate detail page fetches |
 | `PDF_FETCH_CONCURRENCY` | `32` | Concurrent Security Policy PDF fetches/parses |
+| `CERT_PROCESS_TIMEOUT` | `900` | Per-certificate processing timeout in seconds |
 | `FULL_REFRESH` | `0` | Set to `1` to bypass reuse of previously generated outputs |
 
 When Crawl4AI is unavailable or cannot parse a policy PDF, the scraper falls back to local Security Policy PDF parsing.
