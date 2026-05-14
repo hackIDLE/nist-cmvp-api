@@ -8,6 +8,7 @@
     "historical_modules": "/api/historical-modules.json",
     "modules_in_process": "/api/modules-in-process.json",
     "metadata": "/api/metadata.json",
+    "certificate_index": "/api/certificates/index.json",
     "certificate_detail_template": "/api/certificates/{certificate}.json",
     "algorithms": "/api/algorithms.json"
   },
@@ -16,7 +17,20 @@
     "llms_txt": "/llms.txt",
     "llms_full_txt": "/llms-full.txt",
     "api_docs": "/api/docs.md",
-    "openapi": "/openapi.json"
+    "openapi": "/openapi.json",
+    "json_schemas": "/api/schemas/index.schema.json"
+  },
+  "schemas": {
+    "index": "/api/schemas/index.schema.json",
+    "metadata": "/api/schemas/metadata.schema.json",
+    "module": "/api/schemas/module.schema.json",
+    "module_in_process": "/api/schemas/module-in-process.schema.json",
+    "modules": "/api/schemas/modules.schema.json",
+    "historical_modules": "/api/schemas/historical-modules.schema.json",
+    "modules_in_process": "/api/schemas/modules-in-process.schema.json",
+    "certificate_index": "/api/schemas/certificate-index.schema.json",
+    "certificate_detail": "/api/schemas/certificate-detail.schema.json",
+    "algorithms": "/api/schemas/algorithms.schema.json"
   },
   "last_updated": "2026-05-10T03:11:20.260239Z",
   "total_modules": 1081,
@@ -28,10 +42,14 @@
     "security_policy_urls": true,
     "certificate_detail_urls": true,
     "algorithm_extraction": true,
+    "algorithm_extraction_provenance": true,
+    "extraction_metrics": true,
+    "certificate_index": true,
     "certificate_detail_records": true,
     "llms_txt": true,
     "llms_full_txt": true,
     "markdown_api_docs": true,
-    "openapi_spec": true
+    "openapi_spec": true,
+    "json_schemas": true
   }
 }

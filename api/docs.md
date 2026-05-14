@@ -17,7 +17,13 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/`
 `GET api/index.json` — API discovery endpoint with resource paths, documentation links, feature flags, and current counts.
 
 ### Metadata
-`GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, and algorithm extraction status.
+`GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, extraction metrics, and algorithm extraction status.
+
+### JSON Schemas
+`GET api/schemas/index.schema.json` — JSON Schema discovery document for the static API response files.
+
+### Certificate Index
+`GET api/certificates/index.json` — Compact discovery index for all 5,249 per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.
 
 ### Active Modules
 `GET api/modules.json` — All 1,081 active validated modules.
@@ -68,7 +74,7 @@ Example response (truncated):
 }
 ```
 
-Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, and detail availability flags.
+Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, detail availability flags, and algorithm extraction provenance when algorithms were evaluated.
 
 ### Historical Modules
 `GET api/historical-modules.json` — All 4,168 expired or revoked modules for historical lookups.
@@ -78,6 +84,8 @@ Each active module includes certificate identifiers, vendor/module names, valida
 
 ### Algorithms
 `GET api/algorithms.json` — Algorithm usage summary across 1,624 certificates in the current build.
+
+`algorithm_extraction` records the configured source, actual source, cache/fallback status, source URL, and extracted row counts for each evaluated certificate.
 
 Example response (truncated):
 
@@ -166,11 +174,12 @@ Current build contains 5,249 certificate detail records across active and histor
 ### Discover the API surface
 ```
 GET api/index.json → endpoints, docs links, feature flags, counts
-GET api/metadata.json → freshness and scrape provenance
+GET api/metadata.json → freshness, scrape provenance, and extraction metrics
 ```
 
 ### Find a module and pull the full certificate record
 ```
+GET api/certificates/index.json → discover every certificate detail path and summary row
 GET api/modules.json → locate the certificate number or vendor/module pair
 GET api/certificates/5260.json → full detail record for that certificate
 ```
@@ -183,7 +192,7 @@ GET api/certificates/5260.json → status, sunset_date, validation_history, rela
 ### Explore algorithm coverage
 ```
 GET api/algorithms.json → counts and certificate lists per algorithm
-GET api/modules.json → filter module rows by algorithms[] entries
+GET api/modules.json → filter module rows by algorithms[] entries and inspect algorithm_extraction
 ```
 
 ## Caveats
@@ -192,4 +201,4 @@ GET api/modules.json → filter module rows by algorithms[] entries
 - **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
-- **Algorithms coverage:** `api/algorithms.json` summarizes 1,624 certificates that had algorithm data in this build.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 1,624 certificates that had algorithm data in this build. `api/metadata.json` reports extraction cache hits, refreshes, failures, misses, and fallback counts.

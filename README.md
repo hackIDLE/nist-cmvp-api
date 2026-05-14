@@ -33,6 +33,7 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
 | `metadata.json` | Dataset info (last update, counts, feature flags) |
 | `index.json` | API index with all endpoints and feature information |
 | `schemas/*.schema.json` | JSON Schemas for response validation |
+| `certificates/index.json` | Compact discovery index for every per-certificate detail file |
 | `certificates/{certificate}.json` | Structured detail record for one CMVP certificate |
 
 ## Data Structure
@@ -169,6 +170,10 @@ curl -s https://hackidle.github.io/nist-cmvp-api/api/algorithms.json | \
 
 # Get the full detail page payload for one certificate
 curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/5203.json | jq '.certificate'
+
+# Discover certificate detail files without loading every detail payload
+curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/index.json | \
+  jq '.certificates[] | select(.dataset == "active" and .standard == "FIPS 140-3") | {certificate_number, path, vendor_name, module_name}'
 
 # Check last update and extraction metrics
 curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | \

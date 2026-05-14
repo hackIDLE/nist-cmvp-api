@@ -127,6 +127,24 @@
         }
       }
     },
+    "/api/certificates/index.json": {
+      "get": {
+        "summary": "Certificate detail discovery index",
+        "operationId": "getCertificateIndex",
+        "responses": {
+          "200": {
+            "description": "Compact index of all per-certificate JSON detail files",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CertificateIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/certificates/{certificate}.json": {
       "get": {
         "summary": "Full certificate detail record",
@@ -194,6 +212,10 @@
             "type": "string",
             "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search"
           },
+          "modules_in_process_source": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+          },
           "algorithm_source": {
             "type": "string",
             "example": "firecrawl"
@@ -201,6 +223,14 @@
           "algorithm_cache_version": {
             "type": "string",
             "example": "2026-04-15-legacy-v1"
+          },
+          "algorithm_extraction_schema_version": {
+            "type": "string",
+            "example": ""
+          },
+          "extraction_metrics": {
+            "type": "object",
+            "additionalProperties": true
           },
           "version": {
             "type": "string",
@@ -305,6 +335,21 @@
           "detail_available": {
             "type": "boolean",
             "example": true
+          },
+          "software_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "hardware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "firmware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
           }
         }
       },
@@ -360,6 +405,128 @@
                   }
                 }
               }
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "CertificateIndexEntry": {
+        "type": "object",
+        "description": "Compact discovery row for a per-certificate detail JSON file",
+        "properties": {
+          "certificate_number": {
+            "type": "string"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "example": "/api/certificates/5238.json"
+          },
+          "nist_page_url": {
+            "type": "string"
+          },
+          "certificate_detail_url": {
+            "type": "string"
+          },
+          "security_policy_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendor_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "module_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "standard": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "module_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "overall_level": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "nullable": true
+          },
+          "validation_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "validation_dates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sunset_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "algorithm_count": {
+            "type": "integer"
+          },
+          "algorithm_extraction_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "algorithm_source": {
+            "type": "string",
+            "nullable": true
+          },
+          "detail_available": {
+            "type": "boolean"
+          }
+        }
+      },
+      "CertificateIndexResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "total_certificates": {
+            "type": "integer"
+          },
+          "certificate_paths": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "certificates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CertificateIndexEntry"
             }
           }
         }
@@ -494,6 +661,21 @@
               "fips.dll | 3.0.0-FIPS 140-3 | Compiled for Windows | HMAC-SHA-256",
               "fips.dylib | 3.0.0-FIPS 140-3 | Compiled for MacOS | HMAC-SHA-256"
             ]
+          },
+          "software_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "hardware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "firmware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
           }
         }
       },

@@ -13,6 +13,7 @@ REQUIRED_TOP_LEVEL_FILES = (
     "api/modules-in-process.json",
     "api/metadata.json",
     "api/index.json",
+    "api/certificates/index.json",
     "openapi.json",
     "llms.txt",
     "llms-full.txt",
@@ -66,6 +67,7 @@ JSON_SCHEMA_FILES = (
     "api/schemas/modules.schema.json",
     "api/schemas/historical-modules.schema.json",
     "api/schemas/modules-in-process.schema.json",
+    "api/schemas/certificate-index.schema.json",
     "api/schemas/certificate-detail.schema.json",
 )
 
@@ -206,6 +208,8 @@ def validate_certificate_details(
 
     for filepath in detail_files:
         label = str(filepath)
+        if filepath.name == "index.json":
+            continue
         if not filepath.stem.isdigit():
             errors.append(f"{label}: certificate detail filename must be numeric")
             continue
@@ -257,6 +261,58 @@ def validate_certificate_details(
         errors.append(f"api/certificates: missing detail files for {len(missing_details)} certificates; first={missing_details[:5]}")
     if orphan_details:
         errors.append(f"api/certificates: found {len(orphan_details)} orphan detail files; first={orphan_details[:5]}")
+
+
+def validate_certificate_index(
+    root: Path,
+    metadata: Dict,
+    expected_datasets: Dict[int, str],
+    expected_algorithms: Dict[int, List[str]],
+    errors: List[str],
+) -> None:
+    """Validate api/certificates/index.json against module rows and detail paths."""
+    payload = load_json(root / "api" / "certificates" / "index.json", errors)
+    if payload is None:
+        return
+
+    add_error(errors, payload.get("metadata") == metadata, "api/certificates/index.json: embedded metadata does not match api/metadata.json")
+    add_error(errors, payload.get("total_certificates") == len(expected_datasets), "api/certificates/index.json: total_certificates mismatch")
+
+    certificate_paths = payload.get("certificate_paths")
+    certificates = payload.get("certificates")
+    add_error(errors, isinstance(certificate_paths, dict), "api/certificates/index.json: certificate_paths must be an object")
+    add_error(errors, isinstance(certificates, list), "api/certificates/index.json: certificates must be a list")
+    if not isinstance(certificate_paths, dict) or not isinstance(certificates, list):
+        return
+
+    found_certificates: Set[int] = set()
+    for entry_index, entry in enumerate(certificates):
+        label = f"api/certificates/index.json: certificates[{entry_index}]"
+        if not isinstance(entry, dict):
+            errors.append(f"{label}: entry must be an object")
+            continue
+
+        cert_number = parse_certificate_number(entry)
+        if cert_number is None:
+            errors.append(f"{label}: missing numeric certificate_number")
+            continue
+        found_certificates.add(cert_number)
+
+        expected_path = f"/api/certificates/{cert_number}.json"
+        add_error(errors, certificate_paths.get(str(cert_number)) == expected_path, f"{label}: certificate_paths entry mismatch")
+        add_error(errors, entry.get("path") == expected_path, f"{label}: path mismatch")
+        add_error(errors, entry.get("dataset") == expected_datasets.get(cert_number), f"{label}: dataset mismatch")
+        add_error(errors, entry.get("detail_available") is True, f"{label}: detail_available is not true")
+
+        algorithms = entry.get("algorithms") or []
+        add_error(errors, isinstance(algorithms, list), f"{label}: algorithms must be a list")
+        if isinstance(algorithms, list):
+            add_error(errors, algorithms == expected_algorithms.get(cert_number, []), f"{label}: algorithms mismatch")
+            add_error(errors, entry.get("algorithm_count") == len(algorithms), f"{label}: algorithm_count mismatch")
+
+    expected_certificates = set(expected_datasets)
+    add_error(errors, found_certificates == expected_certificates, "api/certificates/index.json: certificate set mismatch")
+    add_error(errors, set(certificate_paths) == {str(cert) for cert in expected_certificates}, "api/certificates/index.json: certificate_paths keys mismatch")
 
 
 def validate_algorithms_summary(
@@ -331,11 +387,13 @@ def validate_docs_and_index(
         add_error(errors, isinstance(endpoints, dict), "api/index.json: endpoints must be an object")
         if isinstance(endpoints, dict):
             add_error(errors, ("algorithms" in endpoints) == has_algorithms, "api/index.json: algorithms endpoint presence mismatch")
+            add_error(errors, endpoints.get("certificate_index") == "/api/certificates/index.json", "api/index.json: missing certificate_index endpoint")
         features = index.get("features") or {}
         if require_current_schema and isinstance(features, dict):
             add_error(errors, features.get("algorithm_extraction_provenance") is True, "api/index.json: missing algorithm_extraction_provenance feature")
             add_error(errors, features.get("extraction_metrics") is True, "api/index.json: missing extraction_metrics feature")
             add_error(errors, features.get("json_schemas") is True, "api/index.json: missing json_schemas feature")
+            add_error(errors, features.get("certificate_index") is True, "api/index.json: missing certificate_index feature")
             schemas = index.get("schemas")
             add_error(errors, isinstance(schemas, dict), "api/index.json: schemas must be an object")
 
@@ -348,6 +406,7 @@ def validate_docs_and_index(
             "/api/modules.json",
             "/api/historical-modules.json",
             "/api/modules-in-process.json",
+            "/api/certificates/index.json",
             "/api/certificates/{certificate}.json",
         ):
             add_error(errors, path in paths, f"openapi.json: missing path {path}")
@@ -356,9 +415,9 @@ def validate_docs_and_index(
     for doc_path, required_text in (
         ("README.md", "certificates/{certificate}.json"),
         ("llms.txt", "api/metadata.json"),
-        ("llms-full.txt", "GET api/certificates/{certificate}.json"),
-        ("api/docs.md", "GET api/certificates/{certificate}.json"),
-        ("index.html", "api/metadata.json"),
+        ("llms-full.txt", "GET api/certificates/index.json"),
+        ("api/docs.md", "GET api/certificates/index.json"),
+        ("index.html", "api/certificates/index.json"),
     ):
         path = root / doc_path
         try:
@@ -450,6 +509,7 @@ def validate_api(
         errors,
         require_current_schema,
     )
+    validate_certificate_index(root, metadata, expected_datasets, expected_algorithms, errors)
     validate_algorithms_summary(root, metadata, expected_algorithms, errors)
     validate_docs_and_index(
         root,
