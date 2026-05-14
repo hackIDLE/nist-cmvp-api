@@ -24,7 +24,6 @@ Environment Variables:
 """
 
 import asyncio
-from contextlib import AsyncExitStack
 import copy
 import hashlib
 import json
@@ -44,16 +43,11 @@ import requests
 from bs4 import BeautifulSoup
 
 try:
-    from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig
-    from crawl4ai.processors.pdf import PDFContentScrapingStrategy, PDFCrawlerStrategy
+    from crawl4ai.processors.pdf import PDFContentScrapingStrategy
 
     CRAWL4AI_AVAILABLE = True
 except ImportError:
-    AsyncWebCrawler = None
-    CacheMode = None
-    CrawlerRunConfig = None
     PDFContentScrapingStrategy = None
-    PDFCrawlerStrategy = None
     CRAWL4AI_AVAILABLE = False
 
 
@@ -1111,6 +1105,66 @@ def extract_markdown_text(markdown_payload) -> str:
     return str(markdown_payload)
 
 
+def extract_text_from_crawl4ai_html(html: str) -> str:
+    """Convert Crawl4AI's PDF HTML output into line-oriented policy text."""
+    if not html:
+        return ""
+
+    soup = BeautifulSoup(html, "html.parser")
+    lines = [
+        normalize_whitespace(line)
+        for line in soup.get_text("\n").splitlines()
+        if normalize_whitespace(line)
+    ]
+    return "\n".join(lines)
+
+
+def extract_text_from_crawl4ai_result(scrape_result) -> str:
+    """Extract usable policy text from Crawl4AI PDF scrape result variants."""
+    text = getattr(scrape_result, "text", "")
+    if isinstance(text, str) and normalize_whitespace(text):
+        return text
+
+    for attribute in ("cleaned_html", "html"):
+        html = getattr(scrape_result, attribute, "")
+        if isinstance(html, str):
+            policy_text = extract_text_from_crawl4ai_html(html)
+            if policy_text:
+                return policy_text
+
+    return ""
+
+
+def extract_text_from_crawl4ai_process_result(process_result) -> str:
+    """Extract raw page text from Crawl4AI's PDF processor result."""
+    pages = getattr(process_result, "pages", []) or []
+    page_text = [
+        getattr(page, "raw_text", "") or getattr(page, "markdown", "")
+        for page in pages
+    ]
+    return "\n".join(text for text in page_text if text)
+
+
+def scrape_crawl4ai_policy_text(url: str) -> str:
+    """Run Crawl4AI's PDF processor while preserving raw table line breaks."""
+    strategy = PDFContentScrapingStrategy(batch_size=8)
+    pdf_path = strategy._get_pdf_path(url)
+    try:
+        process_result = strategy.pdf_processor.process_batch(Path(pdf_path))
+        policy_text = extract_text_from_crawl4ai_process_result(process_result)
+        if policy_text:
+            return policy_text
+
+        scrape_result = strategy.scrap(pdf_path, "")
+        return extract_text_from_crawl4ai_result(scrape_result)
+    finally:
+        if url.startswith(("http://", "https://")):
+            try:
+                Path(pdf_path).unlink(missing_ok=True)
+            except OSError:
+                pass
+
+
 async def fetch_with_retry(
     client: httpx.AsyncClient,
     url: str,
@@ -1145,41 +1199,21 @@ async def fetch_with_retry(
     return None
 
 
-async def fetch_crawl4ai_markdown(
-    crawler,
+async def fetch_crawl4ai_policy_text(
     url: str,
-    retries: int = 3,
+    retries: int = 1,
 ) -> Optional[str]:
-    """Fetch markdown for a Security Policy PDF with Crawl4AI's local PDF strategy."""
-    if not CRAWL4AI_AVAILABLE or crawler is None:
+    """Fetch text for a Security Policy PDF with Crawl4AI's local PDF strategy."""
+    if not CRAWL4AI_AVAILABLE:
         return None
 
     for attempt in range(retries):
         try:
-            config = CrawlerRunConfig(
-                cache_mode=CacheMode.BYPASS,
-                scraping_strategy=PDFContentScrapingStrategy(),
-            )
-            result = await crawler.arun(url=url, config=config)
-            if not getattr(result, "success", False):
-                error_message = getattr(result, "error_message", "unspecified Crawl4AI error")
-                if attempt == retries - 1:
-                    print(f"Error scraping {url} with Crawl4AI: {error_message}", file=sys.stderr)
-                    return None
-                wait = 2 ** (attempt + 1)
-                print(
-                    f"Attempt {attempt + 1}/{retries} failed for Crawl4AI scrape {url}: {error_message}. "
-                    f"Retrying in {wait}s...",
-                    file=sys.stderr,
-                )
-                await asyncio.sleep(wait)
-                continue
+            policy_text = await asyncio.to_thread(scrape_crawl4ai_policy_text, url)
+            if policy_text:
+                return policy_text
 
-            markdown = extract_markdown_text(getattr(result, "markdown", ""))
-            if markdown:
-                return markdown
-
-            print(f"Warning: Crawl4AI returned no markdown for {url}", file=sys.stderr)
+            print(f"Warning: Crawl4AI returned no policy text for {url}", file=sys.stderr)
             return None
         except Exception as exc:
             if attempt == retries - 1:
@@ -1242,7 +1276,6 @@ def import_algorithms_from_database(db_path: str) -> Dict[int, List[str]]:
 
 async def fetch_certificate_algorithms(
     client: httpx.AsyncClient,
-    crawl4ai_crawler,
     security_policy_url: Optional[str],
     fallback_url: Optional[str],
     pdf_semaphore: asyncio.Semaphore,
@@ -1250,21 +1283,21 @@ async def fetch_certificate_algorithms(
 ) -> Tuple[List[str], List[str], bool]:
     """Fetch and parse a certificate's Security Policy using the configured source."""
     for candidate in normalize_string_list([security_policy_url, fallback_url]):
-        if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and crawl4ai_crawler is not None:
+        if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and CRAWL4AI_AVAILABLE:
             async with pdf_semaphore:
-                markdown = await fetch_crawl4ai_markdown(crawl4ai_crawler, candidate)
-            if markdown:
+                policy_text = await fetch_crawl4ai_policy_text(candidate)
+            if policy_text:
                 try:
-                    detailed, categories = parse_algorithms_from_policy_markdown(markdown)
+                    detailed, categories = parse_algorithms_from_policy_text(policy_text)
                     if detailed or categories:
                         return detailed, categories, True
                     print(
-                        f"Warning: Crawl4AI returned markdown for {candidate} but no algorithm rows were found; "
+                        f"Warning: Crawl4AI returned policy text for {candidate} but no algorithm rows were found; "
                         "falling back to local PDF parsing.",
                         file=sys.stderr,
                     )
                 except Exception as exc:
-                    print(f"Warning: Failed to parse Crawl4AI markdown for {candidate}: {exc}", file=sys.stderr)
+                    print(f"Warning: Failed to parse Crawl4AI policy text for {candidate}: {exc}", file=sys.stderr)
 
         async with pdf_semaphore:
             pdf_bytes = await fetch_with_retry(client, candidate, response_type="bytes")
@@ -1290,7 +1323,6 @@ async def process_certificate_record(
     previous_detail: Optional[Dict],
     previous_metadata: Dict,
     client: httpx.AsyncClient,
-    crawl4ai_crawler,
     cert_semaphore: asyncio.Semaphore,
     pdf_semaphore: asyncio.Semaphore,
     database_algorithms_map: Dict[int, List[str]],
@@ -1389,7 +1421,6 @@ async def process_certificate_record(
             strip_algorithm_fields(module_out)
             detailed, categories, parsed = await fetch_certificate_algorithms(
                 client,
-                crawl4ai_crawler,
                 (detail_payload or {}).get("security_policy_url") or module.get("security_policy_url"),
                 get_security_policy_url(cert_number),
                 pdf_semaphore,
@@ -1445,20 +1476,11 @@ async def build_certificate_artifacts(
     cert_semaphore = asyncio.Semaphore(CERT_FETCH_CONCURRENCY)
     pdf_semaphore = asyncio.Semaphore(PDF_FETCH_CONCURRENCY)
 
-    async with AsyncExitStack() as stack:
-        crawl4ai_crawler = None
-        if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and CRAWL4AI_AVAILABLE:
-            crawl4ai_crawler = await stack.enter_async_context(
-                AsyncWebCrawler(crawler_strategy=PDFCrawlerStrategy())
-            )
-
-        client = await stack.enter_async_context(
-            httpx.AsyncClient(
-                headers={"User-Agent": USER_AGENT},
-                follow_redirects=True,
-                timeout=timeout,
-            )
-        )
+    async with httpx.AsyncClient(
+        headers={"User-Agent": USER_AGENT},
+        follow_redirects=True,
+        timeout=timeout,
+    ) as client:
         tasks = []
         for index, module in enumerate(modules):
             cert_number = parse_certificate_number(module)
@@ -1473,7 +1495,6 @@ async def build_certificate_artifacts(
                         previous_details.get(cert_number) if cert_number is not None else None,
                         previous_metadata,
                         client,
-                        crawl4ai_crawler,
                         cert_semaphore,
                         pdf_semaphore,
                         database_algorithms_map,
