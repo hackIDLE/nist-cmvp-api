@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236"
   },
   "certificate": {
     "certificate_number": "5236",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5236.pdf",
@@ -56,6 +56,9 @@
       "contact_email": "security@peplink.com",
       "contact_phone": "650-899-1120"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "CVL",
@@ -133,6 +136,18 @@
       "PBKDF | A4481 | Iteration Count - Iteration Count: 1-10000 Increment 1HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256Password Length - Password Length: 8-128 Increment 8Salt Length - Salt Length: 128-4096 Increment 8Key Data Length - Key Data Length: 112-4096 Increment 8 | SP 800-132",
       "TLS v1.2 KDF RFC7627 (CVL) | A4481 | Hash Algorithm - SHA2-256, SHA2-384, SHA2-512Key Block Length - Key Block Length: 1024 | SP 800-135 Rev. 1",
       "TLS v1.3 KDF (CVL) | A4481 | HMAC Algorithm - SHA2-256, SHA2-384KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 Rev. 1"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 61
+    }
   }
 }

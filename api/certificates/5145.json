@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145"
   },
   "certificate": {
     "certificate_number": "5145",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5145",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5145.pdf",
@@ -57,6 +57,9 @@
       "contact_email": "gregg@preveil.com",
       "contact_phone": "781-640-4835"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "CVL",
@@ -103,6 +106,18 @@
       "HMAC | Provides<112bits of security,Usage of HMAC with key length less than 112bits for MAC generation",
       "Hash and HMAC DRBG | Usage of Hash and HMAC DRBGs with PRFs SHA2-224,SHA2-384,SHA2-512/224 and SHA2-512/256",
       "Symmetric Encryption and Decryption | BC-Auth BC-UnAuth | Symmetric Encryption and Decryption | Key Length:128,192 and 256 bits Key Length(XTS):128 and 256 bits | AES-CBC:(A3548) AES-CBC-CS1:(A3548) AES-CBC-CS2:(A3548) AES-CBC-CS3:(A3548) AES-CCM:(A3548) AES-CFB1:(A3548)"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 31
+    }
   }
 }

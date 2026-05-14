@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76"
   },
   "certificate": {
     "certificate_number": "76",
     "dataset": "historical",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp76.pdf",
@@ -26,6 +26,9 @@
     "sunset_date": null,
     "caveat": "For services provided by the listed FIPS-Approved algorithms",
     "description": "These are general-purpose software-based cryptomodules. They provide services that enable application developers to utilize several different cryptographic algorithms and functions via the Microsoft CryptoAPI without knowing the underlying implementation.",
+    "software_versions": "5.0.2150.1",
+    "hardware_versions": null,
+    "firmware_versions": null,
     "security_level_exceptions": [
       "EMI/EMC: Level 3",
       "Operating System Security: Tested as meeting Level 1 with Microsoft Windows2000 (operated in single-user mode)."
@@ -64,6 +67,30 @@
       "contact_name": "Dave Friant",
       "contact_email": "Dave.Friant@microsoft.com",
       "contact_phone": "425-704-7984"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "miss",
+      "configured_source": "crawl4ai",
+      "source": "none",
+      "source_url": null,
+      "cached": false,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp76.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp76.pdf",
+          "status": "no_algorithms"
+        }
+      ]
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140"
   },
   "certificate": {
     "certificate_number": "5140",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf",
@@ -62,6 +62,9 @@
       "contact_email": "legal@datalocker.com",
       "contact_phone": "913-310-9088"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -88,6 +91,18 @@
       "¹ AES XTS was designed for the cryptographic protection of data on storage devices per NIST SP 800-38E. It was not designed for other purposes, such as the encryption of data in transit.",
       "² The module implements PBKDF in conformance with NIST SP 800132 and FIPS IG D.N. Specifically, the module implements Option 2a from Section 5.4 to generate the Key Encryption Key (KEK) responsible for protecting the Data Encryption Key using AES KW (Cert. #3268). The module implements an iteration counter equal to 1024 bits which is greater than the minimum recommendation documented within NIST SP 800-132 - Section 5.2. This is also justified by the maximum limit enforced on password retry attempts (Max = 10). | Non-Proprietary Security Policy for DataLocker, Inc., Sentry 5 Encrypted USB Flash Drive | This document may be freely reproduced and distributed, but only in its entirety and without modification. | * * *",
       "A3268 SHA2-256 FIPS 180-4 SHA2-256 Strength: 128 bits Prerequisite for HMAC Message Digest | 2.5.2 VENDOR AFFIRMED ALGORITHMS | The module supports the following vendor affirmed algorithms. | CKG Key Type: Symmetric Crypto Library FW v2.00 NIST SP 800-133r2 Sections 4 | 5.1 and 6.1 | 2.5.3 NON-APPROVED, ALLOWED ALGORITHMS | The module does not support non-approved algorithms. | N/A N/A N/A N/A | 2.5.4 NON-APPROVED, ALLOWED ALGORITHMS WITH NO SECURITY CLAIMED | The module does not support non-approved algorithms. | N/A N/A N/A | 2.5.5 NON-APPROVED, NOT ALLOWED ALGORITHMS | The module does not support non-approved algorithms. | N/A N/A | Non-Proprietary Security Policy for DataLocker, Inc., Sentry 5 Encrypted USB Flash Drive | This document may be freely reproduced and distributed, but only in its entirety and without modification. | * * *"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 15
+    }
   }
 }

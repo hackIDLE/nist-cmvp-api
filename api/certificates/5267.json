@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
+  },
+  "certificate": {
+    "certificate_number": "5267",
+    "dataset": "active",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
+    "vendor_name": "Intel Corporation",
+    "module_name": "Intel FNIC Control Plane Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "5/13/2026",
+    "validation_dates": [
+      "5/13/2026"
+    ],
+    "sunset_date": "5/12/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/13/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com",
+      "address_lines": [
+        "2200 Mission College Blvd.",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Manoj Maskara",
+      "contact_email": "fipsoffice@intel.com",
+      "contact_phone": "4087658080"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
+      "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel® Corporation | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Cert",
+      "AES-ECB A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A4995 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "AES-KW A4996 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38F",
+      "Counter DRBG A2721 Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A5861 Curve - P-384 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-4) | A4997 Component - Yes | Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "SHA2-512, SHA2-512/256 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4998 Component - Yes | Curve - P-256, P-384, P-521",
+      "HMAC-SHA2-224 A4999 Key Length - Key Length: 8-512 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A4999 Key Length - Key Length: 8-512 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A4999 Key Length - Key Length: 8-1024 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A4999 Key Length - Key Length: 8-1024 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/224 | A4999 Key Length - Key Length: 8-512 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/256 | A4999 Key Length - Key Length: 8-1024 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A5861 Domain Parameter Generation Methods - | P-384 | Scheme - | ephemeralUnified - | KAS Role - responder | SP 800-56A | Rev. 3",
+      "KDA HKDF SP800- | 56Cr2 | A5861 Derived Key Length - 2048 | Shared Secret Length - Shared Secret | Length: 224-1024 Increment 8 | HMAC Algorithm - SHA2-384, SHA2-512 | SP 800-56C | Rev. 2",
+      "KDF SP800-108 A4995 KDF Mode - Counter | Supported Lengths - Supported Lengths: | 128-1024 Increment 128 | SP 800-108 | Rev. 1 | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel® Corporation | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Cert",
+      "RSA SigVer | (FIPS186-4) | A5000 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 3072 | FIPS 186-4",
+      "SHA2-224 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512/224 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512/256 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG - | Section | 4 | Key | Type:Symmetric | and Asymmetric | N/A NIST SP800-133r2 Section 4: Using the | Output of a Random Bit Generator | (example 1); The module supports the | following per NIST SP 800-133r2: 1. | Section 5.2: Key Pairs for Key | Establishment 2. Section 6.2.1: Symmetric | Keys Generated Using Key-Agreement | Schemes 3. Section 6.2.2: Symmetric Keys | Derived from a Pre-existing Key | Non-Approved, Allowed Algorithms: | There are no non-approved, allowed algorithms implemented in the module. | Non-Approved, Allowed Algorithms with No Security Claimed: | There are no non-approved, allowed algorithms with no security claimed, implemented in the | module. | Non-Approved, Not Allowed Algorithms: | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel® Corporation | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Name Use and Function",
+      "ECDSA SigVer (186-5) | Component | Pre-hashed signature verification function | Brainpool P384r1, P512r1 ECC curve for scalar point multiplication, signing and | verification | SECG secp256k1 ECC curve for scalar point multiplication, signing and | verification",
+      "EdDSA curve Ed25519ph, | Ed448 | ECC curve for scalar point multiplication, signing and | verification"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 31,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

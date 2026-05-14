@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007"
   },
   "certificate": {
     "certificate_number": "5007",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5007",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5007.pdf",
@@ -56,6 +56,9 @@
       "contact_email": "alfonso-ai.ip@broadcom.com",
       "contact_phone": "1-408-922-5624"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -106,6 +109,18 @@
       "KTS | KTS-Wrap | Key Transport-Wrapping | Publication:FIPS197,SP800-38F,IGD.GCaveat:Key establishment methodologyprovides128bitsof encryptionstrength | AES-CCMKey Size:128",
       "MAC | MAC | MessageAuthenticationCode | Publication:FIPS198-1,FIPS180-4,IGC.B | HMAC-SHA2-256Capabilities:Key size<Block size",
       "SHS | SHA | Secure HashStandard | Publication:FIPS180-4,FIPS202,IGC.B,IGC.C | SHA2-256MessageLength:0-51200Increment8SHA3-224MessageLength:0-51200Increment8SHA3-256MessageLength:0-51200Increment"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 36
+    }
   }
 }

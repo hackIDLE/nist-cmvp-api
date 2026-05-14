@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5217"
   },
   "certificate": {
     "certificate_number": "5217",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5217",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5217",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5217.pdf",
@@ -57,6 +57,9 @@
       "contact_email": "security-certifications@apple.com",
       "contact_phone": "907-227-9672"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DES",
@@ -302,6 +305,18 @@
       "RSA Digital Signature | PKCS#1 v1.5 and PSS; Signature Generation Key Size < 2048; | Signature Verification Key Size < 1024",
       "RSA Key Wrapping | OAEP, PKCS#1 v1.5 and PSS schemes",
       "Triple-DES [SP 800-67] | Encryption/Decryption; CBC, CTR, CFB64, ECB, CFB8, OFB | HPKE (Hybrid Public | Key Encryption) | [RFC9180] | Hybrid encryption scheme | Apple corecrypto Module v18.3 [Intel, User, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision."
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 232
+    }
   }
 }

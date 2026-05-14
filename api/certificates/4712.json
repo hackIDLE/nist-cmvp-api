@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
-    "dataset": "active",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4712"
   },
   "certificate": {
     "certificate_number": "4712",
-    "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "dataset": "historical",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4712",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4712",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4712.pdf",
     "vendor_name": "Cisco Systems, Inc.",
     "module_name": "Adaptive Security Appliance Virtual Cryptographic Module",
     "standard": "FIPS 140-3",
-    "status": "Active",
+    "status": "Historical",
     "module_type": "Software",
     "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
@@ -22,9 +22,12 @@
     "validation_dates": [
       "6/28/2024"
     ],
-    "sunset_date": "6/27/2029",
+    "sunset_date": null,
     "caveat": "Interim Validation. When installed, initialized and configured as specified in section \"Secure Operation\" of the Security Policy and operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
     "description": "Virtual Adaptive Security Appliances offers the combination of the industry's most deployed stateful firewall with a comprehensive range of next-generation network security services, intrusion prevention system (IPS), content security and secure unified communications. Delivering robust user and application policy enforcement, multi-vector attack protection, and secure connectivity services in cost-effective, easy-to-deploy solutions.",
+    "software_versions": "9.16.4",
+    "hardware_versions": null,
+    "firmware_versions": null,
     "security_level_exceptions": [
       "Physical security: N/A",
       "Non-invasive security: N/A",
@@ -73,6 +76,25 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4712.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4712.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110"
   },
   "certificate": {
     "certificate_number": "5110",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "cmercer@rajant.com",
       "contact_phone": "484-595-0233"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -80,6 +83,18 @@
       "CKG symmetric;KDF SP800-108 asymmetric;KAS-ECC-SSC SP800-56Ax3 Rajant RISM Crypto Library Key Generation per 133R2 Section 4 | The Module implements the vendor affirmed cryptographic algorithms listed in the table above. | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | Name Cavest Use and Function | AE5-CTR Cavest 1 FW per IG 2.4a Scenario 1 Description of stage 1 FW image by boot rom",
       "SHA2-256 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom",
       "ECDSA P-384 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom | The Module implements the non-approved but allowed cryptographic algorithms with no security claimed listed in the table above. | Non-Approved, Not Allowed Algorithms: | N/A for this module. | © 2025 Rajant Corporation | Rajant Public Material - May be reproduced and distributed only in its original entirety without revision. | * * *"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 15
+    }
   }
 }

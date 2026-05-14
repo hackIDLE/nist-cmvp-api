@@ -1,19 +1,19 @@
 # NIST CMVP API
 
-> Static JSON API for NIST Cryptographic Module Validation Program data. 1,081 active modules, 4,168 historical modules, 329 modules in process, and 5,249 certificate detail records. No auth required.
+> Static JSON API for NIST Cryptographic Module Validation Program data. 1,086 active modules, 4,170 historical modules, 325 modules in process, and 5,256 certificate detail records. No auth required.
 
 Base URL: https://hackidle.github.io/nist-cmvp-api/
 
 All data is static JSON. Append paths to the base URL.
 
 - `api/index.json` — API discovery endpoint with endpoint and docs links.
-- `api/modules.json` — 1,081 active validated modules.
-- `api/historical-modules.json` — 4,168 historical modules.
-- `api/modules-in-process.json` — 329 modules currently in process.
+- `api/modules.json` — 1,086 active validated modules.
+- `api/historical-modules.json` — 4,170 historical modules.
+- `api/modules-in-process.json` — 325 modules currently in process.
 - `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.
-- `api/certificates/index.json` — compact index for 5,249 certificate detail files.
+- `api/certificates/index.json` — compact index for 5,256 certificate detail files.
 - `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.
-- `api/algorithms.json` — algorithm coverage summary across 1,624 certificates.
+- `api/algorithms.json` — algorithm coverage summary across 1,630 certificates.
 
 ## Documentation
 
@@ -27,4 +27,4 @@ All data is static JSON. Append paths to the base URL.
 - Unofficial mirror of public CMVP data. Use https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative source material.
 - Static JSON only. Filter client-side after downloading the relevant resource.
 - Browser JavaScript on another origin may need a proxy because GitHub Pages does not send permissive CORS headers.
-- `api/algorithms.json` covers 1,624 certificates in the current build.
+- `api/algorithms.json` covers 1,630 certificates in the current build.

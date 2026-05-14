@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
-    "dataset": "active",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3926"
   },
   "certificate": {
     "certificate_number": "3926",
-    "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "dataset": "historical",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3926",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3926",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3926.pdf",
     "vendor_name": "DIGISTOR",
     "module_name": "DIGISTOR TCG OPAL SSC FIPS SSD Series",
     "standard": "FIPS 140-2",
-    "status": "Active",
+    "status": "Historical",
     "module_type": "Hardware",
     "embodiment": "Multi-Chip Embedded",
     "overall_level": 2,
@@ -22,9 +22,12 @@
     "validation_dates": [
       "5/11/2021"
     ],
-    "sunset_date": "5/10/2026",
+    "sunset_date": null,
     "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The DIGISTOR® Secure Data Storage TCG Opal SSC FIPS 140-2 Self-Encrypting SSD Series covers all critical storage form factors and connection types from 2.5\" SATA to M.2 SATA and PCIe Gen 3x4 NVMe high-speed storage. DIGISTOR® Secure SSD drives meet the performance and security requirements of the most demanding data security applications. The cryptographic module (CM) provides a wide range of cryptographic services ensuring that the firmware integrity, encryption technology and physical security of the SSD all meet the requirements set forth by the Federal Information Processing Standard.",
+    "software_versions": null,
+    "hardware_versions": "DIG-SSD21286-SI [A], DIG-SSD22566-SI [A], DIG-SSD25126-SI [A], DIG-SSD210006-SI [A], DIG-SSD220006-SI [A], DIG-M21286-SI [A], DIG-M22566-SI [A], DIG-M25126-SI [A], DIG-M210006-SI [A], DIG-M220006-SI [A], DIG-M2N22566-UI [B], DIG-M2N25126-UI [B], DIG-M2N210006-UI [B], DIG-M2N220006-UI [B]",
+    "firmware_versions": "SCPG13.0 [A] and ECPG13.0 [B]",
     "security_level_exceptions": [
       "EMI/EMC: Level 3",
       "Mitigation of Other Attacks: N/A"
@@ -67,6 +70,25 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3926.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3926.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

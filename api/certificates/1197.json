@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1197"
   },
   "certificate": {
     "certificate_number": "1197",
     "dataset": "historical",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1197",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1197",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1197.pdf",
@@ -27,6 +27,9 @@
     "sunset_date": null,
     "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
     "description": "The nCipher modules: nShield F3 6000e, Shield F3 1500e, nShield F3 500e, nShield 10e, nShield F3 6000e for nShield Connect, nShield F3 1500e for nShield Connect and nShield F3 500e for nShield Connect family of secure e-commerce HSM's are multi-tasking hardware modules that is optimized for performing modular arithmetic on very large integers. The nCipher modules are FIPS 140-2 level 3 embedded devices. The units are identical in operation and only vary in the processing speed.",
+    "software_versions": null,
+    "hardware_versions": "nC4033E-6K0, nC4033E-1K5, nC4033E-500, nC4033E-030, nC4033E-6K0N, nC4033E-1K5N and nC4033E-500N, Build Standard N",
+    "firmware_versions": "2.38.4-3 and 2.38.7-3",
     "security_level_exceptions": [],
     "related_files": [
       {
@@ -68,6 +71,30 @@
       "contact_name": "[email protected]",
       "contact_email": "sales@ncipher.com",
       "contact_phone": "800-NCIPHER"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "miss",
+      "configured_source": "crawl4ai",
+      "source": "none",
+      "source_url": null,
+      "cached": false,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1197.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1197.pdf",
+          "status": "no_algorithms"
+        }
+      ]
     }
   }
 }

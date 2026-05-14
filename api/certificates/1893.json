@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1893"
   },
   "certificate": {
     "certificate_number": "1893",
     "dataset": "historical",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1893",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1893",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1893.pdf",
@@ -26,6 +26,9 @@
     "sunset_date": null,
     "caveat": "When operated in FIPS mode with modules Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Boot Manager validated to FIPS 140-2 under Cert. #1895 operating in FIPS mode, Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 BitLocker® Windows OS Loader (WINLOAD) validated to FIPS 140-2 under Cert. #1896 operating in FIPS mode, Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Code Integrity (CI.DLL) validated to FIPS 140-2 under Cert. #1897 operating in FIPS mode, Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Kernel Mode Cryptographic Primitives Library (CNG.SYS) validated to FIPS 140-2 under Cert. #1891 operating in FIPS mode, and Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL) validated to FIPS 140-2 under Cert. #1892 operating in FIPS mode.",
     "description": "The Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL) encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. It can be dynamically linked into applications by software developers to permit the use of general-purpose FIPS 140-2 validated cryptography. This cryptographic module also maintains FIPS 140-2 validation compliance (according to FIPS 140-2 PUB Implementation Guidance G.5) on Microsoft Windows 8, Microsoft Windows 8 Pro, and Microsoft Windows Server 2012 Datacenter.",
+    "software_versions": "6.2.9200",
+    "hardware_versions": null,
+    "firmware_versions": null,
     "security_level_exceptions": [
       "Design Assurance: Level 2"
     ],
@@ -63,6 +66,30 @@
       "contact_name": "Tim Myers",
       "contact_email": "FIPS@microsoft.com",
       "contact_phone": "800-MICROSOFT"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "miss",
+      "configured_source": "crawl4ai",
+      "source": "none",
+      "source_url": null,
+      "cached": false,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1893.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1893.pdf",
+          "status": "no_algorithms"
+        }
+      ]
     }
   }
 }

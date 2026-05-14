@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247"
   },
   "certificate": {
     "certificate_number": "5247",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5247.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "fips140@geomys.org",
       "contact_phone": "000-000-0000"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "CVL",
@@ -134,6 +137,18 @@
       "RSA | Using key sizes smaller than 2048 bits or with odd bit length for key generation/verification, signature generation/verification, key encapsulation/decapsulation; using a non-approved hash function for signature generation/verification, key encapsulation/decapsulation; using public exponent smaller than 65537 for signature generation/verification, key encapsulation/decapsulation; primitive operation without padding; using non-approved DRBG for signature generation, key decapsulation; using primes of different lengths for signature generation, key decapsulation; using PSS salt longer than hash output for signature generation/verification",
       "ECDH | Using non-approved DRBG for shared secret computation",
       "ECDSA | Using non-approved DRBG for key/signature generation; using a non-approved hash function for signature generation/verification"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 61
+    }
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146"
   },
   "certificate": {
     "certificate_number": "5146",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "aws-fips-external@amazon.com",
       "contact_phone": "0000000000"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -80,6 +83,18 @@
       "ECDSA SigVer (FIPS186-4) | A5425, A5426, A5433, A5434 | Component - No Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA1 | FIPS 186-4",
       "ECDSA SigVer (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
       "HMAC-SHA-1 | A5425, A5426, A5433, A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 17
+    }
   }
 }

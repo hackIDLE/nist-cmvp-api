@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133"
   },
   "certificate": {
     "certificate_number": "5133",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf",
@@ -56,6 +56,9 @@
       "contact_email": "jason_chen@kingston.com",
       "contact_phone": "714-445-3449"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -72,6 +75,18 @@
       "A777 | PBKDFv2(NIST SP 800-1327) | HMAC-SHA-1 | 1 in 10,000,000(~23 bits) | Derivation of the KEK. Conforms to FIPS 140-3 Implementation Guidance (IG)D.N:the module supports option 2a as documented in SP 800-132§5.4",
       "3127 | SHS(FIPS 180-48) | SHA-1 | N/A | Primitive within HMAC-SHA-1",
       "CKG | NIST SP-800-1339 | Per Section4 | The unmodified output fromSP800-90A DRBG(256bits) | The unmodified output of theDRBG is used for generating symmetric keys"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 9
+    }
   }
 }

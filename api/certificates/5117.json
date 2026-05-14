@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5117"
   },
   "certificate": {
     "certificate_number": "5117",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5117",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5117",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5117.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "myoung@ciq.com",
       "contact_phone": "510-998-0618"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -125,6 +128,18 @@
       "AES-OCB, AES-EAX | Symmetric encryption; Symmetric decryption | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Ctrl IQ, Inc., atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Name | Use and Function",
       "RSA | Signature generation (pre-hashed); Signature verification (pre-hashed); | Asymmetric encryption (primitive); Asymmetric decryption (primitive)",
       "ECDSA | Signature generation (pre-hashed); Signature verification (pre-hashed) | The table above lists all non-approved cryptographic algorithms of the module employed by the non-approved | services."
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 59
+    }
   }
 }

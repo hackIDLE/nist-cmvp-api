@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132"
   },
   "certificate": {
     "certificate_number": "5132",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "fips-contact@chainguard.dev",
       "contact_phone": "1-518-248-0862"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "CVL",
@@ -162,6 +165,18 @@
       "One step KDF, two step KDF, HKDF, ANS X9.42 KDF with input secret length < 112 bits Key Derivation Function | © 2025 Chainguard, Inc., asec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * * | Name Use and Function | X448 Provides 224 bits of security, | X25519 Provides 128 bits of security,",
       "ANS X9.63 KDF with SHA-1 or input secret length < 112 bits Key Derivation Function",
       "RSA OAEP encryption/decryption with 1536-bit modulus Asymmetric | encryption/decryption"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 90
+    }
   }
 }

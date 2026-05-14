@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5182"
   },
   "certificate": {
     "certificate_number": "5182",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5182",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5182",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5182.pdf",
@@ -55,6 +55,9 @@
       "contact_email": "sales@radio-ip.com",
       "contact_phone": "877-717-2242"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "CVL",
@@ -255,6 +258,18 @@
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | 2.5.2 Vendor-Affirmed Algorithms | The module implements the following vendor affirmed algorithms that are approved for use in | Approved mode. | Document Version 1.0 | ©Radio IP Software | Name | Implementation | CKG | Key Type:Symmetric | and Asymmetric | N/A | SP 800-133r2 and IG D.H: Per Section 4, example 1 | CKG | (XTS) | Key Type:Symmetric | N/A | SP 800-133r2 and IG D.H: Per Section 6.3, approved",
       "method 1. Applicable to AES-XTS compliant to IG C.I | because Key_1 and Key_2 are concatenated prior to | usage. | 2.5.3 Non-Approved, Allowed Algorithms | Non-Approved, Allowed Algorithms: | The module implements the following algorithms that are allowed for use in Approved mode. | Name | Implementation | EC Diffie-Hellman | with non-NIST | recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : SSP Agreement | CryptoComply | 140-3 FIPS | Provider | Allowed per IG D.F, | scenario 3 (per IG | C.A, category 1a and | SP 800-186 Appendix | H.1)",
       "ECDSA with non- | NIST recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : Signature Generation, Signature | Verification, Key Generation, Key | Verification | CryptoComply | 140-3 FIPS | Provider | Allowed per IG C.A, | category 1a (per SP | 800-186 Appendix | H.1) | 2.5.4 Non-Approved, Allowed Algorithms with No Security Claimed | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | The module does not implement any non-approved algorithms with no security claimed. | 2.5.5 Non-Approved, Not Allowed Algorithms | Non-Approved, Not Allowed Algorithms: | Document Version 1.0 | ©Radio IP Software | N/A for this module. | The module does not implement any non-approved, not allowed algorithms."
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 182
+    }
   }
 }

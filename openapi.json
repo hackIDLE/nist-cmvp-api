@@ -61,7 +61,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1081 active validated modules with enriched details",
+            "description": "Currently 1086 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -79,7 +79,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4168 historical modules",
+            "description": "Currently 4170 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -97,7 +97,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 329 modules in process",
+            "description": "Currently 325 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -186,27 +186,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-10T03:11:20.260239Z"
+            "example": "2026-05-14T09:06:04.998714Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1081
+            "example": 1086
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4168
+            "example": 4170
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 329
+            "example": 325
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1624
+            "example": 1630
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5249
+            "example": 5256
           },
           "source": {
             "type": "string",
@@ -218,7 +218,7 @@
           },
           "algorithm_source": {
             "type": "string",
-            "example": "firecrawl"
+            "example": "crawl4ai"
           },
           "algorithm_cache_version": {
             "type": "string",
@@ -226,7 +226,7 @@
           },
           "algorithm_extraction_schema_version": {
             "type": "string",
-            "example": ""
+            "example": "1.0"
           },
           "extraction_metrics": {
             "type": "object",
@@ -244,39 +244,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5260"
+            "example": "5267"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Inseego Corp."
+            "example": "Intel Corporation"
           },
           "Module Name": {
             "type": "string",
-            "example": "Inseego 5G Advanced Cryptographic Module"
+            "example": "Intel FNIC Control Plane Cryptographic Module"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "Validation Date": {
             "type": "string",
-            "example": "05/08/2026"
+            "example": "05/13/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
           },
           "module_name": {
             "type": "string",
-            "example": "Inseego 5G Advanced Cryptographic Module"
+            "example": "Intel FNIC Control Plane Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -288,7 +288,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/26/2029"
+            "example": "5/12/2031"
           },
           "overall_level": {
             "type": "integer",
@@ -296,19 +296,19 @@
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "SingleChip"
           },
           "description": {
             "type": "string",
-            "example": "Inseego 5G Advanced Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to fixed and mobile wireless platforms and features robust algorithm support."
+            "example": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability."
           },
           "algorithms": {
             "type": "array",
@@ -317,8 +317,8 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DES"
+              "DRBG",
+              "ECDSA"
             ]
           },
           "algorithms_detailed": {
@@ -327,10 +327,14 @@
               "type": "string"
             },
             "example": [
-              "fips.a | 3.0.1-FIPS 140-3 | Compiled as a static library, tested on iOS and iPadOS | HMAC-SHA-256",
-              "fips.dll | 3.0.0-FIPS 140-3 | Compiled for Windows | HMAC-SHA-256",
-              "fips.dylib | 3.0.0-FIPS 140-3 | Compiled for MacOS | HMAC-SHA-256"
+              "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+              "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
+              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel® Corporation | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Cert"
             ]
+          },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
           },
           "detail_available": {
             "type": "boolean",
@@ -537,7 +541,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5260"
+            "example": "5256"
           },
           "dataset": {
             "type": "string",
@@ -545,27 +549,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-10T03:11:20.260239Z"
+            "example": "2026-05-14T09:06:04.998714Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5260"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Inseego Corp."
+            "example": "Amazon Web Services, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "Inseego 5G Advanced Cryptographic Module"
+            "example": "AWS Link Encryption Module"
           },
           "standard": {
             "type": "string",
@@ -577,7 +581,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Software-hybrid"
           },
           "embodiment": {
             "type": "string",
@@ -589,7 +593,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "5/8/2026"
+            "example": "5/5/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -597,20 +601,20 @@
               "type": "string"
             },
             "example": [
-              "5/8/2026"
+              "5/5/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/26/2029"
+            "example": "5/4/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "description": {
             "type": "string",
-            "example": "Inseego 5G Advanced Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to fixed and mobile wireless platforms and features robust algorithm support."
+            "example": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -618,8 +622,8 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
-              "Non-invasive security: N/A"
+              "Non-invasive security: N/A",
+              "Mitigation of other attacks: N/A"
             ]
           },
           "related_files": {
@@ -640,28 +644,6 @@
             "type": "object",
             "additionalProperties": true
           },
-          "algorithms": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES",
-              "CVL",
-              "DES"
-            ]
-          },
-          "algorithms_detailed": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "fips.a | 3.0.1-FIPS 140-3 | Compiled as a static library, tested on iOS and iPadOS | HMAC-SHA-256",
-              "fips.dll | 3.0.0-FIPS 140-3 | Compiled for Windows | HMAC-SHA-256",
-              "fips.dylib | 3.0.0-FIPS 140-3 | Compiled for MacOS | HMAC-SHA-256"
-            ]
-          },
           "software_versions": {
             "type": "string",
             "nullable": true,
@@ -676,6 +658,32 @@
             "type": "string",
             "nullable": true,
             "example": ""
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES",
+              "HMAC",
+              "SHA"
+            ]
+          },
+          "algorithms_detailed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
+              "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
+              "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D"
+            ]
+          },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
           }
         }
       },

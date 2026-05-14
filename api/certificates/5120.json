@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120"
   },
   "certificate": {
     "certificate_number": "5120",
     "dataset": "active",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5120",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5120.pdf",
@@ -61,6 +61,9 @@
       "contact_email": "sydney.jackson@cohesity.com",
       "contact_phone": "1-855-214-3133"
     },
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
     "algorithms": [
       "AES",
       "DRBG",
@@ -81,6 +84,18 @@
       "DRBG,HMAC DRBG | A6047 | SHA sizes:SHA-1,SHA-224,SHA-256,SHA-384,SHA2-512,SHA-512/224,SHA2-512/256 | \\[SP800-90Ar1\\] | Random Bit Generation",
       "ECDSA | A6047 | Curves/Key sizes:P-224,P-256,P-384,P-521,K-233,K-283,K-409,K-571,B-233,B-283,B-409,B-571 | \\[FIPS186-5\\] | KeyGeneration,KeyVerification,SignatureGeneration,SignatureVerification",
       "ECDSA | A6047 | Curves/Key sizes:P-192,K-163,B-1635 | \\[FIPS186-4\\] | KeyVerification,SignatureVerification"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 11
+    }
   }
 }

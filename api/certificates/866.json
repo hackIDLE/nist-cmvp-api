@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/866"
   },
   "certificate": {
     "certificate_number": "866",
     "dataset": "historical",
-    "generated_at": "2026-05-10T03:11:20.260239Z",
+    "generated_at": "2026-05-14T09:06:04.998714Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/866",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/866",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp866.pdf",
@@ -25,6 +25,9 @@
     "sunset_date": null,
     "caveat": "None",
     "description": "The 3e-527A3 is a device that consists of electronic hardware, firmware, and a strong metal case. For purposes of FIPS 140-2, the module is considered to be a multi-chip standalone product. The 3e-527A3 operates as either a gateway connecting a local area network to wide area network (WAN) or as an access point within a local area network.",
+    "software_versions": null,
+    "hardware_versions": "1.1, 1.1 and 1.1",
+    "firmware_versions": "4.0.10.23",
     "security_level_exceptions": [],
     "related_files": [
       {
@@ -56,6 +59,30 @@
       "contact_name": "Ryon Coleman",
       "contact_email": "rcoleman@3eti.com",
       "contact_phone": "301-944-1277"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "miss",
+      "configured_source": "crawl4ai",
+      "source": "none",
+      "source_url": null,
+      "cached": false,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp866.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp866.pdf",
+          "status": "no_algorithms"
+        }
+      ]
     }
   }
 }
