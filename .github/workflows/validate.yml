@@ -43,7 +43,7 @@ jobs:
 
       - name: Validate checked-in API artifacts
         run: |
-          python validate_api.py
+          python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
 
       - name: Check whitespace errors
         run: |

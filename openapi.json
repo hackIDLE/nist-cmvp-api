@@ -294,7 +294,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-14T13:31:01.314185Z"
+            "example": "2026-05-14T13:39:49.547462Z"
           },
           "total_modules": {
             "type": "integer",
@@ -777,7 +777,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5255"
+            "example": "5243"
           },
           "dataset": {
             "type": "string",
@@ -785,27 +785,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-14T13:31:01.314185Z"
+            "example": "2026-05-14T13:39:49.547462Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Hypersecu Information Systems Inc."
+            "example": "DigiCert, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "HYPERSECU HyperPKI Cryptographic Module"
+            "example": "DigiCert TrustCore Cryptographic Suite B Module"
           },
           "standard": {
             "type": "string",
@@ -817,19 +817,19 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipEmbed"
+            "example": "MultiChipStand"
           },
           "overall_level": {
             "type": "integer",
-            "example": 3
+            "example": 1
           },
           "validation_date": {
             "type": "string",
-            "example": "5/4/2026"
+            "example": "4/15/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -837,20 +837,20 @@
               "type": "string"
             },
             "example": [
-              "5/4/2026"
+              "4/15/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "1/27/2031"
+            "example": "4/14/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "The module generates SSPs (e.g., keys) whose strengths are modified by available entropy, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys). When operated in approved mode"
           },
           "description": {
             "type": "string",
-            "example": "This Module is a secure portable device with advanced smart card technology, it can provide strong authentication and identification to support network login, online transactions, digital signatures, and sensitive data protection"
+            "example": "The DigiCert TrustCore Cryptographic Module is a software library that that provides approved cryptographic functionality to serve user-space applications."
           },
           "security_level_exceptions": {
             "type": "array",
@@ -858,7 +858,7 @@
               "type": "string"
             },
             "example": [
-              "Operational environment: N/A",
+              "Physical security: N/A",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -907,8 +907,8 @@
             },
             "example": [
               "AES",
-              "DRBG",
-              "ECDSA"
+              "DES",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -917,9 +917,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A",
-              "AES-CMAC | A4980 | Direction - Generation, Verification Key | Length - 128, 192, 256 | SP 800-38B | FIPS 140-3 Non-Propriety Security Policy | 10 of 78 | © Hypersecu Information Systems Inc, 2026 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | CAVP | Cert",
-              "AES-ECB | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A"
+              "AES-CBC | A5484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CCM | A5484 | Key Length - 128, 192, 256 | SP 800-38C",
+              "AES-CFB128 | A5484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
           }
         }

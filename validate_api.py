@@ -386,6 +386,7 @@ def validate_data_quality_report(
     metadata: Dict,
     expected_datasets: Dict[int, str],
     errors: List[str],
+    require_data_quality_pass: bool = False,
 ) -> None:
     """Validate api/data-quality.json at a structural and reference level."""
     payload = load_json(root / "api" / "data-quality.json", errors)
@@ -424,6 +425,8 @@ def validate_data_quality_report(
         add_error(errors, update_monitor.get("schedule") == "0 2 * * 0", "api/data-quality.json: unexpected update schedule")
         add_error(errors, update_monitor.get("latest_run_generated_at") == metadata.get("generated_at"), "api/data-quality.json: latest_run_generated_at mismatch")
         add_error(errors, update_monitor.get("status") in {"pass", "warn"}, "api/data-quality.json: invalid update_monitor.status")
+        if require_data_quality_pass:
+            add_error(errors, update_monitor.get("status") == "pass", "api/data-quality.json: update_monitor.status must be pass")
         checks = update_monitor.get("checks")
         add_error(errors, isinstance(checks, list) and bool(checks), "api/data-quality.json: update_monitor.checks must be a non-empty list")
         if isinstance(checks, list):
@@ -432,8 +435,15 @@ def validate_data_quality_report(
                 for check in checks
                 if isinstance(check, dict)
             }
-            for expected_check in ("html_cache_reuse_rate", "html_failures", "certificate_timeouts", "algorithm_success_rate"):
+            for expected_check in ("html_cache_reuse_rate", "html_failures", "certificate_timeouts", "algorithm_misses", "algorithm_success_rate"):
                 add_error(errors, expected_check in check_names, f"api/data-quality.json: missing update monitor check {expected_check}")
+            if require_data_quality_pass:
+                for index, check in enumerate(checks):
+                    label = f"api/data-quality.json: update_monitor.checks[{index}]"
+                    if not isinstance(check, dict):
+                        errors.append(f"{label}: check must be an object")
+                        continue
+                    add_error(errors, check.get("status") == "pass", f"{label}: status must be pass")
 
 
 def validate_examples_payload(root: Path, metadata: Dict, errors: List[str]) -> None:
@@ -648,6 +658,7 @@ def validate_api(
     root: Path = Path("."),
     require_current_schema: bool = False,
     forbid_firecrawl_run_source: bool = False,
+    require_data_quality_pass: bool = False,
 ) -> List[str]:
     """Return a list of validation errors for generated API artifacts."""
     errors: List[str] = []
@@ -711,7 +722,7 @@ def validate_api(
     )
     validate_certificate_index(root, metadata, expected_datasets, expected_algorithms, errors)
     validate_algorithms_summary(root, metadata, expected_algorithms, errors)
-    validate_data_quality_report(root, metadata, expected_datasets, errors)
+    validate_data_quality_report(root, metadata, expected_datasets, errors, require_data_quality_pass)
     validate_examples_payload(root, metadata, errors)
     validate_search_indexes(root, metadata, expected_datasets, errors)
     validate_docs_and_index(
@@ -746,6 +757,11 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
         action="store_true",
         help="Fail if the current run metadata says algorithm extraction used Firecrawl",
     )
+    parser.add_argument(
+        "--require-data-quality-pass",
+        action="store_true",
+        help="Fail if api/data-quality.json reports warning status or any warning monitor check",
+    )
     return parser.parse_args(argv)
 
 
@@ -756,6 +772,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         Path(args.root),
         require_current_schema=args.require_current_schema,
         forbid_firecrawl_run_source=args.forbid_firecrawl_run_source,
+        require_data_quality_pass=args.require_data_quality_pass,
     )
     if errors:
         print("API artifact validation failed:")
