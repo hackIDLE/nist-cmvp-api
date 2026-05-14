@@ -809,6 +809,65 @@ def test_fetch_policy_pdf_bytes_reuses_in_run_cache():
     print("✓ Policy PDF cache reuse test passed")
 
 
+def test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation():
+    """Cancelling one waiter should not cancel the shared PDF cache fetch task."""
+    class FakeResponse:
+        status_code = 200
+        headers = {}
+        text = ""
+        content = b"%PDF-1.7 slow fixture"
+
+        def raise_for_status(self):
+            return None
+
+    class FakeClient:
+        def __init__(self):
+            self.calls = 0
+
+        async def get(self, url):
+            self.calls += 1
+            await asyncio.sleep(0.02)
+            return FakeResponse()
+
+    async def scenario():
+        client = FakeClient()
+        pdf_cache = {}
+        pdf_cache_lock = asyncio.Lock()
+        first_waiter = asyncio.create_task(
+            fetch_policy_pdf_bytes(
+                client,
+                "https://csrc.nist.gov/slow.pdf",
+                pdf_cache,
+                pdf_cache_lock,
+            )
+        )
+        await asyncio.sleep(0)
+        first_waiter.cancel()
+        try:
+            await first_waiter
+        except asyncio.CancelledError:
+            pass
+
+        cached_task = pdf_cache["https://csrc.nist.gov/slow.pdf"]
+        was_cancelled = cached_task.cancelled()
+        second_bytes, second_hit = await fetch_policy_pdf_bytes(
+            client,
+            "https://csrc.nist.gov/slow.pdf",
+            pdf_cache,
+            pdf_cache_lock,
+        )
+        return client.calls, was_cancelled, second_bytes, second_hit
+
+    calls, was_cancelled, second_bytes, second_hit = asyncio.run(scenario())
+
+    assert was_cancelled is False, "Shared PDF cache task should survive cancellation of one waiter"
+    assert calls == 1, "Second PDF waiter should reuse the original cache task"
+    assert second_bytes == b"%PDF-1.7 slow fixture", "Second waiter should receive bytes from the shared task"
+    assert second_hit is True, "Second waiter should report a cache hit"
+
+    print("✓ Policy PDF cache cancellation shielding test passed")
+
+
 def test_process_certificate_record_applies_cached_algorithm_provenance():
     """Cached algorithm reuse should still attach explicit provenance to outputs."""
     module = {
@@ -1360,6 +1419,7 @@ def main():
         test_should_reuse_cached_algorithms()
         test_algorithm_extraction_provenance_and_metrics()
         test_fetch_policy_pdf_bytes_reuses_in_run_cache()
+        test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation()
         test_process_certificate_record_applies_cached_algorithm_provenance()
         test_process_certificate_record_timeout_preserves_cached_data()
         test_build_certificate_artifacts_bounds_active_tasks()

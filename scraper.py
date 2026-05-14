@@ -1344,7 +1344,7 @@ async def fetch_policy_pdf_bytes(
             task = asyncio.create_task(fetch_with_retry(client, url, response_type="bytes"))
             pdf_cache[url] = task
 
-    result = await task
+    result = await asyncio.shield(task)
     return result if isinstance(result, bytes) else None, cache_hit
 
 
