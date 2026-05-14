@@ -104,6 +104,11 @@ MODULE_DETAIL_FIELDS = [
     "algorithms",
     "algorithms_detailed",
 ]
+DETAIL_SCHEMA_REQUIRED_FIELDS = (
+    "software_versions",
+    "hardware_versions",
+    "firmware_versions",
+)
 
 # Algorithm keywords to look for when parsing
 # Order matters: more specific keywords should come before general ones (HMAC before SHA)
@@ -729,6 +734,20 @@ def build_certificate_fingerprint(module: Dict, dataset: str) -> str:
     return hashlib.sha256(encoded).hexdigest()
 
 
+def should_reuse_certificate_detail(
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+    previous_fingerprint: Optional[str],
+    current_fingerprint: str,
+) -> bool:
+    """Return whether cached certificate detail HTML parsing can be skipped."""
+    if FULL_REFRESH or previous_module is None or previous_detail is None:
+        return False
+    if previous_fingerprint != current_fingerprint:
+        return False
+    return all(field in previous_detail for field in DETAIL_SCHEMA_REQUIRED_FIELDS)
+
+
 def prepare_reused_detail_payload(
     previous_detail: Dict,
     module: Dict,
@@ -1299,12 +1318,11 @@ async def process_certificate_record(
 
     current_fingerprint = build_certificate_fingerprint(module, dataset)
     previous_fingerprint = build_certificate_fingerprint(previous_module, dataset) if previous_module else None
-    fingerprint_matches = (
-        not FULL_REFRESH
-        and previous_module is not None
-        and previous_detail is not None
-        and previous_fingerprint == current_fingerprint
-        and "software_versions" in previous_detail
+    fingerprint_matches = should_reuse_certificate_detail(
+        previous_module,
+        previous_detail,
+        previous_fingerprint,
+        current_fingerprint,
     )
 
     detail_payload: Optional[Dict] = None
@@ -2373,14 +2391,21 @@ def generate_openapi_spec(
     """
     algorithms_available = bool(algorithms_summary)
 
-    # Build module schema properties from actual field names
+    # Build module schema properties from actual field names and known optional
+    # detail fields that may be absent from the first sampled record.
     sample = modules[0] if modules else {}
     module_properties = {}
-    for key, value in sample.items():
+    module_schema_values = dict(sample)
+    for key in MODULE_DETAIL_FIELDS:
+        module_schema_values.setdefault(key, None)
+    for key, value in module_schema_values.items():
         module_properties[key] = infer_openapi_schema(value)
 
     detail_properties = {}
-    for key, value in (sample_certificate_detail or {}).items():
+    detail_schema_values = dict(sample_certificate_detail or {})
+    for key in MODULE_DETAIL_FIELDS:
+        detail_schema_values.setdefault(key, None)
+    for key, value in detail_schema_values.items():
         detail_properties[key] = infer_openapi_schema(value)
 
     index_payload = build_index_payload(metadata, algorithms_summary)
