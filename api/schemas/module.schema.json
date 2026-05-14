@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/module.schema.json",
+  "title": "NIST CMVP Module Row",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "Certificate Number",
+    "Vendor Name",
+    "Module Name",
+    "security_policy_url",
+    "certificate_detail_url",
+    "detail_available"
+  ],
+  "properties": {
+    "Certificate Number": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "Certificate Number_url": {
+      "type": "string"
+    },
+    "Vendor Name": {
+      "type": "string"
+    },
+    "Module Name": {
+      "type": "string"
+    },
+    "Module Type": {
+      "type": "string"
+    },
+    "Validation Date": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "security_policy_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "certificate_detail_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "standard": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "overall_level": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "sunset_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "detail_available": {
+      "type": "boolean"
+    },
+    "algorithms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "algorithms_detailed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "algorithm_extraction": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema_version",
+        "status",
+        "configured_source",
+        "source",
+        "cached",
+        "fallback_used",
+        "cache_version",
+        "algorithm_count",
+        "detailed_algorithm_count"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "parsed",
+            "cached",
+            "miss",
+            "skipped"
+          ]
+        },
+        "configured_source": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "cached": {
+          "type": "boolean"
+        },
+        "fallback_used": {
+          "type": "boolean"
+        },
+        "cache_version": {
+          "type": "string"
+        },
+        "algorithm_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "detailed_algorithm_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

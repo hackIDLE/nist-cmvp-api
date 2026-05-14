@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/algorithms.schema.json",
+  "title": "NIST CMVP Algorithms Summary Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "total_unique_algorithms",
+    "total_certificate_algorithm_pairs",
+    "algorithms",
+    "metadata"
+  ],
+  "properties": {
+    "total_unique_algorithms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_certificate_algorithm_pairs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "algorithms": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "count",
+          "certificates"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "certificates": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

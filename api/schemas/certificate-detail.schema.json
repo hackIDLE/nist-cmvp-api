@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/certificate-detail.schema.json",
+  "title": "NIST CMVP Certificate Detail Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "certificate"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "generated_at",
+        "dataset",
+        "source"
+      ]
+    },
+    "certificate": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "certificate_number",
+        "dataset",
+        "generated_at",
+        "nist_page_url",
+        "certificate_detail_url",
+        "security_policy_url",
+        "vendor_name",
+        "module_name",
+        "standard",
+        "status",
+        "related_files",
+        "validation_history",
+        "vendor"
+      ],
+      "properties": {
+        "certificate_number": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "dataset": {
+          "type": "string",
+          "enum": [
+            "active",
+            "historical"
+          ]
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "nist_page_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "certificate_detail_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "security_policy_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "vendor_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "module_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "standard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "related_files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "validation_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "vendor": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "algorithms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "algorithms_detailed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "algorithm_extraction": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "schema_version",
+            "status",
+            "configured_source",
+            "source",
+            "cached",
+            "fallback_used",
+            "cache_version",
+            "algorithm_count",
+            "detailed_algorithm_count"
+          ],
+          "properties": {
+            "schema_version": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "parsed",
+                "cached",
+                "miss",
+                "skipped"
+              ]
+            },
+            "configured_source": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "source_url": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "uri"
+            },
+            "cached": {
+              "type": "boolean"
+            },
+            "fallback_used": {
+              "type": "boolean"
+            },
+            "cache_version": {
+              "type": "string"
+            },
+            "algorithm_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "detailed_algorithm_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "attempts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

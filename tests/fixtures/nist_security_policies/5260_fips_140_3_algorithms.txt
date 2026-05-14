@@ -1,0 +1,17 @@
+Source: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5260.pdf
+Certificate: 5260
+Standard: FIPS 140-3
+
+2.5 Algorithms
+Approved Algorithms:
+Cipher
+Algorithm CAVP Cert Properties Reference
+AES-CBC A4593 Direction - Decrypt, Encrypt Key Length - 128, 192, 256 SP 800-38A
+AES-GCM A4593 Direction - Decrypt, Encrypt Key Length - 128, 192, 256 IV Generation - Internal SP 800-38D
+Message Authentication
+HMAC SHA2-256 A4593 Message Authentication FIPS 198-1
+Message Digest
+SHA2-256 A4593 Message Digest FIPS 180-4
+Random Bit Generation
+CTR_DRBG A4593 Deterministic Random Bit Generation SP 800-90A
+2.6 Security Function Implementations

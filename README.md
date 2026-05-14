@@ -8,6 +8,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - **Historical Modules**: Expired/revoked modules for historical reference
 - **Modules In Process**: Modules currently in validation
 - **Algorithm Extraction**: Approved algorithms extracted from Security Policy PDFs with Crawl4AI, with a local PDF parser fallback
+- **Extraction Provenance**: Per-certificate `algorithm_extraction` metadata records cache/fallback status, source URL, and extracted row counts
 - **Security Policy Links**: Direct URLs to Security Policy PDF documents
 - **Certificate Detail Records**: Per-certificate JSON with vendor, related files, validation history, and security level exceptions
 
@@ -17,6 +18,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - [`llms-full.txt`](https://hackidle.github.io/nist-cmvp-api/llms-full.txt) - complete single-file reference
 - [`api/docs.md`](https://hackidle.github.io/nist-cmvp-api/api/docs.md) - Markdown endpoint reference with examples
 - [`openapi.json`](https://hackidle.github.io/nist-cmvp-api/openapi.json) - OpenAPI 3.0.3 schema
+- [`api/schemas/index.schema.json`](https://hackidle.github.io/nist-cmvp-api/api/schemas/index.schema.json) - JSON Schema index for API responses
 
 ## Endpoints
 
@@ -30,6 +32,7 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
 | `algorithms.json` | Algorithm summary with usage statistics across all certificates |
 | `metadata.json` | Dataset info (last update, counts, feature flags) |
 | `index.json` | API index with all endpoints and feature information |
+| `schemas/*.schema.json` | JSON Schemas for response validation |
 | `certificates/{certificate}.json` | Structured detail record for one CMVP certificate |
 
 ## Data Structure
@@ -54,7 +57,17 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
   "embodiment": "Multi-Chip Stand Alone",
   "description": "A software library that contains cryptographic functionality...",
   "lab": "DEKRA Cybersecurity Certification Laboratory",
-  "algorithms": ["AES", "SHA-256", "RSA", "ECDSA", "HMAC", "DRBG"]
+  "algorithms": ["AES", "SHA-256", "RSA", "ECDSA", "HMAC", "DRBG"],
+  "algorithm_extraction": {
+    "status": "parsed",
+    "configured_source": "crawl4ai",
+    "source": "crawl4ai",
+    "source_url": "https://csrc.nist.gov/CSRC/media/projects/.../140sp5104.pdf",
+    "cached": false,
+    "fallback_used": false,
+    "algorithm_count": 6,
+    "detailed_algorithm_count": 42
+  }
 }
 ```
 
@@ -121,7 +134,17 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
         "lab": "Lightship Security, Inc."
       }
     ],
-    "algorithms": ["AES", "HMAC"]
+    "algorithms": ["AES", "HMAC"],
+    "algorithm_extraction": {
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "security_policy_pdf",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5203.pdf",
+      "cached": false,
+      "fallback_used": true,
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 18
+    }
   }
 }
 ```
@@ -147,8 +170,14 @@ curl -s https://hackidle.github.io/nist-cmvp-api/api/algorithms.json | \
 # Get the full detail page payload for one certificate
 curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/5203.json | jq '.certificate'
 
-# Check last update
-curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | jq '.generated_at'
+# Check last update and extraction metrics
+curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | \
+  jq '{generated_at, extraction_metrics: .extraction_metrics.combined}'
+
+# Validate a response with a published JSON Schema (requires: pip install jsonschema)
+curl -s https://hackidle.github.io/nist-cmvp-api/api/schemas/modules.schema.json > modules.schema.json
+curl -s https://hackidle.github.io/nist-cmvp-api/api/modules.json > modules.json
+python -m jsonschema modules.schema.json -i modules.json
 ```
 
 ## Local Development
@@ -165,6 +194,9 @@ ALGORITHM_SOURCE=security_policy_pdf python scraper.py
 
 # Run quick scraper (skip algorithm extraction entirely)
 SKIP_ALGORITHMS=1 python scraper.py
+
+# Validate generated artifacts before publishing
+python validate_api.py --require-current-schema --forbid-firecrawl-run-source
 ```
 
 ## Environment Variables
