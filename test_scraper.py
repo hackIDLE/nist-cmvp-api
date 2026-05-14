@@ -8,11 +8,14 @@ import json
 import sys
 import tempfile
 from pathlib import Path
+from types import SimpleNamespace
 from scraper import (
     ALGORITHM_CACHE_VERSION,
     build_certificate_fingerprint,
     build_index_payload,
     extract_legacy_algorithm_section,
+    extract_text_from_crawl4ai_process_result,
+    extract_text_from_crawl4ai_html,
     generate_openapi_spec,
     generate_text_artifacts,
     parse_algorithms_from_policy_markdown,
@@ -512,6 +515,62 @@ def test_parse_algorithms_from_policy_markdown():
     print("✓ Policy markdown algorithm parsing test passed")
 
 
+def test_extract_text_from_crawl4ai_html():
+    """Test converting Crawl4AI PDF HTML into parser-friendly policy text."""
+    html = """
+    <html>
+      <body>
+        <p>2.5 Algorithms</p>
+        <p>Approved Algorithms:</p>
+        <p>Cipher</p>
+        <p>Algorithm CAVP Cert Properties Reference</p>
+        <p>AES-GCM A4481 Direction - Decrypt, Encrypt SP 800-38D</p>
+        <p>HMAC SHA2-256 A4481 Message Authentication FIPS 198-1</p>
+        <p>2.6 Security Function Implementations</p>
+      </body>
+    </html>
+    """
+
+    policy_text = extract_text_from_crawl4ai_html(html)
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert "2.5 Algorithms" in policy_text, "Expected section heading in extracted text"
+    assert any("AES-GCM" in entry for entry in detailed), "Expected AES row from Crawl4AI HTML"
+    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC row from Crawl4AI HTML"
+    assert categories == ["AES", "HMAC"], "Expected normalized categories from Crawl4AI HTML"
+
+    print("✓ Crawl4AI HTML text extraction test passed")
+
+
+def test_extract_text_from_crawl4ai_process_result():
+    """Test preserving raw Crawl4AI PDF processor page text."""
+    process_result = SimpleNamespace(
+        pages=[
+            SimpleNamespace(
+                raw_text="""
+                2.5 Algorithms
+                Approved Algorithms:
+                Cipher
+                Algorithm CAVP Cert Properties Reference
+                AES-GCM A4481 Direction - Decrypt, Encrypt SP 800-38D
+                HMAC SHA2-256 A4481 Message Authentication FIPS 198-1
+                2.6 Security Function Implementations
+                """,
+                markdown="",
+            )
+        ]
+    )
+
+    policy_text = extract_text_from_crawl4ai_process_result(process_result)
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert any("AES-GCM" in entry for entry in detailed), "Expected AES row from Crawl4AI raw text"
+    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC row from Crawl4AI raw text"
+    assert categories == ["AES", "HMAC"], "Expected normalized categories from Crawl4AI raw text"
+
+    print("✓ Crawl4AI raw processor text extraction test passed")
+
+
 def test_select_algorithm_source():
     """Test algorithm source selection and fallback behavior."""
     assert select_algorithm_source("", False, "", True) == "crawl4ai", "Crawl4AI should be the default when available"
@@ -750,6 +809,8 @@ def main():
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_algorithms_from_policy_markdown()
+        test_extract_text_from_crawl4ai_html()
+        test_extract_text_from_crawl4ai_process_result()
         test_select_algorithm_source()
         test_build_certificate_fingerprint()
         test_should_reuse_cached_algorithms()
