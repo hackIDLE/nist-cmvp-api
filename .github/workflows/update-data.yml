@@ -50,9 +50,10 @@ jobs:
       - name: Run scraper
         env:
           ALGORITHM_SOURCE: crawl4ai
+          PYTHONUNBUFFERED: '1'
           SKIP_ALGORITHMS: ${{ github.event.inputs.skip_algorithms == 'true' && '1' || '0' }}
         run: |
-          python scraper.py
+          python -u scraper.py
 
       - name: Validate generated API artifacts
         run: |
