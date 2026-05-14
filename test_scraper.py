@@ -10,6 +10,7 @@ import sys
 import tempfile
 from pathlib import Path
 from types import SimpleNamespace
+import scraper as scraper_module
 from scraper import (
     ALGORITHM_CACHE_VERSION,
     ALGORITHM_EXTRACTION_SCHEMA_VERSION,
@@ -744,14 +745,16 @@ def test_algorithm_extraction_provenance_and_metrics():
     assert provenance["detailed_algorithm_count"] == 2, "Detailed algorithm count mismatch"
     assert len(provenance["attempts"]) == 2, "Attempt provenance should be retained for detail records"
 
-    active_stats = {"html_reused": 3, "algorithm_successes": 2, "algorithm_fallbacks": 1}
+    active_stats = {"html_reused": 3, "algorithm_successes": 2, "algorithm_fallbacks": 1, "certificate_timeouts": 1}
     historical_stats = {"html_refreshed": 4, "algorithm_misses": 1}
     metrics = build_extraction_metrics(active_stats, historical_stats)
     assert metrics["combined"]["html_reused"] == 3, "Combined metrics should include active counters"
     assert metrics["combined"]["html_refreshed"] == 4, "Combined metrics should include historical counters"
     assert metrics["combined"]["algorithm_successes"] == 2, "Combined metrics should include successes"
     assert metrics["combined"]["algorithm_misses"] == 1, "Combined metrics should include misses"
+    assert metrics["combined"]["certificate_timeouts"] == 1, "Combined metrics should include certificate timeouts"
     assert "concurrency" in metrics, "Extraction metrics should record concurrency settings"
+    assert "certificate_process_timeout_seconds" in metrics["concurrency"], "Extraction metrics should record certificate timeout"
 
     print("✓ Algorithm provenance and metrics test passed")
 
@@ -861,6 +864,84 @@ def test_process_certificate_record_applies_cached_algorithm_provenance():
     assert stats["algorithm_cache_hits"] == 1, "Cached algorithm reuse should increment cache hits"
 
     print("✓ Cached algorithm provenance application test passed")
+
+
+def test_process_certificate_record_timeout_preserves_cached_data():
+    """Timed-out certificate work should preserve cached detail and algorithm payloads."""
+    module = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/10/2026",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+    }
+    previous_detail = {
+        "certificate_number": "5238",
+        "dataset": "active",
+        "generated_at": "2026-04-01T00:00:00Z",
+        "nist_page_url": module["certificate_detail_url"],
+        "certificate_detail_url": module["certificate_detail_url"],
+        "security_policy_url": module["security_policy_url"],
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "software_versions": "3.0.9",
+        "hardware_versions": None,
+        "firmware_versions": None,
+        "algorithms": ["AES", "HMAC"],
+        "algorithms_detailed": ["AES-CBC A1", "HMAC SHA2-256 A1"],
+        "algorithm_extraction": {
+            "source": "crawl4ai",
+            "source_url": module["security_policy_url"],
+        },
+    }
+    previous_metadata = {
+        "algorithm_source": "crawl4ai",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+    }
+
+    async def slow_process(*args, **kwargs):
+        await asyncio.sleep(0.05)
+        raise AssertionError("timeout wrapper should not wait for slow process to finish")
+
+    original_process = scraper_module.process_certificate_record
+    original_timeout = scraper_module.CERT_PROCESS_TIMEOUT
+    scraper_module.process_certificate_record = slow_process
+    scraper_module.CERT_PROCESS_TIMEOUT = 0.01
+    try:
+        index, module_out, detail_payload, categories, stats = asyncio.run(
+            scraper_module.process_certificate_record_with_timeout(
+                7,
+                module,
+                "active",
+                "2026-04-12T03:10:00.961597Z",
+                "crawl4ai",
+                module,
+                previous_detail,
+                previous_metadata,
+                None,
+                asyncio.Semaphore(1),
+                asyncio.Semaphore(1),
+                {},
+                asyncio.Lock(),
+                {},
+            )
+        )
+    finally:
+        scraper_module.process_certificate_record = original_process
+        scraper_module.CERT_PROCESS_TIMEOUT = original_timeout
+
+    assert index == 7, "Timeout wrapper should preserve task index"
+    assert categories == ["AES", "HMAC"], "Timeout fallback should preserve cached categories"
+    assert module_out["detail_available"] is True, "Timeout fallback should preserve cached detail availability"
+    assert module_out["algorithm_extraction"]["status"] == "cached", "Timeout fallback should mark cached algorithms"
+    assert detail_payload["algorithm_extraction"]["attempts"][0]["status"] == "timeout", "Detail provenance should record timeout attempt"
+    assert stats["certificate_timeouts"] == 1, "Timeout fallback should increment certificate_timeouts"
+    assert stats["html_reused"] == 1, "Timeout fallback should reuse cached detail"
+    assert stats["algorithm_cache_hits"] == 1, "Timeout fallback should count cached algorithms"
+
+    print("✓ Certificate timeout fallback test passed")
 
 
 def test_prune_orphan_certificate_details():
@@ -1185,6 +1266,7 @@ def main():
         test_algorithm_extraction_provenance_and_metrics()
         test_fetch_policy_pdf_bytes_reuses_in_run_cache()
         test_process_certificate_record_applies_cached_algorithm_provenance()
+        test_process_certificate_record_timeout_preserves_cached_data()
         test_prune_orphan_certificate_details()
         test_validate_generated_api_artifacts()
         test_build_certificate_index_payload()
