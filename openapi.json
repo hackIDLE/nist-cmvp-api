@@ -294,7 +294,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-14T13:39:49.547462Z"
+            "example": "2026-05-14T13:46:19.502722Z"
           },
           "total_modules": {
             "type": "integer",
@@ -777,7 +777,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5243"
+            "example": "5265"
           },
           "dataset": {
             "type": "string",
@@ -785,27 +785,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-14T13:39:49.547462Z"
+            "example": "2026-05-14T13:46:19.502722Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "DigiCert, Inc."
+            "example": "Juniper Networks, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "DigiCert TrustCore Cryptographic Suite B Module"
+            "example": "Juniper Networks NFX350 Network Services Platform"
           },
           "standard": {
             "type": "string",
@@ -817,7 +817,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
@@ -829,7 +829,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "4/15/2026"
+            "example": "5/13/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -837,20 +837,35 @@
               "type": "string"
             },
             "example": [
-              "4/15/2026"
+              "5/13/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "4/14/2031"
+            "example": "5/12/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys). When operated in approved mode"
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "description": {
             "type": "string",
-            "example": "The DigiCert TrustCore Cryptographic Module is a software library that that provides approved cryptographic functionality to serve user-space applications."
+            "example": "The NFX350 Network Services Platform is Juniper Network's secure, automated, software-driven customer premises equipment (CPE) devices that deliver virtualized network and security services on demand. The NFX Network Services Platform delivers capacity, performance, and scale to larger enterprise organizations and service providers who are looking to run multiple services on one platform."
+          },
+          "software_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "hardware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "firmware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
           },
           "security_level_exceptions": {
             "type": "array",
@@ -858,7 +873,7 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
+              "Roles, services, and authentication: Level 3",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -881,21 +896,6 @@
             "type": "object",
             "additionalProperties": true
           },
-          "software_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
-          },
-          "hardware_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
-          },
-          "firmware_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
-          },
           "algorithm_extraction": {
             "type": "object",
             "additionalProperties": true
@@ -907,7 +907,7 @@
             },
             "example": [
               "AES",
-              "DES",
+              "CVL",
               "DRBG"
             ]
           },
@@ -917,9 +917,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A5484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CCM | A5484 | Key Length - 128, 192, 256 | SP 800-38C",
-              "AES-CFB128 | A5484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES-CBC A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CTR A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-GCM A5157 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D"
             ]
           }
         }
