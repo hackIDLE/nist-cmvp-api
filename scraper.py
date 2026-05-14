@@ -113,6 +113,13 @@ MODULE_DETAIL_FIELDS = [
     "algorithms_detailed",
 ]
 DETAIL_SCHEMA_REQUIRED_FIELDS = (
+    "standard",
+    "status",
+    "related_files",
+    "validation_history",
+    "vendor",
+)
+DETAIL_SCHEMA_MIGRATED_FIELDS = (
     "software_versions",
     "hardware_versions",
     "firmware_versions",
@@ -900,6 +907,8 @@ def prepare_reused_detail_payload(
     payload["security_policy_url"] = payload.get("security_policy_url") or module.get("security_policy_url")
     payload["vendor_name"] = payload.get("vendor_name") or module.get("Vendor Name")
     payload["module_name"] = payload.get("module_name") or module.get("Module Name")
+    for field in DETAIL_SCHEMA_MIGRATED_FIELDS:
+        payload.setdefault(field, None)
     return payload
 
 

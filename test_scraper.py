@@ -31,6 +31,7 @@ from scraper import (
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
     parse_modules_table,
+    prepare_reused_detail_payload,
     process_certificate_record,
     prune_orphan_certificate_details,
     select_algorithm_source,
@@ -386,30 +387,111 @@ def test_parse_certificate_detail_page():
     print("✓ Certificate detail page test passed")
 
 
-def test_should_reuse_certificate_detail_requires_version_schema_fields():
-    """Cached detail reuse should require every version field added to the detail schema."""
+def test_reused_certificate_detail_migrates_version_schema_fields():
+    """Cached detail reuse should tolerate migratable version fields from older artifacts."""
     previous_module = {"Certificate Number": "5203", "Vendor Name": "OVH SAS"}
-    previous_detail = {"software_versions": "3.0.9"}
+    previous_detail = {
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "related_files": [],
+        "validation_history": [],
+        "vendor": {},
+    }
     current_fingerprint = build_certificate_fingerprint(previous_module, "active")
     previous_fingerprint = build_certificate_fingerprint(previous_module, "active")
 
-    assert not should_reuse_certificate_detail(
-        previous_module,
-        previous_detail,
-        previous_fingerprint,
-        current_fingerprint,
-    ), "Partial version schema payload should force HTML refresh"
-
-    previous_detail["hardware_versions"] = None
-    previous_detail["firmware_versions"] = None
     assert should_reuse_certificate_detail(
         previous_module,
         previous_detail,
         previous_fingerprint,
         current_fingerprint,
-    ), "Payload with all version schema keys should be reusable"
+    ), "Missing migratable version fields should not force HTML refresh"
+
+    reused_payload = prepare_reused_detail_payload(
+        previous_detail,
+        previous_module,
+        5203,
+        "active",
+        "2026-03-26T00:00:00.000000Z",
+    )
+    for field in ("software_versions", "hardware_versions", "firmware_versions"):
+        assert field in reused_payload, f"Reused payload should migrate {field}"
+
+    incomplete_detail = {"standard": "FIPS 140-3"}
+    assert not should_reuse_certificate_detail(
+        previous_module,
+        incomplete_detail,
+        previous_fingerprint,
+        current_fingerprint,
+    ), "Missing core detail fields should still force HTML refresh"
 
     print("✓ Certificate detail reuse schema test passed")
+
+
+def test_process_certificate_record_reuses_legacy_detail_with_migrated_fields():
+    """Legacy cached detail payloads should be upgraded in-place without refetching HTML."""
+    module = {
+        "Certificate Number": "5203",
+        "Vendor Name": "OVH SAS",
+        "Module Name": "OVHCloud OKMS Provider based on the OpenSSL FIPS Provider",
+        "Module Type": "Software",
+        "Validation Date": "04/01/2026",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5203.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5203",
+    }
+    previous_module = dict(module)
+    previous_module["algorithms"] = ["AES"]
+    previous_detail = {
+        "certificate_number": "5203",
+        "dataset": "active",
+        "generated_at": "2026-03-26T00:00:00.000000Z",
+        "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5203",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5203",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5203.pdf",
+        "vendor_name": "OVH SAS",
+        "module_name": "OVHCloud OKMS Provider based on the OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "related_files": [],
+        "validation_history": [],
+        "vendor": {},
+        "algorithms": ["AES"],
+    }
+    previous_metadata = {
+        "algorithm_source": "firecrawl",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+    }
+
+    async def scenario():
+        return await process_certificate_record(
+            module,
+            "active",
+            "2026-05-14T00:00:00.000000Z",
+            "crawl4ai",
+            previous_module,
+            previous_detail,
+            previous_metadata,
+            SimpleNamespace(),
+            asyncio.Semaphore(1),
+            asyncio.Semaphore(1),
+            {},
+            asyncio.Lock(),
+            {},
+        )
+
+    module_out, detail_payload, categories, stats = asyncio.run(scenario())
+
+    assert stats["html_reused"] == 1, "Matching legacy detail should be reused"
+    assert stats["html_refreshed"] == 0, "Legacy detail migration should not refetch HTML"
+    assert stats["pdf_reused"] == 1, "Cached algorithms should be reused with matching fingerprint"
+    assert module_out["detail_available"] is True, "Reused detail should mark detail_available"
+    assert categories == ["AES"], "Cached algorithm categories should be returned"
+    for field in ("software_versions", "hardware_versions", "firmware_versions"):
+        assert field in detail_payload, f"Reused detail should include migrated {field}"
+    assert detail_payload["algorithm_extraction"]["status"] == "cached", "Cached provenance should be attached"
+    assert detail_payload["algorithm_extraction"]["source"] == "firecrawl", "Original cached source should be preserved"
+
+    print("✓ Legacy detail migration reuse test passed")
 
 
 def test_parse_algorithms_from_policy_text():
@@ -881,10 +963,21 @@ def test_process_certificate_record_applies_cached_algorithm_provenance():
     }
     previous_detail = {
         "certificate_number": "5238",
+        "dataset": "active",
+        "generated_at": "2026-04-01T00:00:00Z",
+        "nist_page_url": module["certificate_detail_url"],
+        "certificate_detail_url": module["certificate_detail_url"],
         "software_versions": "3.0.9",
         "hardware_versions": None,
         "firmware_versions": None,
         "security_policy_url": module["security_policy_url"],
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "related_files": [],
+        "validation_history": [],
+        "vendor": {},
         "algorithms": ["AES", "HMAC"],
         "algorithms_detailed": ["AES-CBC A1", "HMAC SHA2-256 A1"],
         "algorithm_extraction": {
@@ -1405,7 +1498,8 @@ def main():
         test_parse_historical_modules_table()
         test_parse_modules_in_process()
         test_parse_certificate_detail_page()
-        test_should_reuse_certificate_detail_requires_version_schema_fields()
+        test_reused_certificate_detail_migrates_version_schema_fields()
+        test_process_certificate_record_reuses_legacy_detail_with_migrated_fields()
         test_parse_algorithms_from_policy_text()
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
