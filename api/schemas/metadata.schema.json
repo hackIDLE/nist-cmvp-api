@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/metadata.schema.json",
+  "title": "NIST CMVP API Metadata",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "generated_at",
+    "total_modules",
+    "total_historical_modules",
+    "total_modules_in_process",
+    "total_certificates_with_algorithms",
+    "total_certificate_details",
+    "source",
+    "modules_in_process_source",
+    "algorithm_source",
+    "algorithm_cache_version",
+    "version"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_modules": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_historical_modules": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_modules_in_process": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_certificates_with_algorithms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_certificate_details": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "modules_in_process_source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "algorithm_source": {
+      "type": "string"
+    },
+    "algorithm_cache_version": {
+      "type": "string"
+    },
+    "algorithm_extraction_schema_version": {
+      "type": "string"
+    },
+    "extraction_metrics": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/index.schema.json",
+  "title": "NIST CMVP API JSON Schema Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "schema_version",
+    "base_url",
+    "schemas"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "base_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schemas": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "examples": [
+    {
+      "name": "NIST CMVP API JSON Schemas",
+      "schema_version": "1.0",
+      "base_url": "https://hackidle.github.io/nist-cmvp-api",
+      "schemas": {
+        "index": "/api/schemas/index.schema.json",
+        "metadata": "/api/schemas/metadata.schema.json",
+        "module": "/api/schemas/module.schema.json",
+        "module_in_process": "/api/schemas/module-in-process.schema.json",
+        "modules": "/api/schemas/modules.schema.json",
+        "historical_modules": "/api/schemas/historical-modules.schema.json",
+        "modules_in_process": "/api/schemas/modules-in-process.schema.json",
+        "certificate_detail": "/api/schemas/certificate-detail.schema.json",
+        "algorithms": "/api/schemas/algorithms.schema.json"
+      }
+    }
+  ]
+}

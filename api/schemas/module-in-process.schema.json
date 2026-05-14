@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/module-in-process.schema.json",
+  "title": "NIST CMVP Module In Process Row",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "Module Name",
+    "Vendor Name",
+    "Standard",
+    "Status"
+  ],
+  "properties": {
+    "Module Name": {
+      "type": "string"
+    },
+    "Vendor Name": {
+      "type": "string"
+    },
+    "Vendor Name_url": {
+      "type": "string"
+    },
+    "Standard": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    }
+  }
+}

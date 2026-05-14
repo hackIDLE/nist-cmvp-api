@@ -32,6 +32,7 @@ import re
 import sqlite3
 import sys
 import time
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
@@ -75,6 +76,7 @@ DETAIL_DIR = Path("api/certificates")
 CRAWL4AI_ALGORITHM_SOURCE = "crawl4ai"
 SECURITY_POLICY_ALGORITHM_SOURCE = "security_policy_pdf"
 ALGORITHM_CACHE_VERSION = "2026-04-15-legacy-v1"
+ALGORITHM_EXTRACTION_SCHEMA_VERSION = "1.0"
 CACHEABLE_ALGORITHM_SOURCES = {
     CRAWL4AI_ALGORITHM_SOURCE,
     SECURITY_POLICY_ALGORITHM_SOURCE,
@@ -236,7 +238,7 @@ ALGORITHM_CATEGORY_PATTERNS = [
     ("RSA", re.compile(r"\bRSA\b", re.IGNORECASE)),
     ("ECDSA", re.compile(r"\bECDSA\b", re.IGNORECASE)),
     ("ECDH", re.compile(r"\bECDH\b", re.IGNORECASE)),
-    ("DRBG", re.compile(r"\bDRBG\b", re.IGNORECASE)),
+    ("DRBG", re.compile(r"(?:\b|_)DRBG\b", re.IGNORECASE)),
     ("KDF", re.compile(r"\b(KDF|KDA|KBKDF|HKDF|PBKDF)\b", re.IGNORECASE)),
     ("KAS", re.compile(r"\bKAS\b", re.IGNORECASE)),
     ("KTS", re.compile(r"\bKTS\b", re.IGNORECASE)),
@@ -248,6 +250,38 @@ ALGORITHM_CATEGORY_PATTERNS = [
     ("SSH", re.compile(r"\bSSH\b", re.IGNORECASE)),
     ("CVL", re.compile(r"\bCVL\b", re.IGNORECASE)),
 ]
+
+PROCESSING_STAT_KEYS = (
+    "html_reused",
+    "html_refreshed",
+    "html_failed",
+    "pdf_reused",
+    "pdf_refreshed",
+    "pdf_failed",
+    "pdf_cache_hits",
+    "algorithm_misses",
+    "algorithm_cache_hits",
+    "algorithm_successes",
+    "algorithm_fallbacks",
+    "algorithm_source_crawl4ai",
+    "algorithm_source_security_policy_pdf",
+    "algorithm_source_database",
+    "algorithm_source_none",
+)
+
+
+@dataclass
+class AlgorithmExtractionResult:
+    """Result of attempting to extract algorithms for one Security Policy."""
+
+    detailed: List[str]
+    categories: List[str]
+    parsed: bool
+    source: str
+    source_url: Optional[str] = None
+    fallback_used: bool = False
+    pdf_cache_hits: int = 0
+    attempts: List[Dict[str, str]] = field(default_factory=list)
 
 
 def fetch_page(url: str, timeout: int = 30, retries: int = 3) -> Optional[str]:
@@ -321,12 +355,105 @@ def normalize_string_list(values: Optional[List[str]]) -> List[str]:
     normalized: List[str] = []
     seen: Set[str] = set()
     for value in values or []:
+        if value is None:
+            continue
         text = normalize_whitespace(str(value))
         if not text or text in seen:
             continue
         seen.add(text)
         normalized.append(text)
     return normalized
+
+
+def new_processing_stats() -> Dict[str, int]:
+    """Return zeroed scrape/extraction counters for one dataset or certificate."""
+    return {key: 0 for key in PROCESSING_STAT_KEYS}
+
+
+def add_processing_stats(target: Dict[str, int], increment: Dict[str, int]) -> None:
+    """Add processing counters from one stats dictionary into another."""
+    for key in PROCESSING_STAT_KEYS:
+        target[key] = target.get(key, 0) + increment.get(key, 0)
+
+
+def combine_processing_stats(*stats_dicts: Dict[str, int]) -> Dict[str, int]:
+    """Combine multiple processing stats dictionaries into one."""
+    combined = new_processing_stats()
+    for stats in stats_dicts:
+        add_processing_stats(combined, stats)
+    return combined
+
+
+def build_extraction_metrics(active_stats: Dict[str, int], historical_stats: Dict[str, int]) -> Dict[str, object]:
+    """Build metadata-safe scrape and algorithm extraction metrics."""
+    return {
+        "active": dict(active_stats),
+        "historical": dict(historical_stats),
+        "combined": combine_processing_stats(active_stats, historical_stats),
+        "concurrency": {
+            "certificate_fetch": CERT_FETCH_CONCURRENCY,
+            "security_policy_fetch": PDF_FETCH_CONCURRENCY,
+        },
+    }
+
+
+def build_algorithm_extraction_provenance(
+    configured_source: str,
+    status: str,
+    source: str,
+    source_url: Optional[str],
+    categories: Optional[List[str]],
+    detailed: Optional[List[str]],
+    cached: bool = False,
+    fallback_used: bool = False,
+    attempts: Optional[List[Dict[str, str]]] = None,
+) -> Dict[str, object]:
+    """Build the per-certificate provenance object for algorithm extraction."""
+    provenance = {
+        "schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+        "status": status,
+        "configured_source": configured_source,
+        "source": source,
+        "source_url": source_url,
+        "cached": cached,
+        "fallback_used": fallback_used,
+        "cache_version": ALGORITHM_CACHE_VERSION,
+        "algorithm_count": len(normalize_string_list(categories or [])),
+        "detailed_algorithm_count": len(normalize_string_list(detailed or [])),
+    }
+    if attempts is not None:
+        provenance["attempts"] = attempts
+    return provenance
+
+
+def apply_algorithm_extraction_provenance(
+    record: Optional[Dict],
+    provenance: Dict[str, object],
+    include_attempts: bool = False,
+) -> None:
+    """Attach algorithm extraction provenance to a module or detail payload."""
+    if record is None:
+        return
+    payload = dict(provenance)
+    if not include_attempts:
+        payload.pop("attempts", None)
+    record["algorithm_extraction"] = payload
+
+
+def cached_algorithm_extraction_source(
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+    previous_metadata: Dict,
+) -> Tuple[str, Optional[str]]:
+    """Return the best available extraction source metadata for cached algorithms."""
+    previous_extraction = (
+        (previous_detail or {}).get("algorithm_extraction")
+        or (previous_module or {}).get("algorithm_extraction")
+        or {}
+    )
+    source = previous_extraction.get("source") or previous_metadata.get("algorithm_source") or "cache"
+    source_url = previous_extraction.get("source_url")
+    return str(source), source_url if isinstance(source_url, str) else None
 
 
 def parse_certificate_number(record: Optional[Dict]) -> Optional[int]:
@@ -1199,6 +1326,24 @@ async def fetch_with_retry(
     return None
 
 
+async def fetch_policy_pdf_bytes(
+    client: httpx.AsyncClient,
+    url: str,
+    pdf_cache: Dict[str, asyncio.Task],
+    pdf_cache_lock: asyncio.Lock,
+) -> Tuple[Optional[bytes], bool]:
+    """Fetch Security Policy PDF bytes through an in-run task cache."""
+    async with pdf_cache_lock:
+        task = pdf_cache.get(url)
+        cache_hit = task is not None
+        if task is None:
+            task = asyncio.create_task(fetch_with_retry(client, url, response_type="bytes"))
+            pdf_cache[url] = task
+
+    result = await task
+    return result if isinstance(result, bytes) else None, cache_hit
+
+
 async def fetch_crawl4ai_policy_text(
     url: str,
     retries: int = 1,
@@ -1280,38 +1425,110 @@ async def fetch_certificate_algorithms(
     fallback_url: Optional[str],
     pdf_semaphore: asyncio.Semaphore,
     algorithm_source: str,
-) -> Tuple[List[str], List[str], bool]:
+    pdf_cache: Dict[str, asyncio.Task],
+    pdf_cache_lock: asyncio.Lock,
+) -> AlgorithmExtractionResult:
     """Fetch and parse a certificate's Security Policy using the configured source."""
+    attempts: List[Dict[str, str]] = []
+    pdf_cache_hits = 0
+
     for candidate in normalize_string_list([security_policy_url, fallback_url]):
         if algorithm_source == CRAWL4AI_ALGORITHM_SOURCE and CRAWL4AI_AVAILABLE:
+            attempt = {
+                "source": CRAWL4AI_ALGORITHM_SOURCE,
+                "url": candidate,
+                "status": "started",
+            }
             async with pdf_semaphore:
                 policy_text = await fetch_crawl4ai_policy_text(candidate)
             if policy_text:
                 try:
                     detailed, categories = parse_algorithms_from_policy_text(policy_text)
                     if detailed or categories:
-                        return detailed, categories, True
+                        attempt["status"] = "parsed"
+                        attempts.append(attempt)
+                        return AlgorithmExtractionResult(
+                            detailed=detailed,
+                            categories=categories,
+                            parsed=True,
+                            source=CRAWL4AI_ALGORITHM_SOURCE,
+                            source_url=candidate,
+                            attempts=attempts,
+                        )
+                    attempt["status"] = "no_algorithms"
+                    attempts.append(attempt)
                     print(
                         f"Warning: Crawl4AI returned policy text for {candidate} but no algorithm rows were found; "
                         "falling back to local PDF parsing.",
                         file=sys.stderr,
                     )
                 except Exception as exc:
+                    attempt["status"] = "parse_error"
+                    attempt["error"] = str(exc)[:200]
+                    attempts.append(attempt)
                     print(f"Warning: Failed to parse Crawl4AI policy text for {candidate}: {exc}", file=sys.stderr)
+            else:
+                attempt["status"] = "no_text"
+                attempts.append(attempt)
 
+        local_attempt = {
+            "source": SECURITY_POLICY_ALGORITHM_SOURCE,
+            "url": candidate,
+            "status": "started",
+        }
         async with pdf_semaphore:
-            pdf_bytes = await fetch_with_retry(client, candidate, response_type="bytes")
+            pdf_bytes, cache_hit = await fetch_policy_pdf_bytes(
+                client,
+                candidate,
+                pdf_cache,
+                pdf_cache_lock,
+            )
+        if cache_hit:
+            pdf_cache_hits += 1
+            local_attempt["cache_hit"] = "true"
         if not pdf_bytes:
+            local_attempt["status"] = "fetch_failed"
+            attempts.append(local_attempt)
             continue
 
         try:
             detailed, categories = parse_algorithms_from_policy_pdf_bytes(pdf_bytes)
             if detailed or categories:
-                return detailed, categories, True
+                local_attempt["status"] = "parsed"
+                attempts.append(local_attempt)
+                return AlgorithmExtractionResult(
+                    detailed=detailed,
+                    categories=categories,
+                    parsed=True,
+                    source=SECURITY_POLICY_ALGORITHM_SOURCE,
+                    source_url=candidate,
+                    fallback_used=any(
+                        attempt.get("source") == CRAWL4AI_ALGORITHM_SOURCE
+                        for attempt in attempts
+                    ),
+                    pdf_cache_hits=pdf_cache_hits,
+                    attempts=attempts,
+                )
+            local_attempt["status"] = "no_algorithms"
+            attempts.append(local_attempt)
         except Exception as exc:
+            local_attempt["status"] = "parse_error"
+            local_attempt["error"] = str(exc)[:200]
+            attempts.append(local_attempt)
             print(f"Warning: Failed to parse Security Policy PDF {candidate}: {exc}", file=sys.stderr)
 
-    return [], [], False
+    return AlgorithmExtractionResult(
+        detailed=[],
+        categories=[],
+        parsed=False,
+        source="none",
+        fallback_used=any(
+            attempt.get("source") == CRAWL4AI_ALGORITHM_SOURCE
+            for attempt in attempts
+        ),
+        pdf_cache_hits=pdf_cache_hits,
+        attempts=attempts,
+    )
 
 
 async def process_certificate_record(
@@ -1325,18 +1542,12 @@ async def process_certificate_record(
     client: httpx.AsyncClient,
     cert_semaphore: asyncio.Semaphore,
     pdf_semaphore: asyncio.Semaphore,
+    pdf_cache: Dict[str, asyncio.Task],
+    pdf_cache_lock: asyncio.Lock,
     database_algorithms_map: Dict[int, List[str]],
 ) -> Tuple[Dict, Optional[Dict], List[str], Dict[str, int]]:
     """Process one module row into an enriched module row and optional detail payload."""
-    stats = {
-        "html_reused": 0,
-        "html_refreshed": 0,
-        "html_failed": 0,
-        "pdf_reused": 0,
-        "pdf_refreshed": 0,
-        "pdf_failed": 0,
-        "algorithm_misses": 0,
-    }
+    stats = new_processing_stats()
 
     cert_number = parse_certificate_number(module)
     module_out = dict(previous_module or {})
@@ -1344,6 +1555,17 @@ async def process_certificate_record(
 
     if cert_number is None:
         strip_algorithm_fields(module_out)
+        apply_algorithm_extraction_provenance(
+            module_out,
+            build_algorithm_extraction_provenance(
+                algorithm_source,
+                "skipped",
+                "none",
+                None,
+                [],
+                [],
+            ),
+        )
         module_out["detail_available"] = False
         return module_out, None, [], stats
 
@@ -1407,38 +1629,106 @@ async def process_certificate_record(
     if algorithm_source == "database":
         categories = normalize_string_list(database_algorithms_map.get(cert_number, []))
         detailed: List[str] = []
+        extraction_status = "parsed" if categories else "miss"
+        extraction_provenance = build_algorithm_extraction_provenance(
+            algorithm_source,
+            extraction_status,
+            "database",
+            None,
+            categories,
+            detailed,
+        )
+        stats["algorithm_source_database"] += 1
+        if categories:
+            stats["algorithm_successes"] += 1
+        else:
+            stats["algorithm_misses"] += 1
         if detail_payload:
             apply_algorithm_fields(detail_payload, categories, detailed)
+            apply_algorithm_extraction_provenance(detail_payload, extraction_provenance, include_attempts=True)
         apply_algorithm_fields(module_out, categories, detailed)
+        apply_algorithm_extraction_provenance(module_out, extraction_provenance)
     elif algorithm_source in CACHEABLE_ALGORITHM_SOURCES:
         detailed, categories = ([], [])
         if trusted_algorithm_reuse:
             categories, detailed = cached_algorithm_fields(previous_module, previous_detail)
             stats["pdf_reused"] += 1
+            stats["algorithm_cache_hits"] += 1
+            cached_source, cached_source_url = cached_algorithm_extraction_source(
+                previous_module,
+                previous_detail,
+                previous_metadata,
+            )
+            extraction_provenance = build_algorithm_extraction_provenance(
+                algorithm_source,
+                "cached",
+                cached_source,
+                cached_source_url,
+                categories,
+                detailed,
+                cached=True,
+            )
+            if categories or detailed:
+                stats["algorithm_successes"] += 1
         else:
             if detail_payload:
                 strip_algorithm_fields(detail_payload)
             strip_algorithm_fields(module_out)
-            detailed, categories, parsed = await fetch_certificate_algorithms(
+            extraction_result = await fetch_certificate_algorithms(
                 client,
                 (detail_payload or {}).get("security_policy_url") or module.get("security_policy_url"),
                 get_security_policy_url(cert_number),
                 pdf_semaphore,
                 algorithm_source,
+                pdf_cache,
+                pdf_cache_lock,
             )
-            if parsed:
+            detailed = extraction_result.detailed
+            categories = extraction_result.categories
+            stats["pdf_cache_hits"] += extraction_result.pdf_cache_hits
+            extraction_provenance = build_algorithm_extraction_provenance(
+                algorithm_source,
+                "parsed" if extraction_result.parsed else "miss",
+                extraction_result.source,
+                extraction_result.source_url,
+                categories,
+                detailed,
+                fallback_used=extraction_result.fallback_used,
+                attempts=extraction_result.attempts,
+            )
+            if extraction_result.parsed:
                 stats["pdf_refreshed"] += 1
+                stats["algorithm_successes"] += 1
+                if extraction_result.source == CRAWL4AI_ALGORITHM_SOURCE:
+                    stats["algorithm_source_crawl4ai"] += 1
+                elif extraction_result.source == SECURITY_POLICY_ALGORITHM_SOURCE:
+                    stats["algorithm_source_security_policy_pdf"] += 1
+                if extraction_result.fallback_used:
+                    stats["algorithm_fallbacks"] += 1
             else:
                 stats["pdf_failed"] += 1
                 stats["algorithm_misses"] += 1
 
         if detail_payload:
             apply_algorithm_fields(detail_payload, categories, detailed)
+            apply_algorithm_extraction_provenance(detail_payload, extraction_provenance, include_attempts=True)
         apply_algorithm_fields(module_out, categories, detailed)
+        apply_algorithm_extraction_provenance(module_out, extraction_provenance)
     else:
+        extraction_provenance = build_algorithm_extraction_provenance(
+            algorithm_source,
+            "skipped",
+            "none",
+            None,
+            [],
+            [],
+        )
+        stats["algorithm_source_none"] += 1
         if detail_payload:
             strip_algorithm_fields(detail_payload)
+            apply_algorithm_extraction_provenance(detail_payload, extraction_provenance, include_attempts=True)
         strip_algorithm_fields(module_out)
+        apply_algorithm_extraction_provenance(module_out, extraction_provenance)
 
     module_out["detail_available"] = detail_payload is not None
     module_categories = normalize_string_list(module_out.get("algorithms", []))
@@ -1462,19 +1752,13 @@ async def build_certificate_artifacts(
     results: List[Optional[Dict]] = [None] * len(modules)
     payloads: Dict[int, Dict] = {}
     algorithms_map: Dict[int, List[str]] = {}
-    stats = {
-        "html_reused": 0,
-        "html_refreshed": 0,
-        "html_failed": 0,
-        "pdf_reused": 0,
-        "pdf_refreshed": 0,
-        "pdf_failed": 0,
-        "algorithm_misses": 0,
-    }
+    stats = new_processing_stats()
 
     timeout = httpx.Timeout(30.0)
     cert_semaphore = asyncio.Semaphore(CERT_FETCH_CONCURRENCY)
     pdf_semaphore = asyncio.Semaphore(PDF_FETCH_CONCURRENCY)
+    pdf_cache: Dict[str, asyncio.Task] = {}
+    pdf_cache_lock = asyncio.Lock()
 
     async with httpx.AsyncClient(
         headers={"User-Agent": USER_AGENT},
@@ -1497,6 +1781,8 @@ async def build_certificate_artifacts(
                         client,
                         cert_semaphore,
                         pdf_semaphore,
+                        pdf_cache,
+                        pdf_cache_lock,
                         database_algorithms_map,
                     )
                 )
@@ -1513,8 +1799,7 @@ async def build_certificate_artifacts(
                 payloads[cert_number] = detail_payload
             if cert_number is not None and categories:
                 algorithms_map[cert_number] = categories
-            for key, value in task_stats.items():
-                stats[key] += value
+            add_processing_stats(stats, task_stats)
             if completed % 100 == 0 or completed == total:
                 print(
                     f"  Progress: {completed}/{total} "
@@ -1859,7 +2144,25 @@ def documentation_paths() -> Dict[str, str]:
         "llms_full_txt": "/llms-full.txt",
         "api_docs": "/api/docs.md",
         "openapi": "/openapi.json",
+        "json_schemas": "/api/schemas/index.schema.json",
     }
+
+
+def schema_paths(algorithms_summary: Optional[Dict] = None) -> Dict[str, str]:
+    """Return published JSON Schema paths."""
+    paths = {
+        "index": "/api/schemas/index.schema.json",
+        "metadata": "/api/schemas/metadata.schema.json",
+        "module": "/api/schemas/module.schema.json",
+        "module_in_process": "/api/schemas/module-in-process.schema.json",
+        "modules": "/api/schemas/modules.schema.json",
+        "historical_modules": "/api/schemas/historical-modules.schema.json",
+        "modules_in_process": "/api/schemas/modules-in-process.schema.json",
+        "certificate_detail": "/api/schemas/certificate-detail.schema.json",
+    }
+    if algorithms_summary:
+        paths["algorithms"] = "/api/schemas/algorithms.schema.json"
+    return paths
 
 
 def sample_module_example(module: Optional[Dict]) -> Dict:
@@ -1881,6 +2184,7 @@ def sample_module_example(module: Optional[Dict]) -> Dict:
         "security_policy_url",
         "certificate_detail_url",
         "detail_available",
+        "algorithm_extraction",
     ]
     example = {}
     for key in keys:
@@ -1889,6 +2193,9 @@ def sample_module_example(module: Optional[Dict]) -> Dict:
         value = module[key]
         if key in {"Module Name"}:
             value = truncate_text(value, 100)
+        if key == "algorithm_extraction" and isinstance(value, dict):
+            value = dict(value)
+            value.pop("attempts", None)
         example[key] = value
     if "description" in module:
         example["description"] = truncate_text(module["description"])
@@ -1925,6 +2232,10 @@ def sample_certificate_example(detail: Optional[Dict]) -> Dict:
         "validation_history": (detail.get("validation_history") or [])[:2],
         "algorithms": (detail.get("algorithms") or [])[:5],
     }
+    if isinstance(detail.get("algorithm_extraction"), dict):
+        algorithm_extraction = dict(detail["algorithm_extraction"])
+        algorithm_extraction.pop("attempts", None)
+        example["algorithm_extraction"] = algorithm_extraction
     return {key: value for key, value in example.items() if value not in (None, [], {})}
 
 
@@ -1982,7 +2293,10 @@ def build_api_reference_body(
         "`GET api/index.json` — API discovery endpoint with resource paths, documentation links, feature flags, and current counts.",
         "",
         "### Metadata",
-        "`GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, and algorithm extraction status.",
+        "`GET api/metadata.json` — Generation timestamp, source URLs, dataset counts, extraction metrics, and algorithm extraction status.",
+        "",
+        "### JSON Schemas",
+        "`GET api/schemas/index.schema.json` — JSON Schema discovery document for the static API response files.",
         "",
         "### Active Modules",
         f"`GET api/modules.json` — All {format_count(total_modules)} active validated modules.",
@@ -1999,7 +2313,7 @@ def build_api_reference_body(
             }
         ),
         "",
-        "Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, and detail availability flags.",
+        "Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, detail availability flags, and algorithm extraction provenance when algorithms were evaluated.",
         "",
         "### Historical Modules",
         f"`GET api/historical-modules.json` — All {format_count(total_historical)} expired or revoked modules for historical lookups.",
@@ -2014,6 +2328,8 @@ def build_api_reference_body(
             [
                 "### Algorithms",
                 f"`GET api/algorithms.json` — Algorithm usage summary across {format_count(total_algorithms)} certificates in the current build.",
+                "",
+                "`algorithm_extraction` records the configured source, actual source, cache/fallback status, source URL, and extracted row counts for each evaluated certificate.",
                 "",
                 "Example response (truncated):",
                 "",
@@ -2050,7 +2366,7 @@ def build_api_reference_body(
             "### Discover the API surface",
             "```",
             "GET api/index.json → endpoints, docs links, feature flags, counts",
-            "GET api/metadata.json → freshness and scrape provenance",
+            "GET api/metadata.json → freshness, scrape provenance, and extraction metrics",
             "```",
             "",
             "### Find a module and pull the full certificate record",
@@ -2073,7 +2389,7 @@ def build_api_reference_body(
                 "### Explore algorithm coverage",
                 "```",
                 "GET api/algorithms.json → counts and certificate lists per algorithm",
-                "GET api/modules.json → filter module rows by algorithms[] entries",
+                "GET api/modules.json → filter module rows by algorithms[] entries and inspect algorithm_extraction",
                 "```",
                 "",
             ]
@@ -2092,7 +2408,7 @@ def build_api_reference_body(
 
     if algorithms_summary:
         lines.append(
-            f"- **Algorithms coverage:** `api/algorithms.json` summarizes {format_count(total_algorithms)} certificates that had algorithm data in this build."
+            f"- **Algorithms coverage:** `api/algorithms.json` summarizes {format_count(total_algorithms)} certificates that had algorithm data in this build. `api/metadata.json` reports extraction cache hits, refreshes, failures, misses, and fallback counts."
         )
     else:
         lines.append(
@@ -2109,7 +2425,7 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         f"- `api/modules.json` — {format_count(metadata.get('total_modules', 0))} active validated modules.",
         f"- `api/historical-modules.json` — {format_count(metadata.get('total_historical_modules', 0))} historical modules.",
         f"- `api/modules-in-process.json` — {format_count(metadata.get('total_modules_in_process', 0))} modules currently in process.",
-        "- `api/metadata.json` — generation timestamp, counts, and source URLs.",
+        "- `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.",
         f"- `api/certificates/{{certificate}}.json` — full detail record for a single CMVP certificate.",
     ]
     if algorithms_summary:
@@ -2139,6 +2455,7 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         "- [API Reference](api/docs.md): endpoint reference with examples and workflows.",
         "- [Complete Documentation](llms-full.txt): fuller single-file agent reference.",
         "- [OpenAPI](openapi.json): OpenAPI 3.0.3 schema for the JSON endpoints.",
+        "- [JSON Schemas](api/schemas/index.schema.json): JSON Schema index for static API responses.",
         "",
         "## Caveats",
         "",
@@ -2242,6 +2559,7 @@ def build_index_html(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         '    <li><a href="llms-full.txt">llms-full.txt</a></li>',
         '    <li><a href="api/docs.md">api/docs.md</a></li>',
         '    <li><a href="openapi.json">openapi.json</a></li>',
+        '    <li><a href="api/schemas/index.schema.json">JSON Schemas</a></li>',
     ]
 
     endpoint_links = [
@@ -2333,6 +2651,310 @@ def generate_text_artifacts(
     }
 
 
+def json_schema_document(title: str, schema_id: str, schema: Dict) -> Dict:
+    """Wrap a JSON Schema body with common metadata."""
+    document = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{PUBLIC_BASE_URL}{schema_id}",
+        "title": title,
+    }
+    document.update(schema)
+    return document
+
+
+def algorithm_extraction_schema() -> Dict:
+    """Return the shared algorithm extraction provenance schema."""
+    return {
+        "type": "object",
+        "additionalProperties": True,
+        "required": [
+            "schema_version",
+            "status",
+            "configured_source",
+            "source",
+            "cached",
+            "fallback_used",
+            "cache_version",
+            "algorithm_count",
+            "detailed_algorithm_count",
+        ],
+        "properties": {
+            "schema_version": {"type": "string"},
+            "status": {"type": "string", "enum": ["parsed", "cached", "miss", "skipped"]},
+            "configured_source": {"type": "string"},
+            "source": {"type": "string"},
+            "source_url": {"type": ["string", "null"], "format": "uri"},
+            "cached": {"type": "boolean"},
+            "fallback_used": {"type": "boolean"},
+            "cache_version": {"type": "string"},
+            "algorithm_count": {"type": "integer", "minimum": 0},
+            "detailed_algorithm_count": {"type": "integer", "minimum": 0},
+            "attempts": {
+                "type": "array",
+                "items": {"type": "object", "additionalProperties": {"type": "string"}},
+            },
+        },
+    }
+
+
+def module_schema() -> Dict:
+    """Return a backwards-compatible schema for active and historical module rows."""
+    return {
+        "type": "object",
+        "additionalProperties": True,
+        "required": [
+            "Certificate Number",
+            "Vendor Name",
+            "Module Name",
+            "security_policy_url",
+            "certificate_detail_url",
+            "detail_available",
+        ],
+        "properties": {
+            "Certificate Number": {"type": "string", "pattern": "^[0-9]+$"},
+            "Certificate Number_url": {"type": "string"},
+            "Vendor Name": {"type": "string"},
+            "Module Name": {"type": "string"},
+            "Module Type": {"type": "string"},
+            "Validation Date": {"type": "string"},
+            "Status": {"type": "string"},
+            "security_policy_url": {"type": "string", "format": "uri"},
+            "certificate_detail_url": {"type": "string", "format": "uri"},
+            "standard": {"type": ["string", "null"]},
+            "status": {"type": ["string", "null"]},
+            "overall_level": {"type": ["integer", "string", "null"]},
+            "sunset_date": {"type": ["string", "null"]},
+            "detail_available": {"type": "boolean"},
+            "algorithms": {"type": "array", "items": {"type": "string"}},
+            "algorithms_detailed": {"type": "array", "items": {"type": "string"}},
+            "algorithm_extraction": algorithm_extraction_schema(),
+        },
+    }
+
+
+def module_in_process_schema() -> Dict:
+    """Return the schema for CMVP modules in process rows."""
+    return {
+        "type": "object",
+        "additionalProperties": True,
+        "required": ["Module Name", "Vendor Name", "Standard", "Status"],
+        "properties": {
+            "Module Name": {"type": "string"},
+            "Vendor Name": {"type": "string"},
+            "Vendor Name_url": {"type": "string"},
+            "Standard": {"type": "string"},
+            "Status": {"type": "string"},
+        },
+    }
+
+
+def metadata_schema() -> Dict:
+    """Return the dataset metadata schema."""
+    return {
+        "type": "object",
+        "additionalProperties": True,
+        "required": [
+            "generated_at",
+            "total_modules",
+            "total_historical_modules",
+            "total_modules_in_process",
+            "total_certificates_with_algorithms",
+            "total_certificate_details",
+            "source",
+            "modules_in_process_source",
+            "algorithm_source",
+            "algorithm_cache_version",
+            "version",
+        ],
+        "properties": {
+            "generated_at": {"type": "string", "format": "date-time"},
+            "total_modules": {"type": "integer", "minimum": 0},
+            "total_historical_modules": {"type": "integer", "minimum": 0},
+            "total_modules_in_process": {"type": "integer", "minimum": 0},
+            "total_certificates_with_algorithms": {"type": "integer", "minimum": 0},
+            "total_certificate_details": {"type": "integer", "minimum": 0},
+            "source": {"type": "string", "format": "uri"},
+            "modules_in_process_source": {"type": "string", "format": "uri"},
+            "algorithm_source": {"type": "string"},
+            "algorithm_cache_version": {"type": "string"},
+            "algorithm_extraction_schema_version": {"type": "string"},
+            "extraction_metrics": {"type": "object", "additionalProperties": True},
+            "version": {"type": "string"},
+        },
+    }
+
+
+def response_schema(metadata_ref: str, array_name: str, item_ref: str) -> Dict:
+    """Return a two-field metadata/list response schema."""
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", array_name],
+        "properties": {
+            "metadata": {"$ref": metadata_ref},
+            array_name: {"type": "array", "items": {"$ref": item_ref}},
+        },
+    }
+
+
+def certificate_detail_schema() -> Dict:
+    """Return the per-certificate detail response schema."""
+    certificate_schema = {
+        "type": "object",
+        "additionalProperties": True,
+        "required": [
+            "certificate_number",
+            "dataset",
+            "generated_at",
+            "nist_page_url",
+            "certificate_detail_url",
+            "security_policy_url",
+            "vendor_name",
+            "module_name",
+            "standard",
+            "status",
+            "related_files",
+            "validation_history",
+            "vendor",
+        ],
+        "properties": {
+            "certificate_number": {"type": "string", "pattern": "^[0-9]+$"},
+            "dataset": {"type": "string", "enum": ["active", "historical"]},
+            "generated_at": {"type": "string", "format": "date-time"},
+            "nist_page_url": {"type": "string", "format": "uri"},
+            "certificate_detail_url": {"type": "string", "format": "uri"},
+            "security_policy_url": {"type": ["string", "null"], "format": "uri"},
+            "vendor_name": {"type": ["string", "null"]},
+            "module_name": {"type": ["string", "null"]},
+            "standard": {"type": ["string", "null"]},
+            "status": {"type": ["string", "null"]},
+            "related_files": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+            "validation_history": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+            "vendor": {"type": "object", "additionalProperties": True},
+            "algorithms": {"type": "array", "items": {"type": "string"}},
+            "algorithms_detailed": {"type": "array", "items": {"type": "string"}},
+            "algorithm_extraction": algorithm_extraction_schema(),
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", "certificate"],
+        "properties": {
+            "metadata": {
+                "type": "object",
+                "additionalProperties": True,
+                "required": ["generated_at", "dataset", "source"],
+            },
+            "certificate": certificate_schema,
+        },
+    }
+
+
+def algorithms_schema() -> Dict:
+    """Return the algorithms summary response schema."""
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["total_unique_algorithms", "total_certificate_algorithm_pairs", "algorithms", "metadata"],
+        "properties": {
+            "total_unique_algorithms": {"type": "integer", "minimum": 0},
+            "total_certificate_algorithm_pairs": {"type": "integer", "minimum": 0},
+            "algorithms": {
+                "type": "object",
+                "additionalProperties": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": ["count", "certificates"],
+                    "properties": {
+                        "count": {"type": "integer", "minimum": 0},
+                        "certificates": {"type": "array", "items": {"type": "integer"}},
+                    },
+                },
+            },
+            "metadata": {"type": "object", "additionalProperties": True},
+        },
+    }
+
+
+def build_schema_index_payload(algorithms_summary: Optional[Dict]) -> Dict:
+    """Build the JSON Schema discovery document."""
+    return {
+        "name": "NIST CMVP API JSON Schemas",
+        "schema_version": "1.0",
+        "base_url": PUBLIC_BASE_URL,
+        "schemas": schema_paths(algorithms_summary),
+    }
+
+
+def generate_json_schema_artifacts(algorithms_summary: Optional[Dict]) -> Dict[str, Dict]:
+    """Generate tracked JSON Schema artifacts for API response files."""
+    metadata_path = "/api/schemas/metadata.schema.json"
+    module_path = "/api/schemas/module.schema.json"
+    module_in_process_path = "/api/schemas/module-in-process.schema.json"
+    paths = schema_paths(algorithms_summary)
+    artifacts = {
+        "api/schemas/index.schema.json": json_schema_document(
+            "NIST CMVP API JSON Schema Index",
+            paths["index"],
+            {
+                "type": "object",
+                "additionalProperties": False,
+                "required": ["name", "schema_version", "base_url", "schemas"],
+                "properties": {
+                    "name": {"type": "string"},
+                    "schema_version": {"type": "string"},
+                    "base_url": {"type": "string", "format": "uri"},
+                    "schemas": {"type": "object", "additionalProperties": {"type": "string"}},
+                },
+                "examples": [build_schema_index_payload(algorithms_summary)],
+            },
+        ),
+        "api/schemas/metadata.schema.json": json_schema_document(
+            "NIST CMVP API Metadata",
+            paths["metadata"],
+            metadata_schema(),
+        ),
+        "api/schemas/module.schema.json": json_schema_document(
+            "NIST CMVP Module Row",
+            module_path,
+            module_schema(),
+        ),
+        "api/schemas/module-in-process.schema.json": json_schema_document(
+            "NIST CMVP Module In Process Row",
+            module_in_process_path,
+            module_in_process_schema(),
+        ),
+        "api/schemas/modules.schema.json": json_schema_document(
+            "NIST CMVP Active Modules Response",
+            paths["modules"],
+            response_schema(metadata_path, "modules", module_path),
+        ),
+        "api/schemas/historical-modules.schema.json": json_schema_document(
+            "NIST CMVP Historical Modules Response",
+            paths["historical_modules"],
+            response_schema(metadata_path, "modules", module_path),
+        ),
+        "api/schemas/modules-in-process.schema.json": json_schema_document(
+            "NIST CMVP Modules In Process Response",
+            paths["modules_in_process"],
+            response_schema(metadata_path, "modules_in_process", module_in_process_path),
+        ),
+        "api/schemas/certificate-detail.schema.json": json_schema_document(
+            "NIST CMVP Certificate Detail Response",
+            paths["certificate_detail"],
+            certificate_detail_schema(),
+        ),
+    }
+    if algorithms_summary:
+        artifacts["api/schemas/algorithms.schema.json"] = json_schema_document(
+            "NIST CMVP Algorithms Summary Response",
+            paths["algorithms"],
+            algorithms_schema(),
+        )
+    return artifacts
+
+
 def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> Dict:
     """Build the API index payload published at api/index.json."""
     endpoints = {
@@ -2352,6 +2974,7 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
         "base_url": PUBLIC_BASE_URL,
         "endpoints": endpoints,
         "documentation": documentation_paths(),
+        "schemas": schema_paths(algorithms_summary),
         "last_updated": metadata.get("generated_at"),
         "total_modules": metadata.get("total_modules", 0),
         "total_historical_modules": metadata.get("total_historical_modules", 0),
@@ -2362,11 +2985,14 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
             "security_policy_urls": True,
             "certificate_detail_urls": True,
             "algorithm_extraction": bool(algorithms_summary),
+            "algorithm_extraction_provenance": True,
+            "extraction_metrics": True,
             "certificate_detail_records": True,
             "llms_txt": True,
             "llms_full_txt": True,
             "markdown_api_docs": True,
             "openapi_spec": True,
+            "json_schemas": True,
         },
     }
 
@@ -2609,8 +3235,11 @@ def generate_openapi_spec(
                         "total_certificates_with_algorithms": {"type": "integer", "example": metadata.get("total_certificates_with_algorithms", 0)},
                         "total_certificate_details": {"type": "integer", "example": metadata.get("total_certificate_details", 0)},
                         "source": {"type": "string", "example": metadata.get("source", "")},
+                        "modules_in_process_source": {"type": "string", "example": metadata.get("modules_in_process_source", "")},
                         "algorithm_source": {"type": "string", "example": metadata.get("algorithm_source", "")},
                         "algorithm_cache_version": {"type": "string", "example": metadata.get("algorithm_cache_version", "")},
+                        "algorithm_extraction_schema_version": {"type": "string", "example": metadata.get("algorithm_extraction_schema_version", "")},
+                        "extraction_metrics": {"type": "object", "additionalProperties": True},
                         "version": {"type": "string", "example": metadata.get("version", "")}
                     }
                 },
@@ -2656,7 +3285,8 @@ def generate_openapi_spec(
                                     }
                                 }
                             }
-                        }
+                        },
+                        "metadata": {"type": "object", "additionalProperties": True}
                     }
                 },
                 "CertificateDetail": {
@@ -2843,6 +3473,8 @@ def main():
     certificate_detail_payloads.update(historical_payloads)
     algorithms_map.update(historical_algorithms)
 
+    extraction_metrics = build_extraction_metrics(active_stats, historical_stats)
+
     # Prepare output directory
     output_dir = "api"
 
@@ -2858,6 +3490,8 @@ def main():
         "modules_in_process_source": MODULES_IN_PROCESS_URL,
         "algorithm_source": algorithm_source,
         "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+        "algorithm_extraction_schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+        "extraction_metrics": extraction_metrics,
         "version": "3.0"
     }
 
@@ -2910,9 +3544,18 @@ def main():
         algorithms_summary["metadata"] = {
             "generated_at": metadata["generated_at"],
             "total_certificates_processed": len(algorithms_map),
-            "source": algorithm_source
+            "source": algorithm_source,
+            "algorithm_source": algorithm_source,
+            "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+            "algorithm_extraction_schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+            "extraction_metrics": extraction_metrics["combined"],
         }
         save_json(algorithms_summary, f"{output_dir}/algorithms.json")
+    else:
+        algorithms_path = Path(output_dir) / "algorithms.json"
+        if algorithms_path.exists():
+            algorithms_path.unlink()
+            print(f"Removed stale: {algorithms_path}")
 
     # Save metadata separately for quick access
     save_json(metadata, f"{output_dir}/metadata.json")
@@ -2942,6 +3585,18 @@ def main():
     ).items():
         save_text(content, path)
 
+    print("Generating JSON Schema artifacts...")
+    schema_artifacts = generate_json_schema_artifacts(algorithms_summary)
+    for path, schema in schema_artifacts.items():
+        save_json(schema, path)
+    schema_dir = Path(output_dir) / "schemas"
+    if schema_dir.exists():
+        expected_schema_paths = {Path(path) for path in schema_artifacts}
+        for stale_schema in schema_dir.glob("*.schema.json"):
+            if stale_schema not in expected_schema_paths:
+                stale_schema.unlink()
+                print(f"Removed stale: {stale_schema}")
+
     print("\n" + "=" * 60)
     print("Scraping completed successfully!")
     print("=" * 60)
@@ -2967,12 +3622,14 @@ def main():
         print(
             "  - Active algorithm reuse: "
             f"{active_stats['pdf_reused']} reused, {active_stats['pdf_refreshed']} refreshed, "
-            f"{active_stats['pdf_failed']} failed, {active_stats['algorithm_misses']} misses"
+            f"{active_stats['pdf_failed']} failed, {active_stats['pdf_cache_hits']} PDF cache hits, "
+            f"{active_stats['algorithm_misses']} misses"
         )
         print(
             "  - Historical algorithm reuse: "
             f"{historical_stats['pdf_reused']} reused, {historical_stats['pdf_refreshed']} refreshed, "
-            f"{historical_stats['pdf_failed']} failed, {historical_stats['algorithm_misses']} misses"
+            f"{historical_stats['pdf_failed']} failed, {historical_stats['pdf_cache_hits']} PDF cache hits, "
+            f"{historical_stats['algorithm_misses']} misses"
         )
     print(f"  - OpenAPI spec: openapi.json")
     print(f"\nOutput files saved to: {output_dir}/")

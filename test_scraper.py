@@ -4,6 +4,7 @@ Test script for the NIST CMVP scraper.
 Tests the parsing logic with sample HTML.
 """
 
+import asyncio
 import json
 import sys
 import tempfile
@@ -11,22 +12,37 @@ from pathlib import Path
 from types import SimpleNamespace
 from scraper import (
     ALGORITHM_CACHE_VERSION,
+    ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+    build_algorithm_extraction_provenance,
     build_certificate_fingerprint,
+    build_extraction_metrics,
     build_index_payload,
     extract_legacy_algorithm_section,
     extract_text_from_crawl4ai_process_result,
     extract_text_from_crawl4ai_html,
+    fetch_policy_pdf_bytes,
+    generate_json_schema_artifacts,
     generate_openapi_spec,
     generate_text_artifacts,
     parse_algorithms_from_policy_markdown,
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
     parse_modules_table,
+    process_certificate_record,
     prune_orphan_certificate_details,
     select_algorithm_source,
     should_reuse_certificate_detail,
     should_reuse_cached_algorithms,
 )
+from validate_api import validate_api
+
+
+FIXTURE_DIR = Path(__file__).parent / "tests" / "fixtures" / "nist_security_policies"
+
+
+def load_policy_fixture(name: str) -> str:
+    """Load a checked-in Security Policy text fixture."""
+    return (FIXTURE_DIR / name).read_text(encoding="utf-8")
 
 
 def test_parse_simple_table():
@@ -487,6 +503,44 @@ def test_extract_legacy_algorithm_section_prefers_body_over_toc():
     print("✓ Legacy algorithm section TOC preference test passed")
 
 
+def test_parse_real_world_fips_140_3_policy_fixture():
+    """Regression-test a representative FIPS 140-3 NIST Security Policy text fixture."""
+    policy_text = load_policy_fixture("5260_fips_140_3_algorithms.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert any("AES-CBC" in entry for entry in detailed), "Expected AES-CBC from FIPS 140-3 fixture"
+    assert any("HMAC SHA2-256" in entry for entry in detailed), "Expected HMAC from FIPS 140-3 fixture"
+    assert any("CTR_DRBG" in entry for entry in detailed), "Expected DRBG from FIPS 140-3 fixture"
+    assert categories == ["AES", "DRBG", "HMAC", "SHA"], "Expected normalized FIPS 140-3 categories"
+
+    print("✓ Real-world FIPS 140-3 fixture parsing test passed")
+
+
+def test_parse_real_world_fips_140_2_policy_fixture():
+    """Regression-test a representative FIPS 140-2 NIST Security Policy text fixture."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == [], "Legacy FIPS 140-2 fixture should use coarse categories"
+    assert categories == [
+        "AES",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHS",
+        "SSH",
+        "TLS",
+    ], "Expected normalized FIPS 140-2 categories"
+    assert "DES" not in categories, "Allowed/non-approved section must not leak into approved categories"
+
+    print("✓ Real-world FIPS 140-2 fixture parsing test passed")
+
+
 def test_parse_algorithms_from_policy_markdown():
     """Test parsing algorithm tables from policy markdown output."""
     markdown = """
@@ -664,6 +718,150 @@ def test_should_reuse_cached_algorithms():
     print("✓ Algorithm cache reuse test passed")
 
 
+def test_algorithm_extraction_provenance_and_metrics():
+    """Algorithm extraction provenance should expose source, cache, fallback, and counts."""
+    provenance = build_algorithm_extraction_provenance(
+        "crawl4ai",
+        "parsed",
+        "security_policy_pdf",
+        "https://csrc.nist.gov/example.pdf",
+        ["AES", "HMAC"],
+        ["AES-CBC A1", "HMAC SHA2-256 A1"],
+        cached=False,
+        fallback_used=True,
+        attempts=[
+            {"source": "crawl4ai", "url": "https://csrc.nist.gov/example.pdf", "status": "no_algorithms"},
+            {"source": "security_policy_pdf", "url": "https://csrc.nist.gov/example.pdf", "status": "parsed"},
+        ],
+    )
+
+    assert provenance["schema_version"] == ALGORITHM_EXTRACTION_SCHEMA_VERSION, "Provenance schema version mismatch"
+    assert provenance["configured_source"] == "crawl4ai", "Configured source should be recorded"
+    assert provenance["source"] == "security_policy_pdf", "Actual extraction source should be recorded"
+    assert provenance["fallback_used"] is True, "Fallback usage should be recorded"
+    assert provenance["algorithm_count"] == 2, "Algorithm category count mismatch"
+    assert provenance["detailed_algorithm_count"] == 2, "Detailed algorithm count mismatch"
+    assert len(provenance["attempts"]) == 2, "Attempt provenance should be retained for detail records"
+
+    active_stats = {"html_reused": 3, "algorithm_successes": 2, "algorithm_fallbacks": 1}
+    historical_stats = {"html_refreshed": 4, "algorithm_misses": 1}
+    metrics = build_extraction_metrics(active_stats, historical_stats)
+    assert metrics["combined"]["html_reused"] == 3, "Combined metrics should include active counters"
+    assert metrics["combined"]["html_refreshed"] == 4, "Combined metrics should include historical counters"
+    assert metrics["combined"]["algorithm_successes"] == 2, "Combined metrics should include successes"
+    assert metrics["combined"]["algorithm_misses"] == 1, "Combined metrics should include misses"
+    assert "concurrency" in metrics, "Extraction metrics should record concurrency settings"
+
+    print("✓ Algorithm provenance and metrics test passed")
+
+
+def test_fetch_policy_pdf_bytes_reuses_in_run_cache():
+    """Local Security Policy PDF fetches should be reused within one scrape run."""
+    class FakeResponse:
+        status_code = 200
+        headers = {}
+        text = ""
+        content = b"%PDF-1.7 fixture"
+
+        def raise_for_status(self):
+            return None
+
+    class FakeClient:
+        def __init__(self):
+            self.calls = 0
+
+        async def get(self, url):
+            self.calls += 1
+            await asyncio.sleep(0)
+            return FakeResponse()
+
+    async def scenario():
+        client = FakeClient()
+        pdf_cache = {}
+        pdf_cache_lock = asyncio.Lock()
+        first_bytes, first_hit = await fetch_policy_pdf_bytes(
+            client,
+            "https://csrc.nist.gov/example.pdf",
+            pdf_cache,
+            pdf_cache_lock,
+        )
+        second_bytes, second_hit = await fetch_policy_pdf_bytes(
+            client,
+            "https://csrc.nist.gov/example.pdf",
+            pdf_cache,
+            pdf_cache_lock,
+        )
+        return client.calls, first_bytes, first_hit, second_bytes, second_hit
+
+    calls, first_bytes, first_hit, second_bytes, second_hit = asyncio.run(scenario())
+
+    assert calls == 1, "Expected one network fetch for repeated policy URL"
+    assert first_bytes == b"%PDF-1.7 fixture", "First PDF fetch returned unexpected bytes"
+    assert second_bytes == first_bytes, "Second PDF fetch should reuse cached bytes"
+    assert first_hit is False, "First PDF fetch should not be a cache hit"
+    assert second_hit is True, "Second PDF fetch should be a cache hit"
+
+    print("✓ Policy PDF cache reuse test passed")
+
+
+def test_process_certificate_record_applies_cached_algorithm_provenance():
+    """Cached algorithm reuse should still attach explicit provenance to outputs."""
+    module = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/10/2026",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+    }
+    previous_detail = {
+        "certificate_number": "5238",
+        "software_versions": "3.0.9",
+        "hardware_versions": None,
+        "firmware_versions": None,
+        "security_policy_url": module["security_policy_url"],
+        "algorithms": ["AES", "HMAC"],
+        "algorithms_detailed": ["AES-CBC A1", "HMAC SHA2-256 A1"],
+        "algorithm_extraction": {
+            "source": "crawl4ai",
+            "source_url": module["security_policy_url"],
+        },
+    }
+    previous_metadata = {
+        "algorithm_source": "crawl4ai",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+    }
+
+    module_out, detail_payload, categories, stats = asyncio.run(
+        process_certificate_record(
+            module,
+            "active",
+            "2026-04-12T03:10:00.961597Z",
+            "crawl4ai",
+            module,
+            previous_detail,
+            previous_metadata,
+            None,
+            asyncio.Semaphore(1),
+            asyncio.Semaphore(1),
+            {},
+            asyncio.Lock(),
+            {},
+        )
+    )
+
+    assert categories == ["AES", "HMAC"], "Cached categories should be reused"
+    assert module_out["algorithm_extraction"]["status"] == "cached", "Module should record cached extraction status"
+    assert module_out["algorithm_extraction"]["source"] == "crawl4ai", "Cached source should be preserved"
+    assert detail_payload["algorithm_extraction"]["cached"] is True, "Detail should record cache provenance"
+    assert detail_payload["algorithm_extraction"]["algorithm_count"] == 2, "Detail algorithm count mismatch"
+    assert stats["pdf_reused"] == 1, "Cached algorithm reuse should increment pdf_reused"
+    assert stats["algorithm_cache_hits"] == 1, "Cached algorithm reuse should increment cache hits"
+
+    print("✓ Cached algorithm provenance application test passed")
+
+
 def test_prune_orphan_certificate_details():
     """Test that stale certificate detail files are removed only for missing certs."""
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -682,6 +880,15 @@ def test_prune_orphan_certificate_details():
     print("✓ Orphan certificate cleanup test passed")
 
 
+def test_validate_generated_api_artifacts():
+    """Current checked-in generated API artifacts should be internally consistent."""
+    errors = validate_api(Path("."))
+
+    assert errors == [], "Generated API artifact validation failed:\n" + "\n".join(errors[:20])
+
+    print("✓ Generated API artifact validation test passed")
+
+
 def test_generate_agent_docs():
     """Test the generated agent-friendly documentation artifacts."""
     metadata = {
@@ -694,6 +901,12 @@ def test_generate_agent_docs():
         "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
         "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
         "algorithm_source": "crawl4ai",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+        "algorithm_extraction_schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+        "extraction_metrics": build_extraction_metrics(
+            {"html_reused": 1, "pdf_reused": 1, "algorithm_cache_hits": 1},
+            {"html_refreshed": 1, "pdf_refreshed": 1, "algorithm_successes": 1},
+        ),
         "version": "3.0",
     }
     sample_module = {
@@ -711,6 +924,18 @@ def test_generate_agent_docs():
         "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
         "detail_available": True,
         "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
+        "algorithm_extraction": {
+            "schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+            "status": "cached",
+            "configured_source": "crawl4ai",
+            "source": "crawl4ai",
+            "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+            "cached": True,
+            "fallback_used": False,
+            "cache_version": ALGORITHM_CACHE_VERSION,
+            "algorithm_count": 3,
+            "detailed_algorithm_count": 0,
+        },
     }
     sample_detail = {
         "certificate_number": "5238",
@@ -744,6 +969,25 @@ def test_generate_agent_docs():
             {"date": "4/10/2026", "type": "Initial", "lab": "Example Lab"}
         ],
         "algorithms": ["AES", "HMAC", "RSA"],
+        "algorithm_extraction": {
+            "schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+            "status": "parsed",
+            "configured_source": "crawl4ai",
+            "source": "crawl4ai",
+            "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+            "cached": False,
+            "fallback_used": False,
+            "cache_version": ALGORITHM_CACHE_VERSION,
+            "algorithm_count": 3,
+            "detailed_algorithm_count": 12,
+            "attempts": [
+                {
+                    "source": "crawl4ai",
+                    "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+                    "status": "parsed",
+                }
+            ],
+        },
     }
     algorithms_summary = {
         "total_unique_algorithms": 45,
@@ -766,11 +1010,28 @@ def test_generate_agent_docs():
     assert "api/docs.md" in artifacts, "Missing Markdown API docs artifact"
     assert "api/algorithms.json" in artifacts["llms.txt"], "llms.txt should reference algorithms endpoint when available"
     assert 'href="api/docs.md"' in artifacts["index.html"], "Homepage should link to api/docs.md"
+    assert 'href="api/schemas/index.schema.json"' in artifacts["index.html"], "Homepage should link to JSON schemas"
     assert "GET api/certificates/{certificate}.json" in artifacts["api/docs.md"], "API docs should include certificate detail endpoint"
+    assert "GET api/schemas/index.schema.json" in artifacts["api/docs.md"], "API docs should include JSON schema endpoint"
+    assert "algorithm_extraction" in artifacts["api/docs.md"], "API docs should describe extraction provenance"
 
     index_payload = build_index_payload(metadata, algorithms_summary)
     assert index_payload["documentation"]["llms_full_txt"] == "/llms-full.txt", "Index payload should advertise llms-full.txt"
+    assert index_payload["documentation"]["json_schemas"] == "/api/schemas/index.schema.json", "Index payload should advertise JSON schemas"
+    assert index_payload["schemas"]["certificate_detail"] == "/api/schemas/certificate-detail.schema.json", "Index payload should advertise certificate detail schema"
     assert index_payload["features"]["markdown_api_docs"] is True, "Index payload should advertise Markdown docs support"
+    assert index_payload["features"]["algorithm_extraction_provenance"] is True, "Index payload should advertise extraction provenance"
+    assert index_payload["features"]["extraction_metrics"] is True, "Index payload should advertise extraction metrics"
+    assert index_payload["features"]["json_schemas"] is True, "Index payload should advertise JSON schema support"
+
+    schema_artifacts = generate_json_schema_artifacts(algorithms_summary)
+    assert "api/schemas/modules.schema.json" in schema_artifacts, "Missing modules JSON schema"
+    assert "api/schemas/module-in-process.schema.json" in schema_artifacts, "Missing module-in-process JSON schema"
+    assert "api/schemas/certificate-detail.schema.json" in schema_artifacts, "Missing certificate detail JSON schema"
+    assert "api/schemas/algorithms.schema.json" in schema_artifacts, "Missing algorithms JSON schema"
+    assert schema_artifacts["api/schemas/modules-in-process.schema.json"]["properties"]["modules_in_process"]["items"]["$ref"] == "/api/schemas/module-in-process.schema.json", "Modules-in-process response should use its own row schema"
+    assert schema_artifacts["api/schemas/module.schema.json"]["properties"]["algorithm_extraction"]["type"] == "object", "Module schema should include extraction provenance"
+    assert schema_artifacts["api/schemas/certificate-detail.schema.json"]["properties"]["certificate"]["properties"]["algorithm_extraction"]["type"] == "object", "Certificate detail schema should include extraction provenance"
 
     openapi = generate_openapi_spec(
         [sample_module],
@@ -782,10 +1043,14 @@ def test_generate_agent_docs():
     assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
     module_properties = openapi["components"]["schemas"]["Module"]["properties"]
     certificate_properties = openapi["components"]["schemas"]["CertificateDetail"]["properties"]
+    metadata_properties = openapi["components"]["schemas"]["Metadata"]["properties"]
     for key in ("software_versions", "hardware_versions", "firmware_versions"):
         assert key in module_properties, f"OpenAPI module schema should include {key}"
         assert key in certificate_properties, f"OpenAPI certificate detail schema should include {key}"
         assert module_properties[key]["nullable"] is True, f"OpenAPI module schema should mark {key} nullable"
+    assert "algorithm_extraction" in module_properties, "OpenAPI module schema should include algorithm_extraction"
+    assert "algorithm_extraction" in certificate_properties, "OpenAPI certificate schema should include algorithm_extraction"
+    assert "extraction_metrics" in metadata_properties, "OpenAPI metadata schema should include extraction metrics"
 
     print("✓ Agent-friendly docs generation test passed")
 
@@ -808,13 +1073,19 @@ def main():
         test_parse_algorithms_from_policy_text()
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
+        test_parse_real_world_fips_140_3_policy_fixture()
+        test_parse_real_world_fips_140_2_policy_fixture()
         test_parse_algorithms_from_policy_markdown()
         test_extract_text_from_crawl4ai_html()
         test_extract_text_from_crawl4ai_process_result()
         test_select_algorithm_source()
         test_build_certificate_fingerprint()
         test_should_reuse_cached_algorithms()
+        test_algorithm_extraction_provenance_and_metrics()
+        test_fetch_policy_pdf_bytes_reuses_in_run_cache()
+        test_process_certificate_record_applies_cached_algorithm_provenance()
         test_prune_orphan_certificate_details()
+        test_validate_generated_api_artifacts()
         test_generate_agent_docs()
         
         print()

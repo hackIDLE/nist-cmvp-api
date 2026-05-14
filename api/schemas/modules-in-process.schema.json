@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/modules-in-process.schema.json",
+  "title": "NIST CMVP Modules In Process Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "modules_in_process"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "/api/schemas/metadata.schema.json"
+    },
+    "modules_in_process": {
+      "type": "array",
+      "items": {
+        "$ref": "/api/schemas/module-in-process.schema.json"
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ on:
       - main
     paths:
       - 'scraper.py'
+      - 'validate_api.py'
       - 'requirements.txt'
       - '.github/workflows/update-data.yml'
 
@@ -48,6 +49,10 @@ jobs:
           SKIP_ALGORITHMS: ${{ github.event.inputs.skip_algorithms == 'true' && '1' || '0' }}
         run: |
           python scraper.py
+
+      - name: Validate generated API artifacts
+        run: |
+          python validate_api.py --require-current-schema --forbid-firecrawl-run-source
 
       - name: Check for changes
         id: git-check
