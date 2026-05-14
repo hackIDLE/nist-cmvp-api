@@ -1916,10 +1916,18 @@ async def build_certificate_artifacts(
         follow_redirects=True,
         timeout=timeout,
     ) as client:
-        tasks = []
-        for index, module in enumerate(modules):
+        pending_tasks: Set[asyncio.Task] = set()
+        next_index = 0
+        task_window = max(CERT_FETCH_CONCURRENCY, PDF_FETCH_CONCURRENCY)
+
+        def schedule_next_certificate() -> None:
+            nonlocal next_index
+            if next_index >= len(modules):
+                return
+            index = next_index
+            module = modules[index]
             cert_number = parse_certificate_number(module)
-            tasks.append(
+            pending_tasks.add(
                 asyncio.create_task(
                     process_certificate_record_with_timeout(
                         index,
@@ -1939,24 +1947,34 @@ async def build_certificate_artifacts(
                     )
                 )
             )
+            next_index += 1
 
-        total = len(tasks)
+        total = len(modules)
+        for _ in range(min(task_window, total)):
+            schedule_next_certificate()
+
         completed = 0
-        for task in asyncio.as_completed(tasks):
-            index, module_out, detail_payload, categories, task_stats = await task
-            completed += 1
-            results[index] = module_out
-            cert_number = parse_certificate_number(module_out)
-            if cert_number is not None and detail_payload is not None:
-                payloads[cert_number] = detail_payload
-            if cert_number is not None and categories:
-                algorithms_map[cert_number] = categories
-            add_processing_stats(stats, task_stats)
-            if completed % 100 == 0 or completed == total:
-                print(
-                    f"  Progress: {completed}/{total} "
-                    f"({stats['html_reused']} reused, {stats['html_refreshed']} refreshed, {stats['html_failed']} failed)"
-                )
+        while pending_tasks:
+            done, pending_tasks = await asyncio.wait(
+                pending_tasks,
+                return_when=asyncio.FIRST_COMPLETED,
+            )
+            for task in done:
+                index, module_out, detail_payload, categories, task_stats = await task
+                completed += 1
+                results[index] = module_out
+                cert_number = parse_certificate_number(module_out)
+                if cert_number is not None and detail_payload is not None:
+                    payloads[cert_number] = detail_payload
+                if cert_number is not None and categories:
+                    algorithms_map[cert_number] = categories
+                add_processing_stats(stats, task_stats)
+                schedule_next_certificate()
+                if completed % 100 == 0 or completed == total:
+                    print(
+                        f"  Progress: {completed}/{total} "
+                        f"({stats['html_reused']} reused, {stats['html_refreshed']} refreshed, {stats['html_failed']} failed)"
+                    )
 
     return [result or {} for result in results], payloads, algorithms_map, stats
 
