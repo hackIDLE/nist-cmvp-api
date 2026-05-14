@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089"
   },
   "certificate": {
     "certificate_number": "5089",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5089.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 123
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -190,18 +202,6 @@
       "SHA3-384 | A5721 | Message Length - Message Length:0-65536 Increment 8Large Message Sizes-1,2 | FIPS 202",
       "SHA3-512 | A5721 | Message Length - Message Length:0-65536 Increment 8Large Message Sizes-1,2 | FIPS 202",
       "Encryption with AES | BC-UnAuth | Encrypt a plaintext with AES | Key size(s):128,192,256 bits(XTS mode 128 and 256 bits only) | AES-CBC:(A5720,A5726,A5729)AES-CBC-CS3:(A5723,A5733)AES-CFB128:(A5722,A5732)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 123
-    }
+    ]
   }
 }

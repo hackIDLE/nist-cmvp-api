@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142"
   },
   "certificate": {
     "certificate_number": "5142",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5142.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 202
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -154,7 +166,7 @@
       "MessageHashing | Used to generate amessage digest, SHAKEoutput | Flag | Message | Hash | SHS, SHA-3,SHAKE, SHA-3 DerivedFunctions(cSHAKE,TupleHash,ParallelHash) | N/A | CO /User | N/A",
       "KeyedMessageHashing | Used to calculate dataintegrity codes with HMACand KMAC | Flag | Key,Message | Hash | HMAC,SHA-3DerivedFunctions(KMAC) | HMACAuthentication Key,KMACAuthentication Key | CO /User | E",
       "TLS KeyDerivationFunction | Used to calculate a valuesuitable to be used for amaster secret in TLS | Flag | TLSParameters | Data | HKDF,ExistingApplication-Specific (TLSKDF) | TLS KDF SecretValue | CO /User | E",
-      "SSHDerivationFunction | Used to calculate a valuesuitable to be used for asecret key | Flag | SSHParameters | Data | ExistingApplication-Specific (SSHKDF) | SSH KDF SecretValue | CO /User | E:",
+      "SSHDerivationFunction | Used to calculate a valuesuitable to be used for asecret key | Flag | SSHParameters | Data | ExistingApplication-Specific (SSHKDF) | SSH KDF SecretValue | CO /User | E",
       "X9.63DerivationFunction | Used to calculate a valuesuitable to be used for asecret key | Flag | X9.63Parameters | Data | ExistingApplication-Specific(X9.63 KDF) | DH AgreementPrivate Key,EC AgreementPrivate Key,RSA Signing KeyX9.63 KDF SecretValue | CO /UserCO /User | G",
       "IKEv2DerivationFunction | Used to calculate a valuesuitable to be used for asecret key | Flag | IKEv2Parameters | Data | ExistingApplication-Specific(IKEv2 KDF) | IKEv2 KDF SecretValue | CO /User | E",
       "SRTPDerivationFunction | Used to calculate a valuesuitable to be used for asecret key | Flag | SRTPParameters | Data | ExistingApplication-Specific(SRTP KDF) | SRTP KDF SecretValue | CO /User | E",
@@ -178,10 +190,10 @@
       "KeyUnwrapping | Used to decrypt a key value | Flag | Triple-DES KW | CO / User",
       "AES Encryption | 128, 192, 256 | AES CBC, | DRBG20 | Import²21, | N/A | N/A | destroy() servicecall or hostplatform powercycle | AESencryption23",
       "Key | bits | AES CFB8, | Export²22",
-      "AESCFB128,AES CTR,",
-      "AES ECB,",
-      "AES FF1,",
-      "AES OFB,",
+      "AESCFB128,AES CTR",
+      "AES ECB",
+      "AES FF1",
+      "AES OFB",
       "AES CBC-",
       "CCM, AES",
       "AES DecryptionKey | 128, 192, 256bits | AES CBC, | DRBG20 | Import²21, | N/A | N/A | destroy() servicecall or hostplatform powercycle | AESdecryption",
@@ -280,18 +292,6 @@
       "RSA | Rivest Shamir Adleman",
       "SHA | Secure Hash Algorithm",
       "TLS | Transport Layer Security"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 16,
-      "detailed_algorithm_count": 202
-    }
+    ]
   }
 }

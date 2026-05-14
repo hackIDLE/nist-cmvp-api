@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926"
   },
   "certificate": {
     "certificate_number": "4926",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4926.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 97
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -96,7 +108,7 @@
       "KAS‐ECC‐SSC Sp800‐56Ar3 | A4481 | Domain Parameter Generation Methods ‐ B‐233, B‐283, B‐409, B‐571, K‐233, K‐283, K‐409, K‐571, P‐224, | P‐256, P‐384, P‐521 | Scheme ‐ | ephemeralUnified ‐ | KAS Role ‐ initiator, responder | SP 800‐56A | Rev. 3",
       "KAS‐FFC‐SSC Sp800‐56Ar3 | A4481 | Domain Parameter Generation Methods ‐ FB, FC, ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, | modp‐2048, modp‐3072, modp‐4096, modp‐6144, modp‐8192 | Scheme ‐ | dhEphem ‐ | KAS Role ‐ initiator, responder | SP 800‐56A | Rev. 3",
       "KAS‐IFC‐SSC | A4481 | Modulo ‐ 2048, 3072, 4096, 6144, 8192 | Key Generation Methods ‐ rsakpg1‐basic, rsakpg1‐crt, rsakpg1‐prime‐factor, rsakpg2‐basic, rsakpg2‐crt, | rsakpg2‐prime‐factor | Scheme ‐ | KAS1 ‐ | KAS Role ‐ initiator, responder | KAS2 ‐ | KAS Role ‐ initiator, responder | SP 800‐56A | Rev. 3",
-      "KDA HKDF SP800‐56Cr2 | A4481 | Derived Key Length ‐ 2048 | Shared Secret Length ‐ Shared Secret Length: 224‐8192 Increment 8 | HMAC Algorithm ‐ SHA‐1, SHA2‐224, SHA2‐256, SHA2‐384, SHA2‐512, SHA2‐512/224, SHA2‐512/256,",
+      "KDA HKDF SP800‐56Cr2 | A4481 | Derived Key Length ‐ 2048 | Shared Secret Length ‐ Shared Secret Length: 224‐8192 Increment 8 | HMAC Algorithm ‐ SHA‐1, SHA2‐224, SHA2‐256, SHA2‐384, SHA2‐512, SHA2‐512/224, SHA2‐512/256",
       "SHA3‐224, SHA3‐256, SHA3‐384, SHA3‐512 | SP 800‐56C | Rev. 2",
       "KDA OneStep SP800‐56Cr2 | A4481 | Derived Key Length ‐ 2048 | Shared Secret Length ‐ Shared Secret Length: 224‐8192 Increment 8 | SP 800‐56C | Rev. 2 | FIPS 140‐3 Security Policy | Tanium FIPS OpenSSL 3.0 Module | This non‐proprietary Security Policy document may be freely reproduced and distributed in its entirety without modification.",
       "KDA TwoStep SP800‐56Cr2 | A4481 | MAC Salting Methods ‐ default, random",
@@ -173,18 +185,6 @@
       "RSA SigVer (FIPS186‐5) | A4481 | Modulo ‐ 2048, 3072, 4096 | Signature Type ‐ pkcs1v1.5, pss | FIPS 186‐5 | FIPS 140‐3 Security Policy | Tanium FIPS OpenSSL 3.0 Module | This non‐proprietary Security Policy document may be freely reproduced and distributed in its entirety without modification. | Vendor‐Affirmed Algorithms: | Name | Implementation | CKG Section 4 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 5 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 6.2 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2",
       "Hash DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1",
       "HMAC DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1 | Non‐Approved, Allowed Algorithms: | N/A for this module. | Non‐Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non‐Approved, Not Allowed Algorithms: | N/A for this Module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 97
-    }
+    ]
   }
 }

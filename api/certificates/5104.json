@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5104"
   },
   "certificate": {
     "certificate_number": "5104",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5104",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5104",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5104.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 144
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -121,7 +133,7 @@
       "Key DerivationTLS 1.2 | KAS-135KDF | Key derivation tosupport callingapplication'sTLS implement | TLS v1.2 KDFRFC7627:(A5370)HMAC-SHA2-256: (A5370)",
       "Key DerivationTLS 1.3 | KAS-135KDF | Key derivation tosupport callingapplication'sTLS implement | TLS v1.3 KDF:(A5370)HMAC-SHA2-256: (A5370)SHA2-256:(A5370)HMAC-SHA2-384: (A5370)SHA2-384:(A5370)",
       "AES-KeyWrap | BC-Auth | Symmetric keywrapping tosupport callingapplication's keytransport | Caveat:providing128, 192, or 256bits ofencryptionstrength | AES-KW:(A5370)AES-KWP:(A5370)",
-      "MessageAuthentication | MAC | Messageauthentication ofcallingapplication data | AES-GMAC:(A5370)HMAC-SHA-1:(A5370)Key Size: 112-bit or greaterHMAC-SHA2-224: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-256: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-384: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-512: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-512/256:",
+      "MessageAuthentication | MAC | Messageauthentication ofcallingapplication data | AES-GMAC:(A5370)HMAC-SHA-1:(A5370)Key Size: 112-bit or greaterHMAC-SHA2-224: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-256: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-384: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-512: (A5370)Key Size: 112-bit or greaterHMAC-SHA2-512/256",
       "Random BitGeneration | DRBG | Random BitGeneration | Counter DRBG:(A5370)AES-EB:(A5370)",
       "SignatureGeneration | DigSig-SigGen | Digital signaturegeneration tosupport callingapplication | ECDSA SigGen(FIPS186-5):(A5370)RSA SigGen(FIPS186-5):(A5370)SHA2-224:(A5370)SHA2-256:(A5370)SHA2-384:(A5370)SHA2-512:(A5370)SHA2-512/256:(A5370)",
       "Signature KeyGeneration | AsymKeyPair-KeyGen | Generation ofdigital signaturekey pairs | ECDSA KeyGen(FIPS186-5):A5370)RSA KeyGen(FIPS186-5):(A5370)CG: ()Key Type:AsymmetricCounter DRBG:(A5370)AES-EB:(A5370)",
@@ -217,18 +229,6 @@
       "RSA KeyGenPCT | Sign/Verify PCT | PCT | n/a | n/a",
       "KAS-ECC-SSCSp800-56Ar3PCT | SP 800-56Arev3validity tests | PCT | n/a | n/a",
       "KAS-FFC-SSCSp800-56Ar3PCT | SP 800-56Arev3validity tests | PCT | n/a | n/a"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 144
-    }
+    ]
   }
 }

@@ -34,7 +34,7 @@ import sqlite3
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 from urllib.parse import urljoin
@@ -173,6 +173,7 @@ PDF_NOISE_PREFIXES = (
     "copyright",
     "this non-proprietary",
     "fips 140-3 security policy",
+    "fips 140-3 non-proprietary security policy",
     "fips 140-2 non-proprietary security policy",
     "non-proprietary security policy",
     "page ",
@@ -185,6 +186,37 @@ PDF_NOISE_PREFIXES = (
     "approved algorithms",
     "vendor-affirmed algorithms",
     "vendor affirmed algorithms",
+)
+ALGORITHM_ENTRY_STOP_PHRASES = (
+    "fips 140-3 non-proprietary security policy",
+    "fips 140-2 non-proprietary security policy",
+    "non-proprietary security policy",
+    "this document can be reproduced",
+    "this document may be reproduced",
+    "non-approved, allowed algorithms",
+    "non-approved allowed algorithms",
+    "non-approved, not allowed algorithms",
+    "non-approved not allowed algorithms",
+    "non-approved, allowed algorithms with no security claimed",
+    "non-approved allowed algorithms with no security claimed",
+    "name use and function",
+    "critical security parameters",
+)
+ALGORITHM_ENTRY_DROP_PARTS = {
+    "algorithm",
+    "cavp cert",
+    "cert",
+    "reference",
+    "properties",
+    "use",
+    "function",
+    "notes",
+}
+ALGORITHM_ENTRY_DROP_PATTERNS = (
+    re.compile(r"^page\s+\d+(?:\s+of\s+\d+)?$", re.IGNORECASE),
+    re.compile(r"^table\s+\d+\b", re.IGNORECASE),
+    re.compile(r"^(?:copyright|\(c\)|©)\b", re.IGNORECASE),
+    re.compile(r"^©\s+\d{4}\b", re.IGNORECASE),
 )
 PDF_CONTINUATION_PREFIXES = (
     "key length",
@@ -420,6 +452,8 @@ def build_algorithm_extraction_provenance(
     attempts: Optional[List[Dict[str, str]]] = None,
 ) -> Dict[str, object]:
     """Build the per-certificate provenance object for algorithm extraction."""
+    cleaned_categories = normalize_string_list(categories or [])
+    cleaned_details = sanitize_algorithm_details(detailed or [])
     provenance = {
         "schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
         "status": status,
@@ -429,8 +463,8 @@ def build_algorithm_extraction_provenance(
         "cached": cached,
         "fallback_used": fallback_used,
         "cache_version": ALGORITHM_CACHE_VERSION,
-        "algorithm_count": len(normalize_string_list(categories or [])),
-        "detailed_algorithm_count": len(normalize_string_list(detailed or [])),
+        "algorithm_count": len(cleaned_categories),
+        "detailed_algorithm_count": len(cleaned_details),
     }
     if attempts is not None:
         provenance["attempts"] = attempts
@@ -485,13 +519,27 @@ def strip_algorithm_fields(record: Dict) -> None:
     record.pop("algorithms_detailed", None)
 
 
+def sanitize_algorithm_details(detailed: Optional[List[str]]) -> List[str]:
+    """Normalize and clean detailed algorithm rows from fresh or cached extraction."""
+    cleaned_entries: List[str] = []
+    for entry in detailed or []:
+        cleaned = format_algorithm_entry([str(entry)])
+        if not cleaned:
+            continue
+        if not any(pattern.search(cleaned) for _, pattern in ALGORITHM_CATEGORY_PATTERNS):
+            continue
+        cleaned_entries.append(cleaned)
+    return normalize_string_list(cleaned_entries)
+
+
 def apply_algorithm_fields(record: Dict, categories: List[str], detailed: List[str]) -> None:
     """Apply normalized algorithm fields to a module row or detail payload."""
     strip_algorithm_fields(record)
     if categories:
         record["algorithms"] = normalize_string_list(categories)
-    if detailed:
-        record["algorithms_detailed"] = normalize_string_list(detailed)
+    cleaned_details = sanitize_algorithm_details(detailed)
+    if cleaned_details:
+        record["algorithms_detailed"] = cleaned_details
 
 
 def make_absolute_url(url: str) -> str:
@@ -924,7 +972,7 @@ def cached_algorithm_fields(previous_module: Optional[Dict], previous_detail: Op
         or (previous_module or {}).get("algorithms_detailed")
         or []
     )
-    return categories, detailed
+    return categories, sanitize_algorithm_details(detailed)
 
 
 def should_reuse_cached_algorithms(
@@ -1071,6 +1119,10 @@ def is_policy_noise_line(line: str) -> bool:
     lower = line.lower()
     if not lower:
         return True
+    if lower in ALGORITHM_ENTRY_DROP_PARTS:
+        return True
+    if any(pattern.search(line) for pattern in ALGORITHM_ENTRY_DROP_PATTERNS):
+        return True
     if lower.endswith("cryptographic module"):
         return True
     if lower in PDF_SECTION_LABELS:
@@ -1093,9 +1145,41 @@ def is_algorithm_entry_start(line: str) -> bool:
     return any(pattern.search(line) for _, pattern in ALGORITHM_CATEGORY_PATTERNS)
 
 
+def trim_algorithm_entry_part(part: str) -> str:
+    """Remove PDF table/page boilerplate that leaks into algorithm rows."""
+    text = normalize_whitespace(part)
+    if not text:
+        return ""
+
+    lower = text.lower()
+    for phrase in ALGORITHM_ENTRY_STOP_PHRASES:
+        index = lower.find(phrase)
+        if index >= 0:
+            text = text[:index]
+            lower = text.lower()
+            break
+
+    text = normalize_whitespace(text).strip(" |;:,")
+    if not text:
+        return ""
+
+    lower = text.lower()
+    if lower in ALGORITHM_ENTRY_DROP_PARTS:
+        return ""
+    if any(pattern.search(text) for pattern in ALGORITHM_ENTRY_DROP_PATTERNS):
+        return ""
+    return text
+
+
 def format_algorithm_entry(parts: List[str]) -> str:
     """Collapse a parsed algorithm row into a single line for JSON output."""
-    return normalize_whitespace(" | ".join(part for part in parts if part))
+    cleaned_parts: List[str] = []
+    for part in parts:
+        cleaned = trim_algorithm_entry_part(part)
+        if not cleaned:
+            continue
+        cleaned_parts.append(cleaned)
+    return normalize_whitespace(" | ".join(cleaned_parts))
 
 
 def categorize_algorithm_entry(entry: str) -> List[str]:
@@ -2424,6 +2508,436 @@ def build_certificate_index_payload(
     }
 
 
+def parse_generated_at(value: Optional[str]) -> Optional[datetime]:
+    """Parse the scraper timestamp format used in metadata."""
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def next_weekly_run_after(value: Optional[str]) -> Optional[str]:
+    """Return the next Sunday 02:00 UTC run after the given timestamp."""
+    generated_at = parse_generated_at(value)
+    if generated_at is None:
+        return None
+    generated_at = generated_at.astimezone(timezone.utc)
+    days_until_sunday = (6 - generated_at.weekday()) % 7
+    candidate = generated_at.replace(hour=2, minute=0, second=0, microsecond=0) + timedelta(days=days_until_sunday)
+    if candidate <= generated_at:
+        candidate += timedelta(days=7)
+    return candidate.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def safe_ratio(numerator: int, denominator: int) -> Optional[float]:
+    """Return a rounded ratio when the denominator is non-zero."""
+    if denominator <= 0:
+        return None
+    return round(numerator / denominator, 6)
+
+
+def build_quality_check(name: str, passed: bool, value, threshold=None) -> Dict:
+    """Build one data-quality monitor check."""
+    check = {
+        "name": name,
+        "status": "pass" if passed else "warn",
+        "value": value,
+    }
+    if threshold is not None:
+        check["threshold"] = threshold
+    return check
+
+
+def certificate_refresh_reason(
+    module: Dict,
+    dataset: str,
+    previous_module: Optional[Dict],
+    previous_detail: Optional[Dict],
+    full_refresh: bool = FULL_REFRESH,
+) -> Optional[str]:
+    """Explain why the latest run could not reuse a cached certificate detail."""
+    if full_refresh:
+        return "full_refresh"
+    if previous_module is None:
+        return "new_certificate"
+    if previous_detail is None:
+        return "missing_cached_detail"
+
+    current_fingerprint = build_certificate_fingerprint(module, dataset)
+    previous_fingerprint = build_certificate_fingerprint(previous_module, dataset)
+    if previous_fingerprint != current_fingerprint:
+        return "summary_changed"
+
+    missing_fields = [
+        field
+        for field in DETAIL_SCHEMA_REQUIRED_FIELDS
+        if field not in previous_detail
+    ]
+    if missing_fields:
+        return "cached_detail_schema_gap"
+    return None
+
+
+def changed_fingerprint_fields(module: Dict, previous_module: Optional[Dict]) -> List[Dict]:
+    """Return summary fields that changed since the previous output."""
+    if not previous_module:
+        return []
+    changes = []
+    for field in CACHE_FINGERPRINT_FIELDS:
+        previous_value = previous_module.get(field)
+        current_value = module.get(field)
+        if previous_value == current_value:
+            continue
+        changes.append(
+            {
+                "field": field,
+                "previous": previous_value,
+                "current": current_value,
+            }
+        )
+    return changes
+
+
+def quality_certificate_record(
+    module: Dict,
+    dataset: str,
+    detail_payload: Optional[Dict] = None,
+    reason: Optional[str] = None,
+) -> Dict:
+    """Build a compact certificate reference for quality reports."""
+    detail_payload = detail_payload or {}
+    cert_number = parse_certificate_number(detail_payload) or parse_certificate_number(module)
+    record = {
+        "certificate_number": str(cert_number) if cert_number is not None else None,
+        "dataset": dataset,
+        "path": f"/api/certificates/{cert_number}.json" if cert_number is not None else None,
+        "vendor_name": first_non_empty(detail_payload.get("vendor_name"), module.get("Vendor Name")),
+        "module_name": first_non_empty(detail_payload.get("module_name"), module.get("Module Name")),
+        "standard": first_non_empty(detail_payload.get("standard"), module.get("standard"), module.get("Standard")),
+        "status": first_non_empty(detail_payload.get("status"), module.get("status"), module.get("Status")),
+    }
+    if reason:
+        record["reason"] = reason
+    return record
+
+
+def build_update_monitor(metadata: Dict, combined_metrics: Dict[str, int]) -> Dict:
+    """Build a small run-health summary that can be monitored after each update."""
+    html_total = (
+        combined_metrics.get("html_reused", 0)
+        + combined_metrics.get("html_refreshed", 0)
+        + combined_metrics.get("html_failed", 0)
+    )
+    algorithm_total = (
+        combined_metrics.get("algorithm_successes", 0)
+        + combined_metrics.get("algorithm_misses", 0)
+    )
+    html_reuse_rate = safe_ratio(combined_metrics.get("html_reused", 0), html_total)
+    algorithm_success_rate = safe_ratio(combined_metrics.get("algorithm_successes", 0), algorithm_total)
+
+    checks = [
+        build_quality_check(
+            "html_cache_reuse_rate",
+            html_reuse_rate is None or html_reuse_rate >= 0.9,
+            html_reuse_rate,
+            0.9,
+        ),
+        build_quality_check(
+            "html_failures",
+            combined_metrics.get("html_failed", 0) == 0,
+            combined_metrics.get("html_failed", 0),
+            0,
+        ),
+        build_quality_check(
+            "certificate_timeouts",
+            combined_metrics.get("certificate_timeouts", 0) == 0,
+            combined_metrics.get("certificate_timeouts", 0),
+            0,
+        ),
+        build_quality_check(
+            "algorithm_success_rate",
+            metadata.get("algorithm_source") == "none"
+            or algorithm_success_rate is None
+            or algorithm_success_rate >= 0.9,
+            algorithm_success_rate,
+            0.9,
+        ),
+        build_quality_check(
+            "algorithm_source_supported",
+            metadata.get("algorithm_source") != "firecrawl",
+            metadata.get("algorithm_source"),
+        ),
+    ]
+
+    return {
+        "status": "pass" if all(check["status"] == "pass" for check in checks) else "warn",
+        "schedule": "0 2 * * 0",
+        "schedule_description": "Weekly on Sunday at 02:00 UTC",
+        "latest_run_generated_at": metadata.get("generated_at"),
+        "next_scheduled_run": next_weekly_run_after(metadata.get("generated_at")),
+        "latest_run_metrics": combined_metrics,
+        "checks": checks,
+    }
+
+
+def build_data_quality_report(
+    metadata: Dict,
+    modules: List[Dict],
+    historical_modules: List[Dict],
+    detail_payloads: Dict[int, Dict],
+    previous_outputs: Dict[str, object],
+    active_stats: Dict[str, int],
+    historical_stats: Dict[str, int],
+) -> Dict:
+    """Build a compact report of misses, refreshes, fallbacks, and changed certs."""
+    previous_modules = previous_outputs.get("modules", {}) if isinstance(previous_outputs, dict) else {}
+    previous_details = previous_outputs.get("details", {}) if isinstance(previous_outputs, dict) else {}
+    extraction_metrics = metadata.get("extraction_metrics") or build_extraction_metrics(active_stats, historical_stats)
+    combined_metrics = extraction_metrics.get("combined") or combine_processing_stats(active_stats, historical_stats)
+
+    misses: List[Dict] = []
+    refreshed_records: List[Dict] = []
+    fallback_usage: List[Dict] = []
+    changed_certificates: List[Dict] = []
+
+    for dataset, records in (("active", modules), ("historical", historical_modules)):
+        dataset_previous_modules = previous_modules.get(dataset, {}) if isinstance(previous_modules, dict) else {}
+        for module in records:
+            cert_number = parse_certificate_number(module)
+            detail_payload = detail_payloads.get(cert_number) if cert_number is not None else None
+            previous_module = dataset_previous_modules.get(cert_number) if cert_number is not None else None
+            previous_detail = previous_details.get(cert_number) if cert_number is not None and isinstance(previous_details, dict) else None
+
+            refresh_reason = certificate_refresh_reason(
+                module,
+                dataset,
+                previous_module,
+                previous_detail,
+            )
+            if refresh_reason and detail_payload:
+                refresh_record = quality_certificate_record(module, dataset, detail_payload, refresh_reason)
+                field_changes = changed_fingerprint_fields(module, previous_module)
+                if field_changes:
+                    refresh_record["changed_fields"] = field_changes
+                if refresh_reason == "cached_detail_schema_gap" and previous_detail:
+                    refresh_record["missing_fields"] = [
+                        field
+                        for field in DETAIL_SCHEMA_REQUIRED_FIELDS
+                        if field not in previous_detail
+                    ]
+                refreshed_records.append(refresh_record)
+                if refresh_reason in {"new_certificate", "summary_changed"}:
+                    changed_certificates.append(refresh_record)
+
+            if module.get("detail_available") is not True:
+                misses.append(quality_certificate_record(module, dataset, detail_payload, "certificate_detail_unavailable"))
+
+            extraction = first_non_empty(
+                (detail_payload or {}).get("algorithm_extraction"),
+                module.get("algorithm_extraction"),
+            )
+            if not isinstance(extraction, dict):
+                continue
+
+            if extraction.get("status") == "miss":
+                miss_record = quality_certificate_record(module, dataset, detail_payload, "algorithm_extraction_miss")
+                miss_record["source"] = extraction.get("source")
+                miss_record["source_url"] = extraction.get("source_url")
+                misses.append(miss_record)
+
+            attempts = extraction.get("attempts") or []
+            if extraction.get("fallback_used") is True or len(attempts) > 1:
+                fallback_record = quality_certificate_record(module, dataset, detail_payload, "algorithm_extraction_fallback")
+                fallback_record["source"] = extraction.get("source")
+                fallback_record["source_url"] = extraction.get("source_url")
+                fallback_record["attempts"] = attempts
+                fallback_usage.append(fallback_record)
+
+    return {
+        "metadata": metadata,
+        "summary": {
+            "misses": len(misses),
+            "refreshed_records": len(refreshed_records),
+            "fallback_usage": len(fallback_usage),
+            "changed_certificates": len(changed_certificates),
+        },
+        "update_monitor": build_update_monitor(metadata, combined_metrics),
+        "misses": misses,
+        "refreshed_records": refreshed_records,
+        "fallback_usage": fallback_usage,
+        "changed_certificates": changed_certificates,
+    }
+
+
+def compact_search_index_reference(entry: Dict) -> Dict:
+    """Return a compact certificate reference for search-friendly indexes."""
+    return {
+        "certificate_number": entry.get("certificate_number"),
+        "dataset": entry.get("dataset"),
+        "path": entry.get("path"),
+        "vendor_name": entry.get("vendor_name"),
+        "module_name": entry.get("module_name"),
+        "standard": entry.get("standard"),
+        "status": entry.get("status"),
+        "algorithm_count": entry.get("algorithm_count", 0),
+    }
+
+
+def sorted_index_keys(index: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
+    """Sort search-index keys and certificate references deterministically."""
+    return {
+        key: sorted(values, key=lambda item: int(item["certificate_number"]))
+        for key, values in sorted(index.items(), key=lambda item: item[0].casefold())
+    }
+
+
+def build_search_index_payload(name: str, field: str, metadata: Dict, certificates: List[Dict]) -> Dict:
+    """Build one search-friendly certificate index split."""
+    index: Dict[str, List[Dict]] = {}
+    for entry in certificates:
+        if field == "algorithms":
+            keys = normalize_string_list(entry.get("algorithms") or [])
+        else:
+            key_value = first_non_empty(entry.get(field))
+            keys = normalize_string_list([key_value]) if key_value else []
+
+        reference = compact_search_index_reference(entry)
+        for key in keys:
+            index.setdefault(key, []).append(reference)
+
+    sorted_keys = sorted_index_keys(index)
+    return {
+        "metadata": metadata,
+        "index": name,
+        "field": field,
+        "key_count": len(sorted_keys),
+        "entry_count": sum(len(values) for values in sorted_keys.values()),
+        "keys": sorted_keys,
+    }
+
+
+def build_search_index_payloads(metadata: Dict, certificate_index_payload: Dict) -> Dict[str, Dict]:
+    """Build split indexes for common client-side search dimensions."""
+    certificates = certificate_index_payload.get("certificates") or []
+    definitions = {
+        "vendors": "vendor_name",
+        "algorithms": "algorithms",
+        "statuses": "status",
+        "standards": "standard",
+    }
+    return {
+        f"api/indexes/{name}.json": build_search_index_payload(name, field, metadata, certificates)
+        for name, field in definitions.items()
+    }
+
+
+def build_examples_payload(metadata: Dict) -> Dict:
+    """Build concrete consumer examples for common CMVP API lookups."""
+    base = PUBLIC_BASE_URL
+    api_base = f"{base}/api"
+    return {
+        "metadata": metadata,
+        "base_url": base,
+        "examples": {
+            "curl": [
+                {
+                    "name": "vendor_lookup",
+                    "description": "Find certificate references for a vendor from the split vendor index.",
+                    "command": f"curl -s {api_base}/indexes/vendors.json | jq '.keys[\"Intel Corporation\"][] | {{certificate_number, module_name, path, status}}'",
+                },
+                {
+                    "name": "module_lookup",
+                    "description": "Search module names in the compact certificate index.",
+                    "command": f"curl -s {api_base}/certificates/index.json | jq '.certificates[] | select(.module_name | test(\"OpenSSL\"; \"i\")) | {{certificate_number, vendor_name, module_name, path}}'",
+                },
+                {
+                    "name": "algorithm_lookup",
+                    "description": "Find certificates whose extracted algorithm categories include AES.",
+                    "command": f"curl -s {api_base}/indexes/algorithms.json | jq '.keys.AES[] | {{certificate_number, vendor_name, module_name, path}}'",
+                },
+                {
+                    "name": "status_lookup",
+                    "description": "List active certificates from the status index.",
+                    "command": f"curl -s {api_base}/indexes/statuses.json | jq '.keys.Active[] | {{certificate_number, vendor_name, module_name, path}}'",
+                },
+            ],
+            "python": [
+                {
+                    "name": "vendor_modules",
+                    "code": (
+                        "import requests\n"
+                        f"vendor_index = requests.get('{api_base}/indexes/vendors.json', timeout=30).json()\n"
+                        "for cert in vendor_index['keys'].get('Intel Corporation', []):\n"
+                        "    print(cert['certificate_number'], cert['module_name'], cert['path'])"
+                    ),
+                },
+                {
+                    "name": "fetch_certificate_detail",
+                    "code": (
+                        "import requests\n"
+                        f"index = requests.get('{api_base}/certificates/index.json', timeout=30).json()\n"
+                        "match = next(cert for cert in index['certificates'] if 'OpenSSL' in (cert.get('module_name') or ''))\n"
+                        f"detail = requests.get('{base}' + match['path'], timeout=30).json()\n"
+                        "print(detail['certificate']['vendor_name'], detail['certificate']['algorithms'])"
+                    ),
+                },
+            ],
+            "javascript": [
+                {
+                    "name": "algorithm_modules",
+                    "code": (
+                        f"const res = await fetch('{api_base}/indexes/algorithms.json');\n"
+                        "const index = await res.json();\n"
+                        "for (const cert of index.keys.AES ?? []) {\n"
+                        "  console.log(cert.certificate_number, cert.vendor_name, cert.module_name, cert.path);\n"
+                        "}"
+                    ),
+                },
+                {
+                    "name": "status_and_standard",
+                    "code": (
+                        f"const [statuses, standards] = await Promise.all([\n"
+                        f"  fetch('{api_base}/indexes/statuses.json').then((r) => r.json()),\n"
+                        f"  fetch('{api_base}/indexes/standards.json').then((r) => r.json()),\n"
+                        "]);\n"
+                        "const active = new Set((statuses.keys.Active ?? []).map((cert) => cert.certificate_number));\n"
+                        "const active1403 = (standards.keys['FIPS 140-3'] ?? []).filter((cert) => active.has(cert.certificate_number));\n"
+                        "console.log(active1403.slice(0, 10));"
+                    ),
+                },
+            ],
+            "agent": [
+                {
+                    "intent": "Find modules by vendor.",
+                    "steps": [
+                        "Read api/indexes/vendors.json.",
+                        "Select the exact vendor key or case-insensitive nearest key.",
+                        "Use each path to fetch api/certificates/{certificate}.json when full detail is needed.",
+                    ],
+                },
+                {
+                    "intent": "Find modules by module name.",
+                    "steps": [
+                        "Read api/certificates/index.json.",
+                        "Filter certificates[].module_name client-side.",
+                        "Fetch the matched certificate path for vendor contact, validation history, and related files.",
+                    ],
+                },
+                {
+                    "intent": "Find modules by algorithm, status, and standard.",
+                    "steps": [
+                        "Read api/indexes/algorithms.json for the algorithm key.",
+                        "Intersect certificate_number values with api/indexes/statuses.json and api/indexes/standards.json as needed.",
+                        "Fetch certificate detail paths for final evidence.",
+                    ],
+                },
+            ],
+        },
+    }
+
+
 def validate_module_count(modules: List[Dict], label: str, min_expected: int = 100) -> None:
     """
     Validate that the scraped module count is reasonable.
@@ -2482,6 +2996,9 @@ def schema_paths(algorithms_summary: Optional[Dict] = None) -> Dict[str, str]:
         "modules_in_process": "/api/schemas/modules-in-process.schema.json",
         "certificate_index": "/api/schemas/certificate-index.schema.json",
         "certificate_detail": "/api/schemas/certificate-detail.schema.json",
+        "data_quality": "/api/schemas/data-quality.schema.json",
+        "examples": "/api/schemas/examples.schema.json",
+        "search_index": "/api/schemas/search-index.schema.json",
     }
     if algorithms_summary:
         paths["algorithms"] = "/api/schemas/algorithms.schema.json"
@@ -2624,6 +3141,15 @@ def build_api_reference_body(
         "### Certificate Index",
         f"`GET api/certificates/index.json` — Compact discovery index for all {format_count(total_details)} per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.",
         "",
+        "### Search Indexes",
+        "`GET api/indexes/vendors.json`, `GET api/indexes/algorithms.json`, `GET api/indexes/statuses.json`, and `GET api/indexes/standards.json` — Split lookup files for common client-side search by vendor, algorithm, status, and standard.",
+        "",
+        "### Data Quality",
+        "`GET api/data-quality.json` — Latest run quality report with misses, refreshed records, fallback usage, changed certificates, cache reuse checks, and the next scheduled weekly run.",
+        "",
+        "### Consumer Examples",
+        "`GET api/examples.json` — Copy-ready curl, Python, JavaScript, and agent-oriented query examples for vendor, module, algorithm, status, and standard lookups.",
+        "",
         "### Active Modules",
         f"`GET api/modules.json` — All {format_count(total_modules)} active validated modules.",
         "",
@@ -2693,6 +3219,7 @@ def build_api_reference_body(
             "```",
             "GET api/index.json → endpoints, docs links, feature flags, counts",
             "GET api/metadata.json → freshness, scrape provenance, and extraction metrics",
+            "GET api/data-quality.json → latest run misses, refreshes, fallbacks, changed certs, and next scheduled run",
             "```",
             "",
             "### Find a module and pull the full certificate record",
@@ -2716,6 +3243,7 @@ def build_api_reference_body(
                 "### Explore algorithm coverage",
                 "```",
                 "GET api/algorithms.json → counts and certificate lists per algorithm",
+                "GET api/indexes/algorithms.json → compact certificate refs keyed by algorithm",
                 "GET api/modules.json → filter module rows by algorithms[] entries and inspect algorithm_extraction",
                 "```",
                 "",
@@ -2727,7 +3255,7 @@ def build_api_reference_body(
             "## Caveats",
             "",
             f"- **Unofficial:** This project mirrors public CMVP data and is not affiliated with NIST. Use `{OFFICIAL_CMVP_URL}` for authoritative source material.",
-            "- **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.",
+            "- **Static JSON:** There is no server-side filtering. Use the split search indexes or download the relevant JSON file and filter client-side.",
             "- **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.",
             f"- **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `{PUBLIC_BASE_URL}`.",
         ]
@@ -2755,6 +3283,9 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         "- `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.",
         f"- `api/certificates/index.json` — compact index for {format_count(metadata.get('total_certificate_details', 0))} certificate detail files.",
         f"- `api/certificates/{{certificate}}.json` — full detail record for a single CMVP certificate.",
+        "- `api/indexes/vendors.json`, `api/indexes/algorithms.json`, `api/indexes/statuses.json`, `api/indexes/standards.json` — split search indexes for common filters.",
+        "- `api/data-quality.json` — latest run misses, refreshes, fallbacks, changed certs, and weekly run checks.",
+        "- `api/examples.json` — curl, Python, JavaScript, and agent-oriented lookup examples.",
     ]
     if algorithms_summary:
         endpoints.append(
@@ -2888,13 +3419,16 @@ def build_index_html(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         '    <li><a href="api/docs.md">api/docs.md</a></li>',
         '    <li><a href="openapi.json">openapi.json</a></li>',
         '    <li><a href="api/schemas/index.schema.json">JSON Schemas</a></li>',
+        '    <li><a href="api/examples.json">examples.json</a></li>',
     ]
 
     endpoint_links = [
         '    <li><a href="api/index.json"><code>index</code></a></li>',
         '    <li><a href="api/metadata.json"><code>metadata</code></a></li>',
+        '    <li><a href="api/data-quality.json"><code>data-quality</code></a></li>',
         '    <li><a href="api/modules.json"><code>modules</code></a></li>',
         '    <li><a href="api/certificates/index.json"><code>certificates/index</code></a> &middot; <a href="api/certificates/5238.json"><code>certificates/{certificate}</code></a></li>',
+        '    <li><a href="api/indexes/vendors.json"><code>indexes/vendors</code></a> &middot; <a href="api/indexes/algorithms.json"><code>indexes/algorithms</code></a> &middot; <a href="api/indexes/statuses.json"><code>indexes/statuses</code></a> &middot; <a href="api/indexes/standards.json"><code>indexes/standards</code></a></li>',
         '    <li><a href="api/historical-modules.json"><code>historical-modules</code></a></li>',
         '    <li><a href="api/modules-in-process.json"><code>modules-in-process</code></a></li>',
     ]
@@ -3275,6 +3809,131 @@ def algorithms_schema() -> Dict:
     }
 
 
+def data_quality_schema() -> Dict:
+    """Return the data quality report response schema."""
+    quality_record_schema = {
+        "type": "object",
+        "additionalProperties": True,
+        "required": ["certificate_number", "dataset", "path", "reason"],
+        "properties": {
+            "certificate_number": {"type": ["string", "null"]},
+            "dataset": {"type": "string", "enum": ["active", "historical"]},
+            "path": {"type": ["string", "null"]},
+            "vendor_name": {"type": ["string", "null"]},
+            "module_name": {"type": ["string", "null"]},
+            "standard": {"type": ["string", "null"]},
+            "status": {"type": ["string", "null"]},
+            "reason": {"type": "string"},
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "metadata",
+            "summary",
+            "update_monitor",
+            "misses",
+            "refreshed_records",
+            "fallback_usage",
+            "changed_certificates",
+        ],
+        "properties": {
+            "metadata": {"$ref": "/api/schemas/metadata.schema.json"},
+            "summary": {
+                "type": "object",
+                "additionalProperties": {"type": "integer", "minimum": 0},
+            },
+            "update_monitor": {
+                "type": "object",
+                "additionalProperties": True,
+                "required": ["status", "schedule", "latest_run_generated_at", "next_scheduled_run", "checks"],
+                "properties": {
+                    "status": {"type": "string", "enum": ["pass", "warn"]},
+                    "schedule": {"type": "string"},
+                    "schedule_description": {"type": "string"},
+                    "latest_run_generated_at": {"type": "string"},
+                    "next_scheduled_run": {"type": ["string", "null"]},
+                    "latest_run_metrics": {"type": "object", "additionalProperties": True},
+                    "checks": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                },
+            },
+            "misses": {"type": "array", "items": quality_record_schema},
+            "refreshed_records": {"type": "array", "items": quality_record_schema},
+            "fallback_usage": {"type": "array", "items": quality_record_schema},
+            "changed_certificates": {"type": "array", "items": quality_record_schema},
+        },
+    }
+
+
+def examples_schema() -> Dict:
+    """Return the consumer examples response schema."""
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", "base_url", "examples"],
+        "properties": {
+            "metadata": {"$ref": "/api/schemas/metadata.schema.json"},
+            "base_url": {"type": "string", "format": "uri"},
+            "examples": {
+                "type": "object",
+                "additionalProperties": True,
+                "required": ["curl", "python", "javascript", "agent"],
+                "properties": {
+                    "curl": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                    "python": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                    "javascript": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                    "agent": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                },
+            },
+        },
+    }
+
+
+def search_index_schema() -> Dict:
+    """Return the shared split search-index response schema."""
+    reference_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "certificate_number",
+            "dataset",
+            "path",
+            "vendor_name",
+            "module_name",
+            "standard",
+            "status",
+            "algorithm_count",
+        ],
+        "properties": {
+            "certificate_number": {"type": "string", "pattern": "^[0-9]+$"},
+            "dataset": {"type": "string", "enum": ["active", "historical"]},
+            "path": {"type": "string", "pattern": "^/api/certificates/[0-9]+\\.json$"},
+            "vendor_name": {"type": ["string", "null"]},
+            "module_name": {"type": ["string", "null"]},
+            "standard": {"type": ["string", "null"]},
+            "status": {"type": ["string", "null"]},
+            "algorithm_count": {"type": "integer", "minimum": 0},
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", "index", "field", "key_count", "entry_count", "keys"],
+        "properties": {
+            "metadata": {"$ref": "/api/schemas/metadata.schema.json"},
+            "index": {"type": "string", "enum": ["vendors", "algorithms", "statuses", "standards"]},
+            "field": {"type": "string"},
+            "key_count": {"type": "integer", "minimum": 0},
+            "entry_count": {"type": "integer", "minimum": 0},
+            "keys": {
+                "type": "object",
+                "additionalProperties": {"type": "array", "items": reference_schema},
+            },
+        },
+    }
+
+
 def build_schema_index_payload(algorithms_summary: Optional[Dict]) -> Dict:
     """Build the JSON Schema discovery document."""
     return {
@@ -3348,6 +4007,21 @@ def generate_json_schema_artifacts(algorithms_summary: Optional[Dict]) -> Dict[s
             paths["certificate_detail"],
             certificate_detail_schema(),
         ),
+        "api/schemas/data-quality.schema.json": json_schema_document(
+            "NIST CMVP Data Quality Report",
+            paths["data_quality"],
+            data_quality_schema(),
+        ),
+        "api/schemas/examples.schema.json": json_schema_document(
+            "NIST CMVP Consumer Examples",
+            paths["examples"],
+            examples_schema(),
+        ),
+        "api/schemas/search-index.schema.json": json_schema_document(
+            "NIST CMVP Split Search Index",
+            paths["search_index"],
+            search_index_schema(),
+        ),
     }
     if algorithms_summary:
         artifacts["api/schemas/algorithms.schema.json"] = json_schema_document(
@@ -3368,6 +4042,12 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
         "metadata": "/api/metadata.json",
         "certificate_index": "/api/certificates/index.json",
         "certificate_detail_template": "/api/certificates/{certificate}.json",
+        "data_quality": "/api/data-quality.json",
+        "examples": "/api/examples.json",
+        "vendor_index": "/api/indexes/vendors.json",
+        "algorithm_index": "/api/indexes/algorithms.json",
+        "status_index": "/api/indexes/statuses.json",
+        "standard_index": "/api/indexes/standards.json",
     }
     if algorithms_summary:
         endpoints["algorithms"] = "/api/algorithms.json"
@@ -3391,6 +4071,9 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
             "algorithm_extraction": bool(algorithms_summary),
             "algorithm_extraction_provenance": True,
             "extraction_metrics": True,
+            "data_quality_report": True,
+            "consumer_examples": True,
+            "search_indexes": True,
             "certificate_index": True,
             "certificate_detail_records": True,
             "llms_txt": True,
@@ -3527,6 +4210,86 @@ def generate_openapi_spec(
                             }
                         }
                     }
+                }
+            },
+            "/api/data-quality.json": {
+                "get": {
+                    "summary": "Latest data quality report",
+                    "operationId": "getDataQuality",
+                    "responses": {
+                        "200": {
+                            "description": "Misses, refreshed records, fallback usage, changed certificates, and run-health checks",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/DataQualityReport"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/examples.json": {
+                "get": {
+                    "summary": "Consumer examples",
+                    "operationId": "getExamples",
+                    "responses": {
+                        "200": {
+                            "description": "curl, Python, JavaScript, and agent-oriented examples for common queries",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/ExamplesResponse"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/indexes/vendors.json": {
+                "get": {
+                    "summary": "Vendor search index",
+                    "operationId": "getVendorIndex",
+                    "responses": {
+                        "200": {
+                            "description": "Certificate references keyed by vendor name",
+                            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/SearchIndexResponse"}}},
+                        }
+                    },
+                }
+            },
+            "/api/indexes/algorithms.json": {
+                "get": {
+                    "summary": "Algorithm search index",
+                    "operationId": "getAlgorithmIndex",
+                    "responses": {
+                        "200": {
+                            "description": "Certificate references keyed by algorithm category",
+                            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/SearchIndexResponse"}}},
+                        }
+                    },
+                }
+            },
+            "/api/indexes/statuses.json": {
+                "get": {
+                    "summary": "Status search index",
+                    "operationId": "getStatusIndex",
+                    "responses": {
+                        "200": {
+                            "description": "Certificate references keyed by validation status",
+                            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/SearchIndexResponse"}}},
+                        }
+                    },
+                }
+            },
+            "/api/indexes/standards.json": {
+                "get": {
+                    "summary": "Standard search index",
+                    "operationId": "getStandardIndex",
+                    "responses": {
+                        "200": {
+                            "description": "Certificate references keyed by FIPS standard",
+                            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/SearchIndexResponse"}}},
+                        }
+                    },
                 }
             },
             "/api/modules.json": {
@@ -3688,6 +4451,56 @@ def generate_openapi_spec(
                             "items": {"$ref": "#/components/schemas/Module"}
                         }
                     }
+                },
+                "DataQualityReport": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "summary": {"type": "object", "additionalProperties": {"type": "integer"}},
+                        "update_monitor": {"type": "object", "additionalProperties": True},
+                        "misses": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                        "refreshed_records": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                        "fallback_usage": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                        "changed_certificates": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
+                    },
+                },
+                "ExamplesResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "base_url": {"type": "string"},
+                        "examples": {"type": "object", "additionalProperties": True},
+                    },
+                },
+                "SearchIndexReference": {
+                    "type": "object",
+                    "properties": {
+                        "certificate_number": {"type": "string"},
+                        "dataset": {"type": "string", "enum": ["active", "historical"]},
+                        "path": {"type": "string", "example": "/api/certificates/5238.json"},
+                        "vendor_name": {"type": "string", "nullable": True},
+                        "module_name": {"type": "string", "nullable": True},
+                        "standard": {"type": "string", "nullable": True},
+                        "status": {"type": "string", "nullable": True},
+                        "algorithm_count": {"type": "integer"},
+                    },
+                },
+                "SearchIndexResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "index": {"type": "string"},
+                        "field": {"type": "string"},
+                        "key_count": {"type": "integer"},
+                        "entry_count": {"type": "integer"},
+                        "keys": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "items": {"$ref": "#/components/schemas/SearchIndexReference"},
+                            },
+                        },
+                    },
                 },
                 "AlgorithmsResponse": {
                     "type": "object",
@@ -4008,6 +4821,21 @@ def main():
         certificate_detail_payloads,
     )
     save_json(certificate_index_data, f"{output_dir}/certificates/index.json")
+
+    for path, search_index_payload in build_search_index_payloads(metadata, certificate_index_data).items():
+        save_json(search_index_payload, path)
+
+    data_quality_report = build_data_quality_report(
+        metadata,
+        modules,
+        historical_modules,
+        certificate_detail_payloads,
+        previous_outputs,
+        active_stats,
+        historical_stats,
+    )
+    save_json(data_quality_report, f"{output_dir}/data-quality.json")
+    save_json(build_examples_payload(metadata), f"{output_dir}/examples.json")
 
     algorithms_summary = None
 

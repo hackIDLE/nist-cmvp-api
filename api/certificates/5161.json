@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161"
   },
   "certificate": {
     "certificate_number": "5161",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5161.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 153
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -195,7 +207,7 @@
       "Signature type:PKCSPSS tested with the listed moduli and the following hash algorithms:SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA2-512/224,SHA2-512/256;k=2048(s ~=112)，k=3072(s ~=128)，k=4096(s ~=152)",
       "Signature type:ANSI X9.31 tested with the listed moduli and the following hash algorithms:SHA-1\\*，SHA2-256,SHA2-384,SHA2-512;k=1024(s112)，k=2048(s ~=112)，k=3072(s ~=128)，k=4096(s ~=152)",
       "Signature type:PKCS 1.5 tested with the listed moduli and the following hash algorithms:SHA-1\\*，SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA2-512/224,SHA2-512/256;k=1024(s112)，k=2048(s ~=112)，k=3072(s ~=128)，k=4096(s ~=152)",
-      "Signature type:PKCSPSS tested with the listed moduli and the following hash algorithms:SHA-1\\*，SHA2-224,SHA2-256,SHA2-384,SHA2-512,",
+      "Signature type:PKCSPSS tested with the listed moduli and the following hash algorithms:SHA-1\\*，SHA2-224,SHA2-256,SHA2-384,SHA2-512",
       "ECDSA Signature Generation and Signature Verification | DigSig-SigGen DigSig-SigVer | ECDSA Signature Generation and Signature Verification | SigGen(includes SigGen Component)(tested with SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA2-512/224,SHA2-512/256,SHA3-224,SHA3-256,SHA3-384,SHA3-512);B-233,K-233,P-224(s≈112);B-283,K-283,P-256(s≈128);B-409,K-409,P-384(s≈192);B-571,K-571,P-521(s≈256)SigVer(tested with SHA-1\\*，SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA2-512/224,SHA2-512/256,SHA3-224,SHA3-256,SHA3-384,SHA3-512);B-163,K-163,P-192(s<112);B-233,K-233,P-224(s≈112);B-283,K-283,P-256(s≈128);B-409,K-409,P-384(s≈192);B-571,K-571,P-521(s≈256) | ECDSA SigGen(FIPS186-4):(A3548)ECDSA SigVer(FIPS186-4):(A3548)",
       "DSA Digital Signature Generation and Verification | DigSig-SigGen DigSig-SigVer | DSA Digital Signature Generation and Verification | SigGen(tested with SHA2-224,SHA2-256,SHA2-384,SHA2-512,SHA2-512/224,SHA2-512/256);SigGen using SHA2-no | DSA SigGen(FIPS186-4):(A3548)DSA SigVer(FIPS186-4):(A3548)DSA SigGen",
       "RSA Signature Primitive | DigSig-SigGen | Signature primitive | Private Keyformat:CRTPublic ExponentMode:Fixed:k=2048 | RSA SignaturePrimitive:(A3548)",
@@ -214,7 +226,7 @@
       "KAS-2 | KAS-SSC | Scheme: dhEphem. KAS Role: Initiator, Responder | SP800-56Ar3 KAS-FFC-SSC IG D.F Scenario 2 path (1):2048, 3072, 4096, 6144, and 8192-bit key providing 112, 128, 152, 176, or 200 bits of encryption strength | KAS-FFC-SSC Sp800-56Ar3: (A3548)",
       "KAS-3 | KAS-SSC | Scheme: KAS1, KAS2, KAS Role: Initiator, Responder | SP800-56Br2 KAS-IFC-SSC IG D.F Scenario 1 path (1):2048, 3072, 4096, 6144, and 8192-bit key providing 112, 128, 152, 176, or 200 bits of encryption strength | KAS-IFC-SSC: (A3548)",
       "KTS-1 | KTS-Wrap | Key Transport in compliance with \\[SP800-38F\\] | SP 800-38F KTS (key wrapping) per IG D.G:128, 192, and | AES-KW: (A3548)",
-      "KTS-2 | KTS-Wrap | Key Transport in compliance with\\[SP800-38F\\]when approvedAES(any mode)and approvedHMAC,KMAC,GMAC or CMACare used in combination | SP800-38FKTS(key wrapping)perIGD.G:128,192,and256-bitkeys providing128,192,or256bitsofencryptionstrength | AES-CBC:(A3548)AES-CFB1:(A3548)AES-CFB128:(A3548)AES-CFB8:(A3548)AES-CTR:(A3548)AES-ECB:(A3548)AES-OFB:(A3548)AES-XTSTestingRevision2.0:(A3548)AES-CBC-CS2:(A3548)AES-CBC-CS3:(A3548)AES-CCM:(A3548)AES-CMAC:(A3548)AES-GCM:(A3548)AES-GMAC:(A3548)AES-KW:(A3548)AES-KWP:(A3548)HMAC-SHA-1:(A3548)HMAC-SHA2-224:(A3548)HMAC-SHA2-256:(A3548)HMAC-SHA2-384:(A3548)HMAC-SHA2-512:(A3548)HMAC-SHA2-512/224:",
+      "KTS-2 | KTS-Wrap | Key Transport in compliance with\\[SP800-38F\\]when approvedAES(any mode)and approvedHMAC,KMAC,GMAC or CMACare used in combination | SP800-38FKTS(key wrapping)perIGD.G:128,192,and256-bitkeys providing128,192,or256bitsofencryptionstrength | AES-CBC:(A3548)AES-CFB1:(A3548)AES-CFB128:(A3548)AES-CFB8:(A3548)AES-CTR:(A3548)AES-ECB:(A3548)AES-OFB:(A3548)AES-XTSTestingRevision2.0:(A3548)AES-CBC-CS2:(A3548)AES-CBC-CS3:(A3548)AES-CCM:(A3548)AES-CMAC:(A3548)AES-GCM:(A3548)AES-GMAC:(A3548)AES-KW:(A3548)AES-KWP:(A3548)HMAC-SHA-1:(A3548)HMAC-SHA2-224:(A3548)HMAC-SHA2-256:(A3548)HMAC-SHA2-384:(A3548)HMAC-SHA2-512:(A3548)HMAC-SHA2-512/224",
       "Name | Type | Description | Properties | Algorithms(A3548)HMAC-SHA2-512/256:(A3548)HMAC-SHA3-224:(A3548)HMAC-SHA3-256:(A3548)HMAC-SHA3-384:(A3548)HMAC-SHA3-512:(A3548)KMAC-128:(A3548)KMAC-256:(A3548)AES-CBC-CS1:(A3548)",
       "KTS-3 | KTS-Wrap | Key Transport in compliance with\\[SP800-38F\\]when approved using anAuthenticatedAES mode(AESCCM;AESGCM;AESGMAC;AESCMAC) | SP 800-38F KTS(key wrapping) per IGD.G:128,192,and256-bit keys providing128,192,or256bits of encryption strength | AES-CCM:(A3548)AES-CMAC:(A3548)AES-GCM:(A3548)AES-GMAC:(A3548)",
       "KTS-4 | KTS-Encap | Key Transport;Scheme:KTS-OAEP-basic(no key confirmation):RSA-OAEP,KeyEncapsulation,KeyUnencapsulationKey GenerationMethods:rsakpg1-basic,rsakpg1-crt,rsakpg1-prime-factor,rsakpg2-basic,rsakpg2-crt,rsakpg2-prime-factor | SP 800-56Brev2KTS-IFC(key encapsulation andun-encapsulation)perIGD.G:2048,3072,4096,and6144-bitkey providing112,128,152,or176bitsof encryption strength | KTS-IFC:(A3548)",
@@ -222,26 +234,14 @@
       "Perform self-tests(All) | BC-AuthBC-UnAuthDigSig-SigGenDigSig-SigVerDRBGKAS-SSCKBKDFMACPBKDFSHAXOF | All self-tests executed by the module at boot | AES-ECB:(A3548)AES-GCM:(A3548)Hash DRBG:(A3548)CounterDRBG:(A3548)HMAC DRBG:(A3548)DSA SigGen(FIPS186-4):(A3548)DSA SigVer(FIPS186-4):(A3548)ECDSASigGen(FIPS186-4):(A3548)ECDSASigVer(FIPS186-4):(A3548)RSA SigGen(FIPS186-4):(A3548)RSA SigVer(FIPS186-4):(A3548)HMAC-SHA2-256:(A3548)SHA-1:(A3548)SHA3-256:(A3548)SHA2-512:(A3548)KDF ANS9.42:(A3548)KDF ANS9.63:(A3548)KAS-ECC-SSC Sp800-56Ar3:(A3548)",
       "Software Integrity Test | MAC | HMAC-SHA2-256 used to perform the software integrity test | Key size:256 bits | HMAC-SHA2-256:(A3548)",
       "Cryptographic Key Generation(CKG)-AES XTS | CKG | AES XTS Key generated to comply with the approved key generation guidelines of NIST SP 800-133rev2,Section6.3,Symmetric Keys Produced byCombining Multiple Keys and Other Data | Key size:128,256bits | CKG - Section6.3:()",
-      "KTS-5 | KTS-Unwrap | Key Unwrapping using any non-authenticated AES mode | KTS(key unwrapping)per IGD.G:128,192,and256-bit keys providing128,192,or | AES-CBC:(A3548)AES-CFB1:(A3548)AES-CFB128:",
-      "AES-CFB8:",
-      "AES-CTR:",
-      "AES-ECB:",
-      "AES-OFB:",
+      "KTS-5 | KTS-Unwrap | Key Unwrapping using any non-authenticated AES mode | KTS(key unwrapping)per IGD.G:128,192,and256-bit keys providing128,192,or | AES-CBC:(A3548)AES-CFB1:(A3548)AES-CFB128",
+      "AES-CFB8",
+      "AES-CTR",
+      "AES-ECB",
+      "AES-OFB",
       "AES-CBC-CS1:(A3548)",
       "AES-CBC-CS2:(A3548)",
       "AES-CBC-CS3:(A3548)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 153
-    }
+    ]
   }
 }

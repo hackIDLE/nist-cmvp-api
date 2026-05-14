@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/examples.schema.json",
+  "title": "NIST CMVP Consumer Examples",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "base_url",
+    "examples"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "/api/schemas/metadata.schema.json"
+    },
+    "base_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "examples": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "curl",
+        "python",
+        "javascript",
+        "agent"
+      ],
+      "properties": {
+        "curl": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "python": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "javascript": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "agent": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}

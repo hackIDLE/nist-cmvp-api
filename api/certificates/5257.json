@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257"
   },
   "certificate": {
     "certificate_number": "5257",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf",
@@ -58,6 +58,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 51
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -86,7 +98,7 @@
       "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
       "ECDSA KeyGen | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits | FIPS 186-5",
       "ECDSA SigGen | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512, SHA2-512/256 | Component - No | FIPS 186-5",
       "ECDSA SigVer | (FIPS186-5) | A6710 | Curve - P-256, P-384, P-521",
       "SHA2-512, SHA2-512/256 | FIPS 186-5",
@@ -94,8 +106,8 @@
       "EDDSA SigGen | A6710 | Curve - ED-25519, ED-448 | PreHash - No | Pure - Yes | FIPS 186-5",
       "EDDSA SigVer | A6710 | Curve - ED-25519, ED-448 | PreHash - No | Pure - Yes | FIPS 186-5",
       "Hash DRBG | A6710 | Prediction Resistance - No, Yes",
-      "Mode - SHA2-256, SHA2-384, SHA2-512,",
-      "SHA2-512/256, SHA3-256, SHA3-384,",
+      "Mode - SHA2-256, SHA2-384, SHA2-512",
+      "SHA2-512/256, SHA3-256, SHA3-384",
       "SHA3-512 | SP 800-90A | Rev. 1",
       "HMAC DRBG | A6710 | Prediction Resistance - No, Yes",
       "HMAC-SHA2-256 | A6710 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
@@ -121,19 +133,7 @@
       "SHA3-384 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
       "SHA3-512 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
       "SHAKE-128 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | CAVP | Cert",
-      "SHAKE-256 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | N/A for this module. | The cryptographic module does not implement vendor-affirmed cryptographic algorithms. | Non-Approved, Allowed Algorithms: | N/A for this module. | The cryptographic module does not implement non-approved cryptographic algorithms. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | The module does not implement any non-approved algorithms allowed in the Approved mode | of operation with no security claimed. | Non-Approved, Not Allowed Algorithms: | N/A for this module. | The cryptographic module does not implement non-approved cryptographic algorithms without | security claims."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 51
-    }
+      "SHAKE-256 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | N/A for this module. | The cryptographic module does not implement vendor-affirmed cryptographic algorithms."
+    ]
   }
 }

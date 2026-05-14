@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102"
   },
   "certificate": {
     "certificate_number": "5102",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5102.pdf",
@@ -61,6 +61,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 134
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -103,7 +115,7 @@
       "384, SHA2-512, SHA2-512/224, SHA2-512/256 | FIPS 186-4",
       "DSA PQGVer | (FIPS186-4) | A3548 | L - 1024, 2048, 3072 | N - 160, 224, 256",
       "Hash Algorithm - SHA-1, SHA2-224, SHA2-",
-      "256, SHA2-384, SHA2-512, SHA2-512/224,",
+      "256, SHA2-384, SHA2-512, SHA2-512/224",
       "SHA2-512/256 | FIPS 186-4",
       "DSA SigGen | (FIPS186-4) | A3548 | L - 2048, 3072 | N - 224, 256",
       "DSA SigVer | (FIPS186-4) | A3548 | L - 1024, 2048, 3072 | N - 160, 224, 256",
@@ -111,7 +123,7 @@
       "ECDSA KeyVer | (FIPS186-4) | A3548 | Curve - B-163, B-233, B-283, B-409, B-571, K- | 163, K-233, K-283, K-409, K-571, P-192, P- | 224, P-256, P-384, P-521 | FIPS 186-4",
       "ECDSA SigGen | (FIPS186-4) | A3548 | Component - No, Yes | Curve - B-233, B-283, B-409, B-571, K-233, K- | 283, K-409, K-571, P-224, P-256, P-384, P-521",
       "384, SHA2-512, SHA2-512/224, SHA2-",
-      "512/256, SHA3-224, SHA3-256, SHA3-384,",
+      "512/256, SHA3-224, SHA3-256, SHA3-384",
       "SHA3-512 | FIPS 186-4",
       "ECDSA SigVer | (FIPS186-4) | A3548 | Component - No, Yes | Curve - B-163, B-233, B-283, B-409, B-571, K- | 163, K-233, K-283, K-409, K-571, P-192, P- | 224, P-256, P-384, P-521",
       "SHA2-512/256, SHA3-224, SHA3-256, SHA3-",
@@ -186,9 +198,9 @@
       "SHA3",
       "DSA | SigGen | [FIPS 186- | 4] | Key Size, Key Strength:L = | 2048/N = 224 (s = 112), L = | 2048/N = 256 (s = 112) L = | 3072/N = 256 (s = 128) | Mode/Method:SigGen using",
       "DSA | SigVer | [FIPS186- | 4] | Key Size, Key Strength:L = | 1024/N = 160 (s < 112) L = | 2048/N = 224 (s = 112), L = | 2048/N = 256 (s = 112) L = | 3072/N = 256 (s = 128) | Mode/Method:SigVer using",
-      "SHA3 | OpenSSL Project | OpenSSL 3.x | FIPS Provider | Vendor affirmed per IG | C.C and IG C.B | Resolution (bullet point | #3) | CKG - | Section 4 | and 5.1 | Key Type :Asymmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 5.1: Key Pairs for | Digital Signature | Schemes | CKG - | Section 4 | and 5.2 | Key Type:Asymmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 5.2: Key Pairs for Key | Establishment | CKG - | Section 4 | and Section | 6.1 | Key Type:Symmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 6.1: Direct Generation | of Symmetric Keys | CKG - | Section 6.2 | Key Type:Symmetric | N/A | NIST SP 800-133r2 | Section 6.2: Derivation | of Symmetric keys | CKG - | Section 6.3 | Key Type:Symmetric | N/A | NIST SP 800-133rev2, | Section 6.3: Symmetric | Keys Produced by | Combining Multiple | Keys and Other Data | CKG - | Section 4 | Key Type:Symmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Random bits | returned to the calling | application | Non-Approved, Allowed Algorithms: | Name Properties | Implementation",
+      "SHA3 | OpenSSL Project | OpenSSL 3.x | FIPS Provider | Vendor affirmed per IG | C.C and IG C.B | Resolution (bullet point | #3) | CKG - | Section 4 | and 5.1 | Key Type :Asymmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 5.1: Key Pairs for | Digital Signature | Schemes | CKG - | Section 4 | and 5.2 | Key Type:Asymmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 5.2: Key Pairs for Key | Establishment | CKG - | Section 4 | and Section | 6.1 | Key Type:Symmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Generator; Section | 6.1: Direct Generation | of Symmetric Keys | CKG - | Section 6.2 | Key Type:Symmetric | N/A | NIST SP 800-133r2 | Section 6.2: Derivation | of Symmetric keys | CKG - | Section 6.3 | Key Type:Symmetric | N/A | NIST SP 800-133rev2, | Section 6.3: Symmetric | Keys Produced by | Combining Multiple | Keys and Other Data | CKG - | Section 4 | Key Type:Symmetric | N/A | NIST SP800-133r2 | Section 4: Using the | Output of a Random | Bit Random bits | returned to the calling | application",
       "AES",
-      "AES KW, KWP | (Cert.#A3548):Symmetric key | unwrapping | OpenSSL Project | OpenSSL 3.x FIPS | Provider | Per IG D.G | Additional | Comment 5 | Non-Approved, Allowed Algorithms with No Security Claimed: | Name Caveat Use and | Function | N/A | N/A | N/A | The module does not support any Non-Approved Algorithms Allowed in the Approved Mode of | Operation with No Security Claimed. | Non-Approved, Not Allowed Algorithms: | Name | Use and Function",
+      "AES KW, KWP | (Cert.#A3548):Symmetric key | unwrapping | OpenSSL Project | OpenSSL 3.x FIPS | Provider | Per IG D.G | Additional | Comment 5",
       "Triple-DES | Provides 3-Key ECB and CBC mode, but indicated as fips=no, | Encryption, Decryption | Ed448",
       "SHAKE256, Ed448 provides 224 bits of security, Digital Signature | Generation | Ed25519",
       "SHA2-512, Ed25519 provides 128 bits of security, Digital Signature | Generation | X448 | Provides 224 bits of security, Key Agreement | X25519 | Provides 128 bits of security, Key Agreement",
@@ -198,9 +210,9 @@
       "FIPS 186-2 RSA | KeyGen",
       "Provides >= 112 bits of security, RSA key generation per FIPS 186-2 | X942KDF- | CONCAT",
       "Usage of X942KDF-CONCAT with PRF SHA-1, SHA2-512/224, SHA2-",
-      "512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE128,",
+      "512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE128",
       "SHAKE256, KECCAK-KMAC128 and KECCAK-KMAC256 | X963KDF",
-      "Usage of X963KDF with PRF SHA-1, SHA2-512/224, SHA2-512/256,",
+      "Usage of X963KDF with PRF SHA-1, SHA2-512/224, SHA2-512/256",
       "SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE128, SHAKE256, | KECCAK-KMAC128 and KECCAK-KMAC256",
       "HKDF",
       "Provides < 112 bits of security, Usage of HKDF with key length less | than 112 bits",
@@ -210,20 +222,8 @@
       "Provides < 112 bits of security, Usage of HMAC with key length less | than 112 bits for MAC generation",
       "Hash and HMAC",
       "DRBG",
-      "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384,",
+      "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384",
       "SHA2-512/224 and SHA2-512/256"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 134
-    }
+    ]
   }
 }

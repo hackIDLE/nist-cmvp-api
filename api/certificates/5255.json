@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
   },
   "certificate": {
     "certificate_number": "5255",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 27
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -79,7 +91,7 @@
       "ECDSA KeyGen | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
       "ECDSA KeyVer | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521 | FIPS 186-5",
       "ECDSA SigGen | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | Component - Yes | FIPS 186-5",
       "ECDSA SigVer | (FIPS186-5) | A4980 | Curve - P-256, P-384, P-521",
       "SHA2-512 | FIPS 186-5",
@@ -96,19 +108,7 @@
       "SHA-1 | A4980 | Message Length - Message Length: 160, | 0-65536 Increment 8 | FIPS 180-4",
       "SHA2-256 | A4980 | Message Length - Message Length: 256, | 0-65536 Increment 8 | FIPS 180-4 | FIPS 140-3 Non-Propriety Security Policy | 11 of 78 | © Hypersecu Information Systems Inc, 2026 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | CAVP | Cert",
       "SHA2-384 | A4980 | Message Length - Message Length: 384, | 0-65536 Increment 8 | FIPS 180-4",
-      "SHA2-512 | A4980 | Message Length - Message Length: 512, | 0-65536 Increment 8 | FIPS 180-4 | The Module implements the FIPS Vendor Affirmed cryptographic algorithms listed below. | Name | Implementation | CKG1 | Key Type: Asymmetric and | Symmetric | N/A | [133r2] section 4, example 1 | and IG D.H | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 27
-    }
+      "SHA2-512 | A4980 | Message Length - Message Length: 512, | 0-65536 Increment 8 | FIPS 180-4 | The Module implements the FIPS Vendor Affirmed cryptographic algorithms listed below. | Name | Implementation | CKG1 | Key Type: Asymmetric and | Symmetric | N/A | [133r2] section 4, example 1 | and IG D.H"
+    ]
   }
 }

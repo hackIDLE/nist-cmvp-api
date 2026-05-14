@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5064"
   },
   "certificate": {
     "certificate_number": "5064",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5064",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5064",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5064.pdf",
@@ -65,6 +65,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 119
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -199,18 +211,6 @@
       "DRBG Function | DRBG | Used for DRBG generation | Counter DRBGCounter DRBG",
       "Firmware Integrity Test | DigSig-SigVer | Used for firmware integrity test | ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)SHA2-512ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)ECDSA SigVer(FIPS186-4)SHA2-256SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512SHA2-512",
       "EFR32MG21B010F1024IM32 | Physical | B with SE Firmware Version 1.2.13 | 128 bits | Full entropy | A3366(AES-CBC-MAC)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 119
-    }
+    ]
   }
 }

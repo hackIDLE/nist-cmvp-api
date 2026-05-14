@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132"
   },
   "certificate": {
     "certificate_number": "5132",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf",
@@ -58,6 +58,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 90
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -87,7 +99,7 @@
       "AES-CTR A6678, A6679, A6680, A6690, A6691, A6700 - SP 800-38A",
       "AES-ECB A6678, A6679, A6680, A6690, A6691, A6700 - SP 800-38A",
       "AES-GCM A6662, A6663, A6664, A6665, A6681, A6682, A6692, A6693, A6694, A6695, A6696, A6697, A6698, A6699",
-      "AES-GMAC A6662, A6663, A6664, A6665, A6681, A6682, A6692, A6693, A6694, A6695, A6696, A6697, A6698, A6699 | © 2025 Chaiguard, Inc., asec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * *",
+      "AES-GMAC A6662, A6663, A6664, A6665, A6681, A6682, A6692, A6693, A6694, A6695, A6696, A6697, A6698, A6699 | © 2025 Chaiguard, Inc., asec information security.",
       "AES-KW A6678, A6679, A6680, A6690, A6691, A6700 - SP 800-38F",
       "AES-KWP A6678, A6679, A6680, A6690, A6691, A6700 - SP 800-38F",
       "AES-OFB A6678, A6679, A6680, A6690, A6691, A6700 - SP 800-38A",
@@ -110,7 +122,7 @@
       "HMAC-SHA2-256 A6666, A6667, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1",
       "HMAC-SHA2-384 A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1",
       "HMAC-SHA2-512 A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1",
-      "HMAC-SHA2-512/224 A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1 | © 2025 Chainguard, Inc., assec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * * | Chainguard FIPS Provider for OpenSSL | FIPS 140-3 Non-Proprietary Security Policy",
+      "HMAC-SHA2-512/224 A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1 | © 2025 Chainguard, Inc., assec information security.",
       "HMAC-SHA2-512/256 A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 198-1",
       "HMAC-SHA3-224 A6670, A6671, A6687, A6688, A6689 - FIPS 198-1",
       "HMAC-SHA3-256 A6670, A6671, A6687, A6688, A6689 - FIPS 198-1",
@@ -128,7 +140,7 @@
       "KDF SP800-108 A6677 - SP 800-108 Rev. 1",
       "KDF SSH (CVL) A6666, A6668, A6699, A6683, A6684, A6685, A6686 - SP 800-135 Rev. 1 | KMAC-128 A6670, A6671, A6687, A6688, A6689 - SP 800-185 | KMAC-256 A6670, A6671, A6687, A6688, A6689 - SP 800-185",
       "KTS-IFC A6666, A6668, A6683, A6684, A6685, A6686 - SP 800-56B Rev. 2",
-      "PBKDF A6666, A6668, A6670, A6671, A6683, A6684, A6685, A6686, A6687, A6688, A6689 - SP 800-132 | © 2025 Chainguard, Inc., atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * * | Chainguard FIPS Provider for OpenSSL | FIPS 140-3 Non-Proprietary Security Policy",
+      "PBKDF A6666, A6668, A6670, A6671, A6683, A6684, A6685, A6686, A6687, A6688, A6689 - SP 800-132 | © 2025 Chainguard, Inc., atsec information security.",
       "RSA KeyGen (FIPS186-5) A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 186-5",
       "RSA SigGen (FIPS186-5) A6666, A6668, A6670, A6671, A6683, A6684, A6685, | A6686, A6687, A6688, A6689 - FIPS 186-5",
       "RSA SigVer (FIPS186-4) A6666, A6668, A6683, A6684, A6685, A6686 - FIPS 186-4",
@@ -147,8 +159,8 @@
       "SHAKE-128 A6670, A6671, A6687, A6688, A6689 - FIPS 202",
       "SHAKE-256 A6670, A6671, A6687, A6688, A6689 - FIPS 202",
       "TLS v1.2 KDF RFC7627 (CVL) A6666, A6668, A6683, A6684, A6685, A6686 - SP 800-135 | Rev. 1",
-      "TLS v1.3 KDF (CVL) A6673 - SP 800-135 | Rev. 1 | © 2025 Chainguard, Inc., atsec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * * | Chainguard FIPS Provider for OpenSSL | FIPS 140-3 Non-Proprietary Security Policy | Name Properties Implementation Reference",
-      "Asymmetric CKG Key Type:Asymmetric Key pairs:RSA; ECDSA; EdDSA; DH N/A SP 800-133r2, section 4, direct DRBG output without XOR | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | Name Use and Function",
+      "TLS v1.3 KDF (CVL) A6673 - SP 800-135 | Rev. 1 | © 2025 Chainguard, Inc., atsec information security.",
+      "Asymmetric CKG Key Type:Asymmetric Key pairs:RSA; ECDSA; EdDSA; DH N/A SP 800-133r2, section 4, direct DRBG output without XOR",
       "AES-GCM encryption with external IV Encryption",
       "HMAC with key length < 112 bits Message Authentication Code | KMAC with key length < 112 bits or tag length < 32 bits Message Authentication Code",
       "TLS 1.2 KDF without extended master secret or with SHA-1 or SHA2-224 or SHA2-512/224 or SHA2-512/256 or SHA-3 functions or with input secret length < 112 bits Key Derivation Function",
@@ -162,21 +174,9 @@
       "ECDSA KeyGen with P-192 Key Pair Generation",
       "SSH KDF with SHA2-512/224 or SHA2-512/256 or SHA-3 functions or input secret length < 112 bits Key Derivation Function",
       "TLS 1.3 KDF with SHA-1 or SHA2-224 or SHA2-512/224 or SHA2-512 or SHA2-512/256 or SHA-3 functions or input secret length < 112 bits Key Derivation Function",
-      "One step KDF, two step KDF, HKDF, ANS X9.42 KDF with input secret length < 112 bits Key Derivation Function | © 2025 Chainguard, Inc., asec information security. | This document can be reproduced and distributed only whole and intact, including this copyright notice. | * * * | Name Use and Function | X448 Provides 224 bits of security, | X25519 Provides 128 bits of security,",
+      "One step KDF, two step KDF, HKDF, ANS X9.42 KDF with input secret length < 112 bits Key Derivation Function | © 2025 Chainguard, Inc., asec information security.",
       "ANS X9.63 KDF with SHA-1 or input secret length < 112 bits Key Derivation Function",
       "RSA OAEP encryption/decryption with 1536-bit modulus Asymmetric | encryption/decryption"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 90
-    }
+    ]
   }
 }

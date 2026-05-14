@@ -13,6 +13,9 @@ All data is static JSON. Append paths to the base URL.
 - `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.
 - `api/certificates/index.json` — compact index for 5,256 certificate detail files.
 - `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.
+- `api/indexes/vendors.json`, `api/indexes/algorithms.json`, `api/indexes/statuses.json`, `api/indexes/standards.json` — split search indexes for common filters.
+- `api/data-quality.json` — latest run misses, refreshes, fallbacks, changed certs, and weekly run checks.
+- `api/examples.json` — curl, Python, JavaScript, and agent-oriented lookup examples.
 - `api/algorithms.json` — algorithm coverage summary across 1,630 certificates.
 
 ## Documentation

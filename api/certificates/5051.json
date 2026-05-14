@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051"
   },
   "certificate": {
     "certificate_number": "5051",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5051.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 46
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -121,18 +133,6 @@
       "TLS v1.2 KDF RFC7627(CVL) | A5065 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
       "KDF IKEv1(CVL) | A5062 | Authentication Method-Digital Signature, Pre-shared Key,Public KeyEncryptionDiffie-Hellman Shared Secret Length-Diffie-Hellman Shared Secret Length:2048Hash Algorithm-SHA-1,SHA2-256,SHA2-384,SHA2-512Preshared Key Length-Preshared Key Length:64-512Increment8 | SP 800-135 Rev.1",
       "KDF IKEv2(CVL) | A5062 | Diffie-Hellman Shared Secret Length-Diffie-Hellman Shared Secret Length:224-4096 Increment8Derived Keying Material Length-Derived Keying Material Length:160-4096Increment8Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135 Rev.1"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 46
-    }
+    ]
   }
 }

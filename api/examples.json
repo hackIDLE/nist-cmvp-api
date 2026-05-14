@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-14T13:31:01.314185Z",
+    "total_modules": 1086,
+    "total_historical_modules": 4170,
+    "total_modules_in_process": 325,
+    "total_certificates_with_algorithms": 1630,
+    "total_certificate_details": 5256,
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
+    "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
+    "algorithm_source": "crawl4ai",
+    "algorithm_cache_version": "2026-04-15-legacy-v1",
+    "algorithm_extraction_schema_version": "1.0",
+    "extraction_metrics": {
+      "active": {
+        "html_reused": 1086,
+        "html_refreshed": 0,
+        "html_failed": 0,
+        "pdf_reused": 1086,
+        "pdf_refreshed": 0,
+        "pdf_failed": 0,
+        "pdf_cache_hits": 0,
+        "algorithm_misses": 0,
+        "algorithm_cache_hits": 1086,
+        "algorithm_successes": 567,
+        "algorithm_fallbacks": 0,
+        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_security_policy_pdf": 0,
+        "algorithm_source_database": 0,
+        "algorithm_source_none": 0,
+        "certificate_timeouts": 0
+      },
+      "historical": {
+        "html_reused": 4170,
+        "html_refreshed": 0,
+        "html_failed": 0,
+        "pdf_reused": 4170,
+        "pdf_refreshed": 0,
+        "pdf_failed": 0,
+        "pdf_cache_hits": 0,
+        "algorithm_misses": 0,
+        "algorithm_cache_hits": 4170,
+        "algorithm_successes": 1063,
+        "algorithm_fallbacks": 0,
+        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_security_policy_pdf": 0,
+        "algorithm_source_database": 0,
+        "algorithm_source_none": 0,
+        "certificate_timeouts": 0
+      },
+      "combined": {
+        "html_reused": 5256,
+        "html_refreshed": 0,
+        "html_failed": 0,
+        "pdf_reused": 5256,
+        "pdf_refreshed": 0,
+        "pdf_failed": 0,
+        "pdf_cache_hits": 0,
+        "algorithm_misses": 0,
+        "algorithm_cache_hits": 5256,
+        "algorithm_successes": 1630,
+        "algorithm_fallbacks": 0,
+        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_security_policy_pdf": 0,
+        "algorithm_source_database": 0,
+        "algorithm_source_none": 0,
+        "certificate_timeouts": 0
+      },
+      "concurrency": {
+        "certificate_fetch": 16,
+        "security_policy_fetch": 32,
+        "certificate_process_timeout_seconds": 900
+      }
+    },
+    "version": "3.0"
+  },
+  "base_url": "https://hackidle.github.io/nist-cmvp-api",
+  "examples": {
+    "curl": [
+      {
+        "name": "vendor_lookup",
+        "description": "Find certificate references for a vendor from the split vendor index.",
+        "command": "curl -s https://hackidle.github.io/nist-cmvp-api/api/indexes/vendors.json | jq '.keys[\"Intel Corporation\"][] | {certificate_number, module_name, path, status}'"
+      },
+      {
+        "name": "module_lookup",
+        "description": "Search module names in the compact certificate index.",
+        "command": "curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/index.json | jq '.certificates[] | select(.module_name | test(\"OpenSSL\"; \"i\")) | {certificate_number, vendor_name, module_name, path}'"
+      },
+      {
+        "name": "algorithm_lookup",
+        "description": "Find certificates whose extracted algorithm categories include AES.",
+        "command": "curl -s https://hackidle.github.io/nist-cmvp-api/api/indexes/algorithms.json | jq '.keys.AES[] | {certificate_number, vendor_name, module_name, path}'"
+      },
+      {
+        "name": "status_lookup",
+        "description": "List active certificates from the status index.",
+        "command": "curl -s https://hackidle.github.io/nist-cmvp-api/api/indexes/statuses.json | jq '.keys.Active[] | {certificate_number, vendor_name, module_name, path}'"
+      }
+    ],
+    "python": [
+      {
+        "name": "vendor_modules",
+        "code": "import requests\nvendor_index = requests.get('https://hackidle.github.io/nist-cmvp-api/api/indexes/vendors.json', timeout=30).json()\nfor cert in vendor_index['keys'].get('Intel Corporation', []):\n    print(cert['certificate_number'], cert['module_name'], cert['path'])"
+      },
+      {
+        "name": "fetch_certificate_detail",
+        "code": "import requests\nindex = requests.get('https://hackidle.github.io/nist-cmvp-api/api/certificates/index.json', timeout=30).json()\nmatch = next(cert for cert in index['certificates'] if 'OpenSSL' in (cert.get('module_name') or ''))\ndetail = requests.get('https://hackidle.github.io/nist-cmvp-api' + match['path'], timeout=30).json()\nprint(detail['certificate']['vendor_name'], detail['certificate']['algorithms'])"
+      }
+    ],
+    "javascript": [
+      {
+        "name": "algorithm_modules",
+        "code": "const res = await fetch('https://hackidle.github.io/nist-cmvp-api/api/indexes/algorithms.json');\nconst index = await res.json();\nfor (const cert of index.keys.AES ?? []) {\n  console.log(cert.certificate_number, cert.vendor_name, cert.module_name, cert.path);\n}"
+      },
+      {
+        "name": "status_and_standard",
+        "code": "const [statuses, standards] = await Promise.all([\n  fetch('https://hackidle.github.io/nist-cmvp-api/api/indexes/statuses.json').then((r) => r.json()),\n  fetch('https://hackidle.github.io/nist-cmvp-api/api/indexes/standards.json').then((r) => r.json()),\n]);\nconst active = new Set((statuses.keys.Active ?? []).map((cert) => cert.certificate_number));\nconst active1403 = (standards.keys['FIPS 140-3'] ?? []).filter((cert) => active.has(cert.certificate_number));\nconsole.log(active1403.slice(0, 10));"
+      }
+    ],
+    "agent": [
+      {
+        "intent": "Find modules by vendor.",
+        "steps": [
+          "Read api/indexes/vendors.json.",
+          "Select the exact vendor key or case-insensitive nearest key.",
+          "Use each path to fetch api/certificates/{certificate}.json when full detail is needed."
+        ]
+      },
+      {
+        "intent": "Find modules by module name.",
+        "steps": [
+          "Read api/certificates/index.json.",
+          "Filter certificates[].module_name client-side.",
+          "Fetch the matched certificate path for vendor contact, validation history, and related files."
+        ]
+      },
+      {
+        "intent": "Find modules by algorithm, status, and standard.",
+        "steps": [
+          "Read api/indexes/algorithms.json for the algorithm key.",
+          "Intersect certificate_number values with api/indexes/statuses.json and api/indexes/standards.json as needed.",
+          "Fetch certificate detail paths for final evidence."
+        ]
+      }
+    ]
+  }
+}

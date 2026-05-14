@@ -55,6 +55,114 @@
         }
       }
     },
+    "/api/data-quality.json": {
+      "get": {
+        "summary": "Latest data quality report",
+        "operationId": "getDataQuality",
+        "responses": {
+          "200": {
+            "description": "Misses, refreshed records, fallback usage, changed certificates, and run-health checks",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataQualityReport"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/examples.json": {
+      "get": {
+        "summary": "Consumer examples",
+        "operationId": "getExamples",
+        "responses": {
+          "200": {
+            "description": "curl, Python, JavaScript, and agent-oriented examples for common queries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamplesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indexes/vendors.json": {
+      "get": {
+        "summary": "Vendor search index",
+        "operationId": "getVendorIndex",
+        "responses": {
+          "200": {
+            "description": "Certificate references keyed by vendor name",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indexes/algorithms.json": {
+      "get": {
+        "summary": "Algorithm search index",
+        "operationId": "getAlgorithmIndex",
+        "responses": {
+          "200": {
+            "description": "Certificate references keyed by algorithm category",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indexes/statuses.json": {
+      "get": {
+        "summary": "Status search index",
+        "operationId": "getStatusIndex",
+        "responses": {
+          "200": {
+            "description": "Certificate references keyed by validation status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indexes/standards.json": {
+      "get": {
+        "summary": "Standard search index",
+        "operationId": "getStandardIndex",
+        "responses": {
+          "200": {
+            "description": "Certificate references keyed by FIPS standard",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/modules.json": {
       "get": {
         "summary": "Active validated cryptographic modules",
@@ -186,7 +294,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-14T09:06:04.998714Z"
+            "example": "2026-05-14T13:31:01.314185Z"
           },
           "total_modules": {
             "type": "integer",
@@ -310,6 +418,14 @@
             "type": "string",
             "example": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability."
           },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
+          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -329,16 +445,8 @@
             "example": [
               "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
               "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
-              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel® Corporation | This document can be reproduced and distributed only whole and intact, including this copyright notice. | Cert"
+              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
             ]
-          },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
           },
           "software_versions": {
             "type": "string",
@@ -381,6 +489,134 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Module"
+            }
+          }
+        }
+      },
+      "DataQualityReport": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "summary": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "update_monitor": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "misses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "refreshed_records": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "fallback_usage": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "changed_certificates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      },
+      "ExamplesResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "base_url": {
+            "type": "string"
+          },
+          "examples": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "SearchIndexReference": {
+        "type": "object",
+        "properties": {
+          "certificate_number": {
+            "type": "string"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "example": "/api/certificates/5238.json"
+          },
+          "vendor_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "module_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "standard": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "algorithm_count": {
+            "type": "integer"
+          }
+        }
+      },
+      "SearchIndexResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "index": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "key_count": {
+            "type": "integer"
+          },
+          "entry_count": {
+            "type": "integer"
+          },
+          "keys": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/SearchIndexReference"
+              }
             }
           }
         }
@@ -541,7 +777,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5256"
+            "example": "5255"
           },
           "dataset": {
             "type": "string",
@@ -549,27 +785,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-14T09:06:04.998714Z"
+            "example": "2026-05-14T13:31:01.314185Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Amazon Web Services, Inc."
+            "example": "Hypersecu Information Systems Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "AWS Link Encryption Module"
+            "example": "HYPERSECU HyperPKI Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -581,19 +817,19 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software-hybrid"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "MultiChipEmbed"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 3
           },
           "validation_date": {
             "type": "string",
-            "example": "5/5/2026"
+            "example": "5/4/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -601,20 +837,20 @@
               "type": "string"
             },
             "example": [
-              "5/5/2026"
+              "5/4/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "5/4/2031"
+            "example": "1/27/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "The module generates SSPs (e.g., keys) whose strengths are modified by available entropy, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "description": {
             "type": "string",
-            "example": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements."
+            "example": "This Module is a secure portable device with advanced smart card technology, it can provide strong authentication and identification to support network login, online transactions, digital signatures, and sensitive data protection"
           },
           "security_level_exceptions": {
             "type": "array",
@@ -622,6 +858,7 @@
               "type": "string"
             },
             "example": [
+              "Operational environment: N/A",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -659,6 +896,10 @@
             "nullable": true,
             "example": ""
           },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
+          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -666,8 +907,8 @@
             },
             "example": [
               "AES",
-              "HMAC",
-              "SHA"
+              "DRBG",
+              "ECDSA"
             ]
           },
           "algorithms_detailed": {
@@ -676,14 +917,10 @@
               "type": "string"
             },
             "example": [
-              "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
-              "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
-              "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D"
+              "AES-CBC | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A",
+              "AES-CMAC | A4980 | Direction - Generation, Verification Key | Length - 128, 192, 256 | SP 800-38B | FIPS 140-3 Non-Propriety Security Policy | 10 of 78 | © Hypersecu Information Systems Inc, 2026 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | CAVP | Cert",
+              "AES-ECB | A4980 | Direction - Decrypt, Encrypt Key Length - | 128, 192, 256 | SP 800-38A"
             ]
-          },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
           }
         }
       },

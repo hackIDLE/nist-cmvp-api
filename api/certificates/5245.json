@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5245"
   },
   "certificate": {
     "certificate_number": "5245",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5245",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5245",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5245.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 82
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -106,7 +118,7 @@
       "HMAC-SHA3-256 | A5477 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
       "HMAC-SHA3-384 | A5477 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
       "HMAC-SHA3-512 | A5477 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
-      "KAS-ECC-SSC Sp800-56Ar3 | A5477 | Domain Parameter Generation Methods - P-224, P-256, P-384, | P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A Rev. | 3 | FIPS 140-3 Non-Proprietary Security Policy, Version 1.1 | February 17, 2026 | Infinidat Cryptographic Module 1.1.1 | ©2026 Infinidat, Ltd. | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "KAS-ECC-SSC Sp800-56Ar3 | A5477 | Domain Parameter Generation Methods - P-224, P-256, P-384, | P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A Rev. | 3",
       "KDF SP800-108 | A5477",
       "KDF Mode - Counter | Supported Lengths - Supported Lengths: 8-4096 Increment 8 | SP 800-108 Rev. | 1",
       "PBKDF | A5477 | Iteration Count - Iteration Count: 10-10000 Increment 1 | Password Length - Password Length: 8-128 Increment 1 | SP 800-132",
@@ -139,8 +151,8 @@
       "TDES-OFB | A5477 | Direction - Decrypt | SP 800-67 Rev. 2 | Infinidat Cryptographic Module (libssl)",
       "TLS v1.3 KDF (CVL) | A5478 | HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 Rev. 1",
-      "The Triple-DES for decryption/unwrapping, DSA for signature verification, and RSA specific to FIPS 186-4 for | signature verification (ANSI X9.31 and 1024-bit modulo capabilities) algorithms are Approved for legacy usage | only. These legacy algorithms can only be used on data generated before the Legacy Date specified in FIPS 140-3 | IG C.M. | FIPS 140-3 Non-Proprietary Security Policy, Version 1.1 | February 17, 2026 | Infinidat Cryptographic Module 1.1.1 | ©2026 Infinidat, Ltd. | This document may be freely reproduced and distributed whole and intact including this copyright notice. | 2.5.2 Vendor Affirmed Algorithms | The vendor affirms the following cryptographic security methods: | Name | Implementation | CKG | Key Type:Asymmetric | Infinidat Cryptographic Module (libcrypto) | SP 800-133 Rev. 2 Section 4 Example 1 | 2.5.3 Non-Approved, Allowed Algorithms | The table below lists the non-Approved algorithms implemented by the module that are allowed for use in the | Approved mode of operation. | Name | Implementation",
-      "AES (any approved mode of AES) | Use:Key Unwrap | Infinidat Cryptographic Module (libcrypto) | IG D.G | 2.5.4 Non-Approved, Allowed Algorithms with No Security Claimed | The module does not implement any non-approved algorithms allowed in the approved mode of operation for | which no security is claimed. | N/A for this module. | 2.5.5 Non-Approved, Not Allowed Algorithms | The table below lists the non-Approved algorithms that are not allowed for use in the Approved mode of operation. | Name | Use and Function",
+      "The Triple-DES for decryption/unwrapping, DSA for signature verification, and RSA specific to FIPS 186-4 for | signature verification (ANSI X9.31 and 1024-bit modulo capabilities) algorithms are Approved for legacy usage | only. These legacy algorithms can only be used on data generated before the Legacy Date specified in FIPS 140-3 | IG C.M.",
+      "AES (any approved mode of AES) | Use:Key Unwrap | Infinidat Cryptographic Module (libcrypto) | IG D.G | 2.5.4",
       "AES-GCM (non-compliant with | external IV) | Encryption/decryption",
       "AES-OCB | Authenticated encryption/decryption | ANSI X9.31 RNG (with 128-bit",
       "AES core) | Random number generation | ARIA | Encryption/decryption | Blake2 | Encryption/decryption | Blowfish | Encryption/decryption | Camellia | Encryption/decryption | CAST | Encryption/decryption | CAST5 | Encryption/decryption | ChaCha20 | Encryption/decryption",
@@ -150,7 +162,7 @@
       "ECDH (non-compliant)",
       "Key agreement, shared secret computation",
       "ECDSA (non-compliant) | Key pair generation; digital signature generation; digital signature verification",
-      "EdDSA | Key pair generation; digital signature generation; digital signature verification | FIPS 140-3 Non-Proprietary Security Policy, Version 1.1 | February 17, 2026 | Infinidat Cryptographic Module 1.1.1 | ©2026 Infinidat, Ltd. | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Name | Use and Function | IDEA | Encryption/decryption | Hash_DRBG (non-compliant) | Random bit generation",
+      "EdDSA | Key pair generation; digital signature generation; digital signature verification",
       "HKDF (non-compliant)",
       "HMAC DRBG (non-compliant) | Random bit generation",
       "KBKDF (non-compliant) | MD2 | MD4 | MD5 | Poly1305 | Message authentication code | RC2 | Encryption/decryption | RC4 | Encryption/decryption | RC5 | Encryption/decryption | RIPEMD | RMD160",
@@ -158,18 +170,6 @@
       "TDES | Encryption and key wrapping",
       "TDES-CMAC | MAC generation",
       "TLS v1.0/v1.1 KDF (non- | compliant) | Whirlpool"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 82
-    }
+    ]
   }
 }

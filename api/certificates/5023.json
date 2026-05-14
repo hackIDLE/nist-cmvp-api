@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023"
   },
   "certificate": {
     "certificate_number": "5023",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5023.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 70
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -82,7 +94,7 @@
       "AES-ECB | A4783 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
       "AES-GCM | A4782 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
       "AES-GCM | A4783 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
-      "AES-GMAC | A4782 | Direction - Decrypt, Encrypt | IV Generation - Internal | SP 800-38D | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc. | This document can be reproduced and distributed only whole and intact, including this copyright notice | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256",
+      "AES-GMAC | A4782 | Direction - Decrypt, Encrypt | IV Generation - Internal | SP 800-38D | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc.",
       "AES-GMAC | A4783 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
       "Counter DRBG | A4782 | Prediction Resistance - No, Yes",
       "Mode - AES-256 | Derivation Function Enabled - No, Yes | SP 800-90A Rev. | 1",
@@ -101,7 +113,7 @@
       "Cipher - AES-128, AES-256 | SP 800-135 Rev. | 1",
       "KDF TLS (CVL) | A4782",
       "TLS Version - v1.0/1.1 | SP 800-135 Rev. | 1",
-      "RSA KeyGen (FIPS186-4) | A4782 | Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Private Key Format - Standard | FIPS 186-4 | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc. | This document can be reproduced and distributed only whole and intact, including this copyright notice",
+      "RSA KeyGen (FIPS186-4) | A4782 | Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Private Key Format - Standard | FIPS 186-4 | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc.",
       "RSA SigGen (FIPS186-4) | A4782 | Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | FIPS 186-4",
       "RSA SigVer (FIPS186-4) | A4782 | Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | FIPS 186-4",
       "SHA-1 | A4782 | - | FIPS 180-4",
@@ -109,10 +121,10 @@
       "SHA2-256 | A4782 | - | FIPS 180-4",
       "SHA2-384 | A4782 | - | FIPS 180-4",
       "TLS v1.2 KDF RFC7627",
-      "(CVL) | A4782 | - | SP 800-135 Rev. | 1 | There are algorithms, modes, and key/moduli sizes that have been CAVP-tested but are not used by any | approved service of the module. Only the algorithms, modes/methods, and key lengths/curves/moduli shown in | this table are used by an approved service of the module. | Name | Implementation | Cryptographic Key | Generation (CKG) | Key | Type:Asymmetric | N/A | Random bit strings required for generating the | cryptographic keys is compliant with section 4 | example 1 of SP800-133r2 | Non-Approved, Allowed Algorithms: | N/A for this module. | The module does not implement any Non-Approved Allowed algorithms in the Approved mode of operation. | Non-Approved, Allowed Algorithms with No Security Claimed: | Name | Caveat | Use and Function | MD5 | Allowed per IG 2.4.A",
-      "Message digest used in TLS 1.0 / 1.1 KDF only | Non-Approved, Not Allowed Algorithms: | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc. | This document can be reproduced and distributed only whole and intact, including this copyright notice | Name | Use and Function",
+      "(CVL) | A4782 | - | SP 800-135 Rev. | 1 | There are algorithms, modes, and key/moduli sizes that have been CAVP-tested but are not used by any | approved service of the module. Only the algorithms, modes/methods, and key lengths/curves/moduli shown in | this table are used by an approved service of the module. | Name | Implementation | Cryptographic Key | Generation (CKG) | Key | Type:Asymmetric | N/A | Random bit strings required for generating the | cryptographic keys is compliant with section 4 | example 1 of SP800-133r2",
+      "Message digest used in TLS 1.0 / 1.1 KDF only",
       "AES with OFB, CCM, CFB, XTS, KW modes | Symmetric encryption and decryption",
-      "Blowfish, Camellia, CAST5, DES, IDEA, RC2, RC4, SEED, SM2,",
+      "Blowfish, Camellia, CAST5, DES, IDEA, RC2, RC4, SEED, SM2",
       "SM4, Triple-DES | Symmetric encryption and decryption",
       "SHA2-224, SHA2-512, SM3, MD4, MD5 (outside of TLS), MDC2, | RIPEMD, Whirlpool",
       "HMAC-SHA2-224, HMAC-SHA2-512, AES CMAC, Triple-DES | CMAC | PKCS #1 v1.5 scheme with 1024 and greater than 4096 up to",
@@ -142,21 +154,9 @@
       "TLS KDF",
       "Key Derivation function in the context of SSH using SHA-1 /",
       "SHA2-224 / SHA2-512",
-      "SSH KDF | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc. | This document can be reproduced and distributed only whole and intact, including this copyright notice | Name | Use and Function | PKCS #1 v1.5 with keys other than 2048 / 3072 / 4096-bit using",
+      "SSH KDF | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc.",
       "SHA2-256, SHA2-384",
       "RSA signature generation and verification"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 70
-    }
+    ]
   }
 }

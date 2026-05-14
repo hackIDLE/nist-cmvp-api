@@ -11,6 +11,9 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - **Extraction Provenance**: Per-certificate `algorithm_extraction` metadata records cache/fallback status, source URL, and extracted row counts
 - **Security Policy Links**: Direct URLs to Security Policy PDF documents
 - **Certificate Detail Records**: Per-certificate JSON with vendor, related files, validation history, and security level exceptions
+- **Search Indexes**: Split vendor, algorithm, status, and standard indexes for lighter client-side lookups
+- **Data Quality Report**: Latest misses, refreshed records, fallback usage, changed certificates, and weekly run checks
+- **Consumer Examples**: curl, Python, JavaScript, and agent-oriented examples for common queries
 
 ## For Agents
 
@@ -19,6 +22,7 @@ Static JSON API for NIST Cryptographic Module Validation Program data. Auto-upda
 - [`api/docs.md`](https://hackidle.github.io/nist-cmvp-api/api/docs.md) - Markdown endpoint reference with examples
 - [`openapi.json`](https://hackidle.github.io/nist-cmvp-api/openapi.json) - OpenAPI 3.0.3 schema
 - [`api/schemas/index.schema.json`](https://hackidle.github.io/nist-cmvp-api/api/schemas/index.schema.json) - JSON Schema index for API responses
+- [`api/examples.json`](https://hackidle.github.io/nist-cmvp-api/api/examples.json) - copy-ready consumer examples
 
 ## Endpoints
 
@@ -32,6 +36,12 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/api/`
 | `algorithms.json` | Algorithm summary with usage statistics across all certificates |
 | `metadata.json` | Dataset info (last update, counts, feature flags) |
 | `index.json` | API index with all endpoints and feature information |
+| `data-quality.json` | Latest run quality report, cache reuse checks, misses, refreshes, fallbacks, and changed certificates |
+| `examples.json` | curl, Python, JavaScript, and agent-oriented lookup examples |
+| `indexes/vendors.json` | Certificate references keyed by vendor name |
+| `indexes/algorithms.json` | Certificate references keyed by extracted algorithm category |
+| `indexes/statuses.json` | Certificate references keyed by status |
+| `indexes/standards.json` | Certificate references keyed by FIPS standard |
 | `schemas/*.schema.json` | JSON Schemas for response validation |
 | `certificates/index.json` | Compact discovery index for every per-certificate detail file |
 | `certificates/{certificate}.json` | Structured detail record for one CMVP certificate |
@@ -175,9 +185,23 @@ curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/5203.json | jq
 curl -s https://hackidle.github.io/nist-cmvp-api/api/certificates/index.json | \
   jq '.certificates[] | select(.dataset == "active" and .standard == "FIPS 140-3") | {certificate_number, path, vendor_name, module_name}'
 
+# Use split indexes for common lookup dimensions
+curl -s https://hackidle.github.io/nist-cmvp-api/api/indexes/vendors.json | \
+  jq '.keys["Intel Corporation"][] | {certificate_number, module_name, path, status}'
+
+curl -s https://hackidle.github.io/nist-cmvp-api/api/indexes/algorithms.json | \
+  jq '.keys.AES[] | {certificate_number, vendor_name, module_name, path}'
+
 # Check last update and extraction metrics
 curl -s https://hackidle.github.io/nist-cmvp-api/api/metadata.json | \
   jq '{generated_at, extraction_metrics: .extraction_metrics.combined}'
+
+# Review quality checks from the latest run
+curl -s https://hackidle.github.io/nist-cmvp-api/api/data-quality.json | \
+  jq '{status: .update_monitor.status, next_scheduled_run: .update_monitor.next_scheduled_run, summary}'
+
+# Browse copy-ready examples
+curl -s https://hackidle.github.io/nist-cmvp-api/api/examples.json | jq '.examples.curl'
 
 # Validate a response with a published JSON Schema (requires: pip install jsonschema)
 curl -s https://hackidle.github.io/nist-cmvp-api/api/schemas/modules.schema.json > modules.schema.json

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066"
   },
   "certificate": {
     "certificate_number": "5066",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5066.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 56
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -81,7 +93,7 @@
       "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
       "ECDSA KeyGen | (FIPS186-4) | A4446 | Curve - P-256, P-384, P-521 | FIPS 186-4",
       "ECDSA SigGen | (FIPS186-4) | A4446 | Curve - P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-224, SHA2-256,",
+      "Hash Algorithm - SHA2-224, SHA2-256",
       "SHA2-384, SHA2-512 | FIPS 186-4",
       "ECDSA SigVer | (FIPS186-4) | A4446 | Curve - P-256, P-384, P-521 | FIPS 186-4",
       "HMAC-SHA-1 | A4446 | Key Length - Key Length: 256-448 Increment | 8 | FIPS 198-1",
@@ -110,7 +122,7 @@
       "SHA2-512 | A4446 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "TLS v1.2 KDF",
       "RFC7627 (CVL) | A4446",
-      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | SP 800-135 | Rev. 1 | Octeon III Family Crypyto Engine | CAVP | Cert",
       "AES-CBC",
       "AES 3301 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
@@ -130,19 +142,7 @@
       "SHA2-384",
       "SHS 2737 | Message Length - Message Length: 8- | 102400 Increment 8 | FIPS 180-4",
       "SHA2-512",
-      "SHS 2737 | Message Length - Message Length: 8- | 102400 Increment 8 | FIPS 180-4 | © 2021-2025 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | Name Properties | Implementation Reference | CKG | Key Type:Asymmetric N/A | SP 800-133r2 Section 4, Method 1 | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 56
-    }
+      "SHS 2737 | Message Length - Message Length: 8- | 102400 Increment 8 | FIPS 180-4 | © 2021-2025 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | Name Properties | Implementation Reference | CKG | Key Type:Asymmetric N/A | SP 800-133r2 Section 4, Method 1"
+    ]
   }
 }
