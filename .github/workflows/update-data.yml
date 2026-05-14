@@ -44,7 +44,7 @@ jobs:
 
       - name: Run scraper
         env:
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          ALGORITHM_SOURCE: crawl4ai
           SKIP_ALGORITHMS: ${{ github.event.inputs.skip_algorithms == 'true' && '1' || '0' }}
         run: |
           python scraper.py
