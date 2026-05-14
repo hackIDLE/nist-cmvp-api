@@ -20,6 +20,7 @@ from scraper import (
     parse_certificate_detail_page,
     parse_modules_table,
     prune_orphan_certificate_details,
+    should_reuse_certificate_detail,
     should_reuse_cached_algorithms,
 )
 
@@ -266,6 +267,18 @@ def test_parse_certificate_detail_page():
               <div class="col-md-3"><span>Description</span></div>
               <div class="col-md-9">A software library providing cryptographic functionality.</div>
             </div>
+            <div class="row padrow">
+              <div class="col-md-3"><span>Software Versions</span></div>
+              <div class="col-md-9">OpenSSL FIPS Provider 3.0.9, 3.0.10</div>
+            </div>
+            <div class="row padrow">
+              <div class="col-md-3"><span>Hardware Versions</span></div>
+              <div class="col-md-9">N/A</div>
+            </div>
+            <div class="row padrow">
+              <div class="col-md-3"><span>Firmware Versions</span></div>
+              <div class="col-md-9">Firmware 1.2.3</div>
+            </div>
           </div>
         </div>
 
@@ -343,8 +356,37 @@ def test_parse_certificate_detail_page():
     assert payload["validation_history"][1]["type"] == "Updated", "Validation history type mismatch"
     assert payload["validation_dates"] == ["3/21/2026", "4/01/2026"], "Validation dates mismatch"
     assert payload["algorithms"] == ["AES", "HMAC"], "Algorithm list mismatch"
+    assert payload["software_versions"] == "OpenSSL FIPS Provider 3.0.9, 3.0.10", "Software versions mismatch"
+    assert payload["hardware_versions"] == "N/A", "Hardware versions mismatch"
+    assert payload["firmware_versions"] == "Firmware 1.2.3", "Firmware versions mismatch"
 
     print("✓ Certificate detail page test passed")
+
+
+def test_should_reuse_certificate_detail_requires_version_schema_fields():
+    """Cached detail reuse should require every version field added to the detail schema."""
+    previous_module = {"Certificate Number": "5203", "Vendor Name": "OVH SAS"}
+    previous_detail = {"software_versions": "3.0.9"}
+    current_fingerprint = build_certificate_fingerprint(previous_module, "active")
+    previous_fingerprint = build_certificate_fingerprint(previous_module, "active")
+
+    assert not should_reuse_certificate_detail(
+        previous_module,
+        previous_detail,
+        previous_fingerprint,
+        current_fingerprint,
+    ), "Partial version schema payload should force HTML refresh"
+
+    previous_detail["hardware_versions"] = None
+    previous_detail["firmware_versions"] = None
+    assert should_reuse_certificate_detail(
+        previous_module,
+        previous_detail,
+        previous_fingerprint,
+        current_fingerprint,
+    ), "Payload with all version schema keys should be reusable"
+
+    print("✓ Certificate detail reuse schema test passed")
 
 
 def test_parse_algorithms_from_policy_text():
@@ -658,6 +700,12 @@ def test_generate_agent_docs():
     )
     assert "/api/algorithms.json" in openapi["paths"], "OpenAPI spec should include algorithms endpoint when available"
     assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
+    module_properties = openapi["components"]["schemas"]["Module"]["properties"]
+    certificate_properties = openapi["components"]["schemas"]["CertificateDetail"]["properties"]
+    for key in ("software_versions", "hardware_versions", "firmware_versions"):
+        assert key in module_properties, f"OpenAPI module schema should include {key}"
+        assert key in certificate_properties, f"OpenAPI certificate detail schema should include {key}"
+        assert module_properties[key]["nullable"] is True, f"OpenAPI module schema should mark {key} nullable"
 
     print("✓ Agent-friendly docs generation test passed")
 
@@ -676,6 +724,7 @@ def main():
         test_parse_historical_modules_table()
         test_parse_modules_in_process()
         test_parse_certificate_detail_page()
+        test_should_reuse_certificate_detail_requires_version_schema_fields()
         test_parse_algorithms_from_policy_text()
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
