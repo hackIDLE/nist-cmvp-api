@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262"
   },
   "certificate": {
     "certificate_number": "5262",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "certteam@cisco.com",
       "contact_phone": "800-553-6387"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 59
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -80,7 +92,7 @@
       "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-256 | Increment 256 | Entropy Input - Entropy Input: 128-256 | Increment 128, Entropy Input: 256-512 | Increment 128 | Nonce - Nonce: 128 | Personalization String Length - | Personalization String Length: 0-256 | Increment 256 | Returned Bits - 256 | SP 800-90A | Rev. 1 | © 2021-2026 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Cert",
       "ECDSA KeyGen | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521 FIPS 186-4",
       "ECDSA SigGen | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | FIPS 186-4",
       "ECDSA SigVer | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521",
       "HMAC-SHA-1 A2952 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 256-448 Increment | 8 | FIPS 198-1",
@@ -93,7 +105,7 @@
       "Diffie-Hellman Shared Secret Length - Diffie-",
       "Hellman Shared Secret Length: 2048 | Derived Keying Material Length - Derived | Keying Material Length: 3072",
       "Hash Algorithm - SHA-1 | SP 800-135 | Rev. 1",
-      "KDF SSH (CVL) A2952 Cipher - AES-128, AES-192, AES-256,",
+      "KDF SSH (CVL) A2952 Cipher - AES-128, AES-192, AES-256",
       "TDES",
       "Hash Algorithm - SHA-1, SHA2-224, SHA2-",
       "256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
@@ -106,7 +118,7 @@
       "SHA2-512 A2952 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "TLS v1.2 KDF",
       "RFC7627 (CVL)",
-      "A2952 Hash Algorithm - SHA2-256, SHA2-384,",
+      "A2952 Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | SP 800-135 | Rev. 1 | CiscoSSL FOM - Virtual - Non-PAA | Cert",
       "AES-CBC A3376 Key Length - 128, 256 SP 800-38A",
       "AES-GCM A3376 Key Length - 128, 256 SP 800-38D",
@@ -122,7 +134,7 @@
       "KAS-ECC-SSC | Sp800-56Ar3 | A3376 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | SP 800-56A | Rev. 3",
       "KAS-FFC-SSC | Sp800-56Ar3 | A3376 Domain Parameter Generation Methods - | modp-2048 | SP 800-56A | Rev. 3",
       "KDF IKEv2 (CVL) A3376 Initiator Nonce Length - Initiator Nonce | Length: 2048 | Responder Nonce Length - Responder | Nonce Length: 2048",
-      "KDF SSH (CVL) A3376 Cipher - AES-128, AES-192, AES-256,",
+      "KDF SSH (CVL) A3376 Cipher - AES-128, AES-192, AES-256",
       "RSA KeyGen | (FIPS186-4) | A3376 Modulo - 2048, 3072 FIPS 186-4",
       "RSA SigGen | (FIPS186-4) | A3376 Modulo - 2048, 3072 | Signature Type - PKCS 1.5 | FIPS 186-4",
       "RSA SigVer | (FIPS186-4) | A3376 Signature Type - PKCS 1.5 | Modulo - 2048, 3072 | FIPS 186-4 | Safe Primes Key | Generation | A3376 Safe Prime Groups - modp-2048 SP 800-56A | Rev. 3",
@@ -130,28 +142,9 @@
       "SHA2-256 A3376 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "SHA2-384 A3376 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "SHA2-512 A3376 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
-      "A3376 Hash Algorithm - SHA2-256, SHA2-384,",
+      "A3376 Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | © 2021-2026 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Name Properties Implementation Reference | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
-      "output from SP800-90Arev1 CTR_DRBG | (A2952/A3376) | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 59,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+      "output from SP800-90Arev1 CTR_DRBG | (A2952/A3376)"
+    ]
   }
 }

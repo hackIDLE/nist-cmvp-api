@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013"
   },
   "certificate": {
     "certificate_number": "5013",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5013.pdf",
@@ -58,6 +58,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 68
+    },
     "algorithms": [
       "AES",
       "KTS",
@@ -101,7 +113,7 @@
       "AES-ECB Core 4 | BC-UnAuth | Used toencrypt/decryptinputted data. Theunderlying blockcipher of AES-XTS. | AES-ECB: (A5025,A5026, A5027,A5028",
       "AES-ECB Core 16 | BC-UnAuth | Used toencrypt/decryptinputted data. Theunderlying blockcipher of AES-XTS. | AES-ECB: (A5029,A5030, A5031,A5032, A5033,A5034, A5035,A5036, A5037,A5038, A5039,A5040, A5041,A5042, A5043,A5044",
       "AES-XTS Core 512 | BC-UnAuth | Used toencrypt/decryptinputted data in unitsof 512 byte. | AES-XTS TestingRevision 2.0: (A5046,A5047, A5048,A5049)AES-ECB: (A5025,A5026, A5027,A5028, A5029,A5030, A5031,A5032, A5033,A5034, A5035,A5036, A5037,A5038, A5039,A5040, A5041,A5042, A5043,A5044",
-      "AES-XTS Core 520 | BC-UnAuth | Used toencrypt/decryptinputted data in unitsof 520 byte. | AES-XTS TestingRevision 2.0: (A5050,A5051, A5052,A5053AES-ECB: (A5025,A5026, A5027,A5028, A5029,",
+      "AES-XTS Core 520 | BC-UnAuth | Used toencrypt/decryptinputted data in unitsof 520 byte. | AES-XTS TestingRevision 2.0: (A5050,A5051, A5052,A5053AES-ECB: (A5025,A5026, A5027,A5028, A5029",
       "Expand AES Key | Expand AES key to roundkeys. | API returnvalue: 0(Success) | DEK | Round Key | AES-ECBCoe 4AES-ECBCore 16AES-XTSCore 512AES-XTSCore 520 | Cryptographic Oficer-DEK: W,E- Round Key:G,R",
       "Encrypt (512B) | Encrypt data using XTS-AESin units of 512 byte. | API returnvalue: 0(Success) | Data toencrypt,Rond Key | Encrypted data | AES-XTSCore 512 | Cryptographic OfficerRound Key:W,E",
       "Decrypt (512B) | Decrypt data using XTS-AESin units of 512 byte. | API returnvalue: 0(Success) | Data todecrypt,Round Key | Decrypted data | AES-XTSCore 512 | Cryptographic OficerRound Key:W,E",
@@ -132,18 +144,6 @@
       "AES-XTS(520B) | KAT | CAST | On Demand | Manually",
       "AES-KW (A5023) | KAT | CAST | On Demand | Manually",
       "SHA2-256 (A5024) | KAT | CAST | On Demand | Manually"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 68
-    }
+    ]
   }
 }

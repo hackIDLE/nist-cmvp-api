@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030"
   },
   "certificate": {
     "certificate_number": "5030",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5030.pdf",
@@ -61,6 +61,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 173
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -148,13 +160,13 @@
       "docum | \\- Entropyinputstring:W,E- DRBG",
       "guidan | ed DEK | (AES",
       "unwraps theDEK using AES-KW. If the class",
-      "Backup keybaggeneration | The modulegenerates newset of back upkeybags usingthe DRBG | Success | N/A | status | Random | User- Class A,",
+      "Backup keybaggeneration | The modulegenerates newset of back upkeybags usingthe DRBG | Success | N/A | status | Random | User- Class A",
       "guidan | (AES",
       "Backup keybagservice | Step 1. Themodule receiveswrapped DEKand the classkey referencefor C and Afrom the userkeybag; 2. Usingthe referencedclass key, themoduleunwraps theDEK using AES-KW. If the classkey is notavailable, an | Successreturned fromAPIlisted inthecustomer | wrappedDEK,reference to | wrappedDEK | keywrapping /keyunwrappin | User- Class A,Class C,Class AK,Class",
       "guidan | user | (AES",
       "AES-KW; 5. | Class",
-      "Escrow keybagcreation | The modulegenerates newset of escrowkeybag usingthe DRBG | Successreturned fromAPIlisted inthecustomer | N/A | status(success/error) | RandomNumberGeneration | User- Class A,Class C,Class AK,",
-      "Export Keybag | Step 1. Themodule receivesreference to akeybag; Step 2:A HMAC key istaken as inputbased on thehardwarespecific data forthe SKS; Step 3:HMAC value is | Successreturned fromAPI | reference to akeybagto be | keybagwithHMACtag | HMACMessageAuthentication | User- HMACkey: W,E- Class A,",
+      "Escrow keybagcreation | The modulegenerates newset of escrowkeybag usingthe DRBG | Successreturned fromAPIlisted inthecustomer | N/A | status(success/error) | RandomNumberGeneration | User- Class A,Class C,Class AK",
+      "Export Keybag | Step 1. Themodule receivesreference to akeybag; Step 2:A HMAC key istaken as inputbased on thehardwarespecific data forthe SKS; Step 3:HMAC value is | Successreturned fromAPI | reference to akeybagto be | keybagwithHMACtag | HMACMessageAuthentication | User- HMACkey: W,E- Class A",
       "the entire | docum | (AES",
       "Step 4: HMAC is | Class",
       "ce | (AES",
@@ -247,18 +259,6 @@
       "Counter DRBG(A2864) | KAT | CAST | On Demand | Manually",
       "Counter DRBG(A501) | KAT | CAST | On Demand | Manually",
       "Errorstate | The HMAC-SHA-256value computed over themodule did not matchthe pre- computed value,OR the computed valuein the invokedConditional CAST did notmatch the known value.No cryptographicservices are provided,and data output isprohibited | Pre-operationalFirmwareIntegrity Testfailure ORConditionalCAST failure | Poweroff/on | for Integrity: print statement\"FAILED:fipspost\\_post\\_integrity\" tostdout;for CAST: sprint statement\"FAILED: <event>\" to stdout(<event> refers to any of thecryptographic functionslisted in the Conditional Self-test Table)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 173
-    }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5057"
   },
   "certificate": {
     "certificate_number": "5057",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5057",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5057",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5057.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 50
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -123,18 +135,6 @@
       "HMAC key generation | CKG | HMAC key generation | Key Size and Strength:160,256,384 bits with 128 or 256 bits of key strength | Counter DRBG:(A4792)",
       "KTS(AES+HMAC)key wrapping | KTS-Wrap | Symmetric key wrapping | Caveat:Key establishment methodology provides128 or 256 bits of security strength | AES-CFB128:(A4792)HMAC-SHA-1:(A4792)HMAC-SHA2-256:(A4792)HMAC-SHA2-384:(A4792)",
       "KTS(AES+HMAC)key unwrapping | KTS-Wrap | Symmetric key unwrapping | Caveat:Key establishment methodology provides128 or 256 bits of security strength | AES-CFB128:(A4792)HMAC-SHA-1:(A4792)HMAC-SHA2-256:(A4792)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 50
-    }
+    ]
   }
 }

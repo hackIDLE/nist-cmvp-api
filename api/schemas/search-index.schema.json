@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/search-index.schema.json",
+  "title": "NIST CMVP Split Search Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "index",
+    "field",
+    "key_count",
+    "entry_count",
+    "keys"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "/api/schemas/metadata.schema.json"
+    },
+    "index": {
+      "type": "string",
+      "enum": [
+        "vendors",
+        "algorithms",
+        "statuses",
+        "standards"
+      ]
+    },
+    "field": {
+      "type": "string"
+    },
+    "key_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "entry_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "keys": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "certificate_number",
+            "dataset",
+            "path",
+            "vendor_name",
+            "module_name",
+            "standard",
+            "status",
+            "algorithm_count"
+          ],
+          "properties": {
+            "certificate_number": {
+              "type": "string",
+              "pattern": "^[0-9]+$"
+            },
+            "dataset": {
+              "type": "string",
+              "enum": [
+                "active",
+                "historical"
+              ]
+            },
+            "path": {
+              "type": "string",
+              "pattern": "^/api/certificates/[0-9]+\\.json$"
+            },
+            "vendor_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "module_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "standard": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "algorithm_count": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

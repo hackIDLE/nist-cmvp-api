@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801"
   },
   "certificate": {
     "certificate_number": "4801",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
@@ -62,6 +62,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 52
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -104,8 +116,8 @@
       "ECDSA | #A4760 | Signature Generation & Verification Hashes: SHA-224,SHA-256,SHA-384,SHA-512Curves:P-256,P-384,P-521 | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC7001 Series AMD EPYC7113: Generic C",
       "RSA | A4760 | Key Pair Generation Mode: Probable Primes (Appendix B.3.3) Modulus: 2048-4096 bits | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7J13: Generic C",
       "ECDSA | A4760 | Key Pair Generation Mode: Extra Random Bits (Appendix B.4.1) Curves: P-256, P-384, P-521 | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7J13: Generic C",
-      "RSA:",
-      "ECDSA:",
+      "RSA",
+      "ECDSA",
       "MD5 | Only allowed as the PRF in TLSv1.0 and v1.1 per IG 2.4.A | Message digest used in TLS 1.0/1.1 KDF only",
       "MD2, MD5, SHA-1 | Message Digest",
       "RC2, RC4, DES, Triple-DES, CDMF, Camellia, SEED, ChaCha20(-Poly1305) | EncryptionDecryption",
@@ -128,18 +140,6 @@
       "Compliant with IG D.F scenario2(1) | KAS-ECC-SSC:#A4760",
       "KAS-FFC-SSC\\[SP800-56ARev3\\] | Ephemeral Unified scheme",
       "Keys:2048,3072,4096,6144,8192-bit keys with 112-200bits of key strength | KAS-FFC-SSC:#A4760"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 52
-    }
+    ]
   }
 }

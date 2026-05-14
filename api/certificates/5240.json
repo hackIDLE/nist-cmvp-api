@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
   },
   "certificate": {
     "certificate_number": "5240",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 41
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -113,21 +125,9 @@
       "then need to either trigger a re-key of the session (i.e., a new key for AES-GCM), or | terminate the connection. | •",
       "The Module uses RFC 7296 compliant IKEv2 to establish the shared secret SKEYSEED",
       "from which the AES GCM encryption keys are derived. Two keys established by IKEv2 | for one security association (one key for encryption in each direction between the | parties) are not identical and abort the session if they are. When the IV exhausts the | maximum number of possible values for a given session key, the first party, client or | server, to encounter this condition will trigger a handshake to establish a new encryption | key. In case the Module’s power is lost and then restored, a new key for use with the",
-      "AES GCM encryption/decryption shall be established. | Name Properties | Implementation Reference | CKG | Key | Type:Asymmetric | N/A | The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct | output from SP800-90Arev1 CTR_DRBG | (A4397) | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | UNCLASSIFIED / NON CLASSIFIÉ//TLP:AMBER+STRICT | N/A for this module. | Non-Approved, Not Allowed Algorithms: | Name | Use and Function | MD5",
+      "AES GCM encryption/decryption shall be established. | Name Properties | Implementation Reference | CKG | Key | Type:Asymmetric | N/A | The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct | output from SP800-90Arev1 CTR_DRBG | (A4397)",
       "DES | Data encryption/decryption",
       "Triple-DES Data encryption/decryption"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 41
-    }
+    ]
   }
 }

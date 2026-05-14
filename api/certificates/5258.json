@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258"
   },
   "certificate": {
     "certificate_number": "5258",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5258.pdf",
@@ -58,6 +58,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 203
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -121,7 +133,7 @@
       "512/224, SHA2-512/256 | FIPS 186-4",
       "DSA PQGGen | (FIPS186-4) | A5173 | P/Q Generation Methods - Probable | G Generation Methods - Canonical, Unverifiable | L - 2048 | N - 224, 256",
       "DSA PQGVer | (FIPS186-4) | A4593 | P/Q Generation Methods - Probable | G Generation Methods - Canonical, Unverifiable | L - 1024, 2048 | N - 160, 224, 256",
-      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512,",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
       "SHA2-512/224, SHA2-512/256 | FIPS 186-4",
       "DSA PQGVer | (FIPS186-4) | A5173 | P/Q Generation Methods - Probable | G Generation Methods - Canonical, Unverifiable | L - 1024, 2048 | N - 160, 224, 256",
       "DSA SigVer | (FIPS186-4) | A4593 | L - 1024, 2048, 3072 | N - 160, 224, 256",
@@ -180,10 +192,10 @@
       "KAS-FFC-SSC | Sp800-56Ar3 | A5173 | Domain Parameter Generation Methods - FB, FC, ffdhe2048, | ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP- | 3072, MODP-4096, MODP-6144, MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
       "KAS-IFC-SSC | A4593 | Modulo - 2048, 3072, 4096, 6144, 8192 | Key Generation Methods - rsakpg1-basic, rsakpg1-crt, rsakpg1-prime- | factor, rsakpg2-basic, rsakpg2-crt, rsakpg2-prime-factor | Scheme - | KAS1 - | KAS Role - initiator, responder | KAS2 - | KAS Role - initiator, responder | Fixed Public Exponent - 010001 | SP 800-56A | Rev. 3",
       "KAS-IFC-SSC | A5173 | Modulo - 2048, 3072, 4096, 6144, 8192 | Key Generation Methods - rsakpg1-basic, rsakpg1-crt, rsakpg1-prime- | factor, rsakpg2-basic, rsakpg2-crt, rsakpg2-prime-factor | Scheme - | KAS1 - | KAS Role - initiator, responder | KAS2 - | SP 800-56A | Rev. 3 | Document Version 1.0 | ©Broadcom Inc | CAVP | Cert | KAS Role - initiator, responder | Fixed Public Exponent - 010001",
-      "KDA HKDF | SP800-56Cr2 | A4593 | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512,",
+      "KDA HKDF | SP800-56Cr2 | A4593 | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
       "SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3- | 512 | Perform Multiple Expansion Tests - No",
       "Uses Hybrid Shared Secret - No | SP 800-56C | Rev. 2",
-      "KDA HKDF | SP800-56Cr2 | A5173 | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512,",
+      "KDA HKDF | SP800-56Cr2 | A5173 | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
       "KDA OneStep | SP800-56Cr2 | A4593 | Auxiliary Function Methods -",
       "Auxiliary Function Name - SHA-1 | MAC Salting Methods - default, random | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | SP 800-56C | Rev. 2",
       "KDA OneStep | SP800-56Cr2 | A5173 | Auxiliary Function Methods -",
@@ -191,13 +203,13 @@
       "KDF Mode - feedback",
       "MAC Modes - HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, | SP 800-56C | Rev. 2 | Document Version 1.0 | ©Broadcom Inc | CAVP | Cert",
       "HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-",
-      "SHA2-512/256, HMAC-SHA3-224, HMAC-SHA3-256, HMAC-SHA3-384,",
+      "SHA2-512/256, HMAC-SHA3-224, HMAC-SHA3-256, HMAC-SHA3-384",
       "HMAC-SHA3-512 | Fixed Data Order - after fixed data | Counter Lengths - 8",
       "The KDF supports an empty IV - Yes",
       "The KDF requires an empty IV - Yes | Supported Lengths - Supported Lengths: 2048 | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment 8 | Perform Multiple Expansion Tests - No",
       "Uses Hybrid Shared Secret - No",
       "KDA TwoStep | SP800-56Cr2 | A5173 | MAC Salting Methods - default, random | Fixed Info Pattern - algorithmId||l||uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation",
-      "MAC Modes - HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256,",
+      "MAC Modes - HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256",
       "KDF ANS 9.42",
       "(CVL) | A4593",
       "KDF Type - DER",
@@ -227,9 +239,9 @@
       "Hash Algorithms - SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-",
       "512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512 | Supports Null Associated Data - Yes | Associated Data Pattern - | Associated Data Encoding - concatenation | Key Length - 1024 | SP 800-56B | Rev. 2",
       "KTS-IFC | A5173 | IUT ID - CAFECAFE | Modulo - 2048, 3072, 4096, 6144 | Key Generation Methods - rsakpg1-basic, rsakpg1-crt, rsakpg1-prime- | factor, rsakpg2-basic, rsakpg2-crt, rsakpg2-prime-factor | Fixed Public Exponent - 010001 | Scheme -",
-      "PBKDF | A4593 | Iteration Count - Iteration Count: 1-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512,",
+      "PBKDF | A4593 | Iteration Count - Iteration Count: 1-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
       "SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3- | 512 | Password Length - Password Length: 8-128 Increment 8 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-4096 Increment 8 | SP 800-132",
-      "PBKDF | A5173 | Iteration Count - Iteration Count: 1-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512,",
+      "PBKDF | A5173 | Iteration Count - Iteration Count: 1-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
       "SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3- | 512 | SP 800-132 | Document Version 1.0 | ©Broadcom Inc | CAVP | Cert | Password Length - Password Length: 8-128 Increment 8 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-4096 Increment 8",
       "RSA KeyGen | (FIPS186-4) | A4593 | Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - Yes | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
       "RSA KeyGen | (FIPS186-4) | A5173 | Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - Yes | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
@@ -277,20 +289,8 @@
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1",
       "(CVL) | A5173 | HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | 2.5.2 Vendor-Affirmed Algorithms | The module implements the following vendor affirmed algorithms that are approved for use in | Approved mode. | Document Version 1.0 | ©Broadcom Inc | Name | Implementation | CKG | Key Type:Symmetric | and Asymmetric | N/A | SP 800-133r2 and IG D.H: Per Section 4, example 1 | CKG | (XTS) | Key Type:Symmetric | N/A | SP 800-133r2 and IG D.H: Per Section 6.3, approved",
-      "method 1. Applicable to AES-XTS compliant to IG C.I | because Key_1 and Key_2 are concatenated prior to | usage. | 2.5.3 Non-Approved, Allowed Algorithms | Non-Approved, Allowed Algorithms: | The module implements the following algorithms that are allowed for use in Approved mode. | Name | Implementation | EC Diffie-Hellman | with non-NIST | recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : SSP Agreement | CryptoComply | 140-3 FIPS | Provider | Allowed per IG D.F, | scenario 3 (per IG | C.A, category 1a and | SP 800-186 Appendix | H.1)",
-      "ECDSA with non- | NIST recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : Signature Generation, Signature | Verification, Key Generation, Key | Verification | CryptoComply | 140-3 FIPS | Provider | Allowed per IG C.A, | category 1a (per SP | 800-186 Appendix | H.1) | 2.5.4 Non-Approved, Allowed Algorithms with No Security Claimed | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | The module does not implement any non-approved algorithms with no security claimed. | 2.5.5 Non-Approved, Not Allowed Algorithms | Non-Approved, Not Allowed Algorithms: | Document Version 1.0 | ©Broadcom Inc | N/A for this module. | The module does not implement any non-approved, not allowed algorithms."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 203
-    }
+      "method 1. Applicable to AES-XTS compliant to IG C.I | because Key_1 and Key_2 are concatenated prior to | usage. | 2.5.3",
+      "ECDSA with non- | NIST recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : Signature Generation, Signature | Verification, Key Generation, Key | Verification | CryptoComply | 140-3 FIPS | Provider | Allowed per IG C.A, | category 1a (per SP | 800-186 Appendix | H.1) | 2.5.4"
+    ]
   }
 }

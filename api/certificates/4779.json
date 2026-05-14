@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779"
   },
   "certificate": {
     "certificate_number": "4779",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4779.pdf",
@@ -68,6 +68,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 67
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -149,18 +161,6 @@
       "SHAKE128, SHAKE256 | XOFs | Oracle Linux 9 on KVM on Oracle Linux 8 on Ampere® Altra® Q80-30: SHA\\_ASMOracle Linux 9 on KVM on Oracle Linux 8 on Intel® Xeon® Platinum 8358: SHA\\_ASMOracle Linux 9 on Marvell OCTEON III: SHA\\_ASM",
       "SSH KDF (CVL) with AES-128, AES-192, AES-256 and SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | #A4320, #A4331, #A4332, #A4333, #A4334 | Key Derivation | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7113: SSH\\_ASM, SSH\\_SHANI, SSH\\_AVX2, SSH\\_AVX, SSH\\_SSSE3Oracle Linux 9 on KVM on Oracle Linux 8 on Ampere® Altra® Q80-30: SSH\\_ASMOracle Linux 9 on KVM on Oracle Linux 8 on Intel® Xeon® Platinum 8358: SSH\\_ASM, SSH\\_SHANI, SSH\\_AVX2, SSH\\_AVX, SSH\\_SSSE3Oracle Linux 9 on Marvell OCTEON III: SSH\\_ASM | SP 800-135r1",
       "TLS 1.2 KDF (RFC 7627) (CVL) with SHA2-256, SHA2-384, SHA2-512 using RFC | #A4317, #A4326, #A4330, #A4344, #A4345, #A4346 | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7113: SHA\\_ASM, SHA\\_SHANI, SHA\\_AVX2, SSH\\_SSSE3"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 67
-    }
+    ]
   }
 }

@@ -25,6 +25,15 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/`
 ### Certificate Index
 `GET api/certificates/index.json` — Compact discovery index for all 5,256 per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.
 
+### Search Indexes
+`GET api/indexes/vendors.json`, `GET api/indexes/algorithms.json`, `GET api/indexes/statuses.json`, and `GET api/indexes/standards.json` — Split lookup files for common client-side search by vendor, algorithm, status, and standard.
+
+### Data Quality
+`GET api/data-quality.json` — Latest run quality report with misses, refreshed records, fallback usage, changed certificates, cache reuse checks, and the next scheduled weekly run.
+
+### Consumer Examples
+`GET api/examples.json` — Copy-ready curl, Python, JavaScript, and agent-oriented query examples for vendor, module, algorithm, status, and standard lookups.
+
 ### Active Modules
 `GET api/modules.json` — All 1,086 active validated modules.
 
@@ -33,7 +42,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "total_modules": 1086
   },
   "modules": [
@@ -63,11 +72,11 @@ Example response (truncated):
       "detail_available": true,
       "algorithm_extraction": {
         "schema_version": "1.0",
-        "status": "parsed",
+        "status": "cached",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
-        "cached": false,
+        "cached": true,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 9,
@@ -103,11 +112,11 @@ Example response (truncated):
     "AES": {
       "count": 1495,
       "certificates": [
-        5256,
-        5245,
         5255,
         5244,
-        5254
+        5266,
+        5254,
+        5243
       ]
     }
   }
@@ -122,50 +131,53 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255"
   },
   "certificate": {
-    "certificate_number": "5256",
+    "certificate_number": "5255",
     "dataset": "active",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "AWS Link Encryption Module",
+    "vendor_name": "Hypersecu Information Systems Inc.",
+    "module_name": "HYPERSECU HyperPKI Cryptographic Module",
     "standard": "FIPS 140-3",
     "status": "Active",
-    "module_type": "Software-hybrid",
-    "overall_level": 1,
+    "module_type": "Hardware",
+    "overall_level": 3,
     "validation_dates": [
-      "5/5/2026"
+      "5/4/2026"
     ],
-    "sunset_date": "5/4/2031",
-    "caveat": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum...",
+    "sunset_date": "1/27/2031",
+    "caveat": "The module generates SSPs (e.g., keys) whose strengths are modified by available entropy, No assurance of minimum security of SSPs (e.g., keys, bit strings)...",
     "security_level_exceptions": [
+      "Operational environment: N/A",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
     "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "http://aws.amazon.com",
-      "contact_email": "aws-fips-external@amazon.com"
+      "name": "Hypersecu Information Systems Inc.",
+      "website_url": "http://hypersecu.com",
+      "contact_email": "info@hypersecu.com"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "5/5/2026",
+        "date": "5/4/2026",
         "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "EWA - Canada"
       }
     ],
     "algorithms": [
       "AES",
+      "DRBG",
+      "ECDSA",
       "HMAC",
-      "SHA"
+      "KAS"
     ],
     "algorithm_extraction": {
       "schema_version": "1.0",
@@ -176,8 +188,8 @@ Example response (truncated):
       "cached": true,
       "fallback_used": false,
       "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 15
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 27
     }
   }
 }
@@ -191,30 +203,32 @@ Current build contains 5,256 certificate detail records across active and histor
 ```
 GET api/index.json → endpoints, docs links, feature flags, counts
 GET api/metadata.json → freshness, scrape provenance, and extraction metrics
+GET api/data-quality.json → latest run misses, refreshes, fallbacks, changed certs, and next scheduled run
 ```
 
 ### Find a module and pull the full certificate record
 ```
 GET api/certificates/index.json → discover every certificate detail path and summary row
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/5256.json → full detail record for that certificate
+GET api/certificates/5255.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/5256.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5255.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage
 ```
 GET api/algorithms.json → counts and certificate lists per algorithm
+GET api/indexes/algorithms.json → compact certificate refs keyed by algorithm
 GET api/modules.json → filter module rows by algorithms[] entries and inspect algorithm_extraction
 ```
 
 ## Caveats
 
 - **Unofficial:** This project mirrors public CMVP data and is not affiliated with NIST. Use `https://csrc.nist.gov/projects/cryptographic-module-validation-program` for authoritative source material.
-- **Static JSON:** There is no server-side filtering or search. Download the relevant JSON file and filter client-side.
+- **Static JSON:** There is no server-side filtering. Use the split search indexes or download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
 - **Algorithms coverage:** `api/algorithms.json` summarizes 1,630 certificates that had algorithm data in this build. `api/metadata.json` reports extraction cache hits, refreshes, failures, misses, and fallback counts.

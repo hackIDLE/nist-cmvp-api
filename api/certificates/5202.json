@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5202"
   },
   "certificate": {
     "certificate_number": "5202",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5202",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5202",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5202.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 117
+    },
     "algorithms": [
       "AES",
       "DES",
@@ -73,7 +85,7 @@
     "algorithms_detailed": [
       "AES-CBC | A6208 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
       "AES-CBC | A6209 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-CBC | A6210 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | CAVP | Cert",
+      "AES-CBC | A6210 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1]",
       "AES-CBC | A6211 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
       "AES-CCM | A6204 | Key Length - 128, 192, 256 | SP 800-38C",
       "AES-CCM | A6205 | Key Length - 128, 192, 256 | SP 800-38C",
@@ -96,7 +108,7 @@
       "AES-KW | A6210 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F",
       "AES-KW | A6211 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F",
       "AES-OFB | A6210 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-OFB | A6211 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | CAVP | Cert",
+      "AES-OFB | A6211 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1]",
       "AES-XTS Testing | Revision 2.0 | A6208 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
       "AES-XTS Testing | Revision 2.0 | A6209 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
       "Counter DRBG | A6204 | Prediction Resistance - No",
@@ -111,18 +123,18 @@
       "ECDSA KeyVer | (FIPS186-4) | A6202 | Curve - P-224, P-256, P-384, P-521 | FIPS 186-4",
       "ECDSA KeyVer | (FIPS186-4) | A6212 | Curve - P-224, P-256, P-384, P-521 | FIPS 186-4",
       "ECDSA SigGen | (FIPS186-4) | A6201 | Component - No | Curve - P-224, P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-224, SHA2-256,",
+      "Hash Algorithm - SHA2-224, SHA2-256",
       "SHA2-384, SHA2-512 | FIPS 186-4",
       "ECDSA SigGen | (FIPS186-4) | A6202 | Component - No | Curve - P-224, P-256, P-384, P-521",
       "ECDSA SigGen | (FIPS186-4) | A6212 | Component - No | Curve - P-224, P-256, P-384, P-521",
       "ECDSA SigVer | (FIPS186-4) | A6201 | Component - No | Curve - P-224, P-256, P-384, P-521",
-      "Hash Algorithm - SHA-1, SHA2-224,",
-      "SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | CAVP | Cert",
+      "Hash Algorithm - SHA-1, SHA2-224",
+      "SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1]",
       "ECDSA SigVer | (FIPS186-4) | A6202 | Component - No | Curve - P-224, P-256, P-384, P-521",
       "SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
       "ECDSA SigVer | (FIPS186-4) | A6212 | Component - No | Curve - P-224, P-256, P-384, P-521",
       "HMAC DRBG | A6201 | Prediction Resistance - No",
-      "Mode - SHA-1, SHA2-224, SHA2-256,",
+      "Mode - SHA-1, SHA2-224, SHA2-256",
       "SHA2-384, SHA2-512 | SP 800-90A | Rev. 1",
       "HMAC DRBG | A6202 | Prediction Resistance - No",
       "HMAC DRBG | A6212 | Prediction Resistance - No",
@@ -140,7 +152,7 @@
       "HMAC-SHA2-256 | A6212 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
       "HMAC-SHA2-384 | A6201 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
       "HMAC-SHA2-384 | A6202 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
-      "HMAC-SHA2-384 | A6207 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | CAVP | Cert",
+      "HMAC-SHA2-384 | A6207 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1]",
       "HMAC-SHA2-384 | A6212 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
       "HMAC-SHA2-512 | A6201 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
       "HMAC-SHA2-512 | A6202 | Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
@@ -164,7 +176,7 @@
       "SHA2-224 | A6201 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-224 | A6202 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-224 | A6207 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
-      "SHA2-224 | A6212 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | CAVP | Cert",
+      "SHA2-224 | A6212 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4 | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1]",
       "SHA2-256 | A6201 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-256 | A6202 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-256 | A6207 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
@@ -180,7 +192,7 @@
       "SHA2-512/256 | A6201 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-512/256 | A6202 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
       "SHA2-512/256 | A6212 | Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
-      "TDES-ECB | A6203 | Direction - Decrypt, Encrypt | SP 800-67 | Rev. 2 | The table below lists all the Vendor-Affirmed Algorithms supported by the module. | Name Properties | Implementation Reference | CKG | Key | Type:Asymmetric | N/A | NIST SP800-133r2 Section 4: Using the | Output of a Random Generator, Example 1 | Non-Approved, Allowed Algorithms: | N/A for this module. | Apple corecrypto Module v14.0 [Intel, Kernel, Software, SL1] | FIPS 140-3 Non-Proprietary Security Policy | Apple Inc. 2026 | This document may be reproduced and distributed only in its original entirety without revision. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this module. | Non-Approved, Not Allowed Algorithms: | The table below lists all the Non-Approved, Not Allowed Algorithms supported by the module. | Name | Use and Function",
+      "TDES-ECB | A6203 | Direction - Decrypt, Encrypt | SP 800-67 | Rev. 2 | The table below lists all the Vendor-Affirmed Algorithms supported by the module. | Name Properties | Implementation Reference | CKG | Key | Type:Asymmetric | N/A | NIST SP800-133r2 Section 4: Using the | Output of a Random Generator, Example 1",
       "ANSI X9.63 KDF | Hash based Key Derivation Function | Blowfish | Encryption/Decryption | CAST5 | Encryption/Decryption Key Sizes: 40 to 128 bits in 8-bit increments",
       "DES | Encryption/Decryption Key Size: 56-bits",
       "ECDSA | PKG: Curve P-192; PKV: Curve P-192; compact point | representation of points; Signature Generation: Curve P-192; | Signature Verification: Curve P-192 | Ed25519 | Key Generation, Signature Generation, Signature Verification",
@@ -188,18 +200,6 @@
       "RSA Digital Signature | PKCS#1 v1.5 and PSS; Signature Generation Key Size < 2048; | Signature Verification Key Size < 1024",
       "RSA Key Wrapping | OAEP, PKCS#1 v1.5 and PSS schemes",
       "Triple-DES [SP 800-67] Encryption | RFC6637 | Key Derivation Function"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 117
-    }
+    ]
   }
 }

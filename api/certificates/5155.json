@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5155"
   },
   "certificate": {
     "certificate_number": "5155",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5155",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5155",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5155.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 91
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -167,18 +179,6 @@
       "HMAC | Provides<112bitsofsecurity,Usage ofHMACwithkeylengthlessthan112bitsforMACgeneration",
       "Hash and HMAC DRBG | Usage of Hash and HMAC DRBGs with PRFs SHA2-224,SHA2-384,SHA2-512/224andSHA2-512/256",
       "Symmetric Encryption and Decryption | BC-Auth BC-UnAuth | Symmetric Encryption and Decryption | Key Length:128,192 and 256 bits Key Length(XTS):128 and 256 bits | AES-CBC:(A3548) AES-CBC-CS1:(A3548) AES-CBC-CS2:(A3548) AES-CBC-CS3:(A3548) AES-CCM:(A3548) AES-CFB1:(A3548)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 91
-    }
+    ]
   }
 }

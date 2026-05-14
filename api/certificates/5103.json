@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5103"
   },
   "certificate": {
     "certificate_number": "5103",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5103",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5103",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5103.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 223
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -186,7 +198,7 @@
       "TPM2\\_PolicyTemplate(I/D) | Allows a policyto be bound toa specificcreationtemplate | 01b | PolicysessionhandleDigest toadd topolicy | None | SHA | Unauthenticated",
       "TPM2\\_PolicyAuthorizeV() | Provides acapability thatis theequivalent of arevocablepolicy | 01b | Sourcehandleforauthorization NVindex toreadPolicysessionhandle | None | SHA | User (U)",
       "TPM2\\_ChangePPS (I) | Replaces thecurrentplatformprimary seed(PPS) with avalue from theRNG and setsplatformPolicyto the defaultinitializationvalue | 01b | Authorizationhandle | None | DRBG | Cryptoofficer(CO),drbgState: W,EphProof:Z- phSeed:Z-objSeed:Z-objSens:Z- objPub:Z",
-      "TPM2\\_ChangeEPS (I) | Replaces thecurrentendorsementprimary seedEPS) with avalue from theRNG and setsendorsementPolicy to thedefault | 01b | Authorizationhandle | None | DRBG | Crypto fficer(CO)drbgState: W,E- ehSeed:Z-ehProof:",
+      "TPM2\\_ChangeEPS (I) | Replaces thecurrentendorsementprimary seedEPS) with avalue from theRNG and setsendorsementPolicy to thedefault | 01b | Authorizationhandle | None | DRBG | Crypto fficer(CO)drbgState: W,E- ehSeed:Z-ehProof",
       "TPM2\\_Clear (I) | Removes allTPM contextassociated witha specificOwner | 01b | Authorizationhandle | None | DRBG | Cryptooficer(CO)-drbgState:W,E- shSeed:Z-ehProof:Z- shProof:Z-shProofForReseed:Z-objSeed:Z-objSens:Z- objPub:Z- objAuth:Z",
       "TPM2\\_VendorCmdFieldUpgradeData (I) | Conveysfirmware in afield upgradesession | 01b | Fieldupgradedata blob | Completionindicator | AES-DECSHA | Unauthenticated-fuSymKey:E,Z",
       "TPM2\\_ContextSave | Saves asessioncontext, objectcontext, orsequenceobject contextoutside theTPM | 01b | Savedandle | AES-ENCKTSKBKDFMACCKG | Unauthenticated-contextEncKey:G,E,Z-objSeed:R-objSens:R- objPub:R- objAuth:R-nullProof:E-phProof:E-ehProof:E- shProof:E-contextKey: EsesHmacKey: R-seqAuth:R",
@@ -299,18 +311,6 @@
       "\\[197\\] | National Institute of Standards and Technology, Advanced Encryption Standard (AES), FederalInformation Processing Standards Publication 197-upd1, May, 2023",
       "\\[198\\] | National Institute of Standards and Technology, The Keyed-Hash Message Authentication Code(HMAC), Federal Information Processing Standards Publication 198-1, July, 2008",
       "\\[202\\] | FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION, SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions, FIPS PUB 202, August 2015"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 223
-    }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265"
   },
   "certificate": {
     "certificate_number": "5265",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "bshelton@juniper.net",
       "contact_phone": "408-745-2000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 57
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -79,7 +91,7 @@
       "ECDSA KeyGen | (FIPS186-5) | A5151 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
       "ECDSA KeyVer | (FIPS186-5) | A5151 Curve - P-256, P-384, P-521 FIPS 186-5",
       "ECDSA SigGen | (FIPS186-5) | A5151 Curve - P-256, P-384, P-521",
-      "Hash Algorithm - SHA2-256, SHA2-384,",
+      "Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | Component - No | FIPS 186-5",
       "ECDSA SigVer | (FIPS186-5) | A5151 Curve - P-256, P-384, P-521",
       "SHA2-512 | FIPS 186-5",
@@ -93,7 +105,7 @@
       "KAS-ECC-SSC | Sp800-56Ar3 | A5157 Domain Parameter Generation Methods - P- | 256 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
       "KAS-FFC-SSC | Sp800-56Ar3 | A5151 Domain Parameter Generation Methods - FC, | MODP-2048 | Scheme - | dhEphem - | KAS Role - initiator | SP 800-56A | Rev. 3",
       "KAS-FFC-SSC | Sp800-56Ar3 | A5157 Domain Parameter Generation Methods - FC, | MODP-2048 | Scheme - | dhEphem - | KAS Role - initiator | SP 800-56A | Rev. 3 | Cert",
-      "KDF IKEv1 (CVL) A5152 Authentication Method - Digital Signature,",
+      "KDF IKEv1 (CVL) A5152 Authentication Method - Digital Signature",
       "Pre-shared Key",
       "Diffie-Hellman Shared Secret Length - Diffie-",
       "Hellman Shared Secret Length: 256, 384, | 2048",
@@ -111,15 +123,15 @@
       "SHA2-256 A5149 Message Length - Message Length: 0-51200 | Increment 8 | FIPS 180-4",
       "SHA2-256 A5151 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "SHA2-512 A5150 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
-      "SHA2-512 A5151 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | The following protocols are supported by the module in the Approved mode:",
-      "SSHv2 (EC Diffie-Hellman P-256, P-384, P-521; Diffie-Hellman MODP2048; RSA 2048, 3072,",
+      "SHA2-512 A5151 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | The following protocols are supported by the module in the Approved mode",
+      "SSHv2 (EC Diffie-Hellman P-256, P-384, P-521; Diffie-Hellman MODP2048; RSA 2048, 3072",
       "4096 bits; ECDSA P-256, P-384, P-521; AES CBC 128, 192, 256 bits; AES CTR 128, 192, 256",
       "bits, HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512)",
       "IPsec (IPsec Key Agreement (IKE); KDF IKEv1, IKEv2 128, 192 and 256 bits)",
       "The SSH protocol allows independent selection of key exchange, authentication, cipher and | integrity algorithms. Please note that there are algorithms, modes, and key/moduli sizes that | have been CAVP-tested but are not used by any approved service of the module. Only the | by an approved service of the module. | Name Properties Implementation Reference | CKG - | Section | 4 | Key | Type:Symmetric | and Asymmetric | N/A NIST SP800-133r2 Section 4: Symmetric | key generation and Asymmetric seed | generation using an unmodified output from",
-      "an Approved DRBG (example 1); The | module supports the following per NIST SP | 800-133r2: 1. Section 5.1: Key Pairs for | Digital Signature Schemes 2. Section 5.2: | Key Pairs for Key Establishment 3. Section | 6.2.1: Derivation of symmetric keys | Non-Approved, Allowed Algorithms: | Name Properties Implementation Reference | N/A N/A N/A | The module does not support any non-Approved algorithms in the Approved mode, i.e., it does | not support Non-Approved Algorithms Allowed in the Approved Mode of Operation. | Non-Approved, Allowed Algorithms with No Security Claimed: | Name Caveat Use and Function",
+      "an Approved DRBG (example 1); The | module supports the following per NIST SP | 800-133r2: 1. Section 5.1: Key Pairs for | Digital Signature Schemes 2. Section 5.2: | Key Pairs for Key Establishment 3. Section | 6.2.1: Derivation of symmetric keys",
       "SHA2-256 (Junos | 23.4R1.10 - LibMD | Implementation) | no | security | claimed | Used to store operator passwords in hashed form, | per IG 2.4.A: Use of a non-approved cryptographic",
-      "SHA-1 (Junos 23.4R1.10 | - Kernel Implementation) | no | security | claimed | Used for an extraneous check in the Kernel, per IG | 2.4.A: Use of an approved, non-approved or | proprietary algorithm for a purpose that is not | security relevant | Non-Approved, Not Allowed Algorithms: | Name Use and | Function",
+      "SHA-1 (Junos 23.4R1.10 | - Kernel Implementation) | no | security | claimed | Used for an extraneous check in the Kernel, per IG | 2.4.A: Use of an approved, non-approved or | proprietary algorithm for a purpose that is not | security relevant",
       "RSA with key size less than 2048 SSH",
       "ECDSA with ed25519 curve SSH",
       "EC Diffie-Hellman with ed25519 curve SSH",
@@ -130,25 +142,6 @@
       "HMAC-MD5 SSH",
       "HMAC-RIPEMD160 SSH",
       "UMAC SSH | In addition to the above non-Approved Algorithms Not Allowed in the Approved Mode of | Operation, all Approved algorithms supported in the Approved mode of operation are also | supported in the non-Approved mode."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 57,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

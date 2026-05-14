@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014"
   },
   "certificate": {
     "certificate_number": "5014",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5014.pdf",
@@ -64,6 +64,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 78
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -134,7 +146,7 @@
       "CBC-MAC, AES XCBC-MAC, AES XCBC-MAC-96 | Message | Authentication",
       "HMAC (MD2, MD5, SHA -1; < 112 -bit keys) | Message | Authentication",
       "HMAC/SSLv3 MAC (constant | -time implementation) | Message | Authentication",
-      "MD2, MD5, SHA -1, SHA -224, SHA -256, SHA -384, SHA -512, DES, Triple -DES, AES, Camellia,",
+      "MD2, MD5, SHA -1, SHA -224, SHA -256, SHA -384, SHA -512, DES, Triple -DES, AES, Camellia",
       "SEED, ANS X9.63 KDF (SHA -1, SHA -224, SHA -256, SHA -384, SHA -512), SSL 3 PRF (MD5, SHA -",
       "1), IKEv1 PRF (AES XCBC -MAC, MD2, MD5, SHA -1, SHA -224, SHA -256, SHA -384, SHA -512)",
       "KBKDF, HKDF, TLS 1.0/1.1 KDF, TLS 1.2 KDF, IKEv2 KDF (< 112 | -bit keys)",
@@ -158,18 +170,6 @@
       "RSA (decryption) | Asymmetric | Decryption",
       "DSA (parameter verification) | Parameter | verification",
       "DSA (key pair generation) | Key Pair | Generation"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 78
-    }
+    ]
   }
 }

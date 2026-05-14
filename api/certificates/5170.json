@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170"
   },
   "certificate": {
     "certificate_number": "5170",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5170",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5170.pdf",
@@ -61,15 +61,6 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "Hash DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1",
-      "HMAC DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1 | Non-Approved, Allowed Algorithms: | N/A for this module. | Non-Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non-Approved, Not Allowed Algorithms: | N/A for this Module."
-    ],
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -81,6 +72,15 @@
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 3,
       "detailed_algorithm_count": 2
-    }
+    },
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "Hash DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1",
+      "HMAC DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1"
+    ]
   }
 }

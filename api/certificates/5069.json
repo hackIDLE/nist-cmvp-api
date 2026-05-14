@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5069"
   },
   "certificate": {
     "certificate_number": "5069",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5069",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5069",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5069.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 54
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -109,7 +121,7 @@
       "KAS-ECC(TLSv1.2) | KAS-Full | KAS-ECCforTLSv1.2service | Bit-strengthCaveat:Providesbetween128and256bitsofencryptionstrength | TLSv1.2KDFRFC7627:(A4446)KAS-ECC-SSCSp800-56Ar3:(A4446)",
       "KAS-FFCTLSv1.2) | KAS-Full | KAS-FFCforTLSv1.2service | Bit-strengthCaveat:Providesbetween112to152bitsofencryptionstrength | TLSv1.2KDFRFC7627:(A4446)KAS-FFC-SSCSp800-56Ar3:(A4446)DomainParameterGenerationMethod:ffdhe2048,ffdhe3072,ffdhe4096",
       "KAS-ECC(IKEv2) | KAS-Full | KAS-ECCforIKEv2Service | Bit-strengthCaveat:Providesbetween112and256bitsofencryptionstrength | KAS-ECC-SSCSp800-56Ar3:(A4446)KDFIKEv2:(A4446)",
-      "KAS-FFCIKEv2) | KAS-Full | KAS-FFCforIKEv2服务 | Bit-strengthCaveat:Providesbetween112and152bitsof | KAS-FFC-SSCSp800-56Ar3:(A4446)KDFIKEv2:",
+      "KAS-FFCIKEv2) | KAS-Full | KAS-FFCforIKEv2服务 | Bit-strengthCaveat:Providesbetween112and152bitsof | KAS-FFC-SSCSp800-56Ar3:(A4446)KDFIKEv2",
       "KTS(TLSv1.2with AES and HMAC) | KTS-Wrap | KTS via TLSv1.2service by usingAES and HMAC | Bit-strengthCaveat:Providesbetween128and256bits ofencryption strength | AES-CBC:(A4446)Key Length:128,256HMAC-SHA-1:(A4446)HMAC-SHA2-256:(A4446)HMAC-SHA2-384:(A4446)SHA-1:(A4446)SHA2-256:(A4446)SHA2-384:(A4446)",
       "KTS(TLSv1.2with AES-GCM) | KTS-Wrap | KTS via TLSv1.2service by usingAES-GCM | Bit-strengthCaveat:Providesbetween128and256bits ofencryption strength | AES-GCM:(A4446)Key Length:128,256",
       "KTS(SSHv2with AES and HMAC) | KTS-Wrap | KTS via SSHv2service by usingAES and HMAC | Bit-strengthCaveat:Providesbetween128and256bits ofencryption strength | AES-CBC:(A4446)Key Length:128,256HMAC-SHA-1:(A4446)HMAC-SHA2-256:(A4446)SHA-1:(A4446)SHA2-256:(A4446)",
@@ -129,18 +141,6 @@
       "MAC(IPSec/IKEv2) | MAC | Message Authentication for IPSec/IKEv2 services | HMAC-SHA2-256:(A4446)HMAC-SHA2-384:(A4446)HMAC-SHA2-512:(A4446)SHA2-256:(A4446)SHA2-384:(A4446)SHA2-512:(A4446)",
       "MAC(SNMPv3) | MAC | Message Authentication for SNMPv3 service | HMAC-SHA-1:(A4446)SHA-1:(A4446)KDF SNMP:(A4446)HMAC-SHA2-256:(A4446)HMAC-SHA2-384:(A4446)SHA2-256:(A4446)SHA2-384:(A4446)HMAC-SHA2-224:(A4446)SHA2-224:(A4446)",
       "Firmware Load Test | MAC | MAC for firmware load test | HMAC-SHA2-512:(A4446)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 54
-    }
+    ]
   }
 }

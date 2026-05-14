@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5035"
   },
   "certificate": {
     "certificate_number": "5035",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5035",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5035",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5035.pdf",
@@ -60,6 +60,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 79
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -113,7 +125,7 @@
       "SHA2-384 | SHS 2737 | Message Length - Message Length:0-102400 Increment8 | FIPS 180-4",
       "SHA2-512 | SHS 2737 | Message Length - Message Length:0-102400 Increment8 | FIPS 180-4",
       "KAS-ECC-KeyGen(SSHv2) | KAS-KeyGen | KAS ECCkeygen used in SSHv2 service | Keysize:128 to256 bitsencryptionstrength | Counter DRBG:(A4446)Hash DRBG:(DRBG 819)CKG:()",
-      "KAS-FFC-KeyGen(SSHv2) | KAS-KeyGen | KAS FFCkeygen used in SSHv2 service | Keysize:112 to128 bits | Counter DRBG:(A4446)Hash DRBG:",
+      "KAS-FFC-KeyGen(SSHv2) | KAS-KeyGen | KAS FFCkeygen used in SSHv2 service | Keysize:112 to128 bits | Counter DRBG:(A4446)Hash DRBG",
       "Name | Type | Description | Properties encryption strength | Algorithms(DRBG 819)Safe PrimesKey Generation:(A4446)CKG:()",
       "KAS-ECC-KeyGen(TLSv1.2) | KAS-KeyGen | KAS ECC keygen used in TLSv1.2 service | Keysize:128 to256 bits encryption strength | Counter DRBG:(A4446)Hash DRBG:(DRBG 819)CKG:()",
       "KAS-FFC-KeyGen(TLSv1.2) | KAS-KeyGen | KAS FFC keygen used in TLSv1.2 service | Keysize:112 to128 bits encryption strength | Counter DRBG:(A4446)Hash DRBG:(DRBG 819)Safe PrimesKey Generation:(A4446)CKG:()",
@@ -136,12 +148,12 @@
       "RSA SigVer(SSHv2,TLSv1.2,andIKEv2) | DigSig-SigVer | RSA SigVer for SSHv2,TLSv1.2,and IKEv2 services | RSA SigVer(FIPS186-4):(A4446)",
       "ECDSA SigVer(SSHv2,TLSv1.2,andIKEv2) | DigSig-SigVer | ECDSA SigVer for TLSv1.2和IKEv2 services | ECDSA SigVer(FIPS186-4):(A4446)",
       "Block Cipher(SSHv2) | BC-AuthBC-UnAuth | Block Cipher for SSHv2 service | AES-CBC:(A4446)Key Length:128,256AES-GCM:(A4446)Key Length:128,256",
-      "Block Cipher(TLSv1.2) | BC-AuthBC-UnAuth | Block Cipher for TLSv1.2 service | AES-GCM:(A4446)Key Length:",
+      "Block Cipher(TLSv1.2) | BC-AuthBC-UnAuth | Block Cipher for TLSv1.2 service | AES-GCM:(A4446)Key Length",
       "Block Cipher(IPSec/IKE) | BC-AuthBC-UnAuth | Block Cipher forIPSec/IKEv2service | AES-CBC:(A4446,AES3301)AES-GCM:(A4446,AES3301)",
       "Block Cipher(SNMPv3) | BC-UnAuth | Block Cipher forSNMPv3 service | AES-CBC:(A4446)KDF SNMP:(A4446)",
       "MAC(SSHv2) | MAC | MAC for SSHv2service | HMAC-SHA-1:(A4446)HMAC-SHA2-256:(A4446)SHA-1:(A4446)SHA2-256:(A4446)",
       "MAC(TLSv1.2) | MAC | MessageAuthenticationforTLSv1.2services | HMAC-SHA-1:(A4446)HMAC-SHA2-256:(A4446)HMAC-SHA2-384:(A4446)SHA-1:(A4446)SHA2-256:(A4446)SHA2-384:(A4446)",
-      "MAC(IPSec/IKEv2) | MAC | MessageAuthenticationforIPSec/IKEv2services | HMAC-SHA2-256:(A4446,HMAC2095)HMAC-SHA2-384:(A4446,HMAC2095)HMAC-SHA2-512:(A4446,HMAC2095)SHA2-256:(A4446,SHS2737)SHA2-384:(A4446,SHS2737)SHA2-512:",
+      "MAC(IPSec/IKEv2) | MAC | MessageAuthenticationforIPSec/IKEv2services | HMAC-SHA2-256:(A4446,HMAC2095)HMAC-SHA2-384:(A4446,HMAC2095)HMAC-SHA2-512:(A4446,HMAC2095)SHA2-256:(A4446,SHS2737)SHA2-384:(A4446,SHS2737)SHA2-512",
       "HMAC-SHA-1:(HMAC2095)",
       "SHA-1:(SHS2737)",
       "MAC(SNMPv3) | MAC | MessageAuthenticationforSNMPv3service | HMAC-SHA-1:(A4446)",
@@ -155,18 +167,6 @@
       "SHA2-224:(A4446)",
       "Firmware LoadTest | MAC | MAC for firmware loadtest | HMAC-SHA2-512:(A4446)",
       "Cisco Jitter Entropy Source | Non-Physical | Intel Xeon D-1526(Broadwell), Intel Xeon D-1528(Broadwell), Intel Xeon D-1548(Broadwell), Intel Xeon D-1577(Broadwell) | 4 bits | 2 bits | A2810(SHA3-256)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 79
-    }
+    ]
   }
 }

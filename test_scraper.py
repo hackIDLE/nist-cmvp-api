@@ -14,16 +14,21 @@ import scraper as scraper_module
 from scraper import (
     ALGORITHM_CACHE_VERSION,
     ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+    apply_algorithm_fields,
     build_algorithm_extraction_provenance,
     build_certificate_artifacts,
     build_certificate_index_payload,
     build_certificate_fingerprint,
+    build_data_quality_report,
+    build_examples_payload,
     build_extraction_metrics,
     build_index_payload,
+    build_search_index_payloads,
     extract_legacy_algorithm_section,
     extract_text_from_crawl4ai_process_result,
     extract_text_from_crawl4ai_html,
     fetch_policy_pdf_bytes,
+    format_algorithm_entry,
     generate_json_schema_artifacts,
     generate_openapi_spec,
     generate_text_artifacts,
@@ -529,6 +534,54 @@ def test_parse_algorithms_from_policy_text():
     assert categories == ["AES", "HMAC"], "Expected normalized algorithm categories"
 
     print("✓ Security Policy algorithm parsing test passed")
+
+
+def test_algorithm_detail_cleanup_removes_pdf_boilerplate():
+    """Detailed algorithm rows should not retain PDF headers, footers, or section spillover."""
+    formatted = format_algorithm_entry(
+        [
+            "AES-GCM | A4995 | FIPS 140-3 Non-Proprietary Security Policy",
+            "© 2025 Intel Corporation",
+            "This document can be reproduced and distributed only whole and intact.",
+            "Cert",
+        ]
+    )
+    assert formatted == "AES-GCM | A4995", "Formatter should cut security-policy boilerplate from table rows"
+
+    policy_text = """
+    2.5 Algorithms
+    Approved Algorithms
+    Algorithm CAVP Cert Properties Reference
+    AES-CBC
+    Key Length - 256
+    A4995
+    FIPS 140-3 Non-Proprietary Security Policy
+    © 2025 Intel Corporation
+    This document can be reproduced and distributed only whole and intact.
+    Cert
+    HMAC-SHA2-256 A4996 Message Authentication FIPS 198-1
+    2.6 Security Function Implementations
+    """
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert any(entry == "AES-CBC | Key Length - 256 | A4995" for entry in detailed), "Expected cleaned AES detail row"
+    assert any(entry.startswith("HMAC-SHA2-256 A4996") for entry in detailed), "Expected HMAC detail row"
+    assert all("Non-Proprietary Security Policy" not in entry for entry in detailed), "Policy title must not leak into details"
+    assert all("Intel" not in entry for entry in detailed), "Copyright footer must not leak into details"
+    assert all("This document can be reproduced" not in entry for entry in detailed), "Reproduction notice must not leak into details"
+    assert all(not entry.endswith("| Cert") for entry in detailed), "Standalone Cert header must not leak into details"
+    assert categories == ["AES", "HMAC"], "Expected cleaned rows to preserve categories"
+
+    record = {}
+    apply_algorithm_fields(
+        record,
+        ["AES"],
+        ["AES-CTR A4995 | FIPS 140-3 Non-Proprietary Security Policy | © 2025 Intel Corporation | Cert"],
+    )
+    assert record["algorithms_detailed"] == ["AES-CTR A4995"], "Cached detailed rows should be sanitized when reapplied"
+
+    print("✓ Algorithm detail cleanup test passed")
 
 
 def test_parse_algorithms_from_legacy_policy_text():
@@ -1310,6 +1363,134 @@ def test_build_certificate_index_payload():
     print("✓ Certificate index payload test passed")
 
 
+def test_data_quality_search_indexes_and_examples():
+    """Quality report, split indexes, and examples should expose common consumer workflows."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "total_modules": 1,
+        "total_historical_modules": 1,
+        "total_modules_in_process": 0,
+        "total_certificates_with_algorithms": 1,
+        "total_certificate_details": 2,
+        "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
+        "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
+        "algorithm_source": "crawl4ai",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+        "algorithm_extraction_schema_version": ALGORITHM_EXTRACTION_SCHEMA_VERSION,
+        "extraction_metrics": build_extraction_metrics(
+            {"html_reused": 8, "html_refreshed": 1, "algorithm_successes": 9},
+            {"html_reused": 10, "algorithm_successes": 9, "algorithm_misses": 1},
+        ),
+        "version": "3.0",
+    }
+    active_module = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/10/2026",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+        "algorithms": ["AES", "HMAC"],
+        "detail_available": True,
+    }
+    historical_module = {
+        "Certificate Number": "1400",
+        "Vendor Name": "Example Corp.",
+        "Module Name": "Example Legacy Module",
+        "Module Type": "Hardware",
+        "Validation Date": "01/02/2014",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1400.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1400",
+        "algorithms": [],
+        "detail_available": True,
+        "algorithm_extraction": {
+            "status": "miss",
+            "source": "security_policy_pdf",
+            "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1400.pdf",
+            "fallback_used": False,
+        },
+    }
+    detail_payloads = {
+        5238: {
+            "certificate_number": "5238",
+            "dataset": "active",
+            "vendor_name": "SUSE LLC",
+            "module_name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+            "standard": "FIPS 140-3",
+            "status": "Active",
+            "module_type": "Software",
+            "validation_dates": ["4/10/2026"],
+            "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+            "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+            "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+            "related_files": [],
+            "validation_history": [],
+            "vendor": {},
+            "algorithms": ["AES", "HMAC"],
+            "algorithm_extraction": {
+                "status": "parsed",
+                "source": "security_policy_pdf",
+                "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+                "fallback_used": True,
+                "attempts": [
+                    {"source": "crawl4ai", "status": "no_algorithms"},
+                    {"source": "security_policy_pdf", "status": "parsed"},
+                ],
+            },
+        }
+    }
+    previous_active = dict(active_module)
+    previous_active["Validation Date"] = "04/09/2026"
+    previous_outputs = {
+        "metadata": metadata,
+        "modules": {
+            "active": {5238: previous_active},
+            "historical": {1400: historical_module},
+        },
+        "details": {5238: detail_payloads[5238]},
+    }
+
+    certificate_index = build_certificate_index_payload(metadata, [active_module], [historical_module], detail_payloads)
+    search_indexes = build_search_index_payloads(metadata, certificate_index)
+    vendor_index = search_indexes["api/indexes/vendors.json"]
+    algorithm_index = search_indexes["api/indexes/algorithms.json"]
+    status_index = search_indexes["api/indexes/statuses.json"]
+    standard_index = search_indexes["api/indexes/standards.json"]
+
+    assert vendor_index["keys"]["SUSE LLC"][0]["certificate_number"] == "5238", "Vendor index should point to active cert"
+    assert [entry["certificate_number"] for entry in algorithm_index["keys"]["AES"]] == ["5238"], "Algorithm index should include AES cert"
+    assert status_index["keys"]["Active"][0]["path"] == "/api/certificates/5238.json", "Status index should expose cert paths"
+    assert standard_index["keys"]["FIPS 140-2"][0]["certificate_number"] == "1400", "Standard index should include historical cert"
+
+    report = build_data_quality_report(
+        metadata,
+        [active_module],
+        [historical_module],
+        detail_payloads,
+        previous_outputs,
+        {"html_reused": 8, "html_refreshed": 1, "algorithm_successes": 9},
+        {"html_reused": 10, "algorithm_successes": 9, "algorithm_misses": 1},
+    )
+
+    assert report["summary"]["refreshed_records"] == 1, "Changed active cert should be listed as refreshed"
+    assert report["summary"]["changed_certificates"] == 1, "Summary change should be listed as changed certificate"
+    assert report["summary"]["fallback_usage"] == 1, "Fallback extraction should be listed"
+    assert report["summary"]["misses"] == 1, "Historical algorithm miss should be listed"
+    assert report["update_monitor"]["next_scheduled_run"] == "2026-04-19T02:00:00Z", "Next weekly run should be Sunday 02:00 UTC"
+
+    examples = build_examples_payload(metadata)
+    assert {"curl", "python", "javascript", "agent"} <= set(examples["examples"]), "Examples should cover every consumer family"
+    assert "indexes/vendors.json" in examples["examples"]["curl"][0]["command"], "curl examples should use split indexes"
+    assert any("module_name" in step.lower() for step in examples["examples"]["agent"][1]["steps"]), "Agent examples should include module lookup"
+
+    print("✓ Data quality, search index, and examples test passed")
+
+
 def test_generate_agent_docs():
     """Test the generated agent-friendly documentation artifacts."""
     metadata = {
@@ -1431,12 +1612,20 @@ def test_generate_agent_docs():
     assert "api/docs.md" in artifacts, "Missing Markdown API docs artifact"
     assert "api/algorithms.json" in artifacts["llms.txt"], "llms.txt should reference algorithms endpoint when available"
     assert "api/certificates/index.json" in artifacts["llms.txt"], "llms.txt should reference certificate index endpoint"
+    assert "api/data-quality.json" in artifacts["llms.txt"], "llms.txt should reference data quality endpoint"
+    assert "api/examples.json" in artifacts["llms.txt"], "llms.txt should reference examples endpoint"
+    assert "api/indexes/vendors.json" in artifacts["llms.txt"], "llms.txt should reference split search indexes"
     assert 'href="api/docs.md"' in artifacts["index.html"], "Homepage should link to api/docs.md"
     assert 'href="api/schemas/index.schema.json"' in artifacts["index.html"], "Homepage should link to JSON schemas"
     assert 'href="api/certificates/index.json"' in artifacts["index.html"], "Homepage should link to certificate index"
+    assert 'href="api/data-quality.json"' in artifacts["index.html"], "Homepage should link to data quality"
+    assert 'href="api/indexes/vendors.json"' in artifacts["index.html"], "Homepage should link to vendor index"
     assert "GET api/certificates/index.json" in artifacts["api/docs.md"], "API docs should include certificate index endpoint"
     assert "GET api/certificates/{certificate}.json" in artifacts["api/docs.md"], "API docs should include certificate detail endpoint"
     assert "GET api/schemas/index.schema.json" in artifacts["api/docs.md"], "API docs should include JSON schema endpoint"
+    assert "GET api/data-quality.json" in artifacts["api/docs.md"], "API docs should include data quality endpoint"
+    assert "GET api/examples.json" in artifacts["api/docs.md"], "API docs should include examples endpoint"
+    assert "GET api/indexes/vendors.json" in artifacts["api/docs.md"], "API docs should include split search indexes"
     assert "algorithm_extraction" in artifacts["api/docs.md"], "API docs should describe extraction provenance"
 
     index_payload = build_index_payload(metadata, algorithms_summary)
@@ -1445,10 +1634,19 @@ def test_generate_agent_docs():
     assert index_payload["documentation"]["json_schemas"] == "/api/schemas/index.schema.json", "Index payload should advertise JSON schemas"
     assert index_payload["schemas"]["certificate_index"] == "/api/schemas/certificate-index.schema.json", "Index payload should advertise certificate index schema"
     assert index_payload["schemas"]["certificate_detail"] == "/api/schemas/certificate-detail.schema.json", "Index payload should advertise certificate detail schema"
+    assert index_payload["schemas"]["data_quality"] == "/api/schemas/data-quality.schema.json", "Index payload should advertise data quality schema"
+    assert index_payload["schemas"]["examples"] == "/api/schemas/examples.schema.json", "Index payload should advertise examples schema"
+    assert index_payload["schemas"]["search_index"] == "/api/schemas/search-index.schema.json", "Index payload should advertise search index schema"
+    assert index_payload["endpoints"]["data_quality"] == "/api/data-quality.json", "Index payload should advertise data quality endpoint"
+    assert index_payload["endpoints"]["examples"] == "/api/examples.json", "Index payload should advertise examples endpoint"
+    assert index_payload["endpoints"]["vendor_index"] == "/api/indexes/vendors.json", "Index payload should advertise vendor index"
     assert index_payload["features"]["markdown_api_docs"] is True, "Index payload should advertise Markdown docs support"
     assert index_payload["features"]["algorithm_extraction_provenance"] is True, "Index payload should advertise extraction provenance"
     assert index_payload["features"]["extraction_metrics"] is True, "Index payload should advertise extraction metrics"
     assert index_payload["features"]["certificate_index"] is True, "Index payload should advertise certificate index support"
+    assert index_payload["features"]["data_quality_report"] is True, "Index payload should advertise data quality support"
+    assert index_payload["features"]["consumer_examples"] is True, "Index payload should advertise examples support"
+    assert index_payload["features"]["search_indexes"] is True, "Index payload should advertise search index support"
     assert index_payload["features"]["json_schemas"] is True, "Index payload should advertise JSON schema support"
 
     schema_artifacts = generate_json_schema_artifacts(algorithms_summary)
@@ -1456,6 +1654,9 @@ def test_generate_agent_docs():
     assert "api/schemas/module-in-process.schema.json" in schema_artifacts, "Missing module-in-process JSON schema"
     assert "api/schemas/certificate-index.schema.json" in schema_artifacts, "Missing certificate index JSON schema"
     assert "api/schemas/certificate-detail.schema.json" in schema_artifacts, "Missing certificate detail JSON schema"
+    assert "api/schemas/data-quality.schema.json" in schema_artifacts, "Missing data quality JSON schema"
+    assert "api/schemas/examples.schema.json" in schema_artifacts, "Missing examples JSON schema"
+    assert "api/schemas/search-index.schema.json" in schema_artifacts, "Missing search index JSON schema"
     assert "api/schemas/algorithms.schema.json" in schema_artifacts, "Missing algorithms JSON schema"
     assert schema_artifacts["api/schemas/modules-in-process.schema.json"]["properties"]["modules_in_process"]["items"]["$ref"] == "/api/schemas/module-in-process.schema.json", "Modules-in-process response should use its own row schema"
     assert schema_artifacts["api/schemas/module.schema.json"]["properties"]["algorithm_extraction"]["type"] == "object", "Module schema should include extraction provenance"
@@ -1469,6 +1670,9 @@ def test_generate_agent_docs():
     )
     assert "/api/algorithms.json" in openapi["paths"], "OpenAPI spec should include algorithms endpoint when available"
     assert "/api/certificates/index.json" in openapi["paths"], "OpenAPI spec should include certificate index endpoint"
+    assert "/api/data-quality.json" in openapi["paths"], "OpenAPI spec should include data quality endpoint"
+    assert "/api/examples.json" in openapi["paths"], "OpenAPI spec should include examples endpoint"
+    assert "/api/indexes/vendors.json" in openapi["paths"], "OpenAPI spec should include vendor index endpoint"
     assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
     module_properties = openapi["components"]["schemas"]["Module"]["properties"]
     certificate_properties = openapi["components"]["schemas"]["CertificateDetail"]["properties"]
@@ -1501,6 +1705,7 @@ def main():
         test_reused_certificate_detail_migrates_version_schema_fields()
         test_process_certificate_record_reuses_legacy_detail_with_migrated_fields()
         test_parse_algorithms_from_policy_text()
+        test_algorithm_detail_cleanup_removes_pdf_boilerplate()
         test_parse_algorithms_from_legacy_policy_text()
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_real_world_fips_140_3_policy_fixture()
@@ -1520,6 +1725,7 @@ def main():
         test_prune_orphan_certificate_details()
         test_validate_generated_api_artifacts()
         test_build_certificate_index_payload()
+        test_data_quality_search_indexes_and_examples()
         test_generate_agent_docs()
         
         print()

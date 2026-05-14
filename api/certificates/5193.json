@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5193"
   },
   "certificate": {
     "certificate_number": "5193",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5193",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5193",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5193.pdf",
@@ -58,6 +58,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 154
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -230,18 +242,6 @@
       "TLS v1.3 KDF(CVL) | A4593 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "TLS v1.3 KDF(CVL) | A5173 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "ECDSA with non-NIST recommended curves | Curves: brainpoolP224r1(strength 112bits) brainpoolP256r1(strength 128 bits) brainpoolP320r1(strength 160 bits) brainpoolP384r1(strength 192 bits) brainpoolP512r1(strength 256 bits):Signature Generation, Signature Verification,Key Generation,Key Verification | CryptoComply140-3 FIPSProvider | Allowed per IG C.A,category 1a(per SP 800-186 Appendix H.1)"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 154
-    }
+    ]
   }
 }

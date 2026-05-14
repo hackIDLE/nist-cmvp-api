@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5037"
   },
   "certificate": {
     "certificate_number": "5037",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5037",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5037",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5037.pdf",
@@ -65,6 +65,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 93
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -155,8 +167,8 @@
       "SHA3-512 A4753 - FIPS 202 | Oracle Linux 9 GnuTLS Crystographic Module Security Policy | * * * | ORACLE®",
       "TLS v1.2 KDF A4751 SP 800-135 Rev.",
       "RFC7627 (CVL) | Name Properties Implementation Reference | CKG Key Type:Symmetric and Asymmetric",
-      "RSA (asymmetric):2048, 3072, 4096 bits with 112, 128, 149 bits of key strength,",
-      "ECDSA (asymmetric):P-224, P-256, P-384, P-521 elliptic curves with 112-256 bits of key | strength | Safe Primes (asymmetric):ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP- | 2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192 2048, 3072, 4096, 6144, 8192- | bit keys (112-200 bits of key strength) | CTR\\_DRBG (symmetric):112-256 bit keys (112-256 bits of strength) | Non-Approved, Not Allowed Algorithms: | Name Use and Function | Blowfish Symmetric Encryption; Symmetric Decryption | Camellia Symmetric Encryption; Symmetric Decryption | CAST Symmetric Encryption; Symmetric Decryption | ChaCha20 Symmetric Encryption; Symmetric Decryption | ChaCha20 and Poly1305 Authenticated Encryption; Authenticated Decryption",
+      "RSA (asymmetric):2048, 3072, 4096 bits with 112, 128, 149 bits of key strength",
+      "ECDSA (asymmetric):P-224, P-256, P-384, P-521 elliptic curves with 112-256 bits of key | strength | Safe Primes (asymmetric):ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP- | 2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192 2048, 3072, 4096, 6144, 8192- | bit keys (112-200 bits of key strength) | CTR\\_DRBG (symmetric):112-256 bit keys (112-256 bits of strength)",
       "CMAC with Triple-DES Message Authentication Code (MAC)",
       "DES Symmetric Encryption; Symmetric Decryption | Diffie-Hellman using keys generated with domain parameters other than",
       "safe primes Shared Secret Computation",
@@ -168,23 +180,11 @@
       "HMAC with GOST Message Authentication Code (MAC) | MD2, MD4, MD5 Message Digest; Message Authentication Code (MAC) | PRKDP with non-approved message digest algorithms or using input | parameters not meeting requirements stated in section 2.7 Key Derivation | RC2, RC4 Symmetric Encryption; Symmetric Decryption | RMD160 Message Authentication Code (MAC)",
       "RSA with keys smaller than 2048 bits.Key Generation",
       "RSA with keys smaller than 2048 bits and/or hash functions not listed in the",
-      "RSA encryption and decryption with any key sizes Key Encapsulation; Key Un-encapsulation | Salia20 Symmetric Encryption; Symmetric Decryption | SEED Symmetric Encryption; Symmetric Decryption | Oracle Linux 9 GnuTLS Cryptographic Module Security Policy | * * * | ORACLE | Name Use and Function | Serpent Symmetric Encryption; Symmetric Decryption | SRP Key Agreement | STREEBOG Message Digest; Message Authentication Code (MAC)",
+      "RSA encryption and decryption with any key sizes Key Encapsulation; Key Un-encapsulation | Salia20 Symmetric Encryption; Symmetric Decryption | SEED Symmetric Encryption; Symmetric Decryption | Oracle Linux 9 GnuTLS Cryptographic Module Security Policy | * * * | ORACLE",
       "Triple-DES Symmetric Encryption; Symmetric Decryption | Twofish Symmetric Encryption; Symmetric Decryption | UMAC Message Authentication Code (MAC) | Yarrow Random Number Generation",
       "DRBG generation of keys smaller than 112 bits Random Number Generation | Non-supported cipher suites (see Appendix A for the complete list of valid cipher suites)",
       "Transport Layer Security (TLS) network protocol",
       "AES GCM with keys not listed in the Approved Algorithms Table Authenticated Encryption; Authenticated Decryption"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 93
-    }
+    ]
   }
 }

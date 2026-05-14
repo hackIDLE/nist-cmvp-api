@@ -1,0 +1,318 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hackidle.github.io/nist-cmvp-api/api/schemas/data-quality.schema.json",
+  "title": "NIST CMVP Data Quality Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "summary",
+    "update_monitor",
+    "misses",
+    "refreshed_records",
+    "fallback_usage",
+    "changed_certificates"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "/api/schemas/metadata.schema.json"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "update_monitor": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "status",
+        "schedule",
+        "latest_run_generated_at",
+        "next_scheduled_run",
+        "checks"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "warn"
+          ]
+        },
+        "schedule": {
+          "type": "string"
+        },
+        "schedule_description": {
+          "type": "string"
+        },
+        "latest_run_generated_at": {
+          "type": "string"
+        },
+        "next_scheduled_run": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "latest_run_metrics": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "misses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standard": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "refreshed_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standard": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fallback_usage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standard": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "changed_certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "module_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standard": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

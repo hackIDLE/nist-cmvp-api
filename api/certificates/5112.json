@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5112"
   },
   "certificate": {
     "certificate_number": "5112",
     "dataset": "active",
-    "generated_at": "2026-05-14T09:06:04.998714Z",
+    "generated_at": "2026-05-14T13:31:01.314185Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5112",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5112",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5112.pdf",
@@ -59,6 +59,18 @@
     "software_versions": null,
     "hardware_versions": null,
     "firmware_versions": null,
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 702
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -118,14 +130,14 @@
       "RSA | Encryption primitive; Decryption primitive (not compliant to SP 800-56Br2",
       "RSA withPKCS#1 v1.5padding | Signature generation (pre-hashed message); Signature verification (pre-hashed message); Key encapsulation (not compliant to SP 800-56Br2);Key un-encapsulation (not compliant to SP 800-56Br2)",
       "ECDSA | Signature generation (pre-hashed message); Signature verification (pre-hashed message)",
-      "Encryptionwith AES | BC-UnAuth Encrypt aplaintext withAES | Key size (XTS):128, 256bitsSecurity strength(XTS):128, 256 bitsKey size (Others):128,192, 256 bitsSecurity strength(Others):128, 192, 256bits | AES-CBC:(A5503,5507,A5510,A5513,A5520,A5521,A5524,A5526,A5530,A553,A5536,A5661,564)AES-CBC-CS3: (A5503,5507,A5510,A5513,A5520,A5521,A5526,A5530,A5533,A5536,A5664)AES-CFB128:(A5503,A5507,A5513,A5521,A5526,A5530,A5536,A5664)AES-CTR:(A5503,A5507,A5510,A5513,A5520,A5521,A5524,A5526,A5530,",
-      "Decryptionwith AES | BC-UnAuth | Decrypt aciphertextwith AES | Key size (XTS):128, 256bitsSecurity strength(XTS):128, 256 bitsKey size (Others):128,192, 256 bitsSecurity strength(Others):128, 192, 256bits | AES-CBC:A5503,5507,5510,A5513,A5520,A5521,5524,A5526,A5530,A53,A5536,561,A564)AES-CBC-CS3: (A5503,5507,5510,5513,A5520,521,526,A5530,A553,A5536,A5664)AES-CFB128:(A5503,A5507,513,A5521,A5526,A5530,A5536,A5664AES-CTR:",
-      "Messagedigest | SHA | Compute amessagedigest | SHA-1:(A5503,A5516, A5517,5518,519,5520,A526,A5539,A5540,A541,554,A564)SHA2-224:(A5503,5516,5517,518,5519,5520,5524,A5525,5526,A559,A5540,5541,A5542,",
-      "Message | MAC | Compute a | Key size (HMAC):112- | (A5503, A5526, 564) AES-CMAC:",
-      "authenticatio n | MAC tag for authenticatio n | 524288 bits Security strength (HMAC):112-256 bits Key size (AES):128, 192, 256 bits Security strength (AES):128, 192, 256 bits | (A5503, A5507, 513, A5520, A521, A5526, A5530, A5536, A561, A5664 AES-GMAC: (A5503, 5507, 513, A521, A5526, 530, A5536, A5661, A5664) HMAC-SHA-1: (A5503, A5516, A5517, A5518, 5519, A5520, A5526, A5539, A5540, A5541, A5542, A5664) HMAC-SHA2- 224: (A5503, A5516, A5517, A5518, A5519, A5520, 5524, A5525, A5526,",
-      "Randomnumbergenerationwith DRBGs | DRBG | Generaterandomnumbers fromDRBGS | CTR-DRBG:Modes: AES-128, AES-192, AES-256,with derivation function,with/without predictionresistance; Internal statelength: 256, 320, 384bits; Security strength:128, 192, 256 bitsHMAC-DRBG:Modes: SHA-1, SHA-256, SHA-512with/without predictionresistance; Internal statelength: 320, 512, 1024bits; Security strength:128, 256 bitsHash-DRBG:Modes: SHA-1, SHA-256, SHA-512with/without predictionresistance; Internal statelength: 880, 1776 bits; | CounterDRBG:A5503,5505,A5506,A5507,A5508,A5509,A5510,A5511,5512,5513,5514,A5515,5521,A5522,523,A5526,5528,A529,5530,531,532,A5533,A5534,5535,5536,537,A5538,A5661,A5662,A563,A5664,565,A5666Hash DRBG:(A5503,A5516,A5517,A518,526,A5539,A5540,A5541,A5664)HMAC DRBG:",
-      "Authenticatedencryption | BC-Auth | Encrypt andauthenticatea plaintext | Key size (AES):128, 192,226 bitsSecurity strength(AES):128, 192, 256 bits | AES-CCM:(A5503,A5507,513,A520,C A5521,A5526,5530,536,A5661,A5664AES-GCM:(A5503,5505,A5506,A5507,A5508,A5509,A5510,51,A5512,5513,551, A5515,A5521,52,A5523,5526,5528,A5529,530,5531,53,A53,A534,5535,A5536,5537,A5538,A561,A5662,",
-      "Authenticateddecryption | BC-Auth | Decrypt andauthenticatea ciphertext | Key size:128, 192, 256bitsSecurity strength:128,192, 256 bits | AES-CCM:(A5503,A5507,513,520,A5521,A5526,A5530,A5536,",
+      "Encryptionwith AES | BC-UnAuth Encrypt aplaintext withAES | Key size (XTS):128, 256bitsSecurity strength(XTS):128, 256 bitsKey size (Others):128,192, 256 bitsSecurity strength(Others):128, 192, 256bits | AES-CBC:(A5503,5507,A5510,A5513,A5520,A5521,A5524,A5526,A5530,A553,A5536,A5661,564)AES-CBC-CS3: (A5503,5507,A5510,A5513,A5520,A5521,A5526,A5530,A5533,A5536,A5664)AES-CFB128:(A5503,A5507,A5513,A5521,A5526,A5530,A5536,A5664)AES-CTR:(A5503,A5507,A5510,A5513,A5520,A5521,A5524,A5526,A5530",
+      "Decryptionwith AES | BC-UnAuth | Decrypt aciphertextwith AES | Key size (XTS):128, 256bitsSecurity strength(XTS):128, 256 bitsKey size (Others):128,192, 256 bitsSecurity strength(Others):128, 192, 256bits | AES-CBC:A5503,5507,5510,A5513,A5520,A5521,5524,A5526,A5530,A53,A5536,561,A564)AES-CBC-CS3: (A5503,5507,5510,5513,A5520,521,526,A5530,A553,A5536,A5664)AES-CFB128:(A5503,A5507,513,A5521,A5526,A5530,A5536,A5664AES-CTR",
+      "Messagedigest | SHA | Compute amessagedigest | SHA-1:(A5503,A5516, A5517,5518,519,5520,A526,A5539,A5540,A541,554,A564)SHA2-224:(A5503,5516,5517,518,5519,5520,5524,A5525,5526,A559,A5540,5541,A5542",
+      "Message | MAC | Compute a | Key size (HMAC):112- | (A5503, A5526, 564) AES-CMAC",
+      "authenticatio n | MAC tag for authenticatio n | 524288 bits Security strength (HMAC):112-256 bits Key size (AES):128, 192, 256 bits Security strength (AES):128, 192, 256 bits | (A5503, A5507, 513, A5520, A521, A5526, A5530, A5536, A561, A5664 AES-GMAC: (A5503, 5507, 513, A521, A5526, 530, A5536, A5661, A5664) HMAC-SHA-1: (A5503, A5516, A5517, A5518, 5519, A5520, A5526, A5539, A5540, A5541, A5542, A5664) HMAC-SHA2- 224: (A5503, A5516, A5517, A5518, A5519, A5520, 5524, A5525, A5526",
+      "Randomnumbergenerationwith DRBGs | DRBG | Generaterandomnumbers fromDRBGS | CTR-DRBG:Modes: AES-128, AES-192, AES-256,with derivation function,with/without predictionresistance; Internal statelength: 256, 320, 384bits; Security strength:128, 192, 256 bitsHMAC-DRBG:Modes: SHA-1, SHA-256, SHA-512with/without predictionresistance; Internal statelength: 320, 512, 1024bits; Security strength:128, 256 bitsHash-DRBG:Modes: SHA-1, SHA-256, SHA-512with/without predictionresistance; Internal statelength: 880, 1776 bits; | CounterDRBG:A5503,5505,A5506,A5507,A5508,A5509,A5510,A5511,5512,5513,5514,A5515,5521,A5522,523,A5526,5528,A529,5530,531,532,A5533,A5534,5535,5536,537,A5538,A5661,A5662,A563,A5664,565,A5666Hash DRBG:(A5503,A5516,A5517,A518,526,A5539,A5540,A5541,A5664)HMAC DRBG",
+      "Authenticatedencryption | BC-Auth | Encrypt andauthenticatea plaintext | Key size (AES):128, 192,226 bitsSecurity strength(AES):128, 192, 256 bits | AES-CCM:(A5503,A5507,513,A520,C A5521,A5526,5530,536,A5661,A5664AES-GCM:(A5503,5505,A5506,A5507,A5508,A5509,A5510,51,A5512,5513,551, A5515,A5521,52,A5523,5526,5528,A5529,530,5531,53,A53,A534,5535,A5536,5537,A5538,A561,A5662",
+      "Authenticateddecryption | BC-Auth | Decrypt andauthenticatea ciphertext | Key size:128, 192, 256bitsSecurity strength:128,192, 256 bits | AES-CCM:(A5503,A5507,513,520,A5521,A5526,A5530,A5536",
       "Key pairgenerationwith ECDSA | AsymKeyPair-KeyGenCKG | Generate anasymmetricEC key pair | Curves:P-256, P-384Security strength:128,192 bitsMode:FIPS 186-5, SectionA.2.2 - RejectionSampling | ECDSAKeyGen(FIPS186-5):(A5503,5526)Asymmetricryptographic KeyGeneration(CKG): ()",
       "Digitalsignatureverificationwith ECDSA | DigSig- SigVer | Verify adigitalsignatureusing ECDSA | Curves:P-256, P-384Hashes:SHA-1, SHA2-224,SHA2-256, SHA2-384,SHA2-512Security strength:80 | ECDSA SigVer(FIPS186-4):5504,5527)ECDSA SigVer",
       "Digitalsignatureveriicationwith RSA | DigSig-Siger | Verify asignature withRSA | Padding:PKCS#1 v1.5Hashes:SHA-256Key size(s):4096 bits(149 bits) | RSA SigVer(FIPS186-4):(A5503,A5526,A5664)RSA SigVer(FIPS186-5):(A5503,A5526,A5664)",
@@ -773,18 +785,6 @@
       "ECDH | Elliptic Curve Diffie-Hellman",
       "ECDSA | Elliptic Curve Digital Signature Algorithm",
       "HMAC | Keyed-Hash Message Authentication Code"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 702
-    }
+    ]
   }
 }
