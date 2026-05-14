@@ -228,6 +228,34 @@ SKIP_ALGORITHMS=1 python scraper.py
 python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
 ```
 
+## Modal Remote Runs
+
+Use Modal for faster remote scraper runs or full-refresh experiments without tying up GitHub Actions.
+
+```bash
+# One-time local CLI setup
+python3 -m venv .venv-modal
+.venv-modal/bin/python -m pip install modal
+.venv-modal/bin/python -m modal setup
+
+# Cheap remote execution smoke test
+.venv-modal/bin/python -m modal run modal_scrape.py::smoke
+
+# Run the scraper remotely with the Modal Volume cache when available
+.venv-modal/bin/python -m modal run modal_scrape.py::main
+
+# Run the cached scraper with active/historical certificate work split across shards
+.venv-modal/bin/python -m modal run modal_scrape.py::sharded --shard-count 8 --no-use-cache-volume
+
+# Run a full refresh remotely
+.venv-modal/bin/python -m modal run modal_scrape.py::sharded --shard-count 8 --full-refresh --no-require-data-quality-pass
+
+# Download the artifact archive reported by a run
+.venv-modal/bin/python -m modal volume get nist-cmvp-api-cache /runs/<run_id>/artifacts.tar.gz .
+```
+
+The Modal runner writes logs and generated artifacts to the `nist-cmvp-api-cache` Modal Volume and runs `validate_api.py --require-current-schema --forbid-firecrawl-run-source`. Cached runs require the data-quality monitor to pass by default; full refreshes disable that gate because they intentionally bypass cache reuse. Successful runs update the volume cache unless `--no-update-cache-volume` is set. Use `--no-use-cache-volume` when the checked-in `api/` cache is current, which avoids slow reads across thousands of small files in the Modal Volume.
+
 ## Environment Variables
 
 | Variable | Default | Description |
