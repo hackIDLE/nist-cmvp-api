@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1933"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 0,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0
     },
     "caveat": "When operated in FIPS mode with Red Hat Enterprise Linux 6.2 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1758, Red Hat Enterprise Linux 6.2 Kernel Crypto API Cryptographic Module validated to FIPS 140-2 under Cert. #1901, Red Hat Enterprise Linux 6.2 Libgcrypt Cryptographic Module validated to FIPS 140-2 under Cert. #1757 and NSS Cryptographic Module validated to FIPS 140-2 under Cert. #1837, each module shall be obtained, installed, and initialized as specified in Section 9.1 of the provided Security Policy. Section 1 of the provided Security Policies specifies the precise RPM file containing each module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the RPM file if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1933",
@@ -24,7 +24,7 @@
     "description": "Device-mapper is an infrastructure in the Linux kernel that provides a generic way to create virtual layers of block devices on top of real block devices. dm-crypt is a device-mapper target that provides transparent encryption of block devices using the Kernel Crypto API shipped with RHEL 6.2. The user can specify one of the symmetric ciphers, a key (of any allowed size), an IV generation mode which allows the user to create a new block device in /dev. Writes to this device will be encrypted and reads decrypted transparent to the user.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Red Hat Enterprise Linux 6.2 dm-crypt Cryptographic Module",
     "module_type": "Software",

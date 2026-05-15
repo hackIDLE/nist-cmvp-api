@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 40,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 40
     },
+    "caveat": "Interim Validation; When operated in approved mode; No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933",
+    "certificate_number": "4933",
+    "dataset": "active",
+    "description": "The X5 Postal Security Device (PSD) is a single-chip cryptographic module designed by Pitney Bowes, Inc. (PB) to conform with FIPS 140-3 Security Level 3 requirements. The device includes the Maxim Integrated MAX32590 DeepCover Secure Microcontroller hardware component. The PSD Application and DAL are compiled into a single firmware. The X5 Postal Security Device (PSD) provides cryptographic services to a host device (i.e., Digital Postage Meter), to support postage evidence in the form of an indicium. A PSD provides protection that includes ensuring the secrecy of sensitive security parameters (SSPs) such as cryptographic keys and providing data integrity protection for funds relevant data items (FRDIs) such as accounting data. SSPs and FRDIs reside inside the strong physical protections of the X5 Postal Security Device (PSD).",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "X5 Postal Security Device (PSD)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/23/2026",
+    "validation_date": "12/24/2024",
+    "validation_dates": [
+      "12/24/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "12/24/2024",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "27 Waterview Drive",
+        "Shelton, CT 06484",
+        "USA"
+      ],
+      "contact_email": "brian.hannigan@pb.com",
+      "contact_name": "Brian Hannigan",
+      "contact_phone": "203-796-3201",
+      "country": "USA",
+      "name": "Pitney Bowes, Inc.",
+      "website_url": "http://www.pitneybowes.com"
+    },
+    "vendor_name": "Pitney Bowes, Inc.",
     "algorithms": [
       "AES",
       "DES",
@@ -72,60 +126,6 @@
       "SSP Authentication | MAC | Message authentication code applied to stored SSPs | Key:256-bit | HMAC-SHA2-256",
       "SSP Decryption | BC-UnAuth | SSP Decryption in NVRAM | Key:256-bit | AES-CBC",
       "SSP Encryption | BC-UnAuth | SSP encryption in NVRAM | Key:256-bit | AES-CBC"
-    ],
-    "caveat": "Interim Validation; When operated in approved mode; No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933",
-    "certificate_number": "4933",
-    "dataset": "active",
-    "description": "The X5 Postal Security Device (PSD) is a single-chip cryptographic module designed by Pitney Bowes, Inc. (PB) to conform with FIPS 140-3 Security Level 3 requirements. The device includes the Maxim Integrated MAX32590 DeepCover Secure Microcontroller hardware component. The PSD Application and DAL are compiled into a single firmware. The X5 Postal Security Device (PSD) provides cryptographic services to a host device (i.e., Digital Postage Meter), to support postage evidence in the form of an indicium. A PSD provides protection that includes ensuring the secrecy of sensitive security parameters (SSPs) such as cryptographic keys and providing data integrity protection for funds relevant data items (FRDIs) such as accounting data. SSPs and FRDIs reside inside the strong physical protections of the X5 Postal Security Device (PSD).",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "X5 Postal Security Device (PSD)",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933",
-    "overall_level": 3,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "12/23/2026",
-    "validation_date": "12/24/2024",
-    "validation_dates": [
-      "12/24/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "12/24/2024",
-        "lab": "Penumbra Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "27 Waterview Drive",
-        "Shelton, CT 06484",
-        "USA"
-      ],
-      "contact_email": "brian.hannigan@pb.com",
-      "contact_name": "Brian Hannigan",
-      "contact_phone": "203-796-3201",
-      "country": "USA",
-      "name": "Pitney Bowes, Inc.",
-      "website_url": "http://www.pitneybowes.com"
-    },
-    "vendor_name": "Pitney Bowes, Inc."
+    ]
   }
 }

@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3655"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #2792.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3655",
     "certificate_number": "3655",
@@ -35,7 +24,7 @@
     "description": "The RapidIdentity FIPS Cryptographic Module for Windows is a cryptographic engine for Windows Server. The module delivers core cryptographic functions to Identity Automation’s RapidIdentity MFA server, providing a multitude of authentication methods. The RapidIdentity FIPS Cryptographic Module leverages industry leading, FIPS approved cryptographic algorithms provided by the Bouncy Castle FIPS .NET and Java APIs.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "RapidIdentity FIPS Cryptographic Module",
     "module_type": "Software",
@@ -90,6 +79,17 @@
       "name": "Identity Automation",
       "website_url": "https://www.identityautomation.com/"
     },
-    "vendor_name": "Identity Automation"
+    "vendor_name": "Identity Automation",
+    "algorithms": [
+      "AES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

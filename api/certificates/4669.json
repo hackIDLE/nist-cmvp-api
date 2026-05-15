@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DSA",
-      "ECDSA",
-      "EDDSA",
-      "KDF",
-      "RSA"
-    ],
     "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669",
     "certificate_number": "4669",
@@ -32,7 +24,7 @@
     "description": "The RapidIdentity FIPS Cryptographic Module is a cryptographic engine for Windows, iOS, and Android. The module delivers core cryptographic functions to Identity Automation’s RapidIdentity MFA Server and MFA Mobile app which provide a variety of authentication methods. The RapidIdentity FIPS Cryptographic Module leverages industry leading, FIPS approved cryptographic algorithms provided by the Bouncy Castle FIPS .NET APIs.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "RapidIdentity FIPS Cryptographic Module",
     "module_type": "Software",
@@ -87,6 +79,14 @@
       "name": "Identity Automation",
       "website_url": "http://www.identityautomation.com"
     },
-    "vendor_name": "Identity Automation"
+    "vendor_name": "Identity Automation",
+    "algorithms": [
+      "AES",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "KDF",
+      "RSA"
+    ]
   }
 }

@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1320"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 0,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0
     },
     "caveat": "When operated in FIPS mode. When obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9.1 of the provided Security Policy. The Security Policy specifies the precise RPM file containing this module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the module if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1320",
@@ -24,7 +24,7 @@
     "description": "The OpenSSL FIPS Runtime Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for use with the high level API of the OpenSSL library version 0.9.8 delivered with RHEL 5.4 or RHEL 5.8.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Red Hat Enterprise Linux 5 OpenSSL Cryptographic Module",
     "module_type": "Software",

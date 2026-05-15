@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4565"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 10.2 of the Security Policy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4565",
     "certificate_number": "4565",
@@ -39,7 +24,7 @@
     "description": "The Amazon Linux 2 NSS Cryptographic Module is a set of libraries designed to support cross-platform development of security-enabled applications. These applications may support the TLS protocol, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards supporting FIPS 140-2 validated cryptographic algorithms.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Amazon Linux 2 NSS Cryptographic Module",
     "module_type": "Software",
@@ -94,6 +79,21 @@
       "name": "Amazon Web Services, Inc.",
       "website_url": "http://aws.amazon.com"
     },
-    "vendor_name": "Amazon Web Services, Inc."
+    "vendor_name": "Amazon Web Services, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

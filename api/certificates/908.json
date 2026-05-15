@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
     "certificate_number": "908",
@@ -32,7 +24,7 @@
     "description": "The GlobalSCAPE® Cryptographic Module (GSCM) provides cryptographic services for the GlobalSCAPE family of software products such as Secure FTP Server and EFT Server. The services include symmetric/asymmetric encryption/decryption, digital signatures, message digest, message authentication, random number generation, and SSL/TLS support. The GSCM is intended for use by applications through the moduleÆs Application Programming Interface (API), which is based on the OpenSSL API defined by the OpenSSL Project.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "GlobalSCAPE® Cryptographic Module",
     "module_type": "Software",
@@ -79,6 +71,14 @@
       "name": "GlobalSCAPE, Inc.",
       "website_url": "http://www.globalscape.com"
     },
-    "vendor_name": "GlobalSCAPE, Inc."
+    "vendor_name": "GlobalSCAPE, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

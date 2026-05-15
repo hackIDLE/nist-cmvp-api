@@ -1,36 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2048"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2048",
     "certificate_number": "2048",
@@ -38,7 +24,7 @@
     "description": "Allegro’s suite of Embedded Device Security toolkits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Allegro Cryptographic Engine",
     "module_type": "Software",
@@ -90,6 +76,20 @@
       "name": "Allegro Software Development Corporation",
       "website_url": "http://www.allegrosoft.com"
     },
-    "vendor_name": "Allegro Software Development Corporation"
+    "vendor_name": "Allegro Software Development Corporation",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3107"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2038.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3107",
     "certificate_number": "3107",
@@ -36,7 +24,7 @@
     "description": "The Carbon Black Cryptographic Module delivers core cryptographic functions (including Suite B algorithms) to Cb Response and Cb Protection. These products rely on the Carbon Black Cryptographic Module for secure key management, data integrity, data at rest encryption, and secure communications.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Carbon Black Cryptographic Module",
     "module_type": "Software",
@@ -91,6 +79,18 @@
       "name": "Carbon Black, Inc.",
       "website_url": "http://www.carbonblack.com"
     },
-    "vendor_name": "Carbon Black, Inc."
+    "vendor_name": "Carbon Black, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ]
   }
 }

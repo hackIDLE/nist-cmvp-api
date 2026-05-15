@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1443"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1443",
     "certificate_number": "1443",
@@ -33,7 +24,7 @@
     "description": "The Cloakware Security Kernel from Cloakware, Inc. is a module contained in a single library designed to provide cryptographic functionality within calling applications operating on multi-chip standard server platforms. This single library is linked at run-time to a C/C++ library, which can be called by host applications to provide cryptographic services. This library can also be dynamically loaded at runtime by a Java application running within a Java Virtual Machine (JVM) via Java Native Interface (JNI), providing cryptographic services to the Java application.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cloakware Security Kernel",
     "module_type": "Software",
@@ -80,6 +71,15 @@
       "name": "Cloakware, Inc.",
       "website_url": "http://www.cloakware.com"
     },
-    "vendor_name": "Cloakware, Inc."
+    "vendor_name": "Cloakware, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

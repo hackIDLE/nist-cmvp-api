@@ -1,36 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4346"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy and tamper evident seals installed as indicated in the Security Policy; The module generates cryptographic keys whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4346",
     "certificate_number": "4346",
@@ -38,7 +24,7 @@
     "description": "The Vocality ROIP and DTECH M3-SE-MFGW appliances are networked C4ISR solutions for defense, intelligence, security, and commercial missions. The Vocality RoIP appliance provides users with a simple-to-use, small form factor radio gateway solution that allows the connection of legacy push-to-talk and digital radio systems to IP unicast and multicast networks via either Ethernet or an embedded 4G LTE modem. The DTECH M3-SE MFGW offers the capabilities of the ROIP product, but in DTECH’s SE product line which boasts a ruggedized form factor and robust modular power solutions.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Vocality RoIP and DTECH M3-SE Multi-Function Gateway Appliances",
     "module_type": "Hardware",
@@ -85,6 +71,20 @@
       "name": "Cubic Corporation",
       "website_url": "http://www.cubic.com"
     },
-    "vendor_name": "Cubic Corporation"
+    "vendor_name": "Cubic Corporation",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

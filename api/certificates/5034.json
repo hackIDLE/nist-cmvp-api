@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5034"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 160,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 160
     },
+    "caveat": "When operated in approved mode. The module generates random numbers whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5034",
+    "certificate_number": "5034",
+    "dataset": "active",
+    "description": "The Red Hat Enterprise Linux 9 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5034",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5034.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5034.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/29/2030",
+    "validation_date": "6/30/2025",
+    "validation_dates": [
+      "6/30/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "6/30/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "100 East Davie Street",
+        "Raleigh, NC 27601",
+        "USA"
+      ],
+      "contact_email": "fips140@redhat.com",
+      "contact_name": "Jaroslav Reznik",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Red Hat, Inc.",
+      "website_url": "http://www.redhat.com"
+    },
+    "vendor_name": "Red Hat, Inc.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -185,60 +239,6 @@
       "RSA SigVer(FIPS186-5) | A5097 | Modulo-2048,3072,4096 Signature Type pkcs1v1.5 | FIPS 186-5",
       "RSA SigVer(FIPS186-5) | A5098 | Modulo-2048,3072,4096 Signature Type pkcs1v1.5 | FIPS 186-5",
       "RSA SigVer(FIPS186-5) | A5099 | Modulo-2048,3072,4096 Signature Type pkcs1v1.5 | FIPS 186-5"
-    ],
-    "caveat": "When operated in approved mode. The module generates random numbers whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5034",
-    "certificate_number": "5034",
-    "dataset": "active",
-    "description": "The Red Hat Enterprise Linux 9 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5034",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5034.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5034.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "6/29/2030",
-    "validation_date": "6/30/2025",
-    "validation_dates": [
-      "6/30/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "6/30/2025",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "100 East Davie Street",
-        "Raleigh, NC 27601",
-        "USA"
-      ],
-      "contact_email": "fips140@redhat.com",
-      "contact_name": "Jaroslav Reznik",
-      "contact_phone": "000-000-0000",
-      "country": "USA",
-      "name": "Red Hat, Inc.",
-      "website_url": "http://www.redhat.com"
-    },
-    "vendor_name": "Red Hat, Inc."
+    ]
   }
 }

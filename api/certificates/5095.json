@@ -1,38 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5095"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 11,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 11
     },
-    "algorithms": [
-      "AES"
-    ],
-    "algorithms_detailed": [
-      "AES-CBC | A5807, A5810, A5813, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-CBC-CS3 | A5807, A5810, A5816, A5819 | Direction - decrypt, encrypt Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-CCM | A5807, A5810, A5816, A5819 | Key Length - 128, 192, 256 | SP 800-38C",
-      "AES-CFB128 | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-CMAC | A5807, A5810, A5816, A5819 | Direction - Generation, Verification Key Length - 128, 192, 256 | SP 800-38B",
-      "AES-CTR | A5807, A5810, A5813, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-ECB | A5807, A5808, A5809, A5810, A5811, A5812, A5813, A5814, A5815, A5816, A5817, A5818, A5819, A5820, A5821 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
-      "AES-GCM | A5807, A5809, A5810, A5812, A5813, A5815, A5816, A5818, A5819, A5821 | Direction - Decrypt, Encrypt IV Generation - External Key Length - 128, 192, 256 | SP 800-38D",
-      "AES-GCM | A5808, A5811, A5814, A5817, A5820 | Direction - Decrypt, Encrypt IV Generation - Internal IV Generation Mode - B.3.1.1 Key Length - 128, 192, 256 | SP 800-38D",
-      "AES-GMAC | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt IV Generation - External Key Length - 128, 192, 256 | SP 800-38D",
-      "AES-KW | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt | SP 800-38F"
-    ],
     "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5095",
     "certificate_number": "5095",
@@ -40,7 +24,7 @@
     "description": "The Rocky Linux 8 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Rocky Linux 8 Kernel Cryptographic API",
     "module_type": "Software",
@@ -87,6 +71,22 @@
       "name": "Ctrl IQ, Inc.",
       "website_url": "https://ciq.com/"
     },
-    "vendor_name": "Ctrl IQ, Inc."
+    "vendor_name": "Ctrl IQ, Inc.",
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5807, A5810, A5813, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 | A5807, A5810, A5816, A5819 | Direction - decrypt, encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM | A5807, A5810, A5816, A5819 | Key Length - 128, 192, 256 | SP 800-38C",
+      "AES-CFB128 | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC | A5807, A5810, A5816, A5819 | Direction - Generation, Verification Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR | A5807, A5810, A5813, A5816, A5819 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB | A5807, A5808, A5809, A5810, A5811, A5812, A5813, A5814, A5815, A5816, A5817, A5818, A5819, A5820, A5821 | Direction - Decrypt, Encrypt Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM | A5807, A5809, A5810, A5812, A5813, A5815, A5816, A5818, A5819, A5821 | Direction - Decrypt, Encrypt IV Generation - External Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GCM | A5808, A5811, A5814, A5817, A5820 | Direction - Decrypt, Encrypt IV Generation - Internal IV Generation Mode - B.3.1.1 Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt IV Generation - External Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-KW | A5807, A5810, A5816, A5819 | Direction - Decrypt, Encrypt | SP 800-38F"
+    ]
   }
 }

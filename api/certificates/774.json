@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/774"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/774",
     "certificate_number": "774",
@@ -30,7 +24,7 @@
     "description": "The J-IDMark 64 PIV is a single chip cryptographic module, which combines a PIV FIPS 201 compliant applet (SP 800-73) loaded on J-IDMark 64 Open, a dual (contact & contactless) interface platform compliant with the latest Java CardTM 2.2/Global Platform 2.1.1 specifications, FIPS 140-2 Level 3 Approved and Level 4 Approved for physical security. Thus J-IDMark 64 PIV module is a reliable and standardized solution for PIV systems, which allow managing physical and logical access to Federal government facilities and systems, by help of identity credentials.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "J-IDMark 64 PIV",
     "module_type": "Hardware",
@@ -93,6 +87,12 @@
       "name": "Sagem Orga",
       "website_url": "http://www.sagem-orga.com"
     },
-    "vendor_name": "Sagem Orga"
+    "vendor_name": "Sagem Orga",
+    "algorithms": [
+      "AES",
+      "DES",
+      "RSA",
+      "SHA"
+    ]
   }
 }

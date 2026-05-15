@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2055"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "RSA"
-    ],
     "caveat": "When operated with module TOP DL v2 validated to FIPS 140-2 under Cert. #1450 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2055",
     "certificate_number": "2055",
@@ -29,7 +24,7 @@
     "description": "This module is based on a Java Card platform (IDCore 3020 v2) with 128K EEPROM memory and the ActivIdentity Digital Identity Applet loaded on the Java Card platform. The Cryptographic Module provides dual interfaces (i.e. contact and contact-less) where the same security level is achieved.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ActivIdentity Digital Identity Applet v2 on Gemalto IDCore 3020 (v2)",
     "module_type": "Hardware",
@@ -87,6 +82,11 @@
       "name": "ActivIdentity, Inc.",
       "website_url": "http://www.actividentity.com"
     },
-    "vendor_name": "ActivIdentity, Inc."
+    "vendor_name": "ActivIdentity, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "RSA"
+    ]
   }
 }

@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3420"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC"
-    ],
     "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 8.1 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3420",
     "certificate_number": "3420",
@@ -30,7 +24,7 @@
     "description": "Arista’s crypto library is a comprehensive suite of FIPS Approved algorithms. Many key sizes and modes have been implemented to allow flexibility and efficiency.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "EOS MACsec Bravo Hybrid Module",
     "module_type": "Firmware-Hybrid",
@@ -84,6 +78,12 @@
       "name": "[email protected]",
       "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "vendor_name": "[email protected]"
+    "vendor_name": "[email protected]",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC"
+    ]
   }
 }

@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2816"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DES",
-      "DSA",
-      "HMAC",
-      "SHA",
-      "SSH"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2816",
     "certificate_number": "2816",
@@ -31,7 +24,7 @@
     "description": "The module is a cryptographic device enclosed in a plug-in chassis that provides mux/demux and mod/dmod functions along with optional payload encryption for a line of license band point-to-point radios.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Proteus MX Licensed Band Radio Cryptographic Module",
     "module_type": "Hardware",
@@ -80,6 +73,13 @@
       "name": "Microwave Networks Inc.",
       "website_url": "http://www.microwavenetworks.com"
     },
-    "vendor_name": "Microwave Networks Inc."
+    "vendor_name": "Microwave Networks Inc.",
+    "algorithms": [
+      "DES",
+      "DSA",
+      "HMAC",
+      "SHA",
+      "SSH"
+    ]
   }
 }

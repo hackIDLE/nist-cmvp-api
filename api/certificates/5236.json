@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 61,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 61
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
+    "certificate_number": "5236",
+    "dataset": "active",
+    "description": "The Peplink FIPS Module is a security module that provides FIPS-approved cryptographic functions and services to a wide range of Peplink products.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Peplink FIPS Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5236.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5236.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "4/10/2026",
+    "validation_dates": [
+      "4/10/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/10/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2720 Queensview Drive",
+        "Ottawa, ON K2B 1A5",
+        "Canada"
+      ],
+      "contact_email": "security@peplink.com",
+      "contact_name": "Peplink Security Team",
+      "contact_phone": "650-899-1120",
+      "country": "Canada",
+      "name": "Peplink Technologies Inc.",
+      "website_url": "http://www.peplink.com"
+    },
+    "vendor_name": "Peplink Technologies Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -94,60 +148,6 @@
       "PBKDF | A4481 | Iteration Count - Iteration Count: 1-10000 Increment 1HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256Password Length - Password Length: 8-128 Increment 8Salt Length - Salt Length: 128-4096 Increment 8Key Data Length - Key Data Length: 112-4096 Increment 8 | SP 800-132",
       "TLS v1.2 KDF RFC7627 (CVL) | A4481 | Hash Algorithm - SHA2-256, SHA2-384, SHA2-512Key Block Length - Key Block Length: 1024 | SP 800-135 Rev. 1",
       "TLS v1.3 KDF (CVL) | A4481 | HMAC Algorithm - SHA2-256, SHA2-384KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 Rev. 1"
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
-    "certificate_number": "5236",
-    "dataset": "active",
-    "description": "The Peplink FIPS Module is a security module that provides FIPS-approved cryptographic functions and services to a wide range of Peplink products.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Peplink FIPS Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5236",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5236.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5236.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/10/2029",
-    "validation_date": "4/10/2026",
-    "validation_dates": [
-      "4/10/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "4/10/2026",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "2720 Queensview Drive",
-        "Ottawa, ON K2B 1A5",
-        "Canada"
-      ],
-      "contact_email": "security@peplink.com",
-      "contact_name": "Peplink Security Team",
-      "contact_phone": "650-899-1120",
-      "country": "Canada",
-      "name": "Peplink Technologies Inc.",
-      "website_url": "http://www.peplink.com"
-    },
-    "vendor_name": "Peplink Technologies Inc."
+    ]
   }
 }

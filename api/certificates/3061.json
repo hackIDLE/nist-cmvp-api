@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061",
     "certificate_number": "3061",
@@ -29,7 +24,7 @@
     "description": "HGST's Ultrastar SS200 TCG Enterprise self-encryptinig SSDs implement TCG Storage specifications that meet or exceed the most demanding performance and security requirements. The Ultrastar SS200 family combines enterprise-grade MLC NAND Flash memory and advanced endurance management firmware. The power loss data management techniques utilized by the Ultrastar SS200, extend reliability, improve endurance, and sustain performance over the life of the SSD.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HGST Ultrastar SS200 TCG Enterprise SSD",
     "module_type": "Hardware",
@@ -79,6 +74,11 @@
       "name": "HGST, a Western Digital brand",
       "website_url": "http://www.hgst.com/products/solid-state-solutions/ultrastar-ss200"
     },
-    "vendor_name": "HGST, a Western Digital brand"
+    "vendor_name": "HGST, a Western Digital brand",
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ]
   }
 }

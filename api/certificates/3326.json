@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3326"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3326",
     "certificate_number": "3326",
@@ -37,7 +24,7 @@
     "description": "Fortanix Self-Defending Key Management Service™ (SDKMS) is the world’s first cloud service secured with Intel® SGX and built using Fortanix’s patented Runtime Encryption Technology. With SDKMS, you can securely generate, store, and use cryptographic keys and certificates, as well as secrets, or any blob of data. You can integrate with SDKMS using legacy cryptographic interfaces or using its native RESTful interface. SDKMS ensures that you remain in complete control over your keys and secrets. It provides access control to users and applications to enforce authorized access to keys.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Self-Defending Key Management Service™",
     "module_type": "Software",
@@ -87,6 +74,19 @@
       "name": "Fortanix, Inc.",
       "website_url": "https://www.fortanix.com/"
     },
-    "vendor_name": "Fortanix, Inc."
+    "vendor_name": "Fortanix, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

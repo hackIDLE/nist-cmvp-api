@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5204"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 57,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 57
     },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5204",
+    "certificate_number": "5204",
+    "dataset": "active",
+    "description": "The WinMagic Cryptographic Module for Windows 1.0 is a software library, designed to run as a multi-chip standalone embodiment on Windows platform. The module leverages cryptographic services for the WinMagic software products.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "WinMagic Cryptographic Module for Windows",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5204",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5204.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5204.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/22/2031",
+    "validation_date": "3/23/2026",
+    "validation_dates": [
+      "3/23/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/23/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "5770 Hurontario St, Suite 501",
+        "Mississauga, ON L5R 3G5",
+        "Canada"
+      ],
+      "contact_email": "alexm@winmagic.com",
+      "contact_name": "Alexander Mazuruc",
+      "contact_phone": "905-502-7000 ext. 3225",
+      "country": "Canada",
+      "name": "WinMagic Corp",
+      "website_url": "http://www.winmagic.com"
+    },
+    "vendor_name": "WinMagic Corp",
     "algorithms": [
       "AES",
       "DRBG",
@@ -83,60 +137,6 @@
       "HMAC-SHA2-384 (A6384) | KAT | CAST | On-Demand | Manually",
       "HMAC-SHA2-512 (A6384) | KAT | CAST | On-Demand | Manually",
       "PBKDF (A6384) | KAT | CAST | On-Demand | Manually"
-    ],
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5204",
-    "certificate_number": "5204",
-    "dataset": "active",
-    "description": "The WinMagic Cryptographic Module for Windows 1.0 is a software library, designed to run as a multi-chip standalone embodiment on Windows platform. The module leverages cryptographic services for the WinMagic software products.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "WinMagic Cryptographic Module for Windows",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5204",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5204.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5204.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/22/2031",
-    "validation_date": "3/23/2026",
-    "validation_dates": [
-      "3/23/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/23/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "5770 Hurontario St, Suite 501",
-        "Mississauga, ON L5R 3G5",
-        "Canada"
-      ],
-      "contact_email": "alexm@winmagic.com",
-      "contact_name": "Alexander Mazuruc",
-      "contact_phone": "905-502-7000 ext. 3225",
-      "country": "Canada",
-      "name": "WinMagic Corp",
-      "website_url": "http://www.winmagic.com"
-    },
-    "vendor_name": "WinMagic Corp"
+    ]
   }
 }

@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "SHA"
-    ],
     "caveat": "When installed, initialized and configured as specified in Section 5 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475",
     "certificate_number": "4475",
@@ -32,7 +24,7 @@
     "description": "Complete security is built directly into each module’s silicon. Creating security directly in silicon avoids the use of vulnerable software and/or Operating Systems. The core of the hardware-enabled solution is AES-256 encryption and a novel symmetric key distribution that can provide a unique random key for each packet. QNS devices are placed in-line and nearby the endpoints to be secured. No external key management is necessary. Once deployed, the QNS devices never need to be upgraded or patched.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Q-Box",
     "module_type": "Hardware",
@@ -83,6 +75,14 @@
       "name": "Q-Net Security, Inc.",
       "website_url": "http://www.qnetsecurity.com"
     },
-    "vendor_name": "Q-Net Security, Inc."
+    "vendor_name": "Q-Net Security, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "SHA"
+    ]
   }
 }

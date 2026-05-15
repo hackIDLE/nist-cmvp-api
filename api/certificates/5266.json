@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5266"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 56,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "crawl4ai",
       "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5266.pdf",
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 56
     },
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5266",
+    "certificate_number": "5266",
+    "dataset": "active",
+    "description": "Juniper Networks MX and EX9200 Series is a robust portfolio of SDN enabled routing and switching platforms that provide industry leading system capacity, density, security and performance. MPC7E-10G/EX9200-40XS supports 40 ports of 10gbps with GCM-AES-256 MACSEC encryption.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Juniper Networks MX240, MX480 and MX960 series and EX9204, EX9208, EX9214 Ethernet Switches, Junos OS 22.3R1",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5266",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5266.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5266.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/12/2031",
+    "validation_date": "5/13/2026",
+    "validation_dates": [
+      "5/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/13/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "contact_email": "bshelton@juniper.net",
+      "contact_name": "Bill Shelton",
+      "contact_phone": "408-745-2000",
+      "country": "USA",
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net"
+    },
+    "vendor_name": "Juniper Networks, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -88,60 +142,6 @@
       "HMAC-MD5 SSH",
       "HMAC-RIPEMD160 SSH",
       "UMAC SSH | In addition to the above non-Approved Algorithms Not Allowed in the Approved Mode of | Operation, all Approved algorithms supported in the Approved mode of operation are also | supported in the non-Approved mode."
-    ],
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5266",
-    "certificate_number": "5266",
-    "dataset": "active",
-    "description": "Juniper Networks MX and EX9200 Series is a robust portfolio of SDN enabled routing and switching platforms that provide industry leading system capacity, density, security and performance. MPC7E-10G/EX9200-40XS supports 40 ports of 10gbps with GCM-AES-256 MACSEC encryption.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Juniper Networks MX240, MX480 and MX960 series and EX9204, EX9208, EX9214 Ethernet Switches, Junos OS 22.3R1",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5266",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5266.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5266.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "5/12/2031",
-    "validation_date": "5/13/2026",
-    "validation_dates": [
-      "5/13/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "5/13/2026",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1133 Innovation Way",
-        "Sunnyvale, CA 94089",
-        "USA"
-      ],
-      "contact_email": "bshelton@juniper.net",
-      "contact_name": "Bill Shelton",
-      "contact_phone": "408-745-2000",
-      "country": "USA",
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net"
-    },
-    "vendor_name": "Juniper Networks, Inc."
+    ]
   }
 }

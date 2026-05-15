@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2770"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode with tamper evident labels installed and with the configurations in Tables 2, 3, 4 and 5 as defined in the Security Policy. The protocol SNMP shall not be used when operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2770",
     "certificate_number": "2770",
@@ -37,7 +24,7 @@
     "description": "The Brocade VDX 6740 and VDX 6740T are fixed form factor VCS enabled 10 GbE / 40 GbE fabric switch for Top of the Rack (TOR) fabric deployments. The Brocade VDX 6940 switches are fixed form factor VCS enabled 10 GbE / 40 GbE fabric switch for high density 10GbE switch for the TOR or Middle of the Row (MOR) or for End of the Row (EOR) configurations. The Brocade VDX 8770 Switch is designed to scale out Brocade VCS Fabrics (VCS) and support complex environments with dense virtualization and dynamic automation requirements.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Brocade VDX 6740, VDX 6740T, VDX 6940 and VDX 8770 Switches",
     "module_type": "Hardware",
@@ -85,6 +72,19 @@
       "name": "Brocade Communications Systems, Inc.",
       "website_url": "http://www.brocade.com"
     },
-    "vendor_name": "Brocade Communications Systems, Inc."
+    "vendor_name": "Brocade Communications Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

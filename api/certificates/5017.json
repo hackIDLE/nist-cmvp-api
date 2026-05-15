@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5017"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 80,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 80
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5017",
+    "certificate_number": "5017",
+    "dataset": "active",
+    "description": "The Riverbed Cryptographic Module v2.0.1 is a software library providing a C language API for use by other applications requiring cryptographic functionality. Riverbed Cryptographic Module v2.0.1 offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data-at-rest/data-in-flight and to support secure communications protocols (including TLS 1.2/1.3).",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Riverbed Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5017",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5017.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5017.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/13/2030",
+    "validation_date": "5/14/2025",
+    "validation_dates": [
+      "5/14/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "5/14/2025",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "275 Shoreline Drive",
+        "6th Floor",
+        "Redwood City, CA 94065",
+        "USA"
+      ],
+      "contact_email": "fips-rcm@riverbed.com",
+      "contact_name": "Riverbed FIPS team",
+      "contact_phone": "415-247-8800",
+      "country": "USA",
+      "name": "Riverbed Technology, LLC",
+      "website_url": "http://www.riverbed.com"
+    },
+    "vendor_name": "Riverbed Technology, LLC",
     "algorithms": [
       "AES",
       "CVL",
@@ -114,61 +169,6 @@
       "SHA-1(non-compliant) | Signature generation in TLS 1.0/1.1",
       "TLS 1.2 KDF(non-compliant) | Key derivation function per(RFC 5246)",
       "Triple-DES(non-compliant) | Encryption;MAC generation;key wrapping"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated keys",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5017",
-    "certificate_number": "5017",
-    "dataset": "active",
-    "description": "The Riverbed Cryptographic Module v2.0.1 is a software library providing a C language API for use by other applications requiring cryptographic functionality. Riverbed Cryptographic Module v2.0.1 offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data-at-rest/data-in-flight and to support secure communications protocols (including TLS 1.2/1.3).",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Riverbed Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5017",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5017.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5017.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "5/13/2030",
-    "validation_date": "5/14/2025",
-    "validation_dates": [
-      "5/14/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "5/14/2025",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "275 Shoreline Drive",
-        "6th Floor",
-        "Redwood City, CA 94065",
-        "USA"
-      ],
-      "contact_email": "fips-rcm@riverbed.com",
-      "contact_name": "Riverbed FIPS team",
-      "contact_phone": "415-247-8800",
-      "country": "USA",
-      "name": "Riverbed Technology, LLC",
-      "website_url": "http://www.riverbed.com"
-    },
-    "vendor_name": "Riverbed Technology, LLC"
+    ]
   }
 }

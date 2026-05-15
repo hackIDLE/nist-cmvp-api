@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1795"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1795",
     "certificate_number": "1795",
@@ -34,7 +24,7 @@
     "description": "Giesecke & Devrient (G&D) Smart Card Chip Operating System Sm@rtCafé Expert 6.0 is a Java Card 3 and Global Platform v2.1.1 compliant smart card module supporting both contact and contactless interfaces. It also supports, at a minimum, RSA up to 2048 bits(RSA and RSA-CRT) with on-card key generation, Hash algorithms(including SHA256), AES(up to 256 bits), ECDSA, and Triple-DES. The Sm@rtCafé Expert 6.0 is suitable for government and corporate identification, payment and banking, health care, and Web applications.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Sm@rtCafé Expert 6.0 FIPS",
     "module_type": "Hardware",
@@ -86,6 +76,16 @@
       "name": "Giesecke+Devrient Mobile Security America Inc.",
       "website_url": "http://www.gi-de.com/usa"
     },
-    "vendor_name": "Giesecke+Devrient Mobile Security America Inc."
+    "vendor_name": "Giesecke+Devrient Mobile Security America Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ]
   }
 }

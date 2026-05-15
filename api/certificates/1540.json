@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1540"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1540",
     "certificate_number": "1540",
@@ -34,7 +24,7 @@
     "description": "The XYGATE Encryption Software Development Kit [XESDK] is a dynamically linked software library that supplies: symmetric key encryption including the approved AES and TripleDES; hashing algorithms including the approved SHA-1 and SHA-256; public key encryption including RSA; signature algorithms including the approved RSA and DSA; secure session protocols such as SSH, SSL and TLS and e-mail protocols such as PGP and S/MIME. Based on cryptlib by Peter Gutmann, the XESDK, written in C, provides encryption services for applications, communications and databases across multiple computer platforms.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "XYGATE /ESDK",
     "module_type": "Software",
@@ -80,6 +70,16 @@
       "name": "XYPRO® Technology Corporation",
       "website_url": "http://www.xypro.com"
     },
-    "vendor_name": "XYPRO® Technology Corporation"
+    "vendor_name": "XYPRO® Technology Corporation",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

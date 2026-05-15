@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4405"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4405",
     "certificate_number": "4405",
@@ -33,7 +24,7 @@
     "description": "The module provides AES-GCM and AES-XTS cryptographic acceleration to applications running on the DSC2-2Q200.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Pensando Crypto Engine",
     "module_type": "Software-Hybrid",
@@ -81,6 +72,15 @@
       "name": "Pensando Systems, Inc",
       "website_url": "http://pensando.io"
     },
-    "vendor_name": "Pensando Systems, Inc"
+    "vendor_name": "Pensando Systems, Inc",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ]
   }
 }

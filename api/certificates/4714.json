@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4714"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4714",
     "certificate_number": "4714",
@@ -35,7 +24,7 @@
     "description": "The Informatica Crypto Platform (ICP) Library is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Informatica Crypto Platform (ICP) Library",
     "module_type": "Software",
@@ -84,6 +73,17 @@
       "name": "Informatica",
       "website_url": "http://www.informatica.com"
     },
-    "vendor_name": "Informatica"
+    "vendor_name": "Informatica",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2261"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2261",
     "certificate_number": "2261",
@@ -34,7 +24,7 @@
     "description": "The Cryptographic Module enables all cryptographic operations performed by the CipherCloud Gateway. The CipherCloud Gateway is a software solution that organizations deploy within their network boundaries or delegate operation to a trusted third party. CipherCloud interfaces with clients (e.g., web browsers, mobile applications, APIs, etc.), and leverages format and operations preserving encryption technology to secure sensitive information in real time, before it's sent to cloud applications (e.g. web servers, API services, databases, etc.), without impacting usability or performance.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cryptographic Module for CipherCloud Gateway",
     "module_type": "Software",
@@ -89,6 +79,16 @@
       "name": "CipherCloud, Inc.",
       "website_url": "http://www.ciphercloud.com"
     },
-    "vendor_name": "CipherCloud, Inc."
+    "vendor_name": "CipherCloud, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2205"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident labels installed and with the configurations in Tables 8 and 12 as defined in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2205",
     "certificate_number": "2205",
@@ -33,7 +24,7 @@
     "description": "The Brocade MLXe series of core routers support IPv4, IPv6, MPLS and advanced Layer 2 switching. Ideally suited for service provider backbones, Metro Ethernet networks, ISPs, CDNs, IXPs, data centers, and distributed enterprises. The NetIron CER 2000 series 1 Gigabit Ethernet (GbE) routers support copper and hybrid fiber configurations with two optional 10 GbE uplink ports. All the ports support forwarding IP and MPLS packets at wire speed without oversubscription. The routers support standard IPv4, IPv6 routing protocols, RIP/RIPng, OSPF/OSPFv3, IS-IS/IS-IS for IPv6, and BGP/BGP-MP for IPv6.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Brocade® MLXe® and Brocade NetIron® CER 2000 Series Ethernet Routers",
     "module_type": "Hardware",
@@ -82,6 +73,15 @@
       "name": "Brocade Communications Systems, Inc.",
       "website_url": "http://www.brocade.com"
     },
-    "vendor_name": "Brocade Communications Systems, Inc."
+    "vendor_name": "Brocade Communications Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

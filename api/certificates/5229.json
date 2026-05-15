@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5229"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 71,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 71
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5229",
+    "certificate_number": "5229",
+    "dataset": "active",
+    "description": "Xage Cryptographic Module for OpenSSL is a standards-based cryptographic library that delivers core cryptographic functions for the Xage Fabric platform and features robust algorithm support.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Xage Cryptographic Module for OpenSSL",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5229",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5229.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5229.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "4/7/2026",
+    "validation_dates": [
+      "4/7/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/7/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "445 Sherman Avenue",
+        "Suite 200",
+        "Palo Alto, CA 94306",
+        "USA"
+      ],
+      "contact_email": "certificates@xage.com",
+      "contact_name": "Alex Valderrama",
+      "contact_phone": "833-321-9243",
+      "country": "USA",
+      "name": "Xage Security, Inc.",
+      "website_url": "http://www.xage.com"
+    },
+    "vendor_name": "Xage Security, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -105,61 +160,6 @@
       "RSA SigVer(FIPS186-5) | A4481 | Modulo-2048,3072,4096Signature Type-pkcs1v1.5,pss | FIPS 186-5",
       "Hash DRBG with SHA3-256,SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST,SP800-90A Rev.1",
       "HMAC DRBG with SHA3-256,SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST,SP800-90A Rev.1"
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5229",
-    "certificate_number": "5229",
-    "dataset": "active",
-    "description": "Xage Cryptographic Module for OpenSSL is a standards-based cryptographic library that delivers core cryptographic functions for the Xage Fabric platform and features robust algorithm support.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Xage Cryptographic Module for OpenSSL",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5229",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5229.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5229.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/10/2029",
-    "validation_date": "4/7/2026",
-    "validation_dates": [
-      "4/7/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "4/7/2026",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "445 Sherman Avenue",
-        "Suite 200",
-        "Palo Alto, CA 94306",
-        "USA"
-      ],
-      "contact_email": "certificates@xage.com",
-      "contact_name": "Alex Valderrama",
-      "contact_phone": "833-321-9243",
-      "country": "USA",
-      "name": "Xage Security, Inc.",
-      "website_url": "http://www.xage.com"
-    },
-    "vendor_name": "Xage Security, Inc."
+    ]
   }
 }

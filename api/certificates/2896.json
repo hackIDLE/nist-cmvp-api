@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2896"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2896",
     "certificate_number": "2896",
@@ -32,7 +24,7 @@
     "description": "Pulse Secure's portfolio delivers Secure Access solutions for people, devices, things and services. It includes Pulse Connect Secure - the most reliable and feature rich VPN, Pulse Policy Secure - powerful Network Access Control (NAC) with granular network visibility and access control, Pulse Workspace - simplified enterprise mobility management (EMM), Pulse One - centralized management, and the Pulse Unified Client - a single client to connest them all. Together they provide users with secure remote, campus, mobile, and cloud access based on their role, identity, device and location.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Pulse Secure Cryptographic Module",
     "module_type": "Software",
@@ -82,6 +74,14 @@
       "name": "Pulse Secure, LLC",
       "website_url": "http://www.pulsesecure.net"
     },
-    "vendor_name": "Pulse Secure, LLC"
+    "vendor_name": "Pulse Secure, LLC",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ]
   }
 }

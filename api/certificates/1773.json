@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1773"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1773",
     "certificate_number": "1773",
@@ -33,7 +24,7 @@
     "description": "The 565/5100/5200 Advanced Services Platform offers an integrated transport encryption solution providing an ultra-low latency and protocol-agnostic wirespeed encryption service for use in small to large enterprises or datacenters and also offered through service providers as a differentiated managed service.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "565 Advanced Services Platform [1], 5100 Advanced Services Platform [2] and 5200 Advanced Services Platform [3]",
     "module_type": "Hardware",
@@ -87,6 +78,15 @@
       "name": "Ciena® Corporation",
       "website_url": "http://www.ciena.com"
     },
-    "vendor_name": "Ciena® Corporation"
+    "vendor_name": "Ciena® Corporation",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

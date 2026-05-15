@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3697"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ],
     "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3697",
     "certificate_number": "3697",
@@ -29,7 +24,7 @@
     "description": "Western Digital self-encrypting 14TB Ultrastar® DC HC530 TCG Enterprise Hard-Disk drives meet or exceed the most demanding performance and security requirements. The Ultrastar DC HC530, utilize fifth-generation HelioSeal technology. Designed to handle workloads up to 550TB per year, the CMR based Ultrastar DC HC530 provides drop-in simplicity in enterprise and cloud data centers. TDMR technology and a third-generation dual-stage microactuator work together to enhance head-positioning accuracy and deliver better performance, data integrity and overall drive reliability.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ultrastar® DC HC530 TCG Enterprise HDD",
     "module_type": "Hardware",
@@ -102,6 +97,11 @@
       "name": "[email protected]",
       "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "vendor_name": "[email protected]"
+    "vendor_name": "[email protected]",
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ]
   }
 }

@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4347"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode, initialized, and configured as specified in Sections 9.1 and 10 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4347",
     "certificate_number": "4347",
@@ -36,7 +24,7 @@
     "description": "The TPM is a single chip module that provides computer manufacturers with the core components of a subsystem used to assure authenticity, integrity and confidentiality in e-commerce and internet communications within a Trusted Computing Platform. The TPM is a complete solution implementing the Trusted Platform Module Library Specification, Family \"2.0\", Level 00, Revision 01.59, November 8, 2019 (Parts 1-4), Errata Version 1.6. See http://www.trustedcomputinggroup.org for further information on TCG and TPM.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Trusted Platform Module 2.0 SLB 9672",
     "module_type": "Hardware",
@@ -109,6 +97,18 @@
       "name": "Infineon Technologies AG",
       "website_url": "http://www.infineon.com"
     },
-    "vendor_name": "Infineon Technologies AG"
+    "vendor_name": "Infineon Technologies AG",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ]
   }
 }

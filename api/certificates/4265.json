@@ -1,26 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4265"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "KDF"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4265",
     "certificate_number": "4265",
@@ -28,7 +24,7 @@
     "description": "The Inline Crypto Engine (ICE) module is comprised of a sub-chip cryptographic subsystem in the Google IN762 SoC. The module provides a cryptographic engine supporting cryptographic offload for IPsec and PSP protocols. The ICE module processes network infrastructure packets in both the Ingress and Egress directions. In addition to providing the cryptographic primitives for the security protocols it also provides packet integrity authentication and anti-replay protection.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Inline Crypto Engine (ICE)",
     "module_type": "Hardware",
@@ -76,6 +72,10 @@
       "name": "Google, LLC",
       "website_url": "http://www.google.com"
     },
-    "vendor_name": "Google, LLC"
+    "vendor_name": "Google, LLC",
+    "algorithms": [
+      "AES",
+      "KDF"
+    ]
   }
 }

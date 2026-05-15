@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5250"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 2,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 2
     },
-    "algorithms": [
-      "AES"
-    ],
-    "algorithms_detailed": [
-      "AES-GCM | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D",
-      "AES-GMAC | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D"
-    ],
     "caveat": "- No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5250",
     "certificate_number": "5250",
@@ -31,7 +24,7 @@
     "description": "The ESPRIT/COMHUB FPGA is an equipment responsible of the communication between the Lunar Gateway and equipment on the lunar ground. It integrates an FPGA which implements the cryptographic functions and a MRAM that stores the CSP.",
     "embodiment": "MultiChipEmbed",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ESPRIT/COMHUB FPGA",
     "module_type": "Hardware",
@@ -76,6 +69,13 @@
       "name": "THALES ALENIA SPACE",
       "website_url": "https://www.thalesaleniaspace.com/en"
     },
-    "vendor_name": "THALES ALENIA SPACE"
+    "vendor_name": "THALES ALENIA SPACE",
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-GCM | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D",
+      "AES-GMAC | A7175 | Direction- Decrypt, EncryptIV Generation- ExternalKey Length-256 | SP 800-38D"
+    ]
   }
 }

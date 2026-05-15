@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident seals and the opacity baffle installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195",
     "certificate_number": "2195",
@@ -33,7 +24,7 @@
     "description": "Blue Coat ProxySG appliances are the core of the Blue Coat’s Unified Security and Optimization solutions for business assurance. The appliances offer complete security and control of web traffic, providing rich policy constructs for threat protection, SSL traffic, authentication, filtering, data loss prevention and logging capabilities. The appliances also optimize web and internal application traffic through caching, bandwidth management, stream splitting, and protocol optimization for data, video, cloud and web applications.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ProxySG SG900-10B [1], SG900-20 [2], SG900-30 [3], SG900-45 [4] and SG900-55 [5]",
     "module_type": "Hardware",
@@ -81,6 +72,15 @@
       "name": "Blue Coat® Systems, Inc.",
       "website_url": "http://www.bluecoat.com"
     },
-    "vendor_name": "Blue Coat® Systems, Inc."
+    "vendor_name": "Blue Coat® Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

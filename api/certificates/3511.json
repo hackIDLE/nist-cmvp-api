@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ],
     "caveat": "When operated in FIPS mode and the tamper evident seals installed as indicated in the security policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511",
     "certificate_number": "3511",
@@ -30,7 +24,7 @@
     "description": "Intel® Optane™ SSD DC D4800X module is a PCIe dual-port Gen3 x 2 NVMe SSD with industry leading 3DXP delivering power-efficient performance with enterprise ready security and remote manageability capabilities.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Optane™ SSD DC D4800X",
     "module_type": "Hardware",
@@ -108,6 +102,12 @@
       "name": "Intel Corporation",
       "website_url": "http://www.intel.com/content/www/us/en/homepage.html"
     },
-    "vendor_name": "Intel Corporation"
+    "vendor_name": "Intel Corporation",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ]
   }
 }

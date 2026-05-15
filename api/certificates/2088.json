@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2088"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and when installed, initialized and configured as specified in the Security Policy Section 4",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2088",
     "certificate_number": "2088",
@@ -34,7 +24,7 @@
     "description": "The McAfee Database Security Sensor Cryptographic Module Version 1.0, is a software shared library that provides cryptographic services required by the McAfee Database Security Sensor.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "McAfee Database Security Sensor Cryptographic Module",
     "module_type": "Software",
@@ -84,6 +74,16 @@
       "name": "McAfee, Inc.",
       "website_url": "http://www.mcafee.com"
     },
-    "vendor_name": "McAfee, Inc."
+    "vendor_name": "McAfee, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

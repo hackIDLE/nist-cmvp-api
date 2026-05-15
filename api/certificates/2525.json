@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2525"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "ECDH",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2525",
     "certificate_number": "2525",
@@ -34,7 +24,7 @@
     "description": "The Sentinel Endpoint Module installs on target servers and workstations to provide cryptographic functionality for real-time threat detection and response capabilities. Deployed as part of CounterTack's Sentinel platform, the sensor communicates behavioral data to a central cluster, which provides real-time analysis, correlation with external threat intelligence and rapid-response containment that scales even the largest enterprises.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "CounterTack Sentinel Endpoint Module",
     "module_type": "Software",
@@ -84,6 +74,16 @@
       "name": "CounterTack, Inc.",
       "website_url": "http://www.countack.com"
     },
-    "vendor_name": "CounterTack, Inc."
+    "vendor_name": "CounterTack, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDH",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

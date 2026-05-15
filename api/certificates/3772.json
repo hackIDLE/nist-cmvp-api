@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3772"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3772",
     "certificate_number": "3772",
@@ -37,7 +24,7 @@
     "description": "The Ruckus Virtual SmartZone (vSZ-E and vSZ-H hosted on a physical device) is an NFV-based WLAN controller for service providers and enterprises ready to elevate their WLAN deployment to the next level of flexibility, resiliency, and scale.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Virtual SmartZone (vSZ) WLAN Controller",
     "module_type": "Software",
@@ -87,6 +74,19 @@
       "name": "Ruckus Wireless, Inc.",
       "website_url": "http://www.ruckuswireless.com"
     },
-    "vendor_name": "Ruckus Wireless, Inc."
+    "vendor_name": "Ruckus Wireless, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

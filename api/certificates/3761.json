@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761",
     "certificate_number": "3761",
@@ -30,7 +24,7 @@
     "description": "The SOLSDR NETNode security module resides within the SOLSDR and NETNode IP Mesh Phase 5 product families onwards. It provides FIPS140-2 compliant AES128 and AES256 encryption and decryption functions and include two modes of operation both software only and hardware accelerated.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "SOLSDR NETNode Security Module",
     "module_type": "Firmware",
@@ -78,6 +72,12 @@
       "name": "Domo Tactical Communications (DTC) Limited",
       "website_url": "http://www.domotactical.com"
     },
-    "vendor_name": "Domo Tactical Communications (DTC) Limited"
+    "vendor_name": "Domo Tactical Communications (DTC) Limited",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ]
   }
 }

@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3635"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3273.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3635",
     "certificate_number": "3635",
@@ -34,7 +24,7 @@
     "description": "The Crown Sterling Cryptographic Module is a standards-based “Drop-in Compliance” cryptographic engine for servers, desktops, and digital device appliances. The module delivers core cryptographic functions to platforms and features robust algorithm support, including some Suite B algorithms. Crown Sterling Cryptographic Module offloads functions for secure key management, data integrity, data at rest encryption, data in motion encryption, and secure communication to a trusted implementations.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Crown Sterling Cryptographic Module",
     "module_type": "Software",
@@ -101,6 +91,16 @@
       "name": "Crown Sterling Limited, LLC",
       "website_url": "https://timeai.io/"
     },
-    "vendor_name": "Crown Sterling Limited, LLC"
+    "vendor_name": "Crown Sterling Limited, LLC",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

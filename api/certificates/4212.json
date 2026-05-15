@@ -1,25 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4212"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4212",
     "certificate_number": "4212",
@@ -27,7 +24,7 @@
     "description": "The DPSC is a HW block within the NVMe Protocol Engine that contains AES-XTS engines which support data rate encrypt and decrypt functions. The module is a sub-chip cryptographic subsystem intended for use within the Google IN762 SoC.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
     "module_type": "Hardware",
@@ -75,6 +72,9 @@
       "name": "Google, LLC",
       "website_url": "http://www.google.com"
     },
-    "vendor_name": "Google, LLC"
+    "vendor_name": "Google, LLC",
+    "algorithms": [
+      "AES"
+    ]
   }
 }

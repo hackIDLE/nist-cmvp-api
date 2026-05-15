@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2723"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with module IDPrime MD 830-revB validated to FIPS 140-2 under Cert. #2714 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2723",
     "certificate_number": "2723",
@@ -33,7 +24,7 @@
     "description": "IDCore 30-revB is a highly secured smartcard platform compliant with Javacard 2.2.2, Global Platform 2.1.1 & 2.2 Amendment D standards, designed to operate with Infineon SLE78 chip family. The library implements TDEA, AES, AES-CMAC, SHA1-224-256-384-512, RSA, RSA CRT, ECDSA, ECC CDH and SP800-90A RNG algorithms.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "IDCore 30-revB",
     "module_type": "Hardware",
@@ -79,6 +70,15 @@
       "name": "Gemalto",
       "website_url": "http://www.gemalto.com/"
     },
-    "vendor_name": "Gemalto"
+    "vendor_name": "Gemalto",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

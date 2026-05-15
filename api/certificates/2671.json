@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2671"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode. This validation entry is a non-security relevant modification to Cert. #1938. The module generates cryptographic keys whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2671",
     "certificate_number": "2671",
@@ -36,7 +24,7 @@
     "description": "The Duo Security Cryptographic Module is a cryptographic engine for mobile devices. The module delivers core cryptographic functions to Duo Security's Two-Factor Authentication mobile application.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Duo Security Cryptographic Module",
     "module_type": "Software",
@@ -87,6 +75,18 @@
       "name": "Duo Security, Inc.",
       "website_url": "https://duo.com"
     },
-    "vendor_name": "Duo Security, Inc."
+    "vendor_name": "Duo Security, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ]
   }
 }

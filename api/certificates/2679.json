@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2679"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2679",
     "certificate_number": "2679",
@@ -34,7 +24,7 @@
     "description": "The MultiApp ID smart cards are fully compliant with two major industry standards: Sun's Javacard 2.2.1 and Global Platform (GP) Card Specification version 2.1.1. They are therefore Java-GP cards, capable of managing applets in a controlled and secure manner in this multi-applet environment. This platform is delivered with a set of applet already loaded loaded in ROM and that can be installed if proper ordering options have been set.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "MultiApp V31 Platform",
     "module_type": "Hardware",
@@ -80,6 +70,16 @@
       "name": "Gemalto SA",
       "website_url": "http://www.gemalto.com"
     },
-    "vendor_name": "Gemalto SA"
+    "vendor_name": "Gemalto SA",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

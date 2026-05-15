@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3078"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode as assumed by the Crypto Officer role and as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from the procedures outlined in the Security Policy will result in a non FIPS 140-2 compliant module.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3078",
     "certificate_number": "3078",
@@ -35,7 +24,7 @@
     "description": "TrustedKeep is a secure object storage and sharing solution, providing robust access controls around your objects and securing them both in transit and at rest. It is designed from the ground up for object-level encryption, assigning a unique key to each object being stored, and capable of managing billions of objects in a single cluster. TrustedKeep handles all encryption and decryption at the boundaries, maintaining control at all times over key material, so that engineering mistakes do not result in key material (or sensitive data) being swapped to disk or left in memory.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "TrustedKeep Encryption Module",
     "module_type": "Software",
@@ -86,6 +75,17 @@
       "name": "Trusted Concepts, Inc.",
       "website_url": "http://www.trustedconcepts.com"
     },
-    "vendor_name": "Trusted Concepts, Inc."
+    "vendor_name": "Trusted Concepts, Inc.",
+    "algorithms": [
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

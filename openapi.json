@@ -294,7 +294,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-15T02:10:47.425082Z"
+            "example": "2026-05-15T02:49:52.984765Z"
           },
           "total_modules": {
             "type": "integer",
@@ -378,28 +378,6 @@
             "type": "object",
             "additionalProperties": true
           },
-          "algorithms": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES",
-              "DRBG",
-              "ECDSA"
-            ]
-          },
-          "algorithms_detailed": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
-              "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
-              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
-            ]
-          },
           "caveat": {
             "type": "string",
             "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
@@ -447,6 +425,28 @@
           "sunset_date": {
             "type": "string",
             "example": "5/12/2031"
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES",
+              "DRBG",
+              "ECDSA"
+            ]
+          },
+          "algorithms_detailed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+              "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
+              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
+            ]
           },
           "software_versions": {
             "type": "string",
@@ -779,28 +779,17 @@
             "type": "object",
             "additionalProperties": true
           },
-          "algorithms": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES",
-              "DES",
-              "DRBG"
-            ]
-          },
           "caveat": {
             "type": "string",
-            "example": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys."
+            "example": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2038"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
           },
           "certificate_number": {
             "type": "string",
-            "example": "2038"
+            "example": "5256"
           },
           "dataset": {
             "type": "string",
@@ -808,11 +797,11 @@
           },
           "description": {
             "type": "string",
-            "example": "SafeLogic's CryptoComply for Server is designed to provide FIPS 140-2 validated cryptographic functionality and is available for licensing."
+            "example": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements."
           },
           "embodiment": {
             "type": "string",
-            "example": "Multi-chip standalone"
+            "example": "MultiChipStand"
           },
           "firmware_versions": {
             "type": "string",
@@ -821,7 +810,7 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-15T02:10:47.425082Z"
+            "example": "2026-05-15T02:49:52.984765Z"
           },
           "hardware_versions": {
             "type": "string",
@@ -830,15 +819,15 @@
           },
           "module_name": {
             "type": "string",
-            "example": "CryptoComply for Server"
+            "example": "AWS Link Encryption Module"
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Software-hybrid"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2038"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
           },
           "overall_level": {
             "type": "integer",
@@ -856,11 +845,14 @@
             "items": {
               "type": "string"
             },
-            "example": []
+            "example": [
+              "Non-invasive security: N/A",
+              "Mitigation of other attacks: N/A"
+            ]
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2038.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
           },
           "software_versions": {
             "type": "string",
@@ -869,7 +861,7 @@
           },
           "standard": {
             "type": "string",
-            "example": "FIPS 140-2"
+            "example": "FIPS 140-3"
           },
           "status": {
             "type": "string",
@@ -877,11 +869,11 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "9/21/2026"
+            "example": "5/4/2031"
           },
           "validation_date": {
             "type": "string",
-            "example": "11/15/2013, 1/23/2014, 2/20/2014, 1/25/2016, 2/5/2016, 3/29/2018, 7/24/2020, 3/9/2021, 5/25/2021, 1/17/2023, 4/16/2024"
+            "example": "5/5/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -889,9 +881,7 @@
               "type": "string"
             },
             "example": [
-              "11/15/2013",
-              "1/23/2014",
-              "2/20/2014"
+              "5/5/2026"
             ]
           },
           "validation_history": {
@@ -907,12 +897,29 @@
           },
           "vendor_name": {
             "type": "string",
-            "example": "SafeLogic Inc."
+            "example": "Amazon Web Services, Inc."
+          },
+          "algorithms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES",
+              "HMAC",
+              "SHA"
+            ]
           },
           "algorithms_detailed": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
+              "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
+              "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D"
+            ]
           }
         }
       },

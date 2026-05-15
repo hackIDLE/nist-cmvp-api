@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5124"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 16,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 65,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 65
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5124",
+    "certificate_number": "5124",
+    "dataset": "active",
+    "description": "HPI Crypto Module for Java is a standards-based cryptographic engine for native Java environments. The module delivers core cryptographic functions to mobile platforms and features robust algorithm support.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "HPI Crypto Module for Java",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5124",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5124.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5124.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "1/13/2026",
+    "validation_dates": [
+      "1/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/13/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1501 Page Mill Road",
+        "Palo Alto, California 94304",
+        "USA"
+      ],
+      "contact_email": "hp-security-alert@hp.com",
+      "contact_name": "HP/Poly Product Security Office",
+      "contact_phone": "888-248-4143",
+      "country": "USA",
+      "name": "HP Inc.",
+      "website_url": "https://www.hp.com"
+    },
+    "vendor_name": "HP Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -101,59 +154,6 @@
       "RSA KTS(non-compliant $ ^{16} $) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5124",
-    "certificate_number": "5124",
-    "dataset": "active",
-    "description": "HPI Crypto Module for Java is a standards-based cryptographic engine for native Java environments. The module delivers core cryptographic functions to mobile platforms and features robust algorithm support.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "HPI Crypto Module for Java",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5124",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5124.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5124.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/28/2029",
-    "validation_date": "1/13/2026",
-    "validation_dates": [
-      "1/13/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "1/13/2026",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1501 Page Mill Road",
-        "Palo Alto, California 94304",
-        "USA"
-      ],
-      "contact_email": "hp-security-alert@hp.com",
-      "contact_name": "HP/Poly Product Security Office",
-      "contact_phone": "888-248-4143",
-      "country": "USA",
-      "name": "HP Inc.",
-      "website_url": "https://www.hp.com"
-    },
-    "vendor_name": "HP Inc."
+    ]
   }
 }

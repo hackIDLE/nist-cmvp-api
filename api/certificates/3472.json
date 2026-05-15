@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3472"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "SHA",
-      "SHS",
-      "SSH"
-    ],
     "caveat": "When operated in FIPS mode with Nutanix Cryptographic Module for OpenSSL validated to FIPS 140-2 under Cert. #3460 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3472",
     "certificate_number": "3472",
@@ -36,7 +24,7 @@
     "description": "The Nutanix Cryptographic Module for OpenSSH Client provides client-side support for SSH version 2. This cryptographic module functions together with the Nutanix Cryptographic Module for OpenSSL to provide FIPS validated cryptography for SSH connections.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Nutanix Cryptographic Module for OpenSSH Client",
     "module_type": "Software",
@@ -97,6 +85,18 @@
       "name": "Nutanix, Inc.",
       "website_url": "http://www.nutanix.com"
     },
-    "vendor_name": "Nutanix, Inc."
+    "vendor_name": "Nutanix, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA",
+      "SHS",
+      "SSH"
+    ]
   }
 }

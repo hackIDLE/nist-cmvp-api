@@ -1,39 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3679"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3679",
     "certificate_number": "3679",
@@ -41,7 +24,7 @@
     "description": "SmartZone network controllers simplify network set-up and management, enhance security, minimize troubleshooting and ease upgrades for networks built on Ruckus access points and switches. It doesn't stop there. Whether you're building complex multi-geo networks or delivering multi-tier managed networking services, SmartZone network controllers deliver the scale, flexibility and openness to support the most sophisticated deployment scenarios.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ruckus Networks SmartZone 104 (SZ-104), SmartZone 124 (SZ-124) and SmartZone 300 (SZ-300) WLAN Controllers",
     "module_type": "Hardware",
@@ -97,6 +80,23 @@
       "name": "Ruckus Wireless, Inc.",
       "website_url": "http://www.ruckuswireless.com"
     },
-    "vendor_name": "Ruckus Wireless, Inc."
+    "vendor_name": "Ruckus Wireless, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

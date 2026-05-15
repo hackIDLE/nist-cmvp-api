@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2404"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ],
     "caveat": "When operated with the Microsoft Windows CE, Windows Mobile, and Windows Embedded Handheld Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #560 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2404",
     "certificate_number": "2404",
@@ -30,7 +24,7 @@
     "description": "Secure Mobile Cryptographic Module provides core cryptographic functionality in a Windows Embedded Handheld environment. It supports XTS-AES-128 cipher mode for storage encryption, KDF acc. to NIST SP 800-108 to derive the storage encryption key, and HMAC-SHA-256 for integrity protection of its binaries and settings. For generation of XTS tweak values a validated RNG (Cert. #286) contained in \"Windows CE and Windows Mobile Enhanced Cryptographic Provider (RSAENH)\" , which is a FIPS 140-2 certified cryptographic software module contained in the platform.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Secure Mobile",
     "module_type": "Software",
@@ -79,6 +73,12 @@
       "name": "Digital Defence Ltd",
       "website_url": "http://www.digital-defence.com"
     },
-    "vendor_name": "Digital Defence Ltd"
+    "vendor_name": "Digital Defence Ltd",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ]
   }
 }

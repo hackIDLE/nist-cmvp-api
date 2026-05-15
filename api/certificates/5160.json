@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5160"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 90,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 90
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5160",
+    "certificate_number": "5160",
+    "dataset": "active",
+    "description": "The Cisco FIPS Provider 3.1.2 based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Cisco FIPS Provider 3.1.2 based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5160",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5160.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5160.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "2/13/2026",
+    "validation_dates": [
+      "2/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/13/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 West Tasman Dr.",
+        "San Jose, CA 95314",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certifications Team",
+      "contact_phone": "800-553-6387",
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
+    },
+    "vendor_name": "Cisco Systems, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -124,60 +178,6 @@
       "OneStep KDF | Usage of OneStep KDF with PRF SHAKE128,SHAKE256",
       "HMAC | Provides<112bitsofsecurity,Usage ofHMACwithkeylengthlessthan112bitsforMACgeneration",
       "Hash and HMAC DRBG | Usage of Hash and HMAC DRBGs with PRFs SHA2-224,SHA2-384,SHA2-512/224andSHA2-512/256"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5160",
-    "certificate_number": "5160",
-    "dataset": "active",
-    "description": "The Cisco FIPS Provider 3.1.2 based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Cisco FIPS Provider 3.1.2 based on the OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5160",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5160.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5160.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "2/13/2026",
-    "validation_dates": [
-      "2/13/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "2/13/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "170 West Tasman Dr.",
-        "San Jose, CA 95314",
-        "USA"
-      ],
-      "contact_email": "certteam@cisco.com",
-      "contact_name": "Global Certifications Team",
-      "contact_phone": "800-553-6387",
-      "country": "USA",
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com"
-    },
-    "vendor_name": "Cisco Systems, Inc."
+    ]
   }
 }

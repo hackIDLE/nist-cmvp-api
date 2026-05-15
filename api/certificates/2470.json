@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470",
     "certificate_number": "2470",
@@ -32,7 +24,7 @@
     "description": "The FT-JCOS (Feitian Java Card Platform) cryptographic module, validated to FIPS 140-2 overall Level 3, is a single chip smartcard module implementing the JavaCard and Global Platform operational environment, with Card Manager also considered as Issuer Security Domain (ISD), a demonstration Applet used to demonstrate the cryptographic functions of the module, and a supplementary security domain that is also considered as Applet Provider Security Domain (APSD).The FT-JCOS exposes PKI and MoC APIs and is designed for high performance Government, Enterprise and Financial smartcard applications.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "FT-JCOS (Feitian Java Card Platform)",
     "module_type": "Hardware",
@@ -84,6 +76,14 @@
       "name": "Feitian Technologies Co., Ltd.",
       "website_url": "http://www.ftsafe.com"
     },
-    "vendor_name": "Feitian Technologies Co., Ltd."
+    "vendor_name": "Feitian Technologies Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

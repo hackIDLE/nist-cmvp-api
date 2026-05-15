@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4918"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 78,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 78
     },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4918",
+    "certificate_number": "4918",
+    "dataset": "active",
+    "description": "The datAshur PRO is an encrypted storage device that provides a secure way to store and transfer data. User authentication is self-contained via an onboard keypad. User data is protected by hardware-based 256-bit AES encryption to secure sensitive information in the event that the drive is lost or stolen.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "datAshur PRO",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4918",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4918.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4918.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/15/2029",
+    "validation_date": "12/16/2024",
+    "validation_dates": [
+      "12/16/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "12/16/2024",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "iStorage House",
+        "13 Alperton Lane, Perivale",
+        "Middlesex UB6 8DH",
+        "United Kingdom"
+      ],
+      "contact_email": "john@istorage-uk.com",
+      "contact_name": "John Michael",
+      "contact_phone": "02089916260",
+      "country": "United Kingdom",
+      "name": "iStorage Ltd.",
+      "website_url": "http://www.istorage-uk.com"
+    },
+    "vendor_name": "iStorage Ltd.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -104,61 +159,6 @@
       "SHS | Secure Hash Standard | SSP | Sensitive Security Parameter | TOEPP | Tested Operating Environment Physical Perimeter | USB | Universal Serial Bus",
       "XTS-AES",
       "AES cipher mode used to encrypt user data in mass storage | Zeroization | The process of erasing cryptographic security keys and parameters | ⩫"
-    ],
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4918",
-    "certificate_number": "4918",
-    "dataset": "active",
-    "description": "The datAshur PRO is an encrypted storage device that provides a secure way to store and transfer data. User authentication is self-contained via an onboard keypad. User data is protected by hardware-based 256-bit AES encryption to secure sensitive information in the event that the drive is lost or stolen.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "datAshur PRO",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4918",
-    "overall_level": 3,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4918.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4918.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "12/15/2029",
-    "validation_date": "12/16/2024",
-    "validation_dates": [
-      "12/16/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "12/16/2024",
-        "lab": "Penumbra Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "iStorage House",
-        "13 Alperton Lane, Perivale",
-        "Middlesex UB6 8DH",
-        "United Kingdom"
-      ],
-      "contact_email": "john@istorage-uk.com",
-      "contact_name": "John Michael",
-      "contact_phone": "02089916260",
-      "country": "United Kingdom",
-      "name": "iStorage Ltd.",
-      "website_url": "http://www.istorage-uk.com"
-    },
-    "vendor_name": "iStorage Ltd."
+    ]
   }
 }

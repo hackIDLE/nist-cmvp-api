@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2204"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2204",
     "certificate_number": "2204",
@@ -31,7 +24,7 @@
     "description": "The ePass Token, is a USB token containing FEITIAN's own FEITIAN-FIPS-COS cryptographic operating system. The FEITIAN-FIPS-COS is embedded in an ST23YT66 Integrated Circuit (IC) chip and has been developed to support FEITIAN's ePass USB token. The ePass token is designed to provide strong authentication and identification and to support network login, secure online transactions, digital signatures, and sensitive data protection. FEITIAN's ePass token guarantees safety of its cryptographic IC chip and other components with its hard, semi-transparent, polycarbonate shell.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ePass Token",
     "module_type": "Hardware",
@@ -80,6 +73,13 @@
       "name": "Feitian Technologies Co., Ltd.",
       "website_url": "http://www.ftsafe.com"
     },
-    "vendor_name": "Feitian Technologies Co., Ltd."
+    "vendor_name": "Feitian Technologies Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "RSA",
+      "SHA"
+    ]
   }
 }

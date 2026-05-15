@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2106"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2106",
     "certificate_number": "2106",
@@ -31,7 +24,7 @@
     "description": "The M3-SE-RTR2 and TXC3 are high-performance, ruggedized routers utilizing the Cisco 5915 ESR. With onboard hardware encryption, the Cisco 5915 offloads encryption processing from the router to provide highly secure yet scalable video, voice, and data services for mobile and embedded outdoor networks. The M3-SE-RTR2 and TXC3 provide a scalable, secure, manageable remote access server that meets FIPS 140-2 Level 2 requirements.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "M3-SE-RTR2 and TXC3",
     "module_type": "Hardware",
@@ -79,6 +72,13 @@
       "name": "DTECH LABS, Inc.",
       "website_url": "http://www.dtechlabs.com"
     },
-    "vendor_name": "DTECH LABS, Inc."
+    "vendor_name": "DTECH LABS, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "SHS"
+    ]
   }
 }

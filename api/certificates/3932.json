@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When utilizing a Trusted Path as specified in the security policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
     "certificate_number": "3932",
@@ -39,7 +24,7 @@
     "description": "The ENFORCER R1 provides a physically secure, Level 4 enclosure protecting CSPs and cryptographic data. A physical tamper event on the enclosure immediately zeroizes module CSPs. It provides a KMIP (Key Management Interoperability Protocol) service for key management to external users. It also provides additional services for module management, module configuration, and for building higher-level application scenarios such as integration into cloud and data center environments.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ENFORCER R1",
     "module_type": "Hardware",
@@ -85,6 +70,21 @@
       "name": "Private Machines Inc.",
       "website_url": "http://privatemachines.com"
     },
-    "vendor_name": "Private Machines Inc."
+    "vendor_name": "Private Machines Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

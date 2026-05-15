@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2025"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2025",
     "certificate_number": "2025",
@@ -35,7 +24,7 @@
     "description": "The Blue Coat Systems, Software Cryptographic Module is a software multi-chip standalone module, providing cryptographic services for Solera DeepSee Software. Solera DeepSee is a solution for security intelligence and analytics that creates a complete record of network traffic. The module is a shared library that links to Solera DeepSee components.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Blue Coat Systems, Software Cryptographic Module",
     "module_type": "Software",
@@ -87,6 +76,17 @@
       "name": "Blue Coat® Systems, Inc.",
       "website_url": "http://www.bluecoat.com"
     },
-    "vendor_name": "Blue Coat® Systems, Inc."
+    "vendor_name": "Blue Coat® Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

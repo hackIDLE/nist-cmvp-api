@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5177"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 157,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 157
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5177",
+    "certificate_number": "5177",
+    "dataset": "active",
+    "description": "Minimus FIPS Cryptographic Module is a standards-based cryptographic engine for containers, VMs, and apps that run on cloud native platforms like Docker and Kubernetes.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Minimus Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5177",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5177.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5177.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/26/2029",
+    "validation_date": "3/10/2026",
+    "validation_dates": [
+      "3/10/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/10/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "10202 Perkins Rowe",
+        "Suite E 160",
+        "Baton Rouge, LA 70810",
+        "USA"
+      ],
+      "contact_email": "fips@minimus.io",
+      "contact_name": "John Morello",
+      "contact_phone": "225-229-3810",
+      "country": "USA",
+      "name": "Minimus",
+      "website_url": "https://www.minimus.io"
+    },
+    "vendor_name": "Minimus",
     "algorithms": [
       "AES",
       "CVL",
@@ -192,60 +246,6 @@
       "TLS v1.3 KDF(CVL) | A4593 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "TLS v1.3 KDF(CVL) | A5173 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "ECDSA with non-NIST recommended curves | Curves: brainpoolP224r1(strength 112bits) brainpoolP256r1(strength 128 bits) brainpoolP320r1(strength 160 bits) brainpoolP384r1(strength 192 bits) brainpoolP512r1(strength 256 bits):Signature Generation, Signature Verification,Key Generation,Key Verification | CryptoComply140-3 FIPSProvider | Allowed per IG C.A,category 1a(per SP 800-186 Appendix H.1)"
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5177",
-    "certificate_number": "5177",
-    "dataset": "active",
-    "description": "Minimus FIPS Cryptographic Module is a standards-based cryptographic engine for containers, VMs, and apps that run on cloud native platforms like Docker and Kubernetes.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Minimus Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5177",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5177.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5177.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/26/2029",
-    "validation_date": "3/10/2026",
-    "validation_dates": [
-      "3/10/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/10/2026",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "10202 Perkins Rowe",
-        "Suite E 160",
-        "Baton Rouge, LA 70810",
-        "USA"
-      ],
-      "contact_email": "fips@minimus.io",
-      "contact_name": "John Morello",
-      "contact_phone": "225-229-3810",
-      "country": "USA",
-      "name": "Minimus",
-      "website_url": "https://www.minimus.io"
-    },
-    "vendor_name": "Minimus"
+    ]
   }
 }

@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 16,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 202,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 202
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
+    "certificate_number": "5142",
+    "dataset": "active",
+    "description": "Minimus Cryptographic Module for Java is a standards-based cryptographic engine for containers, VMs, and apps that run on cloud native platforms like Docker and Kubernetes.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Minimus Cryptographic Module for Java",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5142.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5142.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "1/20/2026",
+    "validation_dates": [
+      "1/20/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/20/2026",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "10202 Perkins Rowe",
+        "Suite E 160",
+        "Baton Rouge, LA 70810",
+        "USA"
+      ],
+      "contact_email": "fips@minimus.io",
+      "contact_name": "John Morello",
+      "contact_phone": "225-229-3810",
+      "country": "USA",
+      "name": "Minimus",
+      "website_url": "http://www.minimus.com"
+    },
+    "vendor_name": "Minimus",
     "algorithms": [
       "AES",
       "CVL",
@@ -238,60 +292,6 @@
       "RSA | Rivest Shamir Adleman",
       "SHA | Secure Hash Algorithm",
       "TLS | Transport Layer Security"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
-    "certificate_number": "5142",
-    "dataset": "active",
-    "description": "Minimus Cryptographic Module for Java is a standards-based cryptographic engine for containers, VMs, and apps that run on cloud native platforms like Docker and Kubernetes.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Minimus Cryptographic Module for Java",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5142",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5142.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5142.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/28/2029",
-    "validation_date": "1/20/2026",
-    "validation_dates": [
-      "1/20/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "1/20/2026",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "10202 Perkins Rowe",
-        "Suite E 160",
-        "Baton Rouge, LA 70810",
-        "USA"
-      ],
-      "contact_email": "fips@minimus.io",
-      "contact_name": "John Morello",
-      "contact_phone": "225-229-3810",
-      "country": "USA",
-      "name": "Minimus",
-      "website_url": "http://www.minimus.com"
-    },
-    "vendor_name": "Minimus"
+    ]
   }
 }

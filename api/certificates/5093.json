@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5093"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 140,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 140
     },
+    "caveat": "When operated in approved mode. When installed, initialized, and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5093",
+    "certificate_number": "5093",
+    "dataset": "active",
+    "description": "SAP CommonCryptoLib Crypto Kernel v8.6.1 is a shared library, i.e. it consists of software only. SAP CommonCryptoLib Crypto Kernel provides an API in terms of C/C++ methods for key management and operation of cryptographic functions.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "SAP CommonCryptoLib Crypto Kernel",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5093",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5093.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5093.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/13/2030",
+    "validation_date": "11/14/2025",
+    "validation_dates": [
+      "11/14/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "11/14/2025",
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Dietmar-Hopp-Allee 16",
+        "Walldorf, Baden-Wuerttemberg 69190",
+        "Germany"
+      ],
+      "contact_email": "fips@sap.com",
+      "contact_name": "SAP CryptoLib FIPS Certification",
+      "contact_phone": "0049-6227-7-47474",
+      "country": "Germany",
+      "name": "SAP SE",
+      "website_url": "http://www.sap.com"
+    },
+    "vendor_name": "SAP SE",
     "algorithms": [
       "AES",
       "CVL",
@@ -172,59 +225,6 @@
       "windows-x86-64 | slcryptokernel.dll | slcryptokernel.dll.sha256 | 42D88658272851A24510F14316491B08056B421012DF0C13E08A9F39E5AB92A",
       "Shared library | Read, execute | Read, write, execute",
       "HMAC file | Read | Read, write"
-    ],
-    "caveat": "When operated in approved mode. When installed, initialized, and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5093",
-    "certificate_number": "5093",
-    "dataset": "active",
-    "description": "SAP CommonCryptoLib Crypto Kernel v8.6.1 is a shared library, i.e. it consists of software only. SAP CommonCryptoLib Crypto Kernel provides an API in terms of C/C++ methods for key management and operation of cryptographic functions.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "SAP CommonCryptoLib Crypto Kernel",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5093",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5093.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5093.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/13/2030",
-    "validation_date": "11/14/2025",
-    "validation_dates": [
-      "11/14/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "11/14/2025",
-        "lab": "TUVIT Evaluation Body for IT Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "Dietmar-Hopp-Allee 16",
-        "Walldorf, Baden-Wuerttemberg 69190",
-        "Germany"
-      ],
-      "contact_email": "fips@sap.com",
-      "contact_name": "SAP CryptoLib FIPS Certification",
-      "contact_phone": "0049-6227-7-47474",
-      "country": "Germany",
-      "name": "SAP SE",
-      "website_url": "http://www.sap.com"
-    },
-    "vendor_name": "SAP SE"
+    ]
   }
 }

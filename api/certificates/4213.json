@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4213"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "TLS"
-    ],
     "caveat": "When Operated in FIPS Mode.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4213",
     "certificate_number": "4213",
@@ -39,7 +24,7 @@
     "description": "The module is a set of software libraries, whose purpose is to provide cryptographic algorithm services (such as encryption and decryption services), as well as Transport Layer Security protocol (TLS) v1.0, v1.1, v1.2, certificate management, asymmetric key generation, random number generation and so on. The module provides API interface for application calling. The module can act as a TLS server or TLS client, and interacts with other peers via the TLS protocol.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "DHSSL Cryptographic Module",
     "module_type": "Software",
@@ -88,6 +73,21 @@
       "name": "Zhejiang Dahua Technology Co., Ltd.",
       "website_url": "http://www.dahuasecurity.com"
     },
-    "vendor_name": "Zhejiang Dahua Technology Co., Ltd."
+    "vendor_name": "Zhejiang Dahua Technology Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ]
   }
 }

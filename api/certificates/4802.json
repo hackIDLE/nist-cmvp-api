@@ -1,51 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 19,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 19
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
-    "algorithms_detailed": [
-      "Avago Technologies | AES 35805 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption of SSPs.",
-      "ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption,AES KWP.",
-      "Western Digital Corporation | A2098 | AES \\[FIPS 197\\] | KWP \\[SP 800 38F\\] ECB \\[SP 800 38A\\] | Forward Payload Length:96-1024,Increment 8 Key Size:256 Key Strength:256 | Authenticated Encryption, Authenticated Decryption of Root Signing Key.",
-      "Western Digital Corporation | A2099 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:256 Key Strength:256 bits | Descrambles OptiNAND sFFU firmware image.",
-      "Western Digital Corporation | A2101 | AES \\[FIPS 197\\] | ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128,256 bits | Encryption,Decryption,DEE self-tests.",
-      "Western Digital Corporation | A2098 | DRBG \\[SP 800 90A\\] | CTR | Mode:AES-256 Derivation Function:True Prediction Resistance:False Key Size:256 Key Strength:256 bits | Deterministic Random Bit Generation Security Strength=256",
-      "Avago Technologies | HMAC 2280 | HMAC \\[FIPS 198\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
-      "SHA2-224 | Message Length:8-51200, Increment:8Key Size:224Key Strength:224 bits | Not used",
-      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message Authentication of signed encrypted SSPs,PBKDF2 derived key generation",
-      "Western Digital Corporation | A2100 | PBKDF2\\[SP 800132\\] | Option 2a | Master Key Generation Type:Option 2aIteration Count:2-1024 with Increment1HMAC Algorithm:SHA2-256Password Length:32Salt Length:128-512with Increment8Key Data Length:256-4096 withIncrement:256Key Strength:256 | Password based key derivation function usingHMAC-SHA2-256(Cert#HMAC 2280).The derived generated keys,Ksaand Ksaencrypt data protection keys used in a data storage application.",
-      "Western Digital Corporation | A2098 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within the ACMRoT.",
-      "Western Digital Corporation | A2099 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within theOptiNAND device.",
-      "Avago Technologies | SHS 2942 | SHS\\[FIPS180\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
-      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theACM RoT",
-      "Western Digital Corporation | A2099 | SHS\\[FIPS 180\\] | SHA2-256 | Message Length:0-65536,Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theOptiNAND device.",
-      "CKG-Direct | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 4 example #1,Section 6.1 and IG D.H",
-      "CKG-Combined | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 6.3 example #2 and IG D.H",
-      "Authority\\_Digest\\_Generation | MAC | Generates an HMAC message digest of an Authentication Credential PIN | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits",
-      "Authority\\_Digest\\_Verification | MAC | Verifies the HMAC digest of an Authentication Credential PIN. | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits"
-    ],
     "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802",
     "certificate_number": "4802",
@@ -53,7 +24,7 @@
     "description": "The Western Digital Ultrastar DC HC560 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC560, Cryptographic Module, cryptographic module, or CM, and the Western Digital Ultrastar DC HC570 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC570, Cryptographic Module, cryptographic module, or CM are self-encryption drives (SED) that comply in general with the specifications listed in 13.2 Trusted Computing Group Specifications and specifically with the TCG Storage Architecture Core Specification [TCG Core] with the Trusted Computing Group (TCG) Security Subsystem Class (SSC): Enterprise Specification [TCG Enterprise]. The TCG SSC Enterprise Specification defines a management interface for host application software to activate, provision, and manage encryption of user data. The specification includes data structures and their required content, and mechanisms for managing and configuring Authentication Credentials and access controls. The security architecture provides a locking mechanism by which an Authentication Credential (i.e., a password) can be set by an operator to enable control of access to user data. After an operator authenticates to the appropriate role and locks access to user data access user data is inaccessible. This implementation complies with the lock-based authentication model specified in IG 4.1.A.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ultrastar DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED",
     "module_type": "Hardware",
@@ -109,6 +80,35 @@
       "name": "Western Digital Technologies, Inc.",
       "website_url": "http://www.westerndigital.com"
     },
-    "vendor_name": "Western Digital Technologies, Inc."
+    "vendor_name": "Western Digital Technologies, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "Avago Technologies | AES 35805 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption of SSPs.",
+      "ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption,AES KWP.",
+      "Western Digital Corporation | A2098 | AES \\[FIPS 197\\] | KWP \\[SP 800 38F\\] ECB \\[SP 800 38A\\] | Forward Payload Length:96-1024,Increment 8 Key Size:256 Key Strength:256 | Authenticated Encryption, Authenticated Decryption of Root Signing Key.",
+      "Western Digital Corporation | A2099 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:256 Key Strength:256 bits | Descrambles OptiNAND sFFU firmware image.",
+      "Western Digital Corporation | A2101 | AES \\[FIPS 197\\] | ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128,256 bits | Encryption,Decryption,DEE self-tests.",
+      "Western Digital Corporation | A2098 | DRBG \\[SP 800 90A\\] | CTR | Mode:AES-256 Derivation Function:True Prediction Resistance:False Key Size:256 Key Strength:256 bits | Deterministic Random Bit Generation Security Strength=256",
+      "Avago Technologies | HMAC 2280 | HMAC \\[FIPS 198\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
+      "SHA2-224 | Message Length:8-51200, Increment:8Key Size:224Key Strength:224 bits | Not used",
+      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message Authentication of signed encrypted SSPs,PBKDF2 derived key generation",
+      "Western Digital Corporation | A2100 | PBKDF2\\[SP 800132\\] | Option 2a | Master Key Generation Type:Option 2aIteration Count:2-1024 with Increment1HMAC Algorithm:SHA2-256Password Length:32Salt Length:128-512with Increment8Key Data Length:256-4096 withIncrement:256Key Strength:256 | Password based key derivation function usingHMAC-SHA2-256(Cert#HMAC 2280).The derived generated keys,Ksaand Ksaencrypt data protection keys used in a data storage application.",
+      "Western Digital Corporation | A2098 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within the ACMRoT.",
+      "Western Digital Corporation | A2099 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within theOptiNAND device.",
+      "Avago Technologies | SHS 2942 | SHS\\[FIPS180\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
+      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theACM RoT",
+      "Western Digital Corporation | A2099 | SHS\\[FIPS 180\\] | SHA2-256 | Message Length:0-65536,Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theOptiNAND device.",
+      "CKG-Direct | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 4 example #1,Section 6.1 and IG D.H",
+      "CKG-Combined | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 6.3 example #2 and IG D.H",
+      "Authority\\_Digest\\_Generation | MAC | Generates an HMAC message digest of an Authentication Credential PIN | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits",
+      "Authority\\_Digest\\_Verification | MAC | Verifies the HMAC digest of an Authentication Credential PIN. | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits"
+    ]
   }
 }

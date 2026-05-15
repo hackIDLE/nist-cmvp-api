@@ -1,50 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 15,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 15
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "SHA",
-      "SHS"
-    ],
-    "algorithms_detailed": [
-      "A3214 | SHA-3\\[FIPS 202\\] | SHA3-256 | Conditioning",
-      "A4440 | AES\\[SP800-38A\\] | ECB1 | 128and256-bit keys with128and256-bitkey strengths | Encrypt/Decrypt",
-      "A4440 | AES\\[SP800-38D\\] | GCM | 128and256-bitkeyswith128and256-bitkey strengths | Encrypt/Decrypt",
-      "A4440 | DRBG\\[SP800-90A\\] | HMAC DRBG | SHA2-256with128-bitkey strength | DeterministicRandomBitGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | KeyGen | P-256with128-bitkey strength | AsymmetricKeyGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | KeyVer | P-256with128-bitkey strength | AsymmetricKeyVerification",
-      "A4440 | ECDSA\\[FIPS186-4\\] | SigGen | P-256/SHA2-256with128-bitkey strength | SignatureGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | SigVer | P-256/SHA2-256with128-bitkey strength | SignatureVerification",
-      "A4440 | HMAC\\[FIPS198-1\\] | HMAC2 | SHA-1/128-1024-bitkeyswith112-bitkeystrength,SHA2-256/256-512-bitkeyswith128-bitkeystrength,SHA2-384/256-512-bitkeyswith192-bitkeystrength | MessageAuthentication",
-      "A4440 | KAS\\[SP800-56Arev3\\] | KAS-ECC-SSC\\[SP800-56Arev3\\]/A4440TLS1.3KDF/A4440 | P-256with128-bitkeystrength | TLSkeyagreement",
-      "A4440 | KAS-ECC-SSC\\[SP800-56Arev3\\] | EphemeralUnified | P-256with128-bitkeystrength | SharedSecretComputationforKeyAgreement",
-      "A4440 | SHS\\[FIPS180-4\\] | SHA-13,SHA2-256,SHA2-384 | MessageDigest",
-      "A4440 | TLS1.3KDF\\[RFC8446\\]CVL | HMAC-SHA2-256,HMAC-SHA2-384 | KeyDerivationFunctionNo parts ofthese",
-      "AES-CFB8 | Network metrics output over SNMPv3 protocol is obfuscated and considered plaintext | SNMPv3 privacy protocol",
-      "SNMP KDF | Key localization function uses a SHA2-256 hash function not | SNMPv3 key derivation"
-    ],
     "caveat": "Interim validation",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
     "certificate_number": "4795",
@@ -52,7 +24,7 @@
     "description": "Secure Out of Band Management appliance providing the means to securely manage and power cycle remote equipment via cellular network, analog modem and network access.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Port Authority Series",
     "module_type": "Hardware",
@@ -102,6 +74,34 @@
       "name": "Communication Devices Inc.",
       "website_url": "http://commdevices.com"
     },
-    "vendor_name": "Communication Devices Inc."
+    "vendor_name": "Communication Devices Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "A3214 | SHA-3\\[FIPS 202\\] | SHA3-256 | Conditioning",
+      "A4440 | AES\\[SP800-38A\\] | ECB1 | 128and256-bit keys with128and256-bitkey strengths | Encrypt/Decrypt",
+      "A4440 | AES\\[SP800-38D\\] | GCM | 128and256-bitkeyswith128and256-bitkey strengths | Encrypt/Decrypt",
+      "A4440 | DRBG\\[SP800-90A\\] | HMAC DRBG | SHA2-256with128-bitkey strength | DeterministicRandomBitGeneration",
+      "A4440 | ECDSA\\[FIPS186-4\\] | KeyGen | P-256with128-bitkey strength | AsymmetricKeyGeneration",
+      "A4440 | ECDSA\\[FIPS186-4\\] | KeyVer | P-256with128-bitkey strength | AsymmetricKeyVerification",
+      "A4440 | ECDSA\\[FIPS186-4\\] | SigGen | P-256/SHA2-256with128-bitkey strength | SignatureGeneration",
+      "A4440 | ECDSA\\[FIPS186-4\\] | SigVer | P-256/SHA2-256with128-bitkey strength | SignatureVerification",
+      "A4440 | HMAC\\[FIPS198-1\\] | HMAC2 | SHA-1/128-1024-bitkeyswith112-bitkeystrength,SHA2-256/256-512-bitkeyswith128-bitkeystrength,SHA2-384/256-512-bitkeyswith192-bitkeystrength | MessageAuthentication",
+      "A4440 | KAS\\[SP800-56Arev3\\] | KAS-ECC-SSC\\[SP800-56Arev3\\]/A4440TLS1.3KDF/A4440 | P-256with128-bitkeystrength | TLSkeyagreement",
+      "A4440 | KAS-ECC-SSC\\[SP800-56Arev3\\] | EphemeralUnified | P-256with128-bitkeystrength | SharedSecretComputationforKeyAgreement",
+      "A4440 | SHS\\[FIPS180-4\\] | SHA-13,SHA2-256,SHA2-384 | MessageDigest",
+      "A4440 | TLS1.3KDF\\[RFC8446\\]CVL | HMAC-SHA2-256,HMAC-SHA2-384 | KeyDerivationFunctionNo parts ofthese",
+      "AES-CFB8 | Network metrics output over SNMPv3 protocol is obfuscated and considered plaintext | SNMPv3 privacy protocol",
+      "SNMP KDF | Key localization function uses a SHA2-256 hash function not | SNMPv3 key derivation"
+    ]
   }
 }

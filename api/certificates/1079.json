@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1079"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When obtained, built, installed, protected and initialized as assumed by the Crypto Officer role and specified in Section 8.2 of the provided Security Policy. Section 8.2 of the provided Security Policy specifies the complete set of source files of this module. There shall be no additions, deletions or alterations of this set as used during module build. All source files shall be obtained via secure FTP. Any deviation from the specified verification, protection, installation and initialization procedures will result in a FIPS 140-2 non-compliant module.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1079",
     "certificate_number": "1079",
@@ -30,7 +24,7 @@
     "description": "The SCM is a function library implementing crypto services which is delivered to the final user as a SW cryptographic object module, running on Windows operating system in a General Purpose Computer. The logical cryptographic boundary for the SCM is the discrete block of object code containing the machine instructions and data generated from the SCM FIPS source, which will be allocated continuously in a main memory address space, as used by the calling application.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Secuware Security Framework - Crypt4000 Module",
     "module_type": "Software",
@@ -83,6 +77,12 @@
       "name": "Secuware",
       "website_url": "http://www.secuware.com"
     },
-    "vendor_name": "Secuware"
+    "vendor_name": "Secuware",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ]
   }
 }

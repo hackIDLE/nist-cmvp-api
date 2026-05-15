@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 68,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 68
     },
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
+    "certificate_number": "5013",
+    "dataset": "active",
+    "description": "Hitachi Storage Hybrid Firmware Encryption Module provides data at rest encryption for Hitachi storage.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Hitachi Storage Hybrid Firmware Encryption Module",
+    "module_type": "Firmware-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5013.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5013.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/28/2030",
+    "validation_date": "4/29/2025",
+    "validation_dates": [
+      "4/29/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "4/29/2025",
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "292 Yoshida-cho, Totsuka-ku",
+        "Yokoahama-shi, Kanagawa 244-0817",
+        "Japan"
+      ],
+      "contact_email": "hajime.sato.kd@hitachi.com",
+      "contact_name": "Hajime Sato",
+      "contact_phone": "81-45-870-1533",
+      "country": "Japan",
+      "name": "Hitachi Vantara, Ltd.",
+      "website_url": "https://www.hitachivantara.com/ja-jp"
+    },
+    "vendor_name": "Hitachi Vantara, Ltd.",
     "algorithms": [
       "AES",
       "KTS",
@@ -91,59 +144,6 @@
       "AES-XTS(520B) | KAT | CAST | On Demand | Manually",
       "AES-KW (A5023) | KAT | CAST | On Demand | Manually",
       "SHA2-256 (A5024) | KAT | CAST | On Demand | Manually"
-    ],
-    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
-    "certificate_number": "5013",
-    "dataset": "active",
-    "description": "Hitachi Storage Hybrid Firmware Encryption Module provides data at rest encryption for Hitachi storage.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Hitachi Storage Hybrid Firmware Encryption Module",
-    "module_type": "Firmware-hybrid",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5013",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5013.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5013.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "4/28/2030",
-    "validation_date": "4/29/2025",
-    "validation_dates": [
-      "4/29/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "4/29/2025",
-        "lab": "ECSEC Laboratory Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "292 Yoshida-cho, Totsuka-ku",
-        "Yokoahama-shi, Kanagawa 244-0817",
-        "Japan"
-      ],
-      "contact_email": "hajime.sato.kd@hitachi.com",
-      "contact_name": "Hajime Sato",
-      "contact_phone": "81-45-870-1533",
-      "country": "Japan",
-      "name": "Hitachi Vantara, Ltd.",
-      "website_url": "https://www.hitachivantara.com/ja-jp"
-    },
-    "vendor_name": "Hitachi Vantara, Ltd."
+    ]
   }
 }

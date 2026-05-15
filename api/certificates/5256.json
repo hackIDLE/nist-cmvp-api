@@ -1,44 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 15,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 15
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
-      "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
-      "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D",
-      "AES-ECB | A4847 | Direction - EncryptKey Length - 256 | SP 800-38A",
-      "AES-GCM | A4847 | Direction - Decrypt, EncryptIV Generation - InternalIV Generation Mode - 8.2.1Key Length - 256 | SP 800-38D",
-      "AES-ECB | AES 4545 | Direction - Encrypt Key Length - 128,256 | SP 800-38A",
-      "AES-GCM | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
-      "AES-XPN | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
-      "HMAC-SHA2-256 | A5425 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
-      "HMAC-SHA2-256 | A5433 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
-      "HMAC-SHA2-256 | A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
-      "SHA2-256 | A5425 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
-      "SHA2-256 | A5433 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
-      "SHA2-256 | A5434 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
-      "Encrypt Data | BC-Auth | Encryption of data in MACsec protocol | Publication:NISTSP 800-38DIG:C.H | AES-GCM:(AES4545,A1359,C681,A4847)AES-ECB:(AES4545,A1359,C373,A4847)AES-XPN"
-    ],
     "caveat": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256",
     "certificate_number": "5256",
@@ -46,7 +24,7 @@
     "description": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements.",
     "embodiment": "MultiChipStand",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "AWS Link Encryption Module",
     "module_type": "Software-hybrid",
@@ -91,6 +69,28 @@
       "name": "Amazon Web Services, Inc.",
       "website_url": "http://aws.amazon.com"
     },
-    "vendor_name": "Amazon Web Services, Inc."
+    "vendor_name": "Amazon Web Services, Inc.",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
+      "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
+      "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D",
+      "AES-ECB | A4847 | Direction - EncryptKey Length - 256 | SP 800-38A",
+      "AES-GCM | A4847 | Direction - Decrypt, EncryptIV Generation - InternalIV Generation Mode - 8.2.1Key Length - 256 | SP 800-38D",
+      "AES-ECB | AES 4545 | Direction - Encrypt Key Length - 128,256 | SP 800-38A",
+      "AES-GCM | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
+      "AES-XPN | AES 4545 | Direction - Decrypt, Encrypt Key Length - 128,256 | SP 800-38D",
+      "HMAC-SHA2-256 | A5425 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5433 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "SHA2-256 | A5425 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A5433 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 | A5434 | Message Length - Message Length:0-65536 Increment 8 | FIPS 180-4",
+      "Encrypt Data | BC-Auth | Encryption of data in MACsec protocol | Publication:NISTSP 800-38DIG:C.H | AES-GCM:(AES4545,A1359,C681,A4847)AES-ECB:(AES4545,A1359,C373,A4847)AES-XPN"
+    ]
   }
 }

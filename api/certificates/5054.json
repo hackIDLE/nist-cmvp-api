@@ -1,22 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5054"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 117,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 117
     },
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5054",
+    "certificate_number": "5054",
+    "dataset": "active",
+    "description": "The Summit FIPS Core Crypto Module is defined as a Firmware, Multi-chip Standalone module running on Laird's wireless bridge.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Summit Linux FIPS Core Crypto Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5054",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5054.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5054.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/17/2030",
+    "validation_date": "8/18/2025",
+    "validation_dates": [
+      "8/18/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "8/18/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "50 South Main Street Suite 1100",
+        "Akron, OH 44308",
+        "USA"
+      ],
+      "contact_email": "PSIRT.FIPS@ezurio.com",
+      "contact_name": "Dan Kephart",
+      "contact_phone": "330-434-7929",
+      "country": "USA",
+      "name": "Ezurio",
+      "website_url": "https://www.ezurio.com/wireless-modules/wifi-modules-bluetooth/wb45nbt-bluetooth-and-wifi-module"
+    },
+    "vendor_name": "Ezurio",
     "algorithms": [
       "AES",
       "CVL",
@@ -151,58 +203,6 @@
       "FIPS provider PBKDF with salt length less than 128 bits Key derivation",
       "FIPS provider TLSv1.0 and TLSv1.1 KDF using EMS",
       "FIPS provider TLSv1.2 KDF without using EMS"
-    ],
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5054",
-    "certificate_number": "5054",
-    "dataset": "active",
-    "description": "The Summit FIPS Core Crypto Module is defined as a Firmware, Multi-chip Standalone module running on Laird's wireless bridge.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Summit Linux FIPS Core Crypto Module",
-    "module_type": "Firmware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5054",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5054.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5054.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/17/2030",
-    "validation_date": "8/18/2025",
-    "validation_dates": [
-      "8/18/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "8/18/2025",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "50 South Main Street Suite 1100",
-        "Akron, OH 44308",
-        "USA"
-      ],
-      "contact_email": "PSIRT.FIPS@ezurio.com",
-      "contact_name": "Dan Kephart",
-      "contact_phone": "330-434-7929",
-      "country": "USA",
-      "name": "Ezurio",
-      "website_url": "https://www.ezurio.com/wireless-modules/wifi-modules-bluetooth/wb45nbt-bluetooth-and-wifi-module"
-    },
-    "vendor_name": "Ezurio"
+    ]
   }
 }

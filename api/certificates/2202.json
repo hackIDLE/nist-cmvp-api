@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2202"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "ECDH",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2202",
     "certificate_number": "2202",
@@ -32,7 +24,7 @@
     "description": "IDPrime MD 830 is a Minidriver enabled PKI smartcard, offering all the necessary services (with either RSA or Elliptic curves algorithms) to secure an IT Security and ID access infrastructure. In addition, OATH applet offers One Time Password based strong authentication while MPCOS offers e-purse and data management services.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "IDPrime MD 830 with OATH & MPCOS applets",
     "module_type": "Hardware",
@@ -101,6 +93,14 @@
       "name": "Gemalto",
       "website_url": "http://www.gemalto.com"
     },
-    "vendor_name": "Gemalto"
+    "vendor_name": "Gemalto",
+    "algorithms": [
+      "AES",
+      "DES",
+      "ECDH",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ]
   }
 }

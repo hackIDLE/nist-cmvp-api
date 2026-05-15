@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3181"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KTS",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3181",
     "certificate_number": "3181",
@@ -32,7 +24,7 @@
     "description": "Motorola Solutions Inc. Cryptographic DLL Software Module (MSCDSM) is a software based cryptographic module that runs on General Purpose Computer (GPC) hardware platform running Microsoft Windows operating system. The module provides cryptographic functionality in Motorola Solutions ASTRO IP Dispatch Console products running on Microsoft Windows OS and supporting the APCO Project 25 standard. MSCDSM provides several FIPS approved and non-approved cryptographic algorithms.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Motorola Solutions Cryptographic DLL Software Module",
     "module_type": "Software",
@@ -93,6 +85,14 @@
       "name": "Motorola Solutions, Inc.",
       "website_url": "http://www.motorolasolutions.com"
     },
-    "vendor_name": "Motorola Solutions, Inc."
+    "vendor_name": "Motorola Solutions, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KTS",
+      "SHA",
+      "SHS"
+    ]
   }
 }

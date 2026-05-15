@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1757"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and when obtained, installed and initialized as assumed by the Crypto Officer role and specified in Section 9.1 of the provided Security Policy. The Security Policy specifies the precise RPM file containing this module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the module if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1757",
     "certificate_number": "1757",
@@ -34,7 +24,7 @@
     "description": "The libgcrypt FIPS Runtime Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for use with the high level API of the libgcrypt library version 1.4.5-9.e16 delivered with RHEL 6.2.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Red Hat Enterprise Linux 6.2 Libgcrypt Cryptographic Module",
     "module_type": "Software",
@@ -86,6 +76,16 @@
       "name": "Red Hat®, Inc.",
       "website_url": "http://www.redhat.com"
     },
-    "vendor_name": "Red Hat®, Inc."
+    "vendor_name": "Red Hat®, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

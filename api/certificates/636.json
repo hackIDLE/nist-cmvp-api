@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/636"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DES",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/636",
     "certificate_number": "636",
@@ -29,7 +24,7 @@
     "description": "Aspects OS755 for Renesas XMobile Card Module is the combination of a Java Card compliant Operating System that implements FIPS Approved cryptographic functions and a secure Single Chip Silicon hardware. This module is a flexible platform capable of post-issuance customization and updates, and that offers Java Card 2.1.1 technology and GlobalPlatform 2.1 services in addition to a range of FIPS Approved on-board random-number generator, hardware accelerated Triple-DES and RSA algorithms, especially designed for the XMobile Card.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Aspects Software OS755 for Renesas XMobile Card Module",
     "module_type": "Hardware",
@@ -75,6 +70,11 @@
       "name": "Renesas Technology America, Inc.",
       "website_url": "http://www.renesas.com"
     },
-    "vendor_name": "Renesas Technology America, Inc."
+    "vendor_name": "Renesas Technology America, Inc.",
+    "algorithms": [
+      "DES",
+      "RSA",
+      "SHA"
+    ]
   }
 }

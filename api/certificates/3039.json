@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3039"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3039",
     "certificate_number": "3039",
@@ -30,7 +24,7 @@
     "description": "ID-One PIV on Cosmo V8.1 is the next generation of Personal Identification and Verification cards, avalaible in multiple FIPS 140-2 validated configurations. The SPE configurations are extensions to the PIV/CIV configurations where the module enforces the encryption of the PIN when submitted to the module for card holder verification, regardless of the communication interface being used (contact & contactless). The EP (Enhanced Privacy) option added to the default SPE configuration prevents the leaking from the card of any traceable or PII over the contactless interface.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ID-One PIV on Cosmo V8.1 - SPE Configurations",
     "module_type": "Hardware",
@@ -84,6 +78,12 @@
       "name": "Oberthur Technologies",
       "website_url": "http://www.oberthur.com"
     },
-    "vendor_name": "Oberthur Technologies"
+    "vendor_name": "Oberthur Technologies",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

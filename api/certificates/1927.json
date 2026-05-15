@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1927"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1927",
     "certificate_number": "1927",
@@ -32,7 +24,7 @@
     "description": "FEITIAN-FIPS-COS, is both an integrated circuit and an operating system, and has been developed to support their ePass series USB1 tokens. These tokens are designed to provide strong authentication and identification and to support network logon, secure online transactions, digital signatures, and sensitive data protection. The FEITIAN-FIPS-COS provides all cryptographic functionality for their ePass line of products. ePass supports dual-factor authentication with an ISO27816-12 USB interface for the PC host connection acting as a smart card reader.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "FEITIAN-FIPS-COS",
     "module_type": "Hardware",
@@ -81,6 +73,14 @@
       "name": "Feitian Technologies Co., Ltd.",
       "website_url": "http://www.ftsafe.com"
     },
-    "vendor_name": "Feitian Technologies Co., Ltd."
+    "vendor_name": "Feitian Technologies Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

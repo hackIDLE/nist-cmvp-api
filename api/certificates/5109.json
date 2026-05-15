@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 42,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 42
     },
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy; When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
+    "certificate_number": "5109",
+    "dataset": "active",
+    "description": "The ST33KTPM2X and ST33KTPM2XSPI Trusted Platform Modules are discrete security modules designed to be integrated into personal computers or any other embedded electronic systems. The security module is used primarily for cryptographic keys generation, keys storage, keys management and secure storage for digital certificates.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Trusted Platform Module ST33KTPM2X / ST33KTPM2XSPI",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5109.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5109.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/14/2030",
+    "validation_date": "12/15/2025",
+    "validation_dates": [
+      "12/15/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/15/2025",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "10 Rue de Jouanet",
+        "Rennes 35700",
+        "France"
+      ],
+      "contact_email": "olivier.collart@st.com",
+      "contact_name": "Olivier Collart",
+      "contact_phone": "3227245077",
+      "country": "France",
+      "name": "STMicroelectronics",
+      "website_url": "http://www.st.com"
+    },
+    "vendor_name": "STMicroelectronics",
     "algorithms": [
       "AES",
       "CVL",
@@ -72,61 +127,6 @@
       "RSA(non-compliant) | 1024-bit RSA digital signature generation or with a key loaded in theNull hierarchy",
       "RSA with no padding mode(null scheme)(non-compliant) | Key transport",
       "SHA-1(non-compliant) | Digital signature generation"
-    ],
-    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy; When operated in approved mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
-    "certificate_number": "5109",
-    "dataset": "active",
-    "description": "The ST33KTPM2X and ST33KTPM2XSPI Trusted Platform Modules are discrete security modules designed to be integrated into personal computers or any other embedded electronic systems. The security module is used primarily for cryptographic keys generation, keys storage, keys management and secure storage for digital certificates.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Trusted Platform Module ST33KTPM2X / ST33KTPM2XSPI",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5109",
-    "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5109.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Physical security: Level 3",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5109.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "12/14/2030",
-    "validation_date": "12/15/2025",
-    "validation_dates": [
-      "12/15/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "12/15/2025",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "10 Rue de Jouanet",
-        "Rennes 35700",
-        "France"
-      ],
-      "contact_email": "olivier.collart@st.com",
-      "contact_name": "Olivier Collart",
-      "contact_phone": "3227245077",
-      "country": "France",
-      "name": "STMicroelectronics",
-      "website_url": "http://www.st.com"
-    },
-    "vendor_name": "STMicroelectronics"
+    ]
   }
 }

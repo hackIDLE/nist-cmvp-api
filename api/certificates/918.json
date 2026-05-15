@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/918"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and specified in the provided Security Policy. Appendix B of the provided Security Policy specifies the complete set of source files of this module. There shall be no additions, deletions or alterations of this set as used during module build. All source files, including the specified OpenSSL distribution tar file, shall be verified as specified in Appendix B of the provided Security Policy. Installation, protection, and initialization shall be completed as specified in Appendix C of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a FIPS 140-2 non-compliant module.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/918",
     "certificate_number": "918",
@@ -31,7 +24,7 @@
     "description": "The OpenSSL FIPS Object Module is a cryptographic library that can be downloaded from http://www.openssl.org/source/",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "OpenSSL FIPS Object Module",
     "module_type": "Software",
@@ -78,6 +71,13 @@
       "name": "Open Source Software Institute",
       "website_url": "http://www.oss-institute.org"
     },
-    "vendor_name": "Open Source Software Institute"
+    "vendor_name": "Open Source Software Institute",
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

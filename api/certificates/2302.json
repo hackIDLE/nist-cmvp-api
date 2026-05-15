@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2302"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2302",
     "certificate_number": "2302",
@@ -31,7 +24,7 @@
     "description": "ST3 ACE Token is a USB token containing SECUREMETRIC¦s own SECUREMETRIC-FIPS-COS cryptographic operating system. The SECUREMETRIC -FIPS-COS is embedded in an ST23YT66 Integrated Circuit (IC) chip and has been developed to support SECUREMETRIC¦s USB token. ST3 ACE Token is a secure microprocessor smart chip based USB token that work as a miniature cryptography computer designed for strong 2-Factor Authentication (2FA) and identification to support network login, secure online transaction, digital signatures and sensitive data protection.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ST3 ACE Token",
     "module_type": "Hardware",
@@ -86,6 +79,13 @@
       "name": "SecureMetric Technology Sdn. Bhd.",
       "website_url": "http://www.securemetric.com"
     },
-    "vendor_name": "SecureMetric Technology Sdn. Bhd."
+    "vendor_name": "SecureMetric Technology Sdn. Bhd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "RSA",
+      "SHA"
+    ]
   }
 }

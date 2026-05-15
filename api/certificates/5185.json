@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5185"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 80,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 80
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5185",
+    "certificate_number": "5185",
+    "dataset": "active",
+    "description": "The SQLCipher Cryptographic Module is a cryptographic engine that integrates with SQLCipher, enhancing encrypted database operations with a trusted security layer. SQLCipher provides full database encryption and data integrity protection for local storage at rest. This module guarantees that all data stored and retrieved through SQLCipher is encrypted, decrypted, and verified using a reliable implementation for applications demanding high levels of data security.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "SQLCipher Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5185",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5185.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5185.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/26/2029",
+    "validation_date": "3/12/2026",
+    "validation_dates": [
+      "3/12/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/12/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "PO Box 5018",
+        "Branchburg, NJ 08876",
+        "USA"
+      ],
+      "contact_email": "support@zetetic.net",
+      "contact_name": "Zetetic Support",
+      "contact_phone": "908-762-2125",
+      "country": "USA",
+      "name": "Zetetic, LLC",
+      "website_url": "https://www.zetetic.net/"
+    },
+    "vendor_name": "Zetetic, LLC",
     "algorithms": [
       "AES",
       "CVL",
@@ -113,59 +166,6 @@
       "SHA2-224 | A5173 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2 | FIPS 180-4",
       "SHA2-256 | A4593 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2,4,8 | FIPS 180-4",
       "SHA2-256 | A5173 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2 | FIPS 180-4"
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5185",
-    "certificate_number": "5185",
-    "dataset": "active",
-    "description": "The SQLCipher Cryptographic Module is a cryptographic engine that integrates with SQLCipher, enhancing encrypted database operations with a trusted security layer. SQLCipher provides full database encryption and data integrity protection for local storage at rest. This module guarantees that all data stored and retrieved through SQLCipher is encrypted, decrypted, and verified using a reliable implementation for applications demanding high levels of data security.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "SQLCipher Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5185",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5185.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5185.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/26/2029",
-    "validation_date": "3/12/2026",
-    "validation_dates": [
-      "3/12/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/12/2026",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "PO Box 5018",
-        "Branchburg, NJ 08876",
-        "USA"
-      ],
-      "contact_email": "support@zetetic.net",
-      "contact_name": "Zetetic Support",
-      "contact_phone": "908-762-2125",
-      "country": "USA",
-      "name": "Zetetic, LLC",
-      "website_url": "https://www.zetetic.net/"
-    },
-    "vendor_name": "Zetetic, LLC"
+    ]
   }
 }

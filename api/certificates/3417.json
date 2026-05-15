@@ -1,25 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3417"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "SHA"
-    ],
     "caveat": "When initialized and configured as specified in Section 13 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3417",
     "certificate_number": "3417",
@@ -27,7 +24,7 @@
     "description": "« IDPrime PIV v3.0 » is the next generation of FIPS201-2 smart card running on latest IDCore 3130 platform, which complies with the latest version of NIST SP800-73-4, SP800-85A-4 and all algorithms of SP800-78-4. The product can be used over Contact and Contactless interfaces (ISO 7816 & 14443) to provide physical and logical accesss control. It embeds latest optimized FIPS POST feature, OPACITY secure messaging with Pairing code, and Biometric Match on card.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "IDPrime PIV v3.0 Applet on IDCore 3130 Platform",
     "module_type": "Hardware",
@@ -84,6 +81,9 @@
       "name": "Gemalto",
       "website_url": "http://www.gemalto.com"
     },
-    "vendor_name": "Gemalto"
+    "vendor_name": "Gemalto",
+    "algorithms": [
+      "SHA"
+    ]
   }
 }

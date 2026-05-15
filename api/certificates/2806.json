@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DES",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806",
     "certificate_number": "2806",
@@ -32,7 +24,7 @@
     "description": "The HSID5000A is a portable USB device that provides high security cryptographic functionality with secure storage for any personal computer. These cryptographic functions and storage allow the HSID5000A to be used in PKI environments with third party applications to securely login to domains, sign and verify emails and encrypt and decrypt files. The module supports a single user with access to the cryptographic functions and a cryptographic officer to enforce policy on the user. The module provides software interfaces as defined by the PKCS#11 standard and Microsoft CSP/KSP.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HSID5000A",
     "module_type": "Hardware",
@@ -82,6 +74,14 @@
       "name": "KACST / Parsec",
       "website_url": "http://www.kacst.edu.sa  / www.parsec.co.za"
     },
-    "vendor_name": "KACST / Parsec"
+    "vendor_name": "KACST / Parsec",
+    "algorithms": [
+      "DES",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

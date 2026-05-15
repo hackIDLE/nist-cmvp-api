@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with module Unisys Linux strongSwan Cryptographic Module validated to FIPS 140-2 under Cert. #3971 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
     "certificate_number": "4068",
@@ -31,7 +24,7 @@
     "description": "The module is a software-only cryptographic module that comprises a set of Linux kernel modules; this set defines the module's cryptographic boundary. It provides cryptographic functionality for any application that calls into it.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Unisys Linux Kernel Cryptographic API Module",
     "module_type": "Software",
@@ -81,6 +74,13 @@
       "name": "Unisys Corporation",
       "website_url": "http://www.unisys.com"
     },
-    "vendor_name": "Unisys Corporation"
+    "vendor_name": "Unisys Corporation",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

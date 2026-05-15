@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/793"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/793",
     "certificate_number": "793",
@@ -30,7 +24,7 @@
     "description": "The J-IDMark 64 Open is a single chip cryptographic module, which combines an implementation of the latest Sun Java Card TM (Rev 2.2.1) [JCS] / Global Platform (Rev 2.1.1)[GP] specifications with a dual interface chip (with both ISO 7816 contact and ISO 14443 contactless protocols). The module meets the requirements to the FIPS 140-2, Level 4 for physical security, and to the Level 3 for other areas. The module loads and runs applets written in Java programming language. Additional features include biometric & PKI APIs in order to run \"Match On Card\" and cryptographic services properly.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "J-IDMark 64 Open",
     "module_type": "Hardware",
@@ -84,6 +78,12 @@
       "name": "Sagem Orga",
       "website_url": "http://www.sagem-orga.com"
     },
-    "vendor_name": "Sagem Orga"
+    "vendor_name": "Sagem Orga",
+    "algorithms": [
+      "AES",
+      "DES",
+      "RSA",
+      "SHA"
+    ]
   }
 }

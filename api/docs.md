@@ -42,7 +42,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "total_modules": 1086
   },
   "modules": [
@@ -71,16 +71,16 @@ Example response (truncated):
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
       "detail_available": true,
       "algorithm_extraction": {
-        "algorithm_count": 9,
-        "cache_version": "2026-04-15-legacy-v1",
-        "cached": true,
-        "configured_source": "crawl4ai",
-        "detailed_algorithm_count": 31,
-        "fallback_used": false,
         "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
-        "status": "cached"
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 9,
+        "detailed_algorithm_count": 31
       },
       "description": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and fi...",
       "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with ex..."
@@ -112,11 +112,11 @@ Example response (truncated):
     "AES": {
       "count": 1495,
       "certificates": [
-        2038,
-        3154,
-        3470,
-        4019,
-        4047
+        5256,
+        5245,
+        5255,
+        5244,
+        5254
       ]
     }
   }
@@ -131,71 +131,62 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2038"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
   },
   "certificate": {
-    "certificate_number": "2038",
+    "certificate_number": "5256",
     "dataset": "active",
-    "vendor_name": "SafeLogic Inc.",
-    "module_name": "CryptoComply for Server",
-    "standard": "FIPS 140-2",
+    "vendor_name": "Amazon Web Services, Inc.",
+    "module_name": "AWS Link Encryption Module",
+    "standard": "FIPS 140-3",
     "status": "Active",
-    "module_type": "Software",
+    "module_type": "Software-hybrid",
     "overall_level": 1,
     "validation_dates": [
-      "11/15/2013",
-      "1/23/2014",
-      "2/20/2014"
+      "5/5/2026"
     ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys.",
+    "sunset_date": "5/4/2031",
+    "caveat": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum...",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "vendor": {
-      "name": "SafeLogic Inc.",
-      "website_url": "http://www.safelogic.com",
-      "contact_email": "sales@safelogic.com"
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://aws.amazon.com",
+      "contact_email": "aws-fips-external@amazon.com"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2038.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "11/15/2013",
-        "lab": "EWA - Canada",
+        "date": "5/5/2026",
+        "lab": "Lightship Security, Inc.",
         "type": "Initial"
-      },
-      {
-        "date": "1/23/2014",
-        "lab": "EWA - Canada",
-        "type": "Update"
       }
     ],
     "algorithms": [
       "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA"
+      "HMAC",
+      "SHA"
     ],
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 15
     }
   }
 }
@@ -216,12 +207,12 @@ GET api/data-quality.json → latest run misses, refreshes, fallbacks, changed c
 ```
 GET api/certificates/index.json → discover every certificate detail path and summary row
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/2038.json → full detail record for that certificate
+GET api/certificates/5256.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/2038.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5256.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage

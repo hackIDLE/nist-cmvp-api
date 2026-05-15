@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5055"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 44,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 44
     },
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5055",
+    "certificate_number": "5055",
+    "dataset": "active",
+    "description": "PacketLight's PL-4000M and PL-4000T Layer-1 encryption solutions with comprehensive line and service performance monitoring, ensure the confidentiality and integrity of data, based on GCM-AES-256 encryption standards, supporting Diffie-Hellman (DH) key exchange up to every 1-minute. In addition, the solutions support multiple protocols including 10G/25G/100G/400G Ethernet, 16G Fibre Channel, OTU2/OTU2e/OTU4.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "PL-4000M and PL-4000T",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5055",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5055.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5055.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/17/2030",
+    "validation_date": "8/18/2025",
+    "validation_dates": [
+      "8/18/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "8/18/2025",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "24 Raoul Wallenberg St.",
+        "Building C",
+        "Tel-Aviv 6971923",
+        "Israel"
+      ],
+      "contact_email": "egluska@packetlight.com",
+      "contact_name": "Eran Gluska",
+      "contact_phone": "972-3-768-7835",
+      "country": "Israel",
+      "name": "PacketLight Networks Ltd.",
+      "website_url": "https://www.packetlight.com"
+    },
+    "vendor_name": "PacketLight Networks Ltd.",
     "algorithms": [
       "AES",
       "CVL",
@@ -76,61 +131,6 @@
       "KAS Key Pair Generation 1 | KAS-KeyGen | KAS Key Pair Generation (ECDH) | ECDSA KeyGen(FIPS186-5):(A4261)ECDSA KeyVer(FIPS186-5):(A4261)Counter DRBG:(A4261)",
       "KAS Key Pair Generation 2 | KAS-KeyGen | KAS Key Pair Generation (DH) | Safe Primes Key Generation:(A4261)Safe Primes Key Verification:(A4261)Counter DRBG:(A4261)",
       "DRBG | DRBG | Deterministic Random Bit Generation | Counter DRBG:(A4261)"
-    ],
-    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5055",
-    "certificate_number": "5055",
-    "dataset": "active",
-    "description": "PacketLight's PL-4000M and PL-4000T Layer-1 encryption solutions with comprehensive line and service performance monitoring, ensure the confidentiality and integrity of data, based on GCM-AES-256 encryption standards, supporting Diffie-Hellman (DH) key exchange up to every 1-minute. In addition, the solutions support multiple protocols including 10G/25G/100G/400G Ethernet, 16G Fibre Channel, OTU2/OTU2e/OTU4.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "PL-4000M and PL-4000T",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5055",
-    "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5055.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5055.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/17/2030",
-    "validation_date": "8/18/2025",
-    "validation_dates": [
-      "8/18/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "8/18/2025",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "24 Raoul Wallenberg St.",
-        "Building C",
-        "Tel-Aviv 6971923",
-        "Israel"
-      ],
-      "contact_email": "egluska@packetlight.com",
-      "contact_name": "Eran Gluska",
-      "contact_phone": "972-3-768-7835",
-      "country": "Israel",
-      "name": "PacketLight Networks Ltd.",
-      "website_url": "https://www.packetlight.com"
-    },
-    "vendor_name": "PacketLight Networks Ltd."
+    ]
   }
 }

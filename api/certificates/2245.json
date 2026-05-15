@@ -1,26 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245",
     "certificate_number": "2245",
@@ -28,7 +24,7 @@
     "description": "The EFJohnson Subscriber Encryption Module (SEM) is a cryptographic module meeting FIPS 140-2, Level 1 requirements. The SEM provides Subscriber Equipment, such as the EFJohnson Technology VP600 series radio with secure encrypted voice communication. The SEM supports AES, RSA, HMAC, DRBG and SHA-256 FIPS Approved algorithms for voice communication and protection of its firmware. The SEM can be implemented into any Subscriber Equipment requiring FIPS 140-2, Level 1 security.",
     "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Subscriber Encryption Module",
     "module_type": "Hardware",
@@ -88,6 +84,10 @@
       "name": "EF Johnson Technologies",
       "website_url": "http://www.efjohnson.com"
     },
-    "vendor_name": "EF Johnson Technologies"
+    "vendor_name": "EF Johnson Technologies",
+    "algorithms": [
+      "AES",
+      "DES"
+    ]
   }
 }

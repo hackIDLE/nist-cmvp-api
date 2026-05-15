@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360",
     "certificate_number": "3360",
@@ -32,7 +24,7 @@
     "description": "The RDX QuikStor SATA III media-based removable storage system offers rugged, reliable and convenient storage for back-up, archive, data interchange and disaster recovery. The RDX SATA III drive provides AES-XTS 256 encryption to protect data on all RDX media",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "RDX SATA III",
     "module_type": "Hardware",
@@ -81,6 +73,14 @@
       "name": "Tandberg Data",
       "website_url": "http://www.tandbergdata.com"
     },
-    "vendor_name": "Tandberg Data"
+    "vendor_name": "Tandberg Data",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

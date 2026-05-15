@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3397"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3397",
     "certificate_number": "3397",
@@ -32,7 +24,7 @@
     "description": "The HP P-Class Smart Array RAID Controllers make up a family of serial-attached SCSI host bus adapters that provide intelligent control for storage array. The controllers can be card-based or embedded within an HP server, and provide a high speed data path, on-board storage cache, remote management, and encryption of data at rest, for the controlled storage arrays.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HPE Smart Array Gen10 P-Class RAID Controllers",
     "module_type": "Hardware",
@@ -82,6 +74,14 @@
       "name": "Hewlett Packard Enterprise Development LP",
       "website_url": "http://www.hp.com"
     },
-    "vendor_name": "Hewlett Packard Enterprise Development LP"
+    "vendor_name": "Hewlett Packard Enterprise Development LP",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA",
+      "SHS"
+    ]
   }
 }

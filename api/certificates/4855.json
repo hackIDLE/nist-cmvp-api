@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4855"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 107,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 107
     },
+    "caveat": "Interim validation. When operated in the approved mode. When installed, initialized, and configured as specified in section 11.1 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4855",
+    "certificate_number": "4855",
+    "dataset": "active",
+    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Canonical Ltd. Ubuntu 22.04 GnuTLS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4855",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4855.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4855.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/27/2029",
+    "validation_date": "10/28/2024",
+    "validation_dates": [
+      "10/28/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "10/28/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "5th floor, Blue Fin Building",
+        "110 Southwark Street",
+        "London SE1 0SU",
+        "United Kingdom"
+      ],
+      "contact_email": "security-certifications@lists.canonical.com",
+      "contact_name": "Canonical Certification Team",
+      "contact_phone": "0-000-000-0000",
+      "country": "United Kingdom",
+      "name": "Canonical Ltd.",
+      "website_url": "http://www.canonical.com"
+    },
+    "vendor_name": "Canonical Ltd.",
     "algorithms": [
       "AES",
       "CVL",
@@ -139,61 +194,6 @@
       "RSA(encapsulation and un-encapsulation with any key sizes) | Key encapsulation; Key un-encapsulation",
       "Triple-DES | Symmetric encryption; Symmetric decryption",
       "AES-GCM(when not used in the context of the TLS protocol) | Symmetric encryption; Symmetric decryption"
-    ],
-    "caveat": "Interim validation. When operated in the approved mode. When installed, initialized, and configured as specified in section 11.1 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4855",
-    "certificate_number": "4855",
-    "dataset": "active",
-    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Canonical Ltd. Ubuntu 22.04 GnuTLS Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4855",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4855.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4855.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "10/27/2029",
-    "validation_date": "10/28/2024",
-    "validation_dates": [
-      "10/28/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "10/28/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "5th floor, Blue Fin Building",
-        "110 Southwark Street",
-        "London SE1 0SU",
-        "United Kingdom"
-      ],
-      "contact_email": "security-certifications@lists.canonical.com",
-      "contact_name": "Canonical Certification Team",
-      "contact_phone": "0-000-000-0000",
-      "country": "United Kingdom",
-      "name": "Canonical Ltd.",
-      "website_url": "http://www.canonical.com"
-    },
-    "vendor_name": "Canonical Ltd."
+    ]
   }
 }

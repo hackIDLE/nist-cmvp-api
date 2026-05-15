@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1992"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated with the fingerprint authentication mechanism parameters configured as indicated in the Security Policy Section 9. No assurance of Secure Channel Protocol (SCP) message integrity",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1992",
     "certificate_number": "1992",
@@ -35,7 +24,7 @@
     "description": "The TecSec Armored Card is a cryptographic module which provides enterprise personnel identification, persistent data security for data in transit and at rest, with additional support for physical/logical/functional/content authorization. The Chip is part of a dual-chip PIV smart card that is fully compliant with the end-point service specified in SP800-73-1. This Contact Chip Provides 368k eprom memory leveraging a common robust identity process and additionally providing a federation platform for multiple applications from multiple owners enforced by cryptographic separation.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "TecSec Armored Card - Contact Cryptographic Module",
     "module_type": "Hardware",
@@ -93,6 +82,17 @@
       "name": "TecSec Incorporated",
       "website_url": "http://www.tecsec.com"
     },
-    "vendor_name": "TecSec Incorporated"
+    "vendor_name": "TecSec Incorporated",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

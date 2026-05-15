@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5213"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 135,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 135
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5213",
+    "certificate_number": "5213",
+    "dataset": "active",
+    "description": "The NETSCOUT FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "NETSCOUT FIPS Provider based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5213",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5213.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5213.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "3/26/2026",
+    "validation_dates": [
+      "3/26/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/26/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "310 Littleton Road",
+        "Westford, Massachusetts 01886",
+        "USA"
+      ],
+      "contact_email": "mark.gosselin@netscout.com",
+      "contact_name": "Mark Gosselin",
+      "contact_phone": "978-614-4219",
+      "country": "USA",
+      "name": "NETSCOUT Systems, Inc.",
+      "website_url": "http://www.netscout.com"
+    },
+    "vendor_name": "NETSCOUT Systems, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -169,60 +223,6 @@
       "DRBG",
       "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384",
       "SHA2-512/224 and SHA2-512/256"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5213",
-    "certificate_number": "5213",
-    "dataset": "active",
-    "description": "The NETSCOUT FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "NETSCOUT FIPS Provider based on the OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5213",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5213.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5213.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "3/26/2026",
-    "validation_dates": [
-      "3/26/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/26/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "310 Littleton Road",
-        "Westford, Massachusetts 01886",
-        "USA"
-      ],
-      "contact_email": "mark.gosselin@netscout.com",
-      "contact_name": "Mark Gosselin",
-      "contact_phone": "978-614-4219",
-      "country": "USA",
-      "name": "NETSCOUT Systems, Inc.",
-      "website_url": "http://www.netscout.com"
-    },
-    "vendor_name": "NETSCOUT Systems, Inc."
+    ]
   }
 }

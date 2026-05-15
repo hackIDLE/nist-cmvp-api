@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/684"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/684",
     "certificate_number": "684",
@@ -33,7 +24,7 @@
     "description": "The Luna PCI-1200 is a high assurance cryptographic accelerator PCI card contained in a secure enclosure that provides physical resistance to tampering and zeroization of plaintext keys in the event the enclosure is opened. The cryptographic boundary of the module is defined to encompass all components inside the secure enclosure on the PCI card. The Luna PCI-1200 provides over 1200 asymmetric 1024-bit RSA signing operations per second and is ideally suited to high-volume digital signing, encryption, and key generation applications.",
     "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Luna® PCI Cryptographic Module V2",
     "module_type": "Hardware",
@@ -82,6 +73,15 @@
       "name": "SafeNet, Inc.",
       "website_url": "http://www.safenet.com"
     },
-    "vendor_name": "SafeNet, Inc."
+    "vendor_name": "SafeNet, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

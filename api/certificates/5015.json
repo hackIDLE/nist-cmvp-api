@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5015"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 93,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 93
     },
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5015",
+    "certificate_number": "5015",
+    "dataset": "active",
+    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Amazon Linux 2023 GnuTLS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5015",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5015.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5015.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/4/2030",
+    "validation_date": "5/5/2025",
+    "validation_dates": [
+      "5/5/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "5/5/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Amazon Linux Security",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "https://aws.amazon.com/linux/amazon-linux-2023/"
+    },
+    "vendor_name": "Amazon Web Services, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -125,60 +179,6 @@
       "DRBG when key length is less than 112 bits | Random Number Generation",
       "RSA | Key Encapsulation; Key Un-encapsulation",
       "Non-supported cipher suites (not listed in Appendix A) | Transport Layer Security (TLS) Network Protocol"
-    ],
-    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5015",
-    "certificate_number": "5015",
-    "dataset": "active",
-    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Amazon Linux 2023 GnuTLS Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5015",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5015.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5015.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "5/4/2030",
-    "validation_date": "5/5/2025",
-    "validation_dates": [
-      "5/5/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "5/5/2025",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1918 8th Ave",
-        "Seattle, WA 98101",
-        "USA"
-      ],
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_name": "Amazon Linux Security",
-      "contact_phone": "000-000-0000",
-      "country": "USA",
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "https://aws.amazon.com/linux/amazon-linux-2023/"
-    },
-    "vendor_name": "Amazon Web Services, Inc."
+    ]
   }
 }

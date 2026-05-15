@@ -1,36 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4518"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4518",
     "certificate_number": "4518",
@@ -38,7 +24,7 @@
     "description": "The Secure Boot Processor operates a secure enclave within the Fungible DPU, and implements a hardware rooted chain of trust for authenticating all software, firmware and configuration files used in the DPU. The SBP also manages a number of asymmetric key cryptography accelerators within the enclave, and implements APIs for invoking these accelerators. The APIs are used by the DPU operating system (FunOS) modules to offload public key cryptography operations.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Secure Boot Processor (SBP) Crypto Engine",
     "module_type": "Hardware",
@@ -86,6 +72,20 @@
       "name": "Fungible, Inc.",
       "website_url": "http://www.fungible.com"
     },
-    "vendor_name": "Fungible, Inc."
+    "vendor_name": "Fungible, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

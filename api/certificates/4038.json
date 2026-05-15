@@ -1,39 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4038"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3080",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4038",
     "certificate_number": "4038",
@@ -41,7 +24,7 @@
     "description": "XSOC Cryptosystem ™ is a standards-based \"Drop-in Compliance\" cryptographic engine that enables the protection of data requiring absolute compliance with federal standards. The module delivers core cryptographic Suite-B functions to the layered architecture of XSOC's own proprietary security workflow and overall cryptosystem. Data that is enciphered or transformed by XSOC passes through XSOC Cryptosystem during every cycle of operation. XSOC Cryptosystem enables flexible modes of operation for encryption.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "XSOC Cryptosystem",
     "module_type": "Software",
@@ -89,6 +72,23 @@
       "name": "XSOC Corp",
       "website_url": "http://www.xsoccorp.com"
     },
-    "vendor_name": "XSOC Corp"
+    "vendor_name": "XSOC Corp",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/448"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/448",
     "certificate_number": "448",
@@ -30,7 +24,7 @@
     "description": "SafGuard200 is a multi-chip standalone cryptographic module that is used to provide highly-secure cryptographic services and key storage for PKI applications. (e.g., secure private key storage, high-speed math accelerator for 1024-4096 bit public key signatures, and hashing). The SafGuard 200 HSM provides secure identity-based challenge-response authentication using smart cards and data encryption using FIPS approved 3DES and AES encryption.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "SafGuard 200 HSM",
     "module_type": "Hardware",
@@ -77,6 +71,12 @@
       "name": "Chunghwa Telecom Co., Ltd.",
       "website_url": "http://www.cht.com.tw"
     },
-    "vendor_name": "Chunghwa Telecom Co., Ltd."
+    "vendor_name": "Chunghwa Telecom Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "RSA",
+      "SHA"
+    ]
   }
 }

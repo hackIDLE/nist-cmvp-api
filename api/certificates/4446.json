@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "ECDSA",
-      "KDF",
-      "KTS",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode; The module generates cryptographic keys and random strings whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446",
     "certificate_number": "4446",
@@ -33,7 +24,7 @@
     "description": "The cryptographic module is a single-chip security controller for signature generation and secure data storage in V2X systems (vehicle-to-anything). The V2X system is required to support vehicle communication with other vehicles, as well as with road infrastructure and other elements. The cryptographic module will support highly secure and timely necessary cryptographic operations, so that all messages may be securely signed and authenticated.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "SLS37CSAUS V2X",
     "module_type": "Hardware",
@@ -91,6 +82,15 @@
       "name": "Infineon Technologies AG",
       "website_url": "http://www.infineon.com"
     },
-    "vendor_name": "Infineon Technologies AG"
+    "vendor_name": "Infineon Technologies AG",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "KDF",
+      "KTS",
+      "SHA",
+      "SHS"
+    ]
   }
 }

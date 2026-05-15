@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "RSA"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883",
     "certificate_number": "1883",
@@ -29,7 +24,7 @@
     "description": "SafeNet eToken is a portable two-factor USB authenticator with advanced smart card technology. It utilizes certificate based technology to generate and store credentials, such as private keys, passwords and digital certificates inside the protected environment of the smart card chip. To authenticate, users must supply both their personal SafeNet authenticator and password, providing a critical second level of security beyond simple passwords to protect valuable digital business resources.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "eToken 5100, 5105, 5200 and 5205",
     "module_type": "Hardware",
@@ -93,6 +88,11 @@
       "name": "SafeNet, Inc.",
       "website_url": "http://www.safenet-inc.com"
     },
-    "vendor_name": "SafeNet, Inc."
+    "vendor_name": "SafeNet, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "RSA"
+    ]
   }
 }

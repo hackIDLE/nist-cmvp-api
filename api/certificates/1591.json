@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1591"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1591",
     "certificate_number": "1591",
@@ -36,7 +24,7 @@
     "description": "The Symantec Cryptographic Module is a software module with a multi-chip standalone embodiment. The overall security level of the module is 1. SymCrypt is implemented in the C programming language and consists of a shared library that is linked with SSIM application components. It is designed to execute on a host system with a General Purpose Computer (GPC) hardware platform.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Symantec Cryptographic Module",
     "module_type": "Software",
@@ -82,6 +70,18 @@
       "name": "Symantec Corporation",
       "website_url": "http://www.symantec.com"
     },
-    "vendor_name": "Symantec Corporation"
+    "vendor_name": "Symantec Corporation",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

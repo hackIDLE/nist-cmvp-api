@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ],
     "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 1.3 and 8 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222",
     "certificate_number": "3222",
@@ -29,7 +24,7 @@
     "description": "The Ultrastar® SS200 Self-Encrypting TCG Enterprise drives meet or exceed the most demanding performance and security requirements. The Ultrastar® SS200 solid state (SSD) is a 12Gb/s SAS Enterprise SSD that helps transform hybrid and all-flash data centers by scaling flash storage capacities using workload-optimized solutions to deliver exceptional value. Ultrastar® SS200 SSDs integrate SanDisk-brand 15nm NAND and the enterprise tested Guardian Technology™ platform to deliver enterprise-grade reliability, endurance, and performance.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ultrastar® SS200 TCG Enterprise SSD",
     "module_type": "Hardware",
@@ -85,6 +80,11 @@
       "name": "Western Digital Corporation",
       "website_url": "http://www.wdc.com"
     },
-    "vendor_name": "Western Digital Corporation"
+    "vendor_name": "Western Digital Corporation",
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ]
   }
 }

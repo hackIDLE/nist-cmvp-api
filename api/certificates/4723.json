@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 2,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 2
     },
-    "algorithms": [
-      "RSA",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "RSA SigVer(FIPS186-4) | A4201 | Signature Type - PKCSPSSModulo - 4096 | FIPS 186-4",
-      "SHA2-384 | A4201 | MessageLength - MessageLength:0-65536 Increment 8 | FIPS 180-4"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
     "certificate_number": "4723",
@@ -32,7 +24,7 @@
     "description": "The module is present in these Ryzen PRO 7000 series models (OPNs): 7840U(100-000000970, 100-000000961), 7940HS(100-000000967, 100-000000958), 7840HS(100-000000968, 100-000000959), 7640HS(100-000000969, 100-000000960), 7540U(100-000000971, 100-000000962), 7640U(100-000001111, 100-000001108), 8700G(100-000001238), 8600G(100-000001239), 8700GE(100-000001240), 8600GE(100-000001241), 8840U(100-000001317, 100-000001377), 8640U(100-000001318, 100-000001378), 8840HS(100-000001353, 100-000001381, 100-000001316, 100-000001387), 8940HS(100-000001314, 100-000001386), 8640HS(100-000001354, 100-000001382, 100-000001315, 100-000001388)",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "AMD ASP Cryptographic CoProcessor (\"Phoenix\")",
     "module_type": "Firmware-hybrid",
@@ -81,6 +73,14 @@
       "name": "Advanced Micro Devices (AMD)",
       "website_url": "http://www.amd.com"
     },
-    "vendor_name": "Advanced Micro Devices (AMD)"
+    "vendor_name": "Advanced Micro Devices (AMD)",
+    "algorithms": [
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "RSA SigVer(FIPS186-4) | A4201 | Signature Type - PKCSPSSModulo - 4096 | FIPS 186-4",
+      "SHA2-384 | A4201 | MessageLength - MessageLength:0-65536 Increment 8 | FIPS 180-4"
+    ]
   }
 }

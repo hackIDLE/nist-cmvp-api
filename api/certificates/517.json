@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/517"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/517",
     "certificate_number": "517",
@@ -33,7 +24,7 @@
     "description": "The SafeNet K4 Cryptographic Module is a PCI card that provides cryptographic key protection and acceleration for both asymmetric and symmetric encryption operations. It is contained in its own secure enclosure that provides physical resistance to tampering and zeroization of plaintext cryptographic material in the event the enclosure is opened.",
     "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Luna K4 Cryptographic Module / NITROX XL CN1120-NFB Acceleration Board, NITROX XL CN1010-NFB Acceleration Board, NITROX XL CN1005-NFB Acceleration Board",
     "module_type": "Hardware",
@@ -88,6 +79,15 @@
       "name": "SafeNet Canada, Inc. and Cavium Networks",
       "website_url": "http://www.safenet-inc.com"
     },
-    "vendor_name": "SafeNet Canada, Inc. and Cavium Networks"
+    "vendor_name": "SafeNet Canada, Inc. and Cavium Networks",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

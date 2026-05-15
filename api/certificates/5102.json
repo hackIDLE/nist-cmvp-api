@@ -1,22 +1,78 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 134,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 134
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
+    "certificate_number": "5102",
+    "dataset": "active",
+    "description": "The Chainguard FIPS Provider for OpenSSL 3.1.2 is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Chainguard FIPS Provider for OpenSSL",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5102.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5102.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "12/4/2025",
+    "validation_dates": [
+      "12/4/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/4/2025",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "810 7th Ave S",
+        "Suite 744",
+        "Newark DE 19711",
+        "Kirkland, WA 98033",
+        "USA"
+      ],
+      "contact_email": "fips-contact@chainguard.dev",
+      "contact_name": "FIPS Engineering",
+      "contact_phone": "N/A",
+      "country": "USA",
+      "name": "Chainguard, Inc.",
+      "website_url": "http://www.chainguard.dev"
+    },
+    "vendor_name": "Chainguard, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -168,62 +224,6 @@
       "DRBG",
       "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384",
       "SHA2-512/224 and SHA2-512/256"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
-    "certificate_number": "5102",
-    "dataset": "active",
-    "description": "The Chainguard FIPS Provider for OpenSSL 3.1.2 is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Chainguard FIPS Provider for OpenSSL",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5102",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5102.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5102.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "12/4/2025",
-    "validation_dates": [
-      "12/4/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "12/4/2025",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "810 7th Ave S",
-        "Suite 744",
-        "Newark DE 19711",
-        "Kirkland, WA 98033",
-        "USA"
-      ],
-      "contact_email": "fips-contact@chainguard.dev",
-      "contact_name": "FIPS Engineering",
-      "contact_phone": "N/A",
-      "country": "USA",
-      "name": "Chainguard, Inc.",
-      "website_url": "http://www.chainguard.dev"
-    },
-    "vendor_name": "Chainguard, Inc."
+    ]
   }
 }

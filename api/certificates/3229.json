@@ -1,39 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3229"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3080.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3229",
     "certificate_number": "3229",
@@ -41,7 +24,7 @@
     "description": "REDCOM Encryption 140-2 is a FIPS 140-2 validated cryptographic engine for Java and Android based environments. The engine delivers core cryptographic functions including Suite B algorithms. Also, it offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "REDCOM Encryption 140-2",
     "module_type": "Software",
@@ -89,6 +72,23 @@
       "name": "REDCOM Laboratories, Inc.",
       "website_url": "http://www.redcom.com"
     },
-    "vendor_name": "REDCOM Laboratories, Inc."
+    "vendor_name": "REDCOM Laboratories, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

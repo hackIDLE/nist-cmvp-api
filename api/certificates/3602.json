@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3602"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When installed, initialized, and configured as specified in the Security Policy Section 2.12. The module generates cryptographic keys whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3602",
     "certificate_number": "3602",
@@ -34,7 +24,7 @@
     "description": "The HYP2003 Cryptographic Module is designed to provide strong authentication and identification and to support network login, secure online transactions, digital signatures, and sensitive data protection.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HYP2003 Cryptographic Module",
     "module_type": "Hardware",
@@ -82,6 +72,16 @@
       "name": "Hypersecu Information Systems Inc",
       "website_url": "http://www.hypersecu.com"
     },
-    "vendor_name": "Hypersecu Information Systems Inc"
+    "vendor_name": "Hypersecu Information Systems Inc",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

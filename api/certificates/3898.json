@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 3 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898",
     "certificate_number": "3898",
@@ -30,7 +24,7 @@
     "description": "The Luna T7 Cryptographic Module from Thales Trusted Cyber Technologies (TCT) is a high-assurance, tamper-resistant Hardware Security Module (HSM) which secures sensitive data and critical applications by storing, protecting and managing cryptographic keys. It provides end users with industry-leading security and performance, an ability to generate quantum enhanced keys, and can quickly be embedded directly into servers and security appliances for FIPS 140-2 validated key security. Thales TCT's Lluna HSMs are designed, developed, manufactured, sold, and supported in the United States.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Luna T7 Cryptographic Module",
     "module_type": "Hardware",
@@ -83,6 +77,12 @@
       "name": "Thales Trusted Cyber Technologies",
       "website_url": "http://www.thalestct.com"
     },
-    "vendor_name": "Thales Trusted Cyber Technologies"
+    "vendor_name": "Thales Trusted Cyber Technologies",
+    "algorithms": [
+      "AES",
+      "DES",
+      "SHA",
+      "SHS"
+    ]
   }
 }

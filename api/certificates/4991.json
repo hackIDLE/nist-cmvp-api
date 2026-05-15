@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4991"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 2,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 2
     },
-    "algorithms": [
-      "AES",
-      "HMAC"
-    ],
-    "algorithms_detailed": [
-      "A1399 | AES-OFB(SP800-38A) | AES-OFB | 256 bits | Voice Encryption/Decryption",
-      "A1399 | HMAC-SHA-1(FIPS198-1) | HMAC-SHA-1 | MAC:160bitsKeyLength:512bits | FirmwareIntegrity,FirmwareLoadTest"
-    ],
     "caveat": "Interim Validation. When operated in approved mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4991",
     "certificate_number": "4991",
@@ -32,7 +24,7 @@
     "description": "The UT-125 FIPS #31 and UT-125 FIPS #41 are multiple-chip embedded cryptographic modules as defined by FIPS 140-3. The UT-125 FIPS #31 and UT-125 FIPS #41 can be incorporated into any Icom Inc. radio which requires FIPS 140-3 level 1 cryptographic security.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "UT-125 FIPS #31 and #41 Cryptographic Module",
     "module_type": "Hardware",
@@ -77,6 +69,14 @@
       "name": "Icom Inc.",
       "website_url": "http://www.icomamerica.com/en"
     },
-    "vendor_name": "Icom Inc."
+    "vendor_name": "Icom Inc.",
+    "algorithms": [
+      "AES",
+      "HMAC"
+    ],
+    "algorithms_detailed": [
+      "A1399 | AES-OFB(SP800-38A) | AES-OFB | 256 bits | Voice Encryption/Decryption",
+      "A1399 | HMAC-SHA-1(FIPS198-1) | HMAC-SHA-1 | MAC:160bitsKeyLength:512bits | FirmwareIntegrity,FirmwareLoadTest"
+    ]
   }
 }

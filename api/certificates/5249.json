@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5249"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 4,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 4
     },
-    "algorithms": [
-      "DRBG",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "Hash DRBG | A4298 | Prediction Resistance-No Mode-SHA2-256 | SP 800-90A Rev.1",
-      "SHA2-256 | A4297 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4",
-      "SHA2-256 | A4298 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4",
-      "SHA2-256 | A4457 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5249",
     "certificate_number": "5249",
@@ -34,7 +24,7 @@
     "description": "Qualcomm Pseudo Random Number Generator is a hardware random number generator that provides cryptographic functions through on-chip entropy sources and hash based DRBG.",
     "embodiment": "SingleChip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Qualcomm® Pseudo Random Number Generator",
     "module_type": "Firmware-hybrid",
@@ -82,6 +72,16 @@
       "name": "Qualcomm Technologies, Inc.",
       "website_url": "http://www.qualcomm.com"
     },
-    "vendor_name": "Qualcomm Technologies, Inc."
+    "vendor_name": "Qualcomm Technologies, Inc.",
+    "algorithms": [
+      "DRBG",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "Hash DRBG | A4298 | Prediction Resistance-No Mode-SHA2-256 | SP 800-90A Rev.1",
+      "SHA2-256 | A4297 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4",
+      "SHA2-256 | A4298 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4",
+      "SHA2-256 | A4457 | Message Length-Message Length:8-65536 Increment8 | FIPS 180-4"
+    ]
   }
 }

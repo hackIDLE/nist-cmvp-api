@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3209"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3209",
     "certificate_number": "3209",
@@ -39,7 +24,7 @@
     "description": "The Thales Luna Backup Hardware Security Module provides the same level of security as the SafeNet Network HSM and SafeNet PCI-E HSMs in a convenient, small, low-cost form factor. The Thales Luna Backup Hardware Security Module ensures that sensitive cryptographic material remains strongly protected in hardware even when not being used. One can easily back up and duplicate keys securely to the Thales Luna Backup HSM for safekeeping in case of emergency, failure or disaster.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Thales Luna Backup Hardware Security Module",
     "module_type": "Hardware",
@@ -91,6 +76,21 @@
       "name": "Thales",
       "website_url": "http://www.gemalto.com"
     },
-    "vendor_name": "Thales"
+    "vendor_name": "Thales",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

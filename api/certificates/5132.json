@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 90,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 90
     },
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
+    "certificate_number": "5132",
+    "dataset": "active",
+    "description": "The Chainguard FIPS Provider for OpenSSL is defined as a software module in a multi-chip standalone embodiment. It provides a C language application program interface (API) for use by other applications that require cryptographic functionality. The module consists of one software component, the “FIPS provider”, which implements FIPS requirements, and the cryptographic functionality provided to the operator.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Chainguard FIPS Provider for OpenSSL",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/13/2031",
+    "validation_date": "1/14/2026",
+    "validation_dates": [
+      "1/14/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/14/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "810 7th St S",
+        "Kirkland, WA 98033",
+        "USA"
+      ],
+      "contact_email": "fips-contact@chainguard.dev",
+      "contact_name": "FIPS Engineering",
+      "contact_phone": "1-518-248-0862",
+      "country": "USA",
+      "name": "Chainguard, Inc.",
+      "website_url": "http://chainguard.dev"
+    },
+    "vendor_name": "Chainguard, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -124,59 +177,6 @@
       "One step KDF, two step KDF, HKDF, ANS X9.42 KDF with input secret length < 112 bits Key Derivation Function | © 2025 Chainguard, Inc., asec information security.",
       "ANS X9.63 KDF with SHA-1 or input secret length < 112 bits Key Derivation Function",
       "RSA OAEP encryption/decryption with 1536-bit modulus Asymmetric | encryption/decryption"
-    ],
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
-    "certificate_number": "5132",
-    "dataset": "active",
-    "description": "The Chainguard FIPS Provider for OpenSSL is defined as a software module in a multi-chip standalone embodiment. It provides a C language application program interface (API) for use by other applications that require cryptographic functionality. The module consists of one software component, the “FIPS provider”, which implements FIPS requirements, and the cryptographic functionality provided to the operator.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Chainguard FIPS Provider for OpenSSL",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5132",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5132.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "1/13/2031",
-    "validation_date": "1/14/2026",
-    "validation_dates": [
-      "1/14/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "1/14/2026",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "810 7th St S",
-        "Kirkland, WA 98033",
-        "USA"
-      ],
-      "contact_email": "fips-contact@chainguard.dev",
-      "contact_name": "FIPS Engineering",
-      "contact_phone": "1-518-248-0862",
-      "country": "USA",
-      "name": "Chainguard, Inc.",
-      "website_url": "http://chainguard.dev"
-    },
-    "vendor_name": "Chainguard, Inc."
+    ]
   }
 }

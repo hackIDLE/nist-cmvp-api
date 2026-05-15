@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5221"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 259,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 259
     },
+    "caveat": "When operated in approved mode; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5221",
+    "certificate_number": "5221",
+    "dataset": "active",
+    "description": "The IBM ClevOS 3 OpenSSL Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "IBM ClevOS 3 OpenSSL Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5221",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5221.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5221.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/31/2031",
+    "validation_date": "4/1/2026",
+    "validation_dates": [
+      "4/1/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/1/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "71 S Wacker Dr, 6th Floor",
+        "Chicago, IL 60606",
+        "USA"
+      ],
+      "contact_email": "Jason.P.Cox@ibm.com",
+      "contact_name": "Jason Cox",
+      "contact_phone": "0-000-000-0000",
+      "country": "USA",
+      "name": "IBM Corporation",
+      "website_url": "http://www.ibm.com"
+    },
+    "vendor_name": "IBM Corporation",
     "algorithms": [
       "AES",
       "CVL",
@@ -291,59 +344,6 @@
       "ECDSA(pre-hashed message) | Signature Verification(pre-hashed message)",
       "RSA primitive | Asymmetric Encryption，Asymmetric Decryption",
       "RSA-OAEP | Asymmetric Encryption，Asymmetric Decryption"
-    ],
-    "caveat": "When operated in approved mode; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5221",
-    "certificate_number": "5221",
-    "dataset": "active",
-    "description": "The IBM ClevOS 3 OpenSSL Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "IBM ClevOS 3 OpenSSL Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5221",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5221.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5221.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/31/2031",
-    "validation_date": "4/1/2026",
-    "validation_dates": [
-      "4/1/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "4/1/2026",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "71 S Wacker Dr, 6th Floor",
-        "Chicago, IL 60606",
-        "USA"
-      ],
-      "contact_email": "Jason.P.Cox@ibm.com",
-      "contact_name": "Jason Cox",
-      "contact_phone": "0-000-000-0000",
-      "country": "USA",
-      "name": "IBM Corporation",
-      "website_url": "http://www.ibm.com"
-    },
-    "vendor_name": "IBM Corporation"
+    ]
   }
 }

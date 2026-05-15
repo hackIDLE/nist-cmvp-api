@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5237"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 71,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 71
     },
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5237",
+    "certificate_number": "5237",
+    "dataset": "active",
+    "description": "The module is present in Ryzen AI 9 HX PRO 370 (\"Strix 1\") and Ryzen AI 7 PRO 350 (\"Krackan 1\").",
+    "embodiment": "SingleChip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "AMD ASP Cryptographic CoProcessor (\"Strix 1\" and \"Krackan 1\")",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5237",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5237.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5237.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/9/2031",
+    "validation_date": "4/10/2026",
+    "validation_dates": [
+      "4/10/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/10/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2485 Augustine Drive",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "FIPS@amd.com",
+      "contact_name": "FIPS Contact",
+      "contact_phone": "1408-749-4000",
+      "country": "USA",
+      "name": "Advanced Micro Devices (AMD)",
+      "website_url": "http://www.amd.com"
+    },
+    "vendor_name": "Advanced Micro Devices (AMD)",
     "algorithms": [
       "AES",
       "DRBG",
@@ -97,59 +150,6 @@
       "SHA3-256, SHA3-384, SHA3-512), XOF (SHAKE128, SHAKE256), encryption",
       "decryption (AES, ECB, CBC, OFB, CFB, CTR, GCTR, IAPM, XTS), message",
       "authentication (AES CMAC) | SIB_HAL algorithm | Random number generation"
-    ],
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5237",
-    "certificate_number": "5237",
-    "dataset": "active",
-    "description": "The module is present in Ryzen AI 9 HX PRO 370 (\"Strix 1\") and Ryzen AI 7 PRO 350 (\"Krackan 1\").",
-    "embodiment": "SingleChip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "AMD ASP Cryptographic CoProcessor (\"Strix 1\" and \"Krackan 1\")",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5237",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5237.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5237.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "4/9/2031",
-    "validation_date": "4/10/2026",
-    "validation_dates": [
-      "4/10/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "4/10/2026",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "2485 Augustine Drive",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "contact_email": "FIPS@amd.com",
-      "contact_name": "FIPS Contact",
-      "contact_phone": "1408-749-4000",
-      "country": "USA",
-      "name": "Advanced Micro Devices (AMD)",
-      "website_url": "http://www.amd.com"
-    },
-    "vendor_name": "Advanced Micro Devices (AMD)"
+    ]
   }
 }

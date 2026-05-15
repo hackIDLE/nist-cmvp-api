@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3588"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3588",
     "certificate_number": "3588",
@@ -29,7 +24,7 @@
     "description": "The Dell EMC Unity/Unity XT 12 Gb/s SAS I/O Module with Encryption is a high-density SAS controller chipset executing specialized firmware that provides Data At Rest Encryption (D@RE) for Dell EMC Unity/Unity XT storage arrays. It implements 256-bit AES-XTS encryption/decryption to encrypt and decrypt data as it is being written to or read from a SAS drive.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Unity/Unity XT 12 Gb/s SAS I/O Module with Encryption",
     "module_type": "Hardware",
@@ -83,6 +78,11 @@
       "name": "Dell EMC",
       "website_url": "http://www.dellemc.com"
     },
-    "vendor_name": "Dell EMC"
+    "vendor_name": "Dell EMC",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ]
   }
 }

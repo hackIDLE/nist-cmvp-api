@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4008"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "This module contains the embedded module JCOP 3 SecID P60 CS (OSB) validated to FIPS 140-2 under Cert. #3175 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4008",
     "certificate_number": "4008",
@@ -34,7 +24,7 @@
     "description": "The K350 is an encrypted portable storage device, featuring three crypto processors, which provide layers of cryptographic protection. It requires no additional software or drivers to be installed on the host PC. It is intended for use by US Federal agencies or other markets that require FIPS 140-2 validated encrypted storage.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "K350",
     "module_type": "Hardware",
@@ -95,6 +85,16 @@
       "name": "DataLocker Inc.",
       "website_url": "http://datalocker.com"
     },
-    "vendor_name": "DataLocker Inc."
+    "vendor_name": "DataLocker Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA",
+      "SHS"
+    ]
   }
 }

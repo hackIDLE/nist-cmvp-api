@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4654"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode. When operated as per the Security Policy. No assurance of minimum security of keys and bit strings that are externally loaded, or of keys and CSPs established with externally loaded bit strings",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4654",
     "certificate_number": "4654",
@@ -39,7 +24,7 @@
     "description": "The Product is Ciena SAOS 3926 Service Access and Aggregation Platform. It uses MACSec for traffic encryption/decryption. It provides routing/switching functionalities for various use cases including enterprise, mobility, and converged network architectures. With Ethernet, MPLS, IP, and SR capabilities, the product supports emerging networks.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ciena 3926 Platform",
     "module_type": "Hardware",
@@ -87,6 +72,21 @@
       "name": "Ciena Corporation",
       "website_url": "http://www.ciena.com"
     },
-    "vendor_name": "Ciena Corporation"
+    "vendor_name": "Ciena Corporation",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

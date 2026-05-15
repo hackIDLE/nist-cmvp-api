@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4562"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode with the TOPDLv2.1 Platform and when initialized and configured as specified in Section 10 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4562",
     "certificate_number": "4562",
@@ -37,7 +24,7 @@
     "description": "HID Global ActivID Applet v2.7.4 is a Java Card applet suite that uses the Gemalto TOPDLv2.1 operating system. The product can be used over contact and contactless interfaces and can be configured for support of GSC-IS v2.1 and PIV standards (NIST SP 800-73-4 and SP 800-78-4).",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HID Global ActivID Applet Suite v2.7.4 on Gemalto TOPDLv2.1",
     "module_type": "Hardware",
@@ -88,6 +75,19 @@
       "name": "HID Global and Gemalto",
       "website_url": "http://www.hidglobal.com"
     },
-    "vendor_name": "HID Global and Gemalto"
+    "vendor_name": "HID Global and Gemalto",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

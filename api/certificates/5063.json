@@ -1,22 +1,83 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5063"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 80,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 80
     },
+    "caveat": "When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5063",
+    "certificate_number": "5063",
+    "dataset": "active",
+    "description": "The Infinera G42 is a next-generation compact modular transport network elements deployed as part of a point-to-point, point-to-multipoint network for terrestrial and/or subsea applications. The G42 chassis provides multi-service client access (e.g. Ethernet, Optical Transport Network (OTN), etc.) to the Dense Wavelength Division Multiplexing (DWDM) transport bandwidth.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Infinera G42",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5063",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5063.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5063.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/21/2030",
+    "validation_date": "9/22/2025, 12/23/2025",
+    "validation_dates": [
+      "9/22/2025",
+      "12/23/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "9/22/2025",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      },
+      {
+        "date": "12/23/2025",
+        "lab": "Gossamer Security Solutions",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "6373 San Ignacio Avenue",
+        "San Jose, CA 95119",
+        "USA"
+      ],
+      "contact_email": "muhammad.yaaseen@nokia.com",
+      "contact_name": "Muhammad Yaaseen",
+      "contact_phone": "408-572-5200",
+      "country": "USA",
+      "name": "Nokia Corporation",
+      "website_url": "http://www.nokia.com/optical-networks/infinera/"
+    },
+    "vendor_name": "Nokia Corporation",
     "algorithms": [
       "AES",
       "CVL",
@@ -111,67 +172,6 @@
       "SHA2-512 | A4962 | Message Length - Message Length:8-51200Increment8 | FIPS 180-4",
       "TLS v1.2 KDFRFC7627(CVL) | A4958 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
       "TLS v1.3 KDF(CVL) | A4958 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1"
-    ],
-    "caveat": "When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5063",
-    "certificate_number": "5063",
-    "dataset": "active",
-    "description": "The Infinera G42 is a next-generation compact modular transport network elements deployed as part of a point-to-point, point-to-multipoint network for terrestrial and/or subsea applications. The G42 chassis provides multi-service client access (e.g. Ethernet, Optical Transport Network (OTN), etc.) to the Dense Wavelength Division Multiplexing (DWDM) transport bandwidth.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Infinera G42",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5063",
-    "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5063.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5063.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "9/21/2030",
-    "validation_date": "9/22/2025, 12/23/2025",
-    "validation_dates": [
-      "9/22/2025",
-      "12/23/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "9/22/2025",
-        "lab": "Gossamer Security Solutions",
-        "type": "Initial"
-      },
-      {
-        "date": "12/23/2025",
-        "lab": "Gossamer Security Solutions",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "6373 San Ignacio Avenue",
-        "San Jose, CA 95119",
-        "USA"
-      ],
-      "contact_email": "muhammad.yaaseen@nokia.com",
-      "contact_name": "Muhammad Yaaseen",
-      "contact_phone": "408-572-5200",
-      "country": "USA",
-      "name": "Nokia Corporation",
-      "website_url": "http://www.nokia.com/optical-networks/infinera/"
-    },
-    "vendor_name": "Nokia Corporation"
+    ]
   }
 }

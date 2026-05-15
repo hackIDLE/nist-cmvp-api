@@ -1,39 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4482"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4482",
     "certificate_number": "4482",
@@ -41,7 +24,7 @@
     "description": "CLEAR Cryptosystem is a standards-based cryptographic engine that enables the protection of data requiring absolute compliance with federal standards. The module delivers core cryptographic functions for boosting the strength and speed of cryptographic protection while guaranteeing data integrity, data at rest encryption, and streaming data transmissions. CLEAR Cryptosystem provides flexible modes of operation that include multi-factor authentication (MFA) and embedded access control lists (ACL) for controlled access to data.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "CLEAR Cryptosystem",
     "module_type": "Software",
@@ -89,6 +72,23 @@
       "name": "Quantum Knight, INC.",
       "website_url": "http://www.quantumknight.io"
     },
-    "vendor_name": "Quantum Knight, INC."
+    "vendor_name": "Quantum Knight, INC.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

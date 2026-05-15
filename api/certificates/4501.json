@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501",
     "certificate_number": "4501",
@@ -35,7 +24,7 @@
     "description": "Maximus Federal Cryptographic Module is a standards-based cryptographic engine used for the Maximus Intelligent Virtual Assistant and Maximus Cloud. The module delivers core cryptographic functions to Maximus platforms and features robust algorithm support.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Maximus Federal Cryptographic Module",
     "module_type": "Software",
@@ -85,6 +74,17 @@
       "name": "Maximus Federal",
       "website_url": "http://www.maximus.com/iva"
     },
-    "vendor_name": "Maximus Federal"
+    "vendor_name": "Maximus Federal",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 73,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 73
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246",
+    "certificate_number": "5246",
+    "dataset": "active",
+    "description": "Allegro's suite of Embedded Device Security tool kits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Allegro Cryptographic Engine",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/16/2033",
+    "validation_date": "4/22/2026",
+    "validation_dates": [
+      "4/22/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/22/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1740 Massachusetts Avenue",
+        "Boxborough, MA 01719",
+        "USA"
+      ],
+      "contact_email": "loren@allegrosoft.com",
+      "contact_name": "Loren Shade",
+      "contact_phone": "978-264-6600",
+      "country": "USA",
+      "name": "Allegro Software Development Corporation",
+      "website_url": "http://www.allegrosoft.com"
+    },
+    "vendor_name": "Allegro Software Development Corporation",
     "algorithms": [
       "AES",
       "CVL",
@@ -104,60 +158,6 @@
       "The module implements MD5 for use with TLS communications, which is allowed in the | Approved mode of operation. | •",
       "The module provides key derivation functions for use in TLS and SSHv2. No parts of the",
       "TLS or SSHv2 protocols, other than the KDF, have been tested by the CAVP and CMVP."
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246",
-    "certificate_number": "5246",
-    "dataset": "active",
-    "description": "Allegro's suite of Embedded Device Security tool kits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace.",
-    "embodiment": "MultiChipStand",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Allegro Cryptographic Engine",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5246",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5246.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "1/16/2033",
-    "validation_date": "4/22/2026",
-    "validation_dates": [
-      "4/22/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "4/22/2026",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1740 Massachusetts Avenue",
-        "Boxborough, MA 01719",
-        "USA"
-      ],
-      "contact_email": "loren@allegrosoft.com",
-      "contact_name": "Loren Shade",
-      "contact_phone": "978-264-6600",
-      "country": "USA",
-      "name": "Allegro Software Development Corporation",
-      "website_url": "http://www.allegrosoft.com"
-    },
-    "vendor_name": "Allegro Software Development Corporation"
+    ]
   }
 }

@@ -1,41 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5028"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 10,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 10
     },
-    "algorithms": [
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "KAS-ECC Sp800-56Ar3 | A2877 | Domain Parameter Generation Methods - P-256Function - Partial ValidationScheme-onePassDh-KAS Role - ResponderKDF Methods-oneStepKdf-Key Length-512 | SP 800-56A Rev.3",
-      "KDF SP800-108 | A2877 | KDF Mode-CounterSupported Lengths-Supported Lengths:128-256Increment64 | SP 800-108Rev.1",
-      "KTS-IFC | A2877 | Modulo-2048,3072,4096Key Generation Methods-rsakpg1-basic,rskapg1-crtScheme-KTS-OAEP-basic-KAS Role-responderKey Transport Method-Key Length-512 | SP 800-56B Rev.2",
-      "RSA KeyGen(FIPS186-5) | A2877 | Key Generation Mode-probableHash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512Primality Tests-2pow100Modulo-2048,3072Private Key Format-standard | FIPS186-5",
-      "RSA SigGen(FIPS186-5) | A2877 | Modulo-2048,3072Signature Type-pkcs1v1.5,pss | FIPS186-5",
-      "RSA SigVer(FIPS186-5) | A2877 | Modulo-2048,3072,4096Signature Type-pkcs1v1.5,pss | FIPS186-5",
-      "SHA2-224 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
-      "SHA2-256 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
-      "SHA2-384 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
-      "SHA2-512 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5028",
     "certificate_number": "5028",
@@ -43,7 +24,7 @@
     "description": "HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform cryptographic module, validated to FIPS 140-3 overall Level 2, is a single-chip “contact and contactless” module implementing the Global Platform operational environment, with Card Manager as well as the ActivID Applet Suite.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform",
     "module_type": "Hardware",
@@ -92,6 +73,25 @@
       "name": "HID Global",
       "website_url": "http://www.hidglobal.com/"
     },
-    "vendor_name": "HID Global"
+    "vendor_name": "HID Global",
+    "algorithms": [
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "KAS-ECC Sp800-56Ar3 | A2877 | Domain Parameter Generation Methods - P-256Function - Partial ValidationScheme-onePassDh-KAS Role - ResponderKDF Methods-oneStepKdf-Key Length-512 | SP 800-56A Rev.3",
+      "KDF SP800-108 | A2877 | KDF Mode-CounterSupported Lengths-Supported Lengths:128-256Increment64 | SP 800-108Rev.1",
+      "KTS-IFC | A2877 | Modulo-2048,3072,4096Key Generation Methods-rsakpg1-basic,rskapg1-crtScheme-KTS-OAEP-basic-KAS Role-responderKey Transport Method-Key Length-512 | SP 800-56B Rev.2",
+      "RSA KeyGen(FIPS186-5) | A2877 | Key Generation Mode-probableHash Algorithm-SHA2-224,SHA2-256,SHA2-384,SHA2-512Primality Tests-2pow100Modulo-2048,3072Private Key Format-standard | FIPS186-5",
+      "RSA SigGen(FIPS186-5) | A2877 | Modulo-2048,3072Signature Type-pkcs1v1.5,pss | FIPS186-5",
+      "RSA SigVer(FIPS186-5) | A2877 | Modulo-2048,3072,4096Signature Type-pkcs1v1.5,pss | FIPS186-5",
+      "SHA2-224 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
+      "SHA2-256 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
+      "SHA2-384 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4",
+      "SHA2-512 | A2877 | Message Length-Message Length:8-65536 Increment8 | FIPS180-4"
+    ]
   }
 }

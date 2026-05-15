@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "ECDSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610",
     "certificate_number": "3610",
@@ -29,7 +24,7 @@
     "description": "The Thales Advanced Security Platform is a Thales Group (Thales) multi-chip embedded FIPS 140-2 Validated cryptographic module inside the payShield 10000 family of hardware security modules used in the Banking and Finance sector to secure card-based payment transactions. TASP provides functionality for secure loading and/or upgrading of applications used in a range of Thales products. The module ensures tamper resistance and that only applications that have been cryptographically signed by Thales can be loaded into the module.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Thales Advanced Security Platform (TASP)",
     "module_type": "Hardware",
@@ -106,6 +101,11 @@
       "name": "Thales Group",
       "website_url": "http://www.thalesesecurity.com"
     },
-    "vendor_name": "Thales Group"
+    "vendor_name": "Thales Group",
+    "algorithms": [
+      "ECDSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

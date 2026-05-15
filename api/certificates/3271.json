@@ -1,26 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3271"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 2,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "DRBG",
-      "KDF"
-    ],
     "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3271",
     "certificate_number": "3271",
@@ -28,7 +24,7 @@
     "description": "Ultrastar® Self-Encrypting TCG Enterprise drives meet or exceed the most demanding performance and security requirements. The Ultrastar SS300 solid-state TCG Enterprise 2.5-inch SAS drive supports multiple TLC capacities, a 12 Gbps SAS-3 Interface and multiple Drive Write Day rates.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Ultrastar® SS300 TCG Enterprise SSD",
     "module_type": "Hardware",
@@ -77,6 +73,10 @@
       "name": "Western Digital Corporation",
       "website_url": "http://www.hgst.com"
     },
-    "vendor_name": "Western Digital Corporation"
+    "vendor_name": "Western Digital Corporation",
+    "algorithms": [
+      "DRBG",
+      "KDF"
+    ]
   }
 }

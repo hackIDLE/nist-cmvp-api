@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476",
     "certificate_number": "2476",
@@ -34,7 +24,7 @@
     "description": "The KONA N41M0 smart card can be employed in solutions which provide secure PKI (public key infrastructure) and digital signature technology. KONA N41M0 serves as highly portable physical forms which enhances the security of network access and ensures secure electronic communications. KONA N41M0 supports on-card Triple DES, AES, ECC and 2048-bit RSA algorithms with on-card key generation. The KONA N41M0 smart card is Java-based smart cards for physical and logical access, e-transactions and other applications, which is compliant to Java Card v3.0.4 and GlobalPlatform 2.2.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "KONA N41M0",
     "module_type": "Hardware",
@@ -81,6 +71,16 @@
       "name": "KONA I Co., Ltd.",
       "website_url": "http://www.konai.com/"
     },
-    "vendor_name": "KONA I Co., Ltd."
+    "vendor_name": "KONA I Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

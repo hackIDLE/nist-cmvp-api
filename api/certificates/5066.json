@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 56,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 56
     },
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
+    "certificate_number": "5066",
+    "dataset": "active",
+    "description": "Next generation security services on Cisco Firepower 2100 Series, capable of running multiple (firewall (NGFW), traffic management) security services simultaneously.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Adaptive Security Appliance Cryptographic Module (FPR 2100 Series)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5066.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5066.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/21/2030",
+    "validation_date": "9/22/2025",
+    "validation_dates": [
+      "9/22/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "9/22/2025",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certification Team",
+      "contact_phone": "800-553-6387",
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
+    },
+    "vendor_name": "Cisco Systems, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -88,61 +143,6 @@
       "SHS 2737 | Message Length - Message Length: 8- | 102400 Increment 8 | FIPS 180-4",
       "SHA2-512",
       "SHS 2737 | Message Length - Message Length: 8- | 102400 Increment 8 | FIPS 180-4 | © 2021-2025 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | Name Properties | Implementation Reference | CKG | Key Type:Asymmetric N/A | SP 800-133r2 Section 4, Method 1"
-    ],
-    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
-    "certificate_number": "5066",
-    "dataset": "active",
-    "description": "Next generation security services on Cisco Firepower 2100 Series, capable of running multiple (firewall (NGFW), traffic management) security services simultaneously.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Cisco Adaptive Security Appliance Cryptographic Module (FPR 2100 Series)",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5066",
-    "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5066.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5066.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "9/21/2030",
-    "validation_date": "9/22/2025",
-    "validation_dates": [
-      "9/22/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "9/22/2025",
-        "lab": "Gossamer Security Solutions",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "170 West Tasman Drive",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "contact_email": "certteam@cisco.com",
-      "contact_name": "Global Certification Team",
-      "contact_phone": "800-553-6387",
-      "country": "USA",
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com"
-    },
-    "vendor_name": "Cisco Systems, Inc."
+    ]
   }
 }

@@ -1,39 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5105"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 12,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 12
     },
-    "algorithms": [
-      "AES"
-    ],
-    "algorithms_detailed": [
-      "AES-CBC | A5154 | Direction - Decrypt, Encrypt",
-      "AES-CBC-CS1 | A5154 | Direction - decrypt, encrypt",
-      "AES-CBC-CS2 | A5154 | Direction - decrypt, encrypt",
-      "AES-CBC-CS3 | A5154 | Direction - decrypt, encrypt",
-      "AES-CCM | A5154 | Key Length - 128, 192, 256 | SP 800-38C",
-      "AES-CFB1 | A5154 | Direction - Decrypt, Encrypt",
-      "AES-CFB128 | A5154 | Direction - Decrypt, Encrypt",
-      "AES-CFB8 | A5154 | Direction - Decrypt, Encrypt",
-      "AES-CMAC | A5154 | Direction - Generation, Verification",
-      "AES-CTR | A5154 | Direction - Decrypt, Encrypt",
-      "AES-ECB | A5154 | Direction - Decrypt, Encrypt",
-      "AES-GCM | A5154 | Direction - Decrypt, Encrypt"
-    ],
     "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5105",
     "certificate_number": "5105",
@@ -41,7 +24,7 @@
     "description": "The Triton 2 Cryptographic Module provides cryptography to the Triton 2 device.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Triton 2 Cryptographic Module",
     "module_type": "Software",
@@ -93,6 +76,23 @@
       "name": "ST Engineering Urban Solutions Ltd.",
       "website_url": "http://www.stengg.com"
     },
-    "vendor_name": "ST Engineering Urban Solutions Ltd."
+    "vendor_name": "ST Engineering Urban Solutions Ltd.",
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5154 | Direction - Decrypt, Encrypt",
+      "AES-CBC-CS1 | A5154 | Direction - decrypt, encrypt",
+      "AES-CBC-CS2 | A5154 | Direction - decrypt, encrypt",
+      "AES-CBC-CS3 | A5154 | Direction - decrypt, encrypt",
+      "AES-CCM | A5154 | Key Length - 128, 192, 256 | SP 800-38C",
+      "AES-CFB1 | A5154 | Direction - Decrypt, Encrypt",
+      "AES-CFB128 | A5154 | Direction - Decrypt, Encrypt",
+      "AES-CFB8 | A5154 | Direction - Decrypt, Encrypt",
+      "AES-CMAC | A5154 | Direction - Generation, Verification",
+      "AES-CTR | A5154 | Direction - Decrypt, Encrypt",
+      "AES-ECB | A5154 | Direction - Decrypt, Encrypt",
+      "AES-GCM | A5154 | Direction - Decrypt, Encrypt"
+    ]
   }
 }

@@ -1,22 +1,75 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5165"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 57,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 57
     },
+    "caveat": "This module contains the embedded module [Titan-BPN Cryptographic Module] validated to FIPS 140-3 under Cert. #5166 operating in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5165",
+    "certificate_number": "5165",
+    "dataset": "active",
+    "description": "The module is a Network Interface Card (NIC) housed on a host device, which is designed to support Ethernet and IP networking. The module contains cryptographic hardware and firmware support, which allows data packets to be encrypted and decrypted using AES-GCM-128 at \"line rate\", while supporting a very large number of simultaneous Security Associations.",
+    "embodiment": "MultiChipEmbed",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "River Redux Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5165",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5165.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5165.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/17/2031",
+    "validation_date": "3/18/2026",
+    "validation_dates": [
+      "3/18/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/18/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "contact_email": "FIPS-crypto-officer@google.com",
+      "contact_name": "FIPS Crypto Officer",
+      "contact_phone": "650-253-0000",
+      "country": "USA",
+      "name": "Google, LLC.",
+      "website_url": "http://www.google.com/"
+    },
+    "vendor_name": "Google, LLC.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -83,59 +136,6 @@
       "SHA2-256(A5420) | KAT | CAST | On Demand | Power cycle | \\",
       "SHA2-256(A5419) | KAT | CAST | On Demand | Power cycle | \\",
       "RSA SigVer(FIPS186-4)(A5419) | KAT | CAST | On Demand | Power cycle | \\"
-    ],
-    "caveat": "This module contains the embedded module [Titan-BPN Cryptographic Module] validated to FIPS 140-3 under Cert. #5166 operating in approved mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5165",
-    "certificate_number": "5165",
-    "dataset": "active",
-    "description": "The module is a Network Interface Card (NIC) housed on a host device, which is designed to support Ethernet and IP networking. The module contains cryptographic hardware and firmware support, which allows data packets to be encrypted and decrypted using AES-GCM-128 at \"line rate\", while supporting a very large number of simultaneous Security Associations.",
-    "embodiment": "MultiChipEmbed",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "River Redux Cryptographic Module",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5165",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5165.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5165.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/17/2031",
-    "validation_date": "3/18/2026",
-    "validation_dates": [
-      "3/18/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/18/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1600 Amphitheatre Parkway",
-        "Mountain View, CA 94043",
-        "USA"
-      ],
-      "contact_email": "FIPS-crypto-officer@google.com",
-      "contact_name": "FIPS Crypto Officer",
-      "contact_phone": "650-253-0000",
-      "country": "USA",
-      "name": "Google, LLC.",
-      "website_url": "http://www.google.com/"
-    },
-    "vendor_name": "Google, LLC."
+    ]
   }
 }

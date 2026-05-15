@@ -1,22 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5096"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 394,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 394
     },
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5096",
+    "certificate_number": "5096",
+    "dataset": "active",
+    "description": "SUSE Linux Enterprise Server 15 SP6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64-bit word size.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "SUSE Linux Enterprise OpenSSL 3 Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5096",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5096.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5096.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/25/2030",
+    "validation_date": "11/26/2025, 3/2/2026",
+    "validation_dates": [
+      "11/26/2025",
+      "3/2/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "11/26/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "3/2/2026",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1221 S Valley Grove Way, #500",
+        "Pleasant Grove, UT 84062",
+        "USA"
+      ],
+      "contact_email": "sec-cert@suse.com",
+      "contact_name": "Ivan Teblin",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "SUSE LLC",
+      "website_url": "http://www.suse.com"
+    },
+    "vendor_name": "SUSE LLC",
     "algorithms": [
       "AES",
       "CVL",
@@ -425,65 +484,6 @@
       "SHAKE-128 | A5885 | Output Length - Output Length:16-65536Increment8 | FIPS 202",
       "SHAKE-256 | A5869 | Output Length - Output Length:16-65536Increment8 | FIPS 202",
       "SHAKE-256 | A5885 | Output Length - Output Length:16-65536Increment8 | FIPS 202"
-    ],
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5096",
-    "certificate_number": "5096",
-    "dataset": "active",
-    "description": "SUSE Linux Enterprise Server 15 SP6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64-bit word size.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "SUSE Linux Enterprise OpenSSL 3 Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5096",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5096.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5096.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/25/2030",
-    "validation_date": "11/26/2025, 3/2/2026",
-    "validation_dates": [
-      "11/26/2025",
-      "3/2/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "11/26/2025",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      },
-      {
-        "date": "3/2/2026",
-        "lab": "atsec information security corporation",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1221 S Valley Grove Way, #500",
-        "Pleasant Grove, UT 84062",
-        "USA"
-      ],
-      "contact_email": "sec-cert@suse.com",
-      "contact_name": "Ivan Teblin",
-      "contact_phone": "000-000-0000",
-      "country": "USA",
-      "name": "SUSE LLC",
-      "website_url": "http://www.suse.com"
-    },
-    "vendor_name": "SUSE LLC"
+    ]
   }
 }

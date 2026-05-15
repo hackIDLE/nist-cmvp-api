@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2099"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When installed, initialized and configured as specified in the Security Policy Section 4 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2099",
     "certificate_number": "2099",
@@ -33,7 +24,7 @@
     "description": "The Riverbed Cryptographic Security Module (\"RCSM\") provides the cryptographic functionality for a variety of Riverbed's platforms including Steelhead, SteelFusion and SteelCentral products. Using RCSM to provide FIPS compliance across Riverbed solutions, strengthens security and facilitates the product certification and accreditation processes, enabling hybrid enterprises to transform application performance into a competitive advantage by maximizing employee productivity and leveraging IT to create new forms of operational agility.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Riverbed Cryptographic Security Module",
     "module_type": "Software",
@@ -124,6 +115,15 @@
       "name": "Riverbed Technology, Inc.",
       "website_url": "http://www.riverbed.com"
     },
-    "vendor_name": "Riverbed Technology, Inc."
+    "vendor_name": "Riverbed Technology, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ]
   }
 }

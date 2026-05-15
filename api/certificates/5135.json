@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5135"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 37,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 37
     },
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5135",
+    "certificate_number": "5135",
+    "dataset": "active",
+    "description": "Junos® OS automates network operations with streamlined precision, furthers operational efficiency, and frees up valuable time and resources for top-line growth opportunities. Built for reliability, security, and flexibility, Junos OS runs many of the world’s most sophisticated network deployments, giving operators an advantage over those who run competing network operating systems.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Juniper Networks EX, QFX and ACX Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5135",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5135.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5135.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/14/2031",
+    "validation_date": "1/15/2026",
+    "validation_dates": [
+      "1/15/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/15/2026",
+        "lab": "Teron Labs",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, California 94089",
+        "USA"
+      ],
+      "contact_email": "Certs-team@juniper.net",
+      "contact_name": "Bill Shelton",
+      "contact_phone": "408-745-2000",
+      "country": "USA",
+      "name": "Juniper Networks",
+      "website_url": "http://www.juniper.net"
+    },
+    "vendor_name": "Juniper Networks",
     "algorithms": [
       "AES",
       "CVL",
@@ -67,60 +121,6 @@
       "SHA-1 | A4208 | Message Length - Message Length: 0-51200 Increment8 | FIPS 180-4",
       "SHA2-256 | A4208 | Message Length - Message Length: 0-51200 Increment8 | FIPS 180-4",
       "SHA2-512 | A4208 | Message Length - Message Length: 0-65536 Increment8 | FIPS 180-4"
-    ],
-    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5135",
-    "certificate_number": "5135",
-    "dataset": "active",
-    "description": "Junos® OS automates network operations with streamlined precision, furthers operational efficiency, and frees up valuable time and resources for top-line growth opportunities. Built for reliability, security, and flexibility, Junos OS runs many of the world’s most sophisticated network deployments, giving operators an advantage over those who run competing network operating systems.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Juniper Networks EX, QFX and ACX Series",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5135",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5135.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 2",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5135.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "1/14/2031",
-    "validation_date": "1/15/2026",
-    "validation_dates": [
-      "1/15/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "1/15/2026",
-        "lab": "Teron Labs",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1133 Innovation Way",
-        "Sunnyvale, California 94089",
-        "USA"
-      ],
-      "contact_email": "Certs-team@juniper.net",
-      "contact_name": "Bill Shelton",
-      "contact_phone": "408-745-2000",
-      "country": "USA",
-      "name": "Juniper Networks",
-      "website_url": "http://www.juniper.net"
-    },
-    "vendor_name": "Juniper Networks"
+    ]
   }
 }

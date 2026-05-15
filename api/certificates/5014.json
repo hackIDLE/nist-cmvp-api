@@ -1,22 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 78,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 78
     },
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
+    "certificate_number": "5014",
+    "dataset": "active",
+    "description": "The Amazon Linux 2023 NSS Cryptographic Module provides a C language application program interface designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSLv3, TLS, IKEv2, PKCS#5, PKCS#7, PKCS#11, PKCS#12, S/MIME, X.509 v3 certificates, and other security standards supporting FIPS 140-3 validated cryptographic algorithms.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Amazon Linux 2023 NSS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5014.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5014.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/1/2030",
+    "validation_date": "5/2/2025, 2/11/2026",
+    "validation_dates": [
+      "5/2/2025",
+      "2/11/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/2/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "2/11/2026",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Amazon Linux Security",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://www.amazon.com"
+    },
+    "vendor_name": "Amazon Web Services, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -111,65 +170,6 @@
       "RSA (decryption) | Asymmetric | Decryption",
       "DSA (parameter verification) | Parameter | verification",
       "DSA (key pair generation) | Key Pair | Generation"
-    ],
-    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
-    "certificate_number": "5014",
-    "dataset": "active",
-    "description": "The Amazon Linux 2023 NSS Cryptographic Module provides a C language application program interface designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSLv3, TLS, IKEv2, PKCS#5, PKCS#7, PKCS#11, PKCS#12, S/MIME, X.509 v3 certificates, and other security standards supporting FIPS 140-3 validated cryptographic algorithms.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Amazon Linux 2023 NSS Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5014",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5014.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5014.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "5/1/2030",
-    "validation_date": "5/2/2025, 2/11/2026",
-    "validation_dates": [
-      "5/2/2025",
-      "2/11/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "5/2/2025",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      },
-      {
-        "date": "2/11/2026",
-        "lab": "atsec information security corporation",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1918 8th Ave",
-        "Seattle, WA 98101",
-        "USA"
-      ],
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_name": "Amazon Linux Security",
-      "contact_phone": "000-000-0000",
-      "country": "USA",
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "http://www.amazon.com"
-    },
-    "vendor_name": "Amazon Web Services, Inc."
+    ]
   }
 }

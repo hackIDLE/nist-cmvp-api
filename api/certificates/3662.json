@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662",
     "certificate_number": "3662",
@@ -31,7 +24,7 @@
     "description": "The Solidigm SSD D7-D4512 Series is a PCIe* Gen3 SSD architected with a dual-port, NVMe* (Non-Volatile Memory Express*) controller delivering leading performance, low latency, and high availability. Matching the performance with world-class reliability and endurance, Solidigm SSD D7-D4512 Series offers a range of capacities - 1.92 TB, 3.84 TB, 7.68 TB, and 15.36 TB. With PCIe Gen 3 support and NVMe specification 1.2b implementation, the Solidigm SSD D7-D4512 Series is designed to support active/active dual port and recovery during fail over when one of the hosts becomes unavailable.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Solidigm DC SSD D7-D4512",
     "module_type": "Hardware",
@@ -97,6 +90,13 @@
       "name": "SK hynix NAND Product Solutions Corp, DBA Solidigm",
       "website_url": "http://www.solidigm.com"
     },
-    "vendor_name": "SK hynix NAND Product Solutions Corp, DBA Solidigm"
+    "vendor_name": "SK hynix NAND Product Solutions Corp, DBA Solidigm",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ]
   }
 }

@@ -1,22 +1,82 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4923"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 77,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 77
     },
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4923",
+    "certificate_number": "4923",
+    "dataset": "active",
+    "description": "The HID/Mercury FIPS Provider for OpenSSL 3 is a secure cryptographic module that enhances the cryptographic capabilities of HID and Mercury intelligent controllers, complying with the FIPS 140-3 standard. It integrates seamlessly with OpenSSL 3 to offer advanced encryption, decryption, hashing, and key management functions, ensuring high performance and robust security. Designed to meet stringent industry requirements, this provider ensures that all cryptographic operations are executed securely and efficiently, making it ideal for applications demanding the highest level of security assurance.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "HID/Mercury FIPS Provider for OpenSSL 3",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4923",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4923.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4923.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "12/18/2024, 8/20/2025",
+    "validation_dates": [
+      "12/18/2024",
+      "8/20/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/18/2024",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      },
+      {
+        "date": "8/20/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "611 Center Ridge Drive",
+        "Austin, TX 78753",
+        "USA"
+      ],
+      "contact_email": "michael.serafin@hidglobal.com",
+      "contact_name": "Michael Serafin",
+      "contact_phone": "562-986-9105",
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
+    },
+    "vendor_name": "[email protected]",
     "algorithms": [
       "AES",
       "CVL",
@@ -111,66 +171,6 @@
       "RSA SigVer (FIPS186-5) | A4481 | Hash Pair -Hash Algorithm - SHA-1Modulo - 2048, 3072, 4096Signature Type - pks1v1.5, pssMask Function - MGF1Public Exponent Mode - random | FIPS 186-5",
       "Hash DRBG with SHA3-256,SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST,SP800-90A Rev.1",
       "HMAC DRBG with SHA3-256,SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST,SP800-90A Rev.1"
-    ],
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4923",
-    "certificate_number": "4923",
-    "dataset": "active",
-    "description": "The HID/Mercury FIPS Provider for OpenSSL 3 is a secure cryptographic module that enhances the cryptographic capabilities of HID and Mercury intelligent controllers, complying with the FIPS 140-3 standard. It integrates seamlessly with OpenSSL 3 to offer advanced encryption, decryption, hashing, and key management functions, ensuring high performance and robust security. Designed to meet stringent industry requirements, this provider ensures that all cryptographic operations are executed securely and efficiently, making it ideal for applications demanding the highest level of security assurance.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "HID/Mercury FIPS Provider for OpenSSL 3",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4923",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4923.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4923.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/10/2029",
-    "validation_date": "12/18/2024, 8/20/2025",
-    "validation_dates": [
-      "12/18/2024",
-      "8/20/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "12/18/2024",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      },
-      {
-        "date": "8/20/2025",
-        "lab": "Acumen Security",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "611 Center Ridge Drive",
-        "Austin, TX 78753",
-        "USA"
-      ],
-      "contact_email": "michael.serafin@hidglobal.com",
-      "contact_name": "Michael Serafin",
-      "contact_phone": "562-986-9105",
-      "country": "USA",
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
-    },
-    "vendor_name": "[email protected]"
+    ]
   }
 }

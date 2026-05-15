@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "This module contains the embedded module OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #918 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374",
     "certificate_number": "1374",
@@ -32,7 +24,7 @@
     "description": "The AccessData Secure Network Communications FIPS 140-2 Object Module is a cryptographic module that operates as a multi-chip component library positioned between the FIPS 140-2 validated OpenSSL FIPS Object Module version 1.1.2 API and a host application. The AccessData Secure Network Communications module provides to any AccessData application that incorporates it, electronic encryption designed to prevent unauthorized access to data transferred across a physical or wireless TCP/IP network.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "AccessData Secure Network Communications FIPS 140-2 Module",
     "module_type": "Software",
@@ -78,6 +70,14 @@
       "name": "AccessData Corp",
       "website_url": "http://www.accessdata.com"
     },
-    "vendor_name": "AccessData Corp"
+    "vendor_name": "AccessData Corp",
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

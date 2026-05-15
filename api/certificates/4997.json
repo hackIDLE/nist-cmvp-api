@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security-relevant modification to Cert. #2038",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997",
     "certificate_number": "4997",
@@ -35,7 +24,7 @@
     "description": "Fujitsu Enterprise Postgres Cryptographic Module is the FIPS validated cryptographic library for Fujitsu Enterprise Postgres. This cryptographic library is used for communication data encryption, Transparent Data Encryption (TDE), etc. to provide data protection through robust cryptographic algorithms. Fujitsu Enterprise Postgres is based on the world-renowned open-source system - PostgreSQL, with additional enterprise grade features for enhanced security and better performance.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Fujitsu Enterprise Postgres Cryptographic Module",
     "module_type": "Software",
@@ -81,6 +70,17 @@
       "name": "Fujitsu Limited",
       "website_url": "http://www.fujitsu.com/global/"
     },
-    "vendor_name": "Fujitsu Limited"
+    "vendor_name": "Fujitsu Limited",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

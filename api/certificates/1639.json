@@ -1,30 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1639"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 6,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1639",
     "certificate_number": "1639",
@@ -32,7 +24,7 @@
     "description": "The Cisco 5940 is a high-performance, ruggedized router. With onboard hardware encryption, the Cisco 5940 offloads encryption processing from the router to provide highly secure yet scalable video, voice, and data services for mobile and embedded outdoor networks. The Cisco 5940 Embedded Services Routers provide a scalable, secure, manageable remote access server that meets FIPS 140-2 Level 1 requirements. The Cisco 5940 Router Card uses industrial-grade components and is optimized for harsh environments that require Cisco IOS Software routing technology.",
     "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cisco 5940 Embedded Services Routers",
     "module_type": "Hardware",
@@ -98,6 +90,14 @@
       "name": "Cisco Systems, Inc.",
       "website_url": "http://www.cisco.com"
     },
-    "vendor_name": "Cisco Systems, Inc."
+    "vendor_name": "Cisco Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHS"
+    ]
   }
 }

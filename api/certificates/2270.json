@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2270"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode and when tamper evident labels are installed on the initially built configuration as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2270",
     "certificate_number": "2270",
@@ -33,7 +24,7 @@
     "description": "The Cisco ONS 15454 Multiservice Transport Platform (MSTP) is the most deployed metropolitan-area (metro) and regional dense wavelength division multiplexing (DWDM) solution in the world featuring two- through eight-degree reconfigurable optical add/drop multiplexer (ROADM) technology that enables wavelength provisioning across entire networks and eliminates the need for optical-to-electrical-to-optical (OEO) transponder conversions.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cisco Optical Networking Solution (ONS) 15454 Multiservice Transport Platforms (MSTPs)",
     "module_type": "Hardware",
@@ -87,6 +78,15 @@
       "name": "Cisco Systems, Inc.",
       "website_url": "http://www.cisco.com"
     },
-    "vendor_name": "Cisco Systems, Inc."
+    "vendor_name": "Cisco Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHS"
+    ]
   }
 }

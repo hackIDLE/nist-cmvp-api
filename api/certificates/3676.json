@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #3014",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676",
     "certificate_number": "3676",
@@ -34,7 +24,7 @@
     "description": "The X-Wall MX+ chip is real-time SATA-to-SATA single chip crypto module. Both FIPS certified authentication method and in-line 6Gbps AES ECB/CBC/XTS 256-bit encryption capability are provided. The modules can be populated directly onto either the mainboard or SATA drive interface. The cryptographic operation is OS independent and doesn’t require host CPU and memory interventions. The Module supports a standard SATA interface and is compliant with the Trusted Computing Group (TCG) SSC specification Opal 2.0.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "X-Wall MX+",
     "module_type": "Hardware",
@@ -88,6 +78,16 @@
       "name": "Enova Technology Corporation",
       "website_url": "http://www.enovatech.com"
     },
-    "vendor_name": "Enova Technology Corporation"
+    "vendor_name": "Enova Technology Corporation",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

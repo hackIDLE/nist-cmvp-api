@@ -1,34 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 10,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "DSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH"
-    ],
     "caveat": "When operated with tamper-evident seals and wire seal installed as indicated in Section 5 of the Security Policy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952",
     "certificate_number": "3952",
@@ -36,7 +24,7 @@
     "description": "The WCC-PCN-AES100GB-F Encryption Module is a transponder for core telecommunication networks. The module transports plaintext 100GbE or OTU4 client side data services to and from the encrypted network interface. The module is a configuration of the ADVA Fiber Service Platform (FSP) 3000R7 scalable optical data transport system. The encryption module is composed of a WCC-PCN-AES100GB-F card assembly installed in a customer-chosen ADVA FSP 3000R7 shelf. ADVA FSP 3000R7 shelves are available in various form factors to host customer-chosen combinations of modular functionality and density.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "WCC-PCN-AES100GB-F Encryption Module with FSP 3000R7 Shelf",
     "module_type": "Hardware",
@@ -97,6 +85,18 @@
       "name": "Adva Network Security GmbH",
       "website_url": "http://www.advasecurity.com"
     },
-    "vendor_name": "Adva Network Security GmbH"
+    "vendor_name": "Adva Network Security GmbH",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "DSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH"
+    ]
   }
 }

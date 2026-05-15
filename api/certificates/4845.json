@@ -1,56 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 23,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 23
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "RSA",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "AES-CBC | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
-      "AES-CMAC | A2660 | Direction-Generation,VerificationKeyLength-128,192,256 | SP800-38B",
-      "AES-ECB | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
-      "AES-KW | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38F",
-      "ECDSA KeyGen(FIPS186-4) | A2663 | Curve-P-256,P-521 | FIPS186-4",
-      "ECDSA KeyVer(FIPS186-4) | A2663 | Curve-P-256,P-521 | FIPS186-4",
-      "ECDSA SigGen(FIPS186-4) | A2663 | Component-NoCurve-P-256,P-521 | FIPS186-4",
-      "ECDSA SigVer(FIPS186-4) | A2663 | Component-NoCurve-P-256,P-521 | FIPS186-4",
-      "Hash DRBG | A2662 | Prediction Resistance - No Mode-SHA2-256 | SP 800-90A Rev.1",
-      "HMAC-SHA2-256 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
-      "HMAC-SHA2-384 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
-      "HMAC-SHA2-512 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
-      "KAS-ECC Sp800-56Ar3 | A2659 | Domain Parameter Generation Methods-P-256,P-521Function-Key Pair GenerationSchemeephemeralUnified-KAS Role-Initiator,ResponderKeyLength-256 | SP 800-56ARev.3",
-      "RSA KeyGen(FIPS186-4) | A2663 | Key GenerationMode-B.3.3Modulo-2048Primality Tests-TableC.2Private Key Format-Standard | FIPS186-4",
-      "RSA SigGen(FIPS186-4) | A2663 | SignatureType-PKCS1.5Modulo-2048 | FIPS186-4",
-      "RSA SigVer(FIPS186-4) | A2663 | SignatureType-PKCS1.5Modulo-2048 | FIPS186-4",
-      "SHA2-256 | A2661 | - | FIPS180-4",
-      "SHA2-384 | A2661 | - | FIPS180-4",
-      "SHA2-512 | A2661 | - | FIPS180-4",
-      "\\[IG D.H\\] | \\[133\\] Sections 4 and 5.1 Asymmetric signature key generation using unmodified DRBG output:AisinoChip Electronics SCC-XE",
-      "\\[133\\] Sections 4 and 5.2 Asymmetric key establishment key generation using unmodified DRBG output:AisinoChip Electronics SCC-XE",
-      "\\[133\\] Sections 4 and 6.1 Direct symmetric key generation using unmodified DRBG output:ARM Cortex M0",
-      "\\[133\\] Section 6.2.1 Derivation of symmetric keys | mToken CryptoID Core DRBG Component | Key Generation"
-    ],
     "caveat": "When installed, initialized and configured as specified in Section 11of the Security Policy. When operated in approved mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845",
     "certificate_number": "4845",
@@ -58,7 +24,7 @@
     "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with Computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "mToken CryptoID",
     "module_type": "Hardware",
@@ -104,6 +70,40 @@
       "name": "Century Longmai Technology Co. Ltd",
       "website_url": "http://www.longmai.net/"
     },
-    "vendor_name": "Century Longmai Technology Co. Ltd"
+    "vendor_name": "Century Longmai Technology Co. Ltd",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-CMAC | A2660 | Direction-Generation,VerificationKeyLength-128,192,256 | SP800-38B",
+      "AES-ECB | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38A",
+      "AES-KW | A2660 | Direction-Decrypt,EncryptKeyLength-128,192,256 | SP800-38F",
+      "ECDSA KeyGen(FIPS186-4) | A2663 | Curve-P-256,P-521 | FIPS186-4",
+      "ECDSA KeyVer(FIPS186-4) | A2663 | Curve-P-256,P-521 | FIPS186-4",
+      "ECDSA SigGen(FIPS186-4) | A2663 | Component-NoCurve-P-256,P-521 | FIPS186-4",
+      "ECDSA SigVer(FIPS186-4) | A2663 | Component-NoCurve-P-256,P-521 | FIPS186-4",
+      "Hash DRBG | A2662 | Prediction Resistance - No Mode-SHA2-256 | SP 800-90A Rev.1",
+      "HMAC-SHA2-256 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
+      "HMAC-SHA2-384 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
+      "HMAC-SHA2-512 | A2661 | Key Length-Key Length:128-256 Increment8 | FIPS198-1",
+      "KAS-ECC Sp800-56Ar3 | A2659 | Domain Parameter Generation Methods-P-256,P-521Function-Key Pair GenerationSchemeephemeralUnified-KAS Role-Initiator,ResponderKeyLength-256 | SP 800-56ARev.3",
+      "RSA KeyGen(FIPS186-4) | A2663 | Key GenerationMode-B.3.3Modulo-2048Primality Tests-TableC.2Private Key Format-Standard | FIPS186-4",
+      "RSA SigGen(FIPS186-4) | A2663 | SignatureType-PKCS1.5Modulo-2048 | FIPS186-4",
+      "RSA SigVer(FIPS186-4) | A2663 | SignatureType-PKCS1.5Modulo-2048 | FIPS186-4",
+      "SHA2-256 | A2661 | - | FIPS180-4",
+      "SHA2-384 | A2661 | - | FIPS180-4",
+      "SHA2-512 | A2661 | - | FIPS180-4",
+      "\\[IG D.H\\] | \\[133\\] Sections 4 and 5.1 Asymmetric signature key generation using unmodified DRBG output:AisinoChip Electronics SCC-XE",
+      "\\[133\\] Sections 4 and 5.2 Asymmetric key establishment key generation using unmodified DRBG output:AisinoChip Electronics SCC-XE",
+      "\\[133\\] Sections 4 and 6.1 Direct symmetric key generation using unmodified DRBG output:ARM Cortex M0",
+      "\\[133\\] Section 6.2.1 Derivation of symmetric keys | mToken CryptoID Core DRBG Component | Key Generation"
+    ]
   }
 }

@@ -1,36 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3795"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode. When installed with the tamper evident seals and opacity shields, initialized and configured as specified in Section 3 of the Security Policy. This module contains the embedded module Cisco ASA Cryptographic Module validated to FIPS 140-2 under Cert. #3789 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3795",
     "certificate_number": "3795",
@@ -38,7 +24,7 @@
     "description": "This Cisco Firepower eXtensible Operating System (FX-OS) is part of the Cisco Application Centric Infrastructure (ACI) Security Solution and provides an agile, open, built for scalability, consistent control, and simplified management. The FX-OS provides provides high performance, flexible input/output configurations, and scalability. A graphical user interface provides streamlined, visual representation of current chassis status and simplified configuration of chassis features. A command-based interface for configuring features, monitoring chassis status, and accessing advanced troublesho",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cisco Firepower 4100 and Cisco Firepower 9300 Series",
     "module_type": "Hardware",
@@ -87,6 +73,20 @@
       "name": "Cisco Systems, Inc.",
       "website_url": "http://www.cisco.com"
     },
-    "vendor_name": "Cisco Systems, Inc."
+    "vendor_name": "Cisco Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH",
+      "TLS"
+    ]
   }
 }

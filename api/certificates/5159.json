@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5159"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 86,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 86
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5159",
+    "certificate_number": "5159",
+    "dataset": "active",
+    "description": "The BigFix Encryption Module based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "BigFix Encryption Module based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5159",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5159.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5159.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "2/13/2026",
+    "validation_dates": [
+      "2/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/13/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "330 Potrero Ave",
+        "Sunnyvale, CA 94085",
+        "USA"
+      ],
+      "contact_email": "devaughn.rackham@hclfederal.com",
+      "contact_name": "Devaughn Rackham",
+      "contact_phone": "507-990-0374",
+      "country": "USA",
+      "name": "HCL America, Inc.",
+      "website_url": "http://www.hcl-software.com"
+    },
+    "vendor_name": "HCL America, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -120,60 +174,6 @@
       "OneStep KDF | Usage of OneStep KDF with PRF SHAKE128, SHAKE256",
       "HMAC | Provides < 112 bits of security, Usage of HMAC with key length lessthan 112 bits for MAC generation",
       "Hash and HMACDRBG | Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384,SHA2-512/224 and SHA2-512/256"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5159",
-    "certificate_number": "5159",
-    "dataset": "active",
-    "description": "The BigFix Encryption Module based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "BigFix Encryption Module based on the OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5159",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5159.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5159.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "2/13/2026",
-    "validation_dates": [
-      "2/13/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "2/13/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "330 Potrero Ave",
-        "Sunnyvale, CA 94085",
-        "USA"
-      ],
-      "contact_email": "devaughn.rackham@hclfederal.com",
-      "contact_name": "Devaughn Rackham",
-      "contact_phone": "507-990-0374",
-      "country": "USA",
-      "name": "HCL America, Inc.",
-      "website_url": "http://www.hcl-software.com"
-    },
-    "vendor_name": "HCL America, Inc."
+    ]
   }
 }

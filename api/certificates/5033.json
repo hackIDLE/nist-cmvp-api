@@ -1,54 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5033"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 1,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 27,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 27
     },
-    "algorithms": [
-      "AES"
-    ],
-    "algorithms_detailed": [
-      "AES-ECB | A2116 | Direction - EncryptKey Length - 128, 256 | SP 800-38A",
-      "AES-ECB | A2117 | Direction -DecryptKey Length - 128, 256 | SP 800-38A",
-      "AES-ECB | A2886 | Direction - EncryptKey Length- 128, 256 | SP 800-38A",
-      "AES-ECB | A2887 | Direction -DecryptKey Length - 128, 256 | SP 800-38A",
-      "AES-XTS Testing Revision 2.0 | A2116 | Direction -EncryptKey Length - 128, 256 | SP 800-38E",
-      "AES-XTS TestingRevision 2.0 | A2117 | Direction - DecryptKey Length - 128, 256 | SP 800-38E",
-      "AES-XTS TestingRevision 2.0 | A2886 | Direction -EncryptKey Length- 128, 256 | SP 800-38E",
-      "AES-XTS Testing Revision 2.0 | A2887 | Direction - DecryptKey Length - 128, 256 | SP 800-38E",
-      "AES bitlocker | encryption and decryption",
-      "AES ECB | BC-UnAuth | AES ECBencryption/decryption | Keysize/strength:128and 256 bits | AES-ECB:(A2117,A2116,A2887,A2886)",
-      "AES XTS | BC-UnAuth | AES XTSencryption/decryption | Keysize/strength:128and 256 bits | AES-XTSTestingRevision 2.0:(A2117,A2116,A2887,A2886)",
-      "AESEncryption | Encryption | \"UFS\\_MEM\\_ICE\\_PARAMETERS\\_4\"register bits 0 and 1indicating value 00 | AESKey,plaintext | cipher text | AESECBAESXTS | Crypto Officer(CO)- AES Key:W,E",
-      "AESDecryption | Decryption | \"UFS\\_MEM\\_ICE\\_PARAMETERS\\_4\"register bits 0 and 1indicating value 00 | AESkey,cipher text | plaintext | AESECBAESXTS | CryptoOfficer(CO) AES Key:W,E",
-      "Zeroization | Zeroizesall SSps | None | registerlocation ofkeys | None | None | Crypto Oficer(CO)- AES Key:Z",
-      "Settingencryption anddecryption keys | Configuring thekeys tobe usedby themodule | None | AESKey | None | None | Cryptoficer(CO) AES Key:W",
-      "Bitlocker Encryption | Perform data encryption | AES bitlocker | CO",
-      "Bitlocker Decryption | Perform data decryption | AES bitlocker | CO",
-      "AESKey | AES ECB orXTS key | 128 and 256bits - 128 and256 bits | CSP - CSP | AESECBAESXTS",
-      "AES | Import | Hardware | Until explicitly | Module",
-      "AES-ECB(A2117) | 256 bit key | decryption | CAST | Modulebecomesoperational andservices areavailable foruse | DecryptAT forECB | Moduleinitialization",
-      "AES-ECB(A2116) | 256 bit key | encryption | CAST | Modulebecomesoperational andservices areavailable foruse | EncryptKAT forECB | Moduleinitialization",
-      "AES-ECB(A2886) | 256 bit key | encryption | CAST | Modulebecomesoperational andservices areavailable foruse | EncryptAT forECB | Moduleinitialization",
-      "AES-ECB(A2887) | 256 bit key | decryption | CAST | Modulebecomesoperational andservices areavailable foruse | DecryptKAT forECB | Moduleinitialization",
-      "AES-ECB(A2117) | decryption | CAST | On demand | Manually",
-      "AES-ECB(A2116) | encryption | CAST | On demand | Manually",
-      "AES-ECB(A2886) | encryption | CAST | On demand | Manually",
-      "AES-ECB(A2887) | decryption | CAST | On demand | Manually"
-    ],
     "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5033",
     "certificate_number": "5033",
@@ -56,7 +24,7 @@
     "description": "Qualcomm Inline Crypto Engine (UFS) provides high throughput storage data encryption and decryption.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
     "module_type": "Hardware",
@@ -111,6 +79,38 @@
       "name": "Qualcomm Technologies, Inc.",
       "website_url": "http://www.qualcomm.com"
     },
-    "vendor_name": "Qualcomm Technologies, Inc."
+    "vendor_name": "Qualcomm Technologies, Inc.",
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB | A2116 | Direction - EncryptKey Length - 128, 256 | SP 800-38A",
+      "AES-ECB | A2117 | Direction -DecryptKey Length - 128, 256 | SP 800-38A",
+      "AES-ECB | A2886 | Direction - EncryptKey Length- 128, 256 | SP 800-38A",
+      "AES-ECB | A2887 | Direction -DecryptKey Length - 128, 256 | SP 800-38A",
+      "AES-XTS Testing Revision 2.0 | A2116 | Direction -EncryptKey Length - 128, 256 | SP 800-38E",
+      "AES-XTS TestingRevision 2.0 | A2117 | Direction - DecryptKey Length - 128, 256 | SP 800-38E",
+      "AES-XTS TestingRevision 2.0 | A2886 | Direction -EncryptKey Length- 128, 256 | SP 800-38E",
+      "AES-XTS Testing Revision 2.0 | A2887 | Direction - DecryptKey Length - 128, 256 | SP 800-38E",
+      "AES bitlocker | encryption and decryption",
+      "AES ECB | BC-UnAuth | AES ECBencryption/decryption | Keysize/strength:128and 256 bits | AES-ECB:(A2117,A2116,A2887,A2886)",
+      "AES XTS | BC-UnAuth | AES XTSencryption/decryption | Keysize/strength:128and 256 bits | AES-XTSTestingRevision 2.0:(A2117,A2116,A2887,A2886)",
+      "AESEncryption | Encryption | \"UFS\\_MEM\\_ICE\\_PARAMETERS\\_4\"register bits 0 and 1indicating value 00 | AESKey,plaintext | cipher text | AESECBAESXTS | Crypto Officer(CO)- AES Key:W,E",
+      "AESDecryption | Decryption | \"UFS\\_MEM\\_ICE\\_PARAMETERS\\_4\"register bits 0 and 1indicating value 00 | AESkey,cipher text | plaintext | AESECBAESXTS | CryptoOfficer(CO) AES Key:W,E",
+      "Zeroization | Zeroizesall SSps | None | registerlocation ofkeys | None | None | Crypto Oficer(CO)- AES Key:Z",
+      "Settingencryption anddecryption keys | Configuring thekeys tobe usedby themodule | None | AESKey | None | None | Cryptoficer(CO) AES Key:W",
+      "Bitlocker Encryption | Perform data encryption | AES bitlocker | CO",
+      "Bitlocker Decryption | Perform data decryption | AES bitlocker | CO",
+      "AESKey | AES ECB orXTS key | 128 and 256bits - 128 and256 bits | CSP - CSP | AESECBAESXTS",
+      "AES | Import | Hardware | Until explicitly | Module",
+      "AES-ECB(A2117) | 256 bit key | decryption | CAST | Modulebecomesoperational andservices areavailable foruse | DecryptAT forECB | Moduleinitialization",
+      "AES-ECB(A2116) | 256 bit key | encryption | CAST | Modulebecomesoperational andservices areavailable foruse | EncryptKAT forECB | Moduleinitialization",
+      "AES-ECB(A2886) | 256 bit key | encryption | CAST | Modulebecomesoperational andservices areavailable foruse | EncryptAT forECB | Moduleinitialization",
+      "AES-ECB(A2887) | 256 bit key | decryption | CAST | Modulebecomesoperational andservices areavailable foruse | DecryptKAT forECB | Moduleinitialization",
+      "AES-ECB(A2117) | decryption | CAST | On demand | Manually",
+      "AES-ECB(A2116) | encryption | CAST | On demand | Manually",
+      "AES-ECB(A2886) | encryption | CAST | On demand | Manually",
+      "AES-ECB(A2887) | decryption | CAST | On demand | Manually"
+    ]
   }
 }

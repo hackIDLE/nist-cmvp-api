@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "ECDSA",
-      "KDF",
-      "KTS",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "When operated in FIPS mode; When installed, initialized and configured as specified in Section 8 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691",
     "certificate_number": "3691",
@@ -34,7 +24,7 @@
     "description": "The NXP RoadLINK SXF1800 Secure Element is supporting tamper resistant cryptographic functionality as required by V2X standards and applications. The SXF1800 is designed for configurable support for North American and European V2X standards defined to protect the integrity of exchanged safety messages and to enable authentication of V2X participants.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "SXF1800",
     "module_type": "Hardware",
@@ -83,6 +73,16 @@
       "name": "NXP Semiconductors Netherlands B.V.",
       "website_url": "http://www.nxp.com"
     },
-    "vendor_name": "NXP Semiconductors Netherlands B.V."
+    "vendor_name": "NXP Semiconductors Netherlands B.V.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "KDF",
+      "KTS",
+      "SHA",
+      "SHS"
+    ]
   }
 }

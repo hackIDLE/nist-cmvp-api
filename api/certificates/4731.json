@@ -1,49 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 18,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 18
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "AES-CBC | A6624 | - | SP 800-38A",
-      "AES-CCM | A6624 | - | SP 800-38C",
-      "AES-CMAC | A6624 | - | SP 800-38B",
-      "AES-ECB | A6624 | - | SP 800-38A",
-      "AES-GCM | A6624 | - | SP 800-38D",
-      "AES-GMAC | A6624 | - | SP 800-38D",
-      "AES-KWP | A6624 | - | SP 800-38F",
-      "AES-XTS Testing Revision 2.0 | A6624 | - | SP 800-38E",
-      "Counter DRBG | A6624 | - | SP 800-90A Rev.1",
-      "HMAC-SHA-1 | A6624 | - | FIPS 198-1",
-      "HMAC-SHA2-256 | A6624 | - | FIPS 198-1",
-      "HMAC-SHA2-512 | A6624 | - | FIPS 198-1",
-      "KDF SP800-108 | A6624 | - | SP 800-108 Rev.1",
-      "PBKDF | A6624 | - | SP 800-132",
-      "SHA-1 | A6624 | - | FIPS 180-4",
-      "SHA2-256 | A6624 | - | FIPS 180-4",
-      "SHA2-512 | A6624 | - | FIPS 180-4",
-      "SHA3-256 | A6624 | - | FIPS 202"
-    ],
     "caveat": "Interim validation. When installed, initialized and configured as specified in section 11 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731",
     "certificate_number": "4731",
@@ -51,7 +24,7 @@
     "description": "NetApp CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption services for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software-only cryptographic module.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "NetApp CryptoMod",
     "module_type": "Software",
@@ -106,6 +79,33 @@
       "name": "NetApp, Inc.",
       "website_url": "http://www.netapp.com"
     },
-    "vendor_name": "NetApp, Inc."
+    "vendor_name": "NetApp, Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A6624 | - | SP 800-38A",
+      "AES-CCM | A6624 | - | SP 800-38C",
+      "AES-CMAC | A6624 | - | SP 800-38B",
+      "AES-ECB | A6624 | - | SP 800-38A",
+      "AES-GCM | A6624 | - | SP 800-38D",
+      "AES-GMAC | A6624 | - | SP 800-38D",
+      "AES-KWP | A6624 | - | SP 800-38F",
+      "AES-XTS Testing Revision 2.0 | A6624 | - | SP 800-38E",
+      "Counter DRBG | A6624 | - | SP 800-90A Rev.1",
+      "HMAC-SHA-1 | A6624 | - | FIPS 198-1",
+      "HMAC-SHA2-256 | A6624 | - | FIPS 198-1",
+      "HMAC-SHA2-512 | A6624 | - | FIPS 198-1",
+      "KDF SP800-108 | A6624 | - | SP 800-108 Rev.1",
+      "PBKDF | A6624 | - | SP 800-132",
+      "SHA-1 | A6624 | - | FIPS 180-4",
+      "SHA2-256 | A6624 | - | FIPS 180-4",
+      "SHA2-512 | A6624 | - | FIPS 180-4",
+      "SHA3-256 | A6624 | - | FIPS 202"
+    ]
   }
 }

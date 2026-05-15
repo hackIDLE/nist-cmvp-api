@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5082"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 16,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 53,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 53
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5082",
+    "certificate_number": "5082",
+    "dataset": "active",
+    "description": "The Arctera Cryptographic Module for Java delivers core cryptographic functions for use in Arctera products.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Arctera Cryptographic Module for Java",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5082",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5082.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5082.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "10/21/2025",
+    "validation_dates": [
+      "10/21/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "10/21/2025",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "6200 Stoneridge Mall Road",
+        "Suite 150",
+        "Pleasanton, CA 94588",
+        "USA"
+      ],
+      "contact_email": "James.Jackson@arctera.io",
+      "contact_name": "James \"Jax\" Jackson",
+      "contact_phone": "908-500-0483",
+      "country": "USA",
+      "name": "Arctera US LLC",
+      "website_url": "https://www.arctera.io"
+    },
+    "vendor_name": "Arctera US LLC",
     "algorithms": [
       "AES",
       "CVL",
@@ -89,60 +143,6 @@
       "RSA KTS(non-compliant16) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5082",
-    "certificate_number": "5082",
-    "dataset": "active",
-    "description": "The Arctera Cryptographic Module for Java delivers core cryptographic functions for use in Arctera products.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Arctera Cryptographic Module for Java",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5082",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5082.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5082.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/28/2029",
-    "validation_date": "10/21/2025",
-    "validation_dates": [
-      "10/21/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "10/21/2025",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "6200 Stoneridge Mall Road",
-        "Suite 150",
-        "Pleasanton, CA 94588",
-        "USA"
-      ],
-      "contact_email": "James.Jackson@arctera.io",
-      "contact_name": "James \"Jax\" Jackson",
-      "contact_phone": "908-500-0483",
-      "country": "USA",
-      "name": "Arctera US LLC",
-      "website_url": "https://www.arctera.io"
-    },
-    "vendor_name": "Arctera US LLC"
+    ]
   }
 }

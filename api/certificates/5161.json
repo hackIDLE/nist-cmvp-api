@@ -1,22 +1,77 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 153,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 153
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
+    "certificate_number": "5161",
+    "dataset": "active",
+    "description": "The Versa Operating System (VOS) Cryptographic Module based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Versa Operating System (VOS) Cryptographic Module based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5161.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5161.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "2/13/2026",
+    "validation_dates": [
+      "2/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/13/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2550 Great America Way",
+        "Suite 350",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "kumarbm@versa-networks.com",
+      "contact_name": "Kumar Mehta",
+      "contact_phone": "408-385-7660",
+      "country": "USA",
+      "name": "Versa Networks, Inc.",
+      "website_url": "http://www.versa-networks.com"
+    },
+    "vendor_name": "Versa Networks, Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -187,61 +242,6 @@
       "AES-CBC-CS1:(A3548)",
       "AES-CBC-CS2:(A3548)",
       "AES-CBC-CS3:(A3548)"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
-    "certificate_number": "5161",
-    "dataset": "active",
-    "description": "The Versa Operating System (VOS) Cryptographic Module based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Versa Operating System (VOS) Cryptographic Module based on the OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5161",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5161.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5161.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "2/13/2026",
-    "validation_dates": [
-      "2/13/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "2/13/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "2550 Great America Way",
-        "Suite 350",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "contact_email": "kumarbm@versa-networks.com",
-      "contact_name": "Kumar Mehta",
-      "contact_phone": "408-385-7660",
-      "country": "USA",
-      "name": "Versa Networks, Inc.",
-      "website_url": "http://www.versa-networks.com"
-    },
-    "vendor_name": "Versa Networks, Inc."
+    ]
   }
 }

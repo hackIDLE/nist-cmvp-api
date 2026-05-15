@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1052"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1052",
     "certificate_number": "1052",
@@ -30,7 +24,7 @@
     "description": "The Cyberflex Access 64K V2 with PKI applets provides secure PKI (public key infrastructure) and digital signature technology. Cyberflex Access 64K V2 serves as a highly portable, secure device for enhancing the security of network access and ensuring secure electronic communications. Cyberflex Access 64K V2 supports on-card Triple-DES, AES and 2048-bit RSA algorithms with on-card key generation. It is compliant to Java Card v2.1.1 and Open Platform v2.0.1. The Cyberflex Access 64K V2 smart card fits well into physical and logical access, e-transactions and other applications.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "TOP IM CY2 with ACS PKI applet (formerly Cyberflex Access 64K V2 with PKI applets)",
     "module_type": "Hardware",
@@ -87,6 +81,12 @@
       "name": "Gemalto",
       "website_url": "http://www.gemalto.com"
     },
-    "vendor_name": "Gemalto"
+    "vendor_name": "Gemalto",
+    "algorithms": [
+      "AES",
+      "DES",
+      "RSA",
+      "SHA"
+    ]
   }
 }

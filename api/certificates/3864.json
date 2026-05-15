@@ -1,36 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3864"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 12,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3864",
     "certificate_number": "3864",
@@ -38,7 +24,7 @@
     "description": "ID-One PIV 2.4 on Cosmo V8.2 – SPE configurations, is a dual interface smartcard chip (ISO 7816 & ISO 14443) that contains a Personal Identity Verification (PIV) application with On-Card-Fingerprints-Comparison that has been enhanced from FIPS 201-2 PIV Standard from NIST to offer higher security and stronger cryptography for an overall level 3 validation and address the needs of Governments and Entreprises around the world.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "ID-One PIV 2.4 on Cosmo V8.2 SPE Configurations",
     "module_type": "Hardware",
@@ -86,6 +72,20 @@
       "name": "IDEMIA",
       "website_url": "http://www.idemia.com"
     },
-    "vendor_name": "IDEMIA"
+    "vendor_name": "IDEMIA",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2415"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2415",
     "certificate_number": "2415",
@@ -34,7 +24,7 @@
     "description": "The IDeal Citiz™ v2.0 Open is a single chip cryptographic module, which combines an implementation of the Sun Java Card Version 3.0.2 Classic Edition and GlobalPlatform Version 2.1.1 specifications on a dual interface chip (ISO 7816 contact and ISO 14443 contactless interface communication protocols). The module aims to host applets written in Java programming language and relying on cryptographic services and biometric features available at platform level. In particular, Ideal Citiz™ v2.0 Open allows third party developers to implement the biometric \"Match On Card\" user authentication.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "IDeal Citiz™ v2.0 Open",
     "module_type": "Hardware",
@@ -80,6 +70,16 @@
       "name": "Morpho",
       "website_url": "http://www.morpho.com"
     },
-    "vendor_name": "Morpho"
+    "vendor_name": "Morpho",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ]
   }
 }

@@ -1,28 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1257"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 4,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "HMAC",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1257",
     "certificate_number": "1257",
@@ -30,7 +24,7 @@
     "description": "libcmscrypto is a library implemented in the Comtech Mobile Datacom Corp. products and provides the basic cryptographic functionality that includes Advanced Encryption Standard (AES) algorithm, SHA1 message digest, HMAC SHA-1 Keyed-Hash message authentication code.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Comtech Mobile Datacom Corporation Cryptographic Library (libcmscrypto)",
     "module_type": "Software",
@@ -82,6 +76,12 @@
       "name": "Comtech Mobile Datacom Corporation",
       "website_url": "http://www.comtechmobile.com"
     },
-    "vendor_name": "Comtech Mobile Datacom Corporation"
+    "vendor_name": "Comtech Mobile Datacom Corporation",
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "SHA"
+    ]
   }
 }

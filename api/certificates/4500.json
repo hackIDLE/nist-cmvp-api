@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SSH"
-    ],
     "caveat": "The tamper evident seals installed as indicated in the security policy; This module contains the embedded module StarSign Crypto-USB Token S powered by Sm@rtCafé Expert 7.0 Secure Element validated to FIPS 140-2 under Cert. #2628 operating in FIPS mode.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500",
     "certificate_number": "4500",
@@ -33,7 +24,7 @@
     "description": "The 10TCE-PCN-16GU+AES100G-F encryption module is used for encryption and decryption of data transmitted over Optical Transportation Network (OTN) links. It is used in Adva Network Security's FSP 3000 Optical Network Encryption solutions.",
     "embodiment": "Multi-Chip Embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Encryption Module 10TCE-PCN-16GU+AES100G-F",
     "module_type": "Hardware",
@@ -87,6 +78,15 @@
       "name": "Adva Network Security GmbH",
       "website_url": "http://www.advasecurity.com"
     },
-    "vendor_name": "Adva Network Security GmbH"
+    "vendor_name": "Adva Network Security GmbH",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ]
   }
 }

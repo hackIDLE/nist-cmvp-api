@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3570"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS",
-      "SSH"
-    ],
     "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Section 9 of the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3570",
     "certificate_number": "3570",
@@ -37,7 +24,7 @@
     "description": "The Cisco Network Convergence System 5500 Series is a family of routing platforms including fixed and modular chassis. The platform offers high port density, high performance forwarding, low jitter and the lowest power consumption per Gigabits/sec at a very cost-effective price point. The routers meet FIPS 140-2 overall Level 1 requirements as multi-chip standalone modules. The modules include cryptographic algorithms implemented in IOS-XR software.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Cisco NCS 5500 Series Routers",
     "module_type": "Hardware",
@@ -87,6 +74,19 @@
       "name": "Cisco Systems, Inc.",
       "website_url": "https://www.cisco.com"
     },
-    "vendor_name": "Cisco Systems, Inc."
+    "vendor_name": "Cisco Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "SSH"
+    ]
   }
 }

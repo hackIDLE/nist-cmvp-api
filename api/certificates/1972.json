@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1972"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ],
     "caveat": "None",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1972",
     "certificate_number": "1972",
@@ -34,7 +24,7 @@
     "description": "HiPKI SafGuard 1200 HSM is a multi-chip standalone cryptographic module that is used to provide highly-secure cryptographic services and key storage for PKI applications. (e.g., secure private key storage, high-speed accelerator for 1024-4096 bit RSA and ECDSA signatures, and hashing). The HiPKI SafGuard 1200 HSM provides secure identity-based authentication using smart cards and data encryption using FIPS approved Triple-DES and AES encryption.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HiPKI SafGuard 1200 HSM",
     "module_type": "Hardware",
@@ -80,6 +70,16 @@
       "name": "Chunghwa Telecom Laboratories",
       "website_url": "http://www.chttl.com.tw"
     },
-    "vendor_name": "Chunghwa Telecom Laboratories"
+    "vendor_name": "Chunghwa Telecom Laboratories",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ]
   }
 }

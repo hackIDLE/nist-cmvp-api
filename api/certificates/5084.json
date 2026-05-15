@@ -1,22 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5084"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 15,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 57,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 57
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5084",
+    "certificate_number": "5084",
+    "dataset": "active",
+    "description": "The Cloudera Cryptographic Module for Java is a FIPS 140-3 Validated Cryptographic provider for use with Cloudera products. The module delivers core cryptographic functions to Cloudera products and features robust algorithm support.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "Cloudera Cryptographic Module for Java",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5084",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5084.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5084.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "10/22/2025, 3/2/2026",
+    "validation_dates": [
+      "10/22/2025",
+      "3/2/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "10/22/2025",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      },
+      {
+        "date": "3/2/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "5470 Great America Pkwy.",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "security@cloudera.com",
+      "contact_name": "Cloudera Compliance Team",
+      "contact_phone": "+1-888-789-1488",
+      "country": "USA",
+      "name": "Cloudera, Inc.",
+      "website_url": "https://www.cloudera.com/"
+    },
+    "vendor_name": "Cloudera, Inc.",
     "algorithms": [
       "AES",
       "DES",
@@ -92,65 +151,6 @@
       "RSA KTS(non-compliant $ ^{16} $) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5084",
-    "certificate_number": "5084",
-    "dataset": "active",
-    "description": "The Cloudera Cryptographic Module for Java is a FIPS 140-3 Validated Cryptographic provider for use with Cloudera products. The module delivers core cryptographic functions to Cloudera products and features robust algorithm support.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "Cloudera Cryptographic Module for Java",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5084",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5084.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5084.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/28/2029",
-    "validation_date": "10/22/2025, 3/2/2026",
-    "validation_dates": [
-      "10/22/2025",
-      "3/2/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "10/22/2025",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      },
-      {
-        "date": "3/2/2026",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "5470 Great America Pkwy.",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "contact_email": "security@cloudera.com",
-      "contact_name": "Cloudera Compliance Team",
-      "contact_phone": "+1-888-789-1488",
-      "country": "USA",
-      "name": "Cloudera, Inc.",
-      "website_url": "https://www.cloudera.com/"
-    },
-    "vendor_name": "Cloudera, Inc."
+    ]
   }
 }

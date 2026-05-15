@@ -1,37 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4649"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 13,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "KAS",
-      "KDF",
-      "KTS",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "The tamper evident seals are installed as indicated in the Security Policy. This module contains the embedded module NPCT6XX TPM 2.0 validated to FIPS 140-2 under Cert. #2627 operating in FIPS mode.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4649",
     "certificate_number": "4649",
@@ -39,7 +24,7 @@
     "description": "The Maxar AEDS is a network based ground to spacecraft AES GCM & CTR mode encryption/decryption appliance hosted on a 1U network security server. It can support multiple channels simultaneously on up to 6 different subnets with speeds over 75 Mbit/s. There is a web based Crypto Operator interface for easy set-up and configuration. The User interfaces are TCP/IP socket based and follow a straightforward ICD. Both are protected with TLS 1.2.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Maxar AEDS",
     "module_type": "Hardware",
@@ -87,6 +72,21 @@
       "name": "Maxar Technologies",
       "website_url": "http://www.maxar.com/space-infrastructure"
     },
-    "vendor_name": "Maxar Technologies"
+    "vendor_name": "Maxar Technologies",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

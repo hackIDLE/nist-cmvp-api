@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4445"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode with module [Google Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module] validated to FIPS 140-2 under Cert. #4400 operating in FIPS mode.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4445",
     "certificate_number": "4445",
@@ -29,7 +24,7 @@
     "description": "The Look-aside Cryptography and Compression Engine (LCE) module is comprised of a sub-chip cryptographic subsystem in the Google IN762 SoC. The module provides lookaside cryptography services including bulk encryption, cryptographic hashing, Integrity Checksum Value (ICV) verification, and compression services. The module also supports operation chaining including cryptographic and pipeline compressing/decompressing and verification as well as standalone or combined DMA data (payload) transfers between nodes.",
     "embodiment": "Single Chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Look-aside Cryptography and Compression Engine (LCE)",
     "module_type": "Hardware",
@@ -77,6 +72,11 @@
       "name": "Google, LLC",
       "website_url": "http://www.google.com"
     },
-    "vendor_name": "Google, LLC"
+    "vendor_name": "Google, LLC",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ]
   }
 }

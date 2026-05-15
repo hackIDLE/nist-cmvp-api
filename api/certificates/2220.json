@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2220"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated with module Windows Server 2008 R2 Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #1337 operating in FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2220",
     "certificate_number": "2220",
@@ -31,7 +24,7 @@
     "description": "The module is the Guidance Software EnCase Cryptographic Engine, version 1.0, which is a software shared library that provides cryptographic services required by Guidance Software host applications.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Guidance Software EnCase Cryptographic Engine",
     "module_type": "Software",
@@ -81,6 +74,13 @@
       "name": "Guidance Software, Inc.",
       "website_url": "http://www.guidancesoftware.com"
     },
-    "vendor_name": "Guidance Software, Inc."
+    "vendor_name": "Guidance Software, Inc.",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

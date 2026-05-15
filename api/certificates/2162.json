@@ -1,29 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2162"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 5,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated with module Windows Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Certs. #1002, #1330, and #1337 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2162",
     "certificate_number": "2162",
@@ -31,7 +24,7 @@
     "description": "The Encryptics Cryptographic Library underpins Encryptics technology and offers protection by industry-standard, government approved algorithms to ensure that only authorized users and authorized devices are allowed to access private information stored within the .SAFE package. Encryptics for Email and Encryptics Data Protection API both leverage the Encryptics .SAFE Library to ensure use of FIPS 140-2 validated cryptography.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Encryptics® Cryptographic Library",
     "module_type": "Software",
@@ -93,6 +86,13 @@
       "name": "Encryptics",
       "website_url": "http://www.encryptics.com/"
     },
-    "vendor_name": "Encryptics"
+    "vendor_name": "Encryptics",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ]
   }
 }

@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5147"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 14,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 110,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 110
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5147",
+    "certificate_number": "5147",
+    "dataset": "active",
+    "description": "The VMware’s OpenSSL FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "VMware’s OpenSSL FIPS Provider based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5147",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5147.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5147.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "1/27/2026",
+    "validation_dates": [
+      "1/27/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/27/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3401 Hillview Avenue",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "madhur.walia@broadcom.com",
+      "contact_name": "Madhur Walia",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Broadcom Inc.",
+      "website_url": "http://www.broadcom.com"
+    },
+    "vendor_name": "Broadcom Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -144,60 +198,6 @@
       "SoftwareIntegrityTest | MAC | HMAC-SHA2-256used to perform the software integrity test | Key size:256 bits | HMAC-SHA2-256",
       "CryptographicKeyGeneration(CKG)-AESXTS | CKG | AES XTS Key generated to comply with the approved key generation guidelines of NISTSP 800-133rev2,Section6.3,Symmetric KeysProduced byCombiningMultipleKeysandOtherData | Key size:128,256bits | CKG - Section6.3",
       "KTS-5 | KTS-Unwrap | Key Unwrappingusing any non-authenticatedAESmode | KTS(keyunwrapping)perIGD.G:128,192,and256-bitkeyss providing128,192,or256bitsof decryptionstrength | AES-CBCAES-CFB1AES-CFB128AES-CFB8AES-CTRAES-ECBAES-OFBAES-CBC-CS1AES-CBC-CS2AES-CBC-CS3"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5147",
-    "certificate_number": "5147",
-    "dataset": "active",
-    "description": "The VMware’s OpenSSL FIPS Provider based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "VMware’s OpenSSL FIPS Provider based on the OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5147",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5147.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5147.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "3/10/2030",
-    "validation_date": "1/27/2026",
-    "validation_dates": [
-      "1/27/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "1/27/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "3401 Hillview Avenue",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "contact_email": "madhur.walia@broadcom.com",
-      "contact_name": "Madhur Walia",
-      "contact_phone": null,
-      "country": "USA",
-      "name": "Broadcom Inc.",
-      "website_url": "http://www.broadcom.com"
-    },
-    "vendor_name": "Broadcom Inc."
+    ]
   }
 }

@@ -1,44 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5253"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 15,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 15
     },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "AES-CBC | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
-      "AES-ECB | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
-      "HMAC-SHA-1 | A3242 | MAC-MAC:160KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
-      "HMAC-SHA2-224 | A3242 | MAC-MAC:224KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
-      "HMAC-SHA2-256 | A3242 | MAC-MAC:256KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
-      "HMAC-SHA2-384 | A3242 | MAC-MAC:384KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
-      "HMAC-SHA2-512 | A3242 | MAC-MAC:512KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
-      "SHA-1 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
-      "SHA2-224 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
-      "SHA2-256 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
-      "SHA2-384 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
-      "SHA2-512 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
-      "ESSIV-CBC-AES | Disk encryption/decryption with using AES(CBC)and SHA2-256",
-      "AES-CTR | Symmetric Encryption and Decryption.",
-      "AES-XTS | Disk encryption/decryption"
-    ],
     "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5253",
     "certificate_number": "5253",
@@ -46,7 +24,7 @@
     "description": "The Samsung Kernel Cryptographic Module is a software library implementing general-purpose cryptographic algorithms.",
     "embodiment": "MultiChipStand",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Samsung Kernel Cryptographic Module",
     "module_type": "Software",
@@ -92,6 +70,28 @@
       "name": "Samsung Electronics Co., Ltd.",
       "website_url": "http://www.samsung.com"
     },
-    "vendor_name": "Samsung Electronics Co., Ltd."
+    "vendor_name": "Samsung Electronics Co., Ltd.",
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "AES-ECB | A3242 | Direction-Decrypt,EncryptKey Length-128,192,256 | SP 800-38A",
+      "HMAC-SHA-1 | A3242 | MAC-MAC:160KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-224 | A3242 | MAC-MAC:224KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-256 | A3242 | MAC-MAC:256KeyLength-KeyLength:256,384,768,1024 | FIPS 198-1",
+      "HMAC-SHA2-384 | A3242 | MAC-MAC:384KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
+      "HMAC-SHA2-512 | A3242 | MAC-MAC:512KeyLength-KeyLength:256,384,1072,1280 | FIPS 198-1",
+      "SHA-1 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-224 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-256 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-384 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "SHA2-512 | A3242 | MessageLength-MessageLength:0-65536Increment8 | FIPS 180-4",
+      "ESSIV-CBC-AES | Disk encryption/decryption with using AES(CBC)and SHA2-256",
+      "AES-CTR | Symmetric Encryption and Decryption.",
+      "AES-XTS | Disk encryption/decryption"
+    ]
   }
 }

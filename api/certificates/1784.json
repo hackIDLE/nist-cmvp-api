@@ -1,31 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1784"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident seals and security devices installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1784",
     "certificate_number": "1784",
@@ -33,7 +24,7 @@
     "description": "The HP 5400 Switch series consists of Layer 2/3/4 switches which support integrated advanced capabilities in chassis (6-slot and 12-slot) form factor and offer maximum flexibility, life time warranty and lowered TCO. The HP 8200 zl Switch Series offers high performance, scalability, and a wide range of features in a high-availability platform that dramatically reduces complexity and provides reduced cost of ownership.",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "HP Networking 5400 zl [1,2] and 8200 zl [3,4] Switch Series",
     "module_type": "Hardware",
@@ -85,6 +76,15 @@
       "name": "Hewlett-Packard Company",
       "website_url": "http://www.hp.com/networking"
     },
-    "vendor_name": "Hewlett-Packard Company"
+    "vendor_name": "Hewlett-Packard Company",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH"
+    ]
   }
 }

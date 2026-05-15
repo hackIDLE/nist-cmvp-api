@@ -1,32 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2298"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 8,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ],
     "caveat": "When operated in FIPS mode and when installed, initialized and configured as specified in the Security Policy in Appendix A",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2298",
     "certificate_number": "2298",
@@ -34,7 +24,7 @@
     "description": "The Advanced Configurable Cryptographic Environment (ACCE) v3 crypto module offers the next-generation security platform for managing cryptographic keys and protecting sensitive applications. It is used in the Keyper Plus hardware security module (HSM), which is designed for mission-critical applications that demand maximum security. It is ideally suited for companies that need secure key management for PKI certification authorities, registration authorities, OCSP responders, smart card issuers, web servers, DNSSEC and other applications.",
     "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Advanced Configurable Cryptographic Environment (ACCE) v3 HSM Crypto Module",
     "module_type": "Hardware",
@@ -90,6 +80,16 @@
       "name": "Ultra Electronics AEP",
       "website_url": "http://www.ultra-aep.com"
     },
-    "vendor_name": "Ultra Electronics AEP"
+    "vendor_name": "Ultra Electronics AEP",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ]
   }
 }

@@ -1,33 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2281"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 9,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident labels installed and with the configurations in Tables 8, 13 and 17 as defined in the Security Policy. No assurance of module integrity when operating in non-FIPS mode",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2281",
     "certificate_number": "2281",
@@ -35,7 +24,7 @@
     "description": "The Brocade NetIron CER 2000 Series is a family of compact routers that are purpose-built for high-performance Ethernet edge routing and MPLS applications. These fixed-form routers can store a complete Internet table and are ideal for supporting a wide range of applications in Metro Ethernet, data center, and campus networks. The Brocade NetIron CES 2000 Series of switches provides IP routing and advanced Carrier Ethernet capabilities in a compact form factor. These fixed-form 10 GbE-capable 1U switches offer deep buffers and are ideal for Carrier Ethernet service delivery at the network ed",
     "embodiment": "Multi-chip standalone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Brocade® MLXe® and Brocade NetIron® CER 2000 Series Ethernet Routers, Brocade NetIron CES 2000 Series Ethernet Switches",
     "module_type": "Hardware",
@@ -84,6 +73,17 @@
       "name": "Brocade Communications Systems, Inc.",
       "website_url": "http://www.brocade.com"
     },
-    "vendor_name": "Brocade Communications Systems, Inc."
+    "vendor_name": "Brocade Communications Systems, Inc.",
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ]
   }
 }

@@ -1,27 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1969"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 3,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "SHA"
-    ],
     "caveat": "No assurance of Secure Channel Protocol (SCP) message integrity",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1969",
     "certificate_number": "1969",
@@ -29,7 +24,7 @@
     "description": "Authentication Token is a Cryptographic Module containing Thales' authenticated Java applets. Authentication Token is compliant with the latest Java Card 2.2.2 and GlobalPlatform 2.1.1 specifications and is validated to FIPS 140-2 Level 3. Authentication Token supports FIPS-Approved: DRBG; SHA-1 and all SHA-2; TDES; AES; ECDSA and ECC CDC; and, RSA and ECC key generation. Authentication Token is designed to provide users of Thales' hardware security modules with high-performance smart card capabilities in support of their government and enterprise applications.",
     "embodiment": "Single-chip",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Authentication Token",
     "module_type": "Hardware",
@@ -76,6 +71,11 @@
       "name": "Thales e-Security Inc.",
       "website_url": "http://www.thales-esecurity.com"
     },
-    "vendor_name": "Thales e-Security Inc."
+    "vendor_name": "Thales e-Security Inc.",
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "SHA"
+    ]
   }
 }

@@ -1,22 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5081"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 16,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 53,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 53
     },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5081",
+    "certificate_number": "5081",
+    "dataset": "active",
+    "description": "Gigamon's SL-FJA3 (SafeLogic FIPS Java API) is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "SL-FJA3 (SafeLogic FIPS Java API)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5081",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5081.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5081.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "10/21/2025, 3/3/2026",
+    "validation_dates": [
+      "10/21/2025",
+      "3/3/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "10/21/2025",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      },
+      {
+        "date": "3/3/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3300 Olcott Street",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "Certifications@Gigamon.com",
+      "contact_name": "Brian O'Neel",
+      "contact_phone": "408-831-4000",
+      "country": "USA",
+      "name": "Gigamon Inc.",
+      "website_url": "https://www.gigamon.com/ "
+    },
+    "vendor_name": "Gigamon Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -89,65 +148,6 @@
       "RSA KTS(non-compliant16) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ],
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5081",
-    "certificate_number": "5081",
-    "dataset": "active",
-    "description": "Gigamon's SL-FJA3 (SafeLogic FIPS Java API) is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "SL-FJA3 (SafeLogic FIPS Java API)",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5081",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5081.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5081.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/28/2029",
-    "validation_date": "10/21/2025, 3/3/2026",
-    "validation_dates": [
-      "10/21/2025",
-      "3/3/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "10/21/2025",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
-      },
-      {
-        "date": "3/3/2026",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Update"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "3300 Olcott Street",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "contact_email": "Certifications@Gigamon.com",
-      "contact_name": "Brian O'Neel",
-      "contact_phone": "408-831-4000",
-      "country": "USA",
-      "name": "Gigamon Inc.",
-      "website_url": "https://www.gigamon.com/ "
-    },
-    "vendor_name": "Gigamon Inc."
+    ]
   }
 }

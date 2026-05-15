@@ -1,35 +1,22 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3034"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 11,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 0,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0
     },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDH",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ],
     "caveat": "When operated in FIPS mode with the tamper evident seals and the opacity baffles installed as indicated in the Security Policy",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3034",
     "certificate_number": "3034",
@@ -37,7 +24,7 @@
     "description": "The Blue Coat ProxySG physical and virtual appliances are the core of Symantec’s Unified Security and Optimization solutions for business assurance. The appliances offer complete security and control of web traffic, providing rich policy constructs for threat protection, SSL traffic, authentication, filtering, data loss prevention and logging. ProxySG identifies malicious payloads and then filters, strips, blocks or replaces web content to mitigate risks and prevent data loss. The appliances also optimize web and internal application traffic for data, video, cloud and web applications.",
     "embodiment": "Multi-Chip Stand Alone",
     "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "hardware_versions": null,
     "module_name": "Blue Coat ProxySG S400-20 [1], S400-30 [2], S400-40 [3], S500-10 [4], S500-20 [5] and S500-30 [6]",
     "module_type": "Hardware",
@@ -92,6 +79,19 @@
       "name": "Symantec, A Division of Broadcom",
       "website_url": "http://www.symantec.com"
     },
-    "vendor_name": "Symantec, A Division of Broadcom"
+    "vendor_name": "Symantec, A Division of Broadcom",
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDH",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ]
   }
 }

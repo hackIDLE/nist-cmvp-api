@@ -1,22 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "generated_at": "2026-05-15T02:49:52.984765Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865"
   },
   "certificate": {
     "algorithm_extraction": {
-      "algorithm_count": 7,
-      "cache_version": "2026-04-15-legacy-v1",
-      "cached": true,
-      "configured_source": "crawl4ai",
-      "detailed_algorithm_count": 42,
-      "fallback_used": false,
       "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
       "source": "firecrawl",
       "source_url": null,
-      "status": "cached"
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 42
     },
+    "caveat": "Interim validation. When operated in approved mode and installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
+    "certificate_number": "4865",
+    "dataset": "active",
+    "description": "The VMware's Linux Kernel Cryptographic Module 5.0.0 offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "hardware_versions": null,
+    "module_name": "VMware’s Linux Kernel Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4865.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4865.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/4/2029",
+    "validation_date": "11/5/2024",
+    "validation_dates": [
+      "11/5/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "11/5/2024",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3401 Hillview Avenue",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "vcf.fips@broadcom.com",
+      "contact_name": "VCF Trust and Assurance Engineering",
+      "contact_phone": "877-486-9273",
+      "country": "USA",
+      "name": "Broadcom Inc.",
+      "website_url": "http://www.broadcom.com"
+    },
+    "vendor_name": "Broadcom Inc.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -69,60 +123,6 @@
       "RSA PKCS1v1.5 | Key Transport",
       "AES using modes usingRFC3686(CTR) | Encryptionand Decryption",
       "AES using modes usingRFC4543(GCM)和RFC4309(CCM) | Authenticated Encryptionand Decryption"
-    ],
-    "caveat": "Interim validation. When operated in approved mode and installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
-    "certificate_number": "4865",
-    "dataset": "active",
-    "description": "The VMware's Linux Kernel Cryptographic Module 5.0.0 offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:10:47.425082Z",
-    "hardware_versions": null,
-    "module_name": "VMware’s Linux Kernel Cryptographic Module",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4865.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4865.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/4/2029",
-    "validation_date": "11/5/2024",
-    "validation_dates": [
-      "11/5/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "11/5/2024",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "3401 Hillview Avenue",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "contact_email": "vcf.fips@broadcom.com",
-      "contact_name": "VCF Trust and Assurance Engineering",
-      "contact_phone": "877-486-9273",
-      "country": "USA",
-      "name": "Broadcom Inc.",
-      "website_url": "http://www.broadcom.com"
-    },
-    "vendor_name": "Broadcom Inc."
+    ]
   }
 }
