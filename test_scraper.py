@@ -1335,7 +1335,7 @@ def test_validate_generated_api_artifacts():
     errors = validate_api(
         Path("."),
         require_current_schema=True,
-        forbid_firecrawl_run_source=True,
+        require_supported_algorithm_source=True,
         require_data_quality_pass=True,
     )
 

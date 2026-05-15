@@ -225,7 +225,7 @@ ALGORITHM_SOURCE=security_policy_pdf python scraper.py
 SKIP_ALGORITHMS=1 python scraper.py
 
 # Validate generated artifacts before publishing
-python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
+python validate_api.py --require-current-schema --require-supported-algorithm-source --require-data-quality-pass
 ```
 
 ## Modal Remote Runs
@@ -260,7 +260,7 @@ tar -xzf /tmp/cmvp-run/artifacts.tar.gz -C /tmp/cmvp-run/
 .venv-modal/bin/python validate_api.py \
   --root /tmp/cmvp-run \
   --require-current-schema \
-  --forbid-firecrawl-run-source \
+  --require-supported-algorithm-source \
   --require-data-quality-pass
 
 # Run a single-container remote scrape when parallelism is not needed.
@@ -277,7 +277,7 @@ tar -xzf /tmp/cmvp-run/artifacts.tar.gz -C /tmp/cmvp-run/
   --pdf-fetch-concurrency 8
 ```
 
-The Modal runner writes logs and generated artifacts to the `nist-cmvp-api-cache` Modal Volume and runs `validate_api.py --require-current-schema --forbid-firecrawl-run-source`. Cached runs require the data-quality monitor to pass by default; full refreshes disable that gate only for extractor audits because they intentionally bypass cache reuse. Successful runs update the volume cache unless `--no-update-cache-volume` is set.
+The Modal runner writes logs and generated artifacts to the `nist-cmvp-api-cache` Modal Volume and runs `validate_api.py --require-current-schema --require-supported-algorithm-source`. Cached runs require the data-quality monitor to pass by default; full refreshes disable that gate only for extractor audits because they intentionally bypass cache reuse. Successful runs update the volume cache unless `--no-update-cache-volume` is set.
 
 Cost-control tips:
 

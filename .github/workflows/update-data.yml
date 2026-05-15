@@ -57,7 +57,7 @@ jobs:
 
       - name: Validate generated API artifacts
         run: |
-          python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
+          python validate_api.py --require-current-schema --require-supported-algorithm-source --require-data-quality-pass
 
       - name: Check for changes
         id: git-check

@@ -150,7 +150,7 @@ def _validate_generated_artifacts(*, require_data_quality_pass: bool) -> tuple[i
         sys.executable,
         "validate_api.py",
         "--require-current-schema",
-        "--forbid-firecrawl-run-source",
+        "--require-supported-algorithm-source",
     ]
     if require_data_quality_pass:
         validate_cmd.append("--require-data-quality-pass")
