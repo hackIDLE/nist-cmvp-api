@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1352"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1352",
     "certificate_number": "1352",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1352",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1352",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1352.pdf",
-    "vendor_name": "Telephonics Corp.",
-    "module_name": "TruLink Control Logic Module CL6792-M1",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "7/12/2010",
-    "validation_dates": [
-      "7/12/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "TruLink is a wireless intercom system for use in military and harsh industrial environments. It provides fully duplex wireless communication. TruLink users can converse among themselves without pressing a Push to Talk button or waiting for another user to finish their transmission. The system supports 50 channels. Up to 31 users can be logged on to a channel. Each channel is an independent network. TruLink employs a unique noise cancellation system that automatically adjusts its VOX switching level to match the ambient noise level and subtracts this noise from the user's transmitted audio.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "TruLink Control Logic Module CL6792-M1",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1352",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1352.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1352.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/12/2010",
+    "validation_dates": [
+      "7/12/2010"
+    ],
     "validation_history": [
       {
         "date": "7/12/2010",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Telephonics Corp.",
-      "website_url": "http://www.telephonics.com",
       "address_lines": [
         "815 Broad Hollow Road",
         "Farmingdale, NY 11735",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Barry Wernick",
       "contact_email": "wernick@telephonics.com",
-      "contact_phone": "631-755-7321"
+      "contact_name": "Barry Wernick",
+      "contact_phone": "631-755-7321",
+      "country": "USA",
+      "name": "Telephonics Corp.",
+      "website_url": "http://www.telephonics.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Telephonics Corp."
   }
 }

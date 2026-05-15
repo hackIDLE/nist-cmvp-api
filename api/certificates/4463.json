@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4463"
   },
   "certificate": {
-    "certificate_number": "4463",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4463",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4463",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4463.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Ascom Smartphone BoringCrypto v2",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/5/2023",
-    "validation_dates": [
-      "4/5/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "description": "Ascom Smartphone BoringCrypto v2 is a general-purpose cryptographic library incorporated into the Ascom Myco smartphones for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4463.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/5/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
-      "address_lines": [
-        "Grimbodalen 2",
-        "Göteborg SE-417 49",
-        "Sweden"
-      ],
-      "country": "Sweden",
-      "contact_name": "Regulatory Affairs",
-      "contact_email": "qualityregulatory@ascom.com",
-      "contact_phone": "+46 31 55 93 00"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -87,6 +30,63 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4463",
+    "certificate_number": "4463",
+    "dataset": "active",
+    "description": "Ascom Smartphone BoringCrypto v2 is a general-purpose cryptographic library incorporated into the Ascom Myco smartphones for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ascom Smartphone BoringCrypto v2",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4463",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4463.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4463.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/5/2023",
+    "validation_dates": [
+      "4/5/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "4/5/2023",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Grimbodalen 2",
+        "Göteborg SE-417 49",
+        "Sweden"
+      ],
+      "contact_email": "qualityregulatory@ascom.com",
+      "contact_name": "Regulatory Affairs",
+      "contact_phone": "+46 31 55 93 00",
+      "country": "Sweden",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
+    },
+    "vendor_name": "[email protected]"
   }
 }

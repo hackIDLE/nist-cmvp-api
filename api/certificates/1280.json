@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1280"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1280",
     "certificate_number": "1280",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1280",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1280",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1280.pdf",
-    "vendor_name": "Sun Microsystems, Inc., Red Hat®, Inc. and Mozilla Foundation, Inc.",
-    "module_name": "Network Security Services (NSS) Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "3/29/2010",
-    "validation_dates": [
-      "3/29/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Network Security Services (NSS) is a set of open source C libraries designed to support cross-platform development of security-enabled applications. NSS implements major crypto algorithms and Internet security standards, and supports smartcards and hardware crypto devices. NSS is available free of charge under the Mozilla Public License, the GNU General Public License, and the GNU Lesser General Public License. For more information, see http://www.mozilla.org/projects/security/pki/nss/",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Network Security Services (NSS) Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1280",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1280.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1280.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/29/2010",
+    "validation_dates": [
+      "3/29/2010"
+    ],
     "validation_history": [
       {
         "date": "3/29/2010",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Sun Microsystems, Inc., Red Hat®, Inc. and Mozilla Foundation, Inc.",
-      "website_url": "http://wiki.mozilla.org/FIPS_Validation",
       "address_lines": [
         "4150 Network Circle",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Glen Beasley",
       "contact_email": "glen.beasley@sun.com",
-      "contact_phone": "800-555-9SUN"
+      "contact_name": "Glen Beasley",
+      "contact_phone": "800-555-9SUN",
+      "country": "USA",
+      "name": "Sun Microsystems, Inc., Red Hat®, Inc. and Mozilla Foundation, Inc.",
+      "website_url": "http://wiki.mozilla.org/FIPS_Validation"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Sun Microsystems, Inc., Red Hat®, Inc. and Mozilla Foundation, Inc."
   }
 }

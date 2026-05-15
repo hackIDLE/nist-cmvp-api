@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2078"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2078",
     "certificate_number": "2078",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2078",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2078",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2078.pdf",
-    "vendor_name": "Dolby Laboratories, Inc.",
-    "module_name": "CAT904 Dolby® JPEG 2000/MPEG-2 Processor",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "2/6/2014",
-    "validation_dates": [
-      "2/6/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The CAT904 Dolby® JPEG 2000/MPEG-2 Processor performs all the cryptography, license management, and video decoding functions for the DSP100 Dolby Show Player, which forms the nucleus of the Dolby Digital Cinema system. The system offers superb picture quality, outstanding reliability, and the highest level of security in the business. It includes support for JPEG 2000 playback, as specified by DCI, and MPEG-2 for compatibility with alternative content such as preshow advertising. The system also meets other key DCI specifications for security, data rate, and storage capacity.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CAT904 Dolby® JPEG 2000/MPEG-2 Processor",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2078",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2078.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/6/2014",
+    "validation_dates": [
+      "2/6/2014"
+    ],
     "validation_history": [
       {
         "date": "2/6/2014",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Dolby Laboratories, Inc.",
-      "website_url": "http://www.dolby.com",
       "address_lines": [
         "100 Potrero Ave.",
         "San Francisco, CA 94103",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Marvin Pribadi",
       "contact_email": "mzp@dolby.com",
-      "contact_phone": "415-645-5185"
+      "contact_name": "Marvin Pribadi",
+      "contact_phone": "415-645-5185",
+      "country": "USA",
+      "name": "Dolby Laboratories, Inc.",
+      "website_url": "http://www.dolby.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Dolby Laboratories, Inc."
   }
 }

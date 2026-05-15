@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3754"
   },
   "certificate": {
-    "certificate_number": "3754",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3754",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3754",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3754.pdf",
-    "vendor_name": "Quantum Xchange",
-    "module_name": "Quantum Xchange FIPS Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/2/2020",
-    "validation_dates": [
-      "12/2/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy and operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "The Quantum Xchange FIPS Module provides FIPS 140-2 validated cryptography for the solutions delivered by Quantum Xchange.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3754.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2020_040121_1006_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/2/2020",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Quantum Xchange",
-      "website_url": "http://www.quantumxc.com",
-      "address_lines": [
-        "7700 Old Georgetown Road",
-        "Suite 850",
-        "Bethesda, MD 20814",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +26,65 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy and operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3754",
+    "certificate_number": "3754",
+    "dataset": "historical",
+    "description": "The Quantum Xchange FIPS Module provides FIPS 140-2 validated cryptography for the solutions delivered by Quantum Xchange.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Quantum Xchange FIPS Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3754",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3754.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2020_040121_1006_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3754.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/2/2020",
+    "validation_dates": [
+      "12/2/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "12/2/2020",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "7700 Old Georgetown Road",
+        "Suite 850",
+        "Bethesda, MD 20814",
+        "USA"
+      ],
+      "contact_email": null,
+      "contact_name": null,
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Quantum Xchange",
+      "website_url": "http://www.quantumxc.com"
+    },
+    "vendor_name": "Quantum Xchange"
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2831"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2831",
     "certificate_number": "2831",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2831",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2831",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2831.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Oracle StorageTek T10000D Tape Drive",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/2/2017",
-    "validation_dates": [
-      "2/2/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode.",
     "description": "The Oracle StorageTek T10000D Tape Drive blends the highest capacity, performance, reliability, and data security to support demanding, 24/7 data center operations. The StorageTek T10000D Tape Drive delivers the world's fastest write speeds up to 8.5 TB of magnetic tape storage; making it ideal for data center operations with growing volumes. Designed for maximum performance, the drive allows the use of multiple keys per tape with a cache memory to minimize the overhead of key transmission. Works seamlessly with the Oracle Key Manager to provide a secure end-to-end management solution.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oracle StorageTek T10000D Tape Drive",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2831",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertFeb2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2831.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/2/2017",
+    "validation_dates": [
+      "2/2/2017"
+    ],
     "validation_history": [
       {
         "date": "2/2/2017",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
       "address_lines": [
         "500 Eldorado Blvd., Bldg 5",
         "Broomfield, CO 80021",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Security Evaluations Manager",
       "contact_email": "seceval_us@oracle.com",
-      "contact_phone": "781-442-0451"
+      "contact_name": "Security Evaluations Manager",
+      "contact_phone": "781-442-0451",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oracle Corporation"
   }
 }

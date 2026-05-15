@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2851"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with module Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro, Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series validated to FIPS 140-2 under Cert. #2357 operating in FIPS mode or BlackBerry OS Cryptographic Library validated to FIPS 140-2 under Cert. #1578 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2851",
     "certificate_number": "2851",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2851",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2851",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf",
-    "vendor_name": "United States Special Operations Command (USSOCOM)",
-    "module_name": "Suite B Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/27/2017",
-    "validation_dates": [
-      "2/27/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with module Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro, Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series validated to FIPS 140-2 under Cert. #2357 operating in FIPS mode or BlackBerry OS Cryptographic Library validated to FIPS 140-2 under Cert. #1578 operating in FIPS mode",
     "description": "KEYW, in coordination with the United States Special Operations Command (USSOCOM), has developed a Suite B-compliant, standards based, AES/GCM-256 layer of encrypted communications between a BlackBerry Enterprise Server (BES) and a BlackBerry Mobile Set (MS) with Elliptic Curve (EC) key exchange used to negotiate symmetric keys.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Suite B Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2851",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertFeb2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2851.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/27/2017",
+    "validation_dates": [
+      "2/27/2017"
+    ],
     "validation_history": [
       {
         "date": "2/27/2017",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "United States Special Operations Command (USSOCOM)",
-      "website_url": "http://www.socom.mil",
       "address_lines": [
         "7701 Tampa Point Boulevard",
         "MacDill Air Force Base, FL 33621-5323",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "William W. Burnham",
       "contact_email": "william.burnham@socom.mil",
-      "contact_phone": "(813) 826-2282"
+      "contact_name": "William W. Burnham",
+      "contact_phone": "(813) 826-2282",
+      "country": "USA",
+      "name": "United States Special Operations Command (USSOCOM)",
+      "website_url": "http://www.socom.mil"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "United States Special Operations Command (USSOCOM)"
   }
 }

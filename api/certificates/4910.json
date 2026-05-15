@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4910"
   },
   "certificate": {
-    "certificate_number": "4910",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4910",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4910",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4910.pdf",
-    "vendor_name": "Digital.ai Software, Inc.",
-    "module_name": "Digital.ai Key & Data Protection Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/3/2024",
-    "validation_dates": [
-      "12/3/2024"
-    ],
-    "sunset_date": "12/2/2026",
-    "caveat": "Interim Validation; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "The Digital.ai Key & Data Protection Module is a sophisticated implementation of whitebox cryptography, (Class A safety-critical software per IEC 62304) that ingests cryptographic keys for use in the cryptographic operations performed by methods in the Digital.ai Key & Data Protection Module libraries.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4910.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/3/2024",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Digital.ai Software, Inc.",
-      "website_url": "http://www.digital.ai",
-      "address_lines": [
-        "555 Fayetteville Street",
-        "Raleigh, NC 27601",
-        "United States"
-      ],
-      "country": "United States",
-      "contact_name": "Lee Ivy",
-      "contact_email": "lee.ivy@digital.ai",
-      "contact_phone": "857-465-7444"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -78,6 +24,60 @@
       "KAS",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "Interim Validation; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4910",
+    "certificate_number": "4910",
+    "dataset": "active",
+    "description": "The Digital.ai Key & Data Protection Module is a sophisticated implementation of whitebox cryptography, (Class A safety-critical software per IEC 62304) that ingests cryptographic keys for use in the cryptographic operations performed by methods in the Digital.ai Key & Data Protection Module libraries.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Digital.ai Key & Data Protection Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4910",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4910.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4910.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/2/2026",
+    "validation_date": "12/3/2024",
+    "validation_dates": [
+      "12/3/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "12/3/2024",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "555 Fayetteville Street",
+        "Raleigh, NC 27601",
+        "United States"
+      ],
+      "contact_email": "lee.ivy@digital.ai",
+      "contact_name": "Lee Ivy",
+      "contact_phone": "857-465-7444",
+      "country": "United States",
+      "name": "Digital.ai Software, Inc.",
+      "website_url": "http://www.digital.ai"
+    },
+    "vendor_name": "Digital.ai Software, Inc."
   }
 }

@@ -1,38 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/988"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/988",
     "certificate_number": "988",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/988",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/988",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp988.pdf",
-    "vendor_name": "Imation Corp.",
-    "module_name": "Stealth MXP Passport",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/24/2008, 8/22/2008, 5/31/2011, 4/24/2012",
-    "validation_dates": [
-      "7/24/2008",
-      "8/22/2008",
-      "5/31/2011",
-      "4/24/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Stealth MXP Passport is a USB mass storage device which implements hardware encryption dependant on user authentication. It provides not only secure encrypted storage, but management of digital identity credentials used for authentication and verification to enterprise and personal services",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Stealth MXP Passport",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/988",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,55 +40,58 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt988.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp988.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/24/2008, 8/22/2008, 5/31/2011, 4/24/2012",
+    "validation_dates": [
+      "7/24/2008",
+      "8/22/2008",
+      "5/31/2011",
+      "4/24/2012"
+    ],
     "validation_history": [
       {
         "date": "7/24/2008",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "8/22/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "5/31/2011",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       },
       {
         "date": "4/24/2012",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Imation Corp.",
-      "website_url": "http://www.imation.com/mobilesecurity",
       "address_lines": [
         "Discovery Bldg. 1A-041",
         "Oakdale, MN 55128",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Larry Hamid",
       "contact_email": "crypto-ims@imation.com",
-      "contact_phone": "408-737-4308"
+      "contact_name": "Larry Hamid",
+      "contact_phone": "408-737-4308",
+      "country": "USA",
+      "name": "Imation Corp.",
+      "website_url": "http://www.imation.com/mobilesecurity"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Imation Corp."
   }
 }

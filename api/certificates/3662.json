@@ -1,36 +1,42 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662",
     "certificate_number": "3662",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3662.pdf",
-    "vendor_name": "SK hynix NAND Product Solutions Corp, DBA Solidigm",
-    "module_name": "Solidigm DC SSD D7-D4512",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "5/29/2020, 6/22/2020, 7/24/2021, 10/28/2022",
-    "validation_dates": [
-      "5/29/2020",
-      "6/22/2020",
-      "7/24/2021",
-      "10/28/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
     "description": "The Solidigm SSD D7-D4512 Series is a PCIe* Gen3 SSD architected with a dual-port, NVMe* (Non-Volatile Memory Express*) controller delivering leading performance, low latency, and high availability. Matching the performance with world-class reliability and endurance, Solidigm SSD D7-D4512 Series offers a range of capacities - 1.92 TB, 3.84 TB, 7.68 TB, and 15.36 TB. With PCIe Gen 3 support and NVMe specification 1.2b implementation, the Solidigm SSD D7-D4512 Series is designed to support active/active dual port and recovery during fail over when one of the hosts becomes unavailable.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Solidigm DC SSD D7-D4512",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3662",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,62 +47,56 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2020_010620_1115.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3662.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/29/2020, 6/22/2020, 7/24/2021, 10/28/2022",
+    "validation_dates": [
+      "5/29/2020",
+      "6/22/2020",
+      "7/24/2021",
+      "10/28/2022"
+    ],
     "validation_history": [
       {
         "date": "5/29/2020",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/22/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/24/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/28/2022",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SK hynix NAND Product Solutions Corp, DBA Solidigm",
-      "website_url": "http://www.solidigm.com",
       "address_lines": [
         "3101 North 1st St",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "FIPS Certified Solidigm SSDs",
       "contact_email": "Security@Solidigm.com",
-      "contact_phone": "(279) 895-9665"
+      "contact_name": "FIPS Certified Solidigm SSDs",
+      "contact_phone": "(279) 895-9665",
+      "country": "USA",
+      "name": "SK hynix NAND Product Solutions Corp, DBA Solidigm",
+      "website_url": "http://www.solidigm.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ]
+    "vendor_name": "SK hynix NAND Product Solutions Corp, DBA Solidigm"
   }
 }

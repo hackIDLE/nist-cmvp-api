@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/220"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/220",
     "certificate_number": "220",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/220",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/220",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp220.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "Luna® XPplus",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "5/28/2002, 10/18/2004",
-    "validation_dates": [
-      "5/28/2002",
-      "10/18/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Luna XPplus, Luna XL/XLR and XL/XLR Premium are cryptographic modules based on a board that is equivalent to two Luna CA3 tokens with hardware cryptographic acceleration support. The XL/XLR is configured as a Level 2 stand-alone module. The XPplus and XL/XLR Premium operate as subordinate devices in conjunction with a Luna CA3 token. Each module can support all cryptographic algorithms listed in Appendix A of the Luna XPplus, XL/XLR and XL/XLR Premium Security Policy.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® XPplus",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/220",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt220.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp220.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/28/2002, 10/18/2004",
+    "validation_dates": [
+      "5/28/2002",
+      "10/18/2004"
+    ],
     "validation_history": [
       {
         "date": "5/28/2002",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "10/18/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet-inc.com",
       "address_lines": [
         "4690 Millennium Drive",
         "Belcamp, MD 21017",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Randy Kun",
       "contact_email": "rkun@safenet-inc.com",
-      "contact_phone": "613-723-5077"
+      "contact_name": "Randy Kun",
+      "contact_phone": "613-723-5077",
+      "country": "USA",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet-inc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "SafeNet, Inc."
   }
 }

@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/477"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/477",
     "certificate_number": "477",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/477",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/477",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp477.pdf",
-    "vendor_name": "Secure Systems Limited",
-    "module_name": "Silicon Data Vault® (SDV®)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "11/4/2004",
-    "validation_dates": [
-      "11/4/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Silicon Data Vault® (SDV®) is a cryptographic hardware security device which asserts absolute control over the hard disk drive (HDD) at the earliest stage of boot up, ensuring the user is authenticated before any data can be accessed. The SDV® is operating system independent, works with any standard ATA HDD, and resides in the IDE channel, blocking and controlling all access to the HDD.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Silicon Data Vault® (SDV®)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/477",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt477.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp477.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/4/2004",
+    "validation_dates": [
+      "11/4/2004"
+    ],
     "validation_history": [
       {
         "date": "11/4/2004",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Secure Systems Limited",
-      "website_url": "http://www.securesystems.com.au",
       "address_lines": [
         "80 Hasler Road",
         "Osborne Part, Western Australia 6017",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "Michael J Wynne",
       "contact_email": "mwynne@securesystems.com.au",
-      "contact_phone": "+61 8 9202 8333"
+      "contact_name": "Michael J Wynne",
+      "contact_phone": "+61 8 9202 8333",
+      "country": "Australia",
+      "name": "Secure Systems Limited",
+      "website_url": "http://www.securesystems.com.au"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Secure Systems Limited"
   }
 }

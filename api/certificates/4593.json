@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with module Amazon Linux 2 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #4565 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593",
     "certificate_number": "4593",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4593.pdf",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "Amazon Linux 2 Kernel Crypto API Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/12/2023, 11/13/2023",
-    "validation_dates": [
-      "9/12/2023",
-      "11/13/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with module Amazon Linux 2 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #4565 operating in FIPS mode",
     "description": "The Linux kernel Crypto API implemented in the Amazon Linux 2 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Amazon Linux 2 Kernel Crypto API Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4593.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/12/2023, 11/13/2023",
+    "validation_dates": [
+      "9/12/2023",
+      "11/13/2023"
+    ],
     "validation_history": [
       {
         "date": "9/12/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "11/13/2023",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "http://www.aws.amazon.com",
       "address_lines": [
         "1918 8th Ave.",
         "Seattle, WA 98121",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Amazon Linux Security",
       "contact_email": "amazon-linux-fips-external@amazon.com",
-      "contact_phone": null
+      "contact_name": "Amazon Linux Security",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://www.aws.amazon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Amazon Web Services, Inc."
   }
 }

@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2961"
   },
   "certificate": {
-    "certificate_number": "2961",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2961",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2961",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2961.pdf",
-    "vendor_name": "128 Technology",
-    "module_name": "128 Technology Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/18/2017",
-    "validation_dates": [
-      "7/18/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2038.",
-    "description": "The 128T Networking Platform is a software-based, distributed routing and network services solution. The 128T Networking Platform uses Secure Vector Routing to simplify network architectures and provide fine-grained, end-to-end control and visibility. 128T runs on general-purpose computer and allows a wide range of deployment models - from remote branch offices to high-capacity network edges to hyper-scale data centers. The platform enables greater security and agility by distributing intelligence throughout the network - without disrupting your existing network infrastructure. The 128 Tech",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2961.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2017.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/18/2017",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "128 Technology",
-      "website_url": "https://www.128technology.com",
-      "address_lines": [
-        "200 Summit Drive",
-        "Burlington, MA 01803",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Patrick Melampy",
-      "contact_email": "pmelampy@128technology.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +28,63 @@
       "KAS",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2038.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2961",
+    "certificate_number": "2961",
+    "dataset": "historical",
+    "description": "The 128T Networking Platform is a software-based, distributed routing and network services solution. The 128T Networking Platform uses Secure Vector Routing to simplify network architectures and provide fine-grained, end-to-end control and visibility. 128T runs on general-purpose computer and allows a wide range of deployment models - from remote branch offices to high-capacity network edges to hyper-scale data centers. The platform enables greater security and agility by distributing intelligence throughout the network - without disrupting your existing network infrastructure. The 128 Tech",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "128 Technology Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2961",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2961.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2017.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2961.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/18/2017",
+    "validation_dates": [
+      "7/18/2017"
+    ],
+    "validation_history": [
+      {
+        "date": "7/18/2017",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "200 Summit Drive",
+        "Burlington, MA 01803",
+        "USA"
+      ],
+      "contact_email": "pmelampy@128technology.com",
+      "contact_name": "Patrick Melampy",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "128 Technology",
+      "website_url": "https://www.128technology.com"
+    },
+    "vendor_name": "128 Technology"
   }
 }

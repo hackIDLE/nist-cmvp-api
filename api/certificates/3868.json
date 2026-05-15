@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3868"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Section 3 of the Security Policy. This module contains the embedded module 'ACT2Lite Cryptographic Module' validated to FIPS 140-2 under Cert. #3637 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3868",
     "certificate_number": "3868",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3868",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3868",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3868.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Cisco Catalyst 9600 Series Switches",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/29/2021, 8/25/2021",
-    "validation_dates": [
-      "3/29/2021",
-      "8/25/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Section 3 of the Security Policy. This module contains the embedded module 'ACT2Lite Cryptographic Module' validated to FIPS 140-2 under Cert. #3637 operating in FIPS mode",
     "description": "The Cisco Catalyst 9600 Series Switches are stackable enterprise switching platform built for security, IoT, mobility, and cloud. The switches meet FIPS 140-2 overall Level 1 requirements as multi-chip standalone modules. The modules include cryptographic algorithms implemented in IOS-XE software as well as hardware ASIC. Advanced security feature supports MACsec encryption, hardware anchored secure boot and Secure Unique Device Identification (SUDI) support.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Catalyst 9600 Series Switches",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3868",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,45 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2021_010421_0724_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3868.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/29/2021, 8/25/2021",
+    "validation_dates": [
+      "3/29/2021",
+      "8/25/2021"
+    ],
     "validation_history": [
       {
         "date": "3/29/2021",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "8/25/2021",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
       "address_lines": [
         "170 West Tasman Dr.",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Laura Stubbs",
       "contact_email": "Lastubbs@cisco.com",
-      "contact_phone": "+1 (703) 362-9377"
+      "contact_name": "Laura Stubbs",
+      "contact_phone": "+1 (703) 362-9377",
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

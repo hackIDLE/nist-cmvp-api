@@ -1,74 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4822"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Interim validation. When operated in approved mode with module SUSE Linux Enterprise OpenSSL Cryptographic Module validated to FIPS 140-3 under Cert. #4725 operating in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4822",
     "certificate_number": "4822",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4822",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4822",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4822.pdf",
-    "vendor_name": "SUSE, LLC",
-    "module_name": "SUSE Linux Enterprise Libica Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software-hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/7/2024",
-    "validation_dates": [
-      "10/7/2024"
-    ],
-    "sunset_date": "10/6/2029",
-    "caveat": "Interim validation. When operated in approved mode with module SUSE Linux Enterprise OpenSSL Cryptographic Module validated to FIPS 140-3 under Cert. #4725 operating in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
     "description": "The SUSE Linux Enterprise Server Libica Cryptographic Module is a software-hybrid module that provides general purpose cryptographic algorithms to applications running in the user space of the underlying operating system through a C language application program interface (API). The module is composed by a software library, which provides the API and a subset of the cryptographic algorithms, and the Central Processor Assist for Cryptographic Functions (CPACF), which is part of the z15 processor and provides cryptographic algorithms implemented in firmware and hardware.",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SUSE Linux Enterprise Libica Cryptographic Module",
+    "module_type": "Software-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4822",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4822.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4822.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/6/2029",
+    "validation_date": "10/7/2024",
+    "validation_dates": [
+      "10/7/2024"
+    ],
     "validation_history": [
       {
         "date": "10/7/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "SUSE, LLC",
-      "website_url": "http://www.suse.com",
       "address_lines": [
         "10 Canal Park, Suite 200",
         "Cambridge, MA 02141",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ivan Teblin",
       "contact_email": "sec-cert@suse.com",
-      "contact_phone": "0-000-000-0000"
+      "contact_name": "Ivan Teblin",
+      "contact_phone": "0-000-000-0000",
+      "country": "USA",
+      "name": "SUSE, LLC",
+      "website_url": "http://www.suse.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "SUSE, LLC"
   }
 }

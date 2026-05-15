@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4279"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4279",
     "certificate_number": "4279",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4279",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4279",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4279.pdf",
-    "vendor_name": "Advantor Systems, A Vectrus Company",
-    "module_name": "Infraguard Processor Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "8/17/2022",
-    "validation_dates": [
-      "8/17/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "The Infraguard Processor Module (IPM) is a multi-chip, embedded, plug-in encryption module coated with an opaque, tamper evident material. The IPM is used to provide secure LAN and telephone modem communications for Advantor Systems' physical security systems. The IPM is embedded in multiple products, including an alarm panel and an alarm panel receiving product.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Infraguard Processor Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4279",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2022_010922_0715_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4279.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "8/17/2022",
+    "validation_dates": [
+      "8/17/2022"
+    ],
     "validation_history": [
       {
         "date": "8/17/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Advantor Systems, A Vectrus Company",
-      "website_url": "http://www.advantor.com",
       "address_lines": [
         "12612 Challenger Pkwy, Suite 300",
         "Orlando, FL 32826",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "John F. Kennedy",
       "contact_email": "kennedy@advantor.com",
-      "contact_phone": "407-468-5118"
+      "contact_name": "John F. Kennedy",
+      "contact_phone": "407-468-5118",
+      "country": "USA",
+      "name": "Advantor Systems, A Vectrus Company",
+      "website_url": "http://www.advantor.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Advantor Systems, A Vectrus Company"
   }
 }

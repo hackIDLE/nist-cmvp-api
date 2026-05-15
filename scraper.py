@@ -919,9 +919,52 @@ def build_certificate_fingerprint(module: Dict, dataset: str) -> str:
     """Build a stable fingerprint for a certificate row based on summary fields."""
     payload = {"dataset": dataset}
     for key in CACHE_FINGERPRINT_FIELDS:
-        payload[key] = module.get(key)
+        payload[key] = fingerprint_field_value(key, module.get(key))
     encoded = json.dumps(payload, sort_keys=True, ensure_ascii=False).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
+
+
+def fingerprint_field_value(key: str, value):
+    """Return a cache-fingerprint value resilient to HTML spacing artifacts."""
+    if not isinstance(value, str):
+        return value
+    text = normalize_whitespace(value)
+    if key in {"Vendor Name", "Module Name", "Module Type"}:
+        return re.sub(r"\s+", "", text).casefold()
+    if key != "Validation Date":
+        return text
+
+    dates = validation_date_fingerprint_tokens(text)
+    if not dates:
+        return text
+    return " ".join(dates)
+
+
+def validation_date_fingerprint_tokens(text: str) -> List[str]:
+    """Extract adjacent MM/DD/YYYY or MM/DD/YY tokens for cache fingerprints."""
+    dates: List[str] = []
+    index = 0
+    prefix_pattern = re.compile(r"(\d{1,2})/(\d{1,2})/")
+    while index < len(text):
+        match = prefix_pattern.search(text, index)
+        if not match:
+            break
+
+        year_start = match.end()
+        year_match = re.match(r"\d{2,4}", text[year_start:])
+        if not year_match:
+            index = year_start
+            continue
+
+        year_digits = year_match.group(0)
+        if len(year_digits) >= 4 and 1900 <= int(year_digits[:4]) <= 2100:
+            year = year_digits[:4]
+        else:
+            year = year_digits[:2]
+
+        dates.append(f"{int(match.group(1))}/{int(match.group(2))}/{year}")
+        index = year_start + len(year)
+    return dates
 
 
 def should_reuse_certificate_detail(
@@ -2099,7 +2142,10 @@ def parse_modules_table(html: str) -> List[Dict]:
     if thead:
         header_row = thead.find("tr")
         if header_row:
-            headers = [th.get_text(strip=True) for th in header_row.find_all(["th", "td"])]
+            headers = [
+                normalize_whitespace(th.get_text(" ", strip=True))
+                for th in header_row.find_all(["th", "td"])
+            ]
     
     # If no thead, try to get headers from first row
     if not headers:
@@ -2113,7 +2159,10 @@ def parse_modules_table(html: str) -> List[Dict]:
             # Check if first row looks like headers
             cells = first_row.find_all(["th", "td"])
             if cells and cells[0].name == "th":
-                headers = [cell.get_text(strip=True) for cell in cells]
+                headers = [
+                    normalize_whitespace(cell.get_text(" ", strip=True))
+                    for cell in cells
+                ]
     
     # Extract data rows
     tbody = table.find("tbody")
@@ -2136,7 +2185,7 @@ def parse_modules_table(html: str) -> List[Dict]:
             key = headers[idx] if idx < len(headers) and headers[idx] else f"column_{idx}"
             
             # Extract text content
-            text = cell.get_text(strip=True)
+            text = normalize_whitespace(cell.get_text(" ", strip=True))
             
             # Extract links if present
             link = cell.find("a")

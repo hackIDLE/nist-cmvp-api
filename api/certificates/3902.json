@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3902"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9.1 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3902",
     "certificate_number": "3902",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3902",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3902",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3902.pdf",
-    "vendor_name": "Canonical Ltd.",
-    "module_name": "Ubuntu 20.04 Libgcrypt Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/20/2021, 10/18/2021, 4/11/2022",
-    "validation_dates": [
-      "4/20/2021",
-      "10/18/2021",
-      "4/11/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9.1 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The libgcrypt library implementation providing cryptographic services to Linux user space software components in general and to GnuPG in particular.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ubuntu 20.04 Libgcrypt Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3902",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,51 +40,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2021_030521_0757_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3902.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/20/2021, 10/18/2021, 4/11/2022",
+    "validation_dates": [
+      "4/20/2021",
+      "10/18/2021",
+      "4/11/2022"
+    ],
     "validation_history": [
       {
         "date": "4/20/2021",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "10/18/2021",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       },
       {
         "date": "4/11/2022",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Canonical Ltd.",
-      "website_url": "http://www.canonical.com",
       "address_lines": [
         "5th floor, Blue Fin Building",
         "110 Southwark Street",
         "London SE1 0SU",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "Canonical Certification Team",
       "contact_email": "security-certifications@lists.canonical.com",
-      "contact_phone": null
+      "contact_name": "Canonical Certification Team",
+      "contact_phone": null,
+      "country": "United Kingdom",
+      "name": "Canonical Ltd.",
+      "website_url": "http://www.canonical.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Canonical Ltd."
   }
 }

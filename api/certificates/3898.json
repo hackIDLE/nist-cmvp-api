@@ -1,32 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 3 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898",
     "certificate_number": "3898",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3898.pdf",
-    "vendor_name": "Thales Trusted Cyber Technologies",
-    "module_name": "Luna T7 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "4/17/2021, 1/14/2025",
-    "validation_dates": [
-      "4/17/2021",
-      "1/14/2025"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 3 of the Security Policy",
     "description": "The Luna T7 Cryptographic Module from Thales Trusted Cyber Technologies (TCT) is a high-assurance, tamper-resistant Hardware Security Module (HSM) which secures sensitive data and critical applications by storing, protecting and managing cryptographic keys. It provides end users with industry-leading security and performance, an ability to generate quantum enhanced keys, and can quickly be embedded directly into servers and security appliances for FIPS 140-2 validated key security. Thales TCT's Lluna HSMs are designed, developed, manufactured, sold, and supported in the United States.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna T7 Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3898",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,52 +46,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2021_030521_0757_signed.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3898.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/17/2021, 1/14/2025",
+    "validation_dates": [
+      "4/17/2021",
+      "1/14/2025"
+    ],
     "validation_history": [
       {
         "date": "4/17/2021",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "1/14/2025",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales Trusted Cyber Technologies",
-      "website_url": "http://www.thalestct.com",
       "address_lines": [
         "3465 Box Hill Corporate Center Drive",
         "Suite D",
         "Abingdon, MD 21009",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Scott Leubner",
       "contact_email": "Scott.leubner@thalestct.com",
-      "contact_phone": "1-443-484-7070"
+      "contact_name": "Scott Leubner",
+      "contact_phone": "1-443-484-7070",
+      "country": "USA",
+      "name": "Thales Trusted Cyber Technologies",
+      "website_url": "http://www.thalestct.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Thales Trusted Cyber Technologies"
   }
 }

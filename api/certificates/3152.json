@@ -1,95 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152"
   },
   "certificate": {
-    "certificate_number": "3152",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf",
-    "vendor_name": "Legion of the Bouncy Castle Inc.",
-    "module_name": "BC-FJA (Bouncy Castle FIPS Java API)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/15/2018, 4/2/2019, 4/9/2019, 7/23/2020",
-    "validation_dates": [
-      "3/15/2018",
-      "4/2/2019",
-      "4/9/2019",
-      "7/23/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
-    "description": "The Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well. The module is designed to integrate with the associated Bouncy Castle APIs including those for TLS, X.509, CMS, S/MIME, TSP, PKIX, and OpenPGP.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/15/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "4/2/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "4/9/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "7/23/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Legion of the Bouncy Castle Inc.",
-      "website_url": "http://www.bouncycastle.org",
-      "address_lines": [
-        "85 The Crescent",
-        "Ascot Vale, Victoria 3032",
-        "Australia"
-      ],
-      "country": "Australia",
-      "contact_name": "David Hook",
-      "contact_email": "dgh@bouncycastle.org",
-      "contact_phone": "+61438170390"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -105,6 +31,80 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152",
+    "certificate_number": "3152",
+    "dataset": "historical",
+    "description": "The Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well. The module is designed to integrate with the associated Bouncy Castle APIs including those for TLS, X.509, CMS, S/MIME, TSP, PKIX, and OpenPGP.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "BC-FJA (Bouncy Castle FIPS Java API)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/15/2018, 4/2/2019, 4/9/2019, 7/23/2020",
+    "validation_dates": [
+      "3/15/2018",
+      "4/2/2019",
+      "4/9/2019",
+      "7/23/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "3/15/2018",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "4/2/2019",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "4/9/2019",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "7/23/2020",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "85 The Crescent",
+        "Ascot Vale, Victoria 3032",
+        "Australia"
+      ],
+      "contact_email": "dgh@bouncycastle.org",
+      "contact_name": "David Hook",
+      "contact_phone": "+61438170390",
+      "country": "Australia",
+      "name": "Legion of the Bouncy Castle Inc.",
+      "website_url": "http://www.bouncycastle.org"
+    },
+    "vendor_name": "Legion of the Bouncy Castle Inc."
   }
 }

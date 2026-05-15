@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/512"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/512",
     "certificate_number": "512",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/512",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/512",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp512.pdf",
-    "vendor_name": "E.F. Johnson Co.",
-    "module_name": "Communication Cryptographic Library (CCL)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/15/2004, 5/5/2005",
-    "validation_dates": [
-      "3/15/2004",
-      "5/5/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The E.F. Johnson Co. Communication Cryptographic Library (CCL) is a Microsoft Windows 2000/2003/XP and Pocket PC 2003 Dynamic Link Library that performs security related functions. The CCL is packaged as a Software Development Kit which makes available an Application Programming Interface (API) for all the security functions of the CCL. The security functions available via the APIs are: AES 128 bit, AES 192 bit, AES 256 bit, DES, DSA 1024 bit Signature Generation and Verification, HMAC, PRNG, and SHA-1. The CCL is used in the E.F. Johnson Subscriber Management Assistant key loader.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Communication Cryptographic Library (CCL)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/512",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt512.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp512.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/15/2004, 5/5/2005",
+    "validation_dates": [
+      "3/15/2004",
+      "5/5/2005"
+    ],
     "validation_history": [
       {
         "date": "3/15/2004",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "5/5/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "E.F. Johnson Co.",
-      "website_url": "http://www.efjohnson.com",
       "address_lines": [
         "123 N. State St.",
         "Waseca, MN 56093",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "John Oblak",
       "contact_email": "joblak@efjohnson.com",
-      "contact_phone": "507-837-5116"
+      "contact_name": "John Oblak",
+      "contact_phone": "507-837-5116",
+      "country": "USA",
+      "name": "E.F. Johnson Co.",
+      "website_url": "http://www.efjohnson.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "E.F. Johnson Co."
   }
 }

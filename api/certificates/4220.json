@@ -1,36 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4220"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4220",
     "certificate_number": "4220",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4220",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4220",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4220.pdf",
-    "vendor_name": "Trellix",
-    "module_name": "Trellix Core Cryptographic Module (kernel)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/9/2022, 3/13/2024",
-    "validation_dates": [
-      "5/9/2022",
-      "3/13/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "None",
     "description": "The Trellix Core Cryptographic Module provides cryptographic functionality for Trellix's Endpoint Encryption product range.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trellix Core Cryptographic Module (kernel)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4220",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,51 +46,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2022_010622_0641_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4220.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/9/2022, 3/13/2024",
+    "validation_dates": [
+      "5/9/2022",
+      "3/13/2024"
+    ],
     "validation_history": [
       {
         "date": "5/9/2022",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "3/13/2024",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Trellix",
-      "website_url": "http://www.trellix.com",
       "address_lines": [
         "6220 America Center Drive",
         "San Jose, CA 95002",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Product Certifications",
       "contact_email": "sec_certs@mcafee.com",
-      "contact_phone": "888-847-8766"
+      "contact_name": "Product Certifications",
+      "contact_phone": "888-847-8766",
+      "country": "USA",
+      "name": "Trellix",
+      "website_url": "http://www.trellix.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Trellix"
   }
 }

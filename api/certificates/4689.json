@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4689"
   },
   "certificate": {
-    "certificate_number": "4689",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4689",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4689",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4689.pdf",
-    "vendor_name": "Pensando Systems, Inc",
-    "module_name": "Pensando TLS Library",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/3/2024",
-    "validation_dates": [
-      "4/3/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "Pensando TLS Library is a set of standard Transport Layer Security (TLS) functions that are written in the GO programming language. It supports TLS protocol version 1.2 (client and server) and standard cryptographic functions, such as SHA, AES, etc.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4689.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2024_010524_0757.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/3/2024",
-        "type": "Initial",
-        "lab": "ADVANCED DATA SECURITY"
-      }
-    ],
-    "vendor": {
-      "name": "Pensando Systems, Inc",
-      "website_url": "http://pensando.io",
-      "address_lines": [
-        "570 Alder Drive",
-        "Milpitas, CA 95035",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Lei Chen",
-      "contact_email": null,
-      "contact_phone": "408-451-9026"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +28,63 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4689",
+    "certificate_number": "4689",
+    "dataset": "active",
+    "description": "Pensando TLS Library is a set of standard Transport Layer Security (TLS) functions that are written in the GO programming language. It supports TLS protocol version 1.2 (client and server) and standard cryptographic functions, such as SHA, AES, etc.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Pensando TLS Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4689",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4689.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2024_010524_0757.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4689.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/3/2024",
+    "validation_dates": [
+      "4/3/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "4/3/2024",
+        "lab": "ADVANCED DATA SECURITY",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "570 Alder Drive",
+        "Milpitas, CA 95035",
+        "USA"
+      ],
+      "contact_email": null,
+      "contact_name": "Lei Chen",
+      "contact_phone": "408-451-9026",
+      "country": "USA",
+      "name": "Pensando Systems, Inc",
+      "website_url": "http://pensando.io"
+    },
+    "vendor_name": "Pensando Systems, Inc"
   }
 }

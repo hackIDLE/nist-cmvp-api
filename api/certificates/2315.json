@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2315"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2315",
     "certificate_number": "2315",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2315",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2315",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2315.pdf",
-    "vendor_name": "Software House, a brand of Tyco Security Products",
-    "module_name": "iSTAR Ultra Door Controller",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "1/15/2015",
-    "validation_dates": [
-      "1/15/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "The tamper evident seals installed as indicated in the Security Policy",
     "description": "The iSTAR Ultra door controller is a powerful IP-edge access control device that provides a strong feature set for securing doors. The iSTAR Ultra controls up to 32 doors. The iSTAR Ultra records, encrypts, and stores all granted access events as well as alarm events of any unauthorized entry. The iSTAR Ultra can be deployed individually or in clusters. The iSTAR Ultra features strong 256-bit AES network encryption between the controller and host, and between controllers within a cluster.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "iSTAR Ultra Door Controller",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2315",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0049.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2315.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/15/2015",
+    "validation_dates": [
+      "1/15/2015"
+    ],
     "validation_history": [
       {
         "date": "1/15/2015",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Software House, a brand of Tyco Security Products",
-      "website_url": "http://www.swhouse.com",
       "address_lines": [
         "6 Technology Park Drive",
         "Westford, MA 01886",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Lou Mikitarian",
       "contact_email": "lmikitarian@tycoint.com",
-      "contact_phone": "978-577-4125"
+      "contact_name": "Lou Mikitarian",
+      "contact_phone": "978-577-4125",
+      "country": "USA",
+      "name": "Software House, a brand of Tyco Security Products",
+      "website_url": "http://www.swhouse.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Software House, a brand of Tyco Security Products"
   }
 }

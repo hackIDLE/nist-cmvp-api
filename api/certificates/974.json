@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/974"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/974",
     "certificate_number": "974",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/974",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/974",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp974.pdf",
-    "vendor_name": "Giesecke & Devrient",
-    "module_name": "Sm@rtCafé Expert 3.2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "6/30/2008, 1/11/2012",
-    "validation_dates": [
-      "6/30/2008",
-      "1/11/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Giesecke & Devrient (G&D) Smart Card Chip Operating System Sm@rtCafé Expert 3.2 is a Java Card 2.2.1 and Global Platform v2.1.1 compliant smart card module supporting both contact and contactless interfaces. It also supports, at a minimum, RSA up to 2048 bits(RSA and RSA-CRT) with on-card key generation, Hash algorithms(including SHA256), SEED(128 bit), AES(up to 256 bits), DSA(up to 1024 bits), OAEP Padding and Triple-DES. The Sm@rtCafé Expert 3.2 is suitable for government and corporate identification, payment and banking, health care, and Web applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Sm@rtCafé Expert 3.2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/974",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt974.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp974.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/30/2008, 1/11/2012",
+    "validation_dates": [
+      "6/30/2008",
+      "1/11/2012"
+    ],
     "validation_history": [
       {
         "date": "6/30/2008",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "1/11/2012",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Giesecke & Devrient",
-      "website_url": "http://www.gdai.com",
       "address_lines": [
         "45925 Horseshoe Drive",
         "Dulles, VA 20166",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Poitner",
       "contact_email": "michael.poitner@gdai.com",
-      "contact_phone": "650-312-1241"
+      "contact_name": "Michael Poitner",
+      "contact_phone": "650-312-1241",
+      "country": "USA",
+      "name": "Giesecke & Devrient",
+      "website_url": "http://www.gdai.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Giesecke & Devrient"
   }
 }

@@ -1,33 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3948"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode and configured to Overall Level 3 per Section 2 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3948",
     "certificate_number": "3948",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3948",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3948",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3948.pdf",
-    "vendor_name": "Motorola Solutions, Inc.",
-    "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 3",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "6/7/2021",
-    "validation_dates": [
-      "6/7/2021"
-    ],
-    "sunset_date": "6/6/2026",
-    "caveat": "When operated in FIPS mode and configured to Overall Level 3 per Section 2 of the Security Policy",
     "description": "The MACE cryptographic processor is used in security modules embedded in Motorola's Astro family of radio systems products. It provides secure voice and data capabilities as well as APCO Over-The-Air-Rekeying and advanced key management.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 3",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3948",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,43 +43,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3948.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "6/6/2026",
+    "validation_date": "6/7/2021",
+    "validation_dates": [
+      "6/7/2021"
+    ],
     "validation_history": [
       {
         "date": "6/7/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Motorola Solutions, Inc.",
-      "website_url": "http://www.motorolasolutions.com",
       "address_lines": [
         "500 West Monroe Street",
         "Chicago, IL 60661",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Amalendu Roy",
       "contact_email": "aroy@motorolasolutions.com",
-      "contact_phone": "847-576-5000"
+      "contact_name": "Amalendu Roy",
+      "contact_phone": "847-576-5000",
+      "country": "USA",
+      "name": "Motorola Solutions, Inc.",
+      "website_url": "http://www.motorolasolutions.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DES"
-    ]
+    "vendor_name": "Motorola Solutions, Inc."
   }
 }

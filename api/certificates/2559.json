@@ -1,35 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2559"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2559",
     "certificate_number": "2559",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2559",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2559",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2559.pdf",
-    "vendor_name": "VMware, Inc.",
-    "module_name": "VMware Horizon JCE (Java Cryptographic Extension) Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/12/2016, 5/18/2018",
-    "validation_dates": [
-      "2/12/2016",
-      "5/18/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
     "description": "The VMware Horizon JCE (Java Cryptographic Extension) Module is a versatile software library that implements FIPS-140-2 approved cryptographic services for VMware products and platforms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VMware Horizon JCE (Java Cryptographic Extension) Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2559",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,54 +49,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertFeb2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2559.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/12/2016, 5/18/2018",
+    "validation_dates": [
+      "2/12/2016",
+      "5/18/2018"
+    ],
     "validation_history": [
       {
         "date": "2/12/2016",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       },
       {
         "date": "5/18/2018",
-        "type": "Update",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "VMware, Inc.",
-      "website_url": "http://www.vmware.com",
       "address_lines": [
         "3401 Hillview Ave",
         "Palo Alto, CA 94304",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Manoj Maskara",
       "contact_email": "mmaskara@vmware.com",
-      "contact_phone": "650-427-1000"
+      "contact_name": "Manoj Maskara",
+      "contact_phone": "650-427-1000",
+      "country": "USA",
+      "name": "VMware, Inc.",
+      "website_url": "http://www.vmware.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "KTS",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "VMware, Inc."
   }
 }

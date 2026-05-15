@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3830"
   },
   "certificate": {
-    "certificate_number": "3830",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3830",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3830",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3830.pdf",
-    "vendor_name": "Pitney Bowes, Inc.",
-    "module_name": "X4i Hardware Security Module (HSM)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "2/26/2021",
-    "validation_dates": [
-      "2/26/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS Mode.",
-    "description": "The X4i HSM is a single chip cryptographic module using the Maxim MAX32590 hardware. The central purpose of the module is as a physical computing device that safeguards and manages cryptographic keys and provides cryptographic services to connected host devices. The module uses a number of strong identity-based authentication mechanisms to provide authentication, integrity, and (when necessary) non-repudiation.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3830.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2021_010321_1145_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/26/2021",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Pitney Bowes, Inc.",
-      "website_url": "http://www.pb.com",
-      "address_lines": [
-        "27 Waterview Drive",
-        "Shelton, CT 06484",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Brian Hannigan",
-      "contact_email": "brian.hannigan@pb.com",
-      "contact_phone": "203-796-3201"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +29,60 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS Mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3830",
+    "certificate_number": "3830",
+    "dataset": "historical",
+    "description": "The X4i HSM is a single chip cryptographic module using the Maxim MAX32590 hardware. The central purpose of the module is as a physical computing device that safeguards and manages cryptographic keys and provides cryptographic services to connected host devices. The module uses a number of strong identity-based authentication mechanisms to provide authentication, integrity, and (when necessary) non-repudiation.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "X4i Hardware Security Module (HSM)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3830",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3830.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2021_010321_1145_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3830.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/26/2021",
+    "validation_dates": [
+      "2/26/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "2/26/2021",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "27 Waterview Drive",
+        "Shelton, CT 06484",
+        "USA"
+      ],
+      "contact_email": "brian.hannigan@pb.com",
+      "contact_name": "Brian Hannigan",
+      "contact_phone": "203-796-3201",
+      "country": "USA",
+      "name": "Pitney Bowes, Inc.",
+      "website_url": "http://www.pb.com"
+    },
+    "vendor_name": "Pitney Bowes, Inc."
   }
 }

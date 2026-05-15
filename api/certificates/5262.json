@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262"
   },
   "certificate": {
-    "certificate_number": "5262",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Adaptive Security Appliance Virtual Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "5/11/2026",
-    "validation_dates": [
-      "5/11/2026"
-    ],
-    "sunset_date": "6/27/2032",
-    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys).No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "Virtual Adaptive Security Appliances offers the combination of the industry's most deployed stateful firewall with a comprehensive range of next-generation network security services, intrusion prevention system (IPS), content security and secure unified communications. Delivering robust user and application policy enforcement, multi-vector attack protection, and secure connectivity services in cost-effective, easy-to-deploy solutions.",
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/11/2026",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
-      "address_lines": [
-        "170 West Tasman Drive",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
-      "contact_email": "certteam@cisco.com",
-      "contact_phone": "800-553-6387"
-    },
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 59,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "crawl4ai",
       "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 59
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -145,6 +91,60 @@
       "A3376 Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | © 2021-2026 Cisco Systems, Inc. | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Name Properties Implementation Reference | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
       "output from SP800-90Arev1 CTR_DRBG | (A2952/A3376)"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys).No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
+    "certificate_number": "5262",
+    "dataset": "active",
+    "description": "Virtual Adaptive Security Appliances offers the combination of the industry's most deployed stateful firewall with a comprehensive range of next-generation network security services, intrusion prevention system (IPS), content security and secure unified communications. Delivering robust user and application policy enforcement, multi-vector attack protection, and secure connectivity services in cost-effective, easy-to-deploy solutions.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Adaptive Security Appliance Virtual Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5262",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5262.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/27/2032",
+    "validation_date": "5/11/2026",
+    "validation_dates": [
+      "5/11/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/11/2026",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certification Team",
+      "contact_phone": "800-553-6387",
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
+    },
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/119"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS-compliant \"Secure\" and \"Minimum\" modes",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/119",
     "certificate_number": "119",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/119",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/119",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp119.pdf",
-    "vendor_name": "Alcatel",
-    "module_name": "TimeStep PERMIT/Gate™ 1520 series 50 / Alcatel 7132; TimeStep PERMIT/Gate™ 2520 series 40 and 50 / Alcatel 7133; TimeStep PERMIT/Gate™ 4520 series 40 and 50; and TimeStep PERMIT/Gate™ 4620 series 40 and 50 / Alcatel 7134",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "10/12/2000",
-    "validation_dates": [
-      "10/12/2000"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS-compliant \"Secure\" and \"Minimum\" modes",
     "description": "The TimeStep PERMIT/Gate™ line of products (also referred to as the Alcatel Secure VPN Gateway) is a network appliance that provides IPSec compliant VPN services. It is a tamper-resistant gateway that secures data communications for Intranets, Extranets, and Internet remote access.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "TimeStep PERMIT/Gate™ 1520 series 50 / Alcatel 7132; TimeStep PERMIT/Gate™ 2520 series 40 and 50 / Alcatel 7133; TimeStep PERMIT/Gate™ 4520 series 40 and 50; and TimeStep PERMIT/Gate™ 4620 series 40 and 50 / Alcatel 7134",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/119",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,16 +40,24 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt119.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp119.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/12/2000",
+    "validation_dates": [
+      "10/12/2000"
+    ],
     "validation_history": [
       {
         "date": "10/12/2000",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Alcatel",
-      "website_url": "http://www.alcatel.com",
       "address_lines": [
         "Managed IP Services",
         "600 March Road",
@@ -53,25 +65,13 @@
         "Kanata, Ontario K2K 2E6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Doug Wiemer",
       "contact_email": "douglas.wiemer@alcatel.com",
-      "contact_phone": "613-784-3146"
+      "contact_name": "Doug Wiemer",
+      "contact_phone": "613-784-3146",
+      "country": "Canada",
+      "name": "Alcatel",
+      "website_url": "http://www.alcatel.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Alcatel"
   }
 }

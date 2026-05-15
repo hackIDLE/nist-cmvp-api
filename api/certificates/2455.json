@@ -1,33 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2455"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2455",
     "certificate_number": "2455",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2455",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2455",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2455.pdf",
-    "vendor_name": "SiCore Technologies Inc.",
-    "module_name": "SHIELD Secure Coprocessor",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "10/14/2015",
-    "validation_dates": [
-      "10/14/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "A secure co-processor with a PCI Express Interface",
-    "security_level_exceptions": [
-      "Design Assurance: Level 4"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SHIELD Secure Coprocessor",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2455",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,45 +45,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2015.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2455.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/14/2015",
+    "validation_dates": [
+      "10/14/2015"
+    ],
     "validation_history": [
       {
         "date": "10/14/2015",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "SiCore Technologies Inc.",
-      "website_url": "http://SiCore-tech.com",
       "address_lines": [
         "200 Finn Court",
         "Farmingdale, NY 11735",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Godfrey Vassallo",
       "contact_email": "gvassallo@sicore-tech.com",
-      "contact_phone": "631-327-2019"
+      "contact_name": "Godfrey Vassallo",
+      "contact_phone": "631-327-2019",
+      "country": "USA",
+      "name": "SiCore Technologies Inc.",
+      "website_url": "http://SiCore-tech.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "SiCore Technologies Inc."
   }
 }

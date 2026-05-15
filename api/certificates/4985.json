@@ -1,83 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985"
   },
   "certificate": {
-    "certificate_number": "4985",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4985.pdf",
-    "vendor_name": "The OpenSSL Project",
-    "module_name": "OpenSSL FIPS Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/11/2025, 11/21/2025",
-    "validation_dates": [
-      "3/11/2025",
-      "11/21/2025"
-    ],
-    "sunset_date": "3/10/2030",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4985.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/11/2025",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "11/21/2025",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "The OpenSSL Project",
-      "website_url": "http://www.openssl.org",
-      "address_lines": [
-        "40 E Main St",
-        "Suite 744",
-        "Newark DE 19711",
-        "Newark, Delaware 19711",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "OpenSSL Corporation",
-      "contact_email": "corporation@openssl.org",
-      "contact_phone": "302-266-2690"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 134,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 134
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -230,6 +168,68 @@
       "DRBG",
       "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384",
       "SHA2-512/224 and SHA2-512/256"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985",
+    "certificate_number": "4985",
+    "dataset": "active",
+    "description": "The OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4985.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4985.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "3/11/2025, 11/21/2025",
+    "validation_dates": [
+      "3/11/2025",
+      "11/21/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "3/11/2025",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "11/21/2025",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "40 E Main St",
+        "Suite 744",
+        "Newark DE 19711",
+        "Newark, Delaware 19711",
+        "USA"
+      ],
+      "contact_email": "corporation@openssl.org",
+      "contact_name": "OpenSSL Corporation",
+      "contact_phone": "302-266-2690",
+      "country": "USA",
+      "name": "The OpenSSL Project",
+      "website_url": "http://www.openssl.org"
+    },
+    "vendor_name": "The OpenSSL Project"
   }
 }

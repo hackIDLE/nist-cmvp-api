@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3713"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #1579",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3713",
     "certificate_number": "3713",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3713",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3713",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3713.pdf",
-    "vendor_name": "Certicom Corp.",
-    "module_name": "Security Builder® FIPS Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/28/2020",
-    "validation_dates": [
-      "9/28/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #1579",
     "description": "The Security Builder FIPS Module is a standards-based cryptographic toolkit that supports optimized Elliptic Curve Cryptography and provides application developers with sophisticated tools to flexibly integrate encryption, digital signatures and other security mechanisms into both mobile and server-based applications. The Security Builder FIPS Module is part of the Certicom Security Architecture, a comprehensive cross-platform security solution which supports multiple cryptographic software and hardware providers with a single common API.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Security Builder® FIPS Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3713",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2020_011020_0703.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3713.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/28/2020",
+    "validation_dates": [
+      "9/28/2020"
+    ],
     "validation_history": [
       {
         "date": "9/28/2020",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Certicom Corp.",
-      "website_url": "http://www.certicom.com",
       "address_lines": [
         "4701 Tahoe Blvd.",
         "Building A",
         "Mississauga, ON L4W 0B5",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Certicom Support",
       "contact_email": "support@certicom.com",
-      "contact_phone": "905-507-4220"
+      "contact_name": "Certicom Support",
+      "contact_phone": "905-507-4220",
+      "country": "Canada",
+      "name": "Certicom Corp.",
+      "website_url": "http://www.certicom.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Certicom Corp."
   }
 }

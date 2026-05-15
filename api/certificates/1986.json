@@ -1,87 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1986"
   },
   "certificate": {
-    "certificate_number": "1986",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1986",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1986",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1986.pdf",
-    "vendor_name": "TecSec Incorporated",
-    "module_name": "TecSec Armored Card - Contactless Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "8/9/2013, 2/6/2014",
-    "validation_dates": [
-      "8/9/2013",
-      "2/6/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated with the fingerprint authentication mechanism parameters configured as indicated in the Security Policy Section 9. No assurance of Secure Channel Protocol (SCP) message integrity",
-    "description": "The TecSec Armored Card is a cryptographic module which provides enterprise personnel identification, persistent data security for data in transit and at rest, with additional support for physical/logical/functional/content authorization. The Chip is part of a dual-chip PIV smart card that is fully compliant with the end-point service specified in SP800-73-1. This Chip provides the contactless functionality leveraging a common robust identity process in support of the federation platform capabilities of the overall card.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1986.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0032.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/9/2013",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "2/6/2014",
-        "type": "Update",
-        "lab": ""
-      }
-    ],
-    "vendor": {
-      "name": "TecSec Incorporated",
-      "website_url": "http://www.tecsec.com",
-      "address_lines": [
-        "12950 Worldgate Drive",
-        "Suite 100",
-        "Herndon, VA 20170",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Roger Butler",
-      "contact_email": "RButler@tecsec.com",
-      "contact_phone": "571-331-6130"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -93,6 +27,72 @@
       "KDF",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated with the fingerprint authentication mechanism parameters configured as indicated in the Security Policy Section 9. No assurance of Secure Channel Protocol (SCP) message integrity",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1986",
+    "certificate_number": "1986",
+    "dataset": "historical",
+    "description": "The TecSec Armored Card is a cryptographic module which provides enterprise personnel identification, persistent data security for data in transit and at rest, with additional support for physical/logical/functional/content authorization. The Chip is part of a dual-chip PIV smart card that is fully compliant with the end-point service specified in SP800-73-1. This Chip provides the contactless functionality leveraging a common robust identity process in support of the federation platform capabilities of the overall card.",
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "TecSec Armored Card - Contactless Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1986",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1986.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0032.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1986.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/9/2013, 2/6/2014",
+    "validation_dates": [
+      "8/9/2013",
+      "2/6/2014"
+    ],
+    "validation_history": [
+      {
+        "date": "8/9/2013",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "2/6/2014",
+        "lab": "",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "12950 Worldgate Drive",
+        "Suite 100",
+        "Herndon, VA 20170",
+        "USA"
+      ],
+      "contact_email": "RButler@tecsec.com",
+      "contact_name": "Roger Butler",
+      "contact_phone": "571-331-6130",
+      "country": "USA",
+      "name": "TecSec Incorporated",
+      "website_url": "http://www.tecsec.com"
+    },
+    "vendor_name": "TecSec Incorporated"
   }
 }

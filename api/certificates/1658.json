@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1658"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1658",
     "certificate_number": "1658",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1658",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1658",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1658.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung SSD PM810 SED FIPS 140 Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "12/29/2011",
-    "validation_dates": [
-      "12/29/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "SAMSUNG SSD PM810 SED FIPS 140 Module provides high-performance AES-256 cryptographic encryption and decryption of the data stored in NAND Flash via SATA interface. The PM810 encryption/decryption creates no degradation in performance compared to non-encrypted SSD. The PM810 supports both the ATA Security Feature Set and TCG Opal SSC. Security Functionalities include user authentication for access control via ISV TCG Opal support, user data encryption for data protection, and instantaneous sanitization of user drive data via cryptographic erase for repurposing or disposal.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung SSD PM810 SED FIPS 140 Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1658",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0012.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1658.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/29/2011",
+    "validation_dates": [
+      "12/29/2011"
+    ],
     "validation_history": [
       {
         "date": "12/29/2011",
-        "type": "Initial",
-        "lab": "Aspect"
+        "lab": "Aspect",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com",
       "address_lines": [
         "275-18, Samsung 1-ro",
         "Hwaseong-si, Gyeonggi-do 445-330",
         "Korea"
       ],
-      "country": "Korea",
-      "contact_name": "Jisoo Kim",
       "contact_email": "jisoo74.kim@samsung.com",
-      "contact_phone": "+82-31-208-3870"
+      "contact_name": "Jisoo Kim",
+      "contact_phone": "+82-31-208-3870",
+      "country": "Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

@@ -1,23 +1,63 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1747"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1747",
     "certificate_number": "1747",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1747",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1747",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1747.pdf",
-    "vendor_name": "OpenSSL Software Services Inc.",
+    "description": "The OpenSSL FIPS Object Module 2.0 is a general purpose cryptographic module delivered as open source code. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "OpenSSL FIPS Object Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1747",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1747.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1747.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-2",
     "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "6/27/2012, 7/9/2012, 7/18/2012, 10/24/2012, 1/22/2013, 2/6/2013, 2/22/2013, 2/28/2013, 3/28/2013, 5/16/2013, 6/14/2013, 8/16/2013, 8/23/2013, 11/8/2013, 12/20/2013, 6/27/2014, 7/3/2014, 9/2/2014, 9/12/2014, 10/16/2014, 12/31/2014, 6/15/2015, 9/4/2015, 1/25/2016, 1/10/2017, 1/30/2017, 12/18/2017, 4/19/2018",
     "validation_dates": [
       "6/27/2012",
@@ -49,201 +89,161 @@
       "12/18/2017",
       "4/19/2018"
     ],
-    "sunset_date": null,
-    "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
-    "description": "The OpenSSL FIPS Object Module 2.0 is a general purpose cryptographic module delivered as open source code. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1747.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0018.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "6/27/2012",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "7/9/2012",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "7/18/2012",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/24/2012",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/22/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/6/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/22/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/28/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "3/28/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "5/16/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/14/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "8/16/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "8/23/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "11/8/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/20/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/27/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/3/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/2/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/12/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/16/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/31/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/15/2015",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "9/4/2015",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/25/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/10/2017",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/30/2017",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/18/2017",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "4/19/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "OpenSSL Software Services Inc.",
-      "website_url": "http://openssl.com",
       "address_lines": [
         "40 E Main St., Suite 744",
         "Newark, DE 19711",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": null,
       "contact_email": "osf-contact@openssl.org",
-      "contact_phone": null
+      "contact_name": null,
+      "contact_phone": null,
+      "country": "USA",
+      "name": "OpenSSL Software Services Inc.",
+      "website_url": "http://openssl.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "OpenSSL Software Services Inc."
   }
 }

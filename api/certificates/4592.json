@@ -1,38 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "TLS"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
     "certificate_number": "4592",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4592.pdf",
-    "vendor_name": "Arista Networks, Inc.",
-    "module_name": "Arista EOS Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/12/2023, 9/27/2023, 12/5/2023, 6/27/2024, 3/5/2025",
-    "validation_dates": [
-      "9/12/2023",
-      "9/27/2023",
-      "12/5/2023",
-      "6/27/2024",
-      "3/5/2025"
-    ],
-    "sunset_date": "8/29/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "Arista's crypto library is a comprehensive suite of FIPS Approved algorithms. Many key sizes and modes have been implemented to allow flexibility and efficiency.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Arista EOS Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,69 +49,63 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4592.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "8/29/2026",
+    "validation_date": "9/12/2023, 9/27/2023, 12/5/2023, 6/27/2024, 3/5/2025",
+    "validation_dates": [
+      "9/12/2023",
+      "9/27/2023",
+      "12/5/2023",
+      "6/27/2024",
+      "3/5/2025"
+    ],
     "validation_history": [
       {
         "date": "9/12/2023",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
       },
       {
         "date": "9/27/2023",
-        "type": "Update",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
       },
       {
         "date": "12/5/2023",
-        "type": "Update",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
       },
       {
         "date": "6/27/2024",
-        "type": "Update",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
       },
       {
         "date": "3/5/2025",
-        "type": "Update",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Arista Networks, Inc.",
-      "website_url": "http://www.arista.com",
       "address_lines": [
         "5453 Great America Parkway",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Arista Networks Certification Team",
       "contact_email": "cert-team@arista.com",
-      "contact_phone": null
+      "contact_name": "Arista Networks Certification Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Arista Networks, Inc.",
+      "website_url": "http://www.arista.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "TLS"
-    ]
+    "vendor_name": "Arista Networks, Inc."
   }
 }

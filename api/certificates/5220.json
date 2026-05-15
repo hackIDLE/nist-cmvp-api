@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5220"
   },
   "certificate": {
-    "certificate_number": "5220",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5220",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5220",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5220.pdf",
-    "vendor_name": "JISA Softech Private Limited",
-    "module_name": "LS2 HSM Family",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "MultiChipEmbed",
-    "overall_level": 3,
-    "validation_date": "4/1/2026",
-    "validation_dates": [
-      "4/1/2026"
-    ],
-    "sunset_date": "6/5/2029",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
-    "description": "The LS2 HSM module is a multi-chip Cryptographic Module with firmware and installed in Host CryptoBind HSM and CryptoBind DSS. It consists of multiple firmware components, including an operating system, applications exposing services and interfaces related to secure key management, crypto operations, and policy management of the module.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5220.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/1/2026",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "JISA Softech Private Limited",
-      "website_url": "http://www.jisasoftech.com",
-      "address_lines": [
-        "Amar Business Zone",
-        "A604, Swati Park",
-        "Veerbhadranagar Baner",
-        "Pune, Maharashtra 411045",
-        "India"
-      ],
-      "country": "India",
-      "contact_name": "Rumit Shah",
-      "contact_email": "rumit@jisasoftech.com",
-      "contact_phone": "+91 9823587030"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -87,6 +31,62 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5220",
+    "certificate_number": "5220",
+    "dataset": "active",
+    "description": "The LS2 HSM module is a multi-chip Cryptographic Module with firmware and installed in Host CryptoBind HSM and CryptoBind DSS. It consists of multiple firmware components, including an operating system, applications exposing services and interfaces related to secure key management, crypto operations, and policy management of the module.",
+    "embodiment": "MultiChipEmbed",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "LS2 HSM Family",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5220",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5220.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5220.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/5/2029",
+    "validation_date": "4/1/2026",
+    "validation_dates": [
+      "4/1/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/1/2026",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Amar Business Zone",
+        "A604, Swati Park",
+        "Veerbhadranagar Baner",
+        "Pune, Maharashtra 411045",
+        "India"
+      ],
+      "contact_email": "rumit@jisasoftech.com",
+      "contact_name": "Rumit Shah",
+      "contact_phone": "+91 9823587030",
+      "country": "India",
+      "name": "JISA Softech Private Limited",
+      "website_url": "http://www.jisasoftech.com"
+    },
+    "vendor_name": "JISA Softech Private Limited"
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981",
     "certificate_number": "981",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp981.pdf",
-    "vendor_name": "FRAMA AG",
-    "module_name": "FRAMA PSD-I",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "7/17/2008",
-    "validation_dates": [
-      "7/17/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The cryptographic module (called Postal Security Device, PSD) supports booking processes within postal meters as well as value loading processes in order to increase the postage credits. The postage credits are kept as CSPs within the PSD. In detail the use of cryptographic services, like the production of cryptographic keys, the encoding, decoding or signature and signature verification is part of PSD internal purposes to the booking processes mentioned above. The PSD uses the following algorithms in the approved mode of operation: Triple-DES; RSA; SHA-1; RNG acc. to FIPS 186-2.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FRAMA PSD-I",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt981.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp981.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/17/2008",
+    "validation_dates": [
+      "7/17/2008"
+    ],
     "validation_history": [
       {
         "date": "7/17/2008",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "FRAMA AG",
-      "website_url": "http://www.framaswiss.com",
       "address_lines": [
         "Unterdorf",
         "Lauperswil CH-3438",
         "Switzerland"
       ],
-      "country": "Switzerland",
-      "contact_name": "Beat C. Waelti",
       "contact_email": "beat.waelti@framaswiss.com",
-      "contact_phone": "+41 34 496 98 98"
+      "contact_name": "Beat C. Waelti",
+      "contact_phone": "+41 34 496 98 98",
+      "country": "Switzerland",
+      "name": "FRAMA AG",
+      "website_url": "http://www.framaswiss.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "FRAMA AG"
   }
 }

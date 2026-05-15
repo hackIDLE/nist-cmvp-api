@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4971"
   },
   "certificate": {
-    "certificate_number": "4971",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4971",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4971",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4971.pdf",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "Amazon Linux 2023 Libgcrypt Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/24/2025",
-    "validation_dates": [
-      "2/24/2025"
-    ],
-    "sunset_date": "2/23/2030",
-    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
-    "description": "The Amazon Linux 2023 Libgcrypt Cryptographic Module is a software library implementing general purpose cryptographic algorithms.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4971.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/24/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "http://www.amazon.com",
-      "address_lines": [
-        "1918 8th Ave",
-        "Seattle, WA 98101",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Amazon Linux Security",
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 284,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 284
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -365,6 +312,59 @@
       "KW | AES Key Wrap",
       "RSA | Rivest, Shamir, Adleman",
       "SHA | Secure Hash Algorithm"
-    ]
+    ],
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4971",
+    "certificate_number": "4971",
+    "dataset": "active",
+    "description": "The Amazon Linux 2023 Libgcrypt Cryptographic Module is a software library implementing general purpose cryptographic algorithms.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Amazon Linux 2023 Libgcrypt Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4971",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4971.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4971.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "2/23/2030",
+    "validation_date": "2/24/2025",
+    "validation_dates": [
+      "2/24/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "2/24/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Amazon Linux Security",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://www.amazon.com"
+    },
+    "vendor_name": "Amazon Web Services, Inc."
   }
 }

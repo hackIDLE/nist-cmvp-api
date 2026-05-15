@@ -1,81 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3084"
   },
   "certificate": {
-    "certificate_number": "3084",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3084",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3084",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3084.pdf",
-    "vendor_name": "GE MDS LLC",
-    "module_name": "Orbit MCR and Orbit ECR",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "12/19/2017, 1/2/2018",
-    "validation_dates": [
-      "12/19/2017",
-      "1/2/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
-    "description": "The GE MDS Orbit Multiservice Connect Router (MCR) and Edge Connect Router (ECR) modules are secure wireless communications devices, which operate on cellular bands (2G/3G/4G LTE), licensed and unlicensed bands, and 802.11 Wi-Fi. The modules are available in two form factors (MCR and ECR), with different port/interface configurations available for each.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3084.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/19/2017",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "1/2/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "GE MDS LLC",
-      "website_url": "http://www.gemds.com",
-      "address_lines": [
-        "175 Science Parkway",
-        "Rochester, NY 14620",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Aaron Wright",
-      "contact_email": "aaron.wright@ge.com",
-      "contact_phone": "585-242-8354"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +28,66 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3084",
+    "certificate_number": "3084",
+    "dataset": "historical",
+    "description": "The GE MDS Orbit Multiservice Connect Router (MCR) and Edge Connect Router (ECR) modules are secure wireless communications devices, which operate on cellular bands (2G/3G/4G LTE), licensed and unlicensed bands, and 802.11 Wi-Fi. The modules are available in two form factors (MCR and ECR), with different port/interface configurations available for each.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Orbit MCR and Orbit ECR",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3084",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3084.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3084.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/19/2017, 1/2/2018",
+    "validation_dates": [
+      "12/19/2017",
+      "1/2/2018"
+    ],
+    "validation_history": [
+      {
+        "date": "12/19/2017",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "1/2/2018",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "175 Science Parkway",
+        "Rochester, NY 14620",
+        "USA"
+      ],
+      "contact_email": "aaron.wright@ge.com",
+      "contact_name": "Aaron Wright",
+      "contact_phone": "585-242-8354",
+      "country": "USA",
+      "name": "GE MDS LLC",
+      "website_url": "http://www.gemds.com"
+    },
+    "vendor_name": "GE MDS LLC"
   }
 }

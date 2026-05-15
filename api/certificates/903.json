@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/903"
   },
   "certificate": {
-    "certificate_number": "903",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/903",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/903",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp903.pdf",
-    "vendor_name": "Foundry Networks",
-    "module_name": "Foundry Networks FIPS 140-2 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "1/23/2008",
-    "validation_dates": [
-      "1/23/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Foundry Networks FIPS 140-2 Cryptographic Module resides on a PCI card and provides cryptographic key protection and acceleration for both asymmetric and symmetric encryption operations. It is contained in its own secure enclosure that provides physical resistance to tampering and zeroization of plaintext cryptographic material in the event the enclosure is opened.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp903.pdf"
-      },
-      {
-        "label": "Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt903.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/23/2008",
-        "type": "Initial",
-        "lab": "SAIC-VA"
-      }
-    ],
-    "vendor": {
-      "name": "Foundry Networks",
-      "website_url": "http://www.foundrynet.com",
-      "address_lines": [
-        "4980 Great America Pkwy",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Michael Hong",
-      "contact_email": "mhong@foundrynet.com",
-      "contact_phone": "408-207-1700"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +26,63 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/903",
+    "certificate_number": "903",
+    "dataset": "historical",
+    "description": "The Foundry Networks FIPS 140-2 Cryptographic Module resides on a PCI card and provides cryptographic key protection and acceleration for both asymmetric and symmetric encryption operations. It is contained in its own secure enclosure that provides physical resistance to tampering and zeroization of plaintext cryptographic material in the event the enclosure is opened.",
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Foundry Networks FIPS 140-2 Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/903",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp903.pdf"
+      },
+      {
+        "label": "Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt903.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp903.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/23/2008",
+    "validation_dates": [
+      "1/23/2008"
+    ],
+    "validation_history": [
+      {
+        "date": "1/23/2008",
+        "lab": "SAIC-VA",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4980 Great America Pkwy",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "mhong@foundrynet.com",
+      "contact_name": "Michael Hong",
+      "contact_phone": "408-207-1700",
+      "country": "USA",
+      "name": "Foundry Networks",
+      "website_url": "http://www.foundrynet.com"
+    },
+    "vendor_name": "Foundry Networks"
   }
 }

@@ -1,39 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/171"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/171",
     "certificate_number": "171",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/171",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/171",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp171.pdf",
-    "vendor_name": "nCipher Corporation Ltd.",
-    "module_name": "nForce 150 SCSI and nForce 400 SCSI",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "10/15/2001, 1/23/2004",
-    "validation_dates": [
-      "10/15/2001",
-      "1/23/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The nCipher nForce SSL family of secure e-commerce accelerators improves data security and increases server throughput in applications using the Secure Sockets Layer protocol such as: secure web servers, e-commerce sites, Internet financial transactions, authenticated access to intranets and extranets and digital signatures and secure messaging including X.400/EDI.",
-    "security_level_exceptions": [
-      "Roles and Services: Level 3*",
-      "Key Management: Level 3*",
-      "Module Interfaces: Level 3",
-      "Software Security: Level 3",
-      "Self Tests: Level 3*",
-      "*When operated in the FIPS mode"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "nForce 150 SCSI and nForce 400 SCSI",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/171",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -44,45 +40,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt171.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles and Services: Level 3*",
+      "Key Management: Level 3*",
+      "Module Interfaces: Level 3",
+      "Software Security: Level 3",
+      "Self Tests: Level 3*",
+      "*When operated in the FIPS mode"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp171.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/15/2001, 1/23/2004",
+    "validation_dates": [
+      "10/15/2001",
+      "1/23/2004"
+    ],
     "validation_history": [
       {
         "date": "10/15/2001",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "1/23/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "nCipher Corporation Ltd.",
-      "website_url": "http://www.ncipher.com",
       "address_lines": [
         "500 Unicorn Park Drive",
         "Woburn, MA 01801-3371",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Sales",
       "contact_email": "sales@ncipher.com",
-      "contact_phone": "800-NCIPHER"
+      "contact_name": "Sales",
+      "contact_phone": "800-NCIPHER",
+      "country": "USA",
+      "name": "nCipher Corporation Ltd.",
+      "website_url": "http://www.ncipher.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "nCipher Corporation Ltd."
   }
 }

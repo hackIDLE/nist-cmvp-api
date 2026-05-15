@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/723"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/723",
     "certificate_number": "723",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/723",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/723",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp723.pdf",
-    "vendor_name": "Thales e-Security Inc.",
-    "module_name": "Secure Generic Sub-System (SGSS), Version 3.3",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "12/18/2006, 9/25/2007",
-    "validation_dates": [
-      "12/18/2006",
-      "9/25/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Secure Generic Sub-System (SGSS) is a multi-chip embedded module used to provide secure cryptographic resources to a number of products in the Thales e-Security portfolio. This includes the Datacryptor® 2000 family, WebSentry™ family, HSM 8000 family, P3™CM family, PaySentry™, 3D Security Module and SafeSign® Crypto Module. The SGSS contains a secure bootstrap and authenticates application loading using the Digital Signature Algorithm (DSA) and SHA-1 hashing.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Secure Generic Sub-System (SGSS), Version 3.3",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/723",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt723.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp723.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/18/2006, 9/25/2007",
+    "validation_dates": [
+      "12/18/2006",
+      "9/25/2007"
+    ],
     "validation_history": [
       {
         "date": "12/18/2006",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "9/25/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales e-Security Inc.",
-      "website_url": "http://www.thales-esecurity.com",
       "address_lines": [
         "900 South Pine Island Road",
         "Suite 710",
         "Plantation, FL 33324",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tim Fox",
       "contact_email": "tim.fox@thales-esecurity.com",
-      "contact_phone": "+44 (0)1844 201800"
+      "contact_name": "Tim Fox",
+      "contact_phone": "+44 (0)1844 201800",
+      "country": "USA",
+      "name": "Thales e-Security Inc.",
+      "website_url": "http://www.thales-esecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales e-Security Inc."
   }
 }

@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823"
   },
   "certificate": {
-    "certificate_number": "4823",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4823.pdf",
-    "vendor_name": "Cloudlinux Inc., TuxCare division",
-    "module_name": "OpenSSL FIPS Provider for AlmaLinux 9",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/7/2024",
-    "validation_dates": [
-      "10/7/2024"
-    ],
-    "sunset_date": "10/6/2029",
-    "caveat": "Interim validation. When operated in Approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
-    "description": "AlmaLinux 9.2 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4823.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/7/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Cloudlinux Inc., TuxCare division",
-      "website_url": "http://www.tuxcare.com",
-      "address_lines": [
-        "2318 Louis Road, Suite B",
-        "Palo Alto, CA 94303",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Simon John",
-      "contact_email": "sjohn@tuxcare.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 336,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 336
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -422,6 +369,59 @@
       "Key Pair Verification with ECDSA | AsymKeyPair-KeyVer | Key Pair Verification using ECDSA | Curves:P-224,P-256,P-384,P-521(112,128,192,256bits) | ECDSA KeyVer(FIPS186-4)ECDSA KeyVer(FIPS186-4)ECDSA KeyVer(FIPS186-4)ECDSA KeyVer(FIPS186-4)ECDSA KeyVer(FIPS186-4)",
       "Shared Secret Computation with DH | KAS-SSC | Shared Secret Computation using DH | KAS-FFC-SSC Sp800-56Ar3:ffdhe2048,ffdhe3072,ffdhe4096,ffdhe6144,ffdhe8192, | KAS-FFC-SSC Sp800-56Ar3",
       "Shared Secret Computation with ECDH | KAS-SSC | Shared Secret Computation using EC Diffie-Hellman | KAS-ECC-SSC Sp800-56Ar3:P-224,P-256,P-384,P-521(112,128,192,256bits strength)Compliance:SP 800-56Arev3,FIPS 140-3 IGD.F.Scenario2(1)Scheme:ephemeralUnifiedKAS Role:initiator,responder | KAS-ECC-SSC Sp800-56Ar3KAS-ECC-SSC Sp800-56Ar3KAS-ECC-SSC Sp800-56Ar3KAS-ECC-SSC Sp800-56Ar3KAS-ECC-SSC Sp800-56Ar3"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in Approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823",
+    "certificate_number": "4823",
+    "dataset": "active",
+    "description": "AlmaLinux 9.2 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "OpenSSL FIPS Provider for AlmaLinux 9",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4823.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4823.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/6/2029",
+    "validation_date": "10/7/2024",
+    "validation_dates": [
+      "10/7/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "10/7/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2318 Louis Road, Suite B",
+        "Palo Alto, CA 94303",
+        "USA"
+      ],
+      "contact_email": "sjohn@tuxcare.com",
+      "contact_name": "Simon John",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Cloudlinux Inc., TuxCare division",
+      "website_url": "http://www.tuxcare.com"
+    },
+    "vendor_name": "Cloudlinux Inc., TuxCare division"
   }
 }

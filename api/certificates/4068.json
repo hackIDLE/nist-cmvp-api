@@ -1,34 +1,42 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode with module Unisys Linux strongSwan Cryptographic Module validated to FIPS 140-2 under Cert. #3971 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
     "certificate_number": "4068",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4068.pdf",
-    "vendor_name": "Unisys Corporation",
-    "module_name": "Unisys Linux Kernel Cryptographic API Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/9/2021",
-    "validation_dates": [
-      "11/9/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode with module Unisys Linux strongSwan Cryptographic Module validated to FIPS 140-2 under Cert. #3971 operating in FIPS mode",
     "description": "The module is a software-only cryptographic module that comprises a set of Linux kernel modules; this set defines the module's cryptographic boundary. It provides cryptographic functionality for any application that calls into it.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Unisys Linux Kernel Cryptographic API Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,48 +47,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2021_011221_0923_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4068.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/9/2021",
+    "validation_dates": [
+      "11/9/2021"
+    ],
     "validation_history": [
       {
         "date": "11/9/2021",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Unisys Corporation",
-      "website_url": "http://www.unisys.com",
       "address_lines": [
         "801 Lakeview Drive",
         "Suite 100",
         "Blue Bell, PA 19422",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mark K Vallevand",
       "contact_email": "mark.vallevand@unisys.com",
-      "contact_phone": "651-635-7708"
+      "contact_name": "Mark K Vallevand",
+      "contact_phone": "651-635-7708",
+      "country": "USA",
+      "name": "Unisys Corporation",
+      "website_url": "http://www.unisys.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Unisys Corporation"
   }
 }

@@ -1,90 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3435"
   },
   "certificate": {
-    "certificate_number": "3435",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3435",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3435",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3435.pdf",
-    "vendor_name": "VMware, Inc.",
-    "module_name": "VMware's IKE Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/19/2019, 2/21/2020, 6/15/2020",
-    "validation_dates": [
-      "4/19/2019",
-      "2/21/2020",
-      "6/15/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
-    "description": "The VMware's IKE Crypto Module v1.1.0 is a general-purpose cryptographic module that provides FIPS-Approved cryptographic functions and services to various VMware's products and components.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3435.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/19/2019",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "2/21/2020",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "6/15/2020",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "VMware, Inc.",
-      "website_url": "http://www.vmware.com",
-      "address_lines": [
-        "3401 Hillview Ave",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Manoj Maskara",
-      "contact_email": "mmaskara@vmware.com",
-      "contact_phone": "650-427-1000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -95,6 +26,75 @@
       "KTS",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3435",
+    "certificate_number": "3435",
+    "dataset": "historical",
+    "description": "The VMware's IKE Crypto Module v1.1.0 is a general-purpose cryptographic module that provides FIPS-Approved cryptographic functions and services to various VMware's products and components.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VMware's IKE Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3435",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3435.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3435.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/19/2019, 2/21/2020, 6/15/2020",
+    "validation_dates": [
+      "4/19/2019",
+      "2/21/2020",
+      "6/15/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "4/19/2019",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      },
+      {
+        "date": "2/21/2020",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "6/15/2020",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3401 Hillview Ave",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "mmaskara@vmware.com",
+      "contact_name": "Manoj Maskara",
+      "contact_phone": "650-427-1000",
+      "country": "USA",
+      "name": "VMware, Inc.",
+      "website_url": "http://www.vmware.com"
+    },
+    "vendor_name": "VMware, Inc."
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4509"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4509",
     "certificate_number": "4509",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4509",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4509",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4509.pdf",
-    "vendor_name": "Juniper Networks, Inc.",
-    "module_name": "Juniper OpenSSL Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/5/2023",
-    "validation_dates": [
-      "5/5/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The Juniper OpenSSL Cryptographic Module is a set of software libraries implementing the Transport Layer Security (TLS) protocol v1.0, v1.1 and v1.2 and Datagram Transport Layer Security (DTLS) protocol v1.0 and v1.2, as well as general purpose cryptographic algorithms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Juniper OpenSSL Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4509",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4509.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/5/2023",
+    "validation_dates": [
+      "5/5/2023"
+    ],
     "validation_history": [
       {
         "date": "5/5/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net/us/en",
       "address_lines": [
         "1133 Innovation Way",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Seth Ross",
       "contact_email": "seth@juniper.net",
-      "contact_phone": "+1-408-745-2000"
+      "contact_name": "Seth Ross",
+      "contact_phone": "+1-408-745-2000",
+      "country": "USA",
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net/us/en"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Juniper Networks, Inc."
   }
 }

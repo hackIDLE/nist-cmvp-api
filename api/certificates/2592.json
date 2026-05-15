@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2592"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "This validation entry is a non-security relevant modification to Cert. #1467",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2592",
     "certificate_number": "2592",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2592",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2592",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2592.pdf",
-    "vendor_name": "Zebra Technologies Corporation",
-    "module_name": "Zebra DCS Cryptographic Library",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/25/2016, 8/15/2016",
-    "validation_dates": [
-      "3/25/2016",
-      "8/15/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "This validation entry is a non-security relevant modification to Cert. #1467",
     "description": "The Zebra DCS Cryptographic Library provides FIPS 140-2 Level 1 certified encryption and security practices to protect data sensitive transmission between the Embedded devices which include cordless scanners, cradles and terminals.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Zebra DCS Cryptographic Library",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2592",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMarch2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2592.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/25/2016, 8/15/2016",
+    "validation_dates": [
+      "3/25/2016",
+      "8/15/2016"
+    ],
     "validation_history": [
       {
         "date": "3/25/2016",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "8/15/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Zebra Technologies Corporation",
-      "website_url": "http://www.Zebra.com",
       "address_lines": [
         "One Zebra Plaza",
         "Holtsville, NY 11742",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Robert Pang",
       "contact_email": "Robert.Pang@zebra.com",
-      "contact_phone": "631-738-5419"
+      "contact_name": "Robert Pang",
+      "contact_phone": "631-738-5419",
+      "country": "USA",
+      "name": "Zebra Technologies Corporation",
+      "website_url": "http://www.Zebra.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Zebra Technologies Corporation"
   }
 }

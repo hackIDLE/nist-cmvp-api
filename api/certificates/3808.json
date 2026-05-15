@@ -1,36 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3808"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DRBG",
+      "KDF"
+    ],
+    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3808",
     "certificate_number": "3808",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3808",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3808",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3808.pdf",
-    "vendor_name": "Western Digital Corporation",
-    "module_name": "Ultrastar® DC SS540 TCG Enterprise SSD",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "2/2/2021, 6/21/2021, 10/24/2024",
-    "validation_dates": [
-      "2/2/2021",
-      "6/21/2021",
-      "10/24/2024"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "Western Digital's Ultrastar® Self-Encrypting TCG Enterprise drives meet or exceed the most demanding performance and security requirements. The Ultrastar DC SS540, Western Digital's 6th generation SAS SSD drive, leverages 96-layer 3D TLC NAND technology to deliver performance and a proven reliability track record. The Ultrastar DC SS540 is available in capacities from 400GB to 15.36TB and delivers up to 470K/240K Random Read/Random Wright IOPS. Desired features, power options and multiple endurance SKUs make it a best value for ultra high performance tier-0 enterprise storage, HPC and SDS.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ultrastar® DC SS540 TCG Enterprise SSD",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3808",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,54 +44,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2021_010321_1145_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3808.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/2/2021, 6/21/2021, 10/24/2024",
+    "validation_dates": [
+      "2/2/2021",
+      "6/21/2021",
+      "10/24/2024"
+    ],
     "validation_history": [
       {
         "date": "2/2/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/21/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/24/2024",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Western Digital Corporation",
-      "website_url": "http://www.westerndigital.com/products/data-center-drives#solid-state-ssd",
       "address_lines": [
         "5601 Great Oaks Parkway",
         "San Jose, CA 95119",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Williamson",
       "contact_email": "michael.williamson@wdc.com",
-      "contact_phone": "408-717-8458"
+      "contact_name": "Michael Williamson",
+      "contact_phone": "408-717-8458",
+      "country": "USA",
+      "name": "Western Digital Corporation",
+      "website_url": "http://www.westerndigital.com/products/data-center-drives#solid-state-ssd"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DRBG",
-      "KDF"
-    ]
+    "vendor_name": "Western Digital Corporation"
   }
 }

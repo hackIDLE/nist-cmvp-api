@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257"
   },
   "certificate": {
-    "certificate_number": "5257",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf",
-    "vendor_name": "NTT DATA Group Corporation",
-    "module_name": "Cryptographic Library for OpenSSL powered by NTT DATA",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "5/6/2026",
-    "validation_dates": [
-      "5/6/2026"
-    ],
-    "sunset_date": "5/5/2031",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "Cryptographic Library for OpenSSL powered by NTT DATA is a software library designed for Intel SGX (Software Guard Extensions), offering enhanced security features by enabling applications to run within secure enclaves.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/6/2026",
-        "type": "Initial",
-        "lab": "ECSEC Laboratory Inc."
-      }
-    ],
-    "vendor": {
-      "name": "NTT DATA Group Corporation",
-      "website_url": "http://www.nttdata.com/global/en/",
-      "address_lines": [
-        "Toyosu Center Bldg. Annex, 3-9, Toyosu 3-chome",
-        "Koto-ku, Tokyo 135-8671",
-        "Japan"
-      ],
-      "country": "Japan",
-      "contact_name": "Cloud & Infrastructure Technology Department",
-      "contact_email": "nedokmsdev@hml.nttdata.co.jp",
-      "contact_phone": "81-50-5546-7774"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 51,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 51
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -134,6 +81,59 @@
       "SHA3-512 | A6710 | Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
       "SHAKE-128 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | CAVP | Cert",
       "SHAKE-256 | A6710 | Output Length - Output Length: 16-65536 | FIPS 202 | N/A for this module. | The cryptographic module does not implement vendor-affirmed cryptographic algorithms."
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
+    "certificate_number": "5257",
+    "dataset": "active",
+    "description": "Cryptographic Library for OpenSSL powered by NTT DATA is a software library designed for Intel SGX (Software Guard Extensions), offering enhanced security features by enabling applications to run within secure enclaves.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cryptographic Library for OpenSSL powered by NTT DATA",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5257",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5257.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/5/2031",
+    "validation_date": "5/6/2026",
+    "validation_dates": [
+      "5/6/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/6/2026",
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Toyosu Center Bldg. Annex, 3-9, Toyosu 3-chome",
+        "Koto-ku, Tokyo 135-8671",
+        "Japan"
+      ],
+      "contact_email": "nedokmsdev@hml.nttdata.co.jp",
+      "contact_name": "Cloud & Infrastructure Technology Department",
+      "contact_phone": "81-50-5546-7774",
+      "country": "Japan",
+      "name": "NTT DATA Group Corporation",
+      "website_url": "http://www.nttdata.com/global/en/"
+    },
+    "vendor_name": "NTT DATA Group Corporation"
   }
 }

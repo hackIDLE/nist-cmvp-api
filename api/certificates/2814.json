@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2814"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2814",
     "certificate_number": "2814",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2814",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2814",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2814.pdf",
-    "vendor_name": "Utimaco IS GmbH",
-    "module_name": "CryptoServer Se-Series Gen2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "1/11/2017, 1/25/2017, 2/1/2018",
-    "validation_dates": [
-      "1/11/2017",
-      "1/25/2017",
-      "2/1/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The CryptoServer Se-Series Gen2 Version 5.01.2.0 and 5.01.4.0 is an encapsulated protected security module which is realized as a multi-chip embedded cryptographic module as defined in FIPS 140-2. It's realization meets the overall FIPS 140-2 Level 3 requirements. The primary purpose of this module is to provide secure cryptographic services such as encryption or decryption, hashing, signing and verification of data, random number generation, on-board secure key generation, key storage and further key management functions in a tamper-protected environment.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CryptoServer Se-Series Gen2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2814",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2017.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2814.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/11/2017, 1/25/2017, 2/1/2018",
+    "validation_dates": [
+      "1/11/2017",
+      "1/25/2017",
+      "2/1/2018"
+    ],
     "validation_history": [
       {
         "date": "1/11/2017",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/25/2017",
-        "type": "Update",
-        "lab": "Penumbra Security, Inc."
+        "lab": "Penumbra Security, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/1/2018",
-        "type": "Update",
-        "lab": "Penumbra Security, Inc."
+        "lab": "Penumbra Security, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Utimaco IS GmbH",
-      "website_url": "http://hsm.utimaco.com",
       "address_lines": [
         "Germanusstr. 4",
         "52080 Aachen",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Dr. Gesa Ott",
       "contact_email": "hsm@utimaco.com",
-      "contact_phone": "+49 241-1696-245"
+      "contact_name": "Dr. Gesa Ott",
+      "contact_phone": "+49 241-1696-245",
+      "country": "Germany",
+      "name": "Utimaco IS GmbH",
+      "website_url": "http://hsm.utimaco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Utimaco IS GmbH"
   }
 }

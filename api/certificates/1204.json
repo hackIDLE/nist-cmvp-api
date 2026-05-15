@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1204"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1204",
     "certificate_number": "1204",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1204",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1204",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1204.pdf",
-    "vendor_name": "Midland Radio Corporation",
-    "module_name": "Midland Radio Base Station Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "10/6/2009",
-    "validation_dates": [
-      "10/6/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Midland BTIII Base Stations provide Project 25 encrypted and clear voice, data and Short Message Service communications in accordance with the Project 25 Digital Land Mobile Radio standards suite. In addition, conventional analog radio voice communications are supported. It is multi-chip standalone cryptographic module validated at a FIPS 140-2 Security Level 1.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Midland Radio Base Station Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1204",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1204.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1204.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/6/2009",
+    "validation_dates": [
+      "10/6/2009"
+    ],
     "validation_history": [
       {
         "date": "10/6/2009",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Midland Radio Corporation",
-      "website_url": "http://www.midlandradio.com",
       "address_lines": [
         "5900 Parretta Drive",
         "Kansas City, MO 64120",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "David Berneking",
       "contact_email": "dberneking@midlandradio.com",
-      "contact_phone": "816-462-0421"
+      "contact_name": "David Berneking",
+      "contact_phone": "816-462-0421",
+      "country": "USA",
+      "name": "Midland Radio Corporation",
+      "website_url": "http://www.midlandradio.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Midland Radio Corporation"
   }
 }

@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5070"
   },
   "certificate": {
-    "certificate_number": "5070",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5070",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5070",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5070.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Cisco Secure Firewall Threat Defense Cryptographic Module (FPR 1000 Series)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "9/23/2025",
-    "validation_dates": [
-      "9/23/2025"
-    ],
-    "sunset_date": "9/22/2030",
-    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
-    "description": "Cisco Firepower Threat Defense (FTD) is a unified software image, which includes the Cisco ASA features and FirePOWER Services. This unified software is capable of offering the functions of ASA and FirePOWER deployed on Cisco Firepower 1000 Series",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5070.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/23/2025",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
-      "address_lines": [
-        "170 West Tasman Drive",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
-      "contact_email": "certteam@cisco.com",
-      "contact_phone": "800-553-6387"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 25,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 25
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -111,6 +56,61 @@
       "SHA2-384 | A4446 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
       "SHA2-512 | A4446 | Message Length-Message Length:0-65536Increment8 | FIPS 180-4",
       "TLS v1.2 KDFRFC7627(CVL) | A4446 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5070",
+    "certificate_number": "5070",
+    "dataset": "active",
+    "description": "Cisco Firepower Threat Defense (FTD) is a unified software image, which includes the Cisco ASA features and FirePOWER Services. This unified software is capable of offering the functions of ASA and FirePOWER deployed on Cisco Firepower 1000 Series",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Secure Firewall Threat Defense Cryptographic Module (FPR 1000 Series)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5070",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5070.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5070.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/22/2030",
+    "validation_date": "9/23/2025",
+    "validation_dates": [
+      "9/23/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "9/23/2025",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certification Team",
+      "contact_phone": "800-553-6387",
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
+    },
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

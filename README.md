@@ -225,8 +225,67 @@ ALGORITHM_SOURCE=security_policy_pdf python scraper.py
 SKIP_ALGORITHMS=1 python scraper.py
 
 # Validate generated artifacts before publishing
-python validate_api.py --require-current-schema --forbid-firecrawl-run-source --require-data-quality-pass
+python validate_api.py --require-current-schema --require-supported-algorithm-source --require-data-quality-pass
 ```
+
+## Modal Remote Runs
+
+Use Modal for faster remote scraper runs or full-refresh experiments without tying up GitHub Actions. For the published API, prefer a cached sharded refresh: it fetches the live NIST catalog, reuses unchanged certificate details and algorithm payloads, and only refreshes new or changed certificates. That keeps the API more complete than a blind full refresh when older Security Policy PDFs no longer parse cleanly.
+
+```bash
+# One-time local CLI setup
+python3 -m venv .venv-modal
+.venv-modal/bin/python -m pip install modal
+.venv-modal/bin/python -m modal setup
+
+# Cheap remote execution smoke test
+.venv-modal/bin/python -m modal run modal_scrape.py::smoke
+
+# Cheapest quality-preserving dry run when checked-in api/ is current.
+# This does not update the Modal Volume cache.
+.venv-modal/bin/python -m modal run modal_scrape.py::sharded \
+  --shard-count 8 \
+  --no-use-cache-volume \
+  --no-update-cache-volume
+
+# If the dry run passes and you want future runs to reuse the generated cache,
+# rerun without --no-update-cache-volume.
+.venv-modal/bin/python -m modal run modal_scrape.py::sharded \
+  --shard-count 8 \
+  --no-use-cache-volume
+
+# Download the artifact archive reported by a run.
+.venv-modal/bin/python -m modal volume get nist-cmvp-api-cache /runs/<run_id>/artifacts.tar.gz /tmp/cmvp-run/
+tar -xzf /tmp/cmvp-run/artifacts.tar.gz -C /tmp/cmvp-run/
+.venv-modal/bin/python validate_api.py \
+  --root /tmp/cmvp-run \
+  --require-current-schema \
+  --require-supported-algorithm-source \
+  --require-data-quality-pass
+
+# Run a single-container remote scrape when parallelism is not needed.
+.venv-modal/bin/python -m modal run modal_scrape.py::main
+
+# Audit the current extractor with a full refresh, but do not use this as the
+# default publishing path unless the data-quality warnings are acceptable.
+.venv-modal/bin/python -m modal run modal_scrape.py::sharded \
+  --shard-count 8 \
+  --full-refresh \
+  --no-update-cache-volume \
+  --no-require-data-quality-pass \
+  --cert-fetch-concurrency 4 \
+  --pdf-fetch-concurrency 8
+```
+
+The Modal runner writes logs and generated artifacts to the `nist-cmvp-api-cache` Modal Volume and runs `validate_api.py --require-current-schema --require-supported-algorithm-source`. Cached runs require the data-quality monitor to pass by default; full refreshes disable that gate only for extractor audits because they intentionally bypass cache reuse. Successful runs update the volume cache unless `--no-update-cache-volume` is set.
+
+Cost-control tips:
+
+- Use `smoke` first; it should finish in seconds and verifies the CLI/auth setup.
+- Use `sharded --shard-count 8 --no-use-cache-volume` for routine updates when the checked-in `api/` directory is current. This avoids slow reads across thousands of small files in the Modal Volume and reuses checked-in certificate/algorithm data.
+- Keep `--no-update-cache-volume` on exploratory runs so a warning-quality artifact cannot replace the reusable cache.
+- Avoid `--full-refresh` for routine publishing. It is useful for audits, but it reprocesses every certificate and policy PDF, costs more, and may reduce algorithm completeness when old PDFs are unavailable or unparseable.
+- Increase shard count only when wall-clock time matters. More shards can finish faster, but they run more containers at once.
 
 ## Environment Variables
 

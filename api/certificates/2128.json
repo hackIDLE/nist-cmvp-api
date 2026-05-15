@@ -1,23 +1,65 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2128"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2128",
     "certificate_number": "2128",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2128",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2128",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2128.pdf",
-    "vendor_name": "Gigamon Inc.",
+    "description": "The Gigamon Linux-Based Cryptographic Module provides cryptographic functions for Gigamon products and solutions.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "Gigamon Linux-Based Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2128",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2128.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2128.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-2",
     "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "5/20/2014, 10/23/2014, 2/10/2016, 1/18/2022, 3/3/2022, 10/14/2022, 1/26/2023, 10/2/2023, 11/3/2023",
     "validation_dates": [
       "5/20/2014",
@@ -30,108 +72,66 @@
       "10/2/2023",
       "11/3/2023"
     ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys",
-    "description": "The Gigamon Linux-Based Cryptographic Module provides cryptographic functions for Gigamon products and solutions.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2128.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "5/20/2014",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "10/23/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/10/2016",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "1/18/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "3/3/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "10/14/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "1/26/2023",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       },
       {
         "date": "10/2/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "11/3/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Gigamon Inc.",
-      "website_url": "http://www.gigamon.com",
       "address_lines": [
         "3300 Olcott Street",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Brian O'Neel",
       "contact_email": "Certifications@Gigamon.com",
-      "contact_phone": null
+      "contact_name": "Brian O'Neel",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Gigamon Inc.",
+      "website_url": "http://www.gigamon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Gigamon Inc."
   }
 }

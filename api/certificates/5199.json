@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5199"
   },
   "certificate": {
-    "certificate_number": "5199",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5199",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5199",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5199.pdf",
-    "vendor_name": "HP Inc",
-    "module_name": "HP Anyware Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "3/18/2026",
-    "validation_dates": [
-      "3/18/2026"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "description": "The HP Anyware Cryptographic Module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5199.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/18/2026",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "HP Inc",
-      "website_url": "http://www.hp.com/us-en/services/workforce-solutions/workforce-computing/digital-workspaces/anyware-trust-center.html",
-      "address_lines": [
-        "1501 Page Mill Rd",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Paul Pavlik",
-      "contact_email": "Paul.pavlik@hp.com",
-      "contact_phone": "289-374-6180"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 45,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 45
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -131,6 +77,60 @@
       "CKG-3 | Symmetric:AES Symmetric:HMAC | Linux4.4(Ubuntu16.04LTS)with [anIntelCorei5-5300UCPU@2.30GHzx4withPAA](mailto:anIntelCorei5-5300UCPU@2.30GHzx4withPAA);Linux4.4(Ubuntu16.04 LTS)with [anIntelCorei5-5300UCPU@2.30GHzx4withoutPAA](mailto:anIntelCorei5-5300UCPU@2.30GHzx4withoutPAA) | SP800-133r26.2\"Derivation ofSymmetricKeys\"",
       "DRBG | DRBG | Deterministic Random Byte Generator | SHA2-256:(A4308)A4308:Hash DRBG:(A4308)A4308",
       "Message Authentication | MAC | Hash-Based Message Authentication Codes, | HMAC-SHA-1:(A4308)A4308:HMAC-SHA2-224:(A4308)"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5199",
+    "certificate_number": "5199",
+    "dataset": "active",
+    "description": "The HP Anyware Cryptographic Module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HP Anyware Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5199",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5199.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5199.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "3/18/2026",
+    "validation_dates": [
+      "3/18/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/18/2026",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1501 Page Mill Rd",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "Paul.pavlik@hp.com",
+      "contact_name": "Paul Pavlik",
+      "contact_phone": "289-374-6180",
+      "country": "USA",
+      "name": "HP Inc",
+      "website_url": "http://www.hp.com/us-en/services/workforce-solutions/workforce-computing/digital-workspaces/anyware-trust-center.html"
+    },
+    "vendor_name": "HP Inc"
   }
 }

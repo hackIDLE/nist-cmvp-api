@@ -1,83 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3992"
   },
   "certificate": {
-    "certificate_number": "3992",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3992",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3992",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf",
-    "vendor_name": "SUSE, LLC",
-    "module_name": "SUSE Linux Enterprise Server libgcrypt Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/22/2021, 11/28/2021",
-    "validation_dates": [
-      "7/22/2021",
-      "11/28/2021"
-    ],
-    "sunset_date": "7/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in section 9 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy.",
-    "description": "SUSE Libgcrypt is a general purpose cryptographic library based on the code from GnuPG.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/22/2021",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "11/28/2021",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "SUSE, LLC",
-      "website_url": "http://www.suse.com",
-      "address_lines": [
-        "10 Canal Park, Suite 200",
-        "Cambridge, MA 02141",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ivan Teblin",
-      "contact_email": "ivan.teblin@suse.com",
-      "contact_phone": "+1-800-858-4000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -91,6 +29,68 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in section 9 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3992",
+    "certificate_number": "3992",
+    "dataset": "active",
+    "description": "SUSE Libgcrypt is a general purpose cryptographic library based on the code from GnuPG.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SUSE Linux Enterprise Server libgcrypt Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3992",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "7/21/2026",
+    "validation_date": "7/22/2021, 11/28/2021",
+    "validation_dates": [
+      "7/22/2021",
+      "11/28/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "7/22/2021",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "11/28/2021",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "10 Canal Park, Suite 200",
+        "Cambridge, MA 02141",
+        "USA"
+      ],
+      "contact_email": "ivan.teblin@suse.com",
+      "contact_name": "Ivan Teblin",
+      "contact_phone": "+1-800-858-4000",
+      "country": "USA",
+      "name": "SUSE, LLC",
+      "website_url": "http://www.suse.com"
+    },
+    "vendor_name": "SUSE, LLC"
   }
 }

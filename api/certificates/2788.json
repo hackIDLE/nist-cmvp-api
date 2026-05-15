@@ -1,39 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788",
     "certificate_number": "2788",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2788.pdf",
-    "vendor_name": "Check Point Software Technologies Ltd.",
-    "module_name": "Harmony Endpoint FDE and MEPP CryptoCore",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/7/2016, 7/16/2019, 5/17/2022, 7/22/2022, 10/14/2022",
-    "validation_dates": [
-      "11/7/2016",
-      "7/16/2019",
-      "5/17/2022",
-      "7/22/2022",
-      "10/14/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
     "description": "Check Point CryptoCore is a 140-2 Level 1 cryptographic module for Windows 10 and macOS Sierra. The module provides cryptographic services accessible in kernel mode and user mode on the respective platforms through implementation of platform specific binaries.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Harmony Endpoint FDE and MEPP CryptoCore",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -44,61 +40,65 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2788.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/7/2016, 7/16/2019, 5/17/2022, 7/22/2022, 10/14/2022",
+    "validation_dates": [
+      "11/7/2016",
+      "7/16/2019",
+      "5/17/2022",
+      "7/22/2022",
+      "10/14/2022"
+    ],
     "validation_history": [
       {
         "date": "11/7/2016",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "7/16/2019",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "5/17/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "7/22/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "10/14/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Check Point Software Technologies Ltd.",
-      "website_url": "http://www.checkpoint.com",
       "address_lines": [
         "2101 Gaither Road",
         "Suite 350",
         "Rockville, MD 20850",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Malcom Levy",
       "contact_email": "mlevy@checkpoint.com",
-      "contact_phone": "+972-37534561"
+      "contact_name": "Malcom Levy",
+      "contact_phone": "+972-37534561",
+      "country": "USA",
+      "name": "Check Point Software Technologies Ltd.",
+      "website_url": "http://www.checkpoint.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Check Point Software Technologies Ltd."
   }
 }

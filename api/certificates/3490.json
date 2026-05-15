@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3490"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 9 and operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3490",
     "certificate_number": "3490",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3490",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3490",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3490.pdf",
-    "vendor_name": "Oracle Communications",
-    "module_name": "Acme Packet 1100 [1] and Acme Packet 3900 [2]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/15/2019, 12/18/2019",
-    "validation_dates": [
-      "7/15/2019",
-      "12/18/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 9 and operated in FIPS mode",
     "description": "The Acme Packet 1100 and Acme Packet 3900 appliances are specifically designed to meet the unique price performance and manageability requirements of the small to medium sized enterprise and remote office/ branch office. Ideal for small site border control and Session Initiation Protocol (SIP) trunking service termination applications, the Acme Packet 1100 and Acme Packet 3900 appliances delivers Oracle’s industry leading ESBC capabilities in a small form factor appliance.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Acme Packet 1100 [1] and Acme Packet 3900 [2]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3490",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,45 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidated.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3490.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/15/2019, 12/18/2019",
+    "validation_dates": [
+      "7/15/2019",
+      "12/18/2019"
+    ],
     "validation_history": [
       {
         "date": "7/15/2019",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "12/18/2019",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Oracle Communications",
-      "website_url": "http://www.oracle.com",
       "address_lines": [
         "100 Crosby Drive",
         "Bedford, MA 01730",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "George Guo",
       "contact_email": "george.guo@oracle.com",
-      "contact_phone": "781-538-7399"
+      "contact_name": "George Guo",
+      "contact_phone": "781-538-7399",
+      "country": "USA",
+      "name": "Oracle Communications",
+      "website_url": "http://www.oracle.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oracle Communications"
   }
 }

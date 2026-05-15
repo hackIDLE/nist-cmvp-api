@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/16"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/16",
     "certificate_number": "16",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/16",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/16",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp16.pdf",
-    "vendor_name": "Transcrypt International",
-    "module_name": "SC20-DES",
-    "standard": "FIPS 140-1",
-    "status": "Revoked",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 1,
-    "validation_date": "4/15/1998",
-    "validation_dates": [
-      "4/15/1998"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Encryption module for land mobile radios.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SC20-DES",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/16",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt16.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp16.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Revoked",
+    "sunset_date": null,
+    "validation_date": "4/15/1998",
+    "validation_dates": [
+      "4/15/1998"
+    ],
     "validation_history": [
       {
         "date": "4/15/1998",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Transcrypt International",
-      "website_url": "http://www.transcrypt.com",
       "address_lines": [
         "4800 NW 1st St",
         "Lincoln, NE 68521",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jim Gilley",
       "contact_email": "des@transcrypt.com",
-      "contact_phone": "402-474-4800"
+      "contact_name": "Jim Gilley",
+      "contact_phone": "402-474-4800",
+      "country": "USA",
+      "name": "Transcrypt International",
+      "website_url": "http://www.transcrypt.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Transcrypt International"
   }
 }

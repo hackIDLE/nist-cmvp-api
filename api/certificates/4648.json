@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4648"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2.3 and 9.1 for of the Security Policy. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4648",
     "certificate_number": "4648",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4648",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4648",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4648.pdf",
-    "vendor_name": "Intel Corporation",
-    "module_name": "Cryptographic Module for Intel® Platforms' Security Engine Chipset",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Firmware-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/26/2023",
-    "validation_dates": [
-      "10/26/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2.3 and 9.1 for of the Security Policy. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
     "description": "The Cryptographic Module for Intel® CSE is a hardware-firmware hybrid module present on Intel® PCH platforms. The module performs crypto functions for CSE applications, including but are not limited to: PTT (Platform Trust Technology), AMT (Active Management Technology), and DAL (Dynamic Application Loader).",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cryptographic Module for Intel® Platforms' Security Engine Chipset",
+    "module_type": "Firmware-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4648",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4648.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "10/26/2023",
+    "validation_dates": [
+      "10/26/2023"
+    ],
     "validation_history": [
       {
         "date": "10/26/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Intel Corporation",
-      "website_url": "http://www.intel.com",
       "address_lines": [
         "2200 Mission College Blvd.",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Prashant Madhukar",
       "contact_email": "prashant.madhukar@intel.com",
-      "contact_phone": "408-765-2996"
+      "contact_name": "Prashant Madhukar",
+      "contact_phone": "408-765-2996",
+      "country": "USA",
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Intel Corporation"
   }
 }

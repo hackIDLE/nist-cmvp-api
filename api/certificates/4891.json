@@ -1,73 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4891"
   },
   "certificate": {
-    "certificate_number": "4891",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4891",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4891",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf",
-    "vendor_name": "Cisco Systems, Inc",
-    "module_name": "CiscoSSL FIPS Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/18/2024",
-    "validation_dates": [
-      "11/18/2024"
-    ],
-    "sunset_date": "11/17/2029",
-    "caveat": "Interim validation. When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "description": "The CiscoSSL FIPS Provider is a firmware library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module is comprised of a single object module file called fips.so.",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/18/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Cisco Systems, Inc",
-      "website_url": "https://www.cisco.com/",
-      "address_lines": [
-        "170 West Tasman Drive",
-        "San Jose, CA 95134-1706",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
-      "contact_email": "certteam@cisco.com",
-      "contact_phone": "800-553-6387"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 157,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 157
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -243,6 +191,58 @@
       "TDES-CMAC | A3252 | Direction-Verification | SP 800-67 Rev.2",
       "TDES-ECB | A3252 | Direction-Decrypt | SP 800-67 Rev.2",
       "Random Number Generation | DRBG | Used for random number and | Counter DRBGHash DRBGHMAC DRBGCounter DRBG"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4891",
+    "certificate_number": "4891",
+    "dataset": "active",
+    "description": "The CiscoSSL FIPS Provider is a firmware library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module is comprised of a single object module file called fips.so.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CiscoSSL FIPS Provider",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4891",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/17/2029",
+    "validation_date": "11/18/2024",
+    "validation_dates": [
+      "11/18/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "11/18/2024",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134-1706",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certification Team",
+      "contact_phone": "800-553-6387",
+      "country": "USA",
+      "name": "Cisco Systems, Inc",
+      "website_url": "https://www.cisco.com/"
+    },
+    "vendor_name": "Cisco Systems, Inc"
   }
 }

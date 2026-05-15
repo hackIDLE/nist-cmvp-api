@@ -1,92 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838"
   },
   "certificate": {
-    "certificate_number": "4838",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4838.pdf",
-    "vendor_name": "NetApp, Inc.",
-    "module_name": "NetApp Cryptographic Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/16/2024, 11/14/2024, 1/20/2026, 4/22/2026",
-    "validation_dates": [
-      "10/16/2024",
-      "11/14/2024",
-      "1/20/2026",
-      "4/22/2026"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "description": "The NetApp Cryptographic Security Module is a software library that provides cryptographic services to a vast array of NetApp's storage and networking products.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4838.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/16/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "11/14/2024",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "1/20/2026",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "4/22/2026",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "NetApp, Inc.",
-      "website_url": "http://www.netapp.com",
-      "address_lines": [
-        "3060 Olsen Drive",
-        "San Jose, CA 95128",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "NetApp Product Security Contacts",
-      "contact_email": "ng-netapp-sa-contacts@netapp.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -103,6 +32,77 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838",
+    "certificate_number": "4838",
+    "dataset": "active",
+    "description": "The NetApp Cryptographic Security Module is a software library that provides cryptographic services to a vast array of NetApp's storage and networking products.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NetApp Cryptographic Security Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4838",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4838.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4838.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "10/16/2024, 11/14/2024, 1/20/2026, 4/22/2026",
+    "validation_dates": [
+      "10/16/2024",
+      "11/14/2024",
+      "1/20/2026",
+      "4/22/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "10/16/2024",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "11/14/2024",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "1/20/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "4/22/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3060 Olsen Drive",
+        "San Jose, CA 95128",
+        "USA"
+      ],
+      "contact_email": "ng-netapp-sa-contacts@netapp.com",
+      "contact_name": "NetApp Product Security Contacts",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "NetApp, Inc.",
+      "website_url": "http://www.netapp.com"
+    },
+    "vendor_name": "NetApp, Inc."
   }
 }

@@ -1,34 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3806"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "TLS"
+    ],
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 10.1 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3806",
     "certificate_number": "3806",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3806",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3806",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3806.pdf",
-    "vendor_name": "Laird Connectivity",
-    "module_name": "Summit Linux FIPS Core Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/2/2021, 1/5/2022",
-    "validation_dates": [
-      "2/2/2021",
-      "1/5/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 10.1 of the Security Policy.",
     "description": "Laird's 60 Series SOM and WB50NBT bring all of Laird's industry competence and capabilities into one solution. The SOM provides superior enterprise-class Wi-Fi and Bluetooth connectivity. This solution is equipped with a Cortex A5 applications processor, wireless and wired connectivity, enterprise-grade security, LCD support for the 60 Series SOM, and comprehensive Linux board support package (BSP). The 60 SOM is the ideal system-on-module, and the WB50NBT, the ideal wireless bridge for devices that require superior connectivity.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Summit Linux FIPS Core Crypto Module",
+    "module_type": "Software-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3806",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,49 +43,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2021_010321_1145_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3806.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/2/2021, 1/5/2022",
+    "validation_dates": [
+      "2/2/2021",
+      "1/5/2022"
+    ],
     "validation_history": [
       {
         "date": "2/2/2021",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "1/5/2022",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Laird Connectivity",
-      "website_url": "http://www.lairdconnect.com",
       "address_lines": [
         "50 South Main Street",
         "Suite 1100",
         "Akron, OH 44308",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Dan Kephart",
       "contact_email": "PSIRT.FIPS@lairdconnect.com",
-      "contact_phone": "(330) 434-7929"
+      "contact_name": "Dan Kephart",
+      "contact_phone": "(330) 434-7929",
+      "country": "USA",
+      "name": "Laird Connectivity",
+      "website_url": "http://www.lairdconnect.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "TLS"
-    ]
+    "vendor_name": "Laird Connectivity"
   }
 }

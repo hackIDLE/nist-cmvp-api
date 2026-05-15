@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110"
   },
   "certificate": {
-    "certificate_number": "5110",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf",
-    "vendor_name": "Rajant Corporation",
-    "module_name": "Rajant In-Line Security Module (RiSM)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "12/16/2025",
-    "validation_dates": [
-      "12/16/2025"
-    ],
-    "sunset_date": "12/15/2030",
-    "caveat": "None",
-    "description": "The RiSM-1SPF is an in-line network encryption device capable of very high bandwidth over gigabit Ethernet and utilizes very low POE power. The Module is used to secure layer 2 Ethernet communications over the Rajant’s Kinetic Mesh® wireless mesh networks. The Module is ruggedized and may be used in extreme environments to secure traffic between endpoints, subnets or a combination.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/16/2025",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Rajant Corporation",
-      "website_url": "http://rajant.com/",
-      "address_lines": [
-        "200 Chesterfield Parkway",
-        "Malvern, PA 19355",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Chad Mercer",
-      "contact_email": "cmercer@rajant.com",
-      "contact_phone": "484-595-0233"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 15,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 15
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -95,6 +42,59 @@
       "CKG symmetric;KDF SP800-108 asymmetric;KAS-ECC-SSC SP800-56Ax3 Rajant RISM Crypto Library Key Generation per 133R2 Section 4 | The Module implements the vendor affirmed cryptographic algorithms listed in the table above.",
       "SHA2-256 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom",
       "ECDSA P-384 Redundant stage 1 FW signature verification per IG 2.4a Scenario 2 Signature verification of stage 1 FW image by boot rom | The Module implements the non-approved but allowed cryptographic algorithms with no security claimed listed in the table above."
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
+    "certificate_number": "5110",
+    "dataset": "active",
+    "description": "The RiSM-1SPF is an in-line network encryption device capable of very high bandwidth over gigabit Ethernet and utilizes very low POE power. The Module is used to secure layer 2 Ethernet communications over the Rajant’s Kinetic Mesh® wireless mesh networks. The Module is ruggedized and may be used in extreme environments to secure traffic between endpoints, subnets or a combination.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Rajant In-Line Security Module (RiSM)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5110",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5110.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/15/2030",
+    "validation_date": "12/16/2025",
+    "validation_dates": [
+      "12/16/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/16/2025",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "200 Chesterfield Parkway",
+        "Malvern, PA 19355",
+        "USA"
+      ],
+      "contact_email": "cmercer@rajant.com",
+      "contact_name": "Chad Mercer",
+      "contact_phone": "484-595-0233",
+      "country": "USA",
+      "name": "Rajant Corporation",
+      "website_url": "http://rajant.com/"
+    },
+    "vendor_name": "Rajant Corporation"
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1353"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1353",
     "certificate_number": "1353",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1353",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1353",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1353.pdf",
-    "vendor_name": "AirMagnet, Inc.",
-    "module_name": "SmartEdge Sensor A5200, A5205, A5220 and A5225",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/12/2010",
-    "validation_dates": [
-      "7/12/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
     "description": "The SmartEdge Sensor is equipped with patent pending AirWISE Analytical Engine that, in real time, monitors and analyzes the security, performance, and reliability of the wireless network.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SmartEdge Sensor A5200, A5205, A5220 and A5225",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1353",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1353.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1353.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/12/2010",
+    "validation_dates": [
+      "7/12/2010"
+    ],
     "validation_history": [
       {
         "date": "7/12/2010",
-        "type": "Initial",
-        "lab": "Aspect"
+        "lab": "Aspect",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "AirMagnet, Inc.",
-      "website_url": "http://www.airmagnet.com",
       "address_lines": [
         "830 E. Arques Ave.",
         "Sunnyvale, CA 94085",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tony Ho",
       "contact_email": "tho@airmagnet.com",
-      "contact_phone": "408-400-1255"
+      "contact_name": "Tony Ho",
+      "contact_phone": "408-400-1255",
+      "country": "USA",
+      "name": "AirMagnet, Inc.",
+      "website_url": "http://www.airmagnet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "AirMagnet, Inc."
   }
 }

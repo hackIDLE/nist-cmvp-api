@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631",
     "certificate_number": "4631",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4631.pdf",
-    "vendor_name": "Amazon Web Services Inc.",
-    "module_name": "AWS-LC Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/6/2023, 6/27/2025",
-    "validation_dates": [
-      "10/6/2023",
-      "6/27/2025"
-    ],
-    "sunset_date": "10/5/2028",
-    "caveat": "When operated in approved mode",
     "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AWS-LC Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4631.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/5/2028",
+    "validation_date": "10/6/2023, 6/27/2025",
+    "validation_dates": [
+      "10/6/2023",
+      "6/27/2025"
+    ],
     "validation_history": [
       {
         "date": "10/6/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "6/27/2025",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Amazon Web Services Inc.",
-      "website_url": "http://aws.amazon.com",
       "address_lines": [
         "1918 8th Ave.",
         "Seattle, WA 98121",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Daryl Martin",
       "contact_email": "aws-fips-external@amazon.com",
-      "contact_phone": "0000000000"
+      "contact_name": "Daryl Martin",
+      "contact_phone": "0000000000",
+      "country": "USA",
+      "name": "Amazon Web Services Inc.",
+      "website_url": "http://aws.amazon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Amazon Web Services Inc."
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739",
     "certificate_number": "3739",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3739.pdf",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "AWS Nitro Card Security Engine",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/29/2020",
-    "validation_dates": [
-      "10/29/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The AWS Nitro Card Security Engine is a multi-chip standalone firmware-hybrid module. The Approved cryptographic services provided by the module are: - Data encryption / decryption utilizing symmetric ciphers, i.e. AES algorithms. - Computation of hash values, i.e. SHA-256, SHA-512. - Message authentication utilizing HMAC-SHA256, HMAC-SHA512, hashing algorithms.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AWS Nitro Card Security Engine",
+    "module_type": "Firmware-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2020_021120_0702_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3739.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/29/2020",
+    "validation_dates": [
+      "10/29/2020"
+    ],
     "validation_history": [
       {
         "date": "10/29/2020",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "https://aws.amazon.com",
       "address_lines": [
         "410 Terry Ave N",
         "Ste 1200",
         "Seattle, WA 98109-5210",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Taeil Um",
       "contact_email": "taeilum@amazon.com",
-      "contact_phone": null
+      "contact_name": "Taeil Um",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "https://aws.amazon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Amazon Web Services, Inc."
   }
 }

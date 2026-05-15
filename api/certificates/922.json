@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922",
     "certificate_number": "922",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp922.pdf",
-    "vendor_name": "Software House",
-    "module_name": "iSTAR eX Controller",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "2/29/2008, 3/7/2008, 2/10/2011",
-    "validation_dates": [
-      "2/29/2008",
-      "3/7/2008",
-      "2/10/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The iSTAR eX controller is a security door controller which is connected to at least one card reader and a door. The iSTAR eX controller works from a database stored internally in memory for determining access privilege of an individual. When a card is swiped by a reader the data goes to the iSTAR eX controller. The controller then sends a notify message to the access database to determine if access is allowed. If access is granted then the iSTAR eX controller sends an open command back to the door and access is granted. If access is not granted the door remains closed and locked.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "iSTAR eX Controller",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt922.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp922.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/29/2008, 3/7/2008, 2/10/2011",
+    "validation_dates": [
+      "2/29/2008",
+      "3/7/2008",
+      "2/10/2011"
+    ],
     "validation_history": [
       {
         "date": "2/29/2008",
-        "type": "Initial",
-        "lab": "ICSA"
+        "lab": "ICSA",
+        "type": "Initial"
       },
       {
         "date": "3/7/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/10/2011",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Software House",
-      "website_url": "http://www.swhouse.com",
       "address_lines": [
         "6 Technology Park Drive",
         "Westford, MA 01886",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rick Focke",
       "contact_email": "rfocke@tycoint.com",
-      "contact_phone": "978-577-4266"
+      "contact_name": "Rick Focke",
+      "contact_phone": "978-577-4266",
+      "country": "USA",
+      "name": "Software House",
+      "website_url": "http://www.swhouse.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Software House"
   }
 }

@@ -1,41 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/991"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/991",
     "certificate_number": "991",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/991",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/991",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp991.pdf",
-    "vendor_name": "Athena Smartcard Inc.",
-    "module_name": "Athena IDProtect Duo PIV",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "8/15/2008, 4/12/2013, 2/6/2014, 5/28/2014",
-    "validation_dates": [
-      "8/15/2008",
-      "4/12/2013",
-      "2/6/2014",
-      "5/28/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Athena IDProtect Duo PIV cryptographic module is compliant with FIPS 201 as an end point compliant card. The PIV application is hosted by the Athena IDProtect dual interface smart card operating system compliant with the Java Card 2.2.2 and GlobalPlatform 2.1.1 specifications and FIPS 140-2 Level 2 (Level 4 for Physical Security). IDProtect supports FIPS Approved Random Number Generator, TDES, AES, SHA-1, SHA-256, and RSA up to 2048 bits including on board key generation.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 4",
-      "Cryptographic Key Management: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Athena IDProtect Duo PIV",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/991",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -46,56 +40,62 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt991.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 4",
+      "Cryptographic Key Management: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp991.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/15/2008, 4/12/2013, 2/6/2014, 5/28/2014",
+    "validation_dates": [
+      "8/15/2008",
+      "4/12/2013",
+      "2/6/2014",
+      "5/28/2014"
+    ],
     "validation_history": [
       {
         "date": "8/15/2008",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/12/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/6/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "5/28/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Athena Smartcard Inc.",
-      "website_url": "http://www.athena-scs.com",
       "address_lines": [
         "16615 Lark Avenue",
         "Suite 202",
         "Los Gatos, CA 95032",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Stéphanie Motré",
       "contact_email": null,
-      "contact_phone": "408-786-1028"
+      "contact_name": "Stéphanie Motré",
+      "contact_phone": "408-786-1028",
+      "country": "USA",
+      "name": "Athena Smartcard Inc.",
+      "website_url": "http://www.athena-scs.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Athena Smartcard Inc."
   }
 }

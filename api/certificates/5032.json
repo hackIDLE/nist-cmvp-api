@@ -1,74 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5032"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5032",
     "certificate_number": "5032",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5032",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5032",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5032.pdf",
-    "vendor_name": "Intel Corporation",
-    "module_name": "Intel® QuickAssist Technology (QAT) Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software-hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "6/26/2025",
-    "validation_dates": [
-      "6/26/2025"
-    ],
-    "sunset_date": "6/25/2030",
-    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "description": "Intel® QuickAssist Technology (QAT) Provider which supports the ability to accelerate the operations from the stand OpenSSL 3.0.8 to basic Intel instruction set, to either hardware acceleration path or via the optimized software acceleration path.",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Intel® QuickAssist Technology (QAT) Provider",
+    "module_type": "Software-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5032",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5032.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5032.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/25/2030",
+    "validation_date": "6/26/2025",
+    "validation_dates": [
+      "6/26/2025"
+    ],
     "validation_history": [
       {
         "date": "6/26/2025",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Intel Corporation",
-      "website_url": "https://www.intel.com/",
       "address_lines": [
         "2200 Mission College Blvd.",
         "Santa Clara (SC), California 95054-1537",
         "United States"
       ],
-      "country": "United States",
-      "contact_name": "Mark Chambers",
       "contact_email": "mark.a.chambers@intel.com",
-      "contact_phone": "0001-408-653-5590"
+      "contact_name": "Mark Chambers",
+      "contact_phone": "0001-408-653-5590",
+      "country": "United States",
+      "name": "Intel Corporation",
+      "website_url": "https://www.intel.com/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Intel Corporation"
   }
 }

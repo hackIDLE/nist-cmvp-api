@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4139"
   },
   "certificate": {
-    "certificate_number": "4139",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4139",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4139",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4139.pdf",
-    "vendor_name": "Fortanix, Inc.",
-    "module_name": "Fortanix SDKMS Appliance",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "1/19/2022",
-    "validation_dates": [
-      "1/19/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The tamper evident seals installed as indicated in the security policy",
-    "description": "Fortanix SDKMS appliance is the building block for running Fortanix Self-Defending Key Management Service (SDKMS), a unified HSM and Key Management solution. With SDKMS, you can securely generate, store, and use cryptographic keys and certificates, as well as secrets, such as passwords, API keys, tokens, or any blob of data.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4139.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2022_010222_0702_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/19/2022",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Fortanix, Inc.",
-      "website_url": "http://www.fortanix.com/",
-      "address_lines": [
-        "444 Castro St #305",
-        "Mountain View, CA 94041",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ambuj Kumar",
-      "contact_email": "info@fortanix.com",
-      "contact_phone": "628-400-2043"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +29,62 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "The tamper evident seals installed as indicated in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4139",
+    "certificate_number": "4139",
+    "dataset": "active",
+    "description": "Fortanix SDKMS appliance is the building block for running Fortanix Self-Defending Key Management Service (SDKMS), a unified HSM and Key Management solution. With SDKMS, you can securely generate, store, and use cryptographic keys and certificates, as well as secrets, such as passwords, API keys, tokens, or any blob of data.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Fortanix SDKMS Appliance",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4139",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4139.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2022_010222_0702_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4139.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/19/2022",
+    "validation_dates": [
+      "1/19/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "1/19/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "444 Castro St #305",
+        "Mountain View, CA 94041",
+        "USA"
+      ],
+      "contact_email": "info@fortanix.com",
+      "contact_name": "Ambuj Kumar",
+      "contact_phone": "628-400-2043",
+      "country": "USA",
+      "name": "Fortanix, Inc.",
+      "website_url": "http://www.fortanix.com/"
+    },
+    "vendor_name": "Fortanix, Inc."
   }
 }

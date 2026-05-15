@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/597"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/597",
     "certificate_number": "597",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/597",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/597",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp597.pdf",
-    "vendor_name": "Oberthur Card Systems",
-    "module_name": "ID-One Cosmo 32 v5",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "12/1/2005",
-    "validation_dates": [
-      "12/1/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The ID-One Cosmo 32 v5 is a JavaCard cryptographic module specifically designed for identity and government market needs. It offers a full 32K Byte of EEPROM space available for customer discretionary use, together with on-card cryptographic services such as TDES (using double and triple length DES keys), and 2048-bit RSA with on-card key generation. The cryptographic module loads and runs applets written in Java programming language. It includes a native implementation of the latest Java Card TM (Version 2.2) and Open Platform (Version 2.1.1A) specifications, with full support for Delegated Management and DAP / Mandated DAP, that define a secure infrastructure for post-issuance programmable platforms. Additional features include On-Card fingerprint matching and Logical Channels.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ID-One Cosmo 32 v5",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/597",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt597.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp597.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/1/2005",
+    "validation_dates": [
+      "12/1/2005"
+    ],
     "validation_history": [
       {
         "date": "12/1/2005",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Oberthur Card Systems",
-      "website_url": "http://www.oberthurusa.com",
       "address_lines": [
         "4250 Pleasant Valley Road",
         "Chantilly, VA 20151",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Christophe Goyet",
       "contact_email": "Christophe.Goyet@oberthurusa.com",
-      "contact_phone": "310-884-7900"
+      "contact_name": "Christophe Goyet",
+      "contact_phone": "310-884-7900",
+      "country": "USA",
+      "name": "Oberthur Card Systems",
+      "website_url": "http://www.oberthurusa.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oberthur Card Systems"
   }
 }

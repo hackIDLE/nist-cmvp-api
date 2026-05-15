@@ -1,34 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "caveat": "The tamper evident seals installed as indicated in the security policy; This module contains the embedded module StarSign Crypto-USB Token S powered by Sm@rtCafé Expert 7.0 Secure Element validated to FIPS 140-2 under Cert. #2628 operating in FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500",
     "certificate_number": "4500",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4500.pdf",
-    "vendor_name": "Adva Network Security GmbH",
-    "module_name": "Encryption Module 10TCE-PCN-16GU+AES100G-F",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "5/2/2023, 1/30/2026",
-    "validation_dates": [
-      "5/2/2023",
-      "1/30/2026"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The tamper evident seals installed as indicated in the security policy; This module contains the embedded module StarSign Crypto-USB Token S powered by Sm@rtCafé Expert 7.0 Secure Element validated to FIPS 140-2 under Cert. #2628 operating in FIPS mode.",
     "description": "The 10TCE-PCN-16GU+AES100G-F encryption module is used for encryption and decryption of data transmitted over Optical Transportation Network (OTN) links. It is used in Adva Network Security's FSP 3000 Optical Network Encryption solutions.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Encryption Module 10TCE-PCN-16GU+AES100G-F",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4500",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,54 +49,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4500.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/2/2023, 1/30/2026",
+    "validation_dates": [
+      "5/2/2023",
+      "1/30/2026"
+    ],
     "validation_history": [
       {
         "date": "5/2/2023",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
       },
       {
         "date": "1/30/2026",
-        "type": "Update",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Adva Network Security GmbH",
-      "website_url": "http://www.advasecurity.com",
       "address_lines": [
         "Hermann-Dorner-Allee 91",
         "Berlin 12489",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Uli Schlegel",
       "contact_email": "uli.schlegel@advasecurity.com",
-      "contact_phone": "+49 30 2636969165"
+      "contact_name": "Uli Schlegel",
+      "contact_phone": "+49 30 2636969165",
+      "country": "Germany",
+      "name": "Adva Network Security GmbH",
+      "website_url": "http://www.advasecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SSH"
-    ]
+    "vendor_name": "Adva Network Security GmbH"
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1680"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1680",
     "certificate_number": "1680",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1680",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1680",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1680.pdf",
-    "vendor_name": "Absolute Software Corporation",
-    "module_name": "Absolute Encryption Engine",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/14/2012",
-    "validation_dates": [
-      "2/14/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Absolute Software Corporation provides security products for the central management of all IT assets. The Absolute Encryption Engine is a dynamic-linked library (DLL) defined as the encryption module on the client and server callable by applications via an Application Programming Interface (API). The module is currently used by the Absolute Computrace product.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Absolute Encryption Engine",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1680",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,16 +40,24 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0014.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1680.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/14/2012",
+    "validation_dates": [
+      "2/14/2012"
+    ],
     "validation_history": [
       {
         "date": "2/14/2012",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Absolute Software Corporation",
-      "website_url": "http://www.absolute.com",
       "address_lines": [
         "Suite 1600, Four Bentall Centre",
         "1055 Dunsmuir Street",
@@ -53,25 +65,13 @@
         "Vancouver, BC V7X 1K8",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Tim Parker",
       "contact_email": "tparker@absolute.com",
-      "contact_phone": "604-730-9851 ext. 194"
+      "contact_name": "Tim Parker",
+      "contact_phone": "604-730-9851 ext. 194",
+      "country": "Canada",
+      "name": "Absolute Software Corporation",
+      "website_url": "http://www.absolute.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Absolute Software Corporation"
   }
 }

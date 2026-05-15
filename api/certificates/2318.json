@@ -1,35 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2318"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2318",
     "certificate_number": "2318",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2318",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2318",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2318.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Symantec DLP Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "1/28/2015, 6/28/2016",
-    "validation_dates": [
-      "1/28/2015",
-      "6/28/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The module, the Symantec DLP Cryptographic Module Version 1.0, is a software shared library that provides cryptographic services required by the Symantec Data Loss Prevention solution.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Symantec DLP Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2318",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,54 +49,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0049.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2318.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/28/2015, 6/28/2016",
+    "validation_dates": [
+      "1/28/2015",
+      "6/28/2016"
+    ],
     "validation_history": [
       {
         "date": "1/28/2015",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "6/28/2016",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
       "address_lines": [
         "303 2nd Street 1000N",
         "San Francisco, CA 94107",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rajesh Devadasan",
       "contact_email": "Rajesh_Devadasan@symantec.com",
-      "contact_phone": null
+      "contact_name": "Rajesh Devadasan",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ]
+    "vendor_name": "[email protected]"
   }
 }

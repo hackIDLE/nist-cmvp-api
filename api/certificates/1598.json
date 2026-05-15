@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1598"
   },
   "certificate": {
-    "certificate_number": "1598",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1598",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1598",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1598.pdf",
-    "vendor_name": "Symantec Corporation",
-    "module_name": "Symantec Cross-Platform Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "9/2/2011",
-    "validation_dates": [
-      "9/2/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Symantec Cross-Platform Cryptographic Module (SymCPM) is a software module with a multi-chip standalone embodiment. The overall security level of the module is 1. SymCPM is implemented in the C programming language and consists of three components. It is designed to execute on a host system with a General Purpose Computer (GPC) hardware platform.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1598.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0009.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/2/2011",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Symantec Corporation",
-      "website_url": "http://www.symantec.com",
-      "address_lines": [
-        "350 Ellis Street",
-        "Mountain View, CA 94043",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "John Bordwine",
-      "contact_email": "john_bordwine@symantec.com",
-      "contact_phone": "703-885-3854"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +29,60 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1598",
+    "certificate_number": "1598",
+    "dataset": "historical",
+    "description": "The Symantec Cross-Platform Cryptographic Module (SymCPM) is a software module with a multi-chip standalone embodiment. The overall security level of the module is 1. SymCPM is implemented in the C programming language and consists of three components. It is designed to execute on a host system with a General Purpose Computer (GPC) hardware platform.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Symantec Cross-Platform Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1598",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1598.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0009.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1598.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/2/2011",
+    "validation_dates": [
+      "9/2/2011"
+    ],
+    "validation_history": [
+      {
+        "date": "9/2/2011",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "350 Ellis Street",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "contact_email": "john_bordwine@symantec.com",
+      "contact_name": "John Bordwine",
+      "contact_phone": "703-885-3854",
+      "country": "USA",
+      "name": "Symantec Corporation",
+      "website_url": "http://www.symantec.com"
+    },
+    "vendor_name": "Symantec Corporation"
   }
 }

@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787"
   },
   "certificate": {
-    "certificate_number": "4787",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4787.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung CryptoCore Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/3/2024",
-    "validation_dates": [
-      "9/3/2024"
-    ],
-    "sunset_date": "9/2/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings.",
-    "description": "The Samsung CryptoCore Cryptographic Module is a software library implementing general-purpose cryptographic algorithms.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4787.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/3/2024",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
-      }
-    ],
-    "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "https://www.samsung.com/sec",
-      "address_lines": [
-        "129, Samsung-ro, Yeongtong-gu",
-        "Suwon-si, Gyeonggi-do 16677",
-        "Korea"
-      ],
-      "country": "Korea",
-      "contact_name": "Chulhwan Kim",
-      "contact_email": "chulhwan.kim@samsung.com",
-      "contact_phone": "0082-10-8997-5025"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 17,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 17
+      "status": "cached"
     },
     "algorithms": [
       "CVL",
@@ -102,6 +44,64 @@
       "SHA2-384 | A4968 | - | FIPS 180-4",
       "SHA2-512 | A4968 | - | FIPS 180-4",
       "RSA KeyGen(FIPS186-4) | A4968 | Key Generation Mode-B.3.3 Modulo-2048,3072,4096 Primality Tests-Table C.2 Private Key Format-Standard | FIPS 186-4"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
+    "certificate_number": "4787",
+    "dataset": "active",
+    "description": "The Samsung CryptoCore Cryptographic Module is a software library implementing general-purpose cryptographic algorithms.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung CryptoCore Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4787",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4787.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4787.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/2/2029",
+    "validation_date": "9/3/2024",
+    "validation_dates": [
+      "9/3/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "9/3/2024",
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "129, Samsung-ro, Yeongtong-gu",
+        "Suwon-si, Gyeonggi-do 16677",
+        "Korea"
+      ],
+      "contact_email": "chulhwan.kim@samsung.com",
+      "contact_name": "Chulhwan Kim",
+      "contact_phone": "0082-10-8997-5025",
+      "country": "Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "https://www.samsung.com/sec"
+    },
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

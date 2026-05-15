@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476"
   },
   "certificate": {
-    "certificate_number": "2476",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2476.pdf",
-    "vendor_name": "KONA I Co., Ltd.",
-    "module_name": "KONA N41M0",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "11/20/2015",
-    "validation_dates": [
-      "11/20/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "The KONA N41M0 smart card can be employed in solutions which provide secure PKI (public key infrastructure) and digital signature technology. KONA N41M0 serves as highly portable physical forms which enhances the security of network access and ensures secure electronic communications. KONA N41M0 supports on-card Triple DES, AES, ECC and 2048-bit RSA algorithms with on-card key generation. The KONA N41M0 smart card is Java-based smart cards for physical and logical access, e-transactions and other applications, which is compliant to Java Card v3.0.4 and GlobalPlatform 2.2.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2476.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2015.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/20/2015",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "KONA I Co., Ltd.",
-      "website_url": "http://www.konai.com/",
-      "address_lines": [
-        "KONA I, 6F, 30, Eunhaeng-Ro",
-        "Yeongdeungpo-Gu",
-        "Seoul 150-872",
-        "South Korea (ROK)"
-      ],
-      "country": "South Korea (ROK)",
-      "contact_name": "Irene Namkung",
-      "contact_email": "snk@konai.com",
-      "contact_phone": "+82 (0)2 2168 7586"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -81,6 +26,61 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476",
+    "certificate_number": "2476",
+    "dataset": "historical",
+    "description": "The KONA N41M0 smart card can be employed in solutions which provide secure PKI (public key infrastructure) and digital signature technology. KONA N41M0 serves as highly portable physical forms which enhances the security of network access and ensures secure electronic communications. KONA N41M0 supports on-card Triple DES, AES, ECC and 2048-bit RSA algorithms with on-card key generation. The KONA N41M0 smart card is Java-based smart cards for physical and logical access, e-transactions and other applications, which is compliant to Java Card v3.0.4 and GlobalPlatform 2.2.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "KONA N41M0",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2476",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2476.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2015.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2476.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/20/2015",
+    "validation_dates": [
+      "11/20/2015"
+    ],
+    "validation_history": [
+      {
+        "date": "11/20/2015",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "KONA I, 6F, 30, Eunhaeng-Ro",
+        "Yeongdeungpo-Gu",
+        "Seoul 150-872",
+        "South Korea (ROK)"
+      ],
+      "contact_email": "snk@konai.com",
+      "contact_name": "Irene Namkung",
+      "contact_phone": "+82 (0)2 2168 7586",
+      "country": "South Korea (ROK)",
+      "name": "KONA I Co., Ltd.",
+      "website_url": "http://www.konai.com/"
+    },
+    "vendor_name": "KONA I Co., Ltd."
   }
 }

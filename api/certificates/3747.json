@@ -1,35 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3747"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode, initialized, and configured as specified in Sections 8.1, 9 and 10 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3747",
     "certificate_number": "3747",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3747",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3747",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3747.pdf",
-    "vendor_name": "Infineon Technologies AG",
-    "module_name": "Trusted Platform Module 2.0 SLI / SLM 9670",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "11/24/2020, 9/6/2022",
-    "validation_dates": [
-      "11/24/2020",
-      "9/6/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, initialized, and configured as specified in Sections 8.1, 9 and 10 of the Security Policy",
     "description": "The TPM is a single chip module that provides computer manufacturers with the core components of a subsystem used to assure authenticity, integrity and confidentiality in e-commerce and internet communications within a Trusted Computing Platform. The TPM is a complete solution implementing the Trusted Platform Module Library Specification, Family \"2.0\", Level 00, Revision 01.38, September 2016 (ISO/IEC 11889:2015, Parts 1-4), Errata Version 1.4. See http://www.trustedcomputinggroup.org/ for further information on TCG and TPM.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trusted Platform Module 2.0 SLI / SLM 9670",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3747",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,51 +46,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2020_011220_0856_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3747.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/24/2020, 9/6/2022",
+    "validation_dates": [
+      "11/24/2020",
+      "9/6/2022"
+    ],
     "validation_history": [
       {
         "date": "11/24/2020",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "9/6/2022",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Infineon Technologies AG",
-      "website_url": "http://www.infineon.com",
       "address_lines": [
         "Am Campeon 1-12",
         "Neubiberg, BY 85579",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Daniel Flaschka",
       "contact_email": "Daniel.Flaschka@infineon.com",
-      "contact_phone": "+49-821-25851-47"
+      "contact_name": "Daniel Flaschka",
+      "contact_phone": "+49-821-25851-47",
+      "country": "Germany",
+      "name": "Infineon Technologies AG",
+      "website_url": "http://www.infineon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Infineon Technologies AG"
   }
 }

@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5065"
   },
   "certificate": {
-    "certificate_number": "5065",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5065",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5065",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5065.pdf",
-    "vendor_name": "Apple Inc.",
-    "module_name": "Apple corecrypto Module v13.0 [Apple silicon, User, Software, SL1]",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/22/2025",
-    "validation_dates": [
-      "9/22/2025"
-    ],
-    "sunset_date": "9/21/2030",
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "The Apple Cryptographic Module for Apple silicon user space environment.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5065.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/22/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Apple Inc.",
-      "website_url": "http://www.apple.com",
-      "address_lines": [
-        "One Apple Park Way",
-        "MS: 927-1CPS",
-        "Cupertino, CA 95014",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Nina Kominiak",
-      "contact_email": "security-certifications@apple.com",
-      "contact_phone": "907-227-9672"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 158,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 158
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -244,6 +189,61 @@
       "RSA Key Wrapping | OAEP, PKCS#1 v1.5 and-PSS schemes",
       "Triple-DES\\[SP800-67r2\\] | CBC,CTR,CFB64,ECB,CFB8,OFB",
       "SHA-3 | Message Digest"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5065",
+    "certificate_number": "5065",
+    "dataset": "active",
+    "description": "The Apple Cryptographic Module for Apple silicon user space environment.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Apple corecrypto Module v13.0 [Apple silicon, User, Software, SL1]",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5065",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5065.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5065.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/21/2030",
+    "validation_date": "9/22/2025",
+    "validation_dates": [
+      "9/22/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "9/22/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "One Apple Park Way",
+        "MS: 927-1CPS",
+        "Cupertino, CA 95014",
+        "USA"
+      ],
+      "contact_email": "security-certifications@apple.com",
+      "contact_name": "Nina Kominiak",
+      "contact_phone": "907-227-9672",
+      "country": "USA",
+      "name": "Apple Inc.",
+      "website_url": "http://www.apple.com"
+    },
+    "vendor_name": "Apple Inc."
   }
 }

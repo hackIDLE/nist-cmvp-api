@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4451"
   },
   "certificate": {
-    "certificate_number": "4451",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4451",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4451",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4451.pdf",
-    "vendor_name": "Symantec, A Division of Broadcom",
-    "module_name": "Symantec Integrated Secure Gateway",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "3/15/2023",
-    "validation_dates": [
-      "3/15/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy.",
-    "description": "The Symantec Integrated Secure Gateway (ISG) is the software on the newest Symantec Security Platform SSP-S410 and S210 appliances used to deploy applications. The ISG SSP-S210 and S410 appliances enable organizations to take a modular approach to network security by separating the traditional hardware-based appliance approach into individual software and hardware components. This allows customers to tailor their software and hardware procurement needs specifically to their network topology, providing on-premises, cloud-based, or blended solutions.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4451.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/15/2023",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Symantec, A Division of Broadcom",
-      "website_url": "http://www.broadcom.com",
-      "address_lines": [
-        "1320 Ridder Park Dr.",
-        "San Jose, CA 95131",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ian Hall",
-      "contact_email": "symc-fed-certs.pdl@broadcom.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +28,63 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4451",
+    "certificate_number": "4451",
+    "dataset": "active",
+    "description": "The Symantec Integrated Secure Gateway (ISG) is the software on the newest Symantec Security Platform SSP-S410 and S210 appliances used to deploy applications. The ISG SSP-S210 and S410 appliances enable organizations to take a modular approach to network security by separating the traditional hardware-based appliance approach into individual software and hardware components. This allows customers to tailor their software and hardware procurement needs specifically to their network topology, providing on-premises, cloud-based, or blended solutions.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Symantec Integrated Secure Gateway",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4451",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4451.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4451.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/15/2023",
+    "validation_dates": [
+      "3/15/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "3/15/2023",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1320 Ridder Park Dr.",
+        "San Jose, CA 95131",
+        "USA"
+      ],
+      "contact_email": "symc-fed-certs.pdl@broadcom.com",
+      "contact_name": "Ian Hall",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Symantec, A Division of Broadcom",
+      "website_url": "http://www.broadcom.com"
+    },
+    "vendor_name": "Symantec, A Division of Broadcom"
   }
 }

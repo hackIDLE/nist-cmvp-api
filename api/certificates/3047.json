@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3047"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in Sections 9 and 10 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3047",
     "certificate_number": "3047",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3047",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3047",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3047.pdf",
-    "vendor_name": "Xirrus, Inc.",
-    "module_name": "Xirrus XR Series Wi-Fi Products",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "10/17/2017",
-    "validation_dates": [
-      "10/17/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in Sections 9 and 10 of the Security Policy",
     "description": "802.11 wireless LAN Access Points",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Xirrus XR Series Wi-Fi Products",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3047",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3047.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/17/2017",
+    "validation_dates": [
+      "10/17/2017"
+    ],
     "validation_history": [
       {
         "date": "10/17/2017",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Xirrus, Inc.",
-      "website_url": "http://www.xirrus.com",
       "address_lines": [
         "2101 Corporate Center Drive",
         "Thousand Oaks, CA 91320",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike de la Garrigue",
       "contact_email": "mike.delagarrigue@riverbed.com",
-      "contact_phone": "805-262-1655"
+      "contact_name": "Mike de la Garrigue",
+      "contact_phone": "805-262-1655",
+      "country": "USA",
+      "name": "Xirrus, Inc.",
+      "website_url": "http://www.xirrus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Xirrus, Inc."
   }
 }

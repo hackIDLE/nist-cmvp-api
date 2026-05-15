@@ -243,6 +243,44 @@ def test_parse_modules_in_process():
     print("✓ Modules in process table test passed")
 
 
+def test_parse_table_preserves_inline_spacing():
+    """Test table cells with adjacent text nodes keep readable spacing."""
+    html = """
+    <html>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Certificate Number</th>
+                        <th>Vendor Name</th>
+                        <th>Validation Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>911</td>
+                        <td>L3Harris Technologies, Inc.</td>
+                        <td><span>02/07/2008</span><span>07/02/2010</span><span>04/10/2015</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Samsung Electronics Co., Ltd.<a href="/contacts">View Contacts</a></td>
+                        <td>Pending Review  (1/7/2026)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
+    """
+
+    modules = parse_modules_table(html)
+
+    assert modules[0]["Validation Date"] == "02/07/2008 07/02/2010 04/10/2015", "Validation dates should preserve spacing"
+    assert modules[1]["Vendor Name"] == "Samsung Electronics Co., Ltd. View Contacts", "Inline contact link should preserve spacing"
+
+    print("✓ Inline table spacing test passed")
+
+
 def test_parse_certificate_detail_page():
     """Test parsing a NIST-style certificate detail page."""
     html = """
@@ -798,11 +836,41 @@ def test_build_certificate_fingerprint():
     same_row = dict(base_row)
     changed_row = dict(base_row)
     changed_row["Validation Date"] = "04/11/2026"
+    spacing_fixed_row = dict(base_row)
+    spacing_fixed_row["Validation Date"] = "04/10/2026 05/12/2026"
+    spacing_broken_row = dict(base_row)
+    spacing_broken_row["Validation Date"] = "04/10/202605/12/2026"
+    two_digit_year_fixed_row = dict(base_row)
+    two_digit_year_fixed_row["Validation Date"] = "10/25/2010 01/31/11 03/14/2011"
+    two_digit_year_broken_row = dict(base_row)
+    two_digit_year_broken_row["Validation Date"] = "10/25/201001/31/1103/14/2011"
+    module_spacing_fixed_row = dict(base_row)
+    module_spacing_fixed_row["Module Name"] = "P7170 IP System Portable Two-Way FM Radios"
+    module_spacing_broken_row = dict(base_row)
+    module_spacing_broken_row["Module Name"] = "P7170IPSystem Portable Two-Way FM Radios"
+    module_changed_row = dict(base_row)
+    module_changed_row["Module Name"] = "P7171 IP System Portable Two-Way FM Radios"
 
     fingerprint = build_certificate_fingerprint(base_row, "active")
     assert fingerprint == build_certificate_fingerprint(same_row, "active"), "Fingerprint should be stable for unchanged rows"
     assert fingerprint != build_certificate_fingerprint(changed_row, "active"), "Fingerprint should change when summary fields change"
     assert fingerprint != build_certificate_fingerprint(base_row, "historical"), "Fingerprint should change when dataset changes"
+    assert (
+        build_certificate_fingerprint(spacing_fixed_row, "active")
+        == build_certificate_fingerprint(spacing_broken_row, "active")
+    ), "Fingerprint should ignore HTML spacing artifacts between adjacent validation dates"
+    assert (
+        build_certificate_fingerprint(two_digit_year_fixed_row, "active")
+        == build_certificate_fingerprint(two_digit_year_broken_row, "active")
+    ), "Fingerprint should handle adjacent validation dates that include a two-digit year"
+    assert (
+        build_certificate_fingerprint(module_spacing_fixed_row, "active")
+        == build_certificate_fingerprint(module_spacing_broken_row, "active")
+    ), "Fingerprint should ignore HTML spacing artifacts inside module names"
+    assert (
+        build_certificate_fingerprint(module_spacing_fixed_row, "active")
+        != build_certificate_fingerprint(module_changed_row, "active")
+    ), "Fingerprint should still change when module name text changes"
 
     print("✓ Certificate fingerprint test passed")
 
@@ -1267,7 +1335,7 @@ def test_validate_generated_api_artifacts():
     errors = validate_api(
         Path("."),
         require_current_schema=True,
-        forbid_firecrawl_run_source=True,
+        require_supported_algorithm_source=True,
         require_data_quality_pass=True,
     )
 
@@ -1712,6 +1780,7 @@ def main():
         test_parse_empty_table()
         test_parse_historical_modules_table()
         test_parse_modules_in_process()
+        test_parse_table_preserves_inline_spacing()
         test_parse_certificate_detail_page()
         test_reused_certificate_detail_migrates_version_schema_fields()
         test_process_certificate_record_reuses_legacy_detail_with_migrated_fields()

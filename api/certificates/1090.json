@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1090"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1090",
     "certificate_number": "1090",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1090",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1090",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1090.pdf",
-    "vendor_name": "Proxim Wireless Corporation",
-    "module_name": "Tsunami MP.11 HS 245054_R, Tsunami MP.11 HS 245054_RC and Tsunami MP.11 HS 245054_S",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "2/24/2009, 9/18/2009",
-    "validation_dates": [
-      "2/24/2009",
-      "9/18/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Proxim Tsunami MP.11 HS 245054_R, 245054_RC, and 245054_S wireless products offer fixed and mobile WiMAX capabilities to distribute wireless broadband access supporting video, voice, and data applications. In FIPS mode, the modules support proprietary WORP protocol for wireless transmission and serial, TLS, SSH, and SNMP for management.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Tsunami MP.11 HS 245054_R, Tsunami MP.11 HS 245054_RC and Tsunami MP.11 HS 245054_S",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1090",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1090.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1090.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/24/2009, 9/18/2009",
+    "validation_dates": [
+      "2/24/2009",
+      "9/18/2009"
+    ],
     "validation_history": [
       {
         "date": "2/24/2009",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "9/18/2009",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Proxim Wireless Corporation",
-      "website_url": "http://www.proxim.com",
       "address_lines": [
         "1561 Buckeye Drive",
         "Milpitas, CA 95035",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Cor van de Water",
       "contact_email": "CWater@proxim.com",
-      "contact_phone": "408-383-7626"
+      "contact_name": "Cor van de Water",
+      "contact_phone": "408-383-7626",
+      "country": "USA",
+      "name": "Proxim Wireless Corporation",
+      "website_url": "http://www.proxim.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Proxim Wireless Corporation"
   }
 }

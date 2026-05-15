@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1517"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1517",
     "certificate_number": "1517",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1517",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1517",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1517.pdf",
-    "vendor_name": "Aruba Networks, Inc.",
-    "module_name": "Aruba 3000 and 6000/M3 Mobility Controllers with ArubaOS Firmware",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "3/11/2011, 7/19/2011, 2/6/2013",
-    "validation_dates": [
-      "3/11/2011",
-      "7/19/2011",
-      "2/6/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
     "description": "Aruba Networks' Mobility Controller system completely changes how 802.11 networks are deployed, secured, and managed. The only mobile security system with an integrated ICSA-certified stateful firewall and hardware-based encryption, the Aruba mobility controller is the industry's highest performing and most scalable enterprise mobility platform on the market today. Aruba offers the industry's only modular and stackable mobility controllers from every enterprise environment. Now, administrators are freed from the costly and time-consuming process of managing individual APs. And as security stan",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aruba 3000 and 6000/M3 Mobility Controllers with ArubaOS Firmware",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1517",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0004.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1517.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/11/2011, 7/19/2011, 2/6/2013",
+    "validation_dates": [
+      "3/11/2011",
+      "7/19/2011",
+      "2/6/2013"
+    ],
     "validation_history": [
       {
         "date": "3/11/2011",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "7/19/2011",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       },
       {
         "date": "2/6/2013",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Aruba Networks, Inc.",
-      "website_url": "http://www.arubanetworks.com",
       "address_lines": [
         "1322 Crossman Avenue",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Harsha Nagaraja",
       "contact_email": "harsha@arubanetworks.com",
-      "contact_phone": "408-754-3010"
+      "contact_name": "Harsha Nagaraja",
+      "contact_phone": "408-754-3010",
+      "country": "USA",
+      "name": "Aruba Networks, Inc.",
+      "website_url": "http://www.arubanetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Aruba Networks, Inc."
   }
 }

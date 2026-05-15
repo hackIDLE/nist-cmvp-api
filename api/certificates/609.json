@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/609"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/609",
     "certificate_number": "609",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/609",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/609",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp609.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "SNAPfone",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "12/23/2005, 1/13/2006, 1/27/2006",
-    "validation_dates": [
-      "12/23/2005",
-      "1/13/2006",
-      "1/27/2006"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "SNAPfone is a compact encryption termination unit capable of securing voice communications over analog telephone lines. SNAPfone performs high level encryption process with a new key draw for each session using Asymmetric Public Key Cryptography (1024 bit Diffie-Hellman) for key exchanging and Symmetric block cipher (192-bit 3DES) algorithm for session encryption. SNAPfone requires minimum user intervention with seamless operation.\" \"The Snapfone is a plug-n-play encryption device for securing communications over regular analog (POTS) or fax lines. Snapfone is designed for compatibility among major telephone and PBX brands. It can also be deployed as a shared resource device when connected to a PBX. Its small footprint and 1101220v connectivity allows for easy transport and maximum flexibility. The cryptographic core engines are optimized for minimal voice latency providing superior voice quality. Snapfones can also be configured as a distributed secure voice network solution among groups and between multiple locations.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SNAPfone",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/609",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,51 +40,52 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt609.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp609.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/23/2005, 1/13/2006, 1/27/2006",
+    "validation_dates": [
+      "12/23/2005",
+      "1/13/2006",
+      "1/27/2006"
+    ],
     "validation_history": [
       {
         "date": "12/23/2005",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/13/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/27/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
       "address_lines": [
         "1 Research Court",
         "Suite 450",
         "Rockville, MD 20850",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Uri Naor",
       "contact_email": "uri.naor@snapshield.com",
-      "contact_phone": "301-216-3805"
+      "contact_name": "Uri Naor",
+      "contact_phone": "301-216-3805",
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "[email protected]"
   }
 }

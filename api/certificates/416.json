@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/416"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/416",
     "certificate_number": "416",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/416",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/416",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp416.pdf",
-    "vendor_name": "Real Time Logic, Inc.",
-    "module_name": "RTL-TDEA Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "4/9/2004",
-    "validation_dates": [
-      "4/9/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The RTL-TDEA Crypto Module is a PCI card developed to encrypt and decrypt serial user data using Triple Data Encryption (TDEA) algorithms certified to FIPS-140-2 Level 2 security requirements. The certified TDEA algorithms include TECB, TCBC Encrypt and TCFB-64, TOFB-64, Encrypt and Decrypt. The crypto module is a multi-chip embedded short form PCI card (ISA standard) with all of the control functions and encryption algorithms implemented in firmware and hosted in an FPGA. All control of the module is via an RS-232, 9600 Baud DTE UART interface while the data is passed through dedicated RS-422 input and output ports at a rate of up to 10 Mbps.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RTL-TDEA Crypto Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/416",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt416.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp416.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/9/2004",
+    "validation_dates": [
+      "4/9/2004"
+    ],
     "validation_history": [
       {
         "date": "4/9/2004",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Real Time Logic, Inc.",
-      "website_url": "http://www.rtlogic.com",
       "address_lines": [
         "8591 Prairie Trail Drive",
         "Suite 500",
         "Englewood, CO 80112",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Bela Szabo",
       "contact_email": "bela@rtlogic.com",
-      "contact_phone": "303-703-3834"
+      "contact_name": "Bela Szabo",
+      "contact_phone": "303-703-3834",
+      "country": "USA",
+      "name": "Real Time Logic, Inc.",
+      "website_url": "http://www.rtlogic.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Real Time Logic, Inc."
   }
 }

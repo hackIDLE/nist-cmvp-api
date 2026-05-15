@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4394"
   },
   "certificate": {
-    "certificate_number": "4394",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4394",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4394",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4394.pdf",
-    "vendor_name": "Blue Armor",
-    "module_name": "Blue Armor Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/15/2022",
-    "validation_dates": [
-      "12/15/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "Blue Armor Cryptographic Module is a standards-based cryptographic engine used in Transport Access Control, SSL, OpenSSL, as well as other security applications. The module delivers core cryptographic functions and features robust algorithm support, including Suite B algorithms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4394.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2022_030123_0646_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/15/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Blue Armor",
-      "website_url": "http://bluearmor.com",
-      "address_lines": [
-        "4420 Cypress Creek Pkwy",
-        "Suite 224",
-        "Houston, TX 77068",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "David Pollack",
-      "contact_email": "david.pollack@bluearmor.com",
-      "contact_phone": "888-552-1576"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +27,64 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4394",
+    "certificate_number": "4394",
+    "dataset": "active",
+    "description": "Blue Armor Cryptographic Module is a standards-based cryptographic engine used in Transport Access Control, SSL, OpenSSL, as well as other security applications. The module delivers core cryptographic functions and features robust algorithm support, including Suite B algorithms.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Blue Armor Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4394",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4394.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2022_030123_0646_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4394.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "12/15/2022",
+    "validation_dates": [
+      "12/15/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "12/15/2022",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4420 Cypress Creek Pkwy",
+        "Suite 224",
+        "Houston, TX 77068",
+        "USA"
+      ],
+      "contact_email": "david.pollack@bluearmor.com",
+      "contact_name": "David Pollack",
+      "contact_phone": "888-552-1576",
+      "country": "USA",
+      "name": "Blue Armor",
+      "website_url": "http://bluearmor.com"
+    },
+    "vendor_name": "Blue Armor"
   }
 }

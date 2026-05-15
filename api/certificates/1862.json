@@ -1,34 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1862"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1862",
     "certificate_number": "1862",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1862",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1862",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1862.pdf",
-    "vendor_name": "Seagate Technology LLC",
-    "module_name": "Seagate Secure® TCG Enterprise SSC Pulsar.2 Self-Encrypting Drive FIPS 140 Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "1/7/2013, 1/25/2013",
-    "validation_dates": [
-      "1/7/2013",
-      "1/25/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Seagate Secure« Enterprise Self-Encrypting Drives FIPS 140 Module is embodied in the Seagate Pulsar.2 SED model disk drive. These products meet the performance requirements of the most demanding Enterprise applications. The cryptographic module (CM) provides a wide range of cryptographic services using FIPS approved algorithms. Services include hardware-based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA bands and authenticated FW download.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Seagate Secure® TCG Enterprise SSC Pulsar.2 Self-Encrypting Drive FIPS 140 Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1862",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,51 +46,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0025.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1862.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/7/2013, 1/25/2013",
+    "validation_dates": [
+      "1/7/2013",
+      "1/25/2013"
+    ],
     "validation_history": [
       {
         "date": "1/7/2013",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "1/25/2013",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Seagate Technology LLC",
-      "website_url": "http://www.seagate.com",
       "address_lines": [
         "1280 Disc Drive",
         "Shakopee, MN 55379",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "David R Kaiser, PMP",
       "contact_email": "david.r.kaiser@seagate.com",
-      "contact_phone": "952-402-2356"
+      "contact_name": "David R Kaiser, PMP",
+      "contact_phone": "952-402-2356",
+      "country": "USA",
+      "name": "Seagate Technology LLC",
+      "website_url": "http://www.seagate.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Seagate Technology LLC"
   }
 }

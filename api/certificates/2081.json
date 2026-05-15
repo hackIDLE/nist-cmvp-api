@@ -1,97 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2081"
   },
   "certificate": {
-    "certificate_number": "2081",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2081",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2081",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2081.pdf",
-    "vendor_name": "Dispersive Technologies, Inc.",
-    "module_name": "V2VNet Common Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/22/2014, 9/18/2015, 2/26/2016, 1/18/2022",
-    "validation_dates": [
-      "2/22/2014",
-      "9/18/2015",
-      "2/26/2016",
-      "1/18/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "V2VNet Common Crypto Module provides cryptographic functions for Dispersive Solutions V2VNet Server Edition, a scalable solution allowing clients to communicate directly with other clients, and securely route voice, video and data communications.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2081.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/22/2014",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      },
-      {
-        "date": "9/18/2015",
-        "type": "Update",
-        "lab": "EWA - Canada"
-      },
-      {
-        "date": "2/26/2016",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "1/18/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Dispersive Technologies, Inc.",
-      "website_url": "http://www.dispersivesolutions.com",
-      "address_lines": [
-        "2555 Westside Parkway",
-        "Suite 500",
-        "Alpharetta, GA 30004",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Douglas Dimola",
-      "contact_email": null,
-      "contact_phone": "844.403.5851"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -102,6 +26,82 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2081",
+    "certificate_number": "2081",
+    "dataset": "historical",
+    "description": "V2VNet Common Crypto Module provides cryptographic functions for Dispersive Solutions V2VNet Server Edition, a scalable solution allowing clients to communicate directly with other clients, and securely route voice, video and data communications.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "V2VNet Common Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2081",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2081.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2081.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/22/2014, 9/18/2015, 2/26/2016, 1/18/2022",
+    "validation_dates": [
+      "2/22/2014",
+      "9/18/2015",
+      "2/26/2016",
+      "1/18/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "2/22/2014",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      },
+      {
+        "date": "9/18/2015",
+        "lab": "EWA - Canada",
+        "type": "Update"
+      },
+      {
+        "date": "2/26/2016",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "1/18/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2555 Westside Parkway",
+        "Suite 500",
+        "Alpharetta, GA 30004",
+        "USA"
+      ],
+      "contact_email": null,
+      "contact_name": "Douglas Dimola",
+      "contact_phone": "844.403.5851",
+      "country": "USA",
+      "name": "Dispersive Technologies, Inc.",
+      "website_url": "http://www.dispersivesolutions.com"
+    },
+    "vendor_name": "Dispersive Technologies, Inc."
   }
 }

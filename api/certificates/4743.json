@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4743"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4743",
     "certificate_number": "4743",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4743",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4743",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4743.pdf",
-    "vendor_name": "Legion of the Bouncy Castle Inc.",
-    "module_name": "BC-FJA (Bouncy Castle FIPS Java API)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/29/2024",
-    "validation_dates": [
-      "7/29/2024"
-    ],
-    "sunset_date": "7/28/2029",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
     "description": "The Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "BC-FJA (Bouncy Castle FIPS Java API)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4743",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2024_010824_1146.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4743.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "7/29/2024",
+    "validation_dates": [
+      "7/29/2024"
+    ],
     "validation_history": [
       {
         "date": "7/29/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Legion of the Bouncy Castle Inc.",
-      "website_url": "https://www.bouncycastle.org/",
       "address_lines": [
         "85 The Crescent",
         "Ascot Vale, Victoria 3032",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "David Hook",
       "contact_email": "dgh@bouncycastle.org",
-      "contact_phone": "61438170390"
+      "contact_name": "David Hook",
+      "contact_phone": "61438170390",
+      "country": "Australia",
+      "name": "Legion of the Bouncy Castle Inc.",
+      "website_url": "https://www.bouncycastle.org/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Legion of the Bouncy Castle Inc."
   }
 }

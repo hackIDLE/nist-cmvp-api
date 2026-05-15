@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030"
   },
   "certificate": {
-    "certificate_number": "5030",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5030.pdf",
-    "vendor_name": "Apple Inc.",
-    "module_name": "Apple corecrypto Module v12.0 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "6/25/2025",
-    "validation_dates": [
-      "6/25/2025"
-    ],
-    "sunset_date": "6/24/2030",
-    "caveat": "When operated in approved mode",
-    "description": "Apple corecrypto Module v12.0 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3] is a Hardware module implemented as a sub-chip running on a single-chip processor.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Physical security: Level 3",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5030.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/25/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Apple Inc.",
-      "website_url": "http://www.apple.com",
-      "address_lines": [
-        "One Apple Park Way",
-        "MS: 927-1CPS",
-        "Cupertino, CA 95014",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Nina Kominiak",
-      "contact_email": "security-certifications@apple.com",
-      "contact_phone": "907-227-9672"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 173,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 173
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -259,6 +203,62 @@
       "Counter DRBG(A2864) | KAT | CAST | On Demand | Manually",
       "Counter DRBG(A501) | KAT | CAST | On Demand | Manually",
       "Errorstate | The HMAC-SHA-256value computed over themodule did not matchthe pre- computed value,OR the computed valuein the invokedConditional CAST did notmatch the known value.No cryptographicservices are provided,and data output isprohibited | Pre-operationalFirmwareIntegrity Testfailure ORConditionalCAST failure | Poweroff/on | for Integrity: print statement\"FAILED:fipspost\\_post\\_integrity\" tostdout;for CAST: sprint statement\"FAILED: <event>\" to stdout(<event> refers to any of thecryptographic functionslisted in the Conditional Self-test Table)"
-    ]
+    ],
+    "caveat": "When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
+    "certificate_number": "5030",
+    "dataset": "active",
+    "description": "Apple corecrypto Module v12.0 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3] is a Hardware module implemented as a sub-chip running on a single-chip processor.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Apple corecrypto Module v12.0 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5030",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5030.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5030.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/24/2030",
+    "validation_date": "6/25/2025",
+    "validation_dates": [
+      "6/25/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "6/25/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "One Apple Park Way",
+        "MS: 927-1CPS",
+        "Cupertino, CA 95014",
+        "USA"
+      ],
+      "contact_email": "security-certifications@apple.com",
+      "contact_name": "Nina Kominiak",
+      "contact_phone": "907-227-9672",
+      "country": "USA",
+      "name": "Apple Inc.",
+      "website_url": "http://www.apple.com"
+    },
+    "vendor_name": "Apple Inc."
   }
 }

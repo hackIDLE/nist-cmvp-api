@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3837"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3837",
     "certificate_number": "3837",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3837",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3837",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3837.pdf",
-    "vendor_name": "Landis+Gyr",
-    "module_name": "ESCRYPT's CycurLIB",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/3/2021",
-    "validation_dates": [
-      "3/3/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "CycurLIB is a software library providing a C-language Application Program Interfaces (APIs) for use by other processes that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ESCRYPT's CycurLIB",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3837",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,41 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2021_010421_0724_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3837.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/3/2021",
+    "validation_dates": [
+      "3/3/2021"
+    ],
     "validation_history": [
       {
         "date": "3/3/2021",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Landis+Gyr",
-      "website_url": "http://www.landisgyr.com",
       "address_lines": [
         "30000 Mill Creek Avenue",
         "Suite 100",
         "Alpharetta, GA 30022",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Stephen Chasko",
       "contact_email": "Stephen.Chasko@landisgyr.com",
-      "contact_phone": "678-258-1538"
+      "contact_name": "Stephen Chasko",
+      "contact_phone": "678-258-1538",
+      "country": "USA",
+      "name": "Landis+Gyr",
+      "website_url": "http://www.landisgyr.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Landis+Gyr"
   }
 }

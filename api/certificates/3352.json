@@ -1,33 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3352"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3352",
     "certificate_number": "3352",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3352",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3352",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3352.pdf",
-    "vendor_name": "Silvus Technologies, Inc.",
-    "module_name": "SC4000 Series Mesh Radio",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "1/28/2019",
-    "validation_dates": [
-      "1/28/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "StreamCaster SC4200 and SC4400 series MIMO MANET radios provide wireless video, audio, and data connectivity. It is self-forming, self-healing, and automatically adapts to dynamic channels without the need of infastructure. The StreamCaster radio has a powerful built-in web based network management tool to facilitate monitoring and controlling of a large multi-hop network consisting of many StreamCaster radios.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SC4000 Series Mesh Radio",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3352",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,43 +43,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JanuaryConsolidatedCert.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3352.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/28/2019",
+    "validation_dates": [
+      "1/28/2019"
+    ],
     "validation_history": [
       {
         "date": "1/28/2019",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Silvus Technologies, Inc.",
-      "website_url": "http://www.silvustechnologies.com",
       "address_lines": [
         "10990 Wilshire Blvd., Suite #1500",
         "Los Angeles, CA 90024",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Weijun Zhu",
       "contact_email": "weijun@silvustechnologies.com",
-      "contact_phone": "310-479-3333 Ext. 27"
+      "contact_name": "Weijun Zhu",
+      "contact_phone": "310-479-3333 Ext. 27",
+      "country": "USA",
+      "name": "Silvus Technologies, Inc.",
+      "website_url": "http://www.silvustechnologies.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DES"
-    ]
+    "vendor_name": "Silvus Technologies, Inc."
   }
 }

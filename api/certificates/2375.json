@@ -1,34 +1,42 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2375"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section Secure Operation",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2375",
     "certificate_number": "2375",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2375",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2375",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2375.pdf",
-    "vendor_name": "Hewlett Packard Enterprise Development LP",
-    "module_name": "HPE P-Class Smart Array RAID Controllers",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "5/20/2015, 6/13/2018",
-    "validation_dates": [
-      "5/20/2015",
-      "6/13/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section Secure Operation",
     "description": "The HPE P-Class Smart Array RAID Controllers are a family of serial-attached SCSI host bus adapters that provide intelligent storage array control. The controllers can be card-based or embedded within an HP server, and provide a high speed data path, on-board storage cache, remote management, and encryption of data at rest.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HPE P-Class Smart Array RAID Controllers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2375",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,52 +47,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0053.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2375.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/20/2015, 6/13/2018",
+    "validation_dates": [
+      "5/20/2015",
+      "6/13/2018"
+    ],
     "validation_history": [
       {
         "date": "5/20/2015",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "6/13/2018",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Hewlett Packard Enterprise Development LP",
-      "website_url": "http://www.hpe.com",
       "address_lines": [
         "11445 Compaq Center Drive West",
         "Houston, TX 77070",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Catherine Schwartz",
       "contact_email": "Catherine.Schwartz@hpe.com",
-      "contact_phone": null
+      "contact_name": "Catherine Schwartz",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Hewlett Packard Enterprise Development LP",
+      "website_url": "http://www.hpe.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ]
+    "vendor_name": "Hewlett Packard Enterprise Development LP"
   }
 }

@@ -1,33 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2247"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2247",
     "certificate_number": "2247",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2247",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2247",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2247.pdf",
-    "vendor_name": "NXP Semiconductors",
-    "module_name": "NXP JCOP 2.4.2 R3",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "9/15/2014",
-    "validation_dates": [
-      "9/15/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Single Chip Module with NXP Secure Smart Card Controller of P5CD081 Family. P5CD081 Family comprises: P5CD145 V0A, P5CC145 V0A, P5CN145 V0A, P5CD128 V0A, P5CC128 V0A, P5CD081 V1A, P5CC081 V1A, P5CN081 V1A, P5CD051 V1A, P5CD041 V1A, P5CD021 V1A, P5CD016 V1A, P5CD145 V0B, P5CC145 V0B, and P5CD081 V1D.",
-    "security_level_exceptions": [
-      "Physical Security: Level 4"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NXP JCOP 2.4.2 R3",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2247",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,48 +48,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0045.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2247.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/15/2014",
+    "validation_dates": [
+      "9/15/2014"
+    ],
     "validation_history": [
       {
         "date": "9/15/2014",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "NXP Semiconductors",
-      "website_url": "http://www.nxp.com",
       "address_lines": [
         "Stresemannallee 101",
         "Hamburg D-22529",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Hans-Gerd Albertsen",
       "contact_email": "Hans-Gerd.Albertsen@nxp.com",
-      "contact_phone": "+49-40-5613-2548"
+      "contact_name": "Hans-Gerd Albertsen",
+      "contact_phone": "+49-40-5613-2548",
+      "country": "Germany",
+      "name": "NXP Semiconductors",
+      "website_url": "http://www.nxp.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "NXP Semiconductors"
   }
 }

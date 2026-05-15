@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3347"
   },
   "certificate": {
-    "certificate_number": "3347",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3347",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3347",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3347.pdf",
-    "vendor_name": "Certes Networks, Inc.",
-    "module_name": "Certes Enforcement Points",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/2/2019",
-    "validation_dates": [
-      "1/2/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "The Certes Encryptors, or Certes Enforcement Points (CEP), are purpose-built encryption appliances that provide multi-layer data protection and application segmentation. CEP appliances provide Ethernet frame encryption for Layer 2 networks, IPsec encryption for Layer 3 networks, and data payload encryption for Layer 4 MPLS networks. CEPs operate transparently to the network infrastructure, which ensures all data is encrypted without impacting network performance.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3347.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JanuaryConsolidatedCert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/2/2019",
-        "type": "Initial",
-        "lab": "DXC Technology"
-      }
-    ],
-    "vendor": {
-      "name": "Certes Networks, Inc.",
-      "website_url": "http://www.certesnetworks.com",
-      "address_lines": [
-        "300 Corporate Center Drive",
-        "Suite 140",
-        "Pittsburgh, PA 15108",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Sean Everson",
-      "contact_email": "sean.everson@certesnetworks.com",
-      "contact_phone": "412-357-1130"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +28,63 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3347",
+    "certificate_number": "3347",
+    "dataset": "historical",
+    "description": "The Certes Encryptors, or Certes Enforcement Points (CEP), are purpose-built encryption appliances that provide multi-layer data protection and application segmentation. CEP appliances provide Ethernet frame encryption for Layer 2 networks, IPsec encryption for Layer 3 networks, and data payload encryption for Layer 4 MPLS networks. CEPs operate transparently to the network infrastructure, which ensures all data is encrypted without impacting network performance.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Certes Enforcement Points",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3347",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3347.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JanuaryConsolidatedCert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3347.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/2/2019",
+    "validation_dates": [
+      "1/2/2019"
+    ],
+    "validation_history": [
+      {
+        "date": "1/2/2019",
+        "lab": "DXC Technology",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "300 Corporate Center Drive",
+        "Suite 140",
+        "Pittsburgh, PA 15108",
+        "USA"
+      ],
+      "contact_email": "sean.everson@certesnetworks.com",
+      "contact_name": "Sean Everson",
+      "contact_phone": "412-357-1130",
+      "country": "USA",
+      "name": "Certes Networks, Inc.",
+      "website_url": "http://www.certesnetworks.com"
+    },
+    "vendor_name": "Certes Networks, Inc."
   }
 }

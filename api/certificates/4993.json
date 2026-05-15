@@ -1,86 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4993"
   },
   "certificate": {
-    "certificate_number": "4993",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4993",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4993",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4993.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Oracle Linux 9 libgcrypt Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/28/2025, 8/15/2025, 11/26/2025",
-    "validation_dates": [
-      "3/28/2025",
-      "8/15/2025",
-      "11/26/2025"
-    ],
-    "sunset_date": "3/27/2030",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": null,
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4993.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/28/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "8/15/2025",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "11/26/2025",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
-      "address_lines": [
-        "2300 Oracle Way",
-        "Austin, TX 78741",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Security Evaluation team",
-      "contact_email": "seceval_us@oracle.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 191,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 191
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -283,6 +218,71 @@
       "SHA3-384 | A4778 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2,4,8 | FIPS 202",
       "SHA3-512 | A4773 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2,4,8 | FIPS 202",
       "SHA3-512 | A4774 | Message Length - Message Length:0-65536 Increment8Large Message Sizes-1,2,4,8 | FIPS 202"
-    ]
+    ],
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4993",
+    "certificate_number": "4993",
+    "dataset": "active",
+    "description": null,
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oracle Linux 9 libgcrypt Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4993",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4993.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4993.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/27/2030",
+    "validation_date": "3/28/2025, 8/15/2025, 11/26/2025",
+    "validation_dates": [
+      "3/28/2025",
+      "8/15/2025",
+      "11/26/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "3/28/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "8/15/2025",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      },
+      {
+        "date": "11/26/2025",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2300 Oracle Way",
+        "Austin, TX 78741",
+        "USA"
+      ],
+      "contact_email": "seceval_us@oracle.com",
+      "contact_name": "Security Evaluation team",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
+    },
+    "vendor_name": "Oracle Corporation"
   }
 }

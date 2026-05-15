@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1239"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1239",
     "certificate_number": "1239",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1239",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1239",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1239.pdf",
-    "vendor_name": "Giesecke & Devrient",
-    "module_name": "Sm@rtCafé Expert 3.2 by Giesecke & Devrient with ActivIdentity Digital Identity Applet Suite V2 for Extended PIV",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "12/7/2009, 1/11/2012, 2/6/2014",
-    "validation_dates": [
-      "12/7/2009",
-      "1/11/2012",
-      "2/6/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "This product combines the Giesecke & Devrient (G&D) Smart Card Chip Operating System Sm@rtCafé Expert(SCE) 3.2 and the ActivIdentity(AI) Applet framework v2.6.2b. SCE 3.2 is a JC2.2.1 & GP2.1.1 compliant dual-interface module supporting, at a minimum 2048-bit RSA, SHA-256 hash and 256-bit AES. AI Applet framework works over dual-interface and supports GSC-IS v2.1 & NIST SP800-73-1(for HSPD-12/PIV). The product supports Secure issuance and post-issuance along with SMA protocol(secure messaging) and One Time Password solution. Combined product is suitable for government and corporate deployments",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Sm@rtCafé Expert 3.2 by Giesecke & Devrient with ActivIdentity Digital Identity Applet Suite V2 for Extended PIV",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1239",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,51 +40,53 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1239.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1239.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/7/2009, 1/11/2012, 2/6/2014",
+    "validation_dates": [
+      "12/7/2009",
+      "1/11/2012",
+      "2/6/2014"
+    ],
     "validation_history": [
       {
         "date": "12/7/2009",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "1/11/2012",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       },
       {
         "date": "2/6/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Giesecke & Devrient",
-      "website_url": "http://www.gi-de.com",
       "address_lines": [
         "Prinzregentenstrasse 159",
         "P.O. Box 80 07 29",
         "Munich D-81677",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Michael Poitner",
       "contact_email": "michael.poitner@gdai.com",
-      "contact_phone": "650-312-1241"
+      "contact_name": "Michael Poitner",
+      "contact_phone": "650-312-1241",
+      "country": "Germany",
+      "name": "Giesecke & Devrient",
+      "website_url": "http://www.gi-de.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Giesecke & Devrient"
   }
 }

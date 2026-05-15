@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4950"
   },
   "certificate": {
-    "certificate_number": "4950",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4950",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4950",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4950.pdf",
-    "vendor_name": "Radiant Logic",
-    "module_name": "Radiant Logic Cryptographic Module for Go",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/24/2025",
-    "validation_dates": [
-      "1/24/2025"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys.",
-    "description": "Radiant Logic Cryptographic Module for Go is a standards-based cryptographic engine for Go applications. The module delivers core cryptographic functions to server platforms and features robust algorithm support. Radiant Logic Cryptographic Module for Go offloads secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4950.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/24/2025",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
-      }
-    ],
-    "vendor": {
-      "name": "Radiant Logic",
-      "website_url": "http://www.radiantlogic.com/",
-      "address_lines": [
-        "818 Fifth Ave",
-        "Suite 200",
-        "San Rafael, CA 94901",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Chris Prompt",
-      "contact_email": "support@radiantlogic.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -81,6 +27,60 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4950",
+    "certificate_number": "4950",
+    "dataset": "active",
+    "description": "Radiant Logic Cryptographic Module for Go is a standards-based cryptographic engine for Go applications. The module delivers core cryptographic functions to server platforms and features robust algorithm support. Radiant Logic Cryptographic Module for Go offloads secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Radiant Logic Cryptographic Module for Go",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4950",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4950.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4950.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/24/2025",
+    "validation_dates": [
+      "1/24/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "1/24/2025",
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "818 Fifth Ave",
+        "Suite 200",
+        "San Rafael, CA 94901",
+        "USA"
+      ],
+      "contact_email": "support@radiantlogic.com",
+      "contact_name": "Chris Prompt",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Radiant Logic",
+      "website_url": "http://www.radiantlogic.com/"
+    },
+    "vendor_name": "Radiant Logic"
   }
 }

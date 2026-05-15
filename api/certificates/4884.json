@@ -1,76 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Interim validation. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884",
     "certificate_number": "4884",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4884.pdf",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "AWS Key Management Service HSM",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "11/18/2024",
-    "validation_dates": [
-      "11/18/2024"
-    ],
-    "sunset_date": "11/17/2026",
-    "caveat": "Interim validation. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
     "description": "The Amazon AWS Key Management Service HSM is a multi-chip standalone hardware cryptographic appliance designed to provide dedicated cryptographic functions to meet the security and scalability requirements of the AWS Key Management Service (KMS). The cryptographic boundary is defined as the secure chassis of the appliance. All key materials are maintained exclusively in volatile memory in the appliance and are erased immediately upon detection of physical tampering.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AWS Key Management Service HSM",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4884.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4884.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/17/2026",
+    "validation_date": "11/18/2024",
+    "validation_dates": [
+      "11/18/2024"
+    ],
     "validation_history": [
       {
         "date": "11/18/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "https://aws.amazon.com/kms/",
       "address_lines": [
         "410 Terry Ave N",
         "Ste 1200",
         "Seattle, WA 98109-5210",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jeff Fiedler",
       "contact_email": "jefffied@amazon.com",
-      "contact_phone": "000-000-0000"
+      "contact_name": "Jeff Fiedler",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "https://aws.amazon.com/kms/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Amazon Web Services, Inc."
   }
 }

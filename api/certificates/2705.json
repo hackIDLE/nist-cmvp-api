@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The tamper evident seal installed as indicated in the Security Policy for the optional ESEM feature",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705",
     "certificate_number": "2705",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2705.pdf",
-    "vendor_name": "ViaSat, Inc.",
-    "module_name": "Enhanced Bandwidth Efficient Modem (EBEM) Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "8/8/2016, 11/17/2016, 1/30/2018",
-    "validation_dates": [
-      "8/8/2016",
-      "11/17/2016",
-      "1/30/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "The tamper evident seal installed as indicated in the Security Policy for the optional ESEM feature",
     "description": "The Enhanced Bandwidth Efficient Modem (EBEM) is the only commercially-available bandwith efficient modem certified to MIL-STD-188-165B and compliant with STANAG 4486 ed. 3. The MD-1366 defines a new military standard in FDMA for high-speed satellite communications. Using military and commercial satellites at X-, C-, Ku-, and Ka-band frequencies, the MD-1366 delivers much-needed capacity for the military's high speed broadband and multimedia transmissions.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Enhanced Bandwidth Efficient Modem (EBEM) Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,50 +40,52 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2705.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/8/2016, 11/17/2016, 1/30/2018",
+    "validation_dates": [
+      "8/8/2016",
+      "11/17/2016",
+      "1/30/2018"
+    ],
     "validation_history": [
       {
         "date": "8/8/2016",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "11/17/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/30/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "ViaSat, Inc.",
-      "website_url": "http://www.viasat.com",
       "address_lines": [
         "6155 El Camino Real",
         "Carlsbad, CA 92009-1699",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Savitha Naik",
       "contact_email": "savitha.naik@viasat.com",
-      "contact_phone": "760-476-7416"
+      "contact_name": "Savitha Naik",
+      "contact_phone": "760-476-7416",
+      "country": "USA",
+      "name": "ViaSat, Inc.",
+      "website_url": "http://www.viasat.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "ViaSat, Inc."
   }
 }

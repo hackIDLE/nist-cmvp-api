@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 2,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "RSA SigVer(FIPS186-4) | A4201 | Signature Type - PKCSPSSModulo - 4096 | FIPS 186-4",
+      "SHA2-384 | A4201 | MessageLength - MessageLength:0-65536 Increment 8 | FIPS 180-4"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
     "certificate_number": "4723",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4723.pdf",
-    "vendor_name": "Advanced Micro Devices (AMD)",
-    "module_name": "AMD ASP Cryptographic CoProcessor (\"Phoenix\")",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Firmware-hybrid",
-    "embodiment": "Single Chip",
-    "overall_level": 1,
-    "validation_date": "7/11/2024",
-    "validation_dates": [
-      "7/11/2024"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "None",
     "description": "The module is present in these Ryzen PRO 7000 series models (OPNs): 7840U(100-000000970, 100-000000961), 7940HS(100-000000967, 100-000000958), 7840HS(100-000000968, 100-000000959), 7640HS(100-000000969, 100-000000960), 7540U(100-000000971, 100-000000962), 7640U(100-000001111, 100-000001108), 8700G(100-000001238), 8600G(100-000001239), 8700GE(100-000001240), 8600GE(100-000001241), 8840U(100-000001317, 100-000001377), 8640U(100-000001318, 100-000001378), 8840HS(100-000001353, 100-000001381, 100-000001316, 100-000001387), 8940HS(100-000001314, 100-000001386), 8640HS(100-000001354, 100-000001382, 100-000001315, 100-000001388)",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AMD ASP Cryptographic CoProcessor (\"Phoenix\")",
+    "module_type": "Firmware-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4723",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,48 +48,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2024_010824_1146.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4723.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "7/11/2024",
+    "validation_dates": [
+      "7/11/2024"
+    ],
     "validation_history": [
       {
         "date": "7/11/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Advanced Micro Devices (AMD)",
-      "website_url": "http://www.amd.com",
       "address_lines": [
         "2485 Augustine Drive",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "FIPS Contact",
       "contact_email": "FIPS@amd.com",
-      "contact_phone": "1408-749-4000"
+      "contact_name": "FIPS Contact",
+      "contact_phone": "1408-749-4000",
+      "country": "USA",
+      "name": "Advanced Micro Devices (AMD)",
+      "website_url": "http://www.amd.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 2
-    },
-    "algorithms": [
-      "RSA",
-      "SHA"
-    ],
-    "algorithms_detailed": [
-      "RSA SigVer(FIPS186-4) | A4201 | Signature Type - PKCSPSSModulo - 4096 | FIPS 186-4",
-      "SHA2-384 | A4201 | MessageLength - MessageLength:0-65536 Increment 8 | FIPS 180-4"
-    ]
+    "vendor_name": "Advanced Micro Devices (AMD)"
   }
 }

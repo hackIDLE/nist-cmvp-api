@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4619"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4619",
     "certificate_number": "4619",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4619",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4619",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4619.pdf",
-    "vendor_name": "BAE Systems Information and Electronics Systems Integration, Inc.",
-    "module_name": "OpenSSL FIPS Provider",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/28/2023",
-    "validation_dates": [
-      "9/28/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "description": "The OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4619",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,41 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4619.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "9/28/2023",
+    "validation_dates": [
+      "9/28/2023"
+    ],
     "validation_history": [
       {
         "date": "9/28/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "BAE Systems Information and Electronics Systems Integration, Inc.",
-      "website_url": "http://www.baesystems.com/cds",
       "address_lines": [
         "11091 Sunset Hills Rd",
         "Suite 4",
         "Reston, VA 20190",
         "United States"
       ],
-      "country": "United States",
-      "contact_name": "John Ata",
       "contact_email": "John.ata@baesystems.com",
-      "contact_phone": "(703) 563-8115"
+      "contact_name": "John Ata",
+      "contact_phone": "(703) 563-8115",
+      "country": "United States",
+      "name": "BAE Systems Information and Electronics Systems Integration, Inc.",
+      "website_url": "http://www.baesystems.com/cds"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "BAE Systems Information and Electronics Systems Integration, Inc."
   }
 }

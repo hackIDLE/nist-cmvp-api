@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2180"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode with VMware NSS Cryptographic Module validated to FIPS 140-2 under Cert. #2155 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2180",
     "certificate_number": "2180",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2180",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2180",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2180.pdf",
-    "vendor_name": "VMware, Inc.",
-    "module_name": "VMware Kernel Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "6/20/2014",
-    "validation_dates": [
-      "6/20/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode with VMware NSS Cryptographic Module validated to FIPS 140-2 under Cert. #2155 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
     "description": "The VMware Kernel Cryptographic Module is a flexible software library providing FIPS-140-2 approved cryptographic operations for VMware products and platforms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VMware Kernel Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2180",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,48 +48,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2180.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/20/2014",
+    "validation_dates": [
+      "6/20/2014"
+    ],
     "validation_history": [
       {
         "date": "6/20/2014",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "VMware, Inc.",
-      "website_url": "http://www.vmware.com",
       "address_lines": [
         "3401 Hillview Ave",
         "Palo Alto, CA 94304",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Eric Betts",
       "contact_email": "betts@vmware.com",
-      "contact_phone": "1.650.427.1902"
+      "contact_name": "Eric Betts",
+      "contact_phone": "1.650.427.1902",
+      "country": "USA",
+      "name": "VMware, Inc.",
+      "website_url": "http://www.vmware.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "VMware, Inc."
   }
 }

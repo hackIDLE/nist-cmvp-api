@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When installed, initialized and configured as specified in Section 10 of the Security Policy. When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430",
     "certificate_number": "4430",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4430.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Thales CipherTrust Manager Core Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/27/2023",
-    "validation_dates": [
-      "1/27/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When installed, initialized and configured as specified in Section 10 of the Security Policy. When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "description": "The module provides secure key generation and protection for symmetric keys and asymmetric key pairs along with support for a broad range of other cryptographic services. Access to services offered by Thales CipherTrust Manager Core Security Module is exclusively through a number of Application Programming Interfaces (API) offered by the Thales CipherTrust Manager Core Security Module. These API can be accessed by other applications running internal to the physical boundary of the module or, in some instances, can be accessed by remote client over dedicated TLS tunnels.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Thales CipherTrust Manager Core Security Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,41 +40,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2023_010223_0657_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4430.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/27/2023",
+    "validation_dates": [
+      "1/27/2023"
+    ],
     "validation_history": [
       {
         "date": "1/27/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
       "address_lines": [
         "20 Colonade Road",
         "Suite 200m",
         "Ottawa, ON K2E 7M6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Security & Certifications Team",
       "contact_email": "securitycertifications@thalesgroup.com",
-      "contact_phone": null
+      "contact_name": "Security & Certifications Team",
+      "contact_phone": null,
+      "country": "Canada",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "[email protected]"
   }
 }

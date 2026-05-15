@@ -1,31 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "caveat": "This module contains the embedded module OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #918 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374",
     "certificate_number": "1374",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1374.pdf",
-    "vendor_name": "AccessData Corp",
-    "module_name": "AccessData Secure Network Communications FIPS 140-2 Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "8/26/2010",
-    "validation_dates": [
-      "8/26/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "This module contains the embedded module OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #918 operating in FIPS mode",
     "description": "The AccessData Secure Network Communications FIPS 140-2 Object Module is a cryptographic module that operates as a multi-chip component library positioned between the FIPS 140-2 validated OpenSSL FIPS Object Module version 1.1.2 API and a host application. The AccessData Secure Network Communications module provides to any AccessData application that incorporates it, electronic encryption designed to prevent unauthorized access to data transferred across a physical or wireless TCP/IP network.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AccessData Secure Network Communications FIPS 140-2 Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1374",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,48 +48,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1374.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1374.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/26/2010",
+    "validation_dates": [
+      "8/26/2010"
+    ],
     "validation_history": [
       {
         "date": "8/26/2010",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "AccessData Corp",
-      "website_url": "http://www.accessdata.com",
       "address_lines": [
         "384 South 400 West",
         "Lindon, UT 84042",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jeff Looman",
       "contact_email": "jlooman@accessdata.com",
-      "contact_phone": "801-377-5410"
+      "contact_name": "Jeff Looman",
+      "contact_phone": "801-377-5410",
+      "country": "USA",
+      "name": "AccessData Corp",
+      "website_url": "http://www.accessdata.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ]
+    "vendor_name": "AccessData Corp"
   }
 }

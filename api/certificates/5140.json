@@ -1,81 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140"
   },
   "certificate": {
-    "certificate_number": "5140",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf",
-    "vendor_name": "DataLocker, Inc.",
-    "module_name": "Sentry 5 Encrypted USB Flash Drive",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "1/16/2026, 2/27/2026",
-    "validation_dates": [
-      "1/16/2026",
-      "2/27/2026"
-    ],
-    "sunset_date": "6/23/2030",
-    "caveat": "None",
-    "description": "The DataLocker, Inc. Sentry 5 Encrypted USB Flash Drive is a hardware cryptographic module designed for organizations that require a secure way to store and transfer portable data. The stored data is secured by hardware-based 256-bit AES on-the-fly encryption to guard sensitive information in case the drive is lost or stolen. Its strong, durable, metal casing provides robust physical protection. Its strong password rules and lock-down control protects against brute force attacks.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/16/2026",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
-      },
-      {
-        "date": "2/27/2026",
-        "type": "Update",
-        "lab": "Penumbra Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "DataLocker, Inc.",
-      "website_url": "http://www.datalocker.com",
-      "address_lines": [
-        "12695 Metcalf Ave., Suite 200",
-        "Overland Park, KS 66213",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Jay Kim",
-      "contact_email": "legal@datalocker.com",
-      "contact_phone": "913-310-9088"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 15,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 15
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -103,6 +43,66 @@
       "¹ AES XTS was designed for the cryptographic protection of data on storage devices per NIST SP 800-38E. It was not designed for other purposes, such as the encryption of data in transit.",
       "² The module implements PBKDF in conformance with NIST SP 800132 and FIPS IG D.N. Specifically, the module implements Option 2a from Section 5.4 to generate the Key Encryption Key (KEK) responsible for protecting the Data Encryption Key using AES KW (Cert. #3268). The module implements an iteration counter equal to 1024 bits which is greater than the minimum recommendation documented within NIST SP 800-132 - Section 5.2. This is also justified by the maximum limit enforced on password retry attempts (Max = 10).",
       "A3268 SHA2-256 FIPS 180-4 SHA2-256 Strength: 128 bits Prerequisite for HMAC Message Digest | 2.5.2 VENDOR AFFIRMED ALGORITHMS | The module supports the following vendor affirmed algorithms. | CKG Key Type: Symmetric Crypto Library FW v2.00 NIST SP 800-133r2 Sections 4 | 5.1 and 6.1 | 2.5.3"
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
+    "certificate_number": "5140",
+    "dataset": "active",
+    "description": "The DataLocker, Inc. Sentry 5 Encrypted USB Flash Drive is a hardware cryptographic module designed for organizations that require a secure way to store and transfer portable data. The stored data is secured by hardware-based 256-bit AES on-the-fly encryption to guard sensitive information in case the drive is lost or stolen. Its strong, durable, metal casing provides robust physical protection. Its strong password rules and lock-down control protects against brute force attacks.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Sentry 5 Encrypted USB Flash Drive",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5140",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5140.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/23/2030",
+    "validation_date": "1/16/2026, 2/27/2026",
+    "validation_dates": [
+      "1/16/2026",
+      "2/27/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/16/2026",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "2/27/2026",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "12695 Metcalf Ave., Suite 200",
+        "Overland Park, KS 66213",
+        "USA"
+      ],
+      "contact_email": "legal@datalocker.com",
+      "contact_name": "Jay Kim",
+      "contact_phone": "913-310-9088",
+      "country": "USA",
+      "name": "DataLocker, Inc.",
+      "website_url": "http://www.datalocker.com"
+    },
+    "vendor_name": "DataLocker, Inc."
   }
 }

@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023"
   },
   "certificate": {
-    "certificate_number": "5023",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5023.pdf",
-    "vendor_name": "F5, Inc.",
-    "module_name": "OpenSSL Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "6/8/2025",
-    "validation_dates": [
-      "6/8/2025"
-    ],
-    "sunset_date": "6/7/2030",
-    "caveat": "When operated in approved mode, installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "Cryptographic library offering various cryptographic mechanisms to be used by OpenSSL application running on F5 VELOS system controller and blade.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5023.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/8/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "F5, Inc.",
-      "website_url": "https://csrc.nist.gov/f5.com",
-      "address_lines": [
-        "801 Fifth Ave",
-        "Seattle, WA 98104",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Maryrita Steinhour",
-      "contact_email": "fipsf5osc@f5.com",
-      "contact_phone": "206-272-7351"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 70,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 70
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -157,6 +103,60 @@
       "SSH KDF | ____________________________________________________________________________________________________________________ | © 2025 F5, Inc.",
       "SHA2-256, SHA2-384",
       "RSA signature generation and verification"
-    ]
+    ],
+    "caveat": "When operated in approved mode, installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
+    "certificate_number": "5023",
+    "dataset": "active",
+    "description": "Cryptographic library offering various cryptographic mechanisms to be used by OpenSSL application running on F5 VELOS system controller and blade.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "OpenSSL Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5023",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5023.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5023.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/7/2030",
+    "validation_date": "6/8/2025",
+    "validation_dates": [
+      "6/8/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "6/8/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "801 Fifth Ave",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "contact_email": "fipsf5osc@f5.com",
+      "contact_name": "Maryrita Steinhour",
+      "contact_phone": "206-272-7351",
+      "country": "USA",
+      "name": "F5, Inc.",
+      "website_url": "https://csrc.nist.gov/f5.com"
+    },
+    "vendor_name": "F5, Inc."
   }
 }

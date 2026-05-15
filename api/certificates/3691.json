@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691"
   },
   "certificate": {
-    "certificate_number": "3691",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3691.pdf",
-    "vendor_name": "NXP Semiconductors Netherlands B.V.",
-    "module_name": "SXF1800",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "7/28/2020",
-    "validation_dates": [
-      "7/28/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode; When installed, initialized and configured as specified in Section 8 of the Security Policy",
-    "description": "The NXP RoadLINK SXF1800 Secure Element is supporting tamper resistant cryptographic functionality as required by V2X standards and applications. The SXF1800 is designed for configurable support for North American and European V2X standards defined to protect the integrity of exchanged safety messages and to enable authentication of V2X participants.",
-    "security_level_exceptions": [
-      "Physical Security: Level 4"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3691.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2020_030820_0656_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/28/2020",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "NXP Semiconductors Netherlands B.V.",
-      "website_url": "http://www.nxp.com",
-      "address_lines": [
-        "NXP Headquarters",
-        "High Tech Campus 60",
-        "Eindhoven, Noord-Brabant 5656 AG",
-        "Netherlands"
-      ],
-      "country": "Netherlands",
-      "contact_name": "Huanyu Gu",
-      "contact_email": "huanyu.gu@nxp.com",
-      "contact_phone": "+494056133351"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +26,63 @@
       "KTS",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode; When installed, initialized and configured as specified in Section 8 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691",
+    "certificate_number": "3691",
+    "dataset": "historical",
+    "description": "The NXP RoadLINK SXF1800 Secure Element is supporting tamper resistant cryptographic functionality as required by V2X standards and applications. The SXF1800 is designed for configurable support for North American and European V2X standards defined to protect the integrity of exchanged safety messages and to enable authentication of V2X participants.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SXF1800",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3691",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3691.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2020_030820_0656_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3691.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/28/2020",
+    "validation_dates": [
+      "7/28/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "7/28/2020",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "NXP Headquarters",
+        "High Tech Campus 60",
+        "Eindhoven, Noord-Brabant 5656 AG",
+        "Netherlands"
+      ],
+      "contact_email": "huanyu.gu@nxp.com",
+      "contact_name": "Huanyu Gu",
+      "contact_phone": "+494056133351",
+      "country": "Netherlands",
+      "name": "NXP Semiconductors Netherlands B.V.",
+      "website_url": "http://www.nxp.com"
+    },
+    "vendor_name": "NXP Semiconductors Netherlands B.V."
   }
 }

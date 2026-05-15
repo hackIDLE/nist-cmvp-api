@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4495"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4495",
     "certificate_number": "4495",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4495",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4495",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4495.pdf",
-    "vendor_name": "Mist Systems",
-    "module_name": "FIPS AP43",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "4/30/2023, 1/20/2026",
-    "validation_dates": [
-      "4/30/2023",
-      "1/20/2026"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The AP43 Series is a tri-radio 4x4 802.11ax Access Point with maximum data rates of 2,400 Mbps in the 5GHz band and 1,148 Mbps in the 2.4GHz band. The 3rd radio functions as a network, location, and security sensor, a synthetic test client radio, as well as a spectrum monitor.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FIPS AP43",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4495",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4495.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/30/2023, 1/20/2026",
+    "validation_dates": [
+      "4/30/2023",
+      "1/20/2026"
+    ],
     "validation_history": [
       {
         "date": "4/30/2023",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/20/2026",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Mist Systems",
-      "website_url": "http://www.mist.com",
       "address_lines": [
         "1601 S DeAnza Blvd",
         "#248",
         "Cupertino, CA 95014",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Posen Hung",
       "contact_email": "phung@juniper.net",
-      "contact_phone": "408-326-0346"
+      "contact_name": "Posen Hung",
+      "contact_phone": "408-326-0346",
+      "country": "USA",
+      "name": "Mist Systems",
+      "website_url": "http://www.mist.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Mist Systems"
   }
 }

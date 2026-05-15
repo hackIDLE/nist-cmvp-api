@@ -1,34 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661",
     "certificate_number": "3661",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3661.pdf",
-    "vendor_name": "Rambus Global Inc., Finnish branch",
-    "module_name": "SafeZone FIPS Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/29/2020",
-    "validation_dates": [
-      "5/29/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "Inside Secure FIPS Cryptographic Module is a FIPS 140-2 Security Level 1 validated software cryptographic module from INSIDE Secure. The module is a toolkit which provides the most commonly needed cryptographic primitives for a large variety of applications, including but not limited to, primitives needed for DAR, DRM, TLS, and VPN on mobile devices.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SafeZone FIPS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,43 +43,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2020_010620_1115.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3661.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/29/2020",
+    "validation_dates": [
+      "5/29/2020"
+    ],
     "validation_history": [
       {
         "date": "5/29/2020",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Rambus Global Inc., Finnish branch",
-      "website_url": "http://www.rambus.com",
       "address_lines": [
         "Sokerilinnantie 11 C",
         "Espoo FI-02600",
         "Finland"
       ],
-      "country": "Finland",
-      "contact_name": "Markku Kontio",
       "contact_email": "mkontio@rambus.com",
-      "contact_phone": "+358 40 774 9001"
+      "contact_name": "Markku Kontio",
+      "contact_phone": "+358 40 774 9001",
+      "country": "Finland",
+      "name": "Rambus Global Inc., Finnish branch",
+      "website_url": "http://www.rambus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "SHA"
-    ]
+    "vendor_name": "Rambus Global Inc., Finnish branch"
   }
 }

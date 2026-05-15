@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382"
   },
   "certificate": {
-    "certificate_number": "3382",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf",
-    "vendor_name": "Google, Inc.",
-    "module_name": "Titan Chip",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 1,
-    "validation_date": "3/22/2019",
-    "validation_dates": [
-      "3/22/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with River Cryptographic Module validated to FIPS 140-2 under Cert. #3383 or Delta Cryptographic Module validated to FIPS 140-2 under Cert. #3384 operating in FIPS mode",
-    "description": "Titan is a custom secure micro-controller. It can implement a variety of security, encryption, and cryptography protocols. The protocols are running on a secure processor on-chip, interfacing with a host using an API across a trusted SPI peripheral. It provides secure EEPROM Boot, using SPI pass-through technology that allows Titan to confirm authorship of Boot Code, ensuring code-signing before code swap is completed.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/22/2019",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Google, Inc.",
-      "website_url": "http://www.google.com",
-      "address_lines": [
-        "1600 Amphitheatre Parkway",
-        "n/a",
-        "n/a",
-        "Mountain View, CA 94043",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "FIPS Crypto Officer",
-      "contact_email": "FIPS-crypto-officer@google.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -84,6 +26,64 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode with River Cryptographic Module validated to FIPS 140-2 under Cert. #3383 or Delta Cryptographic Module validated to FIPS 140-2 under Cert. #3384 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382",
+    "certificate_number": "3382",
+    "dataset": "historical",
+    "description": "Titan is a custom secure micro-controller. It can implement a variety of security, encryption, and cryptography protocols. The protocols are running on a secure processor on-chip, interfacing with a host using an API across a trusted SPI peripheral. It provides secure EEPROM Boot, using SPI pass-through technology that allows Titan to confirm authorship of Boot Code, ensuring code-signing before code swap is completed.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Titan Chip",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/22/2019",
+    "validation_dates": [
+      "3/22/2019"
+    ],
+    "validation_history": [
+      {
+        "date": "3/22/2019",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "n/a",
+        "n/a",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "contact_email": "FIPS-crypto-officer@google.com",
+      "contact_name": "FIPS Crypto Officer",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Google, Inc.",
+      "website_url": "http://www.google.com"
+    },
+    "vendor_name": "Google, Inc."
   }
 }

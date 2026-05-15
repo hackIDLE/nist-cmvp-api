@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164"
   },
   "certificate": {
-    "certificate_number": "5164",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5164.pdf",
-    "vendor_name": "Zebra Technologies Corporation",
-    "module_name": "Zebra 9098 Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Firmware-hybrid",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "2/20/2026",
-    "validation_dates": [
-      "2/20/2026"
-    ],
-    "sunset_date": "2/19/2031",
-    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "The Zebra 9098 Cryptographic Module implements cryptographic support for Zebra wireless devices.",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5164.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/20/2026",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "Zebra Technologies Corporation",
-      "website_url": "http://www.zebra.com",
-      "address_lines": [
-        "3 Overlook Point",
-        "Lincolnshire, IL 60069",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Matthew McNerney",
-      "contact_email": "mmcnerney@zebra.com",
-      "contact_phone": "401-834-9088"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 4,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 4
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -80,6 +27,59 @@
       "AES-ECB | A6540 | Direction - Decrypt, EncryptKey Length - 128 | SP 800-38A",
       "HMAC-SHA-1 | A5388 | Key Length - Key Length: 112-512 Increment 8 | FIPS 198-1",
       "SHA-1 | A5388 | Message Length - Message Length: 8-65536Increment 8 | FIPS 180-4"
-    ]
+    ],
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
+    "certificate_number": "5164",
+    "dataset": "active",
+    "description": "The Zebra 9098 Cryptographic Module implements cryptographic support for Zebra wireless devices.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Zebra 9098 Cryptographic Module",
+    "module_type": "Firmware-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5164",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5164.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5164.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "2/19/2031",
+    "validation_date": "2/20/2026",
+    "validation_dates": [
+      "2/20/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/20/2026",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3 Overlook Point",
+        "Lincolnshire, IL 60069",
+        "USA"
+      ],
+      "contact_email": "mmcnerney@zebra.com",
+      "contact_name": "Matthew McNerney",
+      "contact_phone": "401-834-9088",
+      "country": "USA",
+      "name": "Zebra Technologies Corporation",
+      "website_url": "http://www.zebra.com"
+    },
+    "vendor_name": "Zebra Technologies Corporation"
   }
 }

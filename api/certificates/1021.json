@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1021"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1021",
     "certificate_number": "1021",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1021",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1021",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1021.pdf",
-    "vendor_name": "CoCo Communications",
-    "module_name": "The CoCo Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "9/2/2008",
-    "validation_dates": [
-      "9/2/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The CoCo Crypto Module provides cryptographic services for the core components of CoCo Communications' tactical and military product lines. With the CoCo Crypto Module, users of CoCo's mobile digital network systems can be assured that their communications are safe from spoofing, eavesdropping, and other forms of information attack. As used within the CoCo Communications product suite, the CoCo Crypto module is interchangeable with the OpenSSL DLL, allowing for easy deployment-time transition to suit the needs of the problem domain.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "The CoCo Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1021",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1021.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1021.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/2/2008",
+    "validation_dates": [
+      "9/2/2008"
+    ],
     "validation_history": [
       {
         "date": "9/2/2008",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "CoCo Communications",
-      "website_url": "http://www.cococorp.com",
       "address_lines": [
         "800 5th Avenue Suite 3700",
         "Seattle, WA 98104",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jeff Meyer",
       "contact_email": "jmeyer@cococorp.com",
-      "contact_phone": "206-284-9387"
+      "contact_name": "Jeff Meyer",
+      "contact_phone": "206-284-9387",
+      "country": "USA",
+      "name": "CoCo Communications",
+      "website_url": "http://www.cococorp.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "CoCo Communications"
   }
 }

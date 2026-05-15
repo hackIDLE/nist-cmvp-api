@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 10.3 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
     "certificate_number": "4455",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4455.pdf",
-    "vendor_name": "Kyocera Document Solutions Inc.",
-    "module_name": "MFP Cryptographic Module(A)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "3/22/2023",
-    "validation_dates": [
-      "3/22/2023"
-    ],
-    "sunset_date": "8/23/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 10.3 of the Security Policy",
     "description": "MFP Cryptographic Module(A) is a cryptographic security chip for encrypting data written to a storage device and other security function of Kyocera multifunction printer. Secure key generation and fast AES encryption/decryption are offered through SATA interface. SecureBoot verifies the integrity of the firmware when the product starts up.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "MFP Cryptographic Module(A)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,16 +40,26 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4455.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "8/23/2026",
+    "validation_date": "3/22/2023",
+    "validation_dates": [
+      "3/22/2023"
+    ],
     "validation_history": [
       {
         "date": "3/22/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Kyocera Document Solutions Inc.",
-      "website_url": "http://www.kyoceradocumentsolutions.com",
       "address_lines": [
         "1-2-28 Tamatsukuri",
         "Chuo-ku",
@@ -55,25 +67,13 @@
         "Osaka",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Masaki Sone",
       "contact_email": "masaki.sone@dc.kyocera.com",
-      "contact_phone": null
+      "contact_name": "Masaki Sone",
+      "contact_phone": null,
+      "country": "Japan",
+      "name": "Kyocera Document Solutions Inc.",
+      "website_url": "http://www.kyoceradocumentsolutions.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Kyocera Document Solutions Inc."
   }
 }

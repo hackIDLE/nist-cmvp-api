@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS Mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071",
     "certificate_number": "2071",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2071.pdf",
-    "vendor_name": "Fujitsu limited",
-    "module_name": "ETERNUS DX400/DX8000 Controller Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "1/24/2014",
-    "validation_dates": [
-      "1/24/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS Mode",
     "description": "ETERNUS DX400/DX8000 Controller Module is a module which manages the whole disk storage system. In order to prevent a data leakage by removal of disks, the disk encryption mechanism encrypts data on the disks. This encryption function is valid if the Disk Encryption mechanism is activated through GUI.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A",
-      "Tested: ETERNUS DX410 with VxWorks 6.3",
-      "ETERNUS DX8400 with VxWorks 6.3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ETERNUS DX400/DX8000 Controller Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,41 +40,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0037.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A",
+      "Tested: ETERNUS DX410 with VxWorks 6.3",
+      "ETERNUS DX8400 with VxWorks 6.3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2071.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/24/2014",
+    "validation_dates": [
+      "1/24/2014"
+    ],
     "validation_history": [
       {
         "date": "1/24/2014",
-        "type": "Initial",
-        "lab": "IT SECURITY CENTER"
+        "lab": "IT SECURITY CENTER",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Fujitsu limited",
-      "website_url": "http://www.fujitsu.com",
       "address_lines": [
         "4-1-1 Kamikodanaka",
         "Nakahara-ku",
         "Kawasaki, Kanagawa 211-8588",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Eugene Owens",
       "contact_email": "eowens@us.fujitsu.com",
-      "contact_phone": "408-746-6486"
+      "contact_name": "Eugene Owens",
+      "contact_phone": "408-746-6486",
+      "country": "Japan",
+      "name": "Fujitsu limited",
+      "website_url": "http://www.fujitsu.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Fujitsu limited"
   }
 }

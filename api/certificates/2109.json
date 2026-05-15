@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2109"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2109",
     "certificate_number": "2109",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2109",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2109",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2109.pdf",
-    "vendor_name": "Pulse Secure, LLC.",
-    "module_name": "Odyssey Security Component Kernel Mode",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/21/2014, 2/13/2015",
-    "validation_dates": [
-      "3/21/2014",
-      "2/13/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
     "description": "The Odyssey Security Component (OSC) is a general purpose cryptographic library. OSC Kernel Mode is a kernel-mode binary module for the Windows operating system.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Odyssey Security Component Kernel Mode",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2109",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,45 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2109.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/21/2014, 2/13/2015",
+    "validation_dates": [
+      "3/21/2014",
+      "2/13/2015"
+    ],
     "validation_history": [
       {
         "date": "3/21/2014",
-        "type": "Initial",
-        "lab": "ICSA"
+        "lab": "ICSA",
+        "type": "Initial"
       },
       {
         "date": "2/13/2015",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Pulse Secure, LLC.",
-      "website_url": "http://www.pulsesecure.net",
       "address_lines": [
         "2700 Zanker Road, Suite 200",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Yvonne Sang",
       "contact_email": "ysang@pulsesecure.net",
-      "contact_phone": "408-372-9600"
+      "contact_name": "Yvonne Sang",
+      "contact_phone": "408-372-9600",
+      "country": "USA",
+      "name": "Pulse Secure, LLC.",
+      "website_url": "http://www.pulsesecure.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Pulse Secure, LLC."
   }
 }

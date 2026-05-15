@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4759"
   },
   "certificate": {
-    "certificate_number": "4759",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4759",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4759",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf",
-    "vendor_name": "Amazon Web Services Inc.",
-    "module_name": "AWS-LC Cryptographic Module (dynamic)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/14/2024",
-    "validation_dates": [
-      "8/14/2024"
-    ],
-    "sunset_date": "8/13/2029",
-    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/14/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Amazon Web Services Inc.",
-      "website_url": "http://aws.amazon.com",
-      "address_lines": [
-        "1918 8th Ave.",
-        "Seattle, WA 98121",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Daryl Martin",
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_phone": "0000000000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 40,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 40
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -126,6 +69,63 @@
       "SHA-1,SHA-3 | Signature Generation",
       "SHAKE,RIPEMD-160,SHA-3 | Message Digest",
       "TLS KDF using any SHA algorithms not listed in Table 5 or TLS KDF using non extended master secret | Key Derivation"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4759",
+    "certificate_number": "4759",
+    "dataset": "active",
+    "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AWS-LC Cryptographic Module (dynamic)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4759",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/13/2029",
+    "validation_date": "8/14/2024",
+    "validation_dates": [
+      "8/14/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "8/14/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave.",
+        "Seattle, WA 98121",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Daryl Martin",
+      "contact_phone": "0000000000",
+      "country": "USA",
+      "name": "Amazon Web Services Inc.",
+      "website_url": "http://aws.amazon.com"
+    },
+    "vendor_name": "Amazon Web Services Inc."
   }
 }

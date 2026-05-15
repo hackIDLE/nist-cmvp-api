@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/67"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode using the listed FIPS-approved algorithms, and Triple DES not valid for FS1000 interoperability",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/67",
     "certificate_number": "67",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/67",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/67",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp67.pdf",
-    "vendor_name": "Admiral Secure Products, Ltd.",
-    "module_name": "CERTIFAX Fax Encryptor CF3102",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "9/13/1999, 10/24/2002",
-    "validation_dates": [
-      "9/13/1999",
-      "10/24/2002"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode using the listed FIPS-approved algorithms, and Triple DES not valid for FS1000 interoperability",
     "description": "CERTIFAX 3000 secures sensitive facsimile communications from inadvertent or intentional disclosure. CERTIFAX ensures faxes get to the intended recipient every time, that the contents are never disclosed to unauthorized parties, that the sender is who it claims to be, and that the message is always kept private and unaltered. CERTIFAX provides two-way authentication using Certicom's Elliptic Curve Cryptography, and strong encryption using Triple DES. CERTIFAX's secure mailbox memory provides storage and retrieval for incoming faxes, and CERTIFAX can support up to 99 secure Virtual Private Fax Networks. The CF3102 also implements a non-FIPS mode for communications with Certicom's Legacy Fax Secret 1000 fax encryptor.",
-    "security_level_exceptions": [
-      "Self Tests: Level 4"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CERTIFAX Fax Encryptor CF3102",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/67",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt67.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Self Tests: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp67.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/13/1999, 10/24/2002",
+    "validation_dates": [
+      "9/13/1999",
+      "10/24/2002"
+    ],
     "validation_history": [
       {
         "date": "9/13/1999",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "10/24/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Admiral Secure Products, Ltd.",
-      "website_url": "http://www.admiralsecure.com",
       "address_lines": [
         "866 Mantle Crescent",
         "Mississauga, Ontario L5V 2G3",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Alex Chartier",
       "contact_email": "achartier@admiralsecure.com",
-      "contact_phone": "905-542-3351"
+      "contact_name": "Alex Chartier",
+      "contact_phone": "905-542-3351",
+      "country": "Canada",
+      "name": "Admiral Secure Products, Ltd.",
+      "website_url": "http://www.admiralsecure.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Admiral Secure Products, Ltd."
   }
 }

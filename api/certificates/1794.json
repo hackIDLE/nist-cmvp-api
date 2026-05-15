@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1794"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1794",
     "certificate_number": "1794",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1794",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1794",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1794.pdf",
-    "vendor_name": "Thales e-Security Inc.",
-    "module_name": "Secure Generic Sub-System (SGSS), Version 3.5 [1] and 3.6 [2]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "8/28/2012, 9/27/2012, 12/10/2015",
-    "validation_dates": [
-      "8/28/2012",
-      "9/27/2012",
-      "12/10/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Secure Generic Sub-System (SGSS) is a multi-chip embedded module used to provide secure cryptographic resources to a number of products in the Thales e-Security portfolio. This includes the Datacryptor® 2000, Datacryptor® Advanced Performance and Small Form Factor family (Link, Frame Relay, E1/T1, E3/T3, and IP models). The SGSS contains a secure bootstrap and authenticates application loading using the Digital Signature Algorithm (ECDSA) and SHA-384 hashing. This is a revalidation of the SGSS certified under FIPS Certificate #836, and does not affect the previous FIPS validation.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Secure Generic Sub-System (SGSS), Version 3.5 [1] and 3.6 [2]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1794",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,51 +40,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1794.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/28/2012, 9/27/2012, 12/10/2015",
+    "validation_dates": [
+      "8/28/2012",
+      "9/27/2012",
+      "12/10/2015"
+    ],
     "validation_history": [
       {
         "date": "8/28/2012",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "9/27/2012",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "12/10/2015",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales e-Security Inc.",
-      "website_url": "http://www.thales-esecurity.com",
       "address_lines": [
         "900 South Pine Island Road",
         "Suite 710",
         "Plantation, FL 33324",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Datacryptor-Certifications",
       "contact_email": "Datacryptor-Certifications@thales-esecurity.com",
-      "contact_phone": "+44 (0)1844 201800"
+      "contact_name": "Datacryptor-Certifications",
+      "contact_phone": "+44 (0)1844 201800",
+      "country": "USA",
+      "name": "Thales e-Security Inc.",
+      "website_url": "http://www.thales-esecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales e-Security Inc."
   }
 }

@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2854"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2854",
     "certificate_number": "2854",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2854",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2854",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2854.pdf",
-    "vendor_name": "EFJohnson Technologies",
-    "module_name": "Communication Cryptographic Library (CCL)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/2/2017, 6/28/2018, 4/28/2021",
-    "validation_dates": [
-      "3/2/2017",
-      "6/28/2018",
-      "4/28/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates keys whose strengths are modified by available entropy",
     "description": "The CCL is a dynamically linked library implemented using the C programming language with an external Java interface. Application developers wishing to use the CCL can use the CCL's Application Programming Interface (API) to perform AES, ECDSA, HMAC, DRBG, SHA256 and SHA512 security related functions. It also includes non-validated legacy services to support DES encryption while operating in the Non-Approved mode of operation.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Communication Cryptographic Library (CCL)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2854",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,50 +40,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2854.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/2/2017, 6/28/2018, 4/28/2021",
+    "validation_dates": [
+      "3/2/2017",
+      "6/28/2018",
+      "4/28/2021"
+    ],
     "validation_history": [
       {
         "date": "3/2/2017",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/28/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "4/28/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "EFJohnson Technologies",
-      "website_url": "http://www.efjohnson.com",
       "address_lines": [
         "1440 Corporate Drive",
         "Irving, TX 75038-2401",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "John Tooker",
       "contact_email": "jtooker@efji.com",
-      "contact_phone": "402-479-8447"
+      "contact_name": "John Tooker",
+      "contact_phone": "402-479-8447",
+      "country": "USA",
+      "name": "EFJohnson Technologies",
+      "website_url": "http://www.efjohnson.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "EFJohnson Technologies"
   }
 }

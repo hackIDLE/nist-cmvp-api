@@ -294,7 +294,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-14T13:46:19.502722Z"
+            "example": "2026-05-15T02:10:47.425082Z"
           },
           "total_modules": {
             "type": "integer",
@@ -350,17 +350,13 @@
         "type": "object",
         "description": "A FIPS 140-2/140-3 validated cryptographic module",
         "properties": {
-          "Certificate Number_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
-          },
           "Certificate Number": {
             "type": "string",
             "example": "5267"
           },
-          "Vendor Name": {
+          "Certificate Number_url": {
             "type": "string",
-            "example": "Intel Corporation"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
           },
           "Module Name": {
             "type": "string",
@@ -374,57 +370,13 @@
             "type": "string",
             "example": "05/13/2026"
           },
-          "security_policy_url": {
+          "Vendor Name": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
-          },
-          "certificate_detail_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
-          },
-          "module_name": {
-            "type": "string",
-            "example": "Intel FNIC Control Plane Cryptographic Module"
-          },
-          "standard": {
-            "type": "string",
-            "example": "FIPS 140-3"
-          },
-          "status": {
-            "type": "string",
-            "example": "Active"
-          },
-          "sunset_date": {
-            "type": "string",
-            "example": "5/12/2031"
-          },
-          "overall_level": {
-            "type": "integer",
-            "example": 1
-          },
-          "caveat": {
-            "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
-          },
-          "module_type": {
-            "type": "string",
-            "example": "Hardware"
-          },
-          "embodiment": {
-            "type": "string",
-            "example": "SingleChip"
-          },
-          "description": {
-            "type": "string",
-            "example": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability."
+            "example": "Intel Corporation"
           },
           "algorithm_extraction": {
             "type": "object",
             "additionalProperties": true
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
           },
           "algorithms": {
             "type": "array",
@@ -447,6 +399,54 @@
               "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
               "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
             ]
+          },
+          "caveat": {
+            "type": "string",
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+          },
+          "certificate_detail_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
+          },
+          "description": {
+            "type": "string",
+            "example": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability."
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
+          },
+          "embodiment": {
+            "type": "string",
+            "example": "SingleChip"
+          },
+          "module_name": {
+            "type": "string",
+            "example": "Intel FNIC Control Plane Cryptographic Module"
+          },
+          "module_type": {
+            "type": "string",
+            "example": "Hardware"
+          },
+          "overall_level": {
+            "type": "integer",
+            "example": 1
+          },
+          "security_policy_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
+          },
+          "standard": {
+            "type": "string",
+            "example": "FIPS 140-3"
+          },
+          "status": {
+            "type": "string",
+            "example": "Active"
+          },
+          "sunset_date": {
+            "type": "string",
+            "example": "5/12/2031"
           },
           "software_versions": {
             "type": "string",
@@ -775,108 +775,74 @@
         "type": "object",
         "description": "Structured certificate detail record derived from the NIST certificate page",
         "properties": {
-          "certificate_number": {
-            "type": "string",
-            "example": "5265"
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
           },
-          "dataset": {
-            "type": "string",
-            "example": "active"
-          },
-          "generated_at": {
-            "type": "string",
-            "example": "2026-05-14T13:46:19.502722Z"
-          },
-          "nist_page_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265"
-          },
-          "certificate_detail_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5265"
-          },
-          "security_policy_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5265.pdf"
-          },
-          "vendor_name": {
-            "type": "string",
-            "example": "Juniper Networks, Inc."
-          },
-          "module_name": {
-            "type": "string",
-            "example": "Juniper Networks NFX350 Network Services Platform"
-          },
-          "standard": {
-            "type": "string",
-            "example": "FIPS 140-3"
-          },
-          "status": {
-            "type": "string",
-            "example": "Active"
-          },
-          "module_type": {
-            "type": "string",
-            "example": "Hardware"
-          },
-          "embodiment": {
-            "type": "string",
-            "example": "MultiChipStand"
-          },
-          "overall_level": {
-            "type": "integer",
-            "example": 1
-          },
-          "validation_date": {
-            "type": "string",
-            "example": "5/13/2026"
-          },
-          "validation_dates": {
+          "algorithms": {
             "type": "array",
             "items": {
               "type": "string"
             },
             "example": [
-              "5/13/2026"
+              "AES",
+              "DES",
+              "DRBG"
             ]
-          },
-          "sunset_date": {
-            "type": "string",
-            "example": "5/12/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys."
+          },
+          "certificate_detail_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2038"
+          },
+          "certificate_number": {
+            "type": "string",
+            "example": "2038"
+          },
+          "dataset": {
+            "type": "string",
+            "example": "active"
           },
           "description": {
             "type": "string",
-            "example": "The NFX350 Network Services Platform is Juniper Network's secure, automated, software-driven customer premises equipment (CPE) devices that deliver virtualized network and security services on demand. The NFX Network Services Platform delivers capacity, performance, and scale to larger enterprise organizations and service providers who are looking to run multiple services on one platform."
+            "example": "SafeLogic's CryptoComply for Server is designed to provide FIPS 140-2 validated cryptographic functionality and is available for licensing."
           },
-          "software_versions": {
+          "embodiment": {
             "type": "string",
-            "nullable": true,
-            "example": ""
-          },
-          "hardware_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
+            "example": "Multi-chip standalone"
           },
           "firmware_versions": {
             "type": "string",
             "nullable": true,
             "example": ""
           },
-          "security_level_exceptions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "Roles, services, and authentication: Level 3",
-              "Non-invasive security: N/A",
-              "Mitigation of other attacks: N/A"
-            ]
+          "generated_at": {
+            "type": "string",
+            "example": "2026-05-15T02:10:47.425082Z"
+          },
+          "hardware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "module_name": {
+            "type": "string",
+            "example": "CryptoComply for Server"
+          },
+          "module_type": {
+            "type": "string",
+            "example": "Software"
+          },
+          "nist_page_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2038"
+          },
+          "overall_level": {
+            "type": "integer",
+            "example": 1
           },
           "related_files": {
             "type": "array",
@@ -884,6 +850,49 @@
               "type": "object",
               "additionalProperties": true
             }
+          },
+          "security_level_exceptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": []
+          },
+          "security_policy_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2038.pdf"
+          },
+          "software_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "standard": {
+            "type": "string",
+            "example": "FIPS 140-2"
+          },
+          "status": {
+            "type": "string",
+            "example": "Active"
+          },
+          "sunset_date": {
+            "type": "string",
+            "example": "9/21/2026"
+          },
+          "validation_date": {
+            "type": "string",
+            "example": "11/15/2013, 1/23/2014, 2/20/2014, 1/25/2016, 2/5/2016, 3/29/2018, 7/24/2020, 3/9/2021, 5/25/2021, 1/17/2023, 4/16/2024"
+          },
+          "validation_dates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "11/15/2013",
+              "1/23/2014",
+              "2/20/2014"
+            ]
           },
           "validation_history": {
             "type": "array",
@@ -896,31 +905,14 @@
             "type": "object",
             "additionalProperties": true
           },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
-          },
-          "algorithms": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES",
-              "CVL",
-              "DRBG"
-            ]
+          "vendor_name": {
+            "type": "string",
+            "example": "SafeLogic Inc."
           },
           "algorithms_detailed": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "AES-CBC A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CTR A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-GCM A5157 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D"
-            ]
+            "type": "string",
+            "nullable": true,
+            "example": ""
           }
         }
       },

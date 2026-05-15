@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 1 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496",
     "certificate_number": "4496",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4496.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Microsoft Azure Linux OpenSSL Cryptographic Library",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/1/2023, 6/24/2024",
-    "validation_dates": [
-      "5/1/2023",
-      "6/24/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 1 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "Microsoft Azure Linux OpenSSL Cryptographic Library is a general-purpose, software cryptographic module that implements FIPS 140-2 approved cryptographic algorithms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Microsoft Azure Linux OpenSSL Cryptographic Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4496.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/1/2023, 6/24/2024",
+    "validation_dates": [
+      "5/1/2023",
+      "6/24/2024"
+    ],
     "validation_history": [
       {
         "date": "5/1/2023",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/24/2024",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike Grimm",
       "contact_email": "fips@microsoft.com",
-      "contact_phone": "800-Microsoft"
+      "contact_name": "Mike Grimm",
+      "contact_phone": "800-Microsoft",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

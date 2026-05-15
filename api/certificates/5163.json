@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5163"
   },
   "certificate": {
-    "certificate_number": "5163",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5163",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5163",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5163.pdf",
-    "vendor_name": "Canonical Ltd.",
-    "module_name": "Canonical Ltd. Ubuntu 24.04 GnuTLS Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "2/20/2026",
-    "validation_dates": [
-      "2/20/2026"
-    ],
-    "sunset_date": "2/19/2031",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "The Canonical Ltd. Ubuntu 24.04 GnuTLS Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5163.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/20/2026",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Canonical Ltd.",
-      "website_url": "http://www.canonical.com",
-      "address_lines": [
-        "2nd Floor, Clarendon House, Victoria Street",
-        "Douglas IM1 2LN",
-        "Isle of Man"
-      ],
-      "country": "Isle of Man",
-      "contact_name": "Canonical Certification Team",
-      "contact_email": "security-certifications@lists.canonical.com",
-      "contact_phone": "0-000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 55,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 55
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -141,6 +87,60 @@
       "AES-GCM(when not used in the context of the TLS protocol) | Authenticated encryption;Authenticated decryption",
       "DSA | Key generation;Domain parameter generation;Digital signature generation;Digital signature verification",
       "Diffie-Hellman(with domain parameters other than safe primes) | Key agreement;Shared secret computation"
-    ]
+    ],
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5163",
+    "certificate_number": "5163",
+    "dataset": "active",
+    "description": "The Canonical Ltd. Ubuntu 24.04 GnuTLS Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Canonical Ltd. Ubuntu 24.04 GnuTLS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5163",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5163.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5163.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "2/19/2031",
+    "validation_date": "2/20/2026",
+    "validation_dates": [
+      "2/20/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/20/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2nd Floor, Clarendon House, Victoria Street",
+        "Douglas IM1 2LN",
+        "Isle of Man"
+      ],
+      "contact_email": "security-certifications@lists.canonical.com",
+      "contact_name": "Canonical Certification Team",
+      "contact_phone": "0-000-000-0000",
+      "country": "Isle of Man",
+      "name": "Canonical Ltd.",
+      "website_url": "http://www.canonical.com"
+    },
+    "vendor_name": "Canonical Ltd."
   }
 }

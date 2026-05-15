@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5169"
   },
   "certificate": {
-    "certificate_number": "5169",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5169",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5169",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5169.pdf",
-    "vendor_name": "ST Engineering Urban Solutions Ltd.",
-    "module_name": "Vega-1 Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "3/4/2026",
-    "validation_dates": [
-      "3/4/2026"
-    ],
-    "sunset_date": "3/3/2031",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "The Vega-1 Cryptographic Module provides cryptography to the Vega-1 device.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5169.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/4/2026",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "ST Engineering Urban Solutions Ltd.",
-      "website_url": "http://www.stengg.com",
-      "address_lines": [
-        "100 Jurong East Street 21",
-        "Singapore, SG 609602",
-        "Singapore"
-      ],
-      "country": "Singapore",
-      "contact_name": "Royy Tan Nai Ming",
-      "contact_email": "tan.naiming@stengg.com",
-      "contact_phone": "65-9644-9699"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 88,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 88
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -176,6 +122,60 @@
       "RSA Signature Primitive | RSASP with modulus 3072,4096(since RSASP2.0 is untested per CAVP Cert.#A5951)",
       "FIPS 186-4 RSA KeyGen X9.31,FIPS 186-4 RSA SigGen X9.31 | RSA KeyGen,SigGen perX9.31perIGC.K",
       "SHA-1 for SigVer | Usage of SHA-1in the context of signature verification(perIGC.M3.e)"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5169",
+    "certificate_number": "5169",
+    "dataset": "active",
+    "description": "The Vega-1 Cryptographic Module provides cryptography to the Vega-1 device.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Vega-1 Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5169",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5169.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5169.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/3/2031",
+    "validation_date": "3/4/2026",
+    "validation_dates": [
+      "3/4/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/4/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "100 Jurong East Street 21",
+        "Singapore, SG 609602",
+        "Singapore"
+      ],
+      "contact_email": "tan.naiming@stengg.com",
+      "contact_name": "Royy Tan Nai Ming",
+      "contact_phone": "65-9644-9699",
+      "country": "Singapore",
+      "name": "ST Engineering Urban Solutions Ltd.",
+      "website_url": "http://www.stengg.com"
+    },
+    "vendor_name": "ST Engineering Urban Solutions Ltd."
   }
 }

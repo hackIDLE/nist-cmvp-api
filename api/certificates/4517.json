@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
     "certificate_number": "4517",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf",
-    "vendor_name": "Thales",
-    "module_name": "IDPrime 3930 FIDO",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "5/9/2023",
-    "validation_dates": [
-      "5/9/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "No assurance of the minimum strength of generated keys",
     "description": "IDPrime 3930 FIDO is a dual interface smartcard combining Minidriver enabled PKI application, offering all the necessary services (with either RSA up to 4096 key length or Elliptic curves algorithms) to secure an IT Security and ID access infrastructure, with FIDO2 application (CTAP2) offering passwordless access for cloud apps, network domains and all Azure AD-connected apps and services",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IDPrime 3930 FIDO",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,40 +40,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/9/2023",
+    "validation_dates": [
+      "5/9/2023"
+    ],
     "validation_history": [
       {
         "date": "5/9/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Thales",
-      "website_url": "http://www.thalesgroup.com",
       "address_lines": [
         "Avenue du Jujubier, Z.I Athelia IV",
         "La Ciotat 13705",
         "France"
       ],
-      "country": "France",
-      "contact_name": "Arnaud Lotigier",
       "contact_email": "Arnaud.Lotigier@thalesgroup.com",
-      "contact_phone": "+33 442366074"
+      "contact_name": "Arnaud Lotigier",
+      "contact_phone": "+33 442366074",
+      "country": "France",
+      "name": "Thales",
+      "website_url": "http://www.thalesgroup.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales"
   }
 }

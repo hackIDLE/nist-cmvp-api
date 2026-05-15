@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1187"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1187",
     "certificate_number": "1187",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1187",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1187",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1187.pdf",
-    "vendor_name": "Thales e-Security Inc.",
-    "module_name": "Datacryptor® Gig Ethernet v1.0 and v1.1",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "9/21/2009",
-    "validation_dates": [
-      "9/21/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Datacryptor® Gig Ethernet v1.0 and v1.1 are multi-chip standalone cryptographic modules. They secure communications using signed Diffie-Hellman key exchange and AES-256 encryption over Gigabit Ethernet networks. They provide data encryption over 1000baseX (802.3z) with supported media types of 1000BaseSX (short-haul fiber), 1000BaseLX (long-haul fiber) or 1000BaseCX (single twisted-pair copper). The units also provide integrated secure unit management capability employing the same techniques used for traffic encryption.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Datacryptor® Gig Ethernet v1.0 and v1.1",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1187",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,41 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1187.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1187.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/21/2009",
+    "validation_dates": [
+      "9/21/2009"
+    ],
     "validation_history": [
       {
         "date": "9/21/2009",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Thales e-Security Inc.",
-      "website_url": "http://www.thales-esecurity.com",
       "address_lines": [
         "900 South Pine Island Road",
         "Suite 710",
         "Plantation, FL 33324",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Juan Asenjo",
       "contact_email": "juan.asenjo@thalesesec.com",
-      "contact_phone": "954-888-6202"
+      "contact_name": "Juan Asenjo",
+      "contact_phone": "954-888-6202",
+      "country": "USA",
+      "name": "Thales e-Security Inc.",
+      "website_url": "http://www.thales-esecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales e-Security Inc."
   }
 }

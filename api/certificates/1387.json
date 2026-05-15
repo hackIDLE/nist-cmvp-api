@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. When obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9.1 of the provided Security Policy. This module contains the embedded module Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #815 (Approved algorithms retested on listed operating environment) operating in FIPS mode. Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs is automatically verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387",
     "certificate_number": "1387",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1387.pdf",
-    "vendor_name": "Red Hat®, Inc.",
-    "module_name": "Red Hat Enterprise Linux 5 Kernel Crypto API Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "8/12/2010",
-    "validation_dates": [
-      "8/12/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9.1 of the provided Security Policy. This module contains the embedded module Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #815 (Approved algorithms retested on listed operating environment) operating in FIPS mode. Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs is automatically verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
     "description": "The Linux kernel Crypto API implemented in Red Hat Enterprise Linux 5 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Red Hat Enterprise Linux 5 Kernel Crypto API Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1387.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1387.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/12/2010",
+    "validation_dates": [
+      "8/12/2010"
+    ],
     "validation_history": [
       {
         "date": "8/12/2010",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Red Hat®, Inc.",
-      "website_url": "http://www.redhat.com",
       "address_lines": [
         "314 Littleton Road",
         "Westford, MA 01886",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Irina Boverman",
       "contact_email": "iboverma@redhat.com",
-      "contact_phone": "978-392-1000"
+      "contact_name": "Irina Boverman",
+      "contact_phone": "978-392-1000",
+      "country": "USA",
+      "name": "Red Hat®, Inc.",
+      "website_url": "http://www.redhat.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Red Hat®, Inc."
   }
 }

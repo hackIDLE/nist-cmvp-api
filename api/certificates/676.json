@@ -1,33 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/676"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/676",
     "certificate_number": "676",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/676",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/676",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp676.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Cisco Catalyst 6506, 6509, 6506(E), 6509(E), 7606 and 7609 Routers With VPN Services Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "5/22/2006, 5/28/2010, 2/23/2012",
-    "validation_dates": [
-      "5/22/2006",
-      "5/28/2010",
-      "2/23/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Catalyst 6500 series switches and the Cisco 7606 and Cisco 7609 routers with the VPN Services Module offer versatility, integration, and security to branch offices. With numerous network modules and service modules available, the modular architecture of the Cisco router easily allows interfaces to be upgraded to accommodate network expansion. The Catalyst 6500 series switches and the Cisco 7606 and Cisco 7609 routers provide a scalable, secure, manageable remote access server that meets FIPS 140-2 Level 2 requirements.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Catalyst 6506, 6509, 6506(E), 6509(E), 7606 and 7609 Routers With VPN Services Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/676",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,53 +43,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt676.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp676.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/22/2006, 5/28/2010, 2/23/2012",
+    "validation_dates": [
+      "5/22/2006",
+      "5/28/2010",
+      "2/23/2012"
+    ],
     "validation_history": [
       {
         "date": "5/22/2006",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "5/28/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/23/2012",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
       "address_lines": [
         "170 West Tasman Dr.",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
-      "contact_phone": null
+      "contact_name": "Global Certification Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "SHA"
-    ]
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

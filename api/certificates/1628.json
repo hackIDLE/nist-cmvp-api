@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1628"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1628",
     "certificate_number": "1628",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1628",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1628",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1628.pdf",
-    "vendor_name": "NAL Research Corporation",
-    "module_name": "XM Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "11/7/2011",
-    "validation_dates": [
-      "11/7/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "A3LA-XM is a modem comprised of the XM Crypto Module encryption board and a communication board. It is designed to transmit AES 256-bit encrypted data via a communication network. The A3LA-XM has an internal micro-controller programmed to monitor the modems connectivity status to prevent hardware lock-up. Similar to a standard landline modem, the A3LA-XM can be controlled by any DTE (data terminal equipment) capable of sending standard AT commands via an RS232 serial or a USB 2.0 port.",
-    "security_level_exceptions": [
-      "Tested: A3LA-XM with A3LA-XM OS ver. 1.1.0"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "XM Crypto Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1628",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0011.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: A3LA-XM with A3LA-XM OS ver. 1.1.0"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1628.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/7/2011",
+    "validation_dates": [
+      "11/7/2011"
+    ],
     "validation_history": [
       {
         "date": "11/7/2011",
-        "type": "Initial",
-        "lab": "ICSA"
+        "lab": "ICSA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "NAL Research Corporation",
-      "website_url": "http://www.nalresearch.com",
       "address_lines": [
         "9300 West Courthouse Rd.",
         "Suite 102",
         "Manassas, VA 20110",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Peter Kormendi",
       "contact_email": "pkormendi@nalresearch.com",
-      "contact_phone": "703-392-1136"
+      "contact_name": "Peter Kormendi",
+      "contact_phone": "703-392-1136",
+      "country": "USA",
+      "name": "NAL Research Corporation",
+      "website_url": "http://www.nalresearch.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "NAL Research Corporation"
   }
 }

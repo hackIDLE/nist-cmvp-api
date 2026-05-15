@@ -1,33 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode with module [Google Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module] validated to FIPS 140-2 under Cert. #4400 operating in FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799",
     "certificate_number": "4799",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4799.pdf",
-    "vendor_name": "Google, LLC",
-    "module_name": "Look-aside Cryptography and Compression Engine (LCE)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 1,
-    "validation_date": "9/13/2024",
-    "validation_dates": [
-      "9/13/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode with module [Google Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module] validated to FIPS 140-2 under Cert. #4400 operating in FIPS mode.",
     "description": "The Look-aside Cryptography and Compression Engine (LCE) module is comprised of a sub-chip cryptographic subsystem in the Google IN762 SoC. The module provides lookaside cryptography services including bulk encryption, cryptographic hashing, Integrity Checksum Value (ICV) verification, and compression services. The module also supports operation chaining including cryptographic and pipeline compressing/decompressing and verification as well as standalone or combined DMA data (payload) transfers between nodes.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Look-aside Cryptography and Compression Engine (LCE)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,45 +45,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4799.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "9/13/2024",
+    "validation_dates": [
+      "9/13/2024"
+    ],
     "validation_history": [
       {
         "date": "9/13/2024",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Google, LLC",
-      "website_url": "http://www.google.com",
       "address_lines": [
         "1600 Amphitheatre Parkway",
         "Mountain View, CA 94043",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "FIPS Crypto Officer",
       "contact_email": "FIPS-crypto-officer@google.com",
-      "contact_phone": null
+      "contact_name": "FIPS Crypto Officer",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Google, LLC",
+      "website_url": "http://www.google.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ]
+    "vendor_name": "Google, LLC"
   }
 }

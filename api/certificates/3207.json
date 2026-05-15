@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207"
   },
   "certificate": {
-    "certificate_number": "3207",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf",
-    "vendor_name": "Sonus Networks, Inc.",
-    "module_name": "SBC Software Edition Session Border Controller",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "6/25/2018",
-    "validation_dates": [
-      "6/25/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "The Sonus SBC Software Edition Session Border Controller (SBC SWe) is a software-based, cloud-optimized SBC architected to enable and secure real-time communications in the cloud. Starting at 25 sessions, and scaling to tens of thousands per instance, the unique architecture of the SBC SWe allows customers to define where on the performance curve their network needs to reside. The SBC SWe uses a \"microservices\" design to separate signaling, media, and transcoding to optimize virtual network resources. It also supports on-demand auto-scaling, with a feedback loop using Key Performance Indicator",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneCertFinal.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/25/2018",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Sonus Networks, Inc.",
-      "website_url": "http://www.sonus.net",
-      "address_lines": [
-        "4 Technology Park Drive",
-        "Westford, MA",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Adam Elshama",
-      "contact_email": "aelshama@sonusnet.com",
-      "contact_phone": "+1 855 GO SONUS"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +26,65 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207",
+    "certificate_number": "3207",
+    "dataset": "historical",
+    "description": "The Sonus SBC Software Edition Session Border Controller (SBC SWe) is a software-based, cloud-optimized SBC architected to enable and secure real-time communications in the cloud. Starting at 25 sessions, and scaling to tens of thousands per instance, the unique architecture of the SBC SWe allows customers to define where on the performance curve their network needs to reside. The SBC SWe uses a \"microservices\" design to separate signaling, media, and transcoding to optimize virtual network resources. It also supports on-demand auto-scaling, with a feedback loop using Key Performance Indicator",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SBC Software Edition Session Border Controller",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneCertFinal.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/25/2018",
+    "validation_dates": [
+      "6/25/2018"
+    ],
+    "validation_history": [
+      {
+        "date": "6/25/2018",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4 Technology Park Drive",
+        "Westford, MA",
+        "USA"
+      ],
+      "contact_email": "aelshama@sonusnet.com",
+      "contact_name": "Adam Elshama",
+      "contact_phone": "+1 855 GO SONUS",
+      "country": "USA",
+      "name": "Sonus Networks, Inc.",
+      "website_url": "http://www.sonus.net"
+    },
+    "vendor_name": "Sonus Networks, Inc."
   }
 }

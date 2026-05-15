@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3993"
   },
   "certificate": {
-    "certificate_number": "3993",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3993",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3993",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3993.pdf",
-    "vendor_name": "Mirantis, Inc.",
-    "module_name": "Mirantis Cryptographic Module NG",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/22/2021",
-    "validation_dates": [
-      "7/22/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3273.",
-    "description": "The Mirantis Cryptographic Module NG delivers core cryptographic functions for Mirantis platforms and features robust algorithm support, including Suite B algorithms. Mirantis Cryptographic Module NG offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted and verified implementation.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3993.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/22/2021",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Mirantis, Inc.",
-      "website_url": "http://www.mirantis.com",
-      "address_lines": [
-        "900 E. Hamilton Avenue",
-        "Suite 650",
-        "Campbell, CA 95008",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Rick Pugh",
-      "contact_email": "rpugh@mirantis.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -84,6 +26,64 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3273.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3993",
+    "certificate_number": "3993",
+    "dataset": "active",
+    "description": "The Mirantis Cryptographic Module NG delivers core cryptographic functions for Mirantis platforms and features robust algorithm support, including Suite B algorithms. Mirantis Cryptographic Module NG offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted and verified implementation.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Mirantis Cryptographic Module NG",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3993",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3993.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3993.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "7/22/2021",
+    "validation_dates": [
+      "7/22/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "7/22/2021",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "900 E. Hamilton Avenue",
+        "Suite 650",
+        "Campbell, CA 95008",
+        "USA"
+      ],
+      "contact_email": "rpugh@mirantis.com",
+      "contact_name": "Rick Pugh",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Mirantis, Inc.",
+      "website_url": "http://www.mirantis.com"
+    },
+    "vendor_name": "Mirantis, Inc."
   }
 }

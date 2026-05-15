@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4605"
   },
   "certificate": {
-    "certificate_number": "4605",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4605",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4605",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4605.pdf",
-    "vendor_name": "LiveAction, Inc.",
-    "module_name": "LiveAction Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/25/2023, 6/14/2024",
-    "validation_dates": [
-      "9/25/2023",
-      "6/14/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "LiveAction Cryptographic Module is a standards-based cryptographic engine used by LiveAction's LiveWire and LiveNX. The module delivers core cryptographic functions to LiveAction platforms and features robust algorithm support, including Suite B algorithms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4605.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/25/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "6/14/2024",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "LiveAction, Inc.",
-      "website_url": "http://www.liveaction.com/company",
-      "address_lines": [
-        "901 Campisi Way",
-        "Suite 222",
-        "Campbell, CA 95008",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "LiveAction Compliance Team",
-      "contact_email": "FIPS_validation@liveaction.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -91,6 +27,70 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4605",
+    "certificate_number": "4605",
+    "dataset": "active",
+    "description": "LiveAction Cryptographic Module is a standards-based cryptographic engine used by LiveAction's LiveWire and LiveNX. The module delivers core cryptographic functions to LiveAction platforms and features robust algorithm support, including Suite B algorithms.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "LiveAction Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4605",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4605.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4605.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "9/25/2023, 6/14/2024",
+    "validation_dates": [
+      "9/25/2023",
+      "6/14/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "9/25/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      },
+      {
+        "date": "6/14/2024",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "901 Campisi Way",
+        "Suite 222",
+        "Campbell, CA 95008",
+        "USA"
+      ],
+      "contact_email": "FIPS_validation@liveaction.com",
+      "contact_name": "LiveAction Compliance Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "LiveAction, Inc.",
+      "website_url": "http://www.liveaction.com/company"
+    },
+    "vendor_name": "LiveAction, Inc."
   }
 }

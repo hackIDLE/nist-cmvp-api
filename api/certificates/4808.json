@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808"
   },
   "certificate": {
-    "certificate_number": "4808",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf",
-    "vendor_name": "Amazon Web Services, Inc.",
-    "module_name": "Amazon Linux 2023 Kernel Cryptographic API",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/23/2024",
-    "validation_dates": [
-      "9/23/2024"
-    ],
-    "sunset_date": "9/22/2029",
-    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy.",
-    "description": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/23/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Amazon Web Services, Inc.",
-      "website_url": "http://www.amazon.com",
-      "address_lines": [
-        "1918 8th Ave",
-        "Seattle, WA 98101",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Amazon Linux Security",
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 32,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 32
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -116,6 +58,64 @@
       "SHA3-256",
       "SHA3-384",
       "SHA3-512"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
+    "certificate_number": "4808",
+    "dataset": "active",
+    "description": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Amazon Linux 2023 Kernel Cryptographic API",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/22/2029",
+    "validation_date": "9/23/2024",
+    "validation_dates": [
+      "9/23/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "9/23/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Amazon Linux Security",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://www.amazon.com"
+    },
+    "vendor_name": "Amazon Web Services, Inc."
   }
 }

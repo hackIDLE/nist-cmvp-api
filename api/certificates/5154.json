@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5154"
   },
   "certificate": {
-    "certificate_number": "5154",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5154",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5154",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5154.pdf",
-    "vendor_name": "NetApp, Inc",
-    "module_name": "NetApp Cryptographic Security Module (NCSM) based on the OpenSSL FIPS Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/13/2026",
-    "validation_dates": [
-      "2/13/2026"
-    ],
-    "sunset_date": "3/10/2030",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The NetApp Cryptographic Security Module (NCSM) based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5154.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/13/2026",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "NetApp, Inc",
-      "website_url": "http://www.netapp.com",
-      "address_lines": [
-        "3060 Olsen Drive",
-        "San Jose, CA 95128",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "NetApp Security Assurance",
-      "contact_email": "np-psg-sa@netapp.com",
-      "contact_phone": "919-476-5600"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 77,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 77
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -164,6 +110,60 @@
       "DSA PQGVer\\[FIPS 186-4\\] | Key Size, Key Strength:L=1024/N=160(s<112)L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:PQGVer using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point#3)",
       "DSA SigGen\\[FIPS 186-4\\] | Key Size, Key Strength:L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128)Mode/Method:SigGen using SHA3 | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point#3)",
       "DSA SigVer\\[FIPS186-4\\] | Key Size, Key Strength:L=1024/N=160(s<112)L=2048/N=224(s=112),L=2048/N=256(s=112)L=3072/N=256(s=128) | OpenSSL ProjectOpenSSL 3.xFIPS Provider | Vendor affirmed per IGC.C and IG C.BResolution (bullet point#3)"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5154",
+    "certificate_number": "5154",
+    "dataset": "active",
+    "description": "The NetApp Cryptographic Security Module (NCSM) based on the OpenSSL FIPS Provider is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NetApp Cryptographic Security Module (NCSM) based on the OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5154",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5154.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5154.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2030",
+    "validation_date": "2/13/2026",
+    "validation_dates": [
+      "2/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "2/13/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3060 Olsen Drive",
+        "San Jose, CA 95128",
+        "USA"
+      ],
+      "contact_email": "np-psg-sa@netapp.com",
+      "contact_name": "NetApp Security Assurance",
+      "contact_phone": "919-476-5600",
+      "country": "USA",
+      "name": "NetApp, Inc",
+      "website_url": "http://www.netapp.com"
+    },
+    "vendor_name": "NetApp, Inc"
   }
 }

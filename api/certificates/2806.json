@@ -1,33 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DES",
+      "DSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806",
     "certificate_number": "2806",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2806.pdf",
-    "vendor_name": "KACST / Parsec",
-    "module_name": "HSID5000A",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "12/13/2016",
-    "validation_dates": [
-      "12/13/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The HSID5000A is a portable USB device that provides high security cryptographic functionality with secure storage for any personal computer. These cryptographic functions and storage allow the HSID5000A to be used in PKI environments with third party applications to securely login to domains, sign and verify emails and encrypt and decrypt files. The module supports a single user with access to the cryptographic functions and a cryptographic officer to enforce policy on the user. The module provides software interfaces as defined by the PKCS#11 standard and Microsoft CSP/KSP.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HSID5000A",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2806",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,16 +48,26 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2806.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/13/2016",
+    "validation_dates": [
+      "12/13/2016"
+    ],
     "validation_history": [
       {
         "date": "12/13/2016",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "KACST / Parsec",
-      "website_url": "http://www.kacst.edu.sa  / www.parsec.co.za",
       "address_lines": [
         "An Nakhil",
         "Housing King Abdulaziz",
@@ -55,33 +75,13 @@
         "Riyadh, Riyadh 12371",
         "Soudi Arabia"
       ],
-      "country": "Soudi Arabia",
-      "contact_name": "Dr. Hatim M. Behairy",
       "contact_email": "hbehairy@kacst.edu.sa",
-      "contact_phone": "+966-1-481-3549"
+      "contact_name": "Dr. Hatim M. Behairy",
+      "contact_phone": "+966-1-481-3549",
+      "country": "Soudi Arabia",
+      "name": "KACST / Parsec",
+      "website_url": "http://www.kacst.edu.sa  / www.parsec.co.za"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DES",
-      "DSA",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "KACST / Parsec"
   }
 }

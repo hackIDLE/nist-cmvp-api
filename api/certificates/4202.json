@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode. The output of the DRBG shall not be used to generate keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202",
     "certificate_number": "4202",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4202.pdf",
-    "vendor_name": "IQVIA",
-    "module_name": "IQVIA Java Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/22/2022",
-    "validation_dates": [
-      "4/22/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The output of the DRBG shall not be used to generate keys",
     "description": "The cryptographic module is a single Java Archive (JAR) binary, named DvSecurityAPI.jar, that provides cryptographic and secure communication services for other applications developed by IQVIA. In this document, those applications will be referred to as the calling application. The module is a standalone cryptographic library that can be called to provide encryption, decryption, hash generation and verification, certificate generation and verification, random bit generation, and message authentication functions.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IQVIA Java Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,48 +48,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/CMVP Certificates (FCVC) April 2022_020522_0649_mmsigned.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4202.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/22/2022",
+    "validation_dates": [
+      "4/22/2022"
+    ],
     "validation_history": [
       {
         "date": "4/22/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "IQVIA",
-      "website_url": "http://www.iqvia.com",
       "address_lines": [
         "2235 Sheppard Avenue East, Suite 1700",
         "Toronto, Ontario M2J5B5",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Toan Tran",
       "contact_email": "toan.tran@iqvia.com",
-      "contact_phone": "703-992-1043"
+      "contact_name": "Toan Tran",
+      "contact_phone": "703-992-1043",
+      "country": "Canada",
+      "name": "IQVIA",
+      "website_url": "http://www.iqvia.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "IQVIA"
   }
 }

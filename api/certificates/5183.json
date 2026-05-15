@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5183"
   },
   "certificate": {
-    "certificate_number": "5183",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5183",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5183",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5183.pdf",
-    "vendor_name": "Corelight, Inc.",
-    "module_name": "Corelight Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "3/11/2026",
-    "validation_dates": [
-      "3/11/2026"
-    ],
-    "sunset_date": "8/26/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "Corelight Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to server platforms and features robust algorithm support.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5183.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/11/2026",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "Corelight, Inc.",
-      "website_url": "https://corelight.com/",
-      "address_lines": [
-        "548 Market St, PMB 77799",
-        "San Francisco, CA 94104-5401",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Corelight Certification Group",
-      "contact_email": "certs@corelight.com",
-      "contact_phone": "651-335-8195"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 155,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 155
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -243,6 +190,59 @@
       "TLS v1.3 KDF(CVL) | A4593 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "TLS v1.3 KDF(CVL) | A5173 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135Rev.1",
       "ECDSA with non-NIST recommended curves | Curves: brainpoolP224r1(strength 112bits) brainpoolP256r1(strength 128 bits) brainpoolP320r1(strength 160 bits) brainpoolP384r1(strength 192 bits) brainpoolP512r1(strength 256 bits):Signature Generation, Signature Verification,Key Generation,Key Verification | CryptoComply140-3 FIPSProvider | Allowed per IG C.A, category 1a(per SP 800-186 Appendix H.1)"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5183",
+    "certificate_number": "5183",
+    "dataset": "active",
+    "description": "Corelight Cryptographic Module is a standards-based cryptographic engine for servers and appliances. The module delivers core cryptographic functions to server platforms and features robust algorithm support.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Corelight Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5183",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5183.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5183.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/26/2029",
+    "validation_date": "3/11/2026",
+    "validation_dates": [
+      "3/11/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/11/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "548 Market St, PMB 77799",
+        "San Francisco, CA 94104-5401",
+        "USA"
+      ],
+      "contact_email": "certs@corelight.com",
+      "contact_name": "Corelight Certification Group",
+      "contact_phone": "651-335-8195",
+      "country": "USA",
+      "name": "Corelight, Inc.",
+      "website_url": "https://corelight.com/"
+    },
+    "vendor_name": "Corelight, Inc."
   }
 }

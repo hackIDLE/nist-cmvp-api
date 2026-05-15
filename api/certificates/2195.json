@@ -1,33 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "caveat": "When operated in FIPS mode with the tamper evident seals and the opacity baffle installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195",
     "certificate_number": "2195",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2195.pdf",
-    "vendor_name": "Blue Coat® Systems, Inc.",
-    "module_name": "ProxySG SG900-10B [1], SG900-20 [2], SG900-30 [3], SG900-45 [4] and SG900-55 [5]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "6/27/2014",
-    "validation_dates": [
-      "6/27/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with the tamper evident seals and the opacity baffle installed as indicated in the Security Policy",
     "description": "Blue Coat ProxySG appliances are the core of the Blue Coat’s Unified Security and Optimization solutions for business assurance. The appliances offer complete security and control of web traffic, providing rich policy constructs for threat protection, SSL traffic, authentication, filtering, data loss prevention and logging capabilities. The appliances also optimize web and internal application traffic through caching, bandwidth management, stream splitting, and protocol optimization for data, video, cloud and web applications.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ProxySG SG900-10B [1], SG900-20 [2], SG900-30 [3], SG900-45 [4] and SG900-55 [5]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2195",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,49 +49,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2195.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/27/2014",
+    "validation_dates": [
+      "6/27/2014"
+    ],
     "validation_history": [
       {
         "date": "6/27/2014",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Blue Coat® Systems, Inc.",
-      "website_url": "http://www.bluecoat.com",
       "address_lines": [
         "420 N. Mary Avenue",
         "Sunnyvale, CA 94085",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Diana Robinson",
       "contact_email": "Diana.robinson@bluecoat.com",
-      "contact_phone": "845 454-6397"
+      "contact_name": "Diana Robinson",
+      "contact_phone": "845 454-6397",
+      "country": "USA",
+      "name": "Blue Coat® Systems, Inc.",
+      "website_url": "http://www.bluecoat.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SSH",
-      "TLS"
-    ]
+    "vendor_name": "Blue Coat® Systems, Inc."
   }
 }

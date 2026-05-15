@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4990"
   },
   "certificate": {
-    "certificate_number": "4990",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4990",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4990",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4990.pdf",
-    "vendor_name": "Splunk LLC",
-    "module_name": "Splunk Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/20/2025",
-    "validation_dates": [
-      "3/20/2025"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys",
-    "description": "The Splunk Cryptographic Module is a general purpose cryptographic module integrated in Splunk's products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4990.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/20/2025",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Splunk LLC",
-      "website_url": "http://www.splunk.com",
-      "address_lines": [
-        "3098 Olsen Dr",
-        "San Jose, CA 95128",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Farzad Salim",
-      "contact_email": "ssg-security-certifications@splunk.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -80,6 +27,59 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4990",
+    "certificate_number": "4990",
+    "dataset": "active",
+    "description": "The Splunk Cryptographic Module is a general purpose cryptographic module integrated in Splunk's products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Splunk Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4990",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4990.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4990.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/20/2025",
+    "validation_dates": [
+      "3/20/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "3/20/2025",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3098 Olsen Dr",
+        "San Jose, CA 95128",
+        "USA"
+      ],
+      "contact_email": "ssg-security-certifications@splunk.com",
+      "contact_name": "Farzad Salim",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Splunk LLC",
+      "website_url": "http://www.splunk.com"
+    },
+    "vendor_name": "Splunk LLC"
   }
 }

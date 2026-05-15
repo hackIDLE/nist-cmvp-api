@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926"
   },
   "certificate": {
-    "certificate_number": "4926",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4926.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Tanium FIPS OpenSSL 3.0 Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/18/2024",
-    "validation_dates": [
-      "12/18/2024"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The Tanium FIPS OpenSSL 3.0 Module is a general purpose cryptographic module incorporated into the Tanium Endpoint Platform to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4926.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/18/2024",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
-      "address_lines": [
-        "2100 Powell Street",
-        "Emeryville, CA 94068",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Jason Mealins",
-      "contact_email": "security@tanium.com",
-      "contact_phone": "510-704-0202"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 97,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 97
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -185,6 +131,60 @@
       "RSA SigVer (FIPS186‐5) | A4481 | Modulo ‐ 2048, 3072, 4096 | Signature Type ‐ pkcs1v1.5, pss | FIPS 186‐5 | FIPS 140‐3 Security Policy | Tanium FIPS OpenSSL 3.0 Module | This non‐proprietary Security Policy document may be freely reproduced and distributed in its entirety without modification. | Vendor‐Affirmed Algorithms: | Name | Implementation | CKG Section 4 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 5 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 6.2 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2",
       "Hash DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1",
       "HMAC DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1 | Non‐Approved, Allowed Algorithms: | N/A for this module. | Non‐Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non‐Approved, Not Allowed Algorithms: | N/A for this Module."
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
+    "certificate_number": "4926",
+    "dataset": "active",
+    "description": "The Tanium FIPS OpenSSL 3.0 Module is a general purpose cryptographic module incorporated into the Tanium Endpoint Platform to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Tanium FIPS OpenSSL 3.0 Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4926",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4926.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4926.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "12/18/2024",
+    "validation_dates": [
+      "12/18/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "12/18/2024",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2100 Powell Street",
+        "Emeryville, CA 94068",
+        "USA"
+      ],
+      "contact_email": "security@tanium.com",
+      "contact_name": "Jason Mealins",
+      "contact_phone": "510-704-0202",
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
+    },
+    "vendor_name": "[email protected]"
   }
 }

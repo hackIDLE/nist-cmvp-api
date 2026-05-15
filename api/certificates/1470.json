@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470",
     "certificate_number": "1470",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1470.pdf",
-    "vendor_name": "IBM® Corporation",
-    "module_name": "IBM® z/OS® Version 1 Release 11 ICSF PKCS#11 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software-Hybrid",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "12/28/2010, 6/1/2011, 10/4/2011",
-    "validation_dates": [
-      "12/28/2010",
-      "6/1/2011",
-      "10/4/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The ICSF PKCS #11 module consists of software-based cryptographic algorithms, as well as symmetric and hashing algorithms provided by the CP Assist for Cryptographic Function (CPACF) and RSA Hardware clear key modular math cryptography provided through the Crypto Express3 card (CEX3A). The RSA hardware support is accessed through auxiliary module CSFINPVT which acts as a pipe between ICSF PKCS #11 and the cryptographic cards.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IBM® z/OS® Version 1 Release 11 ICSF PKCS#11 Cryptographic Module",
+    "module_type": "Software-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,51 +40,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1470.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1470.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/28/2010, 6/1/2011, 10/4/2011",
+    "validation_dates": [
+      "12/28/2010",
+      "6/1/2011",
+      "10/4/2011"
+    ],
     "validation_history": [
       {
         "date": "12/28/2010",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "6/1/2011",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       },
       {
         "date": "10/4/2011",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "IBM® Corporation",
-      "website_url": "http://www.ibm.com",
       "address_lines": [
         "12 - 14 Marine Parade",
         "Seabank Centre",
         "Southport, QLD 4215",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "William F Penny",
       "contact_email": "wpenny@us.ibm.com",
-      "contact_phone": "845-435-3010"
+      "contact_name": "William F Penny",
+      "contact_phone": "845-435-3010",
+      "country": "Australia",
+      "name": "IBM® Corporation",
+      "website_url": "http://www.ibm.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "IBM® Corporation"
   }
 }

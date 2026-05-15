@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4420"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4420",
     "certificate_number": "4420",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4420",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4420",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4420.pdf",
-    "vendor_name": "Apricorn",
-    "module_name": "Aegis Secure Key 3Z and Aegis Secure Key 3NX Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "1/20/2023, 2/14/2023, 11/27/2024",
-    "validation_dates": [
-      "1/20/2023",
-      "2/14/2023",
-      "11/27/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy.",
     "description": "The Apricorn Aegis Secure Key 3z and Apricorn Aegis Secure Key 3NX are hardware encrypted USB 3.1 memory keys.The software free design allows interface to any host that supports USB and mass storage.Authentication is performed via the embedded keypad and all critical security parameters (PINs, encryption keys, etc) never leave the device boundary for improved security. The device supports 1 administrator and 1 user and offers a variety of features including programmable brute force, recovery PINs, 7-16 digit PINs, auto lock, read only modes, and is compatible with our Aegis Configurator.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aegis Secure Key 3Z and Aegis Secure Key 3NX Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4420",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,50 +40,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2023_010223_0657_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4420.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/20/2023, 2/14/2023, 11/27/2024",
+    "validation_dates": [
+      "1/20/2023",
+      "2/14/2023",
+      "11/27/2024"
+    ],
     "validation_history": [
       {
         "date": "1/20/2023",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/14/2023",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "11/27/2024",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Apricorn",
-      "website_url": "http://apricorn.com",
       "address_lines": [
         "12191 Kirkham Road",
         "Poway, CA 92064",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Robert Davidson",
       "contact_email": "RDavidson@apricorn.com",
-      "contact_phone": "858-513-2000"
+      "contact_name": "Robert Davidson",
+      "contact_phone": "858-513-2000",
+      "country": "USA",
+      "name": "Apricorn",
+      "website_url": "http://apricorn.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Apricorn"
   }
 }

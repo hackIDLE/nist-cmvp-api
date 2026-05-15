@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1117"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1117",
     "certificate_number": "1117",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1117",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1117",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1117.pdf",
-    "vendor_name": "Chunghwa Telecom Co., Ltd.",
-    "module_name": "HiKey - Flash and HiKey PKI Token",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/7/2009, 11/17/2011",
-    "validation_dates": [
-      "7/7/2009",
-      "11/17/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The HiKey Flash and HiKey PKI Token modules are multi-chip standalone implementations of a cryptographic module. The Hikey - Flash and HiKey PKI Token modules are USB tokens that adhere to ISO/IEC specifications for Integrated Circuit Chip (ICC) based identification cards. The HiKey - Flash and HiKey PKI Token cryptographic modules contain an implementation of the Open Platform (OP) Version 2.0.1 specification defining a secure infrastructure for post-issuance programmable smart cards.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HiKey - Flash and HiKey PKI Token",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1117",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,46 +40,47 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1117.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1117.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/7/2009, 11/17/2011",
+    "validation_dates": [
+      "7/7/2009",
+      "11/17/2011"
+    ],
     "validation_history": [
       {
         "date": "7/7/2009",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "11/17/2011",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Chunghwa Telecom Co., Ltd.",
-      "website_url": "http://www.cht.com.tw",
       "address_lines": [
         "12, Lane 551, Min-Tsu Road SEC.5",
         "Yang-Mei",
         "Taoyuan, Taiwan 326",
         "Republic of China"
       ],
-      "country": "Republic of China",
-      "contact_name": "Yeou-Fuh Kuan",
       "contact_email": "kufo@cht.com.tw",
-      "contact_phone": "+886-3-424-4333"
+      "contact_name": "Yeou-Fuh Kuan",
+      "contact_phone": "+886-3-424-4333",
+      "country": "Republic of China",
+      "name": "Chunghwa Telecom Co., Ltd.",
+      "website_url": "http://www.cht.com.tw"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Chunghwa Telecom Co., Ltd."
   }
 }

@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1898"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with module Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Boot Manager validated to FIPS 140-2 under Cert. #1895 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1898",
     "certificate_number": "1898",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1898",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1898",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1898.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Surface Windows 8 Pro, and Microsoft Windows Storage Server 2012 BitLocker® Windows Resume (WINRESUME)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "9/6/2013, 1/9/2015",
-    "validation_dates": [
-      "9/6/2013",
-      "1/9/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with module Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Boot Manager validated to FIPS 140-2 under Cert. #1895 operating in FIPS mode",
     "description": "BitLocker® Windows Resume is an operating system loader which loads the Windows OS kernel (ntoskrnl.exe) and other boot stage binary image files, as well as previous operating system state information, when Windows has been previously put into a sleep or hibernate power state. This cryptographic module also maintains FIPS 140-2 validation compliance (according to FIPS 140-2 PUB Implementation Guidance G.5) on Microsoft Windows 8, Microsoft Windows 8 Pro, and Microsoft Windows Server 2012 Datacenter.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 2"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Surface Windows 8 Pro, and Microsoft Windows Storage Server 2012 BitLocker® Windows Resume (WINRESUME)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1898",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1898.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/6/2013, 1/9/2015",
+    "validation_dates": [
+      "9/6/2013",
+      "1/9/2015"
+    ],
     "validation_history": [
       {
         "date": "9/6/2013",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "1/9/2015",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052-6399",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tim Myers",
       "contact_email": "FIPS@microsoft.com",
-      "contact_phone": "800-MICROSOFT"
+      "contact_name": "Tim Myers",
+      "contact_phone": "800-MICROSOFT",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1649"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1649",
     "certificate_number": "1649",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1649",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1649",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1649.pdf",
-    "vendor_name": "AirTight Networks, Inc.",
-    "module_name": "SpectraGuard® Enterprise Server",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "12/14/2011, 1/31/2012",
-    "validation_dates": [
-      "12/14/2011",
-      "1/31/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The implementation performs wireless intrusion detection and prevention. It monitors radio channels to ensure conformance of wireless activity to security policy. It mitigates various types of wireless security violations such as rogue wireless networks, unauthorized wireless connections, network mis-configurations and denial of service attacks",
-    "security_level_exceptions": [
-      "Tested: AirTight SA-350 Spectraguard Enterprise Appliance with CentOS 5.2"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SpectraGuard® Enterprise Server",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1649",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0012.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: AirTight SA-350 Spectraguard Enterprise Appliance with CentOS 5.2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1649.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/14/2011, 1/31/2012",
+    "validation_dates": [
+      "12/14/2011",
+      "1/31/2012"
+    ],
     "validation_history": [
       {
         "date": "12/14/2011",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "1/31/2012",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "AirTight Networks, Inc.",
-      "website_url": "http://www.airtightnetworks.com",
       "address_lines": [
         "339 N. Bernardo Avenue",
         "Suite 200",
         "Mountain View, CA 94043",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Hemant Chaskar",
       "contact_email": "Hemant.Chaskar@airtightnetworks.com",
-      "contact_phone": "650-961-1111"
+      "contact_name": "Hemant Chaskar",
+      "contact_phone": "650-961-1111",
+      "country": "USA",
+      "name": "AirTight Networks, Inc.",
+      "website_url": "http://www.airtightnetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "AirTight Networks, Inc."
   }
 }

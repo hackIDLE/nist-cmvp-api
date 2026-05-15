@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4362"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the entropy token installed as indicated in the Security Policy. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4362",
     "certificate_number": "4362",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4362",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4362",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4362.pdf",
-    "vendor_name": "Fortinet, Inc.",
-    "module_name": "FortiManager 6.2",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/9/2022",
-    "validation_dates": [
-      "11/9/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the entropy token installed as indicated in the Security Policy. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role. No assurance of the minimum strength of generated keys",
     "description": "The FortiManager OS is a firmware operating system that runs exclusively on Fortinet's FortiManager product family. FortiManager units are PC-based, purpose built appliances.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FortiManager 6.2",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4362",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2022_051222_0640_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4362.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/9/2022",
+    "validation_dates": [
+      "11/9/2022"
+    ],
     "validation_history": [
       {
         "date": "11/9/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Fortinet, Inc.",
-      "website_url": "http://www.fortinet.com",
       "address_lines": [
         "16 Fitzgerald Road",
         "Ottawa, ON K2H 8R6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Alan Kaye",
       "contact_email": "akaye@fortinet.com",
-      "contact_phone": "613-225-9381 x87416"
+      "contact_name": "Alan Kaye",
+      "contact_phone": "613-225-9381 x87416",
+      "country": "Canada",
+      "name": "Fortinet, Inc.",
+      "website_url": "http://www.fortinet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Fortinet, Inc."
   }
 }

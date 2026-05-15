@@ -1,38 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ],
+    "caveat": "When operated in FIPS mode and the tamper evident seals installed as indicated in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511",
     "certificate_number": "3511",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3511.pdf",
-    "vendor_name": "Intel Corporation",
-    "module_name": "Optane™ SSD DC D4800X",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "8/12/2019, 8/28/2019, 12/6/2019, 12/23/2019, 3/20/2020, 8/31/2020",
-    "validation_dates": [
-      "8/12/2019",
-      "8/28/2019",
-      "12/6/2019",
-      "12/23/2019",
-      "3/20/2020",
-      "8/31/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and the tamper evident seals installed as indicated in the security policy",
     "description": "Intel® Optane™ SSD DC D4800X module is a PCIe dual-port Gen3 x 2 NVMe SSD with industry leading 3DXP delivering power-efficient performance with enterprise ready security and remote manageability capabilities.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Optane™ SSD DC D4800X",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3511",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,71 +46,68 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugustConsolidated.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3511.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/12/2019, 8/28/2019, 12/6/2019, 12/23/2019, 3/20/2020, 8/31/2020",
+    "validation_dates": [
+      "8/12/2019",
+      "8/28/2019",
+      "12/6/2019",
+      "12/23/2019",
+      "3/20/2020",
+      "8/31/2020"
+    ],
     "validation_history": [
       {
         "date": "8/12/2019",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "8/28/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/6/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/23/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "3/20/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "8/31/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Intel Corporation",
-      "website_url": "http://www.intel.com/content/www/us/en/homepage.html",
       "address_lines": [
         "2200 Mission College Blvd",
         "Santa Clara, CA 95052",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jessica Denham",
       "contact_email": "Jessica.denham@intel.com",
-      "contact_phone": "+1 (971) 215-4503"
+      "contact_name": "Jessica Denham",
+      "contact_phone": "+1 (971) 215-4503",
+      "country": "USA",
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com/content/www/us/en/homepage.html"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ]
+    "vendor_name": "Intel Corporation"
   }
 }

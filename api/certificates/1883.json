@@ -1,34 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "RSA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883",
     "certificate_number": "1883",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1883.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "eToken 5100, 5105, 5200 and 5205",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "2/8/2013, 2/15/2013, 9/12/2016, 1/10/2017",
-    "validation_dates": [
-      "2/8/2013",
-      "2/15/2013",
-      "9/12/2016",
-      "1/10/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "SafeNet eToken is a portable two-factor USB authenticator with advanced smart card technology. It utilizes certificate based technology to generate and store credentials, such as private keys, passwords and digital certificates inside the protected environment of the smart card chip. To authenticate, users must supply both their personal SafeNet authenticator and password, providing a critical second level of security beyond simple passwords to protect valuable digital business resources.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "eToken 5100, 5105, 5200 and 5205",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1883",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,60 +45,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1883.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/8/2013, 2/15/2013, 9/12/2016, 1/10/2017",
+    "validation_dates": [
+      "2/8/2013",
+      "2/15/2013",
+      "9/12/2016",
+      "1/10/2017"
+    ],
     "validation_history": [
       {
         "date": "2/8/2013",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/15/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/12/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/10/2017",
-        "type": "Update",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet-inc.com",
       "address_lines": [
         "4690 Millennium Drive",
         "Belcamp, MD 21017",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Security and Certifications Team",
       "contact_email": "SecurityCertifications@gemalto.com",
-      "contact_phone": null
+      "contact_name": "Security and Certifications Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet-inc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "RSA"
-    ]
+    "vendor_name": "SafeNet, Inc."
   }
 }

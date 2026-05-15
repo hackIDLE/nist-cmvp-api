@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 3 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855",
     "certificate_number": "2855",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2855.pdf",
-    "vendor_name": "Automation Solutions, Inc (AUTOSOL)",
-    "module_name": "CryptoMod",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "3/3/2017",
-    "validation_dates": [
-      "3/3/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 3 of the Security Policy",
     "description": "AutoSol’s CryptoMod is an end-point security device that protects data exchanged between remote industrial field devices and a centralized SCADA host. Installed in front of equipment, the CryptoMod encrypts traffic for the entire length of an industrial network. It provides authentication for controlling network access, integrity when data is in motion, and confidentiality. It is a CSA Class 1 Div. 2 Gr. ABCD device and a terminal server, so it can fit any existing industrial network. It has a hardware watchdog timer and the capability for remote configuration, management, and updates.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CryptoMod",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2855.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/3/2017",
+    "validation_dates": [
+      "3/3/2017"
+    ],
     "validation_history": [
       {
         "date": "3/3/2017",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Automation Solutions, Inc (AUTOSOL)",
-      "website_url": "http://www.autosoln.com",
       "address_lines": [
         "16055 Space Center Blvd.",
         "Houston, TX 77062",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ken Brucker",
       "contact_email": "kbrucker@autosoln.com",
-      "contact_phone": "281-286-6017"
+      "contact_name": "Ken Brucker",
+      "contact_phone": "281-286-6017",
+      "country": "USA",
+      "name": "Automation Solutions, Inc (AUTOSOL)",
+      "website_url": "http://www.autosoln.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Automation Solutions, Inc (AUTOSOL)"
   }
 }

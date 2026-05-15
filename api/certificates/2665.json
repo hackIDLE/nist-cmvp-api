@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2665"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. This module contains the embedded module eToken 5105 validated to FIPS 140-2 under Cert. #1883 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2665",
     "certificate_number": "2665",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2665",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2665",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2665.pdf",
-    "vendor_name": "DocuSign, Inc.",
-    "module_name": "DocuSign Signature Appliance",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "6/21/2016, 7/25/2016",
-    "validation_dates": [
-      "6/21/2016",
-      "7/25/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. This module contains the embedded module eToken 5105 validated to FIPS 140-2 under Cert. #1883 operating in FIPS mode. No assurance of the minimum strength of generated keys",
     "description": "The DocuSign Signature Appliance is a digital signature appliance that is connected to the organizational network and manages all signature keys and certificates of organization's end-users. End-users will connect securely to the appliance from their PC for the purpose of signing documents and data.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DocuSign Signature Appliance",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2665",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2665.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/21/2016, 7/25/2016",
+    "validation_dates": [
+      "6/21/2016",
+      "7/25/2016"
+    ],
     "validation_history": [
       {
         "date": "6/21/2016",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "7/25/2016",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "DocuSign, Inc.",
-      "website_url": "http://www.docusign.com",
       "address_lines": [
         "221 Main St.",
         "Suite 1000",
         "San Francisco, CA 94105",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ezer Farhi",
       "contact_email": "ezer@arx.com",
-      "contact_phone": "972-3-9279529"
+      "contact_name": "Ezer Farhi",
+      "contact_phone": "972-3-9279529",
+      "country": "USA",
+      "name": "DocuSign, Inc.",
+      "website_url": "http://www.docusign.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "DocuSign, Inc."
   }
 }

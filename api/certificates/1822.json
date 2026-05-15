@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1822"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1822",
     "certificate_number": "1822",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1822",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1822",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1822.pdf",
-    "vendor_name": "Data-Pac Mailing Systems Corp.",
-    "module_name": "iButton Postal Security Device",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "11/1/2012",
-    "validation_dates": [
-      "11/1/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Data-Pac MAXQ1959B-F50# Postal Security Device (PSD) is an embedded cryptographic module used for postage evidencing. The PSD complies with FIPS 140-2 standards and postal requirements to support the USPS IBI program, including strong cryptographic and physical security for the protection of postal funds.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3 +EFT"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "iButton Postal Security Device",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1822",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0023.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3 +EFT"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1822.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/1/2012",
+    "validation_dates": [
+      "11/1/2012"
+    ],
     "validation_history": [
       {
         "date": "11/1/2012",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Data-Pac Mailing Systems Corp.",
-      "website_url": "http://www.data-pac.com",
       "address_lines": [
         "1217 Bay Road",
         "Webster, NY 14580",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ken Yankloski",
       "contact_email": "kyankloski@data-pac.com",
-      "contact_phone": "585-787-7074"
+      "contact_name": "Ken Yankloski",
+      "contact_phone": "585-787-7074",
+      "country": "USA",
+      "name": "Data-Pac Mailing Systems Corp.",
+      "website_url": "http://www.data-pac.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Data-Pac Mailing Systems Corp."
   }
 }

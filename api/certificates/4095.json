@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4095"
   },
   "certificate": {
-    "certificate_number": "4095",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4095",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4095",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4095.pdf",
-    "vendor_name": "Tigera, Inc.",
-    "module_name": "Tigera Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/6/2021, 7/1/2022",
-    "validation_dates": [
-      "12/6/2021",
-      "7/1/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
-    "description": "The Tigera Cryptographic Module is a general-purpose cryptographic module integrated in Tigera’s products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4095.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2021_020122_0905_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/6/2021",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "7/1/2022",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Tigera, Inc.",
-      "website_url": "https://www.tigera.io/",
-      "address_lines": [
-        "58 Maiden Ln",
-        "5th floor",
-        "San Francisco, CA 94108",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Tigera Security",
-      "contact_email": "security@tigera.io",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -94,6 +30,70 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4095",
+    "certificate_number": "4095",
+    "dataset": "historical",
+    "description": "The Tigera Cryptographic Module is a general-purpose cryptographic module integrated in Tigera’s products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Tigera Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4095",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4095.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2021_020122_0905_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4095.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/6/2021, 7/1/2022",
+    "validation_dates": [
+      "12/6/2021",
+      "7/1/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "12/6/2021",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "7/1/2022",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "58 Maiden Ln",
+        "5th floor",
+        "San Francisco, CA 94108",
+        "USA"
+      ],
+      "contact_email": "security@tigera.io",
+      "contact_name": "Tigera Security",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Tigera, Inc.",
+      "website_url": "https://www.tigera.io/"
+    },
+    "vendor_name": "Tigera, Inc."
   }
 }

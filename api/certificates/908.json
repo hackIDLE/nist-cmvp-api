@@ -1,31 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
     "certificate_number": "908",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp908.pdf",
-    "vendor_name": "GlobalSCAPE, Inc.",
-    "module_name": "GlobalSCAPE® Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/7/2008",
-    "validation_dates": [
-      "2/7/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The GlobalSCAPE® Cryptographic Module (GSCM) provides cryptographic services for the GlobalSCAPE family of software products such as Secure FTP Server and EFT Server. The services include symmetric/asymmetric encryption/decryption, digital signatures, message digest, message authentication, random number generation, and SSL/TLS support. The GSCM is intended for use by applications through the moduleÆs Application Programming Interface (API), which is based on the OpenSSL API defined by the OpenSSL Project.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "GlobalSCAPE® Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,49 +48,37 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt908.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp908.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/7/2008",
+    "validation_dates": [
+      "2/7/2008"
+    ],
     "validation_history": [
       {
         "date": "2/7/2008",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "GlobalSCAPE, Inc.",
-      "website_url": "http://www.globalscape.com",
       "address_lines": [
         "6000 Northwest Parkway",
         "Suite 100",
         "San Antonio, TX 78249",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike Hambidge",
       "contact_email": "mhambidge@globalscape.com",
-      "contact_phone": "210-293-7921"
+      "contact_name": "Mike Hambidge",
+      "contact_phone": "210-293-7921",
+      "country": "USA",
+      "name": "GlobalSCAPE, Inc.",
+      "website_url": "http://www.globalscape.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "GlobalSCAPE, Inc."
   }
 }

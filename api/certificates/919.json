@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/919"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/919",
     "certificate_number": "919",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/919",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/919",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp919.pdf",
-    "vendor_name": "Hughes Network Systems, LLC",
-    "module_name": "Hughes Crypto Kernel",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/29/2008",
-    "validation_dates": [
-      "2/29/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Hughes Crypto Kernel (HCK) is a FIPS 140-2 Level 1 cryptographic module available for the Hughes HN and HX systems. The HCK enables the use of end-to-end bidirectional encryption between a remote site and the enterprise data center, while still enabling the use of all Hughes satellite acceleration features, as well as Hughes' advanced routing, prioritization and access control capabilities. The HCK uses AES 128 bit encryption to encrypt user traffic, uses IKE to dynamically generate session keys used for encryption, and ensures message authentication and integrity using HMAC-SHA-1.",
-    "security_level_exceptions": [
-      "Tested: Hughes 7700S Satellite Router running VxWorks 5.4"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hughes Crypto Kernel",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/919",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt919.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: Hughes 7700S Satellite Router running VxWorks 5.4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp919.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/29/2008",
+    "validation_dates": [
+      "2/29/2008"
+    ],
     "validation_history": [
       {
         "date": "2/29/2008",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Hughes Network Systems, LLC",
-      "website_url": "http://www.hughesnet.com",
       "address_lines": [
         "11717 Exploration Lane",
         "Germantown, MD 20876",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Vivek Gupta",
       "contact_email": "vgupta@hns.com",
-      "contact_phone": "301-548-1292"
+      "contact_name": "Vivek Gupta",
+      "contact_phone": "301-548-1292",
+      "country": "USA",
+      "name": "Hughes Network Systems, LLC",
+      "website_url": "http://www.hughesnet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Hughes Network Systems, LLC"
   }
 }

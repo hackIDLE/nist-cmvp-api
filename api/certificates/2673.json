@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2673"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy. The protocols IPsec, SNMP, SSH and TLS shall not be used when operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2673",
     "certificate_number": "2673",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2673",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2673",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2673.pdf",
-    "vendor_name": "MRV Communications Inc.",
-    "module_name": "LX-4000T Series Console Servers",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "7/8/2016",
-    "validation_dates": [
-      "7/8/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy. The protocols IPsec, SNMP, SSH and TLS shall not be used when operated in FIPS mode",
     "description": "The LX-4000T Series Console Servers are a key component of MRV's Out-of-Band Network solution. Out-of-Band Networks provide secure remote service port access and remote power control to devices in an organization's networks and infrastructures. This nearly eliminates the need for physical presence at a device to correct problems or manage its everyday operation. MRV's Out-of-Band Network solution includes console servers, terminal servers, device servers, remote power control and management system, making the LX Series an ideal choice for secure remote access.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "LX-4000T Series Console Servers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2673",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2673.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/8/2016",
+    "validation_dates": [
+      "7/8/2016"
+    ],
     "validation_history": [
       {
         "date": "7/8/2016",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "MRV Communications Inc.",
-      "website_url": "http://www.mrv.com",
       "address_lines": [
         "300 Apollo Dr.",
         "Chelmsford, MA 01824",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tim Bergeron",
       "contact_email": "tbergeron@mrv.com",
-      "contact_phone": "978-674-6860"
+      "contact_name": "Tim Bergeron",
+      "contact_phone": "978-674-6860",
+      "country": "USA",
+      "name": "MRV Communications Inc.",
+      "website_url": "http://www.mrv.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "MRV Communications Inc."
   }
 }

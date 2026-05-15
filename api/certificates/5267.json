@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
   },
   "certificate": {
-    "certificate_number": "5267",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
-    "vendor_name": "Intel Corporation",
-    "module_name": "Intel FNIC Control Plane Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "SingleChip",
-    "overall_level": 1,
-    "validation_date": "5/13/2026",
-    "validation_dates": [
-      "5/13/2026"
-    ],
-    "sunset_date": "5/12/2031",
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability.",
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/13/2026",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Intel Corporation",
-      "website_url": "http://www.intel.com",
-      "address_lines": [
-        "2200 Mission College Blvd.",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Manoj Maskara",
-      "contact_email": "fipsoffice@intel.com",
-      "contact_phone": "4087658080"
-    },
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 31,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "crawl4ai",
       "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 31
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -113,6 +60,59 @@
       "SHA2-512/256 A5001 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG - | Section | 4 | Key | Type:Symmetric | and Asymmetric | N/A NIST SP800-133r2 Section 4: Using the | Output of a Random Bit Generator | (example 1); The module supports the | following per NIST SP 800-133r2: 1. | Section 5.2: Key Pairs for Key | Establishment 2. Section 6.2.1: Symmetric | Keys Generated Using Key-Agreement | Schemes 3. Section 6.2.2: Symmetric Keys | Derived from a Pre-existing Key",
       "ECDSA SigVer (186-5) | Component | Pre-hashed signature verification function | Brainpool P384r1, P512r1 ECC curve for scalar point multiplication, signing and | verification | SECG secp256k1 ECC curve for scalar point multiplication, signing and | verification",
       "EdDSA curve Ed25519ph, | Ed448 | ECC curve for scalar point multiplication, signing and | verification"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
+    "certificate_number": "5267",
+    "dataset": "active",
+    "description": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability.",
+    "embodiment": "SingleChip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Intel FNIC Control Plane Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/12/2031",
+    "validation_date": "5/13/2026",
+    "validation_dates": [
+      "5/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/13/2026",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2200 Mission College Blvd.",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "fipsoffice@intel.com",
+      "contact_name": "Manoj Maskara",
+      "contact_phone": "4087658080",
+      "country": "USA",
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com"
+    },
+    "vendor_name": "Intel Corporation"
   }
 }

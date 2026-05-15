@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
     "certificate_number": "4679",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4679.pdf",
-    "vendor_name": "NXP Semiconductors, Inc.",
-    "module_name": "JCOP 4.5 on P71D600",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "3/11/2024",
-    "validation_dates": [
-      "3/11/2024"
-    ],
-    "sunset_date": "3/10/2029",
-    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy.",
     "description": "The Module, validated to FIPS 140-3 overall Level 3, is a single chip module named P71D600 implementing the GlobalPlatform operational environment (Card Manager (ISD/SSD)) and the applications: NXP IoT applet v7.2.22 and NXP SEMS Lite applet v2.0.2.11.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Physical security: Level 4"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "JCOP 4.5 on P71D600",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2024_010424_0643 signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4679.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/10/2029",
+    "validation_date": "3/11/2024",
+    "validation_dates": [
+      "3/11/2024"
+    ],
     "validation_history": [
       {
         "date": "3/11/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "NXP Semiconductors, Inc.",
-      "website_url": "http://www.nxp.com",
       "address_lines": [
         "Troplowitzstrasse 20",
         "Hamburg D-22529",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Tim 't Hart",
       "contact_email": "tim.t.hart@nxp.com",
-      "contact_phone": "31639186402"
+      "contact_name": "Tim 't Hart",
+      "contact_phone": "31639186402",
+      "country": "Germany",
+      "name": "NXP Semiconductors, Inc.",
+      "website_url": "http://www.nxp.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "NXP Semiconductors, Inc."
   }
 }

@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1177"
   },
   "certificate": {
-    "certificate_number": "1177",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1177",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1177",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1177.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "Luna® PCM",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "8/31/2009, 5/17/2010",
-    "validation_dates": [
-      "8/31/2009",
-      "5/17/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Luna PCM cryptographic module is a multi-chip standalone hardware cryptographic module in the form of a PCMCIA card that typically resides within a custom computing or secure communications appliance. It is contained in its own secure enclosure that provides physical resistance to tampering. The module provides secure key generation and storage for symmetric keys and asymmetric key pairs along with symmetric and asymmetric cryptographic services. Access to key material and cryptographic services for users and user application software is provided indirectly through the host appliance.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1177.pdf"
-      },
-      {
-        "label": "Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1177.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/31/2009",
-        "type": "Initial",
-        "lab": "SAIC-VA"
-      },
-      {
-        "date": "5/17/2010",
-        "type": "Update",
-        "lab": ""
-      }
-    ],
-    "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet-inc.com",
-      "address_lines": [
-        "20 Colonnade Road",
-        "Suite 200",
-        "Ottawa, Ontario K2E 7M6",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Terry Fletcher",
-      "contact_email": "tfletcher@ca.safenet-inc.com",
-      "contact_phone": "613-221-5009"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -90,6 +26,70 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1177",
+    "certificate_number": "1177",
+    "dataset": "historical",
+    "description": "The Luna PCM cryptographic module is a multi-chip standalone hardware cryptographic module in the form of a PCMCIA card that typically resides within a custom computing or secure communications appliance. It is contained in its own secure enclosure that provides physical resistance to tampering. The module provides secure key generation and storage for symmetric keys and asymmetric key pairs along with symmetric and asymmetric cryptographic services. Access to key material and cryptographic services for users and user application software is provided indirectly through the host appliance.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® PCM",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1177",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1177.pdf"
+      },
+      {
+        "label": "Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1177.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1177.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/31/2009, 5/17/2010",
+    "validation_dates": [
+      "8/31/2009",
+      "5/17/2010"
+    ],
+    "validation_history": [
+      {
+        "date": "8/31/2009",
+        "lab": "SAIC-VA",
+        "type": "Initial"
+      },
+      {
+        "date": "5/17/2010",
+        "lab": "",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "20 Colonnade Road",
+        "Suite 200",
+        "Ottawa, Ontario K2E 7M6",
+        "Canada"
+      ],
+      "contact_email": "tfletcher@ca.safenet-inc.com",
+      "contact_name": "Terry Fletcher",
+      "contact_phone": "613-221-5009",
+      "country": "Canada",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet-inc.com"
+    },
+    "vendor_name": "SafeNet, Inc."
   }
 }

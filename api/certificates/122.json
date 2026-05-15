@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/122"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "none",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When configured for DSS Authentication and using the listed FIPS-Approved algorithms",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/122",
     "certificate_number": "122",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/122",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/122",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp122.pdf",
-    "vendor_name": "IBM® Corporation",
-    "module_name": "IBM 4758-013 PCI Cryptographic Coprocessor with CP/Q++ (Layer 2)",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "11/15/2000",
-    "validation_dates": [
-      "11/15/2000"
-    ],
-    "sunset_date": null,
-    "caveat": "When configured for DSS Authentication and using the listed FIPS-Approved algorithms",
     "description": "The 4758 secure coprocessor is a state-of-the-art, tamper-sensing and responding, programmable PCI card. Its specialized cryptographic electronics, along with a microprocessor, memory, and random number generator are housed within a tamper-responding environment to provide a highly secure subsystem in which data processing and cryptography can be performed.",
-    "software_versions": null,
-    "hardware_versions": "ID: P/N 04K9077 (FIPS 140-1 Cert. #81), Miniboot 0 version A, Miniboot 1 version A, CP/Q++ v1.26",
+    "embodiment": "Multi-chip embedded",
     "firmware_versions": null,
-    "security_level_exceptions": [
-      "Self Tests: Level 4"
-    ],
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": "ID: P/N 04K9077 (FIPS 140-1 Cert. #81), Miniboot 0 version A, Miniboot 1 version A, CP/Q++ v1.26",
+    "module_name": "IBM 4758-013 PCI Cryptographic Coprocessor with CP/Q++ (Layer 2)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/122",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,38 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt122.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Self Tests: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp122.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/15/2000",
+    "validation_dates": [
+      "11/15/2000"
+    ],
     "validation_history": [
       {
         "date": "11/15/2000",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "IBM® Corporation",
-      "website_url": "http://www.ibm.com/security/cryptocards",
       "address_lines": [
         "2455 South Rd",
         "Mail Station P330",
         "Poughkeepsie, NY 12601",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Barry Ward",
       "contact_email": "bkward@us.ibm.com",
-      "contact_phone": "845-435-4881"
+      "contact_name": "Barry Ward",
+      "contact_phone": "845-435-4881",
+      "country": "USA",
+      "name": "IBM® Corporation",
+      "website_url": "http://www.ibm.com/security/cryptocards"
     },
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "none",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "IBM® Corporation"
   }
 }

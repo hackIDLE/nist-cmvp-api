@@ -1,39 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2066"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2066",
     "certificate_number": "2066",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2066",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2066",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2066.pdf",
-    "vendor_name": "Kanguru Solutions",
-    "module_name": "Kanguru Defender Elite 200™",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "12/24/2013, 2/28/2014, 6/5/2014",
-    "validation_dates": [
-      "12/24/2013",
-      "2/28/2014",
-      "6/5/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Kanguru Defender Elite 200™ is a 256-bit AES hardware encrypted USB flash drive. It is used to securely store sensitive data housed on the device. It can also be used as a secure platform for remote access and virtualized applications run directly from the device. The device supports onboard hardware random number generation, RSA, HMAC and algorithms.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Kanguru Defender Elite 200™",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2066",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -44,50 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0036.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2066.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/24/2013, 2/28/2014, 6/5/2014",
+    "validation_dates": [
+      "12/24/2013",
+      "2/28/2014",
+      "6/5/2014"
+    ],
     "validation_history": [
       {
         "date": "12/24/2013",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/28/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "6/5/2014",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Kanguru Solutions",
-      "website_url": "http://www.kanguru.com",
       "address_lines": [
         "1360 Main Street",
         "Millis, MA 02054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Nate Cote",
       "contact_email": "natec@kanguru.com",
-      "contact_phone": "508-376-4245"
+      "contact_name": "Nate Cote",
+      "contact_phone": "508-376-4245",
+      "country": "USA",
+      "name": "Kanguru Solutions",
+      "website_url": "http://www.kanguru.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Kanguru Solutions"
   }
 }

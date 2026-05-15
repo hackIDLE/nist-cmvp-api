@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184"
   },
   "certificate": {
-    "certificate_number": "2184",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf",
-    "vendor_name": "Sonus Networks, Inc.",
-    "module_name": "SBC 5110 and 5210 Session Border Controllers",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "6/25/2014",
-    "validation_dates": [
-      "6/25/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode",
-    "description": "The SBC 5110 and 5210 Session Border Controllers are high-performance air-cooled, 2U, IP encryption appliances that provide secure SIP-based communications with robust security, reduced latency, real-time encryption (VOIP signaling and media traffic), media transcoding, flexible SIP session routing & policy management.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/25/2014",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Sonus Networks, Inc.",
-      "website_url": "http://www.sonus.net",
-      "address_lines": [
-        "4 Technology Park Drive",
-        "Westford, MA 01886",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Sandeep Kaushik",
-      "contact_email": "sandeepk@sonusnet.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -86,6 +28,64 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184",
+    "certificate_number": "2184",
+    "dataset": "historical",
+    "description": "The SBC 5110 and 5210 Session Border Controllers are high-performance air-cooled, 2U, IP encryption appliances that provide secure SIP-based communications with robust security, reduced latency, real-time encryption (VOIP signaling and media traffic), media transcoding, flexible SIP session routing & policy management.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SBC 5110 and 5210 Session Border Controllers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/25/2014",
+    "validation_dates": [
+      "6/25/2014"
+    ],
+    "validation_history": [
+      {
+        "date": "6/25/2014",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4 Technology Park Drive",
+        "Westford, MA 01886",
+        "USA"
+      ],
+      "contact_email": "sandeepk@sonusnet.com",
+      "contact_name": "Sandeep Kaushik",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Sonus Networks, Inc.",
+      "website_url": "http://www.sonus.net"
+    },
+    "vendor_name": "Sonus Networks, Inc."
   }
 }

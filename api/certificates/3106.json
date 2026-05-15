@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3106"
   },
   "certificate": {
-    "certificate_number": "3106",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3106",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3106",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3106.pdf",
-    "vendor_name": "Distech Controls Inc.",
-    "module_name": "Distech SSL Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "1/9/2018",
-    "validation_dates": [
-      "1/9/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Distech SSL Cryptographic Module provides cryptographic functionality to Distech's series of building management appliances. The module is classified under FIPS 140-2 as a firmware based, multichip-standalone module embodiment.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3106.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/9/2018",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
-      }
-    ],
-    "vendor": {
-      "name": "Distech Controls Inc.",
-      "website_url": "http://www.distech-controls.com",
-      "address_lines": [
-        "4205 Place de Java",
-        "Brossard, QC J4Y 0C4",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Mathieu Houle",
-      "contact_email": "mhoule@Distech-controls.com",
-      "contact_phone": "+1-450-444-9898"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -82,6 +26,62 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3106",
+    "certificate_number": "3106",
+    "dataset": "historical",
+    "description": "The Distech SSL Cryptographic Module provides cryptographic functionality to Distech's series of building management appliances. The module is classified under FIPS 140-2 as a firmware based, multichip-standalone module embodiment.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Distech SSL Cryptographic Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3106",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3106.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3106.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/9/2018",
+    "validation_dates": [
+      "1/9/2018"
+    ],
+    "validation_history": [
+      {
+        "date": "1/9/2018",
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4205 Place de Java",
+        "Brossard, QC J4Y 0C4",
+        "Canada"
+      ],
+      "contact_email": "mhoule@Distech-controls.com",
+      "contact_name": "Mathieu Houle",
+      "contact_phone": "+1-450-444-9898",
+      "country": "Canada",
+      "name": "Distech Controls Inc.",
+      "website_url": "http://www.distech-controls.com"
+    },
+    "vendor_name": "Distech Controls Inc."
   }
 }

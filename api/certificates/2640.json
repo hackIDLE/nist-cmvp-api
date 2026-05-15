@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2640"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy. The protocol TLS shall not be used when operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2640",
     "certificate_number": "2640",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2640",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2640",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2640.pdf",
-    "vendor_name": "nCipher Security Limited",
-    "module_name": "nShield F3 6000e, nShield F3 1500e, nShield F3 500e, nShield F3 10e, nShield F3 6000e for nShield Connect, nShield F3 1500e for nShield Connect and nShield F3 500e for nShield Connect",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "5/13/2016, 1/29/2020",
-    "validation_dates": [
-      "5/13/2016",
-      "1/29/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy. The protocol TLS shall not be used when operated in FIPS mode",
     "description": "The nShield modules: nShield F3 10e, nShield F3 500e, nShield F3 1500e, nShield F3 6000e, nShield F3 500e for nShield Connect, nShield F3 1500e for nShield Connect, nShield F3 6000e for nShield Connect are tamper evident and tamper responsive Hardware Security Modules which provide support for the widest range of cryptographic algorithms, application programming interfaces (APIs) and host operating systems, enabling the devices to be used with virtually any business application. The units are identical in operation and only vary in the processing speed.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "nShield F3 6000e, nShield F3 1500e, nShield F3 500e, nShield F3 10e, nShield F3 6000e for nShield Connect, nShield F3 1500e for nShield Connect and nShield F3 500e for nShield Connect",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2640",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2640.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/13/2016, 1/29/2020",
+    "validation_dates": [
+      "5/13/2016",
+      "1/29/2020"
+    ],
     "validation_history": [
       {
         "date": "5/13/2016",
-        "type": "Initial",
-        "lab": "DXC Technology"
+        "lab": "DXC Technology",
+        "type": "Initial"
       },
       {
         "date": "1/29/2020",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "nCipher Security Limited",
-      "website_url": "http://www.ncipher.com",
       "address_lines": [
         "One Station Square",
         "Suite 710",
         "Cambridge, FL CB1 2GA",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "[email protected]",
       "contact_email": "sales@ncipher.com",
-      "contact_phone": null
+      "contact_name": "[email protected]",
+      "contact_phone": null,
+      "country": "United Kingdom",
+      "name": "nCipher Security Limited",
+      "website_url": "http://www.ncipher.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "nCipher Security Limited"
   }
 }

@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4646"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4646",
     "certificate_number": "4646",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4646",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4646",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4646.pdf",
-    "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
-    "module_name": "RSA BSAFE® Crypto-J JSAFE and JCE Software Module 6.2.5",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/25/2023, 12/21/2023",
-    "validation_dates": [
-      "10/25/2023",
-      "12/21/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "description": "RSA BSAFE Crypto-J security software is designed to help protect sensitive data as it is stored using strong encryption techniques to provide a persistent level of protection. It supports a wide range of industry standard encryption algorithms offering Java developers the flexibility to choose the option most appropriate to meet their requirements.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RSA BSAFE® Crypto-J JSAFE and JCE Software Module 6.2.5",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4646",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,45 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4646.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/25/2023, 12/21/2023",
+    "validation_dates": [
+      "10/25/2023",
+      "12/21/2023"
+    ],
     "validation_history": [
       {
         "date": "10/25/2023",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
       },
       {
         "date": "12/21/2023",
-        "type": "Update",
-        "lab": "Gossamer Security Solutions"
+        "lab": "Gossamer Security Solutions",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Dell Australia Pty Limited, BSAFE Product Team",
-      "website_url": "http://www.dell.com",
       "address_lines": [
         "Building A, 207 Pacific Highway",
         "St Leonards, New South Wales 2065",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "BSAFE FIPS Program",
       "contact_email": "bsafe-fips-program@dell.com",
-      "contact_phone": null
+      "contact_name": "BSAFE FIPS Program",
+      "contact_phone": null,
+      "country": "Australia",
+      "name": "Dell Australia Pty Limited, BSAFE Product Team",
+      "website_url": "http://www.dell.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team"
   }
 }

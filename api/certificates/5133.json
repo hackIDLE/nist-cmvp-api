@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133"
   },
   "certificate": {
-    "certificate_number": "5133",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf",
-    "vendor_name": "Kingston Technology Company, Inc.",
-    "module_name": "IronKey Keypad 200 Series",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "1/14/2026",
-    "validation_dates": [
-      "1/14/2026"
-    ],
-    "sunset_date": "12/15/2029",
-    "caveat": "None",
-    "description": "The IronKey Keypad 200 Series are encrypted storage devices that provide a secure way to store and transfer data. User authentication is self-contained via an onboard keypad. User data is protected by hardware-based 256-bit AES encryption to secure sensitive information in the event that the drive is lost or stolen.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/14/2026",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Kingston Technology Company, Inc.",
-      "website_url": "http://www.kingston.com/en",
-      "address_lines": [
-        "17600 Newhope Street",
-        "Fountain Valley, CA 92708",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Jason J. Chen",
-      "contact_email": "jason_chen@kingston.com",
-      "contact_phone": "714-445-3449"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 9,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 9
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -87,6 +33,60 @@
       "A777 | PBKDFv2(NIST SP 800-1327) | HMAC-SHA-1 | 1 in 10,000,000(~23 bits) | Derivation of the KEK. Conforms to FIPS 140-3 Implementation Guidance (IG)D.N:the module supports option 2a as documented in SP 800-132§5.4",
       "3127 | SHS(FIPS 180-48) | SHA-1 | N/A | Primitive within HMAC-SHA-1",
       "CKG | NIST SP-800-1339 | Per Section4 | The unmodified output fromSP800-90A DRBG(256bits) | The unmodified output of theDRBG is used for generating symmetric keys"
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
+    "certificate_number": "5133",
+    "dataset": "active",
+    "description": "The IronKey Keypad 200 Series are encrypted storage devices that provide a secure way to store and transfer data. User authentication is self-contained via an onboard keypad. User data is protected by hardware-based 256-bit AES encryption to secure sensitive information in the event that the drive is lost or stolen.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IronKey Keypad 200 Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5133",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5133.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/15/2029",
+    "validation_date": "1/14/2026",
+    "validation_dates": [
+      "1/14/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/14/2026",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "17600 Newhope Street",
+        "Fountain Valley, CA 92708",
+        "USA"
+      ],
+      "contact_email": "jason_chen@kingston.com",
+      "contact_name": "Jason J. Chen",
+      "contact_phone": "714-445-3449",
+      "country": "USA",
+      "name": "Kingston Technology Company, Inc.",
+      "website_url": "http://www.kingston.com/en"
+    },
+    "vendor_name": "Kingston Technology Company, Inc."
   }
 }

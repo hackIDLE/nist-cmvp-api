@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3000"
   },
   "certificate": {
-    "certificate_number": "3000",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3000",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3000",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3000.pdf",
-    "vendor_name": "Siemens Canada Ltd.",
-    "module_name": "RUGGEDCOM Ethernet Switches and RUGGEDCOM Serial Device Server",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "8/21/2017",
-    "validation_dates": [
-      "8/21/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3. The tamper evident seals and baffles installed as indicated in the Security Policy",
-    "description": "The RUGGEDCOM Ethernet Switches and RUGGEDCOM Serial Device Server are utility-grade, fully-managed Ethernet devices designed to operate reliably in electrically harsh and climatically demanding environments. The devices’ rugged hardware design, coupled with the embedded Rugged Operating System (ROS®) version 4.2.1.F, provides improved system reliability and advanced cybersecurity and networking features. This makes them ideally suited for creating secure Ethernet networks for mission-critical, real-time control applications.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3000.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/21/2017",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
-      }
-    ],
-    "vendor": {
-      "name": "Siemens Canada Ltd.",
-      "website_url": "http://www.siemens.com",
-      "address_lines": [
-        "300 Applewood Crescent",
-        "Concord, ON L4K 5C7",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Roy Zhang",
-      "contact_email": "lei.lzzhang@siemens.com",
-      "contact_phone": "905-482-4548"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +29,62 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3. The tamper evident seals and baffles installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3000",
+    "certificate_number": "3000",
+    "dataset": "historical",
+    "description": "The RUGGEDCOM Ethernet Switches and RUGGEDCOM Serial Device Server are utility-grade, fully-managed Ethernet devices designed to operate reliably in electrically harsh and climatically demanding environments. The devices’ rugged hardware design, coupled with the embedded Rugged Operating System (ROS®) version 4.2.1.F, provides improved system reliability and advanced cybersecurity and networking features. This makes them ideally suited for creating secure Ethernet networks for mission-critical, real-time control applications.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RUGGEDCOM Ethernet Switches and RUGGEDCOM Serial Device Server",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3000",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3000.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3000.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/21/2017",
+    "validation_dates": [
+      "8/21/2017"
+    ],
+    "validation_history": [
+      {
+        "date": "8/21/2017",
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "300 Applewood Crescent",
+        "Concord, ON L4K 5C7",
+        "Canada"
+      ],
+      "contact_email": "lei.lzzhang@siemens.com",
+      "contact_name": "Roy Zhang",
+      "contact_phone": "905-482-4548",
+      "country": "Canada",
+      "name": "Siemens Canada Ltd.",
+      "website_url": "http://www.siemens.com"
+    },
+    "vendor_name": "Siemens Canada Ltd."
   }
 }

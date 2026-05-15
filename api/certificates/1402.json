@@ -1,32 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1402"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1402",
     "certificate_number": "1402",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1402",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1402",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1402.pdf",
-    "vendor_name": "IBM Internet Security Systems, Inc.",
-    "module_name": "SiteProtector Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "9/15/2010, 12/7/2011",
-    "validation_dates": [
-      "9/15/2010",
-      "12/7/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "IBM Proventia® Management SiteProtectorTM system is a security management system that provides centralized command and control, analysis, reporting and workflow for all ISS IBM Protection devices and select third-party security solutions including network IPS, Network Multi-Function, Server, Endpoint, Vulnerability Assessment, Application Assessment, and DLP. All of these IBM ISS security components have a common update and policy management system as well. The SiteProtector system provides an in-depth security event analysis capability that is specific to the needs of security analysts.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SiteProtector Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1402",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,51 +46,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1402.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1402.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/15/2010, 12/7/2011",
+    "validation_dates": [
+      "9/15/2010",
+      "12/7/2011"
+    ],
     "validation_history": [
       {
         "date": "9/15/2010",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       },
       {
         "date": "12/7/2011",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "IBM Internet Security Systems, Inc.",
-      "website_url": "http://www.iss.net",
       "address_lines": [
         "6303 Barfield Road",
         "Atlanta, GA 30328",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Scott Sinsel",
       "contact_email": "ssinsel@us.ibm.com",
-      "contact_phone": "404-236-2722"
+      "contact_name": "Scott Sinsel",
+      "contact_phone": "404-236-2722",
+      "country": "USA",
+      "name": "IBM Internet Security Systems, Inc.",
+      "website_url": "http://www.iss.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "IBM Internet Security Systems, Inc."
   }
 }

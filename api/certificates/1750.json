@@ -1,34 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1750"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DRBG",
+      "RSA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1750",
     "certificate_number": "1750",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1750",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1750",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1750.pdf",
-    "vendor_name": "Athena Smartcard Inc.",
-    "module_name": "IDProtect Key with LASER PKI",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "7/17/2012, 4/12/2013, 5/28/2014, 3/7/2018",
-    "validation_dates": [
-      "7/17/2012",
-      "4/12/2013",
-      "5/28/2014",
-      "3/7/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "IDProtect is a Cryptographic Module based on the Athena OS755 Java Card smart card operating system with 72KB of EEPROM. IDProtect is compliant with the latest Java Card 2.2.2 and GlobalPlatform 2.1.1 specifications and is validated to FIPS 140-2 Level 3. IDProtect supports FIPS approved DRBG, SHA-1 and all SHA-2, TDES, AES, RSA, ECDSA and ECC CDC, and RSA and ECC key generation. IDProtect exposes PKI and Biometric APIs and is designed for high-performance government and enterprise smart card applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IDProtect Key with LASER PKI",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1750",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,60 +44,55 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0019.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1750.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/17/2012, 4/12/2013, 5/28/2014, 3/7/2018",
+    "validation_dates": [
+      "7/17/2012",
+      "4/12/2013",
+      "5/28/2014",
+      "3/7/2018"
+    ],
     "validation_history": [
       {
         "date": "7/17/2012",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/12/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "5/28/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "3/7/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Athena Smartcard Inc.",
-      "website_url": "http://www.athena-scs.com",
       "address_lines": [
         "16615 Lark Avenue",
         "Suite 202",
         "Los Gatos, CA 95032",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Stéphanie Motré",
       "contact_email": null,
-      "contact_phone": "408-786-1028"
+      "contact_name": "Stéphanie Motré",
+      "contact_phone": "408-786-1028",
+      "country": "USA",
+      "name": "Athena Smartcard Inc.",
+      "website_url": "http://www.athena-scs.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DRBG",
-      "RSA"
-    ]
+    "vendor_name": "Athena Smartcard Inc."
   }
 }

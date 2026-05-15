@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501"
   },
   "certificate": {
-    "certificate_number": "4501",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4501.pdf",
-    "vendor_name": "Maximus Federal",
-    "module_name": "Maximus Federal Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/2/2023",
-    "validation_dates": [
-      "5/2/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "Maximus Federal Cryptographic Module is a standards-based cryptographic engine used for the Maximus Intelligent Virtual Assistant and Maximus Cloud. The module delivers core cryptographic functions to Maximus platforms and features robust algorithm support.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4501.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/2/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Maximus Federal",
-      "website_url": "http://www.maximus.com/iva",
-      "address_lines": [
-        "1600 Tysons Blvd",
-        "Suite 400",
-        "McLean, VA 22102",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Tiffany Obenhein",
-      "contact_email": "fedramp@maximus.com",
-      "contact_phone": "703-868-0430"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +27,64 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501",
+    "certificate_number": "4501",
+    "dataset": "historical",
+    "description": "Maximus Federal Cryptographic Module is a standards-based cryptographic engine used for the Maximus Intelligent Virtual Assistant and Maximus Cloud. The module delivers core cryptographic functions to Maximus platforms and features robust algorithm support.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Maximus Federal Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4501",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4501.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2023_010623_0642.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4501.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/2/2023",
+    "validation_dates": [
+      "5/2/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "5/2/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1600 Tysons Blvd",
+        "Suite 400",
+        "McLean, VA 22102",
+        "USA"
+      ],
+      "contact_email": "fedramp@maximus.com",
+      "contact_name": "Tiffany Obenhein",
+      "contact_phone": "703-868-0430",
+      "country": "USA",
+      "name": "Maximus Federal",
+      "website_url": "http://www.maximus.com/iva"
+    },
+    "vendor_name": "Maximus Federal"
   }
 }

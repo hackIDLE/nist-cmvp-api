@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/260"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/260",
     "certificate_number": "260",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/260",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/260",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp260.pdf",
-    "vendor_name": "Motorola, Inc.",
-    "module_name": "Encryption Services Module",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "10/8/2002",
-    "validation_dates": [
-      "10/8/2002"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Encryption Services Module is incorporated into the operating platform software of the Accompli 009 -- the first wireless communications device to incorporate tri-band GSM and GPRS protocols, telephone functionality, Internet access, e- mail, Triple-DES encryption, WAP browser and short message service (SMS) with a full QWERTY keyboard and 256-color screen.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Key Mangement: Level 3",
-      "Software Security: Level 3",
-      "Operating System Security: Tested as meeting Level 1 with Microware OS-9, Version 2.2 (single user mode)"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Encryption Services Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/260",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,41 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt260.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Key Mangement: Level 3",
+      "Software Security: Level 3",
+      "Operating System Security: Tested as meeting Level 1 with Microware OS-9, Version 2.2 (single user mode)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp260.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/8/2002",
+    "validation_dates": [
+      "10/8/2002"
+    ],
     "validation_history": [
       {
         "date": "10/8/2002",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Motorola, Inc.",
-      "website_url": "http://www.motorola.com",
       "address_lines": [
         "200 N. Center East",
         "Suite 400",
         "Alpharetta, GA 30022",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Christopher Yasko",
       "contact_email": "Chris.Yasko@motorola.com",
-      "contact_phone": "770-521-5150"
+      "contact_name": "Christopher Yasko",
+      "contact_phone": "770-521-5150",
+      "country": "USA",
+      "name": "Motorola, Inc.",
+      "website_url": "http://www.motorola.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Motorola, Inc."
   }
 }

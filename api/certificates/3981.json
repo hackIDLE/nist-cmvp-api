@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3981"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with module [Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Windows Server 2016 Standard] validated to FIPS 140-2 under Cert. #2936 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3981",
     "certificate_number": "3981",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3981",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3981",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3981.pdf",
-    "vendor_name": "Entrust Corporation",
-    "module_name": "Entrust Authority™ Security Kernel",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "7/15/2021",
-    "validation_dates": [
-      "7/15/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with module [Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Windows Server 2016 Standard] validated to FIPS 140-2 under Cert. #2936 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The Security Kernel is a C++ implementation of cryptographic functions accessible by an object-oriented API. Depending on configuration, the algorithms may be implemented in software, hardware, or both.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Entrust Authority™ Security Kernel",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3981",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,16 +40,27 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3981.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/15/2021",
+    "validation_dates": [
+      "7/15/2021"
+    ],
     "validation_history": [
       {
         "date": "7/15/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Entrust Corporation",
-      "website_url": "http://www.entrust.com",
       "address_lines": [
         "Two Lincoln Centre",
         "5420 LBJ Freeway",
@@ -56,25 +68,13 @@
         "Dallas, TX 75240",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Yuefei Lu",
       "contact_email": "Yuefei.Lu@entrust.com",
-      "contact_phone": "613-270-3027"
+      "contact_name": "Yuefei Lu",
+      "contact_phone": "613-270-3027",
+      "country": "USA",
+      "name": "Entrust Corporation",
+      "website_url": "http://www.entrust.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Entrust Corporation"
   }
 }

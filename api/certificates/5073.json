@@ -1,87 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5073"
   },
   "certificate": {
-    "certificate_number": "5073",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5073",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5073",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5073.pdf",
-    "vendor_name": "ICU Medical",
-    "module_name": "ICU Medical FIPS Module for OpenSSL 3",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/26/2025, 11/26/2025, 4/2/2026",
-    "validation_dates": [
-      "9/26/2025",
-      "11/26/2025",
-      "4/2/2026"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The ICU Medical FIPS Module for OpenSSL is a general-purpose cryptographic module integrated in ICU Medical products (Plum Solo, Plum Duo, Plum 360, Medfusion 5000, CADD Solis) to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5073.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/26/2025",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "11/26/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "4/2/2026",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "ICU Medical",
-      "website_url": "http://www.icumed.com",
-      "address_lines": [
-        "951 Calle Amanecer",
-        "San Clemente, CA 92673",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Chaitanya Srinivasamurthy",
-      "contact_email": "chaitanya.srinivasamurthy@icumed.com",
-      "contact_phone": "224-706-2518"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 78,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 78
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -178,6 +112,72 @@
       "SHAKE-256 | A7142 | Supports Bit-Oriented Messages - No Supports Empty Message - Yes Supports Bit-Oriented Output - No Output Length - Output Length:16-65536 Increment 8 | FIPS 202",
       "TLS v1.2 KDF RFC7627 (CVL) | A7142 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 Key Block Length-Key Block Length:1024 | SP 800-135 Rev.1",
       "TLS v1.3 KDF (CVL) | A7142 | HMAC Algorithm-SHA2-256,SHA2-384 KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135 Rev.1"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5073",
+    "certificate_number": "5073",
+    "dataset": "active",
+    "description": "The ICU Medical FIPS Module for OpenSSL is a general-purpose cryptographic module integrated in ICU Medical products (Plum Solo, Plum Duo, Plum 360, Medfusion 5000, CADD Solis) to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ICU Medical FIPS Module for OpenSSL 3",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5073",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5073.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5073.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "9/26/2025, 11/26/2025, 4/2/2026",
+    "validation_dates": [
+      "9/26/2025",
+      "11/26/2025",
+      "4/2/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "9/26/2025",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "11/26/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "4/2/2026",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "951 Calle Amanecer",
+        "San Clemente, CA 92673",
+        "USA"
+      ],
+      "contact_email": "chaitanya.srinivasamurthy@icumed.com",
+      "contact_name": "Chaitanya Srinivasamurthy",
+      "contact_phone": "224-706-2518",
+      "country": "USA",
+      "name": "ICU Medical",
+      "website_url": "http://www.icumed.com"
+    },
+    "vendor_name": "ICU Medical"
   }
 }

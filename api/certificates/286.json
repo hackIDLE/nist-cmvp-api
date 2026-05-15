@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/286"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/286",
     "certificate_number": "286",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/286",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/286",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp286.pdf",
-    "vendor_name": "Novell, Inc.",
-    "module_name": "Novell International Cryptographic Infrastructure (NICI)",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "1/17/2003, 1/22/2003, 1/31/2006",
-    "validation_dates": [
-      "1/17/2003",
-      "1/22/2003",
-      "1/31/2006"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Novell International Cryptographic Infrastructure (NICI) for Solaris is a cryptographic module providing keys, algorithms, various key storage and usage mechanisms, and a large-scale key management system. Supported Novell services utilizing NICI includes eDirectory, Novell Modular Authentication Service (NMAS), Public Key Infrastructure Services, Novell SecretStore, and TLS/SSL.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Operating System Security: Tested as meeting Level 2 with Sun SPARC Ultra-10 running Sun Solaris 8 Operating System (EAL 4 configuration)"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Novell International Cryptographic Infrastructure (NICI)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/286",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,50 +40,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt286.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Operating System Security: Tested as meeting Level 2 with Sun SPARC Ultra-10 running Sun Solaris 8 Operating System (EAL 4 configuration)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp286.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/17/2003, 1/22/2003, 1/31/2006",
+    "validation_dates": [
+      "1/17/2003",
+      "1/22/2003",
+      "1/31/2006"
+    ],
     "validation_history": [
       {
         "date": "1/17/2003",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "1/22/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/31/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Novell, Inc.",
-      "website_url": "http://www.novell.com/security",
       "address_lines": [
         "1800 South Novell Place",
         "Provo, UT 84606",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Developer Support",
       "contact_email": "devsup@novell.com",
-      "contact_phone": "801-861-7000"
+      "contact_name": "Developer Support",
+      "contact_phone": "801-861-7000",
+      "country": "USA",
+      "name": "Novell, Inc.",
+      "website_url": "http://www.novell.com/security"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Novell, Inc."
   }
 }

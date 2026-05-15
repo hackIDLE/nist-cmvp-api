@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4449"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4449",
     "certificate_number": "4449",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4449",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4449",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4449.pdf",
-    "vendor_name": "Nokia XHAUL",
-    "module_name": "Wavence Microwave radio cryptoModule",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "3/14/2023",
-    "validation_dates": [
-      "3/14/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "The cryptographic module is a solution for transformation of backhaul networks from TDM (Time-Division Multiplexing) to IP (Internet Protocol). It is a microwave digital radio that supports PDH (Plesiochronous Digital Hierarchy), SDH (Synchronous Digital Hierarchy), and packet data, i.e. Ethernet. The module implements end-to-end protection against loss of confidentiality along the radio path on Layer 1 of the OSI model.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Wavence Microwave radio cryptoModule",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4449",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4449.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/14/2023",
+    "validation_dates": [
+      "3/14/2023"
+    ],
     "validation_history": [
       {
         "date": "3/14/2023",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Nokia XHAUL",
-      "website_url": "http://www.nokia.com",
       "address_lines": [
         "Route de VilleJust",
         "Nozay 91620",
         "France"
       ],
-      "country": "France",
-      "contact_name": "Tom Loper",
       "contact_email": "tom.loper@nokia.com",
-      "contact_phone": "214-284-3608"
+      "contact_name": "Tom Loper",
+      "contact_phone": "214-284-3608",
+      "country": "France",
+      "name": "Nokia XHAUL",
+      "website_url": "http://www.nokia.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Nokia XHAUL"
   }
 }

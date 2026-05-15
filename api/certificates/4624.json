@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4624"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 13 of the Security Policy. The tamper evident labels installed as indicated in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4624",
     "certificate_number": "4624",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4624",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4624",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4624.pdf",
-    "vendor_name": "Aruba, a Hewlett Packard Enterprise company",
-    "module_name": "Aruba AP-304, AP-305, AP-314, AP-315, AP-334, AP-335, AP-365, and AP-367 Wireless Access Points",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "10/3/2023",
-    "validation_dates": [
-      "10/3/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 13 of the Security Policy. The tamper evident labels installed as indicated in the security policy",
     "description": "Aruba's 802.11ac Wi-Fi access points operate at gigabit speeds, offering extreme performance for mobile devices. In FIPS 140-2 mode, Aruba APs in conjunction with a Mobility Controller support the IEEE 802.11i/WPA2 client standard along with optional Suite B cryptography. Aruba APs also support wireless intrusion detection/prevention services and wireless mesh topologies.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aruba AP-304, AP-305, AP-314, AP-315, AP-334, AP-335, AP-365, and AP-367 Wireless Access Points",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4624",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4624.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/3/2023",
+    "validation_dates": [
+      "10/3/2023"
+    ],
     "validation_history": [
       {
         "date": "10/3/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Aruba, a Hewlett Packard Enterprise company",
-      "website_url": "http://www.arubanetworks.com",
       "address_lines": [
         "6280 America Center Dr",
         "San Jose, CA 95002",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Kevin Micciche",
       "contact_email": "kevin.micciche@hpe.com",
-      "contact_phone": "404-648-0062"
+      "contact_name": "Kevin Micciche",
+      "contact_phone": "404-648-0062",
+      "country": "USA",
+      "name": "Aruba, a Hewlett Packard Enterprise company",
+      "website_url": "http://www.arubanetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Aruba, a Hewlett Packard Enterprise company"
   }
 }

@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1776"
   },
   "certificate": {
-    "certificate_number": "1776",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1776",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1776",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1776.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "Luna® CA4",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "8/1/2012",
-    "validation_dates": [
-      "8/1/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Luna CA4 cryptographic module is a multi-chip standalone hardware cryptographic module in the form of a PCMCIA card that typically resides within a custom computing or secure communications appliance. It is contained in its own secure enclosure that provides physical resistance to tampering. The module provides secure key generation and storage for symmetric keys and asymmetric key pairs along with symmetric and asymmetric cryptographic services.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1776.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/1/2012",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet.com",
-      "address_lines": [
-        "20 Colonnade Road, Suite 200",
-        "Ottawa, ON K2E 7M6",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Mark Yakabuski",
-      "contact_email": "Mark.Yakabuski@safenet-inc.com",
-      "contact_phone": "613-614-3407"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -81,6 +27,60 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1776",
+    "certificate_number": "1776",
+    "dataset": "historical",
+    "description": "The Luna CA4 cryptographic module is a multi-chip standalone hardware cryptographic module in the form of a PCMCIA card that typically resides within a custom computing or secure communications appliance. It is contained in its own secure enclosure that provides physical resistance to tampering. The module provides secure key generation and storage for symmetric keys and asymmetric key pairs along with symmetric and asymmetric cryptographic services.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® CA4",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1776",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1776.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1776.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/1/2012",
+    "validation_dates": [
+      "8/1/2012"
+    ],
+    "validation_history": [
+      {
+        "date": "8/1/2012",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "20 Colonnade Road, Suite 200",
+        "Ottawa, ON K2E 7M6",
+        "Canada"
+      ],
+      "contact_email": "Mark.Yakabuski@safenet-inc.com",
+      "contact_name": "Mark Yakabuski",
+      "contact_phone": "613-614-3407",
+      "country": "Canada",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet.com"
+    },
+    "vendor_name": "SafeNet, Inc."
   }
 }

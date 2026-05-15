@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4617"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4617",
     "certificate_number": "4617",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4617",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4617",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4617.pdf",
-    "vendor_name": "Aruba, a Hewlett Packard Enterprise Company",
-    "module_name": "Hewlett Packard Enterprise OpenSSL Cryptographic Module on Ubuntu Linux",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/28/2023",
-    "validation_dates": [
-      "9/28/2023"
-    ],
-    "sunset_date": "7/11/2026",
-    "caveat": "When operated in FIPS mode. The module generates keys whose strengths are modified by available entropy",
     "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hewlett Packard Enterprise OpenSSL Cryptographic Module on Ubuntu Linux",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4617",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4617.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "7/11/2026",
+    "validation_date": "9/28/2023",
+    "validation_dates": [
+      "9/28/2023"
+    ],
     "validation_history": [
       {
         "date": "9/28/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Aruba, a Hewlett Packard Enterprise Company",
-      "website_url": "http://www.arubanetworks.com/",
       "address_lines": [
         "6280 America Center Drive",
         "San Jose, CA 95002",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Kevin Micciche",
       "contact_email": "kevin.micciche@hpe.com",
-      "contact_phone": "404-648-0062"
+      "contact_name": "Kevin Micciche",
+      "contact_phone": "404-648-0062",
+      "country": "USA",
+      "name": "Aruba, a Hewlett Packard Enterprise Company",
+      "website_url": "http://www.arubanetworks.com/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Aruba, a Hewlett Packard Enterprise Company"
   }
 }

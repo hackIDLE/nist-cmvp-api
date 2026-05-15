@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875",
     "certificate_number": "875",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp875.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "11/30/2007, 12/18/2007",
-    "validation_dates": [
-      "11/30/2007",
-      "12/18/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) is a FIPS 140-2 compliant, software-based, cryptographic module. DSSENH encapsulates several different cryptographic algorithms (including SHA-1, 3DES, DSA and Diffie-Hellman) in a cryptographic module accessible via the Microsoft CryptoAPI (CAPI).",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt875.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp875.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/30/2007, 12/18/2007",
+    "validation_dates": [
+      "11/30/2007",
+      "12/18/2007"
+    ],
     "validation_history": [
       {
         "date": "11/30/2007",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "12/18/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052-6399",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Dave Friant",
       "contact_email": "dave.friant@microsoft.com",
-      "contact_phone": "425-704-7984"
+      "contact_name": "Dave Friant",
+      "contact_phone": "425-704-7984",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

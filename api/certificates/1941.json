@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1941"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode when installed with Firmware v4.3 and with the tamper evidence seals installed as indicated in the Security Policy. No assurance of module integrity when operating in non-FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1941",
     "certificate_number": "1941",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1941",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1941",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1941.pdf",
-    "vendor_name": "IBM Internet Security Systems, Inc.",
-    "module_name": "Proventia GX Series Security Appliances",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "4/30/2013",
-    "validation_dates": [
-      "4/30/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode when installed with Firmware v4.3 and with the tamper evidence seals installed as indicated in the Security Policy. No assurance of module integrity when operating in non-FIPS mode.",
     "description": "The IBM Proventia Network Intrusion Prevention System (IPS) stops Internet threats before they impact your business and delivers protection to all three layers of the network: core, perimeter and remote segments. Preemptive protection, or protection that works ahead of the threat, is available from IBM Internet Security Systems through its proprietary combination of line-speed performance, security intelligence and a modular protection engine that enables security convergence.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Proventia GX Series Security Appliances",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1941",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0028.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1941.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/30/2013",
+    "validation_dates": [
+      "4/30/2013"
+    ],
     "validation_history": [
       {
         "date": "4/30/2013",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "IBM Internet Security Systems, Inc.",
-      "website_url": "http://www.iss.net",
       "address_lines": [
         "6303 Barfield Road",
         "Atlanta, GA 30328",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Scott Sinsel",
       "contact_email": "ssinsel@us.ibm.com",
-      "contact_phone": "404-236-2722"
+      "contact_name": "Scott Sinsel",
+      "contact_phone": "404-236-2722",
+      "country": "USA",
+      "name": "IBM Internet Security Systems, Inc.",
+      "website_url": "http://www.iss.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "IBM Internet Security Systems, Inc."
   }
 }

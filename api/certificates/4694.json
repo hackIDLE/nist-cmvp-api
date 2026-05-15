@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4694"
   },
   "certificate": {
-    "certificate_number": "4694",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4694",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4694",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4694.pdf",
-    "vendor_name": "Broadcom Inc.",
-    "module_name": "VMware's BoringCrypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/24/2024",
-    "validation_dates": [
-      "4/24/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "description": "VMware’s BoringCrypto Module is a versatile software library that implements and provides FIPS 140-2 Approved cryptographic functionalities to various VMware products and services.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4694.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2024_010524_0757.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/24/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Broadcom Inc.",
-      "website_url": "http://www.vmware.com",
-      "address_lines": [
-        "3401 Hillview Ave",
-        "Palo Alto, CA 94303",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Sunil Kumar Yadav",
-      "contact_email": "vcf.fips@broadcom.com",
-      "contact_phone": "+91 (80671) 47256"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +31,63 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4694",
+    "certificate_number": "4694",
+    "dataset": "active",
+    "description": "VMware’s BoringCrypto Module is a versatile software library that implements and provides FIPS 140-2 Approved cryptographic functionalities to various VMware products and services.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VMware's BoringCrypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4694",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4694.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2024_010524_0757.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4694.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/24/2024",
+    "validation_dates": [
+      "4/24/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "4/24/2024",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3401 Hillview Ave",
+        "Palo Alto, CA 94303",
+        "USA"
+      ],
+      "contact_email": "vcf.fips@broadcom.com",
+      "contact_name": "Sunil Kumar Yadav",
+      "contact_phone": "+91 (80671) 47256",
+      "country": "USA",
+      "name": "Broadcom Inc.",
+      "website_url": "http://www.vmware.com"
+    },
+    "vendor_name": "Broadcom Inc."
   }
 }

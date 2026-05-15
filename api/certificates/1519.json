@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1519"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1519",
     "certificate_number": "1519",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1519",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1519",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1519.pdf",
-    "vendor_name": "Code Corporation",
-    "module_name": "Code Reader 2500 FIPS and Code Reader 3500 FIPS",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "3/11/2011, 4/4/2011",
-    "validation_dates": [
-      "3/11/2011",
-      "4/4/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Code Corporation’s Code Reader 2500 FIPS or Code Reader 3500 FIPS bar code readers, when used in conjunction with a CodeXML® FIPS Bluetooth® Modem, provide an encrypted wireless bar code reading solution with a working range of up to 300 feet. Code Corporation’s FIPS bar code readers employ a FIPS approved AES-256 algorithm to generate per session keys to encrypt data and a separate key to encrypt overhead communications ensure that the connection between modem and bar code reader is highly secure. The FIPS code has been optimized to provide line speed communications over the wireless link.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Code Reader 2500 FIPS and Code Reader 3500 FIPS",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1519",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,46 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0004.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1519.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/11/2011, 4/4/2011",
+    "validation_dates": [
+      "3/11/2011",
+      "4/4/2011"
+    ],
     "validation_history": [
       {
         "date": "3/11/2011",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/4/2011",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Code Corporation",
-      "website_url": "http://www.codecorp.com",
       "address_lines": [
         "14870 S. Pony Express Rd.",
         "Suite 200",
         "Bluffdale, UT 84065",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tim Jackson",
       "contact_email": "tim.jackson@codecorp.com",
-      "contact_phone": "801-984-7865"
+      "contact_name": "Tim Jackson",
+      "contact_phone": "801-984-7865",
+      "country": "USA",
+      "name": "Code Corporation",
+      "website_url": "http://www.codecorp.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Code Corporation"
   }
 }

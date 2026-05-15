@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684",
     "certificate_number": "4684",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4684.pdf",
-    "vendor_name": "Thales",
-    "module_name": "Thales Luna K7 Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "4/2/2024, 7/7/2025",
-    "validation_dates": [
-      "4/2/2024",
-      "7/7/2025"
-    ],
-    "sunset_date": "4/1/2029",
-    "caveat": "When operated in approved mode",
     "description": "The Thales Luna K7 Cryptographic Module is a multi-chip embedded hardware cryptographic module in the form of a PCIe card which typically resides within a custom computing or secure communications appliance.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Thales Luna K7 Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,46 +40,47 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2024_010524_0757.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4684.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/1/2029",
+    "validation_date": "4/2/2024, 7/7/2025",
+    "validation_dates": [
+      "4/2/2024",
+      "7/7/2025"
+    ],
     "validation_history": [
       {
         "date": "4/2/2024",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "7/7/2025",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales",
-      "website_url": "http://cpl.thalesgroup.com",
       "address_lines": [
         "20 Colonnade Road",
         "Suite 200",
         "Ottawa, Ontario K2E 7M6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Security and Certifications Team",
       "contact_email": "securitycertifications@thalesgroup.com",
-      "contact_phone": "33-0-1-57-77-80-00"
+      "contact_name": "Security and Certifications Team",
+      "contact_phone": "33-0-1-57-77-80-00",
+      "country": "Canada",
+      "name": "Thales",
+      "website_url": "http://cpl.thalesgroup.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales"
   }
 }

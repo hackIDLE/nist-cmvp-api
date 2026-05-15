@@ -1,92 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249"
   },
   "certificate": {
-    "certificate_number": "4249",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf",
-    "vendor_name": "Nutanix, Inc.",
-    "module_name": "Nutanix Cryptographic Module for OpenSSL",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "6/13/2022, 5/11/2023, 6/27/2023",
-    "validation_dates": [
-      "6/13/2022",
-      "5/11/2023",
-      "6/27/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "The Nutanix Cryptographic Module for OpenSSL is a cryptographic software library, designated as a multi-chip standalone embodiment, and used in Nutanix, Inc. solutions to provide FIPS 140-2 Approved cryptographic algorithms and TLS secure communication.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2022_010722_0704_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/13/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "5/11/2023",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "6/27/2023",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Nutanix, Inc.",
-      "website_url": "http://www.nutanix.com",
-      "address_lines": [
-        "1740 Technology Drive",
-        "Suite 150",
-        "San Jose, CA 95110",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Matt Keller",
-      "contact_email": "fips@nutanix.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -98,6 +27,77 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249",
+    "certificate_number": "4249",
+    "dataset": "active",
+    "description": "The Nutanix Cryptographic Module for OpenSSL is a cryptographic software library, designated as a multi-chip standalone embodiment, and used in Nutanix, Inc. solutions to provide FIPS 140-2 Approved cryptographic algorithms and TLS secure communication.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Nutanix Cryptographic Module for OpenSSL",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2022_010722_0704_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "6/13/2022, 5/11/2023, 6/27/2023",
+    "validation_dates": [
+      "6/13/2022",
+      "5/11/2023",
+      "6/27/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "6/13/2022",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "5/11/2023",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "6/27/2023",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1740 Technology Drive",
+        "Suite 150",
+        "San Jose, CA 95110",
+        "USA"
+      ],
+      "contact_email": "fips@nutanix.com",
+      "contact_name": "Matt Keller",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Nutanix, Inc.",
+      "website_url": "http://www.nutanix.com"
+    },
+    "vendor_name": "Nutanix, Inc."
   }
 }

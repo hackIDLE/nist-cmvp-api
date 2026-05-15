@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/843"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/843",
     "certificate_number": "843",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/843",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/843",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp843.pdf",
-    "vendor_name": "iDirect",
-    "module_name": "7350 iNFINITI Satellite Router [1], iConnex-700 [2], iConnex-100 [3], M1D1-T Universal Line Card [4] and 8350 iNFINITI Satellite Router [5]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "10/18/2007, 2/6/2008, 12/23/2008",
-    "validation_dates": [
-      "10/18/2007",
-      "2/6/2008",
-      "12/23/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "An iDirect Time Division Multiple Access (TDMA) network is composed of a single outroute Single Channel Per Carrier (SCPC) and multiple inroute TDMA carriers. The iDirect TDMA network is optimized for satellite transmissions, squeezing the maximum performance out of the bandwidth provided by satellite links. The system is fully integrated with iDirectÆs Network Management System that provides configuration and monitoring functions. The iDirect network components consist of the Protocol Processor, Hub Line Card (also known as Universal Line Card), and the Ethernet switch with remote modem.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "7350 iNFINITI Satellite Router [1], iConnex-700 [2], iConnex-100 [3], M1D1-T Universal Line Card [4] and 8350 iNFINITI Satellite Router [5]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/843",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt843.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp843.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/18/2007, 2/6/2008, 12/23/2008",
+    "validation_dates": [
+      "10/18/2007",
+      "2/6/2008",
+      "12/23/2008"
+    ],
     "validation_history": [
       {
         "date": "10/18/2007",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "2/6/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "12/23/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "iDirect",
-      "website_url": "http://www.idirect.net",
       "address_lines": [
         "13865 Sunrise Valley Drive",
         "Herndon, VA 20171",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Chris Burdick",
       "contact_email": "cburdick@idirect.net",
-      "contact_phone": "703-648-8000"
+      "contact_name": "Chris Burdick",
+      "contact_phone": "703-648-8000",
+      "country": "USA",
+      "name": "iDirect",
+      "website_url": "http://www.idirect.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "iDirect"
   }
 }

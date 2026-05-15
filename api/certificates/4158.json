@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158",
     "certificate_number": "4158",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4158.pdf",
-    "vendor_name": "Intel Corporation",
-    "module_name": "Cryptographic Module for Intel® Converged Security and Manageability Engine (CSME)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Firmware-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/17/2022, 8/21/2023",
-    "validation_dates": [
-      "2/17/2022",
-      "8/21/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "The Cryptographic Module for Intel® Converged Security and Manageability Engine(CSME) (hereafter referred to as 'the module') is classified as a multiple-chip standalone firmware-hybrid module for FIPS 140-2 purpose. The module consists of both hardware and firmware. The hardware portion is the Converged Security Engine (CSE) and the firmware portion is the crypto driver process of the Manageability Engine (ME). The two portions form the logical cryptographic boundary and they combine as Converged Security and Manageability Engine (CSME) to perform cryptographic functions within the Cannon Point PCH applications executing on the CSME.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cryptographic Module for Intel® Converged Security and Manageability Engine (CSME)",
+    "module_type": "Firmware-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2022_010322_0121_Signed.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4158.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "2/17/2022, 8/21/2023",
+    "validation_dates": [
+      "2/17/2022",
+      "8/21/2023"
+    ],
     "validation_history": [
       {
         "date": "2/17/2022",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "8/21/2023",
-        "type": "Update",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Intel Corporation",
-      "website_url": "http://www.intel.com",
       "address_lines": [
         "2200 Mission College Blvd.",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Prashant Madhukar",
       "contact_email": "prashant.madhukar@intel.com",
-      "contact_phone": "408-765-2996"
+      "contact_name": "Prashant Madhukar",
+      "contact_phone": "408-765-2996",
+      "country": "USA",
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Intel Corporation"
   }
 }

@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1118"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1118",
     "certificate_number": "1118",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1118",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1118",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1118.pdf",
-    "vendor_name": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
-    "module_name": "TecSec PIV Eagle Card - Contactless",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "4/3/2009, 2/6/2014",
-    "validation_dates": [
-      "4/3/2009",
-      "2/6/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "TecSec PIV Eagle Card - Contactless is a cryptographic module that may be configured as a contact or contactless PIV application. With this unique solution, a dual-chip product can be created without changing the user experience that assures the information stored on the contact chip is not compromised through the contactless interface. The CM is based on the Athena OS755 Java Card smart card operating system that is compliant with the latest Java Card 2.2.2 and GlobalPlatform 2.1.1 specifications and FIPS 140-2 Level 2 (Level 4 for physical security).",
-    "security_level_exceptions": [
-      "Physical Security: Level 4"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "TecSec PIV Eagle Card - Contactless",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1118",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1118.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1118.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/3/2009, 2/6/2014",
+    "validation_dates": [
+      "4/3/2009",
+      "2/6/2014"
+    ],
     "validation_history": [
       {
         "date": "4/3/2009",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/6/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
-      "website_url": "http://www.tecsec.com",
       "address_lines": [
         "1048 Dead Run Drive",
         "McLean, VA 22101-2121",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ron Parsons",
       "contact_email": "ronp@tecsec.com",
-      "contact_phone": "301-639-5510"
+      "contact_name": "Ron Parsons",
+      "contact_phone": "301-639-5510",
+      "country": "USA",
+      "name": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
+      "website_url": "http://www.tecsec.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "TecSec, Atmel, CPI Card Group, and Athena Smartcard"
   }
 }

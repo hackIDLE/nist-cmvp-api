@@ -1,34 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4386"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "The tamper evident seals installed as indicated in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4386",
     "certificate_number": "4386",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4386",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4386",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4386.pdf",
-    "vendor_name": "Apacer Technology Inc.",
-    "module_name": "Apacer TCG SSD SV240 Series",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "12/7/2022",
-    "validation_dates": [
-      "12/7/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The tamper evident seals installed as indicated in the security policy",
     "description": "Apacer¡¦s SV240 is a well-balanced solid-state disk (SSD) drive with standard form factor and great performance. Designed in SATA 6 Gb/s interface, the SSD is able to deliver exceptional read/write speed, making it the ideal companion for heavy-loading industrial or server operations. Apacer SV240 SSD provides AES 256 encryption/decryption of data that is stored in NAND flash. The module supports the SATA interface compliant with the Trusted Computing Group (TCG) SSC specification Opal.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Apacer TCG SSD SV240 Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4386",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +45,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2022_030123_0646_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4386.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "12/7/2022",
+    "validation_dates": [
+      "12/7/2022"
+    ],
     "validation_history": [
       {
         "date": "12/7/2022",
-        "type": "Initial",
-        "lab": "Asia Pacific IT Laboratory, TUV NORD"
+        "lab": "Asia Pacific IT Laboratory, TUV NORD",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Apacer Technology Inc.",
-      "website_url": "http://industrial.apacer.com/en-ww",
       "address_lines": [
         "1F, No. 32, Zhongcheng Rd., Tucheng Dist.",
         "New Taipei City 23674",
         "Taiwan, R.O.C."
       ],
-      "country": "Taiwan, R.O.C.",
-      "contact_name": "Parker Kuo",
       "contact_email": "parker_kuo@apacer.com",
-      "contact_phone": "+886-2-2267-8000#5625"
+      "contact_name": "Parker Kuo",
+      "contact_phone": "+886-2-2267-8000#5625",
+      "country": "Taiwan, R.O.C.",
+      "name": "Apacer Technology Inc.",
+      "website_url": "http://industrial.apacer.com/en-ww"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Apacer Technology Inc."
   }
 }

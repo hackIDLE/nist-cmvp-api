@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4261"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4261",
     "certificate_number": "4261",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4261",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4261",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4261.pdf",
-    "vendor_name": "Huawei Technologies Co., Ltd.",
-    "module_name": "HSSD_V6 Series",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "7/8/2022",
-    "validation_dates": [
-      "7/8/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "None",
     "description": "HSSD_V6 family module are designed to protect unauthorized access to the user data stored in its NAND Flash memories. The built-in AES HW engines in the cryptographic module’s controller provide on-the-fly encryption and decryption of the user data without performance loss. It also provides instantaneous sanitization of the user data via cryptographic erase.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HSSD_V6 Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4261",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2022_010822_0659_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4261.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "7/8/2022",
+    "validation_dates": [
+      "7/8/2022"
+    ],
     "validation_history": [
       {
         "date": "7/8/2022",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Huawei Technologies Co., Ltd.",
-      "website_url": "https://www.huawei.com",
       "address_lines": [
         "Huawei Industrial Base",
         "Bantian, Longgang",
         "Shenzhen, Guangdong 518129",
         "China"
       ],
-      "country": "China",
-      "contact_name": "Tristan Chen",
       "contact_email": "tristan.chen@huawei.com",
-      "contact_phone": "+86 75528780808"
+      "contact_name": "Tristan Chen",
+      "contact_phone": "+86 75528780808",
+      "country": "China",
+      "name": "Huawei Technologies Co., Ltd.",
+      "website_url": "https://www.huawei.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Huawei Technologies Co., Ltd."
   }
 }

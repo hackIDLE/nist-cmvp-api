@@ -1,37 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3265"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3265",
     "certificate_number": "3265",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3265",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3265",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3265.pdf",
-    "vendor_name": "Western Digital Corporation",
-    "module_name": "Ultrastar® DC HC310 and Ultrastar® DC HC320 TCG Enterprise HDD",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "8/23/2018, 10/25/2018, 1/31/2019, 4/30/2019",
-    "validation_dates": [
-      "8/23/2018",
-      "10/25/2018",
-      "1/31/2019",
-      "4/30/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 2.1 and 7.2 of the Security Policy",
     "description": "Self-encrypting Ultrastar® DC HC310 and Ultrastar DC HC320 TCG Enterprise 12Gb/s SAS Hard-Disk drives, from Western Digital, meet or exceed the most demanding performance and security requirements. The Ultrastar DC HC310 and Ultrastar DC HC320 use PMR technology. They are drop-in ready for any entrance-capacity application or environment. Targeted at 2M hours MTBF, the Ultrastar DC HC310 and Ultrastar DC HC320 provides the highest reliability rating available of all HDDs on the market today.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ultrastar® DC HC310 and Ultrastar® DC HC320 TCG Enterprise HDD",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3265",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,61 +46,57 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3265.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/23/2018, 10/25/2018, 1/31/2019, 4/30/2019",
+    "validation_dates": [
+      "8/23/2018",
+      "10/25/2018",
+      "1/31/2019",
+      "4/30/2019"
+    ],
     "validation_history": [
       {
         "date": "8/23/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "10/25/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/31/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "4/30/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Western Digital Corporation",
-      "website_url": "http://www.wdc.com",
       "address_lines": [
         "5601 Great Oaks Parkway",
         "San Jose, CA 95119",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Williamson",
       "contact_email": "michael.williamson@wdc.com",
-      "contact_phone": "408-717-8458"
+      "contact_name": "Michael Williamson",
+      "contact_phone": "408-717-8458",
+      "country": "USA",
+      "name": "Western Digital Corporation",
+      "website_url": "http://www.wdc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ]
+    "vendor_name": "Western Digital Corporation"
   }
 }

@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3014"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3014",
     "certificate_number": "3014",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3014",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3014",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3014.pdf",
-    "vendor_name": "Enova Technology Corporation",
-    "module_name": "X-Wall MX+",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "9/13/2017",
-    "validation_dates": [
-      "9/13/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "X-Wall MX+ is a real-time SATA-to-SATA single chip crypto module. It sits between a SATA host and a SATA device and provides in-line 6Gbps AES ECB/CBC/XTS 256-bit cryptographic throughput to the connected SATA disk drive (SSD included), including boot sector, temp files, swap files, and the operating system. X-Wall MX+ is an ASIC (Application Specific Integrated Circuit) that can be populated directly onto either the SATA host or SATA device interface. It is OS independent and doesn’t occupy host CPU and memory resources.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "X-Wall MX+",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3014",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,16 +40,30 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertSept2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3014.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/13/2017",
+    "validation_dates": [
+      "9/13/2017"
+    ],
     "validation_history": [
       {
         "date": "9/13/2017",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Enova Technology Corporation",
-      "website_url": "http://www.enovatech.com",
       "address_lines": [
         "First Floor",
         "#11, Research & Development 2nd Road",
@@ -59,25 +71,13 @@
         "Hsin-Chu City 30076",
         "Taiwan"
       ],
-      "country": "Taiwan",
-      "contact_name": "Butz Huang",
       "contact_email": "bhuang@enovatech.net",
-      "contact_phone": "+886 3 577 2767"
+      "contact_name": "Butz Huang",
+      "contact_phone": "+886 3 577 2767",
+      "country": "Taiwan",
+      "name": "Enova Technology Corporation",
+      "website_url": "http://www.enovatech.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Enova Technology Corporation"
   }
 }

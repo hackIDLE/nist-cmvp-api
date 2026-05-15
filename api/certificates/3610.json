@@ -1,36 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "ECDSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610",
     "certificate_number": "3610",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3610.pdf",
-    "vendor_name": "Thales Group",
-    "module_name": "Thales Advanced Security Platform (TASP)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "1/24/2020, 1/29/2020, 1/28/2021, 2/24/2021, 10/1/2021, 10/6/2022",
-    "validation_dates": [
-      "1/24/2020",
-      "1/29/2020",
-      "1/28/2021",
-      "2/24/2021",
-      "10/1/2021",
-      "10/6/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Thales Advanced Security Platform is a Thales Group (Thales) multi-chip embedded FIPS 140-2 Validated cryptographic module inside the payShield 10000 family of hardware security modules used in the Banking and Finance sector to secure card-based payment transactions. TASP provides functionality for secure loading and/or upgrading of applications used in a range of Thales products. The module ensures tamper resistance and that only applications that have been cryptographically signed by Thales can be loaded into the module.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Thales Advanced Security Platform (TASP)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3610",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,71 +45,67 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3610.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/24/2020, 1/29/2020, 1/28/2021, 2/24/2021, 10/1/2021, 10/6/2022",
+    "validation_dates": [
+      "1/24/2020",
+      "1/29/2020",
+      "1/28/2021",
+      "2/24/2021",
+      "10/1/2021",
+      "10/6/2022"
+    ],
     "validation_history": [
       {
         "date": "1/24/2020",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/29/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/28/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/24/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/1/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/6/2022",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales Group",
-      "website_url": "http://www.thalesesecurity.com",
       "address_lines": [
         "900 S Pine Island Road",
         "#710",
         "Plantation, FL 33324",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "[email protected]",
       "contact_email": "sales@thalesesec.com",
-      "contact_phone": "888-744-4976"
+      "contact_name": "[email protected]",
+      "contact_phone": "888-744-4976",
+      "country": "USA",
+      "name": "Thales Group",
+      "website_url": "http://www.thalesesecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "ECDSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Thales Group"
   }
 }

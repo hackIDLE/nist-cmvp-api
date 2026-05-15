@@ -1,91 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3645"
   },
   "certificate": {
-    "certificate_number": "3645",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3645",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3645",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3645.pdf",
-    "vendor_name": "SideChannel Inc.",
-    "module_name": "SideChannel Polymorphic Encryption Module - Mobile",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/20/2020, 3/9/2022, 5/15/2023",
-    "validation_dates": [
-      "4/20/2020",
-      "3/9/2022",
-      "5/15/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #1938",
-    "description": "The SideChannel Polymorphic Encryption Module - Mobile (PEM-M) provides FIPS 140-2 validated encryption for mobile devices and is deployed with SideChannel’s next-gen Polymorphic Key Progression Algorithm (PKPA) solution to enhance standard encryption through the process of polymorphism. The PEM-M features robust algorithm support, suitable for the latest cryptography suites (Suite B, CNSA and beyond).",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3645.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2020_010520_0717.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/20/2020",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
-      },
-      {
-        "date": "3/9/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "5/15/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "SideChannel Inc.",
-      "website_url": "http://www.sidechannel.com",
-      "address_lines": [
-        "146 Main St.",
-        "Suite 405",
-        "Worchester, MA 01608"
-      ],
-      "country": "Worchester, MA 01608",
-      "contact_name": "Enclave Sales",
-      "contact_email": "info@sidechannel.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -96,6 +26,76 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #1938",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3645",
+    "certificate_number": "3645",
+    "dataset": "historical",
+    "description": "The SideChannel Polymorphic Encryption Module - Mobile (PEM-M) provides FIPS 140-2 validated encryption for mobile devices and is deployed with SideChannel’s next-gen Polymorphic Key Progression Algorithm (PKPA) solution to enhance standard encryption through the process of polymorphism. The PEM-M features robust algorithm support, suitable for the latest cryptography suites (Suite B, CNSA and beyond).",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SideChannel Polymorphic Encryption Module - Mobile",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3645",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3645.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2020_010520_0717.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3645.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/20/2020, 3/9/2022, 5/15/2023",
+    "validation_dates": [
+      "4/20/2020",
+      "3/9/2022",
+      "5/15/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "4/20/2020",
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
+      },
+      {
+        "date": "3/9/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "5/15/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "146 Main St.",
+        "Suite 405",
+        "Worchester, MA 01608"
+      ],
+      "contact_email": "info@sidechannel.com",
+      "contact_name": "Enclave Sales",
+      "contact_phone": null,
+      "country": "Worchester, MA 01608",
+      "name": "SideChannel Inc.",
+      "website_url": "http://www.sidechannel.com"
+    },
+    "vendor_name": "SideChannel Inc."
   }
 }

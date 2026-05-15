@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4145"
   },
   "certificate": {
-    "certificate_number": "4145",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4145",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4145",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4145.pdf",
-    "vendor_name": "Hewlett Packard Enterprise",
-    "module_name": "Hewlett Packard Enterprise libgcrypt Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/7/2022",
-    "validation_dates": [
-      "2/7/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed and configured per Security Policy section 3.1 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security-relevant modification to Cert. #3604",
-    "description": "The Hewlett Packard Enterprise libgcrypt Crypto Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for Hewlett Packard Enterprise components.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4145.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2022_010322_0121_Signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/7/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Hewlett Packard Enterprise",
-      "website_url": "http://www.hpe.com/",
-      "address_lines": [
-        "3000 Hanover St",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Fernie Fuentes",
-      "contact_email": "fernie.fuentes@hpe.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +26,63 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When installed and configured per Security Policy section 3.1 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security-relevant modification to Cert. #3604",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4145",
+    "certificate_number": "4145",
+    "dataset": "historical",
+    "description": "The Hewlett Packard Enterprise libgcrypt Crypto Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for Hewlett Packard Enterprise components.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hewlett Packard Enterprise libgcrypt Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4145",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4145.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2022_010322_0121_Signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4145.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/7/2022",
+    "validation_dates": [
+      "2/7/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "2/7/2022",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3000 Hanover St",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "fernie.fuentes@hpe.com",
+      "contact_name": "Fernie Fuentes",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Hewlett Packard Enterprise",
+      "website_url": "http://www.hpe.com/"
+    },
+    "vendor_name": "Hewlett Packard Enterprise"
   }
 }

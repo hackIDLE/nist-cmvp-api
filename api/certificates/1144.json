@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1144"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1144",
     "certificate_number": "1144",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1144",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1144",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1144.pdf",
-    "vendor_name": "SCsquare Ltd.",
-    "module_name": "Apollo OS V4.03 on SLE66CX680PE m1534-a13",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "6/24/2009",
-    "validation_dates": [
-      "6/24/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Apollo OS V4.03 on SLE66CX680PE is a multi-purpose smart card utilizing an ISO 7816 file system. Apollo OS V4.03 is implemented as firmware in ROM of an Infineon SLE66CX680PE smart card controller IC.",
-    "security_level_exceptions": [
-      "Tested: SLE66CX680PE m1534-a13 smart card controller IC"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Apollo OS V4.03 on SLE66CX680PE m1534-a13",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1144",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1144.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: SLE66CX680PE m1534-a13 smart card controller IC"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1144.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/24/2009",
+    "validation_dates": [
+      "6/24/2009"
+    ],
     "validation_history": [
       {
         "date": "6/24/2009",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "SCsquare Ltd.",
-      "website_url": "http://www.scsquare.com",
       "address_lines": [
         "2A Habarzel St.",
         "Ramat Hahayal",
         "Tel Aviv 69710",
         "Israel"
       ],
-      "country": "Israel",
-      "contact_name": "Yossi Fixman",
       "contact_email": null,
-      "contact_phone": "+972-3-7657-331"
+      "contact_name": "Yossi Fixman",
+      "contact_phone": "+972-3-7657-331",
+      "country": "Israel",
+      "name": "SCsquare Ltd.",
+      "website_url": "http://www.scsquare.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "SCsquare Ltd."
   }
 }

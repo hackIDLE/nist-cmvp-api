@@ -1,36 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2473",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568",
     "certificate_number": "3568",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3568.pdf",
-    "vendor_name": "Hill-Rom Holdings, Inc.",
-    "module_name": "Hillrom Cryptographic Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/21/2019",
-    "validation_dates": [
-      "11/21/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2473",
     "description": "The Hillrom Cryptographic Security Module is an implementation of the OpenSSL FIPS Object Module 2.0. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hillrom Cryptographic Security Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,50 +49,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2019.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3568.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/21/2019",
+    "validation_dates": [
+      "11/21/2019"
+    ],
     "validation_history": [
       {
         "date": "11/21/2019",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Hill-Rom Holdings, Inc.",
-      "website_url": "http://www.hillrom.com",
       "address_lines": [
         "130 E. Randolph St.",
         "Suite 1000",
         "Chicago, IL 60601",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Chief Technology Officer",
       "contact_email": "us.customerservice@hill-rom.com",
-      "contact_phone": "312-819-7200"
+      "contact_name": "Chief Technology Officer",
+      "contact_phone": "312-819-7200",
+      "country": "USA",
+      "name": "Hill-Rom Holdings, Inc.",
+      "website_url": "http://www.hillrom.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DRBG",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Hill-Rom Holdings, Inc."
   }
 }

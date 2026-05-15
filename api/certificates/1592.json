@@ -1,34 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
     "certificate_number": "1592",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1592.pdf",
-    "vendor_name": "L3Harris Technologies, Inc.",
-    "module_name": "Harris Unified Audio Card",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "8/22/2011, 4/13/2016, 7/20/2018, 8/30/2021",
-    "validation_dates": [
-      "8/22/2011",
-      "4/13/2016",
-      "7/20/2018",
-      "8/30/2021"
-    ],
-    "sunset_date": "8/29/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "The Harris UAC is a multi-channel analog audio gateway used to interface analog radio communication equipment such as conventional base stations to radio systems and other devices on a Voice Interoperability Data Access (VIDA) network.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Harris Unified Audio Card",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,61 +46,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0008.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1592.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "8/29/2026",
+    "validation_date": "8/22/2011, 4/13/2016, 7/20/2018, 8/30/2021",
+    "validation_dates": [
+      "8/22/2011",
+      "4/13/2016",
+      "7/20/2018",
+      "8/30/2021"
+    ],
     "validation_history": [
       {
         "date": "8/22/2011",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "4/13/2016",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "7/20/2018",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "8/30/2021",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "L3Harris Technologies, Inc.",
-      "website_url": "http://www.l3harris.com",
       "address_lines": [
         "221 Jefferson Ridge Parkway",
         "Lynchburg, VA 24501",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Joe Roberts",
       "contact_email": "Joe.Roberts@L3Harris.com",
-      "contact_phone": "434-329-9795"
+      "contact_name": "Joe Roberts",
+      "contact_phone": "434-329-9795",
+      "country": "USA",
+      "name": "L3Harris Technologies, Inc.",
+      "website_url": "http://www.l3harris.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "L3Harris Technologies, Inc."
   }
 }

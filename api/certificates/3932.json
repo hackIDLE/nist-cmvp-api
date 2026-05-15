@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932"
   },
   "certificate": {
-    "certificate_number": "3932",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
-    "vendor_name": "Private Machines Inc.",
-    "module_name": "ENFORCER R1",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 4,
-    "validation_date": "5/24/2021",
-    "validation_dates": [
-      "5/24/2021"
-    ],
-    "sunset_date": "5/23/2026",
-    "caveat": "When utilizing a Trusted Path as specified in the security policy",
-    "description": "The ENFORCER R1 provides a physically secure, Level 4 enclosure protecting CSPs and cryptographic data. A physical tamper event on the enclosure immediately zeroizes module CSPs. It provides a KMIP (Key Management Interoperability Protocol) service for key management to external users. It also provides additional services for module management, module configuration, and for building higher-level application scenarios such as integration into cloud and data center environments.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2021_010621_0658.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/24/2021",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Private Machines Inc.",
-      "website_url": "http://privatemachines.com",
-      "address_lines": [
-        "164 20 Street, 4th floor",
-        "Brooklyn, NY 11232",
-        "United States"
-      ],
-      "country": "United States",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +31,60 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When utilizing a Trusted Path as specified in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
+    "certificate_number": "3932",
+    "dataset": "active",
+    "description": "The ENFORCER R1 provides a physically secure, Level 4 enclosure protecting CSPs and cryptographic data. A physical tamper event on the enclosure immediately zeroizes module CSPs. It provides a KMIP (Key Management Interoperability Protocol) service for key management to external users. It also provides additional services for module management, module configuration, and for building higher-level application scenarios such as integration into cloud and data center environments.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ENFORCER R1",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
+    "overall_level": 4,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2021_010621_0658.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "5/23/2026",
+    "validation_date": "5/24/2021",
+    "validation_dates": [
+      "5/24/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "5/24/2021",
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "164 20 Street, 4th floor",
+        "Brooklyn, NY 11232",
+        "United States"
+      ],
+      "contact_email": null,
+      "contact_name": null,
+      "contact_phone": null,
+      "country": "United States",
+      "name": "Private Machines Inc.",
+      "website_url": "http://privatemachines.com"
+    },
+    "vendor_name": "Private Machines Inc."
   }
 }

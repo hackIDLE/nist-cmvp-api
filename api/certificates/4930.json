@@ -1,81 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930",
     "certificate_number": "4930",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4930.pdf",
-    "vendor_name": "Seagate Technology, LLC",
-    "module_name": "Seagate Secure® Self-Encrypting Drive",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "12/20/2024, 10/21/2025",
-    "validation_dates": [
-      "12/20/2024",
-      "10/21/2025"
-    ],
-    "sunset_date": "12/19/2029",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
     "description": "The Seagate Secure® Self-Encrypting Drive is embodied in Seagate Enterprise Exos™ Enterprise SED model devices. These products meet the performance requirements of the most demanding Enterprise applications. The Cryptographic Module (CM) provides a wide range of cryptographic services including: • HW based data encryption (AES-XTS) • Instantaneous user data disposal with cryptographic erase • Independently controlled and protected user data LBA bands • Authenticated FW download. The services are provided through industry-standard TCG Enterprise SSC SATA and SCSI protocols.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Seagate Secure® Self-Encrypting Drive",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4930.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4930.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "12/19/2029",
+    "validation_date": "12/20/2024, 10/21/2025",
+    "validation_dates": [
+      "12/20/2024",
+      "10/21/2025"
+    ],
     "validation_history": [
       {
         "date": "12/20/2024",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "10/21/2025",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Seagate Technology, LLC",
-      "website_url": "http://www.seagate.com",
       "address_lines": [
         "389 Disc Drive",
         "Longmont, CO 80503",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Seagate Secure FIPS Team",
       "contact_email": "Seagate.Secure.FIPS.Team@seagate.com",
-      "contact_phone": "720-684-1000"
+      "contact_name": "Seagate Secure FIPS Team",
+      "contact_phone": "720-684-1000",
+      "country": "USA",
+      "name": "Seagate Technology, LLC",
+      "website_url": "http://www.seagate.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Seagate Technology, LLC"
   }
 }

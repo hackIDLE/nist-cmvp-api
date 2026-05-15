@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/45"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/45",
     "certificate_number": "45",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/45",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/45",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp45.pdf",
-    "vendor_name": "Netscape Communications Corporation",
-    "module_name": "Netscape Security Module 1.01",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/17/1999",
-    "validation_dates": [
-      "3/17/1999"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Security module used in various Netscape products.",
-    "security_level_exceptions": [
-      "Operating System Security: Tested as meeting Level 1 for WindowsNT 4.0 workstation (single-user mode)."
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Netscape Security Module 1.01",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/45",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt45.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operating System Security: Tested as meeting Level 1 for WindowsNT 4.0 workstation (single-user mode)."
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp45.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/17/1999",
+    "validation_dates": [
+      "3/17/1999"
+    ],
     "validation_history": [
       {
         "date": "3/17/1999",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Netscape Communications Corporation",
-      "website_url": "http://www.netscape.com",
       "address_lines": [
         "6905 Rockledge Dr",
         "Suite 820",
         "Bethesda, MD 20817",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ed Hicks",
       "contact_email": "fips@netscape.com",
-      "contact_phone": "301-571-3900"
+      "contact_name": "Ed Hicks",
+      "contact_phone": "301-571-3900",
+      "country": "USA",
+      "name": "Netscape Communications Corporation",
+      "website_url": "http://www.netscape.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Netscape Communications Corporation"
   }
 }

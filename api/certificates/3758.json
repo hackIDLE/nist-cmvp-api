@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3758"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3758",
     "certificate_number": "3758",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3758",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3758",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3758.pdf",
-    "vendor_name": "Phison Electronics Corporation",
-    "module_name": "Phison TCG OPAL SSC SSD Series",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "12/7/2020, 1/14/2022, 5/17/2024, 6/21/2024",
-    "validation_dates": [
-      "12/7/2020",
-      "1/14/2022",
-      "5/17/2024",
-      "6/21/2024"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "Phison TCG Opal SSC SSD series are high-performance self-encrypting solid state drives with the support of NVMe and SATA interface. User data is protected by AES256-XTS on-the-fly hardware encryption/decryption without compromising transfer rates. This SSD series implement various FIPS approved cryptographic algorithms and FIPS approved services are provided through compliance with the industry-standard TCG Opal SSC protocol.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Phison TCG OPAL SSC SSD Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3758",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,55 +40,57 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2020_040121_1006_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3758.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/7/2020, 1/14/2022, 5/17/2024, 6/21/2024",
+    "validation_dates": [
+      "12/7/2020",
+      "1/14/2022",
+      "5/17/2024",
+      "6/21/2024"
+    ],
     "validation_history": [
       {
         "date": "12/7/2020",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/14/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "5/17/2024",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/21/2024",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Phison Electronics Corporation",
-      "website_url": "http://www.phison.com/en/",
       "address_lines": [
         "No. 1, Qun Yi Road",
         "Jhunan, Miaoli County 350",
         "Taiwan R.O.C"
       ],
-      "country": "Taiwan R.O.C",
-      "contact_name": "Johanna Thang",
       "contact_email": "johanna_thang@phison.com",
-      "contact_phone": "+88637586896ext.2203"
+      "contact_name": "Johanna Thang",
+      "contact_phone": "+88637586896ext.2203",
+      "country": "Taiwan R.O.C",
+      "name": "Phison Electronics Corporation",
+      "website_url": "http://www.phison.com/en/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Phison Electronics Corporation"
   }
 }

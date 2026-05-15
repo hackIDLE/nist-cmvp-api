@@ -1,33 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "KDF",
+      "KTS",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode; The module generates cryptographic keys and random strings whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446",
     "certificate_number": "4446",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4446.pdf",
-    "vendor_name": "Infineon Technologies AG",
-    "module_name": "SLS37CSAUS V2X",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "3/7/2023, 3/5/2024, 3/19/2026",
-    "validation_dates": [
-      "3/7/2023",
-      "3/5/2024",
-      "3/19/2026"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode; The module generates cryptographic keys and random strings whose strengths are modified by available entropy.",
     "description": "The cryptographic module is a single-chip security controller for signature generation and secure data storage in V2X systems (vehicle-to-anything). The V2X system is required to support vehicle communication with other vehicles, as well as with road infrastructure and other elements. The cryptographic module will support highly secure and timely necessary cryptographic operations, so that all messages may be securely signed and authenticated.",
-    "security_level_exceptions": [],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SLS37CSAUS V2X",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4446",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,59 +49,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4446.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/7/2023, 3/5/2024, 3/19/2026",
+    "validation_dates": [
+      "3/7/2023",
+      "3/5/2024",
+      "3/19/2026"
+    ],
     "validation_history": [
       {
         "date": "3/7/2023",
-        "type": "Initial",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Initial"
       },
       {
         "date": "3/5/2024",
-        "type": "Update",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Update"
       },
       {
         "date": "3/19/2026",
-        "type": "Update",
-        "lab": "TUVIT Evaluation Body for IT Security"
+        "lab": "TUVIT Evaluation Body for IT Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Infineon Technologies AG",
-      "website_url": "http://www.infineon.com",
       "address_lines": [
         "Melli-Beese-Straße 9",
         "Augsburg 86159",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Rainer Urian",
       "contact_email": "Rainer.Urian@infineon.com",
-      "contact_phone": "+49-821-25851-520"
+      "contact_name": "Rainer Urian",
+      "contact_phone": "+49-821-25851-520",
+      "country": "Germany",
+      "name": "Infineon Technologies AG",
+      "website_url": "http://www.infineon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "ECDSA",
-      "KDF",
-      "KTS",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Infineon Technologies AG"
   }
 }

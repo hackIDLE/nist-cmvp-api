@@ -1,39 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1173"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1173",
     "certificate_number": "1173",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1173",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1173",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1173.pdf",
-    "vendor_name": "Juniper Networks, Inc.",
-    "module_name": "SSG 520M and SSG 550M",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "8/18/2009, 1/28/2010, 12/11/2013",
-    "validation_dates": [
-      "8/18/2009",
-      "1/28/2010",
-      "12/11/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The SSG 500 Series consists of high-performance security platforms for regional branch office and medium-sized, standalone businesses that want to stop internal and external attacks, prevent unauthorized access and achieve regulatory compliance. The SSG 550/SSG 550M provides 1+ Gbps of stateful firewall performance and 500 Mbps of IPSec VPN performance, while the SSG 520/SSG 520M provides 650 Mbps of stateful firewall performance and 300 Mbps of IPSec VPN performance.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Cryptographic Module Ports and Interfaces: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Cryptographic Key Management: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SSG 520M and SSG 550M",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1173",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -44,50 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1173.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Cryptographic Module Ports and Interfaces: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Cryptographic Key Management: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1173.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/18/2009, 1/28/2010, 12/11/2013",
+    "validation_dates": [
+      "8/18/2009",
+      "1/28/2010",
+      "12/11/2013"
+    ],
     "validation_history": [
       {
         "date": "8/18/2009",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/28/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "12/11/2013",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net",
       "address_lines": [
         "1194 N. Mathilda Ave.",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Claudio Baserga",
       "contact_email": "cbaserga@juniper.net",
-      "contact_phone": "408-936-0961"
+      "contact_name": "Claudio Baserga",
+      "contact_phone": "408-936-0961",
+      "country": "USA",
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Juniper Networks, Inc."
   }
 }

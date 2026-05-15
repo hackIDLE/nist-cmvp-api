@@ -1,36 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode with the IDCore 3130 Platform and when initialized and configured as specified in Section 13 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563",
     "certificate_number": "4563",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4563.pdf",
-    "vendor_name": "Gemalto",
-    "module_name": "IDPrime PIV v3.0 Applet on IDCore 3130 Platform",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "8/29/2023",
-    "validation_dates": [
-      "8/29/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with the IDCore 3130 Platform and when initialized and configured as specified in Section 13 of the Security Policy",
     "description": "« IDPrime PIV v3.0 » is the next generation of FIPS201-2 smart card running on latest IDCore 3130 platform, which complies with the latest version of NIST SP800-73-4, SP800-85A-4 and all algorithms of SP800-78-4. The product can be used over Contact and Contactless interfaces (ISO 7816 & 14443) to provide physical and logical accesss control. It embeds latest optimized FIPS POST feature, OPACITY secure messaging with Pairing code, and Biometric Match on card.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IDPrime PIV v3.0 Applet on IDCore 3130 Platform",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,43 +43,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2023_010923_0844.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4563.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/29/2023",
+    "validation_dates": [
+      "8/29/2023"
+    ],
     "validation_history": [
       {
         "date": "8/29/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Gemalto",
-      "website_url": "http://www.gemalto.com",
       "address_lines": [
         "Avenue du Jujubier, Z.I Athelia IV",
         "La Ciotat 13705",
         "France"
       ],
-      "country": "France",
-      "contact_name": "Arnaud Lotigier",
       "contact_email": "Arnaud.Lotigier@gemalto.com",
-      "contact_phone": "+33 442366074"
+      "contact_name": "Arnaud Lotigier",
+      "contact_phone": "+33 442366074",
+      "country": "France",
+      "name": "Gemalto",
+      "website_url": "http://www.gemalto.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "SHA"
-    ]
+    "vendor_name": "Gemalto"
   }
 }

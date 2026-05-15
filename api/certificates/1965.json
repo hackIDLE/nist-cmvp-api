@@ -1,38 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1965"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1965",
     "certificate_number": "1965",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1965",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1965",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1965.pdf",
-    "vendor_name": "Apricorn, Inc.",
-    "module_name": "Apricorn FIPS Module 140-2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "6/14/2013, 4/16/2014, 6/27/2014, 10/20/2015",
-    "validation_dates": [
-      "6/14/2013",
-      "4/16/2014",
-      "6/27/2014",
-      "10/20/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Apricorn FIPS 140-2 Module is a flexible FIPS module with the ability to interface to multiple types of authentication or hardware. Completely contained within a small footprint/boundary, the module is designed to allow simple integration into various secure storage systems requiring a FIPS validated encryption boundary and does not require software. The Apricorn FIPS 140-2 Module is used in the Aegis Fortress, Padlock DT FIPS, and the Padlock SSD families.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Apricorn FIPS Module 140-2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1965",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,55 +40,58 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0030.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1965.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/14/2013, 4/16/2014, 6/27/2014, 10/20/2015",
+    "validation_dates": [
+      "6/14/2013",
+      "4/16/2014",
+      "6/27/2014",
+      "10/20/2015"
+    ],
     "validation_history": [
       {
         "date": "6/14/2013",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/16/2014",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/27/2014",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/20/2015",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Apricorn, Inc.",
-      "website_url": "http://www.apricorn.com",
       "address_lines": [
         "12191 Kirkham Road",
         "Poway, CA 92064",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike McCandless",
       "contact_email": "mmccandless@apricorn.com",
-      "contact_phone": "858-513-4481"
+      "contact_name": "Mike McCandless",
+      "contact_phone": "858-513-4481",
+      "country": "USA",
+      "name": "Apricorn, Inc.",
+      "website_url": "http://www.apricorn.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Apricorn, Inc."
   }
 }

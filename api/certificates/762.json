@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/762"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/762",
     "certificate_number": "762",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/762",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/762",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp762.pdf",
-    "vendor_name": "Data-Pac Mailing Systems Corp.",
-    "module_name": "AMERICA2 (PSD)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "5/4/2007",
-    "validation_dates": [
-      "5/4/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The AMERICA2 (PSD) is a cryptographically secure, tamper proof device capable of storing customer postal credit and then dispensing valid postal indicia. As an embedded multi-chip Cryptographic Device, the AMERICA2 is enclosed within a tamper-response envelope that prevents all physically invasive attacks while still ensuring the retention of all postal data. The AMERICA2 (PSD) generates HMAC indicia as part of Data-Pac's IBI Light Symmetric postage system, which obviates the need for the digital signature used in traditional IBI franking. Data-Pac embeds the AMERICA2 into its line of Digit",
-    "security_level_exceptions": [
-      "Physical Security: Level 3 +EFT"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AMERICA2 (PSD)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/762",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt762.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3 +EFT"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp762.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/4/2007",
+    "validation_dates": [
+      "5/4/2007"
+    ],
     "validation_history": [
       {
         "date": "5/4/2007",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Data-Pac Mailing Systems Corp.",
-      "website_url": "http://www.data-pac.com",
       "address_lines": [
         "1217 Bay Road",
         "Webster, NY 14580",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ken Yankloski",
       "contact_email": "ken@data-pac.com",
-      "contact_phone": "585-787-7074"
+      "contact_name": "Ken Yankloski",
+      "contact_phone": "585-787-7074",
+      "country": "USA",
+      "name": "Data-Pac Mailing Systems Corp.",
+      "website_url": "http://www.data-pac.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Data-Pac Mailing Systems Corp."
   }
 }

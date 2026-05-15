@@ -1,92 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138"
   },
   "certificate": {
-    "certificate_number": "4138",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf",
-    "vendor_name": "NETSCOUT Systems, Inc.",
-    "module_name": "NETSCOUT FIPS Object Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/18/2022, 4/4/2023, 7/29/2025",
-    "validation_dates": [
-      "1/18/2022",
-      "4/4/2023",
-      "7/29/2025"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode",
-    "description": "The NETSCOUT FIPS Object Module provides cryptographic functionality to NETSCOUT’s series of applications.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2022_010222_0702_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/18/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "4/4/2023",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      },
-      {
-        "date": "7/29/2025",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "NETSCOUT Systems, Inc.",
-      "website_url": "http://www.netscout.com",
-      "address_lines": [
-        "310 Littleton Road",
-        "Westford, MA 01886",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Steve Swidrak",
-      "contact_email": "Stephen.Swidrak@netscout.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -97,6 +26,77 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138",
+    "certificate_number": "4138",
+    "dataset": "active",
+    "description": "The NETSCOUT FIPS Object Module provides cryptographic functionality to NETSCOUT’s series of applications.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NETSCOUT FIPS Object Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2022_010222_0702_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/18/2022, 4/4/2023, 7/29/2025",
+    "validation_dates": [
+      "1/18/2022",
+      "4/4/2023",
+      "7/29/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "1/18/2022",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "4/4/2023",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "7/29/2025",
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "310 Littleton Road",
+        "Westford, MA 01886",
+        "USA"
+      ],
+      "contact_email": "Stephen.Swidrak@netscout.com",
+      "contact_name": "Steve Swidrak",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "NETSCOUT Systems, Inc.",
+      "website_url": "http://www.netscout.com"
+    },
+    "vendor_name": "NETSCOUT Systems, Inc."
   }
 }

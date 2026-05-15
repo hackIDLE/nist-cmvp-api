@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819"
   },
   "certificate": {
-    "certificate_number": "4819",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4819.pdf",
-    "vendor_name": "Advanced Micro Devices, Inc. (AMD)",
-    "module_name": "AMD Pensando PenTrust Security Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software-hybrid",
-    "embodiment": "Single Chip",
-    "overall_level": 1,
-    "validation_date": "10/1/2024",
-    "validation_dates": [
-      "10/1/2024"
-    ],
-    "sunset_date": "9/30/2029",
-    "caveat": "None",
-    "description": "This module provides strong security services to applications running on the AMD Pensando DPU 2.0",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4819.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/1/2024",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Advanced Micro Devices, Inc. (AMD)",
-      "website_url": "http://www.amd.com",
-      "address_lines": [
-        "2485 Augustine Drive",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Lei Chen",
-      "contact_email": "FIPS@amd.com",
-      "contact_phone": "408-749-4000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 10,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 10
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +34,60 @@
       "SHA2-256 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4",
       "SHA2-384 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4",
       "SHA2-512 | A4453 | Message Length-Message Length:0-65536 Increment8 | FIPS 180-4"
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
+    "certificate_number": "4819",
+    "dataset": "active",
+    "description": "This module provides strong security services to applications running on the AMD Pensando DPU 2.0",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AMD Pensando PenTrust Security Module",
+    "module_type": "Software-hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4819",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4819.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4819.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/30/2029",
+    "validation_date": "10/1/2024",
+    "validation_dates": [
+      "10/1/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "10/1/2024",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2485 Augustine Drive",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "FIPS@amd.com",
+      "contact_name": "Lei Chen",
+      "contact_phone": "408-749-4000",
+      "country": "USA",
+      "name": "Advanced Micro Devices, Inc. (AMD)",
+      "website_url": "http://www.amd.com"
+    },
+    "vendor_name": "Advanced Micro Devices, Inc. (AMD)"
   }
 }

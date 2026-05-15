@@ -1,40 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/397"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/397",
     "certificate_number": "397",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/397",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/397",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp397.pdf",
-    "vendor_name": "nCipher Corporation Ltd.",
-    "module_name": "nShield F2 SCSI[1] and nShield F2 SCSI Ultrasign[2]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "3/18/2004, 3/9/2006, 3/15/2006",
-    "validation_dates": [
-      "3/18/2004",
-      "3/9/2006",
-      "3/15/2006"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The nCipher nShield range of Hardware Security Modules improves the security of cryptographic keys, security sensitive software applications and increases server throughput of secure transactions in Public Key Infrastructure and other high integrity applications such as: Certificate Authorities, Registration Authorities, Government and Financial Institutions.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Cryptographic Module Ports and Interfaces: Level 3",
-      "Cryptographic Key Management: Level 3",
-      "Self-Tests: Level 4"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "nShield F2 SCSI[1] and nShield F2 SCSI Ultrasign[2]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/397",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -45,50 +40,55 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt397.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Cryptographic Module Ports and Interfaces: Level 3",
+      "Cryptographic Key Management: Level 3",
+      "Self-Tests: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp397.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/18/2004, 3/9/2006, 3/15/2006",
+    "validation_dates": [
+      "3/18/2004",
+      "3/9/2006",
+      "3/15/2006"
+    ],
     "validation_history": [
       {
         "date": "3/18/2004",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "3/9/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "3/15/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "nCipher Corporation Ltd.",
-      "website_url": "http://www.nCipher.com",
       "address_lines": [
         "500 Unicorn Park Drive",
         "Woburn, MA 01801-3371",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "[email protected]",
       "contact_email": "sales@ncipher.com",
-      "contact_phone": "800-NCIPHER"
+      "contact_name": "[email protected]",
+      "contact_phone": "800-NCIPHER",
+      "country": "USA",
+      "name": "nCipher Corporation Ltd.",
+      "website_url": "http://www.nCipher.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "nCipher Corporation Ltd."
   }
 }

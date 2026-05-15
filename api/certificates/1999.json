@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1999"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS Mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1999",
     "certificate_number": "1999",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1999",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1999",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1999.pdf",
-    "vendor_name": "Thales Communications, Inc.",
-    "module_name": "Liberty™ Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "9/17/2013",
-    "validation_dates": [
-      "9/17/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS Mode",
     "description": "The Liberty™ Cryptographic Module is a firmware stand alone executable module which provides FIPS 140-2 Level 1 certified cryptographic functionality for devices that utilize the APCO project 25 standard. The Liberty™ Cryptographic Module uses Green Hills Integrity™ address space seperation to provide secure isolation of the cryptographic module without requiring a separate cryptographic hardware module.",
-    "security_level_exceptions": [
-      "Tested: Thales Liberty Radio PRC7332 with Green Hills INTEGRITY Version 5.0.10"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Liberty™ Cryptographic Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1999",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: Thales Liberty Radio PRC7332 with Green Hills INTEGRITY Version 5.0.10"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1999.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/17/2013",
+    "validation_dates": [
+      "9/17/2013"
+    ],
     "validation_history": [
       {
         "date": "9/17/2013",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Thales Communications, Inc.",
-      "website_url": "http://www.thalescomminc.com",
       "address_lines": [
         "22605 Gateway Center Drive",
         "Clarksburg, MD 20871",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Darlo Concepcion",
       "contact_email": "Darlo.Concepcion@thalescomminc.com",
-      "contact_phone": "240-864-7866"
+      "contact_name": "Darlo Concepcion",
+      "contact_phone": "240-864-7866",
+      "country": "USA",
+      "name": "Thales Communications, Inc.",
+      "website_url": "http://www.thalescomminc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales Communications, Inc."
   }
 }

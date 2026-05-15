@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1879"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1879",
     "certificate_number": "1879",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1879",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1879",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1879.pdf",
-    "vendor_name": "TechGuard Security",
-    "module_name": "PoliWall-CCF M10 [1], M50 [2], G01 [3] and G10 [4] Series Security Appliance",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "2/4/2013",
-    "validation_dates": [
-      "2/4/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The TechGuard Security PoliWall is a network boundary device that rapidly determines the country of origin for all incoming packets using HIPPIE (High-speed Internet Protocol Packet Inspection Engine) technology. Packets are filtered according to defined policies, exception lists, and Pre-Compiled Exception Lists (PCEL) that are bound to rule groups for specific network addresses and protocols. PoliWall also provides administrators with the ability to create maps which exclude traffic from selected countries.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "PoliWall-CCF M10 [1], M50 [2], G01 [3] and G10 [4] Series Security Appliance",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1879",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1879.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/4/2013",
+    "validation_dates": [
+      "2/4/2013"
+    ],
     "validation_history": [
       {
         "date": "2/4/2013",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "TechGuard Security",
-      "website_url": "http://www.techguard.com",
       "address_lines": [
         "28 Hawk Ridge Circle",
         "Suite 107",
         "Lake St. Louis, MO 63367",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "David Maestas",
       "contact_email": "david.maestas@techguard.com",
-      "contact_phone": "636-489-2230"
+      "contact_name": "David Maestas",
+      "contact_phone": "636-489-2230",
+      "country": "USA",
+      "name": "TechGuard Security",
+      "website_url": "http://www.techguard.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "TechGuard Security"
   }
 }

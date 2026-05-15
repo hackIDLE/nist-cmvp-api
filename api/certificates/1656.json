@@ -1,32 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1656"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1656",
     "certificate_number": "1656",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1656",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1656",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1656.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "Luna® PCI Cryptographic Module for Luna® IS and RSS",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "12/22/2011, 1/11/2012",
-    "validation_dates": [
-      "12/22/2011",
-      "1/11/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Luna® PCI for Luna® IS offers hardware-based key management and cryptographic operations to protect sensitive keys. The cryptographic boundary of the module is defined to encompass all components inside the secure enclosure on the PCI card.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® PCI Cryptographic Module for Luna® IS and RSS",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1656",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,55 +49,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0012.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1656.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/22/2011, 1/11/2012",
+    "validation_dates": [
+      "12/22/2011",
+      "1/11/2012"
+    ],
     "validation_history": [
       {
         "date": "12/22/2011",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "1/11/2012",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet-inc.com",
       "address_lines": [
         "20 Colonnade Road",
         "Suite 200",
         "Ottawa, Ontario K2E 7M6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Mark Yakabuski",
       "contact_email": "mark.yakabuski@safenet-inc.com",
-      "contact_phone": "613-614-3407"
+      "contact_name": "Mark Yakabuski",
+      "contact_phone": "613-614-3407",
+      "country": "Canada",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet-inc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "SafeNet, Inc."
   }
 }

@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2771"
   },
   "certificate": {
-    "certificate_number": "2771",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2771",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2771",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2771.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Cisco Catalyst 4506-E with Supervisor Card (WS-X45-SUP8-E) and Line Cards (WS-X4748-RJ45-E and WS-X4748-RJ45V+E)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/17/2016",
-    "validation_dates": [
-      "10/17/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "Catalyst 4500 Series switches are Cisco`s leading modular switches for borderless access and price/performance distribution deployments. They offer best-in-class investment protection with forward and backward compatibility and deep application visibility with Flexible NetFlow. The Catalyst 4500 series switch meets FIPS 140-2 overall Level 1 requirements as multi-chip standalone module. The switch includes cryptographic algorithms implemented in IOS-XE software as well as hardware ASICs. The module provides 802.1X-rev.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2771.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2016.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/17/2016",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
-      "address_lines": [
-        "170 W Tasman Drive",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
-      "contact_email": "certteam@cisco.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -86,6 +29,63 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2771",
+    "certificate_number": "2771",
+    "dataset": "historical",
+    "description": "Catalyst 4500 Series switches are Cisco`s leading modular switches for borderless access and price/performance distribution deployments. They offer best-in-class investment protection with forward and backward compatibility and deep application visibility with Flexible NetFlow. The Catalyst 4500 series switch meets FIPS 140-2 overall Level 1 requirements as multi-chip standalone module. The switch includes cryptographic algorithms implemented in IOS-XE software as well as hardware ASICs. The module provides 802.1X-rev.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Catalyst 4506-E with Supervisor Card (WS-X45-SUP8-E) and Line Cards (WS-X4748-RJ45-E and WS-X4748-RJ45V+E)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2771",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2771.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2016.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2771.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/17/2016",
+    "validation_dates": [
+      "10/17/2016"
+    ],
+    "validation_history": [
+      {
+        "date": "10/17/2016",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "170 W Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "certteam@cisco.com",
+      "contact_name": "Global Certification Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
+    },
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

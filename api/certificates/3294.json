@@ -1,38 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3294"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3294",
     "certificate_number": "3294",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3294",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3294",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3294.pdf",
-    "vendor_name": "iStorage Ltd.",
-    "module_name": "iStorage FIPS 140-2 Level 2 Module Rev 1.0",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "9/26/2018",
-    "validation_dates": [
-      "9/26/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "iStorage FIPS 140-2 Module is a portable USB 3.1 module with real-time AES-XTS 256-bit hardware encryption and super-fast data transfer. An easy-to-use keypad interface enables secure access with unique 7-15 digit PINs and software-free setup and operation. The module is platform/device independent. The GDPR compliant module has a dedicated secure microprocessor (Common Criteria EAL4+ ready), employing built-in physical protection mechanisms to defend against external tamper, bypass attacks and more. All critical components are covered by super tough epoxy resin.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Cryptographic Module Ports and Interfaces: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "iStorage FIPS 140-2 Level 2 Module Rev 1.0",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3294",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,49 +48,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Cryptographic Module Ports and Interfaces: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3294.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/26/2018",
+    "validation_dates": [
+      "9/26/2018"
+    ],
     "validation_history": [
       {
         "date": "9/26/2018",
-        "type": "Initial",
-        "lab": "Penumbra Security, Inc."
+        "lab": "Penumbra Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "iStorage Ltd.",
-      "website_url": "http://istorage-uk.com/",
       "address_lines": [
         "iStorage House",
         "13 Alperton Lane, Perivale",
         "Middlesex UB6 8DH",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "John Michael",
       "contact_email": "john@istorage-uk.com",
-      "contact_phone": "+44 (0)20 8991 6260"
+      "contact_name": "John Michael",
+      "contact_phone": "+44 (0)20 8991 6260",
+      "country": "United Kingdom",
+      "name": "iStorage Ltd.",
+      "website_url": "http://istorage-uk.com/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "iStorage Ltd."
   }
 }
