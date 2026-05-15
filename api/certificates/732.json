@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/732"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/732",
     "certificate_number": "732",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/732",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/732",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp732.pdf",
-    "vendor_name": "Hitachi, Ltd.",
-    "module_name": "Personal Identity Verification Application on Hitachi MULTOS Smart Chip",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "1/25/2007",
-    "validation_dates": [
-      "1/25/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The HITACHI MULTOS Smart Chip is a single chip for smart cards with a dual interface (contact and contactless), which is compliant with MULTOS. The MULTOS OS is a high-security multi-application smart card operating system and Key Management Infrastructure which provides Card Issuers with the opportunity to define their own card programmes, delivering services with their own smart card applications or those of other third-party Application Providers.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Personal Identity Verification Application on Hitachi MULTOS Smart Chip",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/732",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,16 +40,29 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt732.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp732.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/25/2007",
+    "validation_dates": [
+      "1/25/2007"
+    ],
     "validation_history": [
       {
         "date": "1/25/2007",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Hitachi, Ltd.",
-      "website_url": "http://www.hitachi.com",
       "address_lines": [
         "Hitachi System plaza Shinkawasaki,",
         "890 Kashimada,",
@@ -58,25 +70,13 @@
         "Kawasaki, Kanagawa Perfecture 212-8567",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Yutaka Takami",
       "contact_email": "yutaka.takami.xx@hitachi.com",
-      "contact_phone": "+81-44-549-1755"
+      "contact_name": "Yutaka Takami",
+      "contact_phone": "+81-44-549-1755",
+      "country": "Japan",
+      "name": "Hitachi, Ltd.",
+      "website_url": "http://www.hitachi.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Hitachi, Ltd."
   }
 }

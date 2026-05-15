@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4117"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4117",
     "certificate_number": "4117",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4117",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4117",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4117.pdf",
-    "vendor_name": "Christine Wireless, Inc.",
-    "module_name": "Radio Internet-Protocol Communications Module Z (RIC-Mz)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "12/28/2021",
-    "validation_dates": [
-      "12/28/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "None",
     "description": "The RIC-Mz provides Internet Protocol connectivity for Radio Equipment utilizing the serial protocol known as HDLC. Both synchronous and asynchronous modes are supported. The RIC-Mz can transport the HDLC over Internet Protocol in a unencrypted UDP packet or an encrypted DTLS packet and also can convert the HDLC into Digital Fixed Station Interface (DFSI) formats compliant with TIA standards TIA 102.BAHA and 102.BAHA-A to allow connection to any equipment to a Dispatch Console or DFSI Base Station. Control of the RIC-Mz is accomplished with a secure (https) connection to a web browser.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Radio Internet-Protocol Communications Module Z (RIC-Mz)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4117",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2021_020122_0905_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4117.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "12/28/2021",
+    "validation_dates": [
+      "12/28/2021"
+    ],
     "validation_history": [
       {
         "date": "12/28/2021",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Christine Wireless, Inc.",
-      "website_url": "http://www.christinewirless.com",
       "address_lines": [
         "3079 Saint Johns Lane",
         "Ellicott City, MD 21042",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Richard Brockway",
       "contact_email": "Richard.brockway@verizon.net",
-      "contact_phone": "410-961-7331"
+      "contact_name": "Richard Brockway",
+      "contact_phone": "410-961-7331",
+      "country": "USA",
+      "name": "Christine Wireless, Inc.",
+      "website_url": "http://www.christinewirless.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Christine Wireless, Inc."
   }
 }

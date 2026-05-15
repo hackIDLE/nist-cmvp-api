@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886"
   },
   "certificate": {
-    "certificate_number": "1886",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf",
-    "vendor_name": "Comtech EF Data Corporation",
-    "module_name": "DMD2050E TRANSEC Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "2/8/2013",
-    "validation_dates": [
-      "2/8/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via the DMD2050E Satellite Modem, as well as firmware to provide the cryptographic functions needed to act as an endpoint for TLS and SSH management, and control traffic.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/8/2013",
-        "type": "Initial",
-        "lab": "SAIC-VA"
-      }
-    ],
-    "vendor": {
-      "name": "Comtech EF Data Corporation",
-      "website_url": "http://www.comtechefdata.com",
-      "address_lines": [
-        "2114 West 7th Street",
-        "Tempe, AZ 85281",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Wallace Davis",
-      "contact_email": "wdavis@comtechefdata.com",
-      "contact_phone": "480-333-2189"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -81,6 +27,60 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886",
+    "certificate_number": "1886",
+    "dataset": "historical",
+    "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via the DMD2050E Satellite Modem, as well as firmware to provide the cryptographic functions needed to act as an endpoint for TLS and SSH management, and control traffic.",
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DMD2050E TRANSEC Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/8/2013",
+    "validation_dates": [
+      "2/8/2013"
+    ],
+    "validation_history": [
+      {
+        "date": "2/8/2013",
+        "lab": "SAIC-VA",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2114 West 7th Street",
+        "Tempe, AZ 85281",
+        "USA"
+      ],
+      "contact_email": "wdavis@comtechefdata.com",
+      "contact_name": "Wallace Davis",
+      "contact_phone": "480-333-2189",
+      "country": "USA",
+      "name": "Comtech EF Data Corporation",
+      "website_url": "http://www.comtechefdata.com"
+    },
+    "vendor_name": "Comtech EF Data Corporation"
   }
 }

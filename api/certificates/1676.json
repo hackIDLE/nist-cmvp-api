@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1676"
   },
   "certificate": {
-    "certificate_number": "1676",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1676",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1676",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1676.pdf",
-    "vendor_name": "Symantec Corporation",
-    "module_name": "Symantec Java Cryptographic Module Version 1.1",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/9/2012",
-    "validation_dates": [
-      "3/9/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with module RSA BSAFE® Crypto-J Software Module validated to FIPS 140-2 under Cert. #1291 operating in FIPS mode",
-    "description": "The Symantec Java Cryptographic Module Version 1.1 provides a comprehensive set of cryptographic services for Symantec products including, but not limited to, the Symantec Data Loss Prevention Suite.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1676.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0015.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/9/2012",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Symantec Corporation",
-      "website_url": "http://www.symantec.com",
-      "address_lines": [
-        "350 Ellis Street",
-        "Mountain View, CA 94043",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "John Bordwine",
-      "contact_email": "john_bordwine@symantec.com",
-      "contact_phone": "703-885-3854"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -82,6 +28,60 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode with module RSA BSAFE® Crypto-J Software Module validated to FIPS 140-2 under Cert. #1291 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1676",
+    "certificate_number": "1676",
+    "dataset": "historical",
+    "description": "The Symantec Java Cryptographic Module Version 1.1 provides a comprehensive set of cryptographic services for Symantec products including, but not limited to, the Symantec Data Loss Prevention Suite.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Symantec Java Cryptographic Module Version 1.1",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1676",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1676.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0015.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1676.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/9/2012",
+    "validation_dates": [
+      "3/9/2012"
+    ],
+    "validation_history": [
+      {
+        "date": "3/9/2012",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "350 Ellis Street",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "contact_email": "john_bordwine@symantec.com",
+      "contact_name": "John Bordwine",
+      "contact_phone": "703-885-3854",
+      "country": "USA",
+      "name": "Symantec Corporation",
+      "website_url": "http://www.symantec.com"
+    },
+    "vendor_name": "Symantec Corporation"
   }
 }

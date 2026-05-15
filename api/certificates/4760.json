@@ -1,38 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4760"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals and Physical Kit installed as indicated in the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4760",
     "certificate_number": "4760",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4760",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4760",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4760.pdf",
-    "vendor_name": "Palo Alto Networks, Inc.",
-    "module_name": "PAN-OS 10.2 running on PA-220, PA-220R, PA-400 Series, PA-800 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, and PA-7000 Series NGFWs",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "8/14/2024, 9/2/2025",
-    "validation_dates": [
-      "8/14/2024",
-      "9/2/2025"
-    ],
-    "sunset_date": "8/13/2029",
-    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals and Physical Kit installed as indicated in the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy",
     "description": "Palo Alto Networks offers a full line of next-generation security appliances that range from the PA-220, designed for enterprise remote offices, to the PA-7080, which is a modular chassis designed for high-speed datacenters. The platform architecture is based on our single-pass engine, PAN-OS, for networking, security, threat prevention, and management functionality that is consistent across all platforms. The devices differ only in capacities, performance, and physical configuration.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "PAN-OS 10.2 running on PA-220, PA-220R, PA-400 Series, PA-800 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, and PA-7000 Series NGFWs",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4760",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,45 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4760.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/13/2029",
+    "validation_date": "8/14/2024, 9/2/2025",
+    "validation_dates": [
+      "8/14/2024",
+      "9/2/2025"
+    ],
     "validation_history": [
       {
         "date": "8/14/2024",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "9/2/2025",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Palo Alto Networks, Inc.",
-      "website_url": "http://www.paloaltonetworks.com",
       "address_lines": [
         "3000 Tannery Way",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jake Bajic",
       "contact_email": "certifications@paloaltonetworks.com",
-      "contact_phone": "408-753-4000"
+      "contact_name": "Jake Bajic",
+      "contact_phone": "408-753-4000",
+      "country": "USA",
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Palo Alto Networks, Inc."
   }
 }

@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243"
   },
   "certificate": {
-    "certificate_number": "5243",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf",
-    "vendor_name": "DigiCert, Inc.",
-    "module_name": "DigiCert TrustCore Cryptographic Suite B Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "4/15/2026",
-    "validation_dates": [
-      "4/15/2026"
-    ],
-    "sunset_date": "4/14/2031",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). When operated in approved mode",
-    "description": "The DigiCert TrustCore Cryptographic Module is a software library that that provides approved cryptographic functionality to serve user-space applications.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/15/2026",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "DigiCert, Inc.",
-      "website_url": "http://www.digicert.com",
-      "address_lines": [
-        "2801 N. Thanksgiving Way",
-        "Suite 500",
-        "Lehi, UT 84043",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "TrustCore SDK Product Team",
-      "contact_email": "FIPS@digicert.com",
-      "contact_phone": "1-800-579-2848"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 72,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 72
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -158,6 +103,61 @@
       "Triple-DES | (NC) | Encryption/Decryption",
       "Note: All the various AES modes (e.g., EAX, XCBC, XTS, etc.) use the same underlying AES",
       "implementation as the approved AES cert."
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243",
+    "certificate_number": "5243",
+    "dataset": "active",
+    "description": "The DigiCert TrustCore Cryptographic Module is a software library that that provides approved cryptographic functionality to serve user-space applications.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DigiCert TrustCore Cryptographic Suite B Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5243",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5243.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/14/2031",
+    "validation_date": "4/15/2026",
+    "validation_dates": [
+      "4/15/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/15/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2801 N. Thanksgiving Way",
+        "Suite 500",
+        "Lehi, UT 84043",
+        "USA"
+      ],
+      "contact_email": "FIPS@digicert.com",
+      "contact_name": "TrustCore SDK Product Team",
+      "contact_phone": "1-800-579-2848",
+      "country": "USA",
+      "name": "DigiCert, Inc.",
+      "website_url": "http://www.digicert.com"
+    },
+    "vendor_name": "DigiCert, Inc."
   }
 }

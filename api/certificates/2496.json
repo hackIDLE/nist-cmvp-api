@@ -1,23 +1,68 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2496"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2496",
     "certificate_number": "2496",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2496",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2496",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2496.pdf",
-    "vendor_name": "Dell, Inc.",
+    "description": "Dell OpenSSL Cryptographic Library v2.3 and v2.4 is used within various Dell EMC Networking products, including the S and Z-Series. Dell EMC Networking S and Z-Series are high performance 10/40GbE ToR and Core Fabric switching products designed for highly virtualized Data Centers. These switches are built on top of Dell’s Data Center hardened OS, Dell EMC Networking OS.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "Dell OpenSSL Cryptographic Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2496",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2496.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2496.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-2",
     "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "12/16/2015, 8/22/2016, 1/30/2017, 8/31/2017, 10/5/2018, 2/19/2019, 6/19/2019, 1/24/2020, 4/20/2020, 5/19/2020, 5/18/2021",
     "validation_dates": [
       "12/16/2015",
@@ -32,121 +77,76 @@
       "5/19/2020",
       "5/18/2021"
     ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "Dell OpenSSL Cryptographic Library v2.3 and v2.4 is used within various Dell EMC Networking products, including the S and Z-Series. Dell EMC Networking S and Z-Series are high performance 10/40GbE ToR and Core Fabric switching products designed for highly virtualized Data Centers. These switches are built on top of Dell’s Data Center hardened OS, Dell EMC Networking OS.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2496.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "12/16/2015",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "8/22/2016",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "1/30/2017",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "8/31/2017",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "10/5/2018",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "2/19/2019",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "6/19/2019",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "1/24/2020",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "4/20/2020",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "5/19/2020",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       },
       {
         "date": "5/18/2021",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Dell, Inc.",
-      "website_url": "http://www.dell.com",
       "address_lines": [
         "5450 Great America Parkway",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Srihari Mandava",
       "contact_email": "Srihari_Mandava@dell.com",
-      "contact_phone": "408-571-3522"
+      "contact_name": "Srihari Mandava",
+      "contact_phone": "408-571-3522",
+      "country": "USA",
+      "name": "Dell, Inc.",
+      "website_url": "http://www.dell.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "DSA",
-      "ECDH",
-      "ECDSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Dell, Inc."
   }
 }

@@ -1,43 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2388"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2388",
     "certificate_number": "2388",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2388",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2388",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2388.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "IOS Common Cryptographic Module (IC2M) Rel5",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "5/28/2015, 11/20/2017, 7/31/2018, 7/1/2020",
-    "validation_dates": [
-      "5/28/2015",
-      "11/20/2017",
-      "7/31/2018",
-      "7/1/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
     "description": "The IC2M module provides the FIPS validated cryptographic algorithms for services requiring those algorithms. The module does not implement any protocols directly. Instead, it provides the cryptographic primitives and functions to allow IOS to implement those various protocols.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A",
-      "Tested: Cisco ASR1K RP2 with processor Intel Xeon on IOS XE3.13",
-      "Cisco ASR1K RP1 with processor Freescale SC8548H on IOS XE3.13",
-      "Cisco ISR 2951 with processor Freescale 8752E on IOS 15.4",
-      "Cisco ISR 1921 with processor Cavium CN5020 on IOS 15.4",
-      "Cisco ISR 2921 with processor Cavium CN5220 on IOS 15.4",
-      "Cisco ISR 891 with processor MPC8358E on IOS 15.4",
-      "ESR 5940 with processor MPC8572C on IOS 15.4"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IOS Common Cryptographic Module (IC2M) Rel5",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2388",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -48,55 +40,63 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0053.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A",
+      "Tested: Cisco ASR1K RP2 with processor Intel Xeon on IOS XE3.13",
+      "Cisco ASR1K RP1 with processor Freescale SC8548H on IOS XE3.13",
+      "Cisco ISR 2951 with processor Freescale 8752E on IOS 15.4",
+      "Cisco ISR 1921 with processor Cavium CN5020 on IOS 15.4",
+      "Cisco ISR 2921 with processor Cavium CN5220 on IOS 15.4",
+      "Cisco ISR 891 with processor MPC8358E on IOS 15.4",
+      "ESR 5940 with processor MPC8572C on IOS 15.4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2388.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/28/2015, 11/20/2017, 7/31/2018, 7/1/2020",
+    "validation_dates": [
+      "5/28/2015",
+      "11/20/2017",
+      "7/31/2018",
+      "7/1/2020"
+    ],
     "validation_history": [
       {
         "date": "5/28/2015",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "11/20/2017",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "7/31/2018",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "7/1/2020",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
       "address_lines": [
         "170 West Tasman Dr.",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
-      "contact_phone": null
+      "contact_name": "Global Certification Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

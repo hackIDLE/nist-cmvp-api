@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/391"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/391",
     "certificate_number": "391",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/391",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/391",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp391.pdf",
-    "vendor_name": "F-Secure Corporation",
-    "module_name": "F-Secure® Cryptographic Library™ for Windows",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "3/10/2004",
-    "validation_dates": [
-      "3/10/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The F-Secure Cryptographic Library for Windows (the Module) is a software module, implemented as a 32-bit Windows 'NT/2000/XP/98/ME' compatible DLL (FSCLM.DLL). The Module provides an assortment of cryptographic services to any client process that attaches an instance of the Module DLL. The Module is designed and implemented to meet the level 2 requirements of FIPS publication 140-2 when running on appropriate hardware under Windows 2000 with service pack 3 and Q326886 Hotfix operating system.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "F-Secure® Cryptographic Library™ for Windows",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/391",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt391.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp391.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/10/2004",
+    "validation_dates": [
+      "3/10/2004"
+    ],
     "validation_history": [
       {
         "date": "3/10/2004",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "F-Secure Corporation",
-      "website_url": "http://www.f-secure.com",
       "address_lines": [
         "Tammasaarenkatu 7",
         "PL 24, Helsinki 00181",
         "Finland"
       ],
-      "country": "Finland",
-      "contact_name": "Alexey Kirichenko",
       "contact_email": "alexey.kirichenko@f-secure.com",
-      "contact_phone": "+358 9 2520 5548"
+      "contact_name": "Alexey Kirichenko",
+      "contact_phone": "+358 9 2520 5548",
+      "country": "Finland",
+      "name": "F-Secure Corporation",
+      "website_url": "http://www.f-secure.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "F-Secure Corporation"
   }
 }

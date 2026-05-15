@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4192"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4192",
     "certificate_number": "4192",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4192",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4192",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4192.pdf",
-    "vendor_name": "WinMagic Corp",
-    "module_name": "SecureDoc® Cryptographic Engine for macOS/Linux",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/7/2022",
-    "validation_dates": [
-      "4/7/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "None",
     "description": "SecureDoc® Cryptographic Engine for macOS/Linux provides cryptographic services for the WinMagic software products running on non-Windows platforms.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SecureDoc® Cryptographic Engine for macOS/Linux",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4192",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,49 +48,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/CMVP Certificates (FCVC) April 2022_020522_0649_mmsigned.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4192.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/7/2022",
+    "validation_dates": [
+      "4/7/2022"
+    ],
     "validation_history": [
       {
         "date": "4/7/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "WinMagic Corp",
-      "website_url": "http://www.winmagic.com",
       "address_lines": [
         "5770 Hurontario St",
         "Suite 501",
         "Mississauga, ON L5R 3G5",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Alexander Mazuruc",
       "contact_email": "alexm@winmagic.com",
-      "contact_phone": "905-502-7000 ext. 3225"
+      "contact_name": "Alexander Mazuruc",
+      "contact_phone": "905-502-7000 ext. 3225",
+      "country": "Canada",
+      "name": "WinMagic Corp",
+      "website_url": "http://www.winmagic.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "SHA"
-    ]
+    "vendor_name": "WinMagic Corp"
   }
 }

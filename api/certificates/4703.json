@@ -1,97 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4703"
   },
   "certificate": {
-    "certificate_number": "4703",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4703",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4703",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4703.pdf",
-    "vendor_name": "Marvell Semiconductor, Inc.",
-    "module_name": "Marvell LS2 HSM Family",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "6/6/2024, 6/16/2025, 1/29/2026, 2/26/2026",
-    "validation_dates": [
-      "6/6/2024",
-      "6/16/2025",
-      "1/29/2026",
-      "2/26/2026"
-    ],
-    "sunset_date": "6/5/2029",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
-    "description": "The LS2 HSM module is a multi-chip PCIe adapter with firmware. It consists of multiple firmware components, including an operating system, applications exposing services and interfaces related to secure key management, crypto operations, and policy management of the module",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4703.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2024_010724_1153.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/6/2024",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "6/16/2025",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "1/29/2026",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "2/26/2026",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Marvell Semiconductor, Inc.",
-      "website_url": "http://www.marvell.com",
-      "address_lines": [
-        "5488 Marvell Lane",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Dhanalakshmi Saravanan",
-      "contact_email": "rdhana@marvell.com",
-      "contact_phone": "408-222-2500"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -107,6 +31,82 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4703",
+    "certificate_number": "4703",
+    "dataset": "active",
+    "description": "The LS2 HSM module is a multi-chip PCIe adapter with firmware. It consists of multiple firmware components, including an operating system, applications exposing services and interfaces related to secure key management, crypto operations, and policy management of the module",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Marvell LS2 HSM Family",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4703",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4703.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2024_010724_1153.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4703.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "6/5/2029",
+    "validation_date": "6/6/2024, 6/16/2025, 1/29/2026, 2/26/2026",
+    "validation_dates": [
+      "6/6/2024",
+      "6/16/2025",
+      "1/29/2026",
+      "2/26/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "6/6/2024",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      },
+      {
+        "date": "6/16/2025",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "1/29/2026",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "2/26/2026",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "5488 Marvell Lane",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "rdhana@marvell.com",
+      "contact_name": "Dhanalakshmi Saravanan",
+      "contact_phone": "408-222-2500",
+      "country": "USA",
+      "name": "Marvell Semiconductor, Inc.",
+      "website_url": "http://www.marvell.com"
+    },
+    "vendor_name": "Marvell Semiconductor, Inc."
   }
 }

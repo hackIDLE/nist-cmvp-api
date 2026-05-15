@@ -1,97 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3381"
   },
   "certificate": {
-    "certificate_number": "3381",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3381",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3381",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3381.pdf",
-    "vendor_name": "SideChannel Inc.",
-    "module_name": "Enclave Microsegmentation Platform",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/26/2019, 6/4/2020, 3/16/2021, 5/11/2023",
-    "validation_dates": [
-      "2/26/2019",
-      "6/4/2020",
-      "3/16/2021",
-      "5/11/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3273.",
-    "description": "SideChannel's Enclave Microsegmentation Platform builds overlay networks, firewalls, and Zero Trust network permission models to create spaces where access is only granted to specified machines and users. These spaces, or micro-segments, are called Enclaves. Enclave was designed to make creating these accesses in a simple way without sacrificing security.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3381.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FebConsolidated.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/26/2019",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "6/4/2020",
-        "type": "Update",
-        "lab": "CYGNACOM SOLUTIONS INC"
-      },
-      {
-        "date": "3/16/2021",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "5/11/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "SideChannel Inc.",
-      "website_url": "http://www.sidechannel.com",
-      "address_lines": [
-        "146 Main St.",
-        "Suite 405",
-        "Worchester, MA 01608",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Enclave Sales",
-      "contact_email": "info@sidechannel.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -102,6 +26,82 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3273.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3381",
+    "certificate_number": "3381",
+    "dataset": "historical",
+    "description": "SideChannel's Enclave Microsegmentation Platform builds overlay networks, firewalls, and Zero Trust network permission models to create spaces where access is only granted to specified machines and users. These spaces, or micro-segments, are called Enclaves. Enclave was designed to make creating these accesses in a simple way without sacrificing security.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Enclave Microsegmentation Platform",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3381",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3381.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FebConsolidated.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3381.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/26/2019, 6/4/2020, 3/16/2021, 5/11/2023",
+    "validation_dates": [
+      "2/26/2019",
+      "6/4/2020",
+      "3/16/2021",
+      "5/11/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "2/26/2019",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "6/4/2020",
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Update"
+      },
+      {
+        "date": "3/16/2021",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "5/11/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "146 Main St.",
+        "Suite 405",
+        "Worchester, MA 01608",
+        "USA"
+      ],
+      "contact_email": "info@sidechannel.com",
+      "contact_name": "Enclave Sales",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "SideChannel Inc.",
+      "website_url": "http://www.sidechannel.com"
+    },
+    "vendor_name": "SideChannel Inc."
   }
 }

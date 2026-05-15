@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952"
   },
   "certificate": {
-    "certificate_number": "4952",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf",
-    "vendor_name": "Broadcom, Inc.",
-    "module_name": "PrismPlus Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "1/27/2025",
-    "validation_dates": [
-      "1/27/2025"
-    ],
-    "sunset_date": "1/26/2030",
-    "caveat": "None",
-    "description": "The PrismPlus Cryptographic Module is a hardware Module intended for use by US Federal agencies or other markets that require a FIPS 140-3 validated network encryption device. The Module implemented on a PCIe Adapter is intended to be used in Fibre Channel based Storage Area Networks. The Module allows a Connection to be established between one of the multiple Host Initiator Entities (eg 256 Virtual Machine Drivers running on multiple CPU cores) on a Storage Server Appliance and one of the multiple Remote Host Target Entities (eg 1000s of Storage LUNs) on multiple Storage Device Appliances via one of the multiple Physical Ports (eg 4x 64GFC ports). The Connection facilitates transfer of data between a Host Initiator Entity on a Storage Server Appliance and Host Target Entity on a Storage Server Appliance using the FC (Fibre Channel) Protocol. The Module allows multiple (1000s) of connections between Host Initiator Entities on a Storage Server Appliance and Host Target Entities on Storage Device Appliances. The module can be used to support Data-in-Flight Encryption/Decryption between Storage Appliances in a FC-SAN environment. Encryption decisions are made on a connection basis, whereby only a subset of the connections could be enabled for Encryption. If a connection is enabled for Encryption, only a subset of the Frame Types (eg Data Frames only, not Command/Status/Control/etc. Frames) could be enabled for Encryption.",
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/27/2025",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Broadcom, Inc.",
-      "website_url": "http://www.broadcom.com/",
-      "address_lines": [
-        "270 Innovation Drive",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ravi Shenoy",
-      "contact_email": "ravi.shenoy@broadcom.com",
-      "contact_phone": "408-433-4263"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -77,6 +24,59 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952",
+    "certificate_number": "4952",
+    "dataset": "active",
+    "description": "The PrismPlus Cryptographic Module is a hardware Module intended for use by US Federal agencies or other markets that require a FIPS 140-3 validated network encryption device. The Module implemented on a PCIe Adapter is intended to be used in Fibre Channel based Storage Area Networks. The Module allows a Connection to be established between one of the multiple Host Initiator Entities (eg 256 Virtual Machine Drivers running on multiple CPU cores) on a Storage Server Appliance and one of the multiple Remote Host Target Entities (eg 1000s of Storage LUNs) on multiple Storage Device Appliances via one of the multiple Physical Ports (eg 4x 64GFC ports). The Connection facilitates transfer of data between a Host Initiator Entity on a Storage Server Appliance and Host Target Entity on a Storage Server Appliance using the FC (Fibre Channel) Protocol. The Module allows multiple (1000s) of connections between Host Initiator Entities on a Storage Server Appliance and Host Target Entities on Storage Device Appliances. The module can be used to support Data-in-Flight Encryption/Decryption between Storage Appliances in a FC-SAN environment. Encryption decisions are made on a connection basis, whereby only a subset of the connections could be enabled for Encryption. If a connection is enabled for Encryption, only a subset of the Frame Types (eg Data Frames only, not Command/Status/Control/etc. Frames) could be enabled for Encryption.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "PrismPlus Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/26/2030",
+    "validation_date": "1/27/2025",
+    "validation_dates": [
+      "1/27/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "1/27/2025",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "270 Innovation Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "ravi.shenoy@broadcom.com",
+      "contact_name": "Ravi Shenoy",
+      "contact_phone": "408-433-4263",
+      "country": "USA",
+      "name": "Broadcom, Inc.",
+      "website_url": "http://www.broadcom.com/"
+    },
+    "vendor_name": "Broadcom, Inc."
   }
 }

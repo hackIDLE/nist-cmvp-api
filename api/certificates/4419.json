@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4419"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4419",
     "certificate_number": "4419",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4419",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4419",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4419.pdf",
-    "vendor_name": "Dream Security Co., Ltd.",
-    "module_name": "MagicCryptoMVP",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/20/2023",
-    "validation_dates": [
-      "1/20/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "No assurance of the minimum strength of generated keys",
     "description": "MagicCryptoMVP cryptographic module is in the form of a software shared library that runs on Linux operating systems. The MagicCryptoMVP uses encryption API functions to provide cryptographic services such as encryption/decryption, hash, digital signatures generation and verification, message authentication (MAC), secret key generation, and key pair generation.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "MagicCryptoMVP",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4419",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2023_010223_0657_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4419.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/20/2023",
+    "validation_dates": [
+      "1/20/2023"
+    ],
     "validation_history": [
       {
         "date": "1/20/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Dream Security Co., Ltd.",
-      "website_url": "http://www.dreamsecurity.com/",
       "address_lines": [
         "10F, The-Live-Sejong Tower, 126, Achasan-ro, Seongdong-gu",
         "Seoul 04783",
         "Republic of Korea"
       ],
-      "country": "Republic of Korea",
-      "contact_name": "Cryptographic Technology Research Center",
       "contact_email": "crypto@dreamsecurity.com",
-      "contact_phone": null
+      "contact_name": "Cryptographic Technology Research Center",
+      "contact_phone": null,
+      "country": "Republic of Korea",
+      "name": "Dream Security Co., Ltd.",
+      "website_url": "http://www.dreamsecurity.com/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Dream Security Co., Ltd."
   }
 }

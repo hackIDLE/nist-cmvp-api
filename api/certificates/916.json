@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/916"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/916",
     "certificate_number": "916",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/916",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/916",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp916.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "DataSecure Appliance i416, i426 and i116",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "2/29/2008, 11/6/2008",
-    "validation_dates": [
-      "2/29/2008",
-      "11/6/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The SafeNet DataSecure Appliance is a dedicated hardware product designed specifically for security and cryptographic processing, allowing organizations to protect structured and unstructured data, from within the data center out to remote locations, and ensure compliance with legislative and policy mandates for security. With its capabilities for granular encryption, seamless integration, and centralized key and policy management, DataSecure enables organizations to guard against a range of security threats, with unparalleled ease and cost effectiveness.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DataSecure Appliance i416, i426 and i116",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/916",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt916.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp916.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/29/2008, 11/6/2008",
+    "validation_dates": [
+      "2/29/2008",
+      "11/6/2008"
+    ],
     "validation_history": [
       {
         "date": "2/29/2008",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "11/6/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet.com",
       "address_lines": [
         "20 Colonnade Road, Suite 200",
         "Ottawa, ON K2E 7M6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Eric Murray",
       "contact_email": "eric.murray@safenet-inc.com",
-      "contact_phone": "650-261-2400"
+      "contact_name": "Eric Murray",
+      "contact_phone": "650-261-2400",
+      "country": "Canada",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "SafeNet, Inc."
   }
 }

@@ -1,82 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2417"
   },
   "certificate": {
-    "certificate_number": "2417",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2417",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2417",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2417.pdf",
-    "vendor_name": "McAfee, Inc.",
-    "module_name": "McAfee Firewall Enterprise Control Center",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/30/2015, 7/31/2015",
-    "validation_dates": [
-      "7/30/2015",
-      "7/31/2015"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section Secure Operation.",
-    "description": "McAfee Firewall Enterprise Control Center simplifies the management of multiple McAfee Firewall Enterprise appliances. Control Center enables centralized management and monitoring of the McAfee Firewall Enterprise solutions, allowing network administrators to centrally define firewall policy, deploy updates and inventory their firewall products.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2417.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0055.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/30/2015",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      },
-      {
-        "date": "7/31/2015",
-        "type": "Update",
-        "lab": ""
-      }
-    ],
-    "vendor": {
-      "name": "McAfee, Inc.",
-      "website_url": "http://www.mcafee.com",
-      "address_lines": [
-        "2821 Mission College Blvd.",
-        "Santa Clara, CA 95054"
-      ],
-      "country": "Santa Clara, CA 95054",
-      "contact_name": "Mark Hanson",
-      "contact_email": "Mark_Hanson@McAfee.com",
-      "contact_phone": "651-628-1633"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -90,6 +29,67 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section Secure Operation.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2417",
+    "certificate_number": "2417",
+    "dataset": "historical",
+    "description": "McAfee Firewall Enterprise Control Center simplifies the management of multiple McAfee Firewall Enterprise appliances. Control Center enables centralized management and monitoring of the McAfee Firewall Enterprise solutions, allowing network administrators to centrally define firewall policy, deploy updates and inventory their firewall products.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "McAfee Firewall Enterprise Control Center",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2417",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2417.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0055.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2417.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/30/2015, 7/31/2015",
+    "validation_dates": [
+      "7/30/2015",
+      "7/31/2015"
+    ],
+    "validation_history": [
+      {
+        "date": "7/30/2015",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      },
+      {
+        "date": "7/31/2015",
+        "lab": "",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2821 Mission College Blvd.",
+        "Santa Clara, CA 95054"
+      ],
+      "contact_email": "Mark_Hanson@McAfee.com",
+      "contact_name": "Mark Hanson",
+      "contact_phone": "651-628-1633",
+      "country": "Santa Clara, CA 95054",
+      "name": "McAfee, Inc.",
+      "website_url": "http://www.mcafee.com"
+    },
+    "vendor_name": "McAfee, Inc."
   }
 }

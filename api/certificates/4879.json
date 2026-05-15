@@ -1,81 +1,81 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4879"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4879",
     "certificate_number": "4879",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4879",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4879",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4879.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung NVMe TCG Opal SSC SEDs PM1743/PM1745 Series",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "11/14/2024, 1/29/2026",
-    "validation_dates": [
-      "11/14/2024",
-      "1/29/2026"
-    ],
-    "sunset_date": "11/13/2026",
-    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
     "description": "The Samsung NVMe TCG Opal SSC SEDs PM1743/PM1745 Series SSD (Solid State Drive), satisfies all applicable FIPS 140-3 security level 2 requirements, supporting TCG Opal SSC based SED (Self-Encrypting Drive) features, designed to protect unauthorized access to the user data stored in its NAND Flash memories. The built-in AES hardware engines in the cryptographic module’s controller provide on-the-fly encryption and decryption of the user data without performance loss. The SED’s nature also provides instantaneous sanitization of the user data via cryptographic erase.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung NVMe TCG Opal SSC SEDs PM1743/PM1745 Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4879",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4879.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4879.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/13/2026",
+    "validation_date": "11/14/2024, 1/29/2026",
+    "validation_dates": [
+      "11/14/2024",
+      "1/29/2026"
+    ],
     "validation_history": [
       {
         "date": "11/14/2024",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "1/29/2026",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com",
       "address_lines": [
         "1-1, Samsungjeonja-ro",
         "Hwaseong-si, Gyeonggi-do 18448",
         "Korea"
       ],
-      "country": "Korea",
-      "contact_name": "Jisoo Kim",
       "contact_email": "jisoo74.kim@samsung.com",
-      "contact_phone": "82-31-8096-2832"
+      "contact_name": "Jisoo Kim",
+      "contact_phone": "82-31-8096-2832",
+      "country": "Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

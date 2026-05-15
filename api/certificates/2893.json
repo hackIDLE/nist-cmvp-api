@@ -1,35 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2893"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2893",
     "certificate_number": "2893",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2893",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2893",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2893.pdf",
-    "vendor_name": "Panasonic Corporation",
-    "module_name": "Panasonic Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/27/2017, 12/9/2019",
-    "validation_dates": [
-      "4/27/2017",
-      "12/9/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode.",
     "description": "Panasonic Cryptographic Module provides high performance cryptographic processing for embedded devices.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Panasonic Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2893",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,54 +49,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertApr2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2893.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/27/2017, 12/9/2019",
+    "validation_dates": [
+      "4/27/2017",
+      "12/9/2019"
+    ],
     "validation_history": [
       {
         "date": "4/27/2017",
-        "type": "Initial",
-        "lab": "IT SECURITY CENTER"
+        "lab": "IT SECURITY CENTER",
+        "type": "Initial"
       },
       {
         "date": "12/9/2019",
-        "type": "Update",
-        "lab": "IT SECURITY CENTER"
+        "lab": "IT SECURITY CENTER",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Panasonic Corporation",
-      "website_url": "http://www.panasonic.com/global/home.html",
       "address_lines": [
         "4-1-62, Minoshima, Hakata-ku",
         "Fukuoka, Fukuoka 812-8531",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Hiroyuki Tanaka",
       "contact_email": "tanaka.hiro@jp.panasonic.com",
-      "contact_phone": "+81-50-3380-2101"
+      "contact_name": "Hiroyuki Tanaka",
+      "contact_phone": "+81-50-3380-2101",
+      "country": "Japan",
+      "name": "Panasonic Corporation",
+      "website_url": "http://www.panasonic.com/global/home.html"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Panasonic Corporation"
   }
 }

@@ -1,51 +1,63 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates SSPs whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219",
     "certificate_number": "5219",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5219.pdf",
-    "vendor_name": "JISA Softech Private Limited",
-    "module_name": "NITROXIII CNN35XX-NFBE HSM Family",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "MultiChipEmbed",
-    "overall_level": 3,
-    "validation_date": "3/31/2026",
-    "validation_dates": [
-      "3/31/2026"
-    ],
-    "sunset_date": "5/29/2029",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates SSPs whose strengths are modified by available entropy",
     "description": "The NITROXIII CNN35XX-NFBE HSM Family module is a high-performance purpose-built security solution for crypto acceleration. The module provides a FIPS 140-3 overall Level 3 security solution. The module is deployed inside CryptoBind HSM and CryptoBind DSS to provide crypto and TLS 1.0/1.1/1.2 acceleration in a secure manner to the system host. It is typically deployed in a CryptoBind HSM & CryptoBind DSS network appliance to provide cryptographic operations. The module’s functions are accessed over the PCIe interface via an API defined by the module inside CryptoBind HSM and CryptoBind DSS.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "MultiChipEmbed",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NITROXIII CNN35XX-NFBE HSM Family",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5219.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5219.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "5/29/2029",
+    "validation_date": "3/31/2026",
+    "validation_dates": [
+      "3/31/2026"
+    ],
     "validation_history": [
       {
         "date": "3/31/2026",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "JISA Softech Private Limited",
-      "website_url": "http://www.jisasoftech.com ",
       "address_lines": [
         "Amar Business Zone",
         "A604, Swati Park",
@@ -53,25 +65,13 @@
         "Pune, Maharashtra 411045",
         "India"
       ],
-      "country": "India",
-      "contact_name": "Rumit Shah",
       "contact_email": "rumit@jisasoftech.com",
-      "contact_phone": "+91 9823587030"
+      "contact_name": "Rumit Shah",
+      "contact_phone": "+91 9823587030",
+      "country": "India",
+      "name": "JISA Softech Private Limited",
+      "website_url": "http://www.jisasoftech.com "
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "JISA Softech Private Limited"
   }
 }

@@ -1,36 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ],
+    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 1.3 and 8 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222",
     "certificate_number": "3222",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3222.pdf",
-    "vendor_name": "Western Digital Corporation",
-    "module_name": "Ultrastar® SS200 TCG Enterprise SSD",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "7/10/2018, 7/13/2018",
-    "validation_dates": [
-      "7/10/2018",
-      "7/13/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode, installed, initialized and configured as specified in Sections 1.3 and 8 of the Security Policy",
     "description": "The Ultrastar® SS200 Self-Encrypting TCG Enterprise drives meet or exceed the most demanding performance and security requirements. The Ultrastar® SS200 solid state (SSD) is a 12Gb/s SAS Enterprise SSD that helps transform hybrid and all-flash data centers by scaling flash storage capacities using workload-optimized solutions to deliver exceptional value. Ultrastar® SS200 SSDs integrate SanDisk-brand 15nm NAND and the enterprise tested Guardian Technology™ platform to deliver enterprise-grade reliability, endurance, and performance.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ultrastar® SS200 TCG Enterprise SSD",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3222",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,50 +45,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidatedCert.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3222.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/10/2018, 7/13/2018",
+    "validation_dates": [
+      "7/10/2018",
+      "7/13/2018"
+    ],
     "validation_history": [
       {
         "date": "7/10/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "7/13/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Western Digital Corporation",
-      "website_url": "http://www.wdc.com",
       "address_lines": [
         "5601 Great Oaks Parkway",
         "San Jose, CA 95119",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Williamson",
       "contact_email": "michael.williamson@wdc.com",
-      "contact_phone": "408-717-8458"
+      "contact_name": "Michael Williamson",
+      "contact_phone": "408-717-8458",
+      "country": "USA",
+      "name": "Western Digital Corporation",
+      "website_url": "http://www.wdc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ]
+    "vendor_name": "Western Digital Corporation"
   }
 }

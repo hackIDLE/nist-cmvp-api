@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
     "certificate_number": "4459",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
-    "vendor_name": "Rambus Inc.",
-    "module_name": "VaultIP",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "3/24/2023",
-    "validation_dates": [
-      "3/24/2023"
-    ],
-    "sunset_date": "6/6/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "VaultIP is a Silicon IP Security Module with a secure asset store protecting all valuable assets on your device. It is a stand-alone Root of Trust that offers key management and crypto functions needed for platform and application security. VaultIP offers all security services to manage your device securely through its lifecycle. These include Secure Debug, Secure Provisioning, HUK and Identity protection and secure authentication services. Secure Boot and Communication protocols such as TLS can leverage VaultIP to secure the boot process and protect private communication keys.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VaultIP",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "6/6/2026",
+    "validation_date": "3/24/2023",
+    "validation_dates": [
+      "3/24/2023"
+    ],
     "validation_history": [
       {
         "date": "3/24/2023",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Rambus Inc.",
-      "website_url": "http://www.rambus.com",
       "address_lines": [
         "4453 North First Street, Suite 100",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Stuart Kincaid",
       "contact_email": "skincaid@rambus.com",
-      "contact_phone": "408-462-8000"
+      "contact_name": "Stuart Kincaid",
+      "contact_phone": "408-462-8000",
+      "country": "USA",
+      "name": "Rambus Inc.",
+      "website_url": "http://www.rambus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Rambus Inc."
   }
 }

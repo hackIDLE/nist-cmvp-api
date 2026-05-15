@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3178"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The output of the DRBG may not be used to generate keys. When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3178",
     "certificate_number": "3178",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3178",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3178",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3178.pdf",
-    "vendor_name": "Tintri by DDN, Inc.",
-    "module_name": "Tintri Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/27/2018, 2/10/2022, 9/13/2022, 6/8/2023",
-    "validation_dates": [
-      "4/27/2018",
-      "2/10/2022",
-      "9/13/2022",
-      "6/8/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The output of the DRBG may not be used to generate keys. When operated in FIPS mode",
     "description": "Tintri Cryptographic Module is a repackaged copy of OpenSSL which includes AES-GCM, AES-CBC, HMAC-SHA1, and DRBG. No modifications to the software content have been made, and no modifications to the algorithms implemented by the module have been made.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Tintri Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3178",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,55 +40,57 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3178.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/27/2018, 2/10/2022, 9/13/2022, 6/8/2023",
+    "validation_dates": [
+      "4/27/2018",
+      "2/10/2022",
+      "9/13/2022",
+      "6/8/2023"
+    ],
     "validation_history": [
       {
         "date": "4/27/2018",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/10/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/13/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/8/2023",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Tintri by DDN, Inc.",
-      "website_url": "http://www.tintri.com",
       "address_lines": [
         "9351 Deering Avenue",
         "Chatsworth, CA 91311",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Robert Armitano",
       "contact_email": "dl-fips@tintri.com",
-      "contact_phone": "800-837-2298"
+      "contact_name": "Robert Armitano",
+      "contact_phone": "800-837-2298",
+      "country": "USA",
+      "name": "Tintri by DDN, Inc.",
+      "website_url": "http://www.tintri.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Tintri by DDN, Inc."
   }
 }

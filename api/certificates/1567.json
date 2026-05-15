@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1567"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1567",
     "certificate_number": "1567",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1567",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1567",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1567.pdf",
-    "vendor_name": "Lumension Security, Inc.",
-    "module_name": "Lumension Cryptographic Kernel",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "6/27/2011",
-    "validation_dates": [
-      "6/27/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Lumension Cryptographic Kernel (LCK) v1.0 provides the cryptographic functions for certain Lumension products, including Application and Device Control. These products secure endpoints from malware and unauthorized software execution, and from malicious or accidental data loss through the use of removable devices and media.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Lumension Cryptographic Kernel",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1567",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,41 +40,37 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0006.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1567.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/27/2011",
+    "validation_dates": [
+      "6/27/2011"
+    ],
     "validation_history": [
       {
         "date": "6/27/2011",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Lumension Security, Inc.",
-      "website_url": "http://www.lumension.com",
       "address_lines": [
         "15880 Greenway-Hayden Loop",
         "Suite 100",
         "Scottsdale, AZ 85260",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Chris Chevalier",
       "contact_email": "Chris.Chevalier@lumension.com",
-      "contact_phone": "480-970-1025"
+      "contact_name": "Chris Chevalier",
+      "contact_phone": "480-970-1025",
+      "country": "USA",
+      "name": "Lumension Security, Inc.",
+      "website_url": "http://www.lumension.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Lumension Security, Inc."
   }
 }

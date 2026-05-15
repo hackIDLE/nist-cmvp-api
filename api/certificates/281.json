@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/281"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/281",
     "certificate_number": "281",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/281",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/281",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp281.pdf",
-    "vendor_name": "V-ONE Corporation, Inc.",
-    "module_name": "SmartGate®",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "12/23/2002, 1/9/2003, 6/18/2003",
-    "validation_dates": [
-      "12/23/2002",
-      "1/9/2003",
-      "6/18/2003"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "V-ONE Corporations SmartGate is leading client/server Virtual Private Network (VPN) software that provides enterprise-level security to network-based users for private information and private TCP/IP application services. SmartGate provides encryption, strong user authentication, authorization, management, accounting, key distribution, and proxy capabilities. It consists of server (SmartGate) and client (SmartPass) software.",
-    "security_level_exceptions": [
-      "Roles and Services: Level 2",
-      "Software Security: Level 3",
-      "Operating System Security: Tested as meeting Level 1 with Red Hat Pro Linux 7.2 and Sun Solaris 8 (Single User Mode)"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SmartGate®",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/281",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,51 +40,53 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt281.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles and Services: Level 2",
+      "Software Security: Level 3",
+      "Operating System Security: Tested as meeting Level 1 with Red Hat Pro Linux 7.2 and Sun Solaris 8 (Single User Mode)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp281.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/23/2002, 1/9/2003, 6/18/2003",
+    "validation_dates": [
+      "12/23/2002",
+      "1/9/2003",
+      "6/18/2003"
+    ],
     "validation_history": [
       {
         "date": "12/23/2002",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       },
       {
         "date": "1/9/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "6/18/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "V-ONE Corporation, Inc.",
-      "website_url": "http://www.v-one.com",
       "address_lines": [
         "20250 Century Blvd.",
         "Suite 300",
         "Germantown, MD 20874",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Chris Brook",
       "contact_email": "cbrook@v-one.com",
-      "contact_phone": "301-515-5242"
+      "contact_name": "Chris Brook",
+      "contact_phone": "301-515-5242",
+      "country": "USA",
+      "name": "V-ONE Corporation, Inc.",
+      "website_url": "http://www.v-one.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "V-ONE Corporation, Inc."
   }
 }

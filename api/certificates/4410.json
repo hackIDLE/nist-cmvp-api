@@ -1,33 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4410"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When installed, initialized, and configured as specified in Section 8.2 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4410",
     "certificate_number": "4410",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4410",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4410",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4410.pdf",
-    "vendor_name": "SK hynix Inc.",
-    "module_name": "SK hynix PE8111 E1.L NVMe TCG Opal SSC SED",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "1/9/2023",
-    "validation_dates": [
-      "1/9/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When installed, initialized, and configured as specified in Section 8.2 of the Security Policy",
     "description": "These products are NAND semiconductor-based data drives for server systems. Faster response to servers is available, compared to hard disk drives, but the basic operation is the same as conventional hard disk drives.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SK hynix PE8111 E1.L NVMe TCG Opal SSC SED",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4410",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,49 +49,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January 2023_010223_0657_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4410.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "1/9/2023",
+    "validation_dates": [
+      "1/9/2023"
+    ],
     "validation_history": [
       {
         "date": "1/9/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "SK hynix Inc.",
-      "website_url": "http://www.skhynix.com",
       "address_lines": [
         "2091 Gyeongchung-daero Bubal-eup",
         "Icheon-si, Gyeonggi-do 17336",
         "Korea"
       ],
-      "country": "Korea",
-      "contact_name": "Jong Youn Kim",
       "contact_email": "jongyoun.kim@sk.com",
-      "contact_phone": "+82-31-5815-8736"
+      "contact_name": "Jong Youn Kim",
+      "contact_phone": "+82-31-5815-8736",
+      "country": "Korea",
+      "name": "SK hynix Inc.",
+      "website_url": "http://www.skhynix.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "SK hynix Inc."
   }
 }

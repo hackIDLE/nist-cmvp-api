@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "KDF",
+      "RSA"
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669",
     "certificate_number": "4669",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4669.pdf",
-    "vendor_name": "Identity Automation",
-    "module_name": "RapidIdentity FIPS Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/8/2023, 4/24/2024",
-    "validation_dates": [
-      "12/8/2023",
-      "4/24/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "description": "The RapidIdentity FIPS Cryptographic Module is a cryptographic engine for Windows, iOS, and Android. The module delivers core cryptographic functions to Identity Automation’s RapidIdentity MFA Server and MFA Mobile app which provide a variety of authentication methods. The RapidIdentity FIPS Cryptographic Module leverages industry leading, FIPS approved cryptographic algorithms provided by the Bouncy Castle FIPS .NET APIs.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RapidIdentity FIPS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4669",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,54 +48,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2023_020124_0656.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4669.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "12/8/2023, 4/24/2024",
+    "validation_dates": [
+      "12/8/2023",
+      "4/24/2024"
+    ],
     "validation_history": [
       {
         "date": "12/8/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "4/24/2024",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Identity Automation",
-      "website_url": "http://www.identityautomation.com",
       "address_lines": [
         "7102 N Sam Houston Pkwy W",
         "Ste 300",
         "Houston, TX 77064",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Security & Certifications Team",
       "contact_email": "SecurityCertifications@identityautomation.com",
-      "contact_phone": "+1877-221-8401"
+      "contact_name": "Security & Certifications Team",
+      "contact_phone": "+1877-221-8401",
+      "country": "USA",
+      "name": "Identity Automation",
+      "website_url": "http://www.identityautomation.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DSA",
-      "ECDSA",
-      "EDDSA",
-      "KDF",
-      "RSA"
-    ]
+    "vendor_name": "Identity Automation"
   }
 }

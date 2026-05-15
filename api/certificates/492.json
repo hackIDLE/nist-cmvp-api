@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/492"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/492",
     "certificate_number": "492",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/492",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/492",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp492.pdf",
-    "vendor_name": "ITServ Inc.",
-    "module_name": "RideWay Station",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "12/22/2004, 1/24/2005",
-    "validation_dates": [
-      "12/22/2004",
-      "1/24/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "RideWay Station FGC integrates powerful firewall protection and VPN capabilities to safeguard computer networks from the threat of Internet attacks and intrusions. Each computer or server on the LAN must follow a strict authorization procedure in order to gain access to the network. In addition, the module uses Triple-DES encryption in its IPSec VPN to allow multiple offices to securely communicate over the Internet or to allow a remote client to securely connect to its office network. The highperforming hardware efficiently conducts encryption and decryption tasks without sacrificing throughput.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RideWay Station",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/492",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt492.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp492.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/22/2004, 1/24/2005",
+    "validation_dates": [
+      "12/22/2004",
+      "1/24/2005"
+    ],
     "validation_history": [
       {
         "date": "12/22/2004",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       },
       {
         "date": "1/24/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "ITServ Inc.",
-      "website_url": "http://www.ITServ.com",
       "address_lines": [
         "Six Montgomery Village Avenue",
         "Suite 405",
         "Gaithersburg, MD 20879",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": null,
       "contact_email": null,
-      "contact_phone": "301-948-1111"
+      "contact_name": null,
+      "contact_phone": "301-948-1111",
+      "country": "USA",
+      "name": "ITServ Inc.",
+      "website_url": "http://www.ITServ.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "ITServ Inc."
   }
 }

@@ -1,33 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761",
     "certificate_number": "3761",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3761.pdf",
-    "vendor_name": "Domo Tactical Communications (DTC) Limited",
-    "module_name": "SOLSDR NETNode Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Single Chip",
-    "overall_level": 1,
-    "validation_date": "12/9/2020",
-    "validation_dates": [
-      "12/9/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The SOLSDR NETNode security module resides within the SOLSDR and NETNode IP Mesh Phase 5 product families onwards. It provides FIPS140-2 compliant AES128 and AES256 encryption and decryption functions and include two modes of operation both software only and hardware accelerated.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SOLSDR NETNode Security Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3761",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,46 +46,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2020_040121_1006_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3761.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/9/2020",
+    "validation_dates": [
+      "12/9/2020"
+    ],
     "validation_history": [
       {
         "date": "12/9/2020",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Domo Tactical Communications (DTC) Limited",
-      "website_url": "http://www.domotactical.com",
       "address_lines": [
         "1100 Parkway",
         "Whiteley, Hampshire PO15 7AB",
         "UK"
       ],
-      "country": "UK",
-      "contact_name": "Neil McSparron",
       "contact_email": "Neil.McSparron@domotactical.com",
-      "contact_phone": "+44 7912 121 724"
+      "contact_name": "Neil McSparron",
+      "contact_phone": "+44 7912 121 724",
+      "country": "UK",
+      "name": "Domo Tactical Communications (DTC) Limited",
+      "website_url": "http://www.domotactical.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Domo Tactical Communications (DTC) Limited"
   }
 }

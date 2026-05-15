@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240"
   },
   "certificate": {
-    "certificate_number": "5240",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf",
-    "vendor_name": "WatchGuard Technologies, Inc.",
-    "module_name": "WatchGuard Firebox M4800 and M5800",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "MultiChipStand",
-    "overall_level": 2,
-    "validation_date": "4/13/2026",
-    "validation_dates": [
-      "4/13/2026"
-    ],
-    "sunset_date": "4/12/2031",
-    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
-    "description": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/13/2026",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "WatchGuard Technologies, Inc.",
-      "website_url": "http://www.watchguard.com",
-      "address_lines": [
-        "505 Fifth Avenue South, Suite 500",
-        "Seattle, WA 98104",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Peter Eng",
-      "contact_email": "Peter.Eng@watchguard.com",
-      "contact_phone": "206-613-6600"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 41,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 41
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -128,6 +73,61 @@
       "AES GCM encryption/decryption shall be established. | Name Properties | Implementation Reference | CKG | Key | Type:Asymmetric | N/A | The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct | output from SP800-90Arev1 CTR_DRBG | (A4397)",
       "DES | Data encryption/decryption",
       "Triple-DES Data encryption/decryption"
-    ]
+    ],
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section Secure Operation in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
+    "certificate_number": "5240",
+    "dataset": "active",
+    "description": "WatchGuard® Firebox appliances are built for enterprise-grade performance with blazing throughput and numerous connectivity options. Advanced networking features include clustering, high availability (active/active), VLAN support, multi-WAN load balancing and enhanced VoIP security, plus inbound and outbound HTTPS inspection, to give the strong security enterprises need. And the Firebox appliances are completely configurable – turn on or off components and services to fit different network security deployment requirements.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "WatchGuard Firebox M4800 and M5800",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5240",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5240.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/12/2031",
+    "validation_date": "4/13/2026",
+    "validation_dates": [
+      "4/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/13/2026",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "505 Fifth Avenue South, Suite 500",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "contact_email": "Peter.Eng@watchguard.com",
+      "contact_name": "Peter Eng",
+      "contact_phone": "206-613-6600",
+      "country": "USA",
+      "name": "WatchGuard Technologies, Inc.",
+      "website_url": "http://www.watchguard.com"
+    },
+    "vendor_name": "WatchGuard Technologies, Inc."
   }
 }

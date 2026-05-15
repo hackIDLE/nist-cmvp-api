@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
     "certificate_number": "3977",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
-    "vendor_name": "Pavilion Data Systems",
-    "module_name": "Pavilion Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/12/2021",
-    "validation_dates": [
-      "7/12/2021"
-    ],
-    "sunset_date": "7/11/2026",
-    "caveat": "None",
     "description": "The Pavilion Encryption Module is a standalone cryptographic module for the Pavilion Operating System (PavilionOS) for Pavilion Hyperparallel Flash Arrays. PavilionOS allows customers to take advantage of unprecedented performance for all applications by being the first solution to support high performance with ultra-low latency for local block, file and object workloads simultaneously. The Pavilion Encryption Module allows for inline encryption of data using either internally managed keys or through integration with KMIP.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Pavilion Cryptographic Module",
+    "module_type": "Software-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,41 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "7/11/2026",
+    "validation_date": "7/12/2021",
+    "validation_dates": [
+      "7/12/2021"
+    ],
     "validation_history": [
       {
         "date": "7/12/2021",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Pavilion Data Systems",
-      "website_url": "http://pavilion.io",
       "address_lines": [
         "2550 North First St.",
         "Suite 250",
         "San Jose, CA 95131",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tim Stoakes",
       "contact_email": "tim.stoakes@pavilion.io",
-      "contact_phone": "669 263 6900"
+      "contact_name": "Tim Stoakes",
+      "contact_phone": "669 263 6900",
+      "country": "USA",
+      "name": "Pavilion Data Systems",
+      "website_url": "http://pavilion.io"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Pavilion Data Systems"
   }
 }

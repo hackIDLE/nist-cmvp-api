@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051"
   },
   "certificate": {
-    "certificate_number": "5051",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5051.pdf",
-    "vendor_name": "Ribbon Communications, Inc.",
-    "module_name": "SBC SWe Session Border Controller",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/5/2025",
-    "validation_dates": [
-      "8/5/2025"
-    ],
-    "sunset_date": "8/4/2030",
-    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
-    "description": "The Ribbon SBC SWe Session Border Controller (SBC SWe) is a software-based, cloud-optimized SBC architected to enable and secure real-time communications in the cloud. Starting at 25 sessions and scaling to tens of thousands per instance, the unique architecture of the SBC SWe allows customers to define where on the performance curve their network needs to reside. The SBC SWe uses a \"microservices\" architecture designed to separate signaling, media, and transcoding to optimize virtual network resources. It also supports on-demand auto-scaling, with a feedback loop using Key Performance Indicators and the Ribbon Virtual Network Function (VNF) Manager.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5051.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/5/2025",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Ribbon Communications, Inc.",
-      "website_url": "http://www.ribboncommunications.com",
-      "address_lines": [
-        "4 Technology Park Drive",
-        "Westford, MA 01886",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Adam Elshama",
-      "contact_email": "aelshama@rbbn.com",
-      "contact_phone": "978-614-8327"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 46,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 46
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -133,6 +78,61 @@
       "TLS v1.2 KDF RFC7627(CVL) | A5065 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135Rev.1",
       "KDF IKEv1(CVL) | A5062 | Authentication Method-Digital Signature, Pre-shared Key,Public KeyEncryptionDiffie-Hellman Shared Secret Length-Diffie-Hellman Shared Secret Length:2048Hash Algorithm-SHA-1,SHA2-256,SHA2-384,SHA2-512Preshared Key Length-Preshared Key Length:64-512Increment8 | SP 800-135 Rev.1",
       "KDF IKEv2(CVL) | A5062 | Diffie-Hellman Shared Secret Length-Diffie-Hellman Shared Secret Length:224-4096 Increment8Derived Keying Material Length-Derived Keying Material Length:160-4096Increment8Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135 Rev.1"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
+    "certificate_number": "5051",
+    "dataset": "active",
+    "description": "The Ribbon SBC SWe Session Border Controller (SBC SWe) is a software-based, cloud-optimized SBC architected to enable and secure real-time communications in the cloud. Starting at 25 sessions and scaling to tens of thousands per instance, the unique architecture of the SBC SWe allows customers to define where on the performance curve their network needs to reside. The SBC SWe uses a \"microservices\" architecture designed to separate signaling, media, and transcoding to optimize virtual network resources. It also supports on-demand auto-scaling, with a feedback loop using Key Performance Indicators and the Ribbon Virtual Network Function (VNF) Manager.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SBC SWe Session Border Controller",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5051",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5051.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5051.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/4/2030",
+    "validation_date": "8/5/2025",
+    "validation_dates": [
+      "8/5/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "8/5/2025",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4 Technology Park Drive",
+        "Westford, MA 01886",
+        "USA"
+      ],
+      "contact_email": "aelshama@rbbn.com",
+      "contact_name": "Adam Elshama",
+      "contact_phone": "978-614-8327",
+      "country": "USA",
+      "name": "Ribbon Communications, Inc.",
+      "website_url": "http://www.ribboncommunications.com"
+    },
+    "vendor_name": "Ribbon Communications, Inc."
   }
 }

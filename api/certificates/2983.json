@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2983"
   },
   "certificate": {
-    "certificate_number": "2983",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2983",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2983",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2983.pdf",
-    "vendor_name": "Ixia",
-    "module_name": "Net Tool Optimizer (NTO) 7303",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/3/2017",
-    "validation_dates": [
-      "8/3/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "Designed to sit between a customer’s network and security tools, the NTO 7303 is a solution that controls the flow of network traffic to destination security devices and applications. The module uses a pool of high-speed data interfaces that are intended to forward different classes of traffic based on filters applied to each interface.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2983.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/3/2017",
-        "type": "Initial",
-        "lab": "DXC Technology"
-      }
-    ],
-    "vendor": {
-      "name": "Ixia",
-      "website_url": "http://www.ixiacom.com",
-      "address_lines": [
-        "26601 W. Agoura Road",
-        "Calabasas, CA 91302",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Tom Casella",
-      "contact_email": "NVSCertificationTeam@ixiacom.com",
-      "contact_phone": "1-877-367-4942"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -84,6 +26,64 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2983",
+    "certificate_number": "2983",
+    "dataset": "historical",
+    "description": "Designed to sit between a customer’s network and security tools, the NTO 7303 is a solution that controls the flow of network traffic to destination security devices and applications. The module uses a pool of high-speed data interfaces that are intended to forward different classes of traffic based on filters applied to each interface.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Net Tool Optimizer (NTO) 7303",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2983",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2983.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2983.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/3/2017",
+    "validation_dates": [
+      "8/3/2017"
+    ],
+    "validation_history": [
+      {
+        "date": "8/3/2017",
+        "lab": "DXC Technology",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "26601 W. Agoura Road",
+        "Calabasas, CA 91302",
+        "USA"
+      ],
+      "contact_email": "NVSCertificationTeam@ixiacom.com",
+      "contact_name": "Tom Casella",
+      "contact_phone": "1-877-367-4942",
+      "country": "USA",
+      "name": "Ixia",
+      "website_url": "http://www.ixiacom.com"
+    },
+    "vendor_name": "Ixia"
   }
 }

@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2093"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode with tamper evident labels and security devices installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2093",
     "certificate_number": "2093",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2093",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2093",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2093.pdf",
-    "vendor_name": "Cisco Systems, Inc.",
-    "module_name": "Cisco Catalyst 3560-C [1], 3560-X [2] and 3750-X [3] Switches",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "2/27/2014, 3/12/2014",
-    "validation_dates": [
-      "2/27/2014",
-      "3/12/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with tamper evident labels and security devices installed as indicated in the Security Policy",
     "description": "Cisco Catalyst Switches provide enterprise-class access for campus and branch applications. Designed for operational simplicity to lower total cost of ownership, they enable scalable, secure and energy-efficient business operations with intelligent services and a range of advanced Cisco IOS Software features. The Catalyst Switches meet FIPS 140-2 overall Level 2 requirements as multi-chip standalone modules.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cisco Catalyst 3560-C [1], 3560-X [2] and 3750-X [3] Switches",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2093",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,53 +48,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2093.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/27/2014, 3/12/2014",
+    "validation_dates": [
+      "2/27/2014",
+      "3/12/2014"
+    ],
     "validation_history": [
       {
         "date": "2/27/2014",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "3/12/2014",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Cisco Systems, Inc.",
-      "website_url": "http://www.cisco.com",
       "address_lines": [
         "170 West Tasman Drive",
         "San Jose, CA 95134",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
-      "contact_phone": null
+      "contact_name": "Global Certification Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHS"
-    ]
+    "vendor_name": "Cisco Systems, Inc."
   }
 }

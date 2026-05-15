@@ -1,36 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2486"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2486",
     "certificate_number": "2486",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2486",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2486",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2486.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Luna® Backup HSM Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "12/15/2015, 11/20/2017, 3/27/2018, 5/24/2018",
-    "validation_dates": [
-      "12/15/2015",
-      "11/20/2017",
-      "3/27/2018",
-      "5/24/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
     "description": "The Luna® Backup HSM Hardware Security Module (HSM) provides the same level of security as the Luna® SA and Luna® PCI-E HSMs in a convenient, small, low-cost form factor. The Luna Backup HSM ensures that sensitive cryptographic material remains strongly protected in hardware even when not being used. One can easily back up and duplicate keys securely to the Luna Backup HSM for safekeeping in case of emergency, failure or disaster.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® Backup HSM Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2486",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,58 +43,56 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2486.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/15/2015, 11/20/2017, 3/27/2018, 5/24/2018",
+    "validation_dates": [
+      "12/15/2015",
+      "11/20/2017",
+      "3/27/2018",
+      "5/24/2018"
+    ],
     "validation_history": [
       {
         "date": "12/15/2015",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       },
       {
         "date": "11/20/2017",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       },
       {
         "date": "3/27/2018",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       },
       {
         "date": "5/24/2018",
-        "type": "Update",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
       "address_lines": [
         "Suite D, 3465 Box Hill Corporate Center Drive",
         "Abingdon, Maryland 21009",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Shawn Campbell",
       "contact_email": "shawn.campbell@safenetat.com",
-      "contact_phone": "443-484-7075"
+      "contact_name": "Shawn Campbell",
+      "contact_phone": "443-484-7075",
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DES"
-    ]
+    "vendor_name": "[email protected]"
   }
 }

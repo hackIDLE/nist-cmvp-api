@@ -1,23 +1,59 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2200"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2200",
     "certificate_number": "2200",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2200",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2200",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2200.pdf",
-    "vendor_name": "JVCKENWOOD Corporation",
+    "description": "The Secure Cryptographic Module (SCM) meets overall FIPS 140-2 Level 1 requirements providing KENWOOD radios secure and encrypted digital communication. The SCM supports 256 bit key AES encryption as well as DES encryption.",
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "Secure Cryptographic Module (SCM)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2200",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2200.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2200.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-2",
     "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "6/27/2014, 9/12/2014, 5/8/2015, 11/23/2015, 12/18/2015, 6/21/2017, 7/24/2017, 2/6/2018, 10/16/2020, 7/29/2024",
     "validation_dates": [
       "6/27/2014",
@@ -31,107 +67,71 @@
       "10/16/2020",
       "7/29/2024"
     ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The Secure Cryptographic Module (SCM) meets overall FIPS 140-2 Level 1 requirements providing KENWOOD radios secure and encrypted digital communication. The SCM supports 256 bit key AES encryption as well as DES encryption.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2200.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "6/27/2014",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "9/12/2014",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "5/8/2015",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "11/23/2015",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/18/2015",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/21/2017",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/24/2017",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/6/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "10/16/2020",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/29/2024",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "JVCKENWOOD Corporation",
-      "website_url": "http://www.kenwoodusa.com",
       "address_lines": [
         "3-12, Moriya-cho, Kanagawa-ku",
         "Yokohama-shi, Kanagawa 221-0022",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Tamaki Shimamura",
       "contact_email": "fips140_JKC@jvckenwood.com",
-      "contact_phone": "+81 45 939 6254"
+      "contact_name": "Tamaki Shimamura",
+      "contact_phone": "+81 45 939 6254",
+      "country": "Japan",
+      "name": "JVCKENWOOD Corporation",
+      "website_url": "http://www.kenwoodusa.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES"
-    ]
+    "vendor_name": "JVCKENWOOD Corporation"
   }
 }

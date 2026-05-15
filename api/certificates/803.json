@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "This module contains the embedded module Axalto Cryptoflex e-Gate 32 smart card validated to FIPS 140-2 under Cert. #242 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803",
     "certificate_number": "803",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp803.pdf",
-    "vendor_name": "KoolSpan, Inc.",
-    "module_name": "SecurEdge Lock",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/26/2007, 8/29/2007",
-    "validation_dates": [
-      "7/26/2007",
-      "8/29/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "This module contains the embedded module Axalto Cryptoflex e-Gate 32 smart card validated to FIPS 140-2 under Cert. #242 operating in FIPS mode",
     "description": "The KoolSpan Lock is a VHS-Cassette sized device that authenticates users and bridges their Ethernet traffic onto the network. It contains an embedded Smart Card and cryptographic processor. The case is tamper-resistant. Each Lock can support up to 512 simultaneous users each with 256-bit AES encryption. The Lock supports a \"Keyless Exchange\" and provides both Wi-Fi security and Remote Access (VPN) connections.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SecurEdge Lock",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt803.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp803.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/26/2007, 8/29/2007",
+    "validation_dates": [
+      "7/26/2007",
+      "8/29/2007"
+    ],
     "validation_history": [
       {
         "date": "7/26/2007",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       },
       {
         "date": "8/29/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "KoolSpan, Inc.",
-      "website_url": "http://www.koolspan.com",
       "address_lines": [
         "4962 Fairmont Ave.",
         "2nd Floor",
         "Bethesda, MD 20814",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tony Fascenda",
       "contact_email": "tfascenda@koolspan.com",
-      "contact_phone": "240-880-4400"
+      "contact_name": "Tony Fascenda",
+      "contact_phone": "240-880-4400",
+      "country": "USA",
+      "name": "KoolSpan, Inc.",
+      "website_url": "http://www.koolspan.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "KoolSpan, Inc."
   }
 }

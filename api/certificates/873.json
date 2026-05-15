@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/873"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/873",
     "certificate_number": "873",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/873",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/873",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp873.pdf",
-    "vendor_name": "Rockwell Collins, Inc.",
-    "module_name": "Common Crypto Circuit Card Assembly",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "11/30/2007",
-    "validation_dates": [
-      "11/30/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Common Crypto Circuit Card Assembly is a module designed for use in Link 16 communication platforms. The module can be used in an external cryptographic application or embedded in an internal application. The module hosts four commercial cryptographic algorithms for data encryption/decryption. The algorithms are stored in memory. One of the four algorithms is selected for use and loaded. The module accepts up to eight keys which are externally generated and loaded. The AES algorithm operates in a FIPS-approved mode.",
-    "security_level_exceptions": [
-      "Physical Security: Level 2",
-      "EMI/EMC: Level 2",
-      "Design Assurance: Level 2"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Common Crypto Circuit Card Assembly",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/873",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt873.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 2",
+      "EMI/EMC: Level 2",
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp873.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/30/2007",
+    "validation_dates": [
+      "11/30/2007"
+    ],
     "validation_history": [
       {
         "date": "11/30/2007",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Rockwell Collins, Inc.",
-      "website_url": "http://www.rockwellcollins.com",
       "address_lines": [
         "400 Collins Road NE",
         "Cedar Rapids, IA 52498",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jack Edington",
       "contact_email": "jeedingt@rockwellcollins.com",
-      "contact_phone": "319-295-5997"
+      "contact_name": "Jack Edington",
+      "contact_phone": "319-295-5997",
+      "country": "USA",
+      "name": "Rockwell Collins, Inc.",
+      "website_url": "http://www.rockwellcollins.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Rockwell Collins, Inc."
   }
 }

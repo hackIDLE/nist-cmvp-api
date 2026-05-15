@@ -836,11 +836,41 @@ def test_build_certificate_fingerprint():
     same_row = dict(base_row)
     changed_row = dict(base_row)
     changed_row["Validation Date"] = "04/11/2026"
+    spacing_fixed_row = dict(base_row)
+    spacing_fixed_row["Validation Date"] = "04/10/2026 05/12/2026"
+    spacing_broken_row = dict(base_row)
+    spacing_broken_row["Validation Date"] = "04/10/202605/12/2026"
+    two_digit_year_fixed_row = dict(base_row)
+    two_digit_year_fixed_row["Validation Date"] = "10/25/2010 01/31/11 03/14/2011"
+    two_digit_year_broken_row = dict(base_row)
+    two_digit_year_broken_row["Validation Date"] = "10/25/201001/31/1103/14/2011"
+    module_spacing_fixed_row = dict(base_row)
+    module_spacing_fixed_row["Module Name"] = "P7170 IP System Portable Two-Way FM Radios"
+    module_spacing_broken_row = dict(base_row)
+    module_spacing_broken_row["Module Name"] = "P7170IPSystem Portable Two-Way FM Radios"
+    module_changed_row = dict(base_row)
+    module_changed_row["Module Name"] = "P7171 IP System Portable Two-Way FM Radios"
 
     fingerprint = build_certificate_fingerprint(base_row, "active")
     assert fingerprint == build_certificate_fingerprint(same_row, "active"), "Fingerprint should be stable for unchanged rows"
     assert fingerprint != build_certificate_fingerprint(changed_row, "active"), "Fingerprint should change when summary fields change"
     assert fingerprint != build_certificate_fingerprint(base_row, "historical"), "Fingerprint should change when dataset changes"
+    assert (
+        build_certificate_fingerprint(spacing_fixed_row, "active")
+        == build_certificate_fingerprint(spacing_broken_row, "active")
+    ), "Fingerprint should ignore HTML spacing artifacts between adjacent validation dates"
+    assert (
+        build_certificate_fingerprint(two_digit_year_fixed_row, "active")
+        == build_certificate_fingerprint(two_digit_year_broken_row, "active")
+    ), "Fingerprint should handle adjacent validation dates that include a two-digit year"
+    assert (
+        build_certificate_fingerprint(module_spacing_fixed_row, "active")
+        == build_certificate_fingerprint(module_spacing_broken_row, "active")
+    ), "Fingerprint should ignore HTML spacing artifacts inside module names"
+    assert (
+        build_certificate_fingerprint(module_spacing_fixed_row, "active")
+        != build_certificate_fingerprint(module_changed_row, "active")
+    ), "Fingerprint should still change when module name text changes"
 
     print("✓ Certificate fingerprint test passed")
 

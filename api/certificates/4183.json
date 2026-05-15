@@ -1,33 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4183"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "KTS",
+      "SHA"
+    ],
+    "caveat": "The tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4183",
     "certificate_number": "4183",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4183",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4183",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4183.pdf",
-    "vendor_name": "Hitachi, Ltd.",
-    "module_name": "Hitachi Virtual Storage Platform (VSP) Encryption Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "3/22/2022",
-    "validation_dates": [
-      "3/22/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "The tamper evident seals installed as indicated in the Security Policy",
     "description": "The Hitachi Virtual Storage Platform (VSP) Encryption Module provides high speed data at rest encryption for Hitachi storage.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hitachi Virtual Storage Platform (VSP) Encryption Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4183",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,46 +46,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2022_010422_0648_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4183.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/22/2022",
+    "validation_dates": [
+      "3/22/2022"
+    ],
     "validation_history": [
       {
         "date": "3/22/2022",
-        "type": "Initial",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Hitachi, Ltd.",
-      "website_url": "http://www.hitachi.com",
       "address_lines": [
         "292 Yoshida-cho, Totsuka-ku, Yokohama-shi",
         "Kanagawa-ken 244-0817",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Mioko Mori",
       "contact_email": "mioko.mori.pd@hitachi.com",
-      "contact_phone": null
+      "contact_name": "Mioko Mori",
+      "contact_phone": null,
+      "country": "Japan",
+      "name": "Hitachi, Ltd.",
+      "website_url": "http://www.hitachi.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "KTS",
-      "SHA"
-    ]
+    "vendor_name": "Hitachi, Ltd."
   }
 }

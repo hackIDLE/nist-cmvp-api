@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086"
   },
   "certificate": {
-    "certificate_number": "5086",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5086.pdf",
-    "vendor_name": "Hitachi Vantara, Ltd.",
-    "module_name": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "10/23/2025",
-    "validation_dates": [
-      "10/23/2025"
-    ],
-    "sunset_date": "10/22/2030",
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module provides cryptographic services for Hitachi Virtual Storage Platform (VSP).",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5086.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/23/2025",
-        "type": "Initial",
-        "lab": "ECSEC Laboratory Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Hitachi Vantara, Ltd.",
-      "website_url": "https://www.hitachivantara.com/ja-jp",
-      "address_lines": [
-        "292 Yoshida-cho, Totsuka-ku",
-        "Yokoahama-shi, Kanagawa 244-0817",
-        "Japan"
-      ],
-      "country": "Japan",
-      "contact_name": "Hirotoshi Akaike",
-      "contact_email": "hirotoshi.akaike@hitachivantara.com",
-      "contact_phone": "81-45-870-1533"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 25,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 25
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -103,6 +49,60 @@
       "RSA-sigVer(pkcs1pad(rsa-generic,sha256/sha384/sha512)) | Used for RSA signature verification.",
       "RSA-signaturePrimitive(rsa-generic) | Used for RSA signature primitive operation.",
       "RSA-decryptionPrimitive(rsa-generic) | Used for RSA decrypt primitive operation."
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
+    "certificate_number": "5086",
+    "dataset": "active",
+    "description": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module provides cryptographic services for Hitachi Virtual Storage Platform (VSP).",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5086",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5086.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5086.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/22/2030",
+    "validation_date": "10/23/2025",
+    "validation_dates": [
+      "10/23/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "10/23/2025",
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "292 Yoshida-cho, Totsuka-ku",
+        "Yokoahama-shi, Kanagawa 244-0817",
+        "Japan"
+      ],
+      "contact_email": "hirotoshi.akaike@hitachivantara.com",
+      "contact_name": "Hirotoshi Akaike",
+      "contact_phone": "81-45-870-1533",
+      "country": "Japan",
+      "name": "Hitachi Vantara, Ltd.",
+      "website_url": "https://www.hitachivantara.com/ja-jp"
+    },
+    "vendor_name": "Hitachi Vantara, Ltd."
   }
 }

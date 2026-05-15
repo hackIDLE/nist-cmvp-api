@@ -1,32 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1949"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 1,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES"
+    ],
+    "caveat": "When operated in FIPS mode. When running on an operational environment listed on the certificate",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1949",
     "certificate_number": "1949",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1949",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1949",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1949.pdf",
-    "vendor_name": "Harris Corporation",
-    "module_name": "Harris AES Software Load Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "5/16/2013, 5/17/2022",
-    "validation_dates": [
-      "5/16/2013",
-      "5/17/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. When running on an operational environment listed on the certificate",
     "description": "The Harris AES Software Load Module is a single software component which provides cryptographic services directly to a Digital Signal Processor (DSP) application on Harris terminals.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Harris AES Software Load Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1949",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,48 +43,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0029.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1949.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/16/2013, 5/17/2022",
+    "validation_dates": [
+      "5/16/2013",
+      "5/17/2022"
+    ],
     "validation_history": [
       {
         "date": "5/16/2013",
-        "type": "Initial",
-        "lab": "DXC Technology"
+        "lab": "DXC Technology",
+        "type": "Initial"
       },
       {
         "date": "5/17/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Harris Corporation",
-      "website_url": "http://www.harris.com",
       "address_lines": [
         "1680 University Avenue",
         "Rochester, NY, NY 14610",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Vickers",
       "contact_email": "encryptionInformation@harris.com",
-      "contact_phone": null
+      "contact_name": "Michael Vickers",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Harris Corporation",
+      "website_url": "http://www.harris.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES"
-    ]
+    "vendor_name": "Harris Corporation"
   }
 }

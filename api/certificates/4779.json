@@ -1,84 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779"
   },
   "certificate": {
-    "certificate_number": "4779",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4779.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Oracle Linux 9 OpenSSL FIPS Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/25/2024, 9/19/2025",
-    "validation_dates": [
-      "8/25/2024",
-      "9/19/2025"
-    ],
-    "sunset_date": "8/24/2029",
-    "caveat": "Interim validation; When operated in approved mode; When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
-    "description": "The Oracle Linux 9 OpenSSL FIPS Provider provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4779.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/25/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "9/19/2025",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
-      "address_lines": [
-        "2300 Oracle Way",
-        "Austin, TX 78741",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Security Evaluation team",
-      "contact_email": "seceval_us@oracle.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 67,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 67
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -161,6 +98,69 @@
       "SHAKE128, SHAKE256 | XOFs | Oracle Linux 9 on KVM on Oracle Linux 8 on Ampere® Altra® Q80-30: SHA\\_ASMOracle Linux 9 on KVM on Oracle Linux 8 on Intel® Xeon® Platinum 8358: SHA\\_ASMOracle Linux 9 on Marvell OCTEON III: SHA\\_ASM",
       "SSH KDF (CVL) with AES-128, AES-192, AES-256 and SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | #A4320, #A4331, #A4332, #A4333, #A4334 | Key Derivation | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7113: SSH\\_ASM, SSH\\_SHANI, SSH\\_AVX2, SSH\\_AVX, SSH\\_SSSE3Oracle Linux 9 on KVM on Oracle Linux 8 on Ampere® Altra® Q80-30: SSH\\_ASMOracle Linux 9 on KVM on Oracle Linux 8 on Intel® Xeon® Platinum 8358: SSH\\_ASM, SSH\\_SHANI, SSH\\_AVX2, SSH\\_AVX, SSH\\_SSSE3Oracle Linux 9 on Marvell OCTEON III: SSH\\_ASM | SP 800-135r1",
       "TLS 1.2 KDF (RFC 7627) (CVL) with SHA2-256, SHA2-384, SHA2-512 using RFC | #A4317, #A4326, #A4330, #A4344, #A4345, #A4346 | Oracle Linux 9 on KVM on Oracle Linux 8 on AMD EPYC™ 7001 Series AMD EPYC 7113: SHA\\_ASM, SHA\\_SHANI, SHA\\_AVX2, SSH\\_SSSE3"
-    ]
+    ],
+    "caveat": "Interim validation; When operated in approved mode; When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
+    "certificate_number": "4779",
+    "dataset": "active",
+    "description": "The Oracle Linux 9 OpenSSL FIPS Provider provides a C language application program interface (API) for use by other applications that require cryptographic functionality.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oracle Linux 9 OpenSSL FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4779.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4779.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/24/2029",
+    "validation_date": "8/25/2024, 9/19/2025",
+    "validation_dates": [
+      "8/25/2024",
+      "9/19/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "8/25/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "9/19/2025",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2300 Oracle Way",
+        "Austin, TX 78741",
+        "USA"
+      ],
+      "contact_email": "seceval_us@oracle.com",
+      "contact_name": "Security Evaluation team",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
+    },
+    "vendor_name": "Oracle Corporation"
   }
 }

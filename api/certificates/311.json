@@ -1,23 +1,54 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/311"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/311",
     "certificate_number": "311",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/311",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/311",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp311.pdf",
-    "vendor_name": "TLC-Chamonix, LLC",
+    "description": "The Cranite Wireless® Access Controller is a cryptographic software system for wireless LANs that enforces network access rights, encrypts / decrypts authorized traffic, and provides seamless, secure mobility services to users as they mo ve across subnets. The Cranite Wireless Access Controller software installs onto a standard, enterprise-class hardware platform.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "Cranite Wireless Access Controller",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/311",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp311.pdf"
+      },
+      {
+        "label": "Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt311.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Cryptographic Key Managements: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp311.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-2",
     "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "3/20/2003, 7/10/2003, 3/29/2004, 2/3/2005, 2/21/2006, 2/24/2006, 3/10/2006, 5/20/2008",
     "validation_dates": [
       "3/20/2003",
@@ -29,93 +60,62 @@
       "3/10/2006",
       "5/20/2008"
     ],
-    "sunset_date": null,
-    "caveat": "None",
-    "description": "The Cranite Wireless® Access Controller is a cryptographic software system for wireless LANs that enforces network access rights, encrypts / decrypts authorized traffic, and provides seamless, secure mobility services to users as they mo ve across subnets. The Cranite Wireless Access Controller software installs onto a standard, enterprise-class hardware platform.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Cryptographic Key Managements: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp311.pdf"
-      },
-      {
-        "label": "Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt311.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "3/20/2003",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "7/10/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "3/29/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/3/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/21/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/24/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "3/10/2006",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "5/20/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "TLC-Chamonix, LLC",
-      "website_url": "http://www.tlc-chamonix.com",
       "address_lines": [
         "120 Village Square",
         "Suite 11",
         "Orinda, CA 94563",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Phil Smith",
       "contact_email": "aphilsmith@tlc-chamonix.com",
-      "contact_phone": "877-479-4500"
+      "contact_name": "Phil Smith",
+      "contact_phone": "877-479-4500",
+      "country": "USA",
+      "name": "TLC-Chamonix, LLC",
+      "website_url": "http://www.tlc-chamonix.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "TLC-Chamonix, LLC"
   }
 }

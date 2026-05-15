@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Requires Option P/N 57X9000 to enable the PrintCryption firmware",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526",
     "certificate_number": "1526",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1526.pdf",
-    "vendor_name": "Lexmark International, Inc.",
-    "module_name": "Lexmark PrintCryption™",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/24/2011",
-    "validation_dates": [
-      "3/24/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "Requires Option P/N 57X9000 to enable the PrintCryption firmware",
     "description": "The Lexmark PrintCryption™ is an option for the Lexmark printers that enables the transfer and printing of encrypted print jobs. With the Lexmark PrintCryption™ module installed, the printer is capable of decrypting print jobs encrypted with the AES (FIPS 197) algorithm. The Lexmark PrintCryption™ analyzes the encrypted data stream, determines if the correct key was used to encrypt the data, decrypts the data and allows the document to be printed.",
-    "security_level_exceptions": [
-      "Tested: Lexmark X548 Printer with IBM 750CL processor on Lexmark Linux 2.6.28",
-      "Lexmark X792 Printer with Freescale 7448 processor on Lexmark Linux 2.6.28"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Lexmark PrintCryption™",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0004.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: Lexmark X548 Printer with IBM 750CL processor on Lexmark Linux 2.6.28",
+      "Lexmark X792 Printer with Freescale 7448 processor on Lexmark Linux 2.6.28"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1526.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/24/2011",
+    "validation_dates": [
+      "3/24/2011"
+    ],
     "validation_history": [
       {
         "date": "3/24/2011",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Lexmark International, Inc.",
-      "website_url": "http://www.lexmark.com",
       "address_lines": [
         "740 W. New Circle Road",
         "Lexington, KY 40550",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Graydon Dodson",
       "contact_email": "gdodson@lexmark.com",
-      "contact_phone": "859-232-6483"
+      "contact_name": "Graydon Dodson",
+      "contact_phone": "859-232-6483",
+      "country": "USA",
+      "name": "Lexmark International, Inc.",
+      "website_url": "http://www.lexmark.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Lexmark International, Inc."
   }
 }

@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2674"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2674",
     "certificate_number": "2674",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2674",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2674",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2674.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung Kernel Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/11/2016, 9/20/2016",
-    "validation_dates": [
-      "7/11/2016",
-      "9/20/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
     "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung Kernel Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2674",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,45 +40,47 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2674.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/11/2016, 9/20/2016",
+    "validation_dates": [
+      "7/11/2016",
+      "9/20/2016"
+    ],
     "validation_history": [
       {
         "date": "7/11/2016",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "atsec information security corporation",
+        "type": "Initial"
       },
       {
         "date": "9/20/2016",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com",
       "address_lines": [
         "R5 416, Maetan 3-dong Yeongton-gu",
         "Suwon-si, Gyeonggi 443-742",
         "Korea"
       ],
-      "country": "Korea",
-      "contact_name": "Brian Wood",
       "contact_email": "be.wood@samsung.com",
-      "contact_phone": "+1-973-440-9125"
+      "contact_name": "Brian Wood",
+      "contact_phone": "+1-973-440-9125",
+      "country": "Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

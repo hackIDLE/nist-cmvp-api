@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569"
   },
   "certificate": {
-    "certificate_number": "4569",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf",
-    "vendor_name": "CommScope Technologies LLC",
-    "module_name": "Ruckus Networks SmartZone 144 (SZ-144) and SmartZone 300 (SZ-300) WLAN Controllers",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/30/2023",
-    "validation_dates": [
-      "8/30/2023"
-    ],
-    "sunset_date": "8/29/2026",
-    "caveat": "When operated in FIPS mode. When initialized and configured as specified in Section 9 of the Security Policy.",
-    "description": "Ruckus SmartZone is an industry leading controller that supports comprehensive management functionality, high performance operation and flexibility to address many different implementation scenarios. Its unique architecture allows the controller to actively manage APs and switches in the network, providing enhanced resiliency and visibility.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2023_010923_0844.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/30/2023",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "CommScope Technologies LLC",
-      "website_url": "http://www.commscope.com/ruckus",
-      "address_lines": [
-        "350 W Java Drive",
-        "Sunnyvale, CA 94089",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ken Rheaume",
-      "contact_email": "ken.rheaume@commscope.com",
-      "contact_phone": "855-478-2587"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -91,6 +33,64 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. When initialized and configured as specified in Section 9 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
+    "certificate_number": "4569",
+    "dataset": "active",
+    "description": "Ruckus SmartZone is an industry leading controller that supports comprehensive management functionality, high performance operation and flexibility to address many different implementation scenarios. Its unique architecture allows the controller to actively manage APs and switches in the network, providing enhanced resiliency and visibility.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ruckus Networks SmartZone 144 (SZ-144) and SmartZone 300 (SZ-300) WLAN Controllers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2023_010923_0844.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "8/29/2026",
+    "validation_date": "8/30/2023",
+    "validation_dates": [
+      "8/30/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "8/30/2023",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "350 W Java Drive",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "contact_email": "ken.rheaume@commscope.com",
+      "contact_name": "Ken Rheaume",
+      "contact_phone": "855-478-2587",
+      "country": "USA",
+      "name": "CommScope Technologies LLC",
+      "website_url": "http://www.commscope.com/ruckus"
+    },
+    "vendor_name": "CommScope Technologies LLC"
   }
 }

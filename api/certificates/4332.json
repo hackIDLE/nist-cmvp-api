@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4332"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4332",
     "certificate_number": "4332",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4332",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4332",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4332.pdf",
-    "vendor_name": "Entrust",
-    "module_name": "MiniHSM & MiniHSM for nShield Edge F3",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "10/16/2022, 6/18/2024",
-    "validation_dates": [
-      "10/16/2022",
-      "6/18/2024"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
     "description": "The MiniHSM and MiniHSM for nShield Edge F3 are fully featured HSMs supplied in a single chip package. The MiniHSM Modules offer all the security and key management features of other nShield modules but with reduced processing speed. The MiniHSM modules are OEM parts and will be included within other appliances or products, for example switches or routers. The MiniHSM modules have a real time clock which also makes them suitable for use as a time-stamping engine.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "MiniHSM & MiniHSM for nShield Edge F3",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4332",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2022_021122_1233_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4332.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "10/16/2022, 6/18/2024",
+    "validation_dates": [
+      "10/16/2022",
+      "6/18/2024"
+    ],
     "validation_history": [
       {
         "date": "10/16/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/18/2024",
-        "type": "Update",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Entrust",
-      "website_url": "http://www.entrust.com",
       "address_lines": [
         "One Station Square",
         "Cambridge CB1 2GA",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "Security Certification Team",
       "contact_email": "DPS-Certification@entrust.com",
-      "contact_phone": null
+      "contact_name": "Security Certification Team",
+      "contact_phone": null,
+      "country": "United Kingdom",
+      "name": "Entrust",
+      "website_url": "http://www.entrust.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Entrust"
   }
 }

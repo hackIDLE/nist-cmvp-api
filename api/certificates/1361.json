@@ -1,31 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1361"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1361",
     "certificate_number": "1361",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1361",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1361",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1361.pdf",
-    "vendor_name": "Cavium Networks",
-    "module_name": "NITROX XL CN15xx-NFBE FIPS Cryptographic Modules",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "7/12/2010",
-    "validation_dates": [
-      "7/12/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Cavium Nitrox XL NFBE FIPS Cryptographic Modules are a cryptographic component of the Nitrox XL NFBE cryptographic acceleration boards that provide cryptographic key protection and acceleration for both asymmetric and symmetric encryption operations. The cryptographic module is contained in its own secure enclosure that provides physical resistance to tampering and zeroization of plaintext cryptographic material in the event the enclosure is opened.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "NITROX XL CN15xx-NFBE FIPS Cryptographic Modules",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1361",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,44 +44,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1361.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1361.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/12/2010",
+    "validation_dates": [
+      "7/12/2010"
+    ],
     "validation_history": [
       {
         "date": "7/12/2010",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Cavium Networks",
-      "website_url": "http://www.caviumnetworks.com",
       "address_lines": [
         "805E Middlefield Road",
         "Mountain View, CA 94043",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Scruggs",
       "contact_email": "Mike.Scruggs@caviumnetworks.com",
-      "contact_phone": "650-623-7005"
+      "contact_name": "Michael Scruggs",
+      "contact_phone": "650-623-7005",
+      "country": "USA",
+      "name": "Cavium Networks",
+      "website_url": "http://www.caviumnetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES"
-    ]
+    "vendor_name": "Cavium Networks"
   }
 }

@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174"
   },
   "certificate": {
-    "certificate_number": "2174",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf",
-    "vendor_name": "Hewlett-Packard Development Company, L.P.",
-    "module_name": "HP BladeSystem Onboard Administrator Firmware",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "6/17/2014",
-    "validation_dates": [
-      "6/17/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as indicated in the Security Policy in Section 3 and operated in FIPS mode.",
-    "description": "The module provides administrative control of HP BladeSystem c-Class enclosures. The cryptographic functions of the module provide security for administrative access via HTTPS and SSH, and to administrative commands for the BladeSystem enclosure.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A",
-      "Tested: BladeSystem c7000 DDR2 Onboard Administrator with KVM option enclosure",
-      "BladeSystem c3000 Tray with Embedded DDR2 Onboard Administrator enclosure",
-      "BladeSystem c3000 Dual DDR2 Onboard Administrator enclosure"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/17/2014",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
-      }
-    ],
-    "vendor": {
-      "name": "Hewlett-Packard Development Company, L.P.",
-      "website_url": "http://www.hp.com",
-      "address_lines": [
-        "11445 Compaq Center Dr. W",
-        "Houston, TX 77070",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Julie Ritter",
-      "contact_email": "Julie.ritter@hp.com",
-      "contact_phone": "281-514-4087"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +26,65 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as indicated in the Security Policy in Section 3 and operated in FIPS mode.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174",
+    "certificate_number": "2174",
+    "dataset": "historical",
+    "description": "The module provides administrative control of HP BladeSystem c-Class enclosures. The cryptographic functions of the module provide security for administrative access via HTTPS and SSH, and to administrative commands for the BladeSystem enclosure.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HP BladeSystem Onboard Administrator Firmware",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A",
+      "Tested: BladeSystem c7000 DDR2 Onboard Administrator with KVM option enclosure",
+      "BladeSystem c3000 Tray with Embedded DDR2 Onboard Administrator enclosure",
+      "BladeSystem c3000 Dual DDR2 Onboard Administrator enclosure"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/17/2014",
+    "validation_dates": [
+      "6/17/2014"
+    ],
+    "validation_history": [
+      {
+        "date": "6/17/2014",
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "11445 Compaq Center Dr. W",
+        "Houston, TX 77070",
+        "USA"
+      ],
+      "contact_email": "Julie.ritter@hp.com",
+      "contact_name": "Julie Ritter",
+      "contact_phone": "281-514-4087",
+      "country": "USA",
+      "name": "Hewlett-Packard Development Company, L.P.",
+      "website_url": "http://www.hp.com"
+    },
+    "vendor_name": "Hewlett-Packard Development Company, L.P."
   }
 }

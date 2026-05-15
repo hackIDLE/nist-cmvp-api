@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3865"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3865",
     "certificate_number": "3865",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3865",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3865",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3865.pdf",
-    "vendor_name": "Vocera Communications, Inc.",
-    "module_name": "Vocera Smartbadge Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/25/2021, 12/22/2022",
-    "validation_dates": [
-      "3/25/2021",
-      "12/22/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Vocera Smartbadge Cryptographic Module is a firmware module that provides the cryptographic primitives (including encryption/decryption, hashing, digital signature functions, and key derivation) needed to support secure communication services to the system.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Vocera Smartbadge Cryptographic Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3865",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,45 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2021_010421_0724_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3865.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/25/2021, 12/22/2022",
+    "validation_dates": [
+      "3/25/2021",
+      "12/22/2022"
+    ],
     "validation_history": [
       {
         "date": "3/25/2021",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
       },
       {
         "date": "12/22/2022",
-        "type": "Update",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Vocera Communications, Inc.",
-      "website_url": "http://www.vocera.com",
       "address_lines": [
         "525 Race Street",
         "San Jose, CA 95126",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ammath Keunemany",
       "contact_email": "akeunemany@vocera.com",
-      "contact_phone": "+1 408-882-4615"
+      "contact_name": "Ammath Keunemany",
+      "contact_phone": "+1 408-882-4615",
+      "country": "USA",
+      "name": "Vocera Communications, Inc.",
+      "website_url": "http://www.vocera.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Vocera Communications, Inc."
   }
 }

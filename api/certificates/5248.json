@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5248"
   },
   "certificate": {
-    "certificate_number": "5248",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5248",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5248",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5248.pdf",
-    "vendor_name": "SUSE LLC",
-    "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "4/27/2026",
-    "validation_dates": [
-      "4/27/2026"
-    ],
-    "sunset_date": "4/26/2031",
-    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy.",
-    "description": "The SUSE Linux Enterprise Libgcrypt Cryptographic Module is a software library implementing general purpose cryptographic algorithms",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5248.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/27/2026",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "SUSE LLC",
-      "website_url": "http://www.suse.com",
-      "address_lines": [
-        "1221 S Valley Grove Way, #500",
-        "Pleasant Grove, UT 84062",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ivan Teblin",
-      "contact_email": "sec-cert@suse.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 199,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 199
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -280,6 +227,59 @@
       "ECDSA | Signature generation primitive; Signature verification primitive",
       "ECDSA with SHA-1 | Signature generation; Signature verification",
       "PBKDF with SHA-1 | Key derivation"
-    ]
+    ],
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5248",
+    "certificate_number": "5248",
+    "dataset": "active",
+    "description": "The SUSE Linux Enterprise Libgcrypt Cryptographic Module is a software library implementing general purpose cryptographic algorithms",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5248",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5248.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5248.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/26/2031",
+    "validation_date": "4/27/2026",
+    "validation_dates": [
+      "4/27/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/27/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1221 S Valley Grove Way, #500",
+        "Pleasant Grove, UT 84062",
+        "USA"
+      ],
+      "contact_email": "sec-cert@suse.com",
+      "contact_name": "Ivan Teblin",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "SUSE LLC",
+      "website_url": "http://www.suse.com"
+    },
+    "vendor_name": "SUSE LLC"
   }
 }

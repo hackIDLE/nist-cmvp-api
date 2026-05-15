@@ -1,34 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360",
     "certificate_number": "3360",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3360.pdf",
-    "vendor_name": "Tandberg Data",
-    "module_name": "RDX SATA III",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "2/4/2019",
-    "validation_dates": [
-      "2/4/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with tamper-evident seals installed as indicated in the Security Policy",
     "description": "The RDX QuikStor SATA III media-based removable storage system offers rugged, reliable and convenient storage for back-up, archive, data interchange and disaster recovery. The RDX SATA III drive provides AES-XTS 256 encryption to protect data on all RDX media",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RDX SATA III",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3360",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,48 +48,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FebConsolidated.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3360.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/4/2019",
+    "validation_dates": [
+      "2/4/2019"
+    ],
     "validation_history": [
       {
         "date": "2/4/2019",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Tandberg Data",
-      "website_url": "http://www.tandbergdata.com",
       "address_lines": [
         "Feldstrasse 81",
         "Dortmund 44141",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Neil Donohoe",
       "contact_email": "ndonohoe@overlandstorage.com",
-      "contact_phone": "720-598-7265"
+      "contact_name": "Neil Donohoe",
+      "contact_phone": "720-598-7265",
+      "country": "Germany",
+      "name": "Tandberg Data",
+      "website_url": "http://www.tandbergdata.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Tandberg Data"
   }
 }

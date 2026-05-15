@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/839"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/839",
     "certificate_number": "839",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/839",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/839",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp839.pdf",
-    "vendor_name": "Pitney Bowes, Inc.",
-    "module_name": "Pitney Bowes iButton Postal Security Device (PSD)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "9/21/2007, 10/29/2007",
-    "validation_dates": [
-      "9/21/2007",
-      "10/29/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Pitney Bowes iButton Postal Security Device (PSD) has been designed in compliance with the United States Postal Service (USPS), Information-Based Indicia Program (IBIP), and Deutsche Post's FrankIT New Generation Digital Franking program. It employs strong encryption, decryption, and digital signature techniques for the protection of customer funds in Pitney Bowes global digital metering products. The PSD has been designed to support international postal markets and their rapidly evolving requirements for digital indicia.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Pitney Bowes iButton Postal Security Device (PSD)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/839",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt839.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp839.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/21/2007, 10/29/2007",
+    "validation_dates": [
+      "9/21/2007",
+      "10/29/2007"
+    ],
     "validation_history": [
       {
         "date": "9/21/2007",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "10/29/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Pitney Bowes, Inc.",
-      "website_url": "http://www.pb.com",
       "address_lines": [
         "35 Waterview Drive",
         "Shelton, CT 06484",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Douglas Clark",
       "contact_email": "douglas.clark@pb.com",
-      "contact_phone": "203-924-3206"
+      "contact_name": "Douglas Clark",
+      "contact_phone": "203-924-3206",
+      "country": "USA",
+      "name": "Pitney Bowes, Inc.",
+      "website_url": "http://www.pb.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Pitney Bowes, Inc."
   }
 }

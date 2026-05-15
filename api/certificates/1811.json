@@ -1,32 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1811"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1811",
     "certificate_number": "1811",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1811",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1811",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1811.pdf",
-    "vendor_name": "IMS Health Inc.",
-    "module_name": "Diversinet Java Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "10/11/2012, 2/20/2014",
-    "validation_dates": [
-      "10/11/2012",
-      "2/20/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Diversinet Java SE Crypto Module is a JCA (Java Cryptography Architecture) Provider shipped with Diversinet MobiSecure Products. The Crypto Module implements several JCE (Java Cryptography Extension) algorithms including Triple DES, AES, SHA, HMAC and RSA. The Crypto Module is packaged in a signed Java Archive (JAR) file.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Diversinet Java Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1811",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,55 +49,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0022.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1811.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/11/2012, 2/20/2014",
+    "validation_dates": [
+      "10/11/2012",
+      "2/20/2014"
+    ],
     "validation_history": [
       {
         "date": "10/11/2012",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
       },
       {
         "date": "2/20/2014",
-        "type": "Update",
-        "lab": "CGI Information Systems & Management Consultants Inc"
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "IMS Health Inc.",
-      "website_url": "http://www.diversinet.com",
       "address_lines": [
         "16720 Route Transcanadienne",
         "Suite 1700",
         "Kirkland, Québec H9H 5M3",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Charles Blair",
       "contact_email": "cblair@diversinet.com",
-      "contact_phone": "905-816-5131"
+      "contact_name": "Charles Blair",
+      "contact_phone": "905-816-5131",
+      "country": "Canada",
+      "name": "IMS Health Inc.",
+      "website_url": "http://www.diversinet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "IMS Health Inc."
   }
 }

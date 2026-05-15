@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/503"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/503",
     "certificate_number": "503",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/503",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/503",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp503.pdf",
-    "vendor_name": "Thales e-Security Inc.",
-    "module_name": "DCAP Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "1/24/2005, 3/14/2005, 10/13/2005",
-    "validation_dates": [
-      "1/24/2005",
-      "3/14/2005",
-      "10/13/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The DCAP Security Module is a multiple-chip embedded cryptographic module installed in the Datacryptor® Advanced Performance Cryptographic Module (known as the Datacryptor® AP). It secures communications using signed Diffie-Hellman key exchange and Triple- DES or AES encryption over IP networks. It provides data encryption rates of up to 100 Megabits per second (Mbps). The unit also provides integrated secure unit management capability employing the same techniques used for traffic encryption.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DCAP Security Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/503",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,51 +40,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt503.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp503.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/24/2005, 3/14/2005, 10/13/2005",
+    "validation_dates": [
+      "1/24/2005",
+      "3/14/2005",
+      "10/13/2005"
+    ],
     "validation_history": [
       {
         "date": "1/24/2005",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "3/14/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "10/13/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Thales e-Security Inc.",
-      "website_url": "http://www.thales-esecurity.com",
       "address_lines": [
         "900 South Pine Island Road",
         "Suite 710",
         "Plantation, FL 33324",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Juan Asenjo",
       "contact_email": "juan.asenjo@thalesesec.com",
-      "contact_phone": "954-888-6200 x6202"
+      "contact_name": "Juan Asenjo",
+      "contact_phone": "954-888-6200 x6202",
+      "country": "USA",
+      "name": "Thales e-Security Inc.",
+      "website_url": "http://www.thales-esecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales e-Security Inc."
   }
 }

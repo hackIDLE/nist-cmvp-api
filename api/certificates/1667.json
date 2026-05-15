@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1667"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1667",
     "certificate_number": "1667",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1667",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1667",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1667.pdf",
-    "vendor_name": "Qube Cinema, Inc.",
-    "module_name": "Secure Media Block",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "1/11/2012, 6/21/2012",
-    "validation_dates": [
-      "1/11/2012",
-      "6/21/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Qube Secure Media Block is used in Digital Cinema applications, providing core functionality required to playback Digital Cinema Packages. The module performs essence decryption when processing encrypted content, it ensures link encryption downstream to a projector device, and it provides other features as to enable a fully capable Digital Cinema Server. Content owners and other stake holders rely upon the security features provided by the Qube Secure Media Block to protect their valuable content, and to perform secure logging of operations within a theatre auditorium.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Secure Media Block",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1667",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0013.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1667.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/11/2012, 6/21/2012",
+    "validation_dates": [
+      "1/11/2012",
+      "6/21/2012"
+    ],
     "validation_history": [
       {
         "date": "1/11/2012",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/21/2012",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Qube Cinema, Inc.",
-      "website_url": "http://www.qubecinema.com",
       "address_lines": [
         "601 S. Glenoaks Blvd.",
         "Ste. 102",
         "Burbank, CA 91502",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rajesh Ramachandran",
       "contact_email": "rajesh@qubecinema.com",
-      "contact_phone": "818-392-8155"
+      "contact_name": "Rajesh Ramachandran",
+      "contact_phone": "818-392-8155",
+      "country": "USA",
+      "name": "Qube Cinema, Inc.",
+      "website_url": "http://www.qubecinema.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Qube Cinema, Inc."
   }
 }

@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/506"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/506",
     "certificate_number": "506",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/506",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/506",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp506.pdf",
-    "vendor_name": "McAfee, Inc.",
-    "module_name": "McAfee Endpoint Encryption for PCs Client (formerly SafeBoot Client)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "1/24/2005, 4/30/2007, 6/23/2008",
-    "validation_dates": [
-      "1/24/2005",
-      "4/30/2007",
-      "6/23/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "McAfee Endpoint Encryption for PCs Client is a high performance software solution that provides sector-level encryption of a PC's hard drive in a manner that is totally transparent to the user. In addition, the centralized McAfee Endpoint Encryption management system provides robust recovery tools, administration, and implementation.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "McAfee Endpoint Encryption for PCs Client (formerly SafeBoot Client)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/506",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,50 +40,51 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt506.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp506.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/24/2005, 4/30/2007, 6/23/2008",
+    "validation_dates": [
+      "1/24/2005",
+      "4/30/2007",
+      "6/23/2008"
+    ],
     "validation_history": [
       {
         "date": "1/24/2005",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "4/30/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "6/23/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "McAfee, Inc.",
-      "website_url": "http://www.mcafee.com",
       "address_lines": [
         "3965 Freedom Circle",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike Siegel",
       "contact_email": "Michael_Siegel@McAfee.com",
-      "contact_phone": "888-847-8766"
+      "contact_name": "Mike Siegel",
+      "contact_phone": "888-847-8766",
+      "country": "USA",
+      "name": "McAfee, Inc.",
+      "website_url": "http://www.mcafee.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "McAfee, Inc."
   }
 }

@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3094"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #3090 operating in FIPS mode or Windows Resume validated to FIPS 140-2 under Cert. #3091 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3094",
     "certificate_number": "3094",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3094",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3094",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3094.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Kernel Mode Cryptographic Primitives Library",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/22/2018",
-    "validation_dates": [
-      "3/22/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #3090 operating in FIPS mode or Windows Resume validated to FIPS 140-2 under Cert. #3091 operating in FIPS mode",
     "description": "Kernel Mode Cryptographic Primitives Library (cng.sys) runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request IRP (I/O request packet).",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 2"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Kernel Mode Cryptographic Primitives Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3094",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3094.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/22/2018",
+    "validation_dates": [
+      "3/22/2018"
+    ],
     "validation_history": [
       {
         "date": "3/22/2018",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052-6399",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mike Grimm",
       "contact_email": "FIPS@microsoft.com",
-      "contact_phone": "800-Microsoft"
+      "contact_name": "Mike Grimm",
+      "contact_phone": "800-Microsoft",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

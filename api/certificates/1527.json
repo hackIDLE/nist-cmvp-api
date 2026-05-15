@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1527"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1527",
     "certificate_number": "1527",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1527",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1527",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1527.pdf",
-    "vendor_name": "Systematic Development Group, LLC",
-    "module_name": "LOK-IT™ 10 KEY (Series SDG003FM) and LOK-IT™ 5 KEY (Series SDG004FP)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "3/28/2011, 10/4/2011",
-    "validation_dates": [
-      "3/28/2011",
-      "10/4/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "LOK-IT™ is a USB Flash drive with a multi-chip embedded cryptographic module architecture as defined by FIPS 140-2. It consists of an Initio 1861 USB controller, NAND Flash memory and a Microchip PIC16F688 security controller. The product supports 256 bit AES encryption of data stored in NAND Flash memory. The drive provides self-contained user authentication without the need for host computer applications. Two derivations of the product exist differing in the number of numeric buttons; the SDG003FM has 10 numeric buttons and the SDG004FP has 5 numeric buttons.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "LOK-IT™ 10 KEY (Series SDG003FM) and LOK-IT™ 5 KEY (Series SDG004FP)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1527",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0005.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1527.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/28/2011, 10/4/2011",
+    "validation_dates": [
+      "3/28/2011",
+      "10/4/2011"
+    ],
     "validation_history": [
       {
         "date": "3/28/2011",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "10/4/2011",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Systematic Development Group, LLC",
-      "website_url": "http://www.LOK-IT.net",
       "address_lines": [
         "350 Jim Moran Blvd.",
         "Suite 122",
         "Deerfield Beach, FL 33442",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "George Wolf",
       "contact_email": "gwolf@systdev.com",
-      "contact_phone": "954-889-3535 x315"
+      "contact_name": "George Wolf",
+      "contact_phone": "954-889-3535 x315",
+      "country": "USA",
+      "name": "Systematic Development Group, LLC",
+      "website_url": "http://www.LOK-IT.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Systematic Development Group, LLC"
   }
 }

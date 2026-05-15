@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1258"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1258",
     "certificate_number": "1258",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1258",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1258",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1258.pdf",
-    "vendor_name": "DESlock Ltd",
-    "module_name": "DESlock+ Kernel Mode Crypto Core",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/15/2010, 3/31/2014",
-    "validation_dates": [
-      "2/15/2010",
-      "3/31/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The DESlock+ Kernel Mode Crypto Core from Data Encryption Systems Ltd. is a cryptographic module which encapsulates several different cryptographic algorithms. Available as part of the DESlock+ desktop encryption product, the Module is accessible by other kernel mode drivers and user mode applications provided by Data Encryption Systems Ltd.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DESlock+ Kernel Mode Crypto Core",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1258",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1258.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1258.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/15/2010, 3/31/2014",
+    "validation_dates": [
+      "2/15/2010",
+      "3/31/2014"
+    ],
     "validation_history": [
       {
         "date": "2/15/2010",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "3/31/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "DESlock Ltd",
-      "website_url": "http://www.des.co.uk",
       "address_lines": [
         "3 Heron Gate",
         "Hankeridge Way",
         "Taunton, Somerset TA1 2LR",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "Julian Baycock",
       "contact_email": "julian@des.co.uk",
-      "contact_phone": "+44(0)1823 444447"
+      "contact_name": "Julian Baycock",
+      "contact_phone": "+44(0)1823 444447",
+      "country": "United Kingdom",
+      "name": "DESlock Ltd",
+      "website_url": "http://www.des.co.uk"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "DESlock Ltd"
   }
 }

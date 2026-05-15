@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480",
     "certificate_number": "4480",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4480.pdf",
-    "vendor_name": "Thales",
-    "module_name": "eToken 5110+ FIPS",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "4/17/2023",
-    "validation_dates": [
-      "4/17/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "No assurance of the minimum strength of generated keys",
     "description": "SafeNet eToken 5110+ FIPS is a secure portable two-factor USB authenticator with advanced smart card technology. It utilizes certificate based technology to generate and store credentials, such as private keys, passwords and digital certificates inside the protected environment of the smart card chip. To authenticate, users must supply both their personal SafeNet authenticator and password, providing a critical second level of security beyond simple passwords to protect valuable digital business.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "eToken 5110+ FIPS",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4480.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/17/2023",
+    "validation_dates": [
+      "4/17/2023"
+    ],
     "validation_history": [
       {
         "date": "4/17/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Thales",
-      "website_url": "http://www.thalesgroup.com",
       "address_lines": [
         "Avenue du Jujubier, Z.I Athelia IV",
         "La Ciotat 13705",
         "France"
       ],
-      "country": "France",
-      "contact_name": "Arnaud Lotigier",
       "contact_email": "Arnaud.Lotigier@thalesgroup.com",
-      "contact_phone": "+33 442366074"
+      "contact_name": "Arnaud Lotigier",
+      "contact_phone": "+33 442366074",
+      "country": "France",
+      "name": "Thales",
+      "website_url": "http://www.thalesgroup.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales"
   }
 }

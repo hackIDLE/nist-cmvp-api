@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1525"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with tamper evident seals and security straps installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1525",
     "certificate_number": "1525",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1525",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1525",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1525.pdf",
-    "vendor_name": "Xirrus, Inc.",
-    "module_name": "Xirrus Wi-Fi Array XS4 and XS8",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "4/1/2011",
-    "validation_dates": [
-      "4/1/2011"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with tamper evident seals and security straps installed as indicated in the Security Policy",
     "description": "The Xirrus Wi-Fi Array consists of 4, 8, 12, or 16 802.11abgn access points coupled to a directional antenna system, and integrated together with a multi-gigabit switch, controller, firewall, threat sensor, and spectrum analyzer into a single, easy-to-install device.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Xirrus Wi-Fi Array XS4 and XS8",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1525",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0005.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1525.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/1/2011",
+    "validation_dates": [
+      "4/1/2011"
+    ],
     "validation_history": [
       {
         "date": "4/1/2011",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Xirrus, Inc.",
-      "website_url": "http://www.xirrus.com",
       "address_lines": [
         "2101 Corporate Center Dr",
         "Thousand Oaks, CA 91320",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Steve Smith",
       "contact_email": "steve.smith@xirrus.com",
-      "contact_phone": "805-262-1600"
+      "contact_name": "Steve Smith",
+      "contact_phone": "805-262-1600",
+      "country": "USA",
+      "name": "Xirrus, Inc.",
+      "website_url": "http://www.xirrus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Xirrus, Inc."
   }
 }

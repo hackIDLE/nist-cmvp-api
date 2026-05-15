@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845"
   },
   "certificate": {
-    "certificate_number": "4845",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4845.pdf",
-    "vendor_name": "Century Longmai Technology Co. Ltd",
-    "module_name": "mToken CryptoID",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "10/21/2024",
-    "validation_dates": [
-      "10/21/2024"
-    ],
-    "sunset_date": "10/20/2029",
-    "caveat": "When installed, initialized and configured as specified in Section 11of the Security Policy. When operated in approved mode",
-    "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with Computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4845.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/21/2024",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Century Longmai Technology Co. Ltd",
-      "website_url": "http://www.longmai.net/",
-      "address_lines": [
-        "3rd Floor, Gongkong Building No. 1 Wangzhuang Rd, Haidian District",
-        "Haidian District, Beijing 100083",
-        "China"
-      ],
-      "country": "China",
-      "contact_name": "ITD",
-      "contact_email": "info@longmai.net",
-      "contact_phone": "8601062323636"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 23,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 23
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -104,6 +50,60 @@
       "\\[133\\] Sections 4 and 5.2 Asymmetric key establishment key generation using unmodified DRBG output:AisinoChip Electronics SCC-XE",
       "\\[133\\] Sections 4 and 6.1 Direct symmetric key generation using unmodified DRBG output:ARM Cortex M0",
       "\\[133\\] Section 6.2.1 Derivation of symmetric keys | mToken CryptoID Core DRBG Component | Key Generation"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 11of the Security Policy. When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845",
+    "certificate_number": "4845",
+    "dataset": "active",
+    "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with Computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "mToken CryptoID",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4845",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4845.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4845.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/20/2029",
+    "validation_date": "10/21/2024",
+    "validation_dates": [
+      "10/21/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "10/21/2024",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3rd Floor, Gongkong Building No. 1 Wangzhuang Rd, Haidian District",
+        "Haidian District, Beijing 100083",
+        "China"
+      ],
+      "contact_email": "info@longmai.net",
+      "contact_name": "ITD",
+      "contact_phone": "8601062323636",
+      "country": "China",
+      "name": "Century Longmai Technology Co. Ltd",
+      "website_url": "http://www.longmai.net/"
+    },
+    "vendor_name": "Century Longmai Technology Co. Ltd"
   }
 }

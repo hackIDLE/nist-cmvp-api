@@ -1,87 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4887"
   },
   "certificate": {
-    "certificate_number": "4887",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4887",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4887",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4887.pdf",
-    "vendor_name": "Extreme Networks",
-    "module_name": "Extreme Networks Cryptographic Provider 3",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/18/2024, 5/19/2025, 10/16/2025",
-    "validation_dates": [
-      "11/18/2024",
-      "5/19/2025",
-      "10/16/2025"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The Extreme Networks Cryptographic Provider is a software library providing a C-language application program interface (API) for use by Extreme Networks products that require cryptographic functionality.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4887.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/18/2024",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "5/19/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "10/16/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Extreme Networks",
-      "website_url": "http://www.extremenetworks.com",
-      "address_lines": [
-        "2121 RDU Center Drive",
-        "Morrisville, NC 27560",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Craig Ficik",
-      "contact_email": "cficik@extremenetworks.com",
-      "contact_phone": "404-787-5091"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 84,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 84
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -184,6 +118,72 @@
       "RSA SigVer (FIPS186-5) A5892 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss FIPS 186-5 | Name Properties Implementation Reference | CKG Section 4 Extreme Networks Cryptographic Provider 3 NIST, SP 800-133 Rev. 2 | CKG Section 5 Extreme Networks Cryptographic Provider 3 NIST, SP 800-133 Rev. 2 | CKG Section 6.2 Extreme Networks Cryptographic Provider 3 NIST, SP 800-133 Rev. 2",
       "Hash DRBG with SHA3-256, SHA3-512 Extreme Networks Cryptographic Provider 3 NIST, SP 800-90A Rev. 1",
       "HMAC DRBG with SHA3-256, SHA3-512 Extreme Networks Cryptographic Provider 3 NIST, SP 800-90A Rev. 1 | * * * | Extreme Networks Cryptographic Provider 3"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4887",
+    "certificate_number": "4887",
+    "dataset": "active",
+    "description": "The Extreme Networks Cryptographic Provider is a software library providing a C-language application program interface (API) for use by Extreme Networks products that require cryptographic functionality.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Extreme Networks Cryptographic Provider 3",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4887",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4887.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4887.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "11/18/2024, 5/19/2025, 10/16/2025",
+    "validation_dates": [
+      "11/18/2024",
+      "5/19/2025",
+      "10/16/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "11/18/2024",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "5/19/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "10/16/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2121 RDU Center Drive",
+        "Morrisville, NC 27560",
+        "USA"
+      ],
+      "contact_email": "cficik@extremenetworks.com",
+      "contact_name": "Craig Ficik",
+      "contact_phone": "404-787-5091",
+      "country": "USA",
+      "name": "Extreme Networks",
+      "website_url": "http://www.extremenetworks.com"
+    },
+    "vendor_name": "Extreme Networks"
   }
 }

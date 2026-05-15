@@ -1,40 +1,42 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2969"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DES",
+      "DSA",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode. When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2969",
     "certificate_number": "2969",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2969",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2969",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2969.pdf",
-    "vendor_name": "Trellix",
-    "module_name": "Trellix OpenSSL FIPS Object Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/25/2017, 11/16/2017, 7/28/2021, 7/11/2022, 7/20/2022",
-    "validation_dates": [
-      "7/25/2017",
-      "11/16/2017",
-      "7/28/2021",
-      "7/11/2022",
-      "7/20/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
     "description": "The Trellix OpenSSL FIPS module provides cryptographic services for Trellix products.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trellix OpenSSL FIPS Object Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2969",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -45,67 +47,65 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2969.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "7/25/2017, 11/16/2017, 7/28/2021, 7/11/2022, 7/20/2022",
+    "validation_dates": [
+      "7/25/2017",
+      "11/16/2017",
+      "7/28/2021",
+      "7/11/2022",
+      "7/20/2022"
+    ],
     "validation_history": [
       {
         "date": "7/25/2017",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       },
       {
         "date": "11/16/2017",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "7/28/2021",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "7/11/2022",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       },
       {
         "date": "7/20/2022",
-        "type": "Update",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Trellix",
-      "website_url": "http://www.trellix.com",
       "address_lines": [
         "6220 America Center Dr.",
         "San Jose, CA 95002",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Product Certifications",
       "contact_email": "sec_certs@mcafee.com",
-      "contact_phone": null
+      "contact_name": "Product Certifications",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Trellix",
+      "website_url": "http://www.trellix.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DES",
-      "DSA",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Trellix"
   }
 }

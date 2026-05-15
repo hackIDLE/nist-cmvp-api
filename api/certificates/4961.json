@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4961"
   },
   "certificate": {
-    "certificate_number": "4961",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4961",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4961",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4961.pdf",
-    "vendor_name": "Juniper Networks, Inc.",
-    "module_name": "Juniper Networks PTX10008 and PTX10016 Packet Transport Routers",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/7/2025",
-    "validation_dates": [
-      "2/7/2025"
-    ],
-    "sunset_date": "2/6/2027",
-    "caveat": "Interim validation. When operated in Approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "The cryptographic module provides for an encrypted connection, using SSH, between the management station and the module. The cryptographic module also provides for an encrypted connection, using MACsec, between devices.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4961.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/7/2025",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net",
-      "address_lines": [
-        "1133 Innovation Way",
-        "Sunnyvale, CA 94089",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Bill Shelton",
-      "contact_email": "bshelton@juniper.net",
-      "contact_phone": "408-745-2000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 44,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 44
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -129,6 +75,60 @@
       "HMAC-MD5 | SSH",
       "HMAC-RIPEMD160 | SSH",
       "UMAC | SSH"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in Approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4961",
+    "certificate_number": "4961",
+    "dataset": "active",
+    "description": "The cryptographic module provides for an encrypted connection, using SSH, between the management station and the module. The cryptographic module also provides for an encrypted connection, using MACsec, between devices.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Juniper Networks PTX10008 and PTX10016 Packet Transport Routers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4961",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4961.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4961.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "2/6/2027",
+    "validation_date": "2/7/2025",
+    "validation_dates": [
+      "2/7/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "2/7/2025",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "contact_email": "bshelton@juniper.net",
+      "contact_name": "Bill Shelton",
+      "contact_phone": "408-745-2000",
+      "country": "USA",
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net"
+    },
+    "vendor_name": "Juniper Networks, Inc."
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4065"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When installed, initialized and configured as specified in Section 12.4 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4065",
     "certificate_number": "4065",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4065",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4065",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4065.pdf",
-    "vendor_name": "Thales Alenia Space",
-    "module_name": "Thales Alenia Space cryptographic module for Microsemi RTAX FPGA",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "11/2/2021",
-    "validation_dates": [
-      "11/2/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When installed, initialized and configured as specified in Section 12.4 of the Security Policy.",
     "description": "Cryptographic module encrypt and decrypt input packets, using one of the thirty two possible keys. There are several TC/TM to check: status, number of packets correctly deciphered, number of ciphered packet, etc. There are three UART interfaces for: ground, key and housekeeping (the last one has a redundant interface).",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Thales Alenia Space cryptographic module for Microsemi RTAX FPGA",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4065",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2021_011221_0923_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4065.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/2/2021",
+    "validation_dates": [
+      "11/2/2021"
+    ],
     "validation_history": [
       {
         "date": "11/2/2021",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Thales Alenia Space",
-      "website_url": "http://www.thalesgroup.com/es/espana/espacio",
       "address_lines": [
         "Calle Einstein, 7",
         "Tres Cantos, Madrid 28760",
         "Spain"
       ],
-      "country": "Spain",
-      "contact_name": "Irene Potti Huerta",
       "contact_email": "irene.potti@thalesaleniaspace.com",
-      "contact_phone": "+34 91 807 79 00"
+      "contact_name": "Irene Potti Huerta",
+      "contact_phone": "+34 91 807 79 00",
+      "country": "Spain",
+      "name": "Thales Alenia Space",
+      "website_url": "http://www.thalesgroup.com/es/espana/espacio"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Thales Alenia Space"
   }
 }

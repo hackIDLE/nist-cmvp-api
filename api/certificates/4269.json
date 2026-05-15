@@ -1,37 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4269"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4269",
     "certificate_number": "4269",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4269",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4269",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4269.pdf",
-    "vendor_name": "Western Digital Corporation",
-    "module_name": "Ultrastar® DC HC550 TCG Opal Self-Encrypting Drive and Ultrastar® DC HC650 TCG Opal Self-Encrypting Drive",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "7/18/2022",
-    "validation_dates": [
-      "7/18/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode",
     "description": "The self-encrypting 18TB Ultrastar® DC HC550 HDD and 20TB Ultrastar® DC HC650 HDD, meet or exceed data center performance and security requirements. Both HDDs incorporate sixth-generation HelioSeal® and Energy-Assisted Magnetic Recording technology. EAMR allows for high media precision and increaesed areal density. The host-managed SMR Ultrastar® DC HC650 rpovides data centers with the highest capacity HDD. Higher capacity translates to lower CapEx. Lower power consumption contributees to OpEx savings. A 2.5M hours MTBF, means both HDDs provide high reliability for mission critical environment",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Operational Environment: Level 2",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ultrastar® DC HC550 TCG Opal Self-Encrypting Drive and Ultrastar® DC HC650 TCG Opal Self-Encrypting Drive",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4269",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,49 +49,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2022_010822_0659_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Operational Environment: Level 2",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4269.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "7/18/2022",
+    "validation_dates": [
+      "7/18/2022"
+    ],
     "validation_history": [
       {
         "date": "7/18/2022",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Western Digital Corporation",
-      "website_url": "http://www.westerndigital.com",
       "address_lines": [
         "5601 Great Oaks Parkway",
         "San Jose, CA 95119",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Michael Williamson",
       "contact_email": "michael.williamson@wdc.com",
-      "contact_phone": "408-717-8458"
+      "contact_name": "Michael Williamson",
+      "contact_phone": "408-717-8458",
+      "country": "USA",
+      "name": "Western Digital Corporation",
+      "website_url": "http://www.westerndigital.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "RSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Western Digital Corporation"
   }
 }

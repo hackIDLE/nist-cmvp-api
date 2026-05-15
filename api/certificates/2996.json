@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2996"
   },
   "certificate": {
-    "certificate_number": "2996",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2996",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2996",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2996.pdf",
-    "vendor_name": "Alcatel-Lucent Enterprise USA Inc.",
-    "module_name": "OmniSwitch AOS 8.3.1.R01 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/18/2017",
-    "validation_dates": [
-      "8/18/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3.1. When operated in FIPS mode",
-    "description": "The AOS Cryptographic Module version 8.3.1.R01 provides cryptographic functionality to Alcatel-Lucent software applications present on the Alcatel-Lucent OmniSwitch series of routers.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2996.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/18/2017",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Alcatel-Lucent Enterprise USA Inc.",
-      "website_url": "http://www.enterprise.alcatel-lucent.com",
-      "address_lines": [
-        "26801 West Agoura Road",
-        "Calabasas, CA 91301",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Eric Tolliver",
-      "contact_email": "eric.tolliver@al-enterprise.com",
-      "contact_phone": "818-878-4623"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +28,63 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3.1. When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2996",
+    "certificate_number": "2996",
+    "dataset": "historical",
+    "description": "The AOS Cryptographic Module version 8.3.1.R01 provides cryptographic functionality to Alcatel-Lucent software applications present on the Alcatel-Lucent OmniSwitch series of routers.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "OmniSwitch AOS 8.3.1.R01 Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2996",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2996.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2996.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/18/2017",
+    "validation_dates": [
+      "8/18/2017"
+    ],
+    "validation_history": [
+      {
+        "date": "8/18/2017",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "26801 West Agoura Road",
+        "Calabasas, CA 91301",
+        "USA"
+      ],
+      "contact_email": "eric.tolliver@al-enterprise.com",
+      "contact_name": "Eric Tolliver",
+      "contact_phone": "818-878-4623",
+      "country": "USA",
+      "name": "Alcatel-Lucent Enterprise USA Inc.",
+      "website_url": "http://www.enterprise.alcatel-lucent.com"
+    },
+    "vendor_name": "Alcatel-Lucent Enterprise USA Inc."
   }
 }

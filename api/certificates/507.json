@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/507"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/507",
     "certificate_number": "507",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/507",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/507",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp507.pdf",
-    "vendor_name": "ALERTCO RF/RFID",
-    "module_name": "TIMAC Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "2/11/2005, 4/7/2005, 1/11/2012",
-    "validation_dates": [
-      "2/11/2005",
-      "4/7/2005",
-      "1/11/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The TIMAC module is a 17 pin header mounted multi-chip embedded firmware microprocessor module used to encrypt and decrypt point-to-point or point-to-multipoint serial data. The device is a FIPS 140-2 Level 3 compliant and certified, high performance device implementing the AES algorithm operating in 128 bit ECB, CBC, and CFB modes. This encryption engine can be incorporated into OEM projects and products with the addition of a simple API to their hardware, for both hardwired and wireless applications, as well as any other highly secured applications such as Government and Financial Institutions. It can be used in other data transmission applications requiring NSA approved serial data encryption.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "TIMAC Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/507",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt507.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp507.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/11/2005, 4/7/2005, 1/11/2012",
+    "validation_dates": [
+      "2/11/2005",
+      "4/7/2005",
+      "1/11/2012"
+    ],
     "validation_history": [
       {
         "date": "2/11/2005",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/7/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/11/2012",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "ALERTCO RF/RFID",
-      "website_url": "http://www.alertco-rf.com",
       "address_lines": [
         "217 New Brighton Lane SE",
         "Calgary, Alberta T2Z 0E3",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Gerry Smalley",
       "contact_email": "Gerry@alertco-rf.com",
-      "contact_phone": "403-719-6249"
+      "contact_name": "Gerry Smalley",
+      "contact_phone": "403-719-6249",
+      "country": "Canada",
+      "name": "ALERTCO RF/RFID",
+      "website_url": "http://www.alertco-rf.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "ALERTCO RF/RFID"
   }
 }

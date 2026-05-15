@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4632"
   },
   "certificate": {
-    "certificate_number": "4632",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4632",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4632",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4632.pdf",
-    "vendor_name": "DataStax, Inc.",
-    "module_name": "Datastax BC-FJA (Bouncy Castle FIPS Java API)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/9/2023",
-    "validation_dates": [
-      "10/9/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "The Datastax BC-FJA (Bouncy Castle FIPS Java API) is a software cryptographic module that provides cryptographic functions and services to various Datastax applications via a Java-language API",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4632.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/9/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "DataStax, Inc.",
-      "website_url": "http://www.datastax.com",
-      "address_lines": [
-        "2755 Augustine Drive, 8th Floor",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Pushkala Pattabhiraman",
-      "contact_email": "security@datastax.com",
-      "contact_phone": "+1 650-389-6000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -87,6 +31,62 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4632",
+    "certificate_number": "4632",
+    "dataset": "historical",
+    "description": "The Datastax BC-FJA (Bouncy Castle FIPS Java API) is a software cryptographic module that provides cryptographic functions and services to various Datastax applications via a Java-language API",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Datastax BC-FJA (Bouncy Castle FIPS Java API)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4632",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4632.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4632.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/9/2023",
+    "validation_dates": [
+      "10/9/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "10/9/2023",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2755 Augustine Drive, 8th Floor",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "security@datastax.com",
+      "contact_name": "Pushkala Pattabhiraman",
+      "contact_phone": "+1 650-389-6000",
+      "country": "USA",
+      "name": "DataStax, Inc.",
+      "website_url": "http://www.datastax.com"
+    },
+    "vendor_name": "DataStax, Inc."
   }
 }

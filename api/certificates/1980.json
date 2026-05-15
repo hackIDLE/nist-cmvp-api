@@ -1,34 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1980"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "HMAC",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1980",
     "certificate_number": "1980",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1980",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1980",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1980.pdf",
-    "vendor_name": "Cocoon Data Holdings Limited",
-    "module_name": "Cocoon Data Secure Objects C++ Cryptographic Module Version 1.8",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "7/17/2013, 8/7/2013",
-    "validation_dates": [
-      "7/17/2013",
-      "8/7/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Cocoon Data Secure Objects C++ Cryptographic Module Version 1.8 has been implemented as part of the Cocoon Data Secure Objects solution, an encryption-based access control system for protecting the confidentiality and integrity of electronic files. Coccon Data Holdings Limited is the parent company of all Covata entities.",
-    "security_level_exceptions": [
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cocoon Data Secure Objects C++ Cryptographic Module Version 1.8",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1980",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,55 +49,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0031.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1980.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/17/2013, 8/7/2013",
+    "validation_dates": [
+      "7/17/2013",
+      "8/7/2013"
+    ],
     "validation_history": [
       {
         "date": "7/17/2013",
-        "type": "Initial",
-        "lab": "BAE SYSTEMS APPLIED INTELLIGENCE"
+        "lab": "BAE SYSTEMS APPLIED INTELLIGENCE",
+        "type": "Initial"
       },
       {
         "date": "8/7/2013",
-        "type": "Update",
-        "lab": "BAE SYSTEMS APPLIED INTELLIGENCE"
+        "lab": "BAE SYSTEMS APPLIED INTELLIGENCE",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Cocoon Data Holdings Limited",
-      "website_url": "http://www.cocoondata.com",
       "address_lines": [
         "Level 4",
         "152-156 Clarence St",
         "Sydney, NSW 2000",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "Simon Wild",
       "contact_email": "simon.wild@cocoondata.com",
-      "contact_phone": "+61 2 8412 8200"
+      "contact_name": "Simon Wild",
+      "contact_phone": "+61 2 8412 8200",
+      "country": "Australia",
+      "name": "Cocoon Data Holdings Limited",
+      "website_url": "http://www.cocoondata.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "HMAC",
-      "RSA",
-      "SHA",
-      "TLS"
-    ]
+    "vendor_name": "Cocoon Data Holdings Limited"
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/818"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/818",
     "certificate_number": "818",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/818",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/818",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp818.pdf",
-    "vendor_name": "Arcot Systems, Inc.",
-    "module_name": "Arcot Core Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "8/10/2007, 10/16/2008, 12/3/2008",
-    "validation_dates": [
-      "8/10/2007",
-      "10/16/2008",
-      "12/3/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Arcot Core Security Module provides FIPS-certified cryptographic functionality to Arcot's authentication, encryption/decryption and digital signing products -- ArcotID \"software smart card\", Arcot WebFort Authentication Server, Arcot SignFort, and Arcot TransFort for 3-D Secure compliance.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Arcot Core Security Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/818",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,51 +40,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt818.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp818.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/10/2007, 10/16/2008, 12/3/2008",
+    "validation_dates": [
+      "8/10/2007",
+      "10/16/2008",
+      "12/3/2008"
+    ],
     "validation_history": [
       {
         "date": "8/10/2007",
-        "type": "Initial",
-        "lab": "Aspect"
+        "lab": "Aspect",
+        "type": "Initial"
       },
       {
         "date": "10/16/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "12/3/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Arcot Systems, Inc.",
-      "website_url": "http://www.arcot.com",
       "address_lines": [
         "455 West Maude Ave.",
         "Suite 210",
         "Sunnyvale, CA 94085-3517",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Geoffrey Hird",
       "contact_email": "Geoffrey@arcot.com",
-      "contact_phone": "408-969-6100"
+      "contact_name": "Geoffrey Hird",
+      "contact_phone": "408-969-6100",
+      "country": "USA",
+      "name": "Arcot Systems, Inc.",
+      "website_url": "http://www.arcot.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Arcot Systems, Inc."
   }
 }

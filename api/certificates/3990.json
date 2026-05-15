@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and utilizing a Trusted Path as specified in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
     "certificate_number": "3990",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
-    "vendor_name": "NXP Semiconductors",
-    "module_name": "i.MX 8X SECO HSM",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "7/20/2021, 1/14/2022",
-    "validation_dates": [
-      "7/20/2021",
-      "1/14/2022"
-    ],
-    "sunset_date": "7/19/2026",
-    "caveat": "When operated in FIPS mode and utilizing a Trusted Path as specified in the Security Policy",
     "description": "The i.MX 8X HSM extends the rich capabilities of the i.MX 8X family of products with advanced security and cryptographic capabilities. These HSM extensions implemented in the i.MX 8X integrated cryptographic module offer OEMs the capability to configure the part in the desired FIPS mode to support V2X or IoT use cases and more. The i.MX 8X cryptographic module is an integral part of the NXP i.MX 8X application processors and can be used together with other features offered by these SOCs to reduce both the OEM design bill of materials as well as time to market in security critical applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "i.MX 8X SECO HSM",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "7/19/2026",
+    "validation_date": "7/20/2021, 1/14/2022",
+    "validation_dates": [
+      "7/20/2021",
+      "1/14/2022"
+    ],
     "validation_history": [
       {
         "date": "7/20/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/14/2022",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "NXP Semiconductors",
-      "website_url": "http://www.nxp.com",
       "address_lines": [
         "NXP Semiconductors Netherlands B.V. High Tech Campus 60",
         "Eindhoven, Noord-Braban 5656 AG",
         "Netherlands"
       ],
-      "country": "Netherlands",
-      "contact_name": "Andres Lopez De Vergara Lemos",
       "contact_email": "andres.lemos@nxp.com",
-      "contact_phone": "+15128156189"
+      "contact_name": "Andres Lopez De Vergara Lemos",
+      "contact_phone": "+15128156189",
+      "country": "Netherlands",
+      "name": "NXP Semiconductors",
+      "website_url": "http://www.nxp.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "NXP Semiconductors"
   }
 }

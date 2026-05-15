@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5189"
   },
   "certificate": {
-    "certificate_number": "5189",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5189",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5189",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5189.pdf",
-    "vendor_name": "xFusion Digital Technologies Co., Ltd.",
-    "module_name": "xFusion Cryptographic Library",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "3/12/2026",
-    "validation_dates": [
-      "3/12/2026"
-    ],
-    "sunset_date": "3/11/2031",
-    "caveat": "No assurance of the minimum strength of generated SSPs.",
-    "description": "xFusion Cryptographic Library is a software library that provides algorithms, protocols, and services compliant with the FIPS 140-3 standard for xFusion product API.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5189.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/12/2026",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "xFusion Digital Technologies Co., Ltd.",
-      "website_url": "http://www.xfusion.com",
-      "address_lines": [
-        "9th Floor, Building 1, Zensun Boya Square, Longzihu Wisdom Island, Zhengdong New District",
-        "Zhengzhou, Henan Province 450000",
-        "P.R.C"
-      ],
-      "country": "P.R.C",
-      "contact_name": "Yu Hao",
-      "contact_email": "Yuhao_ysl@xfusion.com",
-      "contact_phone": "18665303095"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 103,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 103
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -188,6 +135,59 @@
       "Note: When the HMAC algorithm is used, the “hmac_flag” parameter shall be set to 1.",
       "Note 2: RSA FIPS 186-4 signature verification is only allowed for legacy use.",
       "Note 3: KAS-ECC CDH-Component (CVL) shall only be used within the context of an SP 800-56Arev3 KAS. | The table below lists the vendor-affirmed algorithms that are allowed in the approved mode of operation. | Name Properties | Implementation Reference | CKG | Key | Type:Symmetric | and | Asymmetric | N/A | SP 800-133r2 and IG D.H: Per Section 4, | example 1"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5189",
+    "certificate_number": "5189",
+    "dataset": "active",
+    "description": "xFusion Cryptographic Library is a software library that provides algorithms, protocols, and services compliant with the FIPS 140-3 standard for xFusion product API.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "xFusion Cryptographic Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5189",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5189.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5189.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "3/11/2031",
+    "validation_date": "3/12/2026",
+    "validation_dates": [
+      "3/12/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/12/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "9th Floor, Building 1, Zensun Boya Square, Longzihu Wisdom Island, Zhengdong New District",
+        "Zhengzhou, Henan Province 450000",
+        "P.R.C"
+      ],
+      "contact_email": "Yuhao_ysl@xfusion.com",
+      "contact_name": "Yu Hao",
+      "contact_phone": "18665303095",
+      "country": "P.R.C",
+      "name": "xFusion Digital Technologies Co., Ltd.",
+      "website_url": "http://www.xfusion.com"
+    },
+    "vendor_name": "xFusion Digital Technologies Co., Ltd."
   }
 }

@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When initialized and configured as specified in Section 8 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
     "certificate_number": "4017",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4017.pdf",
-    "vendor_name": "Taglio",
-    "module_name": "Taglio PIV Applet v2.1 on NXP JCOP 3 SecID P60 CS (OSB)",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "8/27/2021",
-    "validation_dates": [
-      "8/27/2021"
-    ],
-    "sunset_date": "8/26/2026",
-    "caveat": "When initialized and configured as specified in Section 8 of the Security Policy",
     "description": "Taglio PIV Applet v2.1 is a Java Card applet that provides Certificate Based PKI security on the NXP JCOP 3 SecID P60 CS (OSB) smart card platform. The Taglio PIV Applet supports the PIV Card standard (NIST SP 800-73-4 ad SP 800-78-4) and is suitable for US Government (PIV), Federal Contractor (PIV-I), Enterprise (CIV) and Physical Access (PACS/FICAM) applications.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 4",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Taglio PIV Applet v2.1 on NXP JCOP 3 SecID P60 CS (OSB)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,41 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2021_010921_0733.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 4",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4017.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "8/26/2026",
+    "validation_date": "8/27/2021",
+    "validation_dates": [
+      "8/27/2021"
+    ],
     "validation_history": [
       {
         "date": "8/27/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Taglio",
-      "website_url": "http://tagliosc.com/",
       "address_lines": [
         "508 E 53rd St",
         "Unit 101",
         "Austin, TX 78751",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Chandra Roukema",
       "contact_email": "chandra@taglio.com",
-      "contact_phone": "512-646-1201"
+      "contact_name": "Chandra Roukema",
+      "contact_phone": "512-646-1201",
+      "country": "USA",
+      "name": "Taglio",
+      "website_url": "http://tagliosc.com/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Taglio"
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/15"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode by selecting the DES algorithm and setting OTAR to inhibited",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/15",
     "certificate_number": "15",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/15",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/15",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp15.pdf",
-    "vendor_name": "Motorola, Inc.",
-    "module_name": "ASTRO XTS 3000 Subscriber Encryption Module",
-    "standard": "FIPS 140-1",
-    "status": "Revoked",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "1/30/1998",
-    "validation_dates": [
-      "1/30/1998"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode by selecting the DES algorithm and setting OTAR to inhibited",
     "description": "The ASTRO XTS 3000 radio provides portable analog and digital two-radio communications in trunked and conventional radio systems. It is capable of supporting 12.5 kHz digital channels as well as 25 kHz and 30 kHz analog channels. The ASTRO XTS 3000 Subscriber Encryption Module Controller is available as an option for the ASTRO XTS 3000 radios to provide secure communication capabilities.",
-    "security_level_exceptions": [
-      "Roles and Services: Level 2"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ASTRO XTS 3000 Subscriber Encryption Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/15",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,16 +40,26 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt15.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles and Services: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp15.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Revoked",
+    "sunset_date": null,
+    "validation_date": "1/30/1998",
+    "validation_dates": [
+      "1/30/1998"
+    ],
     "validation_history": [
       {
         "date": "1/30/1998",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Motorola, Inc.",
-      "website_url": "http://www.mot.com",
       "address_lines": [
         "Secure Design Center",
         "IL02 Room 0509A",
@@ -55,25 +67,13 @@
         "Schaumburg, IL 60196",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Geoff Hobar",
       "contact_email": "geoffhobar@motorola.com",
-      "contact_phone": "847-576-9066"
+      "contact_name": "Geoff Hobar",
+      "contact_phone": "847-576-9066",
+      "country": "USA",
+      "name": "Motorola, Inc.",
+      "website_url": "http://www.mot.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Motorola, Inc."
   }
 }

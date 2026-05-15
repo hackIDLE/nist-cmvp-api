@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When configured in FIPS mode as specified in Section 8 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748",
     "certificate_number": "1748",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1748.pdf",
-    "vendor_name": "Vocality International Ltd",
-    "module_name": "BASICS IP PC104",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "6/27/2012",
-    "validation_dates": [
-      "6/27/2012"
-    ],
-    "sunset_date": null,
-    "caveat": "When configured in FIPS mode as specified in Section 8 of the Security Policy",
     "description": "The BASICS IP PC104 unit is a high-performance 10/100base-T Router which incorporates a cryptographic module. It provides 3 independently routable subnets; one for the uplink port, one for the downlink port and one for the four Ethernet switch ports which are also IEEE802.1q VLAN and Power-over-Ethernet (PoE) capable. It can also bridge network traffic to the uplink port from any IP device connected to its Downlink port. It may be used as a simple switch or a sophisticated secure multiprotocol IP router and can also power a group of SIP VoIP phones.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "BASICS IP PC104",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +40,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1748.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/27/2012",
+    "validation_dates": [
+      "6/27/2012"
+    ],
     "validation_history": [
       {
         "date": "6/27/2012",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Vocality International Ltd",
-      "website_url": "http://www.vocality.com",
       "address_lines": [
         "Lydling Barn, Puttenham Lane",
         "Shackleford, Surrey GU8 6AP",
         "United Kingdom"
       ],
-      "country": "United Kingdom",
-      "contact_name": "Martin Saunders",
       "contact_email": "martinsaunders@vocality.com",
-      "contact_phone": "+44 1483 813130"
+      "contact_name": "Martin Saunders",
+      "contact_phone": "+44 1483 813130",
+      "country": "United Kingdom",
+      "name": "Vocality International Ltd",
+      "website_url": "http://www.vocality.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Vocality International Ltd"
   }
 }

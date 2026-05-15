@@ -1,40 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3755"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3755",
     "certificate_number": "3755",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3755",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3755",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3755.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung NVMe TCG Opal SSC SEDs PM1733 Series",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "12/3/2020, 1/6/2021, 3/10/2021, 2/22/2022, 7/5/2022, 9/14/2023, 7/11/2024",
-    "validation_dates": [
-      "12/3/2020",
-      "1/6/2021",
-      "3/10/2021",
-      "2/22/2022",
-      "7/5/2022",
-      "9/14/2023",
-      "7/11/2024"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "Samsung NVMe TCG Opal SSC SEDs PM1733 Series are a high-performance Self-Encrypting SSDs supporting NVMe Interface that provides on-the-fly encryption/decryption of user data without performance loss. It implements AES256-XTS for user data encryption, RSA PSS 2048 for FW authentication, and Hash_DRBG for key generation.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung NVMe TCG Opal SSC SEDs PM1733 Series",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3755",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -45,70 +40,75 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2020_040121_1006_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3755.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/3/2020, 1/6/2021, 3/10/2021, 2/22/2022, 7/5/2022, 9/14/2023, 7/11/2024",
+    "validation_dates": [
+      "12/3/2020",
+      "1/6/2021",
+      "3/10/2021",
+      "2/22/2022",
+      "7/5/2022",
+      "9/14/2023",
+      "7/11/2024"
+    ],
     "validation_history": [
       {
         "date": "12/3/2020",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/6/2021",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "3/10/2021",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/22/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/5/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/14/2023",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       },
       {
         "date": "7/11/2024",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com",
       "address_lines": [
         "1-1, Samsungjeonja-ro",
         "Hwaseong-si, Gyeonggi-do 18448",
         "Korea"
       ],
-      "country": "Korea",
-      "contact_name": "Jisoo Kim",
       "contact_email": "jisoo74.kim@samsung.com",
-      "contact_phone": "82-31-8096-2832"
+      "contact_name": "Jisoo Kim",
+      "contact_phone": "82-31-8096-2832",
+      "country": "Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

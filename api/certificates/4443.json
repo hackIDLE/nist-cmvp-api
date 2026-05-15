@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4443"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4443",
     "certificate_number": "4443",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4443",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4443",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4443.pdf",
-    "vendor_name": "Fortinet, Inc.",
-    "module_name": "FortiOS 6.4/7.0",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Firmware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/23/2023",
-    "validation_dates": [
-      "2/23/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role.",
     "description": "The FortiOS 6.4/7.0 is a firmware based operating system that runs exclusively on Fortinet's FortiGate/FortiWiFi product family. The FortiOS provides integrated firewall, VPN, antivirus, antispam, intrusion prevention, content filtering and traffic shaping and HA capabilities.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Design Assurance: Level 2"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FortiOS 6.4/7.0",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4443",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February 2023_010323_0649.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4443.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "2/23/2023",
+    "validation_dates": [
+      "2/23/2023"
+    ],
     "validation_history": [
       {
         "date": "2/23/2023",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Fortinet, Inc.",
-      "website_url": "http://www.fortinet.com",
       "address_lines": [
         "16 Fitzgerald Road",
         "Ottawa, ON K2H 8R6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Alan Kaye",
       "contact_email": "akaye@fortinet.com",
-      "contact_phone": "613-225-9381 x87416"
+      "contact_name": "Alan Kaye",
+      "contact_phone": "613-225-9381 x87416",
+      "country": "Canada",
+      "name": "Fortinet, Inc.",
+      "website_url": "http://www.fortinet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Fortinet, Inc."
   }
 }

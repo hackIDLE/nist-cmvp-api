@@ -1,33 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2912"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2912",
     "certificate_number": "2912",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2912",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2912",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2912.pdf",
-    "vendor_name": "EMC Corporation",
-    "module_name": "Unity 12 Gb/s SAS I/O Module with Encryption",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "5/16/2017",
-    "validation_dates": [
-      "5/16/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The EMC Unity 12 Gb/s SAS I/O Module with Encryption is a high-density SAS controller chipset executing specialized firmware that provides Data At Rest Encryption (D@RE) for EMC Unity storage arrays. It implements 256-bit AES-XTS encryption/decryption to encrypt and decrypt data as it is being written to or read from a SAS drive. The two variants are the Storage Processor SAS Module variant which is embedded on the printed circuit board (PCB) of the Storage Processor and the Pluggable I/O SAS Module variant which is embedded on the PCB of a pluggable I/O Module.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Unity 12 Gb/s SAS I/O Module with Encryption",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2912",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,45 +45,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2912.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "5/16/2017",
+    "validation_dates": [
+      "5/16/2017"
+    ],
     "validation_history": [
       {
         "date": "5/16/2017",
-        "type": "Initial",
-        "lab": "DXC Technology"
+        "lab": "DXC Technology",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "EMC Corporation",
-      "website_url": "http://www.emc.com",
       "address_lines": [
         "176 South Street",
         "Hopkinton, MA 01748",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Compliance Certification",
       "contact_email": "compliance.certification@emc.com",
-      "contact_phone": "508-249-6911"
+      "contact_name": "Compliance Certification",
+      "contact_phone": "508-249-6911",
+      "country": "USA",
+      "name": "EMC Corporation",
+      "website_url": "http://www.emc.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ]
+    "vendor_name": "EMC Corporation"
   }
 }

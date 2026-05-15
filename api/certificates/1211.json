@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1211"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1211",
     "certificate_number": "1211",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1211",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1211",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1211.pdf",
-    "vendor_name": "Motorola, Inc.",
-    "module_name": "Motorola Wireless Fusion on Windows CE Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software-Hybrid",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "11/18/2009, 5/5/2010",
-    "validation_dates": [
-      "11/18/2009",
-      "5/5/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Motorola Wireless Fusion Cryptographic Module is a component of Motorola Wireless Mobile Computing devices that are equipped with a WLAN radio. These devices are used for business process automation applications in a number of vertical markets like retail, manufacturing, transportation, health and government.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Motorola Wireless Fusion on Windows CE Cryptographic Module",
+    "module_type": "Software-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1211",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1211.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1211.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/18/2009, 5/5/2010",
+    "validation_dates": [
+      "11/18/2009",
+      "5/5/2010"
+    ],
     "validation_history": [
       {
         "date": "11/18/2009",
-        "type": "Initial",
-        "lab": "Aspect"
+        "lab": "Aspect",
+        "type": "Initial"
       },
       {
         "date": "5/5/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Motorola, Inc.",
-      "website_url": "http://www.motorola.com",
       "address_lines": [
         "1 Motorola Plaza",
         "Holtsville, NY 11742",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Steven Chew",
       "contact_email": null,
-      "contact_phone": "631-738-3507"
+      "contact_name": "Steven Chew",
+      "contact_phone": "631-738-3507",
+      "country": "USA",
+      "name": "Motorola, Inc.",
+      "website_url": "http://www.motorola.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Motorola, Inc."
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/41"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When using vendor-initialized SHA-1 in transaction group 1",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/41",
     "certificate_number": "41",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/41",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/41",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp41.pdf",
-    "vendor_name": "Dallas Semiconductor, Inc.",
-    "module_name": "DS1954B Cryptographic iButton™",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "1/26/1999",
-    "validation_dates": [
-      "1/26/1999"
-    ],
-    "sunset_date": null,
-    "caveat": "When using vendor-initialized SHA-1 in transaction group 1",
     "description": "Provides hardware cryptographic services (e.g., secure private key storage, high-speed math accelerator for 1024-bit public key crypto, hashing). Services are provided using a single silicon chip packaged in a 16mm stainless steel case. Can be worn or attached to an object for info at point of use. Can withstand harsh outdoor environments and is durable for everyday wear.",
-    "security_level_exceptions": [
-      "Physical Security: Level 3 +EFP"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DS1954B Cryptographic iButton™",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/41",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt41.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 3 +EFP"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp41.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/26/1999",
+    "validation_dates": [
+      "1/26/1999"
+    ],
     "validation_history": [
       {
         "date": "1/26/1999",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Dallas Semiconductor, Inc.",
-      "website_url": "http://www.iButton.com",
       "address_lines": [
         "4401 Beltwood Pkwy",
         "Dallas, TX 75244-3292",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mr. Dennis Jarrett",
       "contact_email": "Dennis.Jarrett@dalsemi.com",
-      "contact_phone": "972-371-4416"
+      "contact_name": "Mr. Dennis Jarrett",
+      "contact_phone": "972-371-4416",
+      "country": "USA",
+      "name": "Dallas Semiconductor, Inc.",
+      "website_url": "http://www.iButton.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Dallas Semiconductor, Inc."
   }
 }

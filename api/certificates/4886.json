@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4886"
   },
   "certificate": {
-    "certificate_number": "4886",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4886",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4886",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4886.pdf",
-    "vendor_name": "Gallagher Group Ltd",
-    "module_name": "Gallagher FIPS Provider for OpenSSL 3",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/18/2024",
-    "validation_dates": [
-      "11/18/2024"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "Gallagher creates and delivers integrated security solutions to meet varying needs, from basic access control right through to high security alarm systems. The Gallagher FIPS Provider for OpenSSL 3 provides cryptographic services for a range of Gallagher products.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4886.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/18/2024",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Gallagher Group Ltd",
-      "website_url": "http://security.gallagher.com",
-      "address_lines": [
-        "181 Kahikatea Drive",
-        "Hamilton 3206",
-        "New Zealand"
-      ],
-      "country": "New Zealand",
-      "contact_name": "Dave Herron",
-      "contact_email": "dave.herron@gallagher.com",
-      "contact_phone": "+64 7 838 9800"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 98,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 98
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -186,6 +132,60 @@
       "RSA SigVer (FIPS186‐5) | A4481 | Modulo ‐ 2048, 3072, 4096 | Signature Type ‐ pkcs1v1.5, pss | FIPS 186‐5 | FIPS 140‐3 Security Policy | Gallagher FIPS Provider for OpenSSL 3 | This non‐proprietary Security Policy document may be freely reproduced and distributed in its entirety without modification. | Vendor‐Affirmed Algorithms: | Name | Implementation | CKG Section 4 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 5 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 6.2 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2",
       "Hash DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1",
       "HMAC DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1 | Non‐Approved, Allowed Algorithms: | N/A for this module. | Non‐Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non‐Approved, Not Allowed Algorithms: | N/A for this Module."
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4886",
+    "certificate_number": "4886",
+    "dataset": "active",
+    "description": "Gallagher creates and delivers integrated security solutions to meet varying needs, from basic access control right through to high security alarm systems. The Gallagher FIPS Provider for OpenSSL 3 provides cryptographic services for a range of Gallagher products.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Gallagher FIPS Provider for OpenSSL 3",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4886",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4886.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4886.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "11/18/2024",
+    "validation_dates": [
+      "11/18/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "11/18/2024",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "181 Kahikatea Drive",
+        "Hamilton 3206",
+        "New Zealand"
+      ],
+      "contact_email": "dave.herron@gallagher.com",
+      "contact_name": "Dave Herron",
+      "contact_phone": "+64 7 838 9800",
+      "country": "New Zealand",
+      "name": "Gallagher Group Ltd",
+      "website_url": "http://security.gallagher.com"
+    },
+    "vendor_name": "Gallagher Group Ltd"
   }
 }

@@ -1,81 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3301"
   },
   "certificate": {
-    "certificate_number": "3301",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3301",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3301",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3301.pdf",
-    "vendor_name": "Thales",
-    "module_name": "SafeNet PCIe Cryptographic Module for SafeNet IS",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 3,
-    "validation_date": "10/15/2018, 12/20/2021",
-    "validation_dates": [
-      "10/15/2018",
-      "12/20/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and configured and initialized to Overall Level 3 per Security Policy",
-    "description": "SafeNet PCIe Cryptographic Module for SafeNet IS cryptographic module features powerful cryptographic processing and hardware key management for applications where performance and security are the priority. The multi-chip embedded hardware cryptographic module offers hardware-based key management and cryptographic operations to protect sensitive keys. The cryptographic boundary of the module is defined to encompass all components inside the secure enclosure on the PCI-E card.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3301.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/15/2018",
-        "type": "Initial",
-        "lab": "EWA - Canada"
-      },
-      {
-        "date": "12/20/2021",
-        "type": "Update",
-        "lab": "EWA - Canada"
-      }
-    ],
-    "vendor": {
-      "name": "Thales",
-      "website_url": "http://www.gemalto.com",
-      "address_lines": [
-        "20 Colonade Road, Suite 200",
-        "Ottawa, ON K2E 7M6",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Security & Certifications Team",
-      "contact_email": "SecurityCertifications@thalesgroup.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -92,6 +32,66 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode and configured and initialized to Overall Level 3 per Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3301",
+    "certificate_number": "3301",
+    "dataset": "historical",
+    "description": "SafeNet PCIe Cryptographic Module for SafeNet IS cryptographic module features powerful cryptographic processing and hardware key management for applications where performance and security are the priority. The multi-chip embedded hardware cryptographic module offers hardware-based key management and cryptographic operations to protect sensitive keys. The cryptographic boundary of the module is defined to encompass all components inside the secure enclosure on the PCI-E card.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SafeNet PCIe Cryptographic Module for SafeNet IS",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3301",
+    "overall_level": 3,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3301.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3301.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/15/2018, 12/20/2021",
+    "validation_dates": [
+      "10/15/2018",
+      "12/20/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "10/15/2018",
+        "lab": "EWA - Canada",
+        "type": "Initial"
+      },
+      {
+        "date": "12/20/2021",
+        "lab": "EWA - Canada",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "20 Colonade Road, Suite 200",
+        "Ottawa, ON K2E 7M6",
+        "Canada"
+      ],
+      "contact_email": "SecurityCertifications@thalesgroup.com",
+      "contact_name": "Security & Certifications Team",
+      "contact_phone": null,
+      "country": "Canada",
+      "name": "Thales",
+      "website_url": "http://www.gemalto.com"
+    },
+    "vendor_name": "Thales"
   }
 }

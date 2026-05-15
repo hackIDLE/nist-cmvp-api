@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2258"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2258",
     "certificate_number": "2258",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2258",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2258",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2258.pdf",
-    "vendor_name": "Senetas Corporation Ltd. and SafeNet Inc.",
-    "module_name": "CS Series Encryptors",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "9/23/2014",
-    "validation_dates": [
-      "9/23/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The CS Series is a high performance encryption platform designed to secure data transmitted over 10 and 100Mbps Ethernet networks. The CS10 is a cost-effective, small form factor, encryptor for branch or remote office applications. The CS100 is a 19' rack mounted device suitable for point to point or multipoint connections and is ideally suited for central office operations. SafeNet, Inc. makes Senetas products available globally under a master distribution agreement and are co-branded as such.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CS Series Encryptors",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2258",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0045.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2258.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/23/2014",
+    "validation_dates": [
+      "9/23/2014"
+    ],
     "validation_history": [
       {
         "date": "9/23/2014",
-        "type": "Initial",
-        "lab": "DXC Technology"
+        "lab": "DXC Technology",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Senetas Corporation Ltd. and SafeNet Inc.",
-      "website_url": "http://www.senetas.com",
       "address_lines": [
         "Level 1, 11 Queens Road",
         "Melbourne, Victoria 3004",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "John Weston",
       "contact_email": "john.weston@senetas.com",
-      "contact_phone": "+61 3 9868 4555"
+      "contact_name": "John Weston",
+      "contact_phone": "+61 3 9868 4555",
+      "country": "Australia",
+      "name": "Senetas Corporation Ltd. and SafeNet Inc.",
+      "website_url": "http://www.senetas.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Senetas Corporation Ltd. and SafeNet Inc."
   }
 }

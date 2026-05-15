@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5209"
   },
   "certificate": {
-    "certificate_number": "5209",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5209",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5209",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5209.pdf",
-    "vendor_name": "Kloudfuse Inc",
-    "module_name": "Kloudfuse Java Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "3/26/2026",
-    "validation_dates": [
-      "3/26/2026"
-    ],
-    "sunset_date": "7/28/2029",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "Kloudfuse Java Cryptographic Module offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5209.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/26/2026",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Kloudfuse Inc",
-      "website_url": "http://www.kloudfuse.com",
-      "address_lines": [
-        "20370 Town Center Ln #211",
-        "Cupertino, CA 95014",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Pankaj Thakkar",
-      "contact_email": "info@kloudfuse.com",
-      "contact_phone": "408-409-5361"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 65,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 65
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -153,6 +100,59 @@
       "RSA KTS(non-compliant $ ^{16} $) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5209",
+    "certificate_number": "5209",
+    "dataset": "active",
+    "description": "Kloudfuse Java Cryptographic Module offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Kloudfuse Java Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5209",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5209.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5209.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "3/26/2026",
+    "validation_dates": [
+      "3/26/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "3/26/2026",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "20370 Town Center Ln #211",
+        "Cupertino, CA 95014",
+        "USA"
+      ],
+      "contact_email": "info@kloudfuse.com",
+      "contact_name": "Pankaj Thakkar",
+      "contact_phone": "408-409-5361",
+      "country": "USA",
+      "name": "Kloudfuse Inc",
+      "website_url": "http://www.kloudfuse.com"
+    },
+    "vendor_name": "Kloudfuse Inc"
   }
 }

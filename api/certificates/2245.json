@@ -1,35 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245",
     "certificate_number": "2245",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2245.pdf",
-    "vendor_name": "EF Johnson Technologies",
-    "module_name": "Subscriber Encryption Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "9/10/2014, 4/24/2018, 4/30/2019",
-    "validation_dates": [
-      "9/10/2014",
-      "4/24/2018",
-      "4/30/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The EFJohnson Subscriber Encryption Module (SEM) is a cryptographic module meeting FIPS 140-2, Level 1 requirements. The SEM provides Subscriber Equipment, such as the EFJohnson Technology VP600 series radio with secure encrypted voice communication. The SEM supports AES, RSA, HMAC, DRBG and SHA-256 FIPS Approved algorithms for voice communication and protection of its firmware. The SEM can be implemented into any Subscriber Equipment requiring FIPS 140-2, Level 1 security.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Subscriber Encryption Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2245",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,54 +44,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0045.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2245.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/10/2014, 4/24/2018, 4/30/2019",
+    "validation_dates": [
+      "9/10/2014",
+      "4/24/2018",
+      "4/30/2019"
+    ],
     "validation_history": [
       {
         "date": "9/10/2014",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/24/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "4/30/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "EF Johnson Technologies",
-      "website_url": "http://www.efjohnson.com",
       "address_lines": [
         "1440 Corporate Drive",
         "Irving, TX 75038-2401",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Marshall Schiring",
       "contact_email": "mschiring@efji.com",
-      "contact_phone": "402-479-8375"
+      "contact_name": "Marshall Schiring",
+      "contact_phone": "402-479-8375",
+      "country": "USA",
+      "name": "EF Johnson Technologies",
+      "website_url": "http://www.efjohnson.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES"
-    ]
+    "vendor_name": "EF Johnson Technologies"
   }
 }

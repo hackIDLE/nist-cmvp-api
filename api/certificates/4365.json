@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365"
   },
   "certificate": {
-    "certificate_number": "4365",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf",
-    "vendor_name": "Nutanix, Inc.",
-    "module_name": "Nutanix Cryptographic Module for OpenSSH Server",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/14/2022",
-    "validation_dates": [
-      "11/14/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and configured as specified in Section 3 of the Security Policy with the Nutanix Cryptographic Module for OpenSSL validated to FIPS 140-2 under Cert. #4249 operating in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "The Nutanix Cryptographic Module for OpenSSH Server is a cryptographic software module, designated as a multi-chip standalone embodiment, and used in Nutanix solutions to provide FIPS 140-2 Approved SSH server-side secure communication.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2022_051222_0640_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/14/2022",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Nutanix, Inc.",
-      "website_url": "http://www.nutanix.com",
-      "address_lines": [
-        "1740 Technology Drive",
-        "Suite 150",
-        "San Jose, CA 95110",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Matt Keller",
-      "contact_email": "fips@nutanix.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +30,64 @@
       "SHA",
       "SHS",
       "SSH"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode and configured as specified in Section 3 of the Security Policy with the Nutanix Cryptographic Module for OpenSSL validated to FIPS 140-2 under Cert. #4249 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365",
+    "certificate_number": "4365",
+    "dataset": "active",
+    "description": "The Nutanix Cryptographic Module for OpenSSH Server is a cryptographic software module, designated as a multi-chip standalone embodiment, and used in Nutanix solutions to provide FIPS 140-2 Approved SSH server-side secure communication.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Nutanix Cryptographic Module for OpenSSH Server",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2022_051222_0640_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/14/2022",
+    "validation_dates": [
+      "11/14/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "11/14/2022",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1740 Technology Drive",
+        "Suite 150",
+        "San Jose, CA 95110",
+        "USA"
+      ],
+      "contact_email": "fips@nutanix.com",
+      "contact_name": "Matt Keller",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Nutanix, Inc.",
+      "website_url": "http://www.nutanix.com"
+    },
+    "vendor_name": "Nutanix, Inc."
   }
 }

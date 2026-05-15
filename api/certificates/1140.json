@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1140"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1140",
     "certificate_number": "1140",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1140",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1140",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1140.pdf",
-    "vendor_name": "EF Johnson Technologies",
-    "module_name": "Johnson Encryption Machine 2 (JEM2)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "6/25/2009, 7/2/2010",
-    "validation_dates": [
-      "6/25/2009",
-      "7/2/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The EF Johnson Technologies Johnson Encryption Machine 2 (JEM2) is a cryptographic module meeting the FIPS140-2, Level 1 requirement. The JEM2 provides cryptographic operations to support Project 25 infrastructure. The JEM2 supports AES OTAR, AES, DSA, SHA-1, SHA-256, SHA-512, and HMAC FIPS Approved algorithms.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Johnson Encryption Machine 2 (JEM2)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1140",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1140.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1140.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/25/2009, 7/2/2010",
+    "validation_dates": [
+      "6/25/2009",
+      "7/2/2010"
+    ],
     "validation_history": [
       {
         "date": "6/25/2009",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "7/2/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "EF Johnson Technologies",
-      "website_url": "http://www.efjohnson.com",
       "address_lines": [
         "1440 Corporate Drive",
         "Irving, TX 75038-2401",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "John Oblak",
       "contact_email": "joblak@efjohnson.com",
-      "contact_phone": "507-837-5116"
+      "contact_name": "John Oblak",
+      "contact_phone": "507-837-5116",
+      "country": "USA",
+      "name": "EF Johnson Technologies",
+      "website_url": "http://www.efjohnson.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "EF Johnson Technologies"
   }
 }

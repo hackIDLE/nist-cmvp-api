@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4922"
   },
   "certificate": {
-    "certificate_number": "4922",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4922",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4922",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4922.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Cohesity FIPS Object Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/18/2024",
-    "validation_dates": [
-      "12/18/2024"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The Cohesity FIPS Object Module provides FIPS 140-3 validated cryptographic functionality for Cohesity products and services.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4922.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/18/2024",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
-      "address_lines": [
-        "300 Park Ave.",
-        "Suite 1700",
-        "San Jose, CA 95110",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Sydney Jackson",
-      "contact_email": "sydney.jackson@cohesity.com",
-      "contact_phone": "1-855-214-3133"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 96,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 96
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -185,6 +130,61 @@
       "RSA SigVer (FIPS186‐5) | A4481 | Modulo ‐ 2048, 3072, 4096 | Signature Type ‐ pkcs1v1.5, pss | FIPS 186‐5 | FIPS 140‐3 Security Policy | Cohesity FIPS Object Module | This non‐proprietary Security Policy document may be freely reproduced and distributed in its entirety without modification. | Vendor‐Affirmed Algorithms: | Name | Implementation | CKG Section 4 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 5 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2 | CKG Section 6.2 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐133 Rev. 2",
       "Hash DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1",
       "HMAC DRBG with SHA3‐256, SHA3‐512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800‐90A Rev. 1 | Non‐Approved, Allowed Algorithms: | N/A for this module. | Non‐Approved, Allowed Algorithms with No Security Claimed: | N/A for this Module. | Non‐Approved, Not Allowed Algorithms: | N/A for this Module."
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4922",
+    "certificate_number": "4922",
+    "dataset": "active",
+    "description": "The Cohesity FIPS Object Module provides FIPS 140-3 validated cryptographic functionality for Cohesity products and services.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Cohesity FIPS Object Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4922",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4922.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4922.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "12/18/2024",
+    "validation_dates": [
+      "12/18/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "12/18/2024",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "300 Park Ave.",
+        "Suite 1700",
+        "San Jose, CA 95110",
+        "USA"
+      ],
+      "contact_email": "sydney.jackson@cohesity.com",
+      "contact_name": "Sydney Jackson",
+      "contact_phone": "1-855-214-3133",
+      "country": "USA",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
+    },
+    "vendor_name": "[email protected]"
   }
 }

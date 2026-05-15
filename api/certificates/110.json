@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110",
     "certificate_number": "110",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp110.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Outlook Cryptographic Provider (EXCHCSP)",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "8/15/2000, 10/15/2007",
-    "validation_dates": [
-      "8/15/2000",
-      "10/15/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Microsoft Outlook Cryptographic Provider (EXCHCSP) is a FIPS 140-1 Level 1 compliant general-purpose software-based cryptographic module. EXCHCSP encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. It can be dynamically linked into applications by software developers to permit the use of general-purpose FIPS 140-1 Level 1 compliant cryptography.",
-    "security_level_exceptions": [
-      "Operating System Security: Tested as meeting Level 1 with Microsoft Windows2000 with SP2 or higher (operated in single-user mode)."
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Outlook Cryptographic Provider (EXCHCSP)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt110.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operating System Security: Tested as meeting Level 1 with Microsoft Windows2000 with SP2 or higher (operated in single-user mode)."
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp110.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/15/2000, 10/15/2007",
+    "validation_dates": [
+      "8/15/2000",
+      "10/15/2007"
+    ],
     "validation_history": [
       {
         "date": "8/15/2000",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "10/15/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052-6399",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Dave Friant",
       "contact_email": "Dave.Friant@microsoft.com",
-      "contact_phone": "425-704-7984"
+      "contact_name": "Dave Friant",
+      "contact_phone": "425-704-7984",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

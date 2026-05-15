@@ -1,100 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5019"
   },
   "certificate": {
-    "certificate_number": "5019",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5019",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5019",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5019.pdf",
-    "vendor_name": "Musarubra US LLC",
-    "module_name": "Trellix FIPS Provider",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/23/2025, 6/10/2025, 9/4/2025, 9/22/2025, 4/9/2026",
-    "validation_dates": [
-      "5/23/2025",
-      "6/10/2025",
-      "9/4/2025",
-      "9/22/2025",
-      "4/9/2026"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The Trellix FIPS Provider is a FIPS 140-3 certified software module that provides OpenSSL 3.x cryptographic functions.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5019.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/23/2025",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "6/10/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "9/4/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "9/22/2025",
-        "type": "Update",
-        "lab": "Teron Labs"
-      },
-      {
-        "date": "4/9/2026",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Musarubra US LLC",
-      "website_url": "http://www.trellix.com",
-      "address_lines": [
-        "102#, 6000 Headquarters Dr",
-        "STE 300",
-        "Plano, TX 75024",
-        "United States"
-      ],
-      "country": "United States",
-      "contact_name": "Mumtaz Siddiqui",
-      "contact_email": "mumtaz.siddiqui@trellix.com",
-      "contact_phone": "+1 800-937-2237"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 124,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 124
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -237,6 +158,85 @@
       "Signature ECDSA | DigSig-SigGenDigSig-SigVer | ECDSA SigGen(FIPS186-4):(A6884)ECDSA SigVer(FIPS186-4):(A6884)",
       "Signature EDDSA | DigSig-SigGenDigSig-SigVer | EDDSA SigGen:(A6884)EDDSA SigVer:(A6884)",
       "Signature RSA | DigSig-SigGenDigSig-SigVer | RSA SigGen(FIPS186-4):(A6884)RSA SigGen(FIPS186-5):(A6884)RSA Signature Primitive:(A6884)RSA SigVer(FIPS186-4):(A6884)RSA SigVer(FIPS186-5):(A6884)"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5019",
+    "certificate_number": "5019",
+    "dataset": "active",
+    "description": "The Trellix FIPS Provider is a FIPS 140-3 certified software module that provides OpenSSL 3.x cryptographic functions.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trellix FIPS Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5019",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5019.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5019.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "5/23/2025, 6/10/2025, 9/4/2025, 9/22/2025, 4/9/2026",
+    "validation_dates": [
+      "5/23/2025",
+      "6/10/2025",
+      "9/4/2025",
+      "9/22/2025",
+      "4/9/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/23/2025",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "6/10/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "9/4/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "9/22/2025",
+        "lab": "Teron Labs",
+        "type": "Update"
+      },
+      {
+        "date": "4/9/2026",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "102#, 6000 Headquarters Dr",
+        "STE 300",
+        "Plano, TX 75024",
+        "United States"
+      ],
+      "contact_email": "mumtaz.siddiqui@trellix.com",
+      "contact_name": "Mumtaz Siddiqui",
+      "contact_phone": "+1 800-937-2237",
+      "country": "United States",
+      "name": "Musarubra US LLC",
+      "website_url": "http://www.trellix.com"
+    },
+    "vendor_name": "Musarubra US LLC"
   }
 }

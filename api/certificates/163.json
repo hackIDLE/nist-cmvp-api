@@ -1,23 +1,53 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/163"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/163",
     "certificate_number": "163",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/163",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/163",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp163.pdf",
-    "vendor_name": "RSA, The Security Division of EMC",
+    "description": "The RSA BSAFE® Crypto-C Module version 5.2.1 is a software development kit that allows software and hardware developers to incorporate encryption technologies directly into their products. It provides a variety of cryptographic services to calling applications that are documented in RSA’s RSA BSAFE® Crypto-C Security Components for C Library Reference Manual. RSA BSAFE® Crypto-C is a C-language API available as a static library, a dynamic library and as source code.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
     "module_name": "RSA BSAFE® Crypto-C",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/163",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp163.pdf"
+      },
+      {
+        "label": "Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt163.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operating System Security: Tested as meeting Level 1 with Windows 98 (single user mode)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp163.pdf",
+    "software_versions": null,
     "standard": "FIPS 140-1",
     "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
+    "sunset_date": null,
     "validation_date": "8/15/2001, 8/27/2001, 1/4/2008, 10/16/2008, 9/7/2010, 3/28/2011, 1/24/2013, 2/12/2016",
     "validation_dates": [
       "8/15/2001",
@@ -29,91 +59,61 @@
       "1/24/2013",
       "2/12/2016"
     ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The RSA BSAFE® Crypto-C Module version 5.2.1 is a software development kit that allows software and hardware developers to incorporate encryption technologies directly into their products. It provides a variety of cryptographic services to calling applications that are documented in RSA’s RSA BSAFE® Crypto-C Security Components for C Library Reference Manual. RSA BSAFE® Crypto-C is a C-language API available as a static library, a dynamic library and as source code.",
-    "security_level_exceptions": [
-      "Operating System Security: Tested as meeting Level 1 with Windows 98 (single user mode)"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp163.pdf"
-      },
-      {
-        "label": "Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt163.pdf"
-      }
-    ],
     "validation_history": [
       {
         "date": "8/15/2001",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "8/27/2001",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/4/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "10/16/2008",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "9/7/2010",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       },
       {
         "date": "3/28/2011",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       },
       {
         "date": "1/24/2013",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/12/2016",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "RSA, The Security Division of EMC",
-      "website_url": "http://www.rsa.com",
       "address_lines": [
         "174 Middlesex Turnpike",
         "Bedford, MA 01730",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rohit Mathur",
       "contact_email": "rohit.mathur@rsa.com",
-      "contact_phone": "+61 7 3032 5220"
+      "contact_name": "Rohit Mathur",
+      "contact_phone": "+61 7 3032 5220",
+      "country": "USA",
+      "name": "RSA, The Security Division of EMC",
+      "website_url": "http://www.rsa.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "RSA, The Security Division of EMC"
   }
 }

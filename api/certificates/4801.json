@@ -1,78 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801"
   },
   "certificate": {
-    "certificate_number": "4801",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Oracle Linux 9 NSS Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/16/2024",
-    "validation_dates": [
-      "9/16/2024"
-    ],
-    "sunset_date": "9/15/2029",
-    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in section 11 of the Security Policy.",
-    "description": "Network Security Services (NSS) is a set of open source C libraries designed to support cross-platform development of security-enabled applications. NSS implements major Internet security standards. NSS is available free of charge under a variety of open source compatible licenses. See http://www.mozilla.org/projects/security/pki/nss/.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/16/2024",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
-      "address_lines": [
-        "2300 Oracle Way",
-        "Austin, TX 78741",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Security Evaluation team",
-      "contact_email": "seceval_us@oracle.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 52,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 52
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -140,6 +83,63 @@
       "Compliant with IG D.F scenario2(1) | KAS-ECC-SSC:#A4760",
       "KAS-FFC-SSC\\[SP800-56ARev3\\] | Ephemeral Unified scheme",
       "Keys:2048,3072,4096,6144,8192-bit keys with 112-200bits of key strength | KAS-FFC-SSC:#A4760"
-    ]
+    ],
+    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in section 11 of the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
+    "certificate_number": "4801",
+    "dataset": "active",
+    "description": "Network Security Services (NSS) is a set of open source C libraries designed to support cross-platform development of security-enabled applications. NSS implements major Internet security standards. NSS is available free of charge under a variety of open source compatible licenses. See http://www.mozilla.org/projects/security/pki/nss/.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oracle Linux 9 NSS Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/15/2029",
+    "validation_date": "9/16/2024",
+    "validation_dates": [
+      "9/16/2024"
+    ],
+    "validation_history": [
+      {
+        "date": "9/16/2024",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2300 Oracle Way",
+        "Austin, TX 78741",
+        "USA"
+      ],
+      "contact_email": "seceval_us@oracle.com",
+      "contact_name": "Security Evaluation team",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
+    },
+    "vendor_name": "Oracle Corporation"
   }
 }

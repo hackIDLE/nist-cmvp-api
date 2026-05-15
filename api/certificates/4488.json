@@ -1,33 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4488"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "KDF",
+      "RSA"
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4488",
     "certificate_number": "4488",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4488",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4488",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4488.pdf",
-    "vendor_name": "ControlUp Technologies, Inc.",
-    "module_name": "ControlUp Cryptographic Library",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/26/2023",
-    "validation_dates": [
-      "4/26/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
     "description": "The ControlUp Cryptographic library is a general-purpose cryptographic module incorporated into the applications to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ControlUp Cryptographic Library",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4488",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,48 +48,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4488.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/26/2023",
+    "validation_dates": [
+      "4/26/2023"
+    ],
     "validation_history": [
       {
         "date": "4/26/2023",
-        "type": "Initial",
-        "lab": "Acumen Security"
+        "lab": "Acumen Security",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "ControlUp Technologies, Inc.",
-      "website_url": "http://www.controlup.com",
       "address_lines": [
         "4880 Stevens Creek Blvd Suite 204",
         "San Jose, CA 95129",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Guy Stolero (CISO)",
       "contact_email": "Security@controlup.com",
-      "contact_phone": "+972-3-7591560"
+      "contact_name": "Guy Stolero (CISO)",
+      "contact_phone": "+972-3-7591560",
+      "country": "USA",
+      "name": "ControlUp Technologies, Inc.",
+      "website_url": "http://www.controlup.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DSA",
-      "ECDSA",
-      "EDDSA",
-      "KDF",
-      "RSA"
-    ]
+    "vendor_name": "ControlUp Technologies, Inc."
   }
 }

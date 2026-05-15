@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5079"
   },
   "certificate": {
-    "certificate_number": "5079",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5079",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5079",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5079.pdf",
-    "vendor_name": "Persistent Systems, LLC",
-    "module_name": "Wave Relay® User Space Crypto Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "10/8/2025",
-    "validation_dates": [
-      "10/8/2025"
-    ],
-    "sunset_date": "10/7/2030",
-    "caveat": "When operated in approved mode, No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "description": "Persistent Systems LLC Wave Relay® User Space Crypto Module is a Software cryptographic module embedded in the Wave Relay® System that provides FIPS Validated cryptographic algorithms which are used by user space system services & protocols (e.g., TLS, IPsec, etc.).",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5079.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/8/2025",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Persistent Systems, LLC",
-      "website_url": "http://www.persistentsystems.com/",
-      "address_lines": [
-        "601 W 26th St",
-        "Suite 905",
-        "New York, New York 10001",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "David Holmer",
-      "contact_email": "security-certifications@persistentsystems.com",
-      "contact_phone": "212-561-5895"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 69,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 69
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -156,6 +101,61 @@
       "TLS v1.2 KDF RFC7627(CVL) | A5177 | Hash Algorithm-SHA2-256,SHA2-384,SHA2-512 | SP 800-135 Rev.1",
       "TLS v1.3 KDF (CVL) | A5177 | HMAC Algorithm-SHA2-256,SHA2-384KDF Running Modes-DHE,PSK,PSK-DHE | SP 800-135 Rev.1",
       "AES(GCM)-ExtIV | GCM with Externally Generated IVs"
-    ]
+    ],
+    "caveat": "When operated in approved mode, No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5079",
+    "certificate_number": "5079",
+    "dataset": "active",
+    "description": "Persistent Systems LLC Wave Relay® User Space Crypto Module is a Software cryptographic module embedded in the Wave Relay® System that provides FIPS Validated cryptographic algorithms which are used by user space system services & protocols (e.g., TLS, IPsec, etc.).",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Wave Relay® User Space Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5079",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5079.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5079.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/7/2030",
+    "validation_date": "10/8/2025",
+    "validation_dates": [
+      "10/8/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "10/8/2025",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "601 W 26th St",
+        "Suite 905",
+        "New York, New York 10001",
+        "USA"
+      ],
+      "contact_email": "security-certifications@persistentsystems.com",
+      "contact_name": "David Holmer",
+      "contact_phone": "212-561-5895",
+      "country": "USA",
+      "name": "Persistent Systems, LLC",
+      "website_url": "http://www.persistentsystems.com/"
+    },
+    "vendor_name": "Persistent Systems, LLC"
   }
 }

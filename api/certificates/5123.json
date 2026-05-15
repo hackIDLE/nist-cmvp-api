@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5123"
   },
   "certificate": {
-    "certificate_number": "5123",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5123",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5123",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5123.pdf",
-    "vendor_name": "HID Global Corporation",
-    "module_name": "HID Global Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/13/2026",
-    "validation_dates": [
-      "1/13/2026"
-    ],
-    "sunset_date": "7/28/2029",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "HID Global Cryptographic Module is a cryptographic engine for mobile devices. The module delivers core cryptographic functions to some of HID Global’s mobile app solutions for multifactor authentication - such as the HID Approve mobile app and HID Approve mobile SDK.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5123.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/13/2026",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "HID Global Corporation",
-      "website_url": "https://www.hidglobal.com/",
-      "address_lines": [
-        "611 Center Ridge Drive",
-        "Austin, TX 78753",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "HID Global Security Response Team",
-      "contact_email": "secure@hidglobal.com",
-      "contact_phone": "+1 800 670 6892"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 65,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 65
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -153,6 +100,59 @@
       "RSA KTS(non-compliant16) | Non-compliant RSA key transport schemes",
       "SHACAL-2 | SHACAL2 block cipher",
       "Triple-DES | Triple-DES cipher"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5123",
+    "certificate_number": "5123",
+    "dataset": "active",
+    "description": "HID Global Cryptographic Module is a cryptographic engine for mobile devices. The module delivers core cryptographic functions to some of HID Global’s mobile app solutions for multifactor authentication - such as the HID Approve mobile app and HID Approve mobile SDK.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HID Global Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5123",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5123.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5123.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/28/2029",
+    "validation_date": "1/13/2026",
+    "validation_dates": [
+      "1/13/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/13/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "611 Center Ridge Drive",
+        "Austin, TX 78753",
+        "USA"
+      ],
+      "contact_email": "secure@hidglobal.com",
+      "contact_name": "HID Global Security Response Team",
+      "contact_phone": "+1 800 670 6892",
+      "country": "USA",
+      "name": "HID Global Corporation",
+      "website_url": "https://www.hidglobal.com/"
+    },
+    "vendor_name": "HID Global Corporation"
   }
 }

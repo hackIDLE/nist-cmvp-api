@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS Mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084",
     "certificate_number": "2084",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2084.pdf",
-    "vendor_name": "GOTrust Technology Inc.",
-    "module_name": "GO-Trust SDencrypter",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "2/22/2014",
-    "validation_dates": [
-      "2/22/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS Mode",
     "description": "SDencrypter is a hardware security module embedded into one microSD. The entire encryption, decryption, key generation process is completed inside the module. Fast íºin-chipí¿ processing, using a high-performance smart card chip, supports streaming voice and media operations. High-assurance protection is provided to keys and sensitive data which are encrypted and stored inside the chip.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "GO-Trust SDencrypter",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2084.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/22/2014",
+    "validation_dates": [
+      "2/22/2014"
+    ],
     "validation_history": [
       {
         "date": "2/22/2014",
-        "type": "Initial",
-        "lab": "TTC"
+        "lab": "TTC",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "GOTrust Technology Inc.",
-      "website_url": "http://www.go-trust.com",
       "address_lines": [
         "10F-1, No.306, Sec. 1, Wenxin Rd., Nantun Dist.",
         "Taichung, Taiwan 408",
         "Republic of China"
       ],
-      "country": "Republic of China",
-      "contact_name": "Sean Huang",
       "contact_email": "sean.huang@go-trust.com",
-      "contact_phone": "+886-4-23202525"
+      "contact_name": "Sean Huang",
+      "contact_phone": "+886-4-23202525",
+      "country": "Republic of China",
+      "name": "GOTrust Technology Inc.",
+      "website_url": "http://www.go-trust.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "GOTrust Technology Inc."
   }
 }

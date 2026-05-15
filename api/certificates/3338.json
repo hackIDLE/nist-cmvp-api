@@ -1,96 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3338"
   },
   "certificate": {
-    "certificate_number": "3338",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3338",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3338",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3338.pdf",
-    "vendor_name": "FileCloud",
-    "module_name": "FileCloud Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/7/2018, 12/17/2018, 3/3/2022, 3/29/2023",
-    "validation_dates": [
-      "12/7/2018",
-      "12/17/2018",
-      "3/3/2022",
-      "3/29/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security relevant modification to Cert. #2038",
-    "description": "The FileCloud Cryptographic Module is a standards-based cryptographic engine for FileCloud Server. FileCloud Server is a hyper-secure content collaboration platform that enables enterprises to sync, share, and govern files from various external clients such as web browsers, native file synchronization clients, or mobile applications. The FileCloud Cryptographic Module for FileCloud Server provides robust encryption support for data in transit and at rest to enable best in class security of enterprise data.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3338.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Dec2018Cert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/7/2018",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "12/17/2018",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "3/3/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "3/29/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "FileCloud",
-      "website_url": "http://www.filecloud.com",
-      "address_lines": [
-        "13785 Research Blvd #125",
-        "Austin, TX 78750",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "FileCloud FIPS Team",
-      "contact_email": "devops@filecloud.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -101,6 +26,81 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security relevant modification to Cert. #2038",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3338",
+    "certificate_number": "3338",
+    "dataset": "historical",
+    "description": "The FileCloud Cryptographic Module is a standards-based cryptographic engine for FileCloud Server. FileCloud Server is a hyper-secure content collaboration platform that enables enterprises to sync, share, and govern files from various external clients such as web browsers, native file synchronization clients, or mobile applications. The FileCloud Cryptographic Module for FileCloud Server provides robust encryption support for data in transit and at rest to enable best in class security of enterprise data.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FileCloud Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3338",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3338.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Dec2018Cert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3338.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "12/7/2018, 12/17/2018, 3/3/2022, 3/29/2023",
+    "validation_dates": [
+      "12/7/2018",
+      "12/17/2018",
+      "3/3/2022",
+      "3/29/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "12/7/2018",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "12/17/2018",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "3/3/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      },
+      {
+        "date": "3/29/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "13785 Research Blvd #125",
+        "Austin, TX 78750",
+        "USA"
+      ],
+      "contact_email": "devops@filecloud.com",
+      "contact_name": "FileCloud FIPS Team",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "FileCloud",
+      "website_url": "http://www.filecloud.com"
+    },
+    "vendor_name": "FileCloud"
   }
 }

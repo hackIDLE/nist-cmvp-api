@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/166"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and using FIPS Approved algorithms and processes as listed",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/166",
     "certificate_number": "166",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/166",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/166",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp166.pdf",
-    "vendor_name": "SPYRUS, Inc.",
-    "module_name": "Rosetta USB",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "9/10/2001, 1/1/2014",
-    "validation_dates": [
-      "9/10/2001",
-      "1/1/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and using FIPS Approved algorithms and processes as listed",
     "description": "The Rosetta USB is a low cost cryptographic token ideal for public key operations, key generation, and certificate storage. USB compatibility means simple “plug and play” ease of use. Rosetta USB provides user authentication, digital signatures, and data privacy all in a familiar key-shaped token. With both commercial and government cryptographic algorithms, Rosetta USB supports messaging and authentication requirements at a lower cost of deployment than smart cards or PC cards. Combined with the Rosetta Executive Suite software, Rosetta USB seamlessly plugs into e-mail, browsing, and data security applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Rosetta USB",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/166",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt166.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp166.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/10/2001, 1/1/2014",
+    "validation_dates": [
+      "9/10/2001",
+      "1/1/2014"
+    ],
     "validation_history": [
       {
         "date": "9/10/2001",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "1/1/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SPYRUS, Inc.",
-      "website_url": "http://www.spyrus.com",
       "address_lines": [
         "2355 Oakland Road",
         "Suite 1",
         "San Jose, CA 95131",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Tom Dickens",
       "contact_email": "tdickens@spyrus.com",
-      "contact_phone": "408-953-0700"
+      "contact_name": "Tom Dickens",
+      "contact_phone": "408-953-0700",
+      "country": "USA",
+      "name": "SPYRUS, Inc.",
+      "website_url": "http://www.spyrus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "SPYRUS, Inc."
   }
 }

@@ -1,77 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4067"
   },
   "certificate": {
-    "certificate_number": "4067",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4067",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4067",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4067.pdf",
-    "vendor_name": "Aruba, a Hewlett Packard Enterprise company",
-    "module_name": "Aruba AP-318, AP-344, AP-345, AP-374, AP-375, AP-377 and AP-387 Outdoor Access Points with ArubaOS FIPS Firmware",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "11/4/2021",
-    "validation_dates": [
-      "11/4/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 13 of the Security Policy. The tamper evident labels installed as indicated in the security policy",
-    "description": "Aruba's 802.11 Wi-Fi access points operate at gigabit speeds, offering extreme performance for mobile devices. In FIPS 140-2 mode, Aruba APs in conjunction with a Mobility Controller support the WPA2/WPA3 client standard along with optional Suite B cryptography. Aruba APs also support wireless intrusion detection/prevention services and wireless mesh topologies.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4067.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2021_011221_0923_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/4/2021",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Aruba, a Hewlett Packard Enterprise company",
-      "website_url": "http://www.arubanetworks.com",
-      "address_lines": [
-        "3333 Scott Blvd",
-        "Santa Clara, CA 95054",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Kevin Micciche",
-      "contact_email": "kevin.micciche@hpe.com",
-      "contact_phone": "404-648-0062"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +32,62 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 13 of the Security Policy. The tamper evident labels installed as indicated in the security policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4067",
+    "certificate_number": "4067",
+    "dataset": "active",
+    "description": "Aruba's 802.11 Wi-Fi access points operate at gigabit speeds, offering extreme performance for mobile devices. In FIPS 140-2 mode, Aruba APs in conjunction with a Mobility Controller support the WPA2/WPA3 client standard along with optional Suite B cryptography. Aruba APs also support wireless intrusion detection/prevention services and wireless mesh topologies.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aruba AP-318, AP-344, AP-345, AP-374, AP-375, AP-377 and AP-387 Outdoor Access Points with ArubaOS FIPS Firmware",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4067",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4067.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2021_011221_0923_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4067.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "11/4/2021",
+    "validation_dates": [
+      "11/4/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "11/4/2021",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3333 Scott Blvd",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "contact_email": "kevin.micciche@hpe.com",
+      "contact_name": "Kevin Micciche",
+      "contact_phone": "404-648-0062",
+      "country": "USA",
+      "name": "Aruba, a Hewlett Packard Enterprise company",
+      "website_url": "http://www.arubanetworks.com"
+    },
+    "vendor_name": "Aruba, a Hewlett Packard Enterprise company"
   }
 }

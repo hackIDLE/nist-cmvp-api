@@ -1,76 +1,76 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5009"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "The module generates SSPs whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5009",
     "certificate_number": "5009",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5009",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5009",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5009.pdf",
-    "vendor_name": "KYOCERA Document Solutions Inc.",
-    "module_name": "MFP Cryptographic Module (B)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "4/27/2025",
-    "validation_dates": [
-      "4/27/2025"
-    ],
-    "sunset_date": "4/26/2030",
-    "caveat": "The module generates SSPs whose strengths are modified by available entropy.",
     "description": "MFP Cryptographic Module(B) is a cryptographic security chip for encrypting data written to a storage device and other security function of Kyocera multifunction printer. Secure key generation and fast AES encryption/decryption are offered through SATA interface. SecureBoot verifies the integrity of the firmware when the product starts up.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "MFP Cryptographic Module (B)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5009",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5009.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5009.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/26/2030",
+    "validation_date": "4/27/2025",
+    "validation_dates": [
+      "4/27/2025"
+    ],
     "validation_history": [
       {
         "date": "4/27/2025",
-        "type": "Initial",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "KYOCERA Document Solutions Inc.",
-      "website_url": "http://www.kyoceradocumentsolutions.com/en/",
       "address_lines": [
         "1-2-28 Tamatsukuri, Chuo-ku",
         "Osaka 540-8585",
         "JAPAN"
       ],
-      "country": "JAPAN",
-      "contact_name": "Masato Shiose",
       "contact_email": "masato.shiose@dc.kyocera.com",
-      "contact_phone": "0000-00-0000"
+      "contact_name": "Masato Shiose",
+      "contact_phone": "0000-00-0000",
+      "country": "JAPAN",
+      "name": "KYOCERA Document Solutions Inc.",
+      "website_url": "http://www.kyoceradocumentsolutions.com/en/"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "KYOCERA Document Solutions Inc."
   }
 }

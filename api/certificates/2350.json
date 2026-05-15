@@ -1,34 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2350"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2350",
     "certificate_number": "2350",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2350",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2350",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2350.pdf",
-    "vendor_name": "Canon Inc.",
-    "module_name": "Canon MFP Security Chip",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "4/20/2015, 1/31/2017",
-    "validation_dates": [
-      "4/20/2015",
-      "1/31/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Canon MFP Security Chip handles cryptography for the storage device of the Canon MFP/printer. The Canon MFP Security Chip realizes high-speed data encryption/decryption through a serial ATA interface, using AES CBC mode. This allows the Canon MFP/printer's storage device to be protected against the risk of information leakage, without compromising objectives such as extensibility, flexibility, usability, and high performance.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Canon MFP Security Chip",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2350",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,51 +45,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0052.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2350.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/20/2015, 1/31/2017",
+    "validation_dates": [
+      "4/20/2015",
+      "1/31/2017"
+    ],
     "validation_history": [
       {
         "date": "4/20/2015",
-        "type": "Initial",
-        "lab": "IT SECURITY CENTER"
+        "lab": "IT SECURITY CENTER",
+        "type": "Initial"
       },
       {
         "date": "1/31/2017",
-        "type": "Update",
-        "lab": "IT SECURITY CENTER"
+        "lab": "IT SECURITY CENTER",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Canon Inc.",
-      "website_url": "http://www.canon.com",
       "address_lines": [
         "30-2",
         "Shimomaruko 3-chome",
         "Ohta-ku, Tokyo 146-8501",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Yoichi Toyokura",
       "contact_email": "toyokura.yoichi@canon.co.jp",
-      "contact_phone": "+81-3-3758-2111"
+      "contact_name": "Yoichi Toyokura",
+      "contact_phone": "+81-3-3758-2111",
+      "country": "Japan",
+      "name": "Canon Inc.",
+      "website_url": "http://www.canon.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "SHA"
-    ]
+    "vendor_name": "Canon Inc."
   }
 }

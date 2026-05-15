@@ -1,84 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3140"
   },
   "certificate": {
-    "certificate_number": "3140",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3140",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3140",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3140.pdf",
-    "vendor_name": "Trend Micro Inc.",
-    "module_name": "Trend Micro Java Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "2/26/2018, 9/24/2018",
-    "validation_dates": [
-      "2/26/2018",
-      "9/24/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
-    "description": "The Trend Micro Java Crypto Module provides FIPS-approved cryptographic algorithms for Trend Micro products including Trend Micro Deep Security",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3140.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedCertFeb2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/26/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
-      },
-      {
-        "date": "9/24/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Trend Micro Inc.",
-      "website_url": "http://www.trendmicro.com",
-      "address_lines": [
-        "225 E. John Carpenter Freeway",
-        "Suite 1500",
-        "Irving, TX 75062",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Rick Abbott",
-      "contact_email": "rick_abbott@trendmicro.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -96,6 +33,69 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3140",
+    "certificate_number": "3140",
+    "dataset": "historical",
+    "description": "The Trend Micro Java Crypto Module provides FIPS-approved cryptographic algorithms for Trend Micro products including Trend Micro Deep Security",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trend Micro Java Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3140",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3140.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedCertFeb2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3140.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/26/2018, 9/24/2018",
+    "validation_dates": [
+      "2/26/2018",
+      "9/24/2018"
+    ],
+    "validation_history": [
+      {
+        "date": "2/26/2018",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "9/24/2018",
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "225 E. John Carpenter Freeway",
+        "Suite 1500",
+        "Irving, TX 75062",
+        "USA"
+      ],
+      "contact_email": "rick_abbott@trendmicro.com",
+      "contact_name": "Rick Abbott",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Trend Micro Inc.",
+      "website_url": "http://www.trendmicro.com"
+    },
+    "vendor_name": "Trend Micro Inc."
   }
 }

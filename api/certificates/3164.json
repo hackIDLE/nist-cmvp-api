@@ -1,38 +1,44 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3164"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3164",
     "certificate_number": "3164",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3164",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3164",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3164.pdf",
-    "vendor_name": "IBM Corporation",
-    "module_name": "IBM 4767 Cryptographic Coprocessor Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 4,
-    "validation_date": "4/4/2018, 4/17/2018, 6/12/2018, 9/3/2019, 2/12/2021, 4/21/2023",
-    "validation_dates": [
-      "4/4/2018",
-      "4/17/2018",
-      "6/12/2018",
-      "9/3/2019",
-      "2/12/2021",
-      "4/21/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The IBM 4767 PCIe Cryptographic Coprocessor Hardware Security Module is in the form of a programmable PCIe card that offloads computationally intensive cryptographic processes from the hosting server, and performs sensitive tasks within a secured tamper responding hardware boundary. This evolutionary design builds on previous generations of IBM cryptographic technology, improving performance over its predecessors. The IBM 4767 is supported on select IBM Z processors as the Crypto Express5S feature and on select x86 systems and Power servers.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IBM 4767 Cryptographic Coprocessor Security Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3164",
+    "overall_level": 4,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,74 +49,68 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3164.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/4/2018, 4/17/2018, 6/12/2018, 9/3/2019, 2/12/2021, 4/21/2023",
+    "validation_dates": [
+      "4/4/2018",
+      "4/17/2018",
+      "6/12/2018",
+      "9/3/2019",
+      "2/12/2021",
+      "4/21/2023"
+    ],
     "validation_history": [
       {
         "date": "4/4/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "4/17/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "6/12/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "9/3/2019",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "2/12/2021",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "4/21/2023",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "IBM Corporation",
-      "website_url": "http://www.ibm.com",
       "address_lines": [
         "1 New Orchard Road",
         "Armonk, NY 10504-1722",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Thomas Morris, Jr",
       "contact_email": "tmorrisj@us.ibm.com",
-      "contact_phone": "845-435-5538"
+      "contact_name": "Thomas Morris, Jr",
+      "contact_phone": "845-435-5538",
+      "country": "USA",
+      "name": "IBM Corporation",
+      "website_url": "http://www.ibm.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "CVL",
-      "DES",
-      "DRBG",
-      "ECDSA",
-      "HMAC",
-      "SHA"
-    ]
+    "vendor_name": "IBM Corporation"
   }
 }

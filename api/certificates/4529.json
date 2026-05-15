@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4529"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When configured as specified in Section 11.1 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4529",
     "certificate_number": "4529",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4529",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4529",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4529.pdf",
-    "vendor_name": "Apricorn",
-    "module_name": "Aegis Fortress L3 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "6/5/2023",
-    "validation_dates": [
-      "6/5/2023"
-    ],
-    "sunset_date": "7/28/2026",
-    "caveat": "When configured as specified in Section 11.1 of the Security Policy",
     "description": "The Aegis Fortress L3 is a FIPS 140-2 Level 3 validated hardware encrypted USB 3.1 external storage drive. Its software free design allows interface to any host that supports USB and mass storage. Authentication is performed via the embedded keypad and all CSPs (PINs, encryption keys, etc) never leave the device boundary for improved security. The device supports 1 administrator and 1 user and offers a variety of features including forced enrollment, programmable brute force, recovery PINs, 7-16 digit PINs, auto lock, read only modes, and is compatible with Apricorn’s Aegis Configurator.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aegis Fortress L3 Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4529",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2023_050723_0638 (1).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4529.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "7/28/2026",
+    "validation_date": "6/5/2023",
+    "validation_dates": [
+      "6/5/2023"
+    ],
     "validation_history": [
       {
         "date": "6/5/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Apricorn",
-      "website_url": "http://www.apricorn.com",
       "address_lines": [
         "12191 Kirkham Road",
         "Poway, CA 92064",
         "United States"
       ],
-      "country": "United States",
-      "contact_name": "Victor Nguyen",
       "contact_email": "vnguyen@apricorn.com",
-      "contact_phone": "858-513-4459"
+      "contact_name": "Victor Nguyen",
+      "contact_phone": "858-513-4459",
+      "country": "United States",
+      "name": "Apricorn",
+      "website_url": "http://www.apricorn.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Apricorn"
   }
 }

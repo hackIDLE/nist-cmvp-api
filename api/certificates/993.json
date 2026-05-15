@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/993"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/993",
     "certificate_number": "993",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/993",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/993",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp993.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Key Token",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "11/6/2008, 5/5/2010",
-    "validation_dates": [
-      "11/6/2008",
-      "5/5/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Key Token is a part of the larger Encrypted Data-At-Rest Solution (EDRS). The primary purpose for this device is to provide secure key storage and key transport between the two other EDRS components. The additional two components that the EDRS includes are the Key Management Station (KMS) and the Encrypting Tape Drive (ETD).",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Key Token",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/993",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt993.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp993.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/6/2008, 5/5/2010",
+    "validation_dates": [
+      "11/6/2008",
+      "5/5/2010"
+    ],
     "validation_history": [
       {
         "date": "11/6/2008",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "5/5/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
       "address_lines": [
         "500 Eldorado Blvd.",
         "Bldg 5",
         "Broomfield, CO 80021",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "David Hostetter",
       "contact_email": "david.hostetter@oracle.com",
-      "contact_phone": "303-272-7126"
+      "contact_name": "David Hostetter",
+      "contact_phone": "303-272-7126",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oracle Corporation"
   }
 }

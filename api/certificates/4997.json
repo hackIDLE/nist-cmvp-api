@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997"
   },
   "certificate": {
-    "certificate_number": "4997",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4997.pdf",
-    "vendor_name": "Fujitsu Limited",
-    "module_name": "Fujitsu Enterprise Postgres Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/4/2025",
-    "validation_dates": [
-      "4/4/2025"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security-relevant modification to Cert. #2038",
-    "description": "Fujitsu Enterprise Postgres Cryptographic Module is the FIPS validated cryptographic library for Fujitsu Enterprise Postgres. This cryptographic library is used for communication data encryption, Transparent Data Encryption (TDE), etc. to provide data protection through robust cryptographic algorithms. Fujitsu Enterprise Postgres is based on the world-renowned open-source system - PostgreSQL, with additional enterprise grade features for enhanced security and better performance.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4997.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/4/2025",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Fujitsu Limited",
-      "website_url": "http://www.fujitsu.com/global/",
-      "address_lines": [
-        "4-1-1 Kamikodanaka",
-        "Nakahara-ku",
-        "Kawasaki-shi, Kanagawa 211-8588",
-        "Japan"
-      ],
-      "country": "Japan",
-      "contact_name": "Fujitsu contact",
-      "contact_email": "contact-fep@cs.jp.fujitsu.com",
-      "contact_phone": "81-44-777-1111"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -81,6 +27,60 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security-relevant modification to Cert. #2038",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997",
+    "certificate_number": "4997",
+    "dataset": "active",
+    "description": "Fujitsu Enterprise Postgres Cryptographic Module is the FIPS validated cryptographic library for Fujitsu Enterprise Postgres. This cryptographic library is used for communication data encryption, Transparent Data Encryption (TDE), etc. to provide data protection through robust cryptographic algorithms. Fujitsu Enterprise Postgres is based on the world-renowned open-source system - PostgreSQL, with additional enterprise grade features for enhanced security and better performance.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Fujitsu Enterprise Postgres Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4997",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4997.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4997.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/4/2025",
+    "validation_dates": [
+      "4/4/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "4/4/2025",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4-1-1 Kamikodanaka",
+        "Nakahara-ku",
+        "Kawasaki-shi, Kanagawa 211-8588",
+        "Japan"
+      ],
+      "contact_email": "contact-fep@cs.jp.fujitsu.com",
+      "contact_name": "Fujitsu contact",
+      "contact_phone": "81-44-777-1111",
+      "country": "Japan",
+      "name": "Fujitsu Limited",
+      "website_url": "http://www.fujitsu.com/global/"
+    },
+    "vendor_name": "Fujitsu Limited"
   }
 }

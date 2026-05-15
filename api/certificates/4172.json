@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4172"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4172",
     "certificate_number": "4172",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4172",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4172",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4172.pdf",
-    "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
-    "module_name": "RSA BSAFE® Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/7/2022, 3/9/2022, 9/1/2023",
-    "validation_dates": [
-      "3/7/2022",
-      "3/9/2022",
-      "9/1/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "RSA BSAFE® Crypto Module 1.1 is designed to help protect sensitive data as it is stored using strong encryption techniques to provide a persistent level of protection. The software supports a wide range of industry standard encryption algorithms offering developers the flexibility to choose the appropriate option to meet their requirements.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 2"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RSA BSAFE® Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4172",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,51 +40,52 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2022_010422_0648_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4172.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/7/2022, 3/9/2022, 9/1/2023",
+    "validation_dates": [
+      "3/7/2022",
+      "3/9/2022",
+      "9/1/2023"
+    ],
     "validation_history": [
       {
         "date": "3/7/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "3/9/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "9/1/2023",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Dell Australia Pty Limited, BSAFE Product Team",
-      "website_url": "http://www.dell.com",
       "address_lines": [
         "207 Pacific Highway",
         "Building A",
         "St Leonards, NSW 2065",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "BSAFE FIPS Program",
       "contact_email": "bsafe-fips-program@dell.com",
-      "contact_phone": null
+      "contact_name": "BSAFE FIPS Program",
+      "contact_phone": null,
+      "country": "Australia",
+      "name": "Dell Australia Pty Limited, BSAFE Product Team",
+      "website_url": "http://www.dell.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team"
   }
 }

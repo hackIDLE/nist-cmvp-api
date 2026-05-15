@@ -1,33 +1,42 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1966"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "ECDSA",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1966",
     "certificate_number": "1966",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1966",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1966",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1966.pdf",
-    "vendor_name": "Gemalto",
-    "module_name": "IDCore 30",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "6/21/2013, 7/5/2013, 8/8/2016",
-    "validation_dates": [
-      "6/21/2013",
-      "7/5/2013",
-      "8/8/2016"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The IDCore 30 is a part of Gemalto's IDCore family of Java Cards and offers a comprehensive array of features and options for logical and physical access control applications. IDCore 30 is a highly secure platform for private and public sector smart card deployments implementing Java Card 2.2.2 and Global Platform 2.1.1 / 2.2 Amdt D specifications. IDCore 30 is ideally suited for markets such as Identity or Security/Access, including one-time password authentication, Public Key Infrastructure (PKI) services, digital transactions and physical access control.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IDCore 30",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1966",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,57 +47,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0030.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1966.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/21/2013, 7/5/2013, 8/8/2016",
+    "validation_dates": [
+      "6/21/2013",
+      "7/5/2013",
+      "8/8/2016"
+    ],
     "validation_history": [
       {
         "date": "6/21/2013",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "7/5/2013",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "8/8/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Gemalto",
-      "website_url": "http://www.gemalto.com",
       "address_lines": [
         "Avenue du Jujubier, Z.I Athelia IV",
         "La Ciotat 13705",
         "France"
       ],
-      "country": "France",
-      "contact_name": "Arnaud Lotigier",
       "contact_email": "Arnaud.LOTIGIER@gemalto.com",
-      "contact_phone": "+33 4.42.36.60.74"
+      "contact_name": "Arnaud Lotigier",
+      "contact_phone": "+33 4.42.36.60.74",
+      "country": "France",
+      "name": "Gemalto",
+      "website_url": "http://www.gemalto.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "ECDSA",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Gemalto"
   }
 }

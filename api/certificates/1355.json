@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1355"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated only on the specific platforms specified",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1355",
     "certificate_number": "1355",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1355",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1355",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1355.pdf",
-    "vendor_name": "Schneider Electric",
-    "module_name": "Continuum Network Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "7/12/2010",
-    "validation_dates": [
-      "7/12/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated only on the specific platforms specified",
     "description": "The Continuum Network Security module is part of the NetController II or ACX Series of controllers to provide the most secure method of communications amongst peer controllers and Cyberstation Workstations on the Ethernet/IP network by providing FIPS 140-2 certified encryption algorithms that are used by the IPSec/IKE protocol built into these controllers to automate building operations for HVAC, Lighting, and Physical Access Control.",
-    "security_level_exceptions": [
-      "Tested: [ACX Series Rev 2a (with ACX Series v1.100021 firmware) and NetController II Rev B (with NetController II v 2.100021 firmware)] with Multi-Threaded Real Time OS (ThreadX version G3.0e.3.0b)"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Continuum Network Security Module",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1355",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1355.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Tested: [ACX Series Rev 2a (with ACX Series v1.100021 firmware) and NetController II Rev B (with NetController II v 2.100021 firmware)] with Multi-Threaded Real Time OS (ThreadX version G3.0e.3.0b)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1355.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/12/2010",
+    "validation_dates": [
+      "7/12/2010"
+    ],
     "validation_history": [
       {
         "date": "7/12/2010",
-        "type": "Initial",
-        "lab": "ICSA"
+        "lab": "ICSA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Schneider Electric",
-      "website_url": "http://www.schneider-electric.com/buildings",
       "address_lines": [
         "1 High St.",
         "North Andover, MA 01845",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Richard Dubois",
       "contact_email": "rich.dubois@buildings.schneider-electric.com",
-      "contact_phone": "978-975-9587"
+      "contact_name": "Richard Dubois",
+      "contact_phone": "978-975-9587",
+      "country": "USA",
+      "name": "Schneider Electric",
+      "website_url": "http://www.schneider-electric.com/buildings"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Schneider Electric"
   }
 }

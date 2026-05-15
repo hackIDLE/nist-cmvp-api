@@ -1,76 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963"
   },
   "certificate": {
-    "certificate_number": "4963",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4963.pdf",
-    "vendor_name": "Ultra Intelligence and Communications",
-    "module_name": "Edge Security Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "2/10/2025",
-    "validation_dates": [
-      "2/10/2025"
-    ],
-    "sunset_date": "2/9/2030",
-    "caveat": "None",
-    "description": "Ultra I&C’s Edge Security Module provides built-in OSI layer 3 IPsec and Layer 2 VLAN encryption capabilities. As a hardware-based embedded cryptographic module, it serves a secured platform for customizable security applications.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4963.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/10/2025",
-        "type": "Initial",
-        "lab": "Gossamer Security Solutions"
-      }
-    ],
-    "vendor": {
-      "name": "Ultra Intelligence and Communications",
-      "website_url": "http://www.ultra.group",
-      "address_lines": [
-        "12410 Milestone Center Drive #650",
-        "Germantown, MD 20876",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Mike Murphy",
-      "contact_email": "Mike.Murphy@ultra-3eti.com",
-      "contact_phone": "301-944-1267"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 33,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 33
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -117,6 +62,61 @@
       "SHA2-512 | A3318 | Message Length - Message Length:0-65536Increment8 | FIPS 180-4",
       "TLSv1.2KDFRFC7627(CVL) | A3316 | Hash Algorithm-SHA2-256,SHA2-384 | SP800-135Rev.1",
       "TLSv1.3KDF(CVL) | A3316 | HMAC Algorithm-SHA2-256,SHA2-384KDFRunning Modes-DHE,PSK,PSK-DHE | SP800-135Rev.1"
-    ]
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
+    "certificate_number": "4963",
+    "dataset": "active",
+    "description": "Ultra I&C’s Edge Security Module provides built-in OSI layer 3 IPsec and Layer 2 VLAN encryption capabilities. As a hardware-based embedded cryptographic module, it serves a secured platform for customizable security applications.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Edge Security Cryptographic Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4963",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4963.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4963.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "2/9/2030",
+    "validation_date": "2/10/2025",
+    "validation_dates": [
+      "2/10/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "2/10/2025",
+        "lab": "Gossamer Security Solutions",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "12410 Milestone Center Drive #650",
+        "Germantown, MD 20876",
+        "USA"
+      ],
+      "contact_email": "Mike.Murphy@ultra-3eti.com",
+      "contact_name": "Mike Murphy",
+      "contact_phone": "301-944-1267",
+      "country": "USA",
+      "name": "Ultra Intelligence and Communications",
+      "website_url": "http://www.ultra.group"
+    },
+    "vendor_name": "Ultra Intelligence and Communications"
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1364"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1364",
     "certificate_number": "1364",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1364",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1364",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1364.pdf",
-    "vendor_name": "Marvell Semiconductor, Inc.",
-    "module_name": "Solaris 2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "7/21/2010",
-    "validation_dates": [
-      "7/21/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Solaris 2 is a highly integrated and custom System-on-Chip (SOC) product, customized for high performance hard disk drives. It employs the latest read/write channel technology with advanced detection and correction capabilities suitable for high density drives. Its unique all-in-one security design features enable an efficient and secure implementation of the full drive encryption (FDE) functions that support Trusted Computing Group (TCG) based access control, authentication and FDE key management. FIPS-Approved algorithms supported include AES, SHA, HMAC, RSA and RNG.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Solaris 2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1364",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1364.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1364.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/21/2010",
+    "validation_dates": [
+      "7/21/2010"
+    ],
     "validation_history": [
       {
         "date": "7/21/2010",
-        "type": "Initial",
-        "lab": "Aspect"
+        "lab": "Aspect",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Marvell Semiconductor, Inc.",
-      "website_url": "http://www.marvell.com",
       "address_lines": [
         "5488 Marvell Lane",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Lei Poo",
       "contact_email": "lpoo@marvell.com",
-      "contact_phone": "408-222-5194"
+      "contact_name": "Lei Poo",
+      "contact_phone": "408-222-5194",
+      "country": "USA",
+      "name": "Marvell Semiconductor, Inc.",
+      "website_url": "http://www.marvell.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Marvell Semiconductor, Inc."
   }
 }

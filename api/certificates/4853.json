@@ -1,57 +1,69 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4853"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4853",
     "certificate_number": "4853",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4853",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4853",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4853.pdf",
-    "vendor_name": "RigSec Technology Limited",
-    "module_name": "RIGFORT Pro Blockchain HSM",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 3,
-    "validation_date": "10/28/2024, 1/28/2026",
-    "validation_dates": [
-      "10/28/2024",
-      "1/28/2026"
-    ],
-    "sunset_date": "10/27/2026",
-    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
     "description": "The RIGFORT Pro Blockchain HSM is a Multiple-chip standalone cryptographic module. It is a security module that supports the encryption algorithm approved by FIPS 140-3 and with physical security protection measures, key management mechanisms, and security features to provide secured and applicable cryptographic services for customer systems. Specifically, the security features include key wrapping, message authentication code (MAC), message digest, data encryption and decryption, digital signature generation and verification, etc.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "RIGFORT Pro Blockchain HSM",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4853",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4853.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4853.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "10/27/2026",
+    "validation_date": "10/28/2024, 1/28/2026",
+    "validation_dates": [
+      "10/28/2024",
+      "1/28/2026"
+    ],
     "validation_history": [
       {
         "date": "10/28/2024",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/28/2026",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "RigSec Technology Limited",
-      "website_url": "https://rigsec.com",
       "address_lines": [
         "Room 8616, 86/F,",
         "International Commerce Centre (ICC),",
@@ -59,25 +71,13 @@
         "Kowloon",
         "HongKong"
       ],
-      "country": "HongKong",
-      "contact_name": "Infra Team",
       "contact_email": "contact@rigsec.com",
-      "contact_phone": null
+      "contact_name": "Infra Team",
+      "contact_phone": null,
+      "country": "HongKong",
+      "name": "RigSec Technology Limited",
+      "website_url": "https://rigsec.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "RigSec Technology Limited"
   }
 }

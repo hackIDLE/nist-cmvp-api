@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1833"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. No assurance of module integrity when operating in non-FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1833",
     "certificate_number": "1833",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1833",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1833",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1833.pdf",
-    "vendor_name": "Motorola Solutions, Inc.",
-    "module_name": "Fusion 802.1x Authentication Supplicant",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "1/7/2013",
-    "validation_dates": [
-      "1/7/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of module integrity when operating in non-FIPS mode",
     "description": "Motorola Fusion 802.1x Authentication Supplicant is a component of Motorola Wireless Mobile Computing devices that are equipped with a WLAN radio. These devices are used for business process automation applications in a number of vertical markets like retail, manufacturing, transportation, health and government",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Fusion 802.1x Authentication Supplicant",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1833",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0025.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1833.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/7/2013",
+    "validation_dates": [
+      "1/7/2013"
+    ],
     "validation_history": [
       {
         "date": "1/7/2013",
-        "type": "Initial",
-        "lab": "ADVANCED DATA SECURITY"
+        "lab": "ADVANCED DATA SECURITY",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Motorola Solutions, Inc.",
-      "website_url": "http://www.motorolasolutions.com",
       "address_lines": [
         "One Motorola Plaza",
         "Holtsville, NY 11742",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Bert Scaramozzino",
       "contact_email": "Bert.Scaramozzino@motorolasolutions.com",
-      "contact_phone": "631-738-3215"
+      "contact_name": "Bert Scaramozzino",
+      "contact_phone": "631-738-3215",
+      "country": "USA",
+      "name": "Motorola Solutions, Inc.",
+      "website_url": "http://www.motorolasolutions.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Motorola Solutions, Inc."
   }
 }

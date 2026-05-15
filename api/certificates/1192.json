@@ -1,37 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1192"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1192",
     "certificate_number": "1192",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1192",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1192",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1192.pdf",
-    "vendor_name": "Sony Corporation",
-    "module_name": "Sony Security Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 2,
-    "validation_date": "10/6/2009, 1/6/2010",
-    "validation_dates": [
-      "10/6/2009",
-      "1/6/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The Sony Security Module (SSM) is a multi-chip embedded cryptographic module that is encapsulated in a hard opaque commercial grade metal case. The cryptographic boundary is defined as the entire metal case perimeter, including all hardware, software, and firmware encapsulated within. The interfaces are all traces that cross the crypto graphic boundary. The primary purpose of the SSM is to provide decryption, decoding/encoding of audio/video data for the digital cinema projector system in which it is being employed.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Sony Security Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1192",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -42,45 +40,47 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1192.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1192.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/6/2009, 1/6/2010",
+    "validation_dates": [
+      "10/6/2009",
+      "1/6/2010"
+    ],
     "validation_history": [
       {
         "date": "10/6/2009",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "1/6/2010",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Sony Corporation",
-      "website_url": "http://www.sony.net",
       "address_lines": [
         "1-7-1 Konan",
         "Minato-ku, Tokyo 108-0075",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Hirotaka Kondo",
       "contact_email": "PJ_DCinema_SSM@jp.sony.com",
-      "contact_phone": "+81-46-202-8074"
+      "contact_name": "Hirotaka Kondo",
+      "contact_phone": "+81-46-202-8074",
+      "country": "Japan",
+      "name": "Sony Corporation",
+      "website_url": "http://www.sony.net"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Sony Corporation"
   }
 }

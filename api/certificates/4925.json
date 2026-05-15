@@ -1,82 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4925"
   },
   "certificate": {
-    "certificate_number": "4925",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4925",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4925",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4925.pdf",
-    "vendor_name": "[email protected]",
-    "module_name": "Sophos Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "12/18/2024, 9/19/2025",
-    "validation_dates": [
-      "12/18/2024",
-      "9/19/2025"
-    ],
-    "sunset_date": "7/10/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
-    "description": "The Sophos Cryptographic Module is a general-purpose cryptographic library incorporated into the Sophos Firewall systems to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4925.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/18/2024",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      },
-      {
-        "date": "9/19/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "[email protected]",
-      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection",
-      "address_lines": [
-        "The Pentagon",
-        "Abingdon Science Park",
-        "Abingdon OX14 3YP",
-        "United Kingdom"
-      ],
-      "country": "United Kingdom",
-      "contact_name": "Martin Becker",
-      "contact_email": "certifications@sophos.com",
-      "contact_phone": "+49 721 25516 232"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 14,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 95,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 95
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -190,6 +129,67 @@
       "RSA SigVer (FIPS186-5) | A4481 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Name | Implementation | CKG Section 4 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800-133 Rev. 2 | CKG Section 5 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800-133 Rev. 2 | CKG Section 6.2 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800-133 Rev. 2",
       "Hash DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800-90A Rev. 1",
       "HMAC DRBG with SHA3-256, SHA3-512 | KeyPair FIPS Provider for OpenSSL 3 | NIST, SP 800-90A Rev. 1"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys).",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4925",
+    "certificate_number": "4925",
+    "dataset": "active",
+    "description": "The Sophos Cryptographic Module is a general-purpose cryptographic library incorporated into the Sophos Firewall systems to provide FIPS 140-3 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Sophos Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4925",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4925.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4925.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "7/10/2029",
+    "validation_date": "12/18/2024, 9/19/2025",
+    "validation_dates": [
+      "12/18/2024",
+      "9/19/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/18/2024",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      },
+      {
+        "date": "9/19/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "The Pentagon",
+        "Abingdon Science Park",
+        "Abingdon OX14 3YP",
+        "United Kingdom"
+      ],
+      "contact_email": "certifications@sophos.com",
+      "contact_name": "Martin Becker",
+      "contact_phone": "+49 721 25516 232",
+      "country": "United Kingdom",
+      "name": "[email protected]",
+      "website_url": "https://csrc.nist.gov/cdn-cgi/l/email-protection"
+    },
+    "vendor_name": "[email protected]"
   }
 }

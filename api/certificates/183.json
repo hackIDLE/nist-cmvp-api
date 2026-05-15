@@ -1,38 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/183"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/183",
     "certificate_number": "183",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/183",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/183",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp183.pdf",
-    "vendor_name": "Motorola, Inc.",
-    "module_name": "ASTRO Subscriber Universal Crypto Module",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 1,
-    "validation_date": "11/19/2001, 2/7/2002, 10/4/2002, 10/21/2002, 1/6/2003",
-    "validation_dates": [
-      "11/19/2001",
-      "2/7/2002",
-      "10/4/2002",
-      "10/21/2002",
-      "1/6/2003"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Encryption modules used in Motorola Astro™ family of radios. Provides secure voice and data capabilities as well as APCO Over-the-Air-Rekeying and advanced key management.",
-    "security_level_exceptions": [
-      "Roles and Services: Level 2",
-      "Software Security: Level 3"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ASTRO Subscriber Universal Crypto Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/183",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,60 +40,63 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt183.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles and Services: Level 2",
+      "Software Security: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp183.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/19/2001, 2/7/2002, 10/4/2002, 10/21/2002, 1/6/2003",
+    "validation_dates": [
+      "11/19/2001",
+      "2/7/2002",
+      "10/4/2002",
+      "10/21/2002",
+      "1/6/2003"
+    ],
     "validation_history": [
       {
         "date": "11/19/2001",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/7/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "10/4/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "10/21/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "1/6/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Motorola, Inc.",
-      "website_url": "http://www.motorola.com",
       "address_lines": [
         "8220 East Roosevelt Street",
         "Scottsdale, AZ 85257",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Kerry Johns-Vano",
       "contact_email": "p23460@email.mot.com",
-      "contact_phone": "480-441-4733"
+      "contact_name": "Kerry Johns-Vano",
+      "contact_phone": "480-441-4733",
+      "country": "USA",
+      "name": "Motorola, Inc.",
+      "website_url": "http://www.motorola.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Motorola, Inc."
   }
 }

@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/322"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/322",
     "certificate_number": "322",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/322",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/322",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp322.pdf",
-    "vendor_name": "Palm Solutions Group",
-    "module_name": "Crypto Manager",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "6/6/2003",
-    "validation_dates": [
-      "6/6/2003"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Crypto Manager Version 2.0 provides cryptographic services to applications on the Palm platform. Using the Crypto Manager API (Application Programming Interface), application developers can access strong cryptographic services without having expertise in cryptography. Crypto manager is designed to be used on any devices running Palm OS 3.0 or higher. It features strong encryption via AES, HMAC SHA-1 message authentication and SHA-1 digests Crypto Manager is built to comply with FIPS 140-2 Level 1.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Crypto Manager",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/322",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt322.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp322.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/6/2003",
+    "validation_dates": [
+      "6/6/2003"
+    ],
     "validation_history": [
       {
         "date": "6/6/2003",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Palm Solutions Group",
-      "website_url": "http://www.palm.com",
       "address_lines": [
         "400 N. McCarthy Blvd",
         "Milpitas, CA 95035",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rebecca Taylor",
       "contact_email": "Rebecca.Taylor@corp.palm.com",
-      "contact_phone": "408-503-7500"
+      "contact_name": "Rebecca Taylor",
+      "contact_phone": "408-503-7500",
+      "country": "USA",
+      "name": "Palm Solutions Group",
+      "website_url": "http://www.palm.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Palm Solutions Group"
   }
 }

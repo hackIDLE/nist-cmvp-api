@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/137"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/137",
     "certificate_number": "137",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/137",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/137",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp137.pdf",
-    "vendor_name": "Research In Motion Ltd.",
-    "module_name": "BlackBerry 850/857 and BlackBerry 950/957 Cryptographic Kernel",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Firmware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/1/2001, 6/3/2002, 8/24/2005",
-    "validation_dates": [
-      "3/1/2001",
-      "6/3/2002",
-      "8/24/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The BlackBerry crypto firmware v2.1, common to both the BlackBerry 850/857 and the BlackBerry 950/957, securely compresses and encrypts messages with Triple-DES. Following this procedure, the ciphertext is transmitted over the Internet to the recipient mail server. Upon receiving the message, the mail server decrypts and decompresses the ciphertext back to the original plaintext. The BlackBerry crypto firmware is messaging-system independent.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "BlackBerry 850/857 and BlackBerry 950/957 Cryptographic Kernel",
+    "module_type": "Firmware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/137",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,50 +40,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt137.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp137.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/1/2001, 6/3/2002, 8/24/2005",
+    "validation_dates": [
+      "3/1/2001",
+      "6/3/2002",
+      "8/24/2005"
+    ],
     "validation_history": [
       {
         "date": "3/1/2001",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "6/3/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "8/24/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Research In Motion Ltd.",
-      "website_url": "http://www.blackberry.com",
       "address_lines": [
         "295 Phillip Street",
         "Waterloo, Ontario N2L 3W8",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Government Certifications Team",
       "contact_email": "certifications@rim.com",
-      "contact_phone": "519-888-7465 x2921"
+      "contact_name": "Government Certifications Team",
+      "contact_phone": "519-888-7465 x2921",
+      "country": "Canada",
+      "name": "Research In Motion Ltd.",
+      "website_url": "http://www.blackberry.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Research In Motion Ltd."
   }
 }

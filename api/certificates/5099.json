@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5099"
   },
   "certificate": {
-    "certificate_number": "5099",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5099",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5099",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5099.pdf",
-    "vendor_name": "Christie Digital Systems Canada Inc.",
-    "module_name": "Christie IMB-S4 4K Integrated Media Block (IMB)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "12/1/2025",
-    "validation_dates": [
-      "12/1/2025"
-    ],
-    "sunset_date": "11/30/2030",
-    "caveat": "When operated in approved mode",
-    "description": "The Christie IMB-S4 is a DCI-compliant solution to enable the playback of video, audio, and timed text essences on Christie Digital CineLife+ projectors.",
-    "security_level_exceptions": [
-      "Cryptographic module interfaces: Level 3",
-      "Roles, services, and authentication: Level 3",
-      "Software/Firmware security: Level 3",
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Sensitive security parameter management: Level 3",
-      "Life-cycle assurance: Level 3",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5099.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "12/1/2025",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Christie Digital Systems Canada Inc.",
-      "website_url": "http://www.christiedigital.com",
-      "address_lines": [
-        "809 Wellington St. N.",
-        "Kitchener, ON N2G 4Y7",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Amanda Fisher",
-      "contact_email": "amanda.fisher@christiedigital.com",
-      "contact_phone": "519-744-8005"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 11,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 11
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -97,6 +38,65 @@
       "HMAC (non-compliant) | Used as part of the TLS 1.0 implementation and the Load Content, Playback services.",
       "SHS (non-compliant) | Used as part of the TLS 1.0 implementation and Generate SM Report, Perform Marriage services.",
       "DRBG (non-compliant) | Used as part of the TLS 1.0 implementation."
-    ]
+    ],
+    "caveat": "When operated in approved mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5099",
+    "certificate_number": "5099",
+    "dataset": "active",
+    "description": "The Christie IMB-S4 is a DCI-compliant solution to enable the playback of video, audio, and timed text essences on Christie Digital CineLife+ projectors.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Christie IMB-S4 4K Integrated Media Block (IMB)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5099",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5099.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Cryptographic module interfaces: Level 3",
+      "Roles, services, and authentication: Level 3",
+      "Software/Firmware security: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Sensitive security parameter management: Level 3",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5099.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/30/2030",
+    "validation_date": "12/1/2025",
+    "validation_dates": [
+      "12/1/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "12/1/2025",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "809 Wellington St. N.",
+        "Kitchener, ON N2G 4Y7",
+        "Canada"
+      ],
+      "contact_email": "amanda.fisher@christiedigital.com",
+      "contact_name": "Amanda Fisher",
+      "contact_phone": "519-744-8005",
+      "country": "Canada",
+      "name": "Christie Digital Systems Canada Inc.",
+      "website_url": "http://www.christiedigital.com"
+    },
+    "vendor_name": "Christie Digital Systems Canada Inc."
   }
 }

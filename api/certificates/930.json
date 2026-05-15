@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/930"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/930",
     "certificate_number": "930",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/930",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/930",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp930.pdf",
-    "vendor_name": "Utimaco Inc.",
-    "module_name": "Atalla Cryptographic Subsystem (ACS)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 4,
-    "validation_date": "4/14/2008, 9/19/2011, 1/25/2016, 12/21/2017, 12/4/2018",
-    "validation_dates": [
-      "4/14/2008",
-      "9/19/2011",
-      "1/25/2016",
-      "12/21/2017",
-      "12/4/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The ACS is a multi-chip embedded cryptographic module. It consists of a secure hardware platform (a full length PCI Card) and a secure firmware loader. The purpose of the module is to load application programs, called \"personalities,\" in a secure manner.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Atalla Cryptographic Subsystem (ACS)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/930",
+    "overall_level": 4,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,56 +40,56 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt930.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp930.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/14/2008, 9/19/2011, 1/25/2016, 12/21/2017, 12/4/2018",
+    "validation_dates": [
+      "4/14/2008",
+      "9/19/2011",
+      "1/25/2016",
+      "12/21/2017",
+      "12/4/2018"
+    ],
     "validation_history": [
       {
         "date": "4/14/2008",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "9/19/2011",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "1/25/2016",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       },
       {
         "date": "12/21/2017",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "12/4/2018",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Utimaco Inc.",
-      "website_url": "http://hsm.utimaco.com",
       "address_lines": [],
-      "country": null,
-      "contact_name": "Indra Fitzgerald",
       "contact_email": "indra.fitzgerald@utimaco.com",
-      "contact_phone": "+1-844-UTIMACO"
+      "contact_name": "Indra Fitzgerald",
+      "contact_phone": "+1-844-UTIMACO",
+      "country": null,
+      "name": "Utimaco Inc.",
+      "website_url": "http://hsm.utimaco.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Utimaco Inc."
   }
 }

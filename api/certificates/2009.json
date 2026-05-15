@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2009"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode with Windows Server 2008 Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #1010 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2009",
     "certificate_number": "2009",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2009",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2009",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2009.pdf",
-    "vendor_name": "Stanley Security Solutions, Inc.",
-    "module_name": "Wi-Q Communication Server Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "11/5/2013",
-    "validation_dates": [
-      "11/5/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode with Windows Server 2008 Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #1010 operating in FIPS mode",
     "description": "The Communication Server Cryptographic Module (CSCM) is a software solution that provides secure key retrieval and key transfer functions within the Stanley Wi-Q Wireless Access Control System.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Wi-Q Communication Server Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2009",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,41 +40,37 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2009.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/5/2013",
+    "validation_dates": [
+      "11/5/2013"
+    ],
     "validation_history": [
       {
         "date": "11/5/2013",
-        "type": "Initial",
-        "lab": "Underwriters Laboratories, Inc."
+        "lab": "Underwriters Laboratories, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Stanley Security Solutions, Inc.",
-      "website_url": "http://www.stanleyblackanddecker.com",
       "address_lines": [
         "6161 E 75th Street",
         "PO Box 50444",
         "Indianapolis, IN 46250",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Mr. Robert Strong",
       "contact_email": "bstrong@stanleyworks.com",
-      "contact_phone": "317-806-3288"
+      "contact_name": "Mr. Robert Strong",
+      "contact_phone": "317-806-3288",
+      "country": "USA",
+      "name": "Stanley Security Solutions, Inc.",
+      "website_url": "http://www.stanleyblackanddecker.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Stanley Security Solutions, Inc."
   }
 }

@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105"
   },
   "certificate": {
-    "certificate_number": "3105",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf",
-    "vendor_name": "Information Security Corporation",
-    "module_name": "ISC Cryptographic Development Kit (CDK)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/5/2018, 8/15/2018",
-    "validation_dates": [
-      "1/5/2018",
-      "8/15/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "The CDK is a software module. The physical embodiment of the computer hardware on which it runs is a \"multi-chip standalone module\" in FIPS 140-2 terminology. The \"physical cryptographic boundary\" is defined to be the entire computer on which the CDK software runs. As a software module, the \"logical boundary\" contains the software modules that comprise the CDK shared link library.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/5/2018",
-        "type": "Initial",
-        "lab": "COACT INC CAFE LAB"
-      },
-      {
-        "date": "8/15/2018",
-        "type": "Update",
-        "lab": "COACT INC CAFE LAB"
-      }
-    ],
-    "vendor": {
-      "name": "Information Security Corporation",
-      "website_url": "http://www.infoseccorp.com",
-      "address_lines": [
-        "1011 Lake St.",
-        "Suite 425",
-        "Oak Park, IL 60118",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Jonathan Schulze-Hewett",
-      "contact_email": "schulze-hewett@infoseccorp.com",
-      "contact_phone": "708-445-1704"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -95,6 +31,70 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105",
+    "certificate_number": "3105",
+    "dataset": "historical",
+    "description": "The CDK is a software module. The physical embodiment of the computer hardware on which it runs is a \"multi-chip standalone module\" in FIPS 140-2 terminology. The \"physical cryptographic boundary\" is defined to be the entire computer on which the CDK software runs. As a software module, the \"logical boundary\" contains the software modules that comprise the CDK shared link library.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ISC Cryptographic Development Kit (CDK)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/5/2018, 8/15/2018",
+    "validation_dates": [
+      "1/5/2018",
+      "8/15/2018"
+    ],
+    "validation_history": [
+      {
+        "date": "1/5/2018",
+        "lab": "COACT INC CAFE LAB",
+        "type": "Initial"
+      },
+      {
+        "date": "8/15/2018",
+        "lab": "COACT INC CAFE LAB",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1011 Lake St.",
+        "Suite 425",
+        "Oak Park, IL 60118",
+        "USA"
+      ],
+      "contact_email": "schulze-hewett@infoseccorp.com",
+      "contact_name": "Jonathan Schulze-Hewett",
+      "contact_phone": "708-445-1704",
+      "country": "USA",
+      "name": "Information Security Corporation",
+      "website_url": "http://www.infoseccorp.com"
+    },
+    "vendor_name": "Information Security Corporation"
   }
 }

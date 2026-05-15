@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/909"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated with module IBM eServer Cryptographic Coprocessor Security Module validated to FIPS 140-2 under Cert. #661 and operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/909",
     "certificate_number": "909",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/909",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/909",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp909.pdf",
-    "vendor_name": "Pitney Bowes, Inc.",
-    "module_name": "Pitney Bowes Cryptographic Coprocessor for Virtual Meter (CCV)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "2/7/2008",
-    "validation_dates": [
-      "2/7/2008"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated with module IBM eServer Cryptographic Coprocessor Security Module validated to FIPS 140-2 under Cert. #661 and operating in FIPS mode",
     "description": "The Pitney Bowes Cryptographic Coprocessor for Virtual Meter (CCV) module provides security services to support the secure accounting and cryptographic functions necessary for value evidencing of electronic transactions, such as the United States Postal Service Information-Based Indicium Program (USPS IBIP).",
-    "security_level_exceptions": [
-      "Physical Security: Level 4"
-    ],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Pitney Bowes Cryptographic Coprocessor for Virtual Meter (CCV)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/909",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt909.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: Level 4"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp909.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/7/2008",
+    "validation_dates": [
+      "2/7/2008"
+    ],
     "validation_history": [
       {
         "date": "2/7/2008",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Pitney Bowes, Inc.",
-      "website_url": "http://www.pb.com",
       "address_lines": [
         "35 Waterview Drive",
         "Shelton, CT 06484",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Kostas Vassilakis",
       "contact_email": "Kostas.vassilakis@pb.com",
-      "contact_phone": "203-924-3610"
+      "contact_name": "Kostas Vassilakis",
+      "contact_phone": "203-924-3610",
+      "country": "USA",
+      "name": "Pitney Bowes, Inc.",
+      "website_url": "http://www.pb.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Pitney Bowes, Inc."
   }
 }

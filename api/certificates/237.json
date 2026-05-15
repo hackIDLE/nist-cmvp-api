@@ -1,38 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/237"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/237",
     "certificate_number": "237",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/237",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/237",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp237.pdf",
-    "vendor_name": "F-Secure Corporation",
-    "module_name": "F-Secure Kernel Mode Cryptographic Driver",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "7/15/2002, 7/31/2003, 2/9/2007",
-    "validation_dates": [
-      "7/15/2002",
-      "7/31/2003",
-      "2/9/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The F-Secure Kernel Mode Cryptographic Driver is a FIPS 140-2 Level 1 validated software module, implemented as a 32-bit Windows NT/2000/XP compatible export driver. When loaded into computing system memory, it resides at the kernel mode level of the Windows OS and provides an assortment of cryptographic services that are accessible by other kernel mode drivers through a C-language Application Program Interface. The cryptographic services are also available in the form of a static library and as source code.",
-    "security_level_exceptions": [
-      "Self Tests: Level 3",
-      "Operating Environment: Tested as meeting Level 1 with Windows 2000 (SP2)",
-      "Windows NT 4.0 (SP6)",
-      "Windows XP"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "F-Secure Kernel Mode Cryptographic Driver",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/237",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,51 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt237.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Self Tests: Level 3",
+      "Operating Environment: Tested as meeting Level 1 with Windows 2000 (SP2)",
+      "Windows NT 4.0 (SP6)",
+      "Windows XP"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp237.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/15/2002, 7/31/2003, 2/9/2007",
+    "validation_dates": [
+      "7/15/2002",
+      "7/31/2003",
+      "2/9/2007"
+    ],
     "validation_history": [
       {
         "date": "7/15/2002",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "7/31/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/9/2007",
-        "type": "Update",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "F-Secure Corporation",
-      "website_url": "http://www.fsecure.com",
       "address_lines": [
         "Tammasaarenkatu 7",
         "PL 24",
         "Helsinki 00180",
         "Finland"
       ],
-      "country": "Finland",
-      "contact_name": "Alexey Kirichenko",
       "contact_email": "Alexey.Kirichenko@f-secure.com",
-      "contact_phone": "+358 9 2520 5548"
+      "contact_name": "Alexey Kirichenko",
+      "contact_phone": "+358 9 2520 5548",
+      "country": "Finland",
+      "name": "F-Secure Corporation",
+      "website_url": "http://www.fsecure.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "F-Secure Corporation"
   }
 }

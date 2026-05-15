@@ -1,36 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "KTS",
+      "SHA"
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 5 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475",
     "certificate_number": "4475",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4475.pdf",
-    "vendor_name": "Q-Net Security, Inc.",
-    "module_name": "Q-Box",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "4/14/2023",
-    "validation_dates": [
-      "4/14/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When installed, initialized and configured as specified in Section 5 of the Security Policy",
     "description": "Complete security is built directly into each module’s silicon. Creating security directly in silicon avoids the use of vulnerable software and/or Operating Systems. The core of the hardware-enabled solution is AES-256 encryption and a novel symmetric key distribution that can provide a unique random key for each packet. QNS devices are placed in-line and nearby the endpoints to be secured. No external key management is necessary. Once deployed, the QNS devices never need to be upgraded or patched.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Q-Box",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4475",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,48 +48,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2023_010523_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4475.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "4/14/2023",
+    "validation_dates": [
+      "4/14/2023"
+    ],
     "validation_history": [
       {
         "date": "4/14/2023",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Q-Net Security, Inc.",
-      "website_url": "http://www.qnetsecurity.com",
       "address_lines": [
         "9666 Olive Blvd Suite 750",
         "St. Louis, MO 63132",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Larry Prince",
       "contact_email": "lprince@qnetsecurity.com",
-      "contact_phone": null
+      "contact_name": "Larry Prince",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Q-Net Security, Inc.",
+      "website_url": "http://www.qnetsecurity.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DRBG",
-      "HMAC",
-      "KDF",
-      "KTS",
-      "SHA"
-    ]
+    "vendor_name": "Q-Net Security, Inc."
   }
 }

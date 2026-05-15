@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146"
   },
   "certificate": {
-    "certificate_number": "5146",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf",
-    "vendor_name": "Amazon Web Services, Inc",
-    "module_name": "AWS-LC Cryptographic Module (dynamic)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/26/2026",
-    "validation_dates": [
-      "1/26/2026"
-    ],
-    "sunset_date": "1/25/2031",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/26/2026",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Amazon Web Services, Inc",
-      "website_url": "http://aws.amazon.com",
-      "address_lines": [
-        "1918 8th Ave.",
-        "Seattle, WA 98121",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Daryl Martin",
-      "contact_email": "aws-fips-external@amazon.com",
-      "contact_phone": "0000000000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 17,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 17
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -95,6 +42,59 @@
       "ECDSA SigVer (FIPS186-4) | A5425, A5426, A5433, A5434 | Component - No Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA1 | FIPS 186-4",
       "ECDSA SigVer (FIPS186-5) | A5425, A5426, A5433, A5434 | Curve - P-224, P-256, P-384, P-521 Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
       "HMAC-SHA-1 | A5425, A5426, A5433, A5434 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
+    "certificate_number": "5146",
+    "dataset": "active",
+    "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AWS-LC Cryptographic Module (dynamic)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5146",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5146.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/25/2031",
+    "validation_date": "1/26/2026",
+    "validation_dates": [
+      "1/26/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/26/2026",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1918 8th Ave.",
+        "Seattle, WA 98121",
+        "USA"
+      ],
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_name": "Daryl Martin",
+      "contact_phone": "0000000000",
+      "country": "USA",
+      "name": "Amazon Web Services, Inc",
+      "website_url": "http://aws.amazon.com"
+    },
+    "vendor_name": "Amazon Web Services, Inc"
   }
 }

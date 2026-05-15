@@ -1,83 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676"
   },
   "certificate": {
-    "certificate_number": "3676",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3676.pdf",
-    "vendor_name": "Enova Technology Corporation",
-    "module_name": "X-Wall MX+",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 2,
-    "validation_date": "7/2/2020",
-    "validation_dates": [
-      "7/2/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #3014",
-    "description": "The X-Wall MX+ chip is real-time SATA-to-SATA single chip crypto module. Both FIPS certified authentication method and in-line 6Gbps AES ECB/CBC/XTS 256-bit encryption capability are provided. The modules can be populated directly onto either the mainboard or SATA drive interface. The cryptographic operation is OS independent and doesn’t require host CPU and memory interventions. The Module supports a standard SATA interface and is compliant with the Trusted Computing Group (TCG) SSC specification Opal 2.0.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3676.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2020_030820_0656_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "7/2/2020",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Enova Technology Corporation",
-      "website_url": "http://www.enovatech.com",
-      "address_lines": [
-        "First Floor",
-        "#11, Research & Development 2nd Road",
-        "Science Park",
-        "Hsin-Chu City 30076",
-        "Taiwan"
-      ],
-      "country": "Taiwan",
-      "contact_name": "Butz Huang",
-      "contact_email": "bhuang@enovatech.net",
-      "contact_phone": "+886 3 577 2767"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +26,68 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #3014",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676",
+    "certificate_number": "3676",
+    "dataset": "historical",
+    "description": "The X-Wall MX+ chip is real-time SATA-to-SATA single chip crypto module. Both FIPS certified authentication method and in-line 6Gbps AES ECB/CBC/XTS 256-bit encryption capability are provided. The modules can be populated directly onto either the mainboard or SATA drive interface. The cryptographic operation is OS independent and doesn’t require host CPU and memory interventions. The Module supports a standard SATA interface and is compliant with the Trusted Computing Group (TCG) SSC specification Opal 2.0.",
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "X-Wall MX+",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3676",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3676.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2020_030820_0656_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3676.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/2/2020",
+    "validation_dates": [
+      "7/2/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "7/2/2020",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "First Floor",
+        "#11, Research & Development 2nd Road",
+        "Science Park",
+        "Hsin-Chu City 30076",
+        "Taiwan"
+      ],
+      "contact_email": "bhuang@enovatech.net",
+      "contact_name": "Butz Huang",
+      "contact_phone": "+886 3 577 2767",
+      "country": "Taiwan",
+      "name": "Enova Technology Corporation",
+      "website_url": "http://www.enovatech.com"
+    },
+    "vendor_name": "Enova Technology Corporation"
   }
 }

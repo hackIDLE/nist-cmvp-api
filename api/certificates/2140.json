@@ -1,36 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2140"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2140",
     "certificate_number": "2140",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2140",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2140",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2140.pdf",
-    "vendor_name": "Uplogix, Inc.",
-    "module_name": "Uplogix 430 [1, a], 3200 [2, a], 500 [3, a, b] and 5000 [4, a b]",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "4/30/2014, 5/20/2014, 5/16/2017",
-    "validation_dates": [
-      "4/30/2014",
-      "5/20/2014",
-      "5/16/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy",
     "description": "Uplogix is a network independent management platform that locates with - and directly connects to - managed devices. Standing alone or augmenting existing centralized management tools, Uplogix provides configuration, performance and security management actions that are best performed locally. Local Management reduces operational costs, speeds problem resolution, and improves security and compliance versus centralized-only management. Our local focus on network device automation enables the transition to more network sensitive cloud and virtual infrastructure technologies.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Uplogix 430 [1, a], 3200 [2, a], 500 [3, a, b] and 5000 [4, a b]",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2140",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -41,55 +40,56 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0040.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2140.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/30/2014, 5/20/2014, 5/16/2017",
+    "validation_dates": [
+      "4/30/2014",
+      "5/20/2014",
+      "5/16/2017"
+    ],
     "validation_history": [
       {
         "date": "4/30/2014",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
       },
       {
         "date": "5/20/2014",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "5/16/2017",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "5/16/2017",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Uplogix, Inc.",
-      "website_url": "http://www.uplogix.com",
       "address_lines": [
         "7600B N. Capital of Texas Hwy., Suite 220",
         "Austin, TX 78731",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Certification Administrator",
       "contact_email": "info@uplogix.com",
-      "contact_phone": "512-857-7070"
+      "contact_name": "Certification Administrator",
+      "contact_phone": "512-857-7070",
+      "country": "USA",
+      "name": "Uplogix, Inc.",
+      "website_url": "http://www.uplogix.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Uplogix, Inc."
   }
 }

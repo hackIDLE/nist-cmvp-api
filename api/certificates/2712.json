@@ -1,35 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2712"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "HMAC",
+      "RSA"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2712",
     "certificate_number": "2712",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2712",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2712",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2712.pdf",
-    "vendor_name": "Imprivata",
-    "module_name": "Imprivata FIPS 140-2 Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "8/16/2016, 9/17/2018",
-    "validation_dates": [
-      "8/16/2016",
-      "9/17/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Imprivata delivers best in class solutions that optimize clinical workflow efficiency and enhance care delivery. OneSign® offers single sign-on, authentication management, and virtual desktop roaming enabling fast, secure No Click Access® to clinical applications and patient information, anytime, anywhere and from any device. Cortext® enables clinicians to securely collaborate across care teams and organizations. Confirm ID™ is the comprehensive identity and two-factor authentication platform for remote access, EPCS and medical device access.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Imprivata FIPS 140-2 Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2712",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,52 +46,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2712.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/16/2016, 9/17/2018",
+    "validation_dates": [
+      "8/16/2016",
+      "9/17/2018"
+    ],
     "validation_history": [
       {
         "date": "8/16/2016",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "9/17/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Imprivata",
-      "website_url": "http://www.imprivata.com",
       "address_lines": [
         "10 Maguire Road",
         "Building 4",
         "Lexington, MA 02421",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Troy Kuehl",
       "contact_email": "tkuehl@imprivata.com",
-      "contact_phone": "781-674-2716"
+      "contact_name": "Troy Kuehl",
+      "contact_phone": "781-674-2716",
+      "country": "USA",
+      "name": "Imprivata",
+      "website_url": "http://www.imprivata.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "HMAC",
-      "RSA"
-    ]
+    "vendor_name": "Imprivata"
   }
 }

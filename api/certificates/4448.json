@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4448"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4448",
     "certificate_number": "4448",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4448",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4448",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4448.pdf",
-    "vendor_name": "Hughes Network Systems, LLC",
-    "module_name": "IPsec IP Gateway Server",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/13/2023",
-    "validation_dates": [
-      "3/13/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy.",
     "description": "The Hughes JUPITER System is a broadband satellite system designed to support high-throughput satellite communications. It consists of VSAT satellite terminals, single rack or multi rack JUPITER GWs and the capabilities to manage these devices over the network. The IPsec IPGW is a JUPITER GW component that is used to provide Internet access for associated terminals, perform IP acceleration and routing of packets between terminals and the Internet, and encrypt user traffic between itself and HT Satellite Router terminals via IPsec tunnels.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "IPsec IP Gateway Server",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4448",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4448.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/13/2023",
+    "validation_dates": [
+      "3/13/2023"
+    ],
     "validation_history": [
       {
         "date": "3/13/2023",
-        "type": "Initial",
-        "lab": "DEKRA Testing and Certification S.A.U"
+        "lab": "DEKRA Testing and Certification S.A.U",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Hughes Network Systems, LLC",
-      "website_url": "http://www.hughes.com",
       "address_lines": [
         "11717 Exploration Lane",
         "Germantown, MD 20876",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Venkat Ganesan",
       "contact_email": "Venkat.ganesan@hughes.com",
-      "contact_phone": "+1 301-428-5630"
+      "contact_name": "Venkat Ganesan",
+      "contact_phone": "+1 301-428-5630",
+      "country": "USA",
+      "name": "Hughes Network Systems, LLC",
+      "website_url": "http://www.hughes.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Hughes Network Systems, LLC"
   }
 }

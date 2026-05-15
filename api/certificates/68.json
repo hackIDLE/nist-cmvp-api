@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "For services provided by the listed FIPS-Approved algorithms and using Triple DES",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68",
     "certificate_number": "68",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp68.pdf",
-    "vendor_name": "Microsoft Corporation",
-    "module_name": "Base Cryptographic Provider, Enhanced Cryptographic Provider, Base DSS Cryptographic Provider, and DSS/Diffie-Hellman Enchanced Cryptographic Provider",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "9/13/1999, 10/15/2007",
-    "validation_dates": [
-      "9/13/1999",
-      "10/15/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "For services provided by the listed FIPS-Approved algorithms and using Triple DES",
     "description": "These are general-purpose software-based cryptomodules. They provide services that enable application developers to utilize several different cryptographic algorithms and functions via the Microsoft CryptoAPI without knowing the underlying implementation.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Operating System Security: Tested as meeting Level 1 with Microsoft WindowsNT 4.0 with Service Pack 6 (operated in single-user mode)."
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Base Cryptographic Provider, Enhanced Cryptographic Provider, Base DSS Cryptographic Provider, and DSS/Diffie-Hellman Enchanced Cryptographic Provider",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +40,45 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt68.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Operating System Security: Tested as meeting Level 1 with Microsoft WindowsNT 4.0 with Service Pack 6 (operated in single-user mode)."
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp68.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/13/1999, 10/15/2007",
+    "validation_dates": [
+      "9/13/1999",
+      "10/15/2007"
+    ],
     "validation_history": [
       {
         "date": "9/13/1999",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "10/15/2007",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Microsoft Corporation",
-      "website_url": "http://www.microsoft.com",
       "address_lines": [
         "One Microsoft Way",
         "Redmond, WA 98052-6399",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Dave Friant",
       "contact_email": "Dave.Friant@microsoft.com",
-      "contact_phone": "425-704-7984"
+      "contact_name": "Dave Friant",
+      "contact_phone": "425-704-7984",
+      "country": "USA",
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Microsoft Corporation"
   }
 }

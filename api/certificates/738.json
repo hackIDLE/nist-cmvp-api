@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/738"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/738",
     "certificate_number": "738",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/738",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/738",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp738.pdf",
-    "vendor_name": "3e Technologies International, Inc.",
-    "module_name": "3e-030-2 Security Server Cryptographic Core",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/8/2007",
-    "validation_dates": [
-      "2/8/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The 3e-030-2 Security Server Cryptographic Core (Version 3.0) provides FIPS 140-2 validated cryptographic functionality for the 3eTI Security Server product, a RADIUS-like back-end Authentication Server, capable of dynamic key exchange, support of JITC DoD-signed certificates for PKI usage, and full 802.11i support. The 3e-030-2 provides the following FIPS-approved cryptographic algorithms: AES (ECB mode; 256-bit key size), SHA-1, HMAC-SHA1, RSA sign/verify, FIPS 186-2 (Appendix 3.1 and 3.2 3.3) PRNG. The 3e-030-2 also supports the following non-FIPS cryptographic algorithms: Diffie Hellman",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "3e-030-2 Security Server Cryptographic Core",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/738",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt738.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp738.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/8/2007",
+    "validation_dates": [
+      "2/8/2007"
+    ],
     "validation_history": [
       {
         "date": "2/8/2007",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "3e Technologies International, Inc.",
-      "website_url": "http://www.3eti.com",
       "address_lines": [
         "700 King Farm Blvd.",
         "Rockville, MD 20850",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ryon Coleman",
       "contact_email": "rcoleman@3eti.com",
-      "contact_phone": "301-944-1277"
+      "contact_name": "Ryon Coleman",
+      "contact_phone": "301-944-1277",
+      "country": "USA",
+      "name": "3e Technologies International, Inc.",
+      "website_url": "http://www.3eti.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "3e Technologies International, Inc."
   }
 }

@@ -1,38 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1793"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "RSA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1793",
     "certificate_number": "1793",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1793",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1793",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1793.pdf",
-    "vendor_name": "HID Global",
-    "module_name": "HID Global Digital Identity Applet v2 on NXP JCOP 2.4.2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 2,
-    "validation_date": "8/28/2012, 2/6/2014",
-    "validation_dates": [
-      "8/28/2012",
-      "2/6/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "This version of the product can be used over contact and contactless interface (with some restrictions) and can be configured for use with HID Global JavaCard Applet Suite v2.7.1 for support of GSC-IS v2.1, NIST SP800-73-3 Transitional and End-Point Card Edge (for HSPD-12/PIV). The product allows issuance and post-issuance support for PIV End Point Card Edge and Data Model.",
-    "security_level_exceptions": [
-      "Cryptographic Module Specification: Level 3",
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 4",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3"
-    ],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HID Global Digital Identity Applet v2 on NXP JCOP 2.4.2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1793",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -43,49 +44,48 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 4",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1793.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/28/2012, 2/6/2014",
+    "validation_dates": [
+      "8/28/2012",
+      "2/6/2014"
+    ],
     "validation_history": [
       {
         "date": "8/28/2012",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "2/6/2014",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "HID Global",
-      "website_url": "http://www.hidglobal.com",
       "address_lines": [
         "15370 Barranca Pkwy",
         "Irvine, CA 92618",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Stephane Ardiley",
       "contact_email": "sardiley@hidglobal.com",
-      "contact_phone": "510-745-6288"
+      "contact_name": "Stephane Ardiley",
+      "contact_phone": "510-745-6288",
+      "country": "USA",
+      "name": "HID Global",
+      "website_url": "http://www.hidglobal.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "RSA"
-    ]
+    "vendor_name": "HID Global"
   }
 }

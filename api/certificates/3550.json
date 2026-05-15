@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3550"
   },
   "certificate": {
-    "certificate_number": "3550",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3550",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3550",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3550.pdf",
-    "vendor_name": "VMware, Inc.",
-    "module_name": "VMware's OpenSSL FIPS Object Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/18/2019",
-    "validation_dates": [
-      "10/18/2019"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "VMware's OpenSSL FIPS Object Module v2.0.20-vmw is a general-purpose cryptographic module that provides FIPS-Approved cryptographic functions and services to various VMware's products and components.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3550.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedOct2019 .pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/18/2019",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
-      }
-    ],
-    "vendor": {
-      "name": "VMware, Inc.",
-      "website_url": "http://www.vmware.com",
-      "address_lines": [
-        "3401 Hillview Ave",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Manoj Maskara",
-      "contact_email": "mmaskara@vmware.com",
-      "contact_phone": "650-427-1000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -88,6 +29,65 @@
       "KDF",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3550",
+    "certificate_number": "3550",
+    "dataset": "historical",
+    "description": "VMware's OpenSSL FIPS Object Module v2.0.20-vmw is a general-purpose cryptographic module that provides FIPS-Approved cryptographic functions and services to various VMware's products and components.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "VMware's OpenSSL FIPS Object Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3550",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3550.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedOct2019 .pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3550.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/18/2019",
+    "validation_dates": [
+      "10/18/2019"
+    ],
+    "validation_history": [
+      {
+        "date": "10/18/2019",
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3401 Hillview Ave",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "mmaskara@vmware.com",
+      "contact_name": "Manoj Maskara",
+      "contact_phone": "650-427-1000",
+      "country": "USA",
+      "name": "VMware, Inc.",
+      "website_url": "http://www.vmware.com"
+    },
+    "vendor_name": "VMware, Inc."
   }
 }

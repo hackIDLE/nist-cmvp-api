@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/447"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/447",
     "certificate_number": "447",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/447",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/447",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp447.pdf",
-    "vendor_name": "Oracle Corporation",
-    "module_name": "Oracle Cryptographic Libraries for SSL 10g (9.0.4)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "6/30/2004, 8/6/2004",
-    "validation_dates": [
-      "6/30/2004",
-      "8/6/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Oracle Cryptographic Libraries for SSL 10g (9.0.4) is a generic module used by Oracle Corporation in a variety of its application suites. The module is used to provide support to cryptography, authentication, PKCS and certificate management for applications like the Oracle Database Server, Oracle Applications Server, Oracle Internet Directory, Web Cache and Oracle HTTP Server. It provides a rich set of functionality and uses PKCS wallet structures for managing identities and trustpoints.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oracle Cryptographic Libraries for SSL 10g (9.0.4)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/447",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,46 +40,43 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt447.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp447.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/30/2004, 8/6/2004",
+    "validation_dates": [
+      "6/30/2004",
+      "8/6/2004"
+    ],
     "validation_history": [
       {
         "date": "6/30/2004",
-        "type": "Initial",
-        "lab": "LogicaCMG"
+        "lab": "LogicaCMG",
+        "type": "Initial"
       },
       {
         "date": "8/6/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Oracle Corporation",
-      "website_url": "http://www.oracle.com",
       "address_lines": [
         "500 Oracle Parkway",
         "Redwood Shores",
         "California, CA 94065",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Shaun Lee",
       "contact_email": "shaun.lee@oracle.com",
-      "contact_phone": "+44 1189 243860"
+      "contact_name": "Shaun Lee",
+      "contact_phone": "+44 1189 243860",
+      "country": "USA",
+      "name": "Oracle Corporation",
+      "website_url": "http://www.oracle.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oracle Corporation"
   }
 }

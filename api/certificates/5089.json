@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089"
   },
   "certificate": {
-    "certificate_number": "5089",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5089.pdf",
-    "vendor_name": "Red Hat, Inc.",
-    "module_name": "Red Hat Enterprise Linux 8 Kernel Cryptographic API",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/4/2025",
-    "validation_dates": [
-      "11/4/2025"
-    ],
-    "sunset_date": "11/3/2030",
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates random strings whose strengths are modified by available entropy.",
-    "description": "The Red Hat Enterprise Linux 8 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5089.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/4/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Red Hat, Inc.",
-      "website_url": "http://www.redhat.com",
-      "address_lines": [
-        "100 East Davie Street",
-        "Raleigh, NC 27601",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Jaroslav Reznik",
-      "contact_email": "fips140@redhat.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 5,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 123,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 123
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -202,6 +148,60 @@
       "SHA3-384 | A5721 | Message Length - Message Length:0-65536 Increment 8Large Message Sizes-1,2 | FIPS 202",
       "SHA3-512 | A5721 | Message Length - Message Length:0-65536 Increment 8Large Message Sizes-1,2 | FIPS 202",
       "Encryption with AES | BC-UnAuth | Encrypt a plaintext with AES | Key size(s):128,192,256 bits(XTS mode 128 and 256 bits only) | AES-CBC:(A5720,A5726,A5729)AES-CBC-CS3:(A5723,A5733)AES-CFB128:(A5722,A5732)"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates random strings whose strengths are modified by available entropy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
+    "certificate_number": "5089",
+    "dataset": "active",
+    "description": "The Red Hat Enterprise Linux 8 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Red Hat Enterprise Linux 8 Kernel Cryptographic API",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5089",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5089.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5089.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/3/2030",
+    "validation_date": "11/4/2025",
+    "validation_dates": [
+      "11/4/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "11/4/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "100 East Davie Street",
+        "Raleigh, NC 27601",
+        "USA"
+      ],
+      "contact_email": "fips140@redhat.com",
+      "contact_name": "Jaroslav Reznik",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Red Hat, Inc.",
+      "website_url": "http://www.redhat.com"
+    },
+    "vendor_name": "Red Hat, Inc."
   }
 }

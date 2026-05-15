@@ -1,32 +1,43 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 6,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470",
     "certificate_number": "2470",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2470.pdf",
-    "vendor_name": "Feitian Technologies Co., Ltd.",
-    "module_name": "FT-JCOS (Feitian Java Card Platform)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single Chip",
-    "overall_level": 3,
-    "validation_date": "11/5/2015, 6/12/2018",
-    "validation_dates": [
-      "11/5/2015",
-      "6/12/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The FT-JCOS (Feitian Java Card Platform) cryptographic module, validated to FIPS 140-2 overall Level 3, is a single chip smartcard module implementing the JavaCard and Global Platform operational environment, with Card Manager also considered as Issuer Security Domain (ISD), a demonstration Applet used to demonstrate the cryptographic functions of the module, and a supplementary security domain that is also considered as Applet Provider Security Domain (APSD).The FT-JCOS exposes PKI and MoC APIs and is designed for high performance Government, Enterprise and Financial smartcard applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Single Chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FT-JCOS (Feitian Java Card Platform)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2470",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,53 +48,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2015.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2470.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/5/2015, 6/12/2018",
+    "validation_dates": [
+      "11/5/2015",
+      "6/12/2018"
+    ],
     "validation_history": [
       {
         "date": "11/5/2015",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/12/2018",
-        "type": "Update",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Feitian Technologies Co., Ltd.",
-      "website_url": "http://www.ftsafe.com",
       "address_lines": [
         "Floor 17th, Tower B, Huizhi Mansion, No.9 Xueqing Road",
         "Haidian District, Beijing, Beijing 100085",
         "China"
       ],
-      "country": "China",
-      "contact_name": "Peng Jie",
       "contact_email": "pengjie@ftsafe.com",
-      "contact_phone": "+86-010-62304466"
+      "contact_name": "Peng Jie",
+      "contact_phone": "+86-010-62304466",
+      "country": "China",
+      "name": "Feitian Technologies Co., Ltd.",
+      "website_url": "http://www.ftsafe.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DRBG",
-      "KDF",
-      "RSA",
-      "SHA"
-    ]
+    "vendor_name": "Feitian Technologies Co., Ltd."
   }
 }

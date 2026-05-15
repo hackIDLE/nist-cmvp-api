@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4294"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4294",
     "certificate_number": "4294",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4294",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4294",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4294.pdf",
-    "vendor_name": "DIGISTOR",
-    "module_name": "DIGISTOR® C Series Advanced SSD and Seagate® BarraCuda™ 515 SSD",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "9/10/2022, 9/15/2022",
-    "validation_dates": [
-      "9/10/2022",
-      "9/15/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
     "description": "DIGISTOR® C Series Advanced and Seagate® BarraCuda™ 515 SSDs provide endpoint security for Data at Rest. These are FIPS 140-2 L2-certified with AES 256-bit encryption. Firmware renders secured portions of the drive unreadable at the sector level. Authentication keys from user-supplied credentials use the maximum length allowed; keys are not stored in their final form. Zero-trust access prevents data breaches and ransomware attacks. Keep Alive heartbeat automatically hides secured data. Unerasable data access logs provide audit trails. Data destruction verification ensures that data was erased.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DIGISTOR® C Series Advanced SSD and Seagate® BarraCuda™ 515 SSD",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4294",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,46 +40,46 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2022_031022_0652_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4294.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/10/2022, 9/15/2022",
+    "validation_dates": [
+      "9/10/2022",
+      "9/15/2022"
+    ],
     "validation_history": [
       {
         "date": "9/10/2022",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
       },
       {
         "date": "9/15/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "DIGISTOR",
-      "website_url": "http://www.digistor.com",
       "address_lines": [
         "1000 SE Tech Center Dr.",
         "Suite 160",
         "Vancouver, WA 98683",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Murray Ellis II",
       "contact_email": "mellis@digistor.com",
-      "contact_phone": "408-796-5140"
+      "contact_name": "Murray Ellis II",
+      "contact_phone": "408-796-5140",
+      "country": "USA",
+      "name": "DIGISTOR",
+      "website_url": "http://www.digistor.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "DIGISTOR"
   }
 }

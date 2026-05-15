@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884"
   },
   "certificate": {
-    "certificate_number": "1884",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf",
-    "vendor_name": "Totemo AG",
-    "module_name": "Totemo Cryptographic Module (TCM)",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/8/2013",
-    "validation_dates": [
-      "2/8/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of module integrity when operating in non-FIPS mode",
-    "description": "The Totemo Cryptographic Module supplies the cryptographic services required by the Totemo Security Platform (TSP) and the Totemo products which provides secure email, file transfer, and mobile messaging solutions. These solutions secure all types of communication without any infrastructure prerequisites.",
-    "security_level_exceptions": [],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "2/8/2013",
-        "type": "Initial",
-        "lab": "CGI Information Systems & Management Consultants Inc"
-      }
-    ],
-    "vendor": {
-      "name": "Totemo AG",
-      "website_url": "http://www.totemo.com",
-      "address_lines": [
-        "Freihofstrasse 22",
-        "Küsnacht CH-8700",
-        "Switzerland"
-      ],
-      "country": "Switzerland",
-      "contact_name": "Marcel Mock",
-      "contact_email": "marcel.mock@totemo.com",
-      "contact_phone": "+41 44 914 99 00"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 11,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -83,6 +29,60 @@
       "SHA",
       "SHS",
       "SSH"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of module integrity when operating in non-FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884",
+    "certificate_number": "1884",
+    "dataset": "historical",
+    "description": "The Totemo Cryptographic Module supplies the cryptographic services required by the Totemo Security Platform (TSP) and the Totemo products which provides secure email, file transfer, and mobile messaging solutions. These solutions secure all types of communication without any infrastructure prerequisites.",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Totemo Cryptographic Module (TCM)",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
+      }
+    ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/8/2013",
+    "validation_dates": [
+      "2/8/2013"
+    ],
+    "validation_history": [
+      {
+        "date": "2/8/2013",
+        "lab": "CGI Information Systems & Management Consultants Inc",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Freihofstrasse 22",
+        "Küsnacht CH-8700",
+        "Switzerland"
+      ],
+      "contact_email": "marcel.mock@totemo.com",
+      "contact_name": "Marcel Mock",
+      "contact_phone": "+41 44 914 99 00",
+      "country": "Switzerland",
+      "name": "Totemo AG",
+      "website_url": "http://www.totemo.com"
+    },
+    "vendor_name": "Totemo AG"
   }
 }

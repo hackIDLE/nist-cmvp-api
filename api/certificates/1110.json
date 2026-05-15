@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1110"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1110",
     "certificate_number": "1110",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1110",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1110",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1110.pdf",
-    "vendor_name": "Gesellschaft für sichere Mobile Kommunikation mbH",
-    "module_name": "CryptoPhone Security Kernel",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "3/26/2009, 7/8/2009",
-    "validation_dates": [
-      "3/26/2009",
-      "7/8/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "The CryptoPhone Security Kernel is a portable multi-platform cryptographic module that provides strong encryption, authentication, key exchange, message integrity verification, and secure memory abstraction services to GSMK CryptoPhone encryption products. All GSMK products come with full source code for independent review.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CryptoPhone Security Kernel",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1110",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1110.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1110.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "3/26/2009, 7/8/2009",
+    "validation_dates": [
+      "3/26/2009",
+      "7/8/2009"
+    ],
     "validation_history": [
       {
         "date": "3/26/2009",
-        "type": "Initial",
-        "lab": "DOMUS"
+        "lab": "DOMUS",
+        "type": "Initial"
       },
       {
         "date": "7/8/2009",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Gesellschaft für sichere Mobile Kommunikation mbH",
-      "website_url": "http://www.cryptophone.de",
       "address_lines": [
         "Marienstrasse 11",
         "Berlin 10117",
         "Germany"
       ],
-      "country": "Germany",
-      "contact_name": "Bjoern Rupp",
       "contact_email": "br@gsmk.de",
-      "contact_phone": "+49 700 2797 8835"
+      "contact_name": "Bjoern Rupp",
+      "contact_phone": "+49 700 2797 8835",
+      "country": "Germany",
+      "name": "Gesellschaft für sichere Mobile Kommunikation mbH",
+      "website_url": "http://www.cryptophone.de"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Gesellschaft für sichere Mobile Kommunikation mbH"
   }
 }

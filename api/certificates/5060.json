@@ -1,80 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5060"
   },
   "certificate": {
-    "certificate_number": "5060",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5060",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5060",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5060.pdf",
-    "vendor_name": "Cloudlinux Inc., TuxCare division",
-    "module_name": "Libgcrypt cryptography module for AlmaLinux 9",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/17/2025, 4/10/2026",
-    "validation_dates": [
-      "9/17/2025",
-      "4/10/2026"
-    ],
-    "sunset_date": "9/16/2030",
-    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "Libgcrypt is a general purpose crypto library based on the code used in GNU Privacy Guard.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5060.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "9/17/2025",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "4/10/2026",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "Cloudlinux Inc., TuxCare division",
-      "website_url": "http://www.tuxcare.com",
-      "address_lines": [
-        "2318 Louis Road, Suite B",
-        "Palo Alto, CA 94303",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Simon John",
-      "contact_email": "sjohn@tuxcare.com",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 142,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 142
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -228,6 +169,65 @@
       "RSA SigVer(FIPS186-2) | A5141 | Public Exponent Mode - FixedFixed Public Exponent - 010001Signature Type - PKCS 1.5, PKCSPSSModulo - 1536Hash Pair-Hash Algorithm-SHA2-224Salt Length - 28 | FIPS 186-4",
       "RSA SigVer(FIPS186-2) | A5142 | Public Exponent Mode - FixedFixed Public Exponent - 010001Signature Type - PKCS 1.5, PKCSPSSModulo - 1536Hash Pair-Hash Algorithm-SHA2-224Salt Length - 28 | FIPS 186-4",
       "RSA SigVer(FIPS186-4) | A5138 | Signature Type - PKCS 1.5, PKCSPSSModulo - 1024Hash Pair-Hash Algorithm-SHA2-224Salt Length - 28Public Exponent Mode - FixedFixed Public Exponent - 010001 | FIPS 186-4"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5060",
+    "certificate_number": "5060",
+    "dataset": "active",
+    "description": "Libgcrypt is a general purpose crypto library based on the code used in GNU Privacy Guard.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Libgcrypt cryptography module for AlmaLinux 9",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5060",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5060.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5060.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "9/16/2030",
+    "validation_date": "9/17/2025, 4/10/2026",
+    "validation_dates": [
+      "9/17/2025",
+      "4/10/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "9/17/2025",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "4/10/2026",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "2318 Louis Road, Suite B",
+        "Palo Alto, CA 94303",
+        "USA"
+      ],
+      "contact_email": "sjohn@tuxcare.com",
+      "contact_name": "Simon John",
+      "contact_phone": "000-000-0000",
+      "country": "USA",
+      "name": "Cloudlinux Inc., TuxCare division",
+      "website_url": "http://www.tuxcare.com"
+    },
+    "vendor_name": "Cloudlinux Inc., TuxCare division"
   }
 }

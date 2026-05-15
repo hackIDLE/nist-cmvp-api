@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/790"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/790",
     "certificate_number": "790",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/790",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/790",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp790.pdf",
-    "vendor_name": "Oberthur Card Systems",
-    "module_name": "Oberthur ID-One Cosmo 64 v5.4 D",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 3,
-    "validation_date": "6/19/2007",
-    "validation_dates": [
-      "6/19/2007"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "This single chip module offers a highly secure architecture with state of the art on board cryptographic services such as Triple DES (128 and 192), AES (up to 256 bits), RSA (up to 2048) with ANSI X9.31 on board key generation, SHA1 & SHA 256, ISO 9796, ISO 9797, PKCS#1.5, OAEP, OSS, etc. Additional features include fingerprint Match on Card (ISO 19794-2), Logical Channels and Delegated Management. The module supports Java Card 2.2.1 and Global Platform 2.1.1.A. It is available with up to three communication interfaces (ISO 7816, ISO 14443 & USB).",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Oberthur ID-One Cosmo 64 v5.4 D",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/790",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt790.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp790.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/19/2007",
+    "validation_dates": [
+      "6/19/2007"
+    ],
     "validation_history": [
       {
         "date": "6/19/2007",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Oberthur Card Systems",
-      "website_url": "http://www.oberthurusa.com",
       "address_lines": [
         "4250 Pleasant Valley Road",
         "Chantilly, VA 20151-1221",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Christophe Goyet",
       "contact_email": "c.goyet@oberthurcs.com",
-      "contact_phone": "703-263-0100"
+      "contact_name": "Christophe Goyet",
+      "contact_phone": "703-263-0100",
+      "country": "USA",
+      "name": "Oberthur Card Systems",
+      "website_url": "http://www.oberthurusa.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Oberthur Card Systems"
   }
 }

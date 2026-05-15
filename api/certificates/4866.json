@@ -1,81 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4866"
   },
   "certificate": {
-    "certificate_number": "4866",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4866",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4866",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4866.pdf",
-    "vendor_name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)",
-    "module_name": "Solidigm® P5520 SSD (ADP-RR)",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "11/5/2024, 12/5/2025",
-    "validation_dates": [
-      "11/5/2024",
-      "12/5/2025"
-    ],
-    "sunset_date": "11/4/2029",
-    "caveat": "When installed, initialized and configured as specified in Section 2.4 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
-    "description": "The Solidigm P5520 SSD (ADP-RR) module provides data-at-rest protection, using AES-XTS-256 to encrypt user data prior to being written to media.",
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4866.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/5/2024",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "12/5/2025",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)",
-      "website_url": "http://www.solidigm.com",
-      "address_lines": [
-        "3101 N 1st Street",
-        "San Jose, CA 95134",
-        "United States"
-      ],
-      "country": "United States",
-      "contact_name": "FIPS Certified Solidigm SSDs",
-      "contact_email": "Security@Solidigm.com",
-      "contact_phone": "279-895-9665"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 7,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +25,66 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 2.4 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4866",
+    "certificate_number": "4866",
+    "dataset": "active",
+    "description": "The Solidigm P5520 SSD (ADP-RR) module provides data-at-rest protection, using AES-XTS-256 to encrypt user data prior to being written to media.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Solidigm® P5520 SSD (ADP-RR)",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4866",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4866.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4866.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "11/4/2029",
+    "validation_date": "11/5/2024, 12/5/2025",
+    "validation_dates": [
+      "11/5/2024",
+      "12/5/2025"
+    ],
+    "validation_history": [
+      {
+        "date": "11/5/2024",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "12/5/2025",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3101 N 1st Street",
+        "San Jose, CA 95134",
+        "United States"
+      ],
+      "contact_email": "Security@Solidigm.com",
+      "contact_name": "FIPS Certified Solidigm SSDs",
+      "contact_phone": "279-895-9665",
+      "country": "United States",
+      "name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)",
+      "website_url": "http://www.solidigm.com"
+    },
+    "vendor_name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)"
   }
 }

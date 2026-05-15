@@ -1,89 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3311"
   },
   "certificate": {
-    "certificate_number": "3311",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3311",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3311",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3311.pdf",
-    "vendor_name": "Ixia, a Keysight Business",
-    "module_name": "Ixia Cryptographic Module for Network Visibility",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/23/2018, 3/7/2019, 5/29/2020",
-    "validation_dates": [
-      "10/23/2018",
-      "3/7/2019",
-      "5/29/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3152.",
-    "description": "The Ixia, a Keysight business, Cryptographic Module for Network Visibility is integrated into Ixia's Vision portfolio of network packet brokers (NPBs) to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3311.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/23/2018",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "3/7/2019",
-        "type": "Update",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "5/29/2020",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Ixia, a Keysight Business",
-      "website_url": "https://www.ixiacom.com",
-      "address_lines": [
-        "8310 N Capital of Texas Hwy",
-        "Austin, TX 78731",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Fred Strelzoff",
-      "contact_email": "fred.strelzoff@keysight.com",
-      "contact_phone": "(512) 600-5400"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 13,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -99,6 +31,74 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys. This validation entry is a non-security relevant modification to Cert. #3152.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3311",
+    "certificate_number": "3311",
+    "dataset": "historical",
+    "description": "The Ixia, a Keysight business, Cryptographic Module for Network Visibility is integrated into Ixia's Vision portfolio of network packet brokers (NPBs) to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Ixia Cryptographic Module for Network Visibility",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3311",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3311.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3311.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/23/2018, 3/7/2019, 5/29/2020",
+    "validation_dates": [
+      "10/23/2018",
+      "3/7/2019",
+      "5/29/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "10/23/2018",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "3/7/2019",
+        "lab": "Acumen Security",
+        "type": "Update"
+      },
+      {
+        "date": "5/29/2020",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "8310 N Capital of Texas Hwy",
+        "Austin, TX 78731",
+        "USA"
+      ],
+      "contact_email": "fred.strelzoff@keysight.com",
+      "contact_name": "Fred Strelzoff",
+      "contact_phone": "(512) 600-5400",
+      "country": "USA",
+      "name": "Ixia, a Keysight Business",
+      "website_url": "https://www.ixiacom.com"
+    },
+    "vendor_name": "Ixia, a Keysight Business"
   }
 }

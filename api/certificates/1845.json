@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1845"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and with the tamper evidence seals installed as indicated in the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1845",
     "certificate_number": "1845",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1845",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1845",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1845.pdf",
-    "vendor_name": "Aruba Networks, Inc.",
-    "module_name": "Aruba AP-65, AP-70 and AP-85 Wireless Access Points",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "11/29/2012, 1/24/2013, 7/26/2013, 1/23/2014",
-    "validation_dates": [
-      "11/29/2012",
-      "1/24/2013",
-      "7/26/2013",
-      "1/23/2014"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and with the tamper evidence seals installed as indicated in the Security Policy",
     "description": "Aruba's Wi-Fi access points serve as secure network on-ramps, aggregating wireless user traffic and forwarding it to Aruba's highly secure Mobility Controllers, where per-user role based access controls are applied through an integrated firewall. In FIPS 140-2 Mode, Aruba APs in conjunction with the Mobility Controller support the IEEE 802.11i/WPA2 client standard along with optional Suite B cryptography. Aruba APs also provide wireless intrusion detection/prevention services, support wireless mesh topologies, and have Wi-Fi Alliance certification for IEEE 802.11a/b/g/n.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Aruba AP-65, AP-70 and AP-85 Wireless Access Points",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1845",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,55 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0023.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1845.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/29/2012, 1/24/2013, 7/26/2013, 1/23/2014",
+    "validation_dates": [
+      "11/29/2012",
+      "1/24/2013",
+      "7/26/2013",
+      "1/23/2014"
+    ],
     "validation_history": [
       {
         "date": "11/29/2012",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "1/24/2013",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "7/26/2013",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       },
       {
         "date": "1/23/2014",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Aruba Networks, Inc.",
-      "website_url": "http://www.arubanetworks.com",
       "address_lines": [
         "1322 Crossman Avenue",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Jon Green",
       "contact_email": "fips@arubanetworks.com",
-      "contact_phone": "408-227-4500"
+      "contact_name": "Jon Green",
+      "contact_phone": "408-227-4500",
+      "country": "USA",
+      "name": "Aruba Networks, Inc.",
+      "website_url": "http://www.arubanetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Aruba Networks, Inc."
   }
 }

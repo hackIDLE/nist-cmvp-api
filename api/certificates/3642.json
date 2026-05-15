@@ -1,34 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3642"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DSA",
+      "SHA",
+      "SHS"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3642",
     "certificate_number": "3642",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3642",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3642",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3642.pdf",
-    "vendor_name": "Leonovus Inc.",
-    "module_name": "Leonovus Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "4/20/2020",
-    "validation_dates": [
-      "4/20/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Whether data is in-flight or at rest, whether it is whole and in one place or fragmented and distributed across the infrastructure, the Leonovus Cryptographic Module ensures the critical data elements are secured with state-of-the-art encryption and decryption algorithms. Because of the Leonovus Cryptographic Module, the IT organization retains control over the keys independent of the storage infrastructure and services. In this manner, IT regains its control over the data while greatly improving the flexibility on where it flows and resides.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Leonovus Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3642",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,46 +46,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April 2020_010520_0717.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3642.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "4/20/2020",
+    "validation_dates": [
+      "4/20/2020"
+    ],
     "validation_history": [
       {
         "date": "4/20/2020",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Leonovus Inc.",
-      "website_url": "http://www.leonovus.com",
       "address_lines": [
         "340 Albert St., #1400",
         "Ottawa, ON K1R 7Y6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Daniel Willis",
       "contact_email": "dwillis@leonovus.com",
-      "contact_phone": "(408) 703-1458"
+      "contact_name": "Daniel Willis",
+      "contact_phone": "(408) 703-1458",
+      "country": "Canada",
+      "name": "Leonovus Inc.",
+      "website_url": "http://www.leonovus.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DSA",
-      "SHA",
-      "SHS"
-    ]
+    "vendor_name": "Leonovus Inc."
   }
 }

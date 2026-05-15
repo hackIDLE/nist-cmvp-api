@@ -1,35 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388",
     "certificate_number": "4388",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4388.pdf",
-    "vendor_name": "OneSpan",
-    "module_name": "DIGIPASS GO7",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "12/7/2022",
-    "validation_dates": [
-      "12/7/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "None",
     "description": "Digipass GO 7 is an one-time password (OTP) hardware token a convenient single-button authentication device that boosts security while providing unmatched user acceptance. Digipass GO 7 also supports OneSpan’s multi OTP technology offering enhanced security for organizations who need to secure multiple applications with a single Digipass.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "DIGIPASS GO7",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,47 +46,41 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December 2022_030123_0646_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4388.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "12/7/2022",
+    "validation_dates": [
+      "12/7/2022"
+    ],
     "validation_history": [
       {
         "date": "12/7/2022",
-        "type": "Initial",
-        "lab": "SERMA SAFETY AND SECURITY"
+        "lab": "SERMA SAFETY AND SECURITY",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "OneSpan",
-      "website_url": "http://www.onespan.com",
       "address_lines": [
         "ROMEINSESTEENWEG 564C",
         "Belgium",
         "Strombeek-Bever 1853",
         "Belgium"
       ],
-      "country": "Belgium",
-      "contact_name": "Frederik Mennes",
       "contact_email": "Frederik.Mennes@onespan.com",
-      "contact_phone": "+32 (0) 557 260 863"
+      "contact_name": "Frederik Mennes",
+      "contact_phone": "+32 (0) 557 260 863",
+      "country": "Belgium",
+      "name": "OneSpan",
+      "website_url": "http://www.onespan.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "KDF",
-      "SHA"
-    ]
+    "vendor_name": "OneSpan"
   }
 }

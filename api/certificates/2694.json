@@ -1,40 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2694"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 8.1 and 8.2 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2694",
     "certificate_number": "2694",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2694",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2694",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2694.pdf",
-    "vendor_name": "Hitachi, Ltd.",
-    "module_name": "Hitachi Virtual Storage Platform (VSP) Encryption Board",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 1,
-    "validation_date": "8/3/2016, 8/4/2017, 10/6/2017, 4/25/2018, 3/25/2019, 3/30/2020",
-    "validation_dates": [
-      "8/3/2016",
-      "8/4/2017",
-      "10/6/2017",
-      "4/25/2018",
-      "3/25/2019",
-      "3/30/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in Section 8.1 and 8.2 of the Security Policy",
     "description": "The Hitachi Virtual Storage Platform (VSP) Encryption Board provides high speed data at rest encryption for Hitachi storage.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Design Assurance: Level 2",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Hitachi Virtual Storage Platform (VSP) Encryption Board",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2694",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -45,70 +45,70 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Design Assurance: Level 2",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2694.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "8/3/2016, 8/4/2017, 10/6/2017, 4/25/2018, 3/25/2019, 3/30/2020",
+    "validation_dates": [
+      "8/3/2016",
+      "8/4/2017",
+      "10/6/2017",
+      "4/25/2018",
+      "3/25/2019",
+      "3/30/2020"
+    ],
     "validation_history": [
       {
         "date": "8/3/2016",
-        "type": "Initial",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Initial"
       },
       {
         "date": "8/4/2017",
-        "type": "Update",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Update"
       },
       {
         "date": "10/6/2017",
-        "type": "Update",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Update"
       },
       {
         "date": "4/25/2018",
-        "type": "Update",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Update"
       },
       {
         "date": "3/25/2019",
-        "type": "Update",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Update"
       },
       {
         "date": "3/30/2020",
-        "type": "Update",
-        "lab": "ECSEC Laboratory Inc."
+        "lab": "ECSEC Laboratory Inc.",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Hitachi, Ltd.",
-      "website_url": "http://www.hitachi.com",
       "address_lines": [
         "322-2 Nakazato, Odawara-shi",
         "Kanagawa-ken 250-0872",
         "Japan"
       ],
-      "country": "Japan",
-      "contact_name": "Hajime Sato",
       "contact_email": "hajime.sato.kd@hitachi.com",
-      "contact_phone": "+81-465-59-5954"
+      "contact_name": "Hajime Sato",
+      "contact_phone": "+81-465-59-5954",
+      "country": "Japan",
+      "name": "Hitachi, Ltd.",
+      "website_url": "http://www.hitachi.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "HMAC",
-      "SHA"
-    ]
+    "vendor_name": "Hitachi, Ltd."
   }
 }

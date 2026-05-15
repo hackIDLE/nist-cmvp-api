@@ -1,75 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134"
   },
   "certificate": {
-    "certificate_number": "5134",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5134.pdf",
-    "vendor_name": "Juniper Networks, Inc.",
-    "module_name": "Juniper Networks MX Series 3D Universal Edge Routers",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/15/2026",
-    "validation_dates": [
-      "1/15/2026"
-    ],
-    "sunset_date": "1/14/2031",
-    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
-    "description": "The Juniper Networks MX Series 3D Universal Edge Routers Universal Edge Routers provide dedicated high-performance processing for flows and sessions and integrates advanced security capabilities that protect the network infrastructure as well as user data. The MX-SPC3 provides security services such as carrier-grade NAT (CGNAT), IPsec, stateful firewall, deep packet inspection, IDS, traffic load balancing, Web filtering, and DNS sinkhole.",
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 2",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5134.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/15/2026",
-        "type": "Initial",
-        "lab": "Teron Labs"
-      }
-    ],
-    "vendor": {
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net",
-      "address_lines": [
-        "1133 Innovation Way",
-        "Sunnyvale, California 94089",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Bill Shelton",
-      "contact_email": "certs-team@juniper.net",
-      "contact_phone": "408-745-2000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 25,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 25
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -109,6 +55,60 @@
       "KDF SSH (CVL) A4271 Cipher - AES-128, AES-192, AES-256",
       "Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 SP 800-135 Rev. | 1 | * * * | Name Properties Implementation Reference",
       "CKG Key type:Asymmetric Junos 22.2R1 - OpenSSL SP 800-133 Rev.2 Section 4, example 1 direct output from DRBG."
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
+    "certificate_number": "5134",
+    "dataset": "active",
+    "description": "The Juniper Networks MX Series 3D Universal Edge Routers Universal Edge Routers provide dedicated high-performance processing for flows and sessions and integrates advanced security capabilities that protect the network infrastructure as well as user data. The MX-SPC3 provides security services such as carrier-grade NAT (CGNAT), IPsec, stateful firewall, deep packet inspection, IDS, traffic load balancing, Web filtering, and DNS sinkhole.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Juniper Networks MX Series 3D Universal Edge Routers",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5134",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5134.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5134.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "1/14/2031",
+    "validation_date": "1/15/2026",
+    "validation_dates": [
+      "1/15/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "1/15/2026",
+        "lab": "Teron Labs",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, California 94089",
+        "USA"
+      ],
+      "contact_email": "certs-team@juniper.net",
+      "contact_name": "Bill Shelton",
+      "contact_phone": "408-745-2000",
+      "country": "USA",
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net"
+    },
+    "vendor_name": "Juniper Networks, Inc."
   }
 }

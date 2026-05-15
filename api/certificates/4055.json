@@ -1,83 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4055"
   },
   "certificate": {
-    "certificate_number": "4055",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4055",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4055",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4055.pdf",
-    "vendor_name": "SUSE, LLC",
-    "module_name": "SUSE Linux Enterprise Server Libica Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software-Hybrid",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "10/27/2021, 11/28/2021",
-    "validation_dates": [
-      "10/27/2021",
-      "11/28/2021"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9.1 of the Security Policy with module SUSE Linux Enterprise Server OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #3991 operating in FIPS mode",
-    "description": "The SUSE Linux Enterprise Server Libica Cryptographic Module contains the interface library routines used by IBM modules to interface with OpenSSL and the IBM Central Processor Assist for Cryptographic Functions (CPACF).",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4055.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2021_011121_0730_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "10/27/2021",
-        "type": "Initial",
-        "lab": "atsec information security corporation"
-      },
-      {
-        "date": "11/28/2021",
-        "type": "Update",
-        "lab": "atsec information security corporation"
-      }
-    ],
-    "vendor": {
-      "name": "SUSE, LLC",
-      "website_url": "http://www.suse.com",
-      "address_lines": [
-        "10 Canal Park, Suite 200",
-        "Cambridge, MA 02141",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Ivan Teblin",
-      "contact_email": "ivan.teblin@suse.com",
-      "contact_phone": "+1-800-858-4000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -89,6 +27,68 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9.1 of the Security Policy with module SUSE Linux Enterprise Server OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #3991 operating in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4055",
+    "certificate_number": "4055",
+    "dataset": "active",
+    "description": "The SUSE Linux Enterprise Server Libica Cryptographic Module contains the interface library routines used by IBM modules to interface with OpenSSL and the IBM Central Processor Assist for Cryptographic Functions (CPACF).",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "SUSE Linux Enterprise Server Libica Cryptographic Module",
+    "module_type": "Software-Hybrid",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4055",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4055.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2021_011121_0730_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4055.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "10/27/2021, 11/28/2021",
+    "validation_dates": [
+      "10/27/2021",
+      "11/28/2021"
+    ],
+    "validation_history": [
+      {
+        "date": "10/27/2021",
+        "lab": "atsec information security corporation",
+        "type": "Initial"
+      },
+      {
+        "date": "11/28/2021",
+        "lab": "atsec information security corporation",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "10 Canal Park, Suite 200",
+        "Cambridge, MA 02141",
+        "USA"
+      ],
+      "contact_email": "ivan.teblin@suse.com",
+      "contact_name": "Ivan Teblin",
+      "contact_phone": "+1-800-858-4000",
+      "country": "USA",
+      "name": "SUSE, LLC",
+      "website_url": "http://www.suse.com"
+    },
+    "vendor_name": "SUSE, LLC"
   }
 }

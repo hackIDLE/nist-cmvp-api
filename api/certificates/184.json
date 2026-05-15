@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/184"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/184",
     "certificate_number": "184",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/184",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/184",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp184.pdf",
-    "vendor_name": "Algorithmic Research Ltd.",
-    "module_name": "PrivateServer 3.0 and PrivateServer 3.1",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 3,
-    "validation_date": "11/27/2001, 12/13/2002, 2/10/2003, 7/15/2003",
-    "validation_dates": [
-      "11/27/2001",
-      "12/13/2002",
-      "2/10/2003",
-      "7/15/2003"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The PrivateServer is a high-performance cryptographic service provider. Contained within a secure, tamper-responsive steel case, the PrivateServer performs high-speed cryptographic operations while protecting sensitive data. Its features include strong cryptography using DES, triple-DES, and SHA-1, public key database and certificate support, authenticated and encrypted communication with the module, secure storage of secret/private keys, software key medium and smartcard support, tamper-responsive enclosure, high level API requiring no cryptographic expertise, in-depth logging and auditing, and secure backup capabilities.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "PrivateServer 3.0 and PrivateServer 3.1",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/184",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,55 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt184.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp184.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/27/2001, 12/13/2002, 2/10/2003, 7/15/2003",
+    "validation_dates": [
+      "11/27/2001",
+      "12/13/2002",
+      "2/10/2003",
+      "7/15/2003"
+    ],
     "validation_history": [
       {
         "date": "11/27/2001",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "12/13/2002",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "2/10/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "7/15/2003",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Algorithmic Research Ltd.",
-      "website_url": "http://www.arx.com",
       "address_lines": [
         "10 Nevatim Street",
         "Petach Tikva 49561",
         "Israel"
       ],
-      "country": "Israel",
-      "contact_name": "Gadi Aharoni",
       "contact_email": "gadi@arx.com",
-      "contact_phone": "+972-3-927-9500"
+      "contact_name": "Gadi Aharoni",
+      "contact_phone": "+972-3-927-9500",
+      "country": "Israel",
+      "name": "Algorithmic Research Ltd.",
+      "website_url": "http://www.arx.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Algorithmic Research Ltd."
   }
 }

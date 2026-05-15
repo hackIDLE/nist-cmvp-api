@@ -1,35 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 3,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "DRBG",
+      "HMAC",
+      "KDF"
+    ],
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061",
     "certificate_number": "3061",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3061.pdf",
-    "vendor_name": "HGST, a Western Digital brand",
-    "module_name": "HGST Ultrastar SS200 TCG Enterprise SSD",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "11/10/2017",
-    "validation_dates": [
-      "11/10/2017"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "HGST's Ultrastar SS200 TCG Enterprise self-encryptinig SSDs implement TCG Storage specifications that meet or exceed the most demanding performance and security requirements. The Ultrastar SS200 family combines enterprise-grade MLC NAND Flash memory and advanced endurance management firmware. The power loss data management techniques utilized by the Ultrastar SS200, extend reliability, improve endurance, and sustain performance over the life of the SSD.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "HGST Ultrastar SS200 TCG Enterprise SSD",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3061",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +45,40 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2017.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3061.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/10/2017",
+    "validation_dates": [
+      "11/10/2017"
+    ],
     "validation_history": [
       {
         "date": "11/10/2017",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "HGST, a Western Digital brand",
-      "website_url": "http://www.hgst.com/products/solid-state-solutions/ultrastar-ss200",
       "address_lines": [
         "951 SanDisk Drive",
         "Milpitas, CA 95035",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Rajesh Kukreja",
       "contact_email": "Rajesh.Kukreja@sandisk.com",
-      "contact_phone": "408-801-3368"
+      "contact_name": "Rajesh Kukreja",
+      "contact_phone": "408-801-3368",
+      "country": "USA",
+      "name": "HGST, a Western Digital brand",
+      "website_url": "http://www.hgst.com/products/solid-state-solutions/ultrastar-ss200"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "DRBG",
-      "HMAC",
-      "KDF"
-    ]
+    "vendor_name": "HGST, a Western Digital brand"
   }
 }

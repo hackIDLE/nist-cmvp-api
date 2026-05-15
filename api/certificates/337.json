@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/337"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/337",
     "certificate_number": "337",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/337",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/337",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp337.pdf",
-    "vendor_name": "Phaos Technology Corporation",
-    "module_name": "Phaos Crypto",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "7/7/2003, 4/30/2004, 8/23/2004",
-    "validation_dates": [
-      "7/7/2003",
-      "4/30/2004",
-      "8/23/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Phaos Crypto provides a state-of-the-art set of core cryptography algorithms in Java. It includes a comprehensive cryptographic library supporting the most current algorithms like AES, RSA-OAEP, SHA- 256/384/512, X.9-42 as well as legacy algorithms that are still used in corporate systems like 3DES, DES, MD2 etc.. Phaos Crypto allows developers to integrate cryptography into any Java application or applet. For high security deployments, Phaos Crypto provides transparent migration to cryptographic hardware without requiring any changes to existing applications.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Phaos Crypto",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/337",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,51 +40,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt337.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp337.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/7/2003, 4/30/2004, 8/23/2004",
+    "validation_dates": [
+      "7/7/2003",
+      "4/30/2004",
+      "8/23/2004"
+    ],
     "validation_history": [
       {
         "date": "7/7/2003",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "4/30/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       },
       {
         "date": "8/23/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Phaos Technology Corporation",
-      "website_url": "http://www.phaos.com",
       "address_lines": [
         "520 Madison Avenue",
         "30th Floor",
         "New York, NY 10022",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Darren Calman",
       "contact_email": "darren.calman@oracle.com",
-      "contact_phone": "212-508-7700"
+      "contact_name": "Darren Calman",
+      "contact_phone": "212-508-7700",
+      "country": "USA",
+      "name": "Phaos Technology Corporation",
+      "website_url": "http://www.phaos.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Phaos Technology Corporation"
   }
 }

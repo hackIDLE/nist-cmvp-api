@@ -1,90 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4240"
   },
   "certificate": {
-    "certificate_number": "4240",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4240",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4240",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4240.pdf",
-    "vendor_name": "SafeLogic Inc.",
-    "module_name": "CryptoComply for Java",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "6/1/2022, 8/4/2022, 12/14/2022",
-    "validation_dates": [
-      "6/1/2022",
-      "8/4/2022",
-      "12/14/2022"
-    ],
-    "sunset_date": null,
-    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "description": "SafeLogic's CryptoComply for Java is designed to provide FIPS 140 validated cryptographic functionality and is available for licensing.",
-    "security_level_exceptions": [
-      "Physical Security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4240.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2022_010722_0704_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/1/2022",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "8/4/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "12/14/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "SafeLogic Inc.",
-      "website_url": "http://www.safelogic.com",
-      "address_lines": [
-        "530 Lytton Ave.",
-        "Suite 200",
-        "Palo Alto, CA 94301",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "SafeLogic Inside Sales",
-      "contact_email": "sales@safelogic.com",
-      "contact_phone": "844-436-2797"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -102,6 +33,75 @@
       "SHS",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4240",
+    "certificate_number": "4240",
+    "dataset": "historical",
+    "description": "SafeLogic's CryptoComply for Java is designed to provide FIPS 140 validated cryptographic functionality and is available for licensing.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CryptoComply for Java",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4240",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4240.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2022_010722_0704_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4240.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/1/2022, 8/4/2022, 12/14/2022",
+    "validation_dates": [
+      "6/1/2022",
+      "8/4/2022",
+      "12/14/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "6/1/2022",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      },
+      {
+        "date": "8/4/2022",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "12/14/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "530 Lytton Ave.",
+        "Suite 200",
+        "Palo Alto, CA 94301",
+        "USA"
+      ],
+      "contact_email": "sales@safelogic.com",
+      "contact_name": "SafeLogic Inside Sales",
+      "contact_phone": "844-436-2797",
+      "country": "USA",
+      "name": "SafeLogic Inc.",
+      "website_url": "http://www.safelogic.com"
+    },
+    "vendor_name": "SafeLogic Inc."
   }
 }

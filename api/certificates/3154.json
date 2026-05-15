@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3154"
   },
   "certificate": {
-    "certificate_number": "3154",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3154",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3154",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3154.pdf",
-    "vendor_name": "Zscaler Inc.",
-    "module_name": "Zscaler Mobile Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "3/19/2018, 3/9/2022",
-    "validation_dates": [
-      "3/19/2018",
-      "3/9/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security-relevant modification to Cert. #1938.",
-    "description": "The Zscaler Mobile Cryptographic Module offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3154.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "3/19/2018",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "3/9/2022",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Zscaler Inc.",
-      "website_url": "http://www.zscaler.com",
-      "address_lines": [
-        "110 Rose Orchard Way",
-        "San Jose, CA 95134",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Stephen R. Kovac",
-      "contact_email": "kovac@zscaler.com",
-      "contact_phone": "727-288-7144"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 8,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -90,6 +26,70 @@
       "HMAC",
       "RSA",
       "SHA"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys. This validation entry is a non-security-relevant modification to Cert. #1938.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3154",
+    "certificate_number": "3154",
+    "dataset": "active",
+    "description": "The Zscaler Mobile Cryptographic Module offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Zscaler Mobile Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3154",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3154.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3154.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "3/19/2018, 3/9/2022",
+    "validation_dates": [
+      "3/19/2018",
+      "3/9/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "3/19/2018",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "3/9/2022",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "110 Rose Orchard Way",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "contact_email": "kovac@zscaler.com",
+      "contact_name": "Stephen R. Kovac",
+      "contact_phone": "727-288-7144",
+      "country": "USA",
+      "name": "Zscaler Inc.",
+      "website_url": "http://www.zscaler.com"
+    },
+    "vendor_name": "Zscaler Inc."
   }
 }

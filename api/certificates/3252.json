@@ -1,114 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3252"
   },
   "certificate": {
-    "certificate_number": "3252",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3252",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3252",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3252.pdf",
-    "vendor_name": "Seagate Technology LLC",
-    "module_name": "Seagate Secure® TCG Opal SSC Self-Encrypting Drive (SED) FIPS 140-2 Module",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Embedded",
-    "overall_level": 2,
-    "validation_date": "8/1/2018, 1/31/2019, 7/10/2019, 8/15/2019, 9/18/2020, 8/10/2021, 11/18/2022",
-    "validation_dates": [
-      "8/1/2018",
-      "1/31/2019",
-      "7/10/2019",
-      "8/15/2019",
-      "9/18/2020",
-      "8/10/2021",
-      "11/18/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #2695",
-    "description": "The ‘Seagate Secure® TCG Opal SSC Self-Encrypting Drive (SED) FIPS 140-2 Module’ is embodied in Seagate Laptop thin and Laptop Self-Encrypting Drive model disk drives. The cryptographic module (CM) provides a wide range of cryptographic services using FIPS approved algorithms. Services include hardware-based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA ranges, and authenticated FW download. The services are provided through an industry-standard TCG Opal SSC interface.",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3252.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "8/1/2018",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "1/31/2019",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "7/10/2019",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "8/15/2019",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "9/18/2020",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "8/10/2021",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      },
-      {
-        "date": "11/18/2022",
-        "type": "Update",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Seagate Technology LLC",
-      "website_url": "http://www.seagate.com",
-      "address_lines": [
-        "389 Disc Drive",
-        "Longmont, CO 80503",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Catherine Sand-Soll",
-      "contact_email": "catherine.sand-soll@seagate.com",
-      "contact_phone": "720-684-2008"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -121,6 +28,99 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. This validation entry is a non-security-relevant modification to Cert. #2695",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3252",
+    "certificate_number": "3252",
+    "dataset": "active",
+    "description": "The ‘Seagate Secure® TCG Opal SSC Self-Encrypting Drive (SED) FIPS 140-2 Module’ is embodied in Seagate Laptop thin and Laptop Self-Encrypting Drive model disk drives. The cryptographic module (CM) provides a wide range of cryptographic services using FIPS approved algorithms. Services include hardware-based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA ranges, and authenticated FW download. The services are provided through an industry-standard TCG Opal SSC interface.",
+    "embodiment": "Multi-Chip Embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Seagate Secure® TCG Opal SSC Self-Encrypting Drive (SED) FIPS 140-2 Module",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3252",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3252.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3252.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "8/1/2018, 1/31/2019, 7/10/2019, 8/15/2019, 9/18/2020, 8/10/2021, 11/18/2022",
+    "validation_dates": [
+      "8/1/2018",
+      "1/31/2019",
+      "7/10/2019",
+      "8/15/2019",
+      "9/18/2020",
+      "8/10/2021",
+      "11/18/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "8/1/2018",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      },
+      {
+        "date": "1/31/2019",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "7/10/2019",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "8/15/2019",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "9/18/2020",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "8/10/2021",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      },
+      {
+        "date": "11/18/2022",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "389 Disc Drive",
+        "Longmont, CO 80503",
+        "USA"
+      ],
+      "contact_email": "catherine.sand-soll@seagate.com",
+      "contact_name": "Catherine Sand-Soll",
+      "contact_phone": "720-684-2008",
+      "country": "USA",
+      "name": "Seagate Technology LLC",
+      "website_url": "http://www.seagate.com"
+    },
+    "vendor_name": "Seagate Technology LLC"
   }
 }

@@ -1,33 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4612"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the tamper evident seals and entropy token installed as indicated in the Security Policy. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4612",
     "certificate_number": "4612",
     "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4612",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4612",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4612.pdf",
-    "vendor_name": "Fortinet, Inc.",
-    "module_name": "FortiGate-600D/1200D/1500D/3000D/3700D and FortiGate-5001D with FortiGate-5144C Chassis",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 2,
-    "validation_date": "9/27/2023",
-    "validation_dates": [
-      "9/27/2023"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the tamper evident seals and entropy token installed as indicated in the Security Policy. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role. No assurance of the minimum strength of generated keys",
     "description": "The FortiGate-600D/1200D/1500D/3000D/3700D and FortiGate-5001D with FortiGate-5144C Chassis are multiple chip standalone cryptographic modules consisting of production grade components, contained in a physically protected enclosure in accordance with FIPS 140-2 Level 2 requirements.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FortiGate-600D/1200D/1500D/3000D/3700D and FortiGate-5001D with FortiGate-5144C Chassis",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4612",
+    "overall_level": 2,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,40 +40,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2023_101023_1100 signed (2).pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4612.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "9/27/2023",
+    "validation_dates": [
+      "9/27/2023"
+    ],
     "validation_history": [
       {
         "date": "9/27/2023",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Fortinet, Inc.",
-      "website_url": "http://www.fortinet.com",
       "address_lines": [
         "16 Fitzgerald Road",
         "Ottawa, ON K2H 8R6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Alan Kaye",
       "contact_email": "akaye@fortinet.com",
-      "contact_phone": "613-225-9381 x87416"
+      "contact_name": "Alan Kaye",
+      "contact_phone": "613-225-9381 x87416",
+      "country": "Canada",
+      "name": "Fortinet, Inc.",
+      "website_url": "http://www.fortinet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Fortinet, Inc."
   }
 }

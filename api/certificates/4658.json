@@ -1,79 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4658"
   },
   "certificate": {
-    "certificate_number": "4658",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4658",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4658",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4658.pdf",
-    "vendor_name": "Fujitsu Limited",
-    "module_name": "Fujitsu Enterprise Postgres Cryptographic Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "11/27/2023",
-    "validation_dates": [
-      "11/27/2023"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
-    "description": "Fujitsu Enterprise Postgres Cryptographic Module is the FIPS validated cryptographic library for Fujitsu Enterprise Postgres. This cryptographic library is used for communication data encryption, Transparent Data Encryption (TDE), etc. to provide data protection through robust cryptographic algorithms. Fujitsu Enterprise Postgres is based on the world-renowned open-source system - PostgreSQL, with additional enterprisegrade features for enhanced security and better performance.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4658.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2023_111223_0648_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "11/27/2023",
-        "type": "Initial",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
-      }
-    ],
-    "vendor": {
-      "name": "Fujitsu Limited",
-      "website_url": "http://www.fujitsu.com/global/",
-      "address_lines": [
-        "4-1-1 Kamikodanaka",
-        "Nakahara-ku",
-        "Kawasaki-shi, Kanagawa 211-8588",
-        "Japan"
-      ],
-      "country": "Japan",
-      "contact_name": "Fujitsu contact",
-      "contact_email": "contact-fep@cs.jp.fujitsu.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -85,6 +27,64 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4658",
+    "certificate_number": "4658",
+    "dataset": "historical",
+    "description": "Fujitsu Enterprise Postgres Cryptographic Module is the FIPS validated cryptographic library for Fujitsu Enterprise Postgres. This cryptographic library is used for communication data encryption, Transparent Data Encryption (TDE), etc. to provide data protection through robust cryptographic algorithms. Fujitsu Enterprise Postgres is based on the world-renowned open-source system - PostgreSQL, with additional enterprisegrade features for enhanced security and better performance.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Fujitsu Enterprise Postgres Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4658",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4658.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2023_111223_0648_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4658.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/27/2023",
+    "validation_dates": [
+      "11/27/2023"
+    ],
+    "validation_history": [
+      {
+        "date": "11/27/2023",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "4-1-1 Kamikodanaka",
+        "Nakahara-ku",
+        "Kawasaki-shi, Kanagawa 211-8588",
+        "Japan"
+      ],
+      "contact_email": "contact-fep@cs.jp.fujitsu.com",
+      "contact_name": "Fujitsu contact",
+      "contact_phone": null,
+      "country": "Japan",
+      "name": "Fujitsu Limited",
+      "website_url": "http://www.fujitsu.com/global/"
+    },
+    "vendor_name": "Fujitsu Limited"
   }
 }

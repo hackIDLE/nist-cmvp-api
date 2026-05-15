@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247"
   },
   "certificate": {
-    "certificate_number": "5247",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5247.pdf",
-    "vendor_name": "Geomys LLC",
-    "module_name": "Go Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "4/27/2026",
-    "validation_dates": [
-      "4/27/2026"
-    ],
-    "sunset_date": "4/26/2031",
-    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
-    "description": "A software library that provides cryptographic functionality to the Go standard library and other Go applications.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5247.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "4/27/2026",
-        "type": "Initial",
-        "lab": "Lightship Security, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Geomys LLC",
-      "website_url": "https://geomys.org/fips140",
-      "address_lines": [
-        "9450 SW Gemini Dr PMB 52960",
-        "Beaverton, OR 97008",
-        "United States"
-      ],
-      "country": "United States",
-      "contact_name": "Filippo Valsorda",
-      "contact_email": "fips140@geomys.org",
-      "contact_phone": "000-000-0000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 61,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 61
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -149,6 +96,59 @@
       "RSA | Using key sizes smaller than 2048 bits or with odd bit length for key generation/verification, signature generation/verification, key encapsulation/decapsulation; using a non-approved hash function for signature generation/verification, key encapsulation/decapsulation; using public exponent smaller than 65537 for signature generation/verification, key encapsulation/decapsulation; primitive operation without padding; using non-approved DRBG for signature generation, key decapsulation; using primes of different lengths for signature generation, key decapsulation; using PSS salt longer than hash output for signature generation/verification",
       "ECDH | Using non-approved DRBG for shared secret computation",
       "ECDSA | Using non-approved DRBG for key/signature generation; using a non-approved hash function for signature generation/verification"
-    ]
+    ],
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
+    "certificate_number": "5247",
+    "dataset": "active",
+    "description": "A software library that provides cryptographic functionality to the Go standard library and other Go applications.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Go Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5247",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5247.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5247.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "4/26/2031",
+    "validation_date": "4/27/2026",
+    "validation_dates": [
+      "4/27/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "4/27/2026",
+        "lab": "Lightship Security, Inc.",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "9450 SW Gemini Dr PMB 52960",
+        "Beaverton, OR 97008",
+        "United States"
+      ],
+      "contact_email": "fips140@geomys.org",
+      "contact_name": "Filippo Valsorda",
+      "contact_phone": "000-000-0000",
+      "country": "United States",
+      "name": "Geomys LLC",
+      "website_url": "https://geomys.org/fips140"
+    },
+    "vendor_name": "Geomys LLC"
   }
 }

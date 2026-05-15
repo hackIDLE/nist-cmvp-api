@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/288"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/288",
     "certificate_number": "288",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/288",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/288",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp288.pdf",
-    "vendor_name": "Tumbleweed Communications Corp.",
-    "module_name": "ValiCert Security Module",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 1,
-    "validation_date": "2/4/2003, 6/10/2004",
-    "validation_dates": [
-      "2/4/2003",
-      "6/10/2004"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The ValiCert VA Toolkit 4.3 is built on our FIPS 140-1 cryptographic module. The 4.3 toolkit release has several new APIs and features. The library is also used within ValiCert Desktop Validator, Server Validators, Enterprise Validation Server, Document Authority, and Secure Transport Products. New features in VA Toolkit 4.3 include New APIs for fetching CRLs; Extended APIs for Certificate-Store ; Extended support for CRLs ; JITC compliance features ; TLS ; SSL Tunneling via Proxy Servers. The 4.3 release and prior releases support OCSP, SCVP, CRL, CRLdp protocols over HTTP, and HTTPS. The VA Toolkit 4.3 supports Windows 98/ NT/2000, Solaris 5.6/5.7/5.8, HP UX 11.0, and AIX 4.3. The Toolkit works along with FIPS 140-1 Level 3 and Level 4 validated hardware devices: e.g. nCipher, Baltimore, and Chrysalis-ITS hardware signing / encryption modules. The toolkit is also tested for interoperability with various PKI vendors: AOL/Netscape, Sun/Iplanet, Entrust, Baltimore, Verisign, Computer Associates and RSA Security products.",
-    "security_level_exceptions": [
-      "Operating System Security: Tested as meeting Level 1 with Microsoft Windows 2000 Server, SUN Solaris 2.8 (single user mode)"
-    ],
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "ValiCert Security Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/288",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,45 +40,44 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt288.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Operating System Security: Tested as meeting Level 1 with Microsoft Windows 2000 Server, SUN Solaris 2.8 (single user mode)"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp288.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "2/4/2003, 6/10/2004",
+    "validation_dates": [
+      "2/4/2003",
+      "6/10/2004"
+    ],
     "validation_history": [
       {
         "date": "2/4/2003",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       },
       {
         "date": "6/10/2004",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Tumbleweed Communications Corp.",
-      "website_url": "http://www.tumbleweed.com",
       "address_lines": [
         "700 Saginaw Drive",
         "Redwood City, CA 94063",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Ann Smith",
       "contact_email": "ann.smith@tumbleweed.com",
-      "contact_phone": "703-248-6931"
+      "contact_name": "Ann Smith",
+      "contact_phone": "703-248-6931",
+      "country": "USA",
+      "name": "Tumbleweed Communications Corp.",
+      "website_url": "http://www.tumbleweed.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Tumbleweed Communications Corp."
   }
 }

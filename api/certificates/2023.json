@@ -1,31 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2023"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "None",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2023",
     "certificate_number": "2023",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2023",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2023",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2023.pdf",
-    "vendor_name": "Nuvoton Technology Corporation",
-    "module_name": "Nuvoton TPM 1.2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Single-chip",
-    "overall_level": 1,
-    "validation_date": "11/8/2013",
-    "validation_dates": [
-      "11/8/2013"
-    ],
-    "sunset_date": null,
-    "caveat": "None",
     "description": "Nuvoton Trusted Platform Module is a hardware cryptographic module, a member of the Nuvoton SafeKepper family, which implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography, as well as key generation and random number generation as defined by the Trusted Computing Group (TCG) version 1.2 specification for PC-Client TPM.",
-    "security_level_exceptions": [],
+    "embodiment": "Single-chip",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Nuvoton TPM 1.2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2023",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -36,40 +40,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2023.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "11/8/2013",
+    "validation_dates": [
+      "11/8/2013"
+    ],
     "validation_history": [
       {
         "date": "11/8/2013",
-        "type": "Initial",
-        "lab": "EWA - Canada"
+        "lab": "EWA - Canada",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Nuvoton Technology Corporation",
-      "website_url": "http://www.nuvoton.com",
       "address_lines": [
         "8 Hasadnaot Street",
         "Herzlia 46130",
         "Israel"
       ],
-      "country": "Israel",
-      "contact_name": "Rachel Menda-Shabat",
       "contact_email": "Rachel.Menda-Shabat@nuvoton.com",
-      "contact_phone": "(972) 9-9702219"
+      "contact_name": "Rachel Menda-Shabat",
+      "contact_phone": "(972) 9-9702219",
+      "country": "Israel",
+      "name": "Nuvoton Technology Corporation",
+      "website_url": "http://www.nuvoton.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Nuvoton Technology Corporation"
   }
 }

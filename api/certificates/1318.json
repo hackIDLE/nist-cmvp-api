@@ -1,83 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1318"
   },
   "certificate": {
-    "certificate_number": "1318",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1318",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1318",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1318.pdf",
-    "vendor_name": "Redline Communications",
-    "module_name": "AN-80i Broadband Wireless Infrastructure Radio",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip standalone",
-    "overall_level": 2,
-    "validation_date": "6/1/2010, 6/14/2010",
-    "validation_dates": [
-      "6/1/2010",
-      "6/14/2010"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
-    "description": "The AN-80i system is a broadband wireless infrastructure product designed to provide long range Ethernet connectivity between points of presence spread across a metro or regional area network. It operates in Point-to-Point (PTP) and Point to Multipoint (PMP) configuration in the same hardware platform. Operating in both licensed and unlicensed frequency bands, the AN-80i is a rugged all outdoor system that enables organizations such as government and public safety agencies, schools, large mission critical enterprises including banks, hospitals, utilities, as well as service providers to sol",
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1318.pdf"
-      },
-      {
-        "label": "Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1318.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "6/1/2010",
-        "type": "Initial",
-        "lab": "DOMUS"
-      },
-      {
-        "date": "6/14/2010",
-        "type": "Update",
-        "lab": ""
-      }
-    ],
-    "vendor": {
-      "name": "Redline Communications",
-      "website_url": "http://www.redlinecommunications.com",
-      "address_lines": [
-        "302 Town Centre Blvd.",
-        "Markham, Ontario L3R 0E8",
-        "Canada"
-      ],
-      "country": "Canada",
-      "contact_name": "Leigh Chang",
-      "contact_email": "lchang@redlinecommunications.com",
-      "contact_phone": "905-479-8344 x2507"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 9,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -89,6 +27,68 @@
       "SHA",
       "SSH",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1318",
+    "certificate_number": "1318",
+    "dataset": "historical",
+    "description": "The AN-80i system is a broadband wireless infrastructure product designed to provide long range Ethernet connectivity between points of presence spread across a metro or regional area network. It operates in Point-to-Point (PTP) and Point to Multipoint (PMP) configuration in the same hardware platform. Operating in both licensed and unlicensed frequency bands, the AN-80i is a rugged all outdoor system that enables organizations such as government and public safety agencies, schools, large mission critical enterprises including banks, hospitals, utilities, as well as service providers to sol",
+    "embodiment": "Multi-chip standalone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "AN-80i Broadband Wireless Infrastructure Radio",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1318",
+    "overall_level": 2,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1318.pdf"
+      },
+      {
+        "label": "Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1318.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1318.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "6/1/2010, 6/14/2010",
+    "validation_dates": [
+      "6/1/2010",
+      "6/14/2010"
+    ],
+    "validation_history": [
+      {
+        "date": "6/1/2010",
+        "lab": "DOMUS",
+        "type": "Initial"
+      },
+      {
+        "date": "6/14/2010",
+        "lab": "",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "302 Town Centre Blvd.",
+        "Markham, Ontario L3R 0E8",
+        "Canada"
+      ],
+      "contact_email": "lchang@redlinecommunications.com",
+      "contact_name": "Leigh Chang",
+      "contact_phone": "905-479-8344 x2507",
+      "country": "Canada",
+      "name": "Redline Communications",
+      "website_url": "http://www.redlinecommunications.com"
+    },
+    "vendor_name": "Redline Communications"
   }
 }

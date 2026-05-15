@@ -1,32 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/160"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/160",
     "certificate_number": "160",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/160",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/160",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp160.pdf",
-    "vendor_name": "Eracom Technologies Group, Eracom Technologies Australia, Pty. Ltd.",
-    "module_name": "CSA8000 Cryptographic Adapter",
-    "standard": "FIPS 140-1",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "7/27/2001, 10/18/2005",
-    "validation_dates": [
-      "7/27/2001",
-      "10/18/2005"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "The Eracom CSA8000 Cryptographic Adapter is an intelligent PCI adapter card that provides a wide range of cryptographic functions with dedicated DES/3DES and RSA hardware accelerators. The module implements the PKCS#11 cryptographic API and provides a comprehensive compliance to the PKCS#11 standard as well as vendor specific extensions.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "CSA8000 Cryptographic Adapter",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/160",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,45 +40,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt160.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp160.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-1",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/27/2001, 10/18/2005",
+    "validation_dates": [
+      "7/27/2001",
+      "10/18/2005"
+    ],
     "validation_history": [
       {
         "date": "7/27/2001",
-        "type": "Initial",
-        "lab": "CYGNACOM SOLUTIONS INC"
+        "lab": "CYGNACOM SOLUTIONS INC",
+        "type": "Initial"
       },
       {
         "date": "10/18/2005",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "Eracom Technologies Group, Eracom Technologies Australia, Pty. Ltd.",
-      "website_url": "http://www.eracom-tech.com",
       "address_lines": [
         "28 Greg Chappell Drive",
         "Burleigh Heads, QLD 4220",
         "Australia"
       ],
-      "country": "Australia",
-      "contact_name": "Gerry Scott",
       "contact_email": "sales@eracom-tech.com",
-      "contact_phone": "916-677-2450"
+      "contact_name": "Gerry Scott",
+      "contact_phone": "916-677-2450",
+      "country": "Australia",
+      "name": "Eracom Technologies Group, Eracom Technologies Australia, Pty. Ltd.",
+      "website_url": "http://www.eracom-tech.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Eracom Technologies Group, Eracom Technologies Australia, Pty. Ltd."
   }
 }

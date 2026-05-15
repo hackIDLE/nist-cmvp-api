@@ -1,85 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3613"
   },
   "certificate": {
-    "certificate_number": "3613",
-    "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3613",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3613",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3613.pdf",
-    "vendor_name": "Trend Micro, Inc.",
-    "module_name": "Trend Micro NSS Crypto Module",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "1/31/2020, 12/9/2020",
-    "validation_dates": [
-      "1/31/2020",
-      "12/9/2020"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2997",
-    "description": "The Trend Micro NSS Crypto Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for Trend Micro components.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 2",
-      "Physical Security: N/A",
-      "Design Assurance: Level 2"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3613.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "1/31/2020",
-        "type": "Initial",
-        "lab": "AEGISOLVE, Inc."
-      },
-      {
-        "date": "12/9/2020",
-        "type": "Update",
-        "lab": "AEGISOLVE, Inc."
-      }
-    ],
-    "vendor": {
-      "name": "Trend Micro, Inc.",
-      "website_url": "http://www.trendmicro.com/",
-      "address_lines": [
-        "225 E. John Carpenter Freeway, Suite 1500",
-        "Irving, TX 75062",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Rick Abbott",
-      "contact_email": "rick_abbott@trendmicro.com",
-      "contact_phone": null
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 10,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -92,6 +28,70 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2997",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3613",
+    "certificate_number": "3613",
+    "dataset": "historical",
+    "description": "The Trend Micro NSS Crypto Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for Trend Micro components.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Trend Micro NSS Crypto Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3613",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3613.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 2"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3613.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "1/31/2020, 12/9/2020",
+    "validation_dates": [
+      "1/31/2020",
+      "12/9/2020"
+    ],
+    "validation_history": [
+      {
+        "date": "1/31/2020",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Initial"
+      },
+      {
+        "date": "12/9/2020",
+        "lab": "AEGISOLVE, Inc.",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "225 E. John Carpenter Freeway, Suite 1500",
+        "Irving, TX 75062",
+        "USA"
+      ],
+      "contact_email": "rick_abbott@trendmicro.com",
+      "contact_name": "Rick Abbott",
+      "contact_phone": null,
+      "country": "USA",
+      "name": "Trend Micro, Inc.",
+      "website_url": "http://www.trendmicro.com/"
+    },
+    "vendor_name": "Trend Micro, Inc."
   }
 }

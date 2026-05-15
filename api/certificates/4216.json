@@ -1,84 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4216"
   },
   "certificate": {
-    "certificate_number": "4216",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4216",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4216",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4216.pdf",
-    "vendor_name": "Samsung Electronics Co., Ltd.",
-    "module_name": "Samsung BoringSSL Android",
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "5/9/2022, 11/18/2022",
-    "validation_dates": [
-      "5/9/2022",
-      "11/18/2022"
-    ],
-    "sunset_date": "9/21/2026",
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "description": "Provides general purpose cryptographic services to user-space applications on the mobile platform for the protection of data.",
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4216.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2022_010622_0641_signed.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/9/2022",
-        "type": "Initial",
-        "lab": "Acumen Security"
-      },
-      {
-        "date": "11/18/2022",
-        "type": "Update",
-        "lab": "Acumen Security"
-      }
-    ],
-    "vendor": {
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com",
-      "address_lines": [
-        "Maetan dong 129, Samsung-ro, Yeongtong-gu",
-        "Suwon-si, Gyeonggi-do 16677",
-        "South Korea"
-      ],
-      "country": "South Korea",
-      "contact_name": "Jung Ha Paik",
-      "contact_email": "jungha.paik@samsung.com",
-      "contact_phone": "+82-10-8861-0858"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 12,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 0
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -93,6 +30,69 @@
       "RSA",
       "SHA",
       "TLS"
-    ]
+    ],
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4216",
+    "certificate_number": "4216",
+    "dataset": "active",
+    "description": "Provides general purpose cryptographic services to user-space applications on the mobile platform for the protection of data.",
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Samsung BoringSSL Android",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4216",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4216.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2022_010622_0641_signed.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4216.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "sunset_date": "9/21/2026",
+    "validation_date": "5/9/2022, 11/18/2022",
+    "validation_dates": [
+      "5/9/2022",
+      "11/18/2022"
+    ],
+    "validation_history": [
+      {
+        "date": "5/9/2022",
+        "lab": "Acumen Security",
+        "type": "Initial"
+      },
+      {
+        "date": "11/18/2022",
+        "lab": "Acumen Security",
+        "type": "Update"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "Maetan dong 129, Samsung-ro, Yeongtong-gu",
+        "Suwon-si, Gyeonggi-do 16677",
+        "South Korea"
+      ],
+      "contact_email": "jungha.paik@samsung.com",
+      "contact_name": "Jung Ha Paik",
+      "contact_phone": "+82-10-8861-0858",
+      "country": "South Korea",
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com"
+    },
+    "vendor_name": "Samsung Electronics Co., Ltd."
   }
 }

@@ -1,33 +1,41 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3296"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 4,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DSA",
+      "SHA"
+    ],
+    "caveat": "When configured in FIPS Approved Mode as per Security Policy Section 8",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3296",
     "certificate_number": "3296",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3296",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3296",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3296.pdf",
-    "vendor_name": "Ruckus Wireless, Inc.",
-    "module_name": "FastIron ICX™ 7650 Series Switch/Router",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "9/26/2018",
-    "validation_dates": [
-      "9/26/2018"
-    ],
-    "sunset_date": null,
-    "caveat": "When configured in FIPS Approved Mode as per Security Policy Section 8",
     "description": "The Ruckus ICX 7650 Switch is designed to meet the new challenges of the multigigabit wireless era. It delivers non-blocking performance, high availability, and scalability with Multigigabit Ethernet access (2.5/5/10GbE), high PoE output with 802.3bt** support as well as 10 Gigabit Ethernet Aggregation and 40/100GbE uplink options.",
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "FastIron ICX™ 7650 Series Switch/Router",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3296",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -38,46 +46,38 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated2018.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3296.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "9/26/2018",
+    "validation_dates": [
+      "9/26/2018"
+    ],
     "validation_history": [
       {
         "date": "9/26/2018",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Ruckus Wireless, Inc.",
-      "website_url": "http://www.ruckuswireless.com",
       "address_lines": [
         "350 W Java Drive",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Julie Lu",
       "contact_email": "Julie.Lu@arris.com",
-      "contact_phone": "650-265-4200"
+      "contact_name": "Julie Lu",
+      "contact_phone": "650-265-4200",
+      "country": "USA",
+      "name": "Ruckus Wireless, Inc.",
+      "website_url": "http://www.ruckuswireless.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES",
-      "DSA",
-      "SHA"
-    ]
+    "vendor_name": "Ruckus Wireless, Inc."
   }
 }

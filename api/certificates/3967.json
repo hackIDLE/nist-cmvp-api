@@ -1,34 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3967"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 0,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9 of the Security Policy",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3967",
     "certificate_number": "3967",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3967",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3967",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3967.pdf",
-    "vendor_name": "Extreme Networks, Inc.",
-    "module_name": "Extreme Networks SLX 9640, SLX 9150 and SLX 9250 Switches",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-Chip Stand Alone",
-    "overall_level": 1,
-    "validation_date": "7/6/2021",
-    "validation_dates": [
-      "7/6/2021"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 9 of the Security Policy",
     "description": "Extreme Networks SLX 9640, SLX 9150 and SLX 9250 are Top of Rack (ToR) 1/10/40/100 GbE, low-latency switch for virtualized and cloud environments. Delivers exceptional application performance. Extreme SLX 9640 is an enterprise-class 1/10/40/100GbE routing platform featuring ease of management and high performance in a small footprint to scale out your virtualized and/or cloud network. SLX 9150 and SLX 9250 are enterprise class 1/10/25/40/100GbE switching platforms that meet the demands of operational scalability.",
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "embodiment": "Multi-Chip Stand Alone",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Extreme Networks SLX 9640, SLX 9150 and SLX 9250 Switches",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3967",
+    "overall_level": 1,
     "related_files": [
       {
         "label": "Security Policy",
@@ -39,40 +40,39 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3967.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "7/6/2021",
+    "validation_dates": [
+      "7/6/2021"
+    ],
     "validation_history": [
       {
         "date": "7/6/2021",
-        "type": "Initial",
-        "lab": "UL Verification Services, Inc."
+        "lab": "UL Verification Services, Inc.",
+        "type": "Initial"
       }
     ],
     "vendor": {
-      "name": "Extreme Networks, Inc.",
-      "website_url": "http://www.extremenetworks.com",
       "address_lines": [
         "6480 Via Del Oro",
         "San Jose, CA 95119",
         "USA"
       ],
-      "country": "USA",
-      "contact_name": "Craig J. Ficik",
       "contact_email": "cficik@extremenetworks.com",
-      "contact_phone": "603-952-5922"
+      "contact_name": "Craig J. Ficik",
+      "contact_phone": "603-952-5922",
+      "country": "USA",
+      "name": "Extreme Networks, Inc.",
+      "website_url": "http://www.extremenetworks.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    }
+    "vendor_name": "Extreme Networks, Inc."
   }
 }

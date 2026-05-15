@@ -1,32 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/856"
   },
   "certificate": {
+    "algorithm_extraction": {
+      "algorithm_count": 2,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
+      "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 0,
+      "fallback_used": false,
+      "schema_version": "1.0",
+      "source": "firecrawl",
+      "source_url": null,
+      "status": "cached"
+    },
+    "algorithms": [
+      "AES",
+      "DES"
+    ],
+    "caveat": "When operated in FIPS mode",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/856",
     "certificate_number": "856",
     "dataset": "historical",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/856",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/856",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp856.pdf",
-    "vendor_name": "SafeNet, Inc.",
-    "module_name": "Luna® PCI Cryptographic Module V2.2",
-    "standard": "FIPS 140-2",
-    "status": "Historical",
-    "module_type": "Hardware",
-    "embodiment": "Multi-chip embedded",
-    "overall_level": 3,
-    "validation_date": "10/26/2007, 11/20/2009",
-    "validation_dates": [
-      "10/26/2007",
-      "11/20/2009"
-    ],
-    "sunset_date": null,
-    "caveat": "When operated in FIPS mode",
     "description": "Luna PCI offers dedicated hardware key management to protect sensitive cryptographic keys from attack. The high-security hardware design ensures the integrity and protection of encryption keys throughout their life cycle. All digital signing and verification operations are performed within the HSM to increase performance and maintain security. Luna PCI HSMs provide hardware secured key generation, storage, secure key backup and accelerated encryption in a range of models and configurations offering a wide selection of security, performance and operational capabilities.",
-    "security_level_exceptions": [],
+    "embodiment": "Multi-chip embedded",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Luna® PCI Cryptographic Module V2.2",
+    "module_type": "Hardware",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/856",
+    "overall_level": 3,
     "related_files": [
       {
         "label": "Security Policy",
@@ -37,49 +44,42 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt856.pdf"
       }
     ],
+    "security_level_exceptions": [],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp856.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "sunset_date": null,
+    "validation_date": "10/26/2007, 11/20/2009",
+    "validation_dates": [
+      "10/26/2007",
+      "11/20/2009"
+    ],
     "validation_history": [
       {
         "date": "10/26/2007",
-        "type": "Initial",
-        "lab": "SAIC-VA"
+        "lab": "SAIC-VA",
+        "type": "Initial"
       },
       {
         "date": "11/20/2009",
-        "type": "Update",
-        "lab": ""
+        "lab": "",
+        "type": "Update"
       }
     ],
     "vendor": {
-      "name": "SafeNet, Inc.",
-      "website_url": "http://www.safenet.com",
       "address_lines": [
         "20 Colonnade Road, Suite 200",
         "Ottawa, ON K2E 7M6",
         "Canada"
       ],
-      "country": "Canada",
-      "contact_name": "Terry Fletcher",
       "contact_email": "tfletcher@ca.safenet-inc.com",
-      "contact_phone": "613-221-5009"
+      "contact_name": "Terry Fletcher",
+      "contact_phone": "613-221-5009",
+      "country": "Canada",
+      "name": "SafeNet, Inc.",
+      "website_url": "http://www.safenet.com"
     },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 0
-    },
-    "algorithms": [
-      "AES",
-      "DES"
-    ]
+    "vendor_name": "SafeNet, Inc."
   }
 }

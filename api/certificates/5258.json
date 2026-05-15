@@ -1,74 +1,21 @@
 {
   "metadata": {
-    "generated_at": "2026-05-14T13:46:19.502722Z",
+    "generated_at": "2026-05-15T02:10:47.425082Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258"
   },
   "certificate": {
-    "certificate_number": "5258",
-    "dataset": "active",
-    "generated_at": "2026-05-14T13:46:19.502722Z",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5258.pdf",
-    "vendor_name": "Broadcom Inc",
-    "module_name": "Symantec Messaging Gateway Cryptographic Module",
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "module_type": "Software",
-    "embodiment": "MultiChipStand",
-    "overall_level": 1,
-    "validation_date": "5/7/2026",
-    "validation_dates": [
-      "5/7/2026"
-    ],
-    "sunset_date": "8/26/2029",
-    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
-    "description": "Symantec Messaging Gateway Cryptographic Module provides standards compliant cryptographic functionality for the Symantec Messaging Gateway product.",
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5258.pdf"
-      }
-    ],
-    "validation_history": [
-      {
-        "date": "5/7/2026",
-        "type": "Initial",
-        "lab": "DEKRA Cybersecurity Certification Laboratory"
-      }
-    ],
-    "vendor": {
-      "name": "Broadcom Inc",
-      "website_url": "https://www.broadcom.com/",
-      "address_lines": [
-        "3421 Hillview Avenue",
-        "Palo Alto, CA 94304",
-        "USA"
-      ],
-      "country": "USA",
-      "contact_name": "Thomas Anderson",
-      "contact_email": "symc-fed-certs.pdl@broadcom.com",
-      "contact_phone": "650-427-6000"
-    },
-    "software_versions": null,
-    "hardware_versions": null,
-    "firmware_versions": null,
     "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
+      "algorithm_count": 15,
+      "cache_version": "2026-04-15-legacy-v1",
+      "cached": true,
       "configured_source": "crawl4ai",
+      "detailed_algorithm_count": 203,
+      "fallback_used": false,
+      "schema_version": "1.0",
       "source": "firecrawl",
       "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 203
+      "status": "cached"
     },
     "algorithms": [
       "AES",
@@ -291,6 +238,59 @@
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | 2.5.2 Vendor-Affirmed Algorithms | The module implements the following vendor affirmed algorithms that are approved for use in | Approved mode. | Document Version 1.0 | ©Broadcom Inc | Name | Implementation | CKG | Key Type:Symmetric | and Asymmetric | N/A | SP 800-133r2 and IG D.H: Per Section 4, example 1 | CKG | (XTS) | Key Type:Symmetric | N/A | SP 800-133r2 and IG D.H: Per Section 6.3, approved",
       "method 1. Applicable to AES-XTS compliant to IG C.I | because Key_1 and Key_2 are concatenated prior to | usage. | 2.5.3",
       "ECDSA with non- | NIST recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | : Signature Generation, Signature | Verification, Key Generation, Key | Verification | CryptoComply | 140-3 FIPS | Provider | Allowed per IG C.A, | category 1a (per SP | 800-186 Appendix | H.1) | 2.5.4"
-    ]
+    ],
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
+    "certificate_number": "5258",
+    "dataset": "active",
+    "description": "Symantec Messaging Gateway Cryptographic Module provides standards compliant cryptographic functionality for the Symantec Messaging Gateway product.",
+    "embodiment": "MultiChipStand",
+    "firmware_versions": null,
+    "generated_at": "2026-05-15T02:10:47.425082Z",
+    "hardware_versions": null,
+    "module_name": "Symantec Messaging Gateway Cryptographic Module",
+    "module_type": "Software",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5258",
+    "overall_level": 1,
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5258.pdf"
+      }
+    ],
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5258.pdf",
+    "software_versions": null,
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "sunset_date": "8/26/2029",
+    "validation_date": "5/7/2026",
+    "validation_dates": [
+      "5/7/2026"
+    ],
+    "validation_history": [
+      {
+        "date": "5/7/2026",
+        "lab": "DEKRA Cybersecurity Certification Laboratory",
+        "type": "Initial"
+      }
+    ],
+    "vendor": {
+      "address_lines": [
+        "3421 Hillview Avenue",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "contact_email": "symc-fed-certs.pdl@broadcom.com",
+      "contact_name": "Thomas Anderson",
+      "contact_phone": "650-427-6000",
+      "country": "USA",
+      "name": "Broadcom Inc",
+      "website_url": "https://www.broadcom.com/"
+    },
+    "vendor_name": "Broadcom Inc"
   }
 }
