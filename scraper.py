@@ -2099,7 +2099,10 @@ def parse_modules_table(html: str) -> List[Dict]:
     if thead:
         header_row = thead.find("tr")
         if header_row:
-            headers = [th.get_text(strip=True) for th in header_row.find_all(["th", "td"])]
+            headers = [
+                normalize_whitespace(th.get_text(" ", strip=True))
+                for th in header_row.find_all(["th", "td"])
+            ]
     
     # If no thead, try to get headers from first row
     if not headers:
@@ -2113,7 +2116,10 @@ def parse_modules_table(html: str) -> List[Dict]:
             # Check if first row looks like headers
             cells = first_row.find_all(["th", "td"])
             if cells and cells[0].name == "th":
-                headers = [cell.get_text(strip=True) for cell in cells]
+                headers = [
+                    normalize_whitespace(cell.get_text(" ", strip=True))
+                    for cell in cells
+                ]
     
     # Extract data rows
     tbody = table.find("tbody")
@@ -2136,7 +2142,7 @@ def parse_modules_table(html: str) -> List[Dict]:
             key = headers[idx] if idx < len(headers) and headers[idx] else f"column_{idx}"
             
             # Extract text content
-            text = cell.get_text(strip=True)
+            text = normalize_whitespace(cell.get_text(" ", strip=True))
             
             # Extract links if present
             link = cell.find("a")

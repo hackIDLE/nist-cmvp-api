@@ -135,7 +135,7 @@ def _archive_artifacts(artifact_path) -> None:
     if not (workdir / "api").exists():
         return
     with tarfile.open(artifact_path, "w:gz") as archive:
-        for relative in ("api", "openapi.json", "llms.txt", "llms-full.txt", "index.html"):
+        for relative in ("api", "openapi.json", "llms.txt", "llms-full.txt", "index.html", "README.md"):
             source = workdir / relative
             if source.exists():
                 archive.add(source, arcname=relative)

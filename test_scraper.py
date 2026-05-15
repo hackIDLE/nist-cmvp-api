@@ -243,6 +243,44 @@ def test_parse_modules_in_process():
     print("✓ Modules in process table test passed")
 
 
+def test_parse_table_preserves_inline_spacing():
+    """Test table cells with adjacent text nodes keep readable spacing."""
+    html = """
+    <html>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Certificate Number</th>
+                        <th>Vendor Name</th>
+                        <th>Validation Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>911</td>
+                        <td>L3Harris Technologies, Inc.</td>
+                        <td><span>02/07/2008</span><span>07/02/2010</span><span>04/10/2015</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Samsung Electronics Co., Ltd.<a href="/contacts">View Contacts</a></td>
+                        <td>Pending Review  (1/7/2026)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
+    """
+
+    modules = parse_modules_table(html)
+
+    assert modules[0]["Validation Date"] == "02/07/2008 07/02/2010 04/10/2015", "Validation dates should preserve spacing"
+    assert modules[1]["Vendor Name"] == "Samsung Electronics Co., Ltd. View Contacts", "Inline contact link should preserve spacing"
+
+    print("✓ Inline table spacing test passed")
+
+
 def test_parse_certificate_detail_page():
     """Test parsing a NIST-style certificate detail page."""
     html = """
@@ -1712,6 +1750,7 @@ def main():
         test_parse_empty_table()
         test_parse_historical_modules_table()
         test_parse_modules_in_process()
+        test_parse_table_preserves_inline_spacing()
         test_parse_certificate_detail_page()
         test_reused_certificate_detail_migrates_version_schema_fields()
         test_process_certificate_record_reuses_legacy_detail_with_migrated_fields()
