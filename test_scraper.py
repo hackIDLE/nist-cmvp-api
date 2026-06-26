@@ -1211,11 +1211,192 @@ def test_process_certificate_record_timeout_preserves_cached_data():
     assert module_out["detail_available"] is True, "Timeout fallback should preserve cached detail availability"
     assert module_out["algorithm_extraction"]["status"] == "cached", "Timeout fallback should mark cached algorithms"
     assert detail_payload["algorithm_extraction"]["attempts"][0]["status"] == "timeout", "Detail provenance should record timeout attempt"
-    assert stats["certificate_timeouts"] == 1, "Timeout fallback should increment certificate_timeouts"
+    assert stats["certificate_timeouts"] == 0, "Recovered timeouts should not fail the quality gate"
     assert stats["html_reused"] == 1, "Timeout fallback should reuse cached detail"
     assert stats["algorithm_cache_hits"] == 1, "Timeout fallback should count cached algorithms"
 
     print("✓ Certificate timeout fallback test passed")
+
+
+def test_process_certificate_record_preserves_cache_after_refresh_failure():
+    """Transient detail or algorithm fetch failures should not replace valid cached data."""
+    module = {
+        "Certificate Number": "5238",
+        "Vendor Name": "SUSE LLC",
+        "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "Module Type": "Software",
+        "Validation Date": "04/11/2026",
+        "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5238.pdf",
+        "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5238",
+    }
+    previous_module = dict(module)
+    previous_module["Validation Date"] = "04/10/2026"
+    previous_detail = {
+        "certificate_number": "5238",
+        "dataset": "active",
+        "generated_at": "2026-04-01T00:00:00Z",
+        "nist_page_url": module["certificate_detail_url"],
+        "certificate_detail_url": module["certificate_detail_url"],
+        "security_policy_url": module["security_policy_url"],
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "software_versions": "3.0.9",
+        "hardware_versions": None,
+        "firmware_versions": None,
+        "related_files": [],
+        "validation_history": [],
+        "vendor": {},
+        "algorithms": ["AES", "HMAC"],
+        "algorithms_detailed": ["AES-CBC A1", "HMAC SHA2-256 A1"],
+        "algorithm_extraction": {
+            "source": "crawl4ai",
+            "source_url": module["security_policy_url"],
+        },
+    }
+    previous_metadata = {
+        "algorithm_source": "crawl4ai",
+        "algorithm_cache_version": ALGORITHM_CACHE_VERSION,
+    }
+
+    async def fetch_failure(*args, **kwargs):
+        return None
+
+    async def algorithm_failure(*args, **kwargs):
+        return scraper_module.AlgorithmExtractionResult(
+            detailed=[],
+            categories=[],
+            parsed=False,
+            source="none",
+            attempts=[{"source": "crawl4ai", "url": module["security_policy_url"], "status": "no_text"}],
+        )
+
+    original_fetch = scraper_module.fetch_with_retry
+    original_algorithm_fetch = scraper_module.fetch_certificate_algorithms
+    scraper_module.fetch_with_retry = fetch_failure
+    scraper_module.fetch_certificate_algorithms = algorithm_failure
+    try:
+        module_out, detail_payload, categories, stats = asyncio.run(
+            process_certificate_record(
+                module,
+                "active",
+                "2026-04-12T03:10:00.961597Z",
+                "crawl4ai",
+                previous_module,
+                previous_detail,
+                previous_metadata,
+                object(),
+                asyncio.Semaphore(1),
+                asyncio.Semaphore(1),
+                {},
+                asyncio.Lock(),
+                {},
+            )
+        )
+    finally:
+        scraper_module.fetch_with_retry = original_fetch
+        scraper_module.fetch_certificate_algorithms = original_algorithm_fetch
+
+    assert module_out["detail_available"] is True, "Refresh failure should preserve cached detail"
+    assert detail_payload["generated_at"] == "2026-04-12T03:10:00.961597Z", "Cached detail should be recontextualized"
+    assert categories == ["AES", "HMAC"], "Algorithm failure should preserve cached categories"
+    assert module_out["algorithm_extraction"]["status"] == "cached", "Fallback algorithms should be marked cached"
+    assert detail_payload["algorithm_extraction"]["attempts"][0]["status"] == "no_text", "Failed extraction attempt should be retained on detail records"
+    assert stats["html_reused"] == 1, "Cached detail fallback should count as reuse"
+    assert stats["html_failed"] == 0, "Recovered refresh failures should not fail the quality gate"
+    assert stats["algorithm_misses"] == 0, "Recovered algorithm failures should not fail the quality gate"
+    assert stats["algorithm_cache_hits"] == 1, "Cached algorithm fallback should count cache hits"
+
+    print("✓ Refresh failure cache preservation test passed")
+
+
+def test_build_certificate_artifacts_defers_uncached_failures():
+    """Uncached incomplete certificates should be retried later, not published as broken records."""
+    modules = [
+        {
+            "Certificate Number": "6000",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Deferred Module",
+            "Module Type": "Software",
+            "Validation Date": "06/01/2026",
+            "security_policy_url": "https://csrc.nist.gov/example/deferred.pdf",
+            "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/6000",
+        },
+        {
+            "Certificate Number": "6001",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Complete Module",
+            "Module Type": "Software",
+            "Validation Date": "06/01/2026",
+            "security_policy_url": "https://csrc.nist.gov/example/complete.pdf",
+            "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/6001",
+        },
+    ]
+
+    async def fake_process(
+        index,
+        module,
+        dataset,
+        generated_at,
+        algorithm_source,
+        previous_module,
+        previous_detail,
+        previous_metadata,
+        client,
+        cert_semaphore,
+        pdf_semaphore,
+        pdf_cache,
+        pdf_cache_lock,
+        database_algorithms_map,
+    ):
+        if index == 0:
+            module_out = dict(module)
+            module_out[scraper_module.DEFERRED_REASON_KEY] = "certificate_detail_unavailable"
+            module_out["detail_available"] = False
+            return index, module_out, None, [], {"certificates_deferred": 1}
+
+        module_out = dict(module)
+        module_out["detail_available"] = True
+        detail_payload = {
+            "certificate_number": module["Certificate Number"],
+            "dataset": dataset,
+            "generated_at": generated_at,
+            "nist_page_url": module["certificate_detail_url"],
+            "certificate_detail_url": module["certificate_detail_url"],
+            "security_policy_url": module["security_policy_url"],
+            "vendor_name": module["Vendor Name"],
+            "module_name": module["Module Name"],
+            "standard": "FIPS 140-3",
+            "status": "Active",
+            "related_files": [],
+            "validation_history": [],
+            "vendor": {},
+        }
+        return index, module_out, detail_payload, ["AES"], {"html_refreshed": 1, "algorithm_successes": 1}
+
+    original_process = scraper_module.process_certificate_record_with_timeout
+    scraper_module.process_certificate_record_with_timeout = fake_process
+    try:
+        enriched, payloads, algorithms_map, stats = asyncio.run(
+            build_certificate_artifacts(
+                modules,
+                "active",
+                "2026-06-01T00:00:00.000000Z",
+                "crawl4ai",
+                {"metadata": {}, "modules": {"active": {}}, "details": {}},
+            )
+        )
+    finally:
+        scraper_module.process_certificate_record_with_timeout = original_process
+
+    assert [record["Certificate Number"] for record in enriched] == ["6001"], "Deferred certificates should be omitted from published rows"
+    assert set(payloads) == {6001}, "Deferred certificates should not get detail files"
+    assert set(algorithms_map) == {6001}, "Deferred certificates should not get algorithm index entries"
+    assert stats["certificates_deferred"] == 1, "Deferred certificates should be counted in metrics"
+    assert stats["html_failed"] == 0, "Deferred records should not produce broken published artifacts"
+
+    print("✓ Deferred certificate filtering test passed")
 
 
 def test_build_certificate_artifacts_bounds_active_tasks():
@@ -1801,6 +1982,8 @@ def main():
         test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation()
         test_process_certificate_record_applies_cached_algorithm_provenance()
         test_process_certificate_record_timeout_preserves_cached_data()
+        test_process_certificate_record_preserves_cache_after_refresh_failure()
+        test_build_certificate_artifacts_defers_uncached_failures()
         test_build_certificate_artifacts_bounds_active_tasks()
         test_prune_orphan_certificate_details()
         test_validate_generated_api_artifacts()
