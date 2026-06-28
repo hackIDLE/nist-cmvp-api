@@ -32,6 +32,7 @@ from scraper import (
     generate_json_schema_artifacts,
     generate_openapi_spec,
     generate_text_artifacts,
+    module_rows_with_cache_fallback,
     parse_algorithms_from_policy_markdown,
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
@@ -1399,6 +1400,47 @@ def test_build_certificate_artifacts_defers_uncached_failures():
     print("✓ Deferred certificate filtering test passed")
 
 
+def test_module_rows_with_cache_fallback_preserves_previous_top_level_list():
+    """Top-level list outages should reuse checked-in rows instead of aborting updates."""
+    previous_rows = [
+        {
+            "Certificate Number": "5238",
+            "Vendor Name": "SUSE LLC",
+            "Module Name": "SUSE Linux Enterprise OpenSSL 1 Cryptographic Module",
+        },
+        {
+            "Certificate Number": "5237",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Example Module",
+        },
+    ]
+
+    rows, used_fallback = module_rows_with_cache_fallback(
+        [],
+        previous_rows,
+        "validated modules",
+        min_expected=2,
+    )
+
+    assert used_fallback is True, "Empty scrape should use checked-in fallback rows"
+    assert rows == previous_rows, "Fallback rows should preserve previous data"
+    assert rows is not previous_rows, "Fallback rows should be copied before mutation"
+    rows[0]["Vendor Name"] = "Mutated"
+    assert previous_rows[0]["Vendor Name"] == "SUSE LLC", "Fallback should be a deep copy"
+
+    scraped_rows = [{"Certificate Number": "6000"}, {"Certificate Number": "6001"}]
+    rows, used_fallback = module_rows_with_cache_fallback(
+        scraped_rows,
+        previous_rows,
+        "validated modules",
+        min_expected=2,
+    )
+    assert used_fallback is False, "Complete scrape should not use fallback"
+    assert rows is scraped_rows, "Complete scrape should preserve scraped row object"
+
+    print("✓ Top-level module list fallback test passed")
+
+
 def test_build_certificate_artifacts_bounds_active_tasks():
     """Certificate artifact scheduling should not start every module task at once."""
     modules = [
@@ -1984,6 +2026,7 @@ def main():
         test_process_certificate_record_timeout_preserves_cached_data()
         test_process_certificate_record_preserves_cache_after_refresh_failure()
         test_build_certificate_artifacts_defers_uncached_failures()
+        test_module_rows_with_cache_fallback_preserves_previous_top_level_list()
         test_build_certificate_artifacts_bounds_active_tasks()
         test_prune_orphan_certificate_details()
         test_validate_generated_api_artifacts()

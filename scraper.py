@@ -36,7 +36,7 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, List, Optional, Sequence, Set, Tuple
 from urllib.parse import urljoin
 
 import fitz
@@ -888,6 +888,7 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
     """Load previously generated module rows, certificate details, and metadata."""
     active_data = load_json_file(output_dir / "modules.json") or {}
     historical_data = load_json_file(output_dir / "historical-modules.json") or {}
+    modules_in_process_data = load_json_file(output_dir / "modules-in-process.json") or {}
     metadata = load_json_file(output_dir / "metadata.json") or {}
     detail_payloads: Dict[int, Dict] = {}
 
@@ -909,6 +910,11 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
 
     return {
         "metadata": metadata,
+        "module_lists": {
+            "active": copy.deepcopy(active_data.get("modules", [])),
+            "historical": copy.deepcopy(historical_data.get("modules", [])),
+        },
+        "modules_in_process": copy.deepcopy(modules_in_process_data.get("modules_in_process", [])),
         "modules": {
             "active": build_module_map(active_data.get("modules", [])),
             "historical": build_module_map(historical_data.get("modules", [])),
@@ -3125,6 +3131,35 @@ def validate_module_count(modules: List[Dict], label: str, min_expected: int = 1
         sys.exit(1)
 
 
+def module_rows_with_cache_fallback(
+    scraped_modules: List[Dict],
+    previous_modules: Sequence[Dict],
+    label: str,
+    min_expected: int,
+) -> Tuple[List[Dict], bool]:
+    """
+    Return scraped rows unless the top-level NIST list is unusable.
+
+    Scheduled updates should not publish an empty or partial top-level dataset
+    just because NIST rejected one request. When a previous checked-in dataset is
+    available, reuse it and let per-certificate cache validation keep artifacts
+    internally consistent.
+    """
+    if len(scraped_modules) >= min_expected:
+        return scraped_modules, False
+
+    if FULL_REFRESH or not previous_modules:
+        validate_module_count(scraped_modules, label, min_expected)
+        return scraped_modules, False
+
+    print(
+        f"Warning: Only {len(scraped_modules)} {label} scraped; "
+        f"preserving {len(previous_modules)} checked-in rows for this run.",
+        file=sys.stderr,
+    )
+    return copy.deepcopy(list(previous_modules)), True
+
+
 def format_count(value: int) -> str:
     """Format integer counts with thousands separators."""
     return f"{value:,}"
@@ -4842,46 +4877,54 @@ def main():
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
-    # Scrape all validated modules
-    print("Scraping validated modules...")
-    modules = scrape_all_modules()
-
-    if not modules:
-        print("No validated modules found!", file=sys.stderr)
-        sys.exit(1)
-
-    # Validate module counts to prevent silent data loss
-    validate_module_count(modules, "validated modules", min_expected=100)
-    print(f"\nTotal validated modules scraped: {len(modules)}")
-
-    # Scrape historical modules
-    print("\nScraping historical modules...")
-    historical_modules = scrape_historical_modules()
-
-    validate_module_count(historical_modules, "historical modules", min_expected=500)
-    print(f"Total historical modules scraped: {len(historical_modules)}")
-
-    # Scrape modules in process
-    print("\nScraping modules in process...")
-    modules_in_process = scrape_modules_in_process()
-
-    # Lower threshold for in-process — this list is naturally smaller and more variable
-    validate_module_count(modules_in_process, "modules in process", min_expected=20)
-    print(f"Total modules in process scraped: {len(modules_in_process)}")
-
-    # Add security policy and detail URLs to all modules
-    print("\nEnriching modules with URLs...")
-    modules = enrich_modules_with_urls(modules)
-    historical_modules = enrich_modules_with_urls(historical_modules)
-
     previous_outputs = load_previous_outputs() if not FULL_REFRESH else {
         "metadata": {},
+        "module_lists": {"active": [], "historical": []},
+        "modules_in_process": [],
         "modules": {"active": {}, "historical": {}},
         "details": {},
     }
     if not FULL_REFRESH:
         cached_detail_count = len(previous_outputs.get("details", {}))
         print(f"Loaded {cached_detail_count} cached certificate detail records for reuse checks")
+
+    # Scrape all validated modules
+    print("Scraping validated modules...")
+    modules = scrape_all_modules()
+    modules, _ = module_rows_with_cache_fallback(
+        modules,
+        previous_outputs.get("module_lists", {}).get("active", []),
+        "validated modules",
+        min_expected=100,
+    )
+    print(f"\nTotal validated modules available: {len(modules)}")
+
+    # Scrape historical modules
+    print("\nScraping historical modules...")
+    historical_modules = scrape_historical_modules()
+    historical_modules, _ = module_rows_with_cache_fallback(
+        historical_modules,
+        previous_outputs.get("module_lists", {}).get("historical", []),
+        "historical modules",
+        min_expected=500,
+    )
+    print(f"Total historical modules available: {len(historical_modules)}")
+
+    # Scrape modules in process
+    print("\nScraping modules in process...")
+    modules_in_process = scrape_modules_in_process()
+    modules_in_process, _ = module_rows_with_cache_fallback(
+        modules_in_process,
+        previous_outputs.get("modules_in_process", []),
+        "modules in process",
+        min_expected=20,
+    )
+    print(f"Total modules in process available: {len(modules_in_process)}")
+
+    # Add security policy and detail URLs to all modules
+    print("\nEnriching modules with URLs...")
+    modules = enrich_modules_with_urls(modules)
+    historical_modules = enrich_modules_with_urls(historical_modules)
 
     database_algorithms_map: Dict[int, List[str]] = {}
     if algorithm_source == "database":
