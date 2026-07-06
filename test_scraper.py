@@ -38,6 +38,7 @@ from scraper import (
     parse_algorithms_from_policy_markdown,
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
+    parse_legacy_algorithm_rows,
     parse_modules_table,
     prepare_reused_detail_payload,
     process_certificate_record,
@@ -50,6 +51,27 @@ from validate_api import validate_api
 
 
 FIXTURE_DIR = Path(__file__).parent / "tests" / "fixtures" / "nist_security_policies"
+FIPS_140_2_5152_EXPECTED_DETAILED = [
+    "AES Cert. #A3424",
+    "DRBG Cert. #A3424",
+    "ECDSA Cert. #A3424",
+    "HMAC Cert. #A3424",
+    "KAS Cert. #A3424",
+    "RSA Cert. #A3424",
+    "SHS Cert. #A3424",
+]
+FIPS_140_2_5152_EXPECTED_CATEGORIES = [
+    "AES",
+    "DRBG",
+    "ECDSA",
+    "HMAC",
+    "KAS",
+    "KDF",
+    "RSA",
+    "SHS",
+    "SSH",
+    "TLS",
+]
 
 
 def load_policy_fixture(name: str) -> str:
@@ -702,22 +724,52 @@ def test_parse_real_world_fips_140_2_policy_fixture():
 
     detailed, categories = parse_algorithms_from_policy_text(policy_text)
 
-    assert detailed == [], "Legacy FIPS 140-2 fixture should use coarse categories"
-    assert categories == [
-        "AES",
-        "DRBG",
-        "ECDSA",
-        "HMAC",
-        "KAS",
-        "KDF",
-        "RSA",
-        "SHS",
-        "SSH",
-        "TLS",
-    ], "Expected normalized FIPS 140-2 categories"
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected legacy certificate-backed detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected normalized FIPS 140-2 categories"
     assert "DES" not in categories, "Allowed/non-approved section must not leak into approved categories"
 
     print("✓ Real-world FIPS 140-2 fixture parsing test passed")
+
+
+def test_parse_real_world_fips_140_2_policy_fixture_without_algorithm_heading():
+    """Legacy parser should start from the approved table intro if the heading is missing."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms_no_heading.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected intro-start fixture detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected intro-start fixture categories"
+    assert "DES" not in categories, "Allowed/non-approved section must not leak into approved categories"
+
+    print("✓ FIPS 140-2 intro-sentence legacy parsing test passed")
+
+
+def test_parse_real_world_fips_140_2_policy_fixture_unnumbered_allowed_stop():
+    """Legacy parser should stop at unnumbered allowed-algorithm headings."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms_unnumbered_allowed.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected unnumbered-stop fixture detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected unnumbered-stop fixture categories"
+    assert "DES" not in categories, "Unnumbered Allowed Algorithms section must not leak DES"
+
+    print("✓ FIPS 140-2 unnumbered allowed-section stop test passed")
+
+
+def test_parse_legacy_algorithm_rows_extracts_certificate_rows():
+    """Legacy row extraction should keep approved algorithm rows with certificate references."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms.txt")
+    section = extract_legacy_algorithm_section(policy_text)
+
+    detailed = parse_legacy_algorithm_rows(section)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected certificate-backed legacy detail rows"
+    assert "AES Cert. #A3424" in detailed, "Expected AES certificate row"
+    assert "SHS Cert. #A3424" in detailed, "Expected SHS certificate row"
+    assert all("Triple-DES" not in entry for entry in detailed), "Allowed Triple-DES row must not leak into details"
+
+    print("✓ Legacy certificate-row extraction test passed")
 
 
 def test_parse_algorithms_from_policy_markdown():
@@ -2458,6 +2510,9 @@ def main():
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_real_world_fips_140_3_policy_fixture()
         test_parse_real_world_fips_140_2_policy_fixture()
+        test_parse_real_world_fips_140_2_policy_fixture_without_algorithm_heading()
+        test_parse_real_world_fips_140_2_policy_fixture_unnumbered_allowed_stop()
+        test_parse_legacy_algorithm_rows_extracts_certificate_rows()
         test_parse_algorithms_from_policy_markdown()
         test_extract_text_from_crawl4ai_html()
         test_extract_text_from_crawl4ai_process_result()

@@ -160,9 +160,13 @@ PDF_SECTION_LABELS = {
 LEGACY_SECTION_STOP_PATTERNS = (
     r"\n\s*Table\s+\d+\s+(?:FIPS\s+)?Non-Approved\s+Cryptographic\s+Functions\b",
     r"\n\s*Table\s+\d+\s+Non-Approved\s+Cryptographic\s+Algorithms\b",
+    r"\n\s*Table\s+\d+\s+describes\s+the\s+(?:non[-\s]?approved|non[-\s]?FIPS[-\s]+approved)(?:\s+but\s+allowed)?\s+algorithms\b",
     r"\n\s*\d+\.\d+(?:\.\d+)?\s+FIPS\s+Non-Approved\b",
     r"\n\s*\d+\.\d+(?:\.\d+)?\s+Non-Approved\b",
     r"\n\s*3\.5(?:\.1)?\s+(?:Allowed|Non-Approved)\s+Algorithms\b",
+    r"\n\s*Allowed\s+Algorithms\b",
+    r"\n\s*(?:FIPS\s+)?Non[-\s]?Approved(?:\s+but\s+Allowed)?\s+Algorithms\b",
+    r"\n\s*Non[-\s]?FIPS[-\s]+Approved(?:\s+but\s+Allowed)?\s+Algorithms\b",
     r"\n\s*\d+\.\d+(?:\.\d+)?\s+Critical\s+Security\s+Parameters\b",
     r"\n\s*\d+\.\d+(?:\.\d+)?\s+General\s+Public\s+Keys\b",
     r"\n\s*2\.\s+[A-Za-z]",
@@ -171,6 +175,11 @@ LEGACY_SECTION_STOP_PATTERNS = (
     r"\n\s*5\.\d+\s+[A-Za-z]",
     r"\n\s*6\.\d+\s+[A-Za-z]",
     r"\n\s*\d+\s+Cryptographic Key Management\b",
+)
+LEGACY_SECTION_STOP_RE = re.compile("|".join(LEGACY_SECTION_STOP_PATTERNS), re.IGNORECASE)
+LEGACY_CERT_REFERENCE_RE = re.compile(
+    r"\b(?:Cert\.?|Certificate)\s*#\s*[A-Za-z0-9-]+",
+    re.IGNORECASE,
 )
 PDF_NOISE_PREFIXES = (
     "copyright",
@@ -1161,6 +1170,7 @@ def extract_legacy_algorithm_section(policy_text: str) -> str:
         r"Table\s+\d+\s+Approved\s+Cryptographic\s+Algorithms\b",
         r"Table\s+\d+\s+Approved\s+Algorithms\b",
         r"Table\s+\d+\s+below\s+lists\s+the\s+FIPS\s+Approved\s+cryptographic\s+algorithms\b",
+        r"Table\s+\d+\s+(?:below\s+)?lists\s+the\s+(?:FIPS[-\s]+)?Approved\s+(?:cryptographic\s+)?algorithms\b",
         r"3\.4\s+Algorithms\b",
         r"Approved\s+Cryptographic\s+Functions\b",
     ]
@@ -1174,14 +1184,13 @@ def extract_legacy_algorithm_section(policy_text: str) -> str:
     if not matches:
         return ""
 
-    stop_pattern = "|".join(LEGACY_SECTION_STOP_PATTERNS)
     best_section = ""
     best_score = (-1, -1)
 
     for match in matches:
         start = match.start()
         tail = policy_text[start:]
-        end_match = re.search(stop_pattern, tail, flags=re.IGNORECASE)
+        end_match = LEGACY_SECTION_STOP_RE.search(tail)
         end = start + end_match.start() if end_match else len(policy_text)
         section = policy_text[start:end]
         if not section:
@@ -1285,6 +1294,43 @@ def categorize_algorithm_entry(entry: str) -> List[str]:
     return normalized
 
 
+def is_legacy_section_stop_line(line: str) -> bool:
+    """Return True when a legacy policy line starts the next algorithm block."""
+    return bool(LEGACY_SECTION_STOP_RE.search(f"\n{line}"))
+
+
+def parse_legacy_algorithm_rows(section: str) -> List[str]:
+    """Extract detailed legacy algorithm rows that include CAVP certificate references."""
+    entries: List[str] = []
+
+    for raw_line in section.splitlines():
+        line = normalize_whitespace(raw_line)
+        if not line:
+            continue
+        if is_legacy_section_stop_line(line):
+            break
+
+        lower = line.lower()
+        if lower in LEGACY_TABLE_HEADER_LINES:
+            continue
+        if lower.startswith("table "):
+            continue
+        if "non-approved" in lower:
+            continue
+        if "approved mode" in lower:
+            continue
+        if not LEGACY_CERT_REFERENCE_RE.search(line):
+            continue
+        if not categorize_algorithm_entry(line):
+            continue
+
+        entry = format_algorithm_entry([line])
+        if entry and entry not in entries:
+            entries.append(entry)
+
+    return entries
+
+
 def parse_categories_from_legacy_section(section: str) -> List[str]:
     """Recover coarse algorithm coverage from older approved-algorithm sections."""
     categories: Set[str] = set()
@@ -1293,6 +1339,8 @@ def parse_categories_from_legacy_section(section: str) -> List[str]:
         line = normalize_whitespace(raw_line)
         if not line:
             continue
+        if is_legacy_section_stop_line(line):
+            break
 
         lower = line.lower()
         if lower in LEGACY_TABLE_HEADER_LINES:
@@ -1321,7 +1369,10 @@ def parse_algorithms_from_policy_text(policy_text: str) -> Tuple[List[str], List
         legacy_section = extract_legacy_algorithm_section(policy_text)
         if not legacy_section:
             return [], []
-        return [], parse_categories_from_legacy_section(legacy_section)
+        return (
+            parse_legacy_algorithm_rows(legacy_section),
+            parse_categories_from_legacy_section(legacy_section),
+        )
 
     entries: List[str] = []
     categories: Set[str] = set()
