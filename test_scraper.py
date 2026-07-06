@@ -5,7 +5,6 @@ Tests the parsing logic with sample HTML.
 """
 
 import asyncio
-import json
 import sys
 import tempfile
 from pathlib import Path

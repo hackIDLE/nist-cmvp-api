@@ -1013,8 +1013,8 @@ def prepare_reused_detail_payload(
     payload["security_policy_url"] = payload.get("security_policy_url") or module.get("security_policy_url")
     payload["vendor_name"] = payload.get("vendor_name") or module.get("Vendor Name")
     payload["module_name"] = payload.get("module_name") or module.get("Module Name")
-    for field in DETAIL_SCHEMA_MIGRATED_FIELDS:
-        payload.setdefault(field, None)
+    for schema_field in DETAIL_SCHEMA_MIGRATED_FIELDS:
+        payload.setdefault(schema_field, None)
     return payload
 
 
@@ -2334,7 +2334,7 @@ def scrape_all_modules() -> List[Dict]:
     # Construct the search URL using BASE_URL and SEARCH_PATH
     url = f"{BASE_URL}{SEARCH_PATH}"
     print(f"Fetching: {url}")
-    print(f"Note: If this URL is incorrect, set NIST_SEARCH_PATH environment variable")
+    print("Note: If this URL is incorrect, set NIST_SEARCH_PATH environment variable")
     
     html = fetch_page(url)
     if not html:
@@ -2752,14 +2752,14 @@ def changed_fingerprint_fields(module: Dict, previous_module: Optional[Dict]) ->
     if not previous_module:
         return []
     changes = []
-    for field in CACHE_FINGERPRINT_FIELDS:
-        previous_value = previous_module.get(field)
-        current_value = module.get(field)
+    for cache_field in CACHE_FINGERPRINT_FIELDS:
+        previous_value = previous_module.get(cache_field)
+        current_value = module.get(cache_field)
         if previous_value == current_value:
             continue
         changes.append(
             {
-                "field": field,
+                "field": cache_field,
                 "previous": previous_value,
                 "current": current_value,
             }
@@ -3396,7 +3396,7 @@ def build_api_reference_body(
     lines.extend(
         [
             "### Certificate Details",
-            f"`GET api/certificates/{{certificate}}.json` — Structured detail record for a specific certificate, including vendor/contact data, related files, validation history, and extracted algorithms when available.",
+            "`GET api/certificates/{certificate}.json` — Structured detail record for a specific certificate, including vendor/contact data, related files, validation history, and extracted algorithms when available.",
             "",
             "Example response (truncated):",
             "",
@@ -3485,7 +3485,7 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         f"- `api/modules-in-process.json` — {format_count(metadata.get('total_modules_in_process', 0))} modules currently in process.",
         "- `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.",
         f"- `api/certificates/index.json` — compact index for {format_count(metadata.get('total_certificate_details', 0))} certificate detail files.",
-        f"- `api/certificates/{{certificate}}.json` — full detail record for a single CMVP certificate.",
+        "- `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.",
         "- `api/indexes/vendors.json`, `api/indexes/algorithms.json`, `api/indexes/statuses.json`, `api/indexes/standards.json` — split search indexes for common filters.",
         "- `api/data-quality.json` — latest run misses, refreshes, fallbacks, changed certs, and weekly run checks.",
         "- `api/examples.json` — curl, Python, JavaScript, and agent-oriented lookup examples.",
@@ -5112,7 +5112,7 @@ def main():
     print("\n" + "=" * 60)
     print("Scraping completed successfully!")
     print("=" * 60)
-    print(f"\nSummary:")
+    print("\nSummary:")
     print(f"  - Validated modules: {len(modules)}")
     print(f"  - Historical modules: {len(historical_modules)}")
     print(f"  - Modules in process: {len(modules_in_process)}")
@@ -5145,7 +5145,7 @@ def main():
             f"{historical_stats['pdf_failed']} failed, {historical_stats['pdf_cache_hits']} PDF cache hits, "
             f"{historical_stats['algorithm_misses']} misses"
         )
-    print(f"  - OpenAPI spec: openapi.json")
+    print("  - OpenAPI spec: openapi.json")
     print(f"\nOutput files saved to: {output_dir}/")
 
 
