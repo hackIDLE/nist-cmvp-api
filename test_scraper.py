@@ -6,6 +6,7 @@ Tests the parsing logic with sample HTML.
 
 import asyncio
 import io
+import json
 import sys
 import tempfile
 from pathlib import Path
@@ -19,6 +20,7 @@ from scraper import (
     build_certificate_artifacts,
     build_certificate_index_payload,
     build_certificate_fingerprint,
+    build_changes_feed,
     build_data_quality_report,
     build_examples_payload,
     build_extraction_metrics,
@@ -1760,6 +1762,160 @@ def test_prune_orphan_certificate_details():
     print("✓ Orphan certificate cleanup test passed")
 
 
+def change_feed_module(cert_number, dataset="active", validation_date="04/10/2026"):
+    """Build a minimal module row with stable fingerprint fields for change-feed tests."""
+    status = "Active" if dataset == "active" else "Historical"
+    return {
+        "Certificate Number": str(cert_number),
+        "Vendor Name": f"Vendor {cert_number}",
+        "Module Name": f"Module {cert_number}",
+        "Module Type": "Software",
+        "Validation Date": validation_date,
+        "standard": "FIPS 140-3",
+        "status": status,
+        "security_policy_url": (
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/"
+            f"documents/security-policies/140sp{cert_number}.pdf"
+        ),
+        "certificate_detail_url": (
+            "https://csrc.nist.gov/projects/cryptographic-module-validation-program/"
+            f"certificate/{cert_number}"
+        ),
+        "detail_available": True,
+    }
+
+
+def test_build_changes_feed_first_run_empty_diffs():
+    """First runs should not classify every existing certificate as newly added."""
+    metadata = {"generated_at": "2026-04-12T03:10:00.961597Z", "version": "3.0"}
+    feed = build_changes_feed(
+        metadata,
+        [change_feed_module(100)],
+        [change_feed_module(200, "historical")],
+        {"modules": {"active": {}, "historical": {}}},
+        None,
+    )
+
+    assert feed["metadata"] == metadata, "Changes feed should embed shared metadata"
+    assert feed["max_runs"] == 26, "Changes feed should retain 26 runs"
+    assert feed["total_runs"] == 1, "First changes feed should report one run"
+    assert len(feed["runs"]) == 1, "First changes feed should include the current run"
+    entry = feed["runs"][0]
+    assert entry["added_active"] == [], "First run should not mark active certificates as added"
+    assert entry["added_historical"] == [], "First run should not mark historical certificates as added"
+    assert entry["removed"] == [], "First run should not mark removals"
+    assert entry["changed"] == [], "First run should not mark summary changes"
+    assert entry["counts"] == {
+        "added_active": 0,
+        "added_historical": 0,
+        "removed": 0,
+        "changed": 0,
+    }, "First run counts should be zeroed"
+
+    print("✓ Changes feed first-run behavior test passed")
+
+
+def test_build_changes_feed_appends_current_diff():
+    """Changes feed should prepend the current diff and preserve prior entries."""
+    metadata = {"generated_at": "2026-04-19T03:10:00.961597Z", "version": "3.0"}
+    previous_active = change_feed_module(100, validation_date="04/09/2026")
+    previous_historical = {
+        200: change_feed_module(200, "historical"),
+        300: change_feed_module(300, "historical"),
+    }
+    previous_changes = {
+        "metadata": {"generated_at": "2026-04-12T03:10:00.961597Z"},
+        "max_runs": 26,
+        "total_runs": 1,
+        "runs": [
+            {
+                "generated_at": "2026-04-12T03:10:00.961597Z",
+                "added_active": [],
+                "added_historical": [],
+                "removed": [],
+                "changed": [],
+                "counts": {
+                    "added_active": 0,
+                    "added_historical": 0,
+                    "removed": 0,
+                    "changed": 0,
+                },
+            }
+        ],
+    }
+
+    feed = build_changes_feed(
+        metadata,
+        [change_feed_module(100), change_feed_module(400)],
+        [change_feed_module(300, "historical")],
+        {
+            "modules": {
+                "active": {100: previous_active},
+                "historical": previous_historical,
+            }
+        },
+        previous_changes,
+    )
+
+    assert feed["total_runs"] == 2, "Appended feed should increment total run count"
+    assert [entry["generated_at"] for entry in feed["runs"]] == [
+        "2026-04-19T03:10:00.961597Z",
+        "2026-04-12T03:10:00.961597Z",
+    ], "Changes feed should be newest-first"
+    entry = feed["runs"][0]
+    assert entry["added_active"] == ["400"], "New active certificate should be listed"
+    assert entry["added_historical"] == [], "No historical certificate was added"
+    assert entry["removed"] == ["200"], "Removed historical certificate should be listed"
+    assert entry["changed"] == ["100"], "Summary-changed active certificate should be listed"
+    assert entry["counts"] == {
+        "added_active": 1,
+        "added_historical": 0,
+        "removed": 1,
+        "changed": 1,
+    }, "Current run counts should match list lengths"
+
+    print("✓ Changes feed append behavior test passed")
+
+
+def test_build_changes_feed_caps_runs():
+    """Changes feed should retain only the newest configured number of runs."""
+    metadata = {"generated_at": "2026-07-01T00:00:00.000000Z", "version": "3.0"}
+    previous_runs = [
+        {
+            "generated_at": f"2026-06-{day:02d}T00:00:00.000000Z",
+            "added_active": [],
+            "added_historical": [],
+            "removed": [],
+            "changed": [],
+            "counts": {
+                "added_active": 0,
+                "added_historical": 0,
+                "removed": 0,
+                "changed": 0,
+            },
+        }
+        for day in range(26, 0, -1)
+    ]
+    feed = build_changes_feed(
+        metadata,
+        [],
+        [],
+        {"modules": {"active": {}, "historical": {}}},
+        {"max_runs": 26, "total_runs": 26, "runs": previous_runs},
+    )
+
+    assert feed["total_runs"] == 27, "Capped feed should preserve cumulative total runs"
+    assert len(feed["runs"]) == 26, "Capped feed should keep only 26 entries"
+    assert feed["runs"][0]["generated_at"] == metadata["generated_at"], "Current run should be newest"
+    assert feed["runs"][-1]["generated_at"] == "2026-06-02T00:00:00.000000Z", "Oldest retained run mismatch"
+    assert all(
+        entry["generated_at"] != "2026-06-01T00:00:00.000000Z"
+        for entry in feed["runs"]
+    ), "Oldest previous run should be dropped"
+
+    print("✓ Changes feed cap behavior test passed")
+
+
 def test_validate_generated_api_artifacts():
     """Current checked-in generated API artifacts should be internally consistent."""
     errors = validate_api(
@@ -1770,6 +1926,61 @@ def test_validate_generated_api_artifacts():
     )
 
     assert errors == [], "Generated API artifact validation failed:\n" + "\n".join(errors[:20])
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        temp_root = Path(temp_dir)
+        temp_api = temp_root / "api"
+        temp_api.mkdir()
+        for relative_path in ("README.md", "openapi.json", "llms.txt", "llms-full.txt", "index.html"):
+            (temp_root / relative_path).symlink_to((Path(".") / relative_path).resolve())
+        for relative_path in (
+            "modules.json",
+            "historical-modules.json",
+            "modules-in-process.json",
+            "metadata.json",
+            "index.json",
+            "data-quality.json",
+            "examples.json",
+            "docs.md",
+        ):
+            (temp_api / relative_path).symlink_to((Path("api") / relative_path).resolve())
+        if (Path("api") / "algorithms.json").exists():
+            (temp_api / "algorithms.json").symlink_to((Path("api") / "algorithms.json").resolve())
+        for relative_path in ("certificates", "indexes", "schemas"):
+            (temp_api / relative_path).symlink_to((Path("api") / relative_path).resolve(), target_is_directory=True)
+
+        metadata = json.loads((Path("api") / "metadata.json").read_text(encoding="utf-8"))
+        changes_fixture = {
+            "metadata": metadata,
+            "max_runs": 26,
+            "total_runs": 1,
+            "runs": [
+                {
+                    "generated_at": metadata["generated_at"],
+                    "added_active": [],
+                    "added_historical": [],
+                    "removed": [],
+                    "changed": [],
+                    "counts": {
+                        "added_active": 0,
+                        "added_historical": 0,
+                        "removed": 0,
+                        "changed": 0,
+                    },
+                }
+            ],
+        }
+        (temp_api / "changes.json").write_text(
+            json.dumps(changes_fixture, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        errors = validate_api(
+            temp_root,
+            require_current_schema=True,
+            require_supported_algorithm_source=True,
+            require_data_quality_pass=True,
+        )
+        assert errors == [], "Generated API artifact validation with changes fixture failed:\n" + "\n".join(errors[:20])
 
     print("✓ Generated API artifact validation test passed")
 
@@ -2135,6 +2346,7 @@ def test_generate_agent_docs():
     assert "api/algorithms.json" in artifacts["llms.txt"], "llms.txt should reference algorithms endpoint when available"
     assert "api/certificates/index.json" in artifacts["llms.txt"], "llms.txt should reference certificate index endpoint"
     assert "api/data-quality.json" in artifacts["llms.txt"], "llms.txt should reference data quality endpoint"
+    assert "api/changes.json" in artifacts["llms.txt"], "llms.txt should reference changes endpoint"
     assert "api/examples.json" in artifacts["llms.txt"], "llms.txt should reference examples endpoint"
     assert "api/indexes/vendors.json" in artifacts["llms.txt"], "llms.txt should reference split search indexes"
     assert 'href="api/docs.md"' in artifacts["index.html"], "Homepage should link to api/docs.md"
@@ -2146,6 +2358,7 @@ def test_generate_agent_docs():
     assert "GET api/certificates/{certificate}.json" in artifacts["api/docs.md"], "API docs should include certificate detail endpoint"
     assert "GET api/schemas/index.schema.json" in artifacts["api/docs.md"], "API docs should include JSON schema endpoint"
     assert "GET api/data-quality.json" in artifacts["api/docs.md"], "API docs should include data quality endpoint"
+    assert "GET api/changes.json" in artifacts["api/docs.md"], "API docs should include changes endpoint"
     assert "GET api/examples.json" in artifacts["api/docs.md"], "API docs should include examples endpoint"
     assert "GET api/indexes/vendors.json" in artifacts["api/docs.md"], "API docs should include split search indexes"
     assert "algorithm_extraction" in artifacts["api/docs.md"], "API docs should describe extraction provenance"
@@ -2157,9 +2370,11 @@ def test_generate_agent_docs():
     assert index_payload["schemas"]["certificate_index"] == "/api/schemas/certificate-index.schema.json", "Index payload should advertise certificate index schema"
     assert index_payload["schemas"]["certificate_detail"] == "/api/schemas/certificate-detail.schema.json", "Index payload should advertise certificate detail schema"
     assert index_payload["schemas"]["data_quality"] == "/api/schemas/data-quality.schema.json", "Index payload should advertise data quality schema"
+    assert index_payload["schemas"]["changes"] == "/api/schemas/changes.schema.json", "Index payload should advertise changes schema"
     assert index_payload["schemas"]["examples"] == "/api/schemas/examples.schema.json", "Index payload should advertise examples schema"
     assert index_payload["schemas"]["search_index"] == "/api/schemas/search-index.schema.json", "Index payload should advertise search index schema"
     assert index_payload["endpoints"]["data_quality"] == "/api/data-quality.json", "Index payload should advertise data quality endpoint"
+    assert index_payload["endpoints"]["changes"] == "/api/changes.json", "Index payload should advertise changes endpoint"
     assert index_payload["endpoints"]["examples"] == "/api/examples.json", "Index payload should advertise examples endpoint"
     assert index_payload["endpoints"]["vendor_index"] == "/api/indexes/vendors.json", "Index payload should advertise vendor index"
     assert index_payload["features"]["markdown_api_docs"] is True, "Index payload should advertise Markdown docs support"
@@ -2167,6 +2382,7 @@ def test_generate_agent_docs():
     assert index_payload["features"]["extraction_metrics"] is True, "Index payload should advertise extraction metrics"
     assert index_payload["features"]["certificate_index"] is True, "Index payload should advertise certificate index support"
     assert index_payload["features"]["data_quality_report"] is True, "Index payload should advertise data quality support"
+    assert index_payload["features"]["changes_feed"] is True, "Index payload should advertise changes feed support"
     assert index_payload["features"]["consumer_examples"] is True, "Index payload should advertise examples support"
     assert index_payload["features"]["search_indexes"] is True, "Index payload should advertise search index support"
     assert index_payload["features"]["json_schemas"] is True, "Index payload should advertise JSON schema support"
@@ -2177,6 +2393,7 @@ def test_generate_agent_docs():
     assert "api/schemas/certificate-index.schema.json" in schema_artifacts, "Missing certificate index JSON schema"
     assert "api/schemas/certificate-detail.schema.json" in schema_artifacts, "Missing certificate detail JSON schema"
     assert "api/schemas/data-quality.schema.json" in schema_artifacts, "Missing data quality JSON schema"
+    assert "api/schemas/changes.schema.json" in schema_artifacts, "Missing changes JSON schema"
     assert "api/schemas/examples.schema.json" in schema_artifacts, "Missing examples JSON schema"
     assert "api/schemas/search-index.schema.json" in schema_artifacts, "Missing search index JSON schema"
     assert "api/schemas/algorithms.schema.json" in schema_artifacts, "Missing algorithms JSON schema"
@@ -2188,6 +2405,8 @@ def test_generate_agent_docs():
     assert "algorithm_coverage" in data_quality_schema["properties"], "Data quality schema should document algorithm coverage"
     assert "deferred_certificates" not in data_quality_schema["required"], "Deferred certificates should remain optional for old artifacts"
     assert "algorithm_coverage" not in data_quality_schema["required"], "Algorithm coverage should remain optional for old artifacts"
+    changes_schema = schema_artifacts["api/schemas/changes.schema.json"]
+    assert changes_schema["properties"]["max_runs"]["minimum"] == 1, "Changes schema should document max_runs"
 
     openapi = generate_openapi_spec(
         [sample_module],
@@ -2198,6 +2417,7 @@ def test_generate_agent_docs():
     assert "/api/algorithms.json" in openapi["paths"], "OpenAPI spec should include algorithms endpoint when available"
     assert "/api/certificates/index.json" in openapi["paths"], "OpenAPI spec should include certificate index endpoint"
     assert "/api/data-quality.json" in openapi["paths"], "OpenAPI spec should include data quality endpoint"
+    assert "/api/changes.json" in openapi["paths"], "OpenAPI spec should include changes endpoint"
     assert "/api/examples.json" in openapi["paths"], "OpenAPI spec should include examples endpoint"
     assert "/api/indexes/vendors.json" in openapi["paths"], "OpenAPI spec should include vendor index endpoint"
     assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
@@ -2257,6 +2477,9 @@ def main():
         test_build_data_quality_report_marks_repeat_deferrals()
         test_build_data_quality_report_algorithm_coverage_buckets()
         test_prune_orphan_certificate_details()
+        test_build_changes_feed_first_run_empty_diffs()
+        test_build_changes_feed_appends_current_diff()
+        test_build_changes_feed_caps_runs()
         test_validate_generated_api_artifacts()
         test_build_certificate_index_payload()
         test_data_quality_search_indexes_and_examples()

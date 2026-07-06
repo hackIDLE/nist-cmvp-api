@@ -81,6 +81,7 @@ CRAWL4AI_ALGORITHM_SOURCE = "crawl4ai"
 SECURITY_POLICY_ALGORITHM_SOURCE = "security_policy_pdf"
 ALGORITHM_CACHE_VERSION = "2026-04-15-legacy-v1"
 ALGORITHM_EXTRACTION_SCHEMA_VERSION = "1.0"
+CHANGE_FEED_MAX_RUNS = 26
 CACHEABLE_ALGORITHM_SOURCES = {
     CRAWL4AI_ALGORITHM_SOURCE,
     SECURITY_POLICY_ALGORITHM_SOURCE,
@@ -892,6 +893,7 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
     modules_in_process_data = load_json_file(output_dir / "modules-in-process.json") or {}
     metadata = load_json_file(output_dir / "metadata.json") or {}
     data_quality = load_json_file(output_dir / "data-quality.json") or {}
+    changes = load_json_file(output_dir / "changes.json")
     detail_payloads: Dict[int, Dict] = {}
 
     if DETAIL_DIR.exists():
@@ -925,6 +927,7 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
             "historical": build_module_map(historical_data.get("modules", [])),
         },
         "details": detail_payloads,
+        "changes": copy.deepcopy(changes) if isinstance(changes, dict) else None,
     }
 
 
@@ -3064,6 +3067,100 @@ def build_data_quality_report(
     }
 
 
+def changes_module_map(records: List[Dict]) -> Dict[int, Dict]:
+    """Return a certificate-number keyed map for change feed comparisons."""
+    mapping: Dict[int, Dict] = {}
+    for record in records or []:
+        cert_number = parse_certificate_number(record)
+        if cert_number is not None:
+            mapping[cert_number] = record
+    return mapping
+
+
+def certificate_number_strings(cert_numbers: Set[int]) -> List[str]:
+    """Return numerically sorted certificate numbers as API strings."""
+    return [str(cert_number) for cert_number in sorted(cert_numbers)]
+
+
+def changed_summary_certificates(current_modules: Dict[int, Dict], previous_modules: Dict[int, Dict], dataset: str) -> Set[int]:
+    """Return certificates whose summary fingerprint changed within a dataset."""
+    changed: Set[int] = set()
+    for cert_number in set(current_modules) & set(previous_modules):
+        current_fingerprint = build_certificate_fingerprint(current_modules[cert_number], dataset)
+        previous_fingerprint = build_certificate_fingerprint(previous_modules[cert_number], dataset)
+        if current_fingerprint != previous_fingerprint:
+            changed.add(cert_number)
+    return changed
+
+
+def build_changes_feed(
+    metadata: Dict,
+    modules: List[Dict],
+    historical_modules: List[Dict],
+    previous_outputs: Dict[str, object],
+    previous_changes: Optional[Dict],
+) -> Dict:
+    """Build the cumulative, capped newest-first certificate change feed."""
+    previous_outputs = previous_outputs if isinstance(previous_outputs, dict) else {}
+    previous_modules = previous_outputs.get("modules", {})
+    previous_modules = previous_modules if isinstance(previous_modules, dict) else {}
+    previous_active = previous_modules.get("active", {})
+    previous_historical = previous_modules.get("historical", {})
+    previous_active = previous_active if isinstance(previous_active, dict) else {}
+    previous_historical = previous_historical if isinstance(previous_historical, dict) else {}
+
+    current_active = changes_module_map(modules)
+    current_historical = changes_module_map(historical_modules)
+    has_previous_modules = bool(previous_active or previous_historical)
+
+    if has_previous_modules:
+        previous_all = set(previous_active) | set(previous_historical)
+        current_all = set(current_active) | set(current_historical)
+        added_active = set(current_active) - set(previous_active)
+        added_historical = set(current_historical) - set(previous_historical)
+        removed = previous_all - current_all
+        changed = (
+            changed_summary_certificates(current_active, previous_active, "active")
+            | changed_summary_certificates(current_historical, previous_historical, "historical")
+        )
+    else:
+        added_active = set()
+        added_historical = set()
+        removed = set()
+        changed = set()
+
+    current_run = {
+        "generated_at": metadata.get("generated_at"),
+        "added_active": certificate_number_strings(added_active),
+        "added_historical": certificate_number_strings(added_historical),
+        "removed": certificate_number_strings(removed),
+        "changed": certificate_number_strings(changed),
+    }
+    current_run["counts"] = {
+        key: len(current_run[key])
+        for key in ("added_active", "added_historical", "removed", "changed")
+    }
+
+    prior_runs = []
+    previous_total_runs = 0
+    if isinstance(previous_changes, dict):
+        runs = previous_changes.get("runs")
+        if isinstance(runs, list):
+            prior_runs = [copy.deepcopy(run) for run in runs if isinstance(run, dict)]
+        total_runs = previous_changes.get("total_runs")
+        if isinstance(total_runs, int) and total_runs >= 0:
+            previous_total_runs = total_runs
+    previous_total_runs = max(previous_total_runs, len(prior_runs))
+
+    runs = [current_run, *prior_runs][:CHANGE_FEED_MAX_RUNS]
+    return {
+        "metadata": metadata,
+        "max_runs": CHANGE_FEED_MAX_RUNS,
+        "total_runs": previous_total_runs + 1,
+        "runs": runs,
+    }
+
+
 def compact_search_index_reference(entry: Dict) -> Dict:
     """Return a compact certificate reference for search-friendly indexes."""
     return {
@@ -3319,6 +3416,7 @@ def schema_paths(algorithms_summary: Optional[Dict] = None) -> Dict[str, str]:
         "certificate_index": "/api/schemas/certificate-index.schema.json",
         "certificate_detail": "/api/schemas/certificate-detail.schema.json",
         "data_quality": "/api/schemas/data-quality.schema.json",
+        "changes": "/api/schemas/changes.schema.json",
         "examples": "/api/schemas/examples.schema.json",
         "search_index": "/api/schemas/search-index.schema.json",
     }
@@ -3469,6 +3567,9 @@ def build_api_reference_body(
         "### Data Quality",
         "`GET api/data-quality.json` — Latest run quality report with misses, refreshed records, fallback usage, changed certificates, cache reuse checks, and the next scheduled weekly run.",
         "",
+        "### Changes",
+        "`GET api/changes.json` — Cumulative newest-first feed of added, removed, and summary-changed certificate numbers across recent weekly runs.",
+        "",
         "### Consumer Examples",
         "`GET api/examples.json` — Copy-ready curl, Python, JavaScript, and agent-oriented query examples for vendor, module, algorithm, status, and standard lookups.",
         "",
@@ -3542,6 +3643,7 @@ def build_api_reference_body(
             "GET api/index.json → endpoints, docs links, feature flags, counts",
             "GET api/metadata.json → freshness, scrape provenance, and extraction metrics",
             "GET api/data-quality.json → latest run misses, refreshes, fallbacks, changed certs, and next scheduled run",
+            "GET api/changes.json → recent added, removed, and summary-changed certificate numbers",
             "```",
             "",
             "### Find a module and pull the full certificate record",
@@ -3607,6 +3709,7 @@ def build_llms_txt(metadata: Dict, algorithms_summary: Optional[Dict]) -> str:
         "- `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.",
         "- `api/indexes/vendors.json`, `api/indexes/algorithms.json`, `api/indexes/statuses.json`, `api/indexes/standards.json` — split search indexes for common filters.",
         "- `api/data-quality.json` — latest run misses, refreshes, fallbacks, changed certs, and weekly run checks.",
+        "- `api/changes.json` — cumulative newest-first change feed for recent weekly runs.",
         "- `api/examples.json` — curl, Python, JavaScript, and agent-oriented lookup examples.",
     ]
     if algorithms_summary:
@@ -4232,6 +4335,53 @@ def data_quality_schema() -> Dict:
     }
 
 
+def changes_schema() -> Dict:
+    """Return the cumulative changes feed response schema."""
+    certificate_list_schema = {"type": "array", "items": {"type": "string", "pattern": "^[0-9]+$"}}
+    counts_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["added_active", "added_historical", "removed", "changed"],
+        "properties": {
+            "added_active": {"type": "integer", "minimum": 0},
+            "added_historical": {"type": "integer", "minimum": 0},
+            "removed": {"type": "integer", "minimum": 0},
+            "changed": {"type": "integer", "minimum": 0},
+        },
+    }
+    run_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "generated_at",
+            "added_active",
+            "added_historical",
+            "removed",
+            "changed",
+            "counts",
+        ],
+        "properties": {
+            "generated_at": {"type": "string", "format": "date-time"},
+            "added_active": certificate_list_schema,
+            "added_historical": certificate_list_schema,
+            "removed": certificate_list_schema,
+            "changed": certificate_list_schema,
+            "counts": counts_schema,
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["metadata", "max_runs", "total_runs", "runs"],
+        "properties": {
+            "metadata": {"$ref": "/api/schemas/metadata.schema.json"},
+            "max_runs": {"type": "integer", "minimum": 1},
+            "total_runs": {"type": "integer", "minimum": 0},
+            "runs": {"type": "array", "items": run_schema},
+        },
+    }
+
+
 def examples_schema() -> Dict:
     """Return the consumer examples response schema."""
     return {
@@ -4378,6 +4528,11 @@ def generate_json_schema_artifacts(algorithms_summary: Optional[Dict]) -> Dict[s
             paths["data_quality"],
             data_quality_schema(),
         ),
+        "api/schemas/changes.schema.json": json_schema_document(
+            "NIST CMVP Changes Feed",
+            paths["changes"],
+            changes_schema(),
+        ),
         "api/schemas/examples.schema.json": json_schema_document(
             "NIST CMVP Consumer Examples",
             paths["examples"],
@@ -4409,6 +4564,7 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
         "certificate_index": "/api/certificates/index.json",
         "certificate_detail_template": "/api/certificates/{certificate}.json",
         "data_quality": "/api/data-quality.json",
+        "changes": "/api/changes.json",
         "examples": "/api/examples.json",
         "vendor_index": "/api/indexes/vendors.json",
         "algorithm_index": "/api/indexes/algorithms.json",
@@ -4438,6 +4594,7 @@ def build_index_payload(metadata: Dict, algorithms_summary: Optional[Dict]) -> D
             "algorithm_extraction_provenance": True,
             "extraction_metrics": True,
             "data_quality_report": True,
+            "changes_feed": True,
             "consumer_examples": True,
             "search_indexes": True,
             "certificate_index": True,
@@ -4588,6 +4745,22 @@ def generate_openapi_spec(
                             "content": {
                                 "application/json": {
                                     "schema": {"$ref": "#/components/schemas/DataQualityReport"}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "/api/changes.json": {
+                "get": {
+                    "summary": "Cumulative certificate change feed",
+                    "operationId": "getChanges",
+                    "responses": {
+                        "200": {
+                            "description": "Newest-first feed of added, removed, and summary-changed certificate numbers",
+                            "content": {
+                                "application/json": {
+                                    "schema": {"$ref": "#/components/schemas/ChangesResponse"}
                                 }
                             }
                         }
@@ -4843,6 +5016,31 @@ def generate_openapi_spec(
                         "changed_certificates": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
                     },
                 },
+                "ChangesResponse": {
+                    "type": "object",
+                    "properties": {
+                        "metadata": {"$ref": "#/components/schemas/Metadata"},
+                        "max_runs": {"type": "integer"},
+                        "total_runs": {"type": "integer"},
+                        "runs": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "generated_at": {"type": "string", "format": "date-time"},
+                                    "added_active": {"type": "array", "items": {"type": "string"}},
+                                    "added_historical": {"type": "array", "items": {"type": "string"}},
+                                    "removed": {"type": "array", "items": {"type": "string"}},
+                                    "changed": {"type": "array", "items": {"type": "string"}},
+                                    "counts": {
+                                        "type": "object",
+                                        "additionalProperties": {"type": "integer"},
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
                 "ExamplesResponse": {
                     "type": "object",
                     "properties": {
@@ -5059,6 +5257,7 @@ def main():
         "modules_in_process": [],
         "modules": {"active": {}, "historical": {}},
         "details": {},
+        "changes": None,
     }
     if not FULL_REFRESH:
         cached_detail_count = len(previous_outputs.get("details", {}))
@@ -5228,6 +5427,14 @@ def main():
         deferred_certificates,
     )
     save_json(data_quality_report, f"{output_dir}/data-quality.json")
+    changes_feed = build_changes_feed(
+        metadata,
+        modules,
+        historical_modules,
+        previous_outputs,
+        previous_outputs.get("changes"),
+    )
+    save_json(changes_feed, f"{output_dir}/changes.json")
     save_json(build_examples_payload(metadata), f"{output_dir}/examples.json")
 
     algorithms_summary = None
