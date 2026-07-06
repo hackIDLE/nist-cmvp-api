@@ -1,10 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5044"
   },
   "certificate": {
+    "certificate_number": "5044",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5044",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5044",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf",
+    "vendor_name": "Splunk LLC",
+    "module_name": "Splunk OpenSSL FIPS Provider",
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
+    "validation_date": "7/22/2025, 6/4/2026",
+    "validation_dates": [
+      "7/22/2025",
+      "6/4/2026"
+    ],
+    "sunset_date": "9/21/2026",
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "description": "The Module is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality. The Module is classified under FIPS 140-2 as a software module, with a multi-chip standalone module embodiment. The physical cryptographic boundary is the general-purpose computer on which the module is installed. The logical cryptographic boundary of the Module is the FIPS Provider, a dynamically loadable library. The Module performs no communication other than with the calling application via APIs that invoke the Module.",
+    "software_versions": "3.0.9",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2025_110825_0311.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/22/2025",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      },
+      {
+        "date": "6/4/2026",
+        "type": "Update",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Splunk LLC",
+      "website_url": "http://www.splunk.com/en_us/products/splunk-enterprise.html",
+      "address_lines": [
+        "3098 Olsen Dr",
+        "San Jose, California 95128",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Farzad Salim",
+      "contact_email": "ssg-security-certifications@splunk.com",
+      "contact_phone": "+1 415-793-2484"
+    },
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -12,64 +76,22 @@
       "source": "firecrawl",
       "source_url": null,
       "cached": true,
-      "fallback_used": false,
+      "fallback_used": true,
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5044",
-    "certificate_number": "5044",
-    "dataset": "active",
-    "description": "The Module is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality. The Module is classified under FIPS 140-2 as a software module, with a multi-chip standalone module embodiment. The physical cryptographic boundary is the general-purpose computer on which the module is installed. The logical cryptographic boundary of the Module is the FIPS Provider, a dynamically loadable library. The Module performs no communication other than with the calling application via APIs that invoke the Module.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Splunk OpenSSL FIPS Provider",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5044",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "9/21/2026",
-    "validation_date": "7/22/2025",
-    "validation_dates": [
-      "7/22/2025"
-    ],
-    "validation_history": [
-      {
-        "date": "7/22/2025",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "3098 Olsen Dr",
-        "San Jose, California 95128",
-        "USA"
-      ],
-      "contact_email": "ssg-security-certifications@splunk.com",
-      "contact_name": "Farzad Salim",
-      "contact_phone": "+1 415-793-2484",
-      "country": "USA",
-      "name": "Splunk LLC",
-      "website_url": "http://www.splunk.com/en_us/products/splunk-enterprise.html"
-    },
-    "vendor_name": "Splunk LLC"
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5044.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

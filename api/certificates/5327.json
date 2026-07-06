@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5327"
+  },
+  "certificate": {
+    "certificate_number": "5327",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5327",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5327",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5327.pdf",
+    "vendor_name": "Codan - DTC",
+    "module_name": "MESH SDR Cryptography Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "6/10/2026",
+    "validation_dates": [
+      "6/10/2026"
+    ],
+    "sunset_date": "6/9/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "It resides within the BluSDR-90-UL, SDR-C (SDR-H2), SDR-M BluSDR-6, SDR-U BluSDR-30, D1740 NETNode BluSDR-90+, IVAS and Sentry 6161 wireless MESH IP SDR (Software Defined Radio) product lines to provide FIPS140-3 compliant AES-128 and AES-256 encryption and decryption functions, in addition to SHA2-256 and HMAC-SHA2-256 functionalities",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5327.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/10/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Codan - DTC",
+      "website_url": "http://www.dtccodan.com",
+      "address_lines": [
+        "Fusion 2, 1100 Parkway",
+        "Whiteley, Hampshire, PO15 7AB",
+        "Whiteley, Hampshire PO15 7AB",
+        "United Kingdom"
+      ],
+      "country": "United Kingdom",
+      "contact_name": "FIPS Security Manager",
+      "contact_email": "fips@codancomms.com",
+      "contact_phone": "441489566750"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC-CS2 A7334 Direction - decrypt, encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-ECB A7335 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-ECB A7336 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A7334 Key Length - Key Length: 8-256 Increment 8 FIPS 198-1 | Codan DTC Communications MESH SDR Cryptographic Module | Conan DTC Communications 2025",
+      "SHA2-256 A7337 Message Length - Message Length: 8-2048 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-256 A7338 Message Length - Message Length: 8-2048 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4 | N/A for this module. | N/A for this module. | The table below lists all the | Name Caveat Use and | EDC- | 64 | Error Detection Code (EDC) 64 bits in length utilized during the | authentication process. When a pin is entered during the | authentication process, the module calculates its associated | value to compare it with the stored result. Reference: FIPS 140- | 3 IG 2.4.A | MESH SDR | Cryptographic | Module | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5327.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 6,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5327.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

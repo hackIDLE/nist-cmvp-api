@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362"
+  },
+  "certificate": {
+    "certificate_number": "5362",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf",
+    "vendor_name": "Icom Inc.",
+    "module_name": "UT-125 FIPS #41,#51 and #61",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 1,
+    "validation_date": "6/30/2026",
+    "validation_dates": [
+      "6/30/2026"
+    ],
+    "sunset_date": "6/29/2031",
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "description": "The UT-125 FIPS #41, #51 and #61 are multi-chip embedded cryptographic modules as defined by FIPS 140-3. The cryptographic module can be incorporated into any Icom Inc. radio which requires FIPS 140-3 level 1 cryptographic security.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/30/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Icom Inc.",
+      "website_url": "http://www.icomjapan.com",
+      "address_lines": [
+        "1-1-32, Kamiminami",
+        "Hirano-ku, Osaka 547-0003",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Masaaki Takahashi",
+      "contact_email": "MasaakiTakahashi@IcomAmerica.com",
+      "contact_phone": "425-454-8155"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6944 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CMAC A6944 Direction - Generation, Verification | Key Length - 256 | SP 800-38B",
+      "AES-ECB A6944 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW A6944 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-OFB A6944 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "Counter DRBG A6944 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A5246 Key Length - Key Length: 512 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6944 Key Length - Key Length: 256 FIPS 198-1",
+      "KDF SP800- | 108",
+      "A6944 KDF Mode - Counter | Supported Lengths - Supported Lengths | 256 | SP 800-108 | Rev. 1",
+      "SHA-1 A5246 Message Length - Message Length: 256- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6944 Message Length - Message Length: 256- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Section | 4 | Key | Type:Symmetric | N/A SP800-133r2, Section 4 Example | 1 | N/A for this module. | This module does not implement any Non-Approved Algorithms Allowed in the Approved Mode of | Operation with No Security Claimed. | N/A for this module. | This module does not implement any Non-Approved Algorithms Allowed in the Approved Mode of | Operation with No Security Claimed.",
+      "AES-CBC-MAC MAC for OTAR",
+      "DES ECB Crypto Key Encryption / Decryption",
+      "DES OFB Voice Encryption / Decryption | PRNG Pseudo-Random Number Generator"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 16,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

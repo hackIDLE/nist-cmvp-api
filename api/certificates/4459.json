@@ -1,35 +1,37 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
     "certificate_number": "4459",
-    "dataset": "active",
-    "description": "VaultIP is a Silicon IP Security Module with a secure asset store protecting all valuable assets on your device. It is a stand-alone Root of Trust that offers key management and crypto functions needed for platform and application security. VaultIP offers all security services to manage your device securely through its lifecycle. These include Secure Debug, Secure Provisioning, HUK and Identity protection and secure authentication services. Secure Boot and Communication protocols such as TLS can leverage VaultIP to secure the boot process and protect private communication keys.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "VaultIP",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4459",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
+    "vendor_name": "Rambus Inc.",
+    "module_name": "VaultIP",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "3/24/2023",
+    "validation_dates": [
+      "3/24/2023"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode",
+    "description": "VaultIP is a Silicon IP Security Module with a secure asset store protecting all valuable assets on your device. It is a stand-alone Root of Trust that offers key management and crypto functions needed for platform and application security. VaultIP offers all security services to manage your device securely through its lifecycle. These include Secure Debug, Secure Provisioning, HUK and Identity protection and secure authentication services. Secure Boot and Communication protocols such as TLS can leverage VaultIP to secure the boot process and protect private communication keys.",
+    "software_versions": null,
+    "hardware_versions": "3.0.3",
+    "firmware_versions": "3.0.6",
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +42,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2023_030423_0646.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/6/2026",
-    "validation_date": "3/24/2023",
-    "validation_dates": [
-      "3/24/2023"
-    ],
     "validation_history": [
       {
         "date": "3/24/2023",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "Rambus Inc.",
+      "website_url": "http://www.rambus.com",
       "address_lines": [
         "4453 North First Street, Suite 100",
         "San Jose, CA 95134",
         "USA"
       ],
-      "contact_email": "skincaid@rambus.com",
-      "contact_name": "Stuart Kincaid",
-      "contact_phone": "408-462-8000",
       "country": "USA",
-      "name": "Rambus Inc.",
-      "website_url": "http://www.rambus.com"
+      "contact_name": "Stuart Kincaid",
+      "contact_email": "skincaid@rambus.com",
+      "contact_phone": "408-462-8000"
     },
-    "vendor_name": "Rambus Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4459.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

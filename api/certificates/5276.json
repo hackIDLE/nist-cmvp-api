@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5276"
+  },
+  "certificate": {
+    "certificate_number": "5276",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5276",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5276",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5276.pdf",
+    "vendor_name": "Forcepoint",
+    "module_name": "Forcepoint Next Generation Firewall for Desktop Appliances",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/20/2026",
+    "validation_dates": [
+      "5/20/2026"
+    ],
+    "sunset_date": "5/19/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The NGFW appliances are high-performance network security appliances that add a broad range of built-in security features, including VPN, IPS, anti-evasion, TLS inspection, SD-WAN, and mission-critical application proxies, to a traditional firewall and provides end-to-end protection across the entire enterprise network.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5276.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/20/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Forcepoint",
+      "website_url": "http://www.forcepoint.com",
+      "address_lines": [
+        "10900-A Stonelake Blvd, Ste. 350",
+        "Austin, TX 78759",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jorma Levomaki",
+      "contact_email": "legal@forcepoint.com",
+      "contact_phone": "858-320-8000"
+    },
+    "algorithms": [
+      "AES",
+      "ECDSA",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "“Create TLS Cryptographic Suite Set elements” topic of the Forcepoint NGFW Product Guide.",
+      "• In accordance with the NGFW Product user guide, the following TLS Cipher Suites are | utilized within the module | o TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 | o TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 | o TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 | o TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 | o TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 | Forcepoint Next Generation Firewall for Desktop Appliances - LEVEL 1 | Rev. C, Copyright © 2026 Forcepoint | o TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 | o TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 | o TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 | o TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 | o TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 | o TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 | o TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 | 2. To use certificates signed by a Certificate Authority (CA) that is not one of the default Trusted | Certificate Authority elements, create a Trusted Certificate Authority element. Import only a | certificate signed using an Approved signature algorithm. For more information, see the | “Create Trusted Certificate Authority elements” topic of the Forcepoint NGFW Product Guide. | 3. To use HTTPS User Authentication, create a TLS Profile element. Select the TLS Cryptography",
+      "Suite Set element, the Trusted Certificate Authority, and the minimum TLS version. For more",
+      "information, see the “Create TLS Profile elements” topic of the Forcepoint NGFW Product | Guide. | 4. Create the NGFW Engine Element by defining the properties in the Engine Editor. | • Browse to Advanced Settings, then select FIPS-Compatible Operating Mode. | • Select “FIPS-Disable Remote Engine Upgrades” for the NGFW to prevent firmware load | attempts from the SMC. | • To use HTTPS User Authentication, browse to Add-Ons | User Authentication, then",
+      "enable HTTPS and select the TLS Profile element. Use 2048 or greater as the Key | Length when creating a certificate signing request in HTTPS Settings. For more | information, see the “Enable browser-based user authentication” topic of the | Forcepoint NGFW Product Guide.",
+      "• To use TLS Inspection for Client Protection, create a Client Protection Certificate | Authority element and import the private key and the certificate used to issue",
+      "certificates in TLS Inspection. Use only the Approved algorithms and key size for the",
+      "key pair and certificate. In the Engine Editor, browse to Add-Ons | TLS Inspection, then",
+      "select the Cryptography Suite Set. For more information, see the “Configure TLS",
+      "inspection for client protection” and “Activating TLS inspection” topics in the “Setting",
+      "up TLS Inspection” chapter of the Forcepoint NGFW Product Guide.",
+      "• To use TLS Inspection for Server Protection, browse to Add-Ons | TLS Inspection, then",
+      "select the Cryptography Suite Set. For more information, see the “Activating TLS",
+      "inspection” topic in the “Setting up TLS Inspection” chapter of the Forcepoint NGFW | Product Guide.",
+      "• When using TLS Inspection or Sidewinder HTTPS proxy, create a Firewall Policy that has",
+      "an Access rule that allows the TLS connection and create an Inspection Policy that has | an Inspection rule that terminates connections that match the TLS_Certificate-Verify- | Failed Situation. On the Inspection tab of the Firewall Policy, you must select the | Inspection Policy that you created. | • To use Sidewinder HTTP and HTTPS proxies, browse to Add-Ons | Sidewinder Proxy | click Advanced, then set the value of the tls_cipher_override property to",
+      "TLSv1.2+ECDHE+AES!AESCCM:TLSv1.2+DHE+AES!AESCCM!DSS on the HTTP tab. For | Forcepoint Next Generation Firewall for Desktop Appliances - LEVEL 1 | Rev. C, Copyright © 2026 Forcepoint | more information, see the “Advanced settings for Sidewinder Proxies” topic in the | “Sidewinder Proxies” chapter of the Forcepoint NGFW Product Guide.",
+      "• When using IPsec, disable Automated RSA Certificate Management. Browse to VPN",
+      "Certificates, then deselect Automated RSA Certificate Management. | • To use IPsec, right-click the Gateway element, then select Tools | Generate Certificate",
+      "to create a certificate signing request. Select RSA with 2048 or greater key size, or",
+      "ECDSA as the Public Key Algorithm. For more information, see the “Create a VPN | certificate or certificate request for a VPN Gateway element” topic in the “Managing | VPN certificates” chapter of the Forcepoint NGFW Product Guide. | • To use an IPsec VPN, create a VPN Profile element. Use only the Approved and Allowed | for a list of algorithms implemented. Additionally, in the profile element, the IPsec | Tunnel Lifetime should be set to less than 232 bytes. Select the VPN Profile element. | For more information, see the “Create VPN Profile elements” topic in the “VPNs in | Forcepoint NGFW” chapter of the Forcepoint NGFW Product Guide. | • Create Access Rules to configure the Alternating Bypass Feature. | • Save the initial configuration for the NGFW Engine. Make a note of the one-time | password, which is required for initial contact with the SMC. | See Section “11.1.4 Setting up the Approved Configuration” for setting up the device configurations. | 11.1.3 Downloading and Upgrading to an Approved Firmware Version | The NGFW appliances are delivered in an operational state with the most recent firmware | preinstalled. The NGFW firmware must be upgraded to the FIPS 140-3 validated NGFW firmware | version to be placed in the Approved mode of operation. | Note: The upgrade to the FIPS 140-3 validated NGFW firmware version is necessary even if the same | version was installed previously. This is required because the file system checksum is stored during",
+      "the upgrade process. A method to update the firmware image with a SHA2-512 checksum signed with",
+      "ECDSA P-521 is provided. Prior to installing the new image, its associated checksum is checked. If the | signature check fails, the new firmware is ignored, and the current firmware remains loaded. If the | signature check passes, the new image will be installed and executed after the appliance is restarted. | Any firmware loaded into the module other than version 6.10.13.26655.fips.2 is out of the scope of | this validation and will mean that the module is not operating in the approved mode of operation. | A FIPS 140-3 Validated NGFW firmware version is downloaded as follows | 1. Login to the Forcepoint Support https://support.forcepoint.com/Login | 2. Proceed to the Forcepoint NGFW downloads section. | 3. Download the firmware version 6.10.13.26655.fips.2 installation file | (sg_engine_6.10.13.26655.fips.2_x86-64-small.zip).",
+      "4. Verify the SHA checksum. | Note: The correct checksums are shown on the download page and can also be found in the release | Forcepoint Next Generation Firewall for Desktop Appliances - LEVEL 1 | Rev. C, Copyright © 2026 Forcepoint | After downloading the firmware, the operator can upgrade to a FIPS 140-3 validated firmware | version | 1. Save the FIPS 140-3 validated NGFW firmware version upgrade .zip file to the root directory of | a USB drive. Note – The firmware upgrade zip file must be in the root directory of the media. | 2. Connect to the appliance using a monitor and keyboard. | 3. Power on the appliance and start the NGFW Configuration Wizard. | 4. Select the Firewall/VPN option. | 5. Select Upgrade. The Select Source Media dialog opens. | 6. Select the appropriate media type and select OK. The firmware update signature is verified. | 7. Select OK. The upgrade starts. | 8. Select “Set kernel in FIPS mode” after restart. Select OK. | 9. The NGFW appliance restarts and displays the upgraded version. | 10. Verify the NGFW firmware version to ensure that the FIPS validated NGFW firmware version is | loaded. | 11.1.4 Setting up the Approved Configuration | To configure the NGFW Engine | 1. Start the NGFW Configuration Wizard as instructed in the Configuring the Engine in the Engine | Configuration Wizard section of the NGFW Installation Guide. | 2. Configure the network interfaces according to your environment as instructed in the | Configuring the Network Interfaces section of the NGFW Installation Guide. | a. Configure the operating system settings according to the \"Configuring the Operating | System Settings\" section of the NGFW Installation Guide. | b. Select both | - \"Restricted FIPS-compatible operating mode\" (This automatically disables the",
+      "SSH daemon and root password options in the Engine Configuration Wizard). | - \"FIPS 140-3 compatible mode\" (This setting ensures the module uses only | FIPS 140-3 approved algorithms and security functions). | 3. Contact the Management Server as instructed in the Contacting the Management Server | section of the NGFW Installation Guide. Enter node IP address manually is selected by default | and other IP address options are disabled when the “Restricted FIPS-compatible operating | mode” setting is enabled. The engine restarts. | 4. To verify the “FIPS 140-3 compatible operating mode” setting is activated | a. Verify that the following messages are displayed on the console when the engine | restarts | - FIPS: rootfs integrity check OK (Displayed after the root file system integrity | test has been executed successfully) | - FIPS power-up tests succeeded (Displayed after the FIPS 140 power-up tests | have been executed successfully) | b. Continue as instructed in the “After Successful Management Server Contact” section of | the NGFW Installation Guide. | Forcepoint Next Generation Firewall for Desktop Appliances - LEVEL 1 | Rev. C, Copyright © 2026 Forcepoint | Note: If the engine does not enter the “Restricted FIPS-compatible operating mode” even though it is | configured to do so, or if the power-up tests fail (a power-up test error message is displayed or the | success message is not displayed), the appliance must be reset to factory settings and reinstalled. | Note: The “FIPS 140-3 compatible operating mode” and “Restricted FIPS-compatible operating mode” | settings must be enabled during the initial configuration of the appliance. | 11.1.5 Resetting the Module to Factory Settings (Sanitization) | Resetting the appliance to factory settings is not part of the normal installation procedure. There is | no need to reset the appliance to factory settings before starting to use it for the first time. These | instructions can be used to reset the appliance to factory settings when necessary, such as when | initial configuration has been completed without enabling the “Restricted FIPS-compatible operating | mode”, during use, or when the appliance is being removed from use. | To reset the appliance to factory settings | 1. Reboot the appliance and select System restore options from the boot menu. NGFW System | Restore starts. | 2. Enter 2 for Advanced data removal options. | 3. Enter one of the following options | • 1 for 1 pass overwrite. | • 8 for a Custom number of overwrite passes. | If you selected Custom, enter the number of overwrite passes. A larger number of overwrites is more | secure, but it may take a considerable amount of time depending on the appliance storage capacity. | 11.2 Administrator Guidance | The Crypto-Officer is responsible for ensuring the module is running in Approved mode of operation | using the steps in Section “11.1 Installation, Initialization, and Startup Procedures”. | In order to identify the modules’ version, the operator must do the following | 1. At the Home screen of the SMC that is being used to manage the module, click on the firewall. | 2. On the right-hand column, under “Info”, the firewall version (and update package) will be in | the “General” tab | Figure 9: Depiction of the Module Version Displayed in the SMC GUI | If problems occur, Crypto-Officer intervention is required to either perform a restore to factory | defaults settings and reinstall, or power-off and contact Forcepoint Customer Support. | 11.3 Non-Administrator Guidance | Forcepoint Next Generation Firewall for Desktop Appliances - LEVEL 1 | Rev. C, Copyright © 2026 Forcepoint | The notes below provide additional guidance and policies that must be followed by module | operators",
+      "• Use of AES GCM: The module generates AES GCM IV in accordance with SP 800-38D in",
+      "compliance with IG C.H scenario 1. The GCM IV generation in the TLS context follows RFC 5288",
+      "and SP 800-52rev2 section 3.3.1 and shall only be used for the TLS protocol version 1.2. The",
+      "GCM IV generation in the IPsec context follows RFC 4106 and RFC 7296 and shall only be used | with IPsec and IKEv2 to be compliant with IG C.H. The implementation of the 64-bit | nonce_explicit part of the IV is deterministic and management logic is inside the module. By | the design of the module and by virtue of the data size limit (see above Section \"11.1.2 | Creating a Configuration for the Approved Mode of Operation”) set, the maximum number | possible value of 2^64 for nonce_explicit part of the IV is never reached. In case the module’s",
+      "power is lost and then restored, the key used for the AES GCM encryption or decryption shall | be re-distributed.",
+      "• Use of PBKDF: The module implements key derivation through the SP 800-132 PBKDF2. The | module supports option 1a from Section 5.4 of SP 800-132, whereby the MK is used directly as | the DPK. Keys derived from passwords or passphrases are only used for data at rest. The | length of the salt should be at least 128 bits and the length of the password or passphrase | should be at least 10 characters, which provides the probability of guessing this password or",
+      "passphrase to be (1/94)10. The caller shall observe all requirements and should consider all | recommendations specified in SP 800-132 with respect to the strength of the generated key | including the quality of the password and the quality of the salt. Keys derived from passwords | as shown in SP 800-132, may only be used in storage applications. For encrypted private key | entry as part of the configuration, the PBKDF2 iteration count must be between 1000 and | 10000 to allow the recommended minimum in SP 800-132 while keeping performance the | impact small, and the passphrase must be at least 14 characters.",
+      "• Use of insecure protocols – The following insecure protocols are disabled by default: SSH | Console Access, and WIFI Interfaces. The root password option is automatically disabled. To",
+      "maintain compliance with FIPS requirements, these protocols and services shall not be | enabled. | • Network Component replacement – As noted earlier, the NGFW appliances are modular by | design. The Network Components are field-replaceable. Operators in the field can order the | desired Network Components directly from Forcepoint Customer Support using the | appropriate part numbers. The CO must install the Network Components as described in | Section “11.1.1 Hardware Setup“ above.",
+      "• Use of Legacy 1024-bit RSA – Operators of the module shall only import 1024-bit RSA keys",
+      "created prior to the 2011 transition date and the operator shall not verify any signatures | signed after 2011. By default, the module does not include any trusted certificates with 1024-",
+      "bit RSA keys that were signed after the 2011 transition date. | 12 Mitigation of Other Attacks | This Section is Not Applicable. The modules do not claim to mitigate any attacks beyond the FIPS 140- | 3 Level 1 requirements for this validation."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5276.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 37,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5276.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5309"
+  },
+  "certificate": {
+    "certificate_number": "5309",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5309",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5309",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5309.pdf",
+    "vendor_name": "Arista Networks, Inc.",
+    "module_name": "Arista MACsec data plane accelerator [PHY]",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/3/2026",
+    "validation_dates": [
+      "6/3/2026"
+    ],
+    "sunset_date": "6/2/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Arista MACsec data plane accelerator is used by networking infrastructure to secure traffic across cloud networks consisting of long-distance and large-scale data communications across the globe and is protected by strong cryptography that meets regulatory requirements.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5309.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/3/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Arista Networks, Inc.",
+      "website_url": "http://www.arista.com",
+      "address_lines": [
+        "5453 Great America Parkway",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Arista Networks Certification Team",
+      "contact_email": "cert-team@arista.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB A1359 Direction - Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A1359 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D",
+      "AES-XPN A1359 Direction - Decrypt, Encrypt | Key Length - 128, 256 | IV Generation - External | SP 800-38D | Credo Osprey",
+      "AES-ECB A1902 Direction - Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A1902 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D",
+      "AES-XPN A1902 Direction - Decrypt, Encrypt | Key Length - 128, 256 | IV Generation - External | SP 800-38D",
+      "SHA3 Implementation",
+      "SHA3-256 A7380 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 202 | The Approved Algorithms tables above list the approved algorithms implemented by the Arista | MACsec data plane accelerator [PHY]. | The module does not implement any vendor-affirmed algorithms. | Arista Networks, Inc. FIPS 140-3 Security Policy | 2025 Arista Networks, Inc. and Lightship Security, Inc. Page 11 of 29 | This document may be freely reproduced and distributed whole and intact, including this copyright notice. | The module does not implement any | Arista Networks, Inc. FIPS 140-3 Security Policy | 2025 Arista Networks, Inc. and Lightship Security, Inc. Page 12 of 29 | This document may be freely reproduced and distributed whole and intact, including this copyright notice. | The module does not implement any | claimed. | The module does not implement any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5309.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 8,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5309.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

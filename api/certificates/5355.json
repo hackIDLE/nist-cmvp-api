@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355"
+  },
+  "certificate": {
+    "certificate_number": "5355",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
+    "vendor_name": "SUSE LLC",
+    "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/25/2026",
+    "validation_dates": [
+      "6/25/2026"
+    ],
+    "sunset_date": "6/24/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures which is shipped with SUSE Linux Enterprise.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/25/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "SUSE LLC",
+      "website_url": "http://www.suse.com",
+      "address_lines": [
+        "1221 S Valley Grove Way, #500",
+        "Pleasant Grove, UT 84062",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Ivan Teblin",
+      "contact_email": "sec-cert@suse.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6360, A6361 | A6362, A6363 | A6368, A6372 | A6374, A6375 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A6360, A6372 | A6374 | Key Length - 128, 256 SP 800-38C",
+      "AES-CFB8 A6365, A6366 | A6371 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A6360, A6363 | A6368, A6374 | Direction - Generation | Key Length - 128, 256 | SP 800-38B",
+      "AES-ECB A6373 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6360, A6361 | A6362, A6363 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D | SUSE Linux Enterprise GnuTLS Cryptographic Module | A6368, A6372 | A6374, A6375",
+      "AES-GMAC A6368 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D",
+      "AES-XTS | Testing | Revision 2.0 | A6369 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG A6368 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS186-5) | A6368 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-4) | A6368 Curve - P-192 FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-5) | A6368 Curve - P-224, P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6368 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384",
+      "SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6368 Curve - P-224, P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A6363, A6368 | A6372, A6376 | Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 224 | A6363, A6368 | A6372, A6376 | Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6363, A6368 | A6372, A6376 | Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6363, A6368 | A6372, A6376 | Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6363, A6368 | A6372, A6376 | Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6368 Domain Parameter Generation Methods - P-224, P- | 256, P-384, P-521 | Scheme - | SP 800-56A | Rev. 3 | SUSE Linux Enterprise GnuTLS Cryptographic Module | ephemeralUnified - | KAS Role - initiator, responder",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A6368 Domain Parameter Generation Methods - ffdhe2048 | ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP- | 2048, MODP-3072, MODP-4096, MODP-6144 | MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA HKDF | Sp800-56Cr1 | A6367 Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224- | 65336 Increment 8 | HMAC Algorithm - SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | SP 800-56C | Rev. 2",
+      "KDF TLS",
+      "(CVL)",
+      "A6368 TLS Version - v1.0/1.1 SP 800-135 | Rev. 1",
+      "PBKDF A6368 Iteration Count - Iteration Count: 1000-10000 | Increment 1 | Password Length - Password Length: 8-128 | Increment 1 | SP 800-132",
+      "RSA KeyGen | (FIPS186-5) | A6368 Key Generation Mode - provable",
+      "Hash Algorithm - SHA2-384 | Modulo - 2048, 3072, 4096, 6144, 8192 | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6368 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6368 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes | Key Generation | A6368 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048 | MODP-3072, MODP-4096, MODP-6144, MODP- | 8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A6363, A6368 | A6372, A6376 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-224 A6363, A6368 | A6372, A6376 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4 | SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "SHA2-256 A6363, A6368 | A6372, A6376 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-384 A6363, A6368 | A6372, A6376 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-512 A6363, A6368 | A6372, A6376 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA3-224 A6364, A6370 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-256 A6364, A6370 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-384 A6364, A6370 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-512 A6364, A6370 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "TLS v1.2 KDF | RFC7627",
+      "A6368 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1 | The above table lists all approved cryptographic algorithms of the module, including specific key lengths | employed for approved services, and implemented modes or methods of operation of the algorithms . | Name Properties Implementation Reference | Asymmetric Key Pair Generation | (CKG) | Key | Type:Asymmetric | N/A SP 800-133r2, section 4 | example 1 | N/A for this module. | SUSE Linux Enterprise GnuTLS Cryptographic Module | Name Caveat Use and Function | MD5 Only allowed as the PRF in TLSv1.0 and v1.1 | per IG 2.4.A",
+      "Message digest used in TLSv1.0/v1.1 KDF only for | legacy use | Blowfish Symmetric encryption; Symmetric decryption | Camellia Symmetric encryption; Symmetric decryption | CAST Symmetric encryption; Symmetric decryption | ChaCha20 Symmetric encryption; Symmetric decryption | ChaCha20 and Poly1305 Authenticated encryption; Authenticated | decryption",
+      "AES-GCM (when not used in the context of the TLS | protocol) | Authenticated encryption; Authenticated | decryption",
+      "DES Symmetric encryption; Symmetric decryption | Diffie-Hellman with keys generated with domain | parameters other than safe primes",
+      "Key agreement; Shared secret computation",
+      "DRBG when key length is less than 112 bits Symmetric key generation",
+      "DSA Key generation; Domain parameter generation | Digital signature generation; Digital signature | verification",
+      "ECDSA with curves not listed in Table \"Approved | Key generation; Public key verification",
+      "ECDSA with curves not listed in Table \"Approved",
+      "SHA2-256, SHA2-384, SHA2-512 | Digital signature generation; Digital signature | verification | EC Diffie-Hellman with curves not listed in Table | \"Approved Algorithms\"",
+      "Key agreement; Shared secret computation | GOST Symmetric encryption; Symmetric decryption",
+      "HMAC with keys smaller than 112-bit Message authentication code (MAC)",
+      "HMAC with GOST Message authentication code (MAC) | MD2 Message digest; Message authentication code | (MAC) | MD4 Message digest; Message authentication code | (MAC) | SUSE Linux Enterprise GnuTLS Cryptographic Module | MD5 Message digest; Message authentication code | (MAC)",
+      "Non-supported cipher suites (not listed in Appendix A) Transport Layer Security (TLS) Network | Protocol",
+      "PBKDF with non-approved message digest algorithms Key derivation | RC2 Symmetric encryption; Symmetric decryption | RC4 Symmetric encryption; Symmetric decryption | RMD160 Message digest; Message authentication code | (MAC)",
+      "RSA (with keys smaller than 2048 bits and/or hash",
+      "functions other than SHA2-224, SHA2-256, SHA2-384",
+      "SHA2-512) | Digital signature generation; Digital signature | verification",
+      "RSA (with keys smaller than 2048 bits) Key generation",
+      "RSA (with any key sizes) Key encapsulation; Key unencapsulation | Salsa20 Symmetric encryption; Symmetric decryption | SM3 Message digest | Serpent Symmetric encryption; Symmetric decryption | STREEBOG Message digest; Message authentication code | (MAC)",
+      "Triple-DES Symmetric encryption; Symmetric decryption | Twofish Symmetric encryption; Symmetric decryption | UMAC Message authentication code (MAC) | Yarrow Random number generation | The above table lists non-Approved security functions that are not allowed in the approved mode of operation ."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 66,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,35 +1,34 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When utilizing a Trusted Path as specified in the security policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
     "certificate_number": "3932",
-    "dataset": "active",
-    "description": "The ENFORCER R1 provides a physically secure, Level 4 enclosure protecting CSPs and cryptographic data. A physical tamper event on the enclosure immediately zeroizes module CSPs. It provides a KMIP (Key Management Interoperability Protocol) service for key management to external users. It also provides additional services for module management, module configuration, and for building higher-level application scenarios such as integration into cloud and data center environments.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "ENFORCER R1",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3932",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
+    "vendor_name": "Private Machines Inc.",
+    "module_name": "ENFORCER R1",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 4,
+    "validation_date": "5/24/2021",
+    "validation_dates": [
+      "5/24/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "When utilizing a Trusted Path as specified in the security policy",
+    "description": "The ENFORCER R1 provides a physically secure, Level 4 enclosure protecting CSPs and cryptographic data. A physical tamper event on the enclosure immediately zeroizes module CSPs. It provides a KMIP (Key Management Interoperability Protocol) service for key management to external users. It also provides additional services for module management, module configuration, and for building higher-level application scenarios such as integration into cloud and data center environments.",
+    "software_versions": null,
+    "hardware_versions": "(ENFORCER.R1.A2SDi.1.0.0, ENFORCER.R1.X10SDV.1.0.0, ENFORCER.R1.M11SDV.1.0.0 or ENFORCER.R1.X11SDV.1.0.0) and other excluded components identified in Security Policy Section 1.4",
+    "firmware_versions": "Security Anchor Firmware 1.2.0, Libdrbg 1.0.2, and Libucl 2.5.13",
+    "security_level_exceptions": [],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,37 +39,26 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2021_010621_0658.pdf"
       }
     ],
-    "security_level_exceptions": [],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "5/23/2026",
-    "validation_date": "5/24/2021",
-    "validation_dates": [
-      "5/24/2021"
-    ],
     "validation_history": [
       {
         "date": "5/24/2021",
-        "lab": "Penumbra Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Penumbra Security, Inc."
       }
     ],
     "vendor": {
+      "name": "Private Machines Inc.",
+      "website_url": "http://privatemachines.com",
       "address_lines": [
         "164 20 Street, 4th floor",
         "Brooklyn, NY 11232",
         "United States"
       ],
-      "contact_email": null,
-      "contact_name": null,
-      "contact_phone": null,
       "country": "United States",
-      "name": "Private Machines Inc.",
-      "website_url": "http://privatemachines.com"
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null
     },
-    "vendor_name": "Private Machines Inc.",
     "algorithms": [
       "AES",
       "CVL",
@@ -85,6 +73,25 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3932.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

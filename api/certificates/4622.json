@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4622"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When installed, initialized, and configured as specified in the Security Policy Section 9.2 and operated in FIPS mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4622",
     "certificate_number": "4622",
-    "dataset": "active",
-    "description": "Nuvoton NPCT7xx TPM 2.0 is a hardware cryptographic module that implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography; as well as key generation and random number generation.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "NPCT7xx TPM 2.0 rev 1.38",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4622",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4622",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4622.pdf",
+    "vendor_name": "Nuvoton Technology Corporation",
+    "module_name": "NPCT7xx TPM 2.0 rev 1.38",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "10/2/2023",
+    "validation_dates": [
+      "10/2/2023"
+    ],
+    "sunset_date": null,
+    "caveat": "When installed, initialized, and configured as specified in the Security Policy Section 9.2 and operated in FIPS mode",
+    "description": "Nuvoton NPCT7xx TPM 2.0 is a hardware cryptographic module that implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography; as well as key generation and random number generation.",
+    "software_versions": null,
+    "hardware_versions": "LAG019 in TSSOP28 Package, LAG019 in QFN32 Package, and LAG019 in UQFN16 Package",
+    "firmware_versions": "7.2.2.0",
+    "security_level_exceptions": [
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +43,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2023_011123_0711.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4622.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "5/25/2026",
-    "validation_date": "10/2/2023",
-    "validation_dates": [
-      "10/2/2023"
-    ],
     "validation_history": [
       {
         "date": "10/2/2023",
-        "lab": "EWA - Canada",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "EWA - Canada"
       }
     ],
     "vendor": {
+      "name": "Nuvoton Technology Corporation",
+      "website_url": "http://www.nuvoton.com",
       "address_lines": [
         "4, Creation Road III",
         "Hsinchu Science Park",
         "Taiwan"
       ],
-      "contact_email": "Yossi.Talmi@nuvoton.com",
-      "contact_name": "Yossi Talmi",
-      "contact_phone": "+972-9-9702364",
       "country": "Taiwan",
-      "name": "Nuvoton Technology Corporation",
-      "website_url": "http://www.nuvoton.com"
+      "contact_name": "Yossi Talmi",
+      "contact_email": "Yossi.Talmi@nuvoton.com",
+      "contact_phone": "+972-9-9702364"
     },
-    "vendor_name": "Nuvoton Technology Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4622.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4622.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

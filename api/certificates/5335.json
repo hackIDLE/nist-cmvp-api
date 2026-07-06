@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5335"
+  },
+  "certificate": {
+    "certificate_number": "5335",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5335",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5335",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5335.pdf",
+    "vendor_name": "General Dynamics Mission Systems",
+    "module_name": "GD SecureComm Crypto",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/16/2026",
+    "validation_dates": [
+      "6/16/2026"
+    ],
+    "sunset_date": "6/15/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "A shared library that implements cryptographic services such as keystream generation using AES-CTR mode, AES key wrap, and AES key unwrap.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Software/Firmware security: Level 2",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Sensitive security parameter management: Level 2",
+      "Life-cycle assurance: Level 2",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5335.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/16/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "General Dynamics Mission Systems",
+      "website_url": "http://www.gdmissionsystems.com",
+      "address_lines": [
+        "8210 E Roosevelt St.",
+        "Scottsdale, Arizona 85257",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Chris Steenhoek",
+      "contact_email": "Chris.Steenhoek@gd-ms.com",
+      "contact_phone": "480-441-0172"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CTR A7487 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-ECB A7487 Direction - Decrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW A7487 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+      "HMAC-SHA2-256 A7487 Key Length - Key Length: 256 FIPS 198-1",
+      "SHA2-256 A7487 Message Length - Message Length: 256 FIPS 180-4 | N/A for this module. | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5335.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 5,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5335.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

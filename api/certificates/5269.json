@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5269"
+  },
+  "certificate": {
+    "certificate_number": "5269",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5269",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5269",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5269.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "BIG-IP Tenant Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "5/15/2026",
+    "validation_dates": [
+      "5/15/2026"
+    ],
+    "sunset_date": "1/16/2030",
+    "caveat": "When operated in approved mode. When installed, initialized, and configured as specified in Section 11 of the Security Policy with tamper evident labels contained in F5-ADD-BIG-FIPS140 kit and installed as indicated in the Security Policy section 7. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "BIG-IP Tenant Cryptographic Module, Application Delivery Controller and Firewall software running on running on F5 hardware and the underlying platform layer.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5269.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/15/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "https://csrc.nist.gov/f5.com",
+      "address_lines": [
+        "801 Fifth Ave",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Maryrita Steinhour",
+      "contact_email": "fipsbigip17@f5.com",
+      "contact_phone": "206-272-735"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3729 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A3730 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CCM A3729 Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 80, 88, 96, 104 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0, 524288 | SP 800-38C",
+      "AES-CCM A3730 Key Length - 128, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 80, 88, 96, 104 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0, 524288 | SP 800-38C",
+      "AES-CTR A3729 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-GCM A3729 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128, 256, 104, 408 | AAD Length - AAD Length: 128, 384, 160, 720, 0 | SP 800-38D",
+      "AES-GCM A3730 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128, 256, 104, 408 | AAD Length - AAD Length: 128, 384, 160, 720, 0 | SP 800-38D | BIG-IP Tenant Cryptographic Module",
+      "Counter DRBG A3729 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No, Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 256, Entropy Input: 384 | Nonce - Nonce: 128 | Personalization String Length - Personalization String | Length: 0-256 Increment 8, Personalization String Length | 0-384 Increment 8 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "Counter DRBG A3730 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - Personalization String | Length: 0-256 Increment 8 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A3729 | A3730 | Curve - P-256, P-384 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyGen | (FIPS186-5) | A3729 | A3730 | Curve - P-256, P-384 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-4) | A3729 | A3730 | Curve - P-256, P-384 FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-5) | A3729 | A3730 | Curve - P-256, P-384 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-4) | A3729 | A3730 | Component - No | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-5) | A3729 | A3730 | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-4) | A3729 | A3730 | Component - No | Curve - P-256, P-384",
+      "ECDSA SigVer | (FIPS186-5) | A3729 | A3730 | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A3729 MAC - MAC: 160 | Key Length - Key Length: 8, 16, 64, 128, 1024 | FIPS 198-1",
+      "HMAC-SHA2-256 A3729 | A3730 | MAC - MAC: 256 | Key Length - Key Length: 8, 16, 64, 128, 1024 | FIPS 198-1 | BIG-IP Tenant Cryptographic Module",
+      "HMAC-SHA2-384 A3729 | A3730 | MAC - MAC: 384 | Key Length - Key Length: 8, 16, 64, 128, 1024 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A3729 | A3730 | Domain Parameter Generation Methods - P-256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A3729 | A3730 | Domain Parameter Generation Methods - ffdhe2048 | ffdhe3072, ffdhe4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A3729 Cipher - AES-128, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-4) | A3729 Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA KeyGen | (FIPS186-5) | A3729 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | p mod 8 - 0 | Primality Tests - 2powSecStr | q mod 8 - 0 | Fixed Public Exponent - 010001 | Info Generated By Server - No | Private Key Format - standard | Public Exponent Mode - fixed | FIPS 186-5",
+      "RSA SigGen | (FIPS186-4) | A3729 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-256 | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3730 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "RSA SigGen | (FIPS186-5) | A3729 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A3730 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | FIPS 186-5 | BIG-IP Tenant Cryptographic Module",
+      "RSA SigVer | (FIPS186-4) | A3729 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Salt Length - 20 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3730 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "RSA SigVer | (FIPS186-5) | A3729 Hash Pair -",
+      "Hash Algorithm - SHA-1 | Salt Length - 20 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A3730 Hash Pair -",
+      "Hash Algorithm - SHA-1 | Salt Length - 20 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | Mask Function - mgf1 | FIPS 186-5 | Safe Primes Key | Generation | A3729 | A3730 | Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A3729 | A3730 | Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 SP 800-56A | Rev. 3",
+      "SHA2-256 A3729 | A3730 | Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A3729 | A3730 | Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL) | A3729 | A3730",
+      "Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | Cryptographic Key Generation | (CKG) | Key | Type:asymmetric | N/A Section 4 example 1 of SP800- | 133r2 | BIG-IP Tenant Cryptographic Module | N/A for this module. | N/A for this module.",
+      "HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-512 Message authentication TLS",
+      "Triple-DES, Camellia, SEED Symmetric encryption and decryption",
+      "TLS",
+      "HMAC-SHA2-256, HMAC-SHA2-512, AES-GCM Message authentication in IPsec/ IKEv2 | protocol | PKCS #1 v1.5 scheme with modulus other than 2048, 3072 or",
+      "4096 bits, for all SHA sizes; PKCS #1 v1.5 and PSS schema",
+      "with modulus size 2048, 3072, 4096 bits with SHA-1, SHA2-",
+      "224, SHA2-512; with ANS X9.31 standard",
+      "RSA signature generation and | verification",
+      "ECDSA with curves P-256/ P-384 with SHA-1/SHA2-224",
+      "ECDSA using curves other than P-256 and P-384 with all SHA | sizes",
+      "ECDSA signature generation and | verification",
+      "RSA with modulus sizes up to 16384 bits RSA encrypt / decrypt",
+      "DSA with all key and SHA sizes DSA domain parameter generation | domain parameter verification, key pair | generation, signature generation and | verification",
+      "Diffie-Hellman using MODP1024, MODP2048 groups Shared secret computation in IPsec/IKE | protocol",
+      "MD5/ SHA-1/ SHA2-224 / SHA2-512 Key Derivation function in the context of",
+      "TLS KDF",
+      "EdDSA with Ed25519 EdDSA digital signature",
+      "SHA-1, AES-ECB, RSA- signature verification SNMP",
+      "TLS ciphersuites implemented by f5-rest-node TLS used in SSL Orchestrator (SSLO)",
+      "RSA keypair with 2048, 3072 and 4096 (REST API) iControl representation state transfer | (REST) access | EC Diffie-Hellman Ephemeral Unified with curves other than P- | 256, P-384. EC Diffie-Hellman using onePassDH / | StaticUnified schemes. Diffie-Hellman using groups other than | ffdhe2048, ffdhe3072, ffdhe4096",
+      "Shared secret computation",
+      "Triple-DES, AES-GCM-128, AES-192, AES-256 Symmetric encryption and decryption in | IPsec /IKEv2 | BIG-IP Tenant Cryptographic Module"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5269.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 72,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5269.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

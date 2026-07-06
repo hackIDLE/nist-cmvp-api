@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291"
+  },
+  "certificate": {
+    "certificate_number": "5291",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
+    "vendor_name": "Yubico, Inc.",
+    "module_name": "YubiKey 5 Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "5/22/2026",
+    "validation_dates": [
+      "5/22/2026"
+    ],
+    "sunset_date": "5/21/2031",
+    "caveat": "When operated in approved mode; When installed, initialized and configured as specified in Section 11.1 of the Security Policy; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The YubiKey 5 Cryptographic Module (the module) is a single-chip module validated at FIPS 140-3 Security Level 2. The module is a secure element that supports multiple protocols designed to be embedded in USB and/or NFC security tokens. The module can generate, store, and perform cryptographic operations for sensitive data and can be utilized via an external touch-button for Test of User Presence in addition to PIN for smart card authentication. The module implements several major functions - FIDO, PIV-compatible smart card, OpenPGP smart card, OATH authentication, Security Domain, and YubiHSM Auth.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/22/2026",
+        "type": "Initial",
+        "lab": "Penumbra Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Yubico, Inc.",
+      "website_url": "http://www.yubico.com",
+      "address_lines": [
+        "5201 Great America Parkway",
+        "ste 122",
+        "Santa Clara, CA 95054",
+        "United States"
+      ],
+      "country": "United States",
+      "contact_name": "FIPS certification team",
+      "contact_email": "fips-certifications@yubico.com",
+      "contact_phone": "1-650-285-0088"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDH",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC | A5891 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM | A5891 | Key Length - 128, 192, 256 | SP 800-38C",
+      "AES-CMAC | A5891 | Direction - Generation, Verification | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-ECB | A5891 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "Counter DRBG | A5891 | Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen (FIPS186-5) | A5891 | Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) | A5891 | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | Component - Yes | FIPS 186-5 | This document may be freely reproduced and distributed, but only in its entirety and without modification",
+      "ECDSA SigVer (FIPS186-5) | A5891 | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "EDDSA KeyGen | A5891 | Curve - ED-25519 | FIPS 186-5",
+      "EDDSA SigGen | A5891 | Curve - ED-25519 | FIPS 186-5",
+      "EDDSA SigVer | A5891 | Curve - ED-25519 | FIPS 186-5",
+      "HMAC-SHA-1 | A5891 | Key Length - Key Length: 112-512 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 | A5891 | Key Length - Key Length: 112-512 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 | A5891 | Key Length - Key Length: 112-1024 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-512 | A5891 | Key Length - Key Length: 112-1024 Increment | 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 | A5891 | Domain Parameter Generation Methods - P- | 224, P-256, P-384, P-521 | Scheme - | fullUnified - | KAS Role - initiator, responder | onePassDh - | KAS Role - initiator, responder | onePassUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA HKDF SP800-56Cr2 | A5891 | Derived Key Length - 256 | Shared Secret Length - Shared Secret Length | 256 | HMAC Algorithm - SHA2-256 | SP 800-56C | Rev. 2",
+      "KDF ANS 9.63 (CVL) | A5891",
+      "Hash Algorithm - SHA2-256 | Key Data Length - Key Data Length: 512, 640 | SP 800-135 | Rev. 1 | This document may be freely reproduced and distributed, but only in its entirety and without modification",
+      "KDF SP800-108 | A5891",
+      "KDF Mode - Counter | Supported Lengths - Supported Lengths: 8- | 2040 Increment 8 | SP 800-108 | Rev. 1",
+      "RSA Decryption Primitive | Sp800-56Br2 (CVL) | A5891 | Modulo - 2048, 3072, 4096 | SP 800-56B | Rev. 2",
+      "RSA KeyGen (FIPS186-5) | A5891 | Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - crt | FIPS 186-5",
+      "RSA SigGen (FIPS186-5) | A5891 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA Signature Primitive (CVL) | A5891 | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer (FIPS186-5) | A5891 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 | A5891 | Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-256 | A5891 | Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-384 | A5891 | Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-512 | A5891 | Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4 | This document may be freely reproduced and distributed, but only in its entirety and without modification | The module supports the following vendor affirmed algorithms (refer to Table 5). | Name | Implementation | CKG | Key Type:Symmetric and | Asymmetric | Yubico Common | Cryptographic Library | NIST SP 800-133r2, Section 4 example 1 | Sections 5.1, 5.2, and 6.1",
+      "The module supports ECDSA with non-NIST recommended curves: brainpool256r1, brainpool384r1, and | brainpool512r1. These curves are allowed per IG C.A.",
+      "The module also supports KAS with non-NIST recommended curves: brainpool256r1, brainpool384r1 | brainpool512r1. These curves are allowed per IG C.A. | Name | Implementation",
+      "ECDSA | Curve:brainpool256r1, brainpool384r1 | brainpool512r1 | Yubico Common Cryptographic | Library | IG C.A",
+      "KAS | Curve:brainpool256r1, brainpool384r1 | brainpool512r1 | Yubico Common Cryptographic | Library | IG C.A",
+      "The module supports DES for internal integrity checks with no security claimed. In addition, the module supports",
+      "ECDH with no security claimed; this ECDH is to support the legacy PIN protocol 1 over directly connected USB",
+      "sessions. The ECDH implementation provides no security and all transmissions within the established session are | handled as plaintext. For this reason, the module only permits PIN protocol 1 use over a directly connected USB | session for which plaintext transmissions of PIN values permitted. | Name | Caveat | Use and Function",
+      "DES | No security | claimed | For internal integrity checking use only",
+      "ECDH | No security | claimed | For legacy use only, all information transmitted within the established sessions is | treated as plaintext over a directly connected path. | This document may be freely reproduced and distributed, but only in its entirety and without modification | Name | Use and Function",
+      "AES (non-compliant) | Supports the calculation of One-Time Passwords in the OTP functional unit.",
+      "HMAC (non-compliant) | Supports the calculation of One-Time Passwords in the OTP functional unit."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "security_policy_pdf",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
+      "cached": false,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 44,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

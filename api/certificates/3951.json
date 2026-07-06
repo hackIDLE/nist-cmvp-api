@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3951"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3951",
     "certificate_number": "3951",
-    "dataset": "active",
-    "description": "Advantech SQF FIPS products are industry-leading SSDs in the industry. SQF FIPS provides suitable SQF 840F (SATA 6.0Gbs) and SQF 920F (PCIe Gen.3 x4) SSD solutions according to different interface specifications. It's delivering high performance, low latency, and high availability, and included TCG OPAL self-encrypting support.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "SQFlash FIPS Certified SSD",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3951",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3951",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3951.pdf",
+    "vendor_name": "Advantech Co., Ltd.",
+    "module_name": "SQFlash FIPS Certified SSD",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 2,
+    "validation_date": "6/8/2021, 8/16/2024",
+    "validation_dates": [
+      "6/8/2021",
+      "8/16/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "description": "Advantech SQF FIPS products are industry-leading SSDs in the industry. SQF FIPS provides suitable SQF 840F (SATA 6.0Gbs) and SQF 920F (PCIe Gen.3 x4) SSD solutions according to different interface specifications. It's delivering high performance, low latency, and high availability, and included TCG OPAL self-encrypting support.",
+    "software_versions": null,
+    "hardware_versions": "SQFFS25V2-128GSC [A], SQFFS25V4-256GSC [A], SQFFS25V8-512GSC [A], SQFFS25V8-1TSC [A], SQFFS25V8-2TSC [A], SQFFSM8V2-128GSC [A], SQFFSM8V4-256GSC [A], SQFFSM8V4-512GSC [A], SQFFSM8V4-1TSC [A], SQFFSM8V4-2TSC [A], SQFFCM8V4-256GEC [B], SQFFCM8V4-512GEC [B], SQFFCM8V4-1TEC [B], SQFFCM8V4-2TEC [B], SQFFS25V2-256GDSCC [C], SQFFS25V2-512GDSCC [C], SQFFS25V4-1TDSCC [C], SQFFS25V8-2TDSCC [C], SQFFSM8V2-256GDSCC [C], SQFFSM8V2-512GDSCC [C], SQFFSM8V4-1TDSCC [C], SQFFSM8V4-2TDSCC [C], SQFFCM8V2-256GDECC [D], SQFFCM8V4-512GDECC [D], SQFFCM8V4-1TDECC [D], SQFFCM8V4-2TDECC [D]",
+    "firmware_versions": "SCPB13.0 [A], ECPB13.0 [B], SCPB15.0 [C] and ECPB15.0 [D]",
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +43,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3951.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/7/2026",
-    "validation_date": "6/8/2021, 8/16/2024",
-    "validation_dates": [
-      "6/8/2021",
-      "8/16/2024"
-    ],
     "validation_history": [
       {
         "date": "6/8/2021",
-        "lab": "AEGISOLVE, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "AEGISOLVE, Inc."
       },
       {
         "date": "8/16/2024",
-        "lab": "AEGISOLVE, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "AEGISOLVE, Inc."
       }
     ],
     "vendor": {
+      "name": "Advantech Co., Ltd.",
+      "website_url": "http://www.advantech.com",
       "address_lines": [
         "No.1, Alley 20, Lane 26, Rueiguang Road, Neihu District",
         "Taipei 11491",
         "Taiwan"
       ],
-      "contact_email": "Tones.Yen@advantech.com.tw",
-      "contact_name": "Tones Yen",
-      "contact_phone": "886-2-2792-7818",
       "country": "Taiwan",
-      "name": "Advantech Co., Ltd.",
-      "website_url": "http://www.advantech.com"
+      "contact_name": "Tones Yen",
+      "contact_email": "Tones.Yen@advantech.com.tw",
+      "contact_phone": "886-2-2792-7818"
     },
-    "vendor_name": "Advantech Co., Ltd."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3951.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3951.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

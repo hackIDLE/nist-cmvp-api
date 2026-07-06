@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271"
+  },
+  "certificate": {
+    "certificate_number": "5271",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
+    "vendor_name": "NetApp, Inc.",
+    "module_name": "NetApp CryptoMod",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/15/2026, 5/22/2026, 7/1/2026",
+    "validation_dates": [
+      "5/15/2026",
+      "5/22/2026",
+      "7/1/2026"
+    ],
+    "sunset_date": "7/18/2029",
+    "caveat": "When installed, initialized and configured as specified in section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption services for NetApp's ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/15/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      },
+      {
+        "date": "5/22/2026",
+        "type": "Update",
+        "lab": "Lightship Security, Inc."
+      },
+      {
+        "date": "7/1/2026",
+        "type": "Update",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "NetApp, Inc.",
+      "website_url": "http://netapp.com",
+      "address_lines": [
+        "3060 Olsen Drive",
+        "San Jose, CA 95128",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "NetApp Security Assurance Team",
+      "contact_email": "ng-security-assurance@netapp.com",
+      "contact_phone": "1-919-476-5600"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A2640 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CCM A2640 Key Length - 128 | Tag Length - 128, 64, 96 | IV Length - IV Length: 56-104 Increment 8 | Payload Length - Payload Length: 0-256 | Increment 8 | AAD Length - AAD Length: 0-16384 | Increment 8 | SP 800-38C",
+      "AES-CMAC A2640 Direction - Generation, Verification | Key Length - 128, 256 | MAC Length - MAC Length: 32-128 | Increment 8 | Message Length - Message Length: 0- | 524288 Increment 8 | SP 800-38B",
+      "AES-ECB A2640 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A2640 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128 | 408, 480, 512 | AAD Length - AAD Length: 0, 128, 160 | 512, 720 | SP 800-38D",
+      "AES-GMAC A2640 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 0-65536 | Increment 8 | SP 800-38D",
+      "AES-KWP A2640 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 256 | SP 800-38F | NetApp Cryptomod 3.0 | NetApp Inc. Page 20 of 42 | Payload Length - Payload Length: 8-4096 | Increment 8",
+      "AES-XTS Testing | Revision 2.0 | A2640 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128- | 65536 Increment 8 | Tweak Mode - Hex | Data Unit Length - Data Unit Length: 128- | 65536 Increment 8 | Data Unit Length Matches Payload Length | - No | SP 800-38E",
+      "Counter DRBG A2640 Prediction Resistance - Yes | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-512 | Increment 8 | Entropy Input - Entropy Input: 256-1024 | Increment 8 | Nonce - Nonce: 128 | Personalization String Length - | Personalization String Length: 0-512 | Increment 8 | Returned Bits - 1024 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A2640 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A2640 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A2640 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "KDF SP800-108 A2640 KDF Mode - Counter",
+      "MAC Mode - HMAC-SHA-1, HMAC-SHA2-",
+      "256, HMAC-SHA2-512 | Supported Lengths - Supported Lengths: 8- | 4096 Increment 8 | Fixed Data Order - Before Fixed Data | Counter Length - 32 | Supports Empty IV - No | Custom Key In Length - 0 | SP 800-108 | Rev. 1",
+      "PBKDF A2640 Iteration Count - Iteration Count: 1000- | 10000000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-256",
+      "SHA2-512 | Password Length - Password Length: 8- | 128 Increment 8 | SP 800-132 | NetApp Cryptomod 3.0 | NetApp Inc. Page 21 of 42 | Salt Length - Salt Length: 128-4096 | Increment 8 | Key Data Length - Key Data Length: 112- | 4096 Increment 8",
+      "SHA-1 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA3-256 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG - | Section | 6.3 | Key | Type:Symmetric | NetApp | CryptoMod | SP 800-133 Rev. 2 Section 6.3 | Symmetric Keys Produced by Combining | Multiple Keys and Other Data. (Method | 2) | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 22,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

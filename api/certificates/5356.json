@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5356"
+  },
+  "certificate": {
+    "certificate_number": "5356",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5356",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5356",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5356.pdf",
+    "vendor_name": "Cisco Systems, Inc.",
+    "module_name": "IOS Common Cryptographic Module (IC2M)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/26/2026",
+    "validation_dates": [
+      "6/26/2026"
+    ],
+    "sunset_date": "8/6/2029",
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The IC2M module provides the FIPS validated cryptographic algorithms for services requiring those algorithms. The module does not implement any protocols directly; Instead, it provides the cryptographic primitives and functions to allow IOS to implement those various protocols.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5356.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/26/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com",
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Global Certification Team",
+      "contact_email": "certteam@cisco.com",
+      "contact_phone": "800-553-6387"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES- | CBC | A43 | 54 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+      "AES- | CFB128 | A43 | 54 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+      "AES- | CMAC | A43 | 54 | Direction - Generation, Verification | Key Length - 128, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 32-4096 Increment 8 | SP 800- | 38B",
+      "AES- | ECB | A43 | 54 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+      "AES- | GCM | A43 | 54 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800- | 38D | Algorit | hm | CAV | P | nce | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 16, 128, 136, 256, 264 | AAD Length - AAD Length: 0, 128, 136, 256",
+      "AES- | GMAC | A43 | 54 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128 | Tag Length - 128 | IV Length - IV Length: 96 | AAD Length - AAD Length: 0, 128, 136, 256 | SP 800- | 38D",
+      "AES- | KW | A43 | 54 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | SP 800- | 38F | Counter",
+      "DRBG | A43 | 54 | Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-256 Increment 256 | Entropy Input - Entropy Input: 256-512 Increment 128 | Nonce - Nonce: 128 | Personalization String Length - Personalization String Length: 0- | 256 Increment 256 | Returned Bits - 256 | SP 800- | 90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS18 | 6-4) | A43 | 54 | Curve - P-256, P-384 | Secret Generation Mode - Testing Candidates | FIPS | 186-4",
+      "ECDSA | SigGen | (FIPS18 | 6-4) | A43 | 54 | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384 | FIPS | 186-4",
+      "ECDSA | SigVer | (FIPS18 | 6-4) | A43 | 54 | Curve - P-256, P-384",
+      "HMAC-",
+      "SHA-1 | A43 | 54 | MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 256-448 Increment 8 | FIPS | 198-1",
+      "SHA2- | 256 | A43 | 54 | MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 256-448 Increment 8 | FIPS | 198-1",
+      "SHA2- | 384 | A43 | 54 | MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 256-448 Increment 8 | FIPS | 198-1 | Algorit | hm | CAV | P | nce",
+      "SHA2- | 512 | A43 | 54 | MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 256-448 Increment 8 | FIPS | 198-1",
+      "KAS- | ECC- | SSC | Sp800- | 56Ar3 | A43 | 54 | Domain Parameter Generation Methods - P-256, P-384, P-521",
+      "Hash Function Z - SHA2-512 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800- | 56A | Rev. 3",
+      "KAS- | FFC- | SSC | Sp800- | 56Ar3 | A43 | 54 | Domain Parameter Generation Methods - modp-2048, modp- | 3072, modp-4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800- | 56A | Rev. 3",
+      "KDF | IKEv2",
+      "(CVL) | A43 | 54 | Initiator Nonce Length - Initiator Nonce Length: 2048 | Responder Nonce Length - Responder Nonce Length: 2048",
+      "Diffie-Hellman Shared Secret Length - Diffie-Hellman Shared | Secret Length: 2048 | Derived Keying Material Length - Derived Keying Material | Length: 3072",
+      "Hash Algorithm - SHA-1 | SP 800- | 135 | Rev. 1",
+      "KDF | SNMP",
+      "(CVL) | A43 | 54 | Password Length - Password Length: 128, 64 | Engine ID - 000002b87766554433221100 | 800002B805123456789ABCDEF0123456789ABCDEF01234567 | 89ABCDEF0123456 | SP 800- | 135 | Rev. 1",
+      "KDF | SRTP",
+      "(CVL) | A43 | 54",
+      "AES Key Length - 128, 192, 256 | Supports Empty KDR - No | KDR Exponents - 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2, 20 | 21, 22, 23, 24, 3, 4, 5, 6, 7, 8, 9 | Supports 48 bit SRTCP Index - No | SP 800- | 135 | Rev. 1",
+      "KDF",
+      "SSH",
+      "Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 | SP 800- | 135 | Rev. 1",
+      "RSA | KeyGen | (FIPS18 | 6-4) | A43 | 54 | Key Generation Mode - B.3.4 | Modulo - 2048, 3072, 4096",
+      "Hash Algorithm - SHA2-256 | Info Generated By Server - Yes | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS | 186-4",
+      "RSA | SigGen | (FIPS18 | 6-4) | A43 | 54 | Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-256 | FIPS | 186-4",
+      "RSA | SigVer | (FIPS18 | 6-4) | A43 | 54 | Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-256 | FIPS | 186-4 | Algorit | hm | CAV | P | nce | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Safe | Primes | Key | Generat | ion | A43 | 54 | Safe Prime Groups - modp-2048, modp-3072, modp-4096 SP 800- | 56A | Rev. 3",
+      "SHA-1 A43 | 54 | Message Length - Message Length: 0-4096 Increment 8 FIPS | 180-4",
+      "SHA2- | 256 | A43 | 54 | Message Length - Message Length: 0-4096 Increment 8 FIPS | 180-4",
+      "SHA2- | 384 | A43 | 54 | Message Length - Message Length: 0-4096 Increment 8 FIPS | 180-4",
+      "SHA2- | 512 | A43 | 54 | Message Length - Message Length: 0-4096 Increment 8 FIPS | 180-4",
+      "TLS | v1.2",
+      "KDF | RFC762",
+      "7 (CVL) | A43 | 54",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Key Block Length - Key Block Length: 1024 | SP 800- | 135 | Rev. 1",
+      "TLS | v1.3",
+      "(CVL) | A43 | 54 | HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800- | 135 | Rev. 1 | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A SP 800-133r2 Section 4 | example 1 | N/A for this module. | N/A for this module. | MD5 Message Digest",
+      "RSA Key Encapsulation",
+      "Triple-DES Encryption/Decryption"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5356.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 53,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5356.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,35 +1,37 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3971"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode with module Unisys Linux OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #3959 operating in FIPS mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3971",
     "certificate_number": "3971",
-    "dataset": "active",
-    "description": "The module is a software-shared cryptographic library that provides key derivation functions for the Internet Key Exchange (IKE) protocol in the Ubuntu operating system user space. The module is defined as a multi-chip standalone module, as defined by FIPS PUB 140-2. This module implements a KDF for IKEv1 and IKEv2 that complies with the requirements of SP 800-135rev1.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Unisys Linux strongSwan Cryptographic Module",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3971",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3971",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf",
+    "vendor_name": "Unisys Corporation",
+    "module_name": "Unisys Linux strongSwan Cryptographic Module",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "7/6/2021",
+    "validation_dates": [
+      "7/6/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode with module Unisys Linux OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #3959 operating in FIPS mode",
+    "description": "The module is a software-shared cryptographic library that provides key derivation functions for the Internet Key Exchange (IKE) protocol in the Ubuntu operating system user space. The module is defined as a multi-chip standalone module, as defined by FIPS PUB 140-2. This module implements a KDF for IKEv1 and IKEv2 that complies with the requirements of SP 800-135rev1.",
+    "software_versions": "5.6.3-6.4",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +42,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/5/2026",
-    "validation_date": "7/6/2021",
-    "validation_dates": [
-      "7/6/2021"
-    ],
     "validation_history": [
       {
         "date": "7/6/2021",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
       }
     ],
     "vendor": {
+      "name": "Unisys Corporation",
+      "website_url": "http://www.unisys.com",
       "address_lines": [
         "9701 Jeronimo Road",
         "Irvine, CA 92618",
         "USA"
       ],
-      "contact_email": "kevin.lui@unisys.com",
-      "contact_name": "Kevin Lui",
-      "contact_phone": "949-517-4018",
       "country": "USA",
-      "name": "Unisys Corporation",
-      "website_url": "http://www.unisys.com"
+      "contact_name": "Kevin Lui",
+      "contact_email": "kevin.lui@unisys.com",
+      "contact_phone": "949-517-4018"
     },
-    "vendor_name": "Unisys Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

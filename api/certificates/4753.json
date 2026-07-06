@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4753"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation, No assurance of the minimum strength of generated SSPs (e.g., keys)",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4753",
     "certificate_number": "4753",
-    "dataset": "active",
-    "description": "The CorSSL FIPS Object Module provides FIPS-Approved symmetric encryption and decryption, digital signature functions, hashing, message authentication, key establishment, and random number generation functionality to third-party solutions general data protection and in support of secure communications protocols.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "CorSSL FIPS Object Module",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4753",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4753",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4753.pdf",
+    "vendor_name": "Corsec Security, Inc.",
+    "module_name": "CorSSL FIPS Object Module",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "8/8/2024",
+    "validation_dates": [
+      "8/8/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation, No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "description": "The CorSSL FIPS Object Module provides FIPS-Approved symmetric encryption and decryption, digital signature functions, hashing, message authentication, key establishment, and random number generation functionality to third-party solutions general data protection and in support of secure communications protocols.",
+    "software_versions": "2.0.16.001",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,41 +43,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4753.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/7/2029",
-    "validation_date": "8/8/2024",
-    "validation_dates": [
-      "8/8/2024"
-    ],
     "validation_history": [
       {
         "date": "8/8/2024",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
       }
     ],
     "vendor": {
+      "name": "Corsec Security, Inc.",
+      "website_url": "http://www.corsec.com",
       "address_lines": [
         "13921 Park Center Road",
         "Suite 460",
         "Herndon, Virginia 20171",
         "USA"
       ],
-      "contact_email": "jnelson@corsec.com",
-      "contact_name": "Jake Nelson",
-      "contact_phone": "17032676050",
       "country": "USA",
-      "name": "Corsec Security, Inc.",
-      "website_url": "http://www.corsec.com"
+      "contact_name": "Jake Nelson",
+      "contact_email": "jnelson@corsec.com",
+      "contact_phone": "17032676050"
     },
-    "vendor_name": "Corsec Security, Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4753.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4753.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

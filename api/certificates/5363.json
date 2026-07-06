@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5363"
+  },
+  "certificate": {
+    "certificate_number": "5363",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5363",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5363",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5363.pdf",
+    "vendor_name": "Ruckus Wireless LLC",
+    "module_name": "RUCKUS R770-US Access Point, R770-WW Access Point, R670-US Access Point, R670-WW Access Point, T670-US Access Point, T670-WW Access Point and T670sn-US Access Point",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "6/30/2026",
+    "validation_dates": [
+      "6/30/2026"
+    ],
+    "sunset_date": "6/29/2031",
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy.",
+    "description": "Ruckus WiFi 7 access point portfolio comprises of indoor and outdoor APs that brings higher capacity, efficiency, and performance to enterprises, distributed offices, and small businesses. Ruckus WiFi 7 portfolio offers dual-band, dual-concurrent APs that supports up to eight spatial streams (4x4:4 in 5GHz, 4x4:4 in 2.4GHz). Equipped with OFDMA and MU-MIMO capabilities, the APs efficiently manage up to 1024 client connections with increased capacity, improved coverage and performance in ultra-high dense environments.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5363.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/30/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Ruckus Wireless LLC",
+      "website_url": "http://www.commscope.com/ruckus",
+      "address_lines": [
+        "350 W Java Drive",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jimmy Wang",
+      "contact_email": "jimmy.wang@ruckusnetworks.com",
+      "contact_phone": "650-265-4200"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6768 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A6768 Key Length - 128 SP 800-38A",
+      "AES-CTR A6768 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A6768 Key Length - 128, 256 SP 800-38D",
+      "Counter DRBG A6768 Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1 | RUCKUS Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice",
+      "ECDSA SigGen | (FIPS186-5) | A6768 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6768 Curve - P-256, P-384, P-521",
+      "HMAC-SHA-1 A6768 Key Length - Key Length: 160 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6768 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6768 Key Length - Key Length: 512 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6768 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A6768 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, MODP-2048, MODP- | 3072, MODP-6144, MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2",
+      "(CVL)",
+      "A6768 Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 2048-8192 | Increment 8 | Derived Keying Material Length - Derived | Keying Material Length: 1056-3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-",
+      "256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF SNMP",
+      "(CVL) | A6768 Password Length - Password Length: 64, 128 SP 800-135 | Rev. 1",
+      "KDF SP800-108 A6768 KDF Mode - Counter | Supported Lengths - Supported Lengths: 256 | SP 800-108 | Rev. 1",
+      "KDF SSH (CVL) A6768 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6768 Modulo - 3072 FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6768 Modulo - 3072 FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6768 Modulo - 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes Key | Generation | A6768 Safe Prime Groups - ffdhe2048, ffdhe3072 | MODP-2048, MODP-3072, MODP-6144 | MODP-8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A6768 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | RUCKUS Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice",
+      "SHA2-256 A6768 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6768 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6768 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6768 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF",
+      "A6768 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | Ruckus Kernel Crypto Implementation",
+      "AES-CBC A6769 Direction - Decrypt, Encrypt | Key Length - 128, 192 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A6769 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6769 Key Length - Key Length: 384 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6769 Key Length - Key Length: 512 FIPS 198-1",
+      "SHA2-256 A6769 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6769 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6769 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "Qualcomm Wi-Fi 7 Hardware AES Engine for Ruckus R670-US/WW, T670-US/WW, T670sn",
+      "AES-CCM A3235 Key Length - 128, 256 SP 800-38C",
+      "AES-GCM A3235 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D | T670-US/WW, T670sn",
+      "Qualcomm Wi-Fi 7 Hardware AES Engine for Ruckus T770-US/WW",
+      "AES-CCM A3239 Key Length - 128, 256 SP 800-38C",
+      "AES-GCM A3239 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D | RUCKUS Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Ruckus Access Point TPM",
+      "RSA SigGen (FIPS186-5) A8586 Modulo - 3072 | Signature Type - pkcs1v1.5 | FIPS 186-5 | As the Module can only be operated in the Approved mode of operation, and any algorithms not | listed in the tables above will be rejected by the module while in the approved mode, the options | defined in SP 800-140B for the following categories are missing from this document. | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per section 4 example 1 | in SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
+      "output from SP800-90Arev1 CTR_DRBG | (A6768) | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5363.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 53,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5363.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

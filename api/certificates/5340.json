@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5340"
+  },
+  "certificate": {
+    "certificate_number": "5340",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5340",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5340",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5340.pdf",
+    "vendor_name": "Nuvoton Technology Corporation",
+    "module_name": "Nuvoton Cryptographic Library 3.3",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "6/18/2026",
+    "validation_dates": [
+      "6/18/2026"
+    ],
+    "sunset_date": "6/17/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "Nuvoton Cryptographic Library implementation providing cryptographic services.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Software/Firmware security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5340.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/18/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Nuvoton Technology Corporation",
+      "website_url": "http://www.nuvoton.com",
+      "address_lines": [
+        "PO Box 12347, Herzliya B",
+        "Herzliya 4673324",
+        "Israel"
+      ],
+      "country": "Israel",
+      "contact_name": "Avi Davidowitz",
+      "contact_email": "avi.davidowitz@nuvoton.com",
+      "contact_phone": "972-9-9702295"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDH",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7343 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A7343 Key Length - 128, 192, 256 SP 800-38C",
+      "AES-CFB128 A7343 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A7343 Direction - Generation, Verification | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR A7343 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7343 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7343 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC A7343 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB A7343 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "ECDSA KeyGen | (FIPS186-5) | A7343 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A7343 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7343 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No, Yes | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7343 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "Hash DRBG A7343 Prediction Resistance - No, Yes",
+      "Mode - SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2- | 256 | A7343 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1 | Nuvoton Cryptographic Library 3.3 | 9 of 45",
+      "HMAC-SHA2- | 384 | A7343 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7343 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A7343 Domain Parameter Generation Methods - P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SP800-108 A7343 KDF Mode - Counter, Double Pipeline Iteration, Feedback | Supported Lengths - Supported Lengths: 8-4096 Increment 8 | SP 800-108 | Rev. 1",
+      "KTS-IFC A7343 Modulo - 2048, 3072 | Key Generation Methods - rsakpg1-basic, rsakpg2-basic | Scheme -",
+      "KTS-OAEP-basic - | KAS Role - initiator, responder | Key Transport Method - | Key Length - 1024 | SP 800-56B | Rev. 2 | LMS SigVer A7343 LMS Modes - LMS_SHA256_M32_H10, LMS_SHA256_M32_H15 | LMS_SHA256_M32_H20, LMS_SHA256_M32_H25 | LMS_SHA256_M32_H5 | SP 800-208",
+      "RSA SigGen | (FIPS186-5) | A7343 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7343 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA2-256 A7343 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A7343 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A7343 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4 | Name Properties Implementation Reference | HSS SigVer Key Size:256 | bits | Nuvoton Cryptographic Library | 3.3 for Trusted Integrated | Processor (NCL) | The LMS operations used by the HSS | implementation were CAVP tested in | accordance with IG C.O with Certs A7343 | Nuvoton Cryptographic Library 3.3 | 10 of 45 | Name Properties Implementation Reference | CKG",
+      "(ECDSA/ECDH) | Type:Asymmetric N/A CKG for asymmetric keys as per SP 800- | 133Rev2 section 4 example 1 with no post | processing on the U value | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5340.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 30,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5340.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

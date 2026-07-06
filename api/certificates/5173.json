@@ -1,10 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173"
   },
   "certificate": {
+    "certificate_number": "5173",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf",
+    "vendor_name": "Trend Micro Incorporated",
+    "module_name": "Trend Micro Crypto Core OpenSSL",
+    "standard": "FIPS 140-2",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
+    "validation_date": "3/6/2026, 6/4/2026",
+    "validation_dates": [
+      "3/6/2026",
+      "6/4/2026"
+    ],
+    "sunset_date": "9/21/2026",
+    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "description": "The Trend Micro Crypto Core OpenSSL is a software library which provides FIPS 140-2 approved cryptographic algorithms and services for Trend Micro Deep Discovery security products. It offers a C-language application program interface (API) for use by applications that require cryptographic functionality.",
+    "software_versions": "3.0.8, 3.0.9",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 3"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March 2026_020426_1121-signed.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "3/6/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      },
+      {
+        "date": "6/4/2026",
+        "type": "Update",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Trend Micro Incorporated",
+      "website_url": "http://www.trendmicro.com",
+      "address_lines": [
+        "225 E. John Carpenter Freeway",
+        "Suite 1500",
+        "Irving, Texas 75062",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Nathan Tran",
+      "contact_email": "security-certifications@trendmicro.com",
+      "contact_phone": "408-705-3089"
+    },
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -12,64 +76,22 @@
       "source": "firecrawl",
       "source_url": null,
       "cached": true,
-      "fallback_used": false,
+      "fallback_used": true,
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173",
-    "certificate_number": "5173",
-    "dataset": "active",
-    "description": "The Trend Micro Crypto Core OpenSSL is a software library which provides FIPS 140-2 approved cryptographic algorithms and services for Trend Micro Deep Discovery security products. It offers a C-language application program interface (API) for use by applications that require cryptographic functionality.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Trend Micro Crypto Core OpenSSL",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Design Assurance: Level 3"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "9/21/2026",
-    "validation_date": "3/6/2026",
-    "validation_dates": [
-      "3/6/2026"
-    ],
-    "validation_history": [
-      {
-        "date": "3/6/2026",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "225 E. John Carpenter Freeway",
-        "Suite 1500",
-        "Irving, Texas 75062",
-        "USA"
-      ],
-      "contact_email": "security-certifications@trendmicro.com",
-      "contact_name": "Nathan Tran",
-      "contact_phone": "408-705-3089",
-      "country": "USA",
-      "name": "Trend Micro Incorporated",
-      "website_url": "http://www.trendmicro.com"
-    },
-    "vendor_name": "Trend Micro Incorporated"
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

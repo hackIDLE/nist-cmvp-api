@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5279"
+  },
+  "certificate": {
+    "certificate_number": "5279",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5279",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5279",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5279.pdf",
+    "vendor_name": "Juniper Networks, Inc.",
+    "module_name": "Juniper Networks MX10003 3D Universal Edge Router",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/20/2026",
+    "validation_dates": [
+      "5/20/2026"
+    ],
+    "sunset_date": "5/19/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The cryptographic module provides for an encrypted connection, using SSH, between the management station and the module. The cryptographic module also provides for an encrypted connection, using MACsec, between devices.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5279.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/20/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net",
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Bill Shelton",
+      "contact_email": "bshelton@juniper.net",
+      "contact_phone": "408-745-2000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A5481 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A6776 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A5481 Direction - Generation, Verification | Key Length - 128, 256 | SP 800-38B",
+      "AES-CTR A6776 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM AES | 4545 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38D",
+      "AES-KW A5481 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38F",
+      "AES-XPN AES | 4545 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38D | Conditioning Component",
+      "AES-CBC-MAC SP800-90B | A2165 Key Length - 128 SP 800-90B",
+      "ECDSA KeyGen (FIPS186- | 5) | A6776 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA KeyVer (FIPS186- | 5) | A6776 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen (FIPS186- | 5) | A6776 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256",
+      "SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer (FIPS186-5) A6776 Curve - P-256, P-384, P-521",
+      "SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC DRBG A6775 Prediction Resistance - No",
+      "Mode - SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A6776 Key Length - Key Length: 160 FIPS 198-1",
+      "HMAC-SHA2-256 A6775 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-256 A6776 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-512 A6776 Key Length - Key Length: 512 FIPS 198-1",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A6776 Domain Parameter Generation | Methods - P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC Sp800- | 56Ar3 | A6776 Domain Parameter Generation | Methods - FC, MODP-2048 | Scheme - | dhEphem - | KAS Role - initiator | SP 800-56A | Rev. 3",
+      "KDF SP800-108 A5481 KDF Mode - Counter | Supported Lengths - Supported | Lengths: 128, 256 | SP 800-108 | Rev. 1",
+      "KDF SSH (CVL) A6776 Cipher - AES-128, AES-192, AES- | 256",
+      "Hash Algorithm - SHA-1, SHA2-",
+      "256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen (FIPS186-5) A6776 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186-5) A6776 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186-5) A6776 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | Safe Primes Key | Generation | A6776 Safe Prime Groups - MODP-2048 SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A6776 Safe Prime Groups - MODP-2048 SP 800-56A | Rev. 3",
+      "SHA-1 A6776 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6775 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6776 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A5482 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6775 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6776 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4 | The following protocols are supported by the module in the Approved mode",
+      "SSHv2 (EC Diffie-Hellman P-256, P-384, P-521; Diffie-Hellman MODP2048; RSA 2048, 3072",
+      "4096 bits; ECDSA P-256, P-384, P-521; AES CBC 128, 192, 256 bits; AES CTR 128, 192, 256",
+      "bits, HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512)",
+      "MACsec (MACsec Key Agreement (MKA); AES GCM, XPN 128 and 256 bits)",
+      "The SSH protocol allows independent selection of key exchange, authentication, cipher and | integrity algorithms. Please note that there are algorithms, modes, and key/moduli sizes that | have been CAVP-tested but are not used by any approved service of the module. Only the | by an approved service of the module. | Name Properties Implementation Reference | CKG - | Section | 4 | Key | Type:Symmetric | and Asymmetric | N/A NIST SP800-133r2 Section 4: Symmetric | key generation and Asymmetric seed | generation using an unmodified output from",
+      "an Approved DRBG (example 1); The | module supports the following per NIST SP | 800-133r2: 1. Section 5.1: Key Pairs for | Digital Signature Schemes 2. Section 5.2 | Key Pairs for Key Establishment 3. Section | 6.2.1: Derivation of symmetric keys | The module does not support any non-Approved algorithms in the Approved mode, i.e., it does | not support Non-Approved Algorithms Allowed in the Approved Mode of Operation. | Name Caveat Use and Function",
+      "SHA2-256 (Junos | 23.4R1.9 - LibMD | Implementation) | no | security | claimed | Used to store operator passwords in hashed form | per IG 2.4.A: Use of a non-approved cryptographic",
+      "SHA-1 (Junos 23.4R1.9 - | Kernel Implementation) | no | security | claimed | Used for an extraneous check in the Kernel, per IG | 2.4.A: Use of an approved, non-approved or | proprietary algorithm for a purpose that is not | security relevant | Name Use and",
+      "RSA with key size less than 2048 SSH",
+      "ECDSA with ed25519 curve SSH",
+      "EC Diffie-Hellman with ed25519 curve SSH",
+      "ARCFOUR SSH",
+      "Blowfish SSH",
+      "CAST SSH",
+      "DSA (SignGen, SigVer, non-compliant) SSH",
+      "HMAC-MD5 SSH",
+      "HMAC-RIPEMD160 SSH",
+      "UMAC SSH | In addition to the above non-Approved Algorithms Not Allowed in the Approved Mode of | Operation, all Approved algorithms supported in the Approved mode of operation are also | supported in the non-Approved mode."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5279.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 54,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5279.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5334"
+  },
+  "certificate": {
+    "certificate_number": "5334",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5334",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5334",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5334.pdf",
+    "vendor_name": "Palo Alto Networks, Inc.",
+    "module_name": "PAN-OS 10.2 VM-Series",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/16/2026",
+    "validation_dates": [
+      "6/16/2026"
+    ],
+    "sunset_date": "8/14/2029",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "description": "The PAN-OS 10.2.8-h4 VM-Series is a software cryptographic module and requires an underlying general purpose computer (GPC) environment.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5334.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/16/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com",
+      "address_lines": [
+        "3000 Tannery Way",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jake Bajic",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A2907 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A2907 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-CTR A2907 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment | 8 | Supports Counter larger than maximum value - No | Incremental Counter - No | Counter Tests Performed - No | SP 800-38A",
+      "AES-GCM A2907 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A2907 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - No, Yes | SP 800-90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS186-4) | A2907 Curve - P-256, P-384, P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA | KeyVer | (FIPS186-4) | A2907 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA | SigGen | (FIPS186-4) | A2907 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A2907 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | FIPS 186-4",
+      "HMAC-SHA-1 A2907 MAC - MAC: 160 | Key Length - Key Length: 256-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A2907 MAC - MAC: 224 | Key Length - Key Length: 256-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A2907 MAC - MAC: 256 | Key Length - Key Length: 256-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A2907 MAC - MAC: 384 | Key Length - Key Length: 256-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A2907 MAC - MAC: 512 | Key Length - Key Length: 256-2048 Increment 8 | FIPS 198-1",
+      "KAS-ECC- | SSC Sp800- | 56Ar3 | A2907 Domain Parameter Generation Methods - P-256, P- | 384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A2907 Domain Parameter Generation Methods - MODP- | 2048, MODP-3072, MODP-4096",
+      "Hash Function Z - SHA2-256, SHA2-384 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2",
+      "(CVL) | A2907 Initiator Nonce Length - Initiator Nonce Length | 128-256 Increment 8 | Responder Nonce Length - Responder Nonce | Length: 128-256 Increment 8",
+      "Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 256, 384, 2048 | Derived Keying Material Length - Derived Keying | Material Length: 800-3072 Increment 8",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1",
+      "KDF SNMP",
+      "(CVL) | A2907 Password Length - Password Length: 64, 2048 | Engine ID - | 80001F88043030303030343935323630 | SP 800-135 | Rev. 1",
+      "KDF SSH",
+      "(CVL)",
+      "A2907 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF TLS",
+      "A2907 TLS Version - v1.2",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-4) | A2907 Key Generation Mode - B.3.6 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A2907 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A2907 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4 | Safe Primes | Key Generation | A2907 Safe Prime Groups - MODP-2048, MODP-3072 | MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes | Key | Verification | A2907 Safe Prime Groups - MODP-2048, MODP-3072 | MODP-4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A2907 Message Length - Message Length: 8-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A2907 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A2907 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A2907 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A2907 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Note: Only the algorithms specified in the table above are supported by the module in | approved mode of operation. | Name Properties Implementation Reference | CKG Key Type:Symmetric | and Asymmetric | N/A Cryptographic Key Generation; SP 800- | 133rev2 and IG D.H (symmetric keys and | asymmetric seeds) from Section 4 | Example 1 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5334.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 44,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5334.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5268"
+  },
+  "certificate": {
+    "certificate_number": "5268",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5268",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5268",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5268.pdf",
+    "vendor_name": "Fortinet, Inc.",
+    "module_name": "FortiAP Access Points with FortiAP 7.4",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "5/15/2026",
+    "validation_dates": [
+      "5/15/2026"
+    ],
+    "sunset_date": "5/14/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
+    "description": "The FortiAP Access Points with FortiAP 7.4 are multiple chip, standalone cryptographic hardware modules consisting of production grade components contained in a physically protected enclosure in accordance with FIPS 140-3 Level 2 requirements. The modules contain a firmware operating system that runs exclusively on Fortinet's FortiAP Access Points with FortiAP 7.4 products, and facilitates secure connections within the Security Fabric, enabling seamless integration with various Fortinet products across the network. FortiAP Access Points with FortiAP 7.4 are PC-based, purpose-built appliances.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5268.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/15/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Fortinet, Inc.",
+      "website_url": "http://www.fortinet.com",
+      "address_lines": [
+        "909 Kifer Road",
+        "Sunnyvale, CA 94086",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Kerrie Newton",
+      "contact_email": "knewton@fortinet.com",
+      "contact_phone": "613-225-9381"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6064 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A6064 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6064 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A6064 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS186-5) | A6064 Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits, testing | candidates | FIPS 186-5",
+      "ECDSA | KeyVer | (FIPS186-5) | A6064 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA | SigGen | (FIPS186-5) | A6064 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6064 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "HMAC-SHA-1 A6064 Key Length - Key Length: 8-1024 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6064 Key Length - Key Length: 8-1024 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6064 Key Length - Key Length: 8-1024 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6064 Key Length - Key Length: 8-1024 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6064 Domain Parameter Generation Methods - P-256 | P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A6064 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144 | ffdhe8192, MODP-2048, MODP-3072, MODP- | 4096, MODP-6144, MODP-8192 | SP 800-56A | Rev. 3",
+      "KDF IKEv1",
+      "(CVL) | A6064 Authentication Method - Digital Signature, Pre-",
+      "shared Key, Public Key Encryption",
+      "Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 224-8192 | Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | SP 800-135 | Rev. 1 | Preshared Key Length - Preshared Key Length: 8- | 8192 Increment 8",
+      "KDF IKEv2",
+      "(CVL)",
+      "A6064 Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 224-8192 | Increment 8 | Derived Keying Material Length - Derived Keying | Material Length: 160-16384 Increment 8",
+      "SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF SSH",
+      "A6064 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6064 Key Generation Mode - probable | Modulo - 2048, 3072 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6064 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6064 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes | Key | Generation | A6064 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048 | MODP-3072, MODP-4096, MODP-6144, MODP- | 8192 | SP 800-56A | Rev. 3 | Safe Primes | Key | Verification | A6064 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048 | MODP-3072, MODP-4096, MODP-6144, MODP- | 8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A6064 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6064 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6064 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6064 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA3-256 A4291 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "TLS v1.2 KDF | RFC7627",
+      "A6064 Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF",
+      "A6064 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Name:Symmetric Key Generation FortiAP Section 4 NIST SP800-133r2 | None. | N/A for this module. | None. | N/A for this module. | None. | N/A for this module. | None."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5268.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 45,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5268.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

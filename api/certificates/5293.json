@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5293"
+  },
+  "certificate": {
+    "certificate_number": "5293",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5293",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5293",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5293.pdf",
+    "vendor_name": "Ciena Corporation",
+    "module_name": "SAOS 10.11.1",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "5/26/2026",
+    "validation_dates": [
+      "5/26/2026"
+    ],
+    "sunset_date": "5/25/2031",
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. The tamper evident seals installed as indicated in the Security Policy",
+    "description": "The Ciena SAOS 10 MACSec Series of Service Access and Aggregation platforms use MACSec for traffic encryption/decryption. The platforms provide routing/switching functionalities for various use cases including enterprise, mobility, and converged network architectures. With Ethernet, MPLS, IP, and SR capabilities, the product supports emerging networks.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5293.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/26/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Ciena Corporation",
+      "website_url": "http://www.ciena.com/",
+      "address_lines": [
+        "7035 Ridge Road",
+        "Hanover, MD 21076",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Ping Lin",
+      "contact_email": "plin@ciena.com",
+      "contact_phone": "1-800-921-1144"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6532 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CMAC A6532 Direction - Generation, Verification | Key Length - 128, 256 | SP 800-38B",
+      "AES-CTR A6532 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A | This document may be freely reproduced and distributed whole and intact including this Copyright Notice.",
+      "AES-GCM A6532 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.2 | Key Length - 128, 256 | SP 800-38D",
+      "AES-KW A6532 Key Length - 128, 256 SP 800-38F",
+      "Counter DRBG A6532 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6532 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6532 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6532 Curve - P-256, P-384, P-521",
+      "HMAC-SHA-1 A6532 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6532 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6532 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6532 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6532 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A6532 Domain Parameter Generation Methods - | ffdhe2048, ffdhe4096, MODP-2048, MODP- | 3072, MODP-4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SNMP",
+      "(CVL) | A6532 Password Length - Password Length: 64, 128 SP 800-135 | Rev. 1",
+      "KDF SP800-108 A6532 KDF Mode - Counter | Supported Lengths - Supported Lengths: 128- | 4096 Increment 8 | SP 800-108 | Rev. 1",
+      "KDF SSH (CVL) A6532 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6532 Key Generation Mode - | probableWithProbableAux | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6532 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice.",
+      "RSA SigVer | (FIPS186-5) | A6532 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | Safe Primes | Key Generation | A6532 Safe Prime Groups - ffdhe2048, ffdhe4096 | MODP-2048, MODP-3072, MODP-4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A6532 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6532 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6532 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6532 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6532 Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1 | 3926 FRU",
+      "AES-GCM AES 4550 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38D | 5171-921 FRU",
+      "AES-GCM C1877 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D | 8140 & 8190 FRU",
+      "AES-GCM C894 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The Module performs Cryptographic Key | Generation (CKG) for asymmetric keys as | detailed by example 1 in section 4 and | section 5 of SP800-133r2 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5293.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 35,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5293.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

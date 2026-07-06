@@ -1,35 +1,36 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3965"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3965",
     "certificate_number": "3965",
-    "dataset": "active",
-    "description": "The KIOXIA TCG Enterprise SSC Crypto Sub-Chip is used for SAS solid state drive data security.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "KIOXIA TCG Enterprise SSC Crypto Sub-Chip TC58NC1132GTC",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3965",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3965",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3965.pdf",
+    "vendor_name": "KIOXIA Corporation",
+    "module_name": "KIOXIA TCG Enterprise SSC Crypto Sub-Chip TC58NC1132GTC",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "7/5/2021",
+    "validation_dates": [
+      "7/5/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The KIOXIA TCG Enterprise SSC Crypto Sub-Chip is used for SAS solid state drive data security.",
+    "software_versions": null,
+    "hardware_versions": "0001",
+    "firmware_versions": "SC01AS",
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +41,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3965.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/4/2026",
-    "validation_date": "7/5/2021",
-    "validation_dates": [
-      "7/5/2021"
-    ],
     "validation_history": [
       {
         "date": "7/5/2021",
-        "lab": "IT SECURITY CENTER",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "IT SECURITY CENTER"
       }
     ],
     "vendor": {
+      "name": "KIOXIA Corporation",
+      "website_url": "https://business.kioxia.com/en-jp/top.html",
       "address_lines": [
         "1-21, Shibaura 3-chome",
         "Minato-ku",
         "Tokyo 108-0023",
         "Japan"
       ],
-      "contact_email": "akihero.kimura@kioxia.com",
-      "contact_name": "Akihiro Kimura",
-      "contact_phone": "+81-45-890-2856",
       "country": "Japan",
-      "name": "KIOXIA Corporation",
-      "website_url": "https://business.kioxia.com/en-jp/top.html"
+      "contact_name": "Akihiro Kimura",
+      "contact_email": "akihero.kimura@kioxia.com",
+      "contact_phone": "+81-45-890-2856"
     },
-    "vendor_name": "KIOXIA Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3965.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3965.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

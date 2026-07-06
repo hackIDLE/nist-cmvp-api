@@ -1,35 +1,36 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3970"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3970",
     "certificate_number": "3970",
-    "dataset": "active",
-    "description": "Integral Crypto SSD is the Full Disk Encryption solution for Windows and Linux desktops and laptops. Featuring government department approved military-level AES 256-bit Hardware Encryption it comes in 2.5\" SATA III, M.2 2280 SATA III and M.2 2280 MVMe in the following capacities: 128GB to 4TB.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Integral AES 256 Bit Crypto SSD Underlying PCB",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3970",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3970",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3970.pdf",
+    "vendor_name": "Integral Memory Plc",
+    "module_name": "Integral AES 256 Bit Crypto SSD Underlying PCB",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 3,
+    "validation_date": "7/6/2021",
+    "validation_dates": [
+      "7/6/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "Integral Crypto SSD is the Full Disk Encryption solution for Windows and Linux desktops and laptops. Featuring government department approved military-level AES 256-bit Hardware Encryption it comes in 2.5\" SATA III, M.2 2280 SATA III and M.2 2280 MVMe in the following capacities: 128GB to 4TB.",
+    "software_versions": null,
+    "hardware_versions": "INSSD128GS625C140, INSSD256GS625C140, INSSD512GS625C140, INSSD1TS625C140, INSSD2TS625C140, INSSD4TS625C140, INSSD128GM280C140, INSSD256GM280C140, INSSD512GM280C140, INSSD1TM280C140, INSSD2TM280C140, INSSD4TM280C140, INSSD128GM280NC140, INSSD256GM280NC140, INSSD512GM280NC140, INSSD1TM280NC140, INSSD2TM280NC140, INSSD4TM280NC140",
+    "firmware_versions": "SCPJ13.0",
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,26 +41,16 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3970.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/5/2026",
-    "validation_date": "7/6/2021",
-    "validation_dates": [
-      "7/6/2021"
-    ],
     "validation_history": [
       {
         "date": "7/6/2021",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
       }
     ],
     "vendor": {
+      "name": "Integral Memory Plc",
+      "website_url": "http://www.integralmemory.com",
       "address_lines": [
         "Unit 6 Iron Bridge Close",
         "Iron Bridge Business Park",
@@ -67,13 +58,34 @@
         "London NW10 0UF",
         "UK"
       ],
-      "contact_email": "patrick.warley@integralmemory.com",
-      "contact_name": "Patrick Warley",
-      "contact_phone": "+44 (0)2084518704",
       "country": "UK",
-      "name": "Integral Memory Plc",
-      "website_url": "http://www.integralmemory.com"
+      "contact_name": "Patrick Warley",
+      "contact_email": "patrick.warley@integralmemory.com",
+      "contact_phone": "+44 (0)2084518704"
     },
-    "vendor_name": "Integral Memory Plc"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3970.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3970.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

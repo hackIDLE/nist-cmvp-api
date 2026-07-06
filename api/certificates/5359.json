@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5359"
+  },
+  "certificate": {
+    "certificate_number": "5359",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5359",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5359",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5359.pdf",
+    "vendor_name": "Google, LLC",
+    "module_name": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "6/29/2026",
+    "validation_dates": [
+      "6/29/2026"
+    ],
+    "sunset_date": "6/28/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Data Path Security Cluster is a hardware IP providing XTS-AES encryption to NVMe data in transit over the network. The cryptographic module accepts from its outside and stores cryptographic keys for multiple NVMe connections. Depending on the content of received data, the module shall or shall not apply cryptographic processing to the data. The DPSC contains 4 identical XTS-AES-256 decrypt engines, 4 identical XTS-AES-256 encrypt engines, key cache arbiter and key cache SRAM which is zeroized on reset. The data interfaces exposed to the NVMe Protocol Layer (NPL) within the NVMe Protocol Initiator (NPI) are read and write DMA interfaces. XTS keys are written to the module's SRAM via Control/Status Register (CSR) writes from the Integrated Management Complex (IMC) located outside of the module boundary. On-demand self- tests may be initiated from the NPI using an on-demand self-test trigger over a wire interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Software/Firmware security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5359.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/29/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Google, LLC",
+      "website_url": "http://www.google.com",
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "FIPS Crypto Officer",
+      "contact_email": "FIPS-crypto-officer@google.com",
+      "contact_phone": "650-253-0000"
+    },
+    "algorithms": [
+      "AES"
+    ],
+    "algorithms_detailed": [
+      "AES-XTS A1188 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E | Google, LLC 2025 Document Version 0.2 | Public Material – May be reproduced only in its original entirety (without revision)."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5359.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 1,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5359.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

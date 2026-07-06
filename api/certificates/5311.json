@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5311"
+  },
+  "certificate": {
+    "certificate_number": "5311",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5311",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5311",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5311.pdf",
+    "vendor_name": "Renesas Electronics Corporation",
+    "module_name": "RA6M4 Security Management Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "6/4/2026",
+    "validation_dates": [
+      "6/4/2026"
+    ],
+    "sunset_date": "6/3/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs; When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "description": "RA6M4 is general-purpose microcontroller designed for industrial, IOT, and infrastructure applications, embedded with robust security features. RA6M4 Security Management Module is provided as a reference for developing FIPS 140-3-compliant modules using the RA6M4. By referring to the design of this module, it becomes easier to address FIPS requirements when developing cryptographic modules using the RA6M4 in customer environments. The Renesas RA6M4 group of microcontrollers uses the high-performance CPU operating up to 200MHz. In concert with the Secure Crypto Engine it offers Secure Element functionality. The integrated Ethernet MAC with individual DMA ensures high data throughput. The RA6M4 is built on a highly efficient 40nm process and is supported by an open and flexible ecosystem concept-the Flexible Software Package (FSP)-and is expandable to use RTOSes and middleware. The RA6M4 is suitable for IoT applications requiring Ethernet, future proof security, large embedded RAM, and low active power consumption.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Sensitive security parameter management: Level 3",
+      "Self-tests: Level 3",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5311.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/4/2026",
+        "type": "Initial",
+        "lab": "ECSEC Laboratory Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Renesas Electronics Corporation",
+      "website_url": "http://www.renesas.com",
+      "address_lines": [
+        "5-20-1, Josuihon-cho",
+        "Kodaira-shi, Tokyo 187-8588",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Takashi Murai",
+      "contact_email": "takashi.murai.vz@renesas.com",
+      "contact_phone": "81-50-5478-5476"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A5199 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CCM A5199 Key Length - 128, 256 SP 800-38C",
+      "AES-CMAC A5199 Direction - Generation | Verification | Key Length - 128, 256 | SP 800-38B",
+      "AES-ECB A5199 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A5199 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | SP 800-38D",
+      "Conditioning Component AES- | CBC-MAC SP800-90B | A5199 Key Length - 128 SP 800-90B",
+      "Counter DRBG A5199 Prediction Resistance - No",
+      "Mode - AES-128 | Derivation Function Enabled - | No | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen (FIPS186-5) A5199 Curve - P-224, P-256 | Secret Generation Mode - extra | bits | FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) A5199 Curve - P-224, P-256",
+      "Hash Algorithm - SHA2-256 | Component - No | FIPS 186-5",
+      "ECDSA SigVer (FIPS186-5) A5199 Curve - P-224, P-256",
+      "Hash Algorithm - SHA2-256 | FIPS 186-5",
+      "HMAC-SHA2-256 A5199 Key Length - Key Length: 256 FIPS 198-1",
+      "KDF SP800-108 A5199 KDF Mode - Counter | Supported Lengths - Supported | Lengths: 128, 256 | SP 800-108 | Rev. 1",
+      "RSA KeyGen (FIPS186-5) A5199 Key Generation Mode - | probable | Modulo - 2048 | Primality Tests - 2pow100 | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186-5) A5199 Modulo - 2048 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186-5) A5199 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-256 A5199 Message Length - Message | Length: 0-65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A SP800-133r2 Section 4 | example1 | N/A for this module. | Name Caveat Use and Function",
+      "AES-128 CBC- | MAC | no security | claimed | For interoperability, performed along with inputting | User key | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5311.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 20,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5311.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

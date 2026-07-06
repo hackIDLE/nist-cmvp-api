@@ -1,35 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated with tamper-evident seals and wire seal installed as indicated in Section 5 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952",
     "certificate_number": "3952",
-    "dataset": "active",
-    "description": "The WCC-PCN-AES100GB-F Encryption Module is a transponder for core telecommunication networks. The module transports plaintext 100GbE or OTU4 client side data services to and from the encrypted network interface. The module is a configuration of the ADVA Fiber Service Platform (FSP) 3000R7 scalable optical data transport system. The encryption module is composed of a WCC-PCN-AES100GB-F card assembly installed in a customer-chosen ADVA FSP 3000R7 shelf. ADVA FSP 3000R7 shelves are available in various form factors to host customer-chosen combinations of modular functionality and density.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "WCC-PCN-AES100GB-F Encryption Module with FSP 3000R7 Shelf",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3952",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3952.pdf",
+    "vendor_name": "Adva Network Security GmbH",
+    "module_name": "WCC-PCN-AES100GB-F Encryption Module with FSP 3000R7 Shelf",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 2,
+    "validation_date": "6/8/2021, 9/13/2022, 1/21/2026",
+    "validation_dates": [
+      "6/8/2021",
+      "9/13/2022",
+      "1/21/2026"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated with tamper-evident seals and wire seal installed as indicated in Section 5 of the Security Policy.",
+    "description": "The WCC-PCN-AES100GB-F Encryption Module is a transponder for core telecommunication networks. The module transports plaintext 100GbE or OTU4 client side data services to and from the encrypted network interface. The module is a configuration of the ADVA Fiber Service Platform (FSP) 3000R7 scalable optical data transport system. The encryption module is composed of a WCC-PCN-AES100GB-F card assembly installed in a customer-chosen ADVA FSP 3000R7 shelf. ADVA FSP 3000R7 shelves are available in various form factors to host customer-chosen combinations of modular functionality and density.",
+    "software_versions": null,
+    "hardware_versions": "1063700027-01 version C-1.02 with one from [A] and one from [B]: Shelf P/Ns [A]: 1078700121 version 2.01, 1078700060-01 version 1.01, 1078700060-02 version 2.01, 1078700060-03 version 3.01, 1078700144 version 2.11 or 1078700145-01 version 1.01; CFP pluggable transceiver P/Ns [B]: 1061700617-01, 1061700618-01, 1061700618-02, 1061700619-01, 1061700619-02, 1061700630-01, 1061700634-01, or 1061700655-02; 1013700030-01, 1013700031-01 and 1013700032-01, 1061700635-01",
+    "firmware_versions": "172.19.7, 193.1.7 or 193.12.7",
+    "security_level_exceptions": [
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,52 +44,36 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3952.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/7/2026",
-    "validation_date": "6/8/2021, 9/13/2022, 1/21/2026",
-    "validation_dates": [
-      "6/8/2021",
-      "9/13/2022",
-      "1/21/2026"
-    ],
     "validation_history": [
       {
         "date": "6/8/2021",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       },
       {
         "date": "9/13/2022",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "UL Verification Services, Inc."
       },
       {
         "date": "1/21/2026",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "Adva Network Security GmbH",
+      "website_url": "http://www.advasecurity.com",
       "address_lines": [
         "Hermann-Dorner-Allee 91",
         "Berlin 12489",
         "Germany"
       ],
-      "contact_email": "uli.schlegel@advasecurity.com",
-      "contact_name": "Uli Schlegel",
-      "contact_phone": "+49 30 2636969165",
       "country": "Germany",
-      "name": "Adva Network Security GmbH",
-      "website_url": "http://www.advasecurity.com"
+      "contact_name": "Uli Schlegel",
+      "contact_email": "uli.schlegel@advasecurity.com",
+      "contact_phone": "+49 30 2636969165"
     },
-    "vendor_name": "Adva Network Security GmbH",
     "algorithms": [
       "AES",
       "DRBG",
@@ -97,6 +85,25 @@
       "SHA",
       "SHS",
       "SSH"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3952.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3952.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

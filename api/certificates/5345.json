@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345"
+  },
+  "certificate": {
+    "certificate_number": "5345",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
+    "vendor_name": "Oracle Communications",
+    "module_name": "Acme Packet VME",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/18/2026",
+    "validation_dates": [
+      "6/18/2026"
+    ],
+    "sunset_date": "6/17/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "description": "The Oracle Acme Packet VME is a virtualized software module that runs in a hypervisor-based environment on commodity server hardware. The Oracle Acme Packet VME can be configured to provide secure and reliable IP communications as a Session Border Controller or other Session Delivery products. This module can be deployed in either service provider or enterprise environments. The module performs protocol processing and other services such as encrypted signaling and media via TLS, IPSec, and SRTP on its host processor and without the use of external hardware assist. The module utilizes the exact same software as its appliance counterparts but in a virtualized environment.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/18/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Oracle Communications",
+      "website_url": "https://www.oracle.com",
+      "address_lines": [
+        "2300 Oracle Way",
+        "Austin, TX 78741",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Security Evaluations Team",
+      "contact_email": "seceval_us@oracle.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6581 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A6581 Key Length - 128 SP 800-38C",
+      "AES-CFB128 A6581 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-CTR A6581 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6581 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A6581 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A6581 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6581 Curve - P-256, P-384 | Secret Generation Mode - testing candidates | FIPS 186-5 | Oracle Acme Packet VME",
+      "ECDSA SigGen | (FIPS186-5) | A6581 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6581 Curve - P-256, P-384",
+      "HMAC-SHA-1 A6581 Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-256 A6581 Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-384 A6581 Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-512 A6581 Key Length - Key Length: 112-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A6581 Domain Parameter Generation Methods - P-256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC Sp800- | 56Ar3 | A6581 Domain Parameter Generation Methods - ffdhe2048, MODP-2048 | MODP-4096, MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SNMP (CVL) A6581 Password Length - Password Length: 64-128 Increment 8 SP 800-135 | Rev. 1",
+      "KDF SRTP (CVL) A6581 AES Key Length - 128, 256 SP 800-135 | Rev. 1",
+      "KDF SSH (CVL) A6581 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256 | SP 800-135 | Rev. 1",
+      "RSA KeyGen (FIPS186- | 5) | A6581 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2pow100 | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186- | 5) | A6581 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer (FIPS186-5) A6581 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes Key | Generation | A6581 Safe Prime Groups - ffdhe2048, MODP-2048, MODP-4096, MODP- | 8192 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A6581 Safe Prime Groups - ffdhe2048, MODP-2048, MODP-4096, MODP- | 8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A6581 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4",
+      "SHA2-256 A6581 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4",
+      "SHA2-384 A6581 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A6581 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "TLS v1.2 KDF RFC7627",
+      "(CVL)",
+      "A6581 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF (CVL) A6581 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key Type:Symmetric and Asymmetric N/A SP800-133rev2: Section 4, example 1 | N/A for this module. | Oracle Acme Packet VME | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 34,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5306"
+  },
+  "certificate": {
+    "certificate_number": "5306",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5306",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5306",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5306.pdf",
+    "vendor_name": "Apple Inc.",
+    "module_name": "Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "6/3/2026",
+    "validation_dates": [
+      "6/3/2026"
+    ],
+    "sunset_date": "6/2/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3] is a Hardware module implemented as a sub-chip running on a single-chip processor.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5306.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/3/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Apple Inc.",
+      "website_url": "http://www.apple.com",
+      "address_lines": [
+        "One Apple Park Way",
+        "MS: 927-1CPS",
+        "Cupertino, CA 95014",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Mike Powers",
+      "contact_email": "security-certifications@apple.com",
+      "contact_phone": "907-227-9672"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDH",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6554 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A6555 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A6556 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A6557 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6554 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6555 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6557 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6559 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6924 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW A6555 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F",
+      "AES-KW A6557 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F",
+      "AES-KW A6558 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F",
+      "Counter DRBG A6924 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A6557 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA-1 A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A6557 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6557 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6561 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6557 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1 | Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+      "HMAC-SHA2- | 384 | A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6557 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/256 | A6560 Key Length - Key Length: 8-262144 | Increment 8 | FIPS 198-1",
+      "SHA-1 A6557 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA-1 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-224 A6557 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-224 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6557 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6561 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-256 A6924 Message Length - Message Length: 768- | 16128 Increment 512 | FIPS 180-4",
+      "SHA2-384 A6557 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-384 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6557 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4",
+      "SHA2-512/256 A6560 Message Length - Message Length: 0- | 32768 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key Type:Symmetric",
+      "AES key:Key Length/ | Key Strength: 256 | N/A Symmetric Key Generation (CKG using | method in Section 4 example 1 [SP | 800-133Rev2]) | Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3] | N/A for this module. | N/A for this module. | Ed25519 Key | generation",
+      "EdDSA signature scheme | Curve 25519 key | generation | key generation | Curve 25519",
+      "shared secret | generation",
+      "shared secret generation",
+      "ECDH Key Pair | Generation | Elliptic Curve Integrated Encryption Scheme (ECIES) Key Generation",
+      "ECDH Shared | Secret | Computation",
+      "Shared secret computation using P curves.",
+      "ANSI X9.63 KDF Hash based KDF",
+      "AES-GCM Encryption and Decryption",
+      "HKDF RFC5869 HMAC based Key Derivation Function",
+      "PBKDF Key Derivation",
+      "ECDSA | implemented in | FW | Key generation as part of Ref key generation service and validation | Signature generation and verification using Ref-key as part of Device | keybag service",
+      "ECDSA | implemented in | HW PKA | Key generation as part of Ref key generation service Signature | generation primitive",
+      "ECDH | implemented in | FW",
+      "Shared secret computation using Ref-key",
+      "ECDH | implemented in | HW PKA",
+      "AES KW Key wrapping and unwrapping using class D key, keys from Device | keybag, keys from iCloud keybag, keys from Escrow keybag, keys from | any keybag used with Class B Curve 25519 encrypt/decrypt, keys from | Backup keybag used for wrapping Ed25519 keys, or NVM storage | controller key"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5306.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 56,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5306.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

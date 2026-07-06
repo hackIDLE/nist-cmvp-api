@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5270"
+  },
+  "certificate": {
+    "certificate_number": "5270",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5270",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5270",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5270.pdf",
+    "vendor_name": "Corsec Security, Inc.",
+    "module_name": "CorSSL™ FIPS Object Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/15/2026",
+    "validation_dates": [
+      "5/15/2026"
+    ],
+    "sunset_date": "8/7/2029",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The CorSSL™ FIPS Object Module is a software library providing a C language API for use by other applications requiring cryptographic functionality. The CorSSL FOM offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data-at-rest/data-in-flight and to support industry-standard secure communications protocols.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5270.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/15/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Corsec Security, Inc.",
+      "website_url": "https://corsec.com",
+      "address_lines": [
+        "12600 Fair Lakes Circle, Suite 210",
+        "Fairfax, Virginia 22033",
+        "United States of America"
+      ],
+      "country": "United States of America",
+      "contact_name": "Jake Nelson",
+      "contact_email": "jnelson@corsec.com",
+      "contact_phone": "703-267-6050"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A3356 Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56-104 Increment 8 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0-524288 Increment 8 | SP 800-38C",
+      "AES-CFB1 A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB8 A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A3356 Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 16-128 Increment 8 | Message Length - Message Length: 0-65536 Increment 8 | SP 800-38B",
+      "AES-CTR A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | Supports Counter larger than maximum value - Yes | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A3356 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 504, 512, 1016, 1024 | AAD Length - AAD Length: 0, 504, 512, 1016, 1024 | SP 800-38D",
+      "AES-OFB A3356 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A3356 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes | SP 800-38E | CorSSL™ FIPS Object Module 2.0.16.001 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Cert Properties Reference",
+      "Counter DRBG A3356 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-256 Increment 256 | Entropy Input - Entropy Input: 128-256 Increment 128, Entropy Input: 256-512 | Increment 128 | Nonce - Nonce: 128 | Personalization String Length - Personalization String Length: 0-256 Increment 256 | Returned Bits - 256 | SP 800-90A | Rev. 1",
+      "DSA KeyGen | (FIPS186-4) | A3356 L - 2048, 3072 | N - 224, 256 | FIPS 186-4",
+      "DSA PQGGen | (FIPS186-4) | A3356 P/Q Generation Methods - Probable | G Generation Methods - Canonical | L - 2048, 3072 | N - 224, 256",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "DSA PQGVer | (FIPS186-4) | A3356 P/Q Generation Methods - Probable | G Generation Methods - Canonical | L - 1024, 2048, 3072 | N - 160, 224, 256",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "DSA SigGen | (FIPS186-4) | A3356 L - 2048, 3072 | N - 224, 256",
+      "DSA SigVer | (FIPS186-4) | A3356 L - 1024, 2048, 3072 | N - 160, 224, 256",
+      "ECDSA KeyGen | (FIPS186-4) | A3356 Curve - B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384 | P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A3356 Curve - B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192 | P-224, P-256, P-384, P-521 | FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A3356 Curve - B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384 | P-521",
+      "ECDSA SigVer | (FIPS186-4) | A3356 Curve - B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192 | P-224, P-256, P-384, P-521",
+      "Hash DRBG A3356 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Entropy Input - Entropy Input: 128-256 Increment 64, Entropy Input: 192-256 | Increment 64, Entropy Input: 256-320 Increment 64 | Nonce - Nonce: 128-160 Increment 32, Nonce: 96-128 Increment 32 | Personalization String Length - Personalization String Length: 0-256 Increment 128 | Additional Input - Additional Input: 0-256 Increment 128 | Returned Bits - 160, 224, 256, 384, 512 | SP 800-90A | Rev. 1 | CorSSL™ FIPS Object Module 2.0.16.001 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Cert Properties Reference",
+      "HMAC DRBG A3356 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Entropy Input - Entropy Input: 160-256 Increment 32, Entropy Input: 192-256 | Increment 64, Entropy Input: 256-512 Increment 64, Entropy Input: 384-512 | Increment 64, Entropy Input: 512-1024 Increment 64 | Nonce - Nonce: 128, Nonce: 64, Nonce: 96 | Personalization String Length - Personalization String Length: 0-256 Increment 128 | Additional Input - Additional Input: 0-256 Increment 128 | Returned Bits - 160, 224, 256, 384, 512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A3356 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A3356 MAC - MAC: 32-224 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A3356 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A3356 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A3356 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A3356 Domain Parameter Generation Methods - B-233, B-283, B-409, B-571, K-233, K-283 | K-409, K-571, P-224, P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KTS-IFC A3356 Function - partialVal | IUT ID - CAFECAFE | Modulo - 2048, 3072, 4096, 6144, 8192 | Key Generation Methods - rsakpg1-basic | Fixed Public Exponent - 010001 | Scheme -",
+      "KTS-OAEP-basic - | KAS Role - initiator, responder | Key Transport Method -",
+      "Hash Algorithms - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Supports Null Associated Data - Yes | Associated Data Pattern - uPartyInfo||vPartyInfo | Associated Data Encoding - concatenation | Key Length - 768 | SP 800-56B | Rev. 2",
+      "RSA KeyGen | (FIPS186-4) | A3356 Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3356 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-256 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3356 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4 | CorSSL™ FIPS Object Module 2.0.16.001 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Cert Properties Reference",
+      "SHA-1 A3356 Message Length - Message Length: 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-224 A3356 Message Length - Message Length: 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-256 A3356 Message Length - Message Length: 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-384 A3356 Message Length - Message Length: 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-512 A3356 Message Length - Message Length: 0-65528 Increment 8 FIPS 180-4 | 2.5.2 Vendor Affirmed Algorithms | The vendor affirms the following cryptographic security methods in the table below | Name Properties Implementation Reference | CKG Section 4 Example 1 Key type:Asymmetric N/A SP 800-133 Rev. 2 Section 4 Example 1 | 2.5.3 | Name Properties Implementation Reference",
+      "AES-ECB Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-CBC Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-OFB Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-CFB1 Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-CFB8 Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-CFB128 Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods",
+      "AES-CTR Direction:Unwrapping CorSSL FOM FIPS 140-3 Implementation Guidance D.G Key Transport Methods | 2.5.4 | N/A for this module. | 2.5.5 | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5270.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 54,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5270.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

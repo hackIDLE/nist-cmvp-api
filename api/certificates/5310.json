@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5310"
+  },
+  "certificate": {
+    "certificate_number": "5310",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5310",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5310",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5310.pdf",
+    "vendor_name": "Amazon Web Services",
+    "module_name": "AWS Nitro Card Security Engine SSMAE",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "6/4/2026, 6/29/2026",
+    "validation_dates": [
+      "6/4/2026",
+      "6/29/2026"
+    ],
+    "sunset_date": "6/3/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Cryptographic Module (CM) is a single-chip firmware-hybrid module. The cryptographic services provided by the module are: Data encryption / decryption utilizing symmetric ciphers, i.e. AES algorithms and computation of hash values, i.e., SHA2 and SHA3.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5310.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/4/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      },
+      {
+        "date": "6/29/2026",
+        "type": "Update",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services",
+      "website_url": "http://aws.amazon.com",
+      "address_lines": [
+        "1918 8th Ave.",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Alicia Squires",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6241 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A6241 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum | value - Yes | Incremental Counter - Yes | Conformances - RFC3686 | Counter Tests Performed - Yes | IV Generation Mode - External | SP 800-38A",
+      "AES-ECB A6241 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A6241 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128- | 65536 Increment 128 | Tweak Mode - Number | Data Unit Length Matches Payload | Length - Yes | SP 800-38E",
+      "SHA2-256 A6241 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A6241 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6241 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA3-224 A6241 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 202",
+      "SHA3-256 A6241 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 202",
+      "SHA3-384 A6241 Message Length - Message Length: 8- | 52416 Increment 8 | FIPS 202",
+      "SHA3-512 A6241 Message Length - Message Length: 8- | 36288 Increment 8 | FIPS 202 | Document Version 1.00.00 | N/A for this module. | N/A for this module. | N/A for this module.",
+      "DES Implemented in the module's disjoint hardware component. Used for | encryption/decryption purpose | MD5 Implemented in the module's disjoint hardware component. Used for hashing | purpose",
+      "SHA-1 Output hash: 160 bits. Implemented in the module's disjoint hardware | component. Used for hashing purpose",
+      "Triple-DES | (ECB) | Keylen: 192 bits. Implemented in the module's disjoint hardware component. | Used for encryption/decryption only",
+      "Triple-DES | (CBC) | Keylen: 192 bits. Implemented in the module's disjoint hardware component. | Used for encryption/decryption only"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5310.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 15,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5310.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3949"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3949",
     "certificate_number": "3949",
-    "dataset": "active",
-    "description": "FAST C-LIB is software cryptographic library embedded in vehicle ECUs. FAST C-LIB is used to meet OEM’s automotive security requirements. For example, FAST C-LIB is used to implement secure In-Vehicle communication and secure V2X communication.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "FAST C-LIB",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3949",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3949",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3949.pdf",
+    "vendor_name": "Fescaro Co. Ltd.",
+    "module_name": "FAST C-LIB",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "6/7/2021, 9/12/2022",
+    "validation_dates": [
+      "6/7/2021",
+      "9/12/2022"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "FAST C-LIB is software cryptographic library embedded in vehicle ECUs. FAST C-LIB is used to meet OEM’s automotive security requirements. For example, FAST C-LIB is used to implement secure In-Vehicle communication and secure V2X communication.",
+    "software_versions": "1.0.0",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +43,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3949.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/6/2026",
-    "validation_date": "6/7/2021, 9/12/2022",
-    "validation_dates": [
-      "6/7/2021",
-      "9/12/2022"
-    ],
     "validation_history": [
       {
         "date": "6/7/2021",
-        "lab": "AEGISOLVE, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "AEGISOLVE, Inc."
       },
       {
         "date": "9/12/2022",
-        "lab": "AEGISOLVE, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "AEGISOLVE, Inc."
       }
     ],
     "vendor": {
+      "name": "Fescaro Co. Ltd.",
+      "website_url": "http://www.fescaro.com",
       "address_lines": [
         "4F/7F, 40, Gwanggyojungang-ro 266 beon-gil, Yeongtong-gu",
         "Suwon-si, Gyeonggi-do",
         "Korea"
       ],
-      "contact_email": "hyunjung.lee@fescaro.com",
-      "contact_name": "Hyun-Jung Lee",
-      "contact_phone": "+82 (0) 10.9169.3241",
       "country": "Korea",
-      "name": "Fescaro Co. Ltd.",
-      "website_url": "http://www.fescaro.com"
+      "contact_name": "Hyun-Jung Lee",
+      "contact_email": "hyunjung.lee@fescaro.com",
+      "contact_phone": "+82 (0) 10.9169.3241"
     },
-    "vendor_name": "Fescaro Co. Ltd."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3949.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3949.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

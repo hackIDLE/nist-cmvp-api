@@ -1,35 +1,36 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3963"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3963",
     "certificate_number": "3963",
-    "dataset": "active",
-    "description": "The Envieta QFlex HSM is designed, engineered, and manufactured in the United States, offering top of the market performance for a fraction of the cost. QFlex’s integrated FPGA fabric provides organizations the capability to run accelerated proprietary algorithms inside the security perimeter of the HSM. This unique solution provides the lowest cost per operation on the market today, making QFlex the clear choice to satisfy enterprise capacity requirements.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Envieta QFlex Hardware Security Module",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3963",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3963",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3963.pdf",
+    "vendor_name": "Envieta Systems LLC",
+    "module_name": "Envieta QFlex Hardware Security Module",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 3,
+    "validation_date": "6/30/2021",
+    "validation_dates": [
+      "6/30/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The Envieta QFlex HSM is designed, engineered, and manufactured in the United States, offering top of the market performance for a fraction of the cost. QFlex’s integrated FPGA fabric provides organizations the capability to run accelerated proprietary algorithms inside the security perimeter of the HSM. This unique solution provides the lowest cost per operation on the market today, making QFlex the clear choice to satisfy enterprise capacity requirements.",
+    "software_versions": null,
+    "hardware_versions": "385HSM-FIPS Rev A and 385HSM-FIPS Rev B",
+    "firmware_versions": "1.3.0",
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +41,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3963.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/29/2026",
-    "validation_date": "6/30/2021",
-    "validation_dates": [
-      "6/30/2021"
-    ],
     "validation_history": [
       {
         "date": "6/30/2021",
-        "lab": "Acumen Security",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Acumen Security"
       }
     ],
     "vendor": {
+      "name": "Envieta Systems LLC",
+      "website_url": "https://envieta.com",
       "address_lines": [
         "7175 Columbia Gateway Drive",
         "Suite T",
         "Columbia, MD 21046",
         "USA"
       ],
-      "contact_email": "Security.Certifications@Envieta.com",
-      "contact_name": "Jeff Hahn",
-      "contact_phone": "410-290-1136",
       "country": "USA",
-      "name": "Envieta Systems LLC",
-      "website_url": "https://envieta.com"
+      "contact_name": "Jeff Hahn",
+      "contact_email": "Security.Certifications@Envieta.com",
+      "contact_phone": "410-290-1136"
     },
-    "vendor_name": "Envieta Systems LLC"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3963.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3963.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

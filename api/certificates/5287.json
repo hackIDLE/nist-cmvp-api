@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287"
+  },
+  "certificate": {
+    "certificate_number": "5287",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
+    "vendor_name": "Cisco Systems, Inc.",
+    "module_name": "Cisco Adaptive Security Appliance on 4K/9K Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 1,
+    "validation_date": "5/22/2026",
+    "validation_dates": [
+      "5/22/2026"
+    ],
+    "sunset_date": "5/21/2031",
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy.",
+    "description": "Cisco Adaptive Security Appliance on 4K/9K Cryptographic Module is an integrated network security system providing enterprise-class firewall with a comprehensive range of next-generation network security services, intrusion prevention system (IPS), content security and secure unified communications, HTTPS/TLSv1.2, SSHv2, IPsec/IKEv2, SNMPv3 and Cryptographic Cipher Suite B using the ASA Cryptographic Module.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/22/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Cisco Systems, Inc.",
+      "website_url": "http://www.cisco.com",
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Global Certification Team",
+      "contact_email": "certteam@cisco.com",
+      "contact_phone": "800-553-6387"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4446 Key Length - 128, 256 SP 800-38A",
+      "AES-GCM A4446 Key Length - 128, 256 SP 800-38D",
+      "Counter DRBG A4446 Prediction Resistance - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A4446 Curve - P-256, P-384, P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A4446 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4446 Curve - P-256, P-384, P-521",
+      "384, SHA2-512 | FIPS 186-4 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice.",
+      "HMAC-SHA-1 A4446 Key Length - Key Length: 256-448 Increment | 8, Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A4446 Key Length - Key Length: 256-448 Increment | 8, Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A4446 Key Length - Key Length: 256-448 Increment | 8, Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A4446 Key Length - Key Length: 256-448 Increment | 8, Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A4446 Key Length - Key Length: 256-448 Increment | 8, Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4446 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A4446 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, ffdhe4096, modp-2048 | modp-3072, modp-4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2",
+      "(CVL)",
+      "A4446 Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 2048 | Derived Keying Material Length - Derived | Keying Material Length: 3072",
+      "Hash Algorithm - SHA-1 | SP 800-135 | Rev. 1",
+      "KDF SNMP",
+      "(CVL) | A4446 Password Length - Password Length: 256, 64 SP 800-135 | Rev. 1",
+      "KDF SSH (CVL) A4446 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-",
+      "256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-4) | A4446 Key Generation Mode - B.3.4 | Modulo - 2048, 3072, 4096",
+      "Hash Algorithm - SHA2-256 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A4446 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A4446 Signature Type - ANSI X9.31, PKCS 1.5 | PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | FIPS 186-4 | Safe Primes Key | Generation | A4446 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096, modp-2048, modp-3072, modp- | 4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A4446 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A4446 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice.",
+      "SHA2-256 A4446 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A4446 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A4446 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A4446 Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1 | Marvell Cavium Nitrox V",
+      "AES-CBC C1026 Key Length - 128, 256 SP 800-38A",
+      "AES-GCM C1026 Key Length - 128, 256 SP 800-38D",
+      "HMAC-SHA-1 C1026 - FIPS 198-1",
+      "HMAC-SHA2- | 256 | C1026 - FIPS 198-1",
+      "HMAC-SHA2- | 384 | C1026 - FIPS 198-1",
+      "HMAC-SHA2- | 512 | C1026 - FIPS 198-1",
+      "SHA-1 C1026 Message Length - Message Length: 0-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-256 C1026 Message Length - Message Length: 0-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 C1026 Message Length - Message Length: 0-102400 | Increment 8 | FIPS 180-4",
+      "SHA2-512 C1026 Message Length - Message Length: 0-102400 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
+      "output from SP800-90Arev1 CTR_DRBG | (A4446) | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | N/A for this module. | N/A for this module. | 3DES Used for symmetric encryption in SSHv2, TLSv1, TLSv1.2, IPsec/IKEv2 | and SNMPv3 | ChaCha20- | poly1305 | Used for authenticated symmetric encryption in SSHv2, and TLSv1.3"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 50,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5299"
+  },
+  "certificate": {
+    "certificate_number": "5299",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5299",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5299",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5299.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "Cryptographic Module for BIG-IP",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/3/2026",
+    "validation_dates": [
+      "6/3/2026"
+    ],
+    "sunset_date": "6/2/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5299.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/3/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "https://csrc.nist.gov/f5.com",
+      "address_lines": [
+        "801 Fifth Ave",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "F5 Certifications Team",
+      "contact_email": "F5Certs@f5.com",
+      "contact_phone": "845-603-2123"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7001 | A7002 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Cryptographic Module for BIG-IP",
+      "AES-CTR A7001 | A7002 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7001 | A7002 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7001 | A7002 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC A7001 | A7002 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "Counter DRBG A7001 Prediction Resistance - No, Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No, Yes | SP 800-90A | Rev. 1",
+      "Counter DRBG A7002 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A7001 Curve - P-256, P-384 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A7001 Curve - P-256, P-384 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7001 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7001 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "HMAC-SHA-1 A7001 | A7002 | Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1",
+      "HMAC-SHA2-256 A7001 | A7002 | Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1",
+      "HMAC-SHA2-384 A7001 | A7002 | Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1 | Cryptographic Module for BIG-IP",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A7001 Domain Parameter Generation Methods - P-256 | P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC Sp800- | 56Ar3 | A7001 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, ffdhe4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A7001 Cipher - AES-128, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A7001 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186- | 5) | A7001 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186- | 5) | A7001 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | Safe Primes Key | Generation | A7001 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A7001 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A7001 | A7002 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A7001 | A7002 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A7001 | A7002 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A7001 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1 | Cryptographic Module for BIG-IP | Name Properties Implementation Reference | Cryptographic Key | Generation (CKG) | Key | Type:asymmetric | N/A Random bit strings required for generating | the cryptographic keys is compliant with | section 4 example 1 of SP800-133r2 | N/A for this module.",
+      "AES with OFB, CCM, CFB, XTS, KW modes and Blowfish, Camellia, CAST5, DES",
+      "IDEA, RC2, RC4, SEED, SM2, SM4, Triple-DES | Symmetric encryption | / decryption (not | CAVP tested)",
+      "HMAC-SHA2-224, HMAC-SHA2-512, AES CMAC, Triple-DES CMAC Message authentication | (not CAVP tested)",
+      "ECDSA using P-224, P-521 curves, DSA with all key and SHA sizes, RSA with | 1024 and greater than 4096 up to 16384 modulus | Key generation (not | ACVP tested)",
+      "ECDSA using P-224, P-521 curves Key verification (not | ACVP tested)",
+      "ECDSA using SM2 algorithm, Probabilistic Signature Scheme (PSS), ANSI X9.31 | schemes, PKCS #1 v1.5 scheme with 1024 and greater than 4096 up to 16384",
+      "modulus for all SHA sizes, DSA with all key and SHA sizes, ECDSA using curves P -",
+      "256, P-384 with SHA-1, SHA2-224, SHA2-512, RSA PKCS #1 v1.5 scheme with",
+      "modulus size 2048, 3072, 4096 bits with SHA-1, SHA2-224, SHA2-512 | Digital Signature (not | FIPS186-5 | compliant/not ACVP | tested)",
+      "RSA with modulus sizes up to 16384 bits Asymmetric | encryption / | decryption",
+      "DSA with all key and SHA sizes Domain parameter | generation, domain | parameter verification | Diffie-Hellman with groups other than ffdhe2048, ffdhe3072, ffdhe4096, EC",
+      "Diffie-Hellman Ephemeral Unified without KDF with curves other than P-256, P-",
+      "384.; onePassDh and StaticUnified without KDF",
+      "Shared secret | computation (not | CAVP tested)",
+      "HMAC_DRBG and Hash_DRBG using all SHA sizes, CTR_DRBG with AES -128",
+      "AES-192, ANSI X9.31 RNG | Random number | generation (not CAVP | tested) | Cryptographic Module for BIG-IP",
+      "SHA2-224, SHA2-512, SM3, MD4, MDC2, RIPEMD, Whirlpool Message digest (not | CAVP tested)",
+      "TLS Key Derivation function using SHA-1/ MD5 / SHA2-224 / SHA2-512, SSH Key",
+      "Derivation function using SHA-1 / SHA2-224 / SHA2-512",
+      "KDF (not CAVP | tested)"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5299.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 51,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5299.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

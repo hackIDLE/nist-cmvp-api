@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5296"
+  },
+  "certificate": {
+    "certificate_number": "5296",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5296",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5296",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5296.pdf",
+    "vendor_name": "Google, LLC",
+    "module_name": "BoringCrypto",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/2/2026",
+    "validation_dates": [
+      "6/2/2026"
+    ],
+    "sunset_date": "1/26/2030",
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5296.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/2/2026",
+        "type": "Initial",
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "Google, LLC",
+      "website_url": "http://www.google.com",
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Adam Langley",
+      "contact_email": "fips-crypto-officer@google.com",
+      "contact_phone": "212-565-9291"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4687 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A4687 Key Length - 128 | Tag Length - 32, 64 | SP 800-38C | Google, LLC 2026 Version 1.0 | Public Material – May be reproduced only in its original entirely (without revision) | IV Length - IV Length: 104 | Payload Length - Payload Length: 0-256 | Increment 8 | AAD Length - AAD Length: 0-524288 | Increment 8",
+      "AES-CTR A4687 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum value | - Yes | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A4687 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4687 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 0-65536 | Increment 8 | AAD Length - AAD Length: 0-65536 | Increment 8 | SP 800-38D",
+      "AES-GMAC A4687 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 0-65536 | Increment 8 | SP 800-38D",
+      "AES-KW A4687 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-4096 | Increment 64 | SP 800-38F",
+      "AES-KWP A4687 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-4096 | Increment 8 | SP 800-38F",
+      "Counter DRBG A4687 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | Additional Input - Additional Input: 0-384 | Increment 16 | Entropy Input - Entropy Input: 384 | SP 800-90A | Rev. 1 | Google, LLC 2026 Version 1.0 | Public Material – May be reproduced only in its original entirely (without revision) | Nonce - Nonce: 0 | Personalization String Length - | Personalization String Length: 0-384 | Increment 16 | Returned Bits - 2048",
+      "ECDSA KeyGen | (FIPS186-4) | A4687 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - Testing | Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A4687 Curve - P-224, P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A4687 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512, SHA2-512/256 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4687 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-",
+      "256, SHA2-384, SHA2-512, SHA2-512/256 | FIPS 186-4",
+      "HMAC-SHA-1 A4687 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-224 A4687 MAC - MAC: 32-224 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A4687 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A4687 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A4687 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/256 | A4687 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-524288 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4687 Domain Parameter Generation Methods - P- | 224, P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | staticUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A4687 Domain Parameter Generation Methods - FB | FC | Scheme - | dhEphem - | KAS Role - initiator | SP 800-56A | Rev. 3",
+      "KDA HKDF | Sp800-56Cr1 | A4687 Fixed Info Pattern - uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | SP 800-56C | Rev. 2 | Google, LLC 2026 Version 1.0 | Public Material – May be reproduced only in its original entirely (without revision) | Derived Key Length - 2048 | Shared Secret Length - Shared Secret | Length: 224-65336 Increment 8 | HMAC Algorithm - SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512, SHA2-512/256",
+      "RSA KeyGen | (FIPS186-4) | A4687 Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - Yes | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A4687 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A4687 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-512/256 A4687 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A4687 Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF",
+      "(CVL)",
+      "A4687 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A Section 4, example 1: U is directly output | without XORing V | Google, LLC 2026 Version 1.0 | Public Material – May be reproduced only in its original entirely (without revision) | N/A for this module. | N/A for this module. | MD5, MD4 Non-Approved Hashing | POLYVAL Non-Approved authenticated encryption",
+      "DES, Triple-DES (non-compliant) Non-Approved encryption/decryption",
+      "AES (non-compliant) Non-Approved encryption/decryption | DH (non-compliant) Non-Approved key agreement",
+      "RSA PKCS #1 v1.5 key wrapping (non-compliant) Non-Approved key wrapping",
+      "TLS 1.0/1.1 KDF (non-compliant) Non-Approved TLS key derivation"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5296.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 51,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5296.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

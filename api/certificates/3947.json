@@ -1,35 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3947"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode and configured to Overall Level 2 per Section 2 of the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3947",
     "certificate_number": "3947",
-    "dataset": "active",
-    "description": "The MACE cryptographic processor is used in security modules embedded in Motorola's Astro family of radio systems products. It provides secure voice and data capabilities as well as APCO Over-The-Air-Rekeying and advanced key management.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 2",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3947",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3947",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3947.pdf",
+    "vendor_name": "Motorola Solutions, Inc.",
+    "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 2",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "6/7/2021",
+    "validation_dates": [
+      "6/7/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode and configured to Overall Level 2 per Section 2 of the Security Policy",
+    "description": "The MACE cryptographic processor is used in security modules embedded in Motorola's Astro family of radio systems products. It provides secure voice and data capabilities as well as APCO Over-The-Air-Rekeying and advanced key management.",
+    "software_versions": null,
+    "hardware_versions": "P/Ns 5185912Y03, 5185912Y05 and 5185912T05",
+    "firmware_versions": "R01.11.00 with [AES256 R01.00.00 and AES256 R02.00.00] and [ADP, DES-XL, DES, DVI-XL and/or DVP-XL R01.00.00]",
+    "security_level_exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: Level 3",
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +45,47 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June 2021_010721_0718.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Roles, Services, and Authentication: Level 3",
-      "Physical Security: Level 3",
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3947.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/6/2026",
-    "validation_date": "6/7/2021",
-    "validation_dates": [
-      "6/7/2021"
-    ],
     "validation_history": [
       {
         "date": "6/7/2021",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "Motorola Solutions, Inc.",
+      "website_url": "http://www.motorolasolutions.com",
       "address_lines": [
         "500 West Monroe Street",
         "Chicago, IL 60661",
         "USA"
       ],
-      "contact_email": "aroy@motorolasolutions.com",
-      "contact_name": "Amalendu Roy",
-      "contact_phone": "847-576-5000",
       "country": "USA",
-      "name": "Motorola Solutions, Inc.",
-      "website_url": "http://www.motorolasolutions.com"
+      "contact_name": "Amalendu Roy",
+      "contact_email": "aroy@motorolasolutions.com",
+      "contact_phone": "847-576-5000"
     },
-    "vendor_name": "Motorola Solutions, Inc.",
     "algorithms": [
       "DES"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3947.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3947.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

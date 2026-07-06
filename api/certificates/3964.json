@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3964"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3964",
     "certificate_number": "3964",
-    "dataset": "active",
-    "description": "The module is a network router supporting secure integrated voice and data applications as well as high-speed site-to-site WAN connections. In addition to the normal routing functions, the MNR S6000 supports data encryption and authentication over Ethernet and Frame Relay links using the IPSec and FRF.17 protocols.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Motorola Network Router (MNR) S6000",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3964",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3964",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3964.pdf",
+    "vendor_name": "Motorola Solutions, Inc.",
+    "module_name": "Motorola Network Router (MNR) S6000",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "7/1/2021",
+    "validation_dates": [
+      "7/1/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode",
+    "description": "The module is a network router supporting secure integrated voice and data applications as well as high-speed site-to-site WAN connections. In addition to the normal routing functions, the MNR S6000 supports data encryption and authentication over Ethernet and Frame Relay links using the IPSec and FRF.17 protocols.",
+    "software_versions": null,
+    "hardware_versions": "Base Unit P/N CLN1780N Rev AB with Encryption Module P/N CLN8261D Rev NB",
+    "firmware_versions": "18.2.2.03",
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,42 +43,27 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3964.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "6/30/2026",
-    "validation_date": "7/1/2021",
-    "validation_dates": [
-      "7/1/2021"
-    ],
     "validation_history": [
       {
         "date": "7/1/2021",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "Motorola Solutions, Inc.",
+      "website_url": "http://www.motorolasolutions.com",
       "address_lines": [
         "500 Monroe Street",
         "Suite 4400",
         "Chicago, IL 60661-3781",
         "USA"
       ],
-      "contact_email": "w.klimala@motorolasolutions.com",
-      "contact_name": "Wojciech Klimala",
-      "contact_phone": "+48 12 29 79 000",
       "country": "USA",
-      "name": "Motorola Solutions, Inc.",
-      "website_url": "http://www.motorolasolutions.com"
+      "contact_name": "Wojciech Klimala",
+      "contact_email": "w.klimala@motorolasolutions.com",
+      "contact_phone": "+48 12 29 79 000"
     },
-    "vendor_name": "Motorola Solutions, Inc.",
     "algorithms": [
       "AES",
       "DES",
@@ -89,6 +77,25 @@
       "RSA",
       "SHA",
       "SSH"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3964.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3964.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

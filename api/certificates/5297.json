@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5297"
+  },
+  "certificate": {
+    "certificate_number": "5297",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5297",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5297",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5297.pdf",
+    "vendor_name": "EZ Data Shield Sdn Bhd",
+    "module_name": "Taming Sari Crypto Module v1.0",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/3/2026",
+    "validation_dates": [
+      "6/3/2026"
+    ],
+    "sunset_date": "6/2/2031",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "This module is utilised by the Taming Sari encryption software, the calling application, to provide the necessary cryptographic functionalities required by the software.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5297.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/3/2026",
+        "type": "Initial",
+        "lab": "CyberSecurity Malaysia Cryptographic Evaluation Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "EZ Data Shield Sdn Bhd",
+      "website_url": "https://taming-sari.com/",
+      "address_lines": [
+        "8-23-03 (2nd Floor)",
+        "Jalan Medan Pusat Bandar 7A Bangi Sentral",
+        "Bandar Baru Bangi",
+        "Kajang, Selangor Darul Ehsan 43650",
+        "Malaysia"
+      ],
+      "country": "Malaysia",
+      "contact_name": "Rozaidi Basir",
+      "contact_email": "team@taming-sari.com",
+      "contact_phone": "6019-290-3976"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A5346 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A5346 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A5346 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "HMAC DRBG A5346 Prediction Resistance - No",
+      "Mode - SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2- | 512 | A5346 Key Length - Key Length: 8-2048 | Increment 8 | FIPS 198-1",
+      "SHA2-512 A5346 Message Length - Message Length: 0-1024 | Increment 128 | FIPS 180-4 | The module only supports an Approved mode of operation with the algorithms listed in this | section. No operational use of an algorithm may be performed until the corresponding CAST has | passed. | N/A for this module. | The Module does not implement vendor-affirmed algorithms. | N/A for this module. | The Module does not implement non-approved algorithms. | N/A for this module. | The Module does not implement non-approved algorithms. | N/A for this module. | The Module does not implement non-approved algorithms. | Taming Sari Crypto Module v1.0 EZ Data Shield | This document is permitted to be reproduced and distributed solely in its original form without any modifications."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5297.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 7,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5297.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

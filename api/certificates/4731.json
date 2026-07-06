@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 18
-    },
-    "caveat": "Interim validation. When installed, initialized and configured as specified in section 11 of the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731",
     "certificate_number": "4731",
-    "dataset": "active",
-    "description": "NetApp CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption services for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software-only cryptographic module.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "NetApp CryptoMod",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf",
+    "vendor_name": "NetApp, Inc.",
+    "module_name": "NetApp CryptoMod",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "7/19/2024, 3/6/2026",
+    "validation_dates": [
+      "7/19/2024",
+      "3/6/2026"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When installed, initialized and configured as specified in section 11 of the Security Policy",
+    "description": "NetApp CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption services for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software-only cryptographic module.",
+    "software_versions": "3.0",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,46 +43,31 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2024_010824_1146.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/18/2029",
-    "validation_date": "7/19/2024, 3/6/2026",
-    "validation_dates": [
-      "7/19/2024",
-      "3/6/2026"
-    ],
     "validation_history": [
       {
         "date": "7/19/2024",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
       },
       {
         "date": "3/6/2026",
-        "lab": "Lightship Security, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Lightship Security, Inc."
       }
     ],
     "vendor": {
+      "name": "NetApp, Inc.",
+      "website_url": "http://www.netapp.com",
       "address_lines": [
         "3060 Olsen Drive",
         "San Jose, CA 95128",
         "USA"
       ],
-      "contact_email": "ng-security-assurance@netapp.com",
-      "contact_name": "NetApp Security Assurance Team",
-      "contact_phone": "919-476-5600",
       "country": "USA",
-      "name": "NetApp, Inc.",
-      "website_url": "http://www.netapp.com"
+      "contact_name": "NetApp Security Assurance Team",
+      "contact_email": "ng-security-assurance@netapp.com",
+      "contact_phone": "919-476-5600"
     },
-    "vendor_name": "NetApp, Inc.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -88,24 +76,43 @@
       "SHA"
     ],
     "algorithms_detailed": [
-      "AES-CBC | A6624 | - | SP 800-38A",
-      "AES-CCM | A6624 | - | SP 800-38C",
-      "AES-CMAC | A6624 | - | SP 800-38B",
-      "AES-ECB | A6624 | - | SP 800-38A",
-      "AES-GCM | A6624 | - | SP 800-38D",
-      "AES-GMAC | A6624 | - | SP 800-38D",
-      "AES-KWP | A6624 | - | SP 800-38F",
-      "AES-XTS Testing Revision 2.0 | A6624 | - | SP 800-38E",
-      "Counter DRBG | A6624 | - | SP 800-90A Rev.1",
-      "HMAC-SHA-1 | A6624 | - | FIPS 198-1",
-      "HMAC-SHA2-256 | A6624 | - | FIPS 198-1",
-      "HMAC-SHA2-512 | A6624 | - | FIPS 198-1",
-      "KDF SP800-108 | A6624 | - | SP 800-108 Rev.1",
-      "PBKDF | A6624 | - | SP 800-132",
-      "SHA-1 | A6624 | - | FIPS 180-4",
-      "SHA2-256 | A6624 | - | FIPS 180-4",
-      "SHA2-512 | A6624 | - | FIPS 180-4",
-      "SHA3-256 | A6624 | - | FIPS 202"
-    ]
+      "AES-CBC A6624 - SP 800-38A",
+      "AES-CCM A6624 - SP 800-38C",
+      "AES-CMAC A6624 - SP 800-38B",
+      "AES-ECB A6624 - SP 800-38A",
+      "AES-GCM A6624 - SP 800-38D",
+      "AES-GMAC A6624 - SP 800-38D",
+      "AES-KWP A6624 - SP 800-38F",
+      "AES-XTS Testing Revision 2.0 A6624 - SP 800-38E",
+      "Counter DRBG A6624 - SP 800-90A Rev. 1",
+      "HMAC-SHA-1 A6624 - FIPS 198-1",
+      "HMAC-SHA2-256 A6624 - FIPS 198-1",
+      "HMAC-SHA2-512 A6624 - FIPS 198-1",
+      "KDF SP800-108 A6624 - SP 800-108 Rev. 1",
+      "PBKDF A6624 - SP 800-132",
+      "SHA-1 A6624 - FIPS 180-4",
+      "SHA2-256 A6624 - FIPS 180-4",
+      "SHA2-512 A6624 - FIPS 180-4",
+      "SHA3-256 A6624 - FIPS 202 | Name Properties Implementation Reference | CKG - | Section | 6.3 | Key | Type:Symmetric | NetApp | CryptoMod | SP 800-133 Rev. 2 Section 6.3 | Symmetric Keys Produced by Combining | Multiple Keys and Other Data. (Method | 2) | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 18,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

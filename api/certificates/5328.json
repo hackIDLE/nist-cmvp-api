@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5328"
+  },
+  "certificate": {
+    "certificate_number": "5328",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5328",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5328",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5328.pdf",
+    "vendor_name": "Palo Alto Networks, Inc.",
+    "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/11/2026",
+    "validation_dates": [
+      "6/11/2026"
+    ],
+    "sunset_date": "6/10/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "description": "The Palo Alto Networks SD-WAN ION Core Crypto Module is utilized in hardware and software ION form factors. These enable the integration of a diverse set of wide area network (WAN) connection types, improve application performance and visibility, enhance security and compliance, and reduce the overall cost and complexity of a WAN.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5328.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/11/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com",
+      "address_lines": [
+        "3000 Tannery Way",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amir Shahhosseini",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6268 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A6268 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A6268 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6268 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "Counter DRBG A6268 Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - No, Yes | SP 800-90A | Rev. 1 | Networks, Inc. | Palo Alto Networks SD-WAN ION Core Crypto Module",
+      "ECDSA KeyGen | (FIPS186-5) | A6268 Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits, testing | candidates | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6268 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6268 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "HMAC-SHA-1 A6268 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-256 A6268 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-384 A6268 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-512 A6268 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6268 Domain Parameter Generation Methods - P-256 | P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2 (CVL) A6268 Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 2048 | Derived Keying Material Length - Derived Keying | Material Length: 1056-3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384",
+      "SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF SNMP (CVL) A6268 Password Length - Password Length: 64, 2048 SP 800-135 | Rev. 1",
+      "KDF SSH (CVL) A6268 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6268 Key Generation Mode - probable | Modulo - 2048, 3072 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6268 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6268 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA-1 A6268 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6268 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6268 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6268 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6268 Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1 | Networks, Inc. | Palo Alto Networks SD-WAN ION Core Crypto Module | Crypto Library - II",
+      "AES-CBC A6269 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A6269 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A6269 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A6269 Key Length - Key Length: 256-1120 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A6269 Key Length - Key Length: 256-1120 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6269 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA SigVer (FIPS186- | 5) | A6269 Modulo - 2048 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-256 A6269 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6269 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "A6269 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1 | Crypto Library - III",
+      "AES-CBC A6270 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A6270 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6270 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6270 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "SHA2-256 A6270 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6270 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6270 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | Networks, Inc. | Palo Alto Networks SD-WAN ION Core Crypto Module | Crypto Library - IV",
+      "AES-CBC A6271 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A6271 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6271 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6271 Key Length - Key Length: 256-1120 Increment 8 FIPS 198-1",
+      "SHA2-256 A6271 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6271 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6271 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key Type:Asymmetric N/A SP 800-133r2 Section 4, example 1 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5328.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 58,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5328.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

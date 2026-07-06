@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332"
+  },
+  "certificate": {
+    "certificate_number": "5332",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
+    "vendor_name": "Amazon Web Services, Inc.",
+    "module_name": "AWS Scalable Network Crypto Modules, version 1.1",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/16/2026",
+    "validation_dates": [
+      "6/16/2026"
+    ],
+    "sunset_date": "6/15/2031",
+    "caveat": "When operated with module AWS-LC Cryptographic Module (dynamic build) validated to FIPS 140-3 under Cert. #5146 operating in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/16/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://aws.amazon.com",
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "AWS FIPS Team",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB A4847 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A4847 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D | CS8320 device with AC1200 encryptor",
+      "AES-ECB C373 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM C681 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D | [EVM] AWC-LC (Integrity Test)",
+      "HMAC-SHA2- | 256 | A5425 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A5433 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A5434 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "SHA2-256 A5425 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A5433 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A5434 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | The Approved Algorithms tables above list the approved algorithms implemented by the AWS | Encryption Module and the algorithms implemented within the bound module, which are used to | perform the software integrity test upon the module. | The module does not implement any vendor-affirmed algorithms. | The module does not implement any | AWS Scalable Network Crypto Modules, Version 1.1 | 2025 Amazon Web Services, Inc., Lightship Security, Inc. Page 13 of 29 | This document may be freely reproduced and distributed whole and intact, including this copyright notice. | The module does not implement any | claimed. | The module does not implement any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 10,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

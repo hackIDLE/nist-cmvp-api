@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2503"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2503",
     "certificate_number": "2503",
-    "dataset": "active",
-    "description": "The Harris AES Load Module is a firmware module which supports secure voice and data communications by providing Advanced Encryption Standard (AES) algorithm encryption/decryption as specified in FIPS 197. It interacts with a Digital Signal Processor (DSP) application executing on the Harris XL family of radios and other terminal products in order to provide its services to those terminals.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "hardware_versions": null,
-    "module_name": "Harris AES Load Module",
-    "module_type": "Firmware",
+    "dataset": "historical",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2503",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2503",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2503.pdf",
+    "vendor_name": "L3Harris Technologies, Inc.",
+    "module_name": "Harris AES Load Module",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Firmware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "12/18/2015, 5/28/2021, 3/3/2022",
+    "validation_dates": [
+      "12/18/2015",
+      "5/28/2021",
+      "3/3/2022"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The Harris AES Load Module is a firmware module which supports secure voice and data communications by providing Advanced Encryption Standard (AES) algorithm encryption/decryption as specified in FIPS 197. It interacts with a Digital Signal Processor (DSP) application executing on the Harris XL family of radios and other terminal products in order to provide its services to those terminals.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": "R06A02",
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,55 +43,59 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2503.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "5/27/2026",
-    "validation_date": "12/18/2015, 5/28/2021, 3/3/2022",
-    "validation_dates": [
-      "12/18/2015",
-      "5/28/2021",
-      "3/3/2022"
-    ],
     "validation_history": [
       {
         "date": "12/18/2015",
-        "lab": "DXC Technology",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "DXC Technology"
       },
       {
         "date": "5/28/2021",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
       },
       {
         "date": "3/3/2022",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
       }
     ],
     "vendor": {
+      "name": "L3Harris Technologies, Inc.",
+      "website_url": "http://www.l3harris.com",
       "address_lines": [
         "221 Jefferson Ridge Parkway",
         "Lynchburg, VA 24501",
         "USA"
       ],
-      "contact_email": "PSPC-Certifications@L3Harris.com",
-      "contact_name": "PSPC Certifications",
-      "contact_phone": null,
       "country": "USA",
-      "name": "L3Harris Technologies, Inc.",
-      "website_url": "http://www.l3harris.com"
+      "contact_name": "PSPC Certifications",
+      "contact_email": "PSPC-Certifications@L3Harris.com",
+      "contact_phone": null
     },
-    "vendor_name": "L3Harris Technologies, Inc.",
     "algorithms": [
       "AES",
       "KTS",
       "SHA"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2503.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2503.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

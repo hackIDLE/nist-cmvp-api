@@ -169,7 +169,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1086 active validated modules with enriched details",
+            "description": "Currently 1118 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -187,7 +187,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4170 historical modules",
+            "description": "Currently 4229 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 325 modules in process",
+            "description": "Currently 281 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -294,27 +294,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-05-15T02:49:52.984765Z"
+            "example": "2026-07-06T06:32:53.611920Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1086
+            "example": 1118
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4170
+            "example": 4229
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 325
+            "example": 281
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1630
+            "example": 1721
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5256
+            "example": 5347
           },
           "source": {
             "type": "string",
@@ -350,17 +350,21 @@
         "type": "object",
         "description": "A FIPS 140-2/140-3 validated cryptographic module",
         "properties": {
-          "Certificate Number": {
-            "type": "string",
-            "example": "5267"
-          },
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5364"
+          },
+          "Certificate Number": {
+            "type": "string",
+            "example": "5364"
+          },
+          "Vendor Name": {
+            "type": "string",
+            "example": "Kanguru Solutions"
           },
           "Module Name": {
             "type": "string",
-            "example": "Intel FNIC Control Plane Cryptographic Module"
+            "example": "Defender 3000 USB Flash Drive"
           },
           "Module Type": {
             "type": "string",
@@ -368,51 +372,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "05/13/2026"
-          },
-          "Vendor Name": {
-            "type": "string",
-            "example": "Intel Corporation"
-          },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
-          },
-          "caveat": {
-            "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
-          },
-          "certificate_detail_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5267"
-          },
-          "description": {
-            "type": "string",
-            "example": "Intel FNIC Control Plane Cryptographic Module provides hardware engines supporting cryptographic offload for AES, ECDSA, RSA, HMAC and SHA algorithms, and firmware component providing SPDM initialization, key exchange and secure manageability."
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
-          },
-          "embodiment": {
-            "type": "string",
-            "example": "SingleChip"
-          },
-          "module_name": {
-            "type": "string",
-            "example": "Intel FNIC Control Plane Cryptographic Module"
-          },
-          "module_type": {
-            "type": "string",
-            "example": "Hardware"
-          },
-          "overall_level": {
-            "type": "integer",
-            "example": 1
+            "example": "06/30/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5267.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5364.pdf"
+          },
+          "certificate_detail_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5364"
+          },
+          "module_name": {
+            "type": "string",
+            "example": "Defender 3000 USB Flash Drive"
           },
           "standard": {
             "type": "string",
@@ -424,7 +396,27 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "5/12/2031"
+            "example": "6/29/2031"
+          },
+          "overall_level": {
+            "type": "integer",
+            "example": 3
+          },
+          "caveat": {
+            "type": "string",
+            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy."
+          },
+          "module_type": {
+            "type": "string",
+            "example": "Hardware"
+          },
+          "embodiment": {
+            "type": "string",
+            "example": "MultiChipStand"
+          },
+          "description": {
+            "type": "string",
+            "example": "The Kanguru Solutions Defender 3000 USB Flash Drive is an encrypted storage device designed as a multi-chip standalone cryptographic module. The module is designed to meet FIPS 140-3 Security Level 3 requirements."
           },
           "algorithms": {
             "type": "array",
@@ -443,10 +435,18 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
-              "AES-CMAC A4995 Direction - Generation | Key Length - 128, 256 | SP 800-38B",
-              "AES-CTR A4995 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
+              "AES-CBC A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+              "AES-ECB A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+              "AES-KW A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F"
             ]
+          },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
           },
           "software_versions": {
             "type": "string",
@@ -775,89 +775,37 @@
         "type": "object",
         "description": "Structured certificate detail record derived from the NIST certificate page",
         "properties": {
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
-          },
-          "caveat": {
-            "type": "string",
-            "example": "When operated with module AWS-LC Cryptographic Module (dynamic) validated to FIPS 140-3 under Cert. #5146 operating in approved mode, No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
-          },
-          "certificate_detail_url": {
-            "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
-          },
           "certificate_number": {
             "type": "string",
-            "example": "5256"
+            "example": "5350"
           },
           "dataset": {
             "type": "string",
             "example": "active"
           },
-          "description": {
-            "type": "string",
-            "example": "MACsec and DWDM link encryption is used by AWS networking infrastructure to secure traffic across its core network consisting of long-distance and large-scale data communications across the globe. Traffic flowing across the AWS global network is protected by strong cryptography and meets regulatory requirements."
-          },
-          "embodiment": {
-            "type": "string",
-            "example": "MultiChipStand"
-          },
-          "firmware_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
-          },
           "generated_at": {
             "type": "string",
-            "example": "2026-05-15T02:49:52.984765Z"
-          },
-          "hardware_versions": {
-            "type": "string",
-            "nullable": true,
-            "example": ""
-          },
-          "module_name": {
-            "type": "string",
-            "example": "AWS Link Encryption Module"
-          },
-          "module_type": {
-            "type": "string",
-            "example": "Software-hybrid"
+            "example": "2026-07-06T06:32:53.611920Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5256"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5350"
           },
-          "overall_level": {
-            "type": "integer",
-            "example": 1
-          },
-          "related_files": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "additionalProperties": true
-            }
-          },
-          "security_level_exceptions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": [
-              "Non-invasive security: N/A",
-              "Mitigation of other attacks: N/A"
-            ]
+          "certificate_detail_url": {
+            "type": "string",
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5350"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5256.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5350.pdf"
           },
-          "software_versions": {
+          "vendor_name": {
             "type": "string",
-            "nullable": true,
-            "example": ""
+            "example": "Ctrl IQ, Inc."
+          },
+          "module_name": {
+            "type": "string",
+            "example": "Rocky Linux 8 and 9 GnuTLS Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -867,13 +815,21 @@
             "type": "string",
             "example": "Active"
           },
-          "sunset_date": {
+          "module_type": {
             "type": "string",
-            "example": "5/4/2031"
+            "example": "Software"
+          },
+          "embodiment": {
+            "type": "string",
+            "example": "MultiChipStand"
+          },
+          "overall_level": {
+            "type": "integer",
+            "example": 1
           },
           "validation_date": {
             "type": "string",
-            "example": "5/5/2026"
+            "example": "6/23/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -881,8 +837,53 @@
               "type": "string"
             },
             "example": [
-              "5/5/2026"
+              "6/23/2026"
             ]
+          },
+          "sunset_date": {
+            "type": "string",
+            "example": "6/22/2031"
+          },
+          "caveat": {
+            "type": "string",
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+          },
+          "description": {
+            "type": "string",
+            "example": "Rocky Linux 8 and 9 GnuTLS Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality."
+          },
+          "software_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "hardware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "firmware_versions": {
+            "type": "string",
+            "nullable": true,
+            "example": ""
+          },
+          "security_level_exceptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Physical security: N/A",
+              "Non-invasive security: N/A",
+              "Mitigation of other attacks: N/A"
+            ]
+          },
+          "related_files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
           },
           "validation_history": {
             "type": "array",
@@ -895,10 +896,6 @@
             "type": "object",
             "additionalProperties": true
           },
-          "vendor_name": {
-            "type": "string",
-            "example": "Amazon Web Services, Inc."
-          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -906,8 +903,8 @@
             },
             "example": [
               "AES",
-              "HMAC",
-              "SHA"
+              "CVL",
+              "DES"
             ]
           },
           "algorithms_detailed": {
@@ -916,10 +913,14 @@
               "type": "string"
             },
             "example": [
-              "AES-ECB | A1359 | Direction - EncryptKey Length - 128,256 | SP 800-38A",
-              "AES-GCM | A1359 | Direction - Decrypt,EncryptIV Generation - ExternalKey Length - 128,256 | SP 800-38D",
-              "AES-XPN | A1359 | Direction - Decrypt,EncryptKey Length - 128,256IV Generation - External | SP 800-38D"
+              "AES-CBC | A6464, A6465, A6466 | A6467, A6472, A6476 | A6477, A6478, A6479 | A6484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
+              "AES-CCM A6464, A6476 Key Length - 128, 256 SP 800-38C",
+              "AES-CFB8 A6469, A6470, A6475 | A6481, A6482, A6487 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A"
             ]
+          },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
           }
         }
       },

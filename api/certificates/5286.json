@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5286"
+  },
+  "certificate": {
+    "certificate_number": "5286",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5286",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5286",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5286.pdf",
+    "vendor_name": "Broadcom Inc.",
+    "module_name": "VMware’s Linux Kernel Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "5/21/2026",
+    "validation_dates": [
+      "5/21/2026"
+    ],
+    "sunset_date": "11/4/2029",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The VMware's Linux Kernel Cryptographic Module 5.0.0 offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5286.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/21/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Broadcom Inc.",
+      "website_url": "http://www.broadcom.com",
+      "address_lines": [
+        "3401 Hillview Avenue",
+        "Palo Alto, CA 94304",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "VCF Trust and Assurance Engineering",
+      "contact_email": "vcf.fips@broadcom.com",
+      "contact_phone": "877-486-9273"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4971 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 A4971 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | SP 800-38A",
+      "AES-CCM A4971 Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 72, 80, 88, 96, 104 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0-1024 Increment 8 | SP 800-38C",
+      "AES-CFB128 A4971 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A4971 Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 16-128 Increment 8 | Message Length - Message Length: 0-524288 Increment | 8 | SP 800-38B",
+      "AES-CTR A4971 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A4971 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4971 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | SP 800-38D | This document may be freely reproduced and distributed whole and intact including this copyright notice. | IV Length - IV Length: 96 | Payload Length - Payload Length: 0-65536 Increment 8 | AAD Length - AAD Length: 0-1024 Increment 8",
+      "AES-GCM A4972 Direction - Decrypt, Encrypt | IV Generation - External, Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 120, 128, 248, 256 | AAD Length - AAD Length: 64, 96 | SP 800-38D",
+      "AES-XTS | Testing | Revision 2.0 | A4971 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes | SP 800-38E",
+      "Counter DRBG A4971 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-128 Increment 8 | Additional Input: 0-192 Increment 8, Additional Input: 0- | 256 Increment 8 | Entropy Input - Entropy Input: 256, Entropy Input: 320 | Entropy Input: 384 | Nonce - Nonce: 128, Nonce: 64, Nonce: 96 | Personalization String Length - Personalization String | Length: 0-128 Increment 8, Personalization String Length | 0-192 Increment 8, Personalization String Length: 0-256 | Increment 8 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS186-4) | A4971 Curve - P-256, P-384 | Secret Generation Mode - Extra Bits | FIPS 186-4",
+      "ECDSA | KeyVer | (FIPS186-4) | A4971 Curve - P-256, P-384 FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4971 Curve - P-256, P-384",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | FIPS 186-4",
+      "Hash DRBG A4971 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 128, Entropy Input: 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - Personalization String | Length: 0-128 Increment 8, Personalization String Length | 0-256 Increment 8 | Additional Input - Additional Input: 0-128 Increment 8 | Additional Input: 0-256 Increment 8 | Returned Bits - 1024, 2048, 640 | SP 800-90A | Rev. 1 | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "HMAC DRBG A4971 Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 128, Entropy Input: 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - Personalization String | Length: 0-128 Increment 8, Personalization String Length | 0-256 Increment 8 | Additional Input - Additional Input: 0-128 Increment 8 | Additional Input: 0-256 Increment 8 | Returned Bits - 1024, 2048, 640 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A4971 MAC - MAC: 80-160 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A4971 MAC - MAC: 112-224 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A4971 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A4971 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A4971 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 | A4971 MAC - MAC: 112-224 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A4971 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A4971 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A4971 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 128-2048 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4971 Domain Parameter Generation Methods - P-256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA SigGen | (FIPS186-4) | A4971 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A4971 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-224 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-256 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA3-224 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 202",
+      "SHA3-256 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 202 | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "SHA3-384 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 202",
+      "SHA3-512 A4971 Message Length - Message Length: 0-65536 Increment 8 FIPS 202 | The module implements the approved algorithms listed in the table above. | Name Properties Implementation Reference | CKG Key Type:Asymmetric N/A SP800-133r2 section 4/example1 | The module implements the vendor-affirmed algorithm listed in the table above. | N/A for this module. | The module does not implement any non-Approved Algorithms Allowed in the Approved Mode | of Operation. | N/A for this module. | The module does not implement any Non-Approved Allowed in the Approved Mode of Operation | with No Security Claimed.",
+      "AES CBC-MAC (SP 800-38C) CBC-MAC as an authentication mode outside of | the CCM context. | GHASH (SP 800-38D) GHASH as a keyed hash function outside of GCM | context",
+      "AES GCM Encryption (External IV)",
+      "RSA PKCS1v1.5 Key Transport",
+      "AES using modes using RFC 3686 (CTR) Encryption and Decryption",
+      "AES using modes using RFC 4543 (GCM) and | RFC 4309 (CCM) | Authenticated Encryption and Decryption | The module does implement the non-approved algorithms listed in the table above. | This document may be freely reproduced and distributed whole and intact including this copyright notice."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5286.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 49,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5286.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

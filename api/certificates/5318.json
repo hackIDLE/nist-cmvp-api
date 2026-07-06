@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5318"
+  },
+  "certificate": {
+    "certificate_number": "5318",
+    "dataset": "active",
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5318",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5318",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5318.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "Device Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "6/9/2026",
+    "validation_dates": [
+      "6/9/2026"
+    ],
+    "sunset_date": "6/8/2031",
+    "caveat": "When operated in approved mode; When tamper evident labels contained in F5-ADD-BIG-FIPS140 kit and installed as indicated in the Security Policy; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "F5 Device Cryptographic Module, Application Delivery Controller and Firewall software running on F5 BIG-IP.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5318.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/9/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "https://csrc.nist.gov/f5.com",
+      "address_lines": [
+        "801 Fifth Ave",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "F5 Certifications Team",
+      "contact_email": "F5Certs@f5.com",
+      "contact_phone": "845-603-2123"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7019 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A7020 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CCM A7019 Key Length - 128, 192, 256 SP 800-38C",
+      "AES-CCM A7020 Key Length - 128, 256 SP 800-38C",
+      "AES-CTR A7019 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7019 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GCM A7020 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A7019 Prediction Resistance - No, Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No, Yes | SP 800-90A | Rev. 1",
+      "Counter DRBG A7020 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A7019 | A7020 | Curve - P-256, P-384 | Secret Generation Mode - testing candidates | FIPS 186-5 | Device Cryptographic Module",
+      "ECDSA KeyVer | (FIPS186-5) | A7019 | A7020 | Curve - P-256, P-384 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7019 | A7020 | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7019 | A7020 | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A7019 Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1",
+      "HMAC-SHA2-256 A7019 | A7020 | Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1",
+      "HMAC-SHA2-384 A7019 | A7020 | Key Length - Key Length: 8, 16, 64, 128, 1024 FIPS 198-1",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A7019 | A7020 | Domain Parameter Generation Methods - P-256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC Sp800- | 56Ar3 | A7019 | A7020 | Domain Parameter Generation Methods - ffdhe2048 | ffdhe3072, ffdhe4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A7019 Cipher - AES-128, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA KeyGen (FIPS186- | 5) | A7019 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186- | 5) | A7019 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigGen (FIPS186- | 5) | A7020 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer (FIPS186- | 5) | A7019 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186- | 5) | A7020 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes Key | Generation | A7019 | A7020 | Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A7019 | A7020 | Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 SP 800-56A | Rev. 3 | Device Cryptographic Module",
+      "SHA2-256 A7019 | A7020 | Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "SHA2-384 A7019 | A7020 | Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "TLS v1.2 KDF RFC7627",
+      "(CVL) | A7019 | A7020",
+      "Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1 | Name Properties Implementation Reference | Cryptographic Key | Generation (CKG) | Key | Type:Asymmetric | N/A Random bit strings required for generating the | cryptographic keys is compliant with [SP 800- | 133Rev2] section 4 example 1 | N/A for this module. | N/A for this module.",
+      "HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-512 Message authentication TLS",
+      "Triple-DES, Camellia, SEED Symmetric encryption and decryption TLS",
+      "HMAC-SHA2-256, HMAC-SHA2-512, AES-GCM Message authentication in IPsec/ IKEv2 | protocol | PKCS #1 v1.5 scheme with modulus other than 2048, 3072 or",
+      "4096 bits, for all SHA sizes; PKCS #1 v1.5 and PSS schema with",
+      "modulus size 2048, 3072, 4096 bits with SHA-1, SHA2-224",
+      "SHA2-512",
+      "RSA signature generation and verification",
+      "ECDSA with curves P-256, P-384 with SHA-1, SHA2-224, SHA2-",
+      "512; ECDSA using curves other than P-256 and P-384, all SHA | sizes",
+      "ECDSA signature generation and | verification",
+      "RSA with modulus sizes up to 16384 bits RSA encrypt / decrypt",
+      "DSA with all key and SHA sizes DSA domain parameter generation, domain | parameter verification, key pair generation | signature generation and verification",
+      "Diffie-Hellman using MODP1024, MODP2048 groups Shared secret computation in IPsec/IKE | protocol | Device Cryptographic Module",
+      "MD5/ SHA-1/ SHA2-224 / SHA2-512 Key Derivation function in the context of",
+      "TLS KDF",
+      "EdDSA with Ed25519 EdDSA digital signature",
+      "SHA-1, AES-ECB, RSA- signature verification SNMP",
+      "TLS ciphersuites implemented by f5-rest-node TLS used in SSL Orchestrator (SSLO)",
+      "RSA keypair with 2048, 3072 and 4096 (REST API) iControl representation state transfer | (REST) access | EC Diffie-Hellman Ephemeral Unified with curves other than P- | 256, P-384. EC Diffie-Hellman using onePassDH / StaticUnified | schemes. Diffie-Hellman using groups other than ffdhe2048 | ffdhe3072, ffdhe4096",
+      "Shared secret computation",
+      "Triple-DES, AES-GCM-128, AES-192, AES-256 Symmetric encryption and decryption in | IPsec /IKEv2",
+      "SHA-1, SHA2-512 Message Digest"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5318.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 56,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5318.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

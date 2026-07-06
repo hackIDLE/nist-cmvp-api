@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-05-15T02:49:52.984765Z",
-    "total_modules": 1086,
-    "total_historical_modules": 4170,
-    "total_modules_in_process": 325,
-    "total_certificates_with_algorithms": 1630,
-    "total_certificate_details": 5256,
+    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "total_modules": 1118,
+    "total_historical_modules": 4229,
+    "total_modules_in_process": 281,
+    "total_certificates_with_algorithms": 1721,
+    "total_certificate_details": 5347,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,58 +13,61 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1086,
-        "html_refreshed": 0,
+        "html_reused": 1023,
+        "html_refreshed": 97,
         "html_failed": 0,
-        "pdf_reused": 1086,
-        "pdf_refreshed": 0,
+        "pdf_reused": 1025,
+        "pdf_refreshed": 93,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1086,
-        "algorithm_successes": 567,
-        "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
-        "algorithm_source_security_policy_pdf": 0,
+        "algorithm_cache_hits": 1025,
+        "algorithm_successes": 639,
+        "algorithm_fallbacks": 1,
+        "algorithm_source_crawl4ai": 92,
+        "algorithm_source_security_policy_pdf": 1,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
-        "certificate_timeouts": 0
+        "certificate_timeouts": 0,
+        "certificates_deferred": 6
       },
       "historical": {
         "html_reused": 4170,
-        "html_refreshed": 0,
+        "html_refreshed": 59,
         "html_failed": 0,
-        "pdf_reused": 4170,
-        "pdf_refreshed": 0,
+        "pdf_reused": 4210,
+        "pdf_refreshed": 19,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4170,
-        "algorithm_successes": 1063,
+        "algorithm_cache_hits": 4210,
+        "algorithm_successes": 1082,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_crawl4ai": 19,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
-        "certificate_timeouts": 0
+        "certificate_timeouts": 0,
+        "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5256,
-        "html_refreshed": 0,
+        "html_reused": 5193,
+        "html_refreshed": 156,
         "html_failed": 0,
-        "pdf_reused": 5256,
-        "pdf_refreshed": 0,
+        "pdf_reused": 5235,
+        "pdf_refreshed": 112,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5256,
-        "algorithm_successes": 1630,
-        "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
-        "algorithm_source_security_policy_pdf": 0,
+        "algorithm_cache_hits": 5235,
+        "algorithm_successes": 1721,
+        "algorithm_fallbacks": 1,
+        "algorithm_source_crawl4ai": 111,
+        "algorithm_source_security_policy_pdf": 1,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
-        "certificate_timeouts": 0
+        "certificate_timeouts": 0,
+        "certificates_deferred": 6
       },
       "concurrency": {
         "certificate_fetch": 16,
@@ -77,7 +80,7 @@
   "index": "statuses",
   "field": "status",
   "key_count": 3,
-  "entry_count": 5256,
+  "entry_count": 5347,
   "keys": {
     "Active": [
       {
@@ -149,16 +152,6 @@
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 8
-      },
-      {
-        "certificate_number": "2503",
-        "dataset": "active",
-        "path": "/api/certificates/2503.json",
-        "vendor_name": "L3Harris Technologies, Inc.",
-        "module_name": "Harris AES Load Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 3
       },
       {
         "certificate_number": "2588",
@@ -416,286 +409,6 @@
         "path": "/api/certificates/3923.json",
         "vendor_name": "Microsoft Corporation",
         "module_name": "Boot Manager",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3928",
-        "dataset": "active",
-        "path": "/api/certificates/3928.json",
-        "vendor_name": "Canonical Ltd.",
-        "module_name": "Ubuntu 20.04 Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3931",
-        "dataset": "active",
-        "path": "/api/certificates/3931.json",
-        "vendor_name": "Aruba, a Hewlett Packard Enterprise company",
-        "module_name": "Aruba 9004 Series Gateway with ArubaOS FIPS Firmware",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3932",
-        "dataset": "active",
-        "path": "/api/certificates/3932.json",
-        "vendor_name": "Private Machines Inc.",
-        "module_name": "ENFORCER R1",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 13
-      },
-      {
-        "certificate_number": "3933",
-        "dataset": "active",
-        "path": "/api/certificates/3933.json",
-        "vendor_name": "Nuvoton Technology Corporation",
-        "module_name": "NPCT7xx TPM 2.0 rev 1.38",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3934",
-        "dataset": "active",
-        "path": "/api/certificates/3934.json",
-        "vendor_name": "Juniper Networks, Inc.",
-        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE1800 Routing Engine and Multiservices MPC",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 15
-      },
-      {
-        "certificate_number": "3935",
-        "dataset": "active",
-        "path": "/api/certificates/3935.json",
-        "vendor_name": "Juniper Networks, Inc.",
-        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE1800 Routing Engine and MPC7E-10G MACsec Card",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 13
-      },
-      {
-        "certificate_number": "3936",
-        "dataset": "active",
-        "path": "/api/certificates/3936.json",
-        "vendor_name": "Juniper Networks, Inc.",
-        "module_name": "Juniper Networks MX104 3D Universal Edge Router with the Multiservices MIC",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 15
-      },
-      {
-        "certificate_number": "3938",
-        "dataset": "active",
-        "path": "/api/certificates/3938.json",
-        "vendor_name": "Juniper Networks, Inc.",
-        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers and EX9204, EX9208, EX9214 Ethernet Switches with RE-S-X6-64G/RE-S-X6-128G/EX9200-RE2 Routing Engine and MPC7E-10G/EX9200-40XS MACsec Card",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 13
-      },
-      {
-        "certificate_number": "3939",
-        "dataset": "active",
-        "path": "/api/certificates/3939.json",
-        "vendor_name": "Red Hat®, Inc.",
-        "module_name": "Red Hat Enterprise Linux 7 Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3940",
-        "dataset": "active",
-        "path": "/api/certificates/3940.json",
-        "vendor_name": "UD info Corp.",
-        "module_name": "UD info DA-series FIPS SSD",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3947",
-        "dataset": "active",
-        "path": "/api/certificates/3947.json",
-        "vendor_name": "Motorola Solutions, Inc.",
-        "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 2",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 1
-      },
-      {
-        "certificate_number": "3948",
-        "dataset": "active",
-        "path": "/api/certificates/3948.json",
-        "vendor_name": "Motorola Solutions, Inc.",
-        "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 3",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 1
-      },
-      {
-        "certificate_number": "3949",
-        "dataset": "active",
-        "path": "/api/certificates/3949.json",
-        "vendor_name": "Fescaro Co. Ltd.",
-        "module_name": "FAST C-LIB",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3951",
-        "dataset": "active",
-        "path": "/api/certificates/3951.json",
-        "vendor_name": "Advantech Co., Ltd.",
-        "module_name": "SQFlash FIPS Certified SSD",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3952",
-        "dataset": "active",
-        "path": "/api/certificates/3952.json",
-        "vendor_name": "Adva Network Security GmbH",
-        "module_name": "WCC-PCN-AES100GB-F Encryption Module with FSP 3000R7 Shelf",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 10
-      },
-      {
-        "certificate_number": "3953",
-        "dataset": "active",
-        "path": "/api/certificates/3953.json",
-        "vendor_name": null,
-        "module_name": null,
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3955",
-        "dataset": "active",
-        "path": "/api/certificates/3955.json",
-        "vendor_name": "Oracle Communications",
-        "module_name": "Acme Packet 4600 and Acme Packet 6300 and Acme Packet 6350",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3957",
-        "dataset": "active",
-        "path": "/api/certificates/3957.json",
-        "vendor_name": "SUSE, LLC",
-        "module_name": "SUSE Linux Enterprise Server GnuTLS Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 14
-      },
-      {
-        "certificate_number": "3959",
-        "dataset": "active",
-        "path": "/api/certificates/3959.json",
-        "vendor_name": "Unisys Corporation",
-        "module_name": "Unisys Linux OpenSSL FIPS Object Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3962",
-        "dataset": "active",
-        "path": "/api/certificates/3962.json",
-        "vendor_name": "SUSE, LLC",
-        "module_name": "SUSE Linux Enterprise Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3963",
-        "dataset": "active",
-        "path": "/api/certificates/3963.json",
-        "vendor_name": "Envieta Systems LLC",
-        "module_name": "Envieta QFlex Hardware Security Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3964",
-        "dataset": "active",
-        "path": "/api/certificates/3964.json",
-        "vendor_name": "Motorola Solutions, Inc.",
-        "module_name": "Motorola Network Router (MNR) S6000",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 12
-      },
-      {
-        "certificate_number": "3965",
-        "dataset": "active",
-        "path": "/api/certificates/3965.json",
-        "vendor_name": "KIOXIA Corporation",
-        "module_name": "KIOXIA TCG Enterprise SSC Crypto Sub-Chip TC58NC1132GTC",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3966",
-        "dataset": "active",
-        "path": "/api/certificates/3966.json",
-        "vendor_name": "Canonical Ltd.",
-        "module_name": "Ubuntu 20.04 OpenSSL Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3968",
-        "dataset": "active",
-        "path": "/api/certificates/3968.json",
-        "vendor_name": "Juniper Networks, Inc.",
-        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE-S-X6-64G Routing Engine and Multiservices MPC",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 15
-      },
-      {
-        "certificate_number": "3969",
-        "dataset": "active",
-        "path": "/api/certificates/3969.json",
-        "vendor_name": "Motorola Solutions, Inc.",
-        "module_name": "Motorola GGM 8000 Gateway",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 12
-      },
-      {
-        "certificate_number": "3970",
-        "dataset": "active",
-        "path": "/api/certificates/3970.json",
-        "vendor_name": "Integral Memory Plc",
-        "module_name": "Integral AES 256 Bit Crypto SSD Underlying PCB",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "3971",
-        "dataset": "active",
-        "path": "/api/certificates/3971.json",
-        "vendor_name": "Unisys Corporation",
-        "module_name": "Unisys Linux strongSwan Cryptographic Module",
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 0
@@ -1161,16 +874,6 @@
         "algorithm_count": 14
       },
       {
-        "certificate_number": "4068",
-        "dataset": "active",
-        "path": "/api/certificates/4068.json",
-        "vendor_name": "Unisys Corporation",
-        "module_name": "Unisys Linux Kernel Cryptographic API Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 5
-      },
-      {
         "certificate_number": "4069",
         "dataset": "active",
         "path": "/api/certificates/4069.json",
@@ -1471,26 +1174,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4126",
-        "dataset": "active",
-        "path": "/api/certificates/4126.json",
-        "vendor_name": "Canonical Ltd.",
-        "module_name": "Ubuntu 20.04 Azure Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4127",
-        "dataset": "active",
-        "path": "/api/certificates/4127.json",
-        "vendor_name": "Canonical Ltd.",
-        "module_name": "Ubuntu 20.04 GCP Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4129",
         "dataset": "active",
         "path": "/api/certificates/4129.json",
@@ -1499,16 +1182,6 @@
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 13
-      },
-      {
-        "certificate_number": "4132",
-        "dataset": "active",
-        "path": "/api/certificates/4132.json",
-        "vendor_name": "Canonical Ltd.",
-        "module_name": "Ubuntu 20.04 AWS Kernel Crypto API Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
       },
       {
         "certificate_number": "4134",
@@ -4031,16 +3704,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4459",
-        "dataset": "active",
-        "path": "/api/certificates/4459.json",
-        "vendor_name": "Rambus Inc.",
-        "module_name": "VaultIP",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4461",
         "dataset": "active",
         "path": "/api/certificates/4461.json",
@@ -4099,16 +3762,6 @@
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 10
-      },
-      {
-        "certificate_number": "4469",
-        "dataset": "active",
-        "path": "/api/certificates/4469.json",
-        "vendor_name": "HP, Inc.",
-        "module_name": "HPI Unified Communications Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
       },
       {
         "certificate_number": "4473",
@@ -4436,16 +4089,6 @@
         "path": "/api/certificates/4524.json",
         "vendor_name": "Lantronix, Inc.",
         "module_name": "Uplogix LM80, LM83X, 500, and 5000",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4528",
-        "dataset": "active",
-        "path": "/api/certificates/4528.json",
-        "vendor_name": "Apricorn",
-        "module_name": "Apricorn FIPS 140-2 Encryption System Gen 2",
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 0
@@ -4791,26 +4434,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4608",
-        "dataset": "active",
-        "path": "/api/certificates/4608.json",
-        "vendor_name": "Fortinet, Inc.",
-        "module_name": "FortiGate-6300F/6301F/6500F/6501F",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4609",
-        "dataset": "active",
-        "path": "/api/certificates/4609.json",
-        "vendor_name": "Fortinet, Inc.",
-        "module_name": "FortiGate-201E/301E/401E/501E/601E",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4612",
         "dataset": "active",
         "path": "/api/certificates/4612.json",
@@ -4841,16 +4464,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4618",
-        "dataset": "active",
-        "path": "/api/certificates/4618.json",
-        "vendor_name": "IBM Corporation",
-        "module_name": "IBM® z/OS® Version 2 Release 4 System SSL Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4619",
         "dataset": "active",
         "path": "/api/certificates/4619.json",
@@ -4876,16 +4489,6 @@
         "path": "/api/certificates/4621.json",
         "vendor_name": "Axis Communications AB",
         "module_name": "Axis Cryptographic Module",
-        "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4622",
-        "dataset": "active",
-        "path": "/api/certificates/4622.json",
-        "vendor_name": "Nuvoton Technology Corporation",
-        "module_name": "NPCT7xx TPM 2.0 rev 1.38",
         "standard": "FIPS 140-2",
         "status": "Active",
         "algorithm_count": 0
@@ -5511,16 +5114,6 @@
         "algorithm_count": 13
       },
       {
-        "certificate_number": "4711",
-        "dataset": "active",
-        "path": "/api/certificates/4711.json",
-        "vendor_name": "Cisco Systems, Inc.",
-        "module_name": "Firepower Threat Defense Virtual Cryptographic Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 11
-      },
-      {
         "certificate_number": "4713",
         "dataset": "active",
         "path": "/api/certificates/4713.json",
@@ -5651,16 +5244,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4729",
-        "dataset": "active",
-        "path": "/api/certificates/4729.json",
-        "vendor_name": "KAYTUS SYSTEM PTE. LTD.",
-        "module_name": "Linux OpenSSL FIPS Provider",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4730",
         "dataset": "active",
         "path": "/api/certificates/4730.json",
@@ -5669,16 +5252,6 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4731",
-        "dataset": "active",
-        "path": "/api/certificates/4731.json",
-        "vendor_name": "NetApp, Inc.",
-        "module_name": "NetApp CryptoMod",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 5
       },
       {
         "certificate_number": "4732",
@@ -5736,16 +5309,6 @@
         "path": "/api/certificates/4737.json",
         "vendor_name": "STMicroelectronics",
         "module_name": "Trusted Platform Module ST33KTPM2XSPI / ST33KTPM2X / ST33KTPM2A / ST33KTPM2I",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4738",
-        "dataset": "active",
-        "path": "/api/certificates/4738.json",
-        "vendor_name": "Qualcomm Technologies, Inc.",
-        "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
@@ -5881,26 +5444,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4752",
-        "dataset": "active",
-        "path": "/api/certificates/4752.json",
-        "vendor_name": "Cisco Systems, Inc.",
-        "module_name": "IOS Common Cryptographic Module (IC2M)",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4753",
-        "dataset": "active",
-        "path": "/api/certificates/4753.json",
-        "vendor_name": "Corsec Security, Inc.",
-        "module_name": "CorSSL FIPS Object Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4754",
         "dataset": "active",
         "path": "/api/certificates/4754.json",
@@ -5961,36 +5504,6 @@
         "algorithm_count": 9
       },
       {
-        "certificate_number": "4760",
-        "dataset": "active",
-        "path": "/api/certificates/4760.json",
-        "vendor_name": "Palo Alto Networks, Inc.",
-        "module_name": "PAN-OS 10.2 running on PA-220, PA-220R, PA-400 Series, PA-800 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, and PA-7000 Series NGFWs",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4761",
-        "dataset": "active",
-        "path": "/api/certificates/4761.json",
-        "vendor_name": "DigiCert, Inc.",
-        "module_name": "Mocana Cryptographic Suite B Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4762",
-        "dataset": "active",
-        "path": "/api/certificates/4762.json",
-        "vendor_name": "Palo Alto Networks, Inc.",
-        "module_name": "PAN-OS 10.2 VM-Series",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4763",
         "dataset": "active",
         "path": "/api/certificates/4763.json",
@@ -6001,32 +5514,12 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4765",
-        "dataset": "active",
-        "path": "/api/certificates/4765.json",
-        "vendor_name": "Entrust",
-        "module_name": "nShield 5s Hardware Security Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4766",
         "dataset": "active",
         "path": "/api/certificates/4766.json",
         "vendor_name": "Microsoft Corporation",
         "module_name": "Kernel Mode Cryptographic Primitives Library",
         "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4768",
-        "dataset": "active",
-        "path": "/api/certificates/4768.json",
-        "vendor_name": "Palo Alto Networks, Inc.",
-        "module_name": "Palo Alto Networks SD-WAN Virtual Instant-On Network (vION)",
-        "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
       },
@@ -6119,16 +5612,6 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4779",
-        "dataset": "active",
-        "path": "/api/certificates/4779.json",
-        "vendor_name": "Oracle Corporation",
-        "module_name": "Oracle Linux 9 OpenSSL FIPS Provider",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 11
       },
       {
         "certificate_number": "4780",
@@ -6331,16 +5814,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4801",
-        "dataset": "active",
-        "path": "/api/certificates/4801.json",
-        "vendor_name": "Oracle Corporation",
-        "module_name": "Oracle Linux 9 NSS Cryptographic Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 11
-      },
-      {
         "certificate_number": "4802",
         "dataset": "active",
         "path": "/api/certificates/4802.json",
@@ -6486,16 +5959,6 @@
         "path": "/api/certificates/4817.json",
         "vendor_name": "Apple Inc.",
         "module_name": "Apple corecrypto Module v12.0 [Apple silicon, User, Software, SL1]",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4818",
-        "dataset": "active",
-        "path": "/api/certificates/4818.json",
-        "vendor_name": "DigiCert, Inc.",
-        "module_name": "Mocana Cryptographic Loadable Kernel Module",
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
@@ -6959,16 +6422,6 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4865",
-        "dataset": "active",
-        "path": "/api/certificates/4865.json",
-        "vendor_name": "Broadcom Inc.",
-        "module_name": "VMware’s Linux Kernel Cryptographic Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 7
       },
       {
         "certificate_number": "4866",
@@ -7501,16 +6954,6 @@
         "algorithm_count": 6
       },
       {
-        "certificate_number": "4919",
-        "dataset": "active",
-        "path": "/api/certificates/4919.json",
-        "vendor_name": "Apple Inc.",
-        "module_name": "Apple corecrypto Module v13.0 [Intel, Kernel, Software, SL1]",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4920",
         "dataset": "active",
         "path": "/api/certificates/4920.json",
@@ -7741,16 +7184,6 @@
         "algorithm_count": 0
       },
       {
-        "certificate_number": "4945",
-        "dataset": "active",
-        "path": "/api/certificates/4945.json",
-        "vendor_name": "F5, Inc.",
-        "module_name": "BIG-IP Tenant Cryptographic Module",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
         "certificate_number": "4946",
         "dataset": "active",
         "path": "/api/certificates/4946.json",
@@ -7767,16 +7200,6 @@
         "vendor_name": "HP Inc",
         "module_name": "HP Inc OpenSSL FIPS Provider",
         "standard": "FIPS 140-2",
-        "status": "Active",
-        "algorithm_count": 0
-      },
-      {
-        "certificate_number": "4948",
-        "dataset": "active",
-        "path": "/api/certificates/4948.json",
-        "vendor_name": "Apple Inc.",
-        "module_name": "Apple corecrypto Module v13.0 [Intel, User, Software, SL1]",
-        "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 0
       },
@@ -7819,16 +7242,6 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 6
-      },
-      {
-        "certificate_number": "4953",
-        "dataset": "active",
-        "path": "/api/certificates/4953.json",
-        "vendor_name": "Google, LLC.",
-        "module_name": "BoringCrypto",
-        "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 0
       },
       {
         "certificate_number": "4954",
@@ -10574,11 +9987,11 @@
         "certificate_number": "5231",
         "dataset": "active",
         "path": "/api/certificates/5231.json",
-        "vendor_name": "Aviatrix LLC",
+        "vendor_name": "Aviatrix Systems, Inc",
         "module_name": "Aviatrix Cloud Native Security Fabric Cryptographic Module",
         "standard": "FIPS 140-3",
         "status": "Active",
-        "algorithm_count": 9
+        "algorithm_count": 15
       },
       {
         "certificate_number": "5232",
@@ -10939,6 +10352,916 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5268",
+        "dataset": "active",
+        "path": "/api/certificates/5268.json",
+        "vendor_name": "Fortinet, Inc.",
+        "module_name": "FortiAP Access Points with FortiAP 7.4",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5269",
+        "dataset": "active",
+        "path": "/api/certificates/5269.json",
+        "vendor_name": "F5, Inc.",
+        "module_name": "BIG-IP Tenant Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5270",
+        "dataset": "active",
+        "path": "/api/certificates/5270.json",
+        "vendor_name": "Corsec Security, Inc.",
+        "module_name": "CorSSL™ FIPS Object Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5271",
+        "dataset": "active",
+        "path": "/api/certificates/5271.json",
+        "vendor_name": "NetApp, Inc.",
+        "module_name": "NetApp CryptoMod",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 5
+      },
+      {
+        "certificate_number": "5272",
+        "dataset": "active",
+        "path": "/api/certificates/5272.json",
+        "vendor_name": "Google, LLC",
+        "module_name": "Google HSM",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5273",
+        "dataset": "active",
+        "path": "/api/certificates/5273.json",
+        "vendor_name": "Invisinet Technologies LLC",
+        "module_name": "Invisinet Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5274",
+        "dataset": "active",
+        "path": "/api/certificates/5274.json",
+        "vendor_name": "Zebra Technologies Corporation",
+        "module_name": "BoringCrypto",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5275",
+        "dataset": "active",
+        "path": "/api/certificates/5275.json",
+        "vendor_name": "Qualcomm Technologies, Inc.",
+        "module_name": "Qualcomm® Pseudo Random Number Generator",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5276",
+        "dataset": "active",
+        "path": "/api/certificates/5276.json",
+        "vendor_name": "Forcepoint",
+        "module_name": "Forcepoint Next Generation Firewall for Desktop Appliances",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5277",
+        "dataset": "active",
+        "path": "/api/certificates/5277.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX2010 and MX2020 3D Universal Edge Routers",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5278",
+        "dataset": "active",
+        "path": "/api/certificates/5278.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX240, MX480 and MX960 series and EX9204, EX9208, EX9214 Ethernet Switches, Release 23.4R1.9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5279",
+        "dataset": "active",
+        "path": "/api/certificates/5279.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX10003 3D Universal Edge Router",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5280",
+        "dataset": "active",
+        "path": "/api/certificates/5280.json",
+        "vendor_name": "Makina Pty Ltd",
+        "module_name": "OpenFIPS201 v2.0 PIV Applet on NXP P71D600",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5284",
+        "dataset": "active",
+        "path": "/api/certificates/5284.json",
+        "vendor_name": "KAYTUS SYSTEMS PTE. LTD.",
+        "module_name": "Linux OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5286",
+        "dataset": "active",
+        "path": "/api/certificates/5286.json",
+        "vendor_name": "Broadcom Inc.",
+        "module_name": "VMware’s Linux Kernel Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5287",
+        "dataset": "active",
+        "path": "/api/certificates/5287.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Adaptive Security Appliance on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5288",
+        "dataset": "active",
+        "path": "/api/certificates/5288.json",
+        "vendor_name": "Google LLC",
+        "module_name": "Google Tensor 5th Gen UFS Inline Storage Encryption Engine",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5289",
+        "dataset": "active",
+        "path": "/api/certificates/5289.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Apple silicon, Secure Key Store, Hardware SL2/PHY3]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5290",
+        "dataset": "active",
+        "path": "/api/certificates/5290.json",
+        "vendor_name": "Qualcomm Technologies, Inc.",
+        "module_name": "Qualcomm® Pseudo Random Number Generator",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5291",
+        "dataset": "active",
+        "path": "/api/certificates/5291.json",
+        "vendor_name": "Yubico, Inc.",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5292",
+        "dataset": "active",
+        "path": "/api/certificates/5292.json",
+        "vendor_name": "Winbond Electronics Corporation",
+        "module_name": "TrustMe © W77Q64/128/256/512/1024/2048Mb & TrustMe © W77T64/128/256/512/1024/2048Mb Sub-Chip",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "5293",
+        "dataset": "active",
+        "path": "/api/certificates/5293.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "SAOS 10.11.1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5294",
+        "dataset": "active",
+        "path": "/api/certificates/5294.json",
+        "vendor_name": "Oracle Corporation",
+        "module_name": "Oracle Linux 9 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5295",
+        "dataset": "active",
+        "path": "/api/certificates/5295.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Firepower Threat Defense Virtual Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5296",
+        "dataset": "active",
+        "path": "/api/certificates/5296.json",
+        "vendor_name": "Google, LLC",
+        "module_name": "BoringCrypto",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5297",
+        "dataset": "active",
+        "path": "/api/certificates/5297.json",
+        "vendor_name": "EZ Data Shield Sdn Bhd",
+        "module_name": "Taming Sari Crypto Module v1.0",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 4
+      },
+      {
+        "certificate_number": "5298",
+        "dataset": "active",
+        "path": "/api/certificates/5298.json",
+        "vendor_name": "Amazon Web Services, Inc",
+        "module_name": "AWS-LC 3 Cryptographic Module (dynamic)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5299",
+        "dataset": "active",
+        "path": "/api/certificates/5299.json",
+        "vendor_name": "F5, Inc.",
+        "module_name": "Cryptographic Module for BIG-IP",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5300",
+        "dataset": "active",
+        "path": "/api/certificates/5300.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna M7 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5301",
+        "dataset": "active",
+        "path": "/api/certificates/5301.json",
+        "vendor_name": "WatchGuard Technologies, Inc.",
+        "module_name": "WatchGuard Firebox T20, T20-W, T40, T40-W, T80, NV5, T25, T25-W, T45, T45-PoE, T45-W-PoE, T45-CW, T85-PoE, M290, M390, M590 and M690",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5302",
+        "dataset": "active",
+        "path": "/api/certificates/5302.json",
+        "vendor_name": "Yubico, Inc.",
+        "module_name": "YubiHSM 2 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5303",
+        "dataset": "active",
+        "path": "/api/certificates/5303.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v14.0 [Apple silicon, Secure Key Store, Hardware, SL2]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5304",
+        "dataset": "active",
+        "path": "/api/certificates/5304.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v14.0 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5305",
+        "dataset": "active",
+        "path": "/api/certificates/5305.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5306",
+        "dataset": "active",
+        "path": "/api/certificates/5306.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module 18.3 [Apple silicon, Secure Key Store, Hardware, SL2/PHY3]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5307",
+        "dataset": "active",
+        "path": "/api/certificates/5307.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Apple silicon, Secure Key Store, Hardware SL2]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5308",
+        "dataset": "active",
+        "path": "/api/certificates/5308.json",
+        "vendor_name": "Fortinet Technologies Inc",
+        "module_name": "FortiSwitch Crypto Library",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5309",
+        "dataset": "active",
+        "path": "/api/certificates/5309.json",
+        "vendor_name": "Arista Networks, Inc.",
+        "module_name": "Arista MACsec data plane accelerator [PHY]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5310",
+        "dataset": "active",
+        "path": "/api/certificates/5310.json",
+        "vendor_name": "Amazon Web Services",
+        "module_name": "AWS Nitro Card Security Engine SSMAE",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5311",
+        "dataset": "active",
+        "path": "/api/certificates/5311.json",
+        "vendor_name": "Renesas Electronics Corporation",
+        "module_name": "RA6M4 Security Management Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5312",
+        "dataset": "active",
+        "path": "/api/certificates/5312.json",
+        "vendor_name": "EnQuanta",
+        "module_name": "EnQuanta - QuantaCrypt Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5313",
+        "dataset": "active",
+        "path": "/api/certificates/5313.json",
+        "vendor_name": "Microsoft Corporation",
+        "module_name": "Microsoft SymCrypt Cryptographic Library",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 16
+      },
+      {
+        "certificate_number": "5314",
+        "dataset": "active",
+        "path": "/api/certificates/5314.json",
+        "vendor_name": "Amazon Web Services, Inc",
+        "module_name": "AWS-LC 3 Cryptographic Module (static)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5315",
+        "dataset": "active",
+        "path": "/api/certificates/5315.json",
+        "vendor_name": "Fortinet, Inc.",
+        "module_name": "FortiAP 7.4",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5316",
+        "dataset": "active",
+        "path": "/api/certificates/5316.json",
+        "vendor_name": "Index Engines, Inc.",
+        "module_name": "CyberSense FIPS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5317",
+        "dataset": "active",
+        "path": "/api/certificates/5317.json",
+        "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
+        "module_name": "TuxCare GnuTLS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5318",
+        "dataset": "active",
+        "path": "/api/certificates/5318.json",
+        "vendor_name": "F5, Inc.",
+        "module_name": "Device Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5319",
+        "dataset": "active",
+        "path": "/api/certificates/5319.json",
+        "vendor_name": "cPacket Networks, Inc.",
+        "module_name": "cPacket FIPS 140-3 Crypto Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5320",
+        "dataset": "active",
+        "path": "/api/certificates/5320.json",
+        "vendor_name": "InfoScale and Arctera",
+        "module_name": "InfoScale and Arctera Cryptographic Module for Java",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 16
+      },
+      {
+        "certificate_number": "5321",
+        "dataset": "active",
+        "path": "/api/certificates/5321.json",
+        "vendor_name": "DigiCert, Inc.",
+        "module_name": "DigiCert TrustCore Cryptographic Suite B Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5323",
+        "dataset": "active",
+        "path": "/api/certificates/5323.json",
+        "vendor_name": "Hewlett Packard Enterprise",
+        "module_name": "HPE Go Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5324",
+        "dataset": "active",
+        "path": "/api/certificates/5324.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Go Cryptographic Module based on the Geomys Go Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5325",
+        "dataset": "active",
+        "path": "/api/certificates/5325.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Rancher Kubernetes Cryptographic Library",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5326",
+        "dataset": "active",
+        "path": "/api/certificates/5326.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 11.1/11.2 running on PA-400 Series, PA-800 Series, PA-1400 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, PA-7000 Series, and PA-7500 NGFWs",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5327",
+        "dataset": "active",
+        "path": "/api/certificates/5327.json",
+        "vendor_name": "Codan - DTC",
+        "module_name": "MESH SDR Cryptography Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5328",
+        "dataset": "active",
+        "path": "/api/certificates/5328.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5329",
+        "dataset": "active",
+        "path": "/api/certificates/5329.json",
+        "vendor_name": "Entrust Corporation",
+        "module_name": "nShield 5s Hardware Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5330",
+        "dataset": "active",
+        "path": "/api/certificates/5330.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "Palo Alto Networks SD-WAN Virtual Instant-On Network (vION)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5332",
+        "dataset": "active",
+        "path": "/api/certificates/5332.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "AWS Scalable Network Crypto Modules, version 1.1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5333",
+        "dataset": "active",
+        "path": "/api/certificates/5333.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 10.2 running on PA-220, PA-220R, PA-400 Series, PA-800 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, and PA-7000 Series NGFWs",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5334",
+        "dataset": "active",
+        "path": "/api/certificates/5334.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 10.2 VM-Series",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5335",
+        "dataset": "active",
+        "path": "/api/certificates/5335.json",
+        "vendor_name": "General Dynamics Mission Systems",
+        "module_name": "GD SecureComm Crypto",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5336",
+        "dataset": "active",
+        "path": "/api/certificates/5336.json",
+        "vendor_name": "Stryker Corporation",
+        "module_name": "Stryker Badge Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5337",
+        "dataset": "active",
+        "path": "/api/certificates/5337.json",
+        "vendor_name": "Ctrl IQ, Inc.",
+        "module_name": "Rocky Linux 8 and 9 NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5338",
+        "dataset": "active",
+        "path": "/api/certificates/5338.json",
+        "vendor_name": "Qualcomm Technologies, Inc.",
+        "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "5339",
+        "dataset": "active",
+        "path": "/api/certificates/5339.json",
+        "vendor_name": "Oracle Corporation",
+        "module_name": "Oracle Linux 9 NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5340",
+        "dataset": "active",
+        "path": "/api/certificates/5340.json",
+        "vendor_name": "Nuvoton Technology Corporation",
+        "module_name": "Nuvoton Cryptographic Library 3.3",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5341",
+        "dataset": "active",
+        "path": "/api/certificates/5341.json",
+        "vendor_name": "SanDisk Technologies Inc",
+        "module_name": "Ultrastar® DC SN650 BiCS5 NVMe® TCG Opal SSD, SED",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5342",
+        "dataset": "active",
+        "path": "/api/certificates/5342.json",
+        "vendor_name": "Cloud Software Group",
+        "module_name": "NetScaler MPX",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5343",
+        "dataset": "active",
+        "path": "/api/certificates/5343.json",
+        "vendor_name": "Oracle Communications",
+        "module_name": "Acme Packet 1100, Acme Packet 3900, Acme Packet 3950 and Acme Packet 4900",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5344",
+        "dataset": "active",
+        "path": "/api/certificates/5344.json",
+        "vendor_name": "Oracle Communications",
+        "module_name": "Acme Packet 4600 and Acme Packet 6350",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5345",
+        "dataset": "active",
+        "path": "/api/certificates/5345.json",
+        "vendor_name": "Oracle Communications",
+        "module_name": "Acme Packet VME",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5346",
+        "dataset": "active",
+        "path": "/api/certificates/5346.json",
+        "vendor_name": "enQase",
+        "module_name": "enQase FIPS 140-3 Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5347",
+        "dataset": "active",
+        "path": "/api/certificates/5347.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Intel, Kernel, Software, SL1]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5348",
+        "dataset": "active",
+        "path": "/api/certificates/5348.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Intel, User, Software, SL1]",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5349",
+        "dataset": "active",
+        "path": "/api/certificates/5349.json",
+        "vendor_name": "SafeLogic, Inc.",
+        "module_name": "CryptoComply Native Go Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5350",
+        "dataset": "active",
+        "path": "/api/certificates/5350.json",
+        "vendor_name": "Ctrl IQ, Inc.",
+        "module_name": "Rocky Linux 8 and 9 GnuTLS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5351",
+        "dataset": "active",
+        "path": "/api/certificates/5351.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 11.1 and 11.2 VM-Series",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5352",
+        "dataset": "active",
+        "path": "/api/certificates/5352.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "Panorama 11.1/11.2 running on M-200, M-300, M-600 and M-700",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5353",
+        "dataset": "active",
+        "path": "/api/certificates/5353.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "Panorama Virtual Appliance 11.1 and 11.2",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5354",
+        "dataset": "active",
+        "path": "/api/certificates/5354.json",
+        "vendor_name": "Palo Alto Networks Inc.",
+        "module_name": "WildFire 11.1/11.2 WF-500 and WF-500-B",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5355",
+        "dataset": "active",
+        "path": "/api/certificates/5355.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5356",
+        "dataset": "active",
+        "path": "/api/certificates/5356.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "IOS Common Cryptographic Module (IC2M)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5357",
+        "dataset": "active",
+        "path": "/api/certificates/5357.json",
+        "vendor_name": "Trend Micro Inc.",
+        "module_name": "TippingPoint FIPS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5358",
+        "dataset": "active",
+        "path": "/api/certificates/5358.json",
+        "vendor_name": "Zebra Technologies Corporation",
+        "module_name": "BoringCrypto",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5359",
+        "dataset": "active",
+        "path": "/api/certificates/5359.json",
+        "vendor_name": "Google, LLC",
+        "module_name": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "5360",
+        "dataset": "active",
+        "path": "/api/certificates/5360.json",
+        "vendor_name": "ST Engineering Urban Solutions Ltd. and i-Engine Pte Ltd.",
+        "module_name": "ST Engineering & i-Engine SSID Applet on NXP P71D600",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5361",
+        "dataset": "active",
+        "path": "/api/certificates/5361.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE Crypto Module for Java",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5362",
+        "dataset": "active",
+        "path": "/api/certificates/5362.json",
+        "vendor_name": "Icom Inc.",
+        "module_name": "UT-125 FIPS #41,#51 and #61",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5363",
+        "dataset": "active",
+        "path": "/api/certificates/5363.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "RUCKUS R770-US Access Point, R770-WW Access Point, R670-US Access Point, R670-WW Access Point, T670-US Access Point, T670-WW Access Point and T670sn-US Access Point",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5364",
+        "dataset": "active",
+        "path": "/api/certificates/5364.json",
+        "vendor_name": "Kanguru Solutions",
+        "module_name": "Defender 3000 USB Flash Drive",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
       }
     ],
     "Historical": [
@@ -35663,6 +35986,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "2503",
+        "dataset": "historical",
+        "path": "/api/certificates/2503.json",
+        "vendor_name": "L3Harris Technologies, Inc.",
+        "module_name": "Harris AES Load Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 3
+      },
+      {
         "certificate_number": "2504",
         "dataset": "historical",
         "path": "/api/certificates/2504.json",
@@ -49573,6 +49906,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "3928",
+        "dataset": "historical",
+        "path": "/api/certificates/3928.json",
+        "vendor_name": "Canonical Ltd.",
+        "module_name": "Ubuntu 20.04 Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "3929",
         "dataset": "historical",
         "path": "/api/certificates/3929.json",
@@ -49593,11 +49936,101 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "3931",
+        "dataset": "historical",
+        "path": "/api/certificates/3931.json",
+        "vendor_name": "Aruba, a Hewlett Packard Enterprise company",
+        "module_name": "Aruba 9004 Series Gateway with ArubaOS FIPS Firmware",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3932",
+        "dataset": "historical",
+        "path": "/api/certificates/3932.json",
+        "vendor_name": "Private Machines Inc.",
+        "module_name": "ENFORCER R1",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "3933",
+        "dataset": "historical",
+        "path": "/api/certificates/3933.json",
+        "vendor_name": "Nuvoton Technology Corporation",
+        "module_name": "NPCT7xx TPM 2.0 rev 1.38",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3934",
+        "dataset": "historical",
+        "path": "/api/certificates/3934.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE1800 Routing Engine and Multiservices MPC",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "3935",
+        "dataset": "historical",
+        "path": "/api/certificates/3935.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE1800 Routing Engine and MPC7E-10G MACsec Card",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "3936",
+        "dataset": "historical",
+        "path": "/api/certificates/3936.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX104 3D Universal Edge Router with the Multiservices MIC",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 15
+      },
+      {
         "certificate_number": "3937",
         "dataset": "historical",
         "path": "/api/certificates/3937.json",
         "vendor_name": "IBM Corporation",
         "module_name": "IBM® z/OS® Version 2 Release 4 System SSL Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3938",
+        "dataset": "historical",
+        "path": "/api/certificates/3938.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers and EX9204, EX9208, EX9214 Ethernet Switches with RE-S-X6-64G/RE-S-X6-128G/EX9200-RE2 Routing Engine and MPC7E-10G/EX9200-40XS MACsec Card",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "3939",
+        "dataset": "historical",
+        "path": "/api/certificates/3939.json",
+        "vendor_name": "Red Hat®, Inc.",
+        "module_name": "Red Hat Enterprise Linux 7 Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3940",
+        "dataset": "historical",
+        "path": "/api/certificates/3940.json",
+        "vendor_name": "UD info Corp.",
+        "module_name": "UD info DA-series FIPS SSD",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -49663,6 +50096,36 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "3947",
+        "dataset": "historical",
+        "path": "/api/certificates/3947.json",
+        "vendor_name": "Motorola Solutions, Inc.",
+        "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 2",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "3948",
+        "dataset": "historical",
+        "path": "/api/certificates/3948.json",
+        "vendor_name": "Motorola Solutions, Inc.",
+        "module_name": "Astro Subscriber Motorola Advanced Crypto Engine (MACE) - Security Level 3",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "3949",
+        "dataset": "historical",
+        "path": "/api/certificates/3949.json",
+        "vendor_name": "Fescaro Co. Ltd.",
+        "module_name": "FAST C-LIB",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "3950",
         "dataset": "historical",
         "path": "/api/certificates/3950.json",
@@ -49673,11 +50136,51 @@
         "algorithm_count": 12
       },
       {
+        "certificate_number": "3951",
+        "dataset": "historical",
+        "path": "/api/certificates/3951.json",
+        "vendor_name": "Advantech Co., Ltd.",
+        "module_name": "SQFlash FIPS Certified SSD",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3952",
+        "dataset": "historical",
+        "path": "/api/certificates/3952.json",
+        "vendor_name": "Adva Network Security GmbH",
+        "module_name": "WCC-PCN-AES100GB-F Encryption Module with FSP 3000R7 Shelf",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "3953",
+        "dataset": "historical",
+        "path": "/api/certificates/3953.json",
+        "vendor_name": null,
+        "module_name": null,
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "3954",
         "dataset": "historical",
         "path": "/api/certificates/3954.json",
         "vendor_name": "Canonical Ltd.",
         "module_name": "Ubuntu 18.04 Google Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3955",
+        "dataset": "historical",
+        "path": "/api/certificates/3955.json",
+        "vendor_name": "Oracle Communications",
+        "module_name": "Acme Packet 4600 and Acme Packet 6300 and Acme Packet 6350",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -49693,6 +50196,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "3957",
+        "dataset": "historical",
+        "path": "/api/certificates/3957.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise Server GnuTLS Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 14
+      },
+      {
         "certificate_number": "3958",
         "dataset": "historical",
         "path": "/api/certificates/3958.json",
@@ -49701,6 +50214,16 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 12
+      },
+      {
+        "certificate_number": "3959",
+        "dataset": "historical",
+        "path": "/api/certificates/3959.json",
+        "vendor_name": "Unisys Corporation",
+        "module_name": "Unisys Linux OpenSSL FIPS Object Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
       },
       {
         "certificate_number": "3960",
@@ -49723,11 +50246,101 @@
         "algorithm_count": 8
       },
       {
+        "certificate_number": "3962",
+        "dataset": "historical",
+        "path": "/api/certificates/3962.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3963",
+        "dataset": "historical",
+        "path": "/api/certificates/3963.json",
+        "vendor_name": "Envieta Systems LLC",
+        "module_name": "Envieta QFlex Hardware Security Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3964",
+        "dataset": "historical",
+        "path": "/api/certificates/3964.json",
+        "vendor_name": "Motorola Solutions, Inc.",
+        "module_name": "Motorola Network Router (MNR) S6000",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "3965",
+        "dataset": "historical",
+        "path": "/api/certificates/3965.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA TCG Enterprise SSC Crypto Sub-Chip TC58NC1132GTC",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3966",
+        "dataset": "historical",
+        "path": "/api/certificates/3966.json",
+        "vendor_name": "Canonical Ltd.",
+        "module_name": "Ubuntu 20.04 OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "3967",
         "dataset": "historical",
         "path": "/api/certificates/3967.json",
         "vendor_name": "Extreme Networks, Inc.",
         "module_name": "Extreme Networks SLX 9640, SLX 9150 and SLX 9250 Switches",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3968",
+        "dataset": "historical",
+        "path": "/api/certificates/3968.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks MX240, MX480, MX960 3D Universal Edge Routers with RE-S-X6-64G Routing Engine and Multiservices MPC",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 15
+      },
+      {
+        "certificate_number": "3969",
+        "dataset": "historical",
+        "path": "/api/certificates/3969.json",
+        "vendor_name": "Motorola Solutions, Inc.",
+        "module_name": "Motorola GGM 8000 Gateway",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "3970",
+        "dataset": "historical",
+        "path": "/api/certificates/3970.json",
+        "vendor_name": "Integral Memory Plc",
+        "module_name": "Integral AES 256 Bit Crypto SSD Underlying PCB",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "3971",
+        "dataset": "historical",
+        "path": "/api/certificates/3971.json",
+        "vendor_name": "Unisys Corporation",
+        "module_name": "Unisys Linux strongSwan Cryptographic Module",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -50233,6 +50846,16 @@
         "algorithm_count": 13
       },
       {
+        "certificate_number": "4068",
+        "dataset": "historical",
+        "path": "/api/certificates/4068.json",
+        "vendor_name": "Unisys Corporation",
+        "module_name": "Unisys Linux Kernel Cryptographic API Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 5
+      },
+      {
         "certificate_number": "4071",
         "dataset": "historical",
         "path": "/api/certificates/4071.json",
@@ -50503,6 +51126,26 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4126",
+        "dataset": "historical",
+        "path": "/api/certificates/4126.json",
+        "vendor_name": "Canonical Ltd.",
+        "module_name": "Ubuntu 20.04 Azure Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4127",
+        "dataset": "historical",
+        "path": "/api/certificates/4127.json",
+        "vendor_name": "Canonical Ltd.",
+        "module_name": "Ubuntu 20.04 GCP Kernel Crypto API Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "4128",
         "dataset": "historical",
         "path": "/api/certificates/4128.json",
@@ -50528,6 +51171,16 @@
         "path": "/api/certificates/4131.json",
         "vendor_name": "Juniper Networks, Inc.",
         "module_name": "Juniper OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4132",
+        "dataset": "historical",
+        "path": "/api/certificates/4132.json",
+        "vendor_name": "Canonical Ltd.",
+        "module_name": "Ubuntu 20.04 AWS Kernel Crypto API Cryptographic Module",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -51273,6 +51926,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4459",
+        "dataset": "historical",
+        "path": "/api/certificates/4459.json",
+        "vendor_name": "Rambus Inc.",
+        "module_name": "VaultIP",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "4460",
         "dataset": "historical",
         "path": "/api/certificates/4460.json",
@@ -51298,6 +51961,16 @@
         "path": "/api/certificates/4465.json",
         "vendor_name": "F5, Inc",
         "module_name": "F5® Device Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4469",
+        "dataset": "historical",
+        "path": "/api/certificates/4469.json",
+        "vendor_name": "HP, Inc.",
+        "module_name": "HPI Unified Communications Cryptographic Module",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -51548,6 +52221,16 @@
         "path": "/api/certificates/4527.json",
         "vendor_name": "Persistent Systems, LLC",
         "module_name": "Embedded Module and Embedded Module Lite",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4528",
+        "dataset": "historical",
+        "path": "/api/certificates/4528.json",
+        "vendor_name": "Apricorn",
+        "module_name": "Apricorn FIPS 140-2 Encryption System Gen 2",
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
@@ -51993,6 +52676,26 @@
         "algorithm_count": 13
       },
       {
+        "certificate_number": "4608",
+        "dataset": "historical",
+        "path": "/api/certificates/4608.json",
+        "vendor_name": "Fortinet, Inc.",
+        "module_name": "FortiGate-6300F/6301F/6500F/6501F",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4609",
+        "dataset": "historical",
+        "path": "/api/certificates/4609.json",
+        "vendor_name": "Fortinet, Inc.",
+        "module_name": "FortiGate-201E/301E/401E/501E/601E",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "4610",
         "dataset": "historical",
         "path": "/api/certificates/4610.json",
@@ -52041,6 +52744,26 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 13
+      },
+      {
+        "certificate_number": "4618",
+        "dataset": "historical",
+        "path": "/api/certificates/4618.json",
+        "vendor_name": "IBM Corporation",
+        "module_name": "IBM® z/OS® Version 2 Release 4 System SSL Cryptographic Module",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4622",
+        "dataset": "historical",
+        "path": "/api/certificates/4622.json",
+        "vendor_name": "Nuvoton Technology Corporation",
+        "module_name": "NPCT7xx TPM 2.0 rev 1.38",
+        "standard": "FIPS 140-2",
+        "status": "Historical",
+        "algorithm_count": 0
       },
       {
         "certificate_number": "4623",
@@ -52303,6 +53026,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4711",
+        "dataset": "historical",
+        "path": "/api/certificates/4711.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Firepower Threat Defense Virtual Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 11
+      },
+      {
         "certificate_number": "4712",
         "dataset": "historical",
         "path": "/api/certificates/4712.json",
@@ -52333,11 +53066,101 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4729",
+        "dataset": "historical",
+        "path": "/api/certificates/4729.json",
+        "vendor_name": "KAYTUS SYSTEM PTE. LTD.",
+        "module_name": "Linux OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4731",
+        "dataset": "historical",
+        "path": "/api/certificates/4731.json",
+        "vendor_name": "NetApp, Inc.",
+        "module_name": "NetApp CryptoMod",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 5
+      },
+      {
+        "certificate_number": "4738",
+        "dataset": "historical",
+        "path": "/api/certificates/4738.json",
+        "vendor_name": "Qualcomm Technologies, Inc.",
+        "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4752",
+        "dataset": "historical",
+        "path": "/api/certificates/4752.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "IOS Common Cryptographic Module (IC2M)",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4753",
+        "dataset": "historical",
+        "path": "/api/certificates/4753.json",
+        "vendor_name": "Corsec Security, Inc.",
+        "module_name": "CorSSL FIPS Object Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4760",
+        "dataset": "historical",
+        "path": "/api/certificates/4760.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 10.2 running on PA-220, PA-220R, PA-400 Series, PA-800 Series, PA-3200 Series, PA-3400 Series, PA-5200 Series, PA-5400 Series, PA-5450, and PA-7000 Series NGFWs",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4761",
+        "dataset": "historical",
+        "path": "/api/certificates/4761.json",
+        "vendor_name": "DigiCert, Inc.",
+        "module_name": "Mocana Cryptographic Suite B Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4762",
+        "dataset": "historical",
+        "path": "/api/certificates/4762.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "PAN-OS 10.2 VM-Series",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "4764",
         "dataset": "historical",
         "path": "/api/certificates/4764.json",
         "vendor_name": "Samsung Electronics Co., Ltd.",
         "module_name": "Samsung Kernel Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4765",
+        "dataset": "historical",
+        "path": "/api/certificates/4765.json",
+        "vendor_name": "Entrust",
+        "module_name": "nShield 5s Hardware Security Module",
         "standard": "FIPS 140-3",
         "status": "Historical",
         "algorithm_count": 0
@@ -52353,6 +53176,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4768",
+        "dataset": "historical",
+        "path": "/api/certificates/4768.json",
+        "vendor_name": "Palo Alto Networks, Inc.",
+        "module_name": "Palo Alto Networks SD-WAN Virtual Instant-On Network (vION)",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
         "certificate_number": "4769",
         "dataset": "historical",
         "path": "/api/certificates/4769.json",
@@ -52361,6 +53194,16 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 15
+      },
+      {
+        "certificate_number": "4779",
+        "dataset": "historical",
+        "path": "/api/certificates/4779.json",
+        "vendor_name": "Oracle Corporation",
+        "module_name": "Oracle Linux 9 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 11
       },
       {
         "certificate_number": "4781",
@@ -52373,6 +53216,16 @@
         "algorithm_count": 0
       },
       {
+        "certificate_number": "4801",
+        "dataset": "historical",
+        "path": "/api/certificates/4801.json",
+        "vendor_name": "Oracle Corporation",
+        "module_name": "Oracle Linux 9 NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 13
+      },
+      {
         "certificate_number": "4803",
         "dataset": "historical",
         "path": "/api/certificates/4803.json",
@@ -52381,6 +53234,36 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 8
+      },
+      {
+        "certificate_number": "4818",
+        "dataset": "historical",
+        "path": "/api/certificates/4818.json",
+        "vendor_name": "DigiCert, Inc.",
+        "module_name": "Mocana Cryptographic Loadable Kernel Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4865",
+        "dataset": "historical",
+        "path": "/api/certificates/4865.json",
+        "vendor_name": "Broadcom Inc.",
+        "module_name": "VMware’s Linux Kernel Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "4919",
+        "dataset": "historical",
+        "path": "/api/certificates/4919.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Intel, Kernel, Software, SL1]",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
       },
       {
         "certificate_number": "4932",
@@ -52401,6 +53284,36 @@
         "standard": "FIPS 140-3",
         "status": "Historical",
         "algorithm_count": 11
+      },
+      {
+        "certificate_number": "4945",
+        "dataset": "historical",
+        "path": "/api/certificates/4945.json",
+        "vendor_name": "F5, Inc.",
+        "module_name": "BIG-IP Tenant Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4948",
+        "dataset": "historical",
+        "path": "/api/certificates/4948.json",
+        "vendor_name": "Apple Inc.",
+        "module_name": "Apple corecrypto Module v13.0 [Intel, User, Software, SL1]",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
+      },
+      {
+        "certificate_number": "4953",
+        "dataset": "historical",
+        "path": "/api/certificates/4953.json",
+        "vendor_name": "Google, LLC.",
+        "module_name": "BoringCrypto",
+        "standard": "FIPS 140-3",
+        "status": "Historical",
+        "algorithm_count": 0
       },
       {
         "certificate_number": "4958",
