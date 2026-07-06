@@ -385,6 +385,7 @@ def validate_data_quality_report(
     root: Path,
     metadata: Dict,
     expected_datasets: Dict[int, str],
+    expected_algorithms: Dict[int, List[str]],
     errors: List[str],
     require_data_quality_pass: bool = False,
 ) -> None:
@@ -418,6 +419,76 @@ def validate_data_quality_report(
             add_error(errors, record.get("dataset") == expected_datasets.get(cert_number), f"{label}: dataset mismatch")
             add_error(errors, record.get("path") == f"/api/certificates/{cert_number}.json", f"{label}: path mismatch")
             add_error(errors, bool(record.get("reason")), f"{label}: missing reason")
+
+    deferred_records = payload.get("deferred_certificates")
+    if "deferred_certificates" in payload:
+        add_error(errors, isinstance(deferred_records, list), "api/data-quality.json: deferred_certificates must be a list")
+        if isinstance(deferred_records, list):
+            if "deferred" in summary:
+                add_error(
+                    errors,
+                    summary.get("deferred") == len(deferred_records),
+                    "api/data-quality.json: summary.deferred count mismatch",
+                )
+            for index, record in enumerate(deferred_records):
+                label = f"api/data-quality.json: deferred_certificates[{index}]"
+                add_error(errors, isinstance(record, dict), f"{label}: record must be an object")
+                if not isinstance(record, dict):
+                    continue
+                for field in ("certificate_number", "dataset", "reason", "repeat"):
+                    add_error(errors, field in record, f"{label}: missing {field}")
+                cert_number = record.get("certificate_number")
+                add_error(
+                    errors,
+                    cert_number is None or isinstance(cert_number, str),
+                    f"{label}: certificate_number must be a string or null",
+                )
+                add_error(errors, record.get("dataset") in {"active", "historical"}, f"{label}: invalid dataset")
+                add_error(errors, isinstance(record.get("reason"), str) and bool(record.get("reason")), f"{label}: missing reason")
+                add_error(errors, isinstance(record.get("repeat"), bool), f"{label}: repeat must be a boolean")
+
+    algorithm_coverage = payload.get("algorithm_coverage")
+    if "algorithm_coverage" in payload:
+        label = "api/data-quality.json: algorithm_coverage"
+        add_error(errors, isinstance(algorithm_coverage, dict), f"{label} must be an object")
+        if isinstance(algorithm_coverage, dict):
+            total = algorithm_coverage.get("total_certificates")
+            with_algorithms = algorithm_coverage.get("certificates_with_algorithms")
+            coverage_rate = algorithm_coverage.get("coverage_rate")
+            zero_buckets = algorithm_coverage.get("zero_algorithm_certificates")
+            add_error(errors, isinstance(total, int) and total >= 0, f"{label}.total_certificates must be a non-negative integer")
+            add_error(
+                errors,
+                isinstance(with_algorithms, int) and with_algorithms >= 0,
+                f"{label}.certificates_with_algorithms must be a non-negative integer",
+            )
+            add_error(
+                errors,
+                isinstance(coverage_rate, (int, float)) and 0 <= coverage_rate <= 1,
+                f"{label}.coverage_rate must be between 0 and 1",
+            )
+            add_error(errors, isinstance(zero_buckets, dict), f"{label}.zero_algorithm_certificates must be an object")
+            if isinstance(total, int):
+                add_error(errors, total == len(expected_datasets), f"{label}.total_certificates mismatch")
+            if isinstance(with_algorithms, int):
+                add_error(
+                    errors,
+                    with_algorithms == len(expected_algorithms),
+                    f"{label}.certificates_with_algorithms mismatch",
+                )
+            if isinstance(zero_buckets, dict):
+                bucket_total = 0
+                for bucket in ("cached_no_attempts", "explicit_no_algorithms", "source_none", "other"):
+                    value = zero_buckets.get(bucket)
+                    add_error(errors, isinstance(value, int) and value >= 0, f"{label}.{bucket} must be a non-negative integer")
+                    if isinstance(value, int):
+                        bucket_total += value
+                if isinstance(total, int) and isinstance(with_algorithms, int):
+                    add_error(
+                        errors,
+                        bucket_total == total - with_algorithms,
+                        f"{label}.zero_algorithm_certificates bucket total mismatch",
+                    )
 
     update_monitor = payload.get("update_monitor")
     add_error(errors, isinstance(update_monitor, dict), "api/data-quality.json: update_monitor must be an object")
@@ -728,7 +799,7 @@ def validate_api(
     )
     validate_certificate_index(root, metadata, expected_datasets, expected_algorithms, errors)
     validate_algorithms_summary(root, metadata, expected_algorithms, errors)
-    validate_data_quality_report(root, metadata, expected_datasets, errors, require_data_quality_pass)
+    validate_data_quality_report(root, metadata, expected_datasets, expected_algorithms, errors, require_data_quality_pass)
     validate_examples_payload(root, metadata, errors)
     validate_search_indexes(root, metadata, expected_datasets, errors)
     validate_docs_and_index(

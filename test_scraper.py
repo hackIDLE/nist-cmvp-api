@@ -5,6 +5,7 @@ Tests the parsing logic with sample HTML.
 """
 
 import asyncio
+import io
 import sys
 import tempfile
 from pathlib import Path
@@ -1071,6 +1072,51 @@ def test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation():
     print("✓ Policy PDF cache cancellation shielding test passed")
 
 
+def test_fetch_with_retry_uses_jitter_and_four_attempts():
+    """Async fetch retries should use four attempts and bounded jittered backoff."""
+    url = "https://csrc.nist.gov/reset"
+    request = scraper_module.httpx.Request("GET", url)
+    sleeps = []
+    jitter_calls = []
+
+    class FakeClient:
+        def __init__(self):
+            self.calls = 0
+
+        async def get(self, requested_url):
+            assert requested_url == url, "fetch_with_retry should request the target URL"
+            self.calls += 1
+            raise scraper_module.httpx.RequestError("connection reset", request=request)
+
+    async def fake_sleep(wait):
+        sleeps.append(wait)
+
+    def fake_uniform(start, end):
+        jitter_calls.append((start, end))
+        return 1.25
+
+    original_sleep = scraper_module.asyncio.sleep
+    original_uniform = scraper_module.random.uniform
+    scraper_module.asyncio.sleep = fake_sleep
+    scraper_module.random.uniform = fake_uniform
+    try:
+        client = FakeClient()
+        result = asyncio.run(scraper_module.fetch_with_retry(client, url))
+    finally:
+        scraper_module.asyncio.sleep = original_sleep
+        scraper_module.random.uniform = original_uniform
+
+    assert result is None, "Exhausted retries should return None"
+    assert client.calls == 4, "fetch_with_retry should default to four attempts"
+    assert jitter_calls == [(0, 1.5), (0, 1.5), (0, 1.5)], "Each retry sleep should request jitter bounds"
+    assert sleeps == [3.25, 5.25, 9.25], "Retry sleeps should include exponential backoff plus jitter"
+    for attempt, wait in enumerate(sleeps):
+        base = 2 ** (attempt + 1)
+        assert 0 <= wait - base <= 1.5, "Retry jitter should stay within configured bounds"
+
+    print("✓ Async retry jitter/backoff test passed")
+
+
 def test_process_certificate_record_applies_cached_algorithm_provenance():
     """Cached algorithm reuse should still attach explicit provenance to outputs."""
     module = {
@@ -1378,13 +1424,14 @@ def test_build_certificate_artifacts_defers_uncached_failures():
     original_process = scraper_module.process_certificate_record_with_timeout
     scraper_module.process_certificate_record_with_timeout = fake_process
     try:
-        enriched, payloads, algorithms_map, stats = asyncio.run(
+        enriched, payloads, algorithms_map, stats, deferred = asyncio.run(
             build_certificate_artifacts(
                 modules,
                 "active",
                 "2026-06-01T00:00:00.000000Z",
                 "crawl4ai",
                 {"metadata": {}, "modules": {"active": {}}, "details": {}},
+                include_deferred=True,
             )
         )
     finally:
@@ -1395,6 +1442,13 @@ def test_build_certificate_artifacts_defers_uncached_failures():
     assert set(algorithms_map) == {6001}, "Deferred certificates should not get algorithm index entries"
     assert stats["certificates_deferred"] == 1, "Deferred certificates should be counted in metrics"
     assert stats["html_failed"] == 0, "Deferred records should not produce broken published artifacts"
+    assert deferred == [
+        {
+            "certificate_number": "6000",
+            "dataset": "active",
+            "reason": "certificate_detail_unavailable",
+        }
+    ], "Deferred certificate metadata should be returned to callers"
 
     print("✓ Deferred certificate filtering test passed")
 
@@ -1510,13 +1564,14 @@ def test_build_certificate_artifacts_bounds_active_tasks():
     scraper_module.CERT_FETCH_CONCURRENCY = 2
     scraper_module.PDF_FETCH_CONCURRENCY = 3
     try:
-        enriched, payloads, algorithms_map, stats = asyncio.run(
+        enriched, payloads, algorithms_map, stats, deferred = asyncio.run(
             build_certificate_artifacts(
                 modules,
                 "active",
                 "2026-04-12T03:10:00.961597Z",
                 "crawl4ai",
                 {"metadata": {}, "modules": {"active": {}}, "details": {}},
+                include_deferred=True,
             )
         )
     finally:
@@ -1530,8 +1585,161 @@ def test_build_certificate_artifacts_bounds_active_tasks():
     assert len(payloads) == len(modules), "Each fake detail payload should be retained"
     assert len(algorithms_map) == len(modules), "Each fake algorithm payload should be indexed"
     assert stats["html_refreshed"] == len(modules), "Stats should accumulate from bounded tasks"
+    assert deferred == [], "Successful bounded tasks should not report deferrals"
 
     print("✓ Bounded certificate scheduling test passed")
+
+
+def test_build_data_quality_report_marks_repeat_deferrals():
+    """Deferred certificates should be marked when also deferred in the previous run."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "algorithm_source": "crawl4ai",
+        "extraction_metrics": build_extraction_metrics({}, {}),
+    }
+    previous_outputs = {
+        "metadata": {},
+        "modules": {"active": {}, "historical": {}},
+        "details": {},
+        "deferred_certificates": [
+            {
+                "certificate_number": "6000",
+                "dataset": "active",
+                "reason": "certificate_detail_unavailable",
+                "repeat": False,
+            }
+        ],
+    }
+    deferred = [
+        {
+            "certificate_number": "6000",
+            "dataset": "active",
+            "reason": "certificate_detail_unavailable",
+        },
+        {
+            "certificate_number": "7000",
+            "dataset": "historical",
+            "reason": "algorithm_unavailable",
+        },
+    ]
+
+    stderr = io.StringIO()
+    original_stderr = sys.stderr
+    sys.stderr = stderr
+    try:
+        report = build_data_quality_report(
+            metadata,
+            [],
+            [],
+            {},
+            previous_outputs,
+            {},
+            {},
+            deferred,
+        )
+    finally:
+        sys.stderr = original_stderr
+
+    assert report["summary"]["deferred"] == 2, "Deferred summary count should match deferred list"
+    assert report["deferred_certificates"][0]["repeat"] is True, "Consecutive deferral should be marked repeat"
+    assert report["deferred_certificates"][1]["repeat"] is False, "New deferral should not be marked repeat"
+    assert (
+        "Warning: certificate 6000 deferred in consecutive runs" in stderr.getvalue()
+    ), "Repeat deferrals should emit a warning"
+
+    print("✓ Repeat deferral marking test passed")
+
+
+def test_build_data_quality_report_algorithm_coverage_buckets():
+    """Algorithm coverage should classify every zero-algorithm certificate bucket."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "algorithm_source": "crawl4ai",
+        "extraction_metrics": build_extraction_metrics({}, {}),
+    }
+    modules = [
+        {
+            "Certificate Number": "6100",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Covered Module",
+            "algorithms": ["AES"],
+            "detail_available": True,
+        },
+        {
+            "Certificate Number": "6101",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Cached Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "cached",
+                "source": "crawl4ai",
+                "cached": True,
+            },
+        },
+        {
+            "Certificate Number": "6102",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Explicit Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "miss",
+                "source": "security_policy_pdf",
+                "cached": False,
+                "attempts": [{"source": "security_policy_pdf", "status": "no_algorithms"}],
+            },
+        },
+        {
+            "Certificate Number": "6103",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Skipped Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "skipped",
+                "source": "none",
+                "cached": False,
+            },
+        },
+        {
+            "Certificate Number": "6104",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Other Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "miss",
+                "source": "crawl4ai",
+                "cached": False,
+                "attempts": [{"source": "crawl4ai", "status": "no_text"}],
+            },
+        },
+    ]
+
+    report = build_data_quality_report(
+        metadata,
+        modules,
+        [],
+        {},
+        {"metadata": {}, "modules": {"active": {}}, "details": {}},
+        {},
+        {},
+        [],
+    )
+
+    coverage = report["algorithm_coverage"]
+    assert coverage["total_certificates"] == 5, "Coverage should count all active and historical certs"
+    assert coverage["certificates_with_algorithms"] == 1, "Coverage should count certs with extracted algorithms"
+    assert coverage["coverage_rate"] == 0.2, "Coverage rate should be rounded to four decimals"
+    assert coverage["zero_algorithm_certificates"] == {
+        "cached_no_attempts": 1,
+        "explicit_no_algorithms": 1,
+        "source_none": 1,
+        "other": 1,
+    }, "Zero-algorithm buckets should classify all empty algorithm records"
+
+    print("✓ Algorithm coverage classification test passed")
 
 
 def test_prune_orphan_certificate_details():
@@ -1776,6 +1984,19 @@ def test_data_quality_search_indexes_and_examples():
     assert report["summary"]["changed_certificates"] == 1, "Summary change should be listed as changed certificate"
     assert report["summary"]["fallback_usage"] == 1, "Fallback extraction should be listed"
     assert report["summary"]["misses"] == 1, "Historical algorithm miss should be listed"
+    assert report["summary"]["deferred"] == 0, "No deferred certificates should be reported for this fixture"
+    assert report["deferred_certificates"] == [], "Deferred certificate list should be present and empty"
+    assert report["algorithm_coverage"] == {
+        "total_certificates": 2,
+        "certificates_with_algorithms": 1,
+        "coverage_rate": 0.5,
+        "zero_algorithm_certificates": {
+            "cached_no_attempts": 0,
+            "explicit_no_algorithms": 0,
+            "source_none": 0,
+            "other": 1,
+        },
+    }, "Algorithm coverage should summarize zero-algorithm certificates"
     assert report["update_monitor"]["next_scheduled_run"] == "2026-04-19T02:00:00Z", "Next weekly run should be Sunday 02:00 UTC"
     checks = {
         check["name"]: check
@@ -1962,6 +2183,11 @@ def test_generate_agent_docs():
     assert schema_artifacts["api/schemas/modules-in-process.schema.json"]["properties"]["modules_in_process"]["items"]["$ref"] == "/api/schemas/module-in-process.schema.json", "Modules-in-process response should use its own row schema"
     assert schema_artifacts["api/schemas/module.schema.json"]["properties"]["algorithm_extraction"]["type"] == "object", "Module schema should include extraction provenance"
     assert schema_artifacts["api/schemas/certificate-detail.schema.json"]["properties"]["certificate"]["properties"]["algorithm_extraction"]["type"] == "object", "Certificate detail schema should include extraction provenance"
+    data_quality_schema = schema_artifacts["api/schemas/data-quality.schema.json"]
+    assert "deferred_certificates" in data_quality_schema["properties"], "Data quality schema should document deferred certificates"
+    assert "algorithm_coverage" in data_quality_schema["properties"], "Data quality schema should document algorithm coverage"
+    assert "deferred_certificates" not in data_quality_schema["required"], "Deferred certificates should remain optional for old artifacts"
+    assert "algorithm_coverage" not in data_quality_schema["required"], "Algorithm coverage should remain optional for old artifacts"
 
     openapi = generate_openapi_spec(
         [sample_module],
@@ -2021,12 +2247,15 @@ def main():
         test_algorithm_extraction_provenance_and_metrics()
         test_fetch_policy_pdf_bytes_reuses_in_run_cache()
         test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation()
+        test_fetch_with_retry_uses_jitter_and_four_attempts()
         test_process_certificate_record_applies_cached_algorithm_provenance()
         test_process_certificate_record_timeout_preserves_cached_data()
         test_process_certificate_record_preserves_cache_after_refresh_failure()
         test_build_certificate_artifacts_defers_uncached_failures()
         test_module_rows_with_cache_fallback_preserves_previous_top_level_list()
         test_build_certificate_artifacts_bounds_active_tasks()
+        test_build_data_quality_report_marks_repeat_deferrals()
+        test_build_data_quality_report_algorithm_coverage_buckets()
         test_prune_orphan_certificate_details()
         test_validate_generated_api_artifacts()
         test_build_certificate_index_payload()

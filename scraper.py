@@ -18,7 +18,7 @@ Environment Variables:
     ALGORITHM_SOURCE: Override algorithm extraction source: crawl4ai, security_policy_pdf, database, none
     CMVP_DB_PATH: Path to existing cmvp.db from NIST-CMVP-ReportGen project
                   If set, algorithm data will be imported from this database
-    CERT_FETCH_CONCURRENCY: Concurrent certificate detail page fetches (default: 16)
+    CERT_FETCH_CONCURRENCY: Concurrent certificate detail page fetches (default: 8)
     PDF_FETCH_CONCURRENCY: Concurrent Security Policy PDF fetches/parses (default: 32)
     CERT_PROCESS_TIMEOUT: Per-certificate processing timeout in seconds (default: 900)
     FULL_REFRESH: Set to "1" to bypass reuse of previously generated outputs
@@ -29,6 +29,7 @@ import copy
 import hashlib
 import json
 import os
+import random
 import re
 import sqlite3
 import sys
@@ -62,7 +63,7 @@ SEARCH_PATH = os.getenv("NIST_SEARCH_PATH", "/all")
 HISTORICAL_SEARCH_PARAMS = "?SearchMode=Advanced&CertificateStatus=Historical&ValidationYear=0"
 USER_AGENT = "NIST-CMVP-Data-Scraper/1.0 (GitHub Project)"
 SKIP_ALGORITHMS = os.getenv("SKIP_ALGORITHMS", "0") == "1"
-CERT_FETCH_CONCURRENCY = max(1, int(os.getenv("CERT_FETCH_CONCURRENCY", "16")))
+CERT_FETCH_CONCURRENCY = max(1, int(os.getenv("CERT_FETCH_CONCURRENCY", "8")))
 PDF_FETCH_CONCURRENCY = max(1, int(os.getenv("PDF_FETCH_CONCURRENCY", "32")))
 CERT_PROCESS_TIMEOUT = max(1, int(os.getenv("CERT_PROCESS_TIMEOUT", "900")))
 FULL_REFRESH = os.getenv("FULL_REFRESH", "0") == "1"
@@ -355,7 +356,7 @@ def fetch_page(url: str, timeout: int = 30, retries: int = 3) -> Optional[str]:
             return response.text
         except requests.RequestException as e:
             if attempt < retries - 1:
-                wait = 2 ** (attempt + 1)
+                wait = 2 ** (attempt + 1) + random.uniform(0, 1.5)
                 print(f"Attempt {attempt + 1}/{retries} failed for {url}: {e}. Retrying in {wait}s...", file=sys.stderr)
                 time.sleep(wait)
             else:
@@ -890,6 +891,7 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
     historical_data = load_json_file(output_dir / "historical-modules.json") or {}
     modules_in_process_data = load_json_file(output_dir / "modules-in-process.json") or {}
     metadata = load_json_file(output_dir / "metadata.json") or {}
+    data_quality = load_json_file(output_dir / "data-quality.json") or {}
     detail_payloads: Dict[int, Dict] = {}
 
     if DETAIL_DIR.exists():
@@ -915,6 +917,9 @@ def load_previous_outputs(output_dir: Path = Path("api")) -> Dict[str, object]:
             "historical": copy.deepcopy(historical_data.get("modules", [])),
         },
         "modules_in_process": copy.deepcopy(modules_in_process_data.get("modules_in_process", [])),
+        "deferred_certificates": copy.deepcopy(data_quality.get("deferred_certificates", []))
+        if isinstance(data_quality.get("deferred_certificates"), list)
+        else [],
         "modules": {
             "active": build_module_map(active_data.get("modules", [])),
             "historical": build_module_map(historical_data.get("modules", [])),
@@ -1473,7 +1478,7 @@ async def fetch_with_retry(
     client: httpx.AsyncClient,
     url: str,
     response_type: str = "text",
-    retries: int = 3,
+    retries: int = 4,
 ) -> Optional[object]:
     """Fetch a URL asynchronously with retries for transient failures."""
     for attempt in range(retries):
@@ -1490,14 +1495,14 @@ async def fetch_with_retry(
             if exc.response.status_code < 500 or attempt == retries - 1:
                 print(f"Error fetching {url}: {exc}", file=sys.stderr)
                 return None
-            wait = 2 ** (attempt + 1)
+            wait = 2 ** (attempt + 1) + random.uniform(0, 1.5)
             print(f"Attempt {attempt + 1}/{retries} failed for {url}: {exc}. Retrying in {wait}s...", file=sys.stderr)
             await asyncio.sleep(wait)
         except httpx.RequestError as exc:
             if attempt == retries - 1:
                 print(f"Error fetching {url}: {exc}", file=sys.stderr)
                 return None
-            wait = 2 ** (attempt + 1)
+            wait = 2 ** (attempt + 1) + random.uniform(0, 1.5)
             print(f"Attempt {attempt + 1}/{retries} failed for {url}: {exc}. Retrying in {wait}s...", file=sys.stderr)
             await asyncio.sleep(wait)
     return None
@@ -2130,7 +2135,8 @@ async def build_certificate_artifacts(
     algorithm_source: str,
     previous_outputs: Dict[str, object],
     database_algorithms_map: Optional[Dict[int, List[str]]] = None,
-) -> Tuple[List[Dict], Dict[int, Dict], Dict[int, List[str]], Dict[str, int]]:
+    include_deferred: bool = False,
+) -> Tuple:
     """Build enriched module rows, certificate detail payloads, and algorithms for a dataset."""
     previous_modules = previous_outputs.get("modules", {}).get(dataset, {})
     previous_details = previous_outputs.get("details", {})
@@ -2140,6 +2146,7 @@ async def build_certificate_artifacts(
     results: List[Optional[Dict]] = [None] * len(modules)
     payloads: Dict[int, Dict] = {}
     algorithms_map: Dict[int, List[str]] = {}
+    deferred_certificates: List[Dict] = []
     stats = new_processing_stats()
 
     timeout = httpx.Timeout(30.0)
@@ -2202,6 +2209,13 @@ async def build_certificate_artifacts(
                 cert_number = parse_certificate_number(module_out)
                 deferred_reason = module_out.pop(DEFERRED_REASON_KEY, None)
                 if deferred_reason:
+                    deferred_certificates.append(
+                        {
+                            "certificate_number": str(cert_number) if cert_number is not None else None,
+                            "dataset": dataset,
+                            "reason": deferred_reason,
+                        }
+                    )
                     print(
                         f"  Deferred certificate {cert_number or 'unknown'} ({dataset}): {deferred_reason}",
                         file=sys.stderr,
@@ -2230,7 +2244,10 @@ async def build_certificate_artifacts(
                         f"{stats['html_failed']} failed, {stats['certificates_deferred']} deferred)"
                     )
 
-    return [result for result in results if result], payloads, algorithms_map, stats
+    artifacts = ([result for result in results if result], payloads, algorithms_map, stats)
+    if include_deferred:
+        return (*artifacts, deferred_certificates)
+    return artifacts
 
 
 def parse_modules_table(html: str) -> List[Dict]:
@@ -2790,6 +2807,101 @@ def quality_certificate_record(
     return record
 
 
+def deferred_certificate_key(record: Dict) -> Tuple[Optional[str], Optional[str]]:
+    """Return the stable key used to identify repeated certificate deferrals."""
+    cert_number = record.get("certificate_number")
+    if cert_number is not None:
+        cert_number = str(cert_number)
+    dataset = record.get("dataset")
+    return cert_number, str(dataset) if dataset is not None else None
+
+
+def mark_deferred_certificates(
+    deferred_certificates: Optional[List[Dict]],
+    previous_deferred_certificates: Optional[List[Dict]],
+) -> List[Dict]:
+    """Attach repeat flags for certificates deferred in consecutive runs."""
+    previous_keys = {
+        deferred_certificate_key(record)
+        for record in previous_deferred_certificates or []
+        if isinstance(record, dict)
+    }
+    marked: List[Dict] = []
+    for record in deferred_certificates or []:
+        if not isinstance(record, dict):
+            continue
+        cert_number = record.get("certificate_number")
+        normalized = {
+            "certificate_number": str(cert_number) if cert_number is not None else None,
+            "dataset": record.get("dataset"),
+            "reason": record.get("reason"),
+        }
+        repeat = deferred_certificate_key(normalized) in previous_keys
+        normalized["repeat"] = repeat
+        if repeat:
+            cert_label = normalized["certificate_number"] or "unknown"
+            print(f"Warning: certificate {cert_label} deferred in consecutive runs", file=sys.stderr)
+        marked.append(normalized)
+    return marked
+
+
+def classify_zero_algorithm_certificate(extraction: Dict) -> str:
+    """Classify why a certificate has no algorithm rows."""
+    attempts = extraction.get("attempts") or []
+    if isinstance(attempts, list) and any(
+        isinstance(attempt, dict) and attempt.get("status") == "no_algorithms"
+        for attempt in attempts
+    ):
+        return "explicit_no_algorithms"
+    if extraction.get("source") == "none":
+        return "source_none"
+    if extraction.get("cached") is True and not attempts:
+        return "cached_no_attempts"
+    return "other"
+
+
+def build_algorithm_coverage_report(
+    modules: List[Dict],
+    historical_modules: List[Dict],
+    detail_payloads: Dict[int, Dict],
+) -> Dict:
+    """Summarize algorithm extraction coverage without affecting quality gates."""
+    buckets = {
+        "cached_no_attempts": 0,
+        "explicit_no_algorithms": 0,
+        "source_none": 0,
+        "other": 0,
+    }
+    total_certificates = 0
+    certificates_with_algorithms = 0
+
+    for records in (modules, historical_modules):
+        for module in records:
+            total_certificates += 1
+            cert_number = parse_certificate_number(module)
+            detail_payload = detail_payloads.get(cert_number) if cert_number is not None else None
+            algorithms = normalize_string_list(
+                (detail_payload or {}).get("algorithms") or module.get("algorithms") or []
+            )
+            if algorithms:
+                certificates_with_algorithms += 1
+                continue
+
+            extraction = first_non_empty(
+                (detail_payload or {}).get("algorithm_extraction"),
+                module.get("algorithm_extraction"),
+            )
+            bucket = classify_zero_algorithm_certificate(extraction) if isinstance(extraction, dict) else "other"
+            buckets[bucket] += 1
+
+    return {
+        "total_certificates": total_certificates,
+        "certificates_with_algorithms": certificates_with_algorithms,
+        "coverage_rate": safe_ratio(certificates_with_algorithms, total_certificates) or 0,
+        "zero_algorithm_certificates": buckets,
+    }
+
+
 def build_update_monitor(metadata: Dict, combined_metrics: Dict[str, int]) -> Dict:
     """Build a small run-health summary that can be monitored after each update."""
     html_total = (
@@ -2864,12 +2976,16 @@ def build_data_quality_report(
     previous_outputs: Dict[str, object],
     active_stats: Dict[str, int],
     historical_stats: Dict[str, int],
+    deferred_certificates: Optional[List[Dict]] = None,
 ) -> Dict:
     """Build a compact report of misses, refreshes, fallbacks, and changed certs."""
     previous_modules = previous_outputs.get("modules", {}) if isinstance(previous_outputs, dict) else {}
     previous_details = previous_outputs.get("details", {}) if isinstance(previous_outputs, dict) else {}
+    previous_deferred = previous_outputs.get("deferred_certificates", []) if isinstance(previous_outputs, dict) else []
     extraction_metrics = metadata.get("extraction_metrics") or build_extraction_metrics(active_stats, historical_stats)
     combined_metrics = extraction_metrics.get("combined") or combine_processing_stats(active_stats, historical_stats)
+    marked_deferred = mark_deferred_certificates(deferred_certificates, previous_deferred)
+    algorithm_coverage = build_algorithm_coverage_report(modules, historical_modules, detail_payloads)
 
     misses: List[Dict] = []
     refreshed_records: List[Dict] = []
@@ -2936,8 +3052,11 @@ def build_data_quality_report(
             "refreshed_records": len(refreshed_records),
             "fallback_usage": len(fallback_usage),
             "changed_certificates": len(changed_certificates),
+            "deferred": len(marked_deferred),
         },
         "update_monitor": build_update_monitor(metadata, combined_metrics),
+        "algorithm_coverage": algorithm_coverage,
+        "deferred_certificates": marked_deferred,
         "misses": misses,
         "refreshed_records": refreshed_records,
         "fallback_usage": fallback_usage,
@@ -4029,6 +4148,48 @@ def data_quality_schema() -> Dict:
             "reason": {"type": "string"},
         },
     }
+    deferred_record_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["certificate_number", "dataset", "reason", "repeat"],
+        "properties": {
+            "certificate_number": {"type": ["string", "null"]},
+            "dataset": {"type": "string", "enum": ["active", "historical"]},
+            "reason": {"type": "string"},
+            "repeat": {"type": "boolean"},
+        },
+    }
+    algorithm_coverage_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "total_certificates",
+            "certificates_with_algorithms",
+            "coverage_rate",
+            "zero_algorithm_certificates",
+        ],
+        "properties": {
+            "total_certificates": {"type": "integer", "minimum": 0},
+            "certificates_with_algorithms": {"type": "integer", "minimum": 0},
+            "coverage_rate": {"type": "number", "minimum": 0, "maximum": 1},
+            "zero_algorithm_certificates": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": [
+                    "cached_no_attempts",
+                    "explicit_no_algorithms",
+                    "source_none",
+                    "other",
+                ],
+                "properties": {
+                    "cached_no_attempts": {"type": "integer", "minimum": 0},
+                    "explicit_no_algorithms": {"type": "integer", "minimum": 0},
+                    "source_none": {"type": "integer", "minimum": 0},
+                    "other": {"type": "integer", "minimum": 0},
+                },
+            },
+        },
+    }
     return {
         "type": "object",
         "additionalProperties": False,
@@ -4065,6 +4226,8 @@ def data_quality_schema() -> Dict:
             "refreshed_records": {"type": "array", "items": quality_record_schema},
             "fallback_usage": {"type": "array", "items": quality_record_schema},
             "changed_certificates": {"type": "array", "items": quality_record_schema},
+            "deferred_certificates": {"type": "array", "items": deferred_record_schema},
+            "algorithm_coverage": algorithm_coverage_schema,
         },
     }
 
@@ -4661,6 +4824,19 @@ def generate_openapi_spec(
                         "metadata": {"$ref": "#/components/schemas/Metadata"},
                         "summary": {"type": "object", "additionalProperties": {"type": "integer"}},
                         "update_monitor": {"type": "object", "additionalProperties": True},
+                        "algorithm_coverage": {"type": "object", "additionalProperties": True},
+                        "deferred_certificates": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "certificate_number": {"type": "string", "nullable": True},
+                                    "dataset": {"type": "string", "enum": ["active", "historical"]},
+                                    "reason": {"type": "string"},
+                                    "repeat": {"type": "boolean"},
+                                },
+                            },
+                        },
                         "misses": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
                         "refreshed_records": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
                         "fallback_usage": {"type": "array", "items": {"type": "object", "additionalProperties": True}},
@@ -4933,9 +5109,10 @@ def main():
 
     certificate_detail_payloads: Dict[int, Dict] = {}
     algorithms_map: Dict[int, List[str]] = {}
+    deferred_certificates: List[Dict] = []
 
     print("\nBuilding active certificate records...")
-    modules, active_payloads, active_algorithms, active_stats = asyncio.run(
+    modules, active_payloads, active_algorithms, active_stats, active_deferred = asyncio.run(
         build_certificate_artifacts(
             modules,
             "active",
@@ -4943,13 +5120,15 @@ def main():
             algorithm_source,
             previous_outputs,
             database_algorithms_map,
+            include_deferred=True,
         )
     )
     certificate_detail_payloads.update(active_payloads)
     algorithms_map.update(active_algorithms)
+    deferred_certificates.extend(active_deferred)
 
     print("\nBuilding historical certificate records...")
-    historical_modules, historical_payloads, historical_algorithms, historical_stats = asyncio.run(
+    historical_modules, historical_payloads, historical_algorithms, historical_stats, historical_deferred = asyncio.run(
         build_certificate_artifacts(
             historical_modules,
             "historical",
@@ -4957,10 +5136,12 @@ def main():
             algorithm_source,
             previous_outputs,
             database_algorithms_map,
+            include_deferred=True,
         )
     )
     certificate_detail_payloads.update(historical_payloads)
     algorithms_map.update(historical_algorithms)
+    deferred_certificates.extend(historical_deferred)
 
     extraction_metrics = build_extraction_metrics(active_stats, historical_stats)
 
@@ -5044,6 +5225,7 @@ def main():
         previous_outputs,
         active_stats,
         historical_stats,
+        deferred_certificates,
     )
     save_json(data_quality_report, f"{output_dir}/data-quality.json")
     save_json(build_examples_payload(metadata), f"{output_dir}/examples.json")
