@@ -212,20 +212,25 @@ python -m jsonschema modules.schema.json -i modules.json
 ## Local Development
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install lightweight test/lint dependencies
+python3 -m pip install -r requirements-dev.txt
+
+# Lint and run tests
+python3 -m ruff check .
+python3 -m pytest test_scraper.py -q
+python3 test_scraper.py
 
 # Run full scraper (Crawl4AI preferred, local PDF parser fallback)
-python scraper.py
+python3 scraper.py
 
 # Force the local PDF parser
-ALGORITHM_SOURCE=security_policy_pdf python scraper.py
+ALGORITHM_SOURCE=security_policy_pdf python3 scraper.py
 
 # Run quick scraper (skip algorithm extraction entirely)
-SKIP_ALGORITHMS=1 python scraper.py
+SKIP_ALGORITHMS=1 python3 scraper.py
 
 # Validate generated artifacts before publishing
-python validate_api.py --require-current-schema --require-supported-algorithm-source --require-data-quality-pass
+python3 validate_api.py --require-current-schema --require-supported-algorithm-source --require-data-quality-pass
 ```
 
 ## Modal Remote Runs

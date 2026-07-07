@@ -31,15 +31,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
 
       - name: Compile Python files
         run: |
-          python -m py_compile scraper.py test_scraper.py validate_api.py
+          python -m py_compile scraper.py test_scraper.py validate_api.py modal_scrape.py
+
+      - name: Run ruff lint
+        run: |
+          python -m ruff check .
 
       - name: Run scraper tests
         run: |
-          python test_scraper.py
+          python -m pytest test_scraper.py -q
 
       - name: Validate checked-in API artifacts
         run: |

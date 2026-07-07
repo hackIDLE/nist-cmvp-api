@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: update-nist-cmvp-data-${{ github.ref }}
@@ -87,3 +88,59 @@ jobs:
             api/
             *.log
           retention-days: 7
+
+      - name: Alert on data refresh failure
+        if: failure()
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const labelName = 'data-refresh-failure';
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const now = new Date().toISOString();
+
+            const issues = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              labels: labelName,
+              per_page: 100
+            });
+            const existingIssue = issues.data.find((issue) => !issue.pull_request);
+
+            if (existingIssue) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existingIssue.number,
+                body: `Data refresh workflow failed again on ${now}.\n\nRun: ${runUrl}`
+              });
+            } else {
+              try {
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: labelName,
+                  color: 'd73a4a',
+                  description: 'Automated alert for NIST CMVP data refresh failures'
+                });
+              } catch (error) {
+                const alreadyExists = error.status === 422 &&
+                  error.response &&
+                  error.response.data &&
+                  Array.isArray(error.response.data.errors) &&
+                  error.response.data.errors.some((item) => item.code === 'already_exists');
+                if (!alreadyExists) {
+                  throw error;
+                }
+              }
+
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title: 'Scheduled NIST CMVP data refresh is failing',
+                labels: [labelName],
+                body: `The scheduled NIST CMVP data refresh workflow failed on ${now}.\n\nRun: ${runUrl}\n\nThe published API may become stale until the workflow is fixed.`
+              });
+            }

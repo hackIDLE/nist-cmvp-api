@@ -1,0 +1,145 @@
+name: Data Freshness Check
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Check published metadata freshness
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          live_metadata="$(mktemp)"
+          echo "Fetching published metadata from GitHub Pages..."
+          for attempt in 1 2 3; do
+            if curl -fsSL "https://hackidle.github.io/nist-cmvp-api/api/metadata.json" -o "$live_metadata"; then
+              echo "Fetched published metadata successfully."
+              break
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "Failed to fetch published metadata after 3 attempts."
+              exit 1
+            fi
+
+            echo "Fetch attempt $attempt failed; retrying in 5 seconds..."
+            sleep 5
+          done
+
+          python3 - "$live_metadata" "api/metadata.json" <<'EOF'
+          import datetime as dt
+          import json
+          import sys
+
+          live_path, repo_path = sys.argv[1], sys.argv[2]
+
+          def load_generated_at(path):
+              with open(path, "r", encoding="utf-8") as file:
+                  data = json.load(file)
+              value = data.get("generated_at")
+              if not value:
+                  raise SystemExit(f"{path} is missing generated_at")
+              try:
+                  parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+              except ValueError as exc:
+                  raise SystemExit(f"{path} has invalid generated_at {value!r}: {exc}") from exc
+              if parsed.tzinfo is None:
+                  parsed = parsed.replace(tzinfo=dt.timezone.utc)
+              return value, parsed.astimezone(dt.timezone.utc)
+
+          live_value, live_time = load_generated_at(live_path)
+          repo_value, repo_time = load_generated_at(repo_path)
+          now = dt.datetime.now(dt.timezone.utc)
+          max_age = dt.timedelta(days=8)
+          failed = False
+
+          print(f"Published generated_at: {live_value}")
+          print(f"Repository generated_at: {repo_value}")
+
+          if live_value != repo_value:
+              print("ERROR: Published metadata generated_at does not match the repository metadata; GitHub Pages may be out of sync with main.")
+              failed = True
+          else:
+              print("OK: Published metadata generated_at matches the repository metadata.")
+
+          age = now - live_time
+          print(f"Published metadata age: {age}")
+          if age > max_age:
+              print("ERROR: Published metadata is older than 8 days; data refresh appears stale.")
+              failed = True
+          else:
+              print("OK: Published metadata is not older than 8 days.")
+
+          if failed:
+              raise SystemExit(1)
+          EOF
+
+      - name: Alert on stale or out-of-sync data
+        if: failure()
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const labelName = 'data-freshness';
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const now = new Date().toISOString();
+
+            const issues = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              labels: labelName,
+              per_page: 100
+            });
+            const existingIssue = issues.data.find((issue) => !issue.pull_request);
+
+            if (existingIssue) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existingIssue.number,
+                body: `Published NIST CMVP data freshness check failed again on ${now}.\n\nRun: ${runUrl}`
+              });
+            } else {
+              try {
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: labelName,
+                  color: 'fbca04',
+                  description: 'Automated alert for stale or out-of-sync published NIST CMVP data'
+                });
+              } catch (error) {
+                const alreadyExists = error.status === 422 &&
+                  error.response &&
+                  error.response.data &&
+                  Array.isArray(error.response.data.errors) &&
+                  error.response.data.errors.some((item) => item.code === 'already_exists');
+                if (!alreadyExists) {
+                  throw error;
+                }
+              }
+
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title: 'Published NIST CMVP data is stale or out of sync',
+                labels: [labelName],
+                body: `The published NIST CMVP data freshness check failed on ${now}.\n\nRun: ${runUrl}\n\nThe published API may be stale or out of sync with the repository until the data refresh and GitHub Pages publication are fixed.`
+              });
+            }

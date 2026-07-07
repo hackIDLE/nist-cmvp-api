@@ -5,6 +5,7 @@ Tests the parsing logic with sample HTML.
 """
 
 import asyncio
+import io
 import json
 import sys
 import tempfile
@@ -19,6 +20,7 @@ from scraper import (
     build_certificate_artifacts,
     build_certificate_index_payload,
     build_certificate_fingerprint,
+    build_changes_feed,
     build_data_quality_report,
     build_examples_payload,
     build_extraction_metrics,
@@ -36,6 +38,7 @@ from scraper import (
     parse_algorithms_from_policy_markdown,
     parse_algorithms_from_policy_text,
     parse_certificate_detail_page,
+    parse_legacy_algorithm_rows,
     parse_modules_table,
     prepare_reused_detail_payload,
     process_certificate_record,
@@ -48,6 +51,27 @@ from validate_api import validate_api
 
 
 FIXTURE_DIR = Path(__file__).parent / "tests" / "fixtures" / "nist_security_policies"
+FIPS_140_2_5152_EXPECTED_DETAILED = [
+    "AES Cert. #A3424",
+    "DRBG Cert. #A3424",
+    "ECDSA Cert. #A3424",
+    "HMAC Cert. #A3424",
+    "KAS Cert. #A3424",
+    "RSA Cert. #A3424",
+    "SHS Cert. #A3424",
+]
+FIPS_140_2_5152_EXPECTED_CATEGORIES = [
+    "AES",
+    "DRBG",
+    "ECDSA",
+    "HMAC",
+    "KAS",
+    "KDF",
+    "RSA",
+    "SHS",
+    "SSH",
+    "TLS",
+]
 
 
 def load_policy_fixture(name: str) -> str:
@@ -700,22 +724,52 @@ def test_parse_real_world_fips_140_2_policy_fixture():
 
     detailed, categories = parse_algorithms_from_policy_text(policy_text)
 
-    assert detailed == [], "Legacy FIPS 140-2 fixture should use coarse categories"
-    assert categories == [
-        "AES",
-        "DRBG",
-        "ECDSA",
-        "HMAC",
-        "KAS",
-        "KDF",
-        "RSA",
-        "SHS",
-        "SSH",
-        "TLS",
-    ], "Expected normalized FIPS 140-2 categories"
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected legacy certificate-backed detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected normalized FIPS 140-2 categories"
     assert "DES" not in categories, "Allowed/non-approved section must not leak into approved categories"
 
     print("✓ Real-world FIPS 140-2 fixture parsing test passed")
+
+
+def test_parse_real_world_fips_140_2_policy_fixture_without_algorithm_heading():
+    """Legacy parser should start from the approved table intro if the heading is missing."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms_no_heading.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected intro-start fixture detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected intro-start fixture categories"
+    assert "DES" not in categories, "Allowed/non-approved section must not leak into approved categories"
+
+    print("✓ FIPS 140-2 intro-sentence legacy parsing test passed")
+
+
+def test_parse_real_world_fips_140_2_policy_fixture_unnumbered_allowed_stop():
+    """Legacy parser should stop at unnumbered allowed-algorithm headings."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms_unnumbered_allowed.txt")
+
+    detailed, categories = parse_algorithms_from_policy_text(policy_text)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected unnumbered-stop fixture detail rows"
+    assert categories == FIPS_140_2_5152_EXPECTED_CATEGORIES, "Expected unnumbered-stop fixture categories"
+    assert "DES" not in categories, "Unnumbered Allowed Algorithms section must not leak DES"
+
+    print("✓ FIPS 140-2 unnumbered allowed-section stop test passed")
+
+
+def test_parse_legacy_algorithm_rows_extracts_certificate_rows():
+    """Legacy row extraction should keep approved algorithm rows with certificate references."""
+    policy_text = load_policy_fixture("5152_fips_140_2_algorithms.txt")
+    section = extract_legacy_algorithm_section(policy_text)
+
+    detailed = parse_legacy_algorithm_rows(section)
+
+    assert detailed == FIPS_140_2_5152_EXPECTED_DETAILED, "Expected certificate-backed legacy detail rows"
+    assert "AES Cert. #A3424" in detailed, "Expected AES certificate row"
+    assert "SHS Cert. #A3424" in detailed, "Expected SHS certificate row"
+    assert all("Triple-DES" not in entry for entry in detailed), "Allowed Triple-DES row must not leak into details"
+
+    print("✓ Legacy certificate-row extraction test passed")
 
 
 def test_parse_algorithms_from_policy_markdown():
@@ -1072,6 +1126,51 @@ def test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation():
     print("✓ Policy PDF cache cancellation shielding test passed")
 
 
+def test_fetch_with_retry_uses_jitter_and_four_attempts():
+    """Async fetch retries should use four attempts and bounded jittered backoff."""
+    url = "https://csrc.nist.gov/reset"
+    request = scraper_module.httpx.Request("GET", url)
+    sleeps = []
+    jitter_calls = []
+
+    class FakeClient:
+        def __init__(self):
+            self.calls = 0
+
+        async def get(self, requested_url):
+            assert requested_url == url, "fetch_with_retry should request the target URL"
+            self.calls += 1
+            raise scraper_module.httpx.RequestError("connection reset", request=request)
+
+    async def fake_sleep(wait):
+        sleeps.append(wait)
+
+    def fake_uniform(start, end):
+        jitter_calls.append((start, end))
+        return 1.25
+
+    original_sleep = scraper_module.asyncio.sleep
+    original_uniform = scraper_module.random.uniform
+    scraper_module.asyncio.sleep = fake_sleep
+    scraper_module.random.uniform = fake_uniform
+    try:
+        client = FakeClient()
+        result = asyncio.run(scraper_module.fetch_with_retry(client, url))
+    finally:
+        scraper_module.asyncio.sleep = original_sleep
+        scraper_module.random.uniform = original_uniform
+
+    assert result is None, "Exhausted retries should return None"
+    assert client.calls == 4, "fetch_with_retry should default to four attempts"
+    assert jitter_calls == [(0, 1.5), (0, 1.5), (0, 1.5)], "Each retry sleep should request jitter bounds"
+    assert sleeps == [3.25, 5.25, 9.25], "Retry sleeps should include exponential backoff plus jitter"
+    for attempt, wait in enumerate(sleeps):
+        base = 2 ** (attempt + 1)
+        assert 0 <= wait - base <= 1.5, "Retry jitter should stay within configured bounds"
+
+    print("✓ Async retry jitter/backoff test passed")
+
+
 def test_process_certificate_record_applies_cached_algorithm_provenance():
     """Cached algorithm reuse should still attach explicit provenance to outputs."""
     module = {
@@ -1379,13 +1478,14 @@ def test_build_certificate_artifacts_defers_uncached_failures():
     original_process = scraper_module.process_certificate_record_with_timeout
     scraper_module.process_certificate_record_with_timeout = fake_process
     try:
-        enriched, payloads, algorithms_map, stats = asyncio.run(
+        enriched, payloads, algorithms_map, stats, deferred = asyncio.run(
             build_certificate_artifacts(
                 modules,
                 "active",
                 "2026-06-01T00:00:00.000000Z",
                 "crawl4ai",
                 {"metadata": {}, "modules": {"active": {}}, "details": {}},
+                include_deferred=True,
             )
         )
     finally:
@@ -1396,6 +1496,13 @@ def test_build_certificate_artifacts_defers_uncached_failures():
     assert set(algorithms_map) == {6001}, "Deferred certificates should not get algorithm index entries"
     assert stats["certificates_deferred"] == 1, "Deferred certificates should be counted in metrics"
     assert stats["html_failed"] == 0, "Deferred records should not produce broken published artifacts"
+    assert deferred == [
+        {
+            "certificate_number": "6000",
+            "dataset": "active",
+            "reason": "certificate_detail_unavailable",
+        }
+    ], "Deferred certificate metadata should be returned to callers"
 
     print("✓ Deferred certificate filtering test passed")
 
@@ -1511,13 +1618,14 @@ def test_build_certificate_artifacts_bounds_active_tasks():
     scraper_module.CERT_FETCH_CONCURRENCY = 2
     scraper_module.PDF_FETCH_CONCURRENCY = 3
     try:
-        enriched, payloads, algorithms_map, stats = asyncio.run(
+        enriched, payloads, algorithms_map, stats, deferred = asyncio.run(
             build_certificate_artifacts(
                 modules,
                 "active",
                 "2026-04-12T03:10:00.961597Z",
                 "crawl4ai",
                 {"metadata": {}, "modules": {"active": {}}, "details": {}},
+                include_deferred=True,
             )
         )
     finally:
@@ -1531,8 +1639,161 @@ def test_build_certificate_artifacts_bounds_active_tasks():
     assert len(payloads) == len(modules), "Each fake detail payload should be retained"
     assert len(algorithms_map) == len(modules), "Each fake algorithm payload should be indexed"
     assert stats["html_refreshed"] == len(modules), "Stats should accumulate from bounded tasks"
+    assert deferred == [], "Successful bounded tasks should not report deferrals"
 
     print("✓ Bounded certificate scheduling test passed")
+
+
+def test_build_data_quality_report_marks_repeat_deferrals():
+    """Deferred certificates should be marked when also deferred in the previous run."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "algorithm_source": "crawl4ai",
+        "extraction_metrics": build_extraction_metrics({}, {}),
+    }
+    previous_outputs = {
+        "metadata": {},
+        "modules": {"active": {}, "historical": {}},
+        "details": {},
+        "deferred_certificates": [
+            {
+                "certificate_number": "6000",
+                "dataset": "active",
+                "reason": "certificate_detail_unavailable",
+                "repeat": False,
+            }
+        ],
+    }
+    deferred = [
+        {
+            "certificate_number": "6000",
+            "dataset": "active",
+            "reason": "certificate_detail_unavailable",
+        },
+        {
+            "certificate_number": "7000",
+            "dataset": "historical",
+            "reason": "algorithm_unavailable",
+        },
+    ]
+
+    stderr = io.StringIO()
+    original_stderr = sys.stderr
+    sys.stderr = stderr
+    try:
+        report = build_data_quality_report(
+            metadata,
+            [],
+            [],
+            {},
+            previous_outputs,
+            {},
+            {},
+            deferred,
+        )
+    finally:
+        sys.stderr = original_stderr
+
+    assert report["summary"]["deferred"] == 2, "Deferred summary count should match deferred list"
+    assert report["deferred_certificates"][0]["repeat"] is True, "Consecutive deferral should be marked repeat"
+    assert report["deferred_certificates"][1]["repeat"] is False, "New deferral should not be marked repeat"
+    assert (
+        "Warning: certificate 6000 deferred in consecutive runs" in stderr.getvalue()
+    ), "Repeat deferrals should emit a warning"
+
+    print("✓ Repeat deferral marking test passed")
+
+
+def test_build_data_quality_report_algorithm_coverage_buckets():
+    """Algorithm coverage should classify every zero-algorithm certificate bucket."""
+    metadata = {
+        "generated_at": "2026-04-12T03:10:00.961597Z",
+        "algorithm_source": "crawl4ai",
+        "extraction_metrics": build_extraction_metrics({}, {}),
+    }
+    modules = [
+        {
+            "Certificate Number": "6100",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Covered Module",
+            "algorithms": ["AES"],
+            "detail_available": True,
+        },
+        {
+            "Certificate Number": "6101",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Cached Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "cached",
+                "source": "crawl4ai",
+                "cached": True,
+            },
+        },
+        {
+            "Certificate Number": "6102",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Explicit Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "miss",
+                "source": "security_policy_pdf",
+                "cached": False,
+                "attempts": [{"source": "security_policy_pdf", "status": "no_algorithms"}],
+            },
+        },
+        {
+            "Certificate Number": "6103",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Skipped Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "skipped",
+                "source": "none",
+                "cached": False,
+            },
+        },
+        {
+            "Certificate Number": "6104",
+            "Vendor Name": "Example Vendor",
+            "Module Name": "Other Empty Module",
+            "algorithms": [],
+            "detail_available": True,
+            "algorithm_extraction": {
+                "status": "miss",
+                "source": "crawl4ai",
+                "cached": False,
+                "attempts": [{"source": "crawl4ai", "status": "no_text"}],
+            },
+        },
+    ]
+
+    report = build_data_quality_report(
+        metadata,
+        modules,
+        [],
+        {},
+        {"metadata": {}, "modules": {"active": {}}, "details": {}},
+        {},
+        {},
+        [],
+    )
+
+    coverage = report["algorithm_coverage"]
+    assert coverage["total_certificates"] == 5, "Coverage should count all active and historical certs"
+    assert coverage["certificates_with_algorithms"] == 1, "Coverage should count certs with extracted algorithms"
+    assert coverage["coverage_rate"] == 0.2, "Coverage rate should be rounded to four decimals"
+    assert coverage["zero_algorithm_certificates"] == {
+        "cached_no_attempts": 1,
+        "explicit_no_algorithms": 1,
+        "source_none": 1,
+        "other": 1,
+    }, "Zero-algorithm buckets should classify all empty algorithm records"
+
+    print("✓ Algorithm coverage classification test passed")
 
 
 def test_prune_orphan_certificate_details():
@@ -1553,6 +1814,160 @@ def test_prune_orphan_certificate_details():
     print("✓ Orphan certificate cleanup test passed")
 
 
+def change_feed_module(cert_number, dataset="active", validation_date="04/10/2026"):
+    """Build a minimal module row with stable fingerprint fields for change-feed tests."""
+    status = "Active" if dataset == "active" else "Historical"
+    return {
+        "Certificate Number": str(cert_number),
+        "Vendor Name": f"Vendor {cert_number}",
+        "Module Name": f"Module {cert_number}",
+        "Module Type": "Software",
+        "Validation Date": validation_date,
+        "standard": "FIPS 140-3",
+        "status": status,
+        "security_policy_url": (
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/"
+            f"documents/security-policies/140sp{cert_number}.pdf"
+        ),
+        "certificate_detail_url": (
+            "https://csrc.nist.gov/projects/cryptographic-module-validation-program/"
+            f"certificate/{cert_number}"
+        ),
+        "detail_available": True,
+    }
+
+
+def test_build_changes_feed_first_run_empty_diffs():
+    """First runs should not classify every existing certificate as newly added."""
+    metadata = {"generated_at": "2026-04-12T03:10:00.961597Z", "version": "3.0"}
+    feed = build_changes_feed(
+        metadata,
+        [change_feed_module(100)],
+        [change_feed_module(200, "historical")],
+        {"modules": {"active": {}, "historical": {}}},
+        None,
+    )
+
+    assert feed["metadata"] == metadata, "Changes feed should embed shared metadata"
+    assert feed["max_runs"] == 26, "Changes feed should retain 26 runs"
+    assert feed["total_runs"] == 1, "First changes feed should report one run"
+    assert len(feed["runs"]) == 1, "First changes feed should include the current run"
+    entry = feed["runs"][0]
+    assert entry["added_active"] == [], "First run should not mark active certificates as added"
+    assert entry["added_historical"] == [], "First run should not mark historical certificates as added"
+    assert entry["removed"] == [], "First run should not mark removals"
+    assert entry["changed"] == [], "First run should not mark summary changes"
+    assert entry["counts"] == {
+        "added_active": 0,
+        "added_historical": 0,
+        "removed": 0,
+        "changed": 0,
+    }, "First run counts should be zeroed"
+
+    print("✓ Changes feed first-run behavior test passed")
+
+
+def test_build_changes_feed_appends_current_diff():
+    """Changes feed should prepend the current diff and preserve prior entries."""
+    metadata = {"generated_at": "2026-04-19T03:10:00.961597Z", "version": "3.0"}
+    previous_active = change_feed_module(100, validation_date="04/09/2026")
+    previous_historical = {
+        200: change_feed_module(200, "historical"),
+        300: change_feed_module(300, "historical"),
+    }
+    previous_changes = {
+        "metadata": {"generated_at": "2026-04-12T03:10:00.961597Z"},
+        "max_runs": 26,
+        "total_runs": 1,
+        "runs": [
+            {
+                "generated_at": "2026-04-12T03:10:00.961597Z",
+                "added_active": [],
+                "added_historical": [],
+                "removed": [],
+                "changed": [],
+                "counts": {
+                    "added_active": 0,
+                    "added_historical": 0,
+                    "removed": 0,
+                    "changed": 0,
+                },
+            }
+        ],
+    }
+
+    feed = build_changes_feed(
+        metadata,
+        [change_feed_module(100), change_feed_module(400)],
+        [change_feed_module(300, "historical")],
+        {
+            "modules": {
+                "active": {100: previous_active},
+                "historical": previous_historical,
+            }
+        },
+        previous_changes,
+    )
+
+    assert feed["total_runs"] == 2, "Appended feed should increment total run count"
+    assert [entry["generated_at"] for entry in feed["runs"]] == [
+        "2026-04-19T03:10:00.961597Z",
+        "2026-04-12T03:10:00.961597Z",
+    ], "Changes feed should be newest-first"
+    entry = feed["runs"][0]
+    assert entry["added_active"] == ["400"], "New active certificate should be listed"
+    assert entry["added_historical"] == [], "No historical certificate was added"
+    assert entry["removed"] == ["200"], "Removed historical certificate should be listed"
+    assert entry["changed"] == ["100"], "Summary-changed active certificate should be listed"
+    assert entry["counts"] == {
+        "added_active": 1,
+        "added_historical": 0,
+        "removed": 1,
+        "changed": 1,
+    }, "Current run counts should match list lengths"
+
+    print("✓ Changes feed append behavior test passed")
+
+
+def test_build_changes_feed_caps_runs():
+    """Changes feed should retain only the newest configured number of runs."""
+    metadata = {"generated_at": "2026-07-01T00:00:00.000000Z", "version": "3.0"}
+    previous_runs = [
+        {
+            "generated_at": f"2026-06-{day:02d}T00:00:00.000000Z",
+            "added_active": [],
+            "added_historical": [],
+            "removed": [],
+            "changed": [],
+            "counts": {
+                "added_active": 0,
+                "added_historical": 0,
+                "removed": 0,
+                "changed": 0,
+            },
+        }
+        for day in range(26, 0, -1)
+    ]
+    feed = build_changes_feed(
+        metadata,
+        [],
+        [],
+        {"modules": {"active": {}, "historical": {}}},
+        {"max_runs": 26, "total_runs": 26, "runs": previous_runs},
+    )
+
+    assert feed["total_runs"] == 27, "Capped feed should preserve cumulative total runs"
+    assert len(feed["runs"]) == 26, "Capped feed should keep only 26 entries"
+    assert feed["runs"][0]["generated_at"] == metadata["generated_at"], "Current run should be newest"
+    assert feed["runs"][-1]["generated_at"] == "2026-06-02T00:00:00.000000Z", "Oldest retained run mismatch"
+    assert all(
+        entry["generated_at"] != "2026-06-01T00:00:00.000000Z"
+        for entry in feed["runs"]
+    ), "Oldest previous run should be dropped"
+
+    print("✓ Changes feed cap behavior test passed")
+
+
 def test_validate_generated_api_artifacts():
     """Current checked-in generated API artifacts should be internally consistent."""
     errors = validate_api(
@@ -1563,6 +1978,61 @@ def test_validate_generated_api_artifacts():
     )
 
     assert errors == [], "Generated API artifact validation failed:\n" + "\n".join(errors[:20])
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        temp_root = Path(temp_dir)
+        temp_api = temp_root / "api"
+        temp_api.mkdir()
+        for relative_path in ("README.md", "openapi.json", "llms.txt", "llms-full.txt", "index.html"):
+            (temp_root / relative_path).symlink_to((Path(".") / relative_path).resolve())
+        for relative_path in (
+            "modules.json",
+            "historical-modules.json",
+            "modules-in-process.json",
+            "metadata.json",
+            "index.json",
+            "data-quality.json",
+            "examples.json",
+            "docs.md",
+        ):
+            (temp_api / relative_path).symlink_to((Path("api") / relative_path).resolve())
+        if (Path("api") / "algorithms.json").exists():
+            (temp_api / "algorithms.json").symlink_to((Path("api") / "algorithms.json").resolve())
+        for relative_path in ("certificates", "indexes", "schemas"):
+            (temp_api / relative_path).symlink_to((Path("api") / relative_path).resolve(), target_is_directory=True)
+
+        metadata = json.loads((Path("api") / "metadata.json").read_text(encoding="utf-8"))
+        changes_fixture = {
+            "metadata": metadata,
+            "max_runs": 26,
+            "total_runs": 1,
+            "runs": [
+                {
+                    "generated_at": metadata["generated_at"],
+                    "added_active": [],
+                    "added_historical": [],
+                    "removed": [],
+                    "changed": [],
+                    "counts": {
+                        "added_active": 0,
+                        "added_historical": 0,
+                        "removed": 0,
+                        "changed": 0,
+                    },
+                }
+            ],
+        }
+        (temp_api / "changes.json").write_text(
+            json.dumps(changes_fixture, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        errors = validate_api(
+            temp_root,
+            require_current_schema=True,
+            require_supported_algorithm_source=True,
+            require_data_quality_pass=True,
+        )
+        assert errors == [], "Generated API artifact validation with changes fixture failed:\n" + "\n".join(errors[:20])
 
     print("✓ Generated API artifact validation test passed")
 
@@ -1777,6 +2247,19 @@ def test_data_quality_search_indexes_and_examples():
     assert report["summary"]["changed_certificates"] == 1, "Summary change should be listed as changed certificate"
     assert report["summary"]["fallback_usage"] == 1, "Fallback extraction should be listed"
     assert report["summary"]["misses"] == 1, "Historical algorithm miss should be listed"
+    assert report["summary"]["deferred"] == 0, "No deferred certificates should be reported for this fixture"
+    assert report["deferred_certificates"] == [], "Deferred certificate list should be present and empty"
+    assert report["algorithm_coverage"] == {
+        "total_certificates": 2,
+        "certificates_with_algorithms": 1,
+        "coverage_rate": 0.5,
+        "zero_algorithm_certificates": {
+            "cached_no_attempts": 0,
+            "explicit_no_algorithms": 0,
+            "source_none": 0,
+            "other": 1,
+        },
+    }, "Algorithm coverage should summarize zero-algorithm certificates"
     assert report["update_monitor"]["next_scheduled_run"] == "2026-04-19T02:00:00Z", "Next weekly run should be Sunday 02:00 UTC"
     checks = {
         check["name"]: check
@@ -1915,6 +2398,7 @@ def test_generate_agent_docs():
     assert "api/algorithms.json" in artifacts["llms.txt"], "llms.txt should reference algorithms endpoint when available"
     assert "api/certificates/index.json" in artifacts["llms.txt"], "llms.txt should reference certificate index endpoint"
     assert "api/data-quality.json" in artifacts["llms.txt"], "llms.txt should reference data quality endpoint"
+    assert "api/changes.json" in artifacts["llms.txt"], "llms.txt should reference changes endpoint"
     assert "api/examples.json" in artifacts["llms.txt"], "llms.txt should reference examples endpoint"
     assert "api/indexes/vendors.json" in artifacts["llms.txt"], "llms.txt should reference split search indexes"
     assert 'href="api/docs.md"' in artifacts["index.html"], "Homepage should link to api/docs.md"
@@ -1926,6 +2410,7 @@ def test_generate_agent_docs():
     assert "GET api/certificates/{certificate}.json" in artifacts["api/docs.md"], "API docs should include certificate detail endpoint"
     assert "GET api/schemas/index.schema.json" in artifacts["api/docs.md"], "API docs should include JSON schema endpoint"
     assert "GET api/data-quality.json" in artifacts["api/docs.md"], "API docs should include data quality endpoint"
+    assert "GET api/changes.json" in artifacts["api/docs.md"], "API docs should include changes endpoint"
     assert "GET api/examples.json" in artifacts["api/docs.md"], "API docs should include examples endpoint"
     assert "GET api/indexes/vendors.json" in artifacts["api/docs.md"], "API docs should include split search indexes"
     assert "algorithm_extraction" in artifacts["api/docs.md"], "API docs should describe extraction provenance"
@@ -1937,9 +2422,11 @@ def test_generate_agent_docs():
     assert index_payload["schemas"]["certificate_index"] == "/api/schemas/certificate-index.schema.json", "Index payload should advertise certificate index schema"
     assert index_payload["schemas"]["certificate_detail"] == "/api/schemas/certificate-detail.schema.json", "Index payload should advertise certificate detail schema"
     assert index_payload["schemas"]["data_quality"] == "/api/schemas/data-quality.schema.json", "Index payload should advertise data quality schema"
+    assert index_payload["schemas"]["changes"] == "/api/schemas/changes.schema.json", "Index payload should advertise changes schema"
     assert index_payload["schemas"]["examples"] == "/api/schemas/examples.schema.json", "Index payload should advertise examples schema"
     assert index_payload["schemas"]["search_index"] == "/api/schemas/search-index.schema.json", "Index payload should advertise search index schema"
     assert index_payload["endpoints"]["data_quality"] == "/api/data-quality.json", "Index payload should advertise data quality endpoint"
+    assert index_payload["endpoints"]["changes"] == "/api/changes.json", "Index payload should advertise changes endpoint"
     assert index_payload["endpoints"]["examples"] == "/api/examples.json", "Index payload should advertise examples endpoint"
     assert index_payload["endpoints"]["vendor_index"] == "/api/indexes/vendors.json", "Index payload should advertise vendor index"
     assert index_payload["features"]["markdown_api_docs"] is True, "Index payload should advertise Markdown docs support"
@@ -1947,6 +2434,7 @@ def test_generate_agent_docs():
     assert index_payload["features"]["extraction_metrics"] is True, "Index payload should advertise extraction metrics"
     assert index_payload["features"]["certificate_index"] is True, "Index payload should advertise certificate index support"
     assert index_payload["features"]["data_quality_report"] is True, "Index payload should advertise data quality support"
+    assert index_payload["features"]["changes_feed"] is True, "Index payload should advertise changes feed support"
     assert index_payload["features"]["consumer_examples"] is True, "Index payload should advertise examples support"
     assert index_payload["features"]["search_indexes"] is True, "Index payload should advertise search index support"
     assert index_payload["features"]["json_schemas"] is True, "Index payload should advertise JSON schema support"
@@ -1957,12 +2445,20 @@ def test_generate_agent_docs():
     assert "api/schemas/certificate-index.schema.json" in schema_artifacts, "Missing certificate index JSON schema"
     assert "api/schemas/certificate-detail.schema.json" in schema_artifacts, "Missing certificate detail JSON schema"
     assert "api/schemas/data-quality.schema.json" in schema_artifacts, "Missing data quality JSON schema"
+    assert "api/schemas/changes.schema.json" in schema_artifacts, "Missing changes JSON schema"
     assert "api/schemas/examples.schema.json" in schema_artifacts, "Missing examples JSON schema"
     assert "api/schemas/search-index.schema.json" in schema_artifacts, "Missing search index JSON schema"
     assert "api/schemas/algorithms.schema.json" in schema_artifacts, "Missing algorithms JSON schema"
     assert schema_artifacts["api/schemas/modules-in-process.schema.json"]["properties"]["modules_in_process"]["items"]["$ref"] == "/api/schemas/module-in-process.schema.json", "Modules-in-process response should use its own row schema"
     assert schema_artifacts["api/schemas/module.schema.json"]["properties"]["algorithm_extraction"]["type"] == "object", "Module schema should include extraction provenance"
     assert schema_artifacts["api/schemas/certificate-detail.schema.json"]["properties"]["certificate"]["properties"]["algorithm_extraction"]["type"] == "object", "Certificate detail schema should include extraction provenance"
+    data_quality_schema = schema_artifacts["api/schemas/data-quality.schema.json"]
+    assert "deferred_certificates" in data_quality_schema["properties"], "Data quality schema should document deferred certificates"
+    assert "algorithm_coverage" in data_quality_schema["properties"], "Data quality schema should document algorithm coverage"
+    assert "deferred_certificates" not in data_quality_schema["required"], "Deferred certificates should remain optional for old artifacts"
+    assert "algorithm_coverage" not in data_quality_schema["required"], "Algorithm coverage should remain optional for old artifacts"
+    changes_schema = schema_artifacts["api/schemas/changes.schema.json"]
+    assert changes_schema["properties"]["max_runs"]["minimum"] == 1, "Changes schema should document max_runs"
 
     openapi = generate_openapi_spec(
         [sample_module],
@@ -1973,6 +2469,7 @@ def test_generate_agent_docs():
     assert "/api/algorithms.json" in openapi["paths"], "OpenAPI spec should include algorithms endpoint when available"
     assert "/api/certificates/index.json" in openapi["paths"], "OpenAPI spec should include certificate index endpoint"
     assert "/api/data-quality.json" in openapi["paths"], "OpenAPI spec should include data quality endpoint"
+    assert "/api/changes.json" in openapi["paths"], "OpenAPI spec should include changes endpoint"
     assert "/api/examples.json" in openapi["paths"], "OpenAPI spec should include examples endpoint"
     assert "/api/indexes/vendors.json" in openapi["paths"], "OpenAPI spec should include vendor index endpoint"
     assert openapi["components"]["schemas"]["Module"]["properties"]["detail_available"]["type"] == "boolean", "detail_available should be typed as boolean"
@@ -2013,6 +2510,9 @@ def main():
         test_extract_legacy_algorithm_section_prefers_body_over_toc()
         test_parse_real_world_fips_140_3_policy_fixture()
         test_parse_real_world_fips_140_2_policy_fixture()
+        test_parse_real_world_fips_140_2_policy_fixture_without_algorithm_heading()
+        test_parse_real_world_fips_140_2_policy_fixture_unnumbered_allowed_stop()
+        test_parse_legacy_algorithm_rows_extracts_certificate_rows()
         test_parse_algorithms_from_policy_markdown()
         test_extract_text_from_crawl4ai_html()
         test_extract_text_from_crawl4ai_process_result()
@@ -2022,13 +2522,19 @@ def main():
         test_algorithm_extraction_provenance_and_metrics()
         test_fetch_policy_pdf_bytes_reuses_in_run_cache()
         test_fetch_policy_pdf_bytes_shields_shared_cache_task_from_cancellation()
+        test_fetch_with_retry_uses_jitter_and_four_attempts()
         test_process_certificate_record_applies_cached_algorithm_provenance()
         test_process_certificate_record_timeout_preserves_cached_data()
         test_process_certificate_record_preserves_cache_after_refresh_failure()
         test_build_certificate_artifacts_defers_uncached_failures()
         test_module_rows_with_cache_fallback_preserves_previous_top_level_list()
         test_build_certificate_artifacts_bounds_active_tasks()
+        test_build_data_quality_report_marks_repeat_deferrals()
+        test_build_data_quality_report_algorithm_coverage_buckets()
         test_prune_orphan_certificate_details()
+        test_build_changes_feed_first_run_empty_diffs()
+        test_build_changes_feed_appends_current_diff()
+        test_build_changes_feed_caps_runs()
         test_validate_generated_api_artifacts()
         test_build_certificate_index_payload()
         test_data_quality_search_indexes_and_examples()

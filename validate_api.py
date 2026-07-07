@@ -26,6 +26,8 @@ REQUIRED_TOP_LEVEL_FILES = (
     "api/docs.md",
     "index.html",
 )
+# api/changes.json is validated when present, but stays optional until after
+# the first scheduled workflow publishes it into the generated artifacts.
 
 DETAIL_REQUIRED_FIELDS = (
     "certificate_number",
@@ -79,6 +81,8 @@ JSON_SCHEMA_FILES = (
     "api/schemas/examples.schema.json",
     "api/schemas/search-index.schema.json",
 )
+# api/schemas/changes.schema.json follows the optional changes feed and becomes
+# required-eligible after the first published artifact set includes it.
 
 SEARCH_INDEX_FILES = (
     ("vendors", "vendor_name", "api/indexes/vendors.json"),
@@ -385,6 +389,7 @@ def validate_data_quality_report(
     root: Path,
     metadata: Dict,
     expected_datasets: Dict[int, str],
+    expected_algorithms: Dict[int, List[str]],
     errors: List[str],
     require_data_quality_pass: bool = False,
 ) -> None:
@@ -419,6 +424,76 @@ def validate_data_quality_report(
             add_error(errors, record.get("path") == f"/api/certificates/{cert_number}.json", f"{label}: path mismatch")
             add_error(errors, bool(record.get("reason")), f"{label}: missing reason")
 
+    deferred_records = payload.get("deferred_certificates")
+    if "deferred_certificates" in payload:
+        add_error(errors, isinstance(deferred_records, list), "api/data-quality.json: deferred_certificates must be a list")
+        if isinstance(deferred_records, list):
+            if "deferred" in summary:
+                add_error(
+                    errors,
+                    summary.get("deferred") == len(deferred_records),
+                    "api/data-quality.json: summary.deferred count mismatch",
+                )
+            for index, record in enumerate(deferred_records):
+                label = f"api/data-quality.json: deferred_certificates[{index}]"
+                add_error(errors, isinstance(record, dict), f"{label}: record must be an object")
+                if not isinstance(record, dict):
+                    continue
+                for field in ("certificate_number", "dataset", "reason", "repeat"):
+                    add_error(errors, field in record, f"{label}: missing {field}")
+                cert_number = record.get("certificate_number")
+                add_error(
+                    errors,
+                    cert_number is None or isinstance(cert_number, str),
+                    f"{label}: certificate_number must be a string or null",
+                )
+                add_error(errors, record.get("dataset") in {"active", "historical"}, f"{label}: invalid dataset")
+                add_error(errors, isinstance(record.get("reason"), str) and bool(record.get("reason")), f"{label}: missing reason")
+                add_error(errors, isinstance(record.get("repeat"), bool), f"{label}: repeat must be a boolean")
+
+    algorithm_coverage = payload.get("algorithm_coverage")
+    if "algorithm_coverage" in payload:
+        label = "api/data-quality.json: algorithm_coverage"
+        add_error(errors, isinstance(algorithm_coverage, dict), f"{label} must be an object")
+        if isinstance(algorithm_coverage, dict):
+            total = algorithm_coverage.get("total_certificates")
+            with_algorithms = algorithm_coverage.get("certificates_with_algorithms")
+            coverage_rate = algorithm_coverage.get("coverage_rate")
+            zero_buckets = algorithm_coverage.get("zero_algorithm_certificates")
+            add_error(errors, isinstance(total, int) and total >= 0, f"{label}.total_certificates must be a non-negative integer")
+            add_error(
+                errors,
+                isinstance(with_algorithms, int) and with_algorithms >= 0,
+                f"{label}.certificates_with_algorithms must be a non-negative integer",
+            )
+            add_error(
+                errors,
+                isinstance(coverage_rate, (int, float)) and 0 <= coverage_rate <= 1,
+                f"{label}.coverage_rate must be between 0 and 1",
+            )
+            add_error(errors, isinstance(zero_buckets, dict), f"{label}.zero_algorithm_certificates must be an object")
+            if isinstance(total, int):
+                add_error(errors, total == len(expected_datasets), f"{label}.total_certificates mismatch")
+            if isinstance(with_algorithms, int):
+                add_error(
+                    errors,
+                    with_algorithms == len(expected_algorithms),
+                    f"{label}.certificates_with_algorithms mismatch",
+                )
+            if isinstance(zero_buckets, dict):
+                bucket_total = 0
+                for bucket in ("cached_no_attempts", "explicit_no_algorithms", "source_none", "other"):
+                    value = zero_buckets.get(bucket)
+                    add_error(errors, isinstance(value, int) and value >= 0, f"{label}.{bucket} must be a non-negative integer")
+                    if isinstance(value, int):
+                        bucket_total += value
+                if isinstance(total, int) and isinstance(with_algorithms, int):
+                    add_error(
+                        errors,
+                        bucket_total == total - with_algorithms,
+                        f"{label}.zero_algorithm_certificates bucket total mismatch",
+                    )
+
     update_monitor = payload.get("update_monitor")
     add_error(errors, isinstance(update_monitor, dict), "api/data-quality.json: update_monitor must be an object")
     if isinstance(update_monitor, dict):
@@ -444,6 +519,77 @@ def validate_data_quality_report(
                         errors.append(f"{label}: check must be an object")
                         continue
                     add_error(errors, check.get("status") == "pass", f"{label}: status must be pass")
+
+
+def validate_changes_feed(root: Path, metadata: Dict, errors: List[str]) -> None:
+    """Validate api/changes.json when the optional feed has been published."""
+    changes_path = root / "api" / "changes.json"
+    if not changes_path.exists():
+        return
+
+    payload = load_json(changes_path, errors)
+    if payload is None:
+        return
+
+    add_error(errors, isinstance(payload.get("metadata"), dict), "api/changes.json: metadata must be an object")
+    if isinstance(payload.get("metadata"), dict):
+        add_error(errors, payload.get("metadata") == metadata, "api/changes.json: embedded metadata does not match api/metadata.json")
+
+    max_runs = payload.get("max_runs")
+    total_runs = payload.get("total_runs")
+    runs = payload.get("runs")
+    add_error(errors, isinstance(max_runs, int) and max_runs > 0, "api/changes.json: max_runs must be a positive integer")
+    add_error(errors, isinstance(total_runs, int) and total_runs >= 0, "api/changes.json: total_runs must be a non-negative integer")
+    add_error(errors, isinstance(runs, list), "api/changes.json: runs must be a list")
+    if not isinstance(runs, list):
+        return
+
+    if isinstance(max_runs, int) and max_runs > 0:
+        add_error(errors, len(runs) <= max_runs, "api/changes.json: runs exceeds max_runs")
+    if isinstance(total_runs, int):
+        add_error(errors, total_runs >= len(runs), "api/changes.json: total_runs must be at least len(runs)")
+
+    previous_generated_at: Optional[str] = None
+    list_fields = ("added_active", "added_historical", "removed", "changed")
+    for index, entry in enumerate(runs):
+        label = f"api/changes.json: runs[{index}]"
+        add_error(errors, isinstance(entry, dict), f"{label}: entry must be an object")
+        if not isinstance(entry, dict):
+            continue
+
+        for field in ("generated_at", *list_fields, "counts"):
+            add_error(errors, field in entry, f"{label}: missing {field}")
+
+        generated_at = entry.get("generated_at")
+        add_error(errors, isinstance(generated_at, str) and bool(generated_at), f"{label}: generated_at must be a non-empty string")
+        if isinstance(generated_at, str) and previous_generated_at is not None:
+            add_error(errors, generated_at <= previous_generated_at, f"{label}: runs must be newest-first by generated_at")
+        if isinstance(generated_at, str):
+            previous_generated_at = generated_at
+
+        field_lengths: Dict[str, int] = {}
+        for field in list_fields:
+            value = entry.get(field)
+            add_error(errors, isinstance(value, list), f"{label}: {field} must be a list")
+            if not isinstance(value, list):
+                continue
+            field_lengths[field] = len(value)
+            for value_index, cert_number in enumerate(value):
+                add_error(
+                    errors,
+                    isinstance(cert_number, str) and cert_number.isdigit(),
+                    f"{label}: {field}[{value_index}] must be a numeric string",
+                )
+
+        counts = entry.get("counts")
+        add_error(errors, isinstance(counts, dict), f"{label}: counts must be an object")
+        if not isinstance(counts, dict):
+            continue
+        for field in list_fields:
+            count = counts.get(field)
+            add_error(errors, isinstance(count, int) and count >= 0, f"{label}: counts.{field} must be a non-negative integer")
+            if field in field_lengths and isinstance(count, int):
+                add_error(errors, count == field_lengths[field], f"{label}: counts.{field} does not match {field} length")
 
 
 def validate_examples_payload(root: Path, metadata: Dict, errors: List[str]) -> None:
@@ -728,7 +874,8 @@ def validate_api(
     )
     validate_certificate_index(root, metadata, expected_datasets, expected_algorithms, errors)
     validate_algorithms_summary(root, metadata, expected_algorithms, errors)
-    validate_data_quality_report(root, metadata, expected_datasets, errors, require_data_quality_pass)
+    validate_data_quality_report(root, metadata, expected_datasets, expected_algorithms, errors, require_data_quality_pass)
+    validate_changes_feed(root, metadata, errors)
     validate_examples_payload(root, metadata, errors)
     validate_search_indexes(root, metadata, expected_datasets, errors)
     validate_docs_and_index(
