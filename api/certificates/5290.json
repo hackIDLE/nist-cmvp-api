@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5290"
   },
   "certificate": {
     "certificate_number": "5290",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5290",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5290",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5290.pdf",
@@ -65,6 +65,18 @@
       "contact_email": "fips140officers@qti.qualcomm.com",
       "contact_phone": "000-000-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5290.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 5
+    },
     "algorithms": [
       "DRBG",
       "SHA"
@@ -75,25 +87,6 @@
       "SHA2-256 A3755 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
       "SHA2-256 A3756 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
       "SHA2-256 A4007 Message Length - Message Length: 256-65536 | Increment 8 | FIPS 180-4 | Qualcomm Pseudo Random Number Generator | N/A for this module. | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5290.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 2,
-      "detailed_algorithm_count": 5,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5290.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

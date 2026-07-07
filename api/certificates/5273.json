@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5273"
   },
   "certificate": {
     "certificate_number": "5273",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5273",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5273",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5273.pdf",
@@ -62,6 +62,18 @@
       "contact_name": "Daniel Ives",
       "contact_email": "Daniel.Ives@invisinet.com",
       "contact_phone": "888-552-1576"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5273.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 206
     },
     "algorithms": [
       "AES",
@@ -287,25 +299,6 @@
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | 2.5.2 Vendor-Affirmed Algorithms | The module implements the following vendor affirmed algorithms that are approved for use in | Approved mode. | Document Version 1.0 ©Invisinet Technologies LLC Page 33 of 122 | Name Properties Implementation Reference | CKG Key Type:Symmetric | and Asymmetric | N/A SP 800-133r2 and IG D.H: Per Section 4, example 1 | CKG | (XTS) | Key Type:Symmetric N/A SP 800-133r2 and IG D.H: Per Section 6.3, approved",
       "method 1. Applicable to AES-XTS compliant to IG C.I | because Key_1 and Key_2 are concatenated prior to | usage. | 2.5.3 | The module implements the following algorithms that are allowed for use in Approved mode. | Name Properties Implementation Reference | EC Diffie-Hellman | with non-NIST | recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | SSP Agreement | CryptoComply | 140-3 FIPS | Provider | Allowed per IG D.F | scenario 3 (per IG | C.A, category 1a and | SP 800-186 Appendix | H.1)",
       "ECDSA with non- | NIST recommended | curves | Curves: brainpoolP224r1 (strength 112 | bits) brainpoolP256r1 (strength 128 bits) | brainpoolP320r1 (strength 160 bits) | brainpoolP384r1 (strength 192 bits) | brainpoolP512r1 (strength 256 bits) | Signature Generation, Signature | Verification, Key Generation, Key | Verification | CryptoComply | 140-3 FIPS | Provider | Allowed per IG C.A | category 1a (per SP | 800-186 Appendix | H.1) | 2.5.4 | N/A for this module. | The module does not implement any non-approved algorithms with no security claimed. | 2.5.5 | Document Version 1.0 ©Invisinet Technologies LLC Page 34 of 122 | N/A for this module. | The module does not implement any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5273.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 15,
-      "detailed_algorithm_count": 206,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5273.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

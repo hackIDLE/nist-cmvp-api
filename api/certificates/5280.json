@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5280"
   },
   "certificate": {
     "certificate_number": "5280",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5280",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5280",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5280.pdf",
@@ -64,6 +64,18 @@
       "contact_email": "kim@makina.com.au",
       "contact_phone": "61255662101"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5280.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 34
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -110,25 +122,6 @@
       "SHA2-256 A2713 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
       "SHA2-384 A2713 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
       "SHA2-512 A2713 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG | SP800- | 133r2 | Section 4 | Key | Type:Symmetric | and Asymmetric | N/A NIST SP800-133r2 Section 4: Symmetric | keys and seeds for asymmetric key | generation are generated using methods | described in Section 4 of SP800-133r2 | (example 1). The module supports the | following per NIST SP 800-133r2: 1. | Section 5.1: Key Pairs for Digital Signature | Schemes 2. Section 6.2.1: Symmetric | Keys Generated Using Key-Agreement | Schemes 3. Section 6.2.2: Symmetric | Keys Derived from a Pre-existing Key 4. | Name Properties Implementation Reference | Section 6.4: Distributing the Generated | Symmetric Key | CKG SP | 800- | 133r2 | Section | 6.3 | Key | Type:Symmetric | N/A NIST SP 800-133r2 Section 6.3 | Symmetric Keys Produced by Combining | (Multiple) Keys and Other Data | (approach/method 2. Exclusive-Oring one | or more symmetric keys and possibly one | or more other items of data) | The module does not implement any | The module does not implement any Non-Approved Algorithms Allowed in the Approved Mode | with No Security Claimed. | The module does not implement any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5280.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 34,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5280.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

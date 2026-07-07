@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345"
   },
   "certificate": {
     "certificate_number": "5345",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5345",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
@@ -60,6 +60,18 @@
       "contact_email": "seceval_us@oracle.com",
       "contact_phone": "000-000-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 34
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -108,25 +120,6 @@
       "A6581 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1",
       "TLS v1.3 KDF (CVL) A6581 HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key Type:Symmetric and Asymmetric N/A SP800-133rev2: Section 4, example 1 | N/A for this module. | Oracle Acme Packet VME | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 34,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5345.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

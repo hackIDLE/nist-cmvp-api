@@ -1,35 +1,37 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
-    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4749"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When operated in approved mode. When initialized and configured as specified in Section 11 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4749",
     "certificate_number": "4749",
-    "dataset": "active",
-    "description": "The Cryptographic Module for Intel® Converged Security and Manageability Engine(CSME) is a firmware-hybrid module. The module consists of both hardware and firmware. The hardware portion is the Converged Security Engine (CSE) and the firmware portion is the crypto driver process of the Manageability Engine (ME). The two portions form the cryptographic boundary and they combine as Converged Security and Manageability Engine (CSME) to perform cryptographic functions within the Alder Point PCH applications executing on the CSME OS.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-07-06T06:32:53.611920Z",
-    "hardware_versions": null,
-    "module_name": "Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME)",
-    "module_type": "Firmware-hybrid",
+    "dataset": "historical",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4749",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4749",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4749.pdf",
+    "vendor_name": "Intel Corporation",
+    "module_name": "Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME)",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "8/2/2024",
+    "validation_dates": [
+      "8/2/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When operated in approved mode. When initialized and configured as specified in Section 11 of the Security Policy.",
+    "description": "The Cryptographic Module for Intel® Converged Security and Manageability Engine(CSME) is a firmware-hybrid module. The module consists of both hardware and firmware. The hardware portion is the Converged Security Engine (CSE) and the firmware portion is the crypto driver process of the Manageability Engine (ME). The two portions form the cryptographic boundary and they combine as Converged Security and Manageability Engine (CSME) to perform cryptographic functions within the Alder Point PCH applications executing on the CSME OS.",
+    "software_versions": null,
+    "hardware_versions": "4.6.0.0",
+    "firmware_versions": "5.2.0.0",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +42,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4749.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/1/2029",
-    "validation_date": "8/2/2024",
-    "validation_dates": [
-      "8/2/2024"
-    ],
     "validation_history": [
       {
         "date": "8/2/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com",
       "address_lines": [
         "2200 Mission College Blvd.",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "contact_email": "fipsoffice@intel.com",
-      "contact_name": "Intel FIPS Office",
-      "contact_phone": "408-765-8080",
       "country": "USA",
-      "name": "Intel Corporation",
-      "website_url": "http://www.intel.com"
+      "contact_name": "Intel FIPS Office",
+      "contact_email": "fipsoffice@intel.com",
+      "contact_phone": "408-765-8080"
     },
-    "vendor_name": "Intel Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4749.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4749.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

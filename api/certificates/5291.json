@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291"
   },
   "certificate": {
     "certificate_number": "5291",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
@@ -64,6 +64,18 @@
       "contact_name": "FIPS certification team",
       "contact_email": "fips-certifications@yubico.com",
       "contact_phone": "1-650-285-0088"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "security_policy_pdf",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 44
     },
     "algorithms": [
       "AES",
@@ -124,30 +136,6 @@
       "ECDH | No security | claimed | For legacy use only, all information transmitted within the established sessions is | treated as plaintext over a directly connected path. | This document may be freely reproduced and distributed, but only in its entirety and without modification | Name | Use and Function",
       "AES (non-compliant) | Supports the calculation of One-Time Passwords in the OTP functional unit.",
       "HMAC (non-compliant) | Supports the calculation of One-Time Passwords in the OTP functional unit."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "security_policy_pdf",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
-      "cached": false,
-      "fallback_used": true,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 44,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

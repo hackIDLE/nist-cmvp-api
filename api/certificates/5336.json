@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5336"
   },
   "certificate": {
     "certificate_number": "5336",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5336",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5336",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5336.pdf",
@@ -56,6 +56,18 @@
       "contact_name": "Cathal Copas",
       "contact_email": "vcsupport@stryker.com",
       "contact_phone": "1-800-473-3971"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5336.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 63
     },
     "algorithms": [
       "AES",
@@ -135,25 +147,6 @@
       "RSA SigVer | (FIPS186-4) | A7294 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | FIPS 186-4 | 2.5.2 Vendor-Affirmed Algorithms | The vendor affirms the following cryptographic security methods | • Cryptographic key generation – In compliance with section 4 of NIST SP 800-133rev2, the module uses its",
       "Approved DRBG to generate random values and seeds used for asymmetric key generation. The generated",
       "seed is an unmodified output from the DRBG. | Name Properties Implementation Reference | CKG Section 4 Key Type:Asymmetric N/A SP 800-133r2 Section 4, example 1: U is output directly without XORing V | 2.5.3 | The module does not support the use of non-Approved algorithms that are allowed for use in the Approved mode | of operation. | N/A for this module. | 2.5.4 | The module does not support the use of non-Approved algorithms that are allowed in the Approved mode of | operation for which no security is claimed. | N/A for this module. | Stryker Badge Cryptographic Module 3.4.0 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | 2.5.5 | The module does not support the use of non -Approved/non-allowed algorithms in the Approved mode of | operation. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5336.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 63,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5336.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

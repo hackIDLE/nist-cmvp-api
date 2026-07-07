@@ -73,6 +73,24 @@
         }
       }
     },
+    "/api/changes.json": {
+      "get": {
+        "summary": "Cumulative certificate change feed",
+        "operationId": "getChanges",
+        "responses": {
+          "200": {
+            "description": "Newest-first feed of added, removed, and summary-changed certificate numbers",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/examples.json": {
       "get": {
         "summary": "Consumer examples",
@@ -169,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1118 active validated modules with enriched details",
+            "description": "Currently 1121 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -187,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4229 historical modules",
+            "description": "Currently 4235 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -294,15 +312,15 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-07-06T06:32:53.611920Z"
+            "example": "2026-07-07T04:16:56.074543Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1118
+            "example": 1121
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4229
+            "example": 4235
           },
           "total_modules_in_process": {
             "type": "integer",
@@ -310,11 +328,11 @@
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1721
+            "example": 1730
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5347
+            "example": 5356
           },
           "source": {
             "type": "string",
@@ -352,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5364"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5364"
+            "example": "5369"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Kanguru Solutions"
+            "example": "Amazon Web Services, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "Defender 3000 USB Flash Drive"
+            "example": "Amazon Linux 2023 Kernel Cryptographic API"
           },
           "Module Type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "06/30/2026"
+            "example": "07/06/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5364.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5364"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369"
           },
           "module_name": {
             "type": "string",
-            "example": "Defender 3000 USB Flash Drive"
+            "example": "Amazon Linux 2023 Kernel Cryptographic API"
           },
           "standard": {
             "type": "string",
@@ -396,19 +414,19 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "6/29/2031"
+            "example": "9/22/2029"
           },
           "overall_level": {
             "type": "integer",
-            "example": 3
+            "example": 1
           },
           "caveat": {
             "type": "string",
-            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy."
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -416,7 +434,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The Kanguru Solutions Defender 3000 USB Flash Drive is an encrypted storage device designed as a multi-chip standalone cryptographic module. The module is designed to meet FIPS 140-3 Security Level 3 requirements."
+            "example": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface."
           },
           "algorithms": {
             "type": "array",
@@ -435,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
-              "AES-ECB A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
-              "AES-KW A5476 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F"
+              "AES-CBC A4551, A4554, A4557, A4558 | A4561, A4563, A4566 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC-CS3 A4551, A4554, A4557, A4558 | A4566 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-65536 Increment 8 | SP 800-38A",
+              "AES-CCM A4551, A4554, A4557, A4558 | A4566 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 64, 80, 96 | IV Length - IV Length: 56, 64, 72 | 80, 88, 96, 104 | Payload Length - Payload Length: 0- | 256 Increment 8 | AAD Length - AAD Length: 0, 256 | 65536 | SP 800-38C"
             ]
           },
           "algorithm_extraction": {
@@ -509,6 +527,35 @@
             "type": "object",
             "additionalProperties": true
           },
+          "algorithm_coverage": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "deferred_certificates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "certificate_number": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "dataset": {
+                  "type": "string",
+                  "enum": [
+                    "active",
+                    "historical"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "repeat": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
           "misses": {
             "type": "array",
             "items": {
@@ -535,6 +582,62 @@
             "items": {
               "type": "object",
               "additionalProperties": true
+            }
+          }
+        }
+      },
+      "ChangesResponse": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/Metadata"
+          },
+          "max_runs": {
+            "type": "integer"
+          },
+          "total_runs": {
+            "type": "integer"
+          },
+          "runs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "generated_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "added_active": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "added_historical": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "removed": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "changed": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "counts": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "integer"
+                  }
+                }
+              }
             }
           }
         }
@@ -777,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5350"
+            "example": "5362"
           },
           "dataset": {
             "type": "string",
@@ -785,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-07-06T06:32:53.611920Z"
+            "example": "2026-07-07T04:16:56.074543Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5350"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5350"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5350.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Ctrl IQ, Inc."
+            "example": "Icom Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "Rocky Linux 8 and 9 GnuTLS Cryptographic Module"
+            "example": "UT-125 FIPS #41,#51 and #61"
           },
           "standard": {
             "type": "string",
@@ -817,11 +920,11 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "MultiChipEmbed"
           },
           "overall_level": {
             "type": "integer",
@@ -829,7 +932,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "6/23/2026"
+            "example": "6/30/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -837,20 +940,20 @@
               "type": "string"
             },
             "example": [
-              "6/23/2026"
+              "6/30/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "6/22/2031"
+            "example": "6/29/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)"
           },
           "description": {
             "type": "string",
-            "example": "Rocky Linux 8 and 9 GnuTLS Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality."
+            "example": "The UT-125 FIPS #41, #51 and #61 are multi-chip embedded cryptographic modules as defined by FIPS 140-3. The cryptographic module can be incorporated into any Icom Inc. radio which requires FIPS 140-3 level 1 cryptographic security."
           },
           "software_versions": {
             "type": "string",
@@ -873,7 +976,6 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -896,6 +998,10 @@
             "type": "object",
             "additionalProperties": true
           },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
+          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -903,8 +1009,8 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DES"
+              "DES",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -913,14 +1019,10 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC | A6464, A6465, A6466 | A6467, A6472, A6476 | A6477, A6478, A6479 | A6484 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
-              "AES-CCM A6464, A6476 Key Length - 128, 256 SP 800-38C",
-              "AES-CFB8 A6469, A6470, A6475 | A6481, A6482, A6487 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A"
+              "AES-CBC A6944 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+              "AES-CMAC A6944 Direction - Generation, Verification | Key Length - 256 | SP 800-38B",
+              "AES-ECB A6944 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A"
             ]
-          },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
           }
         }
       },

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
-    "total_modules": 1118,
-    "total_historical_modules": 4229,
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "total_modules": 1121,
+    "total_historical_modules": 4235,
     "total_modules_in_process": 281,
-    "total_certificates_with_algorithms": 1721,
-    "total_certificate_details": 5347,
+    "total_certificates_with_algorithms": 1730,
+    "total_certificate_details": 5356,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,37 +13,37 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1023,
-        "html_refreshed": 97,
+        "html_reused": 1112,
+        "html_refreshed": 11,
         "html_failed": 0,
-        "pdf_reused": 1025,
-        "pdf_refreshed": 93,
+        "pdf_reused": 1112,
+        "pdf_refreshed": 9,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1025,
-        "algorithm_successes": 639,
-        "algorithm_fallbacks": 1,
-        "algorithm_source_crawl4ai": 92,
-        "algorithm_source_security_policy_pdf": 1,
+        "algorithm_cache_hits": 1112,
+        "algorithm_successes": 646,
+        "algorithm_fallbacks": 0,
+        "algorithm_source_crawl4ai": 9,
+        "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 6
+        "certificates_deferred": 2
       },
       "historical": {
-        "html_reused": 4170,
-        "html_refreshed": 59,
+        "html_reused": 4229,
+        "html_refreshed": 6,
         "html_failed": 0,
-        "pdf_reused": 4210,
-        "pdf_refreshed": 19,
+        "pdf_reused": 4233,
+        "pdf_refreshed": 2,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4210,
-        "algorithm_successes": 1082,
+        "algorithm_cache_hits": 4233,
+        "algorithm_successes": 1084,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 19,
+        "algorithm_source_crawl4ai": 2,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,26 +51,26 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5193,
-        "html_refreshed": 156,
+        "html_reused": 5341,
+        "html_refreshed": 17,
         "html_failed": 0,
-        "pdf_reused": 5235,
-        "pdf_refreshed": 112,
+        "pdf_reused": 5345,
+        "pdf_refreshed": 11,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5235,
-        "algorithm_successes": 1721,
-        "algorithm_fallbacks": 1,
-        "algorithm_source_crawl4ai": 111,
-        "algorithm_source_security_policy_pdf": 1,
+        "algorithm_cache_hits": 5345,
+        "algorithm_successes": 1730,
+        "algorithm_fallbacks": 0,
+        "algorithm_source_crawl4ai": 11,
+        "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 6
+        "certificates_deferred": 2
       },
       "concurrency": {
-        "certificate_fetch": 16,
+        "certificate_fetch": 8,
         "security_policy_fetch": 32,
         "certificate_process_timeout_seconds": 900
       }
@@ -79,8 +79,8 @@
   },
   "index": "vendors",
   "field": "vendor_name",
-  "key_count": 1128,
-  "entry_count": 5236,
+  "key_count": 1130,
+  "entry_count": 5245,
   "keys": {
     "128 Technology": [
       {
@@ -3131,13 +3131,13 @@
       },
       {
         "certificate_number": "4808",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4808.json",
         "vendor_name": "Amazon Web Services, Inc.",
         "module_name": "Amazon Linux 2023 Kernel Cryptographic API",
         "standard": "FIPS 140-3",
-        "status": "Active",
-        "algorithm_count": 6
+        "status": "Historical",
+        "algorithm_count": 8
       },
       {
         "certificate_number": "4884",
@@ -3218,6 +3218,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5369",
+        "dataset": "active",
+        "path": "/api/certificates/5369.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
       }
     ],
     "Ampex Data Systems Corporation": [
@@ -15198,6 +15208,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5322",
+        "dataset": "active",
+        "path": "/api/certificates/5322.json",
+        "vendor_name": "DigiCert, Inc.",
+        "module_name": "DigiCert TrustCore Cryptographic Loadable Kernel Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
       }
     ],
     "Digicine Oristar Technology Development (Beijing) Co., Ltd.": [
@@ -19568,6 +19588,16 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
+      },
+      {
+        "certificate_number": "5283",
+        "dataset": "active",
+        "path": "/api/certificates/5283.json",
+        "vendor_name": "FP InovoLabs GmbH",
+        "module_name": "Postal xRevenector US 2023",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
       }
     ],
     "FRAMA AG": [
@@ -25721,12 +25751,12 @@
       },
       {
         "certificate_number": "4749",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4749.json",
         "vendor_name": "Intel Corporation",
         "module_name": "Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME)",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 0
       },
       {
@@ -25748,6 +25778,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5365",
+        "dataset": "active",
+        "path": "/api/certificates/5365.json",
+        "vendor_name": "Intel Corporation",
+        "module_name": "Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
       }
     ],
     "Intel Network Systems, Inc.": [
@@ -27512,6 +27552,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5281",
+        "dataset": "active",
+        "path": "/api/certificates/5281.json",
+        "vendor_name": "Juniper Networks, Inc.",
+        "module_name": "Juniper Networks EX2300, EX2300-C and EX3400 Ethernet Switches",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
       }
     ],
     "JVC KENWOOD Corporation": [
@@ -28556,6 +28606,18 @@
         "standard": "FIPS 140-2",
         "status": "Historical",
         "algorithm_count": 0
+      }
+    ],
+    "Kryptus": [
+      {
+        "certificate_number": "5282",
+        "dataset": "active",
+        "path": "/api/certificates/5282.json",
+        "vendor_name": "Kryptus",
+        "module_name": "ASI-HSM AHX5 kNET Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 15
       }
     ],
     "KRYPTUS S.A.": [
@@ -38564,6 +38626,28 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5367",
+        "dataset": "active",
+        "path": "/api/certificates/5367.json",
+        "vendor_name": "Palo Alto Networks Inc.",
+        "module_name": "Panorama 10.2 M-200, M-300, M-600 and M-700",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      }
+    ],
+    "Palo Alto Networks, Inc": [
+      {
+        "certificate_number": "5368",
+        "dataset": "active",
+        "path": "/api/certificates/5368.json",
+        "vendor_name": "Palo Alto Networks, Inc",
+        "module_name": "Panorama Virtual Appliance 10.2",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "Palo Alto Networks, Inc.": [
@@ -38739,22 +38823,22 @@
       },
       {
         "certificate_number": "4777",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4777.json",
         "vendor_name": "Palo Alto Networks, Inc.",
         "module_name": "Panorama 10.2 M-200, M-300, M-600 and M-700",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 0
       },
       {
         "certificate_number": "4783",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4783.json",
         "vendor_name": "Palo Alto Networks, Inc.",
         "module_name": "Panorama Virtual Appliance 10.2",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 0
       },
       {
@@ -41167,12 +41251,12 @@
     "Red Hat(R), Inc.": [
       {
         "certificate_number": "4754",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4754.json",
         "vendor_name": "Red Hat(R), Inc.",
         "module_name": "Red Hat Enterprise Linux 9 libgcrypt",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 7
       },
       {
@@ -41268,6 +41352,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 5
+      },
+      {
+        "certificate_number": "5366",
+        "dataset": "active",
+        "path": "/api/certificates/5366.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 libgcrypt",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
       }
     ],
     "Red Hat®, Inc.": [
@@ -53059,12 +53153,12 @@
       },
       {
         "certificate_number": "3973",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/3973.json",
         "vendor_name": "VMware, Inc.",
         "module_name": "VMware's SD-WAN VPN Hybrid Crypto Module",
         "standard": "FIPS 140-2",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 0
       },
       {

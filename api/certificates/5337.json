@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5337"
   },
   "certificate": {
     "certificate_number": "5337",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5337",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5337",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5337.pdf",
@@ -57,6 +57,18 @@
       "contact_name": "Michael L. Young",
       "contact_email": "myoung@ciq.com",
       "contact_phone": "510-998-0618"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5337.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 130
     },
     "algorithms": [
       "AES",
@@ -203,25 +215,6 @@
       "RSA (data encryption / decryption) Asymmetric encryption, Asymmetric | decryption",
       "DSA Parameter generation, Parameter | verification, Key pair generation | Signature generation, Signature | verification | Diffie-Hellman (FIPS 186-type groups) Key pair generation",
       "RSA (< 2048 bits; > 4096 bits) Key pair generation | Ed25519, X25519 Key pair generation | Symmetric key generation (< 112 bits) Secret key generation | The table above lists all the non-approved cryptographic algorithms of the module employed by the non- | approved services in Section 4.4."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5337.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 130,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5337.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

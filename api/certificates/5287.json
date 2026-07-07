@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287"
   },
   "certificate": {
     "certificate_number": "5287",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5287",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
@@ -62,6 +62,18 @@
       "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
       "contact_phone": "800-553-6387"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 50
     },
     "algorithms": [
       "AES",
@@ -127,25 +139,6 @@
       "SHA2-384 C1026 Message Length - Message Length: 0-102400 | Increment 8 | FIPS 180-4",
       "SHA2-512 C1026 Message Length - Message Length: 0-102400 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
       "output from SP800-90Arev1 CTR_DRBG | (A4446) | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | N/A for this module. | N/A for this module. | 3DES Used for symmetric encryption in SSHv2, TLSv1, TLSv1.2, IPsec/IKEv2 | and SNMPv3 | ChaCha20- | poly1305 | Used for authenticated symmetric encryption in SSHv2, and TLSv1.3"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 50,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5287.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

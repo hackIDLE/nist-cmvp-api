@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322"
+  },
+  "certificate": {
+    "certificate_number": "5322",
+    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
+    "vendor_name": "DigiCert, Inc.",
+    "module_name": "DigiCert TrustCore Cryptographic Loadable Kernel Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "6/10/2026",
+    "validation_dates": [
+      "6/10/2026"
+    ],
+    "sunset_date": "9/30/2029",
+    "caveat": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "description": "The DigiCert TrustCore Cryptographic Module is a comprehensive suite of FIPS-Approved algorithms. It is the core engine of DigiCert's TrustCore SDK. All key sizes and modes have been implemented to enable application flexibility and efficiency. Additional algorithms are available in non-Approved operation as well.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "6/10/2026",
+        "type": "Initial",
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "DigiCert, Inc.",
+      "website_url": "http://www.digicert.com",
+      "address_lines": [
+        "2801 N. Thanksgiving Way",
+        "Suite 500",
+        "Lehi, UT 84043",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Certification Team",
+      "contact_email": "FIPS@digicert.com",
+      "contact_phone": "801-896-7973"
+    },
+    "algorithms": [
+      "AES",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A845 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
+      "AES-CCM A845 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56-104 Increment 8 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0-524288 Increment 8 | SP 800-38C",
+      "AES-CFB128 A845 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
+      "AES-CMAC A845 | Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 32-128 Increment 8 | Message Length - Message Length: 0-65536 Increment 8 | SP 800-38B",
+      "AES-CTR A845 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | SP 800-38A | DigiCert, Inc. Public Material – May be reproduced only in its original entirety (without revision). | Cert Properties Reference | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes",
+      "AES-ECB A845 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
+      "AES-GCM A846 | Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 8-1024 Increment 8 | Payload Length - Payload Length: 8-65536 Increment 8 | AAD Length - AAD Length: 0-65536 Increment 8 | SP 800-38D",
+      "AES-GCM A847 | Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 8-1024 Increment 8 | Payload Length - Payload Length: 8-65536 Increment 8 | AAD Length - AAD Length: 0-65536 Increment 8 | SP 800-38D",
+      "AES-GMAC A846 | Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 8-1024 Increment 8 | AAD Length - AAD Length: 0-4096 Increment 8 | SP 800-38D",
+      "AES-GMAC A847 | Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 8-1024 Increment 8 | AAD Length - AAD Length: 0-4096 Increment 8 | SP 800-38D",
+      "AES-OFB A845 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 SP 800-38A",
+      "AES-XTS | Testing | Revision 2.0 | A845 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 Increment 128 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes | SP 800-38E | Counter",
+      "DRBG A845 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | SP 800-90A | Rev. 1 | DigiCert, Inc. Public Material – May be reproduced only in its original entirety (without revision). | Cert Properties Reference | Derivation Function Enabled - No, Yes | Additional Input - Additional Input: 0-16777216 Increment 8 | Additional Input: 0-256 Increment 8, Additional Input: 0-320 | Increment 8, Additional Input: 0-384 Increment 8 | Entropy Input - Entropy Input: 128-16777216 Increment 8 | Entropy Input: 192-16777216 Increment 8, Entropy Input | 256, Entropy Input: 256-16777216 Increment 8, Entropy | Input: 320, Entropy Input: 384 | Nonce - Nonce: 0, Nonce: 128-16777216 Increment 8, Nonce | 64-16777216 Increment 8, Nonce: 96-16777216 Increment 8 | Personalization String Length - Personalization String Length | 0-16777216 Increment 8, Personalization String Length: 0-256 | Increment 8, Personalization String Length: 0-320 Increment | 8, Personalization String Length: 0-384 Increment 8 | Returned Bits - 512",
+      "HMAC-SHA-1 A845 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 224 A845 MAC - MAC: 32-224 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 256 A845 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 A845 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 A845 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA3- | 224 A845 MAC - MAC: 32-224 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA3- | 256 A845 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA3- | 384 A845 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "HMAC-SHA3- | 512 A845 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 112-65536 Increment 8 FIPS 198-1",
+      "KDF SP800- | 108 A845",
+      "KDF Mode - Feedback",
+      "MAC Mode - HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-",
+      "256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA3-224",
+      "HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512 | Supported Lengths - Supported Lengths: 8-4096 Increment 8 | Fixed Data Order - After Fixed Data | Counter Length - 8 | Supports Empty IV - Yes | Requires Empty IV - No | Custom Key In Length - 0 | SP 800-108 | Rev. 1",
+      "SHA-1 A845 Message Length - Message Length: 160, 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-224 A845 Message Length - Message Length: 224, 0-65536 Increment 8 FIPS 180-4 | DigiCert, Inc. Public Material – May be reproduced only in its original entirety (without revision). | Cert Properties Reference",
+      "SHA2-256 A845 Message Length - Message Length: 256, 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A845 Message Length - Message Length: 384, 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A845 Message Length - Message Length: 512, 0-65536 Increment 8 FIPS 180-4",
+      "SHA3-224 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Message Length - Message Length: 0-65536 Increment 8 | FIPS 202",
+      "SHA3-256 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Message Length - Message Length: 0-65536 Increment 8 | FIPS 202",
+      "SHA3-384 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Message Length - Message Length: 0-65536 Increment 8 | FIPS 202",
+      "SHA3-512 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Message Length - Message Length: 0-65536 Increment 8 | FIPS 202",
+      "SHAKE-128 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Supports Bit-Oriented Output - No | Output Length - Output Length: 16-65536 Increment 8 | FIPS 202",
+      "SHAKE-256 A845 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Supports Bit-Oriented Output - No | Output Length - Output Length: 16-65536 Increment 8 | FIPS 202 | N/A for this module. | N/A for this module. | N/A for this module. | The Module implements the Non-Approved, Not Allowed cryptographic algorithms listed below",
+      "AES-EAX (NC) Authentication and Encryption",
+      "AES GCM 256-bit (NC) 256-bit Encryption/Decryption for 256-bit state table implementation",
+      "AES GMAC 256-bit (NC) 256-bit Message Authentication for 256-bit state table implementation | DigiCert, Inc. Public Material – May be reproduced only in its original entirety (without revision).",
+      "AES XCBC (NC) Message Authentication",
+      "DES (NC) Encryption/Decryption",
+      "HMAC (NC) HMAC generation with key size less than 112 bits",
+      "HMAC-MD5 (NC) Message Authentication | MD2, MD4, MD5 (NC) Message Digest | RNG (NC) FIPS 186-2 Random Number Generation",
+      "Triple-DES (NC) Encryption/Decryption",
+      "Note: All the various AES modes (e.g., EAX, XCBC, XTS, etc.) use the same underlying AES",
+      "implementation as the Approved AES cert."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 49,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

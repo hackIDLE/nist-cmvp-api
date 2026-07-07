@@ -313,6 +313,93 @@
           }
         }
       }
+    },
+    "deferred_certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "certificate_number",
+          "dataset",
+          "reason",
+          "repeat"
+        ],
+        "properties": {
+          "certificate_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "repeat": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "algorithm_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_certificates",
+        "certificates_with_algorithms",
+        "coverage_rate",
+        "zero_algorithm_certificates"
+      ],
+      "properties": {
+        "total_certificates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "certificates_with_algorithms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coverage_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "zero_algorithm_certificates": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "cached_no_attempts",
+            "explicit_no_algorithms",
+            "source_none",
+            "other"
+          ],
+          "properties": {
+            "cached_no_attempts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "explicit_no_algorithms": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source_none": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "other": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
     }
   }
 }

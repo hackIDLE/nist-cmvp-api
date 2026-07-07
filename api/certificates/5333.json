@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5333"
   },
   "certificate": {
     "certificate_number": "5333",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5333",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5333",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5333.pdf",
@@ -60,6 +60,18 @@
       "contact_name": "Jake Bajic",
       "contact_email": "certifications@paloaltonetworks.com",
       "contact_phone": "408-753-4000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5333.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 42
     },
     "algorithms": [
       "AES",
@@ -117,25 +129,6 @@
       "SHA2-256 A2906 Message Length - Message Length: 0-65536 | Increment 8, Message Length: 8-65536 | Increment 8 | FIPS 180-4",
       "SHA2-384 A2906 Message Length - Message Length: 0-65536 | Increment 8, Message Length: 8-65536 | Increment 8 | FIPS 180-4",
       "SHA2-512 A2906 Message Length - Message Length: 0-65536 | Increment 8, Message Length: 8-65536 | Increment 8 | FIPS 180-4 | Note: Only the algorithms specified in the table above are supported by the module in approved | mode of operation. | Name Properties Implementation Reference | CKG Key Type:Symmetric | and Asymmetric | N/A Cryptographic Key Generation; SP 800- | 133rev2 and IG D.H (symmetric keys and | asymmetric seeds) from Section 4 | Example 1 | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5333.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 42,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5333.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

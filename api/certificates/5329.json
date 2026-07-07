@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5329"
   },
   "certificate": {
     "certificate_number": "5329",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5329",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5329",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5329.pdf",
@@ -70,6 +70,18 @@
       "contact_name": "Security Certification Team",
       "contact_email": "DPS-security@entrust.com",
       "contact_phone": "+44 1223 723600"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5329.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 87
     },
     "algorithms": [
       "AES",
@@ -173,25 +185,6 @@
       "- ECDSA SigVer with P-192 has been CAVP-tested but is not used by any approved service of the | module. Only the algorithms, modes/methods, and key lengths/curves/moduli shown in this | Name Properties Implementation Reference | CKG Key type:Symmetric n/a SP800-133r2 section 4/example1 and section 6.1 | Name Properties Implementation Reference",
       "ECDSA Brainpool curves:brainpoolP224r1/P224t1 (112 bits of | strength), brainpoolP256r1/P256t1 (128 bits of | strength), brainpoolP320r1/P320t1 (160 bits of | strength), brainpoolP384r1/P384t1 (192 bits of | strength), brainpoolP512r1/P512t1 (256 bits of | strength) | nShield 5 | nCore | SP800- | 186",
       "KAS- | ECC | Brainpool curves:brainpoolP224r1/P224t1 (112 bits of | strength), brainpoolP256r1/P256t1 (128 bits of | strength), brainpoolP320r1/P320t1 (160 bits of | strength), brainpoolP384r1/P384t1 (192 bits of | strength), brainpoolP512r1/P512t1 (256 bits of | strength) | nShield 5 | nCore | SP800- | 186 | N/A for this module. | N/A for this module. | Only approved and non-approved but allowed cryptographic algorithms are supported."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5329.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 87,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5329.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

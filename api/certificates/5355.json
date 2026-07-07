@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355"
   },
   "certificate": {
     "certificate_number": "5355",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5355",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Ivan Teblin",
       "contact_email": "sec-cert@suse.com",
       "contact_phone": "000-000-0000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 66
     },
     "algorithms": [
       "AES",
@@ -140,25 +152,6 @@
       "RSA (with keys smaller than 2048 bits) Key generation",
       "RSA (with any key sizes) Key encapsulation; Key unencapsulation | Salsa20 Symmetric encryption; Symmetric decryption | SM3 Message digest | Serpent Symmetric encryption; Symmetric decryption | STREEBOG Message digest; Message authentication code | (MAC)",
       "Triple-DES Symmetric encryption; Symmetric decryption | Twofish Symmetric encryption; Symmetric decryption | UMAC Message authentication code (MAC) | Yarrow Random number generation | The above table lists non-Approved security functions that are not allowed in the approved mode of operation ."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 66,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5355.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

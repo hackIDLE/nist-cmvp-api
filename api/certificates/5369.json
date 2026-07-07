@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369"
+  },
+  "certificate": {
+    "certificate_number": "5369",
+    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf",
+    "vendor_name": "Amazon Web Services, Inc.",
+    "module_name": "Amazon Linux 2023 Kernel Cryptographic API",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/6/2026",
+    "validation_dates": [
+      "7/6/2026"
+    ],
+    "sunset_date": "9/22/2029",
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/6/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "http://www.amazon.com",
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "AWS FIPS Team",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4551, A4554, A4557, A4558 | A4561, A4563, A4566 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 A4551, A4554, A4557, A4558 | A4566 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-65536 Increment 8 | SP 800-38A",
+      "AES-CCM A4551, A4554, A4557, A4558 | A4566 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 64, 80, 96 | IV Length - IV Length: 56, 64, 72 | 80, 88, 96, 104 | Payload Length - Payload Length: 0- | 256 Increment 8 | AAD Length - AAD Length: 0, 256 | 65536 | SP 800-38C",
+      "AES-CFB128 A4551, A4554, A4558, A4566 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A4551, A4554, A4557, A4558 | A4566 | Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length | 8-524288 Increment 8 | SP 800-38B",
+      "AES-CTR A4551, A4554, A4557, A4558 | A4561, A4563, A4566 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8- | 128 Increment 8 | Supports Counter larger than | maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A4551, A4552, A4553, A4554 | A4555, A4556, A4557, A4558 | A4559, A4560, A4561, A4563 | A4564, A4565, A4566, A4567 | A4568 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4551, A4554, A4558, A4566 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32 | 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128-65536 Increment 128 | AAD Length - AAD Length: 128 | 256, 120, 0 | SP 800-38D | Amazon Linux 2023 Kernel Cryptographic API | 11 of 77",
+      "AES-GCM A4552, A4555, A4559, A4564 | A4567 | Direction - Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128, 256, 120, 248 | AAD Length - AAD Length: 64, 96 | SP 800-38D",
+      "AES-GCM A4553, A4556, A4560, A4563 | A4565, A4568 | Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128, 256, 120, 248 | AAD Length - AAD Length: 64, 96 | SP 800-38D",
+      "AES-GMAC A4551, A4554, A4558, A4566 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32 | 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 128 | 256, 120, 0 | SP 800-38D",
+      "AES-KW A4551, A4554, A4558, A4566 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-4096 Increment 128 | SP 800-38F",
+      "AES-OFB A4551, A4554, A4558, A4566 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS | Testing | Revision 2.0 | A4551, A4554, A4557, A4558 | A4561, A4563, A4566 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length | 128-65536 Increment 128 | Tweak Mode - Hex | Data Unit Length Matches Payload | Length - Yes | SP 800-38E",
+      "Counter DRBG A4551, A4552, A4553, A4554 | A4555, A4556, A4558, A4559 | A4560, A4563, A4564, A4565 | A4566, A4567, A4568 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input | 0 | Entropy Input - Entropy Input: 128 | SP 800-90A | Rev. 1 | Amazon Linux 2023 Kernel Cryptographic API | 12 of 77 | Entropy Input: 192, Entropy Input | 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - | Personalization String Length: 0 | Returned Bits - 1024, 4096, 512",
+      "ECDSA | KeyGen | (FIPS186-4) | A4551 Curve - P-256, P-384 | Secret Generation Mode - Testing | Candidates | FIPS 186-4",
+      "Hash DRBG A4551, A4569, A4570, A4571 Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - SHA-1, SHA2-256, SHA2- | 512 | Entropy Input - Entropy Input: 160 | Entropy Input: 256 | Nonce - Nonce: 160, Nonce: 256 | Personalization String Length - | Personalization String Length: 0 | Additional Input - Additional Input | 0, 160, Additional Input: 0, 256 | Returned Bits - 1024, 2048, 320 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A4551, A4569, A4570, A4571 Prediction Resistance - No, Yes | Supports Reseed - No",
+      "HMAC-SHA-1 A4551, A4557, A4569, A4570 | A4571 | MAC - MAC: 160 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A4551, A4557, A4561, A4562 | A4569, A4570, A4571 | MAC - MAC: 224 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A4551, A4557, A4561, A4562 | A4569, A4570, A4571 | MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A4551, A4557, A4562, A4569 | A4570, A4571 | MAC - MAC: 384 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A4551, A4557, A4562, A4569 | A4570, A4571 | MAC - MAC: 512 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1 | Amazon Linux 2023 Kernel Cryptographic API | 13 of 77",
+      "HMAC-SHA3- | 224 | A4551, A4557 MAC - MAC: 224 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A4551, A4557 MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A4551, A4557 MAC - MAC: 384 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A4551, A4557 MAC - MAC: 512 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4551 Domain Parameter Generation | Methods - P-256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A4551 Domain Parameter Generation | Methods - ffdhe2048, ffdhe3072 | ffdhe4096, ffdhe6144, ffdhe8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA SigVer | (FIPS186-4) | A4551, A4569, A4570, A4571 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Random | FIPS 186-4 | Safe Primes | Key Generation | A4551 Safe Prime Groups - ffdhe2048 | ffdhe3072, ffdhe4096, ffdhe6144 | ffdhe8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A4551, A4557, A4569, A4570 | A4571 | Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-224 A4551, A4557, A4561, A4562 | A4569, A4570, A4571 | Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A4551, A4557, A4561, A4562 | A4569, A4570, A4571 | Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A4551, A4557, A4562, A4569 | A4570, A4571 | Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-512 A4551, A4557, A4562, A4569 | A4570, A4571 | Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4 | Amazon Linux 2023 Kernel Cryptographic API | 14 of 77",
+      "SHA3-224 A4551, A4557 Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-256 A4551, A4557 Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-384 A4551, A4557 Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-512 A4551, A4557 Message Length - Message Length | 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202 | The Approved Algorithms table lists all approved cryptographic algorithms of the module, including specific | key lengths employed for approved services and implemented modes or methods of operation of the algorithms. | Name Properties Implementation Reference | Cryptographic Key Generation | (CKG) | Key | Type:Asymmetric | N/A SP 800-133r2 Section 4 | example 1 | N/A for this module. | N/A for this module.",
+      "AES GCM with | external IV | Encryption (not compliant to SP 800-56Br2)",
+      "KBKDF (libkcapi) Key Derivation with implementation not tested by CAVP",
+      "HKDF (libkcapi) Key Derivation with implementation not tested by CAVP | PBKDF2 | (libkcapi) | Password-Based Key Derivation with implementation not tested by CAVP",
+      "RSA Encryption Primitive; Decryption Primitive (not compliant to SP 800 -56Br2)",
+      "RSA with | PKCS#1 v1.5 | padding | Signature Generation (pre-hashed message); Signature Verification (pre-hashed | message); Key Encapsulation (not compliant to SP 800-56Br2); Key Un-encapsulation | (not compliant to SP 800-56Br2) | The above table lists all non-approved cryptographic algorithms of the module employed by the non-approved | services in the Non-Approved Services table. | Amazon Linux 2023 Kernel Cryptographic API | 15 of 77"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 47,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

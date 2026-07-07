@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5284"
   },
   "certificate": {
     "certificate_number": "5284",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5284",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5284",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5284.pdf",
@@ -61,6 +61,18 @@
       "contact_name": "Devin Yang",
       "contact_email": "yangjinlin01@kaytus.com",
       "contact_phone": "65-67173377"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5284.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 113
     },
     "algorithms": [
       "AES",
@@ -191,25 +203,6 @@
       "TLS v1.3 KDF",
       "(CVL) A4198 HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | Note: Per [IG] 9.3.A, scenario 2b, no assurances of minimum strength of generated SSP are declared. The | minimum entropy strength expected is 112 bits. | Note: The PBKDF2 algorithm is only used for internal pins and keys storage according FIPS SP 800 -132. | The module implements PBKDF2 based on SP 800-132 option 1a. | The module includes the following vendor-affirmed security method in the next table | Name Properties Implementation Reference | CKG Key Type: Symmetric and | Asymmetric N/A SP 800-133r2 and IG D.H: Per Section 4 | example 1 | Linux OpenSSL FIPS Provider v3.1 KAYTUS SYSTEMS PTE. LTD. | N/A for this module. | N/A for this module. | N/A for this module. | The module does not implement either non -approved allowed algorithms with no security claimed or | non-approved and not allowed algorithms in the Approved mode of operation. | Linux OpenSSL FIPS Provider v3.1 KAYTUS SYSTEMS PTE. LTD."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5284.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 113,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5284.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

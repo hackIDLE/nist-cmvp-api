@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5282"
+  },
+  "certificate": {
+    "certificate_number": "5282",
+    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5282",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5282",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5282.pdf",
+    "vendor_name": "Kryptus",
+    "module_name": "ASI-HSM AHX5 kNET Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 3,
+    "validation_date": "5/20/2026",
+    "validation_dates": [
+      "5/20/2026"
+    ],
+    "sunset_date": "5/19/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. When operated in approved mode.",
+    "description": "The ASI-HSM AHX5 kNET Cryptographic Module is a Hardware Security Module that provides cryptographic services with native implementation of the Key Management Interoperability Protocol to applications. The hardware is optimized for cryptographic operations along with proprietary firmware and software developed exclusively for the module. Its operators communicate with it via a standard Ethernet interface using IP protocols. The module is usually sold embedded within a stand-alone network appliance, which is typically used in large-scale cloud infrastructures, where ease of remote configuration and operation is required.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5282.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May 2026_030626_0716.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "5/20/2026",
+        "type": "Initial",
+        "lab": "EWA - Canada"
+      }
+    ],
+    "vendor": {
+      "name": "Kryptus",
+      "website_url": "http://www.kryptus.com",
+      "address_lines": [
+        "Rua Galilée 7",
+        "Yverdon 1400",
+        "Switzerland"
+      ],
+      "country": "Switzerland",
+      "contact_name": "Global Operations Team",
+      "contact_email": "kryptus.emea@kryptus.com",
+      "contact_phone": "41799321923"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "ML-DSA",
+      "ML-KEM",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6066 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A6066 Direction - Generation, Verification | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR A6066 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6066 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6066 Direction - Decrypt, Encrypt | IV Generation - External, Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-KW A6066 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38F | Conditioning",
+      "Component AES- | CBC-MAC SP800- | 90B | A6066 Key Length - 128, 192, 256 SP 800-90B",
+      "ECDSA KeyGen | (FIPS186-5) | A6066 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6066 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512, SHA2-512/224",
+      "SHA2-512/256, SHA3-224, SHA3-256",
+      "SHA3-384, SHA3-512, SHAKE-256 | Component - Yes | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6066 Curve - P-224, P-256, P-384, P-521",
+      "SHA3-384, SHA3-512, SHAKE-256 | FIPS 186-5",
+      "EDDSA KeyGen A6066 Curve - ED-25519, ED-448 FIPS 186-5",
+      "EDDSA SigGen A6066 Curve - ED-25519, ED-448 | PreHash - Yes | Pure - Yes | FIPS 186-5",
+      "EDDSA SigVer A6066 Curve - ED-25519, ED-448 | PreHash - Yes | Pure - Yes | FIPS 186-5",
+      "Hash DRBG A6066 Prediction Resistance - No, Yes",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-224 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/224 | A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/256 | A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3-224 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3-256 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3-384 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3-512 A6066 Key Length - Key Length: 8-65536 Increment | 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6066 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - responder | SP 800-56A | Rev. 3",
+      "KDF TLS (CVL) A6066 TLS Version - v1.2",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "ML-DSA KeyGen A6066 Parameter Sets - ML-DSA-44, ML-DSA-65",
+      "ML-DSA-87 | FIPS 204",
+      "ML-DSA SigGen A6066 Deterministic - No FIPS 204",
+      "ML-DSA SigVer A6066 - FIPS 204",
+      "ML-KEM | EncapDecap",
+      "A6066 Parameter Sets - ML-KEM-1024, ML-KEM-",
+      "512, ML-KEM-768 | Functions - Decapsulation, Encapsulation | FIPS 203",
+      "ML-KEM KeyGen A6066 Parameter Sets - ML-KEM-1024, ML-KEM-",
+      "512, ML-KEM-768 | FIPS 203",
+      "RSA KeyGen | (FIPS186-5) | A6066 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6066 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6066 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA2-224 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512/224 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512/256 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA3-224 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-256 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-384 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-512 A6066 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHAKE-256 A6066 Output Length - Output Length: 512 FIPS 202",
+      "TDES-CBC A6066 Direction - Decrypt SP 800-67 | Rev. 2",
+      "TDES-ECB A6066 Direction - Decrypt SP 800-67 | Rev. 2 | In Approved Mode of operation, the supported Approved algorithms are those listed above. | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A SP 800-133r2 Section 4 Example #1 | Section 5.1, Section 5.2 and Section | 6.1 | All vendor-affirmed algorithms are those listed above. | N/A for this module. | N/A for this module.",
+      "Triple DES Data Encryption",
+      "RSA Data encryption using PKCS#1; Signature Generation using keys less | than 2048 bits | MD5 Message Digest",
+      "DSA Key Pair Generation and Signature Generation | Brainpool P-160 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-192 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-224 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-256 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-320 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-384 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Brainpool P-512 | (r1/t1) | Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | Ed521 Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | SEC P-256 (k1) Key Pair Generation, Digital Signature Generation, Digital Signature | Verification | When configured in Non-Approved Mode the algorithms in Table 7 are supported as well."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5282.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 15,
+      "detailed_algorithm_count": 62,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5282.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

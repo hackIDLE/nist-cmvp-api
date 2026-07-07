@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5320"
   },
   "certificate": {
     "certificate_number": "5320",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5320",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5320",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5320.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "James \"Jax\" Jackson",
       "contact_email": "James.Jackson@infoscale.com",
       "contact_phone": "908-500-0483"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5320.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 16,
+      "detailed_algorithm_count": 128
     },
     "algorithms": [
       "AES",
@@ -206,25 +218,6 @@
       "RSA KTS (non-compliant16) Non-compliant RSA key transport schemes | SCrypt (non-compliant) SCrypt using non-compliant PBKDF2 | SEED SEED block cipher | Serpent Serpent block cipher | SipHash SipHash MAC",
       "SHACAL-2 SHACAL2 block cipher | TIGER TIGER message digest",
       "Triple-DES Triple-DES cipher | Twofish Twofish block cipher | WHIRLPOOL WHIRLPOOL message digest | XDH X25519 and X448 key agreement algorithms"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5320.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 16,
-      "detailed_algorithm_count": 128,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5320.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

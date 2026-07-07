@@ -1,35 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
-    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4783"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4783",
     "certificate_number": "4783",
-    "dataset": "active",
-    "description": "Panorama offers easy-to-implement, centralized management features that provide insight into network-wide traffic and simplify configurations.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-06T06:32:53.611920Z",
-    "hardware_versions": null,
-    "module_name": "Panorama Virtual Appliance 10.2",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4783",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4783",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4783.pdf",
+    "vendor_name": "Palo Alto Networks, Inc.",
+    "module_name": "Panorama Virtual Appliance 10.2",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "8/29/2024",
+    "validation_dates": [
+      "8/29/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "description": "Panorama offers easy-to-implement, centralized management features that provide insight into network-wide traffic and simplify configurations.",
+    "software_versions": "10.2.3-h1",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,42 +45,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 3",
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Life-cycle assurance: Level 3",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4783.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/28/2029",
-    "validation_date": "8/29/2024",
-    "validation_dates": [
-      "8/29/2024"
-    ],
     "validation_history": [
       {
         "date": "8/29/2024",
-        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
       }
     ],
     "vendor": {
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com",
       "address_lines": [
         "3000 Tannery Way",
         "Santa Clara, CA 95054",
         "USA"
       ],
-      "contact_email": "certifications@paloaltonetworks.com",
-      "contact_name": "Jake Bajic",
-      "contact_phone": "408-753-4000",
       "country": "USA",
-      "name": "Palo Alto Networks, Inc.",
-      "website_url": "http://www.paloaltonetworks.com"
+      "contact_name": "Jake Bajic",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
     },
-    "vendor_name": "Palo Alto Networks, Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4783.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4783.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

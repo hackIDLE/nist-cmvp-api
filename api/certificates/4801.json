@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801"
   },
   "certificate": {
     "certificate_number": "4801",
     "dataset": "historical",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4801",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
@@ -62,6 +62,18 @@
       "contact_email": "seceval_us@oracle.com",
       "contact_phone": "000-000-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 31
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -109,25 +121,6 @@
       "AES-KW, AES-KWP [SP 800-38F] Key Wrapping, Key Unwrapping 128, 192, 256 bits with 128-256 bits of key strength Complaint with IG D.G AES-KW, AES-KWP: #A4761, #A4766, #A4768 Table 10 - Security Function Implementations 2.7 Algorithm Specific Information 2.7.1 AES GCM IV The Crypto Officer shall consider the following requirements and restrictions when using the module. For TLS 1.2, the module offers the AES GCM implementation and uses the context of Scenario 1 of FIPS 140-3 IG C.H. NSS is compliant with SP 800-52r2 Section 3.3.1 and the mechanism for IV generation is compliant with RFC 5288 and 8446. The module does not implement the TLS protocol. The module’s implementation of AES GCM is used together with an application that runs outside the module’s cryptographic boundary. The design of the TLS protocol implicitly ensures that the counter (the nonce_explicit part of the IV) does not exhaust the maximum number of possible values for a given session key. In the event the module’s power is lost and restored, the consuming application must ensure that a new key for use with the AES GCM key encryption or decryption under this scenario shall be established. Alternatively, the Crypto Officer can use the module’s API to perform AES GCM encryption using internal IV generation compliant with Scenario 2 of FIPS 140-3 IG C.H. These IVs are always 96 bits and generated using the approved DRBG internal to the module’s boundary. Additionally, the module offers an internal deterministic IV generation mode compliant with Scenario 3 of FIPS 140-3 IG C.H. The size of the fixed (name) field used by this IV generation mode is at least 32 bits. The module then internally generates a 32 bit or longer deterministic non-repetitive counter. The module explicitly ensures that this counter is monotonically increasing at each invocation of the AES-GCM for the same encryption key, and that this counter does not exhaust all its possible values. The generated GCM IV is at least 96 bits in length. Finally, for TLS 1.3, the AES GCM implementation uses the context of Scenario 5 of FIPS 140-3 IG C.H. The protocol that provides this compliance is TLS 1.3, defined in RFC8446 of August 2018, using the cipher-suites that explicitly select AES GCM as the encryption/decryption cipher (Appendix B.4 of RFC8446). The module supports acceptable AES GCM cipher suites from Section 3.3.1 of SP800-52r2. TLS 1.3 employs separate 64-bit sequence numbers, one for protocol records that are received, and one for protocol records that are sent to a peer. These sequence numbers are set at zero at the beginning of a TLS 1.3 connection and each time when the AES-GCM key is changed. After reading or writing a record, the respective sequence number is incremented by one. The protocol specification determines that the sequence number should not wrap, and if this condition is observed, then the protocol implementation must either trigger a re-key of the session (i.e., a new key for AES-GCM), or terminate the connection. 2.7.2 Key Derivation using SP 800-132 PBKDF2 The module provides password-based key derivation (PBKDF2), compliant with SP 800-132. The module supports option 1a from Section 5.4 of SP 800-132, in which the Master Key (MK) or a segment of it is used directly as the Data Protection Key (DPK). In accordance with SP 800-132 and FIPS 140-3 IG D.N, the following requirements shall be met: • Derived keys shall only be used in storage applications. The MK shall not be used for other purposes. The length of the MK or DPK shall be of 112 bits or more. | Oracle Linux 9 NSS Cryptographic Module Security Policy Page 12 of 36",
       "• Passwords or passphrases, used as an input for the PBKDF2, shall not be used as cryptographic keys. • The length of the password or passphrase shall be at least 7 characters, and shall consist of lowercase, uppercase, and numeric characters. In a worst-case scenario where the user selects a password consisting of only digits, the guessing probability is estimated to be 10-7. Combined with the minimum iteration count as described below, this provides an acceptable trade-off between user experience and security against brute-force attacks. • A portion of the salt, with a length of at least 128 bits, shall be generated randomly using the SP 800-90Ar1 DRBG provided by the module. • The iteration count shall be selected as large as possible, as long as the time required to generate the key using the entered password is acceptable for the users. The minimum value is 1000. 2.7.3 SP 800-56Ar3 Assurances The module offers DH and ECDH shared secret computation services compliant to the SP 800-56Ar3 and meeting IG D.F scenario 2 path (1). To meet the required assurances listed in section 5.6 of SP 800-56Ar3, the module shall be used together with an application that implements the “TLS protocol” and the following steps shall be performed. • The entity using the module, must use the module's \"Key pair generation\" service for generating DH/ECDH ephemeral keys. This meets the assurances required by key pair owner defined in the section 5.6.2.1 of SP 800-56Ar3. • As part of the module's Shared Secret Computation (SSC) service, the module internally performs the public key validation on the peer's public key passed in as input to the SSC function. This meets the public key validity assurance required by the sections 5.6.2.2.1/5.6.2.2.2 of SP 800-56Ar3. • The module does not support static keys therefore the \"assurance of peer's possession of private key\" is not applicable. 2.8 RNG and Entropy Entropy Information: Name Type Operational Environment Sample Size Entropy Per Sample Conditioning Component Oracle Userspace CPU Time Jitter RNG Entropy Source (Cert. #E99) Non-physical See Table 3 256 bits 256 bits HMAC-SHA2-512-DRBG (CAVP cert A4162) Table 11 – Entropy RNG Information: The module implements a Deterministic Random Bit Generator (Hash_DRBG) implementation compliant with SP 800-90Ar1. This DRBG is used internally by the module (e.g., to generate symmetric keys, seeds for asymmetric key pairs, and random numbers for security functions). It can also be accessed using the specified API functions. The module DRBG implemented is a SHA-256 Hash_DRBG, seeded by the entropy source specified in Table 11. 2.9 Key Generation Name Type Properties Direct Generation of Symmetric Keys CKG Key type: Symmetric key Security strength: 112-256 bits Method: Direct Generation Compliant to SP 800-133r2, Section 6.1 Safe Primes Key Pair Generation Key type: DH key pair Groups: MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192, ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192 Security strength: 112-200 bits Method: SP 800-56Ar3 (safe primes) Section 5.6.1.1.4 Testing Candidates Compliant to SP 800-133r2, Section 5.2 ECDSA Key Pair Generation Key type: EC key pair Curves: P-256, P-384, P-521 | Oracle Linux 9 NSS Cryptographic Module Security Policy Page 13 of 36 | Security strength: 128-256 bits Method: FIPS 186-4 Appendix B.4.1 Extra Random Bits Compliant to SP 800-133r2, Section 4 RSA Key Pair Generation Key type: RSA key pair Modulus: 2048-4096 bits Security strength: 112-150 bits Method: FIPS 186-4 Appendix B.3.3 Probable Primes Compliant to SP 800-133r2, Section 4 KBKDF Key Derivation Key type: Symmetric key Security strength: 112-256 bits Method: Counter, feedback and double pipeline mode, using CMAC and HMAC SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 HKDF Key type: Symmetric key Security strength: 112-256 bits Method: (HMAC) SHA-224, SHA-256, SHA-384, SHA-512 Compliant to SP 800-56Cr1 TLS 1.0/1.1 KDF Key type: Symmetric key Security strength: 112-256 bits Method: SHA1 Compliant to SP 800-135r1 TLS 1.2 KDF (RFC 7627) Key type: Symmetric key Security strength: 112-256 bits Method: SHA-256, SHA-384, SHA-512 Compliant to SP 800-135r1 IKEv2 KDF Key type: Symmetric key Security strength: 112-256 bits Method: SHA-1, SHA-256, SHA-384, SHA-512 Compliant to SP 800-135r1 PBKDF2 Key type: Symmetric key Security strength: 112-256 bits Method: Option 1a with SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 Compliant to option 1a of SP 800-132 Table 12 - Key Generation | Oracle Linux 9 NSS Cryptographic Module Security Policy Page 14 of 36",
       "2.10 Key Establishment Name Type Properties KAS-FFC-SSC [SP800-56Arev3] KAS (Shared Secret Computation) Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192 Security strength: 112-200 bits Compliant with: Scenario 2 (1) of FIPS 140-3 IG D.F: Shared Secret Computation KAS-ECC-SSC [SP800-56Arev3] Curves: P-256, P-384, P-521 Security strength: 128-256 bits Compliant with: Scenario 2 (1) of FIPS 140-3 IG D.F: Shared Secret Computation AES GCM [SP 800-38D] KTS-Wrap (Key Wrapping) Keys: 128, 192, or 256 bits IV generated internally Security strength: 128, 192, or 256 bits Compliant with IG D.G KTS-Wrap (Key Unwrapping) Keys: 128, 192, or 256 bits IV provided externally Security strength: 128, 192, or 256 bits Compliant with IG D.G AES KW, AES KWP [SP 800-38F] KTS-Wrap (Key Wrapping, Key Unwrapping) Keys: 128, 192, or 256 bits Security strength: 128, 192, or 256 bits Compliant with IG D.G Table 13 - Key Establishment 2.11 Industry Protocols For DH, the module supports the use of the safe primes defined in RFC 3526 (IKE) and RFC 7919 (TLS) as listed in Table 13. Note that the module only implements domain parameter generation, key pair generation and verification, and shared secret computation. TLS 1.0/1.1 KDF, TLS 1.2 KDF (RFC 7627), IKEv2 implementations shall only be used to generate secret keys in the context of the TLS 1.0/1.1, TLS 1.2, IKE protocols respectively. No parts of this protocol, other than the approved cryptographic algorithms and the KDFs, have been tested by the CAVP and CMVP. | Oracle Linux 9 NSS Cryptographic Module Security Policy Page 15 of 36"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 31,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4801.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

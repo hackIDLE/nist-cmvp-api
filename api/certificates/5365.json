@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5365"
+  },
+  "certificate": {
+    "certificate_number": "5365",
+    "dataset": "active",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5365",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5365",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5365.pdf",
+    "vendor_name": "Intel Corporation",
+    "module_name": "Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "7/6/2026",
+    "validation_dates": [
+      "7/6/2026"
+    ],
+    "sunset_date": "8/1/2029",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Cryptographic Module for Intel® Converged Security and Manageability Engine(CSME) is a firmware-hybrid module. The module consists of both hardware and firmware. The hardware portion is the Converged Security Engine (CSE) and the firmware portion is the crypto driver process of the Manageability Engine (ME). The two portions form the cryptographic boundary and they combine as Converged Security and Manageability Engine (CSME) to perform cryptographic functions within the Alder Point PCH applications executing on the CSME OS.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5365.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/6/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Intel Corporation",
+      "website_url": "http://www.intel.com",
+      "address_lines": [
+        "2200 Mission College Blvd.",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Intel FIPS Office",
+      "contact_email": "fipsoffice@intel.com",
+      "contact_phone": "408-765-8080"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3362 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CFB128 A3362 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-CMAC A3362 Direction - Generation, Verification | Key Length - 128, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 0-16384 Increment 8 | SP 800-38B",
+      "AES-CTR A3362 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3362 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A3362 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128, 256, 8, 112 | AAD Length - AAD Length: 128, 256, 16, 64 | SP 800-38D",
+      "AES-OFB A3362 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "Counter DRBG A3362 Prediction Resistance - No | Supports Reseed - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - Personalization String Length: 0 | Returned Bits - 128 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A3362 Curve - P-256, P-384 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A3362 Curve - P-256, P-384 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A3362 Component - No | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384 | FIPS 186-4 | Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME) | 11 of 41",
+      "ECDSA SigVer | (FIPS186-4) | A3362 Component - No | Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384 | FIPS 186-4",
+      "HMAC-SHA-1 A3362 MAC - MAC: 32, 48, 64 | Key Length - Key Length: 8-4096 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-224 A3362 MAC - MAC: 32, 48, 64 | Key Length - Key Length: 8-4096 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A3362 MAC - MAC: 32, 48, 64 | Key Length - Key Length: 8-4096 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A3362 MAC - MAC: 32, 48, 64 | Key Length - Key Length: 8-4096 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A3362 MAC - MAC: 32, 48, 64 | Key Length - Key Length: 8-4096 Increment 8 | FIPS 198-1",
+      "KAS-ECC Sp800- | 56Ar3 | A3362 Domain Parameter Generation Methods - P-256, P-384 | Function - Full Validation, Key Pair Generation | iutId - 1234567890abcdef | Scheme - | ephemeralUnified - | KAS Role - Initiator, Responder",
+      "KDF Methods - | oneStepKdf - | Auxiliary Function Methods -",
+      "Auxiliary Function Name - SHA2-224 | MAC Salting Methods - default | Fixed Info Pattern - uPartyInfo||vPartyInfo||literal[0123456789abcdef] | Fixed Info Encoding - Concatenation | Key Length - 1024 | SP 800-56A | Rev. 3",
+      "KDF SP800-108 A3362 KDF Mode - Counter",
+      "MAC Mode - HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-",
+      "SHA2-384, HMAC-SHA2-512 | Supported Lengths - Supported Lengths: 8-256 Increment 8 | Fixed Data Order - Before Fixed Data | Counter Length - 32 | Supports Empty IV - No | Requires Empty IV - No | Custom Key In Length - 0 | SP 800-108 | Rev. 1",
+      "KTS-IFC A3362 Function - keyPairGen | IUT ID - 0123456789abcdef | Modulo - 2048, 3072, 4096 | Key Generation Methods - rsakpg1-basic | Fixed Public Exponent - 010001 | Scheme -",
+      "KTS-OAEP-basic - | KAS Role - initiator, responder | Key Transport Method -",
+      "Hash Algorithms - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Supports Null Associated Data - No | Associated Data Pattern - uPartyInfo||vPartyInfo | SP 800-56B | Rev. 2 | Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME) | 12 of 41 | Associated Data Encoding - concatenation | Key Length - 256",
+      "RSA Decryption",
+      "Primitive (CVL) | A3362 Modulus Length - 2048 FIPS 186-4",
+      "RSA KeyGen | (FIPS186-4) | A3362 Key Generation Mode - B.3.3 | Modulo - 2048 | Primality Tests - Table C.2 | Info Generated By Server - Yes | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard",
+      "FIPS 186-4 RSA SigGen | (FIPS186-4) | A3362 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA Signature",
+      "Primitive (CVL) | A3362 Private Key Format - standard | Public Exponent Mode - fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3362 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A3362 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-224 A3362 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-256 A3362 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A3362 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A3362 Message Length - Message Length: 8-65536 Increment 8 FIPS 180-4 | Name Properties Implementation Reference | Cryptographic Key Generation | (CKG) | Key | Type:asymmetric | N/A Key Generation Compliant with SP 800-133Rev2 | section 4 example 1 | N/A for this module. | Crypto Module for Intel® Alder Point PCH Converged Security and Manageability Engine (CSME) | 13 of 41 | N/A for this module. | The module implements the following non-Approved algorithms Not Allowed in the Approved Mode of Operation listed in | the table below. | MD5 Message Digest generation using MD5 algorithm | SM2 SM2 digital signature generation/verification | SM3 SM3 message digest generation | SM4 SM4 data encryption and decryption",
+      "HMAC-MD5 HMAC-MD5 MAC generation | ECC Commit | Computation | ECC commit computation used in ECSCHNORR and ECDAA Signature Generation | ECDAA ECDAA digital signature generation/verification | ECSCHNORR ECSCHNORR digital signature generation/verification",
+      "AES-GCM AES-GCM data encryption using an externally generated IV",
+      "HMAC HMAC MAC generation using with keys less than 112 bits",
+      "ECDSA ECDSA key-pair generation using secp256k1 curve",
+      "ECDHE Shared | Secret | Computation",
+      "ECDHE shared secret computation using brainpoolp384r1 curve",
+      "RSA RSA key-pair generation using 1024 bits modulus size; RSA digital signature generation using MD5, SM3 or",
+      "SHA-1 hash algorithm; RSA digital signature verification using MD5 or SM3 hash algorithm; RSA key",
+      "encapsulation and decapsulation using MD5 or SHA-1; RSA key encapsulation and decapsulation using",
+      "1024-bit modulus; RSA key decapsulation using 3072 or 4096-bit modulus"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5365.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 53,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5365.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

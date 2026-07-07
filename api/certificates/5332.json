@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332"
   },
   "certificate": {
     "certificate_number": "5332",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5332",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
@@ -58,6 +58,18 @@
       "contact_email": "aws-fips-external@amazon.com",
       "contact_phone": "000-000-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 10
+    },
     "algorithms": [
       "AES",
       "HMAC",
@@ -74,25 +86,6 @@
       "SHA2-256 A5425 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "SHA2-256 A5433 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
       "SHA2-256 A5434 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | The Approved Algorithms tables above list the approved algorithms implemented by the AWS | Encryption Module and the algorithms implemented within the bound module, which are used to | perform the software integrity test upon the module. | The module does not implement any vendor-affirmed algorithms. | The module does not implement any | AWS Scalable Network Crypto Modules, Version 1.1 | 2025 Amazon Web Services, Inc., Lightship Security, Inc. Page 13 of 29 | This document may be freely reproduced and distributed whole and intact, including this copyright notice. | The module does not implement any | claimed. | The module does not implement any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 10,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5332.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

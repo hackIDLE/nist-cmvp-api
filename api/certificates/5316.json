@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5316"
   },
   "certificate": {
     "certificate_number": "5316",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5316",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5316",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5316.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Glenn Haley",
       "contact_email": "glenn.haley@indexengines.com",
       "contact_phone": "(512) 965-2791"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5316.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 116
     },
     "algorithms": [
       "AES",
@@ -192,25 +204,6 @@
       "SHAKE-256 A4481 Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Supports Bit-Oriented Output - No | Output Length - Output Length: 16-65536 Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG Section 4 KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-133 Rev. 2 | CKG Section 5 KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-133 Rev. 2 | CKG Section 6.2 KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-133 Rev. 2",
       "Hash DRBG with SHA3-256, SHA3-512 KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1",
       "HMAC DRBG with SHA3-256, SHA3-512 KeyPair FIPS Provider for OpenSSL 3 NIST, SP 800-90A Rev. 1 | N/A for this module. | N/A for this Module. | N/A for this Module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5316.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 116,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5316.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

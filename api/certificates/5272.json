@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5272"
   },
   "certificate": {
     "certificate_number": "5272",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5272",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5272",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5272.pdf",
@@ -63,6 +63,18 @@
       "contact_email": "fips-crypto-officer@google.com",
       "contact_phone": "650-253-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5272.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 13
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -86,25 +98,6 @@
       "SHA2-256 A6546 Message Length - Message Length: 0- | 65528 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG - | Asymmetric | Key | Type:Asymmetric | N/A NIST SP 800-133r2 Section 4 and | Section 5.1 - The unmodified output of",
       "the DRBG is used for generation of | asymmetric keys. | CKG - | Symmetric | Key | Type:Symmetric | N/A NIST SP 800-133r2 Section 4 and | Section 6.1 - The unmodified output of",
       "the DRBG is used for generation of | symmetric keys. | The module supports the following vendor affirmed algorithms in accordance with IG D.H (refer | to Table 5). | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5272.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 13,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5272.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

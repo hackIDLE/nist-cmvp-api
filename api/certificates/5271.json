@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271"
   },
   "certificate": {
     "certificate_number": "5271",
     "dataset": "active",
-    "generated_at": "2026-07-06T06:32:53.611920Z",
+    "generated_at": "2026-07-07T04:16:56.074543Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5271",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
@@ -75,6 +75,18 @@
       "contact_email": "ng-security-assurance@netapp.com",
       "contact_phone": "1-919-476-5600"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 22
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -105,25 +117,6 @@
       "SHA2-256 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
       "SHA2-512 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
       "SHA3-256 A2640 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG - | Section | 6.3 | Key | Type:Symmetric | NetApp | CryptoMod | SP 800-133 Rev. 2 Section 6.3 | Symmetric Keys Produced by Combining | Multiple Keys and Other Data. (Method | 2) | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any | N/A for this module. | The Module does not support any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 5,
-      "detailed_algorithm_count": 22,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5271.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }
