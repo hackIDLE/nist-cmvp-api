@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1121 active validated modules with enriched details",
+            "description": "Currently 1134 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4235 historical modules",
+            "description": "Currently 4245 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 281 modules in process",
+            "description": "Currently 257 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-07-07T04:16:56.074543Z"
+            "example": "2026-07-12T05:29:15.652683Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1121
+            "example": 1134
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4235
+            "example": 4245
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 281
+            "example": 257
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1730
+            "example": 1753
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5356
+            "example": 5379
           },
           "source": {
             "type": "string",
@@ -370,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5393"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5369"
+            "example": "5393"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Amazon Web Services, Inc."
+            "example": "Palo Alto Networks, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "Amazon Linux 2023 Kernel Cryptographic API"
+            "example": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "Validation Date": {
             "type": "string",
-            "example": "07/06/2026"
+            "example": "07/10/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5369.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5393.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5393"
           },
           "module_name": {
             "type": "string",
-            "example": "Amazon Linux 2023 Kernel Cryptographic API"
+            "example": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200"
           },
           "standard": {
             "type": "string",
@@ -414,19 +414,19 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "9/22/2029"
+            "example": "7/10/2029"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. The tamper evident seals and opacity shield installed as indicated in the Security Policy."
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
@@ -434,7 +434,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface."
+            "example": "The Palo Alto Networks SD-WAN Instant-On Network (ION) Devices (ION 1200, ION 1200-S, ION 3200, ION 5200 and ION 9200) enable the integration of a diverse set of wide area network (WAN) connection types, improve application performance and visibility, enhance security and compliance, and reduce the overall cost and complexity of your WAN."
           },
           "algorithms": {
             "type": "array",
@@ -443,8 +443,8 @@
             },
             "example": [
               "AES",
-              "DRBG",
-              "ECDSA"
+              "CVL",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -453,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A4551, A4554, A4557, A4558 | A4561, A4563, A4566 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC-CS3 A4551, A4554, A4557, A4558 | A4566 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-65536 Increment 8 | SP 800-38A",
-              "AES-CCM A4551, A4554, A4557, A4558 | A4566 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 64, 80, 96 | IV Length - IV Length: 56, 64, 72 | 80, 88, 96, 104 | Payload Length - Payload Length: 0- | 256 Increment 8 | AAD Length - AAD Length: 0, 256 | 65536 | SP 800-38C"
+              "AES-CBC A3563 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CFB128 A3563 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CTR A3563 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | SP 800-38A | Incremental Counter - Yes | Counter Tests Performed - Yes"
             ]
           },
           "algorithm_extraction": {
@@ -880,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5362"
+            "example": "5363"
           },
           "dataset": {
             "type": "string",
@@ -888,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-07-07T04:16:56.074543Z"
+            "example": "2026-07-12T05:29:15.652683Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5363"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5362"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5363"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5362.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5363.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Icom Inc."
+            "example": "Ruckus Wireless LLC"
           },
           "module_name": {
             "type": "string",
-            "example": "UT-125 FIPS #41,#51 and #61"
+            "example": "RUCKUS R770-US Access Point, R770-WW Access Point, R670-US Access Point, R670-WW Access Point, T670-US Access Point, T670-WW Access Point and T670sn-US Access Point"
           },
           "standard": {
             "type": "string",
@@ -924,11 +924,11 @@
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipEmbed"
+            "example": "MultiChipStand"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "validation_date": {
             "type": "string",
@@ -949,11 +949,11 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs (e.g., keys)"
+            "example": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy."
           },
           "description": {
             "type": "string",
-            "example": "The UT-125 FIPS #41, #51 and #61 are multi-chip embedded cryptographic modules as defined by FIPS 140-3. The cryptographic module can be incorporated into any Icom Inc. radio which requires FIPS 140-3 level 1 cryptographic security."
+            "example": "Ruckus WiFi 7 access point portfolio comprises of indoor and outdoor APs that brings higher capacity, efficiency, and performance to enterprises, distributed offices, and small businesses. Ruckus WiFi 7 portfolio offers dual-band, dual-concurrent APs that supports up to eight spatial streams (4x4:4 in 5GHz, 4x4:4 in 2.4GHz). Equipped with OFDMA and MU-MIMO capabilities, the APs efficiently manage up to 1024 client connections with increased capacity, improved coverage and performance in ultra-high dense environments."
           },
           "software_versions": {
             "type": "string",
@@ -976,6 +976,7 @@
               "type": "string"
             },
             "example": [
+              "Operational environment: N/A",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -1009,7 +1010,7 @@
             },
             "example": [
               "AES",
-              "DES",
+              "CVL",
               "DRBG"
             ]
           },
@@ -1019,9 +1020,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A6944 Direction - Encrypt | Key Length - 256 | SP 800-38A",
-              "AES-CMAC A6944 Direction - Generation, Verification | Key Length - 256 | SP 800-38B",
-              "AES-ECB A6944 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A"
+              "AES-CBC A6768 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CFB128 A6768 Key Length - 128 SP 800-38A",
+              "AES-CTR A6768 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A"
             ]
           }
         }

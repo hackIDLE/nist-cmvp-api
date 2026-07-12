@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5371"
+  },
+  "certificate": {
+    "certificate_number": "5371",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5371",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5371",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5371.pdf",
+    "vendor_name": "Microchip Technology Inc",
+    "module_name": "Microchip Trust Anchor TA101",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "7/7/2026",
+    "validation_dates": [
+      "7/7/2026"
+    ],
+    "sunset_date": "7/6/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "description": "The Microchip Trust Anchor TA101 is a secure element from the Microchip CryptoAutomotive™ portfolio intended for automotive security applications providing support for code authentication (aka secure boot), message authentication via MAC generation, support for trusted firmware updates, multiple key management protocols including TLS and other root-of-trust based operations. It is typically a companion device to an MCU or MPU on the same board and offers up to 256-bit security strength cryptography.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5371.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/7/2026",
+        "type": "Initial",
+        "lab": "AEGISOLVE, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Microchip Technology Inc",
+      "website_url": "http://www.microchip.com",
+      "address_lines": [
+        "1150 E. Cheyenne Mountain Blvd",
+        "Colorado Springs, CO 80906",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "James Hallman",
+      "contact_email": "Jim.Hallman@microchip.com",
+      "contact_phone": "919-846-3391"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "EDDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CMAC A6562 Direction - Generation, Verification | Key Length - 128, 256 | SP 800-38B",
+      "AES-CMAC A874 Direction - Generation | Key Length - 128 | SP 800-38B",
+      "AES-CTR A6463 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-ECB A6521 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-ECB A855 Direction - Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-GCM A6521 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 256 | SP 800-38D",
+      "AES-GMAC A6521 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A6502 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6542 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A6542 Curve - P-224, P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6522 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6522 Curve - P-224, P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5",
+      "EDDSA KeyGen A6528 Curve - ED-25519 FIPS 186-5",
+      "EDDSA KeyVer A6528 Curve - ED-25519 FIPS 186-5",
+      "EDDSA SigGen A6523 Curve - ED-25519 | PreHash - Yes | Pure - Yes | FIPS 186-5",
+      "EDDSA SigVer A6523 Curve - ED-25519 | PreHash - Yes | Pure - Yes | FIPS 186-5",
+      "HMAC-SHA2-256 A6488 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-256 A853 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-384 A6488 Key Length - Key Length: 384 FIPS 198-1",
+      "HMAC-SHA2-512 A6488 Key Length - Key Length: 512 FIPS 198-1",
+      "KAS-ECC Sp800- | 56Ar3 | A6594 Domain Parameter Generation Methods - | P-224, P-256, P-384, P-521 | SP 800-56A | Rev. 3 | Microchip Technology Inc. | Function - Full Validation, Key Pair | Generation | Scheme - | ephemeralUnified - | KAS Role - Initiator, Responder",
+      "KDF Methods - | twoStepKdf - | Key Length - 512",
+      "KDF SP800-108 A6524 KDF Mode - Counter | Supported Lengths - Supported Lengths | 128-1024 Increment 8 | SP 800-108 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6593 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2pow100 | Private Key Format - crt | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6527 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6527 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA2-256 A6451 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A854 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A6451 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6451 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6525 Hash Algorithm - SHA2-256 SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF",
+      "(CVL)",
+      "A6526 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG SP800-133r2 Sections - 4 Using the Output of a | Random Bit Generator - 5 Generation of Key Pairs | for Asymmetric – Key Algorithms - 5.1 Key Pairs for | Digital Signature Schemes - 5.2 Key Pairs for Key | Establishment - 5.3 Distributing the Key Pairs - 6 | Generation of Keys for Symmetric – Key Algorithms - | 6.1 The “Direct Generation” of Symmetric Keys - 6.2 | Distributing the Generated Symmetric Key | Microchip Technology Inc. | N/A for this module. | Name Caveat Use and Function | LFSR (Non-FIPS) FIPS 140-3 | IG 2.4.A | Used for obfuscation within the crypto engine | dummy cycles, randomization for attack resistance | Masking / Blinding FIPS 140-3 | IG 2.4.A | Used for obfuscation of datapath information | Persistent Storage | Obfuscator NVM | FIPS 140-3 | IG 2.4.A | Used for obfuscation of data stored in NVM | Persistent Storage | Obfuscator ROM | FIPS 140-3 | IG 2.4.A | Used for obfuscation of data stored in ROM | Transport Pre-Key FIPS 140-3 | IG 2.4.A | Used for obfuscation of Master DevUpdate Key | (MDUK), DevUpdate Public Key (DUPK) entry | Transport Key FIPS 140-3 | IG 2.4.A | Used to obfuscate manual entry during FIPS | initialization | Transient Storage | Obfuscator | FIPS 140-3 | IG 2.4.A | Used for obfuscation of data stored in SRAM | Utility RNG FIPS 140-3 | IG 2.4.A | Used for NVM wear leveling or various obfuscation | purposes | All of the above algorithms meet the caveat of FIPS 140-3 IG 2.4.A for acceptance of usage in the | approved mode of operation in accordance with the defined criteria. | 1) All of the above algorithms are not used in any manner to meet any FIPS 140-3 requirements.",
+      "2) All of the above algorithms do not access or share CSPs in a way that counters the requirements | of this IG. | 3) The following algorithms are not intended to be used as a security function and are used for | NVM wear leveling or additional obfuscation of CSPs: “Utility RNG”. | 4) The following algorithms are mathematical operations applied for “good measure” but not for | providing sound security to obfuscate CSPs while performing device services: “LFSR (non-FIPS)” | “Masking / Blinding”, “Transport Pre-Key”, “Transport Key”. | 5) The following algorithms are mathematical operations applied for “good measure” but not for | providing sound security to obfuscate CSPs for persistent and non-persistent storage | “Persistent Storage Obfuscator NVM”, “Persistent Storage Obfuscator ROM”, “Transient Storage | Obfuscator”. | 6) All of the above algorithms are only used internally within the device with no operator | interaction. Their non-approved use and purpose (from the above statements) is unambiguous | to the operator and can’t be easily confused for a security function. | Microchip Technology Inc. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5371.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 42,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5371.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

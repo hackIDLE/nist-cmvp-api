@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372"
+  },
+  "certificate": {
+    "certificate_number": "5372",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
+    "vendor_name": "PacketLight Networks Ltd.",
+    "module_name": "PL-2000GM and PL-2000GA",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "7/7/2026",
+    "validation_dates": [
+      "7/7/2026"
+    ],
+    "sunset_date": "7/6/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
+    "description": "PacketLight's PL-2000GA and PL-2000GM Layer-1 encryption solutions with comprehensive line and service performance monitoring, ensure the confidentiality and integrity of data, based on GCM-AES-256 encryption standards, supporting Diffie-Hellman (DH) key exchange up to every 1-minute. In addition, the solutions support multiple protocols including 10G/40G/100G Ethernet, 16G Fibre Channel, OTU2/OTU2e/OTU4.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/7/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "PacketLight Networks Ltd.",
+      "website_url": "https://www.packetlight.com",
+      "address_lines": [
+        "24 Raoul Wallenberg St.",
+        "Building C",
+        "Tel-Aviv 6971923",
+        "Israel"
+      ],
+      "country": "Israel",
+      "contact_name": "Ilya Tsuker",
+      "contact_email": "Ilya_tsuker@packetlight.com",
+      "contact_phone": "972-3-768-7825"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CFB128 A7344 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A7344 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CTR A7536 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A | PL-2000GM and PL-2000GA | PacketLight Networks Ltd. 2026",
+      "AES-ECB A7344 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-GCM A7344 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "AES-GMAC C221 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 256 | SP 800-38D",
+      "Counter DRBG A7344 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A7344 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A7344 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7344 Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7344 Curve - P-384",
+      "HMAC-SHA2-256 A7344 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-384 A7344 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-512 A7344 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A7344 Domain Parameter Generation Methods - P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A7344 Domain Parameter Generation Methods - ffdhe2048, ffdhe3072 | MODP-2048, MODP-3072, MODP-4096 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA OneStep | SP800-56Cr2 | A7344 Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-8192 Increment | 8 | SP 800-56C | Rev. 2",
+      "KDF SNMP (CVL) A7344 Password Length - Password Length: 64-160 Increment 8 SP 800-135 | Rev. 1",
+      "KDF SSH (CVL) A7344 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A7344 Key Generation Mode - probableWithProbableAux | Modulo - 2048 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5 | Safe Primes Key | Generation | A7344 Safe Prime Groups - ffdhe2048, ffdhe3072, MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A7344 Safe Prime Groups - ffdhe2048, ffdhe3072, MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A7344 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-256 A7344 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4 | PL-2000GM and PL-2000GA | PacketLight Networks Ltd. 2026",
+      "SHA2-384 A7344 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-512 A7344 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A7344 Hash Algorithm - SHA2-256, SHA2-384 SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF (CVL) A7344 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | The table below lists all the Vendor-Affirmed Algorithms supported by the module. | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A IG D.H, SP800-133r2 (Section 4/example 1) The seed used in | asymmetric key generation is the unmodified output from a NIST SP",
+      "800-90A DRBG. | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 33,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

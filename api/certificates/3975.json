@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3975"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3975",
     "certificate_number": "3975",
-    "dataset": "active",
-    "description": "VMware's SD-WAN VPN Crypto Module is a software module that is used by various VMware products to provide confidentiality and integrity to data plane traffic.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "hardware_versions": null,
-    "module_name": "VMware's SD-WAN VPN Crypto Module",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3975",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3975",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
+    "vendor_name": "VMware, Inc.",
+    "module_name": "VMware's SD-WAN VPN Crypto Module",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "7/12/2021, 11/1/2024",
+    "validation_dates": [
+      "7/12/2021",
+      "11/1/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "VMware's SD-WAN VPN Crypto Module is a software module that is used by various VMware products to provide confidentiality and integrity to data plane traffic.",
+    "software_versions": "1.0",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +43,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical Security: N/A",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/11/2026",
-    "validation_date": "7/12/2021, 11/1/2024",
-    "validation_dates": [
-      "7/12/2021",
-      "11/1/2024"
-    ],
     "validation_history": [
       {
         "date": "7/12/2021",
-        "lab": "Acumen Security",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Acumen Security"
       },
       {
         "date": "11/1/2024",
-        "lab": "Acumen Security",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Acumen Security"
       }
     ],
     "vendor": {
+      "name": "VMware, Inc.",
+      "website_url": "http://www.vmware.com",
       "address_lines": [
         "3401 Hillview Ave",
         "Palo Alto, CA 94304",
         "USA"
       ],
-      "contact_email": "vcf.fips@broadcom.com",
-      "contact_name": "VTAE Team",
-      "contact_phone": "+91 8066986864",
       "country": "USA",
-      "name": "VMware, Inc.",
-      "website_url": "http://www.vmware.com"
+      "contact_name": "VTAE Team",
+      "contact_email": "vcf.fips@broadcom.com",
+      "contact_phone": "+91 8066986864"
     },
-    "vendor_name": "VMware, Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5374"
+  },
+  "certificate": {
+    "certificate_number": "5374",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5374",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5374",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5374.pdf",
+    "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
+    "module_name": "TuxCare Kernel Crypto API",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/7/2026",
+    "validation_dates": [
+      "7/7/2026"
+    ],
+    "sunset_date": "7/6/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5374.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/7/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Cloud Linux Software, Inc. d/b/a TuxCare",
+      "website_url": "http://www.tuxcare.com",
+      "address_lines": [
+        "20791 Three Oaks Pkwy, #980",
+        "Estero, FL 33929",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Simon John",
+      "contact_email": "sjohn@tuxcare.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7051, A7056, A7059 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 A7051, A7056, A7059 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A7051, A7059 Key Length - 128, 192, 256 SP 800-38C",
+      "AES-CFB128 A7051, A7059 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A7051, A7059 Direction - Generation | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR A7051, A7056, A7059 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7051, A7053, A7054, A7056, A7057 | A7058, A7059, A7060, A7061 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7051, A7054, A7056, A7058, A7059 | A7061 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GCM A7053, A7057, A7060 Direction - Encrypt | IV Generation - Internal | SP 800-38D | TuxCare Kernel Crypto API | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256",
+      "AES-GMAC A7051, A7056, A7059 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB A7051, A7059 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A7051, A7056, A7059 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG A7051, A7053, A7054, A7056, A7057 | A7058, A7059, A7060, A7061 | Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192",
+      "AES-256 | Derivation Function Enabled - | Yes | SP 800-90A | Rev. 1",
+      "ECDSA SigVer | (FIPS186-4) | A7055 Component - No | Curve - P-256, P-384",
+      "Hash Algorithm - SHA-1 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-5) | A7055 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-224",
+      "SHA2-256, SHA2-384, SHA2- | 512 | FIPS 186-5",
+      "Hash DRBG A7051, A7053, A7054, A7056, A7057 | A7058, A7059, A7060, A7061, A7062 | A7063, A7064 | Prediction Resistance - No, Yes",
+      "Mode - SHA-1, SHA2-256",
+      "SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A7051, A7053, A7054, A7056, A7057 | A7058, A7059, A7060, A7061, A7062 | A7063, A7064 | Prediction Resistance - No, Yes",
+      "HMAC-SHA-1 A7051, A7062, A7063, A7064 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A7051, A7062, A7063, A7064 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A7051, A7062, A7063, A7064 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A7051, A7062, A7063, A7064 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7051, A7062, A7063, A7064 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 | A7052 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A7052 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A7052 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A7052 Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1 | TuxCare Kernel Crypto API",
+      "RSA SigVer | (FIPS186-5) | A7051, A7062, A7063, A7064 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-224 A7051, A7062, A7063, A7064 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A7051, A7062, A7063, A7064 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A7051, A7062, A7063, A7064 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-512 A7051, A7062, A7063, A7064 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA3-224 A7052 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-256 A7052 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-384 A7052 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-512 A7052 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202 | N/A for this module. | N/A for this module. | N/A for this module. | TuxCare Kernel Crypto API",
+      "AES GCM with external | IV | Encryption with external IV (not compliant to FIPS 140-3 IG C.H)",
+      "KBKDF (libkcapi) Key derivation with implementation not tested by CAVP",
+      "HKDF (libkcapi) Key derivation with implementation not tested by CAVP | PBKDF2 (libkcapi) Password-based Key derivation with implementation not tested by CAVP",
+      "RSA Encryption primitive; Decryption primitive (not compliant to SP 800-56Br2)",
+      "RSA with PKCS#1 v1.5 | padding | Signature generation(pre-hashed message) primitive; Signature verification(pre- | hashed message) primitive",
+      "ECDSA Signature generation(pre-hashed message) primitive; Signature verification(pre- | hashed message) primitive"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5374.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 48,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5374.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

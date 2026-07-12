@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383"
+  },
+  "certificate": {
+    "certificate_number": "5383",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
+    "vendor_name": "Symantec, A Division of Broadcom",
+    "module_name": "Edge SWG",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software-hybrid",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/8/2026",
+    "validation_dates": [
+      "7/8/2026"
+    ],
+    "sunset_date": "11/10/2029",
+    "caveat": "When operated in approved mode and when installed, initialized and configured as specified in Section 11.1 of the Security Policy. The protocols TLS v1.0 and v1.1 shall not be used when operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Edge SWG appliances from Symantec provide companies the ability to deploy a scalable proxy-based security solution to protect their organization against advanced threats. The Edge SWG acts as gateway between web users and the Internet: a single point where all web traffic can be monitored and corporate policies for web use can be enforced.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/8/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Symantec, A Division of Broadcom",
+      "website_url": "http://www.broadcom.com",
+      "address_lines": [
+        "1320 Ridder Park Dr",
+        "San Jose, CA 95131",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Ian Hall",
+      "contact_email": "symc-fed-certs.pdl@broadcom.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A2936 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800- | 38A",
+      "AES-CTR A2936 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | SP 800- | 38A | Symantec, A Division of Broadcom © 2025 Page 12 of 45 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes",
+      "AES-GCM A2936 Direction - Decrypt, Encrypt | IV Generation - External, Internal | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96-1024 Increment 8 | Payload Length - Payload Length: 8-65536 Increment | 8 | AAD Length - AAD Length: 0-65536 Increment 8 | IV Generation Mode - 8.2.1 | SP 800- | 38D | Counter",
+      "DRBG | A2936 Prediction Resistance - Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - No, Yes | Additional Input - Additional Input: 0-256 Increment | 256, Additional Input: 256, Additional Input: 320 | Additional Input: 384 | Entropy Input - Entropy Input: 128-256 Increment 128 | Entropy Input: 256, Entropy Input: 256-512 Increment | 128, Entropy Input: 320, Entropy Input: 384 | Nonce - Nonce: 0, Nonce: 128 | Personalization String Length - Personalization String | Length: 0-256 Increment 256, Personalization String | Length: 256, Personalization String Length: 320 | Personalization String Length: 384 | Returned Bits - 256 | SP 800- | 90A Rev. 1",
+      "HMAC-SHA- | 1 | A2936 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA- | 1 | A3192 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 256-1024 Increment 128 | FIPS 198-1",
+      "HMAC-",
+      "SHA2-224 | A2936 MAC - MAC: 32-224 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "SHA2-256 | A2936 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "SHA2-384 | A2936 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "SHA2-512 | A2936 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "KAS-FFC- | SSC Sp800- | 56Ar3 | A2936 Domain Parameter Generation Methods - ffdhe2048 | ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800- | 56A Rev. 3",
+      "KDF SNMP",
+      "(CVL) | A2936 Password Length - Password Length: 64, 128 | Engine ID - 000002b87766554433221100 | 80000D590431303035353937353531 | SP 800- | 135 Rev. 1 | Symantec, A Division of Broadcom © 2025 Page 13 of 45 | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "KDF SSH",
+      "(CVL)",
+      "A2936 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | SP 800- | 135 Rev. 1",
+      "KDF TLS",
+      "A2936 TLS Version - v1.2",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | SP 800- | 135 Rev. 1",
+      "PBKDF A2936 Iteration Count - Iteration Count: 1-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | Password Length - Password Length: 8-128 Increment | 8 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-4096 | Increment 8 | SP 800- | 132",
+      "RSA | KeyGen | (FIPS186-4) | A2936 Key Generation Mode - B.3.6 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - Yes | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A2936 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A2936 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Random | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3192 Signature Type - PKCS 1.5 | Modulo - 2048 | Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Public Exponent Mode - Random | FIPS 186-4 | Safe Primes | Key | Generation | A2936 Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 | ffdhe6144, ffdhe8192 | SP 800- | 56A Rev. 3 | Safe Primes | Key | Verification | A2936 Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096 | ffdhe6144, ffdhe8192 | SP 800- | 56A Rev. 3",
+      "SHA-1 A2936 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA-1 A3192 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A2936 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A2936 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Symantec, A Division of Broadcom © 2025 Page 14 of 45 | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "SHA2-256 A3192 Message Length - Message Length: 0-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A2936 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A2936 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.3",
+      "KDF (CVL)",
+      "A2936 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800- | 135 Rev. 1 | The module implements the Approved algorithms2 listed in the table above. | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A Sections 4, 5.1, 5.2 and | 6.1 | N/A for this module. | Name Caveat Use and Function",
+      "AES | CBC",
+      "All backups are transmitted via SSH (encrypted by the | session key), so any non-conformant encryption is | redundant/not required for security (No security claimed) | Configuration | backup encryption",
+      "TLS v1.0/1.1 KDF with MD5 TLS 1.0/1.1 sessions",
+      "EC Diffie-Hellman Remote management session via SSH and syslog | 2 There are algorithms, modes, and key/moduli sizes that have been CAVP-tested but are not used by | any Approved service of the module. Only the algorithms, modes/methods, and key | lengths/curves/moduli shown in this table are used by an Approved service of the module. | Symantec, A Division of Broadcom © 2025 Page 15 of 45 | This document may be freely reproduced and distributed whole and intact including this copyright notice."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 47,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386"
+  },
+  "certificate": {
+    "certificate_number": "5386",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
+    "vendor_name": "Cisco Systems, Inc",
+    "module_name": "Firepower Management Center Virtual VMware Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/9/2026",
+    "validation_dates": [
+      "7/9/2026"
+    ],
+    "sunset_date": "6/16/2029",
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Cisco FMCv Module provides complete and unified management over firewalls, application control, intrusion prevention, URL filtering, and advanced malware protection. Delivering in-depth analysis, streamlined security management across the network and cloud, and accelerated incident investigation and response, working across Cisco and third-party technologies.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/9/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Cisco Systems, Inc",
+      "website_url": "http://www.cisco.com",
+      "address_lines": [
+        "170 West Tasman Drive",
+        "San Jose, CA 95134",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Global Certification Team",
+      "contact_email": "certteam@cisco.com",
+      "contact_phone": "800-553-6387"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A2952 Key Length - 128, 256 SP 800-38A",
+      "AES-GCM A2952 Key Length - 128, 256 SP 800-38D",
+      "Counter DRBG A2952 Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice",
+      "ECDSA KeyGen | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A2952 Curve - P-256, P-384, P-521",
+      "HMAC-SHA-1 A2952 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A2952 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A2952 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A2952 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A2952 Domain Parameter Generation Methods | - P-256, P-384, P-521 | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A2952 Domain Parameter Generation Methods | - modp-2048 | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A2952 Cipher - AES-128, AES-192, AES-256",
+      "TDES",
+      "Hash Algorithm - SHA-1, SHA2-224",
+      "SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-4) | A2952 Modulo - 2048, 3072 FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A2952 Signature Type - PKCS 1.5 | Modulo - 2048, 3072 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A2952 Signature Type - PKCS 1.5 | Modulo - 2048, 3072 | FIPS 186-4 | Safe Primes Key | Generation | A2952 Safe Prime Groups - modp-2048 SP 800-56A | Rev. 3",
+      "SHA-1 A2952 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A2952 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A2952 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A2952 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A2952 Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | SP 800-135 | Rev. 1 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | CiscoSSL FOM - Virtual without PAA",
+      "AES-CBC A3376 Key Length - 128, 256 SP 800-38A",
+      "AES-GCM A3376 Key Length - 128, 256 SP 800-38D",
+      "Counter DRBG A3376 Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A3376 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A3376 Curve - P-256, P-384, P-521",
+      "ECDSA SigVer | (FIPS186-4) | A3376 Curve - P-256, P-384, P-521",
+      "HMAC-SHA-1 A3376 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A3376 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A3376 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A3376 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A3376 Domain Parameter Generation Methods | - P-256, P-384, P-521 | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A3376 Domain Parameter Generation Methods | - modp-2048 | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A3376 Cipher - AES-128, AES-192, AES-256",
+      "RSA KeyGen | (FIPS186-4) | A3376 Modulo - 2048, 3072 FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3376 Signature Type - PKCS 1.5 | Modulo - 2048, 3072 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3376 Signature Type - PKCS 1.5 | Modulo - 2048, 3072 | FIPS 186-4 | Safe Primes Key | Generation | A3376 Safe Prime Groups - modp-2048 SP 800-56A | Rev. 3",
+      "SHA-1 A3376 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A3376 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A3376 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice",
+      "SHA2-512 A3376 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "A3376 Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
+      "output from SP800-90Arev1 CTR_DRBG | (A2952/A3376) | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 52,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

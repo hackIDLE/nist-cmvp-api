@@ -1,35 +1,36 @@
 {
   "metadata": {
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
     "certificate_number": "3977",
-    "dataset": "active",
-    "description": "The Pavilion Encryption Module is a standalone cryptographic module for the Pavilion Operating System (PavilionOS) for Pavilion Hyperparallel Flash Arrays. PavilionOS allows customers to take advantage of unprecedented performance for all applications by being the first solution to support high performance with ultra-low latency for local block, file and object workloads simultaneously. The Pavilion Encryption Module allows for inline encryption of data using either internally managed keys or through integration with KMIP.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "hardware_versions": null,
-    "module_name": "Pavilion Cryptographic Module",
-    "module_type": "Software-Hybrid",
+    "dataset": "historical",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3977",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+    "vendor_name": "Pavilion Data Systems",
+    "module_name": "Pavilion Cryptographic Module",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Software-Hybrid",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "7/12/2021",
+    "validation_dates": [
+      "7/12/2021"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The Pavilion Encryption Module is a standalone cryptographic module for the Pavilion Operating System (PavilionOS) for Pavilion Hyperparallel Flash Arrays. PavilionOS allows customers to take advantage of unprecedented performance for all applications by being the first solution to support high performance with ultra-low latency for local block, file and object workloads simultaneously. The Pavilion Encryption Module allows for inline encryption of data using either internally managed keys or through integration with KMIP.",
+    "software_versions": "1.0",
+    "hardware_versions": "Intel Xeon D-1548",
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,39 +41,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/11/2026",
-    "validation_date": "7/12/2021",
-    "validation_dates": [
-      "7/12/2021"
-    ],
     "validation_history": [
       {
         "date": "7/12/2021",
-        "lab": "AEGISOLVE, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "AEGISOLVE, Inc."
       }
     ],
     "vendor": {
+      "name": "Pavilion Data Systems",
+      "website_url": "http://pavilion.io",
       "address_lines": [
         "2550 North First St.",
         "Suite 250",
         "San Jose, CA 95131",
         "USA"
       ],
-      "contact_email": "tim.stoakes@pavilion.io",
-      "contact_name": "Tim Stoakes",
-      "contact_phone": "669 263 6900",
       "country": "USA",
-      "name": "Pavilion Data Systems",
-      "website_url": "http://pavilion.io"
+      "contact_name": "Tim Stoakes",
+      "contact_email": "tim.stoakes@pavilion.io",
+      "contact_phone": "669 263 6900"
     },
-    "vendor_name": "Pavilion Data Systems"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

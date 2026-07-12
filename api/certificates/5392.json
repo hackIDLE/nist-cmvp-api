@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5392"
+  },
+  "certificate": {
+    "certificate_number": "5392",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5392",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5392",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5392.pdf",
+    "vendor_name": "Palo Alto Networks, Inc.",
+    "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/10/2026",
+    "validation_dates": [
+      "7/10/2026"
+    ],
+    "sunset_date": "7/7/2029",
+    "caveat": "When installed, initialized and configured as specified in section 11.1 of the Security Policy and operated in approved mode",
+    "description": "The Palo Alto Networks SD-WAN ION Core Crypto Module is utilized in hardware and software ION form factors. These enable the integration of a diverse set of wide area network (WAN) connection types, improve application performance and visibility, enhance security and compliance, and reduce the overall cost and complexity of your WAN.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5392.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/10/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com",
+      "address_lines": [
+        "3000 Tannery Way",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amir Shahhosseini",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3566 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A3566 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A3566 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3566 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A3566 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D | Counter",
+      "DRBG | A3566 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - No, Yes | Additional Input - Additional Input: 128, Additional Input | 256, Additional Input: 320, Additional Input: 384 | Entropy Input - Entropy Input: 128, Entropy Input: 192 | SP 800-90A | Rev. 1 | ) | Entropy Input: 256, Entropy Input: 320, Entropy Input: 384 | Nonce - Nonce: 0, Nonce: 128, Nonce: 64 | Personalization String Length - Personalization String | Length: 128, Personalization String Length: 256 | Personalization String Length: 320, Personalization String | Length: 384 | Returned Bits - 1152, 448, 768, 832, 896, 960",
+      "ECDSA | KeyGen | (FIPS186-4) | A3566 Curve - P-256, P-384, P-521 | Secret Generation Mode - Extra Bits, Testing Candidates | FIPS 186-4",
+      "ECDSA | SigGen | (FIPS186-4) | A3566 Component - No | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "ECDSA | SigVer | (FIPS186-4) | A3566 Component - No | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "HMAC-SHA-1 A3566 MAC - MAC: 80-160 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A3566 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A3566 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A3566 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "KAS-ECC- | SSC Sp800- | 56Ar3 | A3566 Domain Parameter Generation Methods - P-256, P-384, P- | 521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2",
+      "(CVL) | A3566 Initiator Nonce Length - Initiator Nonce Length: 512 | Responder Nonce Length - Responder Nonce Length: 512",
+      "Diffie-Hellman Shared Secret Length - Diffie-Hellman | Shared Secret Length: 2048 | Derived Keying Material Length - Derived Keying Material | Length: 1056-3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF SNMP",
+      "(CVL) | A3566 Password Length - Password Length: 64, 2048 | Engine ID - 00100020003000400050 | 12345678901234567890 | SP 800-135 | Rev. 1",
+      "KDF SSH",
+      "(CVL)",
+      "A3566 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF TLS",
+      "A3566 TLS Version - v1.2",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-4) | A3566 Key Generation Mode - B.3.3 | Modulo - 2048, 3072 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3566 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072 | FIPS 186-4 | )",
+      "RSA SigVer | (FIPS186-4) | A3566 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072 | FIPS 186-4",
+      "SHA-1 A3566 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4",
+      "SHA2-256 A3566 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4",
+      "SHA2-384 A3566 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4",
+      "SHA2-512 A3566 Message Length - Message Length: 8-51200 Increment 8 FIPS 180-4 | Crypto Library - II",
+      "AES-CBC A3572 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A3572 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | Tag Length - 128 | IV Length - IV Length: 96, 1024 | Payload Length - Payload Length: 64-256 | Increment 8 | AAD Length - AAD Length: 0, 256 | SP 800-38D",
+      "HMAC DRBG A3572 Prediction Resistance - Yes | Supports Reseed - No",
+      "Mode - SHA2-512 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - | Personalization String Length: 256 | Additional Input - Additional Input: 256 | Returned Bits - 896 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A3572 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 256-1120 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A3572 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 256-1120 Increment | 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A3572 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF TLS (CVL) A3572 TLS Version - v1.2",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA SigVer | (FIPS186-4) | A3572 Signature Type - PKCS 1.5 | Modulo - 2048 | FIPS 186-4",
+      "SHA2-256 A3572 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A3572 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | )",
+      "HMAC-SHA2- | 512 | A3572 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "SHA2-512 A3572 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference",
+      "CKG from CTR DRBG Key | Type:Asymmetric | N/A SP 800-133r2 Section 4, example | 1",
+      "CKG from HMAC",
+      "DRBG | Key | Type:Asymmetric | N/A SP 800-133r2 Section 4, example | 1 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5392.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 54,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5392.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

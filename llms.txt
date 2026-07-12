@@ -1,23 +1,23 @@
 # NIST CMVP API
 
-> Static JSON API for NIST Cryptographic Module Validation Program data. 1,121 active modules, 4,235 historical modules, 281 modules in process, and 5,356 certificate detail records. No auth required.
+> Static JSON API for NIST Cryptographic Module Validation Program data. 1,134 active modules, 4,245 historical modules, 257 modules in process, and 5,379 certificate detail records. No auth required.
 
 Base URL: https://hackidle.github.io/nist-cmvp-api/
 
 All data is static JSON. Append paths to the base URL.
 
 - `api/index.json` — API discovery endpoint with endpoint and docs links.
-- `api/modules.json` — 1,121 active validated modules.
-- `api/historical-modules.json` — 4,235 historical modules.
-- `api/modules-in-process.json` — 281 modules currently in process.
+- `api/modules.json` — 1,134 active validated modules.
+- `api/historical-modules.json` — 4,245 historical modules.
+- `api/modules-in-process.json` — 257 modules currently in process.
 - `api/metadata.json` — generation timestamp, counts, source URLs, and extraction metrics.
-- `api/certificates/index.json` — compact index for 5,356 certificate detail files.
+- `api/certificates/index.json` — compact index for 5,379 certificate detail files.
 - `api/certificates/{certificate}.json` — full detail record for a single CMVP certificate.
 - `api/indexes/vendors.json`, `api/indexes/algorithms.json`, `api/indexes/statuses.json`, `api/indexes/standards.json` — split search indexes for common filters.
 - `api/data-quality.json` — latest run misses, refreshes, fallbacks, changed certs, and weekly run checks.
 - `api/changes.json` — cumulative newest-first change feed for recent weekly runs.
 - `api/examples.json` — curl, Python, JavaScript, and agent-oriented lookup examples.
-- `api/algorithms.json` — algorithm coverage summary across 1,730 certificates.
+- `api/algorithms.json` — algorithm coverage summary across 1,753 certificates.
 
 ## Documentation
 
@@ -31,4 +31,4 @@ All data is static JSON. Append paths to the base URL.
 - Unofficial mirror of public CMVP data. Use https://csrc.nist.gov/projects/cryptographic-module-validation-program for authoritative source material.
 - Static JSON only. Filter client-side after downloading the relevant resource.
 - Browser JavaScript on another origin may need a proxy because GitHub Pages does not send permissive CORS headers.
-- `api/algorithms.json` covers 1,730 certificates in the current build.
+- `api/algorithms.json` covers 1,753 certificates in the current build.

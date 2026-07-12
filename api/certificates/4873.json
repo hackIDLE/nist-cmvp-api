@@ -1,10 +1,68 @@
 {
   "metadata": {
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873"
   },
   "certificate": {
+    "certificate_number": "4873",
+    "dataset": "historical",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
+    "vendor_name": "Symantec, A Division of Broadcom",
+    "module_name": "Edge SWG",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software-hybrid",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
+    "validation_date": "11/11/2024",
+    "validation_dates": [
+      "11/11/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When operated in approved mode and when installed, initialized and configured as specified in Section 11.1.1 of the Security Policy. The protocols TLS v1.0 and v1.1 shall not be used when operated in approved mode.",
+    "description": "The Edge SWG appliances from Symantec provide companies the ability to deploy a scalable proxy-based security solution to protect their organization against advanced threats. The Edge SWG acts as gateway between web users and the Internet: a single point where all web traffic can be monitored and corporate policies for web use can be enforced.",
+    "software_versions": "7.4",
+    "hardware_versions": "Intel Xeon Silver 4210, Intel Xeon Silver 4216",
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 2",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "11/11/2024",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Symantec, A Division of Broadcom",
+      "website_url": "http://www.broadcom.com",
+      "address_lines": [
+        "1320 Ridder Park Dr",
+        "San Jose, CA 95131",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Ian Hall",
+      "contact_email": "symc-fed-certs.pdl@broadcom.com",
+      "contact_phone": "000-000-0000"
+    },
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -12,64 +70,22 @@
       "source": "firecrawl",
       "source_url": null,
       "cached": true,
-      "fallback_used": false,
+      "fallback_used": true,
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When operated in approved mode and when installed, initialized and configured as specified in Section 11.1.1 of the Security Policy. The protocols TLS v1.0 and v1.1 shall not be used when operated in approved mode.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873",
-    "certificate_number": "4873",
-    "dataset": "active",
-    "description": "The Edge SWG appliances from Symantec provide companies the ability to deploy a scalable proxy-based security solution to protect their organization against advanced threats. The Edge SWG acts as gateway between web users and the Internet: a single point where all web traffic can be monitored and corporate policies for web use can be enforced.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-07T04:16:56.074543Z",
-    "hardware_versions": null,
-    "module_name": "Edge SWG",
-    "module_type": "Software-hybrid",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Roles, services, and authentication: Level 2",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/10/2029",
-    "validation_date": "11/11/2024",
-    "validation_dates": [
-      "11/11/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "11/11/2024",
-        "lab": "Acumen Security",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "1320 Ridder Park Dr",
-        "San Jose, CA 95131",
-        "USA"
-      ],
-      "contact_email": "symc-fed-certs.pdl@broadcom.com",
-      "contact_name": "Ian Hall",
-      "contact_phone": "000-000-0000",
-      "country": "USA",
-      "name": "Symantec, A Division of Broadcom",
-      "website_url": "http://www.broadcom.com"
-    },
-    "vendor_name": "Symantec, A Division of Broadcom"
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

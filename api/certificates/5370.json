@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370"
+  },
+  "certificate": {
+    "certificate_number": "5370",
+    "dataset": "active",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "F5OS-C Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "7/7/2026, 7/8/2026",
+    "validation_dates": [
+      "7/7/2026",
+      "7/8/2026"
+    ],
+    "sunset_date": "7/6/2031",
+    "caveat": "When installed, initialized and configured as specified in Section [11.1] of the Security Policy, When the tamper evident seals contained in F5 SKU F5-UPG-FB-STICKER-1 are applied as indicated in the Security Policy",
+    "description": null,
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/7/2026",
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
+      },
+      {
+        "date": "7/8/2026",
+        "type": "Update",
+        "lab": "Lightship Security, Inc."
+      }
+    ],
+    "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "http://www.f5.com",
+      "address_lines": [
+        "801 Fifth Ave",
+        "Seattle, WA 98104",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "F5 Certifications Team",
+      "contact_email": "F5Certs@f5.com",
+      "contact_phone": "845-603-2123"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4783 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A4783 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum | value - Yes | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-GCM A4783 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128, 256 | 104, 408 | AAD Length - AAD Length: 128, 384, 160 | 720, 0 | SP 800-38D",
+      "Counter DRBG A4783 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - | Personalization String Length: 0-256 | Increment 256 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A4782 Curve - P-256, P-384 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A4782 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A4782 Component - No | Curve - P-256, P-384",
+      "SHA2-512 | FIPS 186-5 | F5OS-C Cryptographic Module | F5, Inc.",
+      "HMAC-SHA-1 A4783 MAC - MAC: 160 | Key Length - Key Length: 8, 16, 64, 128 | 1024 | FIPS 198-1",
+      "HMAC-SHA2-256 A4783 MAC - MAC: 256 | Key Length - Key Length: 8, 16, 64, 128 | 1024 | FIPS 198-1",
+      "HMAC-SHA2-384 A4783 MAC - MAC: 384 | Key Length - Key Length: 8, 16, 64, 128 | 1024 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4782 Domain Parameter Generation Methods - P- | 256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF SSH (CVL) A4782 Cipher - AES-128, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A4782 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | p mod 8 - 0 | Primality Tests - 2powSecStr | q mod 8 - 0 | Fixed Public Exponent - 010001 | Info Generated By Server - No | Private Key Format - standard | Public Exponent Mode - fixed | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A4782 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A4782 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | FIPS 186-5",
+      "SHA-1 A4783 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A4783 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A4783 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A4782 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | F5OS-C Cryptographic Module | F5, Inc. | Entropy Source Conditioning Component",
+      "SHA3-256 A4093 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A NIST SP800-133rev2 - Section 4 | example 1 | N/A for this module. | The module does not implement any non-approved algorithms, allowed in the approved mode of operation. | N/A for this module. | The module does not implement any non-approved algorithms, with no security claimed. | N/A for this module. | The module does not implement any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 29,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

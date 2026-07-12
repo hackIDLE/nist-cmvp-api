@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322"
   },
   "certificate": {
     "certificate_number": "5322",
     "dataset": "active",
-    "generated_at": "2026-07-07T04:16:56.074543Z",
+    "generated_at": "2026-07-12T05:29:15.652683Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5322",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Certification Team",
       "contact_email": "FIPS@digicert.com",
       "contact_phone": "801-896-7973"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 49
     },
     "algorithms": [
       "AES",
@@ -118,25 +130,6 @@
       "Triple-DES (NC) Encryption/Decryption",
       "Note: All the various AES modes (e.g., EAX, XCBC, XTS, etc.) use the same underlying AES",
       "implementation as the Approved AES cert."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 49,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5322.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }
