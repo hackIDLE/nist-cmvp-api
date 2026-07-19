@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
-    "total_modules": 1134,
-    "total_historical_modules": 4245,
-    "total_modules_in_process": 257,
-    "total_certificates_with_algorithms": 1753,
-    "total_certificate_details": 5379,
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "total_modules": 1143,
+    "total_historical_modules": 4258,
+    "total_modules_in_process": 239,
+    "total_certificates_with_algorithms": 1776,
+    "total_certificate_details": 5401,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,18 +13,18 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1111,
-        "html_refreshed": 26,
+        "html_reused": 1121,
+        "html_refreshed": 25,
         "html_failed": 0,
-        "pdf_reused": 1111,
-        "pdf_refreshed": 23,
+        "pdf_reused": 1121,
+        "pdf_refreshed": 22,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1111,
-        "algorithm_successes": 667,
+        "algorithm_cache_hits": 1121,
+        "algorithm_successes": 686,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 23,
+        "algorithm_source_crawl4ai": 22,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -32,18 +32,18 @@
         "certificates_deferred": 3
       },
       "historical": {
-        "html_reused": 4235,
-        "html_refreshed": 10,
+        "html_reused": 4245,
+        "html_refreshed": 13,
         "html_failed": 0,
-        "pdf_reused": 4243,
-        "pdf_refreshed": 2,
+        "pdf_reused": 4254,
+        "pdf_refreshed": 4,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4243,
-        "algorithm_successes": 1086,
+        "algorithm_cache_hits": 4254,
+        "algorithm_successes": 1090,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 2,
+        "algorithm_source_crawl4ai": 4,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,18 +51,18 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5346,
-        "html_refreshed": 36,
+        "html_reused": 5366,
+        "html_refreshed": 38,
         "html_failed": 0,
-        "pdf_reused": 5354,
-        "pdf_refreshed": 25,
+        "pdf_reused": 5375,
+        "pdf_refreshed": 26,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5354,
-        "algorithm_successes": 1753,
+        "algorithm_cache_hits": 5375,
+        "algorithm_successes": 1776,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 25,
+        "algorithm_source_crawl4ai": 26,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -79,30 +79,30 @@
   },
   "summary": {
     "misses": 0,
-    "refreshed_records": 33,
-    "fallback_usage": 8,
-    "changed_certificates": 33,
+    "refreshed_records": 35,
+    "fallback_usage": 9,
+    "changed_certificates": 35,
     "deferred": 3
   },
   "update_monitor": {
     "status": "pass",
     "schedule": "0 2 * * 0",
     "schedule_description": "Weekly on Sunday at 02:00 UTC",
-    "latest_run_generated_at": "2026-07-12T05:29:15.652683Z",
-    "next_scheduled_run": "2026-07-19T02:00:00Z",
+    "latest_run_generated_at": "2026-07-19T05:22:40.630488Z",
+    "next_scheduled_run": "2026-07-26T02:00:00Z",
     "latest_run_metrics": {
-      "html_reused": 5346,
-      "html_refreshed": 36,
+      "html_reused": 5366,
+      "html_refreshed": 38,
       "html_failed": 0,
-      "pdf_reused": 5354,
-      "pdf_refreshed": 25,
+      "pdf_reused": 5375,
+      "pdf_refreshed": 26,
       "pdf_failed": 0,
       "pdf_cache_hits": 0,
       "algorithm_misses": 0,
-      "algorithm_cache_hits": 5354,
-      "algorithm_successes": 1753,
+      "algorithm_cache_hits": 5375,
+      "algorithm_successes": 1776,
       "algorithm_fallbacks": 0,
-      "algorithm_source_crawl4ai": 25,
+      "algorithm_source_crawl4ai": 26,
       "algorithm_source_security_policy_pdf": 0,
       "algorithm_source_database": 0,
       "algorithm_source_none": 0,
@@ -113,7 +113,7 @@
       {
         "name": "html_cache_reuse_rate",
         "status": "pass",
-        "value": 0.993311,
+        "value": 0.992968,
         "threshold": 0.9
       },
       {
@@ -148,23 +148,17 @@
     ]
   },
   "algorithm_coverage": {
-    "total_certificates": 5379,
-    "certificates_with_algorithms": 1753,
-    "coverage_rate": 0.325897,
+    "total_certificates": 5401,
+    "certificates_with_algorithms": 1776,
+    "coverage_rate": 0.328828,
     "zero_algorithm_certificates": {
-      "cached_no_attempts": 3588,
-      "explicit_no_algorithms": 8,
+      "cached_no_attempts": 3586,
+      "explicit_no_algorithms": 9,
       "source_none": 30,
       "other": 0
     }
   },
   "deferred_certificates": [
-    {
-      "certificate_number": "5389",
-      "dataset": "active",
-      "reason": "algorithm_unavailable",
-      "repeat": false
-    },
     {
       "certificate_number": "5331",
       "dataset": "active",
@@ -176,336 +170,362 @@
       "dataset": "active",
       "reason": "algorithm_unavailable",
       "repeat": true
+    },
+    {
+      "certificate_number": "5389",
+      "dataset": "active",
+      "reason": "algorithm_unavailable",
+      "repeat": true
     }
   ],
   "misses": [],
   "refreshed_records": [
     {
-      "certificate_number": "5393",
+      "certificate_number": "5424",
       "dataset": "active",
-      "path": "/api/certificates/5393.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200",
+      "path": "/api/certificates/5424.json",
+      "vendor_name": "ZeroTier, Inc.",
+      "module_name": "ZeroTier, Inc. Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5392",
+      "certificate_number": "5423",
       "dataset": "active",
-      "path": "/api/certificates/5392.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
+      "path": "/api/certificates/5423.json",
+      "vendor_name": "Rambus Inc.",
+      "module_name": "SafeZone FIPS SW Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5391",
+      "certificate_number": "5422",
       "dataset": "active",
-      "path": "/api/certificates/5391.json",
-      "vendor_name": "Cloud Software Group",
-      "module_name": "NetScaler VPX",
+      "path": "/api/certificates/5422.json",
+      "vendor_name": "SanDisk Technologies Inc",
+      "module_name": "Ultrastar® DC SN655 BiCS5 NVMe® TCG Opal SSD, SED",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5390",
+      "certificate_number": "5421",
       "dataset": "active",
-      "path": "/api/certificates/5390.json",
-      "vendor_name": "HID Global",
-      "module_name": "HID Applets v4.0 on NXP JCOP 4.5 P71D600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5388",
-      "dataset": "active",
-      "path": "/api/certificates/5388.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "BIG-IP Tenant Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5387",
-      "dataset": "active",
-      "path": "/api/certificates/5387.json",
-      "vendor_name": "Apple Inc.",
-      "module_name": "Apple corecrypto Module 18.3 [Apple silicon, Kernel, Software, SL1]",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5386",
-      "dataset": "active",
-      "path": "/api/certificates/5386.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "Firepower Management Center Virtual VMware Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5385",
-      "dataset": "active",
-      "path": "/api/certificates/5385.json",
-      "vendor_name": "Western Digital Technologies, Inc.",
-      "module_name": "Ultrastar DC HC555 TCG Enterprise HDD SED",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5384",
-      "dataset": "active",
-      "path": "/api/certificates/5384.json",
-      "vendor_name": "Nasuni Corporation",
-      "module_name": "Nasuni FIPS Provider for OpenSSL",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5383",
-      "dataset": "active",
-      "path": "/api/certificates/5383.json",
-      "vendor_name": "Symantec, A Division of Broadcom",
-      "module_name": "Edge SWG",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5382",
-      "dataset": "active",
-      "path": "/api/certificates/5382.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS3100, NS3200, NS5100 and NS5200",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5381",
-      "dataset": "active",
-      "path": "/api/certificates/5381.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7500",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5380",
-      "dataset": "active",
-      "path": "/api/certificates/5380.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7150, NS7250 and NS7350",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5379",
-      "dataset": "active",
-      "path": "/api/certificates/5379.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5378",
-      "dataset": "active",
-      "path": "/api/certificates/5378.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS3600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5377",
-      "dataset": "active",
-      "path": "/api/certificates/5377.json",
-      "vendor_name": "ST Engineering Urban Solutions Ltd. and i-Engine Pte Ltd.",
-      "module_name": "ST Engineering & i-Engine SAM Applet on NXP P71D600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5376",
-      "dataset": "active",
-      "path": "/api/certificates/5376.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS9600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5375",
-      "dataset": "active",
-      "path": "/api/certificates/5375.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS9500",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5374",
-      "dataset": "active",
-      "path": "/api/certificates/5374.json",
-      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
-      "module_name": "TuxCare Kernel Crypto API",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5373",
-      "dataset": "active",
-      "path": "/api/certificates/5373.json",
-      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
-      "module_name": "TuxCare OpenSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5372",
-      "dataset": "active",
-      "path": "/api/certificates/5372.json",
-      "vendor_name": "PacketLight Networks Ltd.",
-      "module_name": "PL-2000GM and PL-2000GA",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5371",
-      "dataset": "active",
-      "path": "/api/certificates/5371.json",
-      "vendor_name": "Microchip Technology Inc",
-      "module_name": "Microchip Trust Anchor TA101",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5370",
-      "dataset": "active",
-      "path": "/api/certificates/5370.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "F5OS-C Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4873",
-      "dataset": "historical",
-      "path": "/api/certificates/4873.json",
-      "vendor_name": "Symantec, A Division of Broadcom",
-      "module_name": "Edge SWG",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4719",
-      "dataset": "historical",
-      "path": "/api/certificates/4719.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4716",
-      "dataset": "historical",
-      "path": "/api/certificates/4716.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Cryptographic Module for BIG-IP ®",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4715",
-      "dataset": "historical",
-      "path": "/api/certificates/4715.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4710",
-      "dataset": "historical",
-      "path": "/api/certificates/4710.json",
+      "path": "/api/certificates/5421.json",
       "vendor_name": "Cisco Systems, Inc.",
-      "module_name": "Firepower Management Center Virtual VMware Cryptographic Module",
+      "module_name": "Firepower Next-Generation IPS Virtual VMware Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5420",
+      "dataset": "active",
+      "path": "/api/certificates/5420.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5419",
+      "dataset": "active",
+      "path": "/api/certificates/5419.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5418",
+      "dataset": "active",
+      "path": "/api/certificates/5418.json",
+      "vendor_name": "Datum Systems, Inc.",
+      "module_name": "Stinger Encryption Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5417",
+      "dataset": "active",
+      "path": "/api/certificates/5417.json",
+      "vendor_name": "Cisco Systems Inc",
+      "module_name": "CiscoSSL FIPS Provider",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5416",
+      "dataset": "active",
+      "path": "/api/certificates/5416.json",
+      "vendor_name": "KIOXIA Corporation",
+      "module_name": "KIOXIA FIPS TC58NC1137GTC Crypto Sub-Chip Class A1",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5415",
+      "dataset": "active",
+      "path": "/api/certificates/5415.json",
+      "vendor_name": "Nokia",
+      "module_name": "Nokia-SONiC-MACsec",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5414",
+      "dataset": "active",
+      "path": "/api/certificates/5414.json",
+      "vendor_name": "Cloud Software Group",
+      "module_name": "NetScaler MPX",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5413",
+      "dataset": "active",
+      "path": "/api/certificates/5413.json",
+      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
+      "module_name": "TuxCare NSS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5412",
+      "dataset": "active",
+      "path": "/api/certificates/5412.json",
+      "vendor_name": "HPE Juniper Networking",
+      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module version 3.0",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5411",
+      "dataset": "active",
+      "path": "/api/certificates/5411.json",
+      "vendor_name": "Qualcomm Technologies, Inc.",
+      "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5403",
+      "dataset": "active",
+      "path": "/api/certificates/5403.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec, Web Portal]",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5402",
+      "dataset": "active",
+      "path": "/api/certificates/5402.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec]",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5401",
+      "dataset": "active",
+      "path": "/api/certificates/5401.json",
+      "vendor_name": "Palo Alto Networks",
+      "module_name": "Palo Alto Networks Core Crypto Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5398",
+      "dataset": "active",
+      "path": "/api/certificates/5398.json",
+      "vendor_name": "HPE Juniper Networking",
+      "module_name": "HPE Juniper Networking SRX1600 Service Gateway",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5397",
+      "dataset": "active",
+      "path": "/api/certificates/5397.json",
+      "vendor_name": "JVCKENWOOD Corporation",
+      "module_name": "Secure Cryptographic Module (SCM)",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5396",
+      "dataset": "active",
+      "path": "/api/certificates/5396.json",
+      "vendor_name": "Wind River Systems, Inc.",
+      "module_name": "Wind River FIPS Object Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5395",
+      "dataset": "active",
+      "path": "/api/certificates/5395.json",
+      "vendor_name": "Pure Storage, Inc.",
+      "module_name": "Purity Encryption Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5394",
+      "dataset": "active",
+      "path": "/api/certificates/5394.json",
+      "vendor_name": "Sunhillo Corporation",
+      "module_name": "Sunhillo Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4898",
+      "dataset": "historical",
+      "path": "/api/certificates/4898.json",
+      "vendor_name": "Rambus Inc.",
+      "module_name": "SafeZone FIPS SW Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "4617",
+      "certificate_number": "4830",
       "dataset": "historical",
-      "path": "/api/certificates/4617.json",
-      "vendor_name": "Aruba, a Hewlett Packard Enterprise Company",
-      "module_name": "Hewlett Packard Enterprise OpenSSL Cryptographic Module on Ubuntu Linux",
+      "path": "/api/certificates/4830.json",
+      "vendor_name": "Cloud Software Group",
+      "module_name": "NetScaler MPX",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4791",
+      "dataset": "historical",
+      "path": "/api/certificates/4791.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec, Web Portal]",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4790",
+      "dataset": "historical",
+      "path": "/api/certificates/4790.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec]",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4742",
+      "dataset": "historical",
+      "path": "/api/certificates/4742.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4741",
+      "dataset": "historical",
+      "path": "/api/certificates/4741.json",
+      "vendor_name": "Palo Alto Networks, Inc.",
+      "module_name": "Palo Alto Networks Core Crypto Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4734",
+      "dataset": "historical",
+      "path": "/api/certificates/4734.json",
+      "vendor_name": "Cisco Systems, Inc.",
+      "module_name": "Firepower Next-Generation IPS Virtual VMware Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4722",
+      "dataset": "historical",
+      "path": "/api/certificates/4722.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4643",
+      "dataset": "historical",
+      "path": "/api/certificates/4643.json",
+      "vendor_name": "Cisco Systems, Inc.",
+      "module_name": "Cisco ASR 1000 Series Routers without MACSEC",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3980",
+      "certificate_number": "3989",
       "dataset": "historical",
-      "path": "/api/certificates/3980.json",
-      "vendor_name": "Canonical Ltd.",
-      "module_name": "Ubuntu 18.04 OpenSSL Cryptographic Module",
+      "path": "/api/certificates/3989.json",
+      "vendor_name": "Quadient Technologies France",
+      "module_name": "Quadient Postal Security Device (PSD)",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3979",
+      "certificate_number": "3987",
       "dataset": "historical",
-      "path": "/api/certificates/3979.json",
-      "vendor_name": "FEITIAN Technologies Co., Ltd.",
-      "module_name": "FEITIAN Biometric FIDO Key Module",
+      "path": "/api/certificates/3987.json",
+      "vendor_name": "Thales",
+      "module_name": "CipherTrust Transparent Encryption Cryptographic Module",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3977",
+      "certificate_number": "3986",
       "dataset": "historical",
-      "path": "/api/certificates/3977.json",
-      "vendor_name": "Pavilion Data Systems",
-      "module_name": "Pavilion Cryptographic Module",
+      "path": "/api/certificates/3986.json",
+      "vendor_name": "Infinera Corporation",
+      "module_name": "mTera 8-slot Universal Transport Platform",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3975",
+      "certificate_number": "3983",
       "dataset": "historical",
-      "path": "/api/certificates/3975.json",
-      "vendor_name": "VMware, Inc.",
-      "module_name": "VMware's SD-WAN VPN Crypto Module",
+      "path": "/api/certificates/3983.json",
+      "vendor_name": "KIOXIA Corporation",
+      "module_name": "KIOXIA TCG OPAL SSC Crypto Sub-Chip TC58NC1132GTC",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
@@ -513,11 +533,11 @@
   ],
   "fallback_usage": [
     {
-      "certificate_number": "4873",
+      "certificate_number": "4791",
       "dataset": "historical",
-      "path": "/api/certificates/4873.json",
-      "vendor_name": "Symantec, A Division of Broadcom",
-      "module_name": "Edge SWG",
+      "path": "/api/certificates/4791.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec, Web Portal]",
       "standard": "FIPS 140-3",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -526,22 +546,70 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4791.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4873.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4791.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "4719",
+      "certificate_number": "4790",
       "dataset": "historical",
-      "path": "/api/certificates/4719.json",
+      "path": "/api/certificates/4790.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec]",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "algorithm_extraction_fallback",
+      "source": "firecrawl",
+      "source_url": null,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4790.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4790.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    },
+    {
+      "certificate_number": "4742",
+      "dataset": "historical",
+      "path": "/api/certificates/4742.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "algorithm_extraction_fallback",
+      "source": "firecrawl",
+      "source_url": null,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4742.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4742.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    },
+    {
+      "certificate_number": "4741",
+      "dataset": "historical",
+      "path": "/api/certificates/4741.json",
       "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200",
+      "module_name": "Palo Alto Networks Core Crypto Module",
       "standard": "FIPS 140-3",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -550,22 +618,22 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4719.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4741.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4719.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4741.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "4716",
+      "certificate_number": "4722",
       "dataset": "historical",
-      "path": "/api/certificates/4716.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Cryptographic Module for BIG-IP ®",
+      "path": "/api/certificates/4722.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -574,46 +642,22 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4716.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4722.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4716.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4722.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "4715",
+      "certificate_number": "3989",
       "dataset": "historical",
-      "path": "/api/certificates/4715.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4715.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4715.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    },
-    {
-      "certificate_number": "4617",
-      "dataset": "historical",
-      "path": "/api/certificates/4617.json",
-      "vendor_name": "Aruba, a Hewlett Packard Enterprise Company",
-      "module_name": "Hewlett Packard Enterprise OpenSSL Cryptographic Module on Ubuntu Linux",
+      "path": "/api/certificates/3989.json",
+      "vendor_name": "Quadient Technologies France",
+      "module_name": "Quadient Postal Security Device (PSD)",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -622,22 +666,22 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4617.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3989.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4617.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3989.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "3980",
+      "certificate_number": "3987",
       "dataset": "historical",
-      "path": "/api/certificates/3980.json",
-      "vendor_name": "Canonical Ltd.",
-      "module_name": "Ubuntu 18.04 OpenSSL Cryptographic Module",
+      "path": "/api/certificates/3987.json",
+      "vendor_name": "Thales",
+      "module_name": "CipherTrust Transparent Encryption Cryptographic Module",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -646,22 +690,22 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3980.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3987.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3980.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3987.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "3977",
+      "certificate_number": "3986",
       "dataset": "historical",
-      "path": "/api/certificates/3977.json",
-      "vendor_name": "Pavilion Data Systems",
-      "module_name": "Pavilion Cryptographic Module",
+      "path": "/api/certificates/3986.json",
+      "vendor_name": "Infinera Corporation",
+      "module_name": "mTera 8-slot Universal Transport Platform",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -670,22 +714,22 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3986.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3977.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3986.pdf",
           "status": "no_algorithms"
         }
       ]
     },
     {
-      "certificate_number": "3975",
+      "certificate_number": "3983",
       "dataset": "historical",
-      "path": "/api/certificates/3975.json",
-      "vendor_name": "VMware, Inc.",
-      "module_name": "VMware's SD-WAN VPN Crypto Module",
+      "path": "/api/certificates/3983.json",
+      "vendor_name": "KIOXIA Corporation",
+      "module_name": "KIOXIA TCG OPAL SSC Crypto Sub-Chip TC58NC1132GTC",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "algorithm_extraction_fallback",
@@ -694,12 +738,12 @@
       "attempts": [
         {
           "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3983.pdf",
           "status": "no_algorithms"
         },
         {
           "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3975.pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3983.pdf",
           "status": "no_algorithms"
         }
       ]
@@ -707,331 +751,351 @@
   ],
   "changed_certificates": [
     {
-      "certificate_number": "5393",
+      "certificate_number": "5424",
       "dataset": "active",
-      "path": "/api/certificates/5393.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200",
+      "path": "/api/certificates/5424.json",
+      "vendor_name": "ZeroTier, Inc.",
+      "module_name": "ZeroTier, Inc. Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5392",
+      "certificate_number": "5423",
       "dataset": "active",
-      "path": "/api/certificates/5392.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
+      "path": "/api/certificates/5423.json",
+      "vendor_name": "Rambus Inc.",
+      "module_name": "SafeZone FIPS SW Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5391",
+      "certificate_number": "5422",
       "dataset": "active",
-      "path": "/api/certificates/5391.json",
-      "vendor_name": "Cloud Software Group",
-      "module_name": "NetScaler VPX",
+      "path": "/api/certificates/5422.json",
+      "vendor_name": "SanDisk Technologies Inc",
+      "module_name": "Ultrastar® DC SN655 BiCS5 NVMe® TCG Opal SSD, SED",
       "standard": "FIPS 140-3",
       "status": "Active",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "5390",
+      "certificate_number": "5421",
       "dataset": "active",
-      "path": "/api/certificates/5390.json",
-      "vendor_name": "HID Global",
-      "module_name": "HID Applets v4.0 on NXP JCOP 4.5 P71D600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5388",
-      "dataset": "active",
-      "path": "/api/certificates/5388.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "BIG-IP Tenant Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5387",
-      "dataset": "active",
-      "path": "/api/certificates/5387.json",
-      "vendor_name": "Apple Inc.",
-      "module_name": "Apple corecrypto Module 18.3 [Apple silicon, Kernel, Software, SL1]",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5386",
-      "dataset": "active",
-      "path": "/api/certificates/5386.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "Firepower Management Center Virtual VMware Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5385",
-      "dataset": "active",
-      "path": "/api/certificates/5385.json",
-      "vendor_name": "Western Digital Technologies, Inc.",
-      "module_name": "Ultrastar DC HC555 TCG Enterprise HDD SED",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5384",
-      "dataset": "active",
-      "path": "/api/certificates/5384.json",
-      "vendor_name": "Nasuni Corporation",
-      "module_name": "Nasuni FIPS Provider for OpenSSL",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5383",
-      "dataset": "active",
-      "path": "/api/certificates/5383.json",
-      "vendor_name": "Symantec, A Division of Broadcom",
-      "module_name": "Edge SWG",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5382",
-      "dataset": "active",
-      "path": "/api/certificates/5382.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS3100, NS3200, NS5100 and NS5200",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5381",
-      "dataset": "active",
-      "path": "/api/certificates/5381.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7500",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5380",
-      "dataset": "active",
-      "path": "/api/certificates/5380.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7150, NS7250 and NS7350",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5379",
-      "dataset": "active",
-      "path": "/api/certificates/5379.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS7600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5378",
-      "dataset": "active",
-      "path": "/api/certificates/5378.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS3600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5377",
-      "dataset": "active",
-      "path": "/api/certificates/5377.json",
-      "vendor_name": "ST Engineering Urban Solutions Ltd. and i-Engine Pte Ltd.",
-      "module_name": "ST Engineering & i-Engine SAM Applet on NXP P71D600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5376",
-      "dataset": "active",
-      "path": "/api/certificates/5376.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS9600",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5375",
-      "dataset": "active",
-      "path": "/api/certificates/5375.json",
-      "vendor_name": "Trellix",
-      "module_name": "Trellix Intrusion Prevention System Sensor NS9500",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5374",
-      "dataset": "active",
-      "path": "/api/certificates/5374.json",
-      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
-      "module_name": "TuxCare Kernel Crypto API",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5373",
-      "dataset": "active",
-      "path": "/api/certificates/5373.json",
-      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
-      "module_name": "TuxCare OpenSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5372",
-      "dataset": "active",
-      "path": "/api/certificates/5372.json",
-      "vendor_name": "PacketLight Networks Ltd.",
-      "module_name": "PL-2000GM and PL-2000GA",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5371",
-      "dataset": "active",
-      "path": "/api/certificates/5371.json",
-      "vendor_name": "Microchip Technology Inc",
-      "module_name": "Microchip Trust Anchor TA101",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5370",
-      "dataset": "active",
-      "path": "/api/certificates/5370.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "F5OS-C Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4873",
-      "dataset": "historical",
-      "path": "/api/certificates/4873.json",
-      "vendor_name": "Symantec, A Division of Broadcom",
-      "module_name": "Edge SWG",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4719",
-      "dataset": "historical",
-      "path": "/api/certificates/4719.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN Instant-On Network (ION) Devices ION 1200, ION 1200-S, ION 3200, ION 5200, and ION 9200",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4716",
-      "dataset": "historical",
-      "path": "/api/certificates/4716.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Cryptographic Module for BIG-IP ®",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4715",
-      "dataset": "historical",
-      "path": "/api/certificates/4715.json",
-      "vendor_name": "Palo Alto Networks, Inc.",
-      "module_name": "Palo Alto Networks SD-WAN ION Core Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4710",
-      "dataset": "historical",
-      "path": "/api/certificates/4710.json",
+      "path": "/api/certificates/5421.json",
       "vendor_name": "Cisco Systems, Inc.",
-      "module_name": "Firepower Management Center Virtual VMware Cryptographic Module",
+      "module_name": "Firepower Next-Generation IPS Virtual VMware Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5420",
+      "dataset": "active",
+      "path": "/api/certificates/5420.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5419",
+      "dataset": "active",
+      "path": "/api/certificates/5419.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5418",
+      "dataset": "active",
+      "path": "/api/certificates/5418.json",
+      "vendor_name": "Datum Systems, Inc.",
+      "module_name": "Stinger Encryption Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5417",
+      "dataset": "active",
+      "path": "/api/certificates/5417.json",
+      "vendor_name": "Cisco Systems Inc",
+      "module_name": "CiscoSSL FIPS Provider",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5416",
+      "dataset": "active",
+      "path": "/api/certificates/5416.json",
+      "vendor_name": "KIOXIA Corporation",
+      "module_name": "KIOXIA FIPS TC58NC1137GTC Crypto Sub-Chip Class A1",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5415",
+      "dataset": "active",
+      "path": "/api/certificates/5415.json",
+      "vendor_name": "Nokia",
+      "module_name": "Nokia-SONiC-MACsec",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5414",
+      "dataset": "active",
+      "path": "/api/certificates/5414.json",
+      "vendor_name": "Cloud Software Group",
+      "module_name": "NetScaler MPX",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5413",
+      "dataset": "active",
+      "path": "/api/certificates/5413.json",
+      "vendor_name": "Cloud Linux Software, Inc. d/b/a TuxCare",
+      "module_name": "TuxCare NSS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5412",
+      "dataset": "active",
+      "path": "/api/certificates/5412.json",
+      "vendor_name": "HPE Juniper Networking",
+      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module version 3.0",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5411",
+      "dataset": "active",
+      "path": "/api/certificates/5411.json",
+      "vendor_name": "Qualcomm Technologies, Inc.",
+      "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5403",
+      "dataset": "active",
+      "path": "/api/certificates/5403.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec, Web Portal]",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5402",
+      "dataset": "active",
+      "path": "/api/certificates/5402.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec]",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5401",
+      "dataset": "active",
+      "path": "/api/certificates/5401.json",
+      "vendor_name": "Palo Alto Networks",
+      "module_name": "Palo Alto Networks Core Crypto Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5398",
+      "dataset": "active",
+      "path": "/api/certificates/5398.json",
+      "vendor_name": "HPE Juniper Networking",
+      "module_name": "HPE Juniper Networking SRX1600 Service Gateway",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5397",
+      "dataset": "active",
+      "path": "/api/certificates/5397.json",
+      "vendor_name": "JVCKENWOOD Corporation",
+      "module_name": "Secure Cryptographic Module (SCM)",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5396",
+      "dataset": "active",
+      "path": "/api/certificates/5396.json",
+      "vendor_name": "Wind River Systems, Inc.",
+      "module_name": "Wind River FIPS Object Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5395",
+      "dataset": "active",
+      "path": "/api/certificates/5395.json",
+      "vendor_name": "Pure Storage, Inc.",
+      "module_name": "Purity Encryption Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "5394",
+      "dataset": "active",
+      "path": "/api/certificates/5394.json",
+      "vendor_name": "Sunhillo Corporation",
+      "module_name": "Sunhillo Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4898",
+      "dataset": "historical",
+      "path": "/api/certificates/4898.json",
+      "vendor_name": "Rambus Inc.",
+      "module_name": "SafeZone FIPS SW Cryptographic Module",
       "standard": "FIPS 140-3",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "4617",
+      "certificate_number": "4830",
       "dataset": "historical",
-      "path": "/api/certificates/4617.json",
-      "vendor_name": "Aruba, a Hewlett Packard Enterprise Company",
-      "module_name": "Hewlett Packard Enterprise OpenSSL Cryptographic Module on Ubuntu Linux",
+      "path": "/api/certificates/4830.json",
+      "vendor_name": "Cloud Software Group",
+      "module_name": "NetScaler MPX",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4791",
+      "dataset": "historical",
+      "path": "/api/certificates/4791.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec, Web Portal]",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4790",
+      "dataset": "historical",
+      "path": "/api/certificates/4790.json",
+      "vendor_name": "Arista Networks, Inc.",
+      "module_name": "Arista Crypto Module v3.0 [Software, Software IPsec]",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4742",
+      "dataset": "historical",
+      "path": "/api/certificates/4742.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4741",
+      "dataset": "historical",
+      "path": "/api/certificates/4741.json",
+      "vendor_name": "Palo Alto Networks, Inc.",
+      "module_name": "Palo Alto Networks Core Crypto Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4734",
+      "dataset": "historical",
+      "path": "/api/certificates/4734.json",
+      "vendor_name": "Cisco Systems, Inc.",
+      "module_name": "Firepower Next-Generation IPS Virtual VMware Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4722",
+      "dataset": "historical",
+      "path": "/api/certificates/4722.json",
+      "vendor_name": "SUSE, LLC",
+      "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "reason": "new_certificate"
+    },
+    {
+      "certificate_number": "4643",
+      "dataset": "historical",
+      "path": "/api/certificates/4643.json",
+      "vendor_name": "Cisco Systems, Inc.",
+      "module_name": "Cisco ASR 1000 Series Routers without MACSEC",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3980",
+      "certificate_number": "3989",
       "dataset": "historical",
-      "path": "/api/certificates/3980.json",
-      "vendor_name": "Canonical Ltd.",
-      "module_name": "Ubuntu 18.04 OpenSSL Cryptographic Module",
+      "path": "/api/certificates/3989.json",
+      "vendor_name": "Quadient Technologies France",
+      "module_name": "Quadient Postal Security Device (PSD)",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3979",
+      "certificate_number": "3987",
       "dataset": "historical",
-      "path": "/api/certificates/3979.json",
-      "vendor_name": "FEITIAN Technologies Co., Ltd.",
-      "module_name": "FEITIAN Biometric FIDO Key Module",
+      "path": "/api/certificates/3987.json",
+      "vendor_name": "Thales",
+      "module_name": "CipherTrust Transparent Encryption Cryptographic Module",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3977",
+      "certificate_number": "3986",
       "dataset": "historical",
-      "path": "/api/certificates/3977.json",
-      "vendor_name": "Pavilion Data Systems",
-      "module_name": "Pavilion Cryptographic Module",
+      "path": "/api/certificates/3986.json",
+      "vendor_name": "Infinera Corporation",
+      "module_name": "mTera 8-slot Universal Transport Platform",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"
     },
     {
-      "certificate_number": "3975",
+      "certificate_number": "3983",
       "dataset": "historical",
-      "path": "/api/certificates/3975.json",
-      "vendor_name": "VMware, Inc.",
-      "module_name": "VMware's SD-WAN VPN Crypto Module",
+      "path": "/api/certificates/3983.json",
+      "vendor_name": "KIOXIA Corporation",
+      "module_name": "KIOXIA TCG OPAL SSC Crypto Sub-Chip TC58NC1132GTC",
       "standard": "FIPS 140-2",
       "status": "Historical",
       "reason": "new_certificate"

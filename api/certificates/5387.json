@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5387"
   },
   "certificate": {
     "certificate_number": "5387",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5387",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5387",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5387.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Nina Kominiak",
       "contact_email": "security-certifications@apple.com",
       "contact_phone": "907-227-9672"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5387.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 69
     },
     "algorithms": [
       "AES",
@@ -141,25 +153,6 @@
       "RSA Key Wrapping OAEP, PKCS#1 v1.5 and -PSS schemes",
       "Triple-DES [SP 800-67r2] Encryption / Decryption | MD5 Message Digest | RFC 6637 Key Derivation Key Derivation Function",
       "HKDF [SP800-56Crev2] Key Derivation Function"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5387.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 69,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5387.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

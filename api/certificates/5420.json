@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420"
+  },
+  "certificate": {
+    "certificate_number": "5420",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
+    "vendor_name": "SUSE, LLC",
+    "module_name": "SUSE Linux Enterprise Libgcrypt Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/16/2026",
+    "validation_dates": [
+      "7/16/2026"
+    ],
+    "sunset_date": "7/10/2029",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g. keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "SUSE Linux Enterprise Libgcrypt Cryptographic Module is a general purpose cryptographic library based on the code from GnuPG.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/16/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "SUSE, LLC",
+      "website_url": "http://www.suse.com",
+      "address_lines": [
+        "10 Canal Park, Suite 200",
+        "Cambridge, MA 02141",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Ivan Teblin",
+      "contact_email": "sec-cert@suse.com",
+      "contact_phone": "0-000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 12 of 77",
+      "AES-CCM A3022, A3023 | A3025, A3026 | Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 72, 80, 88, 96, 104 | Payload Length - Payload Length: 0-256 | Increment 8 | AAD Length - AAD Length: 0, 256, 65536 | SP 800-38C",
+      "AES-CFB128 A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB8 A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A3022, A3023 | A3025, A3026 | Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 8-524288 | Increment 8 | SP 800-38B",
+      "AES-CTR A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum value - | No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-KW A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-4096 | Increment 128 | SP 800-38F",
+      "AES-OFB A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS | Testing Revision | 2.0 | A3022, A3023 | A3025, A3026 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 | Increment 128 | SP 800-38E | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 13 of 77 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes",
+      "Counter DRBG A3022, A3023 | A3025, A3026 | Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 128, Entropy | Input: 192, Entropy Input: 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - Personalization | String Length: 0 | Returned Bits - 1024, 512 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Curve - P-224, P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Component - No | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Component - No | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | FIPS 186-4",
+      "Hash DRBG A3022, A3023 | A3024, A3025, A3026 | Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 160, Entropy | Input: 256 | Nonce - Nonce: 160, Nonce: 256 | Personalization String Length - Personalization | String Length: 0, 160, Personalization String | Length: 0, 256 | Additional Input - Additional Input: 0, 160 | Additional Input: 0, 256 | Returned Bits - 320, 512, 768 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A3022, A3023 | A3024, A3025, A3026 | Prediction Resistance - No, Yes | Supports Reseed - No | SP 800-90A | Rev. 1 | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 14 of 77",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 160, Entropy | Input: 256 | Nonce - Nonce: 160, Nonce: 256 | Personalization String Length - Personalization | String Length: 0, 160, Personalization String | Length: 0, 256 | Additional Input - Additional Input: 0, 160 | Additional Input: 0, 256 | Returned Bits - 320, 512, 768",
+      "HMAC-SHA-1 A3021, A3022 | A3023, A3024 | A3025, A3026, A3027 | MAC - MAC: 160 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A3022, A3023 | A3024, A3025, A3026 | MAC - MAC: 224 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A3022, A3023 | A3024, A3025, A3026 | MAC - MAC: 256 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A3022, A3023 | A3024, A3025, A3026 | MAC - MAC: 384 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A3022, A3023 | A3024, A3025, A3026 | MAC - MAC: 512 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 | A3024, A3025, A3026 MAC - MAC: 224 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A3024, A3025, A3026 MAC - MAC: 256 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A3024, A3025, A3026 MAC - MAC: 384 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A3024, A3025, A3026 MAC - MAC: 512 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1 | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 15 of 77",
+      "PBKDF A3022, A3023 | A3024, A3025, A3026 | Iteration Count - Iteration Count: 10-1000 | Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-",
+      "256, SHA2-384, SHA2-512, SHA3-224, SHA3-",
+      "256, SHA3-384, SHA3-512 | Password Length - Password Length: 14-128 | Increment 1 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 128-4096 | Increment 8 | SP 800-132",
+      "RSA KeyGen | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Key Generation Mode - B.3.3 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A3022, A3023 | A3024, A3025, A3026 | Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Salt Length - 28 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A3021, A3022 | A3023, A3024 | A3025, A3026, A3027 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A3022, A3023 | A3024, A3025, A3026 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A3022, A3023 | A3024, A3025, A3026 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A3022, A3023 | A3024, A3025, A3026 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 16 of 77",
+      "SHA2-512 A3022, A3023 | A3024, A3025, A3026 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA3-224 A3024, A3025, A3026 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-256 A3024, A3025, A3026 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-384 A3024, A3025, A3026 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-512 A3024, A3025, A3026 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHAKE-128 A3024, A3025, A3026 Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Supports Bit-Oriented Output - No | Output Length - Output Length: 16-65536 | Increment 8 | FIPS 202",
+      "SHAKE-256 A3024, A3025, A3026 Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | Supports Bit-Oriented Output - No | Output Length - Output Length: 16-65536 | Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG N/A SP 800-133 Rev. 2, Section 4 Example 1 with V=0 | The module does not implement any non-approved algorithms which are allowed in the approved mode of | operation. | SUSE Linux Enterprise Libgcrypt Cryptographic Module | 17 of 77 | The module does not implement any non-approved algorithms which are allowed in the approved mode of | operation with no security claimed.",
+      "AES EAX Encryption; Decryption",
+      "AES OCB Encryption; Decryption",
+      "AES GCM Authenticated encryption | Authenticated decryption",
+      "AES GMAC Message authentication code | (MAC) | CRC32 Error detection code | BLAKE2B-160, BLAKE2B-256, BLAKE2B-384, BLAKE2B-512, BLAKE2S- | 128, BLAKE2S-160, BLAKE2S-224, BLAKE2S-256 | GOST R 34.11 Message digest | MD4, MD5 Message digest | RIPEMD-160 Message digest | Tiger Message digest | SM3, STRIBOG-256, STRIBOG-512 Message digest | Whirlpool Message digest | PBKDF2 with non-approved message digest algorithms or using input | parameters not meeting requirements stated in Security Policy, section"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 56,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5388"
   },
   "certificate": {
     "certificate_number": "5388",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5388",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5388",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5388.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "F5 Certifications Team",
       "contact_email": "F5Certs@f5.com",
       "contact_phone": "845-603-2123"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5388.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 56
     },
     "algorithms": [
       "AES",
@@ -132,25 +144,6 @@
       "RSA keypair with 2048, 3072 and 4096 (REST API) iControl representation state transfer (REST) | access | EC Diffie-Hellman Ephemeral Unified with curves other than | P-256, P-384. EC Diffie-Hellman using onePassDH / | StaticUnified schemes. Diffie-Hellman using groups other | than ffdhe2048, ffdhe3072, ffdhe4096",
       "Shared secret computation (not compliant with | SP800-56Ar3)",
       "Triple-DES, AES-GCM-128, AES-192, AES-256 Symmetric encryption and decryption in IPsec | /IKEv2 | BIG-IP Tenant Cryptographic Module"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5388.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 56,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5388.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

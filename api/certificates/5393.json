@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5393"
   },
   "certificate": {
     "certificate_number": "5393",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5393",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5393",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5393.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Amir Shahhosseini",
       "contact_email": "certifications@paloaltonetworks.com",
       "contact_phone": "408-753-4000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5393.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 65
     },
     "algorithms": [
       "AES",
@@ -138,25 +150,6 @@
       "CKG from CTR DRBG Key | Type:Asymmetric | N/A SP 800-133r2 Section 4, example | 1",
       "CKG from HMAC",
       "DRBG | Key | Type:Asymmetric | N/A SP 800-133r2 Section 4, example | 1 | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5393.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 65,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5393.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

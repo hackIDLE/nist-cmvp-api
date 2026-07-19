@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396"
+  },
+  "certificate": {
+    "certificate_number": "5396",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
+    "vendor_name": "Wind River Systems, Inc.",
+    "module_name": "Wind River FIPS Object Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/12/2026",
+    "validation_dates": [
+      "7/12/2026"
+    ],
+    "sunset_date": "7/11/2031",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys); No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Wind River FIPS Object Module is a general-purpose software cryptographic library offering symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use as part of Wind River's platforms.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/12/2026",
+        "type": "Initial",
+        "lab": "Teron Labs"
+      }
+    ],
+    "vendor": {
+      "name": "Wind River Systems, Inc.",
+      "website_url": "http://www.windriver.com",
+      "address_lines": [
+        "500 Wind River Way",
+        "Alameda, CA 94501",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amir Hanif",
+      "contact_email": "Amir.Hanif@windriver.com",
+      "contact_phone": "740-564-7132"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A6780 Key Length - 128, 192, 256 SP 800-38C",
+      "AES-CFB1 A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB8 A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A6780 Direction - Generation, Verification | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6780 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB A6780 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A6780 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG A6780 Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6780 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A6780 Curve - P-224, P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6780 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6780 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "Hash DRBG A6780 Prediction Resistance - No, Yes",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A6780 Prediction Resistance - No, Yes",
+      "HMAC-SHA-1 A6780 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-224 A6780 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-256 A6780 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-384 A6780 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2-512 A6780 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A6780 Domain Parameter Generation Methods - P-224, P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC Sp800- | 56Ar3 | A6780 Domain Parameter Generation Methods - MODP-2048, MODP-3072 | MODP-4096, MODP-6144, MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3 | Wind River FIPS Object Module | This document may be freely reproduced and distributed whole and intact including this copyright notice.",
+      "KDF IKEv2 (CVL) A6780 Diffie-Hellman Shared Secret Length - Diffie-Hellman Shared Secret Length | 224-8192 Increment 8 | Derived Keying Material Length - Derived Keying Material Length: 160- | 3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "KTS-IFC A6780 Modulo - 2048, 3072, 4096, 6144, 8192 | Key Generation Methods - rsakpg1-basic | Scheme -",
+      "KTS-OAEP-basic - | KAS Role - initiator, responder | Key Transport Method - | Key Length - 768 | SP 800-56B | Rev. 2",
+      "RSA KeyGen (FIPS186- | 5) | A6780 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2pow100 | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186- | 5) | A6780 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer (FIPS186- | 4) | A6780 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer (FIPS186- | 5) | A6780 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | FIPS 186-5 | Safe Primes Key | Generation | A6780 Safe Prime Groups - MODP-2048, MODP-3072, MODP-4096, MODP-6144 | MODP-8192 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A6780 Safe Prime Groups - MODP-2048, MODP-3072, MODP-4096, MODP-6144 | MODP-8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A6780 Message Length - Message Length: 160, 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-224 A6780 Message Length - Message Length: 224, 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-256 A6780 Message Length - Message Length: 256, 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-384 A6780 Message Length - Message Length: 384, 0-65528 Increment 8 FIPS 180-4",
+      "SHA2-512 A6780 Message Length - Message Length: 512, 0-65528 Increment 8 FIPS 180-4 | 2.5.2 Vendor Affirmed Algorithms | The module implements the vendor affirmed algorithms listed in the table below. | Name Properties Implementation Reference | CKG Key Type:Asymmetric N/A SP 800-133 Rev2 section 4 example 1 and IG D.H | 2.5.3 | The module does not implement non-Approved algorithms that are allowed in the Approved mode. | N/A for this module. | 2.5.4 | The module implements the non-Approved algorithms (allowed in the Approved mode with no security claimed) | listed in the table below. | Wind River FIPS Object Module | This document may be freely reproduced and distributed whole and intact including this copyright notice. | N/A for this module. | 2.5.5 | The module does not offer non-Approved algorithms that are not allowed in the Approved mode. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 42,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5401"
+  },
+  "certificate": {
+    "certificate_number": "5401",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5401",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5401",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5401.pdf",
+    "vendor_name": "Palo Alto Networks",
+    "module_name": "Palo Alto Networks Core Crypto Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/13/2026",
+    "validation_dates": [
+      "7/13/2026"
+    ],
+    "sunset_date": "7/25/2029",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Palo Alto Networks Core Crypto Module is a software cryptographic module that can run on various environments.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5401.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/13/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Palo Alto Networks",
+      "website_url": "http://www.paloaltonetworks.com/",
+      "address_lines": [
+        "3000 Tannery Way",
+        "Santa Clara, CA 95008",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amir Shahhosseini",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4206 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC A4207 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4206 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "AES-GCM A4207 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+      "Counter DRBG A4206 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "Counter DRBG A4207 Prediction Resistance - Yes",
+      "ECDSA KeyGen | (FIPS186-4) | A4206 Curve - P-256, P-384, P-521 | Secret Generation Mode - Testing | Candidates | FIPS 186-4",
+      "ECDSA KeyGen | (FIPS186-4) | A4207 Curve - P-256, P-384, P-521 | Secret Generation Mode - Testing | Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A4206 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A4207 Curve - P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A4206 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A4207 Curve - P-256, P-384, P-521",
+      "ECDSA SigVer | (FIPS186-4) | A4206 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-224",
+      "SHA2-256, SHA2-384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4207 Curve - P-256, P-384, P-521",
+      "HMAC-SHA2-256 A4206 MAC - MAC: 256 | Key Length - Key Length: 256-2048 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A4207 MAC - MAC: 256 | Key Length - Key Length: 256-2048 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A4206 MAC - MAC: 384 | Key Length - Key Length: 256-2048 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A4207 MAC - MAC: 384 | Key Length - Key Length: 256-2048 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4206 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4207 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A4206 Domain Parameter Generation Methods - | MODP-2048, MODP-3072, MODP-4096",
+      "Hash Function Z - SHA2-256, SHA2-384 | SP 800-56A | Rev. 3 | Scheme - | dhEphem - | KAS Role - initiator, responder",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A4207 Domain Parameter Generation Methods - | MODP-2048, MODP-3072, MODP-4096",
+      "Hash Function Z - SHA2-256, SHA2-384 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA KeyGen | (FIPS186-4) | A4206 Key Generation Mode - B.3.6 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A4206 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A4207 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A4206 Signature Type - ANSI X9.31, PKCS 1.5 | PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A4207 Signature Type - ANSI X9.31, PKCS 1.5 | PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4 | Safe Primes Key | Generation | A4206 Safe Prime Groups - MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Generation | A4207 Safe Prime Groups - MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A4206 Safe Prime Groups - MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A4207 Safe Prime Groups - MODP-2048, MODP- | 3072, MODP-4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A4206 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA-1 A4207 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-224 A4206 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-224 A4207 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A4206 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A4207 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A4206 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A4207 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A4206 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A4207 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A4206 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length | 1024 | SP 800-135 | Rev. 1",
+      "A4207 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length | 1024 | SP 800-135 | Rev. 1 | Note: For Operational Environments which use Panorama or WildFire as the Operating System | in Table 2.2, algorithms from A4207 are not supported. Only the algorithms specified in the table | above are supported by the module in approved mode of operation. | Name Properties Implementation Reference | CKG N/A Section 4 Example 1 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5401.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 50,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5401.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5398"
+  },
+  "certificate": {
+    "certificate_number": "5398",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5398",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5398",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5398.pdf",
+    "vendor_name": "HPE Juniper Networking",
+    "module_name": "HPE Juniper Networking SRX1600 Service Gateway",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "7/12/2026",
+    "validation_dates": [
+      "7/12/2026"
+    ],
+    "sunset_date": "7/11/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy",
+    "description": "The SRX1600 Service Gateway offers outstanding protection, performance, scalability, availability, and integrated security services. Designed for high-performance security services architecture, and seamless integration of networking and security in a single platform, the SRX1600 is best suited for campuses, regional headquarters and enterprise data centers with a focus on application visibility and control, intrusion prevention, advanced threat protection, authentication, confidentiality of information, and integrated cloud-based security.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5398.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/12/2026",
+        "type": "Initial",
+        "lab": "Teron Labs"
+      }
+    ],
+    "vendor": {
+      "name": "HPE Juniper Networking",
+      "website_url": "http://www.juniper.net",
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, California 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Bill Shelton",
+      "contact_email": "certs-team@juniper.net",
+      "contact_phone": "408-745-2000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6736 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A6736 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "ECDSA KeyGen | (FIPS186-5) | A6736 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A6736 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6736 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6736 Curve - P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A6736 Key Length - Key Length: 160 FIPS 198-1",
+      "HMAC-SHA2-256 A6736 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-512 A6736 Key Length - Key Length: 512 FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6736 Domain Parameter Generation Methods - P- | 256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3 | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 11 of 53",
+      "KDF SSH (CVL) A6736 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-",
+      "384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6736 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6736 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6736 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 A6736 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6736 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6736 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6736 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Intel DRNG",
+      "Conditioning Component AES-CBC-MAC SP800- | 90B | A2518 Key Length - | 128 | SP 800-90B | OpenSSL 1.1.1 Cryptographic Library",
+      "ECDSA SigVer | (FIPS186-5) | A5633 Curve - P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5 | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 12 of 53",
+      "SHA2-256 A5633 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Kernel Cryptographic Library",
+      "HMAC DRBG A5108 Prediction Resistance - Yes",
+      "Mode - SHA2-256 | SP 800-90A Rev. | 1",
+      "HMAC-SHA2- | 256 | A5108 Key Length - Key Length: 256 FIPS 198-1",
+      "SHA2-256 A5108 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | LibMD Cryptographic Library",
+      "HMAC-SHA-1 A5107 Key Length - Key Length: 160 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A5107 Key Length - Key Length: 256 FIPS 198-1",
+      "SHA-1 A5107 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A5107 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A5107 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | type:Asymmetric | N/A SP 800-133 Rev. 2 Section 4, example 1 direct",
+      "output from DRBG. | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 13 of 53 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5398.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 37,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5398.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

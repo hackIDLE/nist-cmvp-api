@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5395"
+  },
+  "certificate": {
+    "certificate_number": "5395",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5395",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5395",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5395.pdf",
+    "vendor_name": "Pure Storage, Inc.",
+    "module_name": "Purity Encryption Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/12/2026",
+    "validation_dates": [
+      "7/12/2026"
+    ],
+    "sunset_date": "7/11/2031",
+    "caveat": "No assurance of the minimum strength of generated SSPs (e.g., keys); No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "Purity Encryption Module is a standalone cryptographic module for the Purity Operating Environment for FlashArray (Purity//FA). Purity//FA powers Pure Storage's FlashArray family of products which provide economical all-flash storage. Purity Encryption Module enables FlashArray to support always-on, inline encryption of data with an internal key management scheme that requires no user intervention.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5395.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/12/2026",
+        "type": "Initial",
+        "lab": "Teron Labs"
+      }
+    ],
+    "vendor": {
+      "name": "Pure Storage, Inc.",
+      "website_url": "https://www.purestorage.com",
+      "address_lines": [
+        "2555 Augustine Drive",
+        "Santa Clara, California 94054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Victor Chang",
+      "contact_email": "vchang@purestorage.com",
+      "contact_phone": "800-379-7873"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CTR A7671 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-KW A7671 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38F",
+      "Counter DRBG A7671 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A Rev. | 1",
+      "HMAC-SHA2- | 256 | A7671 Key Length - Key Length: 512-2048 Increment 512 FIPS 198-1",
+      "SHA2-256 A7671 Message Length - Message Length: 0-51200 | Increment 8 | FIPS 180-4 | N/A for this module. | Pure Storage, Inc. Non-Proprietary FIPS 140-3 Security Policy Page 11 of 27 | N/A for this module. | The table contains the non-approved algorithms allowed in approved mode of operation with no | security claimed. | N/A for this module. | The module does not support any | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5395.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 6,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5395.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386"
   },
   "certificate": {
     "certificate_number": "5386",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5386",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
       "contact_phone": "800-553-6387"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 52
     },
     "algorithms": [
       "AES",
@@ -126,25 +138,6 @@
       "A3376 Hash Algorithm - SHA2-256, SHA2-384",
       "SHA2-512 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
       "output from SP800-90Arev1 CTR_DRBG | (A2952/A3376) | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 52,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5386.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

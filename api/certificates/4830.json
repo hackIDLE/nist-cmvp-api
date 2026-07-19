@@ -1,76 +1,99 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
-    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4830"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper-evident seals are installed/applied as indicated in the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4830",
     "certificate_number": "4830",
-    "dataset": "active",
-    "description": "The Netscaler product line optimizes delivery of applications over the Internet and private networks. It is an Application Delivery Controller (ADC) that performs application-specific traffic analysis to intelligently distribute, optimize, and secure L4-L7 network traffic for web-applications. All these capabilities are combined into a single, integrated appliance for increased productivity, with lower overall total cost of ownership.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-12T05:29:15.652683Z",
-    "hardware_versions": null,
-    "module_name": "NetScaler MPX",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4830",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4830",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf",
+    "vendor_name": "Cloud Software Group",
+    "module_name": "NetScaler MPX",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf"
-      }
+    "validation_date": "10/11/2024",
+    "validation_dates": [
+      "10/11/2024"
     ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper-evident seals are installed/applied as indicated in the Security Policy.",
+    "description": "The Netscaler product line optimizes delivery of applications over the Internet and private networks. It is an Application Delivery Controller (ADC) that performs application-specific traffic analysis to intelligently distribute, optimize, and secure L4-L7 network traffic for web-applications. All these capabilities are combined into a single, integrated appliance for increased productivity, with lower overall total cost of ownership.",
+    "software_versions": null,
+    "hardware_versions": "8900 FIPS, 9100 FIPS, 15000-50G FIPS",
+    "firmware_versions": "13.1.FIPS",
     "security_level_exceptions": [
       "Roles, services, and authentication: Level 3",
       "Operational environment: N/A",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "10/10/2029",
-    "validation_date": "10/11/2024",
-    "validation_dates": [
-      "10/11/2024"
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2024_041124_0733 (1).pdf"
+      }
     ],
     "validation_history": [
       {
         "date": "10/11/2024",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
       }
     ],
     "vendor": {
+      "name": "Cloud Software Group",
+      "website_url": "http://www.cloud.com",
       "address_lines": [
         "851 Cypress Creek Road",
         "Fort Lauderdale, FL 33309",
         "USA"
       ],
-      "contact_email": "netscaler-certifications@cloud.com",
-      "contact_name": "Suman Rajaraman",
-      "contact_phone": "8004248749",
       "country": "USA",
-      "name": "Cloud Software Group",
-      "website_url": "http://www.cloud.com"
+      "contact_name": "Suman Rajaraman",
+      "contact_email": "netscaler-certifications@cloud.com",
+      "contact_phone": "8004248749"
     },
-    "vendor_name": "Cloud Software Group"
+    "algorithms": [
+      "AES",
+      "CVL",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4830.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

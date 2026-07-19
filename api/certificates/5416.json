@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5416"
+  },
+  "certificate": {
+    "certificate_number": "5416",
+    "dataset": "active",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5416",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5416",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5416.pdf",
+    "vendor_name": "KIOXIA Corporation",
+    "module_name": "KIOXIA FIPS TC58NC1137GTC Crypto Sub-Chip Class A1",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "7/14/2026",
+    "validation_dates": [
+      "7/14/2026"
+    ],
+    "sunset_date": "7/13/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The KIOXIA TCG OPAL SSC Crypto Sub-Chip is used for solid state drive data security.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5416.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/14/2026",
+        "type": "Initial",
+        "lab": "IT SECURITY CENTER"
+      }
+    ],
+    "vendor": {
+      "name": "KIOXIA Corporation",
+      "website_url": "https://www.kioxia.com/en-jp/business.html",
+      "address_lines": [
+        "1-21, Shibaura 3-chome",
+        "Minato-ku , Tokyo 108-0023",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Security Certification Team",
+      "contact_email": "ytc-ml-security-certificate-team@kioxia.com",
+      "contact_phone": "00000000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7087 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-ECB A7087 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A7087 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E",
+      "ECDSA SigGen | (FIPS186-5) | A7223 Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7223 Curve - P-384",
+      "Hash DRBG A7173 Prediction Resistance - No",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A7087 Key Length - Key Length: 256 FIPS 198-1",
+      "KDF SP800-108 A7174 KDF Mode - Counter | Supported Lengths - Supported Lengths | 512 | SP 800-108 | Rev. 1 | LMS SigVer A7297 LMS Modes - LMS_SHA256_M32_H15 SP 800-208",
+      "RSA SigVer | (FIPS186-5) | A7087 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-256 A7087 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A7087 Message Length - Message Length: 8- | 65536 Increment 8 | FIPS 180-4 | ECB mode is used as a prerequisite of XTS mode. ECB is not directly used in services of the | Cryptographic Module. The CM performs a check that the XTS Key1 and XTS Key2 are",
+      "different according to IG C.I. AES-XTS is only used for encryption/decryption of data stored in | solid state drives equipped with this CM. | Name Properties Implementation Reference | CKG Key Type:Symmetric N/A SP800-133 r2, Section 4, example 1 | N/A for this module. | N/A for this module. | N/A for this module. | 9 Jul 2, 2026"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5416.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 14,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5416.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

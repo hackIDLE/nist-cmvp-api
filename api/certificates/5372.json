@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372"
   },
   "certificate": {
     "certificate_number": "5372",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5372",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
@@ -60,6 +60,18 @@
       "contact_email": "Ilya_tsuker@packetlight.com",
       "contact_phone": "972-3-768-7825"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 33
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -107,25 +119,6 @@
       "TLS v1.3 KDF (CVL) A7344 HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | The table below lists all the Vendor-Affirmed Algorithms supported by the module. | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A IG D.H, SP800-133r2 (Section 4/example 1) The seed used in | asymmetric key generation is the unmodified output from a NIST SP",
       "800-90A DRBG. | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 33,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5372.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

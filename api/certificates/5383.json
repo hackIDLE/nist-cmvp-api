@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383"
   },
   "certificate": {
     "certificate_number": "5383",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5383",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Ian Hall",
       "contact_email": "symc-fed-certs.pdl@broadcom.com",
       "contact_phone": "000-000-0000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 47
     },
     "algorithms": [
       "AES",
@@ -119,25 +131,6 @@
       "All backups are transmitted via SSH (encrypted by the | session key), so any non-conformant encryption is | redundant/not required for security (No security claimed) | Configuration | backup encryption",
       "TLS v1.0/1.1 KDF with MD5 TLS 1.0/1.1 sessions",
       "EC Diffie-Hellman Remote management session via SSH and syslog | 2 There are algorithms, modes, and key/moduli sizes that have been CAVP-tested but are not used by | any Approved service of the module. Only the algorithms, modes/methods, and key | lengths/curves/moduli shown in this table are used by an Approved service of the module. | Symantec, A Division of Broadcom © 2025 Page 15 of 45 | This document may be freely reproduced and distributed whole and intact including this copyright notice."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 47,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5383.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370"
   },
   "certificate": {
     "certificate_number": "5370",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5370",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
@@ -65,6 +65,18 @@
       "contact_email": "F5Certs@f5.com",
       "contact_phone": "845-603-2123"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 29
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -108,25 +120,6 @@
       "RFC7627 (CVL)",
       "A4782 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | F5OS-C Cryptographic Module | F5, Inc. | Entropy Source Conditioning Component",
       "SHA3-256 A4093 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A NIST SP800-133rev2 - Section 4 | example 1 | N/A for this module. | The module does not implement any non-approved algorithms, allowed in the approved mode of operation. | N/A for this module. | The module does not implement any non-approved algorithms, with no security claimed. | N/A for this module. | The module does not implement any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 29,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5370.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

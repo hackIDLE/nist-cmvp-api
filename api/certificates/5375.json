@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5375"
   },
   "certificate": {
     "certificate_number": "5375",
     "dataset": "active",
-    "generated_at": "2026-07-12T05:29:15.652683Z",
+    "generated_at": "2026-07-19T05:22:40.630488Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5375",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5375",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5375.pdf",
@@ -61,6 +61,18 @@
       "contact_name": "Product Certifications",
       "contact_email": "sec_certs@trellix.com",
       "contact_phone": "888-847-8766"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5375.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 79
     },
     "algorithms": [
       "AES",
@@ -156,25 +168,6 @@
       "ECDSA No Security | Claimed; Per | IG 2.4.A | Scenario 2 | Additional | Comment 2",
       "Used in TLS 1.2 for authentication; Note: This | other cryptographic code in the module and is | used to analyze the network stream for malware | and malicious network attacks in accordance with | the functionality of the product. Due to this, the | corresponding functionality is deemed allowed in | the Approved mode of operation with no security | claimed, per Additional Comment 2 in IG 2.4.A and | the following requirements per the Additional | Comment 2 are satisfied: 1) the algorithm is not | used whatsoever to meet any FIPS 140-3 | requirements; 2) the algorithm does not access or",
       "share CSPs in a way that counters the | requirements of the IG; 3) i) the algorithm is not | intended to be used as a security function 4) the | 3)) is unambiguous to the operator and can't be | easily confused for a security function given as the | purpose is not providing any security functionality | recognized in FIPS 140-3. | The above listed algorithms are implemented independently from all other cryptographic code in | the module and are used to analyze the network stream for malware and malicious network | attacks in accordance with the functionality of the product. Due to this, the corresponding | functionality is deemed allowed in the Approved mode of operation with no security claimed, per | example scenario 2 in IG 2.4.A. | The module does not support non-Approved Algorithms Not Allowed in the Approved mode. | Musarubra US LLC Public Material – May be reproduced only in its original entirety (without revision)."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5375.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 79,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5375.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }
