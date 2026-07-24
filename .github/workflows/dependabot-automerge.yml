@@ -1,6 +1,8 @@
 name: Dependabot auto-merge
 
-on: pull_request
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
@@ -9,6 +11,7 @@ permissions:
 jobs:
   automerge:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
       - name: Fetch Dependabot metadata
@@ -17,11 +20,31 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Auto-merge patch and minor updates once required checks pass.
-      # Major updates are left open for manual review.
-      - name: Enable auto-merge
+      # Wait for the Validate workflow's "test" check on this PR's head
+      # commit, then merge. Major version updates are left for manual review.
+      - name: Wait for Validate check and merge
         if: steps.metadata.outputs.update-type != 'version-update:semver-major'
-        run: gh pr merge --auto --squash "$PR_URL"
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "Waiting for 'test' check on $HEAD_SHA"
+          conclusion=""
+          for i in $(seq 1 60); do
+            conclusion=$(gh api "repos/$REPO/commits/$HEAD_SHA/check-runs" \
+              --jq '[.check_runs[] | select(.name == "test")][0].conclusion // ""')
+            if [ -n "$conclusion" ]; then
+              break
+            fi
+            sleep 20
+          done
+
+          if [ "$conclusion" != "success" ]; then
+            echo "'test' check did not succeed (conclusion: ${conclusion:-timed out}); not merging."
+            exit 1
+          fi
+
+          echo "'test' check passed; merging."
+          gh pr merge --squash "$PR_URL"
