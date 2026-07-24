@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428"
+  },
+  "certificate": {
+    "certificate_number": "5428",
+    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
+    "vendor_name": "Samsung Electronics Co., Ltd.",
+    "module_name": "Samsung SCrypto Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/20/2026",
+    "validation_dates": [
+      "7/20/2026"
+    ],
+    "sunset_date": "9/9/2029",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "SCrypto is secure library which is used to provide a standardized common cryptographic API to trusted applications for the secure world/TEE environment.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/20/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com",
+      "address_lines": [
+        "416 Maetan-3dong, Yeongtong-gu",
+        "129, Samsung-ro, Yeongtong-gu",
+        "Suwon-si, Gyeonggi-do 16677",
+        "Korea"
+      ],
+      "country": "Korea",
+      "contact_name": "Dongwhan Lee",
+      "contact_email": "dw0603.lee@samsung.com",
+      "contact_phone": "82-10-32902156"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3243 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A3243 Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 0-524288 | Increment 8 | SP 800-38B",
+      "AES-CTR A3243 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3243 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A3243 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 504, 512, 1016 | 1024 | AAD Length - AAD Length: 504, 512, 1016, 1024 | SP 800-38D",
+      "AES-KW A3243 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128, 256, 320 | SP 800-38F",
+      "AES-OFB A3243 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "Counter DRBG A3243 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | Additional Input - Additional Input: 0, 128, 256, 384 | Entropy Input - Entropy Input: 384 | Nonce - Nonce: 0 | SP 800-90A | Rev. 1 | Personalization String Length - Personalization String | Length: 0, 128, 256, 384 | Returned Bits - 512",
+      "ECDSA KeyGen | (FIPS186-4) | A3243 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A3243 Curve - P-224, P-256, P-384, P-521 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A3243 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384",
+      "SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A3243 Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | FIPS 186-4",
+      "HMAC-SHA-1 A3243 MAC - MAC: 160 | Key Length - Key Length: 112, 504, 512, 520, 2048 | FIPS 198-1",
+      "HMAC-SHA2-224 A3243 MAC - MAC: 224 | Key Length - Key Length: 112, 504, 512, 520, 2048 | FIPS 198-1",
+      "HMAC-SHA2-256 A3243 MAC - MAC: 256 | Key Length - Key Length: 112, 504, 512, 520, 2048 | FIPS 198-1",
+      "HMAC-SHA2-384 A3243 MAC - MAC: 384 | Key Length - Key Length: 112, 504, 1024, 1032, 2048 | FIPS 198-1",
+      "HMAC-SHA2-512 A3243 MAC - MAC: 512 | Key Length - Key Length: 112, 504, 1024, 1032, 2048 | FIPS 198-1",
+      "KDF SP800-108 A3243 KDF Mode - Counter",
+      "MAC Mode - HMAC-SHA2-512 | Supported Lengths - Supported Lengths: 512-4096 | Increment 1 | Fixed Data Order - After Fixed Data, Before Fixed | Data, In the Middle of Fixed Data | Counter Length - 16, 24, 32, 8 | Supports Empty IV - No | Custom Key In Length - 0 | SP 800-108 | Rev. 1",
+      "RSA Decryption",
+      "Primitive (CVL) | A3243 Modulus Length - 2048 FIPS 186-4",
+      "RSA KeyGen | (FIPS186-4) | A3243 Key Generation Mode - B.3.3 | Modulo - 2048, 3072 | Primality Tests - Table C.2 | Info Generated By Server - No | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A3243 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 2048, 3072 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer (FIPS186- | 4) | A3243 Signature Type - PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A3243 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-224 A3243 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A3243 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A3243 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A3243 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs Cryptographic Key | Generation (CKG) for asymmetric keys as per sections 4 and 5 in | SP800-133rev2 (vendor affirmed) and FIPS 140-3 IG D.H. A | seed (i.e., the random value) used in asymmetric key generation",
+      "is a direct output from SP800-90Arev1 CTR_DRBG (A3243) | N/A for this module. | N/A for this module.",
+      "DSA Key Generation [FIPS186-4] DSA keypair generation",
+      "DSA Signature Generation [FIPS186-4] DSA signature generation",
+      "DSA Signature Verification [FIPS186-4] DSA Signature Verification",
+      "KAS-FFC-SSC [SP800-56A Rev 3] Diffie-Hellman Key Agreement primitive",
+      "KAS-ECC-SSC [SP800-56A Rev 3] EC Diffie-Hellman Key Agreement primitive",
+      "Please note that due to the lack of the associated self-tests to DSA, KAS-ECC-SSC and KAS- | FFC-SSC algorithms, those algorithms are listed in"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 43,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

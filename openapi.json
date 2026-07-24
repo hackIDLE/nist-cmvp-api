@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1143 active validated modules with enriched details",
+            "description": "Currently 1142 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4258 historical modules",
+            "description": "Currently 4270 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 239 modules in process",
+            "description": "Currently 231 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-07-19T05:22:40.630488Z"
+            "example": "2026-07-24T13:06:01.960071Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1143
+            "example": 1142
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4258
+            "example": 4270
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 239
+            "example": 231
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1776
+            "example": 1787
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5401
+            "example": 5412
           },
           "source": {
             "type": "string",
@@ -370,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5424"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5434"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5424"
+            "example": "5434"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "ZeroTier, Inc."
+            "example": "Google, LLC"
           },
           "Module Name": {
             "type": "string",
-            "example": "ZeroTier, Inc. Cryptographic Module"
+            "example": "B227 True Random Number Generator (TRNG) Cryptographic Module"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "Validation Date": {
             "type": "string",
-            "example": "07/17/2026"
+            "example": "07/22/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5424.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5434.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5424"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5434"
           },
           "module_name": {
             "type": "string",
-            "example": "ZeroTier, Inc. Cryptographic Module"
+            "example": "B227 True Random Number Generator (TRNG) Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -414,7 +414,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/26/2029"
+            "example": "7/21/2031"
           },
           "overall_level": {
             "type": "integer",
@@ -422,19 +422,19 @@
           },
           "caveat": {
             "type": "string",
-            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "None"
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "SingleChip"
           },
           "description": {
             "type": "string",
-            "example": "The ZeroTier, Inc. Cryptographic Module is a software based cryptographic module that provides FIPS approved and allowed cryptographic services, including encryption, decryption, hashing, digital signatures, key generation, key establishment, and random number generation. The module is designed to support secure communications and data protection for applications deployed across enterprise, government, and defense environments."
+            "example": "The B227 True Random Number Generator (TRNG) is a NIST SP 800-90 B compliant TRNG employed by the Integrated Compute Complex for generating cryptographic keys."
           },
           "algorithms": {
             "type": "array",
@@ -443,8 +443,7 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DES"
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -453,9 +452,8 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A4593 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC A5173 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Document Version 1.0 ©ZeroTier, Inc. Page 14 of 122",
-              "AES-CBC-CS1 A4593 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | SP 800-38A"
+              "Counter DRBG A2721 Prediction Resistance - No | Yes",
+              "Mode - AES-128, AES-256 | Derivation Function Enabled - | No | SP 800-90A Rev. | 1 | The module does not support any Vendor-Affirmed Algorithms. | The module does not support any | The module does not support any | Google, LLC 2026 Document Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision). | The module does not support any"
             ]
           },
           "algorithm_extraction": {
@@ -880,7 +878,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5388"
+            "example": "5412"
           },
           "dataset": {
             "type": "string",
@@ -888,27 +886,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-07-19T05:22:40.630488Z"
+            "example": "2026-07-24T13:06:01.960071Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5388"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5412"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5388"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5412"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5388.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5412.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "F5, Inc."
+            "example": "HPE Juniper Networking"
           },
           "module_name": {
             "type": "string",
-            "example": "BIG-IP Tenant Cryptographic Module"
+            "example": "Junos® OS Evolved OpenSSL Cryptographic Module version 3.0"
           },
           "standard": {
             "type": "string",
@@ -920,7 +918,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Firmware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
@@ -928,11 +926,11 @@
           },
           "overall_level": {
             "type": "integer",
-            "example": 2
+            "example": 1
           },
           "validation_date": {
             "type": "string",
-            "example": "7/9/2026"
+            "example": "7/14/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -940,20 +938,20 @@
               "type": "string"
             },
             "example": [
-              "7/9/2026"
+              "7/14/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/8/2031"
+            "example": "7/13/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. The tamper evident labels contained in F5-ADD-BIG-FIPS140 kit and installed as indicated in the Security Policy section 7. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When operated in approved mode with module Junos® OS Evolved Kernel Cryptographic Module version 2.1 validated to FIPS 140-3 under Cert. #NNNN operating in the Approved mode. No assurance of minimum security of SSPs (e.g. keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "description": {
             "type": "string",
-            "example": "BIG-IP Tenant Cryptographic Module, Application Delivery Controller and Firewall software running on running on F5 hardware and the underlying platform layer."
+            "example": "The Junos® OS Evolved OpenSSL Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality."
           },
           "software_versions": {
             "type": "string",
@@ -976,9 +974,8 @@
               "type": "string"
             },
             "example": [
-              "Operational environment: N/A",
-              "Non-invasive security: N/A",
-              "Mitigation of other attacks: N/A"
+              "Physical security: N/A",
+              "Non-invasive security: N/A"
             ]
           },
           "related_files": {
@@ -1011,7 +1008,7 @@
             "example": [
               "AES",
               "CVL",
-              "DES"
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -1020,9 +1017,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A7017 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | BIG-IP Tenant Cryptographic Module",
-              "AES-CBC A7018 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
-              "AES-CCM A7017 Key Length - 128, 192, 256 SP 800-38C"
+              "AES-CBC A7226, A7227 | A7228 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC-CS1 A7226, A7227 | A7228 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC-CS2 A7226, A7227 | A7228 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
           }
         }

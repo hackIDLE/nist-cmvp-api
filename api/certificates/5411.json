@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5411"
   },
   "certificate": {
     "certificate_number": "5411",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5411",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5411",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5411.pdf",
@@ -62,6 +62,18 @@
       "contact_email": "fips140officers@qti.qualcomm.com",
       "contact_phone": "000-000-0000"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5411.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 1,
+      "detailed_algorithm_count": 5
+    },
     "algorithms": [
       "AES"
     ],
@@ -71,25 +83,6 @@
       "AES-XTS Testing Revision 2.0 A6438 Direction - Encrypt | Key Length - 128, 256 | SP 800-38E",
       "AES-XTS Testing Revision 2.0 A6439 Direction - Decrypt | Key Length - 128, 256 | SP 800-38E | N/A for this module. | N/A for this module. | N/A for this module.",
       "AES bitlocker encryption, decryption"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5411.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 1,
-      "detailed_algorithm_count": 5,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5411.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

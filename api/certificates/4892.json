@@ -1,10 +1,68 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892"
   },
   "certificate": {
+    "certificate_number": "4892",
+    "dataset": "historical",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
+    "vendor_name": "Dell Inc., BSAFE Product Team",
+    "module_name": "Dell™ BSAFE™ Crypto Module for Java 7.0",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
+    "validation_date": "11/19/2024",
+    "validation_dates": [
+      "11/19/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When operated in approved mode. No assurance of the minimum strength of generated SSPs",
+    "description": "Crypto-J software library is designed for developers to incorporate FIPS 140-3 approved cryptography into Java-based products. Crypto-J security software helps protect sensitive data as it is stored, using strong encryption techniques that ease integration with existing data models. Using the capabilities of Crypto-J software in applications helps provide a persistent level of protection for data, lessening the risk of internal, as well as external, compromise.",
+    "software_versions": "7.0",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "11/19/2024",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Dell Inc., BSAFE Product Team",
+      "website_url": "http://www.dell.com",
+      "address_lines": [
+        "Building A",
+        "207 Pacific Highway",
+        "St Leonards, NSW 2065",
+        "Australia"
+      ],
+      "country": "Australia",
+      "contact_name": "BSAFE FIPS Program",
+      "contact_email": "bsafe-fips-program@dell.com",
+      "contact_phone": "1-312-725-5401"
+    },
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -12,64 +70,22 @@
       "source": "firecrawl",
       "source_url": null,
       "cached": true,
-      "fallback_used": false,
+      "fallback_used": true,
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When operated in approved mode. No assurance of the minimum strength of generated SSPs",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892",
-    "certificate_number": "4892",
-    "dataset": "active",
-    "description": "Crypto-J software library is designed for developers to incorporate FIPS 140-3 approved cryptography into Java-based products. Crypto-J security software helps protect sensitive data as it is stored, using strong encryption techniques that ease integration with existing data models. Using the capabilities of Crypto-J software in applications helps provide a persistent level of protection for data, lessening the risk of internal, as well as external, compromise.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "hardware_versions": null,
-    "module_name": "Dell™ BSAFE™ Crypto Module for Java 7.0",
-    "module_type": "Software",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/18/2029",
-    "validation_date": "11/19/2024",
-    "validation_dates": [
-      "11/19/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "11/19/2024",
-        "lab": "Gossamer Security Solutions",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "Building A",
-        "207 Pacific Highway",
-        "St Leonards, NSW 2065",
-        "Australia"
-      ],
-      "contact_email": "bsafe-fips-program@dell.com",
-      "contact_name": "BSAFE FIPS Program",
-      "contact_phone": "1-312-725-5401",
-      "country": "Australia",
-      "name": "Dell Inc., BSAFE Product Team",
-      "website_url": "http://www.dell.com"
-    },
-    "vendor_name": "Dell Inc., BSAFE Product Team"
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

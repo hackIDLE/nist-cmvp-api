@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5427"
+  },
+  "certificate": {
+    "certificate_number": "5427",
+    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5427",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5427",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5427.pdf",
+    "vendor_name": "Samsung Electronics Co., Ltd.",
+    "module_name": "Samsung Kernel Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/20/2026",
+    "validation_dates": [
+      "7/20/2026"
+    ],
+    "sunset_date": "7/19/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5427.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/20/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com",
+      "address_lines": [
+        "129, Samsung-ro, Yeongtong-gu",
+        "Suwon-si, Gyeonggi-do 16677",
+        "Korea"
+      ],
+      "country": "Korea",
+      "contact_name": "Dongwhan Lee",
+      "contact_email": "dw0603.lee@samsung.com",
+      "contact_phone": "82-10-32902156"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6893 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A6893 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "HMAC-SHA-1 A6893 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 224 | A6893 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 256 | A6893 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6893 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6893 Key Length - Key Length: 8-524288 Increment 8 FIPS 198-1",
+      "SHA-1 A6893 Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "SHA2-224 A6893 Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "SHA2-256 A6893 Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "SHA2-384 A6893 Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4",
+      "SHA2-512 A6893 Message Length - Message Length: 0-65536 Increment | 8 | FIPS 180-4 | N/A for this module. | N/A for this module. | N/A for this module.",
+      "ESSIV-CBC-AES Authenticated encryption/decryption | CMAC Message authentication",
+      "AES-CTR Symmetric Encryption and Decryption",
+      "AES-XTS Symmetric Encryption and Decryption with ciphertext stealing",
+      "AES-CBC-CTS Symmetric Encryption and Decryption with ciphertext stealing",
+      "AES-XCTR Symmetric Encryption and Decryption with ciphertext stealing"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5427.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 17,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5427.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

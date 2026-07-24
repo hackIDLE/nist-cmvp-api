@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396"
   },
   "certificate": {
     "certificate_number": "5396",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5396",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Amir Hanif",
       "contact_email": "Amir.Hanif@windriver.com",
       "contact_phone": "740-564-7132"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 42
     },
     "algorithms": [
       "AES",
@@ -114,25 +126,6 @@
       "SHA2-256 A6780 Message Length - Message Length: 256, 0-65528 Increment 8 FIPS 180-4",
       "SHA2-384 A6780 Message Length - Message Length: 384, 0-65528 Increment 8 FIPS 180-4",
       "SHA2-512 A6780 Message Length - Message Length: 512, 0-65528 Increment 8 FIPS 180-4 | 2.5.2 Vendor Affirmed Algorithms | The module implements the vendor affirmed algorithms listed in the table below. | Name Properties Implementation Reference | CKG Key Type:Asymmetric N/A SP 800-133 Rev2 section 4 example 1 and IG D.H | 2.5.3 | The module does not implement non-Approved algorithms that are allowed in the Approved mode. | N/A for this module. | 2.5.4 | The module implements the non-Approved algorithms (allowed in the Approved mode with no security claimed) | listed in the table below. | Wind River FIPS Object Module | This document may be freely reproduced and distributed whole and intact including this copyright notice. | N/A for this module. | 2.5.5 | The module does not offer non-Approved algorithms that are not allowed in the Approved mode. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 42,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5396.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

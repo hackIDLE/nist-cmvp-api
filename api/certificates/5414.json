@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5414"
   },
   "certificate": {
     "certificate_number": "5414",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5414",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5414",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5414.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "NetScaler Certification Team",
       "contact_email": "Netscaler-certifications@cloud.com",
       "contact_phone": "1-800-424-8749"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5414.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 125
     },
     "algorithms": [
       "AES",
@@ -200,25 +212,6 @@
       "SHA3-256 A3513 Message Length - Message Length: 0-65528 Increment 8 FIPS 202 | 2.5.2 Vendor Affirmed Algorithms | The vendor affirms the following cryptographic security methods. | Name Properties Implementation Reference | CKG (Control Plane - | VA) | CKG:Symmetric NetScaler Control Plane Cryptographic | Library | SP 800-133 Rev. 2, sections 4 | and 6.3 | CKG (Data Plane - | VA) | CKG:Symmetric NetScaler Data Plane Cryptographic | Library | SP 800-133 Rev. 2, section 4 | CKG (KEK) CKG:Combining keys and other | data | NetScaler Control Plane Cryptographic | Library | NIST SP 800-133rev2, Section | 6.3 | 2.5.3 | The module does not implement any non-approved algorithms allowed in the Approved mode of operation. | N/A for this module. | 2.5.4 | The table below lists the non-Approved algorithms implemented by the module that are allowed for use in the | Approved mode of operation with no security claimed. | NetScaler MPX 13.1.FIPS | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Name Caveat Use and Function",
       "MD5 (NetScaler Control Plane Cryptographic Library) N/A Message digest in TLS 1.0/1.1 handshake on the control plane",
       "MD5 (NetScaler Data Plane Cryptographic Library) N/A Message digest in TLS 1.0/1.1 handshake on the data plane | 2.5.5 | The module does not include any non-Approved algorithms not allowed in the Approved mode of operation. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5414.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 125,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5414.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5429"
+  },
+  "certificate": {
+    "certificate_number": "5429",
+    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5429",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5429",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5429.pdf",
+    "vendor_name": "Amazon Web Services Inc.",
+    "module_name": "AWS-LC Cryptographic Module (dynamic)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/20/2026",
+    "validation_dates": [
+      "7/20/2026"
+    ],
+    "sunset_date": "8/13/2029",
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5429.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/20/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services Inc.",
+      "website_url": "http://aws.amazon.com",
+      "address_lines": [
+        "1918 8th Ave.",
+        "Seattle, WA 98121",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Daryl Martin",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "0000000000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A4484, A4487, A4489, A4493, A4497 | A4501 | Key Length - 128 | Tag Length - 32 | IV Length - IV Length: 104 | Payload Length - Payload Length | 0-256 Increment 8 | AAD Length - AAD Length: 0, 256 | 65536 | SP 800-38C",
+      "AES-CMAC A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Generation | Verification | Key Length - 128, 256 | MAC Length - MAC Length: 32- | 128 Increment 8 | Message Length - Message | Length: 0-65536 Increment 8 | SP 800-38B",
+      "AES-CTR A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length | 8-128 Increment 8 | Supports Counter larger than | maximum value - Yes | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A4484, A4485, A4486, A4487, A4488 | A4489, A4490, A4493, A4494, A4495 | A4496, A4497, A4498, A4499, A4500 | A4501, A4502, A4503, A4504 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4485, A4486, A4488, A4490, A4494 | A4495, A4496, A4498, A4499, A4500 | A4502, A4503, A4504 | Direction - Decrypt, Encrypt | IV Generation - External, Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128 | 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128-65536 Increment 128 | AAD Length - AAD Length: 0-320 | Increment 8 | SP 800-38D",
+      "AES-GMAC A4485, A4486, A4488, A4490, A4494 | A4495, A4496, A4498, A4499, A4500 | A4502, A4503, A4504 | Direction - Decrypt, Encrypt | IV Generation - External, Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128 | 32, 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 0-320 | Increment 8 | SP 800-38D",
+      "AES-KW A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-4096 Increment 128 | SP 800-38F",
+      "AES-KWP A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | SP 800-38F | AWS-LC Cryptographic Module (dynamic) | 2026 Amazon Web Services, Inc., atsec information security. | Payload Length - Payload Length | 8-4096 Increment 8",
+      "AES-XTS | Testing | Revision 2.0 | A4484, A4487, A4489, A4493, A4497 | A4501 | Direction - Decrypt, Encrypt | Key Length - 256 | Payload Length - Payload Length | 128-65536 Increment 128 | Tweak Mode - Hex | Data Unit Length Matches | Payload Length - Yes | SP 800-38E",
+      "Counter DRBG A4484, A4487, A4489, A4493, A4497 | A4501 | Prediction Resistance - No | Supports Reseed - No",
+      "Mode - AES-256 | Derivation Function Enabled - No | Additional Input - Additional | Input: 256 | Entropy Input - Entropy Input | 384 | Nonce - Nonce: 0 | Personalization String Length - | Personalization String Length | 384 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Curve - P-224, P-256, P-384, P- | 521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Curve - P-224, P-256, P-384, P- | 521 | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Curve - P-224, P-256, P-384, P- | 521",
+      "Hash Algorithm - SHA2-224",
+      "SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-4) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Component - No | Curve - P-224, P-256, P-384, P- | 521",
+      "Hash Algorithm - SHA-1 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Curve - P-224, P-256, P-384, P- | 521",
+      "SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 160 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 224 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 384 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1 | AWS-LC Cryptographic Module (dynamic) | 2026 Amazon Web Services, Inc., atsec information security.",
+      "HMAC-SHA2- | 512 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 512 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512/256 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Domain Parameter Generation | Methods - P-224, P-256, P-384, P- | 521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA HKDF | Sp800-56Cr1 | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Fixed Info Pattern - | uPartyInfo||vPartyInfo||l | Fixed Info Encoding - | concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared | Secret Length: 224-2048 | Increment 8 | HMAC Algorithm - SHA-1, SHA2-",
+      "224, SHA2-256, SHA2-384, SHA2- | 512 | SP 800-56C | Rev. 2",
+      "KDF SSH (CVL) A4483, A4491, A4492, A4505, A4506 | A4507, A4508",
+      "Cipher - AES-128, AES-192, AES- | 256",
+      "Hash Algorithm - SHA-1, SHA2-",
+      "224, SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1",
+      "KDF TLS (CVL) A4483, A4491, A4492, A4505, A4506 | A4507, A4508",
+      "TLS Version - v1.0/1.1, v1.2",
+      "Hash Algorithm - SHA2-256",
+      "SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "PBKDF A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Iteration Count - Iteration Count | 1000-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-",
+      "224, SHA2-256, SHA2-384, SHA2- | 512 | Password Length - Password | Length: 14-128 Increment 1 | Salt Length - Salt Length: 128- | 4096 Increment 8 | Key Data Length - Key Data | Length: 128-4096 Increment 8 | SP 800-132",
+      "RSA KeyGen | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | p mod 8 - 0 | Primality Tests - 2powSecStr | q mod 8 - 0 | Fixed Public Exponent - 010001 | Info Generated By Server - No | Private Key Format - standard | Public Exponent Mode - fixed | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | FIPS 186-5 | AWS-LC Cryptographic Module (dynamic) | 2026 Amazon Web Services, Inc., atsec information security.",
+      "RSA SigVer | (FIPS186-4) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Signature Type - PKCS 1.5 | PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Salt Length - 28 | Public Exponent Mode - Fixed | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-5) | A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | FIPS 186-5",
+      "SHA-1 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-224 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-256 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-384 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-512 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-512/256 A4483, A4491, A4492, A4505, A4506 | A4507, A4508 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4 | Name Properties Implementation Reference | Asymmetric Cryptographic | Key Generation (CKG) | Key | Type:Asymmetric | N/A SP 800-133r2, section 4, direct",
+      "DRBG output without XOR | N/A for this module. | The module does not implement non-approved algorithms that are allowed in the approved | mode of operation. | AWS-LC Cryptographic Module (dynamic) | 2026 Amazon Web Services, Inc., atsec information security. | Name Caveat Use and Function",
+      "MD5 Allowed per IG 2.4.A Message Digest used in TLS 1.0/1.1 KDF only",
+      "AES with OFB or CFB1, CFB8 modes Encryption, Decryption (not CAVP tested)",
+      "AES-GCM, CCM, GMAC, XTS keys not listed in the | Approved Services table of the Security Policy | Encryption, Decryption",
+      "AES using aes_*_generic function Encryption, Decryption (not CAVP tested)",
+      "AES GMAC using aes_*_generic Message Authentication Generation (not CAVP | tested) | Curve secp256k1 Signature Generation, Signature Verification",
+      "Shared Secret Computation",
+      "Diffie Hellman Shared Secret Computation (not CAVP tested)",
+      "HMAC-MD4, HMAC-MD5, HMAC-SHA1, HMAC-SHA-3",
+      "HMAC- RIPEMD-160 | Message Authentication Generation (not CAVP | tested) | MD4 Message Digest",
+      "MD5 Message Digest (outside of TLS)",
+      "RSA using RSA_generate_key_ex Key Generation (not complaint with FIPS186- | 5)",
+      "ECDSA using EC_KEY_generate_key Key Generation (not complaint with FIPS186- | 5)",
+      "RSA using keys less than 2048 bits Signature Generation",
+      "RSA using keys less than 1024 bits Signature Verification",
+      "RSA Key Encapsulation/Un-encapsulation (not | compliant with SP 800-56BRev2), sign/verify | primitive operations without hashing",
+      "RSA with PKCS#1 v1.5 and OAEP padding Encryption primitive",
+      "SHA-1, SHA-3 Signature Generation (not CAVP tested)",
+      "SHAKE, RIPEMD-160, SHA-3 Message Digest (not CAVP tested)",
+      "TLS KDF using any SHA algorithms not listed in SP the",
+      "Approved Services table of the Security Policy or TLS",
+      "KDF using non extended master secret"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5429.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 75,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5429.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

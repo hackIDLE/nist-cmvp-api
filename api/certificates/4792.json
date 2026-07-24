@@ -1,35 +1,40 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4792"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When operated in approved mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4792",
     "certificate_number": "4792",
-    "dataset": "active",
-    "description": "SCrypto is secure library which is used to provide a standardized common cryptographic API to trusted applications for the secure world/TEE environment.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "hardware_versions": null,
-    "module_name": "Samsung SCrypto Cryptographic Module",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4792",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4792",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
+    "vendor_name": "Samsung Electronics Co., Ltd.",
+    "module_name": "Samsung SCrypto Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "9/10/2024, 6/27/2025, 9/5/2025",
+    "validation_dates": [
+      "9/10/2024",
+      "6/27/2025",
+      "9/5/2025"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When operated in approved mode",
+    "description": "SCrypto is secure library which is used to provide a standardized common cryptographic API to trusted applications for the secure world/TEE environment.",
+    "software_versions": "2.7",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,52 +45,59 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "9/9/2029",
-    "validation_date": "9/10/2024, 6/27/2025, 9/5/2025",
-    "validation_dates": [
-      "9/10/2024",
-      "6/27/2025",
-      "9/5/2025"
-    ],
     "validation_history": [
       {
         "date": "9/10/2024",
-        "lab": "Gossamer Security Solutions",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
       },
       {
         "date": "6/27/2025",
-        "lab": "Gossamer Security Solutions",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Gossamer Security Solutions"
       },
       {
         "date": "9/5/2025",
-        "lab": "Gossamer Security Solutions",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Gossamer Security Solutions"
       }
     ],
     "vendor": {
+      "name": "Samsung Electronics Co., Ltd.",
+      "website_url": "http://www.samsung.com",
       "address_lines": [
         "129, Samsung-ro, Yeongtong-gu",
         "Suwon-si, Gyeonggi-do 16677",
         "Korea"
       ],
-      "contact_email": "dw0603.lee@samsung.com",
-      "contact_name": "Dongwhan Lee",
-      "contact_phone": "82-10-32902156",
       "country": "Korea",
-      "name": "Samsung Electronics Co., Ltd.",
-      "website_url": "http://www.samsung.com"
+      "contact_name": "Dongwhan Lee",
+      "contact_email": "dw0603.lee@samsung.com",
+      "contact_phone": "82-10-32902156"
     },
-    "vendor_name": "Samsung Electronics Co., Ltd."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

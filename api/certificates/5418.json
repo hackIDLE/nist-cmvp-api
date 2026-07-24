@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5418"
   },
   "certificate": {
     "certificate_number": "5418",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5418",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5418",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5418.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "DKoblinski@DatumSystems.com",
       "contact_phone": "408-329-6693"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5418.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 4,
+      "detailed_algorithm_count": 6
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -72,25 +84,6 @@
       "Mode - AES-128 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
       "KDF KMAC | Sp800-108r1 | A7740 Derived Key Length - Derived Key Length | 128, Derived Key Length: 192, Derived Key | Length: 256 | SP 800-108 | Rev. 1 | KMAC-256 A7740 Message Length - Message Length: 16 | Key Data Length - Key Data Length: 128, 192 | 256 | SP 800-185",
       "SHA3-256 A7740 Message Length - Message Length: 128-256 | Increment 64 | FIPS 202 | N/A for this module. | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5418.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 4,
-      "detailed_algorithm_count": 6,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5418.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

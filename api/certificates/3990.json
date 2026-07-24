@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated in FIPS mode and utilizing a Trusted Path as specified in the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
     "certificate_number": "3990",
-    "dataset": "active",
-    "description": "The i.MX 8X HSM extends the rich capabilities of the i.MX 8X family of products with advanced security and cryptographic capabilities. These HSM extensions implemented in the i.MX 8X integrated cryptographic module offer OEMs the capability to configure the part in the desired FIPS mode to support V2X or IoT use cases and more. The i.MX 8X cryptographic module is an integral part of the NXP i.MX 8X application processors and can be used together with other features offered by these SOCs to reduce both the OEM design bill of materials as well as time to market in security critical applications.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "hardware_versions": null,
-    "module_name": "i.MX 8X SECO HSM",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
+    "vendor_name": "NXP Semiconductors",
+    "module_name": "i.MX 8X SECO HSM",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 3,
+    "validation_date": "7/20/2021, 1/14/2022",
+    "validation_dates": [
+      "7/20/2021",
+      "1/14/2022"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated in FIPS mode and utilizing a Trusted Path as specified in the Security Policy",
+    "description": "The i.MX 8X HSM extends the rich capabilities of the i.MX 8X family of products with advanced security and cryptographic capabilities. These HSM extensions implemented in the i.MX 8X integrated cryptographic module offer OEMs the capability to configure the part in the desired FIPS mode to support V2X or IoT use cases and more. The i.MX 8X cryptographic module is an integral part of the NXP i.MX 8X application processors and can be used together with other features offered by these SOCs to reduce both the OEM design bill of materials as well as time to market in security critical applications.",
+    "software_versions": null,
+    "hardware_versions": "P/N: rpp_cm0p_sec_subsys; version tag DA_SSL_iMX8QX_SCU_SUBSYS_LN28FDSOI_1.72.",
+    "firmware_versions": "ROM mem_i.MX8QX_s28roml_w20480x032m32B2_1Tlms_m0_1.3; SECO FW 3.7.1",
+    "security_level_exceptions": [],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,42 +40,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2021_020821_0740_signed.pdf"
       }
     ],
-    "security_level_exceptions": [],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "7/19/2026",
-    "validation_date": "7/20/2021, 1/14/2022",
-    "validation_dates": [
-      "7/20/2021",
-      "1/14/2022"
-    ],
     "validation_history": [
       {
         "date": "7/20/2021",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       },
       {
         "date": "1/14/2022",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "NXP Semiconductors",
+      "website_url": "http://www.nxp.com",
       "address_lines": [
         "NXP Semiconductors Netherlands B.V. High Tech Campus 60",
         "Eindhoven, Noord-Braban 5656 AG",
         "Netherlands"
       ],
-      "contact_email": "andres.lemos@nxp.com",
-      "contact_name": "Andres Lopez De Vergara Lemos",
-      "contact_phone": "+15128156189",
       "country": "Netherlands",
-      "name": "NXP Semiconductors",
-      "website_url": "http://www.nxp.com"
+      "contact_name": "Andres Lopez De Vergara Lemos",
+      "contact_email": "andres.lemos@nxp.com",
+      "contact_phone": "+15128156189"
     },
-    "vendor_name": "NXP Semiconductors"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

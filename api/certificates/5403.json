@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5403"
   },
   "certificate": {
     "certificate_number": "5403",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5403",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5403",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5403.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Arista Networks Certification Team",
       "contact_email": "cert-team@arista.com",
       "contact_phone": "408-547-5500"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5403.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 73
     },
     "algorithms": [
       "AES",
@@ -150,25 +162,6 @@
       "Triple-DES Encryption and Decryption [algorithm disabled by module in approved | mode] | MD4 Message Digest [algorithm disabled by module in approved mode] | MD5 Message Digest [algorithm disabled by module in approved mode] | RIPEMD-160 Message Digest [algorithm disabled by module in approved mode] | Whirlpool Message Digest [algorithm disabled by module in approved mode]",
       "Triple-DES MAC Message Digest [algorithm disabled by module in approved mode]",
       "HMAC-MD5 Keyed Hash [algorithm disabled by module in approved mode] | Arista Networks Inc. | Arista Networks Inc. Public Material – May be reproduced only in its original entirety (without revision)."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5403.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 73,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5403.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4733"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim Validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals with F5-ADD-BIG-FIPS140 kit installed as indicated in the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4733",
     "certificate_number": "4733",
-    "dataset": "active",
-    "description": "F5® Device Cryptographic Module, Application Delivery Controller and Firewall software running on F5 BIG-IP.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "hardware_versions": null,
-    "module_name": "Device Cryptographic Module",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4733",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4733",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "Device Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 2,
+    "validation_date": "7/22/2024",
+    "validation_dates": [
+      "7/22/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim Validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The tamper evident seals with F5-ADD-BIG-FIPS140 kit installed as indicated in the Security Policy.",
+    "description": "F5® Device Cryptographic Module, Application Delivery Controller and Firewall software running on F5 BIG-IP.",
+    "software_versions": null,
+    "hardware_versions": "BIG-IP i4600, BIG-IP i4800, BIG-IP i5600, BIG-IP i5800, BIG-IP i5820-DF, BIG-IP i7600, BIG-IP i7800, BIG-IP i7820-DF, BIG-IP i10600, BIG-IP i10800, BIG-IP i11600-DS, BIG-IP i11800-DS, BIG-IP i15600, BIG-IP i15800, BIG-IP i15820-DF, VIPRION B2250, VIPRION B4450",
+    "firmware_versions": "16.1.3.1",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +43,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2024_010824_1146.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "7/21/2026",
-    "validation_date": "7/22/2024",
-    "validation_dates": [
-      "7/22/2024"
-    ],
     "validation_history": [
       {
         "date": "7/22/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "http://www.f5.com",
       "address_lines": [
         "801 Fifth Ave",
         "Seattle, WA 98104",
         "USA"
       ],
-      "contact_email": "fipsbigip16@f5.com",
-      "contact_name": "Maryrita Steinhour",
-      "contact_phone": "206-272-7351",
       "country": "USA",
-      "name": "F5, Inc.",
-      "website_url": "http://www.f5.com"
+      "contact_name": "Maryrita Steinhour",
+      "contact_email": "fipsbigip16@f5.com",
+      "contact_phone": "206-272-7351"
     },
-    "vendor_name": "F5, Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

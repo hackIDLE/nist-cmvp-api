@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420"
   },
   "certificate": {
     "certificate_number": "5420",
     "dataset": "active",
-    "generated_at": "2026-07-19T05:22:40.630488Z",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5420",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
@@ -57,6 +57,18 @@
       "contact_name": "Ivan Teblin",
       "contact_email": "sec-cert@suse.com",
       "contact_phone": "0-000-000-0000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 56
     },
     "algorithms": [
       "AES",
@@ -124,25 +136,6 @@
       "AES OCB Encryption; Decryption",
       "AES GCM Authenticated encryption | Authenticated decryption",
       "AES GMAC Message authentication code | (MAC) | CRC32 Error detection code | BLAKE2B-160, BLAKE2B-256, BLAKE2B-384, BLAKE2B-512, BLAKE2S- | 128, BLAKE2S-160, BLAKE2S-224, BLAKE2S-256 | GOST R 34.11 Message digest | MD4, MD5 Message digest | RIPEMD-160 Message digest | Tiger Message digest | SM3, STRIBOG-256, STRIBOG-512 Message digest | Whirlpool Message digest | PBKDF2 with non-approved message digest algorithms or using input | parameters not meeting requirements stated in Security Policy, section"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 56,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5420.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

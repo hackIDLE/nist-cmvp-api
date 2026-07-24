@@ -1,75 +1,67 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "dataset": "active",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim validation",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874",
     "certificate_number": "4874",
-    "dataset": "active",
-    "description": "The CE Crypto Module is a firmware cryptographic module running on a multi-chip standalone general-purpose compute platform. The module provides low-level cryptographic primitives to the overall platform and its functions.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-07-19T05:22:40.630488Z",
-    "hardware_versions": null,
-    "module_name": "CE Crypto Module",
-    "module_type": "Firmware",
+    "dataset": "historical",
+    "generated_at": "2026-07-24T13:06:01.960071Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf",
-    "software_versions": null,
+    "vendor_name": "Senetas Corporation Ltd., distributed by Thales SA",
+    "module_name": "CE Crypto Module",
     "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/11/2029",
+    "status": "Historical",
+    "module_type": "Firmware",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
     "validation_date": "11/12/2024",
     "validation_dates": [
       "11/12/2024"
     ],
+    "sunset_date": null,
+    "caveat": "Interim validation",
+    "description": "The CE Crypto Module is a firmware cryptographic module running on a multi-chip standalone general-purpose compute platform. The module provides low-level cryptographic primitives to the overall platform and its functions.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": "5.5.0",
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
+    ],
     "validation_history": [
       {
         "date": "11/12/2024",
-        "lab": "Lightship Security, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Lightship Security, Inc."
       }
     ],
     "vendor": {
+      "name": "Senetas Corporation Ltd., distributed by Thales SA",
+      "website_url": "https://www.senetas.com",
       "address_lines": [
         "312 Kings Way",
         "South Melbourne, Victoria 3205",
         "Australia"
       ],
-      "contact_email": "john.weston@senetas.com",
-      "contact_name": "John Weston",
-      "contact_phone": "613-9868-4555",
       "country": "Australia",
-      "name": "Senetas Corporation Ltd., distributed by Thales SA",
-      "website_url": "https://www.senetas.com"
+      "contact_name": "John Weston",
+      "contact_email": "john.weston@senetas.com",
+      "contact_phone": "613-9868-4555"
     },
-    "vendor_name": "Senetas Corporation Ltd., distributed by Thales SA",
     "algorithms": [
       "AES",
       "DRBG",
@@ -82,6 +74,25 @@
       "SHA",
       "SHS",
       "TLS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }
