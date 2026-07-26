@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428"
   },
   "certificate": {
     "certificate_number": "5428",
     "dataset": "active",
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5428",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Dongwhan Lee",
       "contact_email": "dw0603.lee@samsung.com",
       "contact_phone": "82-10-32902156"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 43
     },
     "algorithms": [
       "AES",
@@ -116,25 +128,6 @@
       "KAS-FFC-SSC [SP800-56A Rev 3] Diffie-Hellman Key Agreement primitive",
       "KAS-ECC-SSC [SP800-56A Rev 3] EC Diffie-Hellman Key Agreement primitive",
       "Please note that due to the lack of the associated self-tests to DSA, KAS-ECC-SSC and KAS- | FFC-SSC algorithms, those algorithms are listed in"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 43,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5428.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

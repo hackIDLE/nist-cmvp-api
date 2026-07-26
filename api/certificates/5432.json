@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5432"
   },
   "certificate": {
     "certificate_number": "5432",
     "dataset": "active",
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5432",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5432",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5432.pdf",
@@ -57,6 +57,18 @@
       "contact_name": "John Weston",
       "contact_email": "john.weston@senetas.com",
       "contact_phone": "61-3-9868-4555"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5432.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 98
     },
     "algorithms": [
       "AES",
@@ -173,25 +185,6 @@
       "Note 7: It is possible to configure an encryptor to use ECDH ephemeral key agreement with NIST P -256 (128-bit equivalent strength), P-384 (192-bit",
       "equivalent strength) or NIST P-521 (256-bit equivalent strength) curves to establish AES 256 -bit symmetric keys. Only the use of P-521 will ensure that | the established key maintains the full 256 bits of encryption strength.",
       "Note 8: Diffie-Hellman Key Agreement using 2048-bit Oakley Group 14 (112-bit equivalent strength) is employed to establish the AES 128-bit SNMPv3 | privacy keys used to secure the management interface between the management application and the cryptographic module. | The module implements the vendor-affirmed algorithms in the table below. | Name Properties Implementation Reference | CKG 1 Key Type:Symmetric and Asymmetric N/A SP 800-133rev2 Section 4/Example 1 | CKG 2 Key Type:Symmetric N/A SP 800-133rev2 Section 6.3/ Approved Method 2 | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5432.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 98,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5432.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

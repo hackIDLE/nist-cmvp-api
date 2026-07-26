@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5433"
   },
   "certificate": {
     "certificate_number": "5433",
     "dataset": "active",
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5433",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5433",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5433.pdf",
@@ -58,6 +58,18 @@
       "contact_email": "john.weston@senetas.com",
       "contact_phone": "61-3-9868-4555"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5433.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 36
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -106,25 +118,6 @@
       "SHA2-384 A4648 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
       "SHA2-512 A4648 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
       "SHA3-256 A3449 Message Length - Message Length: 0-65536 Increment 8 FIPS 202 | The module implements the vendor-affirmed algorithms in the table below. | Name Properties Implementation Reference | CKG 1 Key Type:Asymmetric N/A SP 800-133rev2 Section 4/Example 1 | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5433.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 36,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5433.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

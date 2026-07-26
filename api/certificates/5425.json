@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5425"
   },
   "certificate": {
     "certificate_number": "5425",
     "dataset": "active",
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5425",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5425",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5425.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Jake Nelson",
       "contact_email": "jnelson@corsec.com",
       "contact_phone": "703-267-6050"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5425.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 93
     },
     "algorithms": [
       "AES",
@@ -170,25 +182,6 @@
       "RSA encrypt/decrypt Asymmetric encryption/decryption | SEED Encryption/decryption",
       "SHA-1 (non-compliant) Signature generation for TLS v1.0/v1.1 | SM2 Digital signature generation; digital signature verification | SM3 Message digest | SM4 Encryption/decryption",
       "TDES (non-compliant) Encryption/decryption; MAC generation | Whirlpool Message digest"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5425.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 93,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5425.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

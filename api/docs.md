@@ -45,7 +45,7 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "total_modules": 1142
   },
   "modules": [
@@ -68,11 +68,11 @@ Example response (truncated):
       "detail_available": true,
       "algorithm_extraction": {
         "schema_version": "1.0",
-        "status": "parsed",
+        "status": "cached",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5434.pdf",
-        "cached": false,
+        "cached": true,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 2,
@@ -108,11 +108,11 @@ Example response (truncated):
     "AES": {
       "count": 1649,
       "certificates": [
-        5412,
-        5422,
-        5411,
-        5421,
-        5403
+        5426,
+        5397,
+        5415,
+        5425,
+        5396
       ]
     }
   }
@@ -127,44 +127,44 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5412"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5426"
   },
   "certificate": {
-    "certificate_number": "5412",
+    "certificate_number": "5426",
     "dataset": "active",
-    "vendor_name": "HPE Juniper Networking",
-    "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module version 3.0",
+    "vendor_name": "Palo Alto Networks",
+    "module_name": "GlobalProtect App",
     "standard": "FIPS 140-3",
     "status": "Active",
-    "module_type": "Software",
+    "module_type": "Software-hybrid",
     "overall_level": 1,
     "validation_dates": [
-      "7/14/2026"
+      "7/20/2026"
     ],
-    "sunset_date": "7/13/2031",
-    "caveat": "When operated in approved mode with module Junos® OS Evolved Kernel Cryptographic Module version 2.1 validated to FIPS 140-3 under Cert. #NNNN operating in t...",
+    "sunset_date": "7/19/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g.,...",
     "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A"
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
     ],
     "vendor": {
-      "name": "HPE Juniper Networking",
-      "website_url": "http://www.hpe.com",
-      "contact_email": "certs-team@juniper.net"
+      "name": "Palo Alto Networks",
+      "website_url": "http://www.paloaltonetworks.com",
+      "contact_email": "certifications@paloaltonetworks.com"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5412.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5426.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "7/14/2026",
+        "date": "7/20/2026",
         "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
       }
     ],
     "algorithms": [
@@ -179,12 +179,12 @@ Example response (truncated):
       "status": "cached",
       "configured_source": "crawl4ai",
       "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5412.pdf",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5426.pdf",
       "cached": true,
       "fallback_used": false,
       "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 87
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 23
     }
   }
 }
@@ -206,12 +206,12 @@ GET api/changes.json → recent added, removed, and summary-changed certificate 
 ```
 GET api/certificates/index.json → discover every certificate detail path and summary row
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/5412.json → full detail record for that certificate
+GET api/certificates/5426.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/5412.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5426.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage

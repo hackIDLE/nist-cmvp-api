@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "total_modules": 1142,
     "total_historical_modules": 4270,
     "total_modules_in_process": 231,
@@ -13,18 +13,18 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1131,
-        "html_refreshed": 14,
+        "html_reused": 1142,
+        "html_refreshed": 3,
         "html_failed": 0,
-        "pdf_reused": 1131,
-        "pdf_refreshed": 11,
+        "pdf_reused": 1142,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1131,
+        "algorithm_cache_hits": 1142,
         "algorithm_successes": 690,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 11,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -32,18 +32,18 @@
         "certificates_deferred": 3
       },
       "historical": {
-        "html_reused": 4258,
-        "html_refreshed": 12,
+        "html_reused": 4270,
+        "html_refreshed": 0,
         "html_failed": 0,
-        "pdf_reused": 4263,
-        "pdf_refreshed": 7,
+        "pdf_reused": 4270,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4263,
+        "algorithm_cache_hits": 4270,
         "algorithm_successes": 1097,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 7,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,18 +51,18 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5389,
-        "html_refreshed": 26,
+        "html_reused": 5412,
+        "html_refreshed": 3,
         "html_failed": 0,
-        "pdf_reused": 5394,
-        "pdf_refreshed": 18,
+        "pdf_reused": 5412,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5394,
+        "algorithm_cache_hits": 5412,
         "algorithm_successes": 1787,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 18,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -79,30 +79,30 @@
   },
   "summary": {
     "misses": 0,
-    "refreshed_records": 23,
-    "fallback_usage": 5,
-    "changed_certificates": 23,
+    "refreshed_records": 0,
+    "fallback_usage": 0,
+    "changed_certificates": 0,
     "deferred": 3
   },
   "update_monitor": {
     "status": "pass",
     "schedule": "0 2 * * 0",
     "schedule_description": "Weekly on Sunday at 02:00 UTC",
-    "latest_run_generated_at": "2026-07-24T13:06:01.960071Z",
-    "next_scheduled_run": "2026-07-26T02:00:00Z",
+    "latest_run_generated_at": "2026-07-26T05:32:50.602168Z",
+    "next_scheduled_run": "2026-08-02T02:00:00Z",
     "latest_run_metrics": {
-      "html_reused": 5389,
-      "html_refreshed": 26,
+      "html_reused": 5412,
+      "html_refreshed": 3,
       "html_failed": 0,
-      "pdf_reused": 5394,
-      "pdf_refreshed": 18,
+      "pdf_reused": 5412,
+      "pdf_refreshed": 0,
       "pdf_failed": 0,
       "pdf_cache_hits": 0,
       "algorithm_misses": 0,
-      "algorithm_cache_hits": 5394,
+      "algorithm_cache_hits": 5412,
       "algorithm_successes": 1787,
       "algorithm_fallbacks": 0,
-      "algorithm_source_crawl4ai": 18,
+      "algorithm_source_crawl4ai": 0,
       "algorithm_source_security_policy_pdf": 0,
       "algorithm_source_database": 0,
       "algorithm_source_none": 0,
@@ -113,7 +113,7 @@
       {
         "name": "html_cache_reuse_rate",
         "status": "pass",
-        "value": 0.995199,
+        "value": 0.999446,
         "threshold": 0.9
       },
       {
@@ -152,8 +152,8 @@
     "certificates_with_algorithms": 1787,
     "coverage_rate": 0.330192,
     "zero_algorithm_certificates": {
-      "cached_no_attempts": 3590,
-      "explicit_no_algorithms": 5,
+      "cached_no_attempts": 3595,
+      "explicit_no_algorithms": 0,
       "source_none": 30,
       "other": 0
     }
@@ -166,603 +166,20 @@
       "repeat": true
     },
     {
-      "certificate_number": "5331",
+      "certificate_number": "5285",
       "dataset": "active",
       "reason": "algorithm_unavailable",
       "repeat": true
     },
     {
-      "certificate_number": "5285",
+      "certificate_number": "5331",
       "dataset": "active",
       "reason": "algorithm_unavailable",
       "repeat": true
     }
   ],
   "misses": [],
-  "refreshed_records": [
-    {
-      "certificate_number": "5434",
-      "dataset": "active",
-      "path": "/api/certificates/5434.json",
-      "vendor_name": "Google, LLC",
-      "module_name": "B227 True Random Number Generator (TRNG) Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5433",
-      "dataset": "active",
-      "path": "/api/certificates/5433.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA",
-      "module_name": "CE Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5432",
-      "dataset": "active",
-      "path": "/api/certificates/5432.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
-      "module_name": "CN Series Encryptors",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5431",
-      "dataset": "active",
-      "path": "/api/certificates/5431.json",
-      "vendor_name": "Dell Inc., BSAFE Product Team",
-      "module_name": "Dell BSAFE Crypto Module for Java",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5430",
-      "dataset": "active",
-      "path": "/api/certificates/5430.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "CiscoSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5429",
-      "dataset": "active",
-      "path": "/api/certificates/5429.json",
-      "vendor_name": "Amazon Web Services Inc.",
-      "module_name": "AWS-LC Cryptographic Module (dynamic)",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5428",
-      "dataset": "active",
-      "path": "/api/certificates/5428.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung SCrypto Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5427",
-      "dataset": "active",
-      "path": "/api/certificates/5427.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung Kernel Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5426",
-      "dataset": "active",
-      "path": "/api/certificates/5426.json",
-      "vendor_name": "Palo Alto Networks",
-      "module_name": "GlobalProtect App",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5425",
-      "dataset": "active",
-      "path": "/api/certificates/5425.json",
-      "vendor_name": "Corsec Security, Inc.",
-      "module_name": "CorSSL",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5400",
-      "dataset": "active",
-      "path": "/api/certificates/5400.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4892",
-      "dataset": "historical",
-      "path": "/api/certificates/4892.json",
-      "vendor_name": "Dell Inc., BSAFE Product Team",
-      "module_name": "Dell™ BSAFE™ Crypto Module for Java 7.0",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4891",
-      "dataset": "historical",
-      "path": "/api/certificates/4891.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "CiscoSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4874",
-      "dataset": "historical",
-      "path": "/api/certificates/4874.json",
-      "vendor_name": "Senetas Corporation Ltd., distributed by Thales SA",
-      "module_name": "CE Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4869",
-      "dataset": "historical",
-      "path": "/api/certificates/4869.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
-      "module_name": "CN Series Encryptors",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4792",
-      "dataset": "historical",
-      "path": "/api/certificates/4792.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung SCrypto Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4776",
-      "dataset": "historical",
-      "path": "/api/certificates/4776.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved Kernel Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4775",
-      "dataset": "historical",
-      "path": "/api/certificates/4775.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4759",
-      "dataset": "historical",
-      "path": "/api/certificates/4759.json",
-      "vendor_name": "Amazon Web Services Inc.",
-      "module_name": "AWS-LC Cryptographic Module (dynamic)",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4733",
-      "dataset": "historical",
-      "path": "/api/certificates/4733.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Device Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3992",
-      "dataset": "historical",
-      "path": "/api/certificates/3992.json",
-      "vendor_name": "SUSE, LLC",
-      "module_name": "SUSE Linux Enterprise Server libgcrypt Cryptographic Module",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3991",
-      "dataset": "historical",
-      "path": "/api/certificates/3991.json",
-      "vendor_name": "SUSE, LLC",
-      "module_name": "SUSE Linux Enterprise Server OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3990",
-      "dataset": "historical",
-      "path": "/api/certificates/3990.json",
-      "vendor_name": "NXP Semiconductors",
-      "module_name": "i.MX 8X SECO HSM",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    }
-  ],
-  "fallback_usage": [
-    {
-      "certificate_number": "4892",
-      "dataset": "historical",
-      "path": "/api/certificates/4892.json",
-      "vendor_name": "Dell Inc., BSAFE Product Team",
-      "module_name": "Dell™ BSAFE™ Crypto Module for Java 7.0",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4892.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    },
-    {
-      "certificate_number": "4792",
-      "dataset": "historical",
-      "path": "/api/certificates/4792.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung SCrypto Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4792.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    },
-    {
-      "certificate_number": "4775",
-      "dataset": "historical",
-      "path": "/api/certificates/4775.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4775.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4775.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    },
-    {
-      "certificate_number": "4733",
-      "dataset": "historical",
-      "path": "/api/certificates/4733.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Device Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4733.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    },
-    {
-      "certificate_number": "3990",
-      "dataset": "historical",
-      "path": "/api/certificates/3990.json",
-      "vendor_name": "NXP Semiconductors",
-      "module_name": "i.MX 8X SECO HSM",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "algorithm_extraction_fallback",
-      "source": "firecrawl",
-      "source_url": null,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
-          "status": "no_algorithms"
-        },
-        {
-          "source": "security_policy_pdf",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3990.pdf",
-          "status": "no_algorithms"
-        }
-      ]
-    }
-  ],
-  "changed_certificates": [
-    {
-      "certificate_number": "5434",
-      "dataset": "active",
-      "path": "/api/certificates/5434.json",
-      "vendor_name": "Google, LLC",
-      "module_name": "B227 True Random Number Generator (TRNG) Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5433",
-      "dataset": "active",
-      "path": "/api/certificates/5433.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA",
-      "module_name": "CE Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5432",
-      "dataset": "active",
-      "path": "/api/certificates/5432.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
-      "module_name": "CN Series Encryptors",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5431",
-      "dataset": "active",
-      "path": "/api/certificates/5431.json",
-      "vendor_name": "Dell Inc., BSAFE Product Team",
-      "module_name": "Dell BSAFE Crypto Module for Java",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5430",
-      "dataset": "active",
-      "path": "/api/certificates/5430.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "CiscoSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5429",
-      "dataset": "active",
-      "path": "/api/certificates/5429.json",
-      "vendor_name": "Amazon Web Services Inc.",
-      "module_name": "AWS-LC Cryptographic Module (dynamic)",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5428",
-      "dataset": "active",
-      "path": "/api/certificates/5428.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung SCrypto Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5427",
-      "dataset": "active",
-      "path": "/api/certificates/5427.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung Kernel Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5426",
-      "dataset": "active",
-      "path": "/api/certificates/5426.json",
-      "vendor_name": "Palo Alto Networks",
-      "module_name": "GlobalProtect App",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5425",
-      "dataset": "active",
-      "path": "/api/certificates/5425.json",
-      "vendor_name": "Corsec Security, Inc.",
-      "module_name": "CorSSL",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "5400",
-      "dataset": "active",
-      "path": "/api/certificates/5400.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Active",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4892",
-      "dataset": "historical",
-      "path": "/api/certificates/4892.json",
-      "vendor_name": "Dell Inc., BSAFE Product Team",
-      "module_name": "Dell™ BSAFE™ Crypto Module for Java 7.0",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4891",
-      "dataset": "historical",
-      "path": "/api/certificates/4891.json",
-      "vendor_name": "Cisco Systems, Inc",
-      "module_name": "CiscoSSL FIPS Provider",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4874",
-      "dataset": "historical",
-      "path": "/api/certificates/4874.json",
-      "vendor_name": "Senetas Corporation Ltd., distributed by Thales SA",
-      "module_name": "CE Crypto Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4869",
-      "dataset": "historical",
-      "path": "/api/certificates/4869.json",
-      "vendor_name": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
-      "module_name": "CN Series Encryptors",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4792",
-      "dataset": "historical",
-      "path": "/api/certificates/4792.json",
-      "vendor_name": "Samsung Electronics Co., Ltd.",
-      "module_name": "Samsung SCrypto Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4776",
-      "dataset": "historical",
-      "path": "/api/certificates/4776.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved Kernel Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4775",
-      "dataset": "historical",
-      "path": "/api/certificates/4775.json",
-      "vendor_name": "Juniper Networks, Inc.",
-      "module_name": "Junos® OS Evolved OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4759",
-      "dataset": "historical",
-      "path": "/api/certificates/4759.json",
-      "vendor_name": "Amazon Web Services Inc.",
-      "module_name": "AWS-LC Cryptographic Module (dynamic)",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "4733",
-      "dataset": "historical",
-      "path": "/api/certificates/4733.json",
-      "vendor_name": "F5, Inc.",
-      "module_name": "Device Cryptographic Module",
-      "standard": "FIPS 140-3",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3992",
-      "dataset": "historical",
-      "path": "/api/certificates/3992.json",
-      "vendor_name": "SUSE, LLC",
-      "module_name": "SUSE Linux Enterprise Server libgcrypt Cryptographic Module",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3991",
-      "dataset": "historical",
-      "path": "/api/certificates/3991.json",
-      "vendor_name": "SUSE, LLC",
-      "module_name": "SUSE Linux Enterprise Server OpenSSL Cryptographic Module",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    },
-    {
-      "certificate_number": "3990",
-      "dataset": "historical",
-      "path": "/api/certificates/3990.json",
-      "vendor_name": "NXP Semiconductors",
-      "module_name": "i.MX 8X SECO HSM",
-      "standard": "FIPS 140-2",
-      "status": "Historical",
-      "reason": "new_certificate"
-    }
-  ]
+  "refreshed_records": [],
+  "fallback_usage": [],
+  "changed_certificates": []
 }

@@ -312,7 +312,7 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-07-24T13:06:01.960071Z"
+            "example": "2026-07-26T05:32:50.602168Z"
           },
           "total_modules": {
             "type": "integer",
@@ -436,6 +436,14 @@
             "type": "string",
             "example": "The B227 True Random Number Generator (TRNG) is a NIST SP 800-90 B compliant TRNG employed by the Integrated Compute Complex for generating cryptographic keys."
           },
+          "algorithm_extraction": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "detail_available": {
+            "type": "boolean",
+            "example": true
+          },
           "algorithms": {
             "type": "array",
             "items": {
@@ -455,14 +463,6 @@
               "Counter DRBG A2721 Prediction Resistance - No | Yes",
               "Mode - AES-128, AES-256 | Derivation Function Enabled - | No | SP 800-90A Rev. | 1 | The module does not support any Vendor-Affirmed Algorithms. | The module does not support any | The module does not support any | Google, LLC 2026 Document Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision). | The module does not support any"
             ]
-          },
-          "algorithm_extraction": {
-            "type": "object",
-            "additionalProperties": true
-          },
-          "detail_available": {
-            "type": "boolean",
-            "example": true
           },
           "software_versions": {
             "type": "string",
@@ -878,7 +878,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5412"
+            "example": "5426"
           },
           "dataset": {
             "type": "string",
@@ -886,27 +886,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-07-24T13:06:01.960071Z"
+            "example": "2026-07-26T05:32:50.602168Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5412"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5426"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5412"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5426"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5412.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5426.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "HPE Juniper Networking"
+            "example": "Palo Alto Networks"
           },
           "module_name": {
             "type": "string",
-            "example": "Junos® OS Evolved OpenSSL Cryptographic Module version 3.0"
+            "example": "GlobalProtect App"
           },
           "standard": {
             "type": "string",
@@ -918,7 +918,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Software-hybrid"
           },
           "embodiment": {
             "type": "string",
@@ -930,7 +930,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "7/14/2026"
+            "example": "7/20/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -938,20 +938,20 @@
               "type": "string"
             },
             "example": [
-              "7/14/2026"
+              "7/20/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/13/2031"
+            "example": "7/19/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode with module Junos® OS Evolved Kernel Cryptographic Module version 2.1 validated to FIPS 140-3 under Cert. #NNNN operating in the Approved mode. No assurance of minimum security of SSPs (e.g. keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys). No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "description": {
             "type": "string",
-            "example": "The Junos® OS Evolved OpenSSL Cryptographic Module provides a C language application program interface (API) for use by other applications that require cryptographic functionality."
+            "example": "GlobalProtect App from Palo Alto Networks, enables organizations to protect the mobile workforce by extending the Next-Generation Security Platform to all users, regardless of location. It secures traffic by applying the platform's capabilities to understand application use, associate the traffic with users and devices, and enforce security policies with next-generation technologies."
           },
           "software_versions": {
             "type": "string",
@@ -974,8 +974,8 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
-              "Non-invasive security: N/A"
+              "Non-invasive security: N/A",
+              "Mitigation of other attacks: N/A"
             ]
           },
           "related_files": {
@@ -1017,9 +1017,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A7226, A7227 | A7228 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC-CS1 A7226, A7227 | A7228 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC-CS2 A7226, A7227 | A7228 | Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES-CBC A2999 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-GCM A2999 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | SP 800-38D",
+              "Counter DRBG A2999 Prediction Resistance - No, Yes"
             ]
           }
         }

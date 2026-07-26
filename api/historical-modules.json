@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T13:06:01.960071Z",
+    "generated_at": "2026-07-26T05:32:50.602168Z",
     "total_modules": 1142,
     "total_historical_modules": 4270,
     "total_modules_in_process": 231,
@@ -13,18 +13,18 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1131,
-        "html_refreshed": 14,
+        "html_reused": 1142,
+        "html_refreshed": 3,
         "html_failed": 0,
-        "pdf_reused": 1131,
-        "pdf_refreshed": 11,
+        "pdf_reused": 1142,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1131,
+        "algorithm_cache_hits": 1142,
         "algorithm_successes": 690,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 11,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -32,18 +32,18 @@
         "certificates_deferred": 3
       },
       "historical": {
-        "html_reused": 4258,
-        "html_refreshed": 12,
+        "html_reused": 4270,
+        "html_refreshed": 0,
         "html_failed": 0,
-        "pdf_reused": 4263,
-        "pdf_refreshed": 7,
+        "pdf_reused": 4270,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4263,
+        "algorithm_cache_hits": 4270,
         "algorithm_successes": 1097,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 7,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,18 +51,18 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5389,
-        "html_refreshed": 26,
+        "html_reused": 5412,
+        "html_refreshed": 3,
         "html_failed": 0,
-        "pdf_reused": 5394,
-        "pdf_refreshed": 18,
+        "pdf_reused": 5412,
+        "pdf_refreshed": 0,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5394,
+        "algorithm_cache_hits": 5412,
         "algorithm_successes": 1787,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 18,
+        "algorithm_source_crawl4ai": 0,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -524,7 +524,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -549,6 +549,19 @@
       "module_type": "Firmware",
       "embodiment": "Multi-Chip Stand Alone",
       "description": "The CiscoSSL FIPS Provider is a firmware library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module is comprised of a single object module file called fips.so.",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 15,
+        "detailed_algorithm_count": 195
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "CVL",
@@ -762,20 +775,7 @@
         "EdDSA SigGen Signature generation using Edwards curves (ED25519, ED448)",
         "EdDSA SigVer Signature verification using Edwards curves (ED25519, ED448)",
         "RSA Primitives RSA Signature generation, verification, encrypt and decrypt primitives"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4891.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 15,
-        "detailed_algorithm_count": 195
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874",
@@ -796,6 +796,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "The CE Crypto Module is a firmware cryptographic module running on a multi-chip standalone general-purpose compute platform. The module provides low-level cryptographic primitives to the overall platform and its functions.",
       "firmware_versions": "5.5.0",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 11,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DRBG",
@@ -808,20 +821,7 @@
         "SHA",
         "SHS",
         "TLS"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4874.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 11,
-        "detailed_algorithm_count": 0
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4873",
@@ -877,6 +877,19 @@
       "description": "The CN4010, CN4020, CN6010, CN6100, CN6110, CN6140, CN9100 and CN9120 are high-speed hardware encryption platforms that secure data over twisted-pair and optical Ethernet networks. The modules support line rates from 10Mb/s to 100Gb/s. All models except CN4010 are equipped with pluggable transceivers to support a variety of optical network interfaces. Data privacy is provided by FIPS approved AES algorithms in CFB, CTR and GCM modes. Additional transmission security is provided via TRANSEC (Traffic Flow Security) which can be used to remove patterns in network traffic and prevent traffic analysis attacks.",
       "hardware_versions": "Senetas Corp. Ltd. CN4000 Series: A4010B (DC) and A4020B (DC); Senetas Corp. Ltd. CN6000 Series: A6010B (AC), A6011B (DC), A6012B (AC/DC), A6100B (AC), A6101B (DC), A6102B (AC/DC), A6110B (AC), A6111B (DC), A6112B (AC/DC), A6140B (AC), A6141B (DC), A6142B (AC/DC); Senetas Corp. Ltd. CN9000 Series: A9100B (AC), A9101B (DC), A9102B (AC/DC), A9120B (AC), A9121B (DC) and A9122B (AC/DC); Senetas Corp. Ltd. & SafeNet Inc. CN4000 Series: A4010B (DC) and A4020B (DC); Senetas Corp. Ltd. & SafeNet Inc. CN6000 Series: A6010B (AC), A6011B (DC), A6012B (AC/DC), A6100B (AC), A6101B (DC), A6102B (AC/DC), A6110B (AC), A6111B (DC), A6112B (AC/DC), A6140B (AC), A6141B (DC), A6142B (AC/DC); Senetas Corp. Ltd. & SafeNet Inc. CN9000 Series: A9100B (AC), A9101B (DC), A9102B (AC/DC), A9120B (AC), A9121B (DC) and A9122B (AC/DC); Senetas Corp. Ltd. & Thales CN4000 Series: A4010B (DC) and A4020B (DC); Senetas Corp. Ltd. & Thales CN6000 Series: A6010B (AC), A6011B (DC), A6012B (AC/DC), A6100B (AC), A6101B (DC), A6102B (AC/DC), A6110B (AC), A6111B (DC), A6112B (AC/DC), A6140B (AC), A6141B (DC), A6142B (AC/DC); Senetas Corp. Ltd. & Thales CN9000 Series: A9100B (AC), A9101B (DC), A9102B (AC/DC), A9120B (AC), A9121B (DC) and A9122B (AC/DC)",
       "firmware_versions": "5.5.0 and 5.5.1",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4869.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 9,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "ECDH",
@@ -887,20 +900,7 @@
         "SHA",
         "SSH",
         "TLS"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4869.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 9,
-        "detailed_algorithm_count": 0
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4865",
@@ -1305,7 +1305,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -1702,6 +1702,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "The Juniper Kernel Cryptographic Module is a software module running as part of the operating system kernel that provides general purpose cryptographic services.",
       "software_versions": "2.0",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4776.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 6,
+        "detailed_algorithm_count": 104
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DRBG",
@@ -1815,20 +1828,7 @@
         "10.5 Operator Initiation of Self-Tests [O] All self-tests, with the exception of the continuous health tests, can be invoked on demand by unloading and subsequently re-initializing the module. 10.6 Additional Information [O] Not applicable. 11 Life-Cycle Assurance 11.1 Installation, Initialization, and Startup Procedures The module is pre-installed in the junos-evo-install-ptx-fixed-x86-64-22.4R2.11-S1-EVO.iso image. The procedures on how to mount and install the image are listed in the software-install-and-upgrade-overview-evo documentation2. The Crypto Officer shall follow this Security Policy to configure the operational environment and to operate the module as a FIPS 140-3 validated module. To configure the operating environment to run in the approved mode, the following shall be performed with the root privilege: 1. Enter CLI configuration mode. 2. Configure FIPS level to 1: set system fips level 1 3. Commit changes: commit 4. Exit configuration mode to enter operational mode: exit 5. Reboot the system with the new settings (answer yes to prompt): request system reboot The Crypto Officer should check the existence of the file, /proc/sys/crypto/fips_enabled, and that it contains “1”. If the file does not exist or does not contain “1”, the operating environment is not configured to operate properly in the approved mode. 11.2 Administrator Guidance In order to run in the Approved mode, the module must be operated using the approved services, with their corresponding approved and allowed cryptographic algorithms provided in this Security Policy. In addition, key sizes must comply with [SP800-131Ar2]. Once the OE is properly configured, the operator is responsible to verify that the installation and configuration is completed. For such purpose, the following command “cat /proc/sys/fips_version” must return: Junos OS Evolved Kernel Cryptographic Module 2.0 2 URL: https://www.juniper.net/documentation/us/en/software/junos/junos-install-upgrade-evo/topics/concept/software-install-and-upgrade-overview-evo.html | Junos OS Evolved Kernel Cryptographic Module | Juniper Networks, Inc. o +1 408 745 2000 44 1133 Innovation Way f +1 408 745 2100 Sunnyvale, CA 94089 www.juniper.net | 11.3 Non-Administrator Guidance There is no non-administrator guidance. 11.4 Design and Rules [O] Not applicable for this module. 11.5 Maintenance Requirements [O] There are no maintenance requirements. 11.6 End of Life [O] As a first step for the secure sanitization, the module needs to be powered off which will erase the SSPs in the volatile memory. Then, the files listed related to the static kernel binary and fips_chk_hmac utility must be deleted using the command “shred -zu <file_name>”. Then, for the actual deprecation, the module will be upgraded to a newer version that is approved. 11.7 Additional Information [O] Not applicable. 12 Mitigation of Other Attacks 12.1 Attack List [O] The module does not offer mitigation of other attacks and therefore this section is not applicable. 12.2 Mitigation Effectiveness [O] Not applicable. 12.3 Guidance and Constraints [O] Not applicable. 12.4 Additional Information [O] Not applicable. | Junos OS Evolved Kernel Cryptographic Module | Juniper Networks, Inc. o +1 408 745 2000 45 1133 Innovation Way f +1 408 745 2100 Sunnyvale, CA 94089 www.juniper.net",
         "Appendix A. Glossary and Abbreviations AES Advanced Encryption Standard API Application Programming Interface CAST Cryptographic Algorithm Self-Test CAVP Cryptographic Algorithm Validation Program CBC Cipher Block Chaining CMAC Cipher-based Message Authentication Code CMVP Cryptographic Module Validation Program CSP Critical Security Parameter CTR Counter DRBG Deterministic Random Bit Generator ECB Electronic Code Book ENT (NP) Non-physical Entropy Source FIPS Federal Information Processing Standards GCM Galois Counter Mode HMAC Keyed-Hash Message Authentication Code KAT Known Answer Test MAC Message Authentication Code NIST National Institute of Science and Technology PAA Processor Algorithm Acceleration PKCS Public-Key Cryptography Standards RSA Rivest, Shamir, Addleman SHA Secure Hash Algorithm SSP Sensitive Security Parameter XTS XEX-based Tweaked-codebook mode with cipher text Stealing | Junos OS Evolved Kernel Cryptographic Module | Juniper Networks, Inc. o +1 408 745 2000 46 1133 Innovation Way f +1 408 745 2100 Sunnyvale, CA 94089 www.juniper.net",
         "Appendix B. References FIPS 140-3 FIPS PUB 140-3 - Security Requirements For Cryptographic Modules March 2019 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-3.pdf FIPS 140-3 IG Implementation Guidance for FIPS PUB 140-3 and the Cryptographic Module Validation Program https://csrc.nist.gov/Projects/cryptographic-module-validation-program/fips-140-3-ig-announcements FIPS 180-4 Secure Hash Standard (SHS) March 2012 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf FIPS 198-1 The Keyed Hash Message Authentication Code (HMAC) July 2008 https://csrc.nist.gov/publications/fips/fips198-1/FIPS-198-1_final.pdf PKCS#1 Public Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1 February 2003 https://www.ietf.org/rfc/rfc3447.txt SP 800-38A Recommendation for Block Cipher Modes of Operation Methods and Techniques December 2001 https://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf SP 800-38B Recommendation for Block Cipher Modes of Operation: The CMAC Mode for Authentication May 2005 https://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf SP 800-38E Recommendation for Block Cipher Modes of Operation: The XTS AES Mode for Confidentiality on Storage Devices January 2010 https://csrc.nist.gov/publications/nistpubs/800-38E/nist-sp-800-38E.pdf SP 800-90Ar1 Recommendation for Random Number Generation Using Deterministic Random Bit Generators June 2015 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-90Ar1.pdf SP 800-90B Recommendation for the Entropy Sources Used for Random Bit Generation January 2018 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-90B.pdf SP 800-131Ar2 Transitioning the Use of Cryptographic Algorithms and Key Lengths March 2019 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4776.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 6,
-        "detailed_algorithm_count": 104
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4775",
@@ -1856,7 +1856,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -2162,6 +2162,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. It іs based on code from the Google BoringSSL project and the OpenSSL project.",
       "software_versions": "AWS-LC FIPS 2.0.0",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 11,
+        "detailed_algorithm_count": 89
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "CVL",
@@ -2265,20 +2278,7 @@
         "SHAKE, RIPEMD-160, SHA-3 Message Digest",
         "TLS KDF using any SHA algorithms not listed in Table 5 or",
         "TLS KDF using non extended master secret"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4759.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 11,
-        "detailed_algorithm_count": 89
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4754",
@@ -2672,7 +2672,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -13562,6 +13562,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "SUSE Libgcrypt is a general purpose cryptographic library based on the code from GnuPG.",
       "software_versions": "3.1",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 11,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DES",
@@ -13574,20 +13587,7 @@
         "RSA",
         "SHA",
         "SHS"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3992.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 11,
-        "detailed_algorithm_count": 0
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3991",
@@ -13608,6 +13608,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
       "software_versions": "4.1.1",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3991.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 14,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DES",
@@ -13623,20 +13636,7 @@
         "SHS",
         "SSH",
         "TLS"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3991.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 14,
-        "detailed_algorithm_count": 0
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3990",
@@ -13665,7 +13665,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
