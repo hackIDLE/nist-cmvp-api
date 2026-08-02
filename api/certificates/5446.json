@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446"
+  },
+  "certificate": {
+    "certificate_number": "5446",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
+    "vendor_name": "Nvidia Corporation",
+    "module_name": "H100 Tensor Core GPU",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "7/28/2026",
+    "validation_dates": [
+      "7/28/2026"
+    ],
+    "sunset_date": "7/27/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "H100 is part of the complete NVIDIA data center solution that incorporates building blocks across hardware, networking, software, libraries, and optimized AI models and applications from the NVIDIA NGC™ catalog. The second-generation Multi-Instance GPU (MIG), built-in NVIDIA confidential computing, and NVIDIA NVLink Switch System allows the H100 to securely accelerate workloads.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/28/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Nvidia Corporation",
+      "website_url": "http://www.nvidia.com",
+      "address_lines": [
+        "2788 San Tomas Expressway",
+        "Santa Clara, CA 95051",
+        "United States of America"
+      ],
+      "country": "United States of America",
+      "contact_name": "Rahul Jain",
+      "contact_email": "rahjain@nvidia.com",
+      "contact_phone": "408-486-2000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB A2733 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A2733 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D | GPU Service Processor",
+      "AES-ECB A4422 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A4422 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D",
+      "Counter DRBG A4422 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - No | SP 800-90A Rev. 1",
+      "ECDSA KeyGen (FIPS186-5) A4422 Curve - P-384 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA KeyVer (FIPS186-5) A4422 Curve - P-384 FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) A2732 Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "HMAC-SHA2-384 A4422 Key Length - Key Length: 128, 192, 256 FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 A4422 Domain Parameter Generation Methods - P-384 | Scheme - | ephemeralUnified - | KAS Role - responder | SP 800-56A Rev. 3",
+      "KDA HKDF SP800-56Cr2 A4422 Derived Key Length - 256 | Shared Secret Length - Shared Secret Length: 256 | HMAC Algorithm - SHA2-384 | SP 800-56C Rev. 2",
+      "RSA SigVer (FIPS186-5) A2732 Modulo - 3072 | Signature Type - pss | FIPS 186-5",
+      "SHA2-384 A4422 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4 | Security Controller",
+      "AES-ECB A4423 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4423 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D",
+      "Conditioning Component AES-CBC-MAC | SP800-90B | A4423 Key Length - 128 SP 800-90B",
+      "RSA SigVer (FIPS186-5) A2730 Modulo - 3072 | Signature Type - pss | FIPS 186-5",
+      "SHA2-384 A4423 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Root of Trust for Storage",
+      "SHA2-384 A4414 Message Length - Message Length: 800 FIPS 180-4 | H100 Tensor Core GPU 570.36 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Only the algorithms specified in the tables above are approved algorithms supported by the module in approved | mode of operation | 2.5.2 Vendor Affirmed Algorithms | The vendor affirms the following cryptographic security methods | Name Properties Implementation Reference | CKG Section 6.1 Symmetric Key type:Symmetric N/A SP 800-133 Rev. 2 Section 6.1 | CKG Section 4 Example 1 Asymmetric Key type:Asymmetric N/A SP 800-133 Rev. 2 Section 4 Example 1 | CKG Section 4 Example 2 Asymmetric Key Type:Asymmetric N/A SP 800-133 Rev. 2 Section 4 Example 2 | 2.5.3 | The module does not offer any | N/A for this module. | 2.5.4 | The table below lists the | Name Caveat Use and Function",
+      "AES ECB (No | Security | Claimed)",
+      "No Security Claimed; AES-ECB is only used as a pre-requisite for the AES- | GCM which is only used within an encrypted tunnel. (IG 2.4.A Scenario | 2c)",
+      "Pre-requisite AES mode for the AES | GCM implemented operating within an | encrypted tunnel.",
+      "AES-GCM (No | Security | Claimed)",
+      "No Security Claimed; AES-GCM is used within an encrypted tunnel. (IG | 2.4.A Scenario 2c)",
+      "AES-GCM for data transfer within an",
+      "encrypted AES-GCM tunnel.",
+      "ECDSA KeyGen | (No Security | Claimed)",
+      "No Security Claimed; ECDSA KeyGen is used for key generation of key | pairs used for the attestation report. (IG 2.4.A Scenario 2)",
+      "Generation of the ECDSA Key Pairs for | the Attestation Report Service",
+      "ECDSA SigGen | (No Security | Claimed)",
+      "No Security Claimed; ECDSA SigGen is used for signature generation | used for the attestation report. (IG 2.4.A Scenario 2)",
+      "Generation of the ECDSA signatures | for the Attestation Report Service",
+      "HMAC-SHA2-256 | (No Security | Claimed)",
+      "No Security Claimed; SHA2-256 is only used as a pre-requisite for the",
+      "KBKDF which is used as a conditioning component for the | GSP_UDS_KDK and GSP_UDS1, and key derivation of AK_Seed_NonCA | and GSP_UDS1. (IG 2.4.A Scenario 2) | Conditioning Component",
+      "KBKDF (SP800- | 108) (No | Security | Claimed)",
+      "No Security Claimed; KBKDF is used as a conditioning component for the | GSP_UDS_KDK and GSP_UDS1, and key derivation of AK_Seed_NonCA | and GSP_UDS1. (IG 2.4.A Scenario 2) | Conditioning Component",
+      "SHA2-256 (No | Security | Claimed)",
+      "KBKDF which is used as a conditioning component for the | GSP_UDS_KDK and GSP_UDS1, and key derivation of AK_Seed_NonCA | and GSP_UDS1. (IG 2.4.A Scenario 2) | Conditioning Component | H100 Tensor Core GPU 570.36 | This document may be freely reproduced and distributed whole and intact including this copyright notice. | Name Caveat Use and Function",
+      "SHA2-384 (No | Security | Claimed)",
+      "No Security Claimed; SHA2-384 is only used as a pre-requisite for the",
+      "ECDSA SigGen which is used for signature generation used for the | attestation report. (IG 2.4.A Scenario 2) | Pre-requisite hash algorithm for the",
+      "ECDSA SigGen which is used for | signature generation",
+      "SPDM KDF (No | Security | Claimed)",
+      "No Security Claimed; The SPDM KDF is used within an encrypted tunnel. | (IG 2.4.A Scenario 2c)",
+      "SPDM KDF for use in SPDM protocol. | Note that the SPDM protocol operates",
+      "within an encrypted AES-GCM tunnel. | 2.5.5 | The module does not offer any | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 49,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448"
+  },
+  "certificate": {
+    "certificate_number": "5448",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
+    "vendor_name": "HPE Juniper Networking",
+    "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/28/2026",
+    "validation_dates": [
+      "7/28/2026"
+    ],
+    "sunset_date": "7/27/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
+    "description": "The HPE Juniper Networking vSRX Virtual Firewall running Junos OS 24.4R1-S3.7 offers the functionality of Juniper's hardware SRX Series Services Gateways in a virtual machine (VM) format. It includes firewall, routing, VPN, Intrusion Detection and Prevention (IDP), and monitoring functionalities.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/28/2026",
+        "type": "Initial",
+        "lab": "Teron Labs"
+      }
+    ],
+    "vendor": {
+      "name": "HPE Juniper Networking",
+      "website_url": "http://www.juniper.net",
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, California 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Bill Shelton",
+      "contact_email": "certs-team@juniper.net",
+      "contact_phone": "1-408-745-2000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7322 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A7322 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7322 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D",
+      "ECDSA KeyGen | (FIPS186-5) | A7322 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing | candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A7322 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7322 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7322 Curve - P-256, P-384, P-521",
+      "SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A7322 Key Length - Key Length: 112-1024 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A7322 Key Length - Key Length: 112-1024 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A7322 Key Length - Key Length: 256-2048 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A7322 Domain Parameter Generation Methods - | P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A7322 Domain Parameter Generation Methods - | FC, MODP-2048 | Scheme - | dhEphem - | KAS Role - initiator | SP 800-56A | Rev. 3 | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 12 of 65",
+      "KDF SSH (CVL) A7322 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256",
+      "SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A7322 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | Primality Tests - 2powSecStr | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A7322 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7322 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | Safe Primes Key | Generation | A7322 Safe Prime Groups - MODP-2048 | MODP-3072, MODP-4096 | SP 800-56A | Rev. 3 | Safe Primes Key | Verification | A7322 Safe Prime Groups - MODP-2048 | MODP-3072, MODP-4096 | SP 800-56A | Rev. 3",
+      "SHA-1 A7322 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A7322 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A7322 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A7322 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4 | QuickSec 7 Cryptographic Library",
+      "AES-CBC A7673 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7673 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "HMAC-",
+      "SHA2-256 | A7673 Key Length - Key Length: 112-1024 Increment 8 FIPS 198-1",
+      "SHA2-384 | A7673 Key Length - Key Length: 192-2048 Increment 8 FIPS 198-1",
+      "KDF IKEv1",
+      "(CVL) | A7673 Authentication Method - Digital Signature, Pre-",
+      "shared Key | Preshared Key Length - Preshared Key Length: 8- | 256 Increment 8",
+      "Diffie-Hellman Shared Secret Length - Diffie- | SP 800-135 | Rev. 1 | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 13 of 65",
+      "Hellman Shared Secret Length: 256, 384, 2048",
+      "KDF IKEv2",
+      "(CVL)",
+      "A7673 Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 256, 384, 2048 | Derived Keying Material Length - Derived Keying | Material Length: 1136-2184 Increment 8",
+      "Hash Algorithm - SHA2-256, SHA2-384 | SP 800-135 | Rev. 1",
+      "SHA2-256 A7673 Message Length - Message Length: 8-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A7673 Message Length - Message Length: 8-65536 | Increment 8 | FIPS 180-4 | Physical Entropy Source",
+      "Conditioning Component AES-CBC-MAC | SP800-90B | A2518 Key Length - | 128 | SP 800-90B | Kernel Cryptographic Library",
+      "HMAC DRBG A7179 Prediction Resistance - No",
+      "Mode - SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2- | 512 | A7179 Key Length - Key Length: 8-1024 | Increment 8 | FIPS 198-1",
+      "SHA2-512 A7179 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | type:Symmetric | and Asymmetric | N/A SP 800-133 Rev. 2 Section 4, Example 1",
+      "approved DRBG output to generate symmetric | keys and seeds used for asymmetric key pair",
+      "generation; Section 5.1: DRBG output used to | generate private key values for digital signature | key pairs in accordance with FIPS 186-5; and | Section 6.2.1 and SP 800-56A: derivation of | symmetric keys established via key-agreement | schemes | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 14 of 65 | The module does not support any | operating in the Approved mode. | The module does not support any | when the module is operating in the Approved mode. | The module does not support any | operating in the Approved mode. | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 15 of 65"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 49,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5451"
+  },
+  "certificate": {
+    "certificate_number": "5451",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5451",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5451",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5451.pdf",
+    "vendor_name": "Privoro LLC",
+    "module_name": "Privoro SafeCase Security Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "7/29/2026",
+    "validation_dates": [
+      "7/29/2026"
+    ],
+    "sunset_date": "7/28/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "Firmware library of Approved algorithms for use in Privoro SafeCase product line.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 3",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5451.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/29/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Privoro LLC",
+      "website_url": "https://privoro.com/",
+      "address_lines": [
+        "3100 W Ray Rd Suite 201",
+        "Chandler, AZ 85226",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Mike Fong",
+      "contact_email": "mike.fong@privoro.com",
+      "contact_phone": "844-774-8676"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CCM A7216 Key Length - 256 SP 800-38C",
+      "AES-ECB A7216 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "ECDSA KeyGen (FIPS186-5) A7216 Curve - P-384 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA SigGen (FIPS186-5) A7216 Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "ECDSA SigVer (FIPS186-5) A7216 Curve - P-384",
+      "Hash DRBG A7216 Prediction Resistance - No",
+      "Mode - SHA2-256 | SP 800-90A Rev. 1 | Privoro SafeCase Security Module | Privoro LLC Public Material – may be reproduced only in its original entirety (without revision)",
+      "HMAC-SHA2-384 A7216 Key Length - Key Length: 192 FIPS 198-1",
+      "KAS-ECC-SSC Sp800-56Ar3 A7216 Domain Parameter Generation Methods - P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A Rev. 3",
+      "KDA OneStep SP800-56Cr2 A7216 Derived Key Length - 384 | Shared Secret Length - Shared Secret Length: 384 | SP 800-56C Rev. 2",
+      "RSA KeyGen (FIPS186-5) A7216 Key Generation Mode - probable | Modulo - 2048 | Primality Tests - 2pow100 | Private Key Format - standard | FIPS 186-5",
+      "RSA SigGen (FIPS186-5) A7216 Modulo - 2048 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer (FIPS186-5) A7216 Modulo - 2048 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-256 A7216 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4",
+      "SHA2-384 A7216 Message Length - Message Length: 0-65536 Increment 8 FIPS 180-4 | All algorithms are implemented using a combination of libcrypt.a and STM32U5_CHW – see Section 4.3 for additional detail. | Name Properties Implementation Reference | CKG Key Type: Asymmetric N/A NIST, SP 800-133 Rev. 2 Section 4, 5.1 and 5.2 | N/A for this module. | N/A for this module. | N/A for this module. | Privoro SafeCase Security Module | Privoro LLC Public Material – may be reproduced only in its original entirety (without revision)"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5451.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 16,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5451.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5443"
+  },
+  "certificate": {
+    "certificate_number": "5443",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5443",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5443",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5443.pdf",
+    "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+    "module_name": "Dell BSAFE™ Crypto Module for C",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/28/2026",
+    "validation_dates": [
+      "7/28/2026"
+    ],
+    "sunset_date": "1/15/2030",
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "Dell BSAFE™ Crypto Module for C software library is designed for developers to incorporate FIPS 140-3 approved cryptography into C-based products. BSAFE™ Crypto Module security software helps protect sensitive data as it is stored, using strong encryption techniques that ease integration with existing data models. Using the capabilities of BSAFE™ Crypto Module software in applications helps provide a persistent level of protection for data, lessening the risk of internal, as well as external, compromise.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5443.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/28/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Dell Australia Pty Limited, BSAFE Product Team",
+      "website_url": "http://www.dell.com",
+      "address_lines": [
+        "Building A",
+        "207 Pacific Highway",
+        "St Leonards, NSW 2065",
+        "Australia"
+      ],
+      "country": "Australia",
+      "contact_name": "BSAFE FIPS Program",
+      "contact_email": "bsafe-fips-program@dell.com",
+      "contact_phone": "312-725-5401"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A1204 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A1204 Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56-104 Increment 8 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0-524288 Increment 8 | SP 800-38C",
+      "AES-CTR A1204 Direction - Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | Supports Counter larger than maximum value - No | Incremental Counter - No | Counter Tests Performed - No | SP 800-38A",
+      "AES-ECB A1204 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A1204 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.2 | Key Length - 128, 192, 256 | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 0-1024 Increment 8 | AAD Length - AAD Length: 0-1024 Increment 8 | SP 800-38D",
+      "AES-KW A1204 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-4096 | Increment 64 | SP 800-38F",
+      "AES-KWP A1204 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 808 | SP 800-38F",
+      "AES-XTS Testing | Revision 2.0 | A1204 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-2048 | Increment 8 | Tweak Mode - Number | Data Unit Length Matches Payload Length - Yes | SP 800-38E",
+      "HMAC DRBG A1204 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - SHA2-512 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128, 512 | Personalization String Length - Personalization String | Length: 0, 1024, Personalization String Length: 0 | 1048576 | Additional Input - Additional Input: 0, 1024 | Additional Input: 0, 1048576 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A1204 MAC - MAC: 80, 96, 128, 160 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A1204 MAC - MAC: 128, 192, 256 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A1204 MAC - MAC: 192, 256, 320, 384 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A1204 MAC - MAC: 256, 320, 384, 448, 512 | Key Length - Key Length: 8-524288 Increment 8 | FIPS 198-1",
+      "KAS-IFC-SSC A1204 Modulo - 2048, 3072, 4096, 6144, 8192 | Key Generation Methods - rsakpg2-basic | Scheme - | KAS1 - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "PBKDF A1204 Iteration Count - Iteration Count: 1-100000 | Increment 1 | HMAC Algorithm - SHA-1, SHA2-256, SHA2-384",
+      "SHA2-512 | Password Length - Password Length: 8-128 | Increment 1 | SP 800-132 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-4096 | Increment 8",
+      "RSA Decryption",
+      "Primitive (CVL) | A1204 Modulus Length - 2048 FIPS 186-4",
+      "RSA KeyGen | (FIPS186-4) | A1204 Key Generation Mode - B.3.6 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.3 | Info Generated By Server - No, Yes | Public Exponent Mode - Random | Private Key Format - Standard | FIPS 186-4",
+      "RSA SigGen | (FIPS186-4) | A1204 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) | A1204 Signature Type - ANSI X9.31, PKCS 1.5, PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA-1 | Public Exponent Mode - Fixed, Random | Fixed Public Exponent - 010001 | FIPS 186-4",
+      "SHA-1 A1204 Message Length - Message Length: 0-51200 | Increment 8",
+      "Function - SHA1 | FIPS 180-4",
+      "SHA2-224 A1204 Message Length - Message Length: 0-51200 | Increment 8",
+      "Function - SHA2 | FIPS 180-4",
+      "SHA2-256 A1204 Message Length - Message Length: 0-51200 | Increment 8",
+      "SHA2-384 A1204 Message Length - Message Length: 0-65536 | Increment 8",
+      "SHA2-512 A1204 Message Length - Message Length: 0-65536 | Increment 8",
+      "SHA2-512/224 A1204 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512/256 A1204 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG- | XTS | Key Type:Symmetric NIST SP 800-133r2 and IG D.H: Section 6.3",
+      "approved method 1. Applicable to AES-XTS | compliant to IG C.I because Key_1 and Key_2 are | concatenated prior to usage | CKG-4 Key Type:Asymmetric | and Symmetric | NIST SP800-133r2 Section 4 Example 1 | N/A for this module. | N/A for this module. | MD5 Message Digesting",
+      "TDES in ECB and CBC modes Symmetric encryption"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5443.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 9,
+      "detailed_algorithm_count": 35,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5443.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

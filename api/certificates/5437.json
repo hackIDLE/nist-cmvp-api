@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437"
+  },
+  "certificate": {
+    "certificate_number": "5437",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
+    "vendor_name": "Chunghwa Telecom Co., Ltd.",
+    "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 3,
+    "validation_date": "7/27/2026",
+    "validation_dates": [
+      "7/27/2026"
+    ],
+    "sunset_date": "7/26/2031",
+    "caveat": "None",
+    "description": "HiCOS PKI Applet providing cryptographic services.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Software/Firmware security: N/A",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/27/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Chunghwa Telecom Co., Ltd.",
+      "website_url": "https://www.chttl.com.tw/",
+      "address_lines": [
+        "No.99, Dianyan Rd.",
+        "Yang-Mei, Taoyuan 326",
+        "Taiwan, R.O.C."
+      ],
+      "country": "Taiwan, R.O.C.",
+      "contact_name": "Yeou-Fuh Kuan",
+      "contact_email": "kufo@cht.com.tw",
+      "contact_phone": "886-424-4333"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4945 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A4945 Direction - Generation | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-ECB A4945 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Figure 3: Bottom View | Figure 4: Top View | HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+      "Counter DRBG A4945 Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen (FIPS186-4) A4945 Curve - P-224, P-256, P-384, P-521 | Secret Generation Mode - Testing Candidates | FIPS 186-4",
+      "ECDSA SigGen (FIPS186-4) A4945 Component - No, Yes | Curve - P-224, P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-",
+      "384, SHA2-512 | FIPS 186-4",
+      "ECDSA SigVer (FIPS186-4) A4945 Component - No, Yes | Curve - P-224, P-256, P-384, P-521",
+      "KAS-ECC CDH-Component (CVL) A4945 Function - Key Pair Generation | Curve - P-224, P-256, P-384, P-521 | SP 800-56A | Rev. 3",
+      "KAS-ECC Sp800-56Ar3 A7823 Domain Parameter Generation Methods - P-384 | Function - Key Pair Generation | Scheme - | ephemeralUnified - | KAS Role - Responder",
+      "KDF Methods - | twoStepKdf - | Key Length - 256 | SP 800-56A | Rev. 3",
+      "KDF SP800-108 A4945 KDF Mode - Counter | Supported Lengths - Supported Lengths: 64 | 256 | SP 800-108 | Rev. 1",
+      "RSA Decryption Primitive Sp800-",
+      "56Br2 (CVL) | A4945 Modulo - 2048, 3072, 4096 SP 800-56B | Rev. 2",
+      "RSA KeyGen (FIPS186-4) A4945 Key Generation Mode - B.3.6 | Modulo - 2048, 3072, 4096 | Primality Tests - Table C.3 | Private Key Format - Chinese Remainder | Theorem | FIPS 186-4",
+      "RSA SigGen (FIPS186-4) A4945 Signature Type - PKCSPSS | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA Signature Primitive (CVL) A4945 Private Key Format - crt FIPS 186-4",
+      "RSA SigVer (FIPS186-4) A4945 Signature Type - PKCSPSS | Modulo - 1024, 2048, 3072, 4096 | FIPS 186-4 | HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+      "SHA2-256 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4",
+      "SHA2-384 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4",
+      "SHA2-512 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4 | Name Properties Implementation Reference | CKG Type:Symmetric and | Asymmetric | N/A CKG for asymmetric keys as per SP 800-133Rev2 section 4 | example 1 with no post processing on the U value | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 23,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

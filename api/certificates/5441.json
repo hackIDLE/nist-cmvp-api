@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5441"
+  },
+  "certificate": {
+    "certificate_number": "5441",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5441",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5441",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5441.pdf",
+    "vendor_name": "Cloudlinux Inc., TuxCare division",
+    "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/27/2026",
+    "validation_dates": [
+      "7/27/2026"
+    ],
+    "sunset_date": "8/1/2029",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5441.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/27/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Cloudlinux Inc., TuxCare division",
+      "website_url": "http://www.tuxcare.com",
+      "address_lines": [
+        "2318 Louis Road, Suite B",
+        "Palo Alto, CA 94303",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Simon John",
+      "contact_email": "sjohn@tuxcare.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A4025, A4032, A4033, A4036, A4038 | A4041 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 A4029, A4032, A4033, A4046 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length | 128-65536 Increment 8 | SP 800-38A",
+      "AES-CCM A4025, A4032, A4033, A4041 Key Length - 128, 192, 256 | Tag Length - 112, 128, 32, 48, 64 | 80, 96 | IV Length - IV Length: 56, 64, 72 | 80, 88, 96, 104 | Payload Length - Payload Length | 0-256 Increment 8 | AAD Length - AAD Length: 0 | 256, 65536 | SP 800-38C",
+      "AES-CFB128 A4027, A4033, A4044 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A4025, A4032, A4033, A4041 Direction - Generation | Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 128 | Message Length - Message | Length: 8-524288 Increment 8 | SP 800-38B",
+      "AES-CTR A4025, A4032, A4033, A4036, A4038 | A4041 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Kernel Cryptography Module for Almalinux 9 | Payload Length - Payload Length | 8-128 Increment 8 | Supports Counter larger than | maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes",
+      "AES-ECB A4025, A4030, A4031, A4032, A4033 | A4034, A4035, A4036, A4038, A4039 | A4040, A4041, A4042, A4043 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A4025, A4033, A4041 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128 | 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128-65536 Increment 128 | AAD Length - AAD Length: 128 | 256, 120, 0 | SP 800-38D",
+      "AES-GCM A4030, A4034, A4039, A4042 Direction - Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128, 256, 120, 248 | AAD Length - AAD Length: 64 | 96 | SP 800-38D",
+      "AES-GCM A4031, A4035, A4038, A4040, A4043 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 128, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length | 128, 256, 120, 248 | AAD Length - AAD Length: 64 | 96 | SP 800-38D",
+      "AES-GMAC A4025, A4033, A4041 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128 | SP 800-38D | Kernel Cryptography Module for Almalinux 9 | 32, 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 128 | 256, 120, 0",
+      "AES-OFB A4028, A4033, A4045 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS | Testing | Revision 2.0 | A4025, A4032, A4033, A4036, A4038 | A4041 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length | 128-65536 Increment 128 | Tweak Mode - Hex | Data Unit Length Matches | Payload Length - Yes | SP 800-38E",
+      "Counter DRBG A4025, A4030, A4031, A4033, A4034 | A4035, A4038, A4039, A4040, A4041 | A4042, A4043 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES- | 256 | Derivation Function Enabled - | Yes | Additional Input - Additional | Input: 0 | Entropy Input - Entropy Input | 128, Entropy Input: 192, Entropy | Input: 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - | Personalization String Length: 0 | Returned Bits - 1024, 4096, 512 | SP 800-90A | Rev. 1",
+      "Hash DRBG A4025, A4030, A4031, A4034, A4035 | A4038, A4039, A4040, A4041, A4042 | A4043, A4047, A4048, A4049 | Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - SHA2-256, SHA2-512 | Entropy Input - Entropy Input | 256 | Nonce - Nonce: 256 | Personalization String Length - | Personalization String Length: 0 | Additional Input - Additional | Input: 0, 256 | Returned Bits - 1024, 2048 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A4025, A4030, A4031, A4034, A4035 | A4038, A4039, A4040, A4041, A4042 | A4043, A4047, A4048, A4049 | Prediction Resistance - No, Yes | Supports Reseed - No",
+      "Mode - SHA2-256, SHA2-512 | Entropy Input - Entropy Input | 256 | Nonce - Nonce: 256 | SP 800-90A | Rev. 1 | Kernel Cryptography Module for Almalinux 9 | Personalization String Length - | Personalization String Length: 0 | Additional Input - Additional | Input: 0, 256 | Returned Bits - 1024, 2048",
+      "HMAC-SHA2- | 224 | A4025, A4032, A4036, A4037, A4047 | A4048, A4049 | MAC - MAC: 224 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A4025, A4032, A4036, A4037, A4047 | A4048, A4049 | MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A4025, A4047, A4048, A4049 MAC - MAC: 384 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A4025, A4047, A4048, A4049 MAC - MAC: 512 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 | A4026 MAC - MAC: 224 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A4026 MAC - MAC: 256 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A4026 MAC - MAC: 384 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A4026 MAC - MAC: 512 | Key Length - Key Length: 112- | 524288 Increment 8 | FIPS 198-1",
+      "RSA SigVer | (FIPS186-4) | A4025, A4047, A4048, A4049 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Public Exponent Mode - Random | FIPS 186-4",
+      "SHA2-224 A4025, A4032, A4036, A4037, A4047 | A4048, A4049 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A4025, A4032, A4036, A4037, A4047 | A4048, A4049 | Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A4025, A4047, A4048, A4049 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4 | Kernel Cryptography Module for Almalinux 9",
+      "SHA2-512 A4025, A4047, A4048, A4049 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA3-224 A4026 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-256 A4026 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-384 A4026 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-512 A4026 Message Length - Message | Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202 | N/A for this module. | N/A for this module. | N/A for this module.",
+      "AES GCM with external IV Encryption",
+      "KBKDF (libkcapi) Key derivation",
+      "HKDF (libkcapi) Key derivation | PBKDF2 (libkcapi) Password-based key derivation",
+      "RSA Encryption primitive; Decryption primitive",
+      "RSA with PKCS#1 v1.5 padding (pre-hashed | message) | Signature generation primitive; Signature verification | primitive"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5441.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 42,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5441.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

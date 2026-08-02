@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5442"
+  },
+  "certificate": {
+    "certificate_number": "5442",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5442",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5442",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5442.pdf",
+    "vendor_name": "Mitsubishi Electric Corporation Kamakura Works",
+    "module_name": "CRYP CARD",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 2,
+    "validation_date": "7/27/2026",
+    "validation_dates": [
+      "7/27/2026"
+    ],
+    "sunset_date": "7/26/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "CRYP CARD is designed to be used as an important building block in an embedded equipment. Operators can operate this module mainly via SpaceWire (SpW) Interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Software/Firmware security: N/A",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5442.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/27/2026",
+        "type": "Initial",
+        "lab": "ECSEC Laboratory Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Mitsubishi Electric Corporation Kamakura Works",
+      "website_url": "https://www.mitsubishielectric.com/en/index.html",
+      "address_lines": [
+        "325 Kamimachiya",
+        "Kamakura, Kanagawa 247-8520",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Tatsuya Yamada",
+      "contact_email": "Yamada.Tatsuya@bx.MitsubishiElectric.co.jp",
+      "contact_phone": "81-467-41-6033"
+    },
+    "algorithms": [
+      "AES",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES- | CMAC | A7719 | A7720 | Direction - Generation | Key Length - 256 | SP 800-38B",
+      "AES-CTR A7719 | A7720 | Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-ECB A7719 | A7720 | Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A7719 | A7720 | Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 256 | SP 800-38D",
+      "SHA2-256 A7719 | A7720 | Message Length - Message Length: 0-8192 | Increment 256 | FIPS 180-4 | N/A for this module. | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5442.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 5,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5442.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

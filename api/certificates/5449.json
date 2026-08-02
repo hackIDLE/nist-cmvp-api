@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449"
+  },
+  "certificate": {
+    "certificate_number": "5449",
+    "dataset": "active",
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
+    "vendor_name": "Ciena Corporation",
+    "module_name": "Waveserver Ai Encryption Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 2,
+    "validation_date": "7/29/2026",
+    "validation_dates": [
+      "7/29/2026"
+    ],
+    "sunset_date": "7/28/2031",
+    "caveat": "No assurance of minimum security of SSPs that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Waveserver Ai Encryption Module provides fully secure cryptographic functionality, including peer authentication, key derivation, datapath encryption, physical security, and identification and authentication of the module’s Crypto Officer (CO). It is the physical security boundary and is composed of FPGA, processor, DDR4 (DRAM), Flash and the PCB-embedded wire connections between them, and all associated physical security mechanisms. All traffic entering and exiting the module is encrypted/decrypted at wire speed (100Gb/s, 200Gb/s, 300Gb/s and 400Gb/s depending on line modulation scheme selected) using AES-256 GCM mode.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/29/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Ciena Corporation",
+      "website_url": "http://www.ciena.com",
+      "address_lines": [
+        "7035 Ridge Road",
+        "Hanover, MD 21076",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Patrick Scully",
+      "contact_email": "pscully@ciena.com",
+      "contact_phone": "613-670-3207"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB C120 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A5909 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GCM C120 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 256 | SP 800-38D",
+      "ECDSA KeyGen | (FIPS186-5) | A5909 Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A5909 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A5909 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384",
+      "SHA2-512 | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A5909 Curve - P-256, P-384, P-521",
+      "Hash DRBG A5909 Prediction Resistance - No",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A5909 Key Length - Key Length: 256-448 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A5909 Domain Parameter Generation Methods | - P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA TwoStep | Sp800-56Cr1 | A5909 Derived Key Length - 256 | Shared Secret Length - Shared Secret | Length: 256 | SP 800-56C | Rev. 2",
+      "RSA SigVer | (FIPS186-5) | A5909 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA2-256 A5909 Message Length - Message Length: 128- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A5909 Message Length - Message Length: 128- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A5909 Message Length - Message Length: 128- | 65536 Increment 8 | FIPS 180-4",
+      "CVL",
+      "TLS v1.3 KDF",
+      "(CVL)",
+      "A5909 HMAC Algorithm - SHA2-256, SHA2- | 384",
+      "KDF Running Modes - DHE, PSK- | DHE | SP 800-135 Rev. | 1 | Name Properties Implementation Reference | CKG - | Section | 4 | Key Type | Asymmetric | N/A NIST SP800-133r2 Section 4: Using the Output | of a Random Bit Generator Option 1 (Symmetric | keys and seed for asymmetric keys (Option 1)) | Section 5.1: Key Pairs for Digital Signature | Schemes; Section 5.2: Key Pairs for Key | Establishment; Section 6.2.1: Symmetric Keys | Generated Using Key Agreement Schemes | The module does not support any | Name Caveat Use and Function",
+      "AES-CBC No Security Claimed Boot Image Encryption | The module does not support any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 24,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

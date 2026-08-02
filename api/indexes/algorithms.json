@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-07-26T05:32:50.602168Z",
-    "total_modules": 1142,
-    "total_historical_modules": 4270,
-    "total_modules_in_process": 231,
-    "total_certificates_with_algorithms": 1787,
-    "total_certificate_details": 5412,
+    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "total_modules": 1156,
+    "total_historical_modules": 4277,
+    "total_modules_in_process": 213,
+    "total_certificates_with_algorithms": 1808,
+    "total_certificate_details": 5433,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,37 +13,37 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1142,
-        "html_refreshed": 3,
+        "html_reused": 1134,
+        "html_refreshed": 27,
         "html_failed": 0,
-        "pdf_reused": 1142,
-        "pdf_refreshed": 0,
+        "pdf_reused": 1134,
+        "pdf_refreshed": 22,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1142,
-        "algorithm_successes": 690,
+        "algorithm_cache_hits": 1134,
+        "algorithm_successes": 710,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_crawl4ai": 22,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 3
+        "certificates_deferred": 6
       },
       "historical": {
         "html_reused": 4270,
-        "html_refreshed": 0,
+        "html_refreshed": 7,
         "html_failed": 0,
-        "pdf_reused": 4270,
-        "pdf_refreshed": 0,
+        "pdf_reused": 4276,
+        "pdf_refreshed": 1,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4270,
-        "algorithm_successes": 1097,
+        "algorithm_cache_hits": 4276,
+        "algorithm_successes": 1098,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_crawl4ai": 1,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,23 +51,23 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5412,
-        "html_refreshed": 3,
+        "html_reused": 5404,
+        "html_refreshed": 34,
         "html_failed": 0,
-        "pdf_reused": 5412,
-        "pdf_refreshed": 0,
+        "pdf_reused": 5410,
+        "pdf_refreshed": 23,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5412,
-        "algorithm_successes": 1787,
+        "algorithm_cache_hits": 5410,
+        "algorithm_successes": 1808,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 0,
+        "algorithm_source_crawl4ai": 23,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 3
+        "certificates_deferred": 6
       },
       "concurrency": {
         "certificate_fetch": 8,
@@ -80,7 +80,7 @@
   "index": "algorithms",
   "field": "algorithms",
   "key_count": 19,
-  "entry_count": 16111,
+  "entry_count": 16286,
   "keys": {
     "AES": [
       {
@@ -12555,12 +12555,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -16572,6 +16572,216 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5439",
+        "dataset": "active",
+        "path": "/api/certificates/5439.json",
+        "vendor_name": "Trellix",
+        "module_name": "Trellix Core Cryptographic AES Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5442",
+        "dataset": "active",
+        "path": "/api/certificates/5442.json",
+        "vendor_name": "Mitsubishi Electric Corporation Kamakura Works",
+        "module_name": "CRYP CARD",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5455",
+        "dataset": "active",
+        "path": "/api/certificates/5455.json",
+        "vendor_name": "Google, LLC",
+        "module_name": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 1
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5457",
+        "dataset": "active",
+        "path": "/api/certificates/5457.json",
+        "vendor_name": "Qualcomm Technologies, Inc.",
+        "module_name": "Qualcomm® Inline Crypto Engine (UFS)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 1
       }
     ],
     "CVL": [
@@ -24934,6 +25144,106 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "DES": [
@@ -35916,6 +36226,56 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
       }
     ],
     "DRBG": [
@@ -45991,12 +46351,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -49708,6 +50068,176 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "DSA": [
@@ -57900,6 +58430,46 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
       }
     ],
     "ECDH": [
@@ -60242,6 +60812,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
       }
     ],
     "ECDSA": [
@@ -72144,6 +72724,156 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "EDDSA": [
@@ -84731,12 +85461,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -88558,6 +89288,166 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5439",
+        "dataset": "active",
+        "path": "/api/certificates/5439.json",
+        "vendor_name": "Trellix",
+        "module_name": "Trellix Core Cryptographic AES Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "KAS": [
@@ -92543,12 +93433,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -95650,6 +96540,156 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "KDF": [
@@ -101795,12 +102835,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -105252,6 +106292,176 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "KTS": [
@@ -108767,12 +109977,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -110384,6 +111594,26 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
       }
     ],
     "ML-DSA": [
@@ -110416,6 +111646,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
       }
     ],
     "ML-KEM": [
@@ -110508,6 +111748,16 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 15
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
       }
     ],
     "RSA": [
@@ -121923,12 +123173,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -125380,6 +126630,176 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "SHA": [
@@ -137665,12 +139085,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -141632,6 +143052,196 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5437",
+        "dataset": "active",
+        "path": "/api/certificates/5437.json",
+        "vendor_name": "Chunghwa Telecom Co., Ltd.",
+        "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5439",
+        "dataset": "active",
+        "path": "/api/certificates/5439.json",
+        "vendor_name": "Trellix",
+        "module_name": "Trellix Core Cryptographic AES Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 3
+      },
+      {
+        "certificate_number": "5441",
+        "dataset": "active",
+        "path": "/api/certificates/5441.json",
+        "vendor_name": "Cloudlinux Inc., TuxCare division",
+        "module_name": "Kernel Cryptography Module for AlmaLinux 9",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 6
+      },
+      {
+        "certificate_number": "5442",
+        "dataset": "active",
+        "path": "/api/certificates/5442.json",
+        "vendor_name": "Mitsubishi Electric Corporation Kamakura Works",
+        "module_name": "CRYP CARD",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 2
+      },
+      {
+        "certificate_number": "5443",
+        "dataset": "active",
+        "path": "/api/certificates/5443.json",
+        "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
+        "module_name": "Dell BSAFE™ Crypto Module for C",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 9
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5445",
+        "dataset": "active",
+        "path": "/api/certificates/5445.json",
+        "vendor_name": "Red Hat, Inc.",
+        "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5446",
+        "dataset": "active",
+        "path": "/api/certificates/5446.json",
+        "vendor_name": "Nvidia Corporation",
+        "module_name": "H100 Tensor Core GPU",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5450",
+        "dataset": "active",
+        "path": "/api/certificates/5450.json",
+        "vendor_name": "Thales Trusted Cyber Technologies",
+        "module_name": "Luna T7",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5451",
+        "dataset": "active",
+        "path": "/api/certificates/5451.json",
+        "vendor_name": "Privoro LLC",
+        "module_name": "Privoro SafeCase Security Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 8
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5454",
+        "dataset": "active",
+        "path": "/api/certificates/5454.json",
+        "vendor_name": "KIOXIA Corporation",
+        "module_name": "KIOXIA FIPS TC58NC1137GTC/TC58NC1138GTC Crypto Sub-Chip Class B1",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 7
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "SHS": [
@@ -146787,12 +148397,12 @@
       },
       {
         "certificate_number": "4942",
-        "dataset": "active",
+        "dataset": "historical",
         "path": "/api/certificates/4942.json",
         "vendor_name": "Dell Australia Pty Limited, BSAFE Product Team",
         "module_name": "Dell BSAFE™ Crypto Module",
         "standard": "FIPS 140-3",
-        "status": "Active",
+        "status": "Historical",
         "algorithm_count": 9
       },
       {
@@ -153506,6 +155116,76 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5447",
+        "dataset": "active",
+        "path": "/api/certificates/5447.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking MX10004, MX10008 and MX10016 with MACsec",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5448",
+        "dataset": "active",
+        "path": "/api/certificates/5448.json",
+        "vendor_name": "HPE Juniper Networking",
+        "module_name": "HPE Juniper Networking vSRX Virtual Firewall",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ],
     "TLS": [
@@ -161228,6 +162908,76 @@
         "standard": "FIPS 140-3",
         "status": "Active",
         "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5435",
+        "dataset": "active",
+        "path": "/api/certificates/5435.json",
+        "vendor_name": "SUSE LLC",
+        "module_name": "SUSE Linux Enterprise NSS Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 12
+      },
+      {
+        "certificate_number": "5436",
+        "dataset": "active",
+        "path": "/api/certificates/5436.json",
+        "vendor_name": "SUSE, LLC",
+        "module_name": "SUSE Linux Enterprise OpenSSL Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 13
+      },
+      {
+        "certificate_number": "5438",
+        "dataset": "active",
+        "path": "/api/certificates/5438.json",
+        "vendor_name": "Amazon Web Services, Inc.",
+        "module_name": "Amazon Linux 2023 OpenSSL FIPS Provider",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
+      },
+      {
+        "certificate_number": "5444",
+        "dataset": "active",
+        "path": "/api/certificates/5444.json",
+        "vendor_name": "Splunk LLC",
+        "module_name": "Splunk FIPS Provider (based on the OpenSSL FIPS Provider)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 14
+      },
+      {
+        "certificate_number": "5449",
+        "dataset": "active",
+        "path": "/api/certificates/5449.json",
+        "vendor_name": "Ciena Corporation",
+        "module_name": "Waveserver Ai Encryption Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5453",
+        "dataset": "active",
+        "path": "/api/certificates/5453.json",
+        "vendor_name": "Ruckus Wireless LLC",
+        "module_name": "Ruckus Networks SmartZone (vSZ)",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 10
+      },
+      {
+        "certificate_number": "5456",
+        "dataset": "active",
+        "path": "/api/certificates/5456.json",
+        "vendor_name": "Cisco Systems, Inc.",
+        "module_name": "Cisco Firepower Threat Defense on 4K/9K Cryptographic Module",
+        "standard": "FIPS 140-3",
+        "status": "Active",
+        "algorithm_count": 11
       }
     ]
   }
