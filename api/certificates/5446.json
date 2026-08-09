@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446"
   },
   "certificate": {
     "certificate_number": "5446",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5446",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Rahul Jain",
       "contact_email": "rahjain@nvidia.com",
       "contact_phone": "408-486-2000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 49
     },
     "algorithms": [
       "AES",
@@ -119,25 +131,6 @@
       "No Security Claimed; The SPDM KDF is used within an encrypted tunnel. | (IG 2.4.A Scenario 2c)",
       "SPDM KDF for use in SPDM protocol. | Note that the SPDM protocol operates",
       "within an encrypted AES-GCM tunnel. | 2.5.5 | The module does not offer any | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 49,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5446.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

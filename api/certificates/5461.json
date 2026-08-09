@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5461"
+  },
+  "certificate": {
+    "certificate_number": "5461",
+    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5461",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5461",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5461.pdf",
+    "vendor_name": "Red Hat, LLC",
+    "module_name": "Red Hat Enterprise Linux 8 Kernel Cryptographic API",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/5/2026",
+    "validation_dates": [
+      "8/5/2026"
+    ],
+    "sunset_date": "8/4/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates random strings whose strengths are modified by available entropy.",
+    "description": "The Red Hat Enterprise Linux 8 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5461.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/5/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Red Hat, LLC",
+      "website_url": "http://www.redhat.com",
+      "address_lines": [
+        "100 East Davie Street",
+        "Raleigh, NC 27601",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jaroslav Reznik",
+      "contact_email": "fips140@redhat.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7185, A7189, A7197, A7202, A7205, A7402 | Direction - Decrypt | Encrypt | Key Length - 128, 192 | 256 | SP 800-38A",
+      "AES-CBC-CS3 A7193, A7200, A7209 | Direction - decrypt | encrypt | Key Length - 128, 192 | 256 | SP 800-38A",
+      "AES-CCM A7189, A7197, A7202, A7205 Key Length - 128, 192 | 256 SP 800-38C",
+      "AES-CFB128 A7192, A7199, A7208 | Direction - Decrypt | Encrypt | Key Length - 128, 192 | 256 | SP 800-38A",
+      "AES-CMAC A7189, A7197, A7202, A7205 | Direction - Generation | Key Length - 128, 192 | 256 | SP 800-38B",
+      "AES-CTR A7185, A7189, A7197, A7202, A7205, A7402 | Direction - Decrypt | Encrypt | Key Length - 128, 192 | 256 | SP 800-38A",
+      "AES-ECB | A7185, A7186, A7187, A7188, A7189, A7190 | A7191, A7197, A7201, A7202, A7203, A7204 | A7205, A7206, A7207 | Direction - Decrypt | Encrypt | Key Length - 128, 192 | 256 | SP 800-38A",
+      "AES-GCM A7185, A7186, A7188, A7189, A7191, A7197 | A7202, A7204, A7205, A7207 | Direction - Decrypt | Encrypt | IV Generation - External | Key Length - 128, 192 | 256 | SP 800-38D",
+      "AES-GCM A7187, A7190, A7201, A7203, A7206 | Direction - Encrypt | IV Generation - Internal | IV Generation Mode - | 8.2.1 | Key Length - 128, 192 | 256 | SP 800-38D",
+      "AES-GMAC A7189, A7197, A7202, A7205 | Direction - Decrypt | Encrypt | IV Generation - External | Key Length - 128, 192 | 256 | SP 800-38D",
+      "AES-XTS | Testing Revision | 2.0 | A7185, A7189, A7197, A7202, A7205, A7402 | Direction - Decrypt | Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG | A7185, A7186, A7187, A7188, A7189, A7190 | A7191, A7197, A7201, A7202, A7203, A7204 | A7205, A7206, A7207 | Prediction Resistance - | No, Yes",
+      "Mode - AES-128, AES-",
+      "192, AES-256 | Derivation Function | Enabled - Yes | SP 800-90A | Rev. 1",
+      "Hash DRBG | A7185, A7186, A7187, A7188, A7189, A7190 | A7191, A7194, A7195, A7196, A7197, A7201 | A7203, A7204, A7205, A7206, A7207 | Prediction Resistance - | No, Yes | SP 800-90A | Rev. 1",
+      "Mode - SHA-1, SHA2-",
+      "256, SHA2-512",
+      "HMAC DRBG | A7185, A7186, A7187, A7188, A7189, A7190 | A7191, A7194, A7195, A7196, A7197, A7201 | A7203, A7204, A7205, A7206, A7207 | Prediction Resistance - | No, Yes",
+      "256, SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A7194, A7195, A7196, A7197, A7205 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 A7194, A7195, A7196, A7197, A7205 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 A7194, A7195, A7196, A7197, A7205 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 A7194, A7195, A7196, A7197, A7205 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 A7194, A7195, A7196, A7197, A7205 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 A7198, A7210 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 A7198, A7210 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 A7198, A7210 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 A7198, A7210 | Key Length - Key | Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "RSA SigVer | (FIPS186-5) A7197 | Modulo - 2048, 3072 | 4096 | Signature Type - | pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 A7194, A7195, A7196, A7197, A7205 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-224 A7194, A7195, A7196, A7197, A7205 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A7194, A7195, A7196, A7197, A7205 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A7194, A7195, A7196, A7197, A7205 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-512 A7194, A7195, A7196, A7197, A7205 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA3-224 A7198, A7210 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-256 A7198, A7210 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-384 A7198, A7210 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-512 A7198, A7210 | Message Length - | Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 202 | N/A for this module. | N/A for this module. | N/A for this module.",
+      "AES-GCM with external IV Encryption with external IV (not compliant to FIPS 140-3 IG C.H)",
+      "KBKDF (libkcapi) Key derivation with implementation not tested by CAVP",
+      "HKDF (libkcapi) Key derivation with implementation not tested by CAVP | PBKDF2 (libkcapi) Password-based key derivation with implementation not tested by CAVP",
+      "RSA Encryption primitive; Decryption primitive (not compliant to SP 800-56Br2)",
+      "RSA with PKCS#1 v1.5 | padding | Signature generation (pre-hashed message); Signature verification (pre- | hashed message)"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5461.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 43,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5461.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

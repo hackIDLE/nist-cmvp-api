@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5439"
   },
   "certificate": {
     "certificate_number": "5439",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5439",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5439",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5439.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "tim.schooley@trellix.com",
       "contact_phone": "1-800-937-2237"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5439.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 8
+    },
     "algorithms": [
       "AES",
       "HMAC",
@@ -73,25 +85,6 @@
       "Cryptographic AES Module which are utilized by the module’s callable services or internal | functions.",
       "Note: The AES-256 algorithm can run on processors with or without PAA capability. However, it",
       "will only use PAA instructions if run on AES-NI enabled processors. | The module does not implement any vendor-affirmed algorithms. | The module does not implement any | The module does not implement any | claimed. | The module does not implement any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5439.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 8,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5439.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

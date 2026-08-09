@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465"
+  },
+  "certificate": {
+    "certificate_number": "5465",
+    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
+    "vendor_name": "Communication Devices Inc.",
+    "module_name": "Port Authority Series",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "8/5/2026",
+    "validation_dates": [
+      "8/5/2026"
+    ],
+    "sunset_date": "9/10/2029",
+    "caveat": "KAS (KAS-SSC Cert. #A4440, CVL Cert. #4440; SSP establishment methodology provides 128 bits of encryption strength)",
+    "description": "Secure Out of Band Management appliance providing the means to securely manage and power cycle remote equipment via cellular network, analog modem and network access.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/5/2026",
+        "type": "Initial",
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "Communication Devices Inc.",
+      "website_url": "http://commdevices.com",
+      "address_lines": [
+        "85 Fulton Street",
+        "Boonton, NJ 07005",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Tadhg Kelly",
+      "contact_email": "tadkelly@commdevices.com",
+      "contact_phone": "973-334-1980"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-GCM A4440 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | Tag Length - 128 | IV Length - IV Length: 8-1024 Increment | 8 | Payload Length - Payload Length: 0- | 65536 Increment 8 | AAD Length - AAD Length: 0-65536 | Increment 8 | SP 800-38D",
+      "ECDSA KeyGen | (FIPS186-4) | A4440 Curve - P-256 | Secret Generation Mode - Extra Bits | FIPS 186-4",
+      "ECDSA KeyVer | (FIPS186-4) | A4440 Curve - P-256 FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A4440 Component - No | Curve - P-256",
+      "Hash Algorithm - SHA2-256 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A4440 Component - No | Curve - P-256",
+      "HMAC DRBG A4440 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - SHA2-256 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - | Personalization String Length: 0 | Additional Input - Additional Input: 0 | Returned Bits - 256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A4440 MAC - MAC: 32-256 | Key Length - Key Length: 256-512 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A4440 MAC - MAC: 32-384 | Key Length - Key Length: 256-512 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A4440 Domain Parameter Generation Methods - | P-256",
+      "Hash Function Z - SHA2-256 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "SHA2-256 A4440 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA2-384 A4440 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4",
+      "SHA3-256 A3214 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 202",
+      "TLS v1.3 KDF",
+      "(CVL)",
+      "A4440 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK- | DHE | SP 800-135 | Rev. 1 | The table above lists the approved security functions (or cryptographic algorithms) of the | module, including specific key lengths employed for approved services, and implemented | modes or methods of operation of the algorithms.",
+      "No parts of the TLS 1.3 protocol, other than the approved cryptographic algorithms and the",
+      "KDF, have been tested by the CAVP and CMVP.",
+      "HMAC-SHA-1 and SHA-1 are CAVP tested but not used by the module. AES-ECB is CAVP",
+      "tested as a prerequisite for AES-GCM but not used by the module. | N/A for this module. | N/A for this module. | Name Caveat Use and Function",
+      "AES- | CFB8 | Payload is obfuscated and considered equivalent to | plaintext | SNMPv3 payload | SNMP Keys derived using the no-security claimed key | localization function | SNMPv3 key | derivation | The module implements the SNMPv3 protocol which does not conformed to RFC 2574 which",
+      "mandates the use of the HMAC-SHA-96 authentication protocol and CBC-DES symmetric",
+      "encryption protocol. The module SNMPv3 protocol uses the HMAC-SHA2-256 and AES-CFB8 | instead. Data transmitted over the SNMP protocol only contains network metrics data that is | non-sensitive and is considered plaintext. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 26,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

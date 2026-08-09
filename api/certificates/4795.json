@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 9,
-      "detailed_algorithm_count": 15
-    },
-    "caveat": "Interim validation",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
     "certificate_number": "4795",
-    "dataset": "active",
-    "description": "Secure Out of Band Management appliance providing the means to securely manage and power cycle remote equipment via cellular network, analog modem and network access.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "hardware_versions": null,
-    "module_name": "Port Authority Series",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
+    "vendor_name": "Communication Devices Inc.",
+    "module_name": "Port Authority Series",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 2,
+    "validation_date": "9/11/2024",
+    "validation_dates": [
+      "9/11/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim validation",
+    "description": "Secure Out of Band Management appliance providing the means to securely manage and power cycle remote equipment via cellular network, analog modem and network access.",
+    "software_versions": null,
+    "hardware_versions": "PA111-SA CDI 01-03-0912I; PA111-RM CDI 01-03-0912I; PA121-RM CDI 01-03-0912I; PA155-RM CDI 01-03-0912I; PA199-RM CDI 01-03-0912I",
+    "firmware_versions": "1.0.0",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,68 +43,91 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "9/10/2029",
-    "validation_date": "9/11/2024",
-    "validation_dates": [
-      "9/11/2024"
-    ],
     "validation_history": [
       {
         "date": "9/11/2024",
-        "lab": "DEKRA Cybersecurity Certification Laboratory",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "DEKRA Cybersecurity Certification Laboratory"
       }
     ],
     "vendor": {
+      "name": "Communication Devices Inc.",
+      "website_url": "http://commdevices.com",
       "address_lines": [
         "85 Fulton Street",
         "Boonton, NJ 07005",
         "USA"
       ],
-      "contact_email": "tadkelly@commdevices.com",
-      "contact_name": "Tadhg Kelly",
-      "contact_phone": "973-334-1980",
       "country": "USA",
-      "name": "Communication Devices Inc.",
-      "website_url": "http://commdevices.com"
+      "contact_name": "Tadhg Kelly",
+      "contact_email": "tadkelly@commdevices.com",
+      "contact_phone": "973-334-1980"
     },
-    "vendor_name": "Communication Devices Inc.",
     "algorithms": [
       "AES",
       "CVL",
+      "DES",
       "DRBG",
       "ECDSA",
       "HMAC",
       "KAS",
       "KDF",
       "SHA",
-      "SHS"
+      "SHS",
+      "TLS"
     ],
     "algorithms_detailed": [
-      "A3214 | SHA-3\\[FIPS 202\\] | SHA3-256 | Conditioning",
-      "A4440 | AES\\[SP800-38A\\] | ECB1 | 128and256-bit keys with128and256-bitkey strengths | Encrypt/Decrypt",
-      "A4440 | AES\\[SP800-38D\\] | GCM | 128and256-bitkeyswith128and256-bitkey strengths | Encrypt/Decrypt",
-      "A4440 | DRBG\\[SP800-90A\\] | HMAC DRBG | SHA2-256with128-bitkey strength | DeterministicRandomBitGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | KeyGen | P-256with128-bitkey strength | AsymmetricKeyGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | KeyVer | P-256with128-bitkey strength | AsymmetricKeyVerification",
-      "A4440 | ECDSA\\[FIPS186-4\\] | SigGen | P-256/SHA2-256with128-bitkey strength | SignatureGeneration",
-      "A4440 | ECDSA\\[FIPS186-4\\] | SigVer | P-256/SHA2-256with128-bitkey strength | SignatureVerification",
-      "A4440 | HMAC\\[FIPS198-1\\] | HMAC2 | SHA-1/128-1024-bitkeyswith112-bitkeystrength,SHA2-256/256-512-bitkeyswith128-bitkeystrength,SHA2-384/256-512-bitkeyswith192-bitkeystrength | MessageAuthentication",
-      "A4440 | KAS\\[SP800-56Arev3\\] | KAS-ECC-SSC\\[SP800-56Arev3\\]/A4440TLS1.3KDF/A4440 | P-256with128-bitkeystrength | TLSkeyagreement",
-      "A4440 | KAS-ECC-SSC\\[SP800-56Arev3\\] | EphemeralUnified | P-256with128-bitkeystrength | SharedSecretComputationforKeyAgreement",
-      "A4440 | SHS\\[FIPS180-4\\] | SHA-13,SHA2-256,SHA2-384 | MessageDigest",
-      "A4440 | TLS1.3KDF\\[RFC8446\\]CVL | HMAC-SHA2-256,HMAC-SHA2-384 | KeyDerivationFunctionNo parts ofthese",
-      "AES-CFB8 | Network metrics output over SNMPv3 protocol is obfuscated and considered plaintext | SNMPv3 privacy protocol",
-      "SNMP KDF | Key localization function uses a SHA2-256 hash function not | SNMPv3 key derivation"
-    ]
+      "A3214 SHA-3 [FIPS 202] SHA3-256 Conditioning | 13 | CAVP | Standard | Mode/Method Description / Key Size(s) | / Key Strength(s) | Use / Function",
+      "A4440 AES [SP 800-38A] ECB1 128 and 256-bit keys | with 128 and 256-bit key | strengths | Encrypt/Decrypt",
+      "A4440 AES [SP 800-38D] GCM 128 and 256-bit keys | with 128 and 256-bit key | strengths | Encrypt/Decrypt",
+      "A4440 DRBG [SP 800-90A] HMAC DRBG SHA2-256 with 128-bit | key strength | Deterministic | Random Bit | Generation",
+      "A4440 ECDSA [FIPS 186-4] KeyGen P-256 with 128-bit key | strength | Asymmetric Key | Generation",
+      "A4440 ECDSA [FIPS 186-4] KeyVer P-256 with 128-bit key | strength | Asymmetric Key | Verification",
+      "A4440 ECDSA [FIPS 186-4] SigGen P-256/SHA2-256 with | 128-bit key strength | Generation",
+      "A4440 ECDSA [FIPS 186-4] SigVer P-256/SHA2-256 with | 128-bit key strength | Verification | E100 ESV [SP 800-90B] CPU Jitter Source CDI CPU Time Jitter, 8-bit | samples | Non-Deterministic | Random Bit | Generation",
+      "A4440 HMAC [FIPS 198-1] HMAC2 SHA-1 / 128 – 1024-bit | keys with 112-bit key | strength",
+      "SHA2-256 / 256 – 512-bit | keys with 128-bit key | strength",
+      "SHA2-384 / 256 – 512-bit | keys with 192-bit key | strength | Message | Authentication",
+      "A4440 KAS [SP 800-56Arev3] KAS-ECC-SSC [SP | 800-56Arev3]/A4440",
+      "TLS 1.3 KDF/A4440 | P-256 with 128-bit key | strength",
+      "TLS key | agreement",
+      "A4440 KAS-ECC-SSC [SP 800- | 56Arev3] | Ephemeral Unified | P-256 with 128-bit key | strength",
+      "Shared Secret | Computation for",
+      "A4440 SHS [FIPS 180-4] SHA-13, SHA2-256",
+      "SHA2-384",
+      "A4440 TLS 1.3 KDF [RFC",
+      "8446] CVL",
+      "HMAC-SHA2-256",
+      "HMAC-SHA2-384 | No parts of these",
+      "1 AES-ECB is CAVP tested but not used by the module. This algorithm can only be executed when running | a self-test",
+      "2 HMAC-SHA-1 is CAVP tested but not used by the module. | 3 SHA-1 is CAVP tested but not used by the module. | 14 | CAVP | Standard | Mode/Method Description / Key Size(s) | / Key Strength(s) | Use / Function | protocols, other | than the approved | cryptographic | KDFs, have been | tested by the CAVP | and CMVP.",
+      "No parts of the TLS 1.3 protocol, other than the approved cryptographic algorithms and the",
+      "KDF, have been tested by the CAVP and CMVP. | The table below lists the vendor affirmed algorithms that are allowed in the approved mode of | operation. | Name Properties Implementation Reference | CKG Cryptographic key generation per SP 800- | 133rev2 and IG D.I | - Generation of asymmetric keys for | signature generation per [133] section | 5.1. | - Generation of asymmetric keys for key | establishment per [133] section 5.2. | - Symmetric key derivation for industry | standard protocols from a key agreement",
+      "shared secret per [133] section 6.2.1. | IG.D.H | The module does not implement any non-approved security functions that are allowed in | approved services. | Non-Approved, Allowed with No Security Claimed | The module implements the SNMPv3 protocol which is not conformed to RFC 2574 which",
+      "mandates the use of the HMAC -SHA-96 authentication protocol and CBC -DES symmetric",
+      "encryption protocol. The module SNMPv3 protocol uses the HMAC -SHA2-256 and AES -CFB8 | instead. Data transmits over the SNMP protocol only contains network metrics data that is non - | sensitive and is considered plaintext. | Name Caveat Use and Function",
+      "AES-CFB8 Network metrics output over SNMPv3 protocol is obfuscated | and considered plaintext | SNMPv3 privacy protocol",
+      "SNMP KDF Key localization function uses a SHA2 -256 hash function not SNMPv3 key derivation | 15",
+      "the SHA-1 specified in SP 800-135r1 | The module does not implement any non-approved security functions that are not allowed in | approved services."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 32,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

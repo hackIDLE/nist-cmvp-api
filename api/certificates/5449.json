@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449"
   },
   "certificate": {
     "certificate_number": "5449",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "pscully@ciena.com",
       "contact_phone": "613-670-3207"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 24
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -96,25 +108,6 @@
       "A5909 HMAC Algorithm - SHA2-256, SHA2- | 384",
       "KDF Running Modes - DHE, PSK- | DHE | SP 800-135 Rev. | 1 | Name Properties Implementation Reference | CKG - | Section | 4 | Key Type | Asymmetric | N/A NIST SP800-133r2 Section 4: Using the Output | of a Random Bit Generator Option 1 (Symmetric | keys and seed for asymmetric keys (Option 1)) | Section 5.1: Key Pairs for Digital Signature | Schemes; Section 5.2: Key Pairs for Key | Establishment; Section 6.2.1: Symmetric Keys | Generated Using Key Agreement Schemes | The module does not support any | Name Caveat Use and Function",
       "AES-CBC No Security Claimed Boot Image Encryption | The module does not support any"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 24,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

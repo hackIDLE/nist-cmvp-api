@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
+  },
+  "certificate": {
+    "certificate_number": "5473",
+    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
+    "vendor_name": "Ruckus Wireless LLC",
+    "module_name": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/7/2026",
+    "validation_dates": [
+      "8/7/2026"
+    ],
+    "sunset_date": "8/6/2031",
+    "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy",
+    "description": "The Ruckus Virtual SmartZone-Dataplane (vSZ-D) offers organizations more flexibility in deploying the dataplane as needed in a Network Function Virtualization (NFV) architecture aligned fashion. It offers secure tunneling of user data traffic that encrypts payload traffic, maintains flat network topology, enables mobility across L2 subnets, and offers differentiated per site policy control and QoS amongst others.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/7/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Ruckus Wireless LLC",
+      "website_url": "http://www.ruckusnetworks.com/",
+      "address_lines": [
+        "350 W Java Drive",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jimmy Wang",
+      "contact_email": "jimmy.wang@ruckusnetworks.com",
+      "contact_phone": "855-478-2587"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7301 Direction - Decrypt, Encrypt | Key Length - 128, 192 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A7301 MAC - MAC: 256 | Key Length - Key Length: 256 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A7301 MAC - MAC: 384 | Key Length - Key Length: 384 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7301 MAC - MAC: 512 | Key Length - Key Length: 512 | FIPS 198-1 | Ruckus Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice",
+      "SHA2-256 A7301 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A7301 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A7301 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | Ruckus OpenSSL Crypto Implementation",
+      "AES-CBC A7302 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7302 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A7302 Key Length - 128, 256 SP 800-38D | Counter",
+      "DRBG | A7302 Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - No, Yes | Additional Input - Additional Input: 0-128 Increment | 8, Additional Input: 0-256 Increment 8, Additional | Input: 0-320 Increment 8, Additional Input: 0-384 | Increment 8 | Entropy Input - Entropy Input: 128, Entropy Input | 192, Entropy Input: 256, Entropy Input: 320, Entropy | Input: 384 | Nonce - Nonce: 0, Nonce: 128, Nonce: 64 | Personalization String Length - Personalization | String Length: 0-128 Increment 8, Personalization | String Length: 0-256 Increment 8, Personalization | String Length: 0-320 Increment 8, Personalization | String Length: 0-384 Increment 8 | Returned Bits - 512 | SP 800-90A | Rev. 1",
+      "ECDSA | SigGen | (FIPS186-5) | A7302 Curve - P-256, P-384 FIPS 186-5",
+      "ECDSA | SigVer | (FIPS186-5) | A7302 Curve - P-256, P-384 FIPS 186-5",
+      "HMAC-SHA2- | 256 | A7302 MAC - MAC: 256 | Key Length - Key Length: 256 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A7302 MAC - MAC: 384 | Key Length - Key Length: 384 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7302 MAC - MAC: 512 | Key Length - Key Length: 512 | FIPS 198-1",
+      "KAS-ECC- | SSC Sp800- | 56Ar3 | A7302 Domain Parameter Generation Methods - P-256, P- | 384, P-521 | Scheme - | SP 800-56A | Rev. 3 | Ruckus Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | ephemeralUnified - | KAS Role - initiator, responder",
+      "KAS-FFC- | SSC Sp800- | 56Ar3 | A7302 Domain Parameter Generation Methods - MODP- | 2048, MODP-3072, MODP-4096, MODP-6144 | MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2",
+      "(CVL) | A7302 Initiator Nonce Length - Initiator Nonce Length: 128- | 2048 Increment 8 | Responder Nonce Length - Responder Nonce | Length: 128-2048 Increment 8",
+      "Diffie-Hellman Shared Secret Length - Diffie-Hellman | Shared Secret Length: 2048-3072 Increment 8 | Derived Keying Material Length - Derived Keying | Material Length: 1056-3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-224, SHA2-256",
+      "SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "KDF SSH",
+      "(CVL)",
+      "A7302 Cipher - AES-128, AES-256",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA SigGen | (FIPS186-5) | A7302 Modulo - 3072 FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7302 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - MGF1 | Public Exponent Mode - random | FIPS 186-5 | Safe Primes | Key | Generation | A7302 Safe Prime Groups - MODP-2048, MODP-3072 | MODP-4096, MODP-6144, MODP-8192 | SP 800-56A | Rev. 3",
+      "SHA2-256 A7302 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A7302 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A7302 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4",
+      "TLS v1.3",
+      "KDF (CVL)",
+      "A7302 HMAC Algorithm - SHA2-256, SHA2-384",
+      "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | As the Module can only be operated in the Approved mode of operation, and any algorithms not | listed in the tables above will be rejected by the Module while in the Approved mode, the options | defined in SP 800-140B for the following categories are missing from this document. | Ruckus Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per section 4 example 1 | in SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
+      "output from SP800-90Arev1 CTR_DRBG | (A7302) | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 39,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

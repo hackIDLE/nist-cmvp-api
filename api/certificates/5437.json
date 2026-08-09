@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437"
   },
   "certificate": {
     "certificate_number": "5437",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "kufo@cht.com.tw",
       "contact_phone": "886-424-4333"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 23
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -93,25 +105,6 @@
       "SHA2-256 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4",
       "SHA2-384 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4",
       "SHA2-512 A4945 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1 | FIPS 180-4 | Name Properties Implementation Reference | CKG Type:Symmetric and | Asymmetric | N/A CKG for asymmetric keys as per SP 800-133Rev2 section 4 | example 1 with no post processing on the U value | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 23,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5437.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

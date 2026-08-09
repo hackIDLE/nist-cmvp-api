@@ -1,35 +1,37 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4357"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4357",
     "certificate_number": "4357",
-    "dataset": "active",
-    "description": "The HyperOTP Token enables strong authentication by positively identifying the user with a one-time password. Pressing the button on the HyperOTP Token generates a secure event-based or time-based one-time password, ensuring proper identification and allowing only authorized access to critical applications and sensitive data. The HyperOTP HOTP complies with IETF RFC4226 event-based authentication methods and the HyperOTP TOTP complies with IETF RFC6238 time-based authentication methods.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "hardware_versions": null,
-    "module_name": "HyperOTP Token",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4357",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4357",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4357.pdf",
+    "vendor_name": "Hypersecu Information Systems Inc.",
+    "module_name": "HyperOTP Token",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 1,
+    "validation_date": "11/7/2022",
+    "validation_dates": [
+      "11/7/2022"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The HyperOTP Token enables strong authentication by positively identifying the user with a one-time password. Pressing the button on the HyperOTP Token generates a secure event-based or time-based one-time password, ensuring proper identification and allowing only authorized access to critical applications and sensitive data. The HyperOTP HOTP complies with IETF RFC4226 event-based authentication methods and the HyperOTP TOTP complies with IETF RFC6238 time-based authentication methods.",
+    "software_versions": null,
+    "hardware_versions": "P449, V1.0",
+    "firmware_versions": "V1.0 (build015010, build015210, build021010 or build021210)",
+    "security_level_exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +42,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2022_051222_0640_signed.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "EMI/EMC: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4357.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "8/2/2026",
-    "validation_date": "11/7/2022",
-    "validation_dates": [
-      "11/7/2022"
-    ],
     "validation_history": [
       {
         "date": "11/7/2022",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "Hypersecu Information Systems Inc.",
+      "website_url": "http://www.hypersecu.com",
       "address_lines": [
         "6191 Westminster Hwy",
         "Unit 200",
         "Richmond, British Columbia V7C4V4",
         "Canada"
       ],
-      "contact_email": "james@hypersecu.com",
-      "contact_name": "James Li",
-      "contact_phone": "(604) 272-9700",
       "country": "Canada",
-      "name": "Hypersecu Information Systems Inc.",
-      "website_url": "http://www.hypersecu.com"
+      "contact_name": "James Li",
+      "contact_email": "james@hypersecu.com",
+      "contact_phone": "(604) 272-9700"
     },
-    "vendor_name": "Hypersecu Information Systems Inc.",
     "algorithms": [
       "HMAC",
       "SHA",
       "SHS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4357.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4357.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

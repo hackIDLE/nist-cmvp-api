@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4756"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim validation. When operated in approved mode",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4756",
     "certificate_number": "4756",
-    "dataset": "active",
-    "description": "The Apple corecrypto Module v11.1 [Apple silicon, Secure Key Store, Hardware] (SL2) is a Hardware module implemented as a sub-chip running on a single-chip processor.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "hardware_versions": null,
-    "module_name": "Apple corecrypto Module v11.1 [Apple silicon, Secure Key Store, Hardware] (SL2)",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4756",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4756",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4756.pdf",
+    "vendor_name": "Apple Inc.",
+    "module_name": "Apple corecrypto Module v11.1 [Apple silicon, Secure Key Store, Hardware] (SL2)",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
     "overall_level": 2,
+    "validation_date": "8/9/2024",
+    "validation_dates": [
+      "8/9/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When operated in approved mode",
+    "description": "The Apple corecrypto Module v11.1 [Apple silicon, Secure Key Store, Hardware] (SL2) is a Hardware module implemented as a sub-chip running on a single-chip processor.",
+    "software_versions": null,
+    "hardware_versions": "2.0",
+    "firmware_versions": "11.1",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,41 +43,50 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4756.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/8/2026",
-    "validation_date": "8/9/2024",
-    "validation_dates": [
-      "8/9/2024"
-    ],
     "validation_history": [
       {
         "date": "8/9/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "Apple Inc.",
+      "website_url": "http://www.apple.com",
       "address_lines": [
         "One Apple Park Way",
         "MS: 927-1CPS",
         "Cupertino, CA 95014",
         "USA"
       ],
-      "contact_email": "security-certifications@apple.com",
-      "contact_name": "Nina Kominiak",
-      "contact_phone": "907-227-9672",
       "country": "USA",
-      "name": "Apple Inc.",
-      "website_url": "http://www.apple.com"
+      "contact_name": "Nina Kominiak",
+      "contact_email": "security-certifications@apple.com",
+      "contact_phone": "907-227-9672"
     },
-    "vendor_name": "Apple Inc."
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4756.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4756.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

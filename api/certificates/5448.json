@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448"
   },
   "certificate": {
     "certificate_number": "5448",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5448",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Bill Shelton",
       "contact_email": "certs-team@juniper.net",
       "contact_phone": "1-408-745-2000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 49
     },
     "algorithms": [
       "AES",
@@ -121,25 +133,6 @@
       "SHA2-512 A7179 Message Length - Message Length: 0- | 65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key | type:Symmetric | and Asymmetric | N/A SP 800-133 Rev. 2 Section 4, Example 1",
       "approved DRBG output to generate symmetric | keys and seeds used for asymmetric key pair",
       "generation; Section 5.1: DRBG output used to | generate private key values for digital signature | key pairs in accordance with FIPS 186-5; and | Section 6.2.1 and SP 800-56A: derivation of | symmetric keys established via key-agreement | schemes | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 14 of 65 | The module does not support any | operating in the Approved mode. | The module does not support any | when the module is operating in the Approved mode. | The module does not support any | operating in the Approved mode. | HPE Juniper Networking Non-Proprietary FIPS 140-3 Security Policy Page 15 of 65"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 49,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5448.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5450"
   },
   "certificate": {
     "certificate_number": "5450",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5450",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5450",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5450.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Scott Leubner",
       "contact_email": "Scott.leubner@thalestct.com",
       "contact_phone": "1-443-484-7070"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5450.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 13,
+      "detailed_algorithm_count": 114
     },
     "algorithms": [
       "AES",
@@ -189,25 +201,6 @@
       "SHA3-384 A7880 Message Length - Message Length: 0-65528 Increment 8 FIPS 202",
       "SHA3-512 A7880 Message Length - Message Length: 0-65528 Increment 8 FIPS 202",
       "TDES-CBC A7880 Direction - Decrypt SP 800-67 | Rev. 2 | 2.5.2 Vendor-Affirmed Algorithms | Name Properties Implementation Reference | CKG Key type:Symmetric Luna T7 Firmware Cryptographic Library SP 800-133r2, Section 4"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5450.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 114,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5450.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

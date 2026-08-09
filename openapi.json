@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1156 active validated modules with enriched details",
+            "description": "Currently 1163 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4277 historical modules",
+            "description": "Currently 4285 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 213 modules in process",
+            "description": "Currently 204 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-08-02T05:28:12.712612Z"
+            "example": "2026-08-09T03:42:47.260786Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1156
+            "example": 1163
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4277
+            "example": 4285
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 213
+            "example": 204
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1808
+            "example": 1823
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5433
+            "example": 5448
           },
           "source": {
             "type": "string",
@@ -370,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5457"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5457"
+            "example": "5473"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Qualcomm Technologies, Inc."
+            "example": "Ruckus Wireless LLC"
           },
           "Module Name": {
             "type": "string",
-            "example": "Qualcomm® Inline Crypto Engine (UFS)"
+            "example": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)"
           },
           "Module Type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "07/31/2026"
+            "example": "08/07/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5457.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5457"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
           },
           "module_name": {
             "type": "string",
-            "example": "Qualcomm® Inline Crypto Engine (UFS)"
+            "example": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)"
           },
           "standard": {
             "type": "string",
@@ -414,7 +414,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/30/2031"
+            "example": "8/6/2031"
           },
           "overall_level": {
             "type": "integer",
@@ -422,19 +422,19 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy"
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
-            "example": "SingleChip"
+            "example": "MultiChipStand"
           },
           "description": {
             "type": "string",
-            "example": "Qualcomm Inline Crypto Engine (UFS) provides high throughput storage data encryption and decryption."
+            "example": "The Ruckus Virtual SmartZone-Dataplane (vSZ-D) offers organizations more flexibility in deploying the dataplane as needed in a Network Function Virtualization (NFV) architecture aligned fashion. It offers secure tunneling of user data traffic that encrypts payload traffic, maintains flat network topology, enables mobility across L2 subnets, and offers differentiated per site policy control and QoS amongst others."
           },
           "algorithms": {
             "type": "array",
@@ -442,7 +442,9 @@
               "type": "string"
             },
             "example": [
-              "AES"
+              "AES",
+              "CVL",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -451,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-ECB A6449 Direction - Encrypt | Key Length - 128, 256 | SP 800-38A",
-              "AES-ECB A6456 Direction - Decrypt | Key Length - 128, 256 | SP 800-38A",
-              "AES-XTS Testing Revision 2.0 A6449 Direction - Encrypt | Key Length - 128, 256 | SP 800-38E"
+              "AES-CBC A7301 Direction - Decrypt, Encrypt | Key Length - 128, 192 | SP 800-38A",
+              "HMAC-SHA2- | 256 | A7301 MAC - MAC: 256 | Key Length - Key Length: 256 | FIPS 198-1",
+              "HMAC-SHA2- | 384 | A7301 MAC - MAC: 384 | Key Length - Key Length: 384 | FIPS 198-1"
             ]
           },
           "algorithm_extraction": {
@@ -878,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5431"
+            "example": "5445"
           },
           "dataset": {
             "type": "string",
@@ -886,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-08-02T05:28:12.712612Z"
+            "example": "2026-08-09T03:42:47.260786Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5431"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5445"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5431"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5445"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5431.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5445.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Dell Inc., BSAFE Product Team"
+            "example": "Red Hat, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "Dell BSAFE Crypto Module for Java"
+            "example": "Red Hat Enterprise Linux 9 Kernel Cryptographic API"
           },
           "standard": {
             "type": "string",
@@ -930,7 +932,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "7/21/2026"
+            "example": "7/28/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -938,20 +940,20 @@
               "type": "string"
             },
             "example": [
-              "7/21/2026"
+              "7/28/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "11/18/2029"
+            "example": "7/27/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of the minimum strength of generated SSPs"
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates random numbers whose strengths are modified by available entropy."
           },
           "description": {
             "type": "string",
-            "example": "Crypto-J software library is designed for developers to incorporate FIPS 140-3 approved cryptography into Java-based products. Crypto-J security software helps protect sensitive data as it is stored, using strong encryption techniques that ease integration with existing data models. Using the capabilities of Crypto-J software in applications helps provide a persistent level of protection for data, lessening the risk of internal, as well as external, compromise."
+            "example": "The Red Hat Enterprise Linux 9 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality"
           },
           "software_versions": {
             "type": "string",
@@ -975,7 +977,8 @@
             },
             "example": [
               "Physical security: N/A",
-              "Non-invasive security: N/A"
+              "Non-invasive security: N/A",
+              "Mitigation of other attacks: N/A"
             ]
           },
           "related_files": {
@@ -1007,8 +1010,8 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DES"
+              "DRBG",
+              "ECDSA"
             ]
           },
           "algorithms_detailed": {
@@ -1017,9 +1020,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A2314 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC- | CS1 | A2314 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800-38A",
-              "AES-CBC- | CS2 | A2314 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 | Increment 8 | SP 800-38A"
+              "AES-CBC A7145, A7153, A7156, A7371 | A7374, A7420 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC-CS3 A7150, A7161, A7378 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CCM A7145, A7156, A7371, A7374 Key Length - 128, 192, 256 SP 800-38C"
             ]
           }
         }

@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5453"
   },
   "certificate": {
     "certificate_number": "5453",
     "dataset": "active",
-    "generated_at": "2026-08-02T05:28:12.712612Z",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5453",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5453",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5453.pdf",
@@ -60,6 +60,18 @@
       "contact_email": "jimmy.wang@ruckusnetworks.com",
       "contact_phone": "855-478-2587"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5453.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 25
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -98,25 +110,6 @@
       "140-3 IG D.F scenario 2 path (2) with KAS-ECC shared secret computation. The shared | secret computation provides between 128 and 256 bits of encryption strength. | 2.11 Industry Protocols",
       "The Module supports SSHv2, TLS v1.2 (RFC 7627), TLS v1.3, IPsec/IKEv2 and SNMPv3",
       "industrial protocols. No parts of IPSec/IKEv2, SNMPv3, SSH and TLS protocols, other than the | KDFs, have been tested by the CAVP and CMVP. Please refer to SSPs Table for more | information. | Ruckus Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5453.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 25,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5453.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

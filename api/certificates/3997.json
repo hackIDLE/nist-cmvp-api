@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "dataset": "active",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3997"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When operated with the tamper evident seals installed as indicated in the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3997",
     "certificate_number": "3997",
-    "dataset": "active",
-    "description": "Network Security Platform products (formerly known as IntruShield) are Intrusion Prevention Systems (IPS) that protect network infrastructures and endpoints from intrusions such as zero-day, DoS, spyware, VoIP, botnet, malware, phishing, and encrypted attacks with highly accurate, enterprise-class risk-aware intrusion prevention. The Network Security Management system manages the sensor deployments and permits the customer to receive real-time network status updates and alerts, implement customized security policies and incident response plans, and perform forensic analysis of attacks.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-02T05:28:12.712612Z",
-    "hardware_versions": null,
-    "module_name": "Network Security Platform Sensor NS7500",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-08-09T03:42:47.260786Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3997",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3997",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3997.pdf",
+    "vendor_name": "Trellix",
+    "module_name": "Network Security Platform Sensor NS7500",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 2,
+    "validation_date": "8/3/2021, 6/29/2022",
+    "validation_dates": [
+      "8/3/2021",
+      "6/29/2022"
+    ],
+    "sunset_date": null,
+    "caveat": "When operated with the tamper evident seals installed as indicated in the Security Policy",
+    "description": "Network Security Platform products (formerly known as IntruShield) are Intrusion Prevention Systems (IPS) that protect network infrastructures and endpoints from intrusions such as zero-day, DoS, spyware, VoIP, botnet, malware, phishing, and encrypted attacks with highly accurate, enterprise-class risk-aware intrusion prevention. The Network Security Management system manages the sensor deployments and permits the customer to receive real-time network status updates and alerts, implement customized security policies and incident response plans, and perform forensic analysis of attacks.",
+    "software_versions": null,
+    "hardware_versions": "P/N IPS-NS7500 Version 1.00; FIPS Kit P/N IAC-FIPS-KT2",
+    "firmware_versions": "10.1.17.63",
+    "security_level_exceptions": [
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,45 +43,54 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2021_010921_0733.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Design Assurance: Level 3",
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3997.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "8/2/2026",
-    "validation_date": "8/3/2021, 6/29/2022",
-    "validation_dates": [
-      "8/3/2021",
-      "6/29/2022"
-    ],
     "validation_history": [
       {
         "date": "8/3/2021",
-        "lab": "Acumen Security",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Acumen Security"
       },
       {
         "date": "6/29/2022",
-        "lab": "Acumen Security",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Acumen Security"
       }
     ],
     "vendor": {
+      "name": "Trellix",
+      "website_url": "http://www.trellix.com",
       "address_lines": [
         "6220 America Center Drive",
         "San Jose, CA 95002",
         "USA"
       ],
-      "contact_email": "sec_certs@mcafee.com",
-      "contact_name": "Product Certifications",
-      "contact_phone": "888-847-8766",
       "country": "USA",
-      "name": "Trellix",
-      "website_url": "http://www.trellix.com"
+      "contact_name": "Product Certifications",
+      "contact_email": "sec_certs@mcafee.com",
+      "contact_phone": "888-847-8766"
     },
-    "vendor_name": "Trellix"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3997.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3997.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }
