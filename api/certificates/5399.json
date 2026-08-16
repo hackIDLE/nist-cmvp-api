@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5399"
+  },
+  "certificate": {
+    "certificate_number": "5399",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5399",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5399",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5399.pdf",
+    "vendor_name": "Juniper Networks, Inc.",
+    "module_name": "Junos® OS Evolved Kernel Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/14/2026",
+    "validation_dates": [
+      "8/14/2026"
+    ],
+    "sunset_date": "9/2/2029",
+    "caveat": "When operated in approved mode with module Junos® OS Evolved OpenSSL Cryptographic Module version 3.0.8 validated to FIPS 140-3 under Cert. #5400 operating in approved mode. The module generates random strings whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g. keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Juniper Kernel Cryptographic Module is a software module running as part of the operating system kernel that provides general purpose cryptographic services.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5399.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/14/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net",
+      "address_lines": [
+        "1133 Innovation Way",
+        "Sunnyvale, CA 94089",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Certifications Team",
+      "contact_email": "certs-team@juniper.net",
+      "contact_phone": "408-745-2000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A3599, A3600 | A3601, A3602 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Juniper Networks, Inc. o +1 408 745 2000 9 | 1133 Innovation Way f +1 408 745 2100 | Sunnyvale, CA 94089 | www.juniper.net",
+      "AES-CMAC A3599, A3601 | A3602 | Direction - Generation, Verification | Key Length - 128, 192, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 8-524288 | Increment 8 | SP 800-38B",
+      "AES-CTR A3599, A3600 | A3601, A3602 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum value - | No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A3599, A3600 | A3601, A3602 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A3599, A3600 | A3601, A3602 | Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 | Increment 128 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes | SP 800-38E",
+      "Counter DRBG A3599, A3600 | A3601, A3602 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 128, Entropy | Input: 192, Entropy Input: 256 | Nonce - Nonce: 128, Nonce: 64 | Personalization String Length - Personalization | String Length: 0 | Returned Bits - 1024, 4096, 512 | SP 800-90A | Rev. 1",
+      "Hash DRBG A3599, A3600 | A3601, A3603 | A3604, A3605 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 160, Entropy | Input: 256 | Nonce - Nonce: 160, Nonce: 256 | Personalization String Length - Personalization | String Length: 0, 160, Personalization String | Length: 0, 256 | Additional Input - Additional Input: 0, 160 | Additional Input: 0, 256 | Returned Bits - 1024, 2048, 320 | SP 800-90A | Rev. 1 | Juniper Networks, Inc. o +1 408 745 2000 10 | 1133 Innovation Way f +1 408 745 2100 | Sunnyvale, CA 94089 | www.juniper.net",
+      "HMAC DRBG A3599, A3600 | A3601, A3603 | A3604, A3605 | Prediction Resistance - No, Yes | Supports Reseed - Yes",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | Entropy Input - Entropy Input: 160, Entropy | Input: 256 | Nonce - Nonce: 160, Nonce: 256 | Personalization String Length - Personalization | String Length: 0, 160, Personalization String | Length: 0, 256 | Additional Input - Additional Input: 0, 160 | Additional Input: 0, 256 | Returned Bits - 1024, 2048, 320 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A3599, A3603 | A3604, A3605 | MAC - MAC: 160 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A3599, A3603 | A3604, A3605 | MAC - MAC: 224 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A3599, A3603 | A3604, A3605 | MAC - MAC: 256 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A3599, A3603 | A3604, A3605 | MAC - MAC: 384 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A3599, A3603 | A3604, A3605 | MAC - MAC: 512 | Key Length - Key Length: 112-524288 Increment | 8 | FIPS 198-1",
+      "SHA-1 A3599, A3603 | A3604, A3605 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-224 A3599, A3603 | A3604, A3605 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A3599, A3603 | A3604, A3605 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A3599, A3603 | A3604, A3605 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-512 A3599, A3603 | A3604, A3605 | Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4 | Juniper Networks, Inc. o +1 408 745 2000 11 | 1133 Innovation Way f +1 408 745 2100 | Sunnyvale, CA 94089 | www.juniper.net | [EVM]",
+      "HMAC-SHA2-256 A4246 MAC - MAC: 256 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "AES-GCM Authenticated Encryption and Decryption (not tested by CAVP)",
+      "RSA Primitives RSA Encryption and Decryption primitives (not compliant to SP 800-56Br2)",
+      "RSA SigVer RSA Signature Verification (not tested by CAVP)",
+      "RSA with PKCS#1 | v1.5",
+      "RSA Signature Generation and Signature Verification primitives with PKCS#1 v1.5 | padding (not tested by CAVP)"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5399.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 5,
+      "detailed_algorithm_count": 27,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5399.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452"
+  },
+  "certificate": {
+    "certificate_number": "5452",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
+    "vendor_name": "Ctrl IQ, Inc.",
+    "module_name": "Rocky Linux 9 Kernel Cryptographic API",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "7/29/2026",
+    "validation_dates": [
+      "7/29/2026"
+    ],
+    "sunset_date": "7/28/2031",
+    "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Rocky Linux 9 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July 2026_040826_0807.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "7/29/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Ctrl IQ, Inc.",
+      "website_url": "https://ciq.com",
+      "address_lines": [
+        "1050 N. Hills Blvd, Unit 61180",
+        "Reno, NV 89506",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Michael L. Young",
+      "contact_email": "myoung@ciq.com",
+      "contact_phone": "15109980618"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7403, A7407, A7410 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CBC-CS3 A7403, A7407, A7410 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A7403, A7410 Key Length - 128, 192, 256 SP 800-38C",
+      "AES-CFB128 A7403, A7410 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A7403, A7410 Direction - Generation | Key Length - 128, 192, 256 | SP 800-38B",
+      "AES-CTR A7403, A7407, A7410 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7403, A7405, A7406 | A7407, A7408, A7409 | A7410, A7411, A7412 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Rocky Linux 9 Kernel Cryptographic API",
+      "AES-GCM A7403, A7406, A7407 | A7409, A7410, A7412 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GCM A7405, A7408, A7411 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-GMAC A7403, A7410 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 192, 256 | SP 800-38D",
+      "AES-OFB A7403, A7410 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-XTS Testing | Revision 2.0 | A7403, A7407, A7410 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38E",
+      "Counter DRBG A7403, A7405, A7406 | A7407, A7408, A7409 | A7410, A7411, A7412 | Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "Hash DRBG A7403, A7413, A7414 | A7415 | Prediction Resistance - No, Yes",
+      "Mode - SHA-1, SHA2-256, SHA2-512 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A7403, A7413, A7414 | A7415 | Prediction Resistance - No, Yes",
+      "HMAC-SHA-1 A7403, A7413, A7414 | A7415 | Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 224 | A7403, A7413, A7414 | A7415 | Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A7403, A7413, A7414 | A7415 | Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A7403, A7413, A7414 | A7415 | Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7403, A7413, A7414 | A7415 | Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 224 | A7403 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A7403 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A7403 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A7403 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A7403 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, ffdhe4096 | ffdhe6144, ffdhe8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3 | Rocky Linux 9 Kernel Cryptographic API",
+      "RSA SigVer | (FIPS186-4) | A7403 Signature Type - PKCS 1.5 | Modulo - 2048, 3072, 4096 | FIPS 186-4",
+      "RSA SigVer | (FIPS186-5) | A7403 Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5 | Safe Primes Key | Generation | A7403 Safe Prime Groups - ffdhe2048 | ffdhe3072, ffdhe4096, ffdhe6144 | ffdhe8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A7403, A7413, A7414 | A7415 | Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-224 A7403, A7413, A7414 | A7415 | Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-256 A7403, A7413, A7414 | A7415 | Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-384 A7403, A7413, A7414 | A7415 | Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA2-512 A7403, A7413, A7414 | A7415 | Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 180-4",
+      "SHA3-224 A7403 Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-256 A7403 Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-384 A7403 Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202",
+      "SHA3-512 A7403 Message Length - Message Length: 0- | 65536 Increment 8 | Large Message Sizes - 1, 2 | FIPS 202 | Name Properties Implementation Reference | Asymmetric Cryptographic Key | Generation (CKG) | Key | type:Asymmetric | N/A SP 800-133r2, Section 4 | Example 1 | Rocky Linux 9 Kernel Cryptographic API | N/A for this module. | N/A for this module.",
+      "AES-GCM with external IV Encryption with external IV (not compliant to FIPS 140-3 IG C.H)",
+      "KBKDF in libkcapi Key derivation with implementation not tested by CAVP",
+      "HKDF in libkcapi Key derivation with implementation not tested by CAVP | PBKDF2 in libkcapi Password-based Key derivation with implementation not tested by CAVP",
+      "RSA PKCS#1 v1.5 with pre- | hashed message | Signature generation(pre-hashed message) primitive; Signature | verification(pre-hashed message) primitive",
+      "RSA PKCS#1 v1.5 Key encapsulation / un-encapsulation",
+      "RSA primitive Encryption primitive; Decryption primitive (not compliant to SP 800- | 56Br2)",
+      "ECDSA with pre-hashed | message | Signature generation(pre-hashed message) primitive; Signature | verification(pre-hashed message) primitive"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 45,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

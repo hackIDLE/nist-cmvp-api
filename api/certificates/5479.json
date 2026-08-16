@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5479"
+  },
+  "certificate": {
+    "certificate_number": "5479",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5479",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5479",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5479.pdf",
+    "vendor_name": "UD info Corp.",
+    "module_name": "DB Series SSD Drives",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 2,
+    "validation_date": "8/12/2026",
+    "validation_dates": [
+      "8/12/2026"
+    ],
+    "sunset_date": "8/11/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "description": "The UD Info DB Series SSD Drives consists of multi-chip embedded cryptographic modules designed to meet FIPS 140-3 Level 2 requirements. These SSDs provide access control and feature built-in AES-XTS-256 encryption hardware for on-the-fly encryption of user data before it is stored on NAND Flash. UD Info SSDs support NVMe PCIe interfaces and they are based on the industry-standard TCG Opal SSC protocol.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5479.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/12/2026",
+        "type": "Initial",
+        "lab": "CyberSecurity Malaysia Cryptographic Evaluation Laboratory"
+      }
+    ],
+    "vendor": {
+      "name": "UD info Corp.",
+      "website_url": "http://www.udinfo-tech.com",
+      "address_lines": [
+        "6 Centerpointe Drive",
+        "Suite 700",
+        "La Palma, California 90623",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "T-Chung Hung",
+      "contact_email": "hon@UDinfo-usa.com",
+      "contact_phone": "714-367-8639"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-ECB A6732 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW A6732 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-XTS Testing | Revision 2.0 | A6732 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E | UD info CORP Public Material – May be reproduced only in its original entirety (without revision).",
+      "HMAC DRBG A6732 Prediction Resistance - No",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A6732 Key Length - Key Length: 64-256 | Increment 8 | FIPS 198-1",
+      "PBKDF A6732 Iteration Count - Iteration Count: 1- | 1000 Increment 1 | Password Length - Password Length | 8-32 Increment 1 | SP 800-132",
+      "RSA SigVer | (FIPS186-4) | A6732 Signature Type - PKCSPSS | Modulo - 4096 | FIPS 186-4",
+      "SHA2-256 A6732 Message Length - Message Length | 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A6732 Message Length - Message Length | 0-65536 Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Symmetric Key",
+      "AES | PS5018-E18 SP 800-133 Rev. 2: Section 4: Using the output | of a Random Bit Generator | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5479.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 11,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5479.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

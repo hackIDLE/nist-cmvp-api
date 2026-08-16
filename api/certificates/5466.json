@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
   },
   "certificate": {
     "certificate_number": "5466",
     "dataset": "active",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Bill Shelton",
       "contact_email": "bshelton@juniper.net",
       "contact_phone": "408-745-2000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 57
     },
     "algorithms": [
       "AES",
@@ -130,25 +142,6 @@
       "HMAC-MD5 SSH",
       "HMAC-RIPEMD160 SSH",
       "UMAC SSH | In addition to the above non-Approved Algorithms Not Allowed in the Approved Mode of | Operation, all Approved algorithms supported in the Approved mode of operation are also | supported in the non-Approved mode."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 57,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

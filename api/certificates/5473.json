@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
   },
   "certificate": {
     "certificate_number": "5473",
     "dataset": "active",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Jimmy Wang",
       "contact_email": "jimmy.wang@ruckusnetworks.com",
       "contact_phone": "855-478-2587"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 39
     },
     "algorithms": [
       "AES",
@@ -113,25 +125,6 @@
       "A7302 HMAC Algorithm - SHA2-256, SHA2-384",
       "KDF Running Modes - DHE | SP 800-135 | Rev. 1 | As the Module can only be operated in the Approved mode of operation, and any algorithms not | listed in the tables above will be rejected by the Module while in the Approved mode, the options | defined in SP 800-140B for the following categories are missing from this document. | Ruckus Wireless LLC | This document may be freely reproduced and distributed whole and intact including this Copyright Notice | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per section 4 example 1 | in SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
       "output from SP800-90Arev1 CTR_DRBG | (A7302) | N/A for this module. | N/A for this module. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 39,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

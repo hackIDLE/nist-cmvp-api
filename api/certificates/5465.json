@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465"
   },
   "certificate": {
     "certificate_number": "5465",
     "dataset": "active",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5465",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "tadkelly@commdevices.com",
       "contact_phone": "973-334-1980"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 26
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -98,25 +110,6 @@
       "AES- | CFB8 | Payload is obfuscated and considered equivalent to | plaintext | SNMPv3 payload | SNMP Keys derived using the no-security claimed key | localization function | SNMPv3 key | derivation | The module implements the SNMPv3 protocol which does not conformed to RFC 2574 which",
       "mandates the use of the HMAC-SHA-96 authentication protocol and CBC-DES symmetric",
       "encryption protocol. The module SNMPv3 protocol uses the HMAC-SHA2-256 and AES-CFB8 | instead. Data transmitted over the SNMP protocol only contains network metrics data that is | non-sensitive and is considered plaintext. | N/A for this module."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 26,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5465.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

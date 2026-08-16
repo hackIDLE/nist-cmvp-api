@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4003"
   },
   "certificate": {
     "certificate_number": "4003",
     "dataset": "historical",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4003",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4003",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4003.pdf",
@@ -63,29 +63,22 @@
       "contact_email": "tibi@ftsafe.com",
       "contact_phone": "408-352-5553"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4003.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0
+    },
     "algorithms": [
       "HMAC",
       "SHA",
       "SHS"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4003.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 3,
-      "detailed_algorithm_count": 0,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4003.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

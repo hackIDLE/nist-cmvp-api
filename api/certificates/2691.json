@@ -1,53 +1,23 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2691"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2691",
     "certificate_number": "2691",
-    "dataset": "active",
-    "description": "The z/OS RACF Program Signature Verification package consists of the core module (IRRPVERS) that is utilized when verifying signed code as it is loaded as well as an auxiliary module responsible for driving the initialization of IRRPVERS. The RACF Program Signature Verification module consists of software-based cryptographic algorithms, as well as hashing algorithms provided by the CP Assist for Cryptographic Function (CPACF).",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "hardware_versions": null,
-    "module_name": "IBM® z/OS® Version 2 Release 1 Security Server RACF® Signature Verification Module [1], IBM® z/OS® Version 2 Release 2 Security Server RACF® Signature Verification Module [2], IBM® z/OS® Version 2 Release 3 Security Server RACF® Signature Verification Module [3] and IBM® z/OS® Version 2 Release 4 Security Server RACF® Signature Verification Module [4][5]",
-    "module_type": "Software-Hybrid",
+    "dataset": "historical",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2691",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2691.pdf"
-      },
-      {
-        "label": "Consolidated Certificate",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2691",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2691.pdf",
-    "software_versions": null,
+    "vendor_name": "IBM® Corporation",
+    "module_name": "IBM® z/OS® Version 2 Release 1 Security Server RACF® Signature Verification Module [1], IBM® z/OS® Version 2 Release 2 Security Server RACF® Signature Verification Module [2], IBM® z/OS® Version 2 Release 3 Security Server RACF® Signature Verification Module [3] and IBM® z/OS® Version 2 Release 4 Security Server RACF® Signature Verification Module [4][5]",
     "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "8/12/2026",
+    "status": "Historical",
+    "module_type": "Software-Hybrid",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
     "validation_date": "7/28/2016, 4/25/2017, 5/9/2017, 6/1/2017, 10/31/2017, 2/7/2019, 2/19/2019, 4/22/2020, 9/8/2020, 8/13/2021",
     "validation_dates": [
       "7/28/2016",
@@ -61,71 +31,113 @@
       "9/8/2020",
       "8/13/2021"
     ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "The z/OS RACF Program Signature Verification package consists of the core module (IRRPVERS) that is utilized when verifying signed code as it is loaded as well as an auxiliary module responsible for driving the initialization of IRRPVERS. The RACF Program Signature Verification module consists of software-based cryptographic algorithms, as well as hashing algorithms provided by the CP Assist for Cryptographic Function (CPACF).",
+    "software_versions": "RACF level HRF7790 [1], RACF level HRF77A0 [2], RACF level HRF77B0 [3] and RACF level HRF77C0 [4][5]",
+    "hardware_versions": "FC 3863 EC N98775 Drv 22H [1], FC 3863 EC P00339 Drv D27I [2], FC 3863 EC P42601 Drv D32L [3], FC 3863 EC P42601 Drv D32L [4] and FC 3863 EC P46601 D41C [5]",
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2691.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
+      }
+    ],
     "validation_history": [
       {
         "date": "7/28/2016",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "4/25/2017",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "5/9/2017",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "6/1/2017",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "10/31/2017",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "2/7/2019",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "2/19/2019",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "4/22/2020",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "9/8/2020",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       },
       {
         "date": "8/13/2021",
-        "lab": "atsec information security corporation",
-        "type": "Update"
+        "type": "Update",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "IBM® Corporation",
+      "website_url": "http://www.ibm.com",
       "address_lines": [
         "2455 South Road",
         "Poughkeepsie, NY 12601",
         "USA"
       ],
-      "contact_email": "jmonti@us.ibm.com",
-      "contact_name": "John Monti",
-      "contact_phone": "845-435-4164",
       "country": "USA",
-      "name": "IBM® Corporation",
-      "website_url": "http://www.ibm.com"
+      "contact_name": "John Monti",
+      "contact_email": "jmonti@us.ibm.com",
+      "contact_phone": "845-435-4164"
     },
-    "vendor_name": "IBM® Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2691.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2691.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

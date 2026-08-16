@@ -1,35 +1,38 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4755"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim validation. When operated in the approved mode. When installed, initialized and configured as specified in sections 11.1 and 11.2 of the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4755",
     "certificate_number": "4755",
-    "dataset": "active",
-    "description": "The IBM Crypto for C version 8.8.1.0 (ICC) cryptographic module is implemented in the C programming language. It is packaged as dynamic (shared) libraries usable by applications written in a language that supports C language linking conventions (e.g. C, C++, Java, Assembler, etc.) for use on commercially available operating systems. The ICC allows these applications to access cryptographic functions using an Application Programming Interface (API) provided through an ICC import library and based on the API defined by the OpenSSL group.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "hardware_versions": null,
-    "module_name": "IBM® Crypto for C",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4755",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4755",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4755.pdf",
+    "vendor_name": "IBM Corporation",
+    "module_name": "IBM® Crypto for C",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
+    "validation_date": "8/9/2024",
+    "validation_dates": [
+      "8/9/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When operated in the approved mode. When installed, initialized and configured as specified in sections 11.1 and 11.2 of the Security Policy",
+    "description": "The IBM Crypto for C version 8.8.1.0 (ICC) cryptographic module is implemented in the C programming language. It is packaged as dynamic (shared) libraries usable by applications written in a language that supports C language linking conventions (e.g. C, C++, Java, Assembler, etc.) for use on commercially available operating systems. The ICC allows these applications to access cryptographic functions using an Application Programming Interface (API) provided through an ICC import library and based on the API defined by the OpenSSL group.",
+    "software_versions": "8.8.1.0",
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,40 +43,49 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August 2024_010924_0336.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Physical security: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4755.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "8/8/2029",
-    "validation_date": "8/9/2024",
-    "validation_dates": [
-      "8/9/2024"
-    ],
     "validation_history": [
       {
         "date": "8/9/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "IBM Corporation",
+      "website_url": "http://www.ibm.com",
       "address_lines": [
         "1 Corporate Court",
         "Bundall, QLD 4217",
         "Australia"
       ],
-      "contact_email": "johnpeck@us.ibm.com",
-      "contact_name": "John Peck",
-      "contact_phone": "512-286-7959",
       "country": "Australia",
-      "name": "IBM Corporation",
-      "website_url": "http://www.ibm.com"
+      "contact_name": "John Peck",
+      "contact_email": "johnpeck@us.ibm.com",
+      "contact_phone": "512-286-7959"
     },
-    "vendor_name": "IBM Corporation"
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "firecrawl",
+      "source_url": null,
+      "cached": true,
+      "fallback_used": true,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 0,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4755.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4755.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

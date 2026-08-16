@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795"
   },
   "certificate": {
     "certificate_number": "4795",
     "dataset": "historical",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4795",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
@@ -63,6 +63,18 @@
       "contact_email": "tadkelly@commdevices.com",
       "contact_phone": "973-334-1980"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 32
+    },
     "algorithms": [
       "AES",
       "CVL",
@@ -109,25 +121,6 @@
       "AES-CFB8 Network metrics output over SNMPv3 protocol is obfuscated | and considered plaintext | SNMPv3 privacy protocol",
       "SNMP KDF Key localization function uses a SHA2 -256 hash function not SNMPv3 key derivation | 15",
       "the SHA-1 specified in SP 800-135r1 | The module does not implement any non-approved security functions that are not allowed in | approved services."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 32,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4795.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

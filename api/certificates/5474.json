@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5474"
+  },
+  "certificate": {
+    "certificate_number": "5474",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5474",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5474",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5474.pdf",
+    "vendor_name": "Google, Inc.",
+    "module_name": "Knuckle Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "8/11/2026",
+    "validation_dates": [
+      "8/11/2026"
+    ],
+    "sunset_date": "8/10/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Knuckle Cryptographic Module is defined as a sub-chip cryptographic subsystem within a single-chip physical embodiment. The module is the primary component of a PCIe-based NVMe controller which provides AES-XTS encryption of data-at-rest and key management functionality per Trusted Computing Group (TCG) Opal specifications. The NVMe controller also includes a Google Titan chip for providing a Root of Trust (RoT) and boot security. The Module is intended for use by US Federal agencies or other markets that require FIPS 140-3 validated storage devices. The Module is intended to be used in a storage system.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5474.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/11/2026",
+        "type": "Initial",
+        "lab": "Acumen Security"
+      }
+    ],
+    "vendor": {
+      "name": "Google, Inc.",
+      "website_url": "http://www.google.com",
+      "address_lines": [
+        "1600 Amphitheatre Parkway",
+        "Mountain View, CA 94043",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jon Grayson",
+      "contact_email": "jongrayson@gmail.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6544 Direction - Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CBC A6545 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CMAC A6545 Direction - Generation | Key Length - 256 | SP 800-38B",
+      "AES-CTR A6545 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A | Google, LLC 2026 Document Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision).",
+      "AES-ECB A6545 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-KW A6544 Direction - Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-KW A6545 Direction - Decrypt | Key Length - 256 | SP 800-38F",
+      "AES-XTS Testing | Revision 2.0 | A6543 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E",
+      "Counter DRBG A6544 Prediction Resistance - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-384 A6544 Key Length - Key Length: 256 FIPS 198-1",
+      "HMAC-SHA2-384 A6545 Key Length - Key Length: 256 FIPS 198-1",
+      "KDF SP800-108 A6545 KDF Mode - Counter | Supported Lengths - Supported Lengths | 256-1536 Increment 256 | SP 800-108 | Rev. 1",
+      "PBKDF A6544 Iteration Count - Iteration Count: 128- | 16384 Increment 128 | Password Length - Password Length: 8-32 | Increment 8 | SP 800-132",
+      "RSA SigVer | (FIPS186-5) | A6545 Modulo - 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "SHA2-384 A6545 Message Length - Message Length: 8- | 2048 Increment 8, 2048-65280 Increment | 256 | FIPS 180-4 | There are algorithms, modes, and keys that have been CAVP tested but not used by the | module. Only the algorithms, modes/methods, and key lengths/curves/moduli shown in this | Name Properties Implementation Reference | CKG - | Section 4 | Key | Type:Symmetric | N/A NIST SP800-133r2 Section 4: symmetric | key generation using the output of an",
+      "approved DRBG | CKG - | Section | 6.3 | Key | Type:Symmetric | N/A NIST SP800-133r2 Section 6.3 | Symmetric Keys Produced by Combining | (Multiple) Keys and Other Data | Google, LLC 2026 Document Version 1.0 | Public Material – May be reproduced only in its original entirety (without revision). | The module does not support any | The module does not support any | The module does not support any"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5474.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 17,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5474.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

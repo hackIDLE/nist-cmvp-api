@@ -1,82 +1,86 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4851"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 7,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "When installed, initialized and configured as specified in Section 2.4 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4851",
     "certificate_number": "4851",
     "dataset": "active",
-    "description": "The Solidigm P5316 SSD (ADP-R) module provides data-at-rest protection, using AES-XTS-256 to encrypt user data prior to being written to media.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "hardware_versions": null,
-    "module_name": "Solidigm® P5316 SSD (ADP-R)",
-    "module_type": "Hardware",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4851",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4851",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf",
+    "vendor_name": "Solidigm Inc.",
+    "module_name": "Solidigm® P5316 SSD (ADP-R)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 2,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf"
-      }
+    "validation_date": "10/23/2024, 12/5/2025, 8/7/2026, 8/14/2026",
+    "validation_dates": [
+      "10/23/2024",
+      "12/5/2025",
+      "8/7/2026",
+      "8/14/2026"
     ],
+    "sunset_date": "10/22/2029",
+    "caveat": "When installed, initialized and configured as specified in Section 2.4 of the Security Policy. The tamper evident seals installed as indicated in the Security Policy.",
+    "description": null,
+    "software_versions": null,
+    "hardware_versions": "SSDPF2NV153TZ9 version K82228-10304 with TEL P/N: M52551-001 [1]; SSDPF2NV307TZ9 version K82229-10304 with TEL P/N: M52551-001 [1]; SSDPFWNV153TZD version K78028-10305with TEL P/N: M45818-002 and Latch P/N: AA0015502 [2]; SSDPFWNV307TZD version K78023-10305with TEL P/N: M45818-002 and Latch P/N: AA0015502 [2]; SSDPF2NV153TZD version K82228-10304 with TEL P/N: M52551-001 [3]; SSDPF2NV307TZD version K82229-10304 with TEL P/N: M52551-001 [3]",
+    "firmware_versions": "1.7.0 [1]; ACV1MA20 [2]; ACV0370 [3]",
     "security_level_exceptions": [
       "Operational environment: N/A",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "10/22/2029",
-    "validation_date": "10/23/2024, 12/5/2025",
-    "validation_dates": [
-      "10/23/2024",
-      "12/5/2025"
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October 2024_041124_0733 (1).pdf"
+      }
     ],
     "validation_history": [
       {
         "date": "10/23/2024",
-        "lab": "Acumen Security",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "Acumen Security"
       },
       {
         "date": "12/5/2025",
-        "lab": "Acumen Security",
-        "type": "Update"
+        "type": "Update",
+        "lab": "Acumen Security"
+      },
+      {
+        "date": "8/7/2026",
+        "type": "Update",
+        "lab": "Acumen Security"
+      },
+      {
+        "date": "8/14/2026",
+        "type": "Update",
+        "lab": "Acumen Security"
       }
     ],
     "vendor": {
+      "name": "Solidigm Inc.",
+      "website_url": "http://www.solidigm.com",
       "address_lines": [
-        "3101 N 1st Street",
-        "San Jose, CA 95134",
+        "10951 White Rock Road",
+        "Rancho Cordova, CA 95670",
         "United States"
       ],
-      "contact_email": "Security@Solidigm.com",
-      "contact_name": "FIPS Certified Solidigm SSDs",
-      "contact_phone": "279-895-9665",
       "country": "United States",
-      "name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)",
-      "website_url": "http://www.solidigm.com"
+      "contact_name": "FIPS Certified Solidigm SSDs",
+      "contact_email": "Security@Solidigm.com",
+      "contact_phone": "279-895-9665"
     },
-    "vendor_name": "SK hynix NAND Product Solutions Corp (d/b/a Solidigm)",
     "algorithms": [
       "AES",
       "DRBG",
@@ -85,6 +89,25 @@
       "RSA",
       "SHA",
       "SHS"
-    ]
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4851.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

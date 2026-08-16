@@ -1,81 +1,74 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 13,
-      "detailed_algorithm_count": 34
-    },
-    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895",
     "certificate_number": "4895",
-    "dataset": "active",
-    "description": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "hardware_versions": null,
-    "module_name": "Cryptographic Module for BIG-IP",
-    "module_type": "Software",
+    "dataset": "historical",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4895",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf",
+    "vendor_name": "F5, Inc.",
+    "module_name": "Cryptographic Module for BIG-IP",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Software",
+    "embodiment": "Multi-Chip Stand Alone",
     "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf"
-      }
+    "validation_date": "11/21/2024",
+    "validation_dates": [
+      "11/21/2024"
     ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy.",
+    "description": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition.",
+    "software_versions": "1.0.2za-fips",
+    "hardware_versions": "N/A",
+    "firmware_versions": "N/A",
     "security_level_exceptions": [
       "Physical security: N/A",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/20/2029",
-    "validation_date": "11/21/2024",
-    "validation_dates": [
-      "11/21/2024"
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
     ],
     "validation_history": [
       {
         "date": "11/21/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "F5, Inc.",
+      "website_url": "https://csrc.nist.gov/f5.com",
       "address_lines": [
         "801 Fifth Ave",
         "Seattle, WA 98104",
         "USA"
       ],
-      "contact_email": "fipsbigip17@f5.com",
-      "contact_name": "Maryrita Steinhour",
-      "contact_phone": "206-272-7351",
       "country": "USA",
-      "name": "F5, Inc.",
-      "website_url": "https://csrc.nist.gov/f5.com"
+      "contact_name": "Maryrita Steinhour",
+      "contact_email": "fipsbigip17@f5.com",
+      "contact_phone": "206-272-7351"
     },
-    "vendor_name": "F5, Inc.",
     "algorithms": [
       "AES",
       "CVL",
       "DES",
-      "DSA",
+      "DRBG",
+      "ECDH",
       "ECDSA",
       "HMAC",
       "KAS",
@@ -87,40 +80,45 @@
       "TLS"
     ],
     "algorithms_detailed": [
-      "A3947,A3948 | AES\\[FIPS197,SP800-38A,SP800-38D\\] | ECB,CBC,GCM | 128/192/256-bit AESkey/strength from128 to 256-bits | Symmetric encryption and decryption",
-      "A3947 | AES\\[FIPS197,SP800-38A\\] | CTR | 128/192/256-bit AESkey/strength from128 to 256-bits | Symmetric encryption and decryption",
-      "A3947,A3948 | AES\\[FIPS197,SP800-38D\\] | GMAC | 128/192/256-bit AESkey/strength from128 to 256-bits | MAC generation/verification",
-      "A3947,A3948 | KTS(AES)\\[FIPS197,SP800-38F,SP800-38D\\] | GCM | 128/256-bitAESkey/strengthfrom128and256-bits. | Key wrapping",
-      "A3947 | CTR\\_DRBG\\[SP800-90Ar1\\] | AES-256inCTRmode,withwithout derivationfunction,prediction resistanceenabledanddisabled | Entropyinput,seed,Vandkeyvalues/strengthis256-bits | Randomnumber generation",
-      "A3947 | RSASigGen\\[FIPS186-4\\] | PKCS1.5withSHA-256,SHA-384 | 2048/3072/4096-bitmodulus/strengthfrom112to150-bits | RSA signature generation",
-      "A3947 | RSASigVer\\[FIPS186-4\\] | PKCS1.5withSHA2-256,SHA2-384 | 2048/3072/4096-bitmodulus/strengthfrom112to150-bits | RSA signature verification",
-      "A3947 | ECDSAKeyGen\\[FIPS186-4\\] | AppendixB.4.2:Testingcandidates | ECDSA/ECDHkeypairP-256andP-384curves/strength128and192-bits | ECDSA/ECDHkeypair generation",
-      "A3947 | ECDSAKeyVer\\[FIPS186-4\\] | N/A | ECDSA/ECDHkeypairwithP-256andP-384curves/strength128and192-bits | ECDSA/ECDHpublickeyverification",
-      "A3947 | ECDSASigGen\\[FIPS186-4\\] | SHA2-256,SHA2-384 | ECDSA P-256,P-384curves/strength128and192-bits | ECDSA signature generation",
-      "A3947 | ECDSASigVer\\[FIPS186-4\\] | SHA2-256,SHA2-384 | ECDSA P-256,P-384curves/strength128and192-bits | ECDSA signature verification",
-      "A3947,A3948 | SHA\\[FIPS180-4\\] | SHA-1 | N/A | Message digest",
-      "A3947 | SHA\\[FIPS180-4\\] | SHA2-256,SHA2-384 | N/A | Message digest",
-      "A3947,A3948 | HMAC\\[FIPS198\\] | HMAC-SHA-1 | 112 to1024-bitswithkeystrengths112-bits | MAC generation/verification",
-      "A3947 | HMAC\\[FIPS198\\] | HMAC-SHA2-256,HMAC-SHA2-384 | 112 to1024-bitswithkeystrengths112to192-bits | MAC generation/verification",
-      "A3947 | KAS-ECC-SSC\\[SP800-56Ar3\\] | Ephemeral Unified:KAS Role: initiator, responder | P-256,P-384/strength128and192-bits | EC Diffie-Hellman shared secret computation used in Key Agreement Scheme(KAS)IG D.F scenario 2(path1)",
-      "A3947 | KAS-FFC-SSC\\[SP800-56Ar3\\] | dhEphemeral:KAS Role: initiator, responder | ffdhe2048,ffdhe3072,ffdhe4096/strengthfrom112to150-bits | Diffie-Hellman shared secret computation used in KAS IGD.F scenario 2(path1)",
-      "A3947(CVL) | SSH KDF\\[SP800-135r1\\] | AES-128,AES-256withSHA2-256,SHA2-384 | 256-bit keys with256-bitkey strength | Key derivation",
-      "A3947(CVL) | TLS KDF\\[SP800-135r1\\] | TLS version1.0/1.1 | 256-bits | Key derivation",
-      "A3947(CVL) | TLS KDF\\[SP800-135r1\\]RFC7627 | TLS v1.2 | 256-bits | Key derivation",
-      "MD5 | Allowed per IG 2.4.A | Message digest used in TLS 1.0/1.1 KDF only",
-      "AES with OFB,CCM,CFB,XTS,KW modes,Blowfish,Camellia,CAST5,DES,IDEA,RC2,RC4,SEED,SM2,SM4,Triple-DES | Symmetric encryption and decryption",
-      "SHA2-224,SHA2-512,SM3,MD4,MDC2,RIPEMD,Whirlpool | Message digest",
-      "HMAC-SHA2-224,HMAC-SHA2-512,AESCMAC,Triple-DESCMAC | MAC generation/verification",
-      "RSA key generation | RSA with 1024 and greater than 4096 up to 16384 modulus",
-      "RSA signature generation and verification | PKCS #1 v1.5 scheme with 1024 and greater than 4096 up to 16384 modulus,for all SHA sizes",
-      "Signature generation/Signature verification using PKCS #1v1.5 scheme with modulus size 2048,3072,4096-bits withSHA-1,SHA2-224,SHA2-512",
-      "ECDSA | Key pair generation using P-224,P-521 curves",
-      "Signature generation/Signature verification using curvesP-256,P-384 with SHA-1,SHA2-224,SHA2-512;using P-224,P-521 curves with any SHA sizes",
-      "RSA encrypt/decrypt | RSA with modulus sizes up to 16384-bits",
-      "DSA domain parameter generation,domainparameter verification,key pair generation,signature generation and verification | DSA with all key and SHA sizes",
-      "HMAC\\_DRBG and Hash\\_DRBG using all SHA sizes,CTR\\_DRBG with AES-128,AES-192,ANSI X9.31 RNG | Random number generation",
-      "Diffie-Hellman | Shared secret computation with groups other thanffdhe2048,ffdhe3072,ffdhe4096",
-      "EC Diffie-Hellman | Shared secret computation"
-    ]
+      "A3947, A3948 AES [FIPS 197, SP800-38A, SP800-38D] ECB, CBC, GCM 128 / 192 / 256-bit AES key / strength from 128 to 256-bits Symmetric encryption and decryption A3947 AES [FIPS 197, SP800-38A] CTR 128 / 192 / 256-bit AES key / strength from 128 to 256-bits Symmetric encryption and decryption A3947, A3948 AES [FIPS 197, SP800-38D] GMAC 128 / 192 / 256-bit AES key / strength from 128 to 256-bits MAC generation / verification | 1 There are algorithms, modes, and key/moduli sizes that have been CAVP-tested but are not used by any approved service of the module. Only the algorithms, modes/methods, and key lengths/curves/moduli shown in this table are used by an approved service of the module. | Cryptographic Module for BIG-IP",
+      "A3947, A3948 KTS (AES) [FIPS 197, SP800-38F, SP800-38D] GCM 128 / 256-bit AES key / strength from 128 and 256-bits. Key wrapping",
+      "A3947 CTR_DRBG [SP800-90Ar1] AES-256 in CTR mode, with / without derivation function, prediction resistance enabled and disabled | Entropy input, seed, V and key values / strength is 256-bits Random number generation",
+      "A3948 CTR_DRBG [SP800-90Ar1] AES 256 in CTR mode, with derivation function, prediction resistance enabled | Entropy input, seed, V and key values / strength is 256-bits Random number generation",
+      "A3947 RSA KeyGen [FIPS 186-4] Appendix B.3.3 Probable primes with standard key format 2048 / 3072/ 4096-bit modulus size / strength from 112 to 150-bits RSA key generation",
+      "A3947 RSA SigGen [FIPS 186-4] PKCS 1.5 with SHA-256, SHA-384 2048 / 3072/ 4096-bit modulus / strength from 112 to 150-bits RSA signature generation",
+      "A3947 RSA SigVer [FIPS 186-4] PKCS 1.5 with SHA2-256, SHA2-384 2048 / 3072/ 4096-bit modulus / strength from 112 to 150-bits RSA signature verification",
+      "A3947 ECDSA KeyGen [FIPS 186-4] Appendix B.4.2: Testing candidates ECDSA / ECDH key pair P-256 and P-384 curves / strength 128 and 192-bits",
+      "ECDSA/ ECDH key pair generation",
+      "A3947 ECDSA KeyVer [FIPS 186-4] N/A ECDSA / ECDH key pair with P-256 and P-384 curves / strength 128 and 192-bits",
+      "ECDSA/ ECDH public key verification",
+      "A3947 ECDSA SigGen [FIPS 186-4] SHA2-256, SHA2-384 ECDSA P-256, P- 384 curves / strength 128 and 192-bits ECDSA signature generation",
+      "A3947 ECDSA SigVer [FIPS 186-4] SHA2-256, SHA2-384 ECDSA P-256, P- 384 curves / strength 128 and 192-bits ECDSA signature verification",
+      "A3947, A3948 SHA [FIPS180-4] SHA-1 N/A Message digest",
+      "A3947 SHA [FIPS180-4] SHA2-256, SHA2-384 N/A Message digest A3947, A3948 HMAC [FIPS 198] HMAC-SHA-1 112 to 1024-bits with key strengths 112-bits MAC generation/ verification A3947 HMAC [FIPS 198] HMAC-SHA2-256, HMAC-SHA2-384 112 to 1024-bits with key strengths 112 to 192-bits MAC generation/ verification | Cryptographic Module for BIG-IP",
+      "A3947 KAS-ECC-SSC [SP800-56Ar3] Ephemeral Unified: KAS Role: initiator, responder P-256, P-384 / strength 128 and 192-bits EC Diffie-Hellman shared secret computation used in Key Agreement Scheme (KAS) IG D.F scenario 2 (path 1) A3947 Safe primes key generation [SP800 – 56Ar3] Safe prime Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096 / strength from 112 to 150-bits | Safe primes key generation",
+      "A3947 KAS-FFC-SSC [SP800-56Ar3] dhEphemeral: KAS Role: initiator, responder ffdhe2048, ffdhe3072, ffdhe4096 / strength from 112 to 150-bits Diffie-Hellman shared secret computation used in KAS IG D.F scenario 2 (path 1) A3947 (CVL) SSH KDF [SP800-135r1] AES-128, AES-256 with SHA2-256, SHA2-384 256-bit keys with 256-bit key strength Key derivation A3947 (CVL) TLS KDF [SP800-135r1] TLS version 1.0 / 1.1 256-bits Key derivation A3947 (CVL) TLS KDF [SP800-135r1] RFC7627 TLS v1.2 256-bits Key derivation | Cryptographic Module for BIG-IP",
+      "SHA2-224, SHA2-512, SM3, MD4, MDC2, RIPEMD, Whirlpool Message digest HMAC-SHA2-224, HMAC-SHA2-512, AES CMAC, Triple-DES CMAC MAC generation/ verification RSA key generation RSA with 1024 and greater than 4096 up to 16384 modulus RSA signature generation and verification PKCS #1 v1.5 scheme with 1024 and greater than 4096 up to 16384 modulus, for all SHA sizes Probabilistic Signature Scheme (PSS), ANSI X9.31 schemes Signature generation/ Signature verification using PKCS #1 v1.5 scheme with modulus size 2048, 3072, 4096-bits with SHA-1, SHA2-224, SHA2-512 ECDSA Key pair generation using P-224, P-521 curves Public key verification using P-224, P-521 curves Signature generation / Signature verification using curves P-256, P-384 with SHA-1, SHA2-224, SHA2-512; using P-224, P-521 curves with any SHA sizes Signature generation and signature verification using SM2 RSA encrypt / decrypt RSA with modulus sizes up to 16384-bits Safe primes key verification Public key verification using safe prime groups DSA domain parameter generation, domain parameter verification, key pair generation, signature generation and verification DSA with all key and SHA sizes",
+      "HMAC_DRBG and Hash_DRBG using all SHA sizes, CTR_DRBG with AES-128, AES-192, ANSI X9.31 RNG Random number generation",
+      "Diffie-Hellman Shared secret computation with groups other than ffdhe2048, ffdhe3072, ffdhe4096 EC Diffie-Hellman Shared secret computation: - Ephemeral Unified with curves other than P-256, P-384 without KDF. - one PassDh and StaticUnified without KDF. TLS KDF SSH KDF Key Derivation function in the context of: - TLS using SHA2-224 / SHA2-512 - SSH using SHA-1 / SHA2-224 / SHA2-512 Table 8 - | Cryptographic Module for BIG-IP"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 20,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4895.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

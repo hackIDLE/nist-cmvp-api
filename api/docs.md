@@ -2,11 +2,11 @@
 
 Static JSON API for NIST Cryptographic Module Validation Program data.
 
-- **1,163** active validated modules
-- **4,285** historical modules
-- **204** modules in process
-- **5,448** certificate detail records
-- **1,823** certificates with algorithm summaries
+- **1,171** active validated modules
+- **4,293** historical modules
+- **192** modules in process
+- **5,464** certificate detail records
+- **1,839** certificates with algorithm summaries
 - No auth required, unofficial project, GitHub Pages hosted.
 
 Base URL: `https://hackidle.github.io/nist-cmvp-api/`
@@ -23,7 +23,7 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/`
 `GET api/schemas/index.schema.json` — JSON Schema discovery document for the static API response files.
 
 ### Certificate Index
-`GET api/certificates/index.json` — Compact discovery index for all 5,448 per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.
+`GET api/certificates/index.json` — Compact discovery index for all 5,464 per-certificate detail files, including certificate numbers, datasets, paths, vendor/module names, statuses, standards, and algorithm counts.
 
 ### Search Indexes
 `GET api/indexes/vendors.json`, `GET api/indexes/algorithms.json`, `GET api/indexes/statuses.json`, and `GET api/indexes/standards.json` — Split lookup files for common client-side search by vendor, algorithm, status, and standard.
@@ -38,31 +38,33 @@ Base URL: `https://hackidle.github.io/nist-cmvp-api/`
 `GET api/examples.json` — Copy-ready curl, Python, JavaScript, and agent-oriented query examples for vendor, module, algorithm, status, and standard lookups.
 
 ### Active Modules
-`GET api/modules.json` — All 1,163 active validated modules.
+`GET api/modules.json` — All 1,171 active validated modules.
 
 Example response (truncated):
 
 ```json
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "total_modules": 1163
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "total_modules": 1171
   },
   "modules": [
     {
-      "Certificate Number": "5473",
-      "Vendor Name": "Ruckus Wireless LLC",
-      "Module Name": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)",
+      "Certificate Number": "5487",
+      "Vendor Name": "F5, Inc.",
+      "Module Name": "Cryptographic Module for BIG-IP",
       "Module Type": "Software",
-      "Validation Date": "08/07/2026",
+      "Validation Date": "08/14/2026",
       "standard": "FIPS 140-3",
       "status": "Active",
       "overall_level": 1,
-      "sunset_date": "8/6/2031",
+      "sunset_date": "11/20/2029",
       "algorithms": [
         "AES",
         "CVL",
+        "DES",
         "DRBG",
+        "DSA",
         "ECDSA",
         "HMAC",
         "KAS",
@@ -72,23 +74,23 @@ Example response (truncated):
         "SSH",
         "TLS"
       ],
-      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
-      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5487.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5487",
       "detail_available": true,
       "algorithm_extraction": {
         "schema_version": "1.0",
         "status": "parsed",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5487.pdf",
         "cached": false,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 11,
-        "detailed_algorithm_count": 39
+        "algorithm_count": 13,
+        "detailed_algorithm_count": 54
       },
-      "description": "The Ruckus Virtual SmartZone-Dataplane (vSZ-D) offers organizations more flexibility in deploying the dataplane as needed in a Network Function Virtualizatio...",
-      "caveat": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy"
+      "description": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition.",
+      "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum secur..."
     }
   ]
 }
@@ -97,13 +99,13 @@ Example response (truncated):
 Each active module includes certificate identifiers, vendor/module names, validation metadata, direct Security Policy links, NIST detail URLs, detail availability flags, and algorithm extraction provenance when algorithms were evaluated.
 
 ### Historical Modules
-`GET api/historical-modules.json` — All 4,285 expired or revoked modules for historical lookups.
+`GET api/historical-modules.json` — All 4,293 expired or revoked modules for historical lookups.
 
 ### Modules In Process
-`GET api/modules-in-process.json` — All 204 modules currently in the validation pipeline.
+`GET api/modules-in-process.json` — All 192 modules currently in the validation pipeline.
 
 ### Algorithms
-`GET api/algorithms.json` — Algorithm usage summary across 1,823 certificates in the current build.
+`GET api/algorithms.json` — Algorithm usage summary across 1,839 certificates in the current build.
 
 `algorithm_extraction` records the configured source, actual source, cache/fallback status, source URL, and extracted row counts for each evaluated certificate.
 
@@ -112,16 +114,16 @@ Example response (truncated):
 ```json
 {
   "total_unique_algorithms": 19,
-  "total_certificate_algorithm_pairs": 16418,
+  "total_certificate_algorithm_pairs": 16562,
   "algorithms": {
     "AES": {
-      "count": 1684,
+      "count": 1700,
       "certificates": [
-        5445,
-        5453,
-        5442,
-        5450,
-        5455
+        5466,
+        5463,
+        5471,
+        5468,
+        5460
       ]
     }
   }
@@ -136,71 +138,71 @@ Example response (truncated):
 ```json
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
-    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5445"
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
   },
   "certificate": {
-    "certificate_number": "5445",
+    "certificate_number": "5466",
     "dataset": "active",
-    "vendor_name": "Red Hat, Inc.",
-    "module_name": "Red Hat Enterprise Linux 9 Kernel Cryptographic API",
+    "vendor_name": "Juniper Networks, Inc.",
+    "module_name": "Juniper Networks NFX150 and NFX250 Network Services Platform",
     "standard": "FIPS 140-3",
     "status": "Active",
-    "module_type": "Software",
+    "module_type": "Hardware",
     "overall_level": 1,
     "validation_dates": [
-      "7/28/2026"
+      "8/6/2026"
     ],
-    "sunset_date": "7/27/2031",
+    "sunset_date": "8/5/2031",
     "caveat": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with ex...",
     "security_level_exceptions": [
-      "Physical security: N/A",
+      "Roles, services, and authentication: Level 3",
       "Non-invasive security: N/A",
       "Mitigation of other attacks: N/A"
     ],
     "vendor": {
-      "name": "Red Hat, Inc.",
-      "website_url": "http://www.redhat.com",
-      "contact_email": "fips140@redhat.com"
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net",
+      "contact_email": "bshelton@juniper.net"
     },
     "related_files": [
       {
         "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5445.pdf"
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf"
       }
     ],
     "validation_history": [
       {
-        "date": "7/28/2026",
+        "date": "8/6/2026",
         "type": "Initial",
-        "lab": "atsec information security corporation"
+        "lab": "Acumen Security"
       }
     ],
     "algorithms": [
       "AES",
+      "CVL",
       "DRBG",
-      "ECDSA",
-      "HMAC",
-      "KAS"
+      "DSA",
+      "ECDSA"
     ],
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
       "configured_source": "crawl4ai",
       "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5445.pdf",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf",
       "cached": true,
       "fallback_used": false,
       "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 49
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 57
     }
   }
 }
 ```
 
-Current build contains 5,448 certificate detail records across active and historical datasets.
+Current build contains 5,464 certificate detail records across active and historical datasets.
 
 ## Workflows
 
@@ -216,12 +218,12 @@ GET api/changes.json → recent added, removed, and summary-changed certificate 
 ```
 GET api/certificates/index.json → discover every certificate detail path and summary row
 GET api/modules.json → locate the certificate number or vendor/module pair
-GET api/certificates/5445.json → full detail record for that certificate
+GET api/certificates/5466.json → full detail record for that certificate
 ```
 
 ### Check validation status and history for a certificate
 ```
-GET api/certificates/5445.json → status, sunset_date, validation_history, related_files
+GET api/certificates/5466.json → status, sunset_date, validation_history, related_files
 ```
 
 ### Explore algorithm coverage
@@ -237,4 +239,4 @@ GET api/modules.json → filter module rows by algorithms[] entries and inspect 
 - **Static JSON:** There is no server-side filtering. Use the split search indexes or download the relevant JSON file and filter client-side.
 - **CORS:** GitHub Pages does not send permissive CORS headers. Browser JavaScript on another origin will usually need a proxy.
 - **404s:** Invalid certificate numbers or file paths return GitHub Pages' default 404 page at `https://hackidle.github.io/nist-cmvp-api`.
-- **Algorithms coverage:** `api/algorithms.json` summarizes 1,823 certificates that had algorithm data in this build. `api/metadata.json` reports extraction cache hits, refreshes, failures, misses, and fallback counts.
+- **Algorithms coverage:** `api/algorithms.json` summarizes 1,839 certificates that had algorithm data in this build. `api/metadata.json` reports extraction cache hits, refreshes, failures, misses, and fallback counts.

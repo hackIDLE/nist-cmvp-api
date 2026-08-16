@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483"
+  },
+  "certificate": {
+    "certificate_number": "5483",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf",
+    "vendor_name": "Western Digital Technologies, Inc.",
+    "module_name": "Ultrastar DC HC560 TCG Enterprise HDD, SED and Ultrastar DC HC570 TCG Enterprise HDD, SED",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 2,
+    "validation_date": "8/13/2026",
+    "validation_dates": [
+      "8/13/2026"
+    ],
+    "sunset_date": "9/15/2029",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+    "description": "The Ultrastar DC HC560 and DC HC570 TCG Enterprise HDDs are self-encrypting drives (SEDs) compliant with the TCG Storage Architecture Core Specification and the TCG Enterprise Security Subsystem Class (SSC). The Enterprise SSC defines interfaces to activate, provision, and manage encryption, authentication credentials, and access controls. The security architecture uses a lock-based authentication model where operator credentials control access to user data, making data inaccessible until successful authentication, in accordance with IG 4.1.A.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/13/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Western Digital Technologies, Inc.",
+      "website_url": "http://www.westerndigital.com",
+      "address_lines": [
+        "5601 Great Oaks Parkway",
+        "San Jose, CA 95119",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Maria Kala",
+      "contact_email": "maria.kala@wdc.com",
+      "contact_phone": "949-672-6612"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SHS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A2099 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+      "AES-CBC AES 3580 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+      "AES-ECB A2101 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+      "AES-ECB AES 3580 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+      "AES-KWP A2098 Direction - Decrypt | Key Length - 256 SP 800-38F",
+      "AES-XTS A2101 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38E",
+      "Counter DRBG A2098 | Prediction Resistance - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | SP 800-90A Rev. | 1",
+      "HMAC-SHA2-256 HMAC 2280 | Key sizes < block size - Yes | Key size = block size - Yes | Key sizes > block size - Yes | FIPS 198-1",
+      "PBKDF A2100 | Iteration Count - Iteration Count: 2-1024 Increment | 1 | Password Length - Password Length: 32 | SP 800-132",
+      "RSA SigVer | (FIPS186-4) A2098 Signature Type - PKCSPSS | Modulo - 3072 FIPS 186-4",
+      "RSA SigVer | (FIPS186-4) A2099 Signature Type - PKCSPSS | Modulo - 3072 FIPS 186-4",
+      "SHA2-256 A2099 Message Length - Message Length: 256, 0-65536 | Increment 8 FIPS 180-4",
+      "SHA2-256 SHS 2942 Message Length - Message Length: 8-51200 | Increment 8 FIPS 180-4 | The Cryptographic Module implements the FIPS Vendor Affirmed cryptographic algorithms listed in the Vendor- | Affirmed Algorithms table. | Name Properties Implementation Reference | CKG- | Direct | Key Type:Symmetric Key | Generation N/A SP 800-133rev2 Section 4 example #1 and | IG D.H | CKG-XTS Key Type:Symmetric Key | Generation N/A SP 800-133rev2 Section 6.3 example #2 and | IG C.I | Ultrastar® DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED | FIPS 140-3 Cryptographic Module | The Cryptographic Module does not implement non-Approved but allowed algorithms. | N/A for this module. | The Cryptographic Module does not implement non-Approved but allowed algorithms with no security claimed. | N/A for this module. | None. The cryptographic module does not implement algorithms that are not NIST SP 800-131A compliant. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 7,
+      "detailed_algorithm_count": 14,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

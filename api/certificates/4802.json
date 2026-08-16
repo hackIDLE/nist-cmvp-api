@@ -1,35 +1,39 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 6,
-      "detailed_algorithm_count": 19
-    },
-    "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802",
     "certificate_number": "4802",
-    "dataset": "active",
-    "description": "The Western Digital Ultrastar DC HC560 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC560, Cryptographic Module, cryptographic module, or CM, and the Western Digital Ultrastar DC HC570 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC570, Cryptographic Module, cryptographic module, or CM are self-encryption drives (SED) that comply in general with the specifications listed in 13.2 Trusted Computing Group Specifications and specifically with the TCG Storage Architecture Core Specification [TCG Core] with the Trusted Computing Group (TCG) Security Subsystem Class (SSC): Enterprise Specification [TCG Enterprise]. The TCG SSC Enterprise Specification defines a management interface for host application software to activate, provision, and manage encryption of user data. The specification includes data structures and their required content, and mechanisms for managing and configuring Authentication Credentials and access controls. The security architecture provides a locking mechanism by which an Authentication Credential (i.e., a password) can be set by an operator to enable control of access to user data. After an operator authenticates to the appropriate role and locks access to user data access user data is inaccessible. This implementation complies with the lock-based authentication model specified in IG 4.1.A.",
-    "embodiment": "Multi-Chip Embedded",
-    "firmware_versions": null,
-    "generated_at": "2026-08-09T03:42:47.260786Z",
-    "hardware_versions": null,
-    "module_name": "Ultrastar DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED",
-    "module_type": "Hardware",
+    "dataset": "historical",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf",
+    "vendor_name": "Western Digital Technologies, Inc.",
+    "module_name": "Ultrastar DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED",
+    "standard": "FIPS 140-3",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Multi-Chip Embedded",
     "overall_level": 2,
+    "validation_date": "9/16/2024, 1/30/2025",
+    "validation_dates": [
+      "9/16/2024",
+      "1/30/2025"
+    ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+    "description": "The Western Digital Ultrastar DC HC560 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC560, Cryptographic Module, cryptographic module, or CM, and the Western Digital Ultrastar DC HC570 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC570, Cryptographic Module, cryptographic module, or CM are self-encryption drives (SED) that comply in general with the specifications listed in 13.2 Trusted Computing Group Specifications and specifically with the TCG Storage Architecture Core Specification [TCG Core] with the Trusted Computing Group (TCG) Security Subsystem Class (SSC): Enterprise Specification [TCG Enterprise]. The TCG SSC Enterprise Specification defines a management interface for host application software to activate, provision, and manage encryption of user data. The specification includes data structures and their required content, and mechanisms for managing and configuring Authentication Credentials and access controls. The security architecture provides a locking mechanism by which an Authentication Credential (i.e., a password) can be set by an operator to enable control of access to user data. After an operator authenticates to the appropriate role and locks access to user data access user data is inaccessible. This implementation complies with the lock-based authentication model specified in IG 4.1.A.",
+    "software_versions": null,
+    "hardware_versions": "WUH722020BL4205 [1, 2, 3, 4], WUH722020BL5205 [1, 2, 3, 4], WUH722222BL4205 [3, 5] , WUH722222BL5205 [3, 5]",
+    "firmware_versions": "RY07 [1], R5G4 [2], RG01 [3], VM18 [4], R7J4 [5]",
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
     "related_files": [
       {
         "label": "Security Policy",
@@ -40,47 +44,31 @@
         "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September 2024_011024_0217.pdf"
       }
     ],
-    "security_level_exceptions": [
-      "Operational environment: N/A",
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "9/15/2029",
-    "validation_date": "9/16/2024, 1/30/2025",
-    "validation_dates": [
-      "9/16/2024",
-      "1/30/2025"
-    ],
     "validation_history": [
       {
         "date": "9/16/2024",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "UL Verification Services, Inc."
       },
       {
         "date": "1/30/2025",
-        "lab": "UL Verification Services, Inc.",
-        "type": "Update"
+        "type": "Update",
+        "lab": "UL Verification Services, Inc."
       }
     ],
     "vendor": {
+      "name": "Western Digital Technologies, Inc.",
+      "website_url": "http://www.westerndigital.com",
       "address_lines": [
         "5601 Great Oaks Parkway",
         "San Jose, CA 95119",
         "USA"
       ],
-      "contact_email": "michael.williamson@wdc.com",
-      "contact_name": "Michael Williamson",
-      "contact_phone": "408-717-8458",
       "country": "USA",
-      "name": "Western Digital Technologies, Inc.",
-      "website_url": "http://www.westerndigital.com"
+      "contact_name": "Michael Williamson",
+      "contact_email": "michael.williamson@wdc.com",
+      "contact_phone": "408-717-8458"
     },
-    "vendor_name": "Western Digital Technologies, Inc.",
     "algorithms": [
       "AES",
       "DRBG",
@@ -90,25 +78,51 @@
       "SHS"
     ],
     "algorithms_detailed": [
-      "Avago Technologies | AES 35805 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption of SSPs.",
-      "ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128 bits,256 bits | Encryption and Decryption,AES KWP.",
-      "Western Digital Corporation | A2098 | AES \\[FIPS 197\\] | KWP \\[SP 800 38F\\] ECB \\[SP 800 38A\\] | Forward Payload Length:96-1024,Increment 8 Key Size:256 Key Strength:256 | Authenticated Encryption, Authenticated Decryption of Root Signing Key.",
-      "Western Digital Corporation | A2099 | AES \\[FIPS 197\\] | CBC \\[SP 800 38A\\] | Key Size:256 Key Strength:256 bits | Descrambles OptiNAND sFFU firmware image.",
-      "Western Digital Corporation | A2101 | AES \\[FIPS 197\\] | ECB \\[SP 800 38A\\] | Key Size:128,256 Key Strength:128,256 bits | Encryption,Decryption,DEE self-tests.",
-      "Western Digital Corporation | A2098 | DRBG \\[SP 800 90A\\] | CTR | Mode:AES-256 Derivation Function:True Prediction Resistance:False Key Size:256 Key Strength:256 bits | Deterministic Random Bit Generation Security Strength=256",
-      "Avago Technologies | HMAC 2280 | HMAC \\[FIPS 198\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
-      "SHA2-224 | Message Length:8-51200, Increment:8Key Size:224Key Strength:224 bits | Not used",
-      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message Authentication of signed encrypted SSPs,PBKDF2 derived key generation",
-      "Western Digital Corporation | A2100 | PBKDF2\\[SP 800132\\] | Option 2a | Master Key Generation Type:Option 2aIteration Count:2-1024 with Increment1HMAC Algorithm:SHA2-256Password Length:32Salt Length:128-512with Increment8Key Data Length:256-4096 withIncrement:256Key Strength:256 | Password based key derivation function usingHMAC-SHA2-256(Cert#HMAC 2280).The derived generated keys,Ksaand Ksaencrypt data protection keys used in a data storage application.",
-      "Western Digital Corporation | A2098 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within the ACMRoT.",
-      "Western Digital Corporation | A2099 | RSA SigVer\\[FIPS186\\] | PSS | Signature Type:PKCSPSSHash Algorithm:SHA2-256Modulo:3072Key Strength:128 bits | SigVer within theOptiNAND device.",
-      "Avago Technologies | SHS 2942 | SHS\\[FIPS180\\] | SHA-1 | Message Length:8-51200, Increment:8Key Size:160Key Strength:160 bits | Not used",
-      "SHA2-256 | Message Length:8-51200, Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theACM RoT",
-      "Western Digital Corporation | A2099 | SHS\\[FIPS 180\\] | SHA2-256 | Message Length:0-65536,Increment:8Key Size:256Key Strength:256 bits | Message digest generation.Digital signature verification within theOptiNAND device.",
-      "CKG-Direct | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 4 example #1,Section 6.1 and IG D.H",
-      "CKG-Combined | AES 256: Symmetric Key Generation | N/A | SP 800-133rev2 Section 6.3 example #2 and IG D.H",
-      "Authority\\_Digest\\_Generation | MAC | Generates an HMAC message digest of an Authentication Credential PIN | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits",
-      "Authority\\_Digest\\_Verification | MAC | Verifies the HMAC digest of an Authentication Credential PIN. | Publications:\\[IG 10.3.A\\] | HMAC-SHA2-256(Cert #HMAC2280) | Message Length:8-51200,Increment:8,Key Size:256,Key Strength:256 bits"
-    ]
+      "Technologies AES 35805 AES [FIPS 197] | CBC [SP 800 38A] | Key Size: 128, 256 | Key Strength: 128 | bits, 256 bits | Encryption and | Decryption of SSPs. | ECB [SP 800 38A] | Key Size: 128, 256 | Key Strength: 128 | bits, 256 bits | Encryption and",
+      "Decryption, AES KWP. | XTS [SP 800 38E] | Key Size: 128, 256 | Key Strength: 128 | bits, 256 bits | Not used | Western | Digital | Corporation",
+      "A2098 AES [FIPS 197] KWP [SP 800 38F] | ECB [SP 800 38A] | Forward | Payload Length: 96- | 1024, Increment 8 | Key Size: 256 | Key Strength: 256 | Authenticated Encryption | Authenticated Decryption | of Root Signing Key. | Western | Digital | Corporation",
+      "A2099 AES [FIPS 197] CBC [SP 800 38A] Key Size: 256 | Key Strength: 256 bits | Descrambles OptiNAND | sFFU firmware image. | Western | Digital | Corporation",
+      "A2101 AES [FIPS 197] | ECB [SP 800 38A] | Key Size: 128, 256 | Key Strength: 128 | 256 bits | Encryption, Decryption | DEE self-tests. | XTS [SP 800 38E] | Payload Length: 4096 | – 32768 | Increment: 128 | Tweak Mode | Number | Key Size: 128, 256 | Key Strength: 128 | 256 bits | Encryption and | Decryption of data-at-rest. | Western | Digital | Corporation",
+      "A2098 DRBG [SP 800 90A] CTR",
+      "Mode: AES-256 | Derivation Function | True | Prediction Resistance | False | Key Size: 256 | Key Strength: 256 bits | Deterministic Random Bit | Generation | Security Strength = 256",
+      "5 AES 3580 (2015) predates Testing Revision 2.0 | Ultrastar® DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED | FIPS 140-3 Cryptographic Module | Vendor | Name CAVP Cert Algorithm and | Standard Mode/method Description/Key | Size/Key Strength Use/Function | Avago",
+      "Technologies HMAC 2280 HMAC [FIPS 198]",
+      "SHA-1 | Message Length: 8- | 51200, Increment: 8 | Key Size: 160 | Key Strength: 160 bits | Not used",
+      "SHA2-224 | Message Length: 8- | 51200, Increment: 8 | Key Size: 224 | Key Strength: 224 bits | Not used",
+      "SHA2-256 | Message Length: 8- | 51200, Increment: 8 | Key Size: 256 | Key Strength: 256 bits | Message Authentication of | signed encrypted SSPs | PBKDF2 derived key | generation | Western | Digital | Corporation | A2100 PBKDF2 [SP 800 | 132] Option 2a | Master Key | Generation Type | Option 2a | Iteration Count: 2 - | 1024 with Increment | 1 | HMAC Algorithm",
+      "SHA2-256 | Password Length: 32 | Salt Length: 128-512 | with Increment 8 | Key Data Length: 256 | - 4096 with | Increment: 256 | Key Strength: 256 | Password based key | derivation function using",
+      "HMAC-SHA2-256 (Cert",
+      "#HMAC 2280). The | derived generated keys | K | u, and Ka, encrypt data | protection keys used in a | data storage application. | Western | Digital | Corporation",
+      "A2098 RSA SigVer [FIPS | 186] PSS | Signature Type | PKCSPSS | Hash Algorithm",
+      "SHA2-256 | Modulo: 3072 | Key Strength: 128 bits | SigVer within the ACM | RoT. | Western | Digital | Corporation",
+      "A2099 RSA SigVer [FIPS | 186] PSS | Signature Type | PKCSPSS | Hash Algorithm",
+      "SHA2-256 | Modulo: 3072 | Key Strength: 128 bits | SigVer within the | OptiNAND device. | Avago",
+      "Technologies SHS 2942 SHS [FIPS 180]",
+      "SHA2 - 224 | Message Length: 8- | 51200, Increment: 8 | Key Size: 224 | Key Strength: 224 bits | Not used",
+      "SHA2-256 | Message Length: 8- | 51200, Increment: 8 | Key Size: 256 | Key Strength: 256 bits | Message digest generation. | Digital signature | verification within the | ACM RoT | Ultrastar® DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED | FIPS 140-3 Cryptographic Module | Vendor | Name CAVP Cert Algorithm and | Standard Mode/method Description/Key | Size/Key Strength Use/Function | Western | Digital | Corporation",
+      "A2099 SHS [FIPS 180] SHA2-256 | Message Length: 0- | 65536, Increment: 8 | Key Size: 256 | Key Strength: 256 bits | Message digest generation. | Digital signature | verification within the | OptiNAND device.",
+      "Note: AES - XTS - The AES-XTS algorithm implementations include a check to ensure Key_1 ≠ Key_2 | The Cryptographic Module implements the FIPS Vendor Affirmed cryptographic algorithms listed in Table 6. | Name Algorithm Properties Implementation Reference",
+      "CKG-Direct AES 256: Symmetric Key Generation N/A | SP 800-133rev2 Section 4 | example #1, Section 6.1 and | IG D.H | CKG- | Combined",
+      "AES 256: Symmetric Key Generation N/A SP 800-133rev2 Section 6.3 | example #2 and IG D.H | The Cryptographic Module does not implement non-Approved but allowed algorithms. | The Cryptographic Module does not implement non-Approved but allowed algorithms with no security claimed. | None. The cryptographic module does not implement algorithms that are not NIST SP 800-131A compliant."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 26,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

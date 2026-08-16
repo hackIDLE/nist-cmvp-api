@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476"
+  },
+  "certificate": {
+    "certificate_number": "5476",
+    "dataset": "active",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
+    "vendor_name": "Amazon Web Services, Inc.",
+    "module_name": "Amazon Linux 2023 GnuTLS Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/11/2026",
+    "validation_dates": [
+      "8/11/2026"
+    ],
+    "sunset_date": "8/10/2031",
+    "caveat": "When operated in approved mode and installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "GnuTLS is a secure communications library implementing the TLS protocol. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/11/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Amazon Web Services, Inc.",
+      "website_url": "https://aws.amazon.com/linux/amazon-linux-2023/",
+      "address_lines": [
+        "1918 8th Ave",
+        "Seattle, WA 98101",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amazon Linux Security",
+      "contact_email": "aws-fips-external@amazon.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DES",
+      "DRBG",
+      "DSA",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7464, A7466 | A7515, A7516 | A7517, A7518 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CCM A7464, A7515 Key Length - 128, 256 | Tag Length - 112, 128, 32, 48, 64, 80, 96 | IV Length - IV Length: 56, 64, 72, 80, 88, 96, 104 | Payload Length - Payload Length: 0-256 Increment 8 | AAD Length - AAD Length: 0, 256, 65536 | SP 800-38C",
+      "AES-CFB8 A7469, A7520, A7521 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CMAC A7466, A7515, A7518 Direction - Generation | Key Length - 128, 256 | MAC Length - MAC Length: 128 | Message Length - Message Length: 8-524288 Increment 8 | SP 800-38B",
+      "AES-GCM A7464, A7466 | A7515, A7516 | A7517, A7518 | Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | Payload Length - Payload Length: 128, 256, 120, 248 | AAD Length - AAD Length: 128, 256, 120, 0 | SP 800-38D",
+      "AES-GMAC A7466 Direction - Decrypt, Encrypt | IV Generation - External | Key Length - 128, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96 | AAD Length - AAD Length: 128, 256, 120, 0 | SP 800-38D",
+      "AES-XTS Testing | Revision 2.0 | A7467 Direction - Decrypt, Encrypt | Key Length - 128, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | Tweak Mode - Hex | Data Unit Length Matches Payload Length - Yes | SP 800-38E",
+      "Counter DRBG A7466 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | Additional Input - Additional Input: 0, 256 | Entropy Input - Entropy Input: 384 | SP 800-90A | Rev. 1 | Amazon Linux 2023 GnuTLS Cryptographic Module | Nonce - Nonce: 0 | Personalization String Length - Personalization String Length: 0, 256 | Returned Bits - 512",
+      "ECDSA KeyGen | (FIPS186-5) | A7466 Curve - P-256, P-384, P-521 | Secret Generation Mode - testing candidates | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A7466 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7466 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A7466 Component - No | Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A7464, A7466, A7518 MAC - MAC: 160 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-224 A7464, A7466, A7518 MAC - MAC: 224 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A7464, A7466, A7518 MAC - MAC: 256 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A7464, A7466, A7518 MAC - MAC: 384 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A7464, A7466, A7518 MAC - MAC: 512 | Key Length - Key Length: 112-524288 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A7466 Domain Parameter Generation Methods - P-256, P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A7466 Domain Parameter Generation Methods - ffdhe2048, ffdhe3072, ffdhe4096 | ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144 | MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDA HKDF | Sp800-56Cr1 | A7465 Fixed Info Pattern - uPartyInfo||vPartyInfo | Fixed Info Encoding - concatenation | Derived Key Length - 2048 | Shared Secret Length - Shared Secret Length: 224-65336 Increment 8 | HMAC Algorithm - SHA2-224, SHA2-256, SHA2-384, SHA2-512 | SP 800-56C | Rev. 2",
+      "KDF TLS (CVL) A7466 TLS Version - v1.0/1.1 SP 800-135 | Rev. 1",
+      "PBKDF A7466 Iteration Count - Iteration Count: 1000-10000 Increment 1 | HMAC Algorithm - SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512 | Password Length - Password Length: 8-128 Increment 1 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-4096 Increment 8 | SP 800-132",
+      "RSA KeyGen | (FIPS186-5) | A7466 Key Generation Mode - provable",
+      "Hash Algorithm - SHA2-384 | Modulo - 2048, 3072, 4096, 6144, 8192 | FIPS 186-5 | Amazon Linux 2023 GnuTLS Cryptographic Module | p mod 8 - 0 | Primality Tests - 2powSecStr | q mod 8 - 0 | Info Generated By Server - Yes | Private Key Format - standard | Public Exponent Mode - random",
+      "RSA SigGen | (FIPS186-5) | A7466 Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7466 Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | Public Exponent Mode - random | FIPS 186-5 | Safe Primes Key | Generation | A7466 Safe Prime Groups - ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192 | MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192 | SP 800-56A | Rev. 3",
+      "SHA-1 A7464, A7466, A7518 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-224 A7464, A7466, A7518 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-256 A7464, A7466, A7518 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-384 A7464, A7466, A7518 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA2-512 A7464, A7466, A7518 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 180-4",
+      "SHA3-224 A7468, A7519 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-256 A7468, A7519 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-384 A7468, A7519 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-512 A7468, A7519 Message Length - Message Length: 0-65536 Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A7466 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | Cryptographic Key Generation (CKG) N/A SP 800-133r2 section 4 example 1 | Amazon Linux 2023 GnuTLS Cryptographic Module | N/A for this module. | Name Caveat Use and Function",
+      "MD5 Only allowed per IG 2.4.A Message digest used in TLS 1.0 / 1.1 KDF only | Blowfish Symmetric Encryption; Symmetric Decryption - Not FIPS 140-3 | compliant | Camellia Symmetric Encryption; Symmetric Decryption - Not FIPS 140-3 | compliant | CAST Symmetric Encryption; Symmetric Decryption - Not FIPS 140-3 | compliant | Chacha20 and Poly1305 Authenticated Encryption; Authenticated Decryption - Not FIPS | 140-3 compliant",
+      "CMAC with Triple-DES Message Authentication Code (MAC) - Not FIPS 140-3 compliant",
+      "DES Symmetric Encryption; Symmetric Decryption - Not FIPS 140-3 | compliant | Diffie-Hellman with keys generated with domain parameters other | than safe primes",
+      "Key Agreement; Shared Secret Computation- Not SP 800-56Br2 | compliant",
+      "DSA Key Generation; Domain Parameter Generation; Digital Signature | Generation; Digital Signature Verification - Not FIPS 140-3 | compliant",
+      "ECDSA with curves not listed in the Approved Algorithms table Key Generation; Public Key Verification - Not CAVP tested",
+      "ECDSA with curves/hash functions not listed in the Approved | Digital Signature Generation; Digital Signature Verification - Not | CAVP tested | EC Diffie-Hellman with curves not listed in the Approved",
+      "Key Agreement; Shared Secret Computation - Not CAVP tested | GOST Symmetric Encryption; Symmetric Decryption; Message Digest - Not | FIPS 140-3 compliant",
+      "HMAC with keys smaller than 112-bit Message Authentication Code (MAC) - Not FIPS 140-3 compliant",
+      "HMAC with GOST Message Authentication Code (MAC) - Not FIPS 140-3 compliant | MD2, MD4, MD5 Message Digest; Message Authentication Code (MAC) - Not FIPS | 140-3 compliant | Amazon Linux 2023 GnuTLS Cryptographic Module",
+      "PBKDF with HMAC not listed in the Approved Algorithms table or | using input parameters not meeting requirements stated in section"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 54,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

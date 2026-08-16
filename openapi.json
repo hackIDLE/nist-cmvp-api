@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1163 active validated modules with enriched details",
+            "description": "Currently 1171 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4285 historical modules",
+            "description": "Currently 4293 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 204 modules in process",
+            "description": "Currently 192 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-08-09T03:42:47.260786Z"
+            "example": "2026-08-16T03:00:02.493459Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1163
+            "example": 1171
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4285
+            "example": 4293
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 204
+            "example": 192
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1823
+            "example": 1839
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5448
+            "example": 5464
           },
           "source": {
             "type": "string",
@@ -370,19 +370,19 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5487"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5473"
+            "example": "5487"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Ruckus Wireless LLC"
+            "example": "F5, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)"
+            "example": "Cryptographic Module for BIG-IP"
           },
           "Module Type": {
             "type": "string",
@@ -390,19 +390,19 @@
           },
           "Validation Date": {
             "type": "string",
-            "example": "08/07/2026"
+            "example": "08/14/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5473.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5487.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5473"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5487"
           },
           "module_name": {
             "type": "string",
-            "example": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)"
+            "example": "Cryptographic Module for BIG-IP"
           },
           "standard": {
             "type": "string",
@@ -414,7 +414,7 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/6/2031"
+            "example": "11/20/2029"
           },
           "overall_level": {
             "type": "integer",
@@ -422,7 +422,7 @@
           },
           "caveat": {
             "type": "string",
-            "example": "When installed, initialized and configured as specified in Section Life-Cycle Assurance of the Security Policy"
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "module_type": {
             "type": "string",
@@ -434,7 +434,7 @@
           },
           "description": {
             "type": "string",
-            "example": "The Ruckus Virtual SmartZone-Dataplane (vSZ-D) offers organizations more flexibility in deploying the dataplane as needed in a Network Function Virtualization (NFV) architecture aligned fashion. It offers secure tunneling of user data traffic that encrypts payload traffic, maintains flat network topology, enables mobility across L2 subnets, and offers differentiated per site policy control and QoS amongst others."
+            "example": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition."
           },
           "algorithms": {
             "type": "array",
@@ -444,7 +444,7 @@
             "example": [
               "AES",
               "CVL",
-              "DRBG"
+              "DES"
             ]
           },
           "algorithms_detailed": {
@@ -453,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A7301 Direction - Decrypt, Encrypt | Key Length - 128, 192 | SP 800-38A",
-              "HMAC-SHA2- | 256 | A7301 MAC - MAC: 256 | Key Length - Key Length: 256 | FIPS 198-1",
-              "HMAC-SHA2- | 384 | A7301 MAC - MAC: 384 | Key Length - Key Length: 384 | FIPS 198-1"
+              "AES-CBC A3947 | A3948 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CTR A3947 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+              "AES-ECB A3947 | A3948 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
           },
           "algorithm_extraction": {
@@ -880,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5445"
+            "example": "5466"
           },
           "dataset": {
             "type": "string",
@@ -888,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-08-09T03:42:47.260786Z"
+            "example": "2026-08-16T03:00:02.493459Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5445"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5445"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5445.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Red Hat, Inc."
+            "example": "Juniper Networks, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "Red Hat Enterprise Linux 9 Kernel Cryptographic API"
+            "example": "Juniper Networks NFX150 and NFX250 Network Services Platform"
           },
           "standard": {
             "type": "string",
@@ -920,7 +920,7 @@
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
@@ -932,7 +932,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "7/28/2026"
+            "example": "8/6/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -940,20 +940,20 @@
               "type": "string"
             },
             "example": [
-              "7/28/2026"
+              "8/6/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "7/27/2031"
+            "example": "8/5/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. The module generates random numbers whose strengths are modified by available entropy."
+            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
           },
           "description": {
             "type": "string",
-            "example": "The Red Hat Enterprise Linux 9 Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality"
+            "example": "The NFX150 and NFX250 Network Services Platform are Juniper Network's secure, automated, software-driven customer premises equipment (CPE) devices that deliver virtualized network and security services on demand. The NFX Network Services Platform delivers capacity, performance, and scale to larger enterprise organizations and service providers who are looking to run multiple services on one platform."
           },
           "software_versions": {
             "type": "string",
@@ -976,7 +976,7 @@
               "type": "string"
             },
             "example": [
-              "Physical security: N/A",
+              "Roles, services, and authentication: Level 3",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -1010,8 +1010,8 @@
             },
             "example": [
               "AES",
-              "DRBG",
-              "ECDSA"
+              "CVL",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -1020,9 +1020,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A7145, A7153, A7156, A7371 | A7374, A7420 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC-CS3 A7150, A7161, A7378 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CCM A7145, A7156, A7371, A7374 Key Length - 128, 192, 256 SP 800-38C"
+              "AES-CBC A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC A5152 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CTR A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
             ]
           }
         }

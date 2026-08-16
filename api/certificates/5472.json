@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5472"
   },
   "certificate": {
     "certificate_number": "5472",
     "dataset": "active",
-    "generated_at": "2026-08-09T03:42:47.260786Z",
+    "generated_at": "2026-08-16T03:00:02.493459Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5472",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5472",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5472.pdf",
@@ -59,6 +59,18 @@
       "contact_name": "Global Certification Team",
       "contact_email": "certteam@cisco.com",
       "contact_phone": "800-553-6387"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5472.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 52
     },
     "algorithms": [
       "AES",
@@ -126,25 +138,6 @@
       "SHA2-512 C1026 Message Length - Message Length: 0-102400 | Increment 8 | FIPS 180-4",
       "A4446 Hash Algorithm - SHA2-256, SHA2-384, SHA2- | 512 | SP 800-135 | Rev. 1 | Name Properties Implementation Reference | CKG Key | Type:Asymmetric | N/A The cryptographic module performs | Cryptographic Key Generation (CKG) for | asymmetric keys as per section 4 example 1 | This document may be freely reproduced and distributed whole and intact including this Copyright Notice. | Name Properties Implementation Reference | in SP800-133rev2 (vendor affirmed) and FIPS | 140-3 IG D.H. A seed (i.e., the random value) | used in asymmetric key generation is a direct",
       "output from SP800-90Arev1 CTR_DRBG | (A4446) | N/A for this module. | N/A for this module. | 3DES Used for symmetric encryption in SSHv2, TLSv1, TLSv1.2, IPsec/IKEv2 | and SNMPv3 | [ASA-CM] 3DES Used for symmetric encryption in ASA-CM SSHv2, TLSv1, TLSv1.2 | IPsec/IKEv2, and SNMPv3 [Cisco Adaptive Security Appliance on | 4K/9K Cryptographic Module] | ChaCha20- | poly1305 | Used for authenticated symmetric encryption in SSHv2, and TLSv1.3 | [ASA-CM] | ChaCha20- | poly1305 | Used for authenticated symmetric encryption in ASA-CM SSHv2, and | TLSv1.3 [Cisco Adaptive Security Appliance on 4K/9K Cryptographic | Module]"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5472.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 11,
-      "detailed_algorithm_count": 52,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5472.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }
