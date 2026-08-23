@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493"
+  },
+  "certificate": {
+    "certificate_number": "5493",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
+    "vendor_name": "Fortinet Inc.",
+    "module_name": "FortiClient Crypto Module v1.0",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/17/2026",
+    "validation_dates": [
+      "8/17/2026"
+    ],
+    "sunset_date": "8/16/2031",
+    "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The FortiClient Crypto Module v1.0 is a software cryptographic module that provides cryptographic services for FortiClient, Fortinet's endpoint security application.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/17/2026",
+        "type": "Initial",
+        "lab": "Teron Labs"
+      }
+    ],
+    "vendor": {
+      "name": "Fortinet Inc.",
+      "website_url": "https://www.fortinet.com/",
+      "address_lines": [
+        "899 Kifer Road",
+        "Synnyvale, CA 94086",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Marc Boire",
+      "contact_email": "prodseccompliance@fortinet.com",
+      "contact_phone": "613-225-9381"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A7626 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-ECB A7626 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-GCM A7626 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 16, 128, 136 | 256, 264 | AAD Length - AAD Length: 0, 128, 136, 256 | SP 800- | 38D",
+      "Counter DRBG A7626 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0-256 | Increment 256 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - Personalization | String Length: 0-256 Increment 256 | Returned Bits - 256 | SP 800-90A | Rev. 1",
+      "ECDSA | KeyGen | (FIPS186-5) | A7626 Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits, testing | candidates | FIPS 186-5",
+      "ECDSA | KeyVer | (FIPS186-5) | A7626 Curve - P-256, P-384, P-521 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A7626 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5 | Fortinet, inc. Non-Proprietary FIPS 140-3 Security Policy Page 11 of 51",
+      "ECDSA SigVer | (FIPS186-5) | A7626 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "HMAC-SHA-1 A7626 MAC - MAC: 32-160 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 256 | A7626 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A7626 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A7626 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 256 | A7626 MAC - MAC: 32-256 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 384 | A7626 MAC - MAC: 32-384 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "HMAC-SHA3- | 512 | A7626 MAC - MAC: 32-512 Increment 8 | Key Length - Key Length: 8-1024 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A7626 Domain Parameter Generation Methods - P-256, P- | 384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KAS-FFC-SSC | Sp800-56Ar3 | A7626 Domain Parameter Generation Methods - | ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144 | ffdhe8192, MODP-2048, MODP-3072, MODP- | 4096, MODP-6144, MODP-8192 | Scheme - | dhEphem - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "PBKDF A7626 Iteration Count - Iteration Count: 1-1000 Increment | 1 | HMAC Algorithm - SHA-1 | Password Length - Password Length: 8-31 | Increment 1 | Salt Length - Salt Length: 128-4096 Increment 8 | Key Data Length - Key Data Length: 112-512 | Increment 8 | SP 800-132",
+      "RSA KeyGen | (FIPS186-5) | A7626 Key Generation Mode - probable | Modulo - 2048, 3072, 4096 | p mod 8 - 0 | Primality Tests - 2powSecStr | q mod 8 - 0 | FIPS 186-5 | Fortinet, inc. Non-Proprietary FIPS 140-3 Security Policy Page 12 of 51 | Info Generated By Server - No | Private Key Format - standard | Public Exponent Mode - random",
+      "RSA SigGen | (FIPS186-5) | A7626 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7626 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048, 3072, 4096 | Signature Type - pkcs1v1.5 | Public Exponent Mode - random | FIPS 186-5 | Safe Primes | Key | Generation | A7626 Safe Prime Groups - ffdhe2048, ffdhe3072 | ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048 | MODP-3072, MODP-4096, MODP-6144, MODP- | 8192 | SP 800-56A | Rev. 3",
+      "SHA2-256 A7626 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A7626 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A7626 Message Length - Message Length: 0-65528 | Increment 8 | FIPS 180-4",
+      "SHA3-256 A4973 Message Length - Message Length: 0-65536 | Increment 8 | FIPS 202",
+      "SHA3-256 A7626 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-384 A7626 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
+      "SHA3-512 A7626 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202 | * Note: The recommended iteration count of 1000 is used, as per SP800-132. | ** Note: Keys derived from passwords, as described in SP800-132, may only be used in storage | applications. | Fortinet, inc. Non-Proprietary FIPS 140-3 Security Policy Page 13 of 51 | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A SP 800-133 Rev.2 Section 4, example",
+      "1 direct output from DRBG. | N/A for this module. | Not Applicable. | N/A for this module. | None. | N/A for this module. | None."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 34,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

@@ -1,10 +1,66 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
-    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902"
   },
   "certificate": {
+    "certificate_number": "4902",
+    "dataset": "historical",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf",
+    "vendor_name": "Honeywell International Inc.",
+    "module_name": "Qualcomm® Inline Crypto Engine (SDCC)",
+    "standard": "FIPS 140-2",
+    "status": "Historical",
+    "module_type": "Hardware",
+    "embodiment": "Single Chip",
+    "overall_level": 1,
+    "validation_date": "11/22/2024",
+    "validation_dates": [
+      "11/22/2024"
+    ],
+    "sunset_date": null,
+    "caveat": "None",
+    "description": "QTI Inline Crypto Engine (SDCC) high throughput storage data encryption and decryption.",
+    "software_versions": null,
+    "hardware_versions": "3.0.0",
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "11/22/2024",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Honeywell International Inc.",
+      "website_url": "http://automation.honeywell.com/us/en",
+      "address_lines": [
+        "9680 Old Bailes Road",
+        "Fort Mill, SC 29707",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Douglas Hinson",
+      "contact_email": "douglas.hinson@Honeywell.com",
+      "contact_phone": "803-835-8180"
+    },
     "algorithm_extraction": {
       "schema_version": "1.0",
       "status": "cached",
@@ -12,62 +68,22 @@
       "source": "firecrawl",
       "source_url": null,
       "cached": true,
-      "fallback_used": false,
+      "fallback_used": true,
       "cache_version": "2026-04-15-legacy-v1",
       "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "None",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
-    "certificate_number": "4902",
-    "dataset": "active",
-    "description": "QTI Inline Crypto Engine (SDCC) high throughput storage data encryption and decryption.",
-    "embodiment": "Single Chip",
-    "firmware_versions": null,
-    "generated_at": "2026-08-16T03:00:02.493459Z",
-    "hardware_versions": null,
-    "module_name": "Qualcomm® Inline Crypto Engine (SDCC)",
-    "module_type": "Hardware",
-    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Mitigation of Other Attacks: N/A"
-    ],
-    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf",
-    "software_versions": null,
-    "standard": "FIPS 140-2",
-    "status": "Active",
-    "sunset_date": "8/16/2026",
-    "validation_date": "11/22/2024",
-    "validation_dates": [
-      "11/22/2024"
-    ],
-    "validation_history": [
-      {
-        "date": "11/22/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
-      }
-    ],
-    "vendor": {
-      "address_lines": [
-        "9680 Old Bailes Road",
-        "Fort Mill, SC 29707",
-        "USA"
-      ],
-      "contact_email": "douglas.hinson@Honeywell.com",
-      "contact_name": "Douglas Hinson",
-      "contact_phone": "803-835-8180",
-      "country": "USA",
-      "name": "Honeywell International Inc.",
-      "website_url": "http://automation.honeywell.com/us/en"
-    },
-    "vendor_name": "Honeywell International Inc."
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf",
+          "status": "no_algorithms"
+        },
+        {
+          "source": "security_policy_pdf",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4902.pdf",
+          "status": "no_algorithms"
+        }
+      ]
+    }
   }
 }

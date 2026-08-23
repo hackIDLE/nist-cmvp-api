@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5475"
   },
   "certificate": {
     "certificate_number": "5475",
     "dataset": "active",
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5475",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5475",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5475.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Ajay Gupta",
       "contact_email": "ajay.gupta@hp.com",
       "contact_phone": "+1 650-857-1501"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5475.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 14,
+      "detailed_algorithm_count": 149
     },
     "algorithms": [
       "AES",
@@ -225,25 +237,6 @@
       "DRBG",
       "Usage of Hash and HMAC DRBGs with PRFs SHA2-224, SHA2-384",
       "SHA2-512/224 and SHA2-512/256"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5475.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 14,
-      "detailed_algorithm_count": 149,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5475.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

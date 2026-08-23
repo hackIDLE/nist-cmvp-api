@@ -1,74 +1,90 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
-    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "historical",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878"
   },
   "certificate": {
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "cached",
-      "configured_source": "crawl4ai",
-      "source": "firecrawl",
-      "source_url": null,
-      "cached": true,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 0,
-      "detailed_algorithm_count": 0
-    },
-    "caveat": "Interim validation. When operated with module Junos® OS Evolved OpenSSL Cryptographic Module version 3.0.8 validated to FIPS 140-3 under Cert. #4775 operating in approved mode, and module Junos® OS Evolved Kernel Cryptographic Module version 2.0 validated to FIPS 140-3 under Cert. #4776, operating in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
-    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878",
     "certificate_number": "4878",
-    "dataset": "active",
-    "description": "Juniper Express 4 MACsec Cryptographic Module is composed by the MACsec blocks that are part of the Juniper Networks® Express 4 processor in hardware, which provides the AES GCM and XPN algorithm implementations for encrypting and decrypting MACsec traffic, and a device driver in software, which provides the functionality to comply with FIPS 140-3 requirements (i.e. integrity test, self-tests), as well as the API to configure the hardware component.",
-    "embodiment": "Multi-Chip Stand Alone",
-    "firmware_versions": null,
-    "generated_at": "2026-08-16T03:00:02.493459Z",
-    "hardware_versions": null,
-    "module_name": "Juniper Express 4 MACsec Cryptographic Module",
-    "module_type": "Software-hybrid",
+    "dataset": "historical",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878",
-    "overall_level": 1,
-    "related_files": [
-      {
-        "label": "Security Policy",
-        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf"
-      }
-    ],
-    "security_level_exceptions": [
-      "Non-invasive security: N/A",
-      "Mitigation of other attacks: N/A"
-    ],
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf",
-    "software_versions": null,
+    "vendor_name": "Juniper Networks, Inc.",
+    "module_name": "Juniper Express 4 MACsec Cryptographic Module",
     "standard": "FIPS 140-3",
-    "status": "Active",
-    "sunset_date": "11/12/2029",
+    "status": "Historical",
+    "module_type": "Software-hybrid",
+    "embodiment": "Multi-Chip Stand Alone",
+    "overall_level": 1,
     "validation_date": "11/13/2024",
     "validation_dates": [
       "11/13/2024"
     ],
+    "sunset_date": null,
+    "caveat": "Interim validation. When operated with module Junos® OS Evolved OpenSSL Cryptographic Module version 3.0.8 validated to FIPS 140-3 under Cert. #4775 operating in approved mode, and module Junos® OS Evolved Kernel Cryptographic Module version 2.0 validated to FIPS 140-3 under Cert. #4776, operating in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+    "description": "Juniper Express 4 MACsec Cryptographic Module is composed by the MACsec blocks that are part of the Juniper Networks® Express 4 processor in hardware, which provides the AES GCM and XPN algorithm implementations for encrypting and decrypting MACsec traffic, and a device driver in software, which provides the functionality to comply with FIPS 140-3 requirements (i.e. integrity test, self-tests), as well as the API to configure the hardware component.",
+    "software_versions": "1.0",
+    "hardware_versions": "JTAG ID 20611361",
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf"
+      },
+      {
+        "label": "Consolidated Certificate",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November 2024_021224_0125.pdf"
+      }
+    ],
     "validation_history": [
       {
         "date": "11/13/2024",
-        "lab": "atsec information security corporation",
-        "type": "Initial"
+        "type": "Initial",
+        "lab": "atsec information security corporation"
       }
     ],
     "vendor": {
+      "name": "Juniper Networks, Inc.",
+      "website_url": "http://www.juniper.net",
       "address_lines": [
         "1133 Innovation Way",
         "Sunnyvale, CA 94089",
         "USA"
       ],
-      "contact_email": "certs-team@juniper.net",
-      "contact_name": "Certifications Team",
-      "contact_phone": "408-745-2000",
       "country": "USA",
-      "name": "Juniper Networks, Inc.",
-      "website_url": "http://www.juniper.net"
+      "contact_name": "Certifications Team",
+      "contact_email": "certs-team@juniper.net",
+      "contact_phone": "408-745-2000"
     },
-    "vendor_name": "Juniper Networks, Inc."
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 0,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
   }
 }

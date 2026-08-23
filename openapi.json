@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1171 active validated modules with enriched details",
+            "description": "Currently 1172 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4293 historical modules",
+            "description": "Currently 4306 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 192 modules in process",
+            "description": "Currently 182 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-08-16T03:00:02.493459Z"
+            "example": "2026-08-23T03:02:31.588581Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1171
+            "example": 1172
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4293
+            "example": 4306
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 192
+            "example": 182
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1839
+            "example": 1856
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5464
+            "example": 5478
           },
           "source": {
             "type": "string",
@@ -370,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5487"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5487"
+            "example": "5499"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "F5, Inc."
+            "example": "Phison Electronics Corporation"
           },
           "Module Name": {
             "type": "string",
-            "example": "Cryptographic Module for BIG-IP"
+            "example": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD"
           },
           "Module Type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "Validation Date": {
             "type": "string",
-            "example": "08/14/2026"
+            "example": "08/21/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5487.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5487"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499"
           },
           "module_name": {
             "type": "string",
-            "example": "Cryptographic Module for BIG-IP"
+            "example": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD"
           },
           "standard": {
             "type": "string",
@@ -414,27 +414,27 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "11/20/2029"
+            "example": "8/20/2031"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service"
           },
           "module_type": {
             "type": "string",
-            "example": "Software"
+            "example": "Hardware"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "MultiChipEmbed"
           },
           "description": {
             "type": "string",
-            "example": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition."
+            "example": "The 'Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD' is an Enterprise Self-Encrypting Drive model disk drive. The cryptographic module (CM) provides a wide range of cryptographic services using approved algorithms. Services include hardware- based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA ranges, and authenticated FW download. The services are provided through an industry-standard TCG Opal SSC interface."
           },
           "algorithms": {
             "type": "array",
@@ -443,8 +443,8 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DES"
+              "DRBG",
+              "HMAC"
             ]
           },
           "algorithms_detailed": {
@@ -453,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A3947 | A3948 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CTR A3947 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 Increment 8 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
-              "AES-ECB A3947 | A3948 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES-KW A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+              "AES-KW A7622 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+              "AES-XTS Testing | Revision 2.0 | A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E"
             ]
           },
           "algorithm_extraction": {
@@ -880,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5466"
+            "example": "5483"
           },
           "dataset": {
             "type": "string",
@@ -888,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-08-16T03:00:02.493459Z"
+            "example": "2026-08-23T03:02:31.588581Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5466"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5466.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Juniper Networks, Inc."
+            "example": "Western Digital Technologies, Inc."
           },
           "module_name": {
             "type": "string",
-            "example": "Juniper Networks NFX150 and NFX250 Network Services Platform"
+            "example": "Ultrastar DC HC560 TCG Enterprise HDD, SED and Ultrastar DC HC570 TCG Enterprise HDD, SED"
           },
           "standard": {
             "type": "string",
@@ -924,15 +924,15 @@
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipStand"
+            "example": "MultiChipEmbed"
           },
           "overall_level": {
             "type": "integer",
-            "example": 1
+            "example": 2
           },
           "validation_date": {
             "type": "string",
-            "example": "8/6/2026"
+            "example": "8/13/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -940,20 +940,20 @@
               "type": "string"
             },
             "example": [
-              "8/6/2026"
+              "8/13/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/5/2031"
+            "example": "9/15/2029"
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs."
+            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service"
           },
           "description": {
             "type": "string",
-            "example": "The NFX150 and NFX250 Network Services Platform are Juniper Network's secure, automated, software-driven customer premises equipment (CPE) devices that deliver virtualized network and security services on demand. The NFX Network Services Platform delivers capacity, performance, and scale to larger enterprise organizations and service providers who are looking to run multiple services on one platform."
+            "example": "The Ultrastar DC HC560 and DC HC570 TCG Enterprise HDDs are self-encrypting drives (SEDs) compliant with the TCG Storage Architecture Core Specification and the TCG Enterprise Security Subsystem Class (SSC). The Enterprise SSC defines interfaces to activate, provision, and manage encryption, authentication credentials, and access controls. The security architecture uses a lock-based authentication model where operator credentials control access to user data, making data inaccessible until successful authentication, in accordance with IG 4.1.A."
           },
           "software_versions": {
             "type": "string",
@@ -976,7 +976,7 @@
               "type": "string"
             },
             "example": [
-              "Roles, services, and authentication: Level 3",
+              "Operational environment: N/A",
               "Non-invasive security: N/A",
               "Mitigation of other attacks: N/A"
             ]
@@ -1010,8 +1010,8 @@
             },
             "example": [
               "AES",
-              "CVL",
-              "DRBG"
+              "DRBG",
+              "HMAC"
             ]
           },
           "algorithms_detailed": {
@@ -1020,9 +1020,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CBC A5152 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
-              "AES-CTR A5151 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A"
+              "AES-CBC A2099 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+              "AES-CBC AES 3580 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
+              "AES-ECB A2101 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A"
             ]
           }
         }

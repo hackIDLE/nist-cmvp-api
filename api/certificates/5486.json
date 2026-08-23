@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5486"
   },
   "certificate": {
     "certificate_number": "5486",
     "dataset": "active",
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5486",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5486",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5486.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "John Peck",
       "contact_email": "johnpeck@us.ibm.com",
       "contact_phone": "512-286-7959"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5486.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 76
     },
     "algorithms": [
       "AES",
@@ -148,25 +160,6 @@
       "SHA-1 as non-approved per SP 800-131A Rev.3.",
       "HMAC-DRBG-SHA1 Random Number Generation. The vendor considers",
       "SHA-1 as non-approved per SP 800-131A Rev.3. | MDC2 Message Digest | RIPEMD Message Digest | chacha20 Symmetric Encryption; Symmetric Decryption | chacha20-poly1305 Authenticated Encryption; Authenticated Decryption"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5486.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 10,
-      "detailed_algorithm_count": 76,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5486.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

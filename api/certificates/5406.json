@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5406"
+  },
+  "certificate": {
+    "certificate_number": "5406",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5406",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5406",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5406.pdf",
+    "vendor_name": "Microsoft Corporation",
+    "module_name": "Code Integrity",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/20/2026",
+    "validation_dates": [
+      "8/20/2026"
+    ],
+    "sunset_date": "8/19/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. When operated in approved mode with module Windows OS Loader validated to FIPS 140-3 under Cert. #5405 operating in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "The Code Integrity module is a multi-chip standalone software cryptographic module that verifies the integrity of Windows executable files as they are loaded into memory from storage.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5406.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/20/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Microsoft Corporation",
+      "website_url": "http://www.microsoft.com",
+      "address_lines": [
+        "One Microsoft Way",
+        "Redmond, WA 98052-6399",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Mike Grimm",
+      "contact_email": "FIPS@microsoft.com",
+      "contact_phone": "800-642-767638"
+    },
+    "algorithms": [
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "DigSig-Legacy DigSig-SigVer Legacy RSA signature | verification used by the Verify | the Integrity of Executable | Code service to verify | integrity of digitally signed | drivers and other binary",
+      "components of the OS. SHA | secure hash functions | support this by verifying the",
+      "RSA signature.",
+      "RSA SigVer (FIPS186-4) | (A4008, A4009) | Modulus Size: 1024 bits",
+      "SHA-1: (A4008, A4009)",
+      "SHA Size: 160 bits",
+      "DigSig1 DigSig-SigVer RSA signature verification | used by the Verify the | Integrity of Executable Code | service to verify integrity of | digitally signed drivers and | other binary components of",
+      "the OS. SHA secure hash | functions support this by",
+      "verifying the RSA signature.",
+      "RSA SigVer (FIPS186-4) | (A4008, A4009) | Modulus Size: 2048, 3072 | and 4096 bits",
+      "SHA2-256: (A4008, A4009)",
+      "SHA Size: 256 bits",
+      "SHA2-384: (A4008, A4009)",
+      "SHA Size: 384 bits",
+      "SHA2-512: (A4008, A4009)",
+      "SHA Size: 512 bits",
+      "DigSig2 DigSig-SigVer RSA signature verification | used for the module pre- | operational software integrity | check only, executed by the | [EVM] OS Loader module (IG | 1.A Documentation",
+      "Requirements 5). SHA secure | hash functions support this by",
+      "RSA SigVer (FIPS186-4) | (A3767, A3768) | Modulus Size: 2048 bits",
+      "SHA Size: 256 bits | Name Type Description Properties Algorithms",
+      "SHS1 SHA Secure hash functions used | by the Verify the Integrity of | Executable Code service.",
+      "SHS2 SHA Secure hash function used for | the module pre-operational | software integrity check only | executed by the [EVM] OS | Loader module (IG 1.A | Documentation Requirements | 5)."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5406.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 22,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5406.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

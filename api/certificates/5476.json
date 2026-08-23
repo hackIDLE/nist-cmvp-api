@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476"
   },
   "certificate": {
     "certificate_number": "5476",
     "dataset": "active",
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5476",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
@@ -58,6 +58,18 @@
       "contact_name": "Amazon Linux Security",
       "contact_email": "aws-fips-external@amazon.com",
       "contact_phone": "000-000-0000"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 54
     },
     "algorithms": [
       "AES",
@@ -128,25 +140,6 @@
       "HMAC with keys smaller than 112-bit Message Authentication Code (MAC) - Not FIPS 140-3 compliant",
       "HMAC with GOST Message Authentication Code (MAC) - Not FIPS 140-3 compliant | MD2, MD4, MD5 Message Digest; Message Authentication Code (MAC) - Not FIPS | 140-3 compliant | Amazon Linux 2023 GnuTLS Cryptographic Module",
       "PBKDF with HMAC not listed in the Approved Algorithms table or | using input parameters not meeting requirements stated in section"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 12,
-      "detailed_algorithm_count": 54,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5476.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

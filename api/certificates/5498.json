@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5498"
+  },
+  "certificate": {
+    "certificate_number": "5498",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5498",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5498",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5498.pdf",
+    "vendor_name": "Aviat Networks, Inc.",
+    "module_name": "Aviat Networks Eclipse Cryptographic Module",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipStand",
+    "overall_level": 2,
+    "validation_date": "8/19/2026",
+    "validation_dates": [
+      "8/19/2026"
+    ],
+    "sunset_date": "8/18/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 2.4 of the Security Policy. The tamper evident seals (part number 007-600331-001) and physical security kits (part numbers 179-530153-001 and 179-530153-002) installed as indicated in section 7.2 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+    "description": "Aviat Networks' Eclipse is an all-in-one next generation dual hybrid and packet microwave radio. Eclipse provides superior networking features to address cost-optimized mobile backhaul, public, and private networking applications, along with high performance RF and Carrier Ethernet capabilities. Aviat Eclipse delivers a \"complete\" set of microwave nodal networking capabilities. Eclipse delivers multidirectional integrated microwave switching within a single system.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5498.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/19/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Aviat Networks, Inc.",
+      "website_url": "http://www.aviatnetworks.com",
+      "address_lines": [
+        "200 Parker Drive, Suite C100A",
+        "Austin, Texas 78728",
+        "United States"
+      ],
+      "country": "United States",
+      "contact_name": "Ruth French",
+      "contact_email": "Ruth.french@aviatnet.com",
+      "contact_phone": "447771978599"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6135 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CCM A6136 Key Length - 256 SP 800-38C",
+      "AES-CCM A6537 Key Length - 256 SP 800-38C",
+      "AES-CFB128 A6135 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-ECB C5 Direction - Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-GCM A6135 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - | Key Length - 256 | SP 800-38D",
+      "ECDSA KeyGen | (FIPS186-5) | A6135 Curve - P-256, P-384 | Secret Generation Mode - extra bits | FIPS 186-5",
+      "ECDSA KeyVer | (FIPS186-5) | A6135 Curve - P-256, P-384 FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6135 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-384 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6135 Curve - P-256, P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-5",
+      "Hash DRBG A6135 Prediction Resistance - Yes",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC-SHA-1 A6135 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A6135 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1 | Aviat Networks, Inc. Public Material – May be reproduced only in its original entirety (without revision).",
+      "HMAC-SHA2-384 A6135 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A6135 Key Length - Key Length: 112-524288 | Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC Sp800- | 56Ar3 | A6135 Domain Parameter Generation Methods - P- | 256, P-384 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA SigVer (FIPS186- | 5) | A6135 Modulo - 2048, 4096 | Signature Type - pkcs1v1.5 | FIPS 186-5",
+      "SHA-1 A6135 Message Length - Message Length: 160, 0- | 65536 Increment 2048 | FIPS 180-4",
+      "SHA2-256 A6135 Message Length - Message Length: 256, 0- | 65536 Increment 2048 | FIPS 180-4",
+      "SHA2-384 A6135 Message Length - Message Length: 384, 0- | 65536 Increment 2048 | FIPS 180-4",
+      "SHA2-512 A6135 Message Length - Message Length: 512, 0- | 65536 Increment 2048 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6135 Hash Algorithm - SHA2-384 SP 800-135 | Rev. 1",
+      "TLS v1.3 KDF (CVL) A6135 HMAC Algorithm - SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | The Module implements the FIPS Approved cryptographic algorithms listed in the table below. | The Module implements the Vendor Affirmed cryptographic algorithms listed in . | Name Properties Implementation Reference | CKG - | Asym",
+      "ECDSA P-256, P-384: Asymmetric: N/A SP800-133rev2 Section 4 | Example 1 and IG D.H | CKG - | Sym",
+      "AES-256-CBC, AES-128-CFB128, AES-256-",
+      "GCM, AES-256-CCM: Symmetric | N/A SP800-133rev2 Section 4 | Example 1 and IG D.H | The module uses a [133r2] compliant cryptographic key generation method for generating both | asymmetric and symmetric keys. | N/A for this module. | Aviat Networks, Inc. Public Material – May be reproduced only in its original entirety (without revision). | The module does not implement any Non-Approved, but Allowed Algorithms in the Approved Mode of | Operation. | N/A for this module. | The module does not implement any Non-Approved, but Allowed Algorithms with No Security Claimed | in the approved mode of operation. | N/A for this module. | The module does not implement any Non-Approved Algorithms, Not Allowed in the Approved Mode of | Operation."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5498.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 10,
+      "detailed_algorithm_count": 32,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5498.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

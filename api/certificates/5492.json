@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5492"
+  },
+  "certificate": {
+    "certificate_number": "5492",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5492",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5492",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5492.pdf",
+    "vendor_name": "Motorola Solutions, Inc.",
+    "module_name": "Motorola Solutions Advanced Crypto Engine (MACE) HSM - Security Level 2",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "SingleChip",
+    "overall_level": 2,
+    "validation_date": "8/17/2026",
+    "validation_dates": [
+      "8/17/2026"
+    ],
+    "sunset_date": "8/16/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy",
+    "description": "The MACE HSM is a single-chip cryptographic module to meet FIPS 140-3 Level-2 physical security requirements. The Module provides encryption and decryption services for secure key management, and secure voice/data traffic.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Roles, services, and authentication: Level 3",
+      "Software/Firmware security: Level 3",
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Self-tests: Level 3",
+      "Life-cycle assurance: Level 3",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5492.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/17/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Motorola Solutions, Inc.",
+      "website_url": "http://www.motorolasolutions.com",
+      "address_lines": [
+        "500 West Monroe Street",
+        "Chicago, IL 60661",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Jason Blair",
+      "contact_email": "jason.blair@motorolasolutions.com",
+      "contact_phone": "847-576-5000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "KTS",
+      "RSA",
+      "SHA",
+      "SHS",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A5273 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CBC A5274 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-CBC A5275 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CFB8 A5273 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-CTR A5274 Direction - Decrypt, Encrypt | Key Length - 128 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum value | - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-CTR A5275 Direction - Decrypt, Encrypt | Key Length - 256 | Payload Length - Payload Length: 8-128 | SP 800-38A | Motorola Solutions Public Material – May be reproduced only in its original entirety (without revision). | Increment 8 | Supports Counter larger than maximum value | - No | Incremental Counter - Yes | Counter Tests Performed - Yes",
+      "AES-ECB A5273 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-ECB A5274 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-ECB A5275 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-GCM A5273 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 256 | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 256-512 | Increment 128 | AAD Length - AAD Length: 256-512 | Increment 128 | SP 800-38D",
+      "AES-GCM A5274 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 128 | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 256-512 | Increment 128 | AAD Length - AAD Length: 256-512 | Increment 128 | SP 800-38D",
+      "AES-GCM A5275 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 256 | Tag Length - 128 | IV Length - IV Length: 96 | Payload Length - Payload Length: 256-512 | Increment 128 | AAD Length - AAD Length: 256-512 | Increment 128 | SP 800-38D",
+      "AES-GMAC A5273 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 256 | Tag Length - 128 | IV Length - IV Length: 96 | SP 800-38D | Motorola Solutions Public Material – May be reproduced only in its original entirety (without revision). | AAD Length - AAD Length: 256-512 | Increment 128",
+      "AES-GMAC A5274 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 128 | Tag Length - 128 | IV Length - IV Length: 96 | AAD Length - AAD Length: 256-512 | Increment 128 | SP 800-38D",
+      "AES-GMAC A5275 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1, 8.2.2 | Key Length - 256 | Tag Length - 128 | IV Length - IV Length: 96 | AAD Length - AAD Length: 256-512 | Increment 128 | SP 800-38D",
+      "AES-KW A2527 Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 256 | Payload Length - Payload Length: 128-256 | Increment 64 | SP 800-38F",
+      "AES-OFB A5273 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "AES-OFB A5274 Direction - Decrypt, Encrypt | Key Length - 128 | SP 800-38A",
+      "AES-OFB A5275 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38A",
+      "Counter DRBG A6380 Prediction Resistance - No | Supports Reseed - No",
+      "Mode - AES-256 | Derivation Function Enabled - Yes | Additional Input - Additional Input: 0 | Entropy Input - Entropy Input: 256-1024 | Increment 128 | Nonce - Nonce: 128-512 Increment 128 | Personalization String Length - | Personalization String Length: 0 | Returned Bits - 128 | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-4) | A2532 Curve - P-384 | Secret Generation Mode - Extra Bits | FIPS 186-4",
+      "ECDSA SigGen | (FIPS186-4) | A2532 Component - No | Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-4",
+      "ECDSA SigVer | (FIPS186-4) | A2532 Component - No | Curve - P-384",
+      "Hash Algorithm - SHA2-384 | FIPS 186-4 | Motorola Solutions Public Material – May be reproduced only in its original entirety (without revision).",
+      "HMAC-SHA2- | 384 | A6378 MAC - MAC: 384 | Key Length - Key Length: 256 | FIPS 198-1",
+      "KAS-ECC | Sp800-56Ar3 | A2533 Domain Parameter Generation Methods - P- | 384 | Function - Key Pair Generation, Partial | Validation | iutId - A1B2C3D4E5 | Scheme - | ephemeralUnified - | KAS Role - Initiator, Responder",
+      "KDF Methods - | oneStepKdf - | Auxiliary Function Methods -",
+      "Auxiliary Function Name - SHA2-384 | Fixed Info Pattern - | Fixed Info Encoding - Concatenation | Key Length - 384 | SP 800-56A | Rev. 3",
+      "KDF SRTP (CVL) A2534 AES Key Length - 128, 256 | Supports Empty KDR - Yes | KDR Exponents - 1 | SP 800-135 | Rev. 1",
+      "RSA SigVer | (FIPS186-5) | A5253 Hash Pair -",
+      "Hash Algorithm - SHA2-256 | Modulo - 2048 | Signature Type - pkcs1v1.5 | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | FIPS 186-5",
+      "SHA2-256 A6379 Message Length - Message Length: 256, 8- | 2048 Increment 8 | FIPS 180-4",
+      "SHA2-256 SHS 817 Message Length - Message Length: 0-51200 | Increment 8 | Supports Bit-Oriented Messages - No | Supports Empty Message - Yes | FIPS 180-4",
+      "SHA2-384 A6379 Message Length - Message Length: 384, 8- | 2048 Increment 8 | FIPS 180-4",
+      "TLS v1.3 KDF",
+      "(CVL)",
+      "A2535 HMAC Algorithm - SHA2-384",
+      "KDF Running Modes - DHE, PSK, PSK-DHE | SP 800-135 | Rev. 1 | NOTE: Only the algorithms specified in this section are supported by the module in approved | mode of operation. | The Module implements the FIPS Vendor Affirmed cryptographic algorithms listed. | Motorola Solutions Public Material – May be reproduced only in its original entirety (without revision). | Name Properties Implementation Reference | CKG1 Key Type:Asymmetric and | Symmetric | N/A SP800-133rev2 Section 4 | example #1 and IG D.H | CKG - | IDK | Key Type: Symmetric N/A SP800-133rev2 Sections 6.3 #2 | and IG D.H | The Module implements the non-approved, but Allowed cryptographic algorithms listed. | N/A for this module. | The Module implements theNon-Approved, Allowed cryptographic Algorithms with No Security Claimed. | Name Caveat Use and Function",
+      "AES | MAC",
+      "No Security Claimed. AES | MAC is used as part of | OTAR but is considered | obfuscation.",
+      "[IG 2.4.A] P25 AES OTAR. AES MAC is applied | directly to the plaintext OTAR key components and",
+      "then KTS encryption is performed on the OTAR key | components and decrypted within the module using",
+      "AES KW Cert #5438 | The module does not implement any Non-Approved Algorithms, Not Allowed in the Approved Mode of | Operation. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5492.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 12,
+      "detailed_algorithm_count": 45,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5492.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

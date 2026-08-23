@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5488"
+  },
+  "certificate": {
+    "certificate_number": "5488",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5488",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5488",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5488.pdf",
+    "vendor_name": "Focus Systems Corporation",
+    "module_name": "MonoCrypt AES Enhanced Crypto Library",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/16/2026",
+    "validation_dates": [
+      "8/16/2026"
+    ],
+    "sunset_date": "8/15/2031",
+    "caveat": "When operated in approved mode; No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+    "description": "MonoCrypt AES provides cryptographic function following AES(FIPS197) and Key Wrap(SP800-38F). This Product is provided as Dynamic-Link Library or Share-Library.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5488.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/16/2026",
+        "type": "Initial",
+        "lab": "ECSEC Laboratory Inc."
+      }
+    ],
+    "vendor": {
+      "name": "Focus Systems Corporation",
+      "website_url": "https://www.focus-s.com",
+      "address_lines": [
+        "Terasaki 3rd Building, 5-24-10 Higashi-Gotanda",
+        "Shinagawa-ku, Tokyo 141-0022",
+        "Japan"
+      ],
+      "country": "Japan",
+      "contact_name": "Business Creation Department Technical Promotion D",
+      "contact_email": "Tech-sp@focus-s.com",
+      "contact_phone": "81-3-5420-2470"
+    },
+    "algorithms": [
+      "AES",
+      "HMAC",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A8008 | A8009 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A8008 | A8009 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8-128 | Increment 8 | Supports Counter larger than maximum value | - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-ECB A8008 | A8009 | Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-KW A8008 | A8009 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 192, 256 | 320, 512, 1024 | SP 800-38F",
+      "AES-KWP A8008 | A8009 | Direction - Decrypt, Encrypt | Cipher - Cipher | Key Length - 128, 192, 256 | Payload Length - Payload Length: 8, 24, 64 | 96, 1024 | SP 800-38F",
+      "HMAC-SHA2- | 256 | A8008 | A8009 | MAC - MAC: 128, 192, 256 | Key Length - Key Length: 160, 192, 512, 576 | 640 | FIPS 198-1",
+      "SHA2-256 A8008 | A8009 | Message Length - Message Length: 0-65536 | Increment 8 | FIPS 180-4 | N/A for this module. | N/A for this module. | N/A for this module.",
+      "AES-KW per RFC3394 A key wrapping functionality per RFC3394",
+      "AES-KWP per RFC5649 A key wrapping functionality per RFC5649",
+      "If a non-null arbitrary value is set to “Integrity data” parameter for AES-KW or AES-KWP, the"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5488.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 3,
+      "detailed_algorithm_count": 10,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5488.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

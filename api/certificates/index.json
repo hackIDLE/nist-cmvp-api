@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
-    "total_modules": 1171,
-    "total_historical_modules": 4293,
-    "total_modules_in_process": 192,
-    "total_certificates_with_algorithms": 1839,
-    "total_certificate_details": 5464,
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "total_modules": 1172,
+    "total_historical_modules": 4306,
+    "total_modules_in_process": 182,
+    "total_certificates_with_algorithms": 1856,
+    "total_certificate_details": 5478,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,18 +13,18 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1154,
-        "html_refreshed": 22,
+        "html_reused": 1158,
+        "html_refreshed": 19,
         "html_failed": 0,
-        "pdf_reused": 1154,
-        "pdf_refreshed": 17,
+        "pdf_reused": 1158,
+        "pdf_refreshed": 14,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1154,
-        "algorithm_successes": 734,
+        "algorithm_cache_hits": 1158,
+        "algorithm_successes": 745,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 17,
+        "algorithm_source_crawl4ai": 14,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -32,18 +32,18 @@
         "certificates_deferred": 5
       },
       "historical": {
-        "html_reused": 4285,
-        "html_refreshed": 8,
+        "html_reused": 4293,
+        "html_refreshed": 13,
         "html_failed": 0,
-        "pdf_reused": 4289,
-        "pdf_refreshed": 4,
+        "pdf_reused": 4300,
+        "pdf_refreshed": 6,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4289,
-        "algorithm_successes": 1105,
+        "algorithm_cache_hits": 4300,
+        "algorithm_successes": 1111,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 4,
+        "algorithm_source_crawl4ai": 6,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,18 +51,18 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5439,
-        "html_refreshed": 30,
+        "html_reused": 5451,
+        "html_refreshed": 32,
         "html_failed": 0,
-        "pdf_reused": 5443,
-        "pdf_refreshed": 21,
+        "pdf_reused": 5458,
+        "pdf_refreshed": 20,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5443,
-        "algorithm_successes": 1839,
+        "algorithm_cache_hits": 5458,
+        "algorithm_successes": 1856,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 21,
+        "algorithm_source_crawl4ai": 20,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -77,7 +77,7 @@
     },
     "version": "3.0"
   },
-  "total_certificates": 5464,
+  "total_certificates": 5478,
   "certificate_paths": {
     "1": "/api/certificates/1.json",
     "2": "/api/certificates/2.json",
@@ -5468,6 +5468,8 @@
     "5401": "/api/certificates/5401.json",
     "5402": "/api/certificates/5402.json",
     "5403": "/api/certificates/5403.json",
+    "5406": "/api/certificates/5406.json",
+    "5407": "/api/certificates/5407.json",
     "5411": "/api/certificates/5411.json",
     "5412": "/api/certificates/5412.json",
     "5413": "/api/certificates/5413.json",
@@ -5542,7 +5544,19 @@
     "5484": "/api/certificates/5484.json",
     "5485": "/api/certificates/5485.json",
     "5486": "/api/certificates/5486.json",
-    "5487": "/api/certificates/5487.json"
+    "5487": "/api/certificates/5487.json",
+    "5488": "/api/certificates/5488.json",
+    "5489": "/api/certificates/5489.json",
+    "5490": "/api/certificates/5490.json",
+    "5491": "/api/certificates/5491.json",
+    "5492": "/api/certificates/5492.json",
+    "5493": "/api/certificates/5493.json",
+    "5494": "/api/certificates/5494.json",
+    "5495": "/api/certificates/5495.json",
+    "5496": "/api/certificates/5496.json",
+    "5497": "/api/certificates/5497.json",
+    "5498": "/api/certificates/5498.json",
+    "5499": "/api/certificates/5499.json"
   },
   "certificates": [
     {
@@ -74366,7 +74380,7 @@
     },
     {
       "certificate_number": "2588",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/2588.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2588",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2588",
@@ -74374,7 +74388,7 @@
       "vendor_name": "Qualcomm Technologies, Inc.",
       "module_name": "Qualcomm® Inline Crypto Engine (SDCC)",
       "standard": "FIPS 140-2",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Hardware",
       "overall_level": 1,
       "validation_date": "3/22/2016, 2/12/2018, 8/17/2021",
@@ -74383,7 +74397,7 @@
         "2/12/2018",
         "8/17/2021"
       ],
-      "sunset_date": "8/16/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -115315,7 +115329,7 @@
         "TLS"
       ],
       "algorithm_count": 14,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -115404,7 +115418,7 @@
     },
     {
       "certificate_number": "4010",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4010.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4010",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4010",
@@ -115412,7 +115426,7 @@
       "vendor_name": "Western Digital Corporation",
       "module_name": "Ultrastar® He¹² and Ultrastar® DC HC520 TCG Enterprise HDD",
       "standard": "FIPS 140-2",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Hardware",
       "overall_level": 2,
       "validation_date": "8/19/2021, 2/4/2022, 5/6/2022, 1/25/2023, 9/1/2023, 1/10/2024",
@@ -115424,18 +115438,19 @@
         "9/1/2023",
         "1/10/2024"
       ],
-      "sunset_date": "8/18/2026",
+      "sunset_date": null,
       "algorithms": [
+        "DRBG",
         "SHA"
       ],
-      "algorithm_count": 1,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "algorithm_count": 2,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
       "certificate_number": "4011",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4011.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4011",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4011",
@@ -115443,7 +115458,7 @@
       "vendor_name": "Western Digital Corporation",
       "module_name": "Ultrastar® He¹° and Ultrastar® DC HC510 TCG Enterprise HDD",
       "standard": "FIPS 140-2",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Hardware",
       "overall_level": 2,
       "validation_date": "8/19/2021, 2/18/2022, 1/27/2023",
@@ -115452,14 +115467,14 @@
         "2/18/2022",
         "1/27/2023"
       ],
-      "sunset_date": "8/18/2026",
+      "sunset_date": null,
       "algorithms": [
         "AES",
         "DRBG"
       ],
       "algorithm_count": 2,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
@@ -119089,7 +119104,7 @@
     },
     {
       "certificate_number": "4125",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4125.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4125",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4125",
@@ -119097,14 +119112,14 @@
       "vendor_name": "Spectralink Corporation",
       "module_name": "Qualcomm® Inline Crypto Engine (SDCC)",
       "standard": "FIPS 140-2",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Hardware",
       "overall_level": 1,
       "validation_date": "1/10/2022",
       "validation_dates": [
         "1/10/2022"
       ],
-      "sunset_date": "8/16/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -137749,7 +137764,7 @@
     },
     {
       "certificate_number": "4770",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4770.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4770",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4770",
@@ -137757,7 +137772,7 @@
       "vendor_name": "Ericsson Enterprise Wireless Solutions, Inc.",
       "module_name": "Cradlepoint Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "8/20/2024, 3/2/2026, 3/16/2026",
@@ -137766,7 +137781,7 @@
         "3/2/2026",
         "3/16/2026"
       ],
-      "sunset_date": "8/19/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -137823,7 +137838,7 @@
     },
     {
       "certificate_number": "4773",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4773.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4773",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4773",
@@ -137831,14 +137846,14 @@
       "vendor_name": "Palo Alto Networks, Inc.",
       "module_name": "PAN-OS 11.0 VM-Series",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "8/21/2024",
       "validation_dates": [
         "8/21/2024"
       ],
-      "sunset_date": "8/20/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -137847,7 +137862,7 @@
     },
     {
       "certificate_number": "4774",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4774.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4774",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4774",
@@ -137855,14 +137870,14 @@
       "vendor_name": "Red Hat(R), Inc.",
       "module_name": "Red Hat Enterprise Linux 9 NSS Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "8/21/2024",
       "validation_dates": [
         "8/21/2024"
       ],
-      "sunset_date": "8/20/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -138669,7 +138684,7 @@
         "SHS"
       ],
       "algorithm_count": 6,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -139130,7 +139145,7 @@
     },
     {
       "certificate_number": "4820",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4820.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4820",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4820",
@@ -139138,18 +139153,23 @@
       "vendor_name": "Juniper Networks, Inc.",
       "module_name": "Junos® OS Evolved MACsec Cryptographic Library",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "10/2/2024",
       "validation_dates": [
         "10/2/2024"
       ],
-      "sunset_date": "10/1/2029",
-      "algorithms": [],
-      "algorithm_count": 0,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "sunset_date": null,
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "HMAC",
+        "SHA"
+      ],
+      "algorithm_count": 4,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
@@ -139234,7 +139254,7 @@
         "TLS"
       ],
       "algorithm_count": 12,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -139995,7 +140015,7 @@
         "SHS"
       ],
       "algorithm_count": 7,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -140284,7 +140304,7 @@
     },
     {
       "certificate_number": "4863",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4863.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4863",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4863",
@@ -140292,7 +140312,7 @@
       "vendor_name": "Ericsson Enterprise Wireless Solutions, Inc.",
       "module_name": "Cradlepoint Kernel Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "11/4/2024, 3/2/2026, 3/16/2026",
@@ -140301,11 +140321,17 @@
         "3/2/2026",
         "3/16/2026"
       ],
-      "sunset_date": "11/3/2026",
-      "algorithms": [],
-      "algorithm_count": 0,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "sunset_date": null,
+      "algorithms": [
+        "AES",
+        "DES",
+        "HMAC",
+        "SHA",
+        "SHS"
+      ],
+      "algorithm_count": 5,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
@@ -140700,7 +140726,7 @@
     },
     {
       "certificate_number": "4878",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4878.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4878",
@@ -140708,18 +140734,22 @@
       "vendor_name": "Juniper Networks, Inc.",
       "module_name": "Juniper Express 4 MACsec Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software-hybrid",
       "overall_level": 1,
       "validation_date": "11/13/2024",
       "validation_dates": [
         "11/13/2024"
       ],
-      "sunset_date": "11/12/2029",
-      "algorithms": [],
-      "algorithm_count": 0,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "sunset_date": null,
+      "algorithms": [
+        "AES",
+        "HMAC",
+        "SHA"
+      ],
+      "algorithm_count": 3,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
@@ -141201,7 +141231,7 @@
     },
     {
       "certificate_number": "4894",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4894.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4894",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4894",
@@ -141209,14 +141239,14 @@
       "vendor_name": "Canonical Ltd.",
       "module_name": "Canonical Ltd. Ubuntu 22.04 Kernel Crypto API Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "11/21/2024",
       "validation_dates": [
         "11/21/2024"
       ],
-      "sunset_date": "11/20/2029",
+      "sunset_date": null,
       "algorithms": [
         "AES",
         "DRBG",
@@ -141228,8 +141258,8 @@
         "SHA"
       ],
       "algorithm_count": 8,
-      "algorithm_extraction_status": "cached",
-      "algorithm_source": "firecrawl",
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
       "detail_available": true
     },
     {
@@ -141267,7 +141297,7 @@
         "TLS"
       ],
       "algorithm_count": 14,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -141455,7 +141485,7 @@
     },
     {
       "certificate_number": "4902",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4902.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4902",
@@ -141463,14 +141493,14 @@
       "vendor_name": "Honeywell International Inc.",
       "module_name": "Qualcomm® Inline Crypto Engine (SDCC)",
       "standard": "FIPS 140-2",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Hardware",
       "overall_level": 1,
       "validation_date": "11/22/2024",
       "validation_dates": [
         "11/22/2024"
       ],
-      "sunset_date": "8/16/2026",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -141678,7 +141708,7 @@
     },
     {
       "certificate_number": "4911",
-      "dataset": "active",
+      "dataset": "historical",
       "path": "/api/certificates/4911.json",
       "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4911",
       "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4911",
@@ -141686,14 +141716,14 @@
       "vendor_name": "Canonical Ltd.",
       "module_name": "Canonical Ltd. Ubuntu 22.04 Strongswan Cryptographic Module",
       "standard": "FIPS 140-3",
-      "status": "Active",
+      "status": "Historical",
       "module_type": "Software",
       "overall_level": 1,
       "validation_date": "12/3/2024",
       "validation_dates": [
         "12/3/2024"
       ],
-      "sunset_date": "12/2/2029",
+      "sunset_date": null,
       "algorithms": [],
       "algorithm_count": 0,
       "algorithm_extraction_status": "cached",
@@ -157940,7 +157970,7 @@
         "SHA"
       ],
       "algorithm_count": 5,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -158090,6 +158120,60 @@
       ],
       "algorithm_count": 14,
       "algorithm_extraction_status": "cached",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5406",
+      "dataset": "active",
+      "path": "/api/certificates/5406.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5406",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5406",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5406.pdf",
+      "vendor_name": "Microsoft Corporation",
+      "module_name": "Code Integrity",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/20/2026",
+      "validation_dates": [
+        "8/20/2026"
+      ],
+      "sunset_date": "8/19/2031",
+      "algorithms": [
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 2,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5407",
+      "dataset": "active",
+      "path": "/api/certificates/5407.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5407",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5407",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5407.pdf",
+      "vendor_name": "Microsoft Corporation",
+      "module_name": "Secure Kernel Code Integrity",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/20/2026",
+      "validation_dates": [
+        "8/20/2026"
+      ],
+      "sunset_date": "8/19/2031",
+      "algorithms": [
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 2,
+      "algorithm_extraction_status": "parsed",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -159497,7 +159581,7 @@
         "SHA"
       ],
       "algorithm_count": 8,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160188,7 +160272,7 @@
         "SHA"
       ],
       "algorithm_count": 6,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160227,7 +160311,7 @@
         "TLS"
       ],
       "algorithm_count": 14,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160264,7 +160348,7 @@
         "TLS"
       ],
       "algorithm_count": 12,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160297,7 +160381,7 @@
         "SHA"
       ],
       "algorithm_count": 8,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160324,7 +160408,7 @@
         "SHA"
       ],
       "algorithm_count": 2,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160355,7 +160439,7 @@
         "SHA"
       ],
       "algorithm_count": 6,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160391,7 +160475,7 @@
         "TLS"
       ],
       "algorithm_count": 11,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160427,7 +160511,7 @@
         "TLS"
       ],
       "algorithm_count": 11,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160463,7 +160547,7 @@
         "TLS"
       ],
       "algorithm_count": 11,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160495,7 +160579,7 @@
         "SHS"
       ],
       "algorithm_count": 7,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160530,7 +160614,7 @@
         "TLS"
       ],
       "algorithm_count": 10,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160565,7 +160649,7 @@
         "SHA"
       ],
       "algorithm_count": 10,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160600,7 +160684,7 @@
         "SHA"
       ],
       "algorithm_count": 10,
-      "algorithm_extraction_status": "parsed",
+      "algorithm_extraction_status": "cached",
       "algorithm_source": "crawl4ai",
       "detail_available": true
     },
@@ -160638,6 +160722,404 @@
         "TLS"
       ],
       "algorithm_count": 13,
+      "algorithm_extraction_status": "cached",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5488",
+      "dataset": "active",
+      "path": "/api/certificates/5488.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5488",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5488",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5488.pdf",
+      "vendor_name": "Focus Systems Corporation",
+      "module_name": "MonoCrypt AES Enhanced Crypto Library",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/16/2026",
+      "validation_dates": [
+        "8/16/2026"
+      ],
+      "sunset_date": "8/15/2031",
+      "algorithms": [
+        "AES",
+        "HMAC",
+        "SHA"
+      ],
+      "algorithm_count": 3,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5489",
+      "dataset": "active",
+      "path": "/api/certificates/5489.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5489",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5489",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5489.pdf",
+      "vendor_name": "Juniper Networks, Inc.",
+      "module_name": "Juniper Express 4 MACsec Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software-hybrid",
+      "overall_level": 1,
+      "validation_date": "8/17/2026",
+      "validation_dates": [
+        "8/17/2026"
+      ],
+      "sunset_date": "11/12/2029",
+      "algorithms": [
+        "AES",
+        "HMAC"
+      ],
+      "algorithm_count": 2,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5490",
+      "dataset": "active",
+      "path": "/api/certificates/5490.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5490",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5490",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5490.pdf",
+      "vendor_name": "Juniper Networks, Inc.",
+      "module_name": "Junos® OS Evolved MACsec Cryptographic Library",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/17/2026",
+      "validation_dates": [
+        "8/17/2026"
+      ],
+      "sunset_date": "10/1/2029",
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "HMAC",
+        "SHA"
+      ],
+      "algorithm_count": 4,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5491",
+      "dataset": "active",
+      "path": "/api/certificates/5491.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5491",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5491",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5491.pdf",
+      "vendor_name": "Canonical Ltd.",
+      "module_name": "Canonical Ltd. Ubuntu 22.04 Kernel Crypto API Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/17/2026",
+      "validation_dates": [
+        "8/17/2026"
+      ],
+      "sunset_date": "11/20/2029",
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 8,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5492",
+      "dataset": "active",
+      "path": "/api/certificates/5492.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5492",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5492",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5492.pdf",
+      "vendor_name": "Motorola Solutions, Inc.",
+      "module_name": "Motorola Solutions Advanced Crypto Engine (MACE) HSM - Security Level 2",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Hardware",
+      "overall_level": 2,
+      "validation_date": "8/17/2026",
+      "validation_dates": [
+        "8/17/2026"
+      ],
+      "sunset_date": "8/16/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "KTS",
+        "RSA",
+        "SHA",
+        "SHS",
+        "TLS"
+      ],
+      "algorithm_count": 12,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5493",
+      "dataset": "active",
+      "path": "/api/certificates/5493.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
+      "vendor_name": "Fortinet Inc.",
+      "module_name": "FortiClient Crypto Module v1.0",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/17/2026",
+      "validation_dates": [
+        "8/17/2026"
+      ],
+      "sunset_date": "8/16/2031",
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 8,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5494",
+      "dataset": "active",
+      "path": "/api/certificates/5494.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5494",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5494",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5494.pdf",
+      "vendor_name": "Geotab Inc.",
+      "module_name": "Geotab Extended Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Firmware",
+      "overall_level": 1,
+      "validation_date": "8/18/2026",
+      "validation_dates": [
+        "8/18/2026"
+      ],
+      "sunset_date": "8/17/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KDF",
+        "RSA",
+        "SHA",
+        "TLS"
+      ],
+      "algorithm_count": 9,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5495",
+      "dataset": "active",
+      "path": "/api/certificates/5495.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5495",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5495",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5495.pdf",
+      "vendor_name": "Seagate Technology LLC",
+      "module_name": "Seagate SSG3 TCG Enterprise SSC SED FIPS 140 Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Hardware",
+      "overall_level": 2,
+      "validation_date": "8/18/2026",
+      "validation_dates": [
+        "8/18/2026"
+      ],
+      "sunset_date": "8/17/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DRBG",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA",
+        "TLS"
+      ],
+      "algorithm_count": 9,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5496",
+      "dataset": "active",
+      "path": "/api/certificates/5496.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5496",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5496",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5496.pdf",
+      "vendor_name": "Ctrl IQ, Inc.",
+      "module_name": "Rocky Linux 9 GnuTLS Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Software",
+      "overall_level": 1,
+      "validation_date": "8/18/2026",
+      "validation_dates": [
+        "8/18/2026"
+      ],
+      "sunset_date": "8/17/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DES",
+        "DRBG",
+        "DSA",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA",
+        "TLS"
+      ],
+      "algorithm_count": 12,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5497",
+      "dataset": "active",
+      "path": "/api/certificates/5497.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5497",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5497",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5497.pdf",
+      "vendor_name": "Crypto4A Technologies Inc.",
+      "module_name": "QASM Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Hardware",
+      "overall_level": 3,
+      "validation_date": "8/19/2026, 8/21/2026",
+      "validation_dates": [
+        "8/19/2026",
+        "8/21/2026"
+      ],
+      "sunset_date": "8/18/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DRBG",
+        "DSA",
+        "ECDSA",
+        "EDDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "KTS",
+        "ML-DSA",
+        "ML-KEM",
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 14,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5498",
+      "dataset": "active",
+      "path": "/api/certificates/5498.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5498",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5498",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5498.pdf",
+      "vendor_name": "Aviat Networks, Inc.",
+      "module_name": "Aviat Networks Eclipse Cryptographic Module",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Hardware",
+      "overall_level": 2,
+      "validation_date": "8/19/2026",
+      "validation_dates": [
+        "8/19/2026"
+      ],
+      "sunset_date": "8/18/2031",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DRBG",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "RSA",
+        "SHA",
+        "TLS"
+      ],
+      "algorithm_count": 10,
+      "algorithm_extraction_status": "parsed",
+      "algorithm_source": "crawl4ai",
+      "detail_available": true
+    },
+    {
+      "certificate_number": "5499",
+      "dataset": "active",
+      "path": "/api/certificates/5499.json",
+      "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf",
+      "vendor_name": "Phison Electronics Corporation",
+      "module_name": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "module_type": "Hardware",
+      "overall_level": 2,
+      "validation_date": "8/21/2026",
+      "validation_dates": [
+        "8/21/2026"
+      ],
+      "sunset_date": "8/20/2031",
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "HMAC",
+        "KDF",
+        "RSA",
+        "SHA"
+      ],
+      "algorithm_count": 6,
       "algorithm_extraction_status": "parsed",
       "algorithm_source": "crawl4ai",
       "detail_available": true

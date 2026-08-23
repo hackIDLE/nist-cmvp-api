@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452"
   },
   "certificate": {
     "certificate_number": "5452",
     "dataset": "active",
-    "generated_at": "2026-08-16T03:00:02.493459Z",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5452",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
@@ -62,6 +62,18 @@
       "contact_name": "Michael L. Young",
       "contact_email": "myoung@ciq.com",
       "contact_phone": "15109980618"
+    },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 45
     },
     "algorithms": [
       "AES",
@@ -119,25 +131,6 @@
       "RSA PKCS#1 v1.5 Key encapsulation / un-encapsulation",
       "RSA primitive Encryption primitive; Decryption primitive (not compliant to SP 800- | 56Br2)",
       "ECDSA with pre-hashed | message | Signature generation(pre-hashed message) primitive; Signature | verification(pre-hashed message) primitive"
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 45,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5452.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

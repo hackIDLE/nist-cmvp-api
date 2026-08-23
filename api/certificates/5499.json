@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499"
+  },
+  "certificate": {
+    "certificate_number": "5499",
+    "dataset": "active",
+    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf",
+    "vendor_name": "Phison Electronics Corporation",
+    "module_name": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Hardware",
+    "embodiment": "MultiChipEmbed",
+    "overall_level": 2,
+    "validation_date": "8/21/2026",
+    "validation_dates": [
+      "8/21/2026"
+    ],
+    "sunset_date": "8/20/2031",
+    "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+    "description": "The 'Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD' is an Enterprise Self-Encrypting Drive model disk drive. The cryptographic module (CM) provides a wide range of cryptographic services using approved algorithms. Services include hardware- based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA ranges, and authenticated FW download. The services are provided through an industry-standard TCG Opal SSC interface.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/21/2026",
+        "type": "Initial",
+        "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+      }
+    ],
+    "vendor": {
+      "name": "Phison Electronics Corporation",
+      "website_url": "http://www.phison.com/en/",
+      "address_lines": [
+        "No. 1, Qun Yi Road",
+        "Jhunan, Miaoli County 350",
+        "Taiwan"
+      ],
+      "country": "Taiwan",
+      "contact_name": "Johanna Thang",
+      "contact_email": "johanna_thang@phison.com",
+      "contact_phone": "88637586896-22003"
+    },
+    "algorithms": [
+      "AES",
+      "DRBG",
+      "HMAC",
+      "KDF",
+      "RSA",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "AES-KW A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-KW A7622 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
+      "AES-XTS Testing | Revision 2.0 | A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E",
+      "AES-XTS Testing | Revision 2.0 | A7622 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E",
+      "HMAC DRBG A3307 Prediction Resistance - No",
+      "Mode - SHA2-256 | SP 800-90A | Rev. 1",
+      "HMAC DRBG A7622 Prediction Resistance - No",
+      "HMAC-SHA2-256 A3307 Key Length - Key Length: 64-256 | Increment 64 | FIPS 198-1",
+      "HMAC-SHA2-256 A7622 Key Length - Key Length: 64-256 | Increment 8 | FIPS 198-1",
+      "PBKDF A3307 Iteration Count - Iteration Count: 1- | 1000 Increment 1 | Password Length - Password Length | 8-32 | SP 800-132",
+      "PBKDF A7622 Iteration Count - Iteration Count: 1- | 1000 Increment 1 | Password Length - Password Length | 8-32 Increment 1 | SP 800-132",
+      "RSA SigVer | (FIPS186-5) | A3307 Hash Pair -",
+      "Hash Algorithm - SHA2-512 | Salt Length - 64 | Mask Function - mgf1 | Modulo - 4096 | Signature Type - pss | Fixed Public Exponent - 010001 | Public Exponent Mode - fixed | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A3308 Modulo - 4096 | Signature Type - pss | FIPS 186-5 | Phison Public Material – May be reproduced only in its original entirety (without revision).",
+      "RSA SigVer | (FIPS186-5) | A7622 Modulo - 4096 | Signature Type - pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A7675 Hash Pair -",
+      "SHA2-256 A3307 Message Length - Message Length | 8-65536 Increment 8 | FIPS 180-4",
+      "SHA2-256 A7622 Message Length - Message Length | 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A3307 Message Length - Message Length | 8-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A3308 Message Length - Message Length | 8-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A7622 Message Length - Message Length | 0-65536 Increment 8 | FIPS 180-4",
+      "SHA2-512 A7675 Message Length - Message Length | 0-65536 Increment 8 | FIPS 180-4 | Note: Only the algorithms specified in the table above are approved algorithms supported by the | module in approved mode of operation. | Name Properties Implementation Reference | CKG Key | Type:Symmetric | N/A Unmodified output from SP 800-90Ar1",
+      "DRBG and Section 4 option#1 of SP800- | 133r2 | CKG- | XTS | Key | Type:Symmetric | N/A SP 800-133r2 Section 6.3 Method 1 for use",
+      "in AES XTS. | N/A for this module. | Phison Public Material – May be reproduced only in its original entirety (without revision). | Name Caveat Use and Function",
+      "AES-XTS-256 (no security claimed) IG 2.4.A Scenario 2 TCG Table obfuscation",
+      "HMAC-SHA2-256 (no security claimed) IG 2.4.A Scenario 2 TCG Table checksum",
+      "AES-KW-256 (Non-Approved) Encrypts Key Parameter in non-approved mode",
+      "AES-XTS-256 (Non-Approved) Encrypts User Data in non-approved mode"
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 6,
+      "detailed_algorithm_count": 28,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}
