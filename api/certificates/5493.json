@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "generated_at": "2026-08-30T07:57:46.517944Z",
     "dataset": "active",
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493"
   },
   "certificate": {
     "certificate_number": "5493",
     "dataset": "active",
-    "generated_at": "2026-08-23T03:02:31.588581Z",
+    "generated_at": "2026-08-30T07:57:46.517944Z",
     "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
     "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5493",
     "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
@@ -59,6 +59,18 @@
       "contact_email": "prodseccompliance@fortinet.com",
       "contact_phone": "613-225-9381"
     },
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "cached",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
+      "cached": true,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 8,
+      "detailed_algorithm_count": 34
+    },
     "algorithms": [
       "AES",
       "DRBG",
@@ -104,25 +116,6 @@
       "SHA3-384 A7626 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202",
       "SHA3-512 A7626 Message Length - Message Length: 0-65536 | Increment 8 | Large Message Sizes - 1, 2, 4, 8 | FIPS 202 | * Note: The recommended iteration count of 1000 is used, as per SP800-132. | ** Note: Keys derived from passwords, as described in SP800-132, may only be used in storage | applications. | Fortinet, inc. Non-Proprietary FIPS 140-3 Security Policy Page 13 of 51 | Name Properties Implementation Reference | CKG Key Type:Symmetric and | Asymmetric | N/A SP 800-133 Rev.2 Section 4, example",
       "1 direct output from DRBG. | N/A for this module. | Not Applicable. | N/A for this module. | None. | N/A for this module. | None."
-    ],
-    "algorithm_extraction": {
-      "schema_version": "1.0",
-      "status": "parsed",
-      "configured_source": "crawl4ai",
-      "source": "crawl4ai",
-      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
-      "cached": false,
-      "fallback_used": false,
-      "cache_version": "2026-04-15-legacy-v1",
-      "algorithm_count": 8,
-      "detailed_algorithm_count": 34,
-      "attempts": [
-        {
-          "source": "crawl4ai",
-          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5493.pdf",
-          "status": "parsed"
-        }
-      ]
-    }
+    ]
   }
 }

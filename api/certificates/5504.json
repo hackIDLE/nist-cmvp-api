@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-30T07:57:46.517944Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5504"
+  },
+  "certificate": {
+    "certificate_number": "5504",
+    "dataset": "active",
+    "generated_at": "2026-08-30T07:57:46.517944Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5504",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5504",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5504.pdf",
+    "vendor_name": "Qualcomm Technologies, Inc.",
+    "module_name": "Qualcomm® Pseudo Random Number Generator",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Firmware-hybrid",
+    "embodiment": "SingleChip",
+    "overall_level": 1,
+    "validation_date": "8/25/2026",
+    "validation_dates": [
+      "8/25/2026"
+    ],
+    "sunset_date": "8/24/2031",
+    "caveat": "None",
+    "description": "Qualcomm Pseudo Random Number Generator is a hardware random number generator that provides cryptographic functions through on-chip entropy sources and hash based DRBG.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Operational environment: N/A",
+      "Physical security: Level 2",
+      "Non-invasive security: N/A",
+      "Life-cycle assurance: Level 2",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5504.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/25/2026",
+        "type": "Initial",
+        "lab": "atsec information security corporation"
+      }
+    ],
+    "vendor": {
+      "name": "Qualcomm Technologies, Inc.",
+      "website_url": "http://www.qualcomm.com",
+      "address_lines": [
+        "5775 Morehouse Dr",
+        "San Diego, CA 92121",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Qualcomm FIPS 140 officers",
+      "contact_email": "fips140officers@qti.qualcomm.com",
+      "contact_phone": "000-000-0000"
+    },
+    "algorithms": [
+      "DRBG",
+      "SHA"
+    ],
+    "algorithms_detailed": [
+      "DRBG | A3756 Prediction Resistance - No | Supports Reseed - No",
+      "Mode - SHA2-256 | Entropy Input - Entropy Input: 256 | Nonce - Nonce: 128 | Personalization String Length - Personalization String | Length: 0, 32 | Additional Input - Additional Input: 0, 0 | Returned Bits - 1024 | SP 800-90A | Rev. 1 | Qualcomm® Pseudo Random Number Generator | © Qualcomm Technologies, Inc. and/or its affiliated companies. All rights reserved. Snapdragon and Qualcomm branded products are | products of Qualcomm Technologies, Inc. and/or its subsidiaries.",
+      "SHA2-256 A3755, A3756 | A6829 | Message Length - Message Length: 8-65536 Increment | 8 | FIPS 180-4 | N/A for this module. | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5504.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 2,
+      "detailed_algorithm_count": 3,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5504.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

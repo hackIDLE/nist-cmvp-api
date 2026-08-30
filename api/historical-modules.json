@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-08-23T03:02:31.588581Z",
-    "total_modules": 1172,
-    "total_historical_modules": 4306,
-    "total_modules_in_process": 182,
-    "total_certificates_with_algorithms": 1856,
-    "total_certificate_details": 5478,
+    "generated_at": "2026-08-30T07:57:46.517944Z",
+    "total_modules": 1170,
+    "total_historical_modules": 4315,
+    "total_modules_in_process": 180,
+    "total_certificates_with_algorithms": 1863,
+    "total_certificate_details": 5485,
     "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search",
     "modules_in_process_source": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list",
     "algorithm_source": "crawl4ai",
@@ -13,37 +13,37 @@
     "algorithm_extraction_schema_version": "1.0",
     "extraction_metrics": {
       "active": {
-        "html_reused": 1158,
-        "html_refreshed": 19,
+        "html_reused": 1163,
+        "html_refreshed": 13,
         "html_failed": 0,
-        "pdf_reused": 1158,
-        "pdf_refreshed": 14,
+        "pdf_reused": 1163,
+        "pdf_refreshed": 7,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 1158,
-        "algorithm_successes": 745,
+        "algorithm_cache_hits": 1163,
+        "algorithm_successes": 748,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 14,
+        "algorithm_source_crawl4ai": 7,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 5
+        "certificates_deferred": 6
       },
       "historical": {
-        "html_reused": 4293,
-        "html_refreshed": 13,
+        "html_reused": 4306,
+        "html_refreshed": 9,
         "html_failed": 0,
-        "pdf_reused": 4300,
-        "pdf_refreshed": 6,
+        "pdf_reused": 4311,
+        "pdf_refreshed": 4,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 4300,
-        "algorithm_successes": 1111,
+        "algorithm_cache_hits": 4311,
+        "algorithm_successes": 1115,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 6,
+        "algorithm_source_crawl4ai": 4,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
@@ -51,23 +51,23 @@
         "certificates_deferred": 0
       },
       "combined": {
-        "html_reused": 5451,
-        "html_refreshed": 32,
+        "html_reused": 5469,
+        "html_refreshed": 22,
         "html_failed": 0,
-        "pdf_reused": 5458,
-        "pdf_refreshed": 20,
+        "pdf_reused": 5474,
+        "pdf_refreshed": 11,
         "pdf_failed": 0,
         "pdf_cache_hits": 0,
         "algorithm_misses": 0,
-        "algorithm_cache_hits": 5458,
-        "algorithm_successes": 1856,
+        "algorithm_cache_hits": 5474,
+        "algorithm_successes": 1863,
         "algorithm_fallbacks": 0,
-        "algorithm_source_crawl4ai": 20,
+        "algorithm_source_crawl4ai": 11,
         "algorithm_source_security_policy_pdf": 0,
         "algorithm_source_database": 0,
         "algorithm_source_none": 0,
         "certificate_timeouts": 0,
-        "certificates_deferred": 5
+        "certificates_deferred": 6
       },
       "concurrency": {
         "certificate_fetch": 8,
@@ -518,7 +518,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -551,7 +551,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -700,6 +700,19 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
       "software_versions": "5.15.0-73-fips",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4894.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 8,
+        "detailed_algorithm_count": 302
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DRBG",
@@ -1013,20 +1026,7 @@
         "HKDF (libkcapi) Key derivation | PBKDF2 (libkcapi) Password-based key derivation",
         "RSA Encryption primitive; Decryption primitive",
         "RSA with PKCS#1 | v1.5 padding | Signature generation (pre -hashed message); Signature verification (pre -hashed | message); Key encapsulation; Key un-encapsulation"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4894.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 8,
-        "detailed_algorithm_count": 302
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4892",
@@ -1327,24 +1327,24 @@
       "description": "Juniper Express 4 MACsec Cryptographic Module is composed by the MACsec blocks that are part of the Juniper Networks® Express 4 processor in hardware, which provides the AES GCM and XPN algorithm implementations for encrypting and decrypting MACsec traffic, and a device driver in software, which provides the functionality to comply with FIPS 140-3 requirements (i.e. integrity test, self-tests), as well as the API to configure the hardware component.",
       "software_versions": "1.0",
       "hardware_versions": "JTAG ID 20611361",
-      "algorithms": [
-        "AES",
-        "HMAC",
-        "SHA"
-      ],
       "algorithm_extraction": {
         "schema_version": "1.0",
-        "status": "parsed",
+        "status": "cached",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4878.pdf",
-        "cached": false,
+        "cached": true,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 3,
         "detailed_algorithm_count": 0
       },
-      "detail_available": true
+      "detail_available": true,
+      "algorithms": [
+        "AES",
+        "HMAC",
+        "SHA"
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4874",
@@ -1579,26 +1579,26 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "The Ericsson Kernel Cryptographic Module is a software module running as part of Ericsson’s NetCloud OS kernel. It provides FIPS-Approved symmetric encryption and decryption, hashing, message authentication, and key establishment services to consuming applications via an Application Programming Interface (API).",
       "software_versions": "1.0 and 2.0",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4863.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 5,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true,
       "algorithms": [
         "AES",
         "DES",
         "HMAC",
         "SHA",
         "SHS"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4863.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 5,
-        "detailed_algorithm_count": 0
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4830",
@@ -1801,25 +1801,25 @@
       "embodiment": "Multi-Chip Stand Alone",
       "description": "Junos® OS Evolved MACsec Cryptographic Library is a shared library in software, which provides cryptographic services for key wrapping, key derivation and random number generation.",
       "software_versions": "1.2",
-      "algorithms": [
-        "AES",
-        "DRBG",
-        "HMAC",
-        "SHA"
-      ],
       "algorithm_extraction": {
         "schema_version": "1.0",
-        "status": "parsed",
+        "status": "cached",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4820.pdf",
-        "cached": false,
+        "cached": true,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 4,
         "detailed_algorithm_count": 0
       },
-      "detail_available": true
+      "detail_available": true,
+      "algorithms": [
+        "AES",
+        "DRBG",
+        "HMAC",
+        "SHA"
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4818",
@@ -2413,6 +2413,39 @@
       "status": "Historical"
     },
     {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4780",
+      "Certificate Number": "4780",
+      "Vendor Name": "Red Hat, Inc.",
+      "Module Name": "Red Hat Enterprise Linux 9 gnutls",
+      "Module Type": "Software",
+      "Validation Date": "08/26/2024",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4780.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4780",
+      "module_name": "Red Hat Enterprise Linux 9 gnutls",
+      "standard": "FIPS 140-3",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy.",
+      "module_type": "Software",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "GnuTLS is a secure communications library implementing the TLS and DTLS protocols. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PKCS#12, and other required structures which is shipped with Red Hat Enterprise Linux 9.",
+      "software_versions": "3.7.6-66803fa128d6a6e5",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "firecrawl",
+        "source_url": null,
+        "cached": true,
+        "fallback_used": true,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 0,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4779",
       "Certificate Number": "4779",
       "Vendor Name": "Oracle Corporation",
@@ -2858,7 +2891,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -2891,7 +2924,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -2924,7 +2957,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -6288,6 +6321,48 @@
       "status": "Historical"
     },
     {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
+      "Certificate Number": "4592",
+      "Vendor Name": "Arista Networks, Inc.",
+      "Module Name": "Arista EOS Crypto Module",
+      "Module Type": "Software",
+      "Validation Date": "09/12/2023 09/27/2023 12/05/2023 06/27/2024 03/05/2025",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4592.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4592",
+      "module_name": "Arista EOS Crypto Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "When operated in FIPS mode",
+      "module_type": "Software",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "Arista's crypto library is a comprehensive suite of FIPS Approved algorithms. Many key sizes and modes have been implemented to allow flexibility and efficiency.",
+      "software_versions": "v2.1",
+      "algorithms": [
+        "AES",
+        "DES",
+        "DSA",
+        "HMAC",
+        "KDF",
+        "RSA",
+        "TLS"
+      ],
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "parsed",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4592.pdf",
+        "cached": false,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 7,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
       "Certificate Number": "4591",
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4591",
       "Module Name": "IBM® z/OS® Version 2 Release 4 ICSF PKCS #11 Cryptographic Module",
@@ -7000,6 +7075,57 @@
       "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4570.pdf",
       "standard": "FIPS 140-2",
       "status": "Historical"
+    },
+    {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
+      "Certificate Number": "4569",
+      "Vendor Name": "CommScope Technologies LLC",
+      "Module Name": "Ruckus Networks SmartZone 144 (SZ-144) and SmartZone 300 (SZ-300) WLAN Controllers",
+      "Module Type": "Hardware",
+      "Validation Date": "08/30/2023",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4569",
+      "module_name": "Ruckus Networks SmartZone 144 (SZ-144) and SmartZone 300 (SZ-300) WLAN Controllers",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "When operated in FIPS mode. When initialized and configured as specified in Section 9 of the Security Policy.",
+      "module_type": "Hardware",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "Ruckus SmartZone is an industry leading controller that supports comprehensive management functionality, high performance operation and flexibility to address many different implementation scenarios. Its unique architecture allows the controller to actively manage APs and switches in the network, providing enhanced resiliency and visibility.",
+      "hardware_versions": "PF1-S144-US00, RevA; PF1-S300-WW00, RevA; PF1-S300-WW10, RevA",
+      "firmware_versions": "5.2.1.3",
+      "algorithms": [
+        "AES",
+        "CVL",
+        "DES",
+        "DRBG",
+        "DSA",
+        "ECDSA",
+        "HMAC",
+        "KAS",
+        "KDF",
+        "KTS",
+        "RSA",
+        "SHA",
+        "SHS",
+        "SSH",
+        "TLS"
+      ],
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "parsed",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4569.pdf",
+        "cached": false,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 15,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
     },
     {
       "Certificate Number": "4566",
@@ -8670,6 +8796,40 @@
         "source_url": null,
         "cached": true,
         "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 0,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
+      "Certificate Number": "4455",
+      "Vendor Name": "Kyocera Document Solutions Inc.",
+      "Module Name": "MFP Cryptographic Module(A)",
+      "Module Type": "Hardware",
+      "Validation Date": "03/22/2023",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4455.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4455",
+      "module_name": "MFP Cryptographic Module(A)",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 10.3 of the Security Policy",
+      "module_type": "Hardware",
+      "embodiment": "Single Chip",
+      "description": "MFP Cryptographic Module(A) is a cryptographic security chip for encrypting data written to a storage device and other security function of Kyocera multifunction printer. Secure key generation and fast AES encryption/decryption are offered through SATA interface. SecureBoot verifies the integrity of the firmware when the product starts up.",
+      "hardware_versions": "VaultIP-2.1.10 and EIP38-3.2",
+      "firmware_versions": "2.2.18",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "firecrawl",
+        "source_url": null,
+        "cached": true,
+        "fallback_used": true,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -12112,7 +12272,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -14390,6 +14550,116 @@
       ]
     },
     {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4019",
+      "Certificate Number": "4019",
+      "Vendor Name": "Arista Networks, Inc.",
+      "Module Name": "Arista EOS Crypto Module",
+      "Module Type": "Software",
+      "Validation Date": "08/30/2021 11/01/2021 01/17/2023",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4019.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4019",
+      "module_name": "Arista EOS Crypto Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "When operated in FIPS mode",
+      "module_type": "Software",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "Arista’s crypto library is a comprehensive suite of FIPS Approved algorithms. Many key sizes and modes have been implemented to allow flexibility and efficiency.",
+      "software_versions": "v2.0",
+      "algorithms": [
+        "AES",
+        "DES",
+        "DSA",
+        "HMAC",
+        "KDF",
+        "RSA",
+        "SHA",
+        "TLS"
+      ],
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "parsed",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4019.pdf",
+        "cached": false,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 8,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4018",
+      "Certificate Number": "4018",
+      "Vendor Name": "Canonical Ltd.",
+      "Module Name": "Ubuntu 18.04 Kernel Crypto API Cryptographic Module",
+      "Module Type": "Software",
+      "Validation Date": "08/30/2021 09/21/2021 10/18/2021",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4018.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4018",
+      "module_name": "Ubuntu 18.04 Kernel Crypto API Cryptographic Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "When operated in FIPS mode. The module generates random strings whose strength is modified by available entropy",
+      "module_type": "Software",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "The Ubuntu 18.04 Kernel Crypto API module is a software module running as part of the operating system kernel that provides general purpose cryptographic services.",
+      "software_versions": "2.1",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "firecrawl",
+        "source_url": null,
+        "cached": true,
+        "fallback_used": true,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 0,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
+      "Certificate Number": "4017",
+      "Vendor Name": "Taglio",
+      "Module Name": "Taglio PIV Applet v2.1 on NXP JCOP 3 SecID P60 CS (OSB)",
+      "Module Type": "Hardware",
+      "Validation Date": "08/27/2021",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4017.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4017",
+      "module_name": "Taglio PIV Applet v2.1 on NXP JCOP 3 SecID P60 CS (OSB)",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "caveat": "When initialized and configured as specified in Section 8 of the Security Policy",
+      "module_type": "Hardware",
+      "embodiment": "Single Chip",
+      "description": "Taglio PIV Applet v2.1 is a Java Card applet that provides Certificate Based PKI security on the NXP JCOP 3 SecID P60 CS (OSB) smart card platform. The Taglio PIV Applet supports the PIV Card standard (NIST SP 800-73-4 ad SP 800-78-4) and is suitable for US Government (PIV), Federal Contractor (PIV-I), Enterprise (CIV) and Physical Access (PACS/FICAM) applications.",
+      "hardware_versions": "P6022y VB",
+      "firmware_versions": "19790400",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "firecrawl",
+        "source_url": null,
+        "cached": true,
+        "fallback_used": true,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 0,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
       "Certificate Number": "4016",
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4016",
       "Module Name": "codeEncrypt",
@@ -14512,6 +14782,40 @@
       "status": "Historical"
     },
     {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4013",
+      "Certificate Number": "4013",
+      "Vendor Name": "iStorage Ltd.",
+      "Module Name": "iStorage datAshur BT",
+      "Module Type": "Hardware",
+      "Validation Date": "08/24/2021",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4013.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4013",
+      "module_name": "iStorage datAshur BT",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "caveat": "None",
+      "module_type": "Hardware",
+      "embodiment": "Multi-Chip Stand Alone",
+      "description": "Hardware encrypted USB 3.0 flash drive with Bluetooth interface for authentication and configuration.",
+      "hardware_versions": "IS-FL-DBT-256-4, IS-FL-DBT-256-8, IS-FL-DBT-256-16, IS-FL-DBT-256-32, IS-FL-DBT-256-64, IS-FL-DBT-256-128",
+      "firmware_versions": "V1.01.10 and V2.4",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "firecrawl",
+        "source_url": null,
+        "cached": true,
+        "fallback_used": true,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 0,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
+    },
+    {
       "Certificate Number": "4012",
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4012",
       "Module Name": "GlobalProtect App",
@@ -14563,23 +14867,23 @@
       "description": "Self-encrypting Ultrastar® He¹º and Ultrastar® DC HC510 TCG Enterprise HDDs, from Western Digital, meet or exceed the most demanding performance and security requirements. They incorporate third-generation HelioSeal® technology, use PMR technology and are the industry's first 10TB drive that is drop-in ready for any enterprise-capacity application or environment. Targeted at 2.5M hours MTBF, the Ultrastar He¹º and Ultrastar DC HC510 provide the highest reliability rating available of all HDDs on the market today. They build on the design success of their 8TB and 6TB predecessors.",
       "hardware_versions": "P/Ns HUH721010AL5205 (1) [1, 2, 3, 4], HUH721010AL5205 (2) [1, 2, 3, 4], HUH721010AL4205 (1) [1, 4], HUH721010AL4205 (2) [1, 4], HUH721008AL5205 (1) [1, 2, 3, 4], HUH721008AL5205 (2) [1, 2, 3, 4], HUH721008AL4205 (1) [1, 4] and HUH721008AL4205 (2) [1, 4]",
       "firmware_versions": "R92C [1], R9C0 [2], LM09 [3] or R9U0 [4]",
-      "algorithms": [
-        "AES",
-        "DRBG"
-      ],
       "algorithm_extraction": {
         "schema_version": "1.0",
-        "status": "parsed",
+        "status": "cached",
         "configured_source": "crawl4ai",
         "source": "crawl4ai",
         "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4011.pdf",
-        "cached": false,
+        "cached": true,
         "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 2,
         "detailed_algorithm_count": 0
       },
-      "detail_available": true
+      "detail_available": true,
+      "algorithms": [
+        "AES",
+        "DRBG"
+      ]
     },
     {
       "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4010",
@@ -14601,26 +14905,26 @@
       "description": "Self-encrypting Ultrastar® He¹² and Ultrastar® DC HC520 TCG Enterprise HDDs, from Western Digital, meet or exceed the most demanding performance and security requirements. They incorporate fourth-generation HelioSeal® technology, use PMR technology and are the industry's first 12TB drive that is drop-in ready for any enterprise-capacity application or environment. Targeted at 2.5M hours MTBF, the Ultrastar He¹² and Ultrastar DC HC520 provide the highest reliability rating available of all HDDs on the market today. They build on the design success of their 10TB, 8TB and 6TB predecessors",
       "hardware_versions": "P/Ns HUH721212AL5205 (1) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], HUH721212AL5205 (2) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], HUH721212AL4205 (1) [1, 6, 8, 9, 10] and HUH721212AL4205 (2) [1, 6, 8, 9, 10]",
       "firmware_versions": "R925 [1], R92C [2], R9C0 [3], NM08 [4], NM09 [5], R9G0 [6], NM10 [7], R9U0 [8], R9Y0 [9] and RB01 [10]",
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "cached",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4010.pdf",
+        "cached": true,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 2,
+        "detailed_algorithm_count": 1
+      },
+      "detail_available": true,
       "algorithms": [
         "DRBG",
         "SHA"
       ],
       "algorithms_detailed": [
         "4 SHA-256 Cert. # 3204"
-      ],
-      "algorithm_extraction": {
-        "schema_version": "1.0",
-        "status": "parsed",
-        "configured_source": "crawl4ai",
-        "source": "crawl4ai",
-        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4010.pdf",
-        "cached": false,
-        "fallback_used": false,
-        "cache_version": "2026-04-15-legacy-v1",
-        "algorithm_count": 2,
-        "detailed_algorithm_count": 1
-      },
-      "detail_available": true
+      ]
     },
     {
       "Certificate Number": "4009",
@@ -65223,7 +65527,7 @@
         "source": "firecrawl",
         "source_url": null,
         "cached": true,
-        "fallback_used": true,
+        "fallback_used": false,
         "cache_version": "2026-04-15-legacy-v1",
         "algorithm_count": 0,
         "detailed_algorithm_count": 0
@@ -99470,6 +99774,46 @@
       "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1593.pdf",
       "standard": "FIPS 140-2",
       "status": "Historical"
+    },
+    {
+      "Certificate Number_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
+      "Certificate Number": "1592",
+      "Vendor Name": "L3Harris Technologies, Inc.",
+      "Module Name": "Harris Unified Audio Card",
+      "Module Type": "Hardware",
+      "Validation Date": "08/22/2011 04/13/2016 07/20/2018 08/30/2021",
+      "Status": "Historical",
+      "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1592.pdf",
+      "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1592",
+      "module_name": "Harris Unified Audio Card",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "caveat": "When operated in FIPS mode",
+      "module_type": "Hardware",
+      "embodiment": "Multi-chip embedded",
+      "description": "The Harris UAC is a multi-channel analog audio gateway used to interface analog radio communication equipment such as conventional base stations to radio systems and other devices on a Voice Interoperability Data Access (VIDA) network.",
+      "hardware_versions": "EA-103168-002 Rev. -, EA-103168-002 Rev. A, EA-103168-002 Rev. B, EA-103168-002 Rev. C, EA-103168-002 Rev. D",
+      "firmware_versions": "MPC 860: SK-007765-007 v R03A08 or R04G01, DSP: SK-007765-013 v R03A05 or R04E03, Boot Loader / Factory Test: R03A02, Low Level Boot: R01D01 and DSP Factory Test: R01D02",
+      "algorithms": [
+        "AES",
+        "HMAC",
+        "SHA",
+        "SHS"
+      ],
+      "algorithm_extraction": {
+        "schema_version": "1.0",
+        "status": "parsed",
+        "configured_source": "crawl4ai",
+        "source": "crawl4ai",
+        "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1592.pdf",
+        "cached": false,
+        "fallback_used": false,
+        "cache_version": "2026-04-15-legacy-v1",
+        "algorithm_count": 4,
+        "detailed_algorithm_count": 0
+      },
+      "detail_available": true
     },
     {
       "Certificate Number": "1591",

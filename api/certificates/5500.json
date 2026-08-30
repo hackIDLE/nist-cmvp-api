@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-30T07:57:46.517944Z",
+    "dataset": "active",
+    "source": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5500"
+  },
+  "certificate": {
+    "certificate_number": "5500",
+    "dataset": "active",
+    "generated_at": "2026-08-30T07:57:46.517944Z",
+    "nist_page_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5500",
+    "certificate_detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5500",
+    "security_policy_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5500.pdf",
+    "vendor_name": "Palo Alto Networks, Inc.",
+    "module_name": "Palo Alto Networks SD-WAN Virtual Instant-On Network (vION)",
+    "standard": "FIPS 140-3",
+    "status": "Active",
+    "module_type": "Software",
+    "embodiment": "MultiChipStand",
+    "overall_level": 1,
+    "validation_date": "8/24/2026",
+    "validation_dates": [
+      "8/24/2026"
+    ],
+    "sunset_date": "8/23/2031",
+    "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+    "description": "The Palo Alto Networks SD-WAN Virtual Instant-On Network (vION) enables the integration of a diverse set of wide area network (WAN) connection types, improves application performance and visibility, enhances security and compliance, and reduces the overall cost and complexity of a WAN. Built with the intent to reduce remote infrastructure, Palo Alto Networks SD-WAN vION enables the cloud-delivered branch.",
+    "software_versions": null,
+    "hardware_versions": null,
+    "firmware_versions": null,
+    "security_level_exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "related_files": [
+      {
+        "label": "Security Policy",
+        "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5500.pdf"
+      }
+    ],
+    "validation_history": [
+      {
+        "date": "8/24/2026",
+        "type": "Initial",
+        "lab": "Gossamer Security Solutions"
+      }
+    ],
+    "vendor": {
+      "name": "Palo Alto Networks, Inc.",
+      "website_url": "http://www.paloaltonetworks.com",
+      "address_lines": [
+        "3000 Tannery Way",
+        "Santa Clara, CA 95054",
+        "USA"
+      ],
+      "country": "USA",
+      "contact_name": "Amir Shahhosseini",
+      "contact_email": "certifications@paloaltonetworks.com",
+      "contact_phone": "408-753-4000"
+    },
+    "algorithms": [
+      "AES",
+      "CVL",
+      "DRBG",
+      "ECDSA",
+      "HMAC",
+      "KAS",
+      "KDF",
+      "RSA",
+      "SHA",
+      "SSH",
+      "TLS"
+    ],
+    "algorithms_detailed": [
+      "AES-CBC A6238 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CFB128 A6238 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+      "AES-CTR A6238 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128 | Supports Counter larger than maximum value - No | Incremental Counter - Yes | Counter Tests Performed - Yes | SP 800-38A",
+      "AES-GCM A6238 Direction - Decrypt, Encrypt | IV Generation - Internal | IV Generation Mode - 8.2.1 | Key Length - 128, 192, 256 | Tag Length - 104, 112, 120, 128, 32, 64, 96 | IV Length - IV Length: 96, 1024 | Payload Length - Payload Length: 504-1024 | Increment 8 | AAD Length - AAD Length: 0-1024 Increment 8 | SP 800-38D",
+      "Counter DRBG A6238 Prediction Resistance - No, Yes",
+      "Mode - AES-128, AES-192, AES-256 | Derivation Function Enabled - Yes | SP 800-90A | Rev. 1",
+      "ECDSA KeyGen | (FIPS186-5) | A6238 Curve - P-256, P-384, P-521 | Secret Generation Mode - extra bits, testing | candidates | FIPS 186-5",
+      "ECDSA SigGen | (FIPS186-5) | A6238 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Component - No | FIPS 186-5",
+      "ECDSA SigVer | (FIPS186-5) | A6238 Curve - P-256, P-384, P-521",
+      "Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | FIPS 186-5",
+      "HMAC-SHA-1 A6238 MAC - MAC: 80-160 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-256 A6238 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A6238 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-512 A6238 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6238 Domain Parameter Generation Methods - P-256, P- | 384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "KDF IKEv2 (CVL) A6238 Initiator Nonce Length - Initiator Nonce Length: 512 | Responder Nonce Length - Responder Nonce | SP 800-135 | Rev. 1 | Networks, Inc. | Palo Alto Networks SD-WAN Virtual Instant-On Network (vION) | Length: 512",
+      "Diffie-Hellman Shared Secret Length - Diffie-",
+      "Hellman Shared Secret Length: 2048 | Derived Keying Material Length - Derived Keying | Material Length: 1056-3072 Increment 8",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-384",
+      "SHA2-512",
+      "KDF SNMP (CVL) A6238 Password Length - Password Length: 64, 2048 | Engine ID - 00100020003000400050 | 12345678901234567890 | SP 800-135 | Rev. 1",
+      "KDF SSH (CVL) A6238 Cipher - AES-128, AES-192, AES-256",
+      "Hash Algorithm - SHA-1, SHA2-256, SHA2-512 | SP 800-135 | Rev. 1",
+      "RSA KeyGen | (FIPS186-5) | A6238 Key Generation Mode - probable | Modulo - 2048, 3072 | Primality Tests - 2powSecStr | Info Generated By Server - No | Private Key Format - standard | Public Exponent Mode - random | FIPS 186-5",
+      "RSA SigGen | (FIPS186-5) | A6238 Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | FIPS 186-5",
+      "RSA SigVer | (FIPS186-5) | A6238 Hash Pair -",
+      "Hash Algorithm - SHA2-512 | Modulo - 2048, 3072 | Signature Type - pkcs1v1.5, pss | Mask Function - mgf1 | Public Exponent Mode - random | FIPS 186-5",
+      "SHA-1 A6238 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-256 A6238 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6238 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-512 A6238 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "TLS v1.2 KDF",
+      "RFC7627 (CVL)",
+      "A6238 Hash Algorithm - SHA2-256, SHA2-384, SHA2-512 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | Crypto Library - II",
+      "AES-CBC A6239 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "AES-GCM A6239 Direction - Decrypt, Encrypt | IV Generation - External | IV Generation Mode - 8.2.1 | Key Length - 128, 256 | Tag Length - 128 | IV Length - IV Length: 96, 1024 | Payload Length - Payload Length: 64-256 | SP 800-38D | Networks, Inc. | Palo Alto Networks SD-WAN Virtual Instant-On Network (vION) | Increment 8 | AAD Length - AAD Length: 0, 256",
+      "Counter DRBG A6239 Prediction Resistance - No | Supports Reseed - Yes",
+      "Mode - AES-256 | Derivation Function Enabled - No | Additional Input - Additional Input: 0-384 | Increment 16 | Entropy Input - Entropy Input: 384 | Nonce - Nonce: 0 | Personalization String Length - Personalization | String Length: 0-384 Increment 16 | Returned Bits - 2048 | SP 800-90A | Rev. 1",
+      "HMAC-SHA2-256 A6239 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2-384 A6239 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "KAS-ECC-SSC | Sp800-56Ar3 | A6239 Domain Parameter Generation Methods - P-256 | P-384, P-521 | Scheme - | ephemeralUnified - | KAS Role - initiator, responder | SP 800-56A | Rev. 3",
+      "RSA SigVer | (FIPS186-5) | A6239 Hash Pair -",
+      "Hash Algorithm - SHA2-224 | Modulo - 2048 | Signature Type - pkcs1v1.5 | Public Exponent Mode - random | FIPS 186-5",
+      "SHA2-256 A6239 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6239 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "A6239 Hash Algorithm - SHA2-256, SHA2-384 | Key Block Length - Key Block Length: 1024 | SP 800-135 | Rev. 1 | Crypto Library - III",
+      "AES-CBC A6240 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+      "HMAC-SHA2- | 256 | A6240 MAC - MAC: 128-256 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 384 | A6240 MAC - MAC: 192-384 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "HMAC-SHA2- | 512 | A6240 MAC - MAC: 256-512 Increment 8 | Key Length - Key Length: 256-1120 Increment 8 | FIPS 198-1",
+      "SHA2-256 A6240 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4",
+      "SHA2-384 A6240 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | Networks, Inc. | Palo Alto Networks SD-WAN Virtual Instant-On Network (vION)",
+      "SHA2-512 A6240 Message Length - Message Length: 8-51200 | Increment 8 | FIPS 180-4 | Name Properties Implementation Reference | CKG Key Type:Asymmetric N/A SP 800-133r2 Section 4, example 1 | N/A for this module. | N/A for this module. | N/A for this module."
+    ],
+    "algorithm_extraction": {
+      "schema_version": "1.0",
+      "status": "parsed",
+      "configured_source": "crawl4ai",
+      "source": "crawl4ai",
+      "source_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5500.pdf",
+      "cached": false,
+      "fallback_used": false,
+      "cache_version": "2026-04-15-legacy-v1",
+      "algorithm_count": 11,
+      "detailed_algorithm_count": 54,
+      "attempts": [
+        {
+          "source": "crawl4ai",
+          "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5500.pdf",
+          "status": "parsed"
+        }
+      ]
+    }
+  }
+}

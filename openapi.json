@@ -187,7 +187,7 @@
         "operationId": "getModules",
         "responses": {
           "200": {
-            "description": "Currently 1172 active validated modules with enriched details",
+            "description": "Currently 1170 active validated modules with enriched details",
             "content": {
               "application/json": {
                 "schema": {
@@ -205,7 +205,7 @@
         "operationId": "getHistoricalModules",
         "responses": {
           "200": {
-            "description": "Currently 4306 historical modules",
+            "description": "Currently 4315 historical modules",
             "content": {
               "application/json": {
                 "schema": {
@@ -223,7 +223,7 @@
         "operationId": "getModulesInProcess",
         "responses": {
           "200": {
-            "description": "Currently 182 modules in process",
+            "description": "Currently 180 modules in process",
             "content": {
               "application/json": {
                 "schema": {
@@ -312,27 +312,27 @@
           "generated_at": {
             "type": "string",
             "format": "date-time",
-            "example": "2026-08-23T03:02:31.588581Z"
+            "example": "2026-08-30T07:57:46.517944Z"
           },
           "total_modules": {
             "type": "integer",
-            "example": 1172
+            "example": 1170
           },
           "total_historical_modules": {
             "type": "integer",
-            "example": 4306
+            "example": 4315
           },
           "total_modules_in_process": {
             "type": "integer",
-            "example": 182
+            "example": 180
           },
           "total_certificates_with_algorithms": {
             "type": "integer",
-            "example": 1856
+            "example": 1863
           },
           "total_certificate_details": {
             "type": "integer",
-            "example": 5478
+            "example": 5485
           },
           "source": {
             "type": "string",
@@ -370,39 +370,39 @@
         "properties": {
           "Certificate Number_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5507"
           },
           "Certificate Number": {
             "type": "string",
-            "example": "5499"
+            "example": "5507"
           },
           "Vendor Name": {
             "type": "string",
-            "example": "Phison Electronics Corporation"
+            "example": "Bitwarden, Inc."
           },
           "Module Name": {
             "type": "string",
-            "example": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD"
+            "example": "Bitwarden Cryptographic Module"
           },
           "Module Type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "Validation Date": {
             "type": "string",
-            "example": "08/21/2026"
+            "example": "08/27/2026"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5499.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5507.pdf"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5499"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5507"
           },
           "module_name": {
             "type": "string",
-            "example": "Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD"
+            "example": "Bitwarden Cryptographic Module"
           },
           "standard": {
             "type": "string",
@@ -414,27 +414,27 @@
           },
           "sunset_date": {
             "type": "string",
-            "example": "8/20/2031"
+            "example": "8/26/2029"
           },
           "overall_level": {
             "type": "integer",
-            "example": 2
+            "example": 1
           },
           "caveat": {
             "type": "string",
-            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service"
+            "example": "No assurance of the minimum strength of generated SSPs (e.g., keys) and random strings. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs"
           },
           "module_type": {
             "type": "string",
-            "example": "Hardware"
+            "example": "Software"
           },
           "embodiment": {
             "type": "string",
-            "example": "MultiChipEmbed"
+            "example": "MultiChipStand"
           },
           "description": {
             "type": "string",
-            "example": "The 'Phison PASCARI X and D-series NVMe TCG OPAL SSC Self-Encrypting Enterprise SSD' is an Enterprise Self-Encrypting Drive model disk drive. The cryptographic module (CM) provides a wide range of cryptographic services using approved algorithms. Services include hardware- based data encryption, instantaneous user data disposal with cryptographic erase, independently controlled and protected user data LBA ranges, and authenticated FW download. The services are provided through an industry-standard TCG Opal SSC interface."
+            "example": "The Bitwarden Cryptographic module provides cryptographic operations for the Bitwarden password manager application and vault data. The cryptographic operations provided by the Bitwarden Cryptographic module support the secure storage of passwords, authentication information, storage of credentials and other sensitive documents using 256-bit AES encryption, zero-knowledge architecture, and two-factor authentication."
           },
           "algorithms": {
             "type": "array",
@@ -443,8 +443,8 @@
             },
             "example": [
               "AES",
-              "DRBG",
-              "HMAC"
+              "CVL",
+              "DES"
             ]
           },
           "algorithms_detailed": {
@@ -453,9 +453,9 @@
               "type": "string"
             },
             "example": [
-              "AES-KW A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
-              "AES-KW A7622 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38F",
-              "AES-XTS Testing | Revision 2.0 | A3307 Direction - Decrypt, Encrypt | Key Length - 256 | SP 800-38E"
+              "AES-CBC A4593 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A",
+              "AES-CBC A5173 Direction - Decrypt, Encrypt | Key Length - 128, 192, 256 | SP 800-38A | Document Version 1.0 ©Bitwarden, Inc. Page 14 of 122",
+              "AES-CBC-CS1 A4593 Direction - decrypt, encrypt | Key Length - 128, 192, 256 | Payload Length - Payload Length: 128-65536 Increment 8 | SP 800-38A"
             ]
           },
           "algorithm_extraction": {
@@ -880,7 +880,7 @@
         "properties": {
           "certificate_number": {
             "type": "string",
-            "example": "5483"
+            "example": "5495"
           },
           "dataset": {
             "type": "string",
@@ -888,27 +888,27 @@
           },
           "generated_at": {
             "type": "string",
-            "example": "2026-08-23T03:02:31.588581Z"
+            "example": "2026-08-30T07:57:46.517944Z"
           },
           "nist_page_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5495"
           },
           "certificate_detail_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5483"
+            "example": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5495"
           },
           "security_policy_url": {
             "type": "string",
-            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5483.pdf"
+            "example": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5495.pdf"
           },
           "vendor_name": {
             "type": "string",
-            "example": "Western Digital Technologies, Inc."
+            "example": "Seagate Technology LLC"
           },
           "module_name": {
             "type": "string",
-            "example": "Ultrastar DC HC560 TCG Enterprise HDD, SED and Ultrastar DC HC570 TCG Enterprise HDD, SED"
+            "example": "Seagate SSG3 TCG Enterprise SSC SED FIPS 140 Module"
           },
           "standard": {
             "type": "string",
@@ -932,7 +932,7 @@
           },
           "validation_date": {
             "type": "string",
-            "example": "8/13/2026"
+            "example": "8/18/2026"
           },
           "validation_dates": {
             "type": "array",
@@ -940,20 +940,20 @@
               "type": "string"
             },
             "example": [
-              "8/13/2026"
+              "8/18/2026"
             ]
           },
           "sunset_date": {
             "type": "string",
-            "example": "9/15/2029"
+            "example": "8/17/2031"
           },
           "caveat": {
             "type": "string",
-            "example": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service"
+            "example": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. No operator authentication is enforced for executing security services that were unlocked by an authenticated service"
           },
           "description": {
             "type": "string",
-            "example": "The Ultrastar DC HC560 and DC HC570 TCG Enterprise HDDs are self-encrypting drives (SEDs) compliant with the TCG Storage Architecture Core Specification and the TCG Enterprise Security Subsystem Class (SSC). The Enterprise SSC defines interfaces to activate, provision, and manage encryption, authentication credentials, and access controls. The security architecture uses a lock-based authentication model where operator credentials control access to user data, making data inaccessible until successful authentication, in accordance with IG 4.1.A."
+            "example": "The primary function of the Seagate SSG3 TCG Enterprise SSC SED FIPS 140 Module is to provide encryption, access control, and cryptographic erase of the User Data stored on the module."
           },
           "software_versions": {
             "type": "string",
@@ -1010,8 +1010,8 @@
             },
             "example": [
               "AES",
-              "DRBG",
-              "HMAC"
+              "CVL",
+              "DRBG"
             ]
           },
           "algorithms_detailed": {
@@ -1020,9 +1020,9 @@
               "type": "string"
             },
             "example": [
-              "AES-CBC A2099 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
-              "AES-CBC AES 3580 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A",
-              "AES-ECB A2101 Direction - Decrypt, Encrypt | Key Length - 256 SP 800-38A"
+              "AES-CBC A7701 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+              "AES-CBC A7704 Direction - Decrypt, Encrypt | Key Length - 128, 256 | SP 800-38A",
+              "AES-CMAC A7701 Direction - Generation | Key Length - 128 | MAC Length - MAC Length: 8-128 Increment | SP 800-38B | Seagate Technology | 8 | Message Length - Message Length: 128-768 | Increment 128"
             ]
           }
         }
